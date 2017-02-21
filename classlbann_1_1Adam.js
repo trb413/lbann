@@ -2,7 +2,7 @@ var classlbann_1_1Adam =
 [
     [ "Adam", "classlbann_1_1Adam.html#a212d41fb042389e6b4495bb16e7925a9", null ],
     [ "~Adam", "classlbann_1_1Adam.html#a095890c55875dc93cf4ccc8e94148fc6", null ],
-    [ "get_learning_rate", "classlbann_1_1Adam.html#a3128df3fa65c89f000543c7e9f37d823", null ],
+    [ "get_learning_rate", "classlbann_1_1Adam.html#a8903503e1bb8a31e02c837b084b7bae1", null ],
     [ "loadFromCheckpointShared", "classlbann_1_1Adam.html#aa9f626f86842fb1d5392b2437adb1633", null ],
     [ "saveToCheckpointShared", "classlbann_1_1Adam.html#a75137a15bba6e9e5ed1fff83b3b82a7b", null ],
     [ "set_learning_rate", "classlbann_1_1Adam.html#a9aeb4e71c48c5c1eb431e89653930acd", null ],

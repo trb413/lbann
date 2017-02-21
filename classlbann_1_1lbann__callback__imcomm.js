@@ -12,7 +12,7 @@ var classlbann_1_1lbann__callback__imcomm =
     ] ],
     [ "lbann_callback_imcomm", "classlbann_1_1lbann__callback__imcomm.html#aef048c5bdeb5b36d7b5e0fdfddfb6a7a", null ],
     [ "lbann_callback_imcomm", "classlbann_1_1lbann__callback__imcomm.html#a84d47e38ad45417f88d32eb37d94ebbd", null ],
-    [ "ct_does_quantization", "classlbann_1_1lbann__callback__imcomm.html#a000e067569f3b3416491e0385bcdce55", null ],
+    [ "ct_does_quantization", "classlbann_1_1lbann__callback__imcomm.html#ad3a9f43ceb08af462ce9d378e70bd76d", null ],
     [ "on_backward_prop_end", "classlbann_1_1lbann__callback__imcomm.html#ace11211398e94728880476981f25fdc2", null ],
     [ "on_epoch_end", "classlbann_1_1lbann__callback__imcomm.html#a9e409109c25b6173bc57108281e7aeb5", null ],
     [ "setup", "classlbann_1_1lbann__callback__imcomm.html#a1cc160d368f1dd5bd30f1504c0df8003", null ],

@@ -4,7 +4,7 @@ var classlbann_1_1RMSprop =
     [ "~RMSprop", "classlbann_1_1RMSprop.html#ab33c9d7f60266848842b36e857c37adf", null ],
     [ "_sq", "classlbann_1_1RMSprop.html#a2908146959e04e45b6c493b8d9c3010d", null ],
     [ "_sqrt", "classlbann_1_1RMSprop.html#ada762964ecbd5106ef70aaac7d11adf2", null ],
-    [ "get_learning_rate", "classlbann_1_1RMSprop.html#a0152632b2fb202cced027d8e9e1adc20", null ],
+    [ "get_learning_rate", "classlbann_1_1RMSprop.html#ae75c5217701957de835a40f6ed23b85d", null ],
     [ "loadFromCheckpoint", "classlbann_1_1RMSprop.html#a70581a76bb9a25778cc75a31ea505d54", null ],
     [ "loadFromCheckpointShared", "classlbann_1_1RMSprop.html#ab497268e38ae73fb3ea0c617d6938205", null ],
     [ "saveToCheckpoint", "classlbann_1_1RMSprop.html#a9afe0f41ac7def98ca057a378cdf5fa3", null ],

@@ -2,7 +2,7 @@ var classlbann_1_1Optimizer =
 [
     [ "Optimizer", "classlbann_1_1Optimizer.html#ac47f4b7d603acd6a4c89c16b6b55b58a", null ],
     [ "~Optimizer", "classlbann_1_1Optimizer.html#a2963ad8b56b487481adfe8c676786771", null ],
-    [ "get_learning_rate", "classlbann_1_1Optimizer.html#ab153dd1a7d0b7000e60baa79156c6dd9", null ],
+    [ "get_learning_rate", "classlbann_1_1Optimizer.html#a23d29c72e5d46b6d89830ec6d77b1f5e", null ],
     [ "loadFromCheckpoint", "classlbann_1_1Optimizer.html#aeda7e360675072eef1e245e028415001", null ],
     [ "loadFromCheckpointShared", "classlbann_1_1Optimizer.html#a4410d61597fcbe8bfbe06629c3761ba3", null ],
     [ "name", "classlbann_1_1Optimizer.html#a6984da040ad703476b8f4d807c6439f1", null ],

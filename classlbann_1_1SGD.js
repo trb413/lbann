@@ -2,7 +2,7 @@ var classlbann_1_1SGD =
 [
     [ "SGD", "classlbann_1_1SGD.html#ad5ec556d983b1018cf0f9f31af38086c", null ],
     [ "~SGD", "classlbann_1_1SGD.html#a456c8edd11ae9bc4766787145da0b6ff", null ],
-    [ "get_learning_rate", "classlbann_1_1SGD.html#a15dabe7eaab060b303aa1a936a8793c1", null ],
+    [ "get_learning_rate", "classlbann_1_1SGD.html#a69cd0eeaa8397d970b7fa3565ac07665", null ],
     [ "loadFromCheckpoint", "classlbann_1_1SGD.html#a4096c10b2292c35cfbfa1b69a980bce4", null ],
     [ "loadFromCheckpointShared", "classlbann_1_1SGD.html#a64fc5ea12858d013bbda6d5d8722163c", null ],
     [ "saveToCheckpoint", "classlbann_1_1SGD.html#a9bd80928638e979aeaea980a723cab88", null ],

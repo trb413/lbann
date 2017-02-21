@@ -4,7 +4,7 @@ var classlbann_1_1Adagrad =
     [ "~Adagrad", "classlbann_1_1Adagrad.html#aa69660f35a03f5181211f8b761b25d0a", null ],
     [ "_sq", "classlbann_1_1Adagrad.html#afa4ef22515781d67e91def28edc5f22f", null ],
     [ "_sqrt", "classlbann_1_1Adagrad.html#a96be06f24e47865c3cb9c89c6ba2b065", null ],
-    [ "get_learning_rate", "classlbann_1_1Adagrad.html#ae62a200b5492886307e3ef6080c95a9d", null ],
+    [ "get_learning_rate", "classlbann_1_1Adagrad.html#a0662c4920e83401a3ae6c5a5525c427f", null ],
     [ "loadFromCheckpoint", "classlbann_1_1Adagrad.html#a7bec801ad63ca4333d7e7f04574a06d3", null ],
     [ "loadFromCheckpointShared", "classlbann_1_1Adagrad.html#ab38a8c6e1bd1abc217b41c62bb5dd157", null ],
     [ "saveToCheckpoint", "classlbann_1_1Adagrad.html#a3d3124958cbe09f531927ce839c696aa", null ],

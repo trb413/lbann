@@ -1,15 +1,15 @@
 var classlbann_1_1io__layer =
 [
-    [ "io_layer", "classlbann_1_1io__layer.html#a8f1e3a3f1a12aa46129cc3acc4498f1e", null ],
+    [ "io_layer", "classlbann_1_1io__layer.html#a813f3e5f412caf7897a33df236685b73", null ],
     [ "at_new_epoch", "classlbann_1_1io__layer.html#a4f0e3bbd6bc638432723179efc2998ab", null ],
     [ "get_linearized_data_size", "classlbann_1_1io__layer.html#abe71d3ff37e3a3ddbb470347458a07ec", null ],
     [ "get_linearized_label_size", "classlbann_1_1io__layer.html#a3c39307b9bc8166e5034488344445d1e", null ],
-    [ "get_linearized_response_size", "classlbann_1_1io__layer.html#a479a5e329f30cc79df74d55436daad41", null ],
+    [ "get_linearized_response_size", "classlbann_1_1io__layer.html#a3701d9af118b40341b6bb46cb3462094", null ],
     [ "get_num_samples_tested", "classlbann_1_1io__layer.html#a7a7a678d96785ef6d0b11a04677307a5", null ],
     [ "get_num_samples_trained", "classlbann_1_1io__layer.html#a1292e85a308160a1ce1ca0be83a962b6", null ],
     [ "get_total_num_testing_samples", "classlbann_1_1io__layer.html#a877f6511133c2705b38522e8157a59d4", null ],
     [ "get_total_num_training_samples", "classlbann_1_1io__layer.html#aaf6c801c13a6488f0715b2f851f4a35f", null ],
-    [ "is_for_regression", "classlbann_1_1io__layer.html#af7dc9023e5a7735cbd1678c788d8b653", null ],
+    [ "is_for_regression", "classlbann_1_1io__layer.html#a84f62786812c100923e7553f704a5edc", null ],
     [ "loadFromCheckpointShared", "classlbann_1_1io__layer.html#a2c62c0b4e30f80c3edaf39e6530ccb49", null ],
     [ "saveToCheckpointShared", "classlbann_1_1io__layer.html#ae59b49fad28d273f72035f227fa846af", null ],
     [ "select_data_reader", "classlbann_1_1io__layer.html#ae400abb9ed5e3ad2c8df1efc0168bc0a", null ],
