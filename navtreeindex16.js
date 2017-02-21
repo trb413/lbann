@@ -1,6 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"lbann__objective__fn__categorical__cross__entropy_8cpp_source.html":[4,0,0,0,0,0,0,1,6,1],
 "lbann__objective__fn__categorical__cross__entropy_8hpp.html":[4,0,0,0,0,0,0,0,0,6,1],
 "lbann__objective__fn__categorical__cross__entropy_8hpp_source.html":[4,0,0,0,0,0,0,0,0,6,1],
 "lbann__objective__fn__mean__squared__error_8cpp.html":[4,0,0,0,0,0,0,1,6,2],
@@ -132,18 +131,18 @@ var NAVTREEINDEX16 =
 "namespaceEl.html":[3,0,2],
 "namespaceanonymous__namespace_02lbann__random_8cpp_03.html":[3,0,0],
 "namespaceanonymous__namespace_02lbann__random_8cpp_03.html":[2,0,0],
-"namespacecudnn.html":[2,0,1],
 "namespacecudnn.html":[3,0,1],
-"namespacelbann.html":[2,0,3],
+"namespacecudnn.html":[2,0,1],
 "namespacelbann.html":[3,0,3],
+"namespacelbann.html":[2,0,3],
 "namespacelbann_1_1metrics.html":[2,0,3,0],
 "namespacelbann_1_1metrics.html":[3,0,3,0],
-"namespacelbann_1_1objective__functions.html":[3,0,3,1],
 "namespacelbann_1_1objective__functions.html":[2,0,3,1],
-"namespacelbann__data.html":[3,0,4],
+"namespacelbann_1_1objective__functions.html":[3,0,3,1],
 "namespacelbann__data.html":[2,0,4],
-"namespacelbann__data_1_1anonymous__namespace_02lbann_8pb_8cc_03.html":[2,0,4,0],
+"namespacelbann__data.html":[3,0,4],
 "namespacelbann__data_1_1anonymous__namespace_02lbann_8pb_8cc_03.html":[3,0,4,0],
+"namespacelbann__data_1_1anonymous__namespace_02lbann_8pb_8cc_03.html":[2,0,4,0],
 "namespacemembers.html":[2,1,0],
 "namespacemembers_enum.html":[2,1,4],
 "namespacemembers_eval.html":[2,1,5],
@@ -249,5 +248,6 @@ var NAVTREEINDEX16 =
 "struct__CHAR3.html":[3,0,24],
 "struct__CHAR3.html#a4e1b1af94839c8aaa7f6b15fe51e165f":[3,0,24,0],
 "struct__CHAR3.html#a6ee6edc4fd086eadd48501322970c4d9":[3,0,24,2],
-"struct__CHAR3.html#a9747040e2506dd30e6ae670b2cd8b870":[3,0,24,1]
+"struct__CHAR3.html#a9747040e2506dd30e6ae670b2cd8b870":[3,0,24,1],
+"struct__CHAR4.html":[3,0,25]
 };

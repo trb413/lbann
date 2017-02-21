@@ -159,7 +159,6 @@ var NAVTREEINDEX15 =
 "lbann__layer__activations_8hpp.html#ac5723897a72209964fd0eb14ad416d18":[4,0,0,0,0,0,0,0,0,3,5,9],
 "lbann__layer__activations_8hpp_source.html":[4,0,0,0,0,0,0,0,0,3,5],
 "lbann__layer__convolutional_8cpp.html":[4,0,0,0,0,0,0,1,3,6],
-"lbann__layer__convolutional_8cpp.html#ad989ea067d15ae1ef48d40e9b3531712":[4,0,0,0,0,0,0,1,3,6,0],
 "lbann__layer__convolutional_8cpp_source.html":[4,0,0,0,0,0,0,1,3,6],
 "lbann__layer__convolutional_8hpp.html":[4,0,0,0,0,0,0,0,0,3,6],
 "lbann__layer__convolutional_8hpp_source.html":[4,0,0,0,0,0,0,0,0,3,6],
@@ -249,5 +248,6 @@ var NAVTREEINDEX15 =
 "lbann__objective__fn_8hpp.html#a84a6b5226a98ba2d0c65c3a2a9afb43caccc0377a8afbf50e7094f5c23a8af223":[4,0,0,0,0,0,0,0,0,6,0,2,2],
 "lbann__objective__fn_8hpp.html#a950e147ea22e4e42e3cf4ae1a5b08566":[4,0,0,0,0,0,0,0,0,6,0,3],
 "lbann__objective__fn_8hpp_source.html":[4,0,0,0,0,0,0,0,0,6,0],
-"lbann__objective__fn__categorical__cross__entropy_8cpp.html":[4,0,0,0,0,0,0,1,6,1]
+"lbann__objective__fn__categorical__cross__entropy_8cpp.html":[4,0,0,0,0,0,0,1,6,1],
+"lbann__objective__fn__categorical__cross__entropy_8cpp_source.html":[4,0,0,0,0,0,0,1,6,1]
 };

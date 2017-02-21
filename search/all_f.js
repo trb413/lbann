@@ -32,7 +32,6 @@ var searchData=
   ['persist',['persist',['../classlbann_1_1persist.html#abf1454f4d5b61617ccfa60ba9989f1a3',1,'lbann::persist']]],
   ['persist_5ftype',['persist_type',['../namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56',1,'lbann']]],
   ['pi',['pi',['../classlbann_1_1lbann__image__preprocessor.html#a5faf7259822ae5ae84ed9a6e0f24e3bb',1,'lbann::lbann_image_preprocessor']]],
-  ['pin_5fmemory_5fblock',['pin_memory_block',['../lbann__layer__convolutional_8cpp.html#ad989ea067d15ae1ef48d40e9b3531712',1,'lbann_layer_convolutional.cpp']]],
   ['pin_5fmemory_5fblocks_5fbwd',['pin_memory_blocks_bwd',['../classlbann_1_1convolutional__layer.html#a07824976e1d99da875e0c96c1855fd91',1,'lbann::convolutional_layer']]],
   ['pin_5fmemory_5fblocks_5ffwd',['pin_memory_blocks_fwd',['../classlbann_1_1convolutional__layer.html#a9fc985265db92ca21de7463570b450a7',1,'lbann::convolutional_layer']]],
   ['poisson',['poisson',['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a2c7fa5b4147150b7dfdb1ff83dbfab3e',1,'lbann::metrics']]],

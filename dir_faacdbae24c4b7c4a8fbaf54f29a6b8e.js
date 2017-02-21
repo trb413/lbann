@@ -8,7 +8,7 @@ var dir_faacdbae24c4b7c4a8fbaf54f29a6b8e =
     ] ],
     [ "lbann_layer.cpp", "lbann__layer_8cpp.html", null ],
     [ "lbann_layer_activations.cpp", "lbann__layer__activations_8cpp.html", "lbann__layer__activations_8cpp" ],
-    [ "lbann_layer_convolutional.cpp", "lbann__layer__convolutional_8cpp.html", "lbann__layer__convolutional_8cpp" ],
+    [ "lbann_layer_convolutional.cpp", "lbann__layer__convolutional_8cpp.html", null ],
     [ "lbann_layer_fully_connected.cpp", "lbann__layer__fully__connected_8cpp.html", "lbann__layer__fully__connected_8cpp" ],
     [ "lbann_layer_pooling.cpp", "lbann__layer__pooling_8cpp.html", null ],
     [ "lbann_layer_softmax.cpp", "lbann__layer__softmax_8cpp.html", "lbann__layer__softmax_8cpp" ],

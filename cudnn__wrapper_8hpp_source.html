@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">fa692d2-ci203961566</span>
+   &#160;<span id="projectnumber">692bbdc-ci204012024</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -293,103 +293,104 @@ $(document).ready(function(){initNavTree('cudnn__wrapper_8hpp_source.html','');}
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    std::vector&lt;DataType*&gt; d_dst;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    std::vector&lt;DataType*&gt; d_work_space;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    std::vector&lt;DataType*&gt; d_filter_gradient;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    std::vector&lt;DataType*&gt; d_error_signal;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    std::vector&lt;DataType*&gt; d_filter_work_space;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    std::vector&lt;DataType*&gt; d_data_work_space;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordtype">void</span> device_allocate(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordtype">void</span> device_deallocate(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordtype">void</span> device_allocate_for_forward(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordtype">void</span> device_allocate_for_backward(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordtype">void</span> device_deallocate_for_forward(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordtype">void</span> device_deallocate_for_backward(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> temp;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  };</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <span class="keyword">class </span>cudnn_pooling_layer</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  {</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    cudnn_pooling_layer(<span class="keywordtype">int</span> num_dims,</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                        <span class="keywordtype">int</span> channels,</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span>* src_dims,</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                        <a class="code" href="lbann__base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39">pool_mode</a> _pool_mode,</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span>* pool_dims,</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span>* pool_pads,</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span>* pool_strides,</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                        cudnn_manager* cudnn);</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    </div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    ~cudnn_pooling_layer();</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    </div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordtype">void</span> setup();</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordtype">void</span> forward(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; src, <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; dst);</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    </div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordtype">void</span> backward(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; src, <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; dst,</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; grad_dst, <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; grad_src);</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      </div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> m_num_dims;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordtype">int</span> m_src_size;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordtype">int</span> m_dst_size;</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    std::vector&lt;int&gt; m_src_dims;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    std::vector&lt;int&gt; m_dst_dims;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keyword">const</span> cudnnPoolingMode_t m_pool_mode;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    std::vector&lt;int&gt; m_pool_dims;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    std::vector&lt;int&gt; m_pool_pads;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    std::vector&lt;int&gt; m_pool_strides;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  </div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    cudnn_manager* m_cudnn;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keyword">const</span> cudnnDataType_t m_cudnn_data_type;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    cudnnTensorDescriptor_t m_src_desc;</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    cudnnTensorDescriptor_t m_dst_desc;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    cudnnPoolingDescriptor_t m_pool_desc;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    std::vector&lt;int&gt; m_src_strides;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    std::vector&lt;int&gt; m_dst_strides;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  };</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;}</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="preprocessor">#else  // __LIB_CUDNN</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00355"></a><span class="lineno"><a class="line" href="namespacecudnn.html">  355</a></span>&#160;<span class="keyword">namespace </span>cudnn</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;{</div>
-<div class="line"><a name="l00357"></a><span class="lineno"><a class="line" href="classcudnn_1_1cudnn__manager.html">  357</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classcudnn_1_1cudnn__manager.html">cudnn_manager</a> {};</div>
-<div class="line"><a name="l00358"></a><span class="lineno"><a class="line" href="classcudnn_1_1cudnn__convolutional__layer.html">  358</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classcudnn_1_1cudnn__convolutional__layer.html">cudnn_convolutional_layer</a> {};</div>
-<div class="line"><a name="l00359"></a><span class="lineno"><a class="line" href="classcudnn_1_1cudnn__pooling__layer.html">  359</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classcudnn_1_1cudnn__pooling__layer.html">cudnn_pooling_layer</a> {};</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;}</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;<span class="preprocessor">#endif  // __LIB_CUDNN</span></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="preprocessor">#endif // CUDNN_WRAPPER_HPP_INCLUDED</span></div>
-<div class="ttc" id="classcudnn_1_1cudnn__convolutional__layer_html"><div class="ttname"><a href="classcudnn_1_1cudnn__convolutional__layer.html">cudnn::cudnn_convolutional_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="cudnn__wrapper_8hpp_source.html#l00358">cudnn_wrapper.hpp:358</a></div></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    std::vector&lt;DataType*&gt; d_prev_error_signal;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    std::vector&lt;DataType*&gt; d_filter_gradient;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    std::vector&lt;DataType*&gt; d_error_signal;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    std::vector&lt;DataType*&gt; d_filter_work_space;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    std::vector&lt;DataType*&gt; d_data_work_space;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordtype">void</span> device_allocate(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordtype">void</span> device_deallocate(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordtype">void</span> device_allocate_for_forward(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordtype">void</span> device_allocate_for_backward(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordtype">void</span> device_deallocate_for_forward(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordtype">void</span> device_deallocate_for_backward(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> temp;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  };</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="keyword">class </span>cudnn_pooling_layer</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  {</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    cudnn_pooling_layer(<span class="keywordtype">int</span> num_dims,</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                        <span class="keywordtype">int</span> channels,</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span>* src_dims,</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                        <a class="code" href="lbann__base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39">pool_mode</a> _pool_mode,</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span>* pool_dims,</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span>* pool_pads,</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                        <span class="keyword">const</span> <span class="keywordtype">int</span>* pool_strides,</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                        cudnn_manager* cudnn);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    ~cudnn_pooling_layer();</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    </div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordtype">void</span> setup();</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordtype">void</span> forward(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; src, <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; dst);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordtype">void</span> backward(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; src, <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; dst,</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; grad_dst, <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; grad_src);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> m_num_dims;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordtype">int</span> m_src_size;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordtype">int</span> m_dst_size;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    std::vector&lt;int&gt; m_src_dims;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    std::vector&lt;int&gt; m_dst_dims;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keyword">const</span> cudnnPoolingMode_t m_pool_mode;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    std::vector&lt;int&gt; m_pool_dims;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    std::vector&lt;int&gt; m_pool_pads;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    std::vector&lt;int&gt; m_pool_strides;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  </div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    cudnn_manager* m_cudnn;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="keyword">const</span> cudnnDataType_t m_cudnn_data_type;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    cudnnTensorDescriptor_t m_src_desc;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    cudnnTensorDescriptor_t m_dst_desc;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    cudnnPoolingDescriptor_t m_pool_desc;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    std::vector&lt;int&gt; m_src_strides;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    std::vector&lt;int&gt; m_dst_strides;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  };</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;}</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;<span class="preprocessor">#else  // __LIB_CUDNN</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00356"></a><span class="lineno"><a class="line" href="namespacecudnn.html">  356</a></span>&#160;<span class="keyword">namespace </span>cudnn</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;{</div>
+<div class="line"><a name="l00358"></a><span class="lineno"><a class="line" href="classcudnn_1_1cudnn__manager.html">  358</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classcudnn_1_1cudnn__manager.html">cudnn_manager</a> {};</div>
+<div class="line"><a name="l00359"></a><span class="lineno"><a class="line" href="classcudnn_1_1cudnn__convolutional__layer.html">  359</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classcudnn_1_1cudnn__convolutional__layer.html">cudnn_convolutional_layer</a> {};</div>
+<div class="line"><a name="l00360"></a><span class="lineno"><a class="line" href="classcudnn_1_1cudnn__pooling__layer.html">  360</a></span>&#160;  <span class="keyword">class </span><a class="code" href="classcudnn_1_1cudnn__pooling__layer.html">cudnn_pooling_layer</a> {};</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;}</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;<span class="preprocessor">#endif  // __LIB_CUDNN</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;<span class="preprocessor">#endif // CUDNN_WRAPPER_HPP_INCLUDED</span></div>
+<div class="ttc" id="classcudnn_1_1cudnn__convolutional__layer_html"><div class="ttname"><a href="classcudnn_1_1cudnn__convolutional__layer.html">cudnn::cudnn_convolutional_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="cudnn__wrapper_8hpp_source.html#l00359">cudnn_wrapper.hpp:359</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_ac47a6ee5278a53898222a48639a2bf39"><div class="ttname"><a href="lbann__base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39">pool_mode</a></div><div class="ttdeci">pool_mode</div><div class="ttdoc">Pooling layer mode. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00082">lbann_base.hpp:82</a></div></div>
 <div class="ttc" id="lbann__comm_8hpp_html"><div class="ttname"><a href="lbann__comm_8hpp.html">lbann_comm.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html"><div class="ttname"><a href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00048">lbann_comm.hpp:48</a></div></div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
-<div class="ttc" id="classcudnn_1_1cudnn__pooling__layer_html"><div class="ttname"><a href="classcudnn_1_1cudnn__pooling__layer.html">cudnn::cudnn_pooling_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="cudnn__wrapper_8hpp_source.html#l00359">cudnn_wrapper.hpp:359</a></div></div>
+<div class="ttc" id="classcudnn_1_1cudnn__pooling__layer_html"><div class="ttname"><a href="classcudnn_1_1cudnn__pooling__layer.html">cudnn::cudnn_pooling_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="cudnn__wrapper_8hpp_source.html#l00360">cudnn_wrapper.hpp:360</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00042">lbann_base.hpp:42</a></div></div>
-<div class="ttc" id="classcudnn_1_1cudnn__manager_html"><div class="ttname"><a href="classcudnn_1_1cudnn__manager.html">cudnn::cudnn_manager</a></div><div class="ttdef"><b>Definition:</b> <a href="cudnn__wrapper_8hpp_source.html#l00357">cudnn_wrapper.hpp:357</a></div></div>
+<div class="ttc" id="classcudnn_1_1cudnn__manager_html"><div class="ttname"><a href="classcudnn_1_1cudnn__manager.html">cudnn::cudnn_manager</a></div><div class="ttdef"><b>Definition:</b> <a href="cudnn__wrapper_8hpp_source.html#l00358">cudnn_wrapper.hpp:358</a></div></div>
 <div class="ttc" id="lbann__exception_8hpp_html"><div class="ttname"><a href="lbann__exception_8hpp.html">lbann_exception.hpp</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html"><div class="ttname"><a href="lbann__base_8hpp.html">lbann_base.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -398,7 +399,7 @@ $(document).ready(function(){initNavTree('cudnn__wrapper_8hpp_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_eb8329679e609af11719ceffa3ff5139.html">include</a></li><li class="navelem"><a class="el" href="dir_ae19bb3c4b74b705a5918893bf9adbdd.html">lbann</a></li><li class="navelem"><a class="el" href="dir_54599f7ab652be0f2f38b8574c3c4860.html">utils</a></li><li class="navelem"><a class="el" href="cudnn__wrapper_8hpp.html">cudnn_wrapper.hpp</a></li>
-    <li class="footer">Generated on Tue Feb 21 2017 20:56:20 for LBANN by
+    <li class="footer">Generated on Tue Feb 21 2017 23:55:32 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

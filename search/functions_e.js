@@ -10,7 +10,6 @@ var searchData=
   ['performance_5fparams',['performance_params',['../classlbann__data_1_1LbannPB.html#accbb82e0a9efb7514700cbc5558e09f8',1,'lbann_data::LbannPB']]],
   ['performanceparams',['PerformanceParams',['../classlbann_1_1PerformanceParams.html#ae284808f500feb48cf3f0a1976e52e39',1,'lbann::PerformanceParams::PerformanceParams()'],['../classlbann__data_1_1PerformanceParams.html#a049fbe2a10a18d3f136feaab81444eb8',1,'lbann_data::PerformanceParams::PerformanceParams()'],['../classlbann__data_1_1PerformanceParams.html#a9d5f0290f2422c0a00ecbb6ebe69cea4',1,'lbann_data::PerformanceParams::PerformanceParams(const PerformanceParams &amp;from)']]],
   ['persist',['persist',['../classlbann_1_1persist.html#abf1454f4d5b61617ccfa60ba9989f1a3',1,'lbann::persist']]],
-  ['pin_5fmemory_5fblock',['pin_memory_block',['../lbann__layer__convolutional_8cpp.html#ad989ea067d15ae1ef48d40e9b3531712',1,'lbann_layer_convolutional.cpp']]],
   ['pin_5fmemory_5fblocks_5fbwd',['pin_memory_blocks_bwd',['../classlbann_1_1convolutional__layer.html#a07824976e1d99da875e0c96c1855fd91',1,'lbann::convolutional_layer']]],
   ['pin_5fmemory_5fblocks_5ffwd',['pin_memory_blocks_fwd',['../classlbann_1_1convolutional__layer.html#a9fc985265db92ca21de7463570b450a7',1,'lbann::convolutional_layer']]],
   ['pool_5fdims',['pool_dims',['../classlbann__data_1_1Pooling.html#aedac2b55bcabb3e193ed52f8a7e48fa4',1,'lbann_data::Pooling::pool_dims(int index) const '],['../classlbann__data_1_1Pooling.html#a6c15d2344a5d3da41d17cc1d0be9854b',1,'lbann_data::Pooling::pool_dims() const ']]],
