@@ -1,5 +1,9 @@
 var NAVTREEINDEX13 =
 {
+"classlbann__data_1_1TrainingParams.html#ae078ec17b762793d0af94b9206fdfc8b":[3,0,4,26,80],
+"classlbann__data_1_1TrainingParams.html#ae09b64fb661b9aef78744aed56eeaf6b":[3,0,4,26,196],
+"classlbann__data_1_1TrainingParams.html#ae0c86e733b854b1e265a44b5766999a4":[3,0,4,26,162],
+"classlbann__data_1_1TrainingParams.html#ae1b536a4fce8c482e3a1d5979b9b1d5f":[3,0,4,26,178],
 "classlbann__data_1_1TrainingParams.html#ae1caf3d1a341993a6a1f4ffc3ff1d0d4":[3,0,4,26,13],
 "classlbann__data_1_1TrainingParams.html#ae3cf00b829511d06173bea26258ee2d4":[3,0,4,26,221],
 "classlbann__data_1_1TrainingParams.html#ae6af89015af597119ecb002b194ead14":[3,0,4,26,76],
@@ -245,9 +249,5 @@ var NAVTREEINDEX13 =
 "functions_vars_a.html":[3,3,2,1],
 "functions_vars_b.html":[3,3,2,2],
 "functions_vars_c.html":[3,3,2,3],
-"functions_vars_d.html":[3,3,2,4],
-"functions_vars_e.html":[3,3,2,5],
-"functions_vars_f.html":[3,3,2,6],
-"functions_vars_g.html":[3,3,2,7],
-"functions_vars_h.html":[3,3,2,8]
+"functions_vars_d.html":[3,3,2,4]
 };
