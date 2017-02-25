@@ -26,6 +26,7 @@ var searchData=
   ['lbann_5fcomm',['lbann_comm',['../classlbann_1_1lbann__comm.html',1,'lbann']]],
   ['lbann_5fexception',['lbann_exception',['../classlbann_1_1lbann__exception.html',1,'lbann']]],
   ['lbann_5fimage_5fpreprocessor',['lbann_image_preprocessor',['../classlbann_1_1lbann__image__preprocessor.html',1,'lbann']]],
+  ['lbann_5fmodel_5fgreedy_5flayerwise_5fautoencoder_5fheader',['lbann_model_greedy_layerwise_autoencoder_header',['../structlbann__model__greedy__layerwise__autoencoder__header.html',1,'']]],
   ['lbann_5fmodel_5fheader',['lbann_model_header',['../structlbann__model__header.html',1,'']]],
   ['lbann_5fmodel_5fsequential_5fheader',['lbann_model_sequential_header',['../structlbann__model__sequential__header.html',1,'']]],
   ['lbann_5fproto',['lbann_proto',['../classlbann_1_1lbann__proto.html',1,'lbann']]],

@@ -1,5 +1,10 @@
 var NAVTREEINDEX16 =
 {
+"lbann__objective__fn_8hpp.html":[4,0,0,0,0,0,0,0,0,6,0],
+"lbann__objective__fn_8hpp.html#a84a6b5226a98ba2d0c65c3a2a9afb43c":[4,0,0,0,0,0,0,0,0,6,0,2],
+"lbann__objective__fn_8hpp.html#a84a6b5226a98ba2d0c65c3a2a9afb43ca89f72616e222520aaa3de894cdf951bd":[4,0,0,0,0,0,0,0,0,6,0,2,0],
+"lbann__objective__fn_8hpp.html#a84a6b5226a98ba2d0c65c3a2a9afb43cacb5e6aed7bcf8192b1e2be7ac124c307":[4,0,0,0,0,0,0,0,0,6,0,2,1],
+"lbann__objective__fn_8hpp.html#a84a6b5226a98ba2d0c65c3a2a9afb43caccc0377a8afbf50e7094f5c23a8af223":[4,0,0,0,0,0,0,0,0,6,0,2,2],
 "lbann__objective__fn_8hpp.html#a950e147ea22e4e42e3cf4ae1a5b08566":[4,0,0,0,0,0,0,0,0,6,0,3],
 "lbann__objective__fn_8hpp_source.html":[4,0,0,0,0,0,0,0,0,6,0],
 "lbann__objective__fn__categorical__cross__entropy_8cpp.html":[4,0,0,0,0,0,0,1,6,1],
@@ -139,16 +144,16 @@ var NAVTREEINDEX16 =
 "mpi.html#mpi_install_osx":[0,3,5,1],
 "namespaceEl.html":[3,0,2],
 "namespaceEl.html":[2,0,2],
-"namespaceanonymous__namespace_02lbann__random_8cpp_03.html":[3,0,0],
 "namespaceanonymous__namespace_02lbann__random_8cpp_03.html":[2,0,0],
+"namespaceanonymous__namespace_02lbann__random_8cpp_03.html":[3,0,0],
 "namespacecudnn.html":[2,0,1],
 "namespacecudnn.html":[3,0,1],
 "namespacelbann.html":[3,0,3],
 "namespacelbann.html":[2,0,3],
-"namespacelbann_1_1metrics.html":[3,0,3,0],
 "namespacelbann_1_1metrics.html":[2,0,3,0],
-"namespacelbann_1_1objective__functions.html":[2,0,3,1],
+"namespacelbann_1_1metrics.html":[3,0,3,0],
 "namespacelbann_1_1objective__functions.html":[3,0,3,1],
+"namespacelbann_1_1objective__functions.html":[2,0,3,1],
 "namespacelbann__data.html":[3,0,4],
 "namespacelbann__data.html":[2,0,4],
 "namespacelbann__data_1_1anonymous__namespace_02lbann_8pb_8cc_03.html":[3,0,4,0],
@@ -244,10 +249,5 @@ var NAVTREEINDEX16 =
 "struct__BOX3__UCHAR.html#aaa3ef23ef9e994288b07be14835e65bc":[3,0,21,5],
 "struct__BOX3__UCHAR.html#ab42630420e9dc2c220168a4c8286dd94":[3,0,21,3],
 "struct__BOX3__UCHAR.html#ac84615efec67fbe4268dd929c239702a":[3,0,21,2],
-"struct__BOX3__UCHAR.html#ad01b5973ff99809d0adb382235e5b671":[3,0,21,0],
-"struct__BOX3__USHORT.html":[3,0,22],
-"struct__BOX3__USHORT.html#a05678808cf5a5c0aa1549d793423d967":[3,0,22,0],
-"struct__BOX3__USHORT.html#a0dce36324552903638ca86e9cf2f7eff":[3,0,22,3],
-"struct__BOX3__USHORT.html#a161b56a50c02648bfbcffe955c3d0a36":[3,0,22,2],
-"struct__BOX3__USHORT.html#a1da65f8a806b8098369678cae52bd899":[3,0,22,4]
+"struct__BOX3__UCHAR.html#ad01b5973ff99809d0adb382235e5b671":[3,0,21,0]
 };

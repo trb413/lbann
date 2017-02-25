@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">68899a9-ci204769271</span>
+   &#160;<span id="projectnumber">3087802-ci205181904</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -533,8 +533,8 @@ Protected Attributes</h2></td></tr>
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;        <span class="keywordflow">if</span> (secs &gt; 0.0) {</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            bw = ((double) bytes_count) / (secs * 1024.0 * 1024.0);</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        }</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        printf(<span class="stringliteral">&quot;Checkpoint complete: epoch %d (%f secs, %llu bytes, %f MB/sec)\n&quot;</span>,</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;            epoch, secs, (<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span>) bytes_count, bw</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        printf(<span class="stringliteral">&quot;Checkpoint complete: Epoch=%d Step=%d (%f secs, %llu bytes, %f MB/sec)\n&quot;</span>,</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;            epoch, step, secs, (<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span>) bytes_count, bw</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        );</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        fflush(stdout);</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    }</div>
@@ -544,7 +544,7 @@ Protected Attributes</h2></td></tr>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;</div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1model_html_a41098c2b2b23e49cdbe8746ef7cac5c8"><div class="ttname"><a href="classlbann_1_1model.html#a41098c2b2b23e49cdbe8746ef7cac5c8">lbann::model::save_to_checkpoint_shared</a></div><div class="ttdeci">virtual bool save_to_checkpoint_shared(persist &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8cpp_source.html#l00507">lbann_model.cpp:507</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_a41098c2b2b23e49cdbe8746ef7cac5c8"><div class="ttname"><a href="classlbann_1_1model.html#a41098c2b2b23e49cdbe8746ef7cac5c8">lbann::model::save_to_checkpoint_shared</a></div><div class="ttdeci">virtual bool save_to_checkpoint_shared(persist &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8cpp_source.html#l00508">lbann_model.cpp:508</a></div></div>
 <div class="ttc" id="lbann__model_8cpp_html_afd4a8737c86299d582f89707eec8869a"><div class="ttname"><a href="lbann__model_8cpp.html#afd4a8737c86299d582f89707eec8869a">write_latest</a></div><div class="ttdeci">static bool write_latest(const char *dir, const char *name, int epoch, int train)</div><div class="ttdoc">Writes a &quot;latest&quot; file which records epoch number and sample offset for the most recent checkpoint...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8cpp_source.html#l00304">lbann_model.cpp:304</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_a3d3f29cd9ce38447407e8423bdcec0ba"><div class="ttname"><a href="classlbann_1_1model.html#a3d3f29cd9ce38447407e8423bdcec0ba">lbann::model::m_checkpoint_last</a></div><div class="ttdeci">double m_checkpoint_last</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00165">lbann_model.hpp:165</a></div></div>
 <div class="ttc" id="classlbann_1_1persist_html_a701c3fd5d5e383c9213499bd71b9cd22"><div class="ttname"><a href="classlbann_1_1persist.html#a701c3fd5d5e383c9213499bd71b9cd22">lbann::persist::get_bytes</a></div><div class="ttdeci">uint64_t get_bytes()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00064">lbann_persist.hpp:64</a></div></div>
@@ -1759,34 +1759,37 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Restore model by reading checkpoint from given file descriptor, return number of bytes read </p>
 
-<p>Reimplemented in <a class="el" href="classlbann_1_1sequential__model.html#afacd6b4f8ae045e6bc9ed2b8a2e1afa6">lbann::sequential_model</a>.</p>
+<p>Reimplemented in <a class="el" href="classlbann_1_1sequential__model.html#afacd6b4f8ae045e6bc9ed2b8a2e1afa6">lbann::sequential_model</a>, and <a class="el" href="classlbann_1_1greedy__layerwise__autoencoder.html#a05dce313fe4e587c6ca9088f78c6b84f">lbann::greedy_layerwise_autoencoder</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__model_8cpp_source.html#l00520">520</a> of file <a class="el" href="lbann__model_8cpp_source.html">lbann_model.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;{</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <span class="comment">// have rank 0 read the file</span></div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    <span class="comment">// read state from file</span></div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    <span class="keyword">struct </span><a class="code" href="structlbann__model__header.html">lbann_model_header</a> header;</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    <span class="keywordflow">if</span> (p.<a class="code" href="classlbann_1_1persist.html#aa99b1b0079bb10471472bf6f1d966deb">m_rank</a> == 0) {</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        p.<a class="code" href="classlbann_1_1persist.html#ace1ebb58e2570693cdce0ebd2817113b">read_uint32</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;execution_mode&quot;</span>,     &amp;header.execution_mode);</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        p.<a class="code" href="classlbann_1_1persist.html#ace1ebb58e2570693cdce0ebd2817113b">read_uint32</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;terminate_training&quot;</span>, &amp;header.terminate_training);</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        p.<a class="code" href="classlbann_1_1persist.html#aa6d996db3714a7ae055adac0d8e8ac63">read_uint64</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;current_epoch&quot;</span>,      &amp;header.current_epoch);</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;        p.<a class="code" href="classlbann_1_1persist.html#aa6d996db3714a7ae055adac0d8e8ac63">read_uint64</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;current_step&quot;</span>,       &amp;header.current_step);</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;    }</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    <span class="comment">// TODO: this assumes homogeneous processors</span></div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    <span class="comment">// broadcast state from rank 0</span></div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    MPI_Bcast(&amp;header, <span class="keyword">sizeof</span>(header), MPI_BYTE, 0, MPI_COMM_WORLD);</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    <span class="comment">// fill the structure to write to disk</span></div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    <a class="code" href="classlbann_1_1model.html#a2166e2aad256a335ace3bdcae5da2614">m_execution_mode</a>     = (<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a>) header.execution_mode;</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;    <a class="code" href="classlbann_1_1model.html#a639f9c3fcb81b905085f8b1932f8920f">m_terminate_training</a> = (<span class="keywordtype">bool</span>)           header.terminate_training;</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    <a class="code" href="classlbann_1_1model.html#a824cceedcc9c1ee11af6e0c3445a675c">m_current_epoch</a>      = (int64_t)        header.current_epoch;</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    <a class="code" href="classlbann_1_1model.html#acdae8d69df2aa452f341a0a458dbf021">m_current_step</a>       = (int64_t)        header.current_step;</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__model_8cpp_source.html#l00522">522</a> of file <a class="el" href="lbann__model_8cpp_source.html">lbann_model.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;{</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    <span class="comment">// have rank 0 read the file</span></div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    <span class="comment">// read state from file</span></div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    <span class="keyword">struct </span><a class="code" href="structlbann__model__header.html">lbann_model_header</a> header;</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    <span class="keywordflow">if</span> (p.<a class="code" href="classlbann_1_1persist.html#aa99b1b0079bb10471472bf6f1d966deb">m_rank</a> == 0) {</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        p.<a class="code" href="classlbann_1_1persist.html#ace1ebb58e2570693cdce0ebd2817113b">read_uint32</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;execution_mode&quot;</span>,     &amp;header.execution_mode);</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;        p.<a class="code" href="classlbann_1_1persist.html#ace1ebb58e2570693cdce0ebd2817113b">read_uint32</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;terminate_training&quot;</span>, &amp;header.terminate_training);</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        p.<a class="code" href="classlbann_1_1persist.html#aa6d996db3714a7ae055adac0d8e8ac63">read_uint64</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;current_epoch&quot;</span>,      &amp;header.current_epoch);</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;        p.<a class="code" href="classlbann_1_1persist.html#aa6d996db3714a7ae055adac0d8e8ac63">read_uint64</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;current_step&quot;</span>,       &amp;header.current_step);</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;        p.<a class="code" href="classlbann_1_1persist.html#ace1ebb58e2570693cdce0ebd2817113b">read_uint32</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;current_phase&quot;</span>,      &amp;header.current_phase);</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;    }</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;    <span class="comment">// TODO: this assumes homogeneous processors</span></div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    <span class="comment">// broadcast state from rank 0</span></div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    MPI_Bcast(&amp;header, <span class="keyword">sizeof</span>(header), MPI_BYTE, 0, MPI_COMM_WORLD);</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    <span class="comment">// set our member params from values read from disk</span></div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;    <a class="code" href="classlbann_1_1model.html#a2166e2aad256a335ace3bdcae5da2614">m_execution_mode</a>     = (<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a>) header.execution_mode;</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    <a class="code" href="classlbann_1_1model.html#a639f9c3fcb81b905085f8b1932f8920f">m_terminate_training</a> = (<span class="keywordtype">bool</span>)           header.terminate_training;</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    <a class="code" href="classlbann_1_1model.html#a824cceedcc9c1ee11af6e0c3445a675c">m_current_epoch</a>      = (int64_t)        header.current_epoch;</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    <a class="code" href="classlbann_1_1model.html#acdae8d69df2aa452f341a0a458dbf021">m_current_step</a>       = (int64_t)        header.current_step;</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    <a class="code" href="classlbann_1_1model.html#ab018cbcf5052fab3b5dc6a065d709c16">m_current_phase</a>      =                  header.current_phase;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;}</div>
 <div class="ttc" id="structlbann__model__header_html"><div class="ttname"><a href="structlbann__model__header.html">lbann_model_header</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8cpp_source.html#l00500">lbann_model.cpp:500</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a2781a159088df64ed7d47cc91c4dc0a8"><div class="ttname"><a href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a></div><div class="ttdeci">execution_mode</div><div class="ttdoc">Neural network execution mode. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00056">lbann_base.hpp:56</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_ab018cbcf5052fab3b5dc6a065d709c16"><div class="ttname"><a href="classlbann_1_1model.html#ab018cbcf5052fab3b5dc6a065d709c16">lbann::model::m_current_phase</a></div><div class="ttdeci">size_t m_current_phase</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00146">lbann_model.hpp:146</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_a2166e2aad256a335ace3bdcae5da2614"><div class="ttname"><a href="classlbann_1_1model.html#a2166e2aad256a335ace3bdcae5da2614">lbann::model::m_execution_mode</a></div><div class="ttdeci">execution_mode m_execution_mode</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00134">lbann_model.hpp:134</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_a639f9c3fcb81b905085f8b1932f8920f"><div class="ttname"><a href="classlbann_1_1model.html#a639f9c3fcb81b905085f8b1932f8920f">lbann::model::m_terminate_training</a></div><div class="ttdeci">bool m_terminate_training</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00136">lbann_model.hpp:136</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_a824cceedcc9c1ee11af6e0c3445a675c"><div class="ttname"><a href="classlbann_1_1model.html#a824cceedcc9c1ee11af6e0c3445a675c">lbann::model::m_current_epoch</a></div><div class="ttdeci">int64_t m_current_epoch</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00138">lbann_model.hpp:138</a></div></div>
@@ -1810,7 +1813,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1model_a2e02dda11636e015ea0c892ffa541881_icgraph.png" border="0" usemap="#classlbann_1_1model_a2e02dda11636e015ea0c892ffa541881_icgraph" alt=""/></div>
 <map name="classlbann_1_1model_a2e02dda11636e015ea0c892ffa541881_icgraph" id="classlbann_1_1model_a2e02dda11636e015ea0c892ffa541881_icgraph">
-<area shape="rect" id="node2" href="classlbann_1_1sequential__model.html#afacd6b4f8ae045e6bc9ed2b8a2e1afa6" title="lbann::sequential_model\l::load_from_checkpoint\l_shared" alt="" coords="224,4,387,60"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1sequential__model.html#afacd6b4f8ae045e6bc9ed2b8a2e1afa6" title="lbann::sequential_model\l::load_from_checkpoint\l_shared" alt="" coords="224,4,387,60"/><area shape="rect" id="node3" href="classlbann_1_1greedy__layerwise__autoencoder.html#a05dce313fe4e587c6ca9088f78c6b84f" title="Restore model from shared checkpoint. " alt="" coords="435,4,600,60"/></map>
 </div>
 </p>
 
@@ -1918,12 +1921,12 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* dir = <a class="code" href="classlbann_1_1model.html#a20635686b9d16b16a864cbbbda1a6b42">m_checkpoint_dir</a>.c_str();</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <span class="comment">// read epoch number from current file</span></div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <span class="keywordtype">int</span> epoch, <a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">train</a>;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;    <span class="keywordtype">int</span> epoch, step;</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1model.html#ac460ba72f8c4edbff8c871c433b03b22">m_rank</a> == 0) {</div>
-<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        <a class="code" href="lbann__model_8cpp.html#aa7e119633e5c00265844774013ffc4f0">read_latest</a>(dir, <span class="stringliteral">&quot;shared.last&quot;</span>, &amp;epoch, &amp;train);</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        <a class="code" href="lbann__model_8cpp.html#aa7e119633e5c00265844774013ffc4f0">read_latest</a>(dir, <span class="stringliteral">&quot;shared.last&quot;</span>, &amp;epoch, &amp;step);</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    }</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    MPI_Bcast(&amp;epoch, 1, MPI_INT, 0, MPI_COMM_WORLD);</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    MPI_Bcast(&amp;train, 1, MPI_INT, 0, MPI_COMM_WORLD);</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    MPI_Bcast(&amp;step,  1, MPI_INT, 0, MPI_COMM_WORLD);</div>
 <div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;</div>
 <div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="comment">// if we couldn&#39;t find the latest epoch, just return</span></div>
 <div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <span class="keywordflow">if</span> (epoch &lt; 0) {</div>
@@ -1943,7 +1946,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    <span class="comment">// get subdirectory for this epoch</span></div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    <span class="keywordtype">char</span> epochdir[1024];</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    sprintf(epochdir, <span class="stringliteral">&quot;%s/shared.epoch.%d.step.%d&quot;</span>, dir, epoch, train);</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    sprintf(epochdir, <span class="stringliteral">&quot;%s/shared.epoch.%d.step.%d&quot;</span>, dir, epoch, step);</div>
 <div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;</div>
 <div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    <span class="comment">// open our checkpoint</span></div>
 <div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    <a class="code" href="classlbann_1_1persist.html">lbann::persist</a> p;</div>
@@ -1965,22 +1968,21 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        <span class="keywordflow">if</span> (secs &gt; 0.0) {</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;            bw = ((double) bytes_count) / (secs * 1024.0 * 1024.0);</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        }</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        printf(<span class="stringliteral">&quot;Restart complete: %d, trainOffset %d (%f secs, %llu bytes, %f MB/sec)\n&quot;</span>,</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;            epoch, train, secs, (<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span>) bytes_count, bw</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        printf(<span class="stringliteral">&quot;Restart complete: Epoch=%d Step=%d (%f secs, %llu bytes, %f MB/sec)\n&quot;</span>,</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;            epoch, step, secs, (<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span>) bytes_count, bw</div>
 <div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;        );</div>
 <div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;        fflush(stdout);</div>
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    }</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1model_html_a2e02dda11636e015ea0c892ffa541881"><div class="ttname"><a href="classlbann_1_1model.html#a2e02dda11636e015ea0c892ffa541881">lbann::model::load_from_checkpoint_shared</a></div><div class="ttdeci">virtual bool load_from_checkpoint_shared(persist &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8cpp_source.html#l00520">lbann_model.cpp:520</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_a2e02dda11636e015ea0c892ffa541881"><div class="ttname"><a href="classlbann_1_1model.html#a2e02dda11636e015ea0c892ffa541881">lbann::model::load_from_checkpoint_shared</a></div><div class="ttdeci">virtual bool load_from_checkpoint_shared(persist &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8cpp_source.html#l00522">lbann_model.cpp:522</a></div></div>
 <div class="ttc" id="classlbann_1_1persist_html_a0edeadcf97c65980931511ca61e03465"><div class="ttname"><a href="classlbann_1_1persist.html#a0edeadcf97c65980931511ca61e03465">lbann::persist::close_restart</a></div><div class="ttdeci">void close_restart(void)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8cpp_source.html#l00519">lbann_persist.cpp:519</a></div></div>
 <div class="ttc" id="classlbann_1_1persist_html_a8b1d8388246d8b959a7e85940439a0e6"><div class="ttname"><a href="classlbann_1_1persist.html#a8b1d8388246d8b959a7e85940439a0e6">lbann::persist::open_restart</a></div><div class="ttdeci">void open_restart(const char *dir)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8cpp_source.html#l00491">lbann_persist.cpp:491</a></div></div>
 <div class="ttc" id="classlbann_1_1persist_html_a701c3fd5d5e383c9213499bd71b9cd22"><div class="ttname"><a href="classlbann_1_1persist.html#a701c3fd5d5e383c9213499bd71b9cd22">lbann::persist::get_bytes</a></div><div class="ttdeci">uint64_t get_bytes()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00064">lbann_persist.hpp:64</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_ac460ba72f8c4edbff8c871c433b03b22"><div class="ttname"><a href="classlbann_1_1model.html#ac460ba72f8c4edbff8c871c433b03b22">lbann::model::m_rank</a></div><div class="ttdeci">int m_rank</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00150">lbann_model.hpp:150</a></div></div>
 <div class="ttc" id="lbann__model_8cpp_html_aa7e119633e5c00265844774013ffc4f0"><div class="ttname"><a href="lbann__model_8cpp.html#aa7e119633e5c00265844774013ffc4f0">read_latest</a></div><div class="ttdeci">static bool read_latest(const char *dir, const char *name, int *epochLast, int *trainLast)</div><div class="ttdoc">Reads the &quot;latest&quot; file and returns the epoch number and sample offset for most recent checkpoint...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8cpp_source.html#l00324">lbann_model.cpp:324</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_a20635686b9d16b16a864cbbbda1a6b42"><div class="ttname"><a href="classlbann_1_1model.html#a20635686b9d16b16a864cbbbda1a6b42">lbann::model::m_checkpoint_dir</a></div><div class="ttdeci">std::string m_checkpoint_dir</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00157">lbann_model.hpp:157</a></div></div>
-<div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">lbann::persist_type::train</a></div></div>
 <div class="ttc" id="classlbann_1_1persist_html"><div class="ttname"><a href="classlbann_1_1persist.html">lbann::persist</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00042">lbann_persist.hpp:42</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -2017,21 +2019,23 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Checkpoint model to given file descriptor, return number of bytes written </p>
 
-<p>Reimplemented in <a class="el" href="classlbann_1_1sequential__model.html#abd91f8469ac7a5d73df540d12936cf4a">lbann::sequential_model</a>.</p>
+<p>Reimplemented in <a class="el" href="classlbann_1_1sequential__model.html#abd91f8469ac7a5d73df540d12936cf4a">lbann::sequential_model</a>, and <a class="el" href="classlbann_1_1greedy__layerwise__autoencoder.html#ae0ec210d3ecf58caa0d8d80e6768ba1b">lbann::greedy_layerwise_autoencoder</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__model_8cpp_source.html#l00507">507</a> of file <a class="el" href="lbann__model_8cpp_source.html">lbann_model.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;{</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    <span class="comment">// write out fields we need to save for model</span></div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    <span class="keywordflow">if</span> (p.<a class="code" href="classlbann_1_1persist.html#aa99b1b0079bb10471472bf6f1d966deb">m_rank</a> == 0) {</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        p.<a class="code" href="classlbann_1_1persist.html#a742334568de0aca958dbaf7bbabd3cba">write_uint32</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;execution_mode&quot;</span>,     (uint32_t) <a class="code" href="classlbann_1_1model.html#a2166e2aad256a335ace3bdcae5da2614">m_execution_mode</a>);</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        p.<a class="code" href="classlbann_1_1persist.html#a742334568de0aca958dbaf7bbabd3cba">write_uint32</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;terminate_training&quot;</span>, (uint32_t) <a class="code" href="classlbann_1_1model.html#a639f9c3fcb81b905085f8b1932f8920f">m_terminate_training</a>);</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        p.<a class="code" href="classlbann_1_1persist.html#aced95e3bc711276b072af97b65ef9fc1">write_uint64</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;current_epoch&quot;</span>,      (uint64_t) <a class="code" href="classlbann_1_1model.html#a824cceedcc9c1ee11af6e0c3445a675c">m_current_epoch</a>);</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        p.<a class="code" href="classlbann_1_1persist.html#aced95e3bc711276b072af97b65ef9fc1">write_uint64</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;current_step&quot;</span>,       (uint64_t) <a class="code" href="classlbann_1_1model.html#acdae8d69df2aa452f341a0a458dbf021">m_current_step</a>);</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    }</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    </div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__model_8cpp_source.html#l00508">508</a> of file <a class="el" href="lbann__model_8cpp_source.html">lbann_model.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;{</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    <span class="comment">// write out fields we need to save for model</span></div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    <span class="keywordflow">if</span> (p.<a class="code" href="classlbann_1_1persist.html#aa99b1b0079bb10471472bf6f1d966deb">m_rank</a> == 0) {</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        p.<a class="code" href="classlbann_1_1persist.html#a742334568de0aca958dbaf7bbabd3cba">write_uint32</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;execution_mode&quot;</span>,     (uint32_t) <a class="code" href="classlbann_1_1model.html#a2166e2aad256a335ace3bdcae5da2614">m_execution_mode</a>);</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        p.<a class="code" href="classlbann_1_1persist.html#a742334568de0aca958dbaf7bbabd3cba">write_uint32</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;terminate_training&quot;</span>, (uint32_t) <a class="code" href="classlbann_1_1model.html#a639f9c3fcb81b905085f8b1932f8920f">m_terminate_training</a>);</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        p.<a class="code" href="classlbann_1_1persist.html#aced95e3bc711276b072af97b65ef9fc1">write_uint64</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;current_epoch&quot;</span>,      (uint64_t) <a class="code" href="classlbann_1_1model.html#a824cceedcc9c1ee11af6e0c3445a675c">m_current_epoch</a>);</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        p.<a class="code" href="classlbann_1_1persist.html#aced95e3bc711276b072af97b65ef9fc1">write_uint64</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;current_step&quot;</span>,       (uint64_t) <a class="code" href="classlbann_1_1model.html#acdae8d69df2aa452f341a0a458dbf021">m_current_step</a>);</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;        p.<a class="code" href="classlbann_1_1persist.html#a742334568de0aca958dbaf7bbabd3cba">write_uint32</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;current_phase&quot;</span>,      (uint32_t) <a class="code" href="classlbann_1_1model.html#ab018cbcf5052fab3b5dc6a065d709c16">m_current_phase</a>);</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    }</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    </div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1persist_html_aced95e3bc711276b072af97b65ef9fc1"><div class="ttname"><a href="classlbann_1_1persist.html#aced95e3bc711276b072af97b65ef9fc1">lbann::persist::write_uint64</a></div><div class="ttdeci">bool write_uint64(persist_type type, const char *name, uint64_t val)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8cpp_source.html#l00617">lbann_persist.cpp:617</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_ab018cbcf5052fab3b5dc6a065d709c16"><div class="ttname"><a href="classlbann_1_1model.html#ab018cbcf5052fab3b5dc6a065d709c16">lbann::model::m_current_phase</a></div><div class="ttdeci">size_t m_current_phase</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00146">lbann_model.hpp:146</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_a2166e2aad256a335ace3bdcae5da2614"><div class="ttname"><a href="classlbann_1_1model.html#a2166e2aad256a335ace3bdcae5da2614">lbann::model::m_execution_mode</a></div><div class="ttdeci">execution_mode m_execution_mode</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00134">lbann_model.hpp:134</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_a639f9c3fcb81b905085f8b1932f8920f"><div class="ttname"><a href="classlbann_1_1model.html#a639f9c3fcb81b905085f8b1932f8920f">lbann::model::m_terminate_training</a></div><div class="ttdeci">bool m_terminate_training</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00136">lbann_model.hpp:136</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_a824cceedcc9c1ee11af6e0c3445a675c"><div class="ttname"><a href="classlbann_1_1model.html#a824cceedcc9c1ee11af6e0c3445a675c">lbann::model::m_current_epoch</a></div><div class="ttdeci">int64_t m_current_epoch</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00138">lbann_model.hpp:138</a></div></div>
@@ -2054,7 +2058,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1model_a41098c2b2b23e49cdbe8746ef7cac5c8_icgraph.png" border="0" usemap="#classlbann_1_1model_a41098c2b2b23e49cdbe8746ef7cac5c8_icgraph" alt=""/></div>
 <map name="classlbann_1_1model_a41098c2b2b23e49cdbe8746ef7cac5c8_icgraph" id="classlbann_1_1model_a41098c2b2b23e49cdbe8746ef7cac5c8_icgraph">
-<area shape="rect" id="node2" href="classlbann_1_1sequential__model.html#abd91f8469ac7a5d73df540d12936cf4a" title="lbann::sequential_model\l::save_to_checkpoint_shared" alt="" coords="211,5,403,46"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1sequential__model.html#abd91f8469ac7a5d73df540d12936cf4a" title="lbann::sequential_model\l::save_to_checkpoint_shared" alt="" coords="211,11,403,53"/><area shape="rect" id="node3" href="classlbann_1_1greedy__layerwise__autoencoder.html#ae0ec210d3ecf58caa0d8d80e6768ba1b" title="Save model to shared checkpoint. " alt="" coords="451,4,613,60"/></map>
 </div>
 </p>
 
@@ -2320,7 +2324,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Produce summary information (if any). </p>
 
-<p>Reimplemented in <a class="el" href="classlbann_1_1stacked__autoencoder.html#a6ca4c1b576554d3a55c2139b2ec32388">lbann::stacked_autoencoder</a>, <a class="el" href="classlbann_1_1deep__neural__network.html#a713ddf360a11860e7d46a689135d7f5f">lbann::deep_neural_network</a>, and <a class="el" href="classlbann_1_1greedy__layerwise__autoencoder.html#a90cb5fd376e06a0cd37b3e0710824c15">lbann::greedy_layerwise_autoencoder</a>.</p>
+<p>Reimplemented in <a class="el" href="classlbann_1_1stacked__autoencoder.html#a6ca4c1b576554d3a55c2139b2ec32388">lbann::stacked_autoencoder</a>, <a class="el" href="classlbann_1_1greedy__layerwise__autoencoder.html#a90cb5fd376e06a0cd37b3e0710824c15">lbann::greedy_layerwise_autoencoder</a>, and <a class="el" href="classlbann_1_1deep__neural__network.html#a713ddf360a11860e7d46a689135d7f5f">lbann::deep_neural_network</a>.</p>
 
 <p>Definition at line <a class="el" href="lbann__model_8hpp_source.html#l00087">87</a> of file <a class="el" href="lbann__model_8hpp_source.html">lbann_model.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{}</div>
@@ -2766,7 +2770,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1model.html">model</a></li>
-    <li class="footer">Generated on Fri Feb 24 2017 02:40:34 for LBANN by
+    <li class="footer">Generated on Sat Feb 25 2017 01:57:46 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -189,6 +189,7 @@ var hierarchy =
     [ "lbann::TrainingParams", "classlbann_1_1TrainingParams.html", null ],
     [ "lbann_checkpoint", "structlbann__checkpoint.html", null ],
     [ "lbann_data::StaticDescriptorInitializer_lbann_2eproto", "structlbann__data_1_1StaticDescriptorInitializer__lbann__2eproto.html", null ],
+    [ "lbann_model_greedy_layerwise_autoencoder_header", "structlbann__model__greedy__layerwise__autoencoder__header.html", null ],
     [ "lbann_model_header", "structlbann__model__header.html", null ],
     [ "lbann_model_sequential_header", "structlbann__model__sequential__header.html", null ],
     [ "exception", null, [

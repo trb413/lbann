@@ -14,6 +14,7 @@ var searchData=
   ['performance_5fparams_5f',['performance_params_',['../classlbann__data_1_1LbannPB.html#a05eb349980d1d5744c470e42c58e8d67',1,'lbann_data::LbannPB']]],
   ['performanceparams_5fdescriptor_5f',['PerformanceParams_descriptor_',['../namespacelbann__data_1_1anonymous__namespace_02lbann_8pb_8cc_03.html#a3a1d2e8cf05c576cbcebd19749d90762',1,'lbann_data::anonymous_namespace{lbann.pb.cc}']]],
   ['performanceparams_5freflection_5f',['PerformanceParams_reflection_',['../namespacelbann__data_1_1anonymous__namespace_02lbann_8pb_8cc_03.html#aaf0b609a5b3e333a4bd2ec0cb94351b3',1,'lbann_data::anonymous_namespace{lbann.pb.cc}']]],
+  ['phase_5findex',['phase_index',['../structlbann__model__greedy__layerwise__autoencoder__header.html#a88d03a8be5647df01c3fbbe7f7d5789a',1,'lbann_model_greedy_layerwise_autoencoder_header']]],
   ['pi',['pi',['../classlbann_1_1lbann__image__preprocessor.html#a5faf7259822ae5ae84ed9a6e0f24e3bb',1,'lbann::lbann_image_preprocessor']]],
   ['pool_5fdims_5f',['pool_dims_',['../classlbann__data_1_1Pooling.html#a8d839d2aa67fd6f13681bfd31a0b5fe4',1,'lbann_data::Pooling']]],
   ['pool_5fmode_5f',['pool_mode_',['../classlbann__data_1_1Pooling.html#a9b5c874040c5eba200623156f165483d',1,'lbann_data::Pooling']]],

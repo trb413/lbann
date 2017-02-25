@@ -44,6 +44,7 @@ var searchData=
   ['m_5ffilter_5fdims',['m_filter_dims',['../classlbann_1_1convolutional__layer.html#a94d0b9bf396c2539b230ad24aa460769',1,'lbann::convolutional_layer']]],
   ['m_5ffilter_5fsize',['m_filter_size',['../classlbann_1_1convolutional__layer.html#ad31a332b86fdf944c6dbb12a19ccfcea',1,'lbann::convolutional_layer']]],
   ['m_5ffor_5fregression',['m_for_regression',['../classlbann_1_1io__layer.html#a8d722320c4a9c9b5e59b55938e3ed667',1,'lbann::io_layer']]],
+  ['m_5fhave_5fmirror',['m_have_mirror',['../classlbann_1_1greedy__layerwise__autoencoder.html#a4848353f20ff957a9e0bd7c8d374644e',1,'lbann::greedy_layerwise_autoencoder']]],
   ['m_5fhorizontal_5fflip',['m_horizontal_flip',['../classlbann_1_1lbann__image__preprocessor.html#a032397d6c642dccd43f4c38393f5d2c1',1,'lbann::lbann_image_preprocessor']]],
   ['m_5fhorizontal_5fshift',['m_horizontal_shift',['../classlbann_1_1lbann__image__preprocessor.html#a636f59ffe470f996677601df6179bc41',1,'lbann::lbann_image_preprocessor']]],
   ['m_5fimage_5fdata',['m_image_data',['../classlbann_1_1DataReader__MNIST.html#afd14c7eb891918795324985fb4585828',1,'lbann::DataReader_MNIST']]],

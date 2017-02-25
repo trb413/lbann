@@ -47,6 +47,7 @@ var annotated =
     [ "dataset_header", "structdataset__header.html", "structdataset__header" ],
     [ "layer_header", "structlayer__header.html", "structlayer__header" ],
     [ "lbann_checkpoint", "structlbann__checkpoint.html", "structlbann__checkpoint" ],
+    [ "lbann_model_greedy_layerwise_autoencoder_header", "structlbann__model__greedy__layerwise__autoencoder__header.html", "structlbann__model__greedy__layerwise__autoencoder__header" ],
     [ "lbann_model_header", "structlbann__model__header.html", "structlbann__model__header" ],
     [ "lbann_model_sequential_header", "structlbann__model__sequential__header.html", "structlbann__model__sequential__header" ]
 ];

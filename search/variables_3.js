@@ -19,6 +19,7 @@ var searchData=
   ['cur_5frho1',['cur_rho1',['../classlbann_1_1Adam.html#a40fef245b23efc3aca56ef90eaec5f14',1,'lbann::Adam']]],
   ['cur_5frho2',['cur_rho2',['../classlbann_1_1Adam.html#aa929f69924abe7bb26d542d4110a2a08',1,'lbann::Adam']]],
   ['current_5fepoch',['current_epoch',['../structlbann__model__header.html#ae9261039775c8b0f24f9c47c10f09f3e',1,'lbann_model_header']]],
+  ['current_5fphase',['current_phase',['../structlbann__model__header.html#abc0a59c9871095d2a6dec05a82fafc1e',1,'lbann_model_header']]],
   ['current_5fstep',['current_step',['../structlbann__model__header.html#a35c523d94beb5593af480ae8ec3996bb',1,'lbann_model_header']]],
   ['currentpos',['CurrentPos',['../classlbann_1_1DataReader.html#a50648e62f6eafb634aa1faae9e3c8cac',1,'lbann::DataReader']]],
   ['custom_5fschedule',['custom_schedule',['../classlbann_1_1lbann__callback__custom__learning__rate.html#ac6b8d106a3b4c77bf50ae28ddfb53a31',1,'lbann::lbann_callback_custom_learning_rate']]]

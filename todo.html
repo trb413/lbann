@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">68899a9-ci204769271</span>
+   &#160;<span id="projectnumber">3087802-ci205181904</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <dd>Write a more efficient implementation  </dd>
 <dt><a class="anchor" id="_todo000022"></a>Member <a class="el" href="classlbann_1_1deep__neural__network.html#a4095db900926a90d40020b5598ca5215">lbann::deep_neural_network::check_gradient</a>  (CircMat &amp;X, CircMat &amp;Y, double *gradient_errors)</dt>
 <dd>This is very old and probably broken  </dd>
-<dt><a class="anchor" id="_todo000032"></a>Member <a class="el" href="namespacelbann.html#acef152f20e422b3aea1a3c1691a533ac">lbann::init_random</a>  (int seed, lbann_comm *comm)</dt>
+<dt><a class="anchor" id="_todo000030"></a>Member <a class="el" href="namespacelbann.html#acef152f20e422b3aea1a3c1691a533ac">lbann::init_random</a>  (int seed, lbann_comm *comm)</dt>
 <dd>Support saving/restoring the generator's state. This is directly supported via the &gt;&gt; and &lt;&lt; operators on the generator (reading/writing from/to a stream).  </dd>
 <dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="classlbann_1_1io__layer.html#abe71d3ff37e3a3ddbb470347458a07ec">lbann::io_layer::get_linearized_data_size</a>  ()</dt>
 <dd>NumNeurons should be hidden inside of an accessor function  </dd>
@@ -123,23 +123,19 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <dd>Write a more efficient implementation  </dd>
 <dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="classlbann_1_1pooling__layer.html#a2d9efa294d3c3d0319e05666f73cd545">lbann::pooling_layer::fp_linearity</a>  ()</dt>
 <dd>Write a more efficient implementation  </dd>
-<dt><a class="anchor" id="_todo000029"></a>Member <a class="el" href="classlbann_1_1sequential__model.html#a2341499470419ffae075506df7983c93">lbann::sequential_model::add</a>  (Layer *new_layer)</dt>
+<dt><a class="anchor" id="_todo000027"></a>Member <a class="el" href="classlbann_1_1sequential__model.html#a2341499470419ffae075506df7983c93">lbann::sequential_model::add</a>  (Layer *new_layer)</dt>
 <dd>Consider removing this function. The destructor deallocates all layers, so we might run into problems if a layer is deallocated externally.  </dd>
-<dt><a class="anchor" id="_todo000031"></a>Member <a class="el" href="classlbann_1_1sequential__model.html#ae992c83737819d406e1311ebe24e07f0">lbann::sequential_model::insert</a>  (int index, Layer *new_layer)</dt>
+<dt><a class="anchor" id="_todo000029"></a>Member <a class="el" href="classlbann_1_1sequential__model.html#ae992c83737819d406e1311ebe24e07f0">lbann::sequential_model::insert</a>  (int index, Layer *new_layer)</dt>
 <dd><p class="startdd">This will mess up layer indices. </p>
 <p class="enddd">Consider removing this function. The destructor deallocates all layers, so we might run into problems if a layer is deallocated externally.  </p>
 </dd>
 <dt><a class="anchor" id="_todo000026"></a>Member <a class="el" href="classlbann_1_1sequential__model.html#a66da0af31609146827c238fca77e194d">lbann::sequential_model::load_from_checkpoint</a>  (int fd, const char *filename, uint64_t *bytes)</dt>
 <dd>This is old and likely broken  </dd>
-<dt><a class="anchor" id="_todo000028"></a>Member <a class="el" href="classlbann_1_1sequential__model.html#afacd6b4f8ae045e6bc9ed2b8a2e1afa6">lbann::sequential_model::load_from_checkpoint_shared</a>  (persist &amp;p)</dt>
-<dd>This is old and likely broken  </dd>
 <dt><a class="anchor" id="_todo000024"></a>Member <a class="el" href="classlbann_1_1sequential__model.html#a7b841c06d54724caecbd2eee309af1c3">lbann::sequential_model::load_from_file</a>  (const std::string file_dir)</dt>
 <dd>This is old and likely broken  </dd>
-<dt><a class="anchor" id="_todo000030"></a>Member <a class="el" href="classlbann_1_1sequential__model.html#a65505f140bd9ffa43af0ead3b911ae52">lbann::sequential_model::remove</a>  (int index)</dt>
+<dt><a class="anchor" id="_todo000028"></a>Member <a class="el" href="classlbann_1_1sequential__model.html#a65505f140bd9ffa43af0ead3b911ae52">lbann::sequential_model::remove</a>  (int index)</dt>
 <dd>This will mess up layer indices  </dd>
 <dt><a class="anchor" id="_todo000025"></a>Member <a class="el" href="classlbann_1_1sequential__model.html#aa249267bd3e129b480c4615f51bfaed5">lbann::sequential_model::save_to_checkpoint</a>  (int fd, const char *filename, uint64_t *bytes)</dt>
-<dd>This is old and likely broken  </dd>
-<dt><a class="anchor" id="_todo000027"></a>Member <a class="el" href="classlbann_1_1sequential__model.html#abd91f8469ac7a5d73df540d12936cf4a">lbann::sequential_model::save_to_checkpoint_shared</a>  (persist &amp;p)</dt>
 <dd>This is old and likely broken  </dd>
 <dt><a class="anchor" id="_todo000023"></a>Member <a class="el" href="classlbann_1_1sequential__model.html#a10e9245e9c58c4b3c3c365f0b65e92b8">lbann::sequential_model::save_to_file</a>  (const std::string file_dir)</dt>
 <dd>This is old and likely broken  </dd>
@@ -165,7 +161,7 @@ $(document).ready(function(){initNavTree('todo.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Feb 24 2017 02:40:33 for LBANN by
+    <li class="footer">Generated on Sat Feb 25 2017 01:57:45 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
