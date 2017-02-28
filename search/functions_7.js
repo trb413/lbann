@@ -6,6 +6,8 @@ var searchData=
   ['get',['get',['../classlbann_1_1lbann__proto.html#ae7b8dcc0a2cbc22839af04367801f777',1,'lbann::lbann_proto']]],
   ['get_5factivation_5ftype',['get_activation_type',['../lbann__proto_8cpp.html#a0ffb574eeafb19165951860c49172488',1,'lbann_proto.cpp']]],
   ['get_5factivations',['get_activations',['../classlbann_1_1Layer.html#a6ae06b86f19fbfacdc7b4ec171a793d3',1,'lbann::Layer']]],
+  ['get_5fadaptive_5fquantization_5fcopy_5fthreads',['get_adaptive_quantization_copy_threads',['../classlbann_1_1lbann__quantizer.html#a22b898932caed41ccf24abcb67c00ba1',1,'lbann::lbann_quantizer']]],
+  ['get_5fadaptive_5fquantization_5fthreads',['get_adaptive_quantization_threads',['../classlbann_1_1lbann__quantizer.html#aaa0c20f755437130172c40ca8e95bc3f',1,'lbann::lbann_quantizer']]],
   ['get_5fag_5fbytes_5freceived',['get_ag_bytes_received',['../classlbann_1_1lbann__quantizer.html#a9befb796840b21d1238e8169421005f9',1,'lbann::lbann_quantizer']]],
   ['get_5fag_5fbytes_5fsent',['get_ag_bytes_sent',['../classlbann_1_1lbann__quantizer.html#a6c64c6960852ca25f81ba7bc80c05d2d',1,'lbann::lbann_quantizer']]],
   ['get_5fag_5frecv_5fbuf_5ftime',['get_ag_recv_buf_time',['../classlbann_1_1lbann__quantizer.html#a54a63a467a16d24c12010edcf8b28f03',1,'lbann::lbann_quantizer']]],

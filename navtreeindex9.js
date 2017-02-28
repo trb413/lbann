@@ -1,5 +1,7 @@
 var NAVTREEINDEX9 =
 {
+"classlbann__data_1_1LbannPB.html#a2d81d533d6b3b366af530612b01e7a6d":[3,0,4,2,46],
+"classlbann__data_1_1LbannPB.html#a31e28c04a51cee06994d426fd4f04c27":[3,0,4,2,7],
 "classlbann__data_1_1LbannPB.html#a32c7f0469b2312e7d79e5ec83906b997":[3,0,4,2,87],
 "classlbann__data_1_1LbannPB.html#a33568bc990e990f1701fe046071cc90e":[3,0,4,2,93],
 "classlbann__data_1_1LbannPB.html#a35a5b38712f67cdc6a0997d42b93d16e":[3,0,4,2,77],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "classlbann__data_1_1NetworkParams.html#abfe72d2d54397b25bcad562f0568d4d0":[3,0,4,24,6],
 "classlbann__data_1_1NetworkParams.html#ac26e9b94fe555465e0df83824ab7615b":[3,0,4,24,9],
 "classlbann__data_1_1NetworkParams.html#ac9e77eba46cf2510d31eddf1995fb132":[3,0,4,24,26],
-"classlbann__data_1_1NetworkParams.html#ae144f82fd223166b197077557df117c3":[3,0,4,24,22],
-"classlbann__data_1_1NetworkParams.html#ae6873d58a3e61603e157337d2d7f5371":[3,0,4,24,16],
-"classlbann__data_1_1NetworkParams.html#af2d8aac60001aa45c0f9772d6335745a":[3,0,4,24,18]
+"classlbann__data_1_1NetworkParams.html#ae144f82fd223166b197077557df117c3":[3,0,4,24,22]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"classlbann_1_1objective__functions_1_1statistics.html#ae09872294228744a19efd9510c7503a9":[3,0,3,1,0,0],
+"classlbann_1_1persist.html":[3,0,3,28],
 "classlbann_1_1persist.html#a0bd4fd42d9858a5210c8034dfbb666d4":[3,0,3,28,22],
 "classlbann_1_1persist.html#a0edeadcf97c65980931511ca61e03465":[3,0,3,28,3],
 "classlbann_1_1persist.html#a17c2b08ec1815aba6d3eae6502397bb1":[3,0,3,28,23],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "classlbann__data_1_1Convolution.html#a7ab6a895f70bf43004069dbb18fc4f51":[3,0,4,17,102],
 "classlbann__data_1_1Convolution.html#a7b278f7d73adbaa5694d7b081c6411e1":[3,0,4,17,56],
 "classlbann__data_1_1Convolution.html#a7b80c733216384d167e3e613e830bae8":[3,0,4,17,115],
-"classlbann__data_1_1Convolution.html#a7e02355221b9dfd0b8f4f4c0d8415d16":[3,0,4,17,90],
-"classlbann__data_1_1Convolution.html#a7ed1d5fa98f3299783922ae57e5b71d5":[3,0,4,17,83],
-"classlbann__data_1_1Convolution.html#a82c4b536e73651d620fc72c454b201f3":[3,0,4,17,77]
+"classlbann__data_1_1Convolution.html#a7e02355221b9dfd0b8f4f4c0d8415d16":[3,0,4,17,90]
 };

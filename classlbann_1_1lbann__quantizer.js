@@ -20,6 +20,8 @@ var classlbann_1_1lbann__quantizer =
     [ "col_reconstruction", "classlbann_1_1lbann__quantizer.html#aa58689369b5b3898b75b7b31ca574b38", null ],
     [ "compress_thresholds", "classlbann_1_1lbann__quantizer.html#ad8d07c3ffddff08800887dff354ffed2", null ],
     [ "compress_thresholds", "classlbann_1_1lbann__quantizer.html#ae2b9b9ef877eaa51a1320030cc97f200", null ],
+    [ "get_adaptive_quantization_copy_threads", "classlbann_1_1lbann__quantizer.html#a22b898932caed41ccf24abcb67c00ba1", null ],
+    [ "get_adaptive_quantization_threads", "classlbann_1_1lbann__quantizer.html#aaa0c20f755437130172c40ca8e95bc3f", null ],
     [ "get_ag_bytes_received", "classlbann_1_1lbann__quantizer.html#a9befb796840b21d1238e8169421005f9", null ],
     [ "get_ag_bytes_sent", "classlbann_1_1lbann__quantizer.html#a6c64c6960852ca25f81ba7bc80c05d2d", null ],
     [ "get_ag_recv_buf_time", "classlbann_1_1lbann__quantizer.html#a54a63a467a16d24c12010edcf8b28f03", null ],

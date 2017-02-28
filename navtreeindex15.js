@@ -1,5 +1,7 @@
 var NAVTREEINDEX15 =
 {
+"lbann__base_8hpp_source.html":[4,0,0,0,0,0,0,0,0,13],
+"lbann__base__factory_8hpp.html":[4,0,0,0,0,0,0,0,0,14],
 "lbann__base__factory_8hpp_source.html":[4,0,0,0,0,0,0,0,0,14],
 "lbann__callback_8hpp.html":[4,0,0,0,0,0,0,0,0,0,0],
 "lbann__callback_8hpp_source.html":[4,0,0,0,0,0,0,0,0,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX15 =
 "lbann__model__stacked__autoencoder_8cpp.html":[4,0,0,0,0,0,0,1,5,4],
 "lbann__model__stacked__autoencoder_8cpp_source.html":[4,0,0,0,0,0,0,1,5,4],
 "lbann__model__stacked__autoencoder_8hpp.html":[4,0,0,0,0,0,0,0,0,5,4],
-"lbann__model__stacked__autoencoder_8hpp_source.html":[4,0,0,0,0,0,0,0,0,5,4],
-"lbann__objective__fn_8cpp.html":[4,0,0,0,0,0,0,1,6,0],
-"lbann__objective__fn_8cpp_source.html":[4,0,0,0,0,0,0,1,6,0]
+"lbann__model__stacked__autoencoder_8hpp_source.html":[4,0,0,0,0,0,0,0,0,5,4]
 };
