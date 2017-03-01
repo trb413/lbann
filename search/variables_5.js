@@ -9,6 +9,5 @@ var searchData=
   ['epochcount',['EpochCount',['../classlbann_1_1TrainingParams.html#a0cdfed8e8122f87b2795fb590b821441',1,'lbann::TrainingParams']]],
   ['epochstart',['EpochStart',['../classlbann_1_1TrainingParams.html#a2a557658b2a1e66be26d97cfce789635',1,'lbann::TrainingParams']]],
   ['eps',['eps',['../classlbann_1_1Adam.html#a9bd898dc5051a73574473f2bbfa91aca',1,'lbann::Adam::eps()'],['../classlbann_1_1Adam__factory.html#a4b677415a8237dfea3a83eed60ad223b',1,'lbann::Adam_factory::eps()']]],
-  ['epsilon',['epsilon',['../classlbann_1_1Adagrad.html#a18fea4f857fd5ba3dc13c0b4325028c5',1,'lbann::Adagrad::epsilon()'],['../classlbann_1_1Adagrad__factory.html#ad659e2179e72cd3ceee6edc99fb74c62',1,'lbann::Adagrad_factory::epsilon()'],['../classlbann_1_1RMSprop.html#a474cd9f246577b94a6b8a07c6f82ae08',1,'lbann::RMSprop::epsilon()'],['../classlbann_1_1RMSprop__factory.html#ac341bc8110ac1e2c2b3c3144dd5b8d9e',1,'lbann::RMSprop_factory::epsilon()']]],
   ['execution_5fmode',['execution_mode',['../structlbann__model__header.html#aa3921e546a7235875456e55b74c430f7',1,'lbann_model_header']]]
 ];

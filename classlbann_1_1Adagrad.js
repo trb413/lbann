@@ -1,6 +1,6 @@
 var classlbann_1_1Adagrad =
 [
-    [ "Adagrad", "classlbann_1_1Adagrad.html#ad8c0a137a72b44271a53df30581acda9", null ],
+    [ "Adagrad", "classlbann_1_1Adagrad.html#a5cf6582fca9b7c09fa5c66f7e307fc50", null ],
     [ "~Adagrad", "classlbann_1_1Adagrad.html#aa69660f35a03f5181211f8b761b25d0a", null ],
     [ "_sq", "classlbann_1_1Adagrad.html#afa4ef22515781d67e91def28edc5f22f", null ],
     [ "_sqrt", "classlbann_1_1Adagrad.html#a96be06f24e47865c3cb9c89c6ba2b065", null ],
@@ -13,7 +13,6 @@ var classlbann_1_1Adagrad =
     [ "setup", "classlbann_1_1Adagrad.html#aa2a53383b4b520018bdd07e359da7e60", null ],
     [ "update_weight_bias_matrix", "classlbann_1_1Adagrad.html#aff3cdabac05cb2ee74135e06ad5bf96d", null ],
     [ "comm", "classlbann_1_1Adagrad.html#a573de8c86d2b295aabaa8e07358e975c", null ],
-    [ "epsilon", "classlbann_1_1Adagrad.html#a18fea4f857fd5ba3dc13c0b4325028c5", null ],
     [ "lr", "classlbann_1_1Adagrad.html#ac95a02f7f992694bf3453e77f0c62309", null ],
     [ "WB_D_Cache", "classlbann_1_1Adagrad.html#a27f7525d1a6ba69542c529b05c2e6718", null ],
     [ "WB_D_Temp", "classlbann_1_1Adagrad.html#ab47a5e86daaec06cb1638d6223ddfedc", null ],

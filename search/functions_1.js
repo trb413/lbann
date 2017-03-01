@@ -2,8 +2,8 @@ var searchData=
 [
   ['activation_5fname',['activation_name',['../classlbann_1_1Activation.html#a0f754b8f10cc81f13a318ffb8fc754b3',1,'lbann::Activation']]],
   ['activation_5ftype',['activation_type',['../classlbann__data_1_1FullyConnected.html#a6729fd5f70778a1d0caf3a54edb62008',1,'lbann_data::FullyConnected::activation_type()'],['../classlbann__data_1_1Pooling.html#a5bb80cea859f5ce0e9996d0ebc486a8d',1,'lbann_data::Pooling::activation_type()'],['../classlbann__data_1_1Convolution.html#ad36d013be07eeffd42f559c806bade84',1,'lbann_data::Convolution::activation_type()'],['../classlbann__data_1_1Softmax.html#af06ba28585e56bb4aee0a5c84cdcfc68',1,'lbann_data::Softmax::activation_type()'],['../classlbann__data_1_1TrainingParams.html#a8653bab6d6449a0bd97f0c3d1ae4ae90',1,'lbann_data::TrainingParams::activation_type()']]],
-  ['adagrad',['Adagrad',['../classlbann_1_1Adagrad.html#ad8c0a137a72b44271a53df30581acda9',1,'lbann::Adagrad']]],
-  ['adagrad_5ffactory',['Adagrad_factory',['../classlbann_1_1Adagrad__factory.html#a3d6f638f5f45490b613e3a370cb5e234',1,'lbann::Adagrad_factory']]],
+  ['adagrad',['Adagrad',['../classlbann_1_1Adagrad.html#a5cf6582fca9b7c09fa5c66f7e307fc50',1,'lbann::Adagrad']]],
+  ['adagrad_5ffactory',['Adagrad_factory',['../classlbann_1_1Adagrad__factory.html#a6ec787837653bdfebf0606b132ab8f88',1,'lbann::Adagrad_factory']]],
   ['adam',['Adam',['../classlbann_1_1Adam.html#a212d41fb042389e6b4495bb16e7925a9',1,'lbann::Adam']]],
   ['adam_5ffactory',['Adam_factory',['../classlbann_1_1Adam__factory.html#ade16c4618c8be6e40826f2c782d39855',1,'lbann::Adam_factory']]],
   ['adaptive_5fthreshold_5fbound',['adaptive_threshold_bound',['../classlbann_1_1lbann__quantizer.html#a30825c7e6f42ad2d9dad842fad41f237',1,'lbann::lbann_quantizer']]],

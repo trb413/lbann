@@ -38,7 +38,7 @@ var searchData=
   ['_7elbannpb',['~LbannPB',['../classlbann__data_1_1LbannPB.html#a92f4fb454a041a041ef6b56f665702f8',1,'lbann_data::LbannPB']]],
   ['_7emean_5fsquared_5ferror',['~mean_squared_error',['../classlbann_1_1metrics_1_1mean__squared__error.html#ac83d4649d2816d02f94d90924cfa06fa',1,'lbann::metrics::mean_squared_error::~mean_squared_error()'],['../classlbann_1_1objective__functions_1_1mean__squared__error.html#a01008f4a9fb66335fc6773b5410bc879',1,'lbann::objective_functions::mean_squared_error::~mean_squared_error()']]],
   ['_7emetric',['~metric',['../classlbann_1_1metrics_1_1metric.html#af8dda0ac0fe667b4a5f770e3b6ddc6f8',1,'lbann::metrics::metric']]],
-  ['_7emodel',['~Model',['../classlbann__data_1_1Model.html#a240d90e4b96dafa451c7202ce4129e2e',1,'lbann_data::Model::~Model()'],['../classlbann_1_1model.html#a11eeeb534f3fee908e59e9b5fb1abf42',1,'lbann::model::~model()']]],
+  ['_7emodel',['~model',['../classlbann_1_1model.html#a11eeeb534f3fee908e59e9b5fb1abf42',1,'lbann::model::~model()'],['../classlbann__data_1_1Model.html#a240d90e4b96dafa451c7202ce4129e2e',1,'lbann_data::Model::~Model()']]],
   ['_7enetworkparams',['~NetworkParams',['../classlbann__data_1_1NetworkParams.html#a02449f5443d4e3e7faef76618ea7578c',1,'lbann_data::NetworkParams']]],
   ['_7eobjective_5ffn',['~objective_fn',['../classlbann_1_1objective__functions_1_1objective__fn.html#ab9a7ffcdede86db2d68eea3178af803a',1,'lbann::objective_functions::objective_fn']]],
   ['_7eoptimizer',['~Optimizer',['../classlbann_1_1Optimizer.html#a2963ad8b56b487481adfe8c676786771',1,'lbann::Optimizer::~Optimizer()'],['../classlbann__data_1_1Optimizer.html#a9a6594d5d0eca5762d2227c7e314c178',1,'lbann_data::Optimizer::~Optimizer()']]],
