@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">4dfedc4-ci206020810</span>
+   &#160;<span id="projectnumber">2dcbd21-ci206307434</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -406,6 +406,9 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_pb
 : <a class="el" href="classlbann_1_1lbann__proto.html#add0e1ca6fd985421d90dd1f25611e633">lbann::lbann_proto</a>
 </li>
+<li>m_phase_end
+: <a class="el" href="classlbann_1_1greedy__layerwise__autoencoder.html#a962398da3f5738ec92a1680b0814219b">lbann::greedy_layerwise_autoencoder</a>
+</li>
 <li>m_pixels
 : <a class="el" href="classlbann_1_1DataReader__ImageNet.html#af8ffa7a41e16454bd5f2d9def5188916">lbann::DataReader_ImageNet</a>
 </li>
@@ -445,6 +448,9 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 </li>
 <li>m_reader
 : <a class="el" href="classlbann_1_1lbann__callback__save__images.html#abbe2e8b71a2ef81ddf559a805bbb200d">lbann::lbann_callback_save_images</a>
+</li>
+<li>m_reconstruction_layers
+: <a class="el" href="classlbann_1_1greedy__layerwise__autoencoder.html#af414ca1108311003edbdb65f6ad50fb6">lbann::greedy_layerwise_autoencoder</a>
 </li>
 <li>m_reduced_max_indices
 : <a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ae4ad56bd1105d2aaf432897b08982407">lbann::metrics::categorical_accuracy</a>
@@ -622,13 +628,13 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 , <a class="el" href="classlbann__data_1_1DataReader.html#a99eb186f624048740d443f8f73a2d701">lbann_data::DataReader</a>
 , <a class="el" href="classlbann__data_1_1DataReaderCifar10.html#aa1ba7014095d0b5429d35c34cda81908">lbann_data::DataReaderCifar10</a>
 , <a class="el" href="classlbann__data_1_1DataReaderImagenet.html#a0f7c127e5245c27dfcff33e95139d708">lbann_data::DataReaderImagenet</a>
-, <a class="el" href="classlbann__data_1_1DataReaderMnist.html#aaed120a0a38c0742fb713acfa2a71bbc">lbann_data::DataReaderMnist</a>
+, <a class="el" href="classlbann__data_1_1DataReaderMnist.html#a5d7ce5d02040605e0bc49037f7971904">lbann_data::DataReaderMnist</a>
 , <a class="el" href="classlbann__data_1_1DataReaderNci.html#a4f567048e5c9712f783b3be2819b6f5d">lbann_data::DataReaderNci</a>
 , <a class="el" href="classlbann__data_1_1DataReaderNciRegression.html#a1e82375fdf2fd0715a5c46aed8801276">lbann_data::DataReaderNciRegression</a>
 , <a class="el" href="classlbann__data_1_1FullyConnected.html#a4fca022c4f9a1ab0503ccefb1ad7d9c0">lbann_data::FullyConnected</a>
 , <a class="el" href="classlbann__data_1_1Input.html#a96599f7541d972537a996aca7feb4a81">lbann_data::Input</a>
 , <a class="el" href="classlbann__data_1_1InputDistributedMiniBatch.html#a2aac8b19125af6e703307b5528bef40a">lbann_data::InputDistributedMiniBatch</a>
-, <a class="el" href="classlbann__data_1_1InputDistributedMiniBatchParallelIO.html#a190a17949ed01d6c408ecae908908f58">lbann_data::InputDistributedMiniBatchParallelIO</a>
+, <a class="el" href="classlbann__data_1_1InputDistributedMiniBatchParallelIO.html#a1006969a416e0daf1c0dbcbeca624542">lbann_data::InputDistributedMiniBatchParallelIO</a>
 , <a class="el" href="classlbann__data_1_1Layer.html#a105f93bb09e96c90ab07c2de433de157">lbann_data::Layer</a>
 , <a class="el" href="classlbann__data_1_1LbannPB.html#a2d0d1c0530d144ca9b2a2e80495045f4">lbann_data::LbannPB</a>
 , <a class="el" href="classlbann__data_1_1Model.html#a3e2ea33ad326e3891942706311878d58">lbann_data::Model</a>
@@ -639,9 +645,9 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 , <a class="el" href="classlbann__data_1_1Softmax.html#a0ba82edb2989ec3e352691c20e312cd9">lbann_data::Softmax</a>
 , <a class="el" href="classlbann__data_1_1SystemParams.html#ae27237cca0b21373c5bde7dfee7265f5">lbann_data::SystemParams</a>
 , <a class="el" href="classlbann__data_1_1Target.html#a9df7dc496ae18c6403de8e4a76d40c70">lbann_data::Target</a>
-, <a class="el" href="classlbann__data_1_1TargetDistributedMinibatch.html#a92f32834a1de67a39bbba25441d16172">lbann_data::TargetDistributedMinibatch</a>
-, <a class="el" href="classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#a82216a74e841040f8c060897067bf243">lbann_data::TargetDistributedMinibatchParallelIO</a>
-, <a class="el" href="classlbann__data_1_1TargetParallel.html#ab325772199cb5cf6724b6f985e2c8a4e">lbann_data::TargetParallel</a>
+, <a class="el" href="classlbann__data_1_1TargetDistributedMinibatch.html#a64de2447d5702dde629ccdd675ff2d77">lbann_data::TargetDistributedMinibatch</a>
+, <a class="el" href="classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#a3a87cdc8e1ebde270a088379b278ba48">lbann_data::TargetDistributedMinibatchParallelIO</a>
+, <a class="el" href="classlbann__data_1_1TargetParallel.html#ab9065203d05ed81805d6b95860ba9516">lbann_data::TargetParallel</a>
 , <a class="el" href="classlbann__data_1_1TrainingParams.html#ad04539d67aadca465a5c0ddfd1854f25">lbann_data::TrainingParams</a>
 </li>
 <li>MergePartialFromCodedStream()
@@ -716,7 +722,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 , <a class="el" href="classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#a0829fd27e3eac0fdf4859d0d29cb17d6">lbann_data::TargetDistributedMinibatchParallelIO</a>
 </li>
 <li>mnist()
-: <a class="el" href="classlbann__data_1_1DataReader.html#af428fd650a37d99eb76f1d6f5b1c2597">lbann_data::DataReader</a>
+: <a class="el" href="classlbann__data_1_1DataReader.html#a8bc2b0e3b36e295b7217880190eee9fe">lbann_data::DataReader</a>
 </li>
 <li>mnist_
 : <a class="el" href="classlbann__data_1_1DataReader.html#a578d7b709cd2fd838e30b454c313faaf">lbann_data::DataReader</a>
@@ -729,13 +735,13 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 , <a class="el" href="classlbann__data_1_1LbannPB.html#a3617021d9b335bf6bc2db0a571dae8c1">lbann_data::LbannPB</a>
 </li>
 <li>Model()
-: <a class="el" href="classlbann__data_1_1Model.html#aa88f321ff98e0bcfe2a9c8c1df8a6057">lbann_data::Model</a>
+: <a class="el" href="classlbann__data_1_1Model.html#a7c0676e13d1657096ca796e38dfb060c">lbann_data::Model</a>
 </li>
 <li>model_
 : <a class="el" href="classlbann__data_1_1LbannPB.html#a8c1752f23ab677c0d8fd5d005b6377d9">lbann_data::LbannPB</a>
 </li>
 <li>model_allreduce()
-: <a class="el" href="classlbann_1_1lbann__comm.html#a1fd37bdaa3498455235f98b5e10b5e21">lbann::lbann_comm</a>
+: <a class="el" href="classlbann_1_1lbann__comm.html#ab2bc3d526045ba1b5fedcd442b58a8f9">lbann::lbann_comm</a>
 </li>
 <li>model_barrier()
 : <a class="el" href="classlbann_1_1lbann__comm.html#a6086ced12c3eefeea6e2a78eff286983">lbann::lbann_comm</a>
@@ -784,7 +790,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="classlbann__data_1_1Model.html#a6dd237c9d4e03eba18e83b42911f8e26">lbann_data::Model</a>
 </li>
 <li>mutable_cifar10()
-: <a class="el" href="classlbann__data_1_1DataReader.html#a503243cd2e6afd386111e7bd61e6248b">lbann_data::DataReader</a>
+: <a class="el" href="classlbann__data_1_1DataReader.html#a8158042c410be816e7ecde4042325967">lbann_data::DataReader</a>
 </li>
 <li>mutable_conv_pads()
 : <a class="el" href="classlbann__data_1_1Convolution.html#aa60e95962782d416737dd9b05dd2dd12">lbann_data::Convolution</a>
@@ -839,7 +845,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="classlbann__data_1_1DataReaderMnist.html#aa09be7171a01e387306ef5cd47beeab6">lbann_data::DataReaderMnist</a>
 </li>
 <li>mutable_layer()
-: <a class="el" href="classlbann__data_1_1Model.html#a8ec48964b3bb8b046c37c0ac465d0160">lbann_data::Model</a>
+: <a class="el" href="classlbann__data_1_1Model.html#a49c5d8f5aa844be7a2d90be027763630">lbann_data::Model</a>
 </li>
 <li>mutable_metric()
 : <a class="el" href="classlbann__data_1_1Model.html#a195b199599b6cdde0907344cabc41fad">lbann_data::Model</a>
@@ -858,7 +864,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="classlbann__data_1_1DataReader.html#ad99ea6a57266e0c937f49110b32b9fd4">lbann_data::DataReader</a>
 </li>
 <li>mutable_nci_regression()
-: <a class="el" href="classlbann__data_1_1DataReader.html#a357047d7df772012ddcfb46099c7d524">lbann_data::DataReader</a>
+: <a class="el" href="classlbann__data_1_1DataReader.html#a3247f2b6ef5031d355c22fd62e33e5eb">lbann_data::DataReader</a>
 </li>
 <li>mutable_network_params()
 : <a class="el" href="classlbann__data_1_1LbannPB.html#a9631db2c7072122025547a558a81f6f5">lbann_data::LbannPB</a>
@@ -899,7 +905,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="classlbann__data_1_1Layer.html#a2adf60fec7a0531a4f57ef5f00af336c">lbann_data::Layer</a>
 </li>
 <li>mutable_regularizer()
-: <a class="el" href="classlbann__data_1_1FullyConnected.html#a00eaae6f00946ce46ce95041ea84dcb7">lbann_data::FullyConnected</a>
+: <a class="el" href="classlbann__data_1_1FullyConnected.html#a83e6fefeb2fcf201e1e0d2dd6a93a2cd">lbann_data::FullyConnected</a>
 </li>
 <li>mutable_role()
 : <a class="el" href="classlbann__data_1_1DataReaderMnist.html#af20dba84b0c2ff8d923cc53d726ebd08">lbann_data::DataReaderMnist</a>
@@ -949,7 +955,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Feb 28 2017 01:09:48 for LBANN by
+    <li class="footer">Generated on Wed Mar 1 2017 07:01:56 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

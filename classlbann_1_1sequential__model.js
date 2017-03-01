@@ -18,6 +18,8 @@ var classlbann_1_1sequential__model =
     [ "save_to_checkpoint", "classlbann_1_1sequential__model.html#aa249267bd3e129b480c4615f51bfaed5", null ],
     [ "save_to_checkpoint_shared", "classlbann_1_1sequential__model.html#abd91f8469ac7a5d73df540d12936cf4a", null ],
     [ "save_to_file", "classlbann_1_1sequential__model.html#a10e9245e9c58c4b3c3c365f0b65e92b8", null ],
+    [ "set_bp_input", "classlbann_1_1sequential__model.html#a89b2328126f795397d0d7c1f82eae623", null ],
+    [ "set_fp_input", "classlbann_1_1sequential__model.html#ae4fa1fd95dae51edf2b0db11258dca51", null ],
     [ "set_layers", "classlbann_1_1sequential__model.html#aa7d372ff4bc1d1041eae423e837677c5", null ],
     [ "setup", "classlbann_1_1sequential__model.html#a06e8e06c8fd093c918c9284b7de23e0f", null ],
     [ "swap", "classlbann_1_1sequential__model.html#a8aa4ddbd6efa79896749838e442b6168", null ],

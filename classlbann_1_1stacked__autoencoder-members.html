@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">4dfedc4-ci206020810</span>
+   &#160;<span id="projectnumber">2dcbd21-ci206307434</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -182,11 +182,13 @@ $(document).ready(function(){initNavTree('classlbann_1_1stacked__autoencoder.htm
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1sequential__model.html#abd91f8469ac7a5d73df540d12936cf4a">save_to_checkpoint_shared</a>(persist &amp;p)</td><td class="entry"><a class="el" href="classlbann_1_1sequential__model.html">lbann::sequential_model</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classlbann_1_1sequential__model.html#a10e9245e9c58c4b3c3c365f0b65e92b8">save_to_file</a>(const std::string file_dir)</td><td class="entry"><a class="el" href="classlbann_1_1sequential__model.html">lbann::sequential_model</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1sequential__model.html#a1ab9fbfdc071424ba46c14c04662835d">sequential_model</a>(const uint mini_batch_size, lbann_comm *comm, objective_functions::objective_fn *obj_fn, layer_factory *layer_fac, Optimizer_factory *optimizer_factory)</td><td class="entry"><a class="el" href="classlbann_1_1sequential__model.html">lbann::sequential_model</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classlbann_1_1model.html#a2707333b9bef9650334b25caf4d099f2">set_checkpoint_dir</a>(std::string dir)</td><td class="entry"><a class="el" href="classlbann_1_1model.html">lbann::model</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1model.html#a930c92a3085d1f09e24ad114345b2e34">set_checkpoint_epochs</a>(int64_t epochs)</td><td class="entry"><a class="el" href="classlbann_1_1model.html">lbann::model</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classlbann_1_1model.html#a4332ad949eb1733fcb2a0a6e6c9f56e9">set_checkpoint_secs</a>(double secs)</td><td class="entry"><a class="el" href="classlbann_1_1model.html">lbann::model</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1model.html#a05502fc0d1ca9d9b164118b9a6f04163">set_checkpoint_steps</a>(int64_t steps)</td><td class="entry"><a class="el" href="classlbann_1_1model.html">lbann::model</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classlbann_1_1model.html#abc88f1013abefa3b9e4c0bbc902a05d0">set_current_mini_batch_size</a>(int64_t mini_batch_size)</td><td class="entry"><a class="el" href="classlbann_1_1model.html">lbann::model</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classlbann_1_1sequential__model.html#a89b2328126f795397d0d7c1f82eae623">set_bp_input</a>(size_t start_index, size_t end_index)</td><td class="entry"><a class="el" href="classlbann_1_1sequential__model.html">lbann::sequential_model</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1model.html#a2707333b9bef9650334b25caf4d099f2">set_checkpoint_dir</a>(std::string dir)</td><td class="entry"><a class="el" href="classlbann_1_1model.html">lbann::model</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classlbann_1_1model.html#a930c92a3085d1f09e24ad114345b2e34">set_checkpoint_epochs</a>(int64_t epochs)</td><td class="entry"><a class="el" href="classlbann_1_1model.html">lbann::model</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1model.html#a4332ad949eb1733fcb2a0a6e6c9f56e9">set_checkpoint_secs</a>(double secs)</td><td class="entry"><a class="el" href="classlbann_1_1model.html">lbann::model</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classlbann_1_1model.html#a05502fc0d1ca9d9b164118b9a6f04163">set_checkpoint_steps</a>(int64_t steps)</td><td class="entry"><a class="el" href="classlbann_1_1model.html">lbann::model</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1model.html#abc88f1013abefa3b9e4c0bbc902a05d0">set_current_mini_batch_size</a>(int64_t mini_batch_size)</td><td class="entry"><a class="el" href="classlbann_1_1model.html">lbann::model</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classlbann_1_1sequential__model.html#ae4fa1fd95dae51edf2b0db11258dca51">set_fp_input</a>(size_t start_index, size_t end_index)</td><td class="entry"><a class="el" href="classlbann_1_1sequential__model.html">lbann::sequential_model</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1sequential__model.html#aa7d372ff4bc1d1041eae423e837677c5">set_layers</a>(vector&lt; Layer * &gt; &amp;layers)</td><td class="entry"><a class="el" href="classlbann_1_1sequential__model.html">lbann::sequential_model</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classlbann_1_1model.html#a5bafc4e84671490c6118959becb22e16">set_terminate_training</a>(bool f)</td><td class="entry"><a class="el" href="classlbann_1_1model.html">lbann::model</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1sequential__model.html#a06e8e06c8fd093c918c9284b7de23e0f">setup</a>(size_t start_index=0, size_t end_index=0)</td><td class="entry"><a class="el" href="classlbann_1_1sequential__model.html">lbann::sequential_model</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
@@ -205,7 +207,7 @@ $(document).ready(function(){initNavTree('classlbann_1_1stacked__autoencoder.htm
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Feb 28 2017 01:09:37 for LBANN by
+    <li class="footer">Generated on Wed Mar 1 2017 07:01:42 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
