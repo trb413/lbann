@@ -1,8 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"classlbann__data_1_1TrainingParams.html#ad6f133c3f42c3041b498bf2203f98d62":[3,0,4,26,171],
-"classlbann__data_1_1TrainingParams.html#ad7d1867506d22c30c0069184baa1eb2a":[3,0,4,26,62],
-"classlbann__data_1_1TrainingParams.html#ad84c747bb5705f352c51ee2dc9b0d6f7":[3,0,4,26,98],
 "classlbann__data_1_1TrainingParams.html#ad99765c56977344287133c289e6fa54b":[3,0,4,26,15],
 "classlbann__data_1_1TrainingParams.html#adcfba3e6e794d4630ccff7dc35faa7a8":[3,0,4,26,208],
 "classlbann__data_1_1TrainingParams.html#adcfe4980d3fb0577962f4d6e8fc719ce":[3,0,4,26,203],
@@ -199,8 +196,8 @@ var NAVTREEINDEX13 =
 "elemental.html#elemental_install":[0,3,6,1],
 "elemental.html#elemental_issues":[0,3,6,2],
 "files.html":[4,0],
-"functions.html":[3,3,0],
 "functions.html":[3,3,0,0],
+"functions.html":[3,3,0],
 "functions_a.html":[3,3,0,1],
 "functions_b.html":[3,3,0,2],
 "functions_c.html":[3,3,0,3],
@@ -249,5 +246,8 @@ var NAVTREEINDEX13 =
 "functions_s.html":[3,3,0,18],
 "functions_t.html":[3,3,0,19],
 "functions_type.html":[3,3,3],
-"functions_u.html":[3,3,0,20]
+"functions_u.html":[3,3,0,20],
+"functions_v.html":[3,3,0,21],
+"functions_vars.html":[3,3,2],
+"functions_vars.html":[3,3,2,0]
 };

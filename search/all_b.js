@@ -81,7 +81,7 @@ var searchData=
   ['lbann_5fcallback_5fprint_2ecpp',['lbann_callback_print.cpp',['../lbann__callback__print_8cpp.html',1,'']]],
   ['lbann_5fcallback_5fprint_2ehpp',['lbann_callback_print.hpp',['../lbann__callback__print_8hpp.html',1,'']]],
   ['lbann_5fcallback_5fsave_5fimages',['lbann_callback_save_images',['../classlbann_1_1lbann__callback__save__images.html',1,'lbann']]],
-  ['lbann_5fcallback_5fsave_5fimages',['lbann_callback_save_images',['../classlbann_1_1lbann__callback__save__images.html#ad2ae212d6fea6fa447005a13cb5c52b4',1,'lbann::lbann_callback_save_images::lbann_callback_save_images(std::string image_dir, size_t num_images=10)'],['../classlbann_1_1lbann__callback__save__images.html#ac3fe2f2c8dda0e88a96e18725062ddfd',1,'lbann::lbann_callback_save_images::lbann_callback_save_images(DataReader *reader, std::string image_dir, std::string extension=&quot;jpg&quot;)']]],
+  ['lbann_5fcallback_5fsave_5fimages',['lbann_callback_save_images',['../classlbann_1_1lbann__callback__save__images.html#ac3fe2f2c8dda0e88a96e18725062ddfd',1,'lbann::lbann_callback_save_images']]],
   ['lbann_5fcallback_5fsave_5fimages_2ecpp',['lbann_callback_save_images.cpp',['../lbann__callback__save__images_8cpp.html',1,'']]],
   ['lbann_5fcallback_5fsave_5fimages_2ehpp',['lbann_callback_save_images.hpp',['../lbann__callback__save__images_8hpp.html',1,'']]],
   ['lbann_5fcallback_5fstep_5flearning_5frate',['lbann_callback_step_learning_rate',['../classlbann_1_1lbann__callback__step__learning__rate.html',1,'lbann']]],
