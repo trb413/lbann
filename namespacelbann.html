@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">7c2bc9b-ci206740989</span>
+   &#160;<span id="projectnumber">82ef5cb-ci206775184</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -318,6 +318,10 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ac5723897a72209964fd0eb14ad416d18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1Activation.html">Activation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#ac5723897a72209964fd0eb14ad416d18">new_activation</a> (<a class="el" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76">activation_type</a> act_fn, <a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> param)</td></tr>
 <tr class="separator:ac5723897a72209964fd0eb14ad416d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7eae9c1a433564435e5464eabd29ea4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#aa7eae9c1a433564435e5464eabd29ea4">initialize</a> (<a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>)</td></tr>
+<tr class="separator:aa7eae9c1a433564435e5464eabd29ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7729c7ef241072e5db720242b4d49b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#af7729c7ef241072e5db720242b4d49b0">finalize</a> ()</td></tr>
+<tr class="separator:af7729c7ef241072e5db720242b4d49b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fea7ba21017b49d1e34394b4c20c764"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelbann.html#aa54070c91e931f303a89f162e91de8cc">rng_gen</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764">get_generator</a> ()</td></tr>
 <tr class="separator:a4fea7ba21017b49d1e34394b4c20c764"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6ce9c2fdec6f81803f6b1a6555c31c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelbann.html#ab909b5afe4b0047a3bfe13d519a90290">fast_rng_gen</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5">get_fast_generator</a> ()</td></tr>
@@ -998,6 +1002,27 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="af7729c7ef241072e5db720242b4d49b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lbann::finalize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Perform finalization. </p>
+
+<p>Definition at line <a class="el" href="lbann__base_8cpp_source.html#l00050">50</a> of file <a class="el" href="lbann__base_8cpp_source.html">lbann_base.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a class="anchor" id="a057b6c1efb3f6fcbe8ebe08f8506fee1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1338,6 +1363,55 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="namespacelbann_acef152f20e422b3aea1a3c1691a533ac_cgraph.png" border="0" usemap="#namespacelbann_acef152f20e422b3aea1a3c1691a533ac_cgraph" alt=""/></div>
 <map name="namespacelbann_acef152f20e422b3aea1a3c1691a533ac_cgraph" id="namespacelbann_acef152f20e422b3aea1a3c1691a533ac_cgraph">
 <area shape="rect" id="node2" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764" title="lbann::get_generator" alt="" coords="197,5,337,32"/><area shape="rect" id="node3" href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5" title="lbann::get_fast_generator" alt="" coords="182,56,351,83"/><area shape="rect" id="node4" href="classlbann_1_1lbann__comm.html#a206bafe522a0962c450f4fc69d030656" title="lbann::lbann_comm::\lget_rank_in_model" alt="" coords="195,107,338,149"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa7eae9c1a433564435e5464eabd29ea4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lbann::initialize </td>
+          <td>(</td>
+          <td class="paramtype">lbann_comm *&#160;</td>
+          <td class="paramname"><em>comm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialize LBANN. This should handle all LBANN initialization that doesn't need per-model configuration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">comm</td><td>An <a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> instance for all the processes involved. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="lbann__base_8cpp_source.html#l00036">36</a> of file <a class="el" href="lbann__base_8cpp_source.html">lbann_base.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                  {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span>  <span class="comment">// Initialize the default number of threads to use for parallel regions.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="comment">// Note the num_threads directive can override this if specifically set.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">// Further, if the OMP_NUM_THREADS environment variable is set, we don&#39;t</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="comment">// change it.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">if</span> (getenv(<span class="stringliteral">&quot;OMP_NUM_THREADS&quot;</span>) == <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> threads_per_rank = std::thread::hardware_concurrency() /</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_procs_per_node();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    omp_set_num_threads(threads_per_rank);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif  // _OPENMP</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
+<div class="ttc" id="datatype_8hpp_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00035">datatype.hpp:35</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespacelbann_aa7eae9c1a433564435e5464eabd29ea4_cgraph.png" border="0" usemap="#namespacelbann_aa7eae9c1a433564435e5464eabd29ea4_cgraph" alt=""/></div>
+<map name="namespacelbann_aa7eae9c1a433564435e5464eabd29ea4_cgraph" id="namespacelbann_aa7eae9c1a433564435e5464eabd29ea4_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1lbann__comm.html#a845c62c2a55ef3eb4416deb3e8c5cd1a" title="lbann::lbann_comm::\lget_procs_per_node" alt="" coords="163,5,306,46"/></map>
 </div>
 </p>
 
@@ -2787,7 +2861,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li>
-    <li class="footer">Generated on Thu Mar 2 2017 04:01:23 for LBANN by
+    <li class="footer">Generated on Thu Mar 2 2017 05:42:02 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

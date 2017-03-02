@@ -43,5 +43,7 @@ var lbann__base_8hpp =
     ] ],
     [ "_display_matrix", "lbann__base_8hpp.html#aa5a078e4333b551f498feb743c5d3fc9", null ],
     [ "_to_string", "lbann__base_8hpp.html#adeeaddd10bd31df0cae7cb0fcae45d5c", null ],
+    [ "finalize", "lbann__base_8hpp.html#af7729c7ef241072e5db720242b4d49b0", null ],
+    [ "initialize", "lbann__base_8hpp.html#aa7eae9c1a433564435e5464eabd29ea4", null ],
     [ "DataTypeMPI", "lbann__base_8hpp.html#a50107efba2c08b6188a769743a78d04e", null ]
 ];

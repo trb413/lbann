@@ -14,6 +14,7 @@ var classlbann_1_1lbann__quantizer =
     [ "adaptive_threshold_quantize", "classlbann_1_1lbann__quantizer.html#af1d5338e2e1682156e4f654b110be70d", null ],
     [ "adaptive_threshold_quantize", "classlbann_1_1lbann__quantizer.html#af1e9dc46de4c29a6ae7867b61107ba10", null ],
     [ "adaptive_threshold_quantize_replace", "classlbann_1_1lbann__quantizer.html#ad1fe245c411c515540f9d0ac289f2203", null ],
+    [ "adaptive_threshold_quantize_slice", "classlbann_1_1lbann__quantizer.html#a10ecb0a087bc5330129e471b6a2fb8da", null ],
     [ "adaptive_threshold_unquantize", "classlbann_1_1lbann__quantizer.html#aa255344d87e8aa9e889aa626ac1b4c81", null ],
     [ "adaptive_threshold_unquantize", "classlbann_1_1lbann__quantizer.html#addabdd44f5cb2edbc440591e0c614b0a", null ],
     [ "adaptive_threshold_unquantize_add", "classlbann_1_1lbann__quantizer.html#a4551fb3f9423f8a41248628f739337e6", null ],

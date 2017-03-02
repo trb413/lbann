@@ -1,5 +1,12 @@
 var NAVTREEINDEX15 =
 {
+"lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dacf33f55c86c56389442455e8e190be2d":[4,0,0,0,0,0,0,0,0,13,15,0],
+"lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dad9fe2079b84227e0894774795402ec69":[4,0,0,0,0,0,0,0,0,13,15,1],
+"lbann__base_8hpp.html#af7729c7ef241072e5db720242b4d49b0":[4,0,0,0,0,0,0,0,0,13,20],
+"lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8":[4,0,0,0,0,0,0,0,0,13,9],
+"lbann__base_8hpp_source.html":[4,0,0,0,0,0,0,0,0,13],
+"lbann__base__factory_8hpp.html":[4,0,0,0,0,0,0,0,0,14],
+"lbann__base__factory_8hpp_source.html":[4,0,0,0,0,0,0,0,0,14],
 "lbann__callback_8hpp.html":[4,0,0,0,0,0,0,0,0,0,0],
 "lbann__callback_8hpp_source.html":[4,0,0,0,0,0,0,0,0,0,0],
 "lbann__callback__checknan_8cpp.html":[4,0,0,0,0,0,0,1,0,0],
@@ -54,8 +61,8 @@ var NAVTREEINDEX15 =
 "lbann__callback__timer_8cpp_source.html":[4,0,0,0,0,0,0,1,0,12],
 "lbann__callback__timer_8hpp.html":[4,0,0,0,0,0,0,0,0,0,13],
 "lbann__callback__timer_8hpp_source.html":[4,0,0,0,0,0,0,0,0,0,13],
-"lbann__comm_8cpp.html":[4,0,0,0,0,0,0,1,11],
-"lbann__comm_8cpp_source.html":[4,0,0,0,0,0,0,1,11],
+"lbann__comm_8cpp.html":[4,0,0,0,0,0,0,1,12],
+"lbann__comm_8cpp_source.html":[4,0,0,0,0,0,0,1,12],
 "lbann__comm_8hpp.html":[4,0,0,0,0,0,0,0,0,15],
 "lbann__comm_8hpp_source.html":[4,0,0,0,0,0,0,0,0,15],
 "lbann__data__reader_8cpp.html":[4,0,0,0,0,0,0,1,1,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX15 =
 "lbann__model__sequential_8cpp.html":[4,0,0,0,0,0,0,1,5,3],
 "lbann__model__sequential_8cpp_source.html":[4,0,0,0,0,0,0,1,5,3],
 "lbann__model__sequential_8hpp.html":[4,0,0,0,0,0,0,0,0,5,3],
-"lbann__model__sequential_8hpp_source.html":[4,0,0,0,0,0,0,0,0,5,3],
-"lbann__model__stacked__autoencoder_8cpp.html":[4,0,0,0,0,0,0,1,5,4],
-"lbann__model__stacked__autoencoder_8cpp_source.html":[4,0,0,0,0,0,0,1,5,4],
-"lbann__model__stacked__autoencoder_8hpp.html":[4,0,0,0,0,0,0,0,0,5,4],
-"lbann__model__stacked__autoencoder_8hpp_source.html":[4,0,0,0,0,0,0,0,0,5,4],
-"lbann__objective__fn_8cpp.html":[4,0,0,0,0,0,0,1,6,0],
-"lbann__objective__fn_8cpp_source.html":[4,0,0,0,0,0,0,1,6,0],
-"lbann__objective__fn_8hpp.html":[4,0,0,0,0,0,0,0,0,6,0]
+"lbann__model__sequential_8hpp_source.html":[4,0,0,0,0,0,0,0,0,5,3]
 };

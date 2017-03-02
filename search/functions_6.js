@@ -10,6 +10,7 @@ var searchData=
   ['file_5fdir',['file_dir',['../classlbann__data_1_1DataReaderMnist.html#a112094282301cba850d036d3e4a59046',1,'lbann_data::DataReaderMnist']]],
   ['filter_5fdims',['filter_dims',['../classlbann__data_1_1Convolution.html#ab16546c136b1d5e34c9269f33adb1c6e',1,'lbann_data::Convolution::filter_dims(int index) const '],['../classlbann__data_1_1Convolution.html#a5bb54a3fa7340daad31725b762b17984',1,'lbann_data::Convolution::filter_dims() const ']]],
   ['filter_5fdims_5fsize',['filter_dims_size',['../classlbann__data_1_1Convolution.html#aa24448e208aa9131b3d9fd1466b5a347',1,'lbann_data::Convolution']]],
+  ['finalize',['finalize',['../namespacelbann.html#af7729c7ef241072e5db720242b4d49b0',1,'lbann']]],
   ['flip',['flip',['../classlbann_1_1lbann__image__preprocessor.html#a12d9f7056a5e68185ea0e85e14c17bcf',1,'lbann::lbann_image_preprocessor']]],
   ['flush',['flush',['../classlbann_1_1lbann__summary.html#afca72ec49f3e813b6563285a2153a5be',1,'lbann::lbann_summary']]],
   ['for_5fregression',['for_regression',['../classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#af3368436566bb03f2aff17e913b52359',1,'lbann_data::TargetDistributedMinibatchParallelIO']]],

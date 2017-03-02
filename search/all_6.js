@@ -16,6 +16,7 @@ var searchData=
   ['filter_5fdims',['filter_dims',['../classlbann__data_1_1Convolution.html#ab16546c136b1d5e34c9269f33adb1c6e',1,'lbann_data::Convolution::filter_dims(int index) const '],['../classlbann__data_1_1Convolution.html#a5bb54a3fa7340daad31725b762b17984',1,'lbann_data::Convolution::filter_dims() const ']]],
   ['filter_5fdims_5f',['filter_dims_',['../classlbann__data_1_1Convolution.html#ab64a78bd7c04e2849090ba55619a2341',1,'lbann_data::Convolution']]],
   ['filter_5fdims_5fsize',['filter_dims_size',['../classlbann__data_1_1Convolution.html#aa24448e208aa9131b3d9fd1466b5a347',1,'lbann_data::Convolution']]],
+  ['finalize',['finalize',['../namespacelbann.html#af7729c7ef241072e5db720242b4d49b0',1,'lbann']]],
   ['flip',['flip',['../classlbann_1_1lbann__image__preprocessor.html#a12d9f7056a5e68185ea0e85e14c17bcf',1,'lbann::lbann_image_preprocessor']]],
   ['float2',['FLOAT2',['../datatype_8hpp.html#a3a71b60f9c187eaa005999c74b5c3390',1,'datatype.hpp']]],
   ['float3',['FLOAT3',['../datatype_8hpp.html#ab2d901eb69adcc8d1c6177bc9dbeca1d',1,'datatype.hpp']]],
@@ -37,10 +38,10 @@ var searchData=
   ['free',['free',['../classlbann_1_1DataReader__CIFAR10.html#aee6167d540f2e11c50cb10d0998da744',1,'lbann::DataReader_CIFAR10::free()'],['../classlbann_1_1DataReader__ImageNet.html#af7903ee803e3212919c67769850f4ddf',1,'lbann::DataReader_ImageNet::free()'],['../classlbann_1_1DataReader__MNIST.html#a36e836053a47a5ef91a249de34a5f4b7',1,'lbann::DataReader_MNIST::free()']]],
   ['fully_5fconnected',['fully_connected',['../classlbann__data_1_1Layer.html#a7d43bf3a6316b37626e5bb9ee17cb113',1,'lbann_data::Layer::fully_connected()'],['../namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a156e322bc71c040cbb092c46ed11c5cb',1,'lbann::fully_connected()']]],
   ['fully_5fconnected_5f',['fully_connected_',['../classlbann__data_1_1Layer.html#a46930c54e0cb7f8dc0b9b111ebe675a7',1,'lbann_data::Layer']]],
-  ['fullyconnected',['FullyConnected',['../classlbann__data_1_1FullyConnected.html',1,'lbann_data']]],
   ['fullyconnected',['FullyConnected',['../classlbann__data_1_1FullyConnected.html#a12b7aa3446a6f4cec137060443450c56',1,'lbann_data::FullyConnected::FullyConnected()'],['../classlbann__data_1_1FullyConnected.html#a754cbbfed468f8de512ee6deed28867f',1,'lbann_data::FullyConnected::FullyConnected(const FullyConnected &amp;from)']]],
+  ['fullyconnected',['FullyConnected',['../classlbann__data_1_1FullyConnected.html',1,'lbann_data']]],
   ['fullyconnected_5fdescriptor_5f',['FullyConnected_descriptor_',['../namespacelbann__data_1_1anonymous__namespace_02lbann_8pb_8cc_03.html#a3882c87b123307d959b28b1989da21b6',1,'lbann_data::anonymous_namespace{lbann.pb.cc}']]],
   ['fullyconnected_5freflection_5f',['FullyConnected_reflection_',['../namespacelbann__data_1_1anonymous__namespace_02lbann_8pb_8cc_03.html#a34880462ce9edbd7e8ddfa0432442337',1,'lbann_data::anonymous_namespace{lbann.pb.cc}']]],
-  ['fullyconnectedlayer',['FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html#afce405665ec5bf44d7095340cbf9a976',1,'lbann::FullyConnectedLayer']]],
-  ['fullyconnectedlayer',['FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html',1,'lbann']]]
+  ['fullyconnectedlayer',['FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html',1,'lbann']]],
+  ['fullyconnectedlayer',['FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html#afce405665ec5bf44d7095340cbf9a976',1,'lbann::FullyConnectedLayer']]]
 ];
