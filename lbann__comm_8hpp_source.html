@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">82ef5cb-ci206775184</span>
+   &#160;<span id="projectnumber">1b8260a-ci206981655</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -331,7 +331,7 @@ $(document).ready(function(){initNavTree('lbann__comm_8hpp_source.html','');});
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    }</div>
 <div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="classlbann_1_1lbann__comm.html#a1f98c30131a7035b9a22b030fb63ce03">  300</a></span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt; <span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__comm.html#a1f98c30131a7035b9a22b030fb63ce03">nb_recv</a>(T* data, <span class="keywordtype">int</span> count, <span class="keywordtype">int</span> <a class="code" href="classlbann_1_1model.html">model</a>,</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                                       mpi::Request&lt;T&gt;&amp; req) {</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      recv(data, count, model, rank_in_model, req);</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      nb_recv(data, count, model, rank_in_model, req);</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    }</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordtype">void</span> nb_recv(<a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; mat, <span class="keywordtype">int</span> <a class="code" href="classlbann_1_1model.html">model</a>, <span class="keywordtype">int</span> rank, mpi::Request&lt;DataType&gt;&amp; req);</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordtype">void</span> nb_recv(<a class="code" href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a>&amp; mat, <span class="keywordtype">int</span> <a class="code" href="classlbann_1_1model.html">model</a>, <span class="keywordtype">int</span> rank, mpi::Request&lt;DataType&gt;&amp; req);</div>
@@ -523,7 +523,7 @@ $(document).ready(function(){initNavTree('lbann__comm_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_eb8329679e609af11719ceffa3ff5139.html">include</a></li><li class="navelem"><a class="el" href="dir_ae19bb3c4b74b705a5918893bf9adbdd.html">lbann</a></li><li class="navelem"><a class="el" href="lbann__comm_8hpp.html">lbann_comm.hpp</a></li>
-    <li class="footer">Generated on Thu Mar 2 2017 05:42:00 for LBANN by
+    <li class="footer">Generated on Thu Mar 2 2017 12:44:50 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
