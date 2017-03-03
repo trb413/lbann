@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">1b8260a-ci206981655</span>
+   &#160;<span id="projectnumber">fabdcf3-ci207106069</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -569,7 +569,7 @@ template&lt;typename colT , typename rowT &gt; </div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;      memcpy(&amp;neg_recon, &amp;q_col[header_loc + 2], <span class="keyword">sizeof</span>(neg_recon));</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;      <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>* __restrict__ qerror_col = &amp;qerror_buf[col_offset];</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;      <span class="comment">// Add the deleted portions to qerror.</span></div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;      <span class="keywordflow">for</span> (rowT i = q_col[header_loc] + num_left;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;      <span class="keywordflow">for</span> (colT i = q_col[header_loc] + num_left;</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;           i &lt; q_col[header_loc + <a class="code" href="classlbann_1_1lbann__quantizer.html#afb4315625e371169cabfac56c3f75d37">HEADER_FACTOR</a>]; ++i) {</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        <span class="keyword">const</span> rowT val = q[i];</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        <span class="keyword">const</span> rowT row = val &gt;&gt; 1;</div>
@@ -5604,7 +5604,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__quantizer.html">lbann_quantizer</a></li>
-    <li class="footer">Generated on Thu Mar 2 2017 12:44:52 for LBANN by
+    <li class="footer">Generated on Fri Mar 3 2017 04:31:10 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
