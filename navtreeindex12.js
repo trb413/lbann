@@ -1,5 +1,13 @@
 var NAVTREEINDEX12 =
 {
+"classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#af3fd49a8a9d8235177957e79db893170":[3,0,4,22,0],
+"classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#af79963765808db33b1387fff394d3998":[3,0,4,22,11],
+"classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#af913bbe6f7dc14def8d6a0f677c0bb53":[3,0,4,22,55],
+"classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#afc31f05123e2235b394e15238b8b2d1c":[3,0,4,22,2],
+"classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#afd0c499155e7fd6dc94e5ddf4f67036a":[3,0,4,22,32],
+"classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#afdad1c3f2d8d4628e190d6f82a6ca1d9":[3,0,4,22,25],
+"classlbann__data_1_1TargetParallel.html":[3,0,4,20],
+"classlbann__data_1_1TargetParallel.html#a04fd6f9d64fff26d036170534440303e":[3,0,4,20,0],
 "classlbann__data_1_1TargetParallel.html#a07391e4411d96b0e6a3ebb396d688d98":[3,0,4,20,16],
 "classlbann__data_1_1TargetParallel.html#a249cadf5d857f34934c2cedb90cd26bb":[3,0,4,20,30],
 "classlbann__data_1_1TargetParallel.html#a25406a6f8a79c0425ab86692824151f0":[3,0,4,20,33],
@@ -241,13 +249,5 @@ var NAVTREEINDEX12 =
 "classlbann__data_1_1TrainingParams.html#ac152316f5ddd245d3a84a74b3308e009":[3,0,4,26,256],
 "classlbann__data_1_1TrainingParams.html#ac155434005bb7c6fc3a4938c9270b88c":[3,0,4,26,16],
 "classlbann__data_1_1TrainingParams.html#ac2ef4db6c21c4839e8e322f4fe55436b":[3,0,4,26,255],
-"classlbann__data_1_1TrainingParams.html#ac35215032958cd261aae43663e08d264":[3,0,4,26,122],
-"classlbann__data_1_1TrainingParams.html#ac5fb4af2257dfb01dc824ff34a6917f5":[3,0,4,26,174],
-"classlbann__data_1_1TrainingParams.html#ac64ef2bb8acac11f00e0fd40e64875b1":[3,0,4,26,245],
-"classlbann__data_1_1TrainingParams.html#ac68aebbbaa5dbe49282920c8bad520aa":[3,0,4,26,88],
-"classlbann__data_1_1TrainingParams.html#ac728a7d40560578540afe265069d675a":[3,0,4,26,192],
-"classlbann__data_1_1TrainingParams.html#ac7c72e948068ff453cb142fc7e32cb70":[3,0,4,26,57],
-"classlbann__data_1_1TrainingParams.html#acb127cad88d1c343b2f8adefdd4406ba":[3,0,4,26,6],
-"classlbann__data_1_1TrainingParams.html#acb33b89524daaea68f78ad4499471aa1":[3,0,4,26,193],
-"classlbann__data_1_1TrainingParams.html#acc3c172afd7c63dbee54e2033a0ea08f":[3,0,4,26,215]
+"classlbann__data_1_1TrainingParams.html#ac35215032958cd261aae43663e08d264":[3,0,4,26,122]
 };

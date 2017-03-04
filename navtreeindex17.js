@@ -1,5 +1,13 @@
 var NAVTREEINDEX17 =
 {
+"struct__BOX3__FLOAT.html":[3,0,18],
+"struct__BOX3__FLOAT.html#a1fddc58e7ad0cf69387d2ce33afe4502":[3,0,18,3],
+"struct__BOX3__FLOAT.html#a2b6691a869442f618ca92d97639ecb86":[3,0,18,4],
+"struct__BOX3__FLOAT.html#a7cd84616e6269e15117b00b07d922b24":[3,0,18,1],
+"struct__BOX3__FLOAT.html#a89964da449dd2e77021af616ec1dd017":[3,0,18,5],
+"struct__BOX3__FLOAT.html#ae170039fc06972bd0e8c5cc0652f1706":[3,0,18,2],
+"struct__BOX3__FLOAT.html#af809b76f3ee8705914c0253a00fa6be2":[3,0,18,0],
+"struct__BOX3__INT.html":[3,0,19],
 "struct__BOX3__INT.html#a067759e7bf2dd65f15aef19b1ea00a2a":[3,0,19,0],
 "struct__BOX3__INT.html#a1031b258579b04852665a7743062d945":[3,0,19,3],
 "struct__BOX3__INT.html#a196d4aa5972e411c1d543214ea380878":[3,0,19,2],

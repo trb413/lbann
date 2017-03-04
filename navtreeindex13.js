@@ -1,5 +1,13 @@
 var NAVTREEINDEX13 =
 {
+"classlbann__data_1_1TrainingParams.html#ac5fb4af2257dfb01dc824ff34a6917f5":[3,0,4,26,174],
+"classlbann__data_1_1TrainingParams.html#ac64ef2bb8acac11f00e0fd40e64875b1":[3,0,4,26,245],
+"classlbann__data_1_1TrainingParams.html#ac68aebbbaa5dbe49282920c8bad520aa":[3,0,4,26,88],
+"classlbann__data_1_1TrainingParams.html#ac728a7d40560578540afe265069d675a":[3,0,4,26,192],
+"classlbann__data_1_1TrainingParams.html#ac7c72e948068ff453cb142fc7e32cb70":[3,0,4,26,57],
+"classlbann__data_1_1TrainingParams.html#acb127cad88d1c343b2f8adefdd4406ba":[3,0,4,26,6],
+"classlbann__data_1_1TrainingParams.html#acb33b89524daaea68f78ad4499471aa1":[3,0,4,26,193],
+"classlbann__data_1_1TrainingParams.html#acc3c172afd7c63dbee54e2033a0ea08f":[3,0,4,26,215],
 "classlbann__data_1_1TrainingParams.html#acd3d8c913b54d4a2e58cd2c7ea24b66c":[3,0,4,26,189],
 "classlbann__data_1_1TrainingParams.html#ace096172fd5daeccbc9a701623966f63":[3,0,4,26,22],
 "classlbann__data_1_1TrainingParams.html#ad03009a57ed17b9fa4922b3462181e4a":[3,0,4,26,247],
@@ -211,8 +219,8 @@ var NAVTREEINDEX13 =
 "elemental.html#elemental_install":[0,3,6,1],
 "elemental.html#elemental_issues":[0,3,6,2],
 "files.html":[4,0],
-"functions.html":[3,3,0],
 "functions.html":[3,3,0,0],
+"functions.html":[3,3,0],
 "functions_a.html":[3,3,0,1],
 "functions_b.html":[3,3,0,2],
 "functions_c.html":[3,3,0,3],
@@ -221,8 +229,8 @@ var NAVTREEINDEX13 =
 "functions_enum.html":[3,3,4],
 "functions_eval.html":[3,3,5],
 "functions_f.html":[3,3,0,6],
-"functions_func.html":[3,3,1],
 "functions_func.html":[3,3,1,0],
+"functions_func.html":[3,3,1],
 "functions_func_a.html":[3,3,1,1],
 "functions_func_b.html":[3,3,1,2],
 "functions_func_c.html":[3,3,1,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX13 =
 "functions_func_r.html":[3,3,1,16],
 "functions_func_s.html":[3,3,1,17],
 "functions_func_t.html":[3,3,1,18],
-"functions_func_u.html":[3,3,1,19],
-"functions_func_v.html":[3,3,1,20],
-"functions_func_w.html":[3,3,1,21],
-"functions_func_z.html":[3,3,1,22],
-"functions_func_~.html":[3,3,1,23],
-"functions_g.html":[3,3,0,7],
-"functions_h.html":[3,3,0,8],
-"functions_i.html":[3,3,0,9],
-"functions_k.html":[3,3,0,10]
+"functions_func_u.html":[3,3,1,19]
 };

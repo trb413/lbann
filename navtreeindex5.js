@@ -1,5 +1,13 @@
 var NAVTREEINDEX5 =
 {
+"classlbann_1_1objective__functions_1_1objective__fn.html#adb4df9dd448d19dacb490167cbfda251":[3,0,3,1,1,0],
+"classlbann_1_1objective__functions_1_1objective__fn.html#ae6bda5e522698f3c9f7e994465a5f181":[3,0,3,1,1,5],
+"classlbann_1_1objective__functions_1_1objective__fn.html#ae75d8293502591a40e6bba1a15f6f56d":[3,0,3,1,1,1],
+"classlbann_1_1objective__functions_1_1objective__fn.html#afed83dea78d6b545160b142df8d5e71b":[3,0,3,1,1,16],
+"classlbann_1_1objective__functions_1_1statistics.html":[3,0,3,1,0],
+"classlbann_1_1objective__functions_1_1statistics.html#a01644876ce91989ed818aac93a2d0b7d":[3,0,3,1,0,4],
+"classlbann_1_1objective__functions_1_1statistics.html#a09539c4fbb94e1444424a501bfca3ccd":[3,0,3,1,0,6],
+"classlbann_1_1objective__functions_1_1statistics.html#a268a3124904ad55f24c3277cdb7816f2":[3,0,3,1,0,5],
 "classlbann_1_1objective__functions_1_1statistics.html#a58c4b04be5a52957cd08d5fe0b4e7d4e":[3,0,3,1,0,3],
 "classlbann_1_1objective__functions_1_1statistics.html#a94dd3bde6bb9548d2a7ddf5ba836f6d7":[3,0,3,1,0,2],
 "classlbann_1_1objective__functions_1_1statistics.html#ac663664827ecd9e9fc700c5bed2feea4":[3,0,3,1,0,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX5 =
 "classlbann__data_1_1Convolution.html#a5516fdd0cfb70729ab99c9638c5e16a0":[3,0,4,17,67],
 "classlbann__data_1_1Convolution.html#a56c04897e6fd7b7d51ed172499d21f87":[3,0,4,17,0],
 "classlbann__data_1_1Convolution.html#a56dd52765139b6cea1aad9f60eae1b24":[3,0,4,17,91],
-"classlbann__data_1_1Convolution.html#a589fcf203670330016814f52d16fa865":[3,0,4,17,108],
-"classlbann__data_1_1Convolution.html#a5bb54a3fa7340daad31725b762b17984":[3,0,4,17,31],
-"classlbann__data_1_1Convolution.html#a5e12b5b80d1fdcd0c3e52b371a133ec9":[3,0,4,17,109],
-"classlbann__data_1_1Convolution.html#a60567e6ebe6ae81369025f7dfcd2efe3":[3,0,4,17,10],
-"classlbann__data_1_1Convolution.html#a6141850c54c788492660241ce72d8cbf":[3,0,4,17,23],
-"classlbann__data_1_1Convolution.html#a621c25a415a7484b3bcf791795de9274":[3,0,4,17,26],
-"classlbann__data_1_1Convolution.html#a64639be213f0678f2e855cefa3a30324":[3,0,4,17,43],
-"classlbann__data_1_1Convolution.html#a65862ae709964c2b83ac5e2e36ac08dc":[3,0,4,17,17],
-"classlbann__data_1_1Convolution.html#a678a992469c0d55d8a90b6966376a3a9":[3,0,4,17,57]
+"classlbann__data_1_1Convolution.html#a589fcf203670330016814f52d16fa865":[3,0,4,17,108]
 };

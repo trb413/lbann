@@ -1,5 +1,13 @@
 var NAVTREEINDEX11 =
 {
+"classlbann__data_1_1Softmax.html#a11a152e6100699212d2aa64715aa8acf":[3,0,4,18,32],
+"classlbann__data_1_1Softmax.html#a13a2a16e50bb222affc8054b51924bb1":[3,0,4,18,0],
+"classlbann__data_1_1Softmax.html#a15ab77bf91675c3fb0f28d3fd50ef695":[3,0,4,18,4],
+"classlbann__data_1_1Softmax.html#a17e91fa389fcd4b031cca0e9bb1cc0a2":[3,0,4,18,57],
+"classlbann__data_1_1Softmax.html#a19fd87ca3e29bbf8ce3c3af442613a25":[3,0,4,18,10],
+"classlbann__data_1_1Softmax.html#a1e2bad72c3cdd42f562def292d2044b6":[3,0,4,18,27],
+"classlbann__data_1_1Softmax.html#a1e998287f679e21923bd591453082ca2":[3,0,4,18,9],
+"classlbann__data_1_1Softmax.html#a1f34532016479f854c89ece9d23ff2dd":[3,0,4,18,11],
 "classlbann__data_1_1Softmax.html#a20f9272a488b417733e825ff0093f942":[3,0,4,18,35],
 "classlbann__data_1_1Softmax.html#a249cadf5d857f34934c2cedb90cd26bb":[3,0,4,18,52],
 "classlbann__data_1_1Softmax.html#a24c42a927b4e9efd917fa769780149ae":[3,0,4,18,49],
@@ -241,13 +249,5 @@ var NAVTREEINDEX11 =
 "classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#af0e4004d39b4b1bd977920d291ca3099":[3,0,4,22,4],
 "classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#af299819fa5b2c4351bb868129232814d":[3,0,4,22,44],
 "classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#af317bd6e94a2a11fa06e5ced5f7cc2e7":[3,0,4,22,38],
-"classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#af3368436566bb03f2aff17e913b52359":[3,0,4,22,13],
-"classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#af3fd49a8a9d8235177957e79db893170":[3,0,4,22,0],
-"classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#af79963765808db33b1387fff394d3998":[3,0,4,22,11],
-"classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#af913bbe6f7dc14def8d6a0f677c0bb53":[3,0,4,22,55],
-"classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#afc31f05123e2235b394e15238b8b2d1c":[3,0,4,22,2],
-"classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#afd0c499155e7fd6dc94e5ddf4f67036a":[3,0,4,22,32],
-"classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#afdad1c3f2d8d4628e190d6f82a6ca1d9":[3,0,4,22,25],
-"classlbann__data_1_1TargetParallel.html":[3,0,4,20],
-"classlbann__data_1_1TargetParallel.html#a04fd6f9d64fff26d036170534440303e":[3,0,4,20,0]
+"classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#af3368436566bb03f2aff17e913b52359":[3,0,4,22,13]
 };

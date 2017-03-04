@@ -50,19 +50,19 @@ var NAVTREEINDEX =
 "classlbann_1_1data__reader__nci__regression.html#a97fd4068c6f2262efc4d597744b62100",
 "classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aa76420a96a3df1d5b60140bab6bc32dc4",
 "classlbann_1_1lbann__quantizer.html#a484e392b671e8eeaa3af5b5faa683bee",
-"classlbann_1_1objective__functions_1_1statistics.html#a58c4b04be5a52957cd08d5fe0b4e7d4e",
-"classlbann__data_1_1Convolution.html#a68badc93f7be62aa3e20865130f60237",
-"classlbann__data_1_1DataReaderMnist.html#a559f7110b07ce852f5aaa7c40a067163",
-"classlbann__data_1_1Input.html#a891c6878afa0c70469f3c76e42d1de17",
-"classlbann__data_1_1LbannPB.html#a12bcb6f5379db4681893698ec9b567a3",
-"classlbann__data_1_1NetworkParams.html#aab70d41185c9ca21ad00283b74773d8e",
-"classlbann__data_1_1Softmax.html#a20f9272a488b417733e825ff0093f942",
-"classlbann__data_1_1TargetParallel.html#a07391e4411d96b0e6a3ebb396d688d98",
-"classlbann__data_1_1TrainingParams.html#acd3d8c913b54d4a2e58cd2c7ea24b66c",
-"functions_l.html",
-"lbann__base_8hpp.html#aa7eae9c1a433564435e5464eabd29ea4",
-"lbann__model_8hpp.html",
-"struct__BOX3__INT.html#a067759e7bf2dd65f15aef19b1ea00a2a"
+"classlbann_1_1objective__functions_1_1objective__fn.html#adb4df9dd448d19dacb490167cbfda251",
+"classlbann__data_1_1Convolution.html#a5bb54a3fa7340daad31725b762b17984",
+"classlbann__data_1_1DataReaderMnist.html#a413b5b91780153d38818da3ef41847db",
+"classlbann__data_1_1Input.html#a2caa0548c97b94a8df17c9520474eb6b",
+"classlbann__data_1_1LbannPB.html#a054ebf2c3eb0574e042217367c0b8658",
+"classlbann__data_1_1NetworkParams.html#a7bf1db5159ddfc8138635cb371e334ae",
+"classlbann__data_1_1Softmax.html#a11a152e6100699212d2aa64715aa8acf",
+"classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#af3fd49a8a9d8235177957e79db893170",
+"classlbann__data_1_1TrainingParams.html#ac5fb4af2257dfb01dc824ff34a6917f5",
+"functions_func_v.html",
+"lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a10c3970ad5c688f36ccda3f77432bd5c",
+"lbann__metric__mean__squared__error_8cpp.html",
+"struct__BOX3__FLOAT.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

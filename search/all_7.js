@@ -13,7 +13,9 @@ var searchData=
   ['get_5fag_5fbytes_5fsent',['get_ag_bytes_sent',['../classlbann_1_1lbann__quantizer.html#a6c64c6960852ca25f81ba7bc80c05d2d',1,'lbann::lbann_quantizer']]],
   ['get_5fag_5frecv_5fbuf_5ftime',['get_ag_recv_buf_time',['../classlbann_1_1lbann__quantizer.html#a54a63a467a16d24c12010edcf8b28f03',1,'lbann::lbann_quantizer']]],
   ['get_5fag_5frecv_5ftrans_5ftime',['get_ag_recv_trans_time',['../classlbann_1_1lbann__quantizer.html#aebc22819c53ce8a836bd20e938f6c59e',1,'lbann::lbann_quantizer']]],
+  ['get_5fag_5frecv_5fwait_5ftime',['get_ag_recv_wait_time',['../classlbann_1_1lbann__quantizer.html#a882dcd266f67f98d5dfdf339edb8c31e',1,'lbann::lbann_quantizer']]],
   ['get_5fag_5freduced_5ftrans_5ftime',['get_ag_reduced_trans_time',['../classlbann_1_1lbann__quantizer.html#a983b603f83ebdaee5eb924ca0d6495b9',1,'lbann::lbann_quantizer']]],
+  ['get_5fag_5fsend_5ftime',['get_ag_send_time',['../classlbann_1_1lbann__quantizer.html#a74d934a5d2e9a8e33e95e631a5f5dcb1',1,'lbann::lbann_quantizer']]],
   ['get_5fag_5ftime',['get_ag_time',['../classlbann_1_1lbann__quantizer.html#affd6ee0a9c259ba5999c8f18ee7a58a7',1,'lbann::lbann_quantizer']]],
   ['get_5fbytes',['get_bytes',['../classlbann_1_1persist.html#a701c3fd5d5e383c9213499bd71b9cd22',1,'lbann::persist']]],
   ['get_5fbytes_5freceived',['get_bytes_received',['../classlbann_1_1lbann__comm.html#a9b89b6f22a0566ec9ece14bde5ee6a66',1,'lbann::lbann_comm::get_bytes_received()'],['../classlbann_1_1lbann__quantizer.html#a9a029f692e679ac4475a51fa2ac8f7c1',1,'lbann::lbann_quantizer::get_bytes_received()']]],
@@ -76,6 +78,8 @@ var searchData=
   ['get_5frs_5fbytes_5fsent',['get_rs_bytes_sent',['../classlbann_1_1lbann__quantizer.html#a2c1b69b38cf93d43e9b4eca7d4c5e28f',1,'lbann::lbann_quantizer']]],
   ['get_5frs_5frecv_5fbuf_5ftime',['get_rs_recv_buf_time',['../classlbann_1_1lbann__quantizer.html#a12b8e87e51866a6b028b8dbd4faebe55',1,'lbann::lbann_quantizer']]],
   ['get_5frs_5frecv_5ftrans_5ftime',['get_rs_recv_trans_time',['../classlbann_1_1lbann__quantizer.html#ae5f4f573c3ed285265e9d7834446b3a0',1,'lbann::lbann_quantizer']]],
+  ['get_5frs_5frecv_5fwait_5ftime',['get_rs_recv_wait_time',['../classlbann_1_1lbann__quantizer.html#ab42d987061378cff2d4e5918ceb7e94c',1,'lbann::lbann_quantizer']]],
+  ['get_5frs_5fsend_5ftime',['get_rs_send_time',['../classlbann_1_1lbann__quantizer.html#aaf13fdd86351a63f8765eb7d36494d03',1,'lbann::lbann_quantizer']]],
   ['get_5frs_5fsend_5ftrans_5ftime',['get_rs_send_trans_time',['../classlbann_1_1lbann__quantizer.html#aea9f348cd6f48b706870e1a5e48e8827',1,'lbann::lbann_quantizer']]],
   ['get_5frs_5ftime',['get_rs_time',['../classlbann_1_1lbann__quantizer.html#a4484f37237d53c4992d00698b72fd45f',1,'lbann::lbann_quantizer']]],
   ['get_5fstatistics',['get_statistics',['../classlbann_1_1metrics_1_1metric.html#ac061126c26394ba06314e0924c214299',1,'lbann::metrics::metric::get_statistics()'],['../classlbann_1_1objective__functions_1_1objective__fn.html#a5692b2dbe1b5f95d9a51b9805f8eea08',1,'lbann::objective_functions::objective_fn::get_statistics()']]],
@@ -110,7 +114,7 @@ var searchData=
   ['gr_5fk',['GR_K',['../classlbann_1_1lbann__quantizer.html#a5f645c840854c584c9224af063fee23b',1,'lbann::lbann_quantizer']]],
   ['gr_5fm',['GR_M',['../classlbann_1_1lbann__quantizer.html#ad98118c77f676fa3d3fb4ba27b814070',1,'lbann::lbann_quantizer']]],
   ['gradhistories',['gradhistories',['../classlbann_1_1lbann__callback__imcomm.html#ab10f1484a37c6e6085329796dc7ef7c4',1,'lbann::lbann_callback_imcomm']]],
-  ['greedy_5flayerwise_5fautoencoder',['greedy_layerwise_autoencoder',['../classlbann_1_1greedy__layerwise__autoencoder.html',1,'lbann']]],
   ['greedy_5flayerwise_5fautoencoder',['greedy_layerwise_autoencoder',['../classlbann_1_1greedy__layerwise__autoencoder.html#ae8096fdda60fad164d16d56eb756f8b2',1,'lbann::greedy_layerwise_autoencoder']]],
+  ['greedy_5flayerwise_5fautoencoder',['greedy_layerwise_autoencoder',['../classlbann_1_1greedy__layerwise__autoencoder.html',1,'lbann']]],
   ['grid',['grid',['../classlbann_1_1lbann__comm.html#a29fb31be115db3225b145f250a7778d9',1,'lbann::lbann_comm::grid()'],['../lbann__base_8hpp.html#a4c600bf682fbf8018385607476e4bd13',1,'Grid():&#160;lbann_base.hpp']]]
 ];

@@ -1,5 +1,13 @@
 var NAVTREEINDEX10 =
 {
+"classlbann__data_1_1NetworkParams.html#a7bf1db5159ddfc8138635cb371e334ae":[3,0,4,24,15],
+"classlbann__data_1_1NetworkParams.html#a7d973f90c444e3f1a9f889d3ac4ec4d9":[3,0,4,24,3],
+"classlbann__data_1_1NetworkParams.html#a7fad9e193fb8a0894de055474026118b":[3,0,4,24,19],
+"classlbann__data_1_1NetworkParams.html#a837de928224ca09dd9cc0d2de29c3ad3":[3,0,4,24,21],
+"classlbann__data_1_1NetworkParams.html#a922c356ed0c5c5299f0449edf01cc872":[3,0,4,24,8],
+"classlbann__data_1_1NetworkParams.html#a940e57f94fa92444b617e6735b421f62":[3,0,4,24,13],
+"classlbann__data_1_1NetworkParams.html#a9498c64b7a516ee56592f9588328397f":[3,0,4,24,27],
+"classlbann__data_1_1NetworkParams.html#aa577937883c80390607ac9a855cde204":[3,0,4,24,7],
 "classlbann__data_1_1NetworkParams.html#aab70d41185c9ca21ad00283b74773d8e":[3,0,4,24,33],
 "classlbann__data_1_1NetworkParams.html#aacbf644220ba07f4fc0ab83b7eab9144":[3,0,4,24,39],
 "classlbann__data_1_1NetworkParams.html#aad8a5779add84f6d9648fb59a9895e84":[3,0,4,24,41],
@@ -241,13 +249,5 @@ var NAVTREEINDEX10 =
 "classlbann__data_1_1Softmax.html":[3,0,4,18],
 "classlbann__data_1_1Softmax.html#a02758c6e7eb5758242f7efb7fbd42026":[3,0,4,18,34],
 "classlbann__data_1_1Softmax.html#a0a06e6e1740422deb68280910a3a4d91":[3,0,4,18,42],
-"classlbann__data_1_1Softmax.html#a0ba82edb2989ec3e352691c20e312cd9":[3,0,4,18,22],
-"classlbann__data_1_1Softmax.html#a11a152e6100699212d2aa64715aa8acf":[3,0,4,18,32],
-"classlbann__data_1_1Softmax.html#a13a2a16e50bb222affc8054b51924bb1":[3,0,4,18,0],
-"classlbann__data_1_1Softmax.html#a15ab77bf91675c3fb0f28d3fd50ef695":[3,0,4,18,4],
-"classlbann__data_1_1Softmax.html#a17e91fa389fcd4b031cca0e9bb1cc0a2":[3,0,4,18,57],
-"classlbann__data_1_1Softmax.html#a19fd87ca3e29bbf8ce3c3af442613a25":[3,0,4,18,10],
-"classlbann__data_1_1Softmax.html#a1e2bad72c3cdd42f562def292d2044b6":[3,0,4,18,27],
-"classlbann__data_1_1Softmax.html#a1e998287f679e21923bd591453082ca2":[3,0,4,18,9],
-"classlbann__data_1_1Softmax.html#a1f34532016479f854c89ece9d23ff2dd":[3,0,4,18,11]
+"classlbann__data_1_1Softmax.html#a0ba82edb2989ec3e352691c20e312cd9":[3,0,4,18,22]
 };

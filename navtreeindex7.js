@@ -1,5 +1,13 @@
 var NAVTREEINDEX7 =
 {
+"classlbann__data_1_1DataReaderMnist.html#a413b5b91780153d38818da3ef41847db":[3,0,4,4,53],
+"classlbann__data_1_1DataReaderMnist.html#a452399ec9aa3d062023e1e6393b867b3":[3,0,4,4,83],
+"classlbann__data_1_1DataReaderMnist.html#a45e9e2435549d02bcd4ef9c6cb78ba49":[3,0,4,4,2],
+"classlbann__data_1_1DataReaderMnist.html#a46fa656a41e78ad8a2d86228b2cf7bee":[3,0,4,4,81],
+"classlbann__data_1_1DataReaderMnist.html#a4898a1e5b699b9fc39b7535520646c41":[3,0,4,4,31],
+"classlbann__data_1_1DataReaderMnist.html#a4c3c0f9fc432c369b76f9bf669865e1b":[3,0,4,4,59],
+"classlbann__data_1_1DataReaderMnist.html#a5028c0ffc3fa6e37a595406671ce4efd":[3,0,4,4,52],
+"classlbann__data_1_1DataReaderMnist.html#a50b5e22f5576e689a65f0ff3d379c318":[3,0,4,4,58],
 "classlbann__data_1_1DataReaderMnist.html#a559f7110b07ce852f5aaa7c40a067163":[3,0,4,4,15],
 "classlbann__data_1_1DataReaderMnist.html#a595762a106acf0b51c74d176679170ec":[3,0,4,4,4],
 "classlbann__data_1_1DataReaderMnist.html#a5d7ce5d02040605e0bc49037f7971904":[3,0,4,4,29],
@@ -241,13 +249,5 @@ var NAVTREEINDEX7 =
 "classlbann__data_1_1Input.html#a1265439175ca42a7da670fdeb21a866c":[3,0,4,12,1],
 "classlbann__data_1_1Input.html#a1294e7871d54159f646abd622a1b4466":[3,0,4,12,20],
 "classlbann__data_1_1Input.html#a13af82e0a09260f3a95cade89bcbae4e":[3,0,4,12,28],
-"classlbann__data_1_1Input.html#a249cadf5d857f34934c2cedb90cd26bb":[3,0,4,12,33],
-"classlbann__data_1_1Input.html#a2caa0548c97b94a8df17c9520474eb6b":[3,0,4,12,10],
-"classlbann__data_1_1Input.html#a32c7f0469b2312e7d79e5ec83906b997":[3,0,4,12,32],
-"classlbann__data_1_1Input.html#a39a9da3bdf3de477a8c7623330421eb5":[3,0,4,12,4],
-"classlbann__data_1_1Input.html#a411207868c8fa73123ed56f776bb88c6":[3,0,4,12,15],
-"classlbann__data_1_1Input.html#a515462a4ee27283c69b7480c3412999f":[3,0,4,12,36],
-"classlbann__data_1_1Input.html#a705f808eb303c90be9cf77151a646752":[3,0,4,12,8],
-"classlbann__data_1_1Input.html#a741e30b43ea8d52c85bb3fab7e00bcee":[3,0,4,12,11],
-"classlbann__data_1_1Input.html#a84e0639c0596224c6fdae000129db7f6":[3,0,4,12,26]
+"classlbann__data_1_1Input.html#a249cadf5d857f34934c2cedb90cd26bb":[3,0,4,12,33]
 };

@@ -2,7 +2,7 @@ var searchData=
 [
   ['tanh',['tanh',['../classlbann_1_1tanh__layer.html#addef58611ec7ea58cb575e985aee0237',1,'lbann::tanh_layer']]],
   ['tanhprime',['tanhPrime',['../classlbann_1_1tanh__layer.html#a709d3f8e74f426bb4a5f766e903ce7c8',1,'lbann::tanh_layer']]],
-  ['target',['target',['../classlbann__data_1_1Layer.html#ab9984a4da46662998dd7a0088a53884d',1,'lbann_data::Layer::target()'],['../classlbann__data_1_1Target.html#acf796d984203ff6aaf10a5ead8b9e8b7',1,'lbann_data::Target::Target()'],['../classlbann__data_1_1Target.html#a1b78367c97082770c094618b8f9335dc',1,'lbann_data::Target::Target(const Target &amp;from)']]],
+  ['target',['Target',['../classlbann__data_1_1Target.html#acf796d984203ff6aaf10a5ead8b9e8b7',1,'lbann_data::Target::Target()'],['../classlbann__data_1_1Target.html#a1b78367c97082770c094618b8f9335dc',1,'lbann_data::Target::Target(const Target &amp;from)'],['../classlbann__data_1_1Layer.html#ab9984a4da46662998dd7a0088a53884d',1,'lbann_data::Layer::target()']]],
   ['target_5fdistributed_5fminibatch',['target_distributed_minibatch',['../classlbann__data_1_1Layer.html#ae6b752ac1f424272eb515025dda07ef8',1,'lbann_data::Layer']]],
   ['target_5fdistributed_5fminibatch_5fparallel_5fio',['target_distributed_minibatch_parallel_io',['../classlbann__data_1_1Layer.html#a097d9490dc5520a44921df1ed457d309',1,'lbann_data::Layer']]],
   ['target_5flayer',['target_layer',['../classlbann_1_1target__layer.html#af59f8695f21b0d73f20e42784bcf72aa',1,'lbann::target_layer']]],

@@ -1,5 +1,13 @@
 var NAVTREEINDEX6 =
 {
+"classlbann__data_1_1Convolution.html#a5bb54a3fa7340daad31725b762b17984":[3,0,4,17,31],
+"classlbann__data_1_1Convolution.html#a5e12b5b80d1fdcd0c3e52b371a133ec9":[3,0,4,17,109],
+"classlbann__data_1_1Convolution.html#a60567e6ebe6ae81369025f7dfcd2efe3":[3,0,4,17,10],
+"classlbann__data_1_1Convolution.html#a6141850c54c788492660241ce72d8cbf":[3,0,4,17,23],
+"classlbann__data_1_1Convolution.html#a621c25a415a7484b3bcf791795de9274":[3,0,4,17,26],
+"classlbann__data_1_1Convolution.html#a64639be213f0678f2e855cefa3a30324":[3,0,4,17,43],
+"classlbann__data_1_1Convolution.html#a65862ae709964c2b83ac5e2e36ac08dc":[3,0,4,17,17],
+"classlbann__data_1_1Convolution.html#a678a992469c0d55d8a90b6966376a3a9":[3,0,4,17,57],
 "classlbann__data_1_1Convolution.html#a68badc93f7be62aa3e20865130f60237":[3,0,4,17,19],
 "classlbann__data_1_1Convolution.html#a6a063720b5a98dab98024c18b8f70b6b":[3,0,4,17,81],
 "classlbann__data_1_1Convolution.html#a6c255e041b5f3dc95fa853932dc37431":[3,0,4,17,65],
@@ -241,13 +249,5 @@ var NAVTREEINDEX6 =
 "classlbann__data_1_1DataReaderMnist.html#a32c7f0469b2312e7d79e5ec83906b997":[3,0,4,4,70],
 "classlbann__data_1_1DataReaderMnist.html#a3994ff776ee20b51cbac363a5883a5a4":[3,0,4,4,84],
 "classlbann__data_1_1DataReaderMnist.html#a3ab615334c02fd0ea2a9d31e3c35dbdd":[3,0,4,4,20],
-"classlbann__data_1_1DataReaderMnist.html#a3dbb29725cc6af3fac197b1626333294":[3,0,4,4,18],
-"classlbann__data_1_1DataReaderMnist.html#a413b5b91780153d38818da3ef41847db":[3,0,4,4,53],
-"classlbann__data_1_1DataReaderMnist.html#a452399ec9aa3d062023e1e6393b867b3":[3,0,4,4,83],
-"classlbann__data_1_1DataReaderMnist.html#a45e9e2435549d02bcd4ef9c6cb78ba49":[3,0,4,4,2],
-"classlbann__data_1_1DataReaderMnist.html#a46fa656a41e78ad8a2d86228b2cf7bee":[3,0,4,4,81],
-"classlbann__data_1_1DataReaderMnist.html#a4898a1e5b699b9fc39b7535520646c41":[3,0,4,4,31],
-"classlbann__data_1_1DataReaderMnist.html#a4c3c0f9fc432c369b76f9bf669865e1b":[3,0,4,4,59],
-"classlbann__data_1_1DataReaderMnist.html#a5028c0ffc3fa6e37a595406671ce4efd":[3,0,4,4,52],
-"classlbann__data_1_1DataReaderMnist.html#a50b5e22f5576e689a65f0ff3d379c318":[3,0,4,4,58]
+"classlbann__data_1_1DataReaderMnist.html#a3dbb29725cc6af3fac197b1626333294":[3,0,4,4,18]
 };
