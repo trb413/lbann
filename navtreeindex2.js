@@ -1,5 +1,12 @@
 var NAVTREEINDEX2 =
 {
+"classlbann_1_1data__reader__nci__regression.html#a97fd4068c6f2262efc4d597744b62100":[3,0,3,24,1],
+"classlbann_1_1data__reader__nci__regression.html#aa8ce278fb6506141347da302858cba99":[3,0,3,24,20],
+"classlbann_1_1data__reader__nci__regression.html#ab43ef50caa675ec59405f6335fe4c5b6":[3,0,3,24,6],
+"classlbann_1_1data__reader__nci__regression.html#aca20bfd23911c0e6045ba12e0028c6fd":[3,0,3,24,16],
+"classlbann_1_1data__reader__nci__regression.html#ae2e00a84db3d9060a15d4e67c985948a":[3,0,3,24,10],
+"classlbann_1_1data__reader__nci__regression.html#af154b6598b89f0d5f4d13aca1e8b2113":[3,0,3,24,9],
+"classlbann_1_1data__reader__nci__regression.html#af30f0151957bcd17ff72e96581139eb1":[3,0,3,24,4],
 "classlbann_1_1dataset.html":[3,0,3,76],
 "classlbann_1_1dataset.html#a1390264fd7c176b4dda8f2f33bcae7ba":[3,0,3,76,0],
 "classlbann_1_1dataset.html#a4632b42298795de712a32da162bedad5":[3,0,3,76,2],
@@ -242,12 +249,5 @@ var NAVTREEINDEX2 =
 "classlbann_1_1lbann__callback__imcomm.html#ace11211398e94728880476981f25fdc2":[3,0,3,9,4],
 "classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6a":[3,0,3,9,0],
 "classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aa06f19090efbd982638c20bcb8a3c7d33":[3,0,3,9,0,2],
-"classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aa5f19efb5bef79cea24be992a2137962e":[3,0,3,9,0,1],
-"classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aa76420a96a3df1d5b60140bab6bc32dc4":[3,0,3,9,0,3],
-"classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aa7d9b361cd28f08b327ebe76b4d9b35cd":[3,0,3,9,0,7],
-"classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aac3af83766cde0dfb183144d72f916f40":[3,0,3,9,0,6],
-"classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aac76623c2ad49262ce5beb14170fbda9f":[3,0,3,9,0,4],
-"classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aada44a49f242f680c41e65f80150d1712":[3,0,3,9,0,5],
-"classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aafa59156bc4d5bcbf6bd80918d062da03":[3,0,3,9,0,0],
-"classlbann_1_1lbann__callback__imcomm.html#ad3a9f43ceb08af462ce9d378e70bd76d":[3,0,3,9,3]
+"classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aa5f19efb5bef79cea24be992a2137962e":[3,0,3,9,0,1]
 };

@@ -4,9 +4,14 @@ var classlbann_1_1convolutional__layer =
     [ "~convolutional_layer", "classlbann_1_1convolutional__layer.html#aa4b4d34bf7060486c9cf294015cc2428", null ],
     [ "bp_linearity", "classlbann_1_1convolutional__layer.html#a4a6beefd3b7c00b569fa739ee8db7f7a", null ],
     [ "fp_linearity", "classlbann_1_1convolutional__layer.html#a1f5432a04851833838950908defe7029", null ],
+    [ "get_cudnn_manager", "classlbann_1_1convolutional__layer.html#aaa7cfc8313428728f7e7797cd1a2856a", null ],
+    [ "pin_mem", "classlbann_1_1convolutional__layer.html#afb02fc08adfd2c009556428c69d4ae36", null ],
     [ "pin_memory_blocks_bwd", "classlbann_1_1convolutional__layer.html#a07824976e1d99da875e0c96c1855fd91", null ],
     [ "pin_memory_blocks_fwd", "classlbann_1_1convolutional__layer.html#a9fc985265db92ca21de7463570b450a7", null ],
     [ "setup", "classlbann_1_1convolutional__layer.html#ac0bbc981f0b6afaad37d80901d34b2e0", null ],
+    [ "unpin_mem", "classlbann_1_1convolutional__layer.html#ad9664f0b090b1dca04e856b51ed54eec", null ],
+    [ "unpin_memory_blocks_bwd", "classlbann_1_1convolutional__layer.html#a83615fc2adf3cca9ca436e2e5b8ebea7", null ],
+    [ "unpin_memory_blocks_fwd", "classlbann_1_1convolutional__layer.html#a0dfc58d34fe471485e93b50dbefe752b", null ],
     [ "update", "classlbann_1_1convolutional__layer.html#a106690c11d33b28a48c39d5512f500b2", null ],
     [ "is_pinned_bwd", "classlbann_1_1convolutional__layer.html#aa02f0f56a82c6ad829a6320c915471ff", null ],
     [ "is_pinned_fwd", "classlbann_1_1convolutional__layer.html#a008c0e8a55bc9e334e46fbb483fe77e8", null ],
@@ -20,5 +25,7 @@ var classlbann_1_1convolutional__layer =
     [ "m_num_input_channels", "classlbann_1_1convolutional__layer.html#a630c387c321f9ab8bbe14c99689869b9", null ],
     [ "m_num_output_channels", "classlbann_1_1convolutional__layer.html#a0cc6a65939f0b14c59338b42af4197a7", null ],
     [ "m_output_dims", "classlbann_1_1convolutional__layer.html#af6a8af5dde7303285d8f86539f58afdc", null ],
-    [ "m_weight_initialization", "classlbann_1_1convolutional__layer.html#ad6df4fc3b8c7f01e0ceaaa6afee21a89", null ]
+    [ "m_weight_initialization", "classlbann_1_1convolutional__layer.html#ad6df4fc3b8c7f01e0ceaaa6afee21a89", null ],
+    [ "to_pin_bwd", "classlbann_1_1convolutional__layer.html#ae3f41f209beb76715a44572ee3747d9c", null ],
+    [ "to_pin_fwd", "classlbann_1_1convolutional__layer.html#adc923829f3945afa12993365bbcebdf0", null ]
 ];

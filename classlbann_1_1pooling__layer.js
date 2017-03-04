@@ -4,9 +4,14 @@ var classlbann_1_1pooling__layer =
     [ "~pooling_layer", "classlbann_1_1pooling__layer.html#ac6c5ce86280196a055697940eb1ff4da", null ],
     [ "bp_linearity", "classlbann_1_1pooling__layer.html#a815ce57ebd3a84a2e256b24587b6e43d", null ],
     [ "fp_linearity", "classlbann_1_1pooling__layer.html#a2d9efa294d3c3d0319e05666f73cd545", null ],
+    [ "get_cudnn_manager", "classlbann_1_1pooling__layer.html#a8f8fc31152c15d8a3ed01e83b058e352", null ],
+    [ "pin_mem", "classlbann_1_1pooling__layer.html#aa3b6b1ed167e41320c6070c805186ef3", null ],
     [ "pin_memory_blocks_bwd", "classlbann_1_1pooling__layer.html#a8082478d309c066ad34642128752746b", null ],
     [ "pin_memory_blocks_fwd", "classlbann_1_1pooling__layer.html#aa2609a9798788b561b47571c461010fe", null ],
     [ "setup", "classlbann_1_1pooling__layer.html#ac09b4214aeecbeb50db7bb8c6e6b4c31", null ],
+    [ "unpin_mem", "classlbann_1_1pooling__layer.html#a6008216dc35d06f01b0156c44d70cd39", null ],
+    [ "unpin_memory_blocks_bwd", "classlbann_1_1pooling__layer.html#af37613820122e49889022e6de2ede04b", null ],
+    [ "unpin_memory_blocks_fwd", "classlbann_1_1pooling__layer.html#ae09c16ec7b58681a69424715895601eb", null ],
     [ "update", "classlbann_1_1pooling__layer.html#a53e49068475c14e1e0fd8925a7b3c822", null ],
     [ "is_pinned_bwd", "classlbann_1_1pooling__layer.html#a81828d086aa30474b79b1f497116128f", null ],
     [ "is_pinned_fwd", "classlbann_1_1pooling__layer.html#a98319c79cadad2c50ec20a019e48f20a", null ],
@@ -18,5 +23,7 @@ var classlbann_1_1pooling__layer =
     [ "m_pool_dims", "classlbann_1_1pooling__layer.html#a904a67eea20b8b126bdeabd832b6ba27", null ],
     [ "m_pool_mode", "classlbann_1_1pooling__layer.html#acbb87056cf0d786c6a94be06fdc3a3d0", null ],
     [ "m_pool_pads", "classlbann_1_1pooling__layer.html#a9109939c1d7237f68ed7c3baab9778ea", null ],
-    [ "m_pool_strides", "classlbann_1_1pooling__layer.html#a2c9bf486d938634a395833466f8cb74b", null ]
+    [ "m_pool_strides", "classlbann_1_1pooling__layer.html#a2c9bf486d938634a395833466f8cb74b", null ],
+    [ "to_pin_bwd", "classlbann_1_1pooling__layer.html#acc288de8414f594d1766a1d76a906288", null ],
+    [ "to_pin_fwd", "classlbann_1_1pooling__layer.html#a8cdff31022e4181c04aafd74e1d6f943", null ]
 ];
