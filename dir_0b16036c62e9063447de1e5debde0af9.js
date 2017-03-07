@@ -1,8 +1,6 @@
 var dir_0b16036c62e9063447de1e5debde0af9 =
 [
-    [ "lbann_data_reader.hpp", "lbann__data__reader_8hpp.html", [
-      [ "DataReader", "classlbann_1_1DataReader.html", "classlbann_1_1DataReader" ]
-    ] ],
+    [ "lbann_data_reader.hpp", "lbann__data__reader_8hpp.html", "lbann__data__reader_8hpp" ],
     [ "lbann_data_reader_cifar10.hpp", "lbann__data__reader__cifar10_8hpp.html", [
       [ "DataReader_CIFAR10", "classlbann_1_1DataReader__CIFAR10.html", "classlbann_1_1DataReader__CIFAR10" ]
     ] ],

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">276c0b6-ci207729253</span>
+   &#160;<span id="projectnumber">f49c07e-ci208698151</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -183,6 +183,9 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 <li>m_current_validation_step
 : <a class="el" href="classlbann_1_1model.html#a0431d6b271b5718ec8db4744bc353e95">lbann::model</a>
 </li>
+<li>m_data_fn
+: <a class="el" href="classlbann_1_1DataReader.html#a68694ed6a4ded363aaad54a3508f5ff0">lbann::DataReader</a>
+</li>
 <li>m_data_sets_span_models
 : <a class="el" href="classlbann_1_1io__layer.html#a8ce9b172521bbcf55c1040a3c28719b1">lbann::io_layer</a>
 </li>
@@ -217,11 +220,17 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 <li>m_extension
 : <a class="el" href="classlbann_1_1lbann__callback__save__images.html#a7b37fa08f49051897ef427b8c810ca3a">lbann::lbann_callback_save_images</a>
 </li>
+<li>m_file_dir
+: <a class="el" href="classlbann_1_1DataReader.html#a5c550595da332e6aef2b20e8d6fe4843">lbann::DataReader</a>
+</li>
 <li>m_filter_dims
 : <a class="el" href="classlbann_1_1convolutional__layer.html#a94d0b9bf396c2539b230ad24aa460769">lbann::convolutional_layer</a>
 </li>
 <li>m_filter_size
 : <a class="el" href="classlbann_1_1convolutional__layer.html#ad31a332b86fdf944c6dbb12a19ccfcea">lbann::convolutional_layer</a>
+</li>
+<li>m_first_n
+: <a class="el" href="classlbann_1_1DataReader.html#a6713b1d7b86280607be603b9f2d09c24">lbann::DataReader</a>
 </li>
 <li>m_for_regression
 : <a class="el" href="classlbann_1_1io__layer.html#a8d722320c4a9c9b5e59b55938e3ed667">lbann::io_layer</a>
@@ -236,7 +245,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 : <a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a636f59ffe470f996677601df6179bc41">lbann::lbann_image_preprocessor</a>
 </li>
 <li>m_image_data
-: <a class="el" href="classlbann_1_1DataReader__MNIST.html#afd14c7eb891918795324985fb4585828">lbann::DataReader_MNIST</a>
+: <a class="el" href="classlbann_1_1DataReader__MNIST.html#aea635353a2480de7b726899524fb8775">lbann::DataReader_MNIST</a>
 </li>
 <li>m_image_depth
 : <a class="el" href="classlbann_1_1DataReader__ImageNet.html#a63dd00bb8e19c7342d69366729e211c8">lbann::DataReader_ImageNet</a>
@@ -267,6 +276,9 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 </li>
 <li>m_keep_prob
 : <a class="el" href="classlbann_1_1dropout.html#a2b4540ea622609b518d691d68e6db92c">lbann::dropout</a>
+</li>
+<li>m_label_fn
+: <a class="el" href="classlbann_1_1DataReader.html#a27cd5b3e3a5d55cd060330e8be20d6e7">lbann::DataReader</a>
 </li>
 <li>m_labels
 : <a class="el" href="classlbann_1_1data__reader__nci.html#ad07c090a7d827eb71e516de30040a2b1">lbann::data_reader_nci</a>
@@ -308,6 +320,12 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 : <a class="el" href="classlbann_1_1distributed__minibatch__parallel__io.html#a9b29d7ba9e5c4981d911d04fdff64547">lbann::distributed_minibatch_parallel_io</a>
 , <a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#af18fb0b9aefaa767522c4af4860b1a46">lbann::metrics::categorical_accuracy</a>
 </li>
+<li>m_max_sample_count
+: <a class="el" href="classlbann_1_1DataReader.html#a888c73ee867abab1fa1fd8f3d6bde339">lbann::DataReader</a>
+</li>
+<li>m_max_sample_count_was_set
+: <a class="el" href="classlbann_1_1DataReader.html#aecc3fffed06874a1339aed31032119d1">lbann::DataReader</a>
+</li>
 <li>m_mean_subtraction
 : <a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a734002307d0ef95a31d75a295fa5c3d1">lbann::lbann_image_preprocessor</a>
 </li>
@@ -325,8 +343,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 : <a class="el" href="classlbann_1_1DataReader.html#adfeaf6f5582249708f352cdd514dd339">lbann::DataReader</a>
 </li>
 <li>m_name
-: <a class="el" href="classlbann_1_1DataReader.html#aff43512d81b1c9128d8d4a20a1a3135f">lbann::DataReader</a>
-, <a class="el" href="classlbann_1_1deep__neural__network.html#a3512107ae2e5d773def30ff0dbf644a8">lbann::deep_neural_network</a>
+: <a class="el" href="classlbann_1_1deep__neural__network.html#a3512107ae2e5d773def30ff0dbf644a8">lbann::deep_neural_network</a>
 , <a class="el" href="classlbann_1_1greedy__layerwise__autoencoder.html#aad242bdb4b9859f7d804ac1f56ed43f0">lbann::greedy_layerwise_autoencoder</a>
 , <a class="el" href="classlbann_1_1lbann__callback.html#a023264b245b2ceb384abe17eab202552">lbann::lbann_callback</a>
 , <a class="el" href="classlbann_1_1objective__functions_1_1objective__fn.html#a49cea5efb7d5cb9a5e2bb3bcacfab62f">lbann::objective_functions::objective_fn</a>
@@ -528,8 +545,14 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 <li>m_use_alt_last_mini_batch_size
 : <a class="el" href="classlbann_1_1DataReader.html#acb4e6f0cf96f590ca6244343a14d5a86">lbann::DataReader</a>
 </li>
+<li>m_use_percent
+: <a class="el" href="classlbann_1_1DataReader.html#a055962950718897e1cd04a7e09620596">lbann::DataReader</a>
+</li>
 <li>m_validation_dataset
 : <a class="el" href="classlbann_1_1io__layer.html#adc5dce4f0ccb038ff6736e71ac710501">lbann::io_layer</a>
+</li>
+<li>m_validation_percent
+: <a class="el" href="classlbann_1_1DataReader.html#a8ab1a92b98ab91f3b010998bf4267776">lbann::DataReader</a>
 </li>
 <li>m_validation_stats
 : <a class="el" href="classlbann_1_1metrics_1_1metric.html#a28589fea20a9ed6bcc043e0f17ad5453">lbann::metrics::metric</a>
@@ -636,7 +659,7 @@ $(document).ready(function(){initNavTree('functions_vars_m.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Mar 4 2017 18:13:45 for LBANN by
+    <li class="footer">Generated on Tue Mar 7 2017 18:48:10 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
