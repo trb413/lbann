@@ -8,6 +8,7 @@ var searchData=
   ['data_5freader_5fnci_5fregression',['data_reader_nci_regression',['../classlbann_1_1data__reader__nci__regression.html',1,'lbann']]],
   ['data_5freader_5fnci_5fregression',['data_reader_nci_regression',['../classlbann_1_1data__reader__nci__regression.html#a62fb90bf0a05b0963762abe3b081c28a',1,'lbann::data_reader_nci_regression']]],
   ['data_5freader_5fparams',['data_reader_params',['../structlbann_1_1lbann__proto_1_1data__reader__params.html',1,'lbann::lbann_proto']]],
+  ['data_5fseq_5fgenerator',['data_seq_generator',['../namespaceanonymous__namespace_02lbann__random_8cpp_03.html#a36d1b52a12cd2346076af0b35f49efed',1,'anonymous_namespace{lbann_random.cpp}']]],
   ['datareader',['DataReader',['../classlbann_1_1DataReader.html',1,'lbann']]],
   ['datareader',['DataReader',['../classlbann__data_1_1DataReader.html',1,'lbann_data']]],
   ['datareader',['DataReader',['../classlbann_1_1DataReader.html#a69ca77afdbe79e8a53c6440e31a854f9',1,'lbann::DataReader::DataReader()'],['../classlbann__data_1_1DataReader.html#a95b0b299dad273889cb041b7cf3e52c9',1,'lbann_data::DataReader::DataReader()'],['../classlbann__data_1_1DataReader.html#a69f14ba73ea07d65b6512399a86911f6',1,'lbann_data::DataReader::DataReader(const DataReader &amp;from)']]],

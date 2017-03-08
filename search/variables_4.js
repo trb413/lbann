@@ -3,6 +3,7 @@ var searchData=
   ['data_5ffilename',['data_filename',['../structlbann_1_1lbann__proto_1_1data__reader__params.html#a6f746d96ef8dc8e243efed4cd38f6ca2',1,'lbann::lbann_proto::data_reader_params']]],
   ['data_5freader',['data_reader',['../classlbann_1_1dataset.html#adaa41a680f5ac625bb8a4830c239a9fd',1,'lbann::dataset']]],
   ['data_5freader_5f',['data_reader_',['../classlbann__data_1_1LbannPB.html#a33568bc990e990f1701fe046071cc90e',1,'lbann_data::LbannPB']]],
+  ['data_5fseq_5fgenerator',['data_seq_generator',['../namespaceanonymous__namespace_02lbann__random_8cpp_03.html#a36d1b52a12cd2346076af0b35f49efed',1,'anonymous_namespace{lbann_random.cpp}']]],
   ['datareader_5fdescriptor_5f',['DataReader_descriptor_',['../namespacelbann__data_1_1anonymous__namespace_02lbann_8pb_8cc_03.html#ab6b132c52f3de69566e3d40814507b85',1,'lbann_data::anonymous_namespace{lbann.pb.cc}']]],
   ['datareader_5freflection_5f',['DataReader_reflection_',['../namespacelbann__data_1_1anonymous__namespace_02lbann_8pb_8cc_03.html#ae56c47f7261f6a052873e262362c6395',1,'lbann_data::anonymous_namespace{lbann.pb.cc}']]],
   ['datareadercifar10_5fdescriptor_5f',['DataReaderCifar10_descriptor_',['../namespacelbann__data_1_1anonymous__namespace_02lbann_8pb_8cc_03.html#a69120bd3a3f04e8d34d864623702fdc6',1,'lbann_data::anonymous_namespace{lbann.pb.cc}']]],

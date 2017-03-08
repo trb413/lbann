@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">24c48f7-ci208756814</span>
+   &#160;<span id="projectnumber">509b23c-ci208873682</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -121,8 +121,12 @@ Functions</h2></td></tr>
 <tr class="separator:a4fea7ba21017b49d1e34394b4c20c764"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6ce9c2fdec6f81803f6b1a6555c31c5"><td class="memItemLeft" align="right" valign="top">fast_rng_gen &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5">lbann::get_fast_generator</a> ()</td></tr>
 <tr class="separator:ae6ce9c2fdec6f81803f6b1a6555c31c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba9d11cb3a739cd84e7234ceeb32d098"><td class="memItemLeft" align="right" valign="top">rng_gen &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#aba9d11cb3a739cd84e7234ceeb32d098">lbann::get_data_seq_generator</a> ()</td></tr>
+<tr class="separator:aba9d11cb3a739cd84e7234ceeb32d098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acef152f20e422b3aea1a3c1691a533ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#acef152f20e422b3aea1a3c1691a533ac">lbann::init_random</a> (int seed, lbann_comm *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>)</td></tr>
 <tr class="separator:acef152f20e422b3aea1a3c1691a533ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8987701a637ff0e678114aa77e9c4d40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#a8987701a637ff0e678114aa77e9c4d40">lbann::init_data_seq_random</a> (int seed)</td></tr>
+<tr class="separator:a8987701a637ff0e678114aa77e9c4d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a057b6c1efb3f6fcbe8ebe08f8506fee1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#a057b6c1efb3f6fcbe8ebe08f8506fee1">lbann::gaussian_fill</a> (<a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;mat, El::Int m, El::Int n, <a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> mean, <a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> stddev)</td></tr>
 <tr class="separator:a057b6c1efb3f6fcbe8ebe08f8506fee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a7ffde5dcab1f39986adff100020262"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#a1a7ffde5dcab1f39986adff100020262">lbann::bernoulli_fill</a> (<a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;mat, El::Int m, El::Int n, double p)</td></tr>
@@ -142,6 +146,8 @@ Variables</h2></td></tr>
 <tr class="separator:a6381148d83b28d7418e6736b1b8c0280"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aed666418d5fc8497675f4508a6f5ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelbann.html#ab909b5afe4b0047a3bfe13d519a90290">lbann::fast_rng_gen</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02lbann__random_8cpp_03.html#a7aed666418d5fc8497675f4508a6f5ef">anonymous_namespace{lbann_random.cpp}::fast_generator</a></td></tr>
 <tr class="separator:a7aed666418d5fc8497675f4508a6f5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d1b52a12cd2346076af0b35f49efed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelbann.html#aa54070c91e931f303a89f162e91de8cc">lbann::rng_gen</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02lbann__random_8cpp_03.html#a36d1b52a12cd2346076af0b35f49efed">anonymous_namespace{lbann_random.cpp}::data_seq_generator</a></td></tr>
+<tr class="separator:a36d1b52a12cd2346076af0b35f49efed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -149,7 +155,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_e3a975d7a6e3e1ec3d3053fd7df1ad72.html">utils</a></li><li class="navelem"><a class="el" href="lbann__random_8cpp.html">lbann_random.cpp</a></li>
-    <li class="footer">Generated on Tue Mar 7 2017 21:49:20 for LBANN by
+    <li class="footer">Generated on Wed Mar 8 2017 07:14:37 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
