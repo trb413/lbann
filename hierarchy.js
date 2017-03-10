@@ -42,9 +42,7 @@ var hierarchy =
     [ "lbann::base_factory< Layer >", "classlbann_1_1base__factory.html", [
       [ "lbann::layer_factory", "classlbann_1_1layer__factory.html", null ]
     ] ],
-    [ "cudnn::cudnn_convolutional_layer", "classcudnn_1_1cudnn__convolutional__layer.html", null ],
     [ "cudnn::cudnn_manager", "classcudnn_1_1cudnn__manager.html", null ],
-    [ "cudnn::cudnn_pooling_layer", "classcudnn_1_1cudnn__pooling__layer.html", null ],
     [ "dataset_header", "structdataset__header.html", null ],
     [ "Message", null, [
       [ "lbann_data::Convolution", "classlbann__data_1_1Convolution.html", null ],

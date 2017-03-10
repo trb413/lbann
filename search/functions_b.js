@@ -1,7 +1,12 @@
 var searchData=
 [
+  ['m_5fnum_5fchannels',['m_num_channels',['../lbann__layer__pooling_8cpp.html#a8ac156a3f6c715574f4868ef49dd6667',1,'lbann_layer_pooling.cpp']]],
+  ['m_5fnum_5fdims',['m_num_dims',['../lbann__layer__convolutional_8cpp.html#a7a202a20a84c0d306cc1ad8b2526d540',1,'m_num_dims(num_dims):&#160;lbann_layer_convolutional.cpp'],['../lbann__layer__pooling_8cpp.html#a7a202a20a84c0d306cc1ad8b2526d540',1,'m_num_dims(num_dims):&#160;lbann_layer_pooling.cpp']]],
+  ['m_5fnum_5finput_5fchannels',['m_num_input_channels',['../lbann__layer__convolutional_8cpp.html#a626e49af1247e96b0658d9dfdf5bd392',1,'lbann_layer_convolutional.cpp']]],
+  ['m_5fnum_5foutput_5fchannels',['m_num_output_channels',['../lbann__layer__convolutional_8cpp.html#a3b0f43cffeba6f6e6f4c3520f476ebad',1,'lbann_layer_convolutional.cpp']]],
   ['m_5foriginal_5flayer',['m_original_layer',['../lbann__target__layer__unsupervised_8cpp.html#a10ab2a6119489f64f9e5f489981bd64f',1,'lbann_target_layer_unsupervised.cpp']]],
-  ['m_5fweight_5finitialization',['m_weight_initialization',['../lbann__target__layer__unsupervised_8cpp.html#acf6a2677c9dc565b7f3379c1544d709e',1,'lbann_target_layer_unsupervised.cpp']]],
+  ['m_5fpool_5fmode',['m_pool_mode',['../lbann__layer__pooling_8cpp.html#a00a0327dab70822f4e305bff0f61e656',1,'lbann_layer_pooling.cpp']]],
+  ['m_5fweight_5finitialization',['m_weight_initialization',['../lbann__layer__convolutional_8cpp.html#acf6a2677c9dc565b7f3379c1544d709e',1,'m_weight_initialization(init):&#160;lbann_layer_convolutional.cpp'],['../lbann__target__layer__unsupervised_8cpp.html#acf6a2677c9dc565b7f3379c1544d709e',1,'m_weight_initialization(init):&#160;lbann_target_layer_unsupervised.cpp']]],
   ['make_5fbox2_5fchar',['MAKE_BOX2_CHAR',['../datatype_8hpp.html#a49fb44aa5777920423c12f7162034dfe',1,'datatype.hpp']]],
   ['make_5fbox2_5fdouble',['MAKE_BOX2_DOUBLE',['../datatype_8hpp.html#aa7bbed20362869bb51b8d43f32160757',1,'datatype.hpp']]],
   ['make_5fbox2_5ffloat',['MAKE_BOX2_FLOAT',['../datatype_8hpp.html#af8a6b12c080b8ad02555905f07affec1',1,'datatype.hpp']]],

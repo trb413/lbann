@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">509b23c-ci208873682</span>
+   &#160;<span id="projectnumber">b84e709-ci209598104</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -573,7 +573,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add layer to sequential model. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000027">Todo:</a></b></dt><dd>Consider removing this function. The destructor deallocates all layers, so we might run into problems if a layer is deallocated externally. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000025">Todo:</a></b></dt><dd>Consider removing this function. The destructor deallocates all layers, so we might run into problems if a layer is deallocated externally. </dd></dl>
 
 <p>Definition at line <a class="el" href="lbann__model__sequential_8cpp_source.html#l00442">442</a> of file <a class="el" href="lbann__model__sequential_8cpp_source.html">lbann_model_sequential.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;{</div>
@@ -612,13 +612,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classlbann_1_1model.html#a606cc1d218b1f609b5a02b07e7f4bcee">lbann::model</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__model__sequential_8cpp_source.html#l00513">513</a> of file <a class="el" href="lbann__model__sequential_8cpp_source.html">lbann_model_sequential.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;{</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;  <span class="comment">// use mini batch index in data reader to signify start of epoch</span></div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;  <a class="code" href="classlbann_1_1io__layer.html">lbann::io_layer</a>* input = (<a class="code" href="classlbann_1_1io__layer.html">lbann::io_layer</a>*) <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[0];</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;  <span class="keywordtype">bool</span> flag = input-&gt;<a class="code" href="classlbann_1_1io__layer.html#a4f0e3bbd6bc638432723179efc2998ab">at_new_epoch</a>();</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;  <span class="keywordflow">return</span> flag;</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__model__sequential_8cpp_source.html#l00523">523</a> of file <a class="el" href="lbann__model__sequential_8cpp_source.html">lbann_model_sequential.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;{</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;  <span class="comment">// use mini batch index in data reader to signify start of epoch</span></div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;  <a class="code" href="classlbann_1_1io__layer.html">lbann::io_layer</a>* input = (<a class="code" href="classlbann_1_1io__layer.html">lbann::io_layer</a>*) <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[0];</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;  <span class="keywordtype">bool</span> flag = input-&gt;<a class="code" href="classlbann_1_1io__layer.html#a4f0e3bbd6bc638432723179efc2998ab">at_new_epoch</a>();</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;  <span class="keywordflow">return</span> flag;</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1io__layer_html_a4f0e3bbd6bc638432723179efc2998ab"><div class="ttname"><a href="classlbann_1_1io__layer.html#a4f0e3bbd6bc638432723179efc2998ab">lbann::io_layer::at_new_epoch</a></div><div class="ttdeci">bool at_new_epoch()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__io__layer_8hpp_source.html#l00057">lbann_io_layer.hpp:57</a></div></div>
 <div class="ttc" id="classlbann_1_1sequential__model_html_a33d0763e07a97def5a6b9b57a6db4c9a"><div class="ttname"><a href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">lbann::sequential_model::m_layers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; m_layers</div><div class="ttdoc">List of layers. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8hpp_source.html#l00148">lbann_model_sequential.hpp:148</a></div></div>
 <div class="ttc" id="classlbann_1_1io__layer_html"><div class="ttname"><a href="classlbann_1_1io__layer.html">lbann::io_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__io__layer_8hpp_source.html#l00040">lbann_io_layer.hpp:40</a></div></div>
@@ -782,7 +782,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Insert layer in sequential model. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000029">Todo:</a></b></dt><dd><p class="startdd">This will mess up layer indices. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000027">Todo:</a></b></dt><dd><p class="startdd">This will mess up layer indices. </p>
 <p class="enddd">Consider removing this function. The destructor deallocates all layers, so we might run into problems if a layer is deallocated externally. </p>
 </dd></dl>
 
@@ -825,7 +825,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Load model from checkpoint. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000026">Todo:</a></b></dt><dd>This is old and likely broken </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000024">Todo:</a></b></dt><dd>This is old and likely broken </dd></dl>
 
 <p>Definition at line <a class="el" href="lbann__model__sequential_8cpp_source.html#l00291">291</a> of file <a class="el" href="lbann__model__sequential_8cpp_source.html">lbann_model_sequential.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;{</div>
@@ -956,7 +956,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Load model from file. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000024">Todo:</a></b></dt><dd>This is old and likely broken </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000022">Todo:</a></b></dt><dd>This is old and likely broken </dd></dl>
 
 <p>Definition at line <a class="el" href="lbann__model__sequential_8cpp_source.html#l00176">176</a> of file <a class="el" href="lbann__model__sequential_8cpp_source.html">lbann_model_sequential.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;{</div>
@@ -1106,7 +1106,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Remove layer from sequential model. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000028">Todo:</a></b></dt><dd>This will mess up layer indices </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000026">Todo:</a></b></dt><dd>This will mess up layer indices </dd></dl>
 
 <p>Definition at line <a class="el" href="lbann__model__sequential_8cpp_source.html#l00451">451</a> of file <a class="el" href="lbann__model__sequential_8cpp_source.html">lbann_model_sequential.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;{</div>
@@ -1148,7 +1148,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Save model to checkpoint. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000025">Todo:</a></b></dt><dd>This is old and likely broken </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000023">Todo:</a></b></dt><dd>This is old and likely broken </dd></dl>
 
 <p>Definition at line <a class="el" href="lbann__model__sequential_8cpp_source.html#l00270">270</a> of file <a class="el" href="lbann__model__sequential_8cpp_source.html">lbann_model_sequential.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;{</div>
@@ -1266,7 +1266,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Save model to file. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000023">Todo:</a></b></dt><dd>This is old and likely broken </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000021">Todo:</a></b></dt><dd>This is old and likely broken </dd></dl>
 
 <p>Definition at line <a class="el" href="lbann__model__sequential_8cpp_source.html#l00069">69</a> of file <a class="el" href="lbann__model__sequential_8cpp_source.html">lbann_model_sequential.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
@@ -1425,15 +1425,19 @@ Here is the call graph for this function:</div>
 
 <p>Establish model layers' backward pass input pointers. </p>
 
-<p>Definition at line <a class="el" href="lbann__model__sequential_8cpp_source.html#l00478">478</a> of file <a class="el" href="lbann__model__sequential_8cpp_source.html">lbann_model_sequential.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;{</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;  <span class="comment">// Establish the backward pass input pointers</span></div>
-<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;  <span class="comment">// Note: the last layer doens&#39;t require input</span></div>
-<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> l = end_index-1; l --&gt; Max(start_index-1,0) ;) { <span class="comment">// Cute decrement loop for unsigned int</span></div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;    <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l]-&gt;set_next_layer_type(<a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l+1]-&gt;m_type);</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l]-&gt;setup_bp_input(<a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l+1]-&gt;bp_output());</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;  }</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__model__sequential_8cpp_source.html#l00482">482</a> of file <a class="el" href="lbann__model__sequential_8cpp_source.html">lbann_model_sequential.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;{</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;  <span class="comment">// Get properties from next layers</span></div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;  <span class="comment">// Note: the last layer has no next layer</span></div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;  <span class="keywordflow">for</span> (Int l=end_index-2; l&gt;=Max(start_index-1,0); --l) {</div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l]-&gt;set_next_layer_type(<a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l+1]-&gt;m_type);</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l]-&gt;setup_bp_input(<a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l+1]-&gt;bp_output());</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;<span class="preprocessor">#ifdef __LIB_CUDNN</span></div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;<span class="preprocessor"></span>    <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l]-&gt;setup_bp_input_d(<a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l+1]-&gt;bp_output_d());</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l]-&gt;set_next_layer_using_gpus(<a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l+1]-&gt;using_gpus());</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;<span class="preprocessor"></span>  }</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1sequential__model_html_a33d0763e07a97def5a6b9b57a6db4c9a"><div class="ttname"><a href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">lbann::sequential_model::m_layers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; m_layers</div><div class="ttdoc">List of layers. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8hpp_source.html#l00148">lbann_model_sequential.hpp:148</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1474,13 +1478,17 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="lbann__model__sequential_8cpp_source.html#l00468">468</a> of file <a class="el" href="lbann__model__sequential_8cpp_source.html">lbann_model_sequential.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;{</div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;  <span class="comment">// Establish the forward pass input pointers</span></div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;  <span class="comment">// Note: the first layer doesn&#39;t require input</span></div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> l = Max(start_index,1); l &lt; end_index; ++l) {</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;  <span class="comment">// Get properties from previous layers</span></div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;  <span class="comment">// Note: the first layer has no previous layer</span></div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;  <span class="keywordflow">for</span> (Int l=Max(start_index,1); l&lt;end_index; ++l) {</div>
 <div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l]-&gt;set_prev_layer_type(<a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l-1]-&gt;m_type);</div>
 <div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l]-&gt;setup_fp_input(<a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l-1]-&gt;fp_output());</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;  }</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;}</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="preprocessor">#ifdef __LIB_CUDNN</span></div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="preprocessor"></span>    <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l]-&gt;setup_fp_input_d(<a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l-1]-&gt;fp_output_d());</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;    <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l]-&gt;set_prev_layer_using_gpus(<a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l-1]-&gt;using_gpus());</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;<span class="preprocessor"></span>  }</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1sequential__model_html_a33d0763e07a97def5a6b9b57a6db4c9a"><div class="ttname"><a href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">lbann::sequential_model::m_layers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; m_layers</div><div class="ttdoc">List of layers. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8hpp_source.html#l00148">lbann_model_sequential.hpp:148</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1551,31 +1559,33 @@ Here is the call graph for this function:</div>
 <p>Setup sequential model. </p>
 <p>Provide a reverse point from each layer to the model </p>
 
-<p>Definition at line <a class="el" href="lbann__model__sequential_8cpp_source.html#l00488">488</a> of file <a class="el" href="lbann__model__sequential_8cpp_source.html">lbann_model_sequential.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;{</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;  <span class="keywordflow">if</span>(end_index &lt;= 0) {</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    end_index = <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>.size();</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;  }</div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  <span class="comment">// Setup each layer</span></div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  <span class="keywordtype">int</span> prev_layer_dim = start_index &gt; 0 ? <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[start_index-1]-&gt;NumNeurons : -1;</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> l = start_index; l &lt; end_index; ++l) {</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1model.html#ae5a400e2f0a044c33383975298719cc2">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac">am_model_master</a>()) {</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;      cout &lt;&lt; <span class="stringliteral">&quot;Setting up a layer with input &quot;</span> &lt;&lt; prev_layer_dim &lt;&lt; <span class="stringliteral">&quot; and index &quot;</span> &lt;&lt; l &lt;&lt; endl;</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    }</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l]-&gt;neural_network_model = <span class="keyword">this</span>; </div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l]-&gt;setup(prev_layer_dim);</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l]-&gt;check_setup();</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    prev_layer_dim = <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l]-&gt;NumNeurons;</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l]-&gt;Index = l;</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;  }</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;  <a class="code" href="classlbann_1_1sequential__model.html#ae4fa1fd95dae51edf2b0db11258dca51">set_fp_input</a>(start_index, end_index);</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;  <a class="code" href="classlbann_1_1sequential__model.html#a89b2328126f795397d0d7c1f82eae623">set_bp_input</a>(start_index, end_index);</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;  <span class="comment">// Set up callbacks</span></div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;  <a class="code" href="classlbann_1_1model.html#af61c38d8d5ce7dad5a74dcf459758dea">setup_callbacks</a>();</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1sequential__model_html_a89b2328126f795397d0d7c1f82eae623"><div class="ttname"><a href="classlbann_1_1sequential__model.html#a89b2328126f795397d0d7c1f82eae623">lbann::sequential_model::set_bp_input</a></div><div class="ttdeci">virtual void set_bp_input(size_t start_index, size_t end_index)</div><div class="ttdoc">Establish model layers&#39; backward pass input pointers. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8cpp_source.html#l00478">lbann_model_sequential.cpp:478</a></div></div>
+<p>Definition at line <a class="el" href="lbann__model__sequential_8cpp_source.html#l00496">496</a> of file <a class="el" href="lbann__model__sequential_8cpp_source.html">lbann_model_sequential.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;{</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;  <span class="keywordflow">if</span>(end_index &lt;= 0) {</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    end_index = <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>.size();</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;  }</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;  <span class="comment">// Get properties from adjacent layers</span></div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;  <a class="code" href="classlbann_1_1sequential__model.html#ae4fa1fd95dae51edf2b0db11258dca51">set_fp_input</a>(start_index, end_index);</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;  <a class="code" href="classlbann_1_1sequential__model.html#a89b2328126f795397d0d7c1f82eae623">set_bp_input</a>(start_index, end_index);</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;  <span class="comment">// Setup each layer</span></div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;  <span class="keywordtype">int</span> prev_layer_dim = start_index &gt; 0 ? <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[start_index-1]-&gt;NumNeurons : -1;</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;  <span class="keywordflow">for</span> (Int l=start_index; l&lt;end_index; ++l) {</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1model.html#ae5a400e2f0a044c33383975298719cc2">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac">am_model_master</a>()) {</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;      cout &lt;&lt; <span class="stringliteral">&quot;Setting up a layer with input &quot;</span> &lt;&lt; prev_layer_dim &lt;&lt; <span class="stringliteral">&quot; and index &quot;</span> &lt;&lt; l &lt;&lt; endl;</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    }</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;    <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l]-&gt;neural_network_model = <span class="keyword">this</span>; </div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;    <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l]-&gt;setup(prev_layer_dim);</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l]-&gt;check_setup();</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    prev_layer_dim = <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l]-&gt;NumNeurons;</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[l]-&gt;Index = l;</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;  }</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;  <span class="comment">// Set up callbacks</span></div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;  <a class="code" href="classlbann_1_1model.html#af61c38d8d5ce7dad5a74dcf459758dea">setup_callbacks</a>();</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1sequential__model_html_a89b2328126f795397d0d7c1f82eae623"><div class="ttname"><a href="classlbann_1_1sequential__model.html#a89b2328126f795397d0d7c1f82eae623">lbann::sequential_model::set_bp_input</a></div><div class="ttdeci">virtual void set_bp_input(size_t start_index, size_t end_index)</div><div class="ttdoc">Establish model layers&#39; backward pass input pointers. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8cpp_source.html#l00482">lbann_model_sequential.cpp:482</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_af61c38d8d5ce7dad5a74dcf459758dea"><div class="ttname"><a href="classlbann_1_1model.html#af61c38d8d5ce7dad5a74dcf459758dea">lbann::model::setup_callbacks</a></div><div class="ttdeci">void setup_callbacks()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8cpp_source.html#l00063">lbann_model.cpp:63</a></div></div>
 <div class="ttc" id="classlbann_1_1sequential__model_html_a33d0763e07a97def5a6b9b57a6db4c9a"><div class="ttname"><a href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">lbann::sequential_model::m_layers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; m_layers</div><div class="ttdoc">List of layers. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8hpp_source.html#l00148">lbann_model_sequential.hpp:148</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a06a31f9df1860358ef0ef68d9e165cac"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac">lbann::lbann_comm::am_model_master</a></div><div class="ttdeci">bool am_model_master() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00075">lbann_comm.hpp:75</a></div></div>
@@ -1807,7 +1817,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1sequential__model.html">sequential_model</a></li>
-    <li class="footer">Generated on Wed Mar 8 2017 07:14:38 for LBANN by
+    <li class="footer">Generated on Fri Mar 10 2017 02:37:18 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

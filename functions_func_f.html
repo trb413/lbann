@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">509b23c-ci208873682</span>
+   &#160;<span id="projectnumber">b84e709-ci209598104</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -136,10 +136,12 @@ $(document).ready(function(){initNavTree('functions_func_f.html','');});
 </li>
 <li>forwardProp()
 : <a class="el" href="classlbann_1_1Activation.html#a64622e2dd77075a3aad4f0af8d5307f8">lbann::Activation</a>
+, <a class="el" href="classlbann_1_1convolutional__layer.html#ace1e3a03b64dd74a6b18c28302e39a44">lbann::convolutional_layer</a>
 , <a class="el" href="classlbann_1_1ELU__layer.html#af513c7fa40c17bb43ab484d6aae0baae">lbann::ELU_layer</a>
 , <a class="el" href="classlbann_1_1id__layer.html#a5cdba1b63398db433fb18ead0845a1b9">lbann::id_layer</a>
 , <a class="el" href="classlbann_1_1Layer.html#adfcdbf9d382ca3018107fb39c176ea5a">lbann::Layer</a>
 , <a class="el" href="classlbann_1_1leaky__reLU__layer.html#ac54932ecd1ca08e7370f9437bfc5eab9">lbann::leaky_reLU_layer</a>
+, <a class="el" href="classlbann_1_1pooling__layer.html#ae7e65b8d4c5e4837127a24b57440438e">lbann::pooling_layer</a>
 , <a class="el" href="classlbann_1_1reLU__layer.html#a081f3b26b98d1a0df9f5d716a6fd1bc0">lbann::reLU_layer</a>
 , <a class="el" href="classlbann_1_1sigmoid__layer.html#a9ad0a702a440ad58cff171a029c1db72">lbann::sigmoid_layer</a>
 , <a class="el" href="classlbann_1_1smooth__reLU__layer.html#a28d16911310477f4852aeb60da11b030">lbann::smooth_reLU_layer</a>
@@ -164,12 +166,24 @@ $(document).ready(function(){initNavTree('functions_func_f.html','');});
 , <a class="el" href="classlbann_1_1target__layer__distributed__minibatch__parallel__io.html#afca413b0943350f2bd64164a5f268e0d">lbann::target_layer_distributed_minibatch_parallel_io</a>
 , <a class="el" href="classlbann_1_1target__layer__unsupervised.html#a97a4d94db50e704a525220e85c65c5b1">lbann::target_layer_unsupervised</a>
 </li>
+<li>fp_linearity_cpu()
+: <a class="el" href="classlbann_1_1convolutional__layer.html#acb151c2f0255fdbd43b8437aa67d4221">lbann::convolutional_layer</a>
+, <a class="el" href="classlbann_1_1pooling__layer.html#a88f3e0de7f1b16fb8876c41ac0b7040b">lbann::pooling_layer</a>
+</li>
+<li>fp_linearity_gpu()
+: <a class="el" href="classlbann_1_1convolutional__layer.html#a80dec19f24a267700cf6ff6cc5fdc9e1">lbann::convolutional_layer</a>
+, <a class="el" href="classlbann_1_1pooling__layer.html#a47eeadb345c58870bb28461f93250632">lbann::pooling_layer</a>
+</li>
 <li>fp_nonlinearity()
-: <a class="el" href="classlbann_1_1input__layer.html#abd30eb911e33d2f5246db72f79cbaf3b">lbann::input_layer</a>
+: <a class="el" href="classlbann_1_1convolutional__layer.html#a02ab7abb6c4042548333514b6e686669">lbann::convolutional_layer</a>
+, <a class="el" href="classlbann_1_1input__layer.html#abd30eb911e33d2f5246db72f79cbaf3b">lbann::input_layer</a>
 , <a class="el" href="classlbann_1_1Layer.html#aa5ca9f046b4833f3d914d301af8a8640">lbann::Layer</a>
 , <a class="el" href="classlbann_1_1SoftmaxLayer.html#a01b38e99350dc6ba4b8aabd4709f942e">lbann::SoftmaxLayer</a>
 , <a class="el" href="classlbann_1_1target__layer.html#aa5015083743538e1531b30e924e3dd2d">lbann::target_layer</a>
 , <a class="el" href="classlbann_1_1target__layer__unsupervised.html#aad97a7830bff75050a1da45595efc69e">lbann::target_layer_unsupervised</a>
+</li>
+<li>fp_nonlinearity_gpu()
+: <a class="el" href="classlbann_1_1convolutional__layer.html#ad9f05a9bfaa670d641ccc454f5f1aaf0">lbann::convolutional_layer</a>
 </li>
 <li>fp_output()
 : <a class="el" href="classlbann_1_1Layer.html#ad547eae2227e9db8f5621b8f616be083">lbann::Layer</a>
@@ -198,7 +212,7 @@ $(document).ready(function(){initNavTree('functions_func_f.html','');});
 : <a class="el" href="classlbann__data_1_1Layer.html#a7d43bf3a6316b37626e5bb9ee17cb113">lbann_data::Layer</a>
 </li>
 <li>FullyConnected()
-: <a class="el" href="classlbann__data_1_1FullyConnected.html#a754cbbfed468f8de512ee6deed28867f">lbann_data::FullyConnected</a>
+: <a class="el" href="classlbann__data_1_1FullyConnected.html#a12b7aa3446a6f4cec137060443450c56">lbann_data::FullyConnected</a>
 </li>
 <li>FullyConnectedLayer()
 : <a class="el" href="classlbann_1_1FullyConnectedLayer.html#afce405665ec5bf44d7095340cbf9a976">lbann::FullyConnectedLayer</a>
@@ -209,7 +223,7 @@ $(document).ready(function(){initNavTree('functions_func_f.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Mar 8 2017 07:14:47 for LBANN by
+    <li class="footer">Generated on Fri Mar 10 2017 02:37:28 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

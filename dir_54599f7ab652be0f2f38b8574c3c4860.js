@@ -1,9 +1,7 @@
 var dir_54599f7ab652be0f2f38b8574c3c4860 =
 [
     [ "cudnn_wrapper.hpp", "cudnn__wrapper_8hpp.html", [
-      [ "cudnn_manager", "classcudnn_1_1cudnn__manager.html", null ],
-      [ "cudnn_convolutional_layer", "classcudnn_1_1cudnn__convolutional__layer.html", null ],
-      [ "cudnn_pooling_layer", "classcudnn_1_1cudnn__pooling__layer.html", null ]
+      [ "cudnn_manager", "classcudnn_1_1cudnn__manager.html", null ]
     ] ],
     [ "lbann_dataset.hpp", "lbann__dataset_8hpp.html", [
       [ "dataset", "classlbann_1_1dataset.html", "classlbann_1_1dataset" ]

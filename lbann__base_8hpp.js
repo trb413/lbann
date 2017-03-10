@@ -25,7 +25,8 @@ var lbann__base_8hpp =
       [ "MC_MR", "lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dacf33f55c86c56389442455e8e190be2d", null ],
       [ "CIRC_CIRC", "lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dad9fe2079b84227e0894774795402ec69", null ],
       [ "STAR_STAR", "lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0da41478dbc562bc2cdaa328e2fa04558b2", null ],
-      [ "STAR_VC", "lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dab05461c65c89f42d7e1b8c9cea626032", null ]
+      [ "STAR_VC", "lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dab05461c65c89f42d7e1b8c9cea626032", null ],
+      [ "invalid", "lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dafedb2d84cafe20862cb4399751a8a7e3", null ]
     ] ],
     [ "pool_mode", "lbann__base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39", [
       [ "max", "lbann__base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39a2ffe4e77325d9a7152f7086ea7aa5114", null ],

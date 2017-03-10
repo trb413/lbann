@@ -25,6 +25,7 @@ var searchData=
   ['ushort2',['USHORT2',['../datatype_8hpp.html#a7ced9d24fc3183eb85a21793088d5801',1,'datatype.hpp']]],
   ['ushort3',['USHORT3',['../datatype_8hpp.html#a6b29e46092c87f20c972c8dcac0293a0',1,'datatype.hpp']]],
   ['ushort4',['USHORT4',['../datatype_8hpp.html#a295b900a8e9600b65b8087414869803e',1,'datatype.hpp']]],
+  ['using_5fgpus',['using_gpus',['../classlbann_1_1Layer.html#acee56be91337bbd78bc4371a8159b760',1,'lbann::Layer']]],
   ['using_20tensorboard_20to_20view_20lbann_20results',['Using TensorBoard to view LBANN results',['../using_tensorboard.html',1,'basic_usage']]],
   ['using_5ftensorboard_2edox',['using_tensorboard.dox',['../using__tensorboard_8dox.html',1,'']]]
 ];

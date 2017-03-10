@@ -21,7 +21,7 @@ var searchData=
   ['get_5fbytes_5fsent',['get_bytes_sent',['../classlbann_1_1lbann__comm.html#a8644cbef030e9e6e66e50753ef76a884',1,'lbann::lbann_comm::get_bytes_sent()'],['../classlbann_1_1lbann__quantizer.html#ad318aefe6f75c8d68363affce55f6190',1,'lbann::lbann_quantizer::get_bytes_sent()']]],
   ['get_5fcomm',['get_comm',['../classlbann_1_1model.html#aa837a468e77991314053a93441d111ca',1,'lbann::model']]],
   ['get_5fcount',['get_count',['../classlbann_1_1lbann__comm.html#aa1db618eb587ead21fb0420bf94bfd45',1,'lbann::lbann_comm::get_count(int model, int rank)'],['../classlbann_1_1lbann__comm.html#a54544a1b1a691fa7b6314da5682f184c',1,'lbann::lbann_comm::get_count(int model)']]],
-  ['get_5fcudnn_5fmanager',['get_cudnn_manager',['../classlbann_1_1convolutional__layer.html#aaa7cfc8313428728f7e7797cd1a2856a',1,'lbann::convolutional_layer::get_cudnn_manager()'],['../classlbann_1_1pooling__layer.html#a8f8fc31152c15d8a3ed01e83b058e352',1,'lbann::pooling_layer::get_cudnn_manager()']]],
+  ['get_5fcudnn_5fmanager',['get_cudnn_manager',['../classlbann_1_1convolutional__layer.html#af843455381cac1e151f097476152efc2',1,'lbann::convolutional_layer::get_cudnn_manager()'],['../classlbann_1_1pooling__layer.html#ae6650e86474becd0f46782fafb19b54d',1,'lbann::pooling_layer::get_cudnn_manager()']]],
   ['get_5fcur_5fepoch',['get_cur_epoch',['../classlbann_1_1model.html#a3f6f0384573e9ca4bea93ce0dbebfd28',1,'lbann::model']]],
   ['get_5fcur_5fstep',['get_cur_step',['../classlbann_1_1model.html#a6fb1e6b55fe9f7ecb70759a9c50a20c5',1,'lbann::model']]],
   ['get_5fcur_5ftesting_5fstep',['get_cur_testing_step',['../classlbann_1_1model.html#a6ee961f393a4276f44b328a76a58c7ee',1,'lbann::model']]],
