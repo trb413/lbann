@@ -21,6 +21,7 @@ var namespacelbann =
     [ "lbann_callback_timer", "classlbann_1_1lbann__callback__timer.html", "classlbann_1_1lbann__callback__timer" ],
     [ "DataReader", "classlbann_1_1DataReader.html", "classlbann_1_1DataReader" ],
     [ "DataReader_CIFAR10", "classlbann_1_1DataReader__CIFAR10.html", "classlbann_1_1DataReader__CIFAR10" ],
+    [ "DataReader_cnpy", "classlbann_1_1DataReader__cnpy.html", "classlbann_1_1DataReader__cnpy" ],
     [ "DataReader_ImageNet", "classlbann_1_1DataReader__ImageNet.html", "classlbann_1_1DataReader__ImageNet" ],
     [ "DataReader_MNIST", "classlbann_1_1DataReader__MNIST.html", "classlbann_1_1DataReader__MNIST" ],
     [ "data_reader_nci", "classlbann_1_1data__reader__nci.html", "classlbann_1_1data__reader__nci" ],

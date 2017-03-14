@@ -187,7 +187,7 @@ var searchData=
   ['size',['size',['../classlbann_1_1layer__factory.html#a1939a41968a91f7e9263e56538e7bffa',1,'lbann::layer_factory']]],
   ['smooth_5frelu',['smooth_reLU',['../classlbann_1_1smooth__reLU__layer.html#a7fb00f252eff526d400855f067b77097',1,'lbann::smooth_reLU_layer']]],
   ['smooth_5freluprime',['smooth_reLUPrime',['../classlbann_1_1smooth__reLU__layer.html#a37a4703088f434e739f287c018b41ebc',1,'lbann::smooth_reLU_layer']]],
-  ['softmax',['softmax',['../classlbann__data_1_1Layer.html#a112d9809809173d6049288d5c03e785e',1,'lbann_data::Layer::softmax()'],['../classlbann__data_1_1Softmax.html#a13a2a16e50bb222affc8054b51924bb1',1,'lbann_data::Softmax::Softmax()'],['../classlbann__data_1_1Softmax.html#a5da74f506ae501ab5173897823dfcb99',1,'lbann_data::Softmax::Softmax(const Softmax &amp;from)']]],
+  ['softmax',['Softmax',['../classlbann__data_1_1Softmax.html#a13a2a16e50bb222affc8054b51924bb1',1,'lbann_data::Softmax::Softmax()'],['../classlbann__data_1_1Softmax.html#a5da74f506ae501ab5173897823dfcb99',1,'lbann_data::Softmax::Softmax(const Softmax &amp;from)'],['../classlbann__data_1_1Layer.html#a112d9809809173d6049288d5c03e785e',1,'lbann_data::Layer::softmax()']]],
   ['softmaxlayer',['SoftmaxLayer',['../classlbann_1_1SoftmaxLayer.html#a9a1901a6d4e02ffffe61dc6103fc5186',1,'lbann::SoftmaxLayer']]],
   ['stacked_5fautoencoder',['stacked_autoencoder',['../classlbann_1_1stacked__autoencoder.html#a622397cea91da5d72eecbe57f09f4d10',1,'lbann::stacked_autoencoder']]],
   ['staticdescriptorinitializer_5flbann_5f2eproto',['StaticDescriptorInitializer_lbann_2eproto',['../structlbann__data_1_1StaticDescriptorInitializer__lbann__2eproto.html#ac5a78e97aaec6a2122b2ce78dcfb2f1d',1,'lbann_data::StaticDescriptorInitializer_lbann_2eproto']]],

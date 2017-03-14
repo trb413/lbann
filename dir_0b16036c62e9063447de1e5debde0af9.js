@@ -4,6 +4,9 @@ var dir_0b16036c62e9063447de1e5debde0af9 =
     [ "lbann_data_reader_cifar10.hpp", "lbann__data__reader__cifar10_8hpp.html", [
       [ "DataReader_CIFAR10", "classlbann_1_1DataReader__CIFAR10.html", "classlbann_1_1DataReader__CIFAR10" ]
     ] ],
+    [ "lbann_data_reader_cnpy.hpp", "lbann__data__reader__cnpy_8hpp.html", [
+      [ "DataReader_cnpy", "classlbann_1_1DataReader__cnpy.html", "classlbann_1_1DataReader__cnpy" ]
+    ] ],
     [ "lbann_data_reader_imagenet.hpp", "lbann__data__reader__imagenet_8hpp.html", [
       [ "DataReader_ImageNet", "classlbann_1_1DataReader__ImageNet.html", "classlbann_1_1DataReader__ImageNet" ]
     ] ],

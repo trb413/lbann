@@ -6,6 +6,7 @@ var searchData=
   ['datareader',['DataReader',['../classlbann_1_1DataReader.html',1,'lbann']]],
   ['datareader',['DataReader',['../classlbann__data_1_1DataReader.html',1,'lbann_data']]],
   ['datareader_5fcifar10',['DataReader_CIFAR10',['../classlbann_1_1DataReader__CIFAR10.html',1,'lbann']]],
+  ['datareader_5fcnpy',['DataReader_cnpy',['../classlbann_1_1DataReader__cnpy.html',1,'lbann']]],
   ['datareader_5fimagenet',['DataReader_ImageNet',['../classlbann_1_1DataReader__ImageNet.html',1,'lbann']]],
   ['datareader_5fmnist',['DataReader_MNIST',['../classlbann_1_1DataReader__MNIST.html',1,'lbann']]],
   ['datareadercifar10',['DataReaderCifar10',['../classlbann__data_1_1DataReaderCifar10.html',1,'lbann_data']]],
