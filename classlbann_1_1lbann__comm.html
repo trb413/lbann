@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">d4bb575-ci211011231</span>
+   &#160;<span id="projectnumber">9a5b424-ci211642494</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -4049,17 +4049,19 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  std::string node_string = <span class="stringliteral">&quot;hXFgQFNrqyL1mIsq&quot;</span>;</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  node_string += node_name;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordtype">int</span> hash = std::hash&lt;std::string&gt;()(node_string);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  mpi::Comm hash_comm;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  mpi::Split(mpi::COMM_WORLD, hash, mpi::Rank(mpi::COMM_WORLD), hash_comm);</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="comment">// Hash the node names again and split MPI processes</span></div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="comment">// TODO: Generate random salt. The salt must be shared across all ranks.</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  node_string = <span class="stringliteral">&quot;BGqXbNZqxuXBV5lm&quot;</span>;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  node_string += node_name;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  hash = std::hash&lt;std::string&gt;()(node_string);</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  mpi::Split(hash_comm, hash, mpi::Rank(mpi::COMM_WORLD), <a class="code" href="classlbann_1_1lbann__comm.html#a9f1f65663ca1d441f98f003b612eeb8c">node_comm</a>);</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;}</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  hash = hash &amp; 0x7fffffff; <span class="comment">// Make sure that this is a positive int to avoid crashing MPI</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  mpi::Comm hash_comm;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  mpi::Split(mpi::COMM_WORLD, hash, mpi::Rank(mpi::COMM_WORLD), hash_comm);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="comment">// Hash the node names again and split MPI processes</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="comment">// TODO: Generate random salt. The salt must be shared across all ranks.</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  node_string = <span class="stringliteral">&quot;BGqXbNZqxuXBV5lm&quot;</span>;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  node_string += node_name;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  hash = std::hash&lt;std::string&gt;()(node_string);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  hash = hash &amp; 0x7fffffff; <span class="comment">// Make sure that this is a positive int to avoid crashing MPI</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  mpi::Split(hash_comm, hash, mpi::Rank(mpi::COMM_WORLD), <a class="code" href="classlbann_1_1lbann__comm.html#a9f1f65663ca1d441f98f003b612eeb8c">node_comm</a>);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a9f1f65663ca1d441f98f003b612eeb8c"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a9f1f65663ca1d441f98f003b612eeb8c">lbann::lbann_comm::node_comm</a></div><div class="ttdeci">mpi::Comm node_comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00390">lbann_comm.hpp:390</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -4488,7 +4490,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a></li>
-    <li class="footer">Generated on Tue Mar 14 2017 16:43:08 for LBANN by
+    <li class="footer">Generated on Thu Mar 16 2017 07:29:02 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
