@@ -1,5 +1,6 @@
 var NAVTREEINDEX18 =
 {
+"structlbann_1_1lbann__proto_1_1model__params.html":[3,0,3,74,2],
 "structlbann_1_1lbann__proto_1_1model__params.html#a150ad5cd644e6fa74b00f6d8edf093e6":[3,0,3,74,2,5],
 "structlbann_1_1lbann__proto_1_1model__params.html#a177e20c013f0a8de94e67db5bcd70541":[3,0,3,74,2,2],
 "structlbann_1_1lbann__proto_1_1model__params.html#a1d036f8ce21650677a04767dd9eccbba":[3,0,3,74,2,1],

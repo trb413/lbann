@@ -12,7 +12,7 @@ var dir_9561a91540bbe4ce4cf9b16e06a2cfa4 =
     [ "regularization", "dir_641edc1f9c3202270a1ac1aafbaaf998.html", "dir_641edc1f9c3202270a1ac1aafbaaf998" ],
     [ "utils", "dir_e3a975d7a6e3e1ec3d3053fd7df1ad72.html", "dir_e3a975d7a6e3e1ec3d3053fd7df1ad72" ],
     [ "lbann_base.cpp", "lbann__base_8cpp.html", "lbann__base_8cpp" ],
-    [ "lbann_comm.cpp", "lbann__comm_8cpp.html", null ],
+    [ "lbann_comm.cpp", "lbann__comm_8cpp.html", "lbann__comm_8cpp" ],
     [ "lbann_Elemental_extensions.cpp", "lbann__Elemental__extensions_8cpp.html", "lbann__Elemental__extensions_8cpp" ],
     [ "lbann_params.cpp", "lbann__params_8cpp.html", null ]
 ];

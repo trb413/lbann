@@ -133,6 +133,7 @@ var NAVTREEINDEX15 =
 "lbann__callback__timer_8hpp.html":[4,0,0,0,0,0,0,0,0,0,13],
 "lbann__callback__timer_8hpp_source.html":[4,0,0,0,0,0,0,0,0,0,13],
 "lbann__comm_8cpp.html":[4,0,0,0,0,0,0,1,12],
+"lbann__comm_8cpp.html#a7a92ceb4ddf57dc156d3a1b39f3ab962":[4,0,0,0,0,0,0,1,12,0],
 "lbann__comm_8cpp_source.html":[4,0,0,0,0,0,0,1,12],
 "lbann__comm_8hpp.html":[4,0,0,0,0,0,0,0,0,15],
 "lbann__comm_8hpp_source.html":[4,0,0,0,0,0,0,0,0,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX15 =
 "lbann__layer__activations_8hpp.html#ab00e153fabca7ab166e4d79d47c05c76ac7e80a3de04936f4e423e1b564fdca10":[4,0,0,0,0,0,0,0,0,3,5,8,4],
 "lbann__layer__activations_8hpp.html#ab00e153fabca7ab166e4d79d47c05c76ad346bb4679d29be241279f15d7795c1c":[4,0,0,0,0,0,0,0,0,3,5,8,2],
 "lbann__layer__activations_8hpp.html#ac5723897a72209964fd0eb14ad416d18":[4,0,0,0,0,0,0,0,0,3,5,9],
-"lbann__layer__activations_8hpp_source.html":[4,0,0,0,0,0,0,0,0,3,5],
-"lbann__layer__convolutional_8cpp.html":[4,0,0,0,0,0,0,1,3,6]
+"lbann__layer__activations_8hpp_source.html":[4,0,0,0,0,0,0,0,0,3,5]
 };

@@ -1,7 +1,8 @@
 var NAVTREEINDEX17 =
 {
-"namespacelbann__data_1_1anonymous__namespace_02lbann_8pb_8cc_03.html":[3,0,4,0],
+"namespacelbann__data.html":[3,0,4],
 "namespacelbann__data_1_1anonymous__namespace_02lbann_8pb_8cc_03.html":[2,0,4,0],
+"namespacelbann__data_1_1anonymous__namespace_02lbann_8pb_8cc_03.html":[3,0,4,0],
 "namespacemembers.html":[2,1,0],
 "namespacemembers_enum.html":[2,1,4],
 "namespacemembers_eval.html":[2,1,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX17 =
 "structlbann_1_1lbann__proto_1_1layer__params.html#ad1da6aba7885768d3b212f2b21b98db4":[3,0,3,74,1,7],
 "structlbann_1_1lbann__proto_1_1layer__params.html#ada7ee75e63eee66401061f434d4d74b0":[3,0,3,74,1,4],
 "structlbann_1_1lbann__proto_1_1layer__params.html#adbd91acd2848c1aa05007aaa06fccc06":[3,0,3,74,1,3],
-"structlbann_1_1lbann__proto_1_1layer__params.html#aff89bbdd0dcc5176b6d316bd2d5e4211":[3,0,3,74,1,10],
-"structlbann_1_1lbann__proto_1_1model__params.html":[3,0,3,74,2]
+"structlbann_1_1lbann__proto_1_1layer__params.html#aff89bbdd0dcc5176b6d316bd2d5e4211":[3,0,3,74,1,10]
 };

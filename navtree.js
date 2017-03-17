@@ -61,9 +61,9 @@ var NAVTREEINDEX =
 "classlbann__data_1_1TrainingParams.html#a9abd7d311909e67aea29e31a51d4f233",
 "dir_ae19bb3c4b74b705a5918893bf9adbdd.html",
 "lbann_8pb_8h.html",
-"lbann__layer__convolutional_8cpp.html#a3b0f43cffeba6f6e6f4c3520f476ebad",
-"namespacelbann__data_1_1anonymous__namespace_02lbann_8pb_8cc_03.html",
-"structlbann_1_1lbann__proto_1_1model__params.html#a150ad5cd644e6fa74b00f6d8edf093e6"
+"lbann__layer__convolutional_8cpp.html",
+"namespacelbann__data.html",
+"structlbann_1_1lbann__proto_1_1model__params.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
