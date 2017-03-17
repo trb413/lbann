@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">9a5b424-ci211642494</span>
+   &#160;<span id="projectnumber">4607e46-ci212231757</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -194,7 +194,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  m_filter_size = <a class="code" href="lbann__layer__convolutional_8cpp.html#a626e49af1247e96b0658d9dfdf5bd392">m_num_input_channels</a>*<a class="code" href="lbann__layer__convolutional_8cpp.html#a3b0f43cffeba6f6e6f4c3520f476ebad">m_num_output_channels</a>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  m_conv_pads.resize(num_dims);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  m_conv_strides.resize(num_dims);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;num_dims; ++i) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">for</span>(Int i=0; i&lt;num_dims; ++i) {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    m_input_dims[i] = input_dims[i];</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    m_filter_dims[i] = filter_dims[i];</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    m_filter_size *= filter_dims[i];</div>
@@ -205,7 +205,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="comment">// Calculate output dimensions</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  m_output_dims.resize(num_dims);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  NumNeurons = num_output_channels;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;num_dims; ++i) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordflow">for</span>(Int i=0; i&lt;num_dims; ++i) {</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    m_output_dims[i] = input_dims[i]+2*conv_pads[i]-filter_dims[i]+1;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    m_output_dims[i] = (m_output_dims[i]+conv_strides[i]-1)/conv_strides[i];</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    NumNeurons *= m_output_dims[i];</div>
@@ -265,9 +265,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordflow">if</span>(cudnn) {</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    m_using_gpus = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    m_cudnn = cudnn;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> num_gpus = m_cudnn-&gt;get_num_gpus();</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> num_processes = <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_procs_per_model();</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> local_mini_batch_size = (mini_batch_size + num_processes - 1) / num_processes;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keyword">const</span> Int num_gpus = m_cudnn-&gt;get_num_gpus();</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keyword">const</span> Int num_processes = <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_procs_per_model();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">const</span> Int local_mini_batch_size = (mini_batch_size + num_processes - 1) / num_processes;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    m_mini_batch_size_per_gpu = (local_mini_batch_size + num_gpus - 1) / num_gpus;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    </div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">// Default behavior set to pin memory blocks used by cuDNN</span></div>
@@ -336,7 +336,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_faacdbae24c4b7c4a8fbaf54f29a6b8e.html">layers</a></li><li class="navelem"><a class="el" href="lbann__layer__convolutional_8cpp.html">lbann_layer_convolutional.cpp</a></li>
-    <li class="footer">Generated on Thu Mar 16 2017 07:29:01 for LBANN by
+    <li class="footer">Generated on Fri Mar 17 2017 18:51:58 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
