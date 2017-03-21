@@ -1,5 +1,9 @@
 var NAVTREEINDEX18 =
 {
+"structlbann_1_1lbann__proto_1_1model__params.html#ac644a8ef0a1a98cd48bc75f77305235b":[3,0,3,74,2,0],
+"structlbann_1_1lbann__proto_1_1model__params.html#af9d48f56bb2b91b54c1b8e1e70bdb15a":[3,0,3,74,2,3],
+"structlbann_1_1lbann__proto_1_1optimizer__params.html":[3,0,3,74,3],
+"structlbann_1_1lbann__proto_1_1optimizer__params.html#a191f8bcdbf0045487068323382d0ded1":[3,0,3,74,3,3],
 "structlbann_1_1lbann__proto_1_1optimizer__params.html#a2dff9e1f272cb922f163bd63c6714b64":[3,0,3,74,3,4],
 "structlbann_1_1lbann__proto_1_1optimizer__params.html#a3ebf4967371de64b534226af9fa36218":[3,0,3,74,3,0],
 "structlbann_1_1lbann__proto_1_1optimizer__params.html#a40327c599872427c162509f921c826f9":[3,0,3,74,3,2],

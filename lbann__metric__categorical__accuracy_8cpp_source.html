@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">327535b-ci213568148</span>
+   &#160;<span id="projectnumber">758b43b-ci213631544</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -169,7 +169,7 @@ $(document).ready(function(){initNavTree('lbann__metric__categorical__accuracy_8
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  Zeros(YsColMax, m_max_mini_batch_size, 1);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  Zeros(YsColMaxStar, m_max_mini_batch_size, 1);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  ColumnMaxNorms((<a class="code" href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a>) predictions_v, YsColMax_v); </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="namespaceEl.html#a521860645bae693a5d18b6ec2c18aff1">ColumnMax</a>((<a class="code" href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a>)predictions_v, YsColMax_v); </div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  Copy(YsColMax_v, YsColMaxStar_v); </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  Zeros(m_max_index, m_max_mini_batch_size, 1); <span class="comment">// Clear the entire matrix</span></div>
@@ -236,6 +236,7 @@ $(document).ready(function(){initNavTree('lbann__metric__categorical__accuracy_8
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a5ea9c31c2ca6aae3538d4e3646a60f30"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a5ea9c31c2ca6aae3538d4e3646a60f30">lbann::metrics::categorical_accuracy::report_lifetime_metric</a></div><div class="ttdeci">double report_lifetime_metric(execution_mode mode)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8cpp_source.html#l00144">lbann_metric_categorical_accuracy.cpp:144</a></div></div>
 <div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_ad36940d8d172ed27804c5d5a45e83510"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#ad36940d8d172ed27804c5d5a45e83510">lbann::metrics::categorical_accuracy::setup</a></div><div class="ttdeci">void setup(int num_neurons, int mini_batch_size)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8cpp_source.html#l00055">lbann_metric_categorical_accuracy.cpp:55</a></div></div>
+<div class="ttc" id="namespaceEl_html_a521860645bae693a5d18b6ec2c18aff1"><div class="ttname"><a href="namespaceEl.html#a521860645bae693a5d18b6ec2c18aff1">El::ColumnMax</a></div><div class="ttdeci">void ColumnMax(const Matrix&lt; F &gt; &amp;X, Matrix&lt; F &gt; &amp;norms)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__Elemental__extensions_8cpp_source.html#l00074">lbann_Elemental_extensions.cpp:74</a></div></div>
 <div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_ac56f380cbcfecc6596c65bb1284e571a"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#ac56f380cbcfecc6596c65bb1284e571a">lbann::metrics::categorical_accuracy::report_metric</a></div><div class="ttdeci">double report_metric(execution_mode mode)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8cpp_source.html#l00132">lbann_metric_categorical_accuracy.cpp:132</a></div></div>
 <div class="ttc" id="classlbann_1_1metrics_1_1statistics_html_a9f950449301d9317439e74a0b0ed7a1c"><div class="ttname"><a href="classlbann_1_1metrics_1_1statistics.html#a9f950449301d9317439e74a0b0ed7a1c">lbann::metrics::statistics::m_total_error</a></div><div class="ttdeci">double m_total_error</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00106">lbann_metric.hpp:106</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_afad88fb587c304caea8a36ee5a5c1df8"><div class="ttname"><a href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a></div><div class="ttdeci">El::ElementalMatrix&lt; DataType &gt; ElMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00050">lbann_base.hpp:50</a></div></div>
@@ -264,7 +265,7 @@ $(document).ready(function(){initNavTree('lbann__metric__categorical__accuracy_8
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_060b188870e6c9f21f070cc0d16ef707.html">metrics</a></li><li class="navelem"><a class="el" href="lbann__metric__categorical__accuracy_8cpp.html">lbann_metric_categorical_accuracy.cpp</a></li>
-    <li class="footer">Generated on Tue Mar 21 2017 20:31:47 for LBANN by
+    <li class="footer">Generated on Tue Mar 21 2017 23:27:03 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

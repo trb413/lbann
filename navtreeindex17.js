@@ -1,5 +1,9 @@
 var NAVTREEINDEX17 =
 {
+"namespacemembers_func.html":[2,1,1],
+"namespacemembers_type.html":[2,1,3],
+"namespacemembers_vars.html":[2,1,2],
+"namespaces.html":[2,0],
 "opencv.html":[0,3,7],
 "opencv.html#opencv_install_linux":[0,3,7,0],
 "opencv.html#opencv_installing_osx":[0,3,7,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX17 =
 "structlbann_1_1lbann__proto_1_1model__params.html#a177e20c013f0a8de94e67db5bcd70541":[3,0,3,74,2,2],
 "structlbann_1_1lbann__proto_1_1model__params.html#a1d036f8ce21650677a04767dd9eccbba":[3,0,3,74,2,1],
 "structlbann_1_1lbann__proto_1_1model__params.html#a3bc9426da995d9560327f53b20f891b1":[3,0,3,74,2,4],
-"structlbann_1_1lbann__proto_1_1model__params.html#a472a8569ff62182477f7f7b3b3e709ed":[3,0,3,74,2,6],
-"structlbann_1_1lbann__proto_1_1model__params.html#ac644a8ef0a1a98cd48bc75f77305235b":[3,0,3,74,2,0],
-"structlbann_1_1lbann__proto_1_1model__params.html#af9d48f56bb2b91b54c1b8e1e70bdb15a":[3,0,3,74,2,3],
-"structlbann_1_1lbann__proto_1_1optimizer__params.html":[3,0,3,74,3],
-"structlbann_1_1lbann__proto_1_1optimizer__params.html#a191f8bcdbf0045487068323382d0ded1":[3,0,3,74,3,3]
+"structlbann_1_1lbann__proto_1_1model__params.html#a472a8569ff62182477f7f7b3b3e709ed":[3,0,3,74,2,6]
 };
