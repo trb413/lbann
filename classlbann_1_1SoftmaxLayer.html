@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">758b43b-ci213631544</span>
+   &#160;<span id="projectnumber">5403122-ci213639960</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -600,7 +600,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="comment">// For each minibatch (column) find the maximimum value</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  Zeros(<a class="code" href="classlbann_1_1SoftmaxLayer.html#a311d9d53ea4a4b8443ae826f31e6c24e">ZsColMax</a>, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>, 1); <span class="comment">// Clear the entire matrix</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <a class="code" href="namespaceEl.html#a521860645bae693a5d18b6ec2c18aff1">ColumnMax</a>((<a class="code" href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a>&amp;) *<a class="code" href="classlbann_1_1Layer.html#aefa1214f0220d47344b60436b2e52b53">m_weighted_sum_v</a>, <a class="code" href="classlbann_1_1SoftmaxLayer.html#a311d9d53ea4a4b8443ae826f31e6c24e">ZsColMax</a>);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  ColumnMaxNorms((<a class="code" href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a>) *<a class="code" href="classlbann_1_1Layer.html#aefa1214f0220d47344b60436b2e52b53">m_weighted_sum_v</a>, <a class="code" href="classlbann_1_1SoftmaxLayer.html#a311d9d53ea4a4b8443ae826f31e6c24e">ZsColMax</a>);</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="comment">// Redistribute the per-minibatch maximum values</span></div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  Copy(<a class="code" href="classlbann_1_1SoftmaxLayer.html#a311d9d53ea4a4b8443ae826f31e6c24e">ZsColMax</a>, <a class="code" href="classlbann_1_1SoftmaxLayer.html#a9bdce8ed0fd1fd015bfdc0b6a12f6ba3">ZsColMaxStar</a>);</div>
@@ -655,7 +655,6 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="ttc" id="classlbann_1_1Layer_html_a871b103aedbd95b5205c24b66ef74dfa"><div class="ttname"><a href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">lbann::Layer::m_activations_v</a></div><div class="ttdeci">ElMat * m_activations_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00183">lbann_layer.hpp:183</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a6034e0823933305d0bd7b5ef860f5c50"><div class="ttname"><a href="lbann__base_8hpp.html#a6034e0823933305d0bd7b5ef860f5c50">ColSumMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::MR, El::STAR &gt; ColSumMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00047">lbann_base.hpp:47</a></div></div>
-<div class="ttc" id="namespaceEl_html_a521860645bae693a5d18b6ec2c18aff1"><div class="ttname"><a href="namespaceEl.html#a521860645bae693a5d18b6ec2c18aff1">El::ColumnMax</a></div><div class="ttdeci">void ColumnMax(const Matrix&lt; F &gt; &amp;X, Matrix&lt; F &gt; &amp;norms)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__Elemental__extensions_8cpp_source.html#l00074">lbann_Elemental_extensions.cpp:74</a></div></div>
 <div class="ttc" id="classlbann_1_1SoftmaxLayer_html_a142127c362d4358911b2efaed79367fd"><div class="ttname"><a href="classlbann_1_1SoftmaxLayer.html#a142127c362d4358911b2efaed79367fd">lbann::SoftmaxLayer::ZsNormExpSumStar</a></div><div class="ttdeci">StarMat ZsNormExpSumStar</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__softmax_8hpp_source.html#l00074">lbann_layer_softmax.hpp:74</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_ac1f107dfdc1d078904b4b666af5b6b86"><div class="ttname"><a href="lbann__base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86">StarMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::STAR, El::STAR &gt; StarMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00046">lbann_base.hpp:46</a></div></div>
 <div class="ttc" id="classlbann_1_1SoftmaxLayer_html_a9bdce8ed0fd1fd015bfdc0b6a12f6ba3"><div class="ttname"><a href="classlbann_1_1SoftmaxLayer.html#a9bdce8ed0fd1fd015bfdc0b6a12f6ba3">lbann::SoftmaxLayer::ZsColMaxStar</a></div><div class="ttdeci">StarMat ZsColMaxStar</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__softmax_8hpp_source.html#l00073">lbann_layer_softmax.hpp:73</a></div></div>
@@ -674,7 +673,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1SoftmaxLayer_a024eedef18ff10e82a88ede326a6bad6_cgraph.png" border="0" usemap="#classlbann_1_1SoftmaxLayer_a024eedef18ff10e82a88ede326a6bad6_cgraph" alt=""/></div>
 <map name="classlbann_1_1SoftmaxLayer_a024eedef18ff10e82a88ede326a6bad6_cgraph" id="classlbann_1_1SoftmaxLayer_a024eedef18ff10e82a88ede326a6bad6_cgraph">
-<area shape="rect" id="node2" href="namespaceEl.html#a521860645bae693a5d18b6ec2c18aff1" title="El::ColumnMax" alt="" coords="199,5,311,32"/><area shape="rect" id="node3" href="namespaceEl.html#a09d5c471681b2b48fbe4c5e6bfd0b3d3" title="El::ColumnSum" alt="" coords="197,56,312,83"/></map>
+<area shape="rect" id="node2" href="namespaceEl.html#a09d5c471681b2b48fbe4c5e6bfd0b3d3" title="El::ColumnSum" alt="" coords="197,12,312,39"/></map>
 </div>
 </p>
 
@@ -1245,7 +1244,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1SoftmaxLayer.html">SoftmaxLayer</a></li>
-    <li class="footer">Generated on Tue Mar 21 2017 23:27:04 for LBANN by
+    <li class="footer">Generated on Tue Mar 21 2017 23:53:09 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
