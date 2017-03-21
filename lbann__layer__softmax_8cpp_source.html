@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">26b1748-ci213181104</span>
+   &#160;<span id="projectnumber">7c88af2-ci213561241</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -225,7 +225,7 @@ $(document).ready(function(){initNavTree('lbann__layer__softmax_8cpp_source.html
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="comment">// For each minibatch (column) find the maximimum value</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  Zeros(ZsColMax, m_mini_batch_size, 1); <span class="comment">// Clear the entire matrix</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <a class="code" href="namespaceEl.html#a521860645bae693a5d18b6ec2c18aff1">ColumnMax</a>((<a class="code" href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a>&amp;) *m_weighted_sum_v, ZsColMax);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  ColumnMaxNorms((<a class="code" href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a>) *m_weighted_sum_v, ZsColMax);</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="comment">// Redistribute the per-minibatch maximum values</span></div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  Copy(ZsColMax, ZsColMaxStar);</div>
@@ -361,7 +361,6 @@ $(document).ready(function(){initNavTree('lbann__layer__softmax_8cpp_source.html
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;}</div>
 <div class="ttc" id="namespacelbann_html_a33be342c4bdc4c00e9f91ff3a2f20743af5026f0a52d801c2ee10ed3fe0d6174b"><div class="ttname"><a href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743af5026f0a52d801c2ee10ed3fe0d6174b">lbann::layer_type::target_distributed_minibatch</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a6034e0823933305d0bd7b5ef860f5c50"><div class="ttname"><a href="lbann__base_8hpp.html#a6034e0823933305d0bd7b5ef860f5c50">ColSumMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::MR, El::STAR &gt; ColSumMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00047">lbann_base.hpp:47</a></div></div>
-<div class="ttc" id="namespaceEl_html_a521860645bae693a5d18b6ec2c18aff1"><div class="ttname"><a href="namespaceEl.html#a521860645bae693a5d18b6ec2c18aff1">El::ColumnMax</a></div><div class="ttdeci">void ColumnMax(const Matrix&lt; F &gt; &amp;X, Matrix&lt; F &gt; &amp;norms)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__Elemental__extensions_8cpp_source.html#l00074">lbann_Elemental_extensions.cpp:74</a></div></div>
 <div class="ttc" id="classlbann_1_1SoftmaxLayer_html_af8aae11cac219647cb225cf80ce8bb66"><div class="ttname"><a href="classlbann_1_1SoftmaxLayer.html#af8aae11cac219647cb225cf80ce8bb66">lbann::SoftmaxLayer::WBL2norm</a></div><div class="ttdeci">DataType WBL2norm()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__softmax_8cpp_source.html#l00232">lbann_layer_softmax.cpp:232</a></div></div>
 <div class="ttc" id="namespacelbann_html_a057b6c1efb3f6fcbe8ebe08f8506fee1"><div class="ttname"><a href="namespacelbann.html#a057b6c1efb3f6fcbe8ebe08f8506fee1">lbann::gaussian_fill</a></div><div class="ttdeci">void gaussian_fill(ElMat &amp;mat, El::Int m, El::Int n, DataType mean, DataType stddev)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__random_8cpp_source.html#l00122">lbann_random.cpp:122</a></div></div>
 <div class="ttc" id="namespacelbann_1_1objective__functions_html_a84a6b5226a98ba2d0c65c3a2a9afb43ca89f72616e222520aaa3de894cdf951bd"><div class="ttname"><a href="namespacelbann_1_1objective__functions.html#a84a6b5226a98ba2d0c65c3a2a9afb43ca89f72616e222520aaa3de894cdf951bd">lbann::objective_functions::obj_fn_type::categorical_cross_entropy</a></div></div>
@@ -421,7 +420,7 @@ $(document).ready(function(){initNavTree('lbann__layer__softmax_8cpp_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_faacdbae24c4b7c4a8fbaf54f29a6b8e.html">layers</a></li><li class="navelem"><a class="el" href="lbann__layer__softmax_8cpp.html">lbann_layer_softmax.cpp</a></li>
-    <li class="footer">Generated on Mon Mar 20 2017 21:59:50 for LBANN by
+    <li class="footer">Generated on Tue Mar 21 2017 20:13:40 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
