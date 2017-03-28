@@ -5,6 +5,7 @@ var searchData=
   ['layer_5ffactory',['layer_factory',['../classlbann_1_1layer__factory.html',1,'lbann']]],
   ['layer_5fheader',['layer_header',['../structlayer__header.html',1,'']]],
   ['layer_5fparams',['layer_params',['../structlbann_1_1lbann__proto_1_1layer__params.html',1,'lbann::lbann_proto']]],
+  ['layerdefaulttypeinternal',['LayerDefaultTypeInternal',['../classlbann__data_1_1LayerDefaultTypeInternal.html',1,'lbann_data']]],
   ['lbann_5fcallback',['lbann_callback',['../classlbann_1_1lbann__callback.html',1,'lbann']]],
   ['lbann_5fcallback_5fadaptive_5flearning_5frate',['lbann_callback_adaptive_learning_rate',['../classlbann_1_1lbann__callback__adaptive__learning__rate.html',1,'lbann']]],
   ['lbann_5fcallback_5fchecknan',['lbann_callback_checknan',['../classlbann_1_1lbann__callback__checknan.html',1,'lbann']]],
@@ -33,5 +34,6 @@ var searchData=
   ['lbann_5fquantizer',['lbann_quantizer',['../classlbann_1_1lbann__quantizer.html',1,'lbann']]],
   ['lbann_5fsummary',['lbann_summary',['../classlbann_1_1lbann__summary.html',1,'lbann']]],
   ['lbannpb',['LbannPB',['../classlbann__data_1_1LbannPB.html',1,'lbann_data']]],
+  ['lbannpbdefaulttypeinternal',['LbannPBDefaultTypeInternal',['../classlbann__data_1_1LbannPBDefaultTypeInternal.html',1,'lbann_data']]],
   ['leaky_5frelu_5flayer',['leaky_reLU_layer',['../classlbann_1_1leaky__reLU__layer.html',1,'lbann']]]
 ];

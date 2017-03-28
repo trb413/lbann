@@ -12,8 +12,6 @@ var searchData=
   ['network',['Network',['../classlbann_1_1NetworkParams.html#a17ccde99dec30d27c836a23f003fa34d',1,'lbann::NetworkParams']]],
   ['network_5fparams_5f',['network_params_',['../classlbann__data_1_1LbannPB.html#aab5312e0cfc7822b680cfa38af19c2f2',1,'lbann_data::LbannPB']]],
   ['network_5fstr_5f',['network_str_',['../classlbann__data_1_1NetworkParams.html#a5f529f2cbb8d3c041950b5677ac4011c',1,'lbann_data::NetworkParams']]],
-  ['networkparams_5fdescriptor_5f',['NetworkParams_descriptor_',['../namespacelbann__data_1_1anonymous__namespace_02lbann_8pb_8cc_03.html#af8e1c60016148b2eae1c7bef853a7f8e',1,'lbann_data::anonymous_namespace{lbann.pb.cc}']]],
-  ['networkparams_5freflection_5f',['NetworkParams_reflection_',['../namespacelbann__data_1_1anonymous__namespace_02lbann_8pb_8cc_03.html#a49bfa47b38f28e54c18d02ea661b5dd7',1,'lbann_data::anonymous_namespace{lbann.pb.cc}']]],
   ['networkstr',['NetworkStr',['../classlbann_1_1NetworkParams.html#a8b503690c7475582b5a843f0959c3f2a',1,'lbann::NetworkParams']]],
   ['neural_5fnetwork_5fmodel',['neural_network_model',['../classlbann_1_1Layer.html#a9699f8d327ed26f98a52c750f38f8312',1,'lbann::Layer::neural_network_model()'],['../classlbann_1_1metrics_1_1metric.html#aa2923a8982c083c63d3414bd3a6670a1',1,'lbann::metrics::metric::neural_network_model()']]],
   ['node_5fcomm',['node_comm',['../classlbann_1_1lbann__comm.html#a9f1f65663ca1d441f98f003b612eeb8c',1,'lbann::lbann_comm']]],

@@ -13,8 +13,6 @@ var searchData=
   ['conv_5fpads_5f',['conv_pads_',['../classlbann__data_1_1Convolution.html#aae70e11e18cf6a33882138a66cdf2ae2',1,'lbann_data::Convolution']]],
   ['conv_5fstrides_5f',['conv_strides_',['../classlbann__data_1_1Convolution.html#a44d48f6c679e94365f502224280faa00',1,'lbann_data::Convolution']]],
   ['convolution_5f',['convolution_',['../classlbann__data_1_1Layer.html#acd0cfb8448532d2c3f59caa6d10c6f18',1,'lbann_data::Layer']]],
-  ['convolution_5fdescriptor_5f',['Convolution_descriptor_',['../namespacelbann__data_1_1anonymous__namespace_02lbann_8pb_8cc_03.html#a9defb61744d2b369795934eb645a7be2',1,'lbann_data::anonymous_namespace{lbann.pb.cc}']]],
-  ['convolution_5freflection_5f',['Convolution_reflection_',['../namespacelbann__data_1_1anonymous__namespace_02lbann_8pb_8cc_03.html#a40ab753cfdfd0614eea3ea1498f129bf',1,'lbann_data::anonymous_namespace{lbann.pb.cc}']]],
   ['ct',['ct',['../classlbann_1_1lbann__callback__imcomm.html#aa617c54b0bba0aaba9a916c0cda2cfba',1,'lbann::lbann_callback_imcomm']]],
   ['cur_5frho1',['cur_rho1',['../classlbann_1_1Adam.html#a40fef245b23efc3aca56ef90eaec5f14',1,'lbann::Adam']]],
   ['cur_5frho2',['cur_rho2',['../classlbann_1_1Adam.html#aa929f69924abe7bb26d542d4110a2a08',1,'lbann::Adam']]],

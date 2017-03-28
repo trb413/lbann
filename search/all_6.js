@@ -11,8 +11,10 @@ var searchData=
   ['fetch_5flabel',['fetch_label',['../classlbann_1_1DataReader.html#ab9f0bd6994c5f78b5ea89c9af00fefaf',1,'lbann::DataReader::fetch_label()'],['../classlbann_1_1DataReader__ImageNet.html#ae175069346f04b23527c7d75def68201',1,'lbann::DataReader_ImageNet::fetch_label()'],['../classlbann_1_1DataReader__MNIST.html#a4ab28aa052bbcc836db26a45a0179d12',1,'lbann::DataReader_MNIST::fetch_label()'],['../classlbann_1_1data__reader__nci.html#abc8fa6fee6f2e8d7c1c9a958224f3b23',1,'lbann::data_reader_nci::fetch_label()']]],
   ['fetch_5fresponse',['fetch_response',['../classlbann_1_1DataReader.html#a7c7dfeb97d1ee9dd62f5fa24b2a95670',1,'lbann::DataReader::fetch_response()'],['../classlbann_1_1data__reader__nci__regression.html#a28b98ee7d8d0a05f851ad38091593ed6',1,'lbann::data_reader_nci_regression::fetch_response()']]],
   ['fetch_5fto_5flocal_5fmatrix',['fetch_to_local_matrix',['../classlbann_1_1distributed__minibatch__parallel__io.html#ad5cc95374bcb47c97105b387950ca8e1',1,'lbann::distributed_minibatch_parallel_io']]],
+  ['file_5fdefault_5finstances',['file_default_instances',['../namespacelbann__data_1_1protobuf__lbann__2eproto.html#a81b3c7391a8ec20891ea53b2263bdb9f',1,'lbann_data::protobuf_lbann_2eproto']]],
   ['file_5fdir',['file_dir',['../classlbann__data_1_1DataReaderMnist.html#a112094282301cba850d036d3e4a59046',1,'lbann_data::DataReaderMnist']]],
   ['file_5fdir_5f',['file_dir_',['../classlbann__data_1_1DataReaderMnist.html#a8f9b6985cd332d2f87a5a4b9bbe354cc',1,'lbann_data::DataReaderMnist']]],
+  ['file_5flevel_5fmetadata',['file_level_metadata',['../namespacelbann__data_1_1protobuf__lbann__2eproto_1_1anonymous__namespace_02lbann_8pb_8cc_03.html#a9c7e46fbc1623920941573713a0c122d',1,'lbann_data::protobuf_lbann_2eproto::anonymous_namespace{lbann.pb.cc}']]],
   ['filter_5fdims',['filter_dims',['../classlbann__data_1_1Convolution.html#ab16546c136b1d5e34c9269f33adb1c6e',1,'lbann_data::Convolution::filter_dims(int index) const '],['../classlbann__data_1_1Convolution.html#a5bb54a3fa7340daad31725b762b17984',1,'lbann_data::Convolution::filter_dims() const ']]],
   ['filter_5fdims_5f',['filter_dims_',['../classlbann__data_1_1Convolution.html#ab64a78bd7c04e2849090ba55619a2341',1,'lbann_data::Convolution']]],
   ['filter_5fdims_5fsize',['filter_dims_size',['../classlbann__data_1_1Convolution.html#aa24448e208aa9131b3d9fd1466b5a347',1,'lbann_data::Convolution']]],
@@ -43,8 +45,7 @@ var searchData=
   ['fully_5fconnected_5f',['fully_connected_',['../classlbann__data_1_1Layer.html#a46930c54e0cb7f8dc0b9b111ebe675a7',1,'lbann_data::Layer']]],
   ['fullyconnected',['FullyConnected',['../classlbann__data_1_1FullyConnected.html',1,'lbann_data']]],
   ['fullyconnected',['FullyConnected',['../classlbann__data_1_1FullyConnected.html#a12b7aa3446a6f4cec137060443450c56',1,'lbann_data::FullyConnected::FullyConnected()'],['../classlbann__data_1_1FullyConnected.html#a754cbbfed468f8de512ee6deed28867f',1,'lbann_data::FullyConnected::FullyConnected(const FullyConnected &amp;from)']]],
-  ['fullyconnected_5fdescriptor_5f',['FullyConnected_descriptor_',['../namespacelbann__data_1_1anonymous__namespace_02lbann_8pb_8cc_03.html#a3882c87b123307d959b28b1989da21b6',1,'lbann_data::anonymous_namespace{lbann.pb.cc}']]],
-  ['fullyconnected_5freflection_5f',['FullyConnected_reflection_',['../namespacelbann__data_1_1anonymous__namespace_02lbann_8pb_8cc_03.html#a34880462ce9edbd7e8ddfa0432442337',1,'lbann_data::anonymous_namespace{lbann.pb.cc}']]],
+  ['fullyconnecteddefaulttypeinternal',['FullyConnectedDefaultTypeInternal',['../classlbann__data_1_1FullyConnectedDefaultTypeInternal.html',1,'lbann_data']]],
   ['fullyconnectedlayer',['FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html',1,'lbann']]],
   ['fullyconnectedlayer',['FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html#afce405665ec5bf44d7095340cbf9a976',1,'lbann::FullyConnectedLayer']]]
 ];

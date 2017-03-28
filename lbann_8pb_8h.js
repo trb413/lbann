@@ -1,5 +1,6 @@
 var lbann_8pb_8h =
 [
+    [ "TableStruct", "structlbann__data_1_1protobuf__lbann__2eproto_1_1TableStruct.html", "structlbann__data_1_1protobuf__lbann__2eproto_1_1TableStruct" ],
     [ "LbannPB", "classlbann__data_1_1LbannPB.html", "classlbann__data_1_1LbannPB" ],
     [ "DataReader", "classlbann__data_1_1DataReader.html", "classlbann__data_1_1DataReader" ],
     [ "DataReaderMnist", "classlbann__data_1_1DataReaderMnist.html", "classlbann__data_1_1DataReaderMnist" ],
@@ -25,7 +26,6 @@ var lbann_8pb_8h =
     [ "NetworkParams", "classlbann__data_1_1NetworkParams.html", "classlbann__data_1_1NetworkParams" ],
     [ "PerformanceParams", "classlbann__data_1_1PerformanceParams.html", "classlbann__data_1_1PerformanceParams" ],
     [ "TrainingParams", "classlbann__data_1_1TrainingParams.html", "classlbann__data_1_1TrainingParams" ],
-    [ "protobuf_AddDesc_lbann_2eproto", "lbann_8pb_8h.html#a1684c18b3b4944fc715f88b591dccde8", null ],
-    [ "protobuf_AssignDesc_lbann_2eproto", "lbann_8pb_8h.html#a58533990a0d40dd4bc66db2b0e8eba67", null ],
-    [ "protobuf_ShutdownFile_lbann_2eproto", "lbann_8pb_8h.html#a0c05124775ad6c425ad0b4380a8dbc2f", null ]
+    [ "AddDescriptors", "lbann_8pb_8h.html#a5fc6a1242199f8647011ca12a2b255db", null ],
+    [ "InitDefaults", "lbann_8pb_8h.html#af4af604a32eff02e18781f3365fa780f", null ]
 ];
