@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">0238d94-ci213655580</span>
+   &#160;<span id="projectnumber">5361041-ci215948212</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -150,9 +150,9 @@ $(document).ready(function(){initNavTree('lbann__Elemental__extensions_8cpp_sour
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> F,Dist U,Dist V&gt;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> F,Dist U,Dist V,DistWrap W&gt;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceEl.html#a09d5c471681b2b48fbe4c5e6bfd0b3d3">ColumnSum</a></div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="namespaceEl.html#af9a05da625b88aafb317ab8b95086311">   63</a></span>&#160;( <span class="keyword">const</span> DistMatrix&lt;F,U,V&gt;&amp; A, DistMatrix&lt;F,V,STAR&gt;&amp; sums )</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="namespaceEl.html#a76d4388650bbfd78adaf57d150423020">   63</a></span>&#160;( <span class="keyword">const</span> DistMatrix&lt;F,U,V,W&gt;&amp; A, DistMatrix&lt;F,V,STAR,W&gt;&amp; sums )</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">//    DEBUG_ONLY(CSE cse(&quot;ColumnSum&quot;))</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">const</span> Int n = A.Width();</div>
@@ -166,8 +166,8 @@ $(document).ready(function(){initNavTree('lbann__Elemental__extensions_8cpp_sour
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<a class="code" href="lbann__Elemental__extensions_8h.html#a1c4169a84c56c6233350847efb61e539">LBANN_PROTO_DOUBLE</a></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <span class="comment">// namespace El</span></div>
-<div class="ttc" id="lbann__Elemental__extensions_8h_html_a1c4169a84c56c6233350847efb61e539"><div class="ttname"><a href="lbann__Elemental__extensions_8h.html#a1c4169a84c56c6233350847efb61e539">LBANN_PROTO_DOUBLE</a></div><div class="ttdeci">#define LBANN_PROTO_DOUBLE</div><div class="ttdef"><b>Definition:</b> <a href="lbann__Elemental__extensions_8h_source.html#l00070">lbann_Elemental_extensions.h:70</a></div></div>
-<div class="ttc" id="lbann__Elemental__extensions_8h_html_aabb751b985c8fbc1083ba9f0bf2b5c38"><div class="ttname"><a href="lbann__Elemental__extensions_8h.html#aabb751b985c8fbc1083ba9f0bf2b5c38">LBANN_PROTO_FLOAT</a></div><div class="ttdeci">#define LBANN_PROTO_FLOAT</div><div class="ttdef"><b>Definition:</b> <a href="lbann__Elemental__extensions_8h_source.html#l00067">lbann_Elemental_extensions.h:67</a></div></div>
+<div class="ttc" id="lbann__Elemental__extensions_8h_html_a1c4169a84c56c6233350847efb61e539"><div class="ttname"><a href="lbann__Elemental__extensions_8h.html#a1c4169a84c56c6233350847efb61e539">LBANN_PROTO_DOUBLE</a></div><div class="ttdeci">#define LBANN_PROTO_DOUBLE</div><div class="ttdef"><b>Definition:</b> <a href="lbann__Elemental__extensions_8h_source.html#l00072">lbann_Elemental_extensions.h:72</a></div></div>
+<div class="ttc" id="lbann__Elemental__extensions_8h_html_aabb751b985c8fbc1083ba9f0bf2b5c38"><div class="ttname"><a href="lbann__Elemental__extensions_8h.html#aabb751b985c8fbc1083ba9f0bf2b5c38">LBANN_PROTO_FLOAT</a></div><div class="ttdeci">#define LBANN_PROTO_FLOAT</div><div class="ttdef"><b>Definition:</b> <a href="lbann__Elemental__extensions_8h_source.html#l00069">lbann_Elemental_extensions.h:69</a></div></div>
 <div class="ttc" id="lbann__Elemental__extensions_8h_html"><div class="ttname"><a href="lbann__Elemental__extensions_8h.html">lbann_Elemental_extensions.h</a></div></div>
 <div class="ttc" id="namespaceEl_html_a09d5c471681b2b48fbe4c5e6bfd0b3d3"><div class="ttname"><a href="namespaceEl.html#a09d5c471681b2b48fbe4c5e6bfd0b3d3">El::ColumnSum</a></div><div class="ttdeci">void ColumnSum(const Matrix&lt; F &gt; &amp;X, Matrix&lt; F &gt; &amp;sums)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__Elemental__extensions_8cpp_source.html#l00036">lbann_Elemental_extensions.cpp:36</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('lbann__Elemental__extensions_8cpp_sour
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="lbann__Elemental__extensions_8cpp.html">lbann_Elemental_extensions.cpp</a></li>
-    <li class="footer">Generated on Wed Mar 22 2017 00:55:25 for LBANN by
+    <li class="footer">Generated on Tue Mar 28 2017 13:58:35 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

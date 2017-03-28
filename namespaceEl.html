@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">0238d94-ci213655580</span>
+   &#160;<span id="projectnumber">5361041-ci215948212</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -100,9 +100,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a09d5c471681b2b48fbe4c5e6bfd0b3d3"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
 <tr class="memitem:a09d5c471681b2b48fbe4c5e6bfd0b3d3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceEl.html#a09d5c471681b2b48fbe4c5e6bfd0b3d3">ColumnSum</a> (const Matrix&lt; F &gt; &amp;X, Matrix&lt; F &gt; &amp;sums)</td></tr>
 <tr class="separator:a09d5c471681b2b48fbe4c5e6bfd0b3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9a05da625b88aafb317ab8b95086311"><td class="memTemplParams" colspan="2">template&lt;typename F , Dist U, Dist V&gt; </td></tr>
-<tr class="memitem:af9a05da625b88aafb317ab8b95086311"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceEl.html#af9a05da625b88aafb317ab8b95086311">ColumnSum</a> (const DistMatrix&lt; F, U, V &gt; &amp;A, DistMatrix&lt; F, V, STAR &gt; &amp;sums)</td></tr>
-<tr class="separator:af9a05da625b88aafb317ab8b95086311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76d4388650bbfd78adaf57d150423020"><td class="memTemplParams" colspan="2">template&lt;typename F , Dist U, Dist V, DistWrap W&gt; </td></tr>
+<tr class="memitem:a76d4388650bbfd78adaf57d150423020"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceEl.html#a76d4388650bbfd78adaf57d150423020">ColumnSum</a> (const DistMatrix&lt; F, U, V, W &gt; &amp;A, DistMatrix&lt; F, V, STAR, W &gt; &amp;sums)</td></tr>
+<tr class="separator:a76d4388650bbfd78adaf57d150423020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a09d5c471681b2b48fbe4c5e6bfd0b3d3"></a>
@@ -161,28 +161,28 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceEl_a09d5c471681b2b48fbe4c5e6bfd0b3d3_icgraph.png" border="0" usemap="#namespaceEl_a09d5c471681b2b48fbe4c5e6bfd0b3d3_icgraph" alt=""/></div>
 <map name="namespaceEl_a09d5c471681b2b48fbe4c5e6bfd0b3d3_icgraph" id="namespaceEl_a09d5c471681b2b48fbe4c5e6bfd0b3d3_icgraph">
-<area shape="rect" id="node2" href="classlbann_1_1SoftmaxLayer.html#a024eedef18ff10e82a88ede326a6bad6" title="lbann::SoftmaxLayer\l::fp_linearity" alt="" coords="169,5,311,46"/><area shape="rect" id="node3" href="namespaceEl.html#af9a05da625b88aafb317ab8b95086311" title="El::ColumnSum" alt="" coords="183,71,297,97"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1SoftmaxLayer.html#a024eedef18ff10e82a88ede326a6bad6" title="lbann::SoftmaxLayer\l::fp_linearity" alt="" coords="169,5,311,46"/><area shape="rect" id="node3" href="namespaceEl.html#a76d4388650bbfd78adaf57d150423020" title="El::ColumnSum" alt="" coords="183,71,297,97"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="af9a05da625b88aafb317ab8b95086311"></a>
+<a class="anchor" id="a76d4388650bbfd78adaf57d150423020"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename F , Dist U, Dist V&gt; </div>
+template&lt;typename F , Dist U, Dist V, DistWrap W&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">void El::ColumnSum </td>
           <td>(</td>
-          <td class="paramtype">const DistMatrix&lt; F, U, V &gt; &amp;&#160;</td>
+          <td class="paramtype">const DistMatrix&lt; F, U, V, W &gt; &amp;&#160;</td>
           <td class="paramname"><em>A</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">DistMatrix&lt; F, V, STAR &gt; &amp;&#160;</td>
+          <td class="paramtype">DistMatrix&lt; F, V, STAR, W &gt; &amp;&#160;</td>
           <td class="paramname"><em>sums</em>&#160;</td>
         </tr>
         <tr>
@@ -199,16 +199,16 @@ template&lt;typename F , Dist U, Dist V&gt; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">const</span> Int n = A.Width();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    sums.AlignWith( A );</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    sums.Resize( n, 1 );</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="namespaceEl.html#af9a05da625b88aafb317ab8b95086311">ColumnSum</a>( A.LockedMatrix(), sums.Matrix() );</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="namespaceEl.html#a76d4388650bbfd78adaf57d150423020">ColumnSum</a>( A.LockedMatrix(), sums.Matrix() );</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    AllReduce( sums.Matrix(), A.ColComm(), mpi::SUM );</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="ttc" id="namespaceEl_html_af9a05da625b88aafb317ab8b95086311"><div class="ttname"><a href="namespaceEl.html#af9a05da625b88aafb317ab8b95086311">El::ColumnSum</a></div><div class="ttdeci">void ColumnSum(const DistMatrix&lt; F, U, V &gt; &amp;A, DistMatrix&lt; F, V, STAR &gt; &amp;sums)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__Elemental__extensions_8cpp_source.html#l00063">lbann_Elemental_extensions.cpp:63</a></div></div>
+<div class="ttc" id="namespaceEl_html_a76d4388650bbfd78adaf57d150423020"><div class="ttname"><a href="namespaceEl.html#a76d4388650bbfd78adaf57d150423020">El::ColumnSum</a></div><div class="ttdeci">void ColumnSum(const DistMatrix&lt; F, U, V, W &gt; &amp;A, DistMatrix&lt; F, V, STAR, W &gt; &amp;sums)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__Elemental__extensions_8cpp_source.html#l00063">lbann_Elemental_extensions.cpp:63</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceEl_af9a05da625b88aafb317ab8b95086311_cgraph.png" border="0" usemap="#namespaceEl_af9a05da625b88aafb317ab8b95086311_cgraph" alt=""/></div>
-<map name="namespaceEl_af9a05da625b88aafb317ab8b95086311_cgraph" id="namespaceEl_af9a05da625b88aafb317ab8b95086311_cgraph">
+<div class="center"><img src="namespaceEl_a76d4388650bbfd78adaf57d150423020_cgraph.png" border="0" usemap="#namespaceEl_a76d4388650bbfd78adaf57d150423020_cgraph" alt=""/></div>
+<map name="namespaceEl_a76d4388650bbfd78adaf57d150423020_cgraph" id="namespaceEl_a76d4388650bbfd78adaf57d150423020_cgraph">
 <area shape="rect" id="node2" href="namespaceEl.html#a09d5c471681b2b48fbe4c5e6bfd0b3d3" title="El::ColumnSum" alt="" coords="168,5,283,32"/></map>
 </div>
 </p>
@@ -221,7 +221,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceEl.html">El</a></li>
-    <li class="footer">Generated on Wed Mar 22 2017 00:55:26 for LBANN by
+    <li class="footer">Generated on Tue Mar 28 2017 13:58:36 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
