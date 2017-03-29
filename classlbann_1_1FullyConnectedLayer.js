@@ -1,6 +1,6 @@
 var classlbann_1_1FullyConnectedLayer =
 [
-    [ "FullyConnectedLayer", "classlbann_1_1FullyConnectedLayer.html#afce405665ec5bf44d7095340cbf9a976", null ],
+    [ "FullyConnectedLayer", "classlbann_1_1FullyConnectedLayer.html#a9c033b04665a87308d0783c658e81aea", null ],
     [ "~FullyConnectedLayer", "classlbann_1_1FullyConnectedLayer.html#a7e718fd3251cd43a5775c4ff2719e9d6", null ],
     [ "bp_linearity", "classlbann_1_1FullyConnectedLayer.html#a860ce37b50b47b339861061c9a8a6879", null ],
     [ "checkGradient", "classlbann_1_1FullyConnectedLayer.html#ac062d3eace627bfa97a3d8b93de6761c", null ],

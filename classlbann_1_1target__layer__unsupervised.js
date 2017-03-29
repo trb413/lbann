@@ -1,6 +1,6 @@
 var classlbann_1_1target__layer__unsupervised =
 [
-    [ "target_layer_unsupervised", "classlbann_1_1target__layer__unsupervised.html#a2d74ab0729e82e81d0ab9505ed2e1859", null ],
+    [ "target_layer_unsupervised", "classlbann_1_1target__layer__unsupervised.html#ac785a033cd6beb653074a2b6baf2c060", null ],
     [ "average_cost", "classlbann_1_1target__layer__unsupervised.html#ae7701c23a1783a943b92ea7c11478fbc", null ],
     [ "bp_linearity", "classlbann_1_1target__layer__unsupervised.html#ae83e1fa821f938376d93d10a5b7f3512", null ],
     [ "bp_nonlinearity", "classlbann_1_1target__layer__unsupervised.html#a08ab26ad8010be1ea8b7e6e36a5a9922", null ],

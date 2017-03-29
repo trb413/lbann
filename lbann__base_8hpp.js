@@ -14,6 +14,10 @@ var lbann__base_8hpp =
     [ "Mat", "lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34", null ],
     [ "StarMat", "lbann__base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86", null ],
     [ "StarVCMat", "lbann__base_8hpp.html#a763b3164342a5d73db851e85c76d385a", null ],
+    [ "data_layout", "lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db", [
+      [ "MODEL_PARALLEL", "lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0", null ],
+      [ "DATA_PARALLEL", "lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638", null ]
+    ] ],
     [ "execution_mode", "lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8", [
       [ "training", "lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214", null ],
       [ "validation", "lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0", null ],

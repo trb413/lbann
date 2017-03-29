@@ -32,6 +32,7 @@ var searchData=
   ['m_5fcurrent_5fvalidation_5fstep',['m_current_validation_step',['../classlbann_1_1model.html#a0431d6b271b5718ec8db4744bc353e95',1,'lbann::model']]],
   ['m_5fdata',['m_data',['../classlbann_1_1DataReader__cnpy.html#a72c1ae7abc54dcd12e1631d6846e3bc2',1,'lbann::DataReader_cnpy']]],
   ['m_5fdata_5ffn',['m_data_fn',['../classlbann_1_1DataReader.html#a68694ed6a4ded363aaad54a3508f5ff0',1,'lbann::DataReader']]],
+  ['m_5fdata_5flayout',['m_data_layout',['../classlbann_1_1Layer.html#a1c60dfaa889c4ba0c840ebe44f8bd6f1',1,'lbann::Layer']]],
   ['m_5fdata_5fsets_5fspan_5fmodels',['m_data_sets_span_models',['../classlbann_1_1io__layer.html#a8ce9b172521bbcf55c1040a3c28719b1',1,'lbann::io_layer']]],
   ['m_5fdebug_5fphase',['m_debug_phase',['../classlbann_1_1lbann__callback__debug.html#acc66ab699534e42aa958148f1fb3fd6f',1,'lbann::lbann_callback_debug']]],
   ['m_5fdist',['m_dist',['../classlbann_1_1rng.html#a07a437f5344e29d6cf557e95ae83a24c',1,'lbann::rng']]],

@@ -46,23 +46,23 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classlbann_1_1Layer.html#a3f1ab0c18e78cd82af4cf24b73ec96bc",
-"classlbann_1_1convolutional__layer.html#ae2c905ba710e04e39213ee966c296f03",
-"classlbann_1_1lbann__callback__debug.html#a6e6a59d03698ccfffb8528bb7b4087ad",
-"classlbann_1_1lbann__proto.html#a356b2064eeb27c46ad91c2b907159a4d",
-"classlbann_1_1model.html#ac9f71f855106019f5c949568d259f175",
-"classlbann_1_1target__layer__unsupervised.html#ae7701c23a1783a943b92ea7c11478fbc",
-"classlbann__data_1_1DataReaderImagenet.html#a87a4b85da92809f30b101034a856e73a",
-"classlbann__data_1_1FullyConnected.html#ada5331130d435f8c5e8efb56a8971620",
-"classlbann__data_1_1Layer.html#ae9850daa13c21f4377bed8bd2e7a12e2",
-"classlbann__data_1_1NetworkParams.html#a6a852dd4e34d81c3a8163b5f330c587f",
-"classlbann__data_1_1Softmax.html#a1f34532016479f854c89ece9d23ff2dd",
-"classlbann__data_1_1TargetParallel.html#a6cf40631c48584a7ecb1e66216b2833f",
-"classlbann__data_1_1TrainingParams.html#adf48b78be89d2051a2f82fc9433d7b76",
-"functions_vars_e.html",
-"lbann__comm_8cpp.html",
-"lbann__persist_8cpp.html#aaedba0aa0df9b047cdaaf1ce45072394",
-"struct__FLOAT3.html#a04f516c72512d4959cdb28c95f213885"
+"classlbann_1_1Layer.html#a3cadcd93ddac0f0231449181a72edf1b",
+"classlbann_1_1convolutional__layer.html#ad9664f0b090b1dca04e856b51ed54eec",
+"classlbann_1_1lbann__callback__debug.html#a21e75a6756ecd7e09079a72595126300",
+"classlbann_1_1lbann__proto.html#a27fa01bf31621ad554707312e442eee1",
+"classlbann_1_1model.html#ac4113ec2a170014dcc5155322610310d",
+"classlbann_1_1target__layer__unsupervised.html#ac785a033cd6beb653074a2b6baf2c060",
+"classlbann__data_1_1DataReaderImagenet.html#a7bfc59e09571e59f8f6029d530206ebd",
+"classlbann__data_1_1FullyConnected.html#acff8a2921b75735708c5747d61426de8",
+"classlbann__data_1_1Layer.html#ae26f0b0df0df9b57a7cdc577349b9599",
+"classlbann__data_1_1NetworkParams.html#a59f7264cfc0a25657f4543973635d621",
+"classlbann__data_1_1Softmax.html#a140a2981d2d0adc2979aa29aaa2da92e",
+"classlbann__data_1_1TargetParallel.html#a45759ebbd380d4cb185c15a3c264c003",
+"classlbann__data_1_1TrainingParams.html#ad99765c56977344287133c289e6fa54b",
+"functions_vars_b.html",
+"lbann__callback__summary_8hpp.html",
+"lbann__params_8cpp_source.html",
+"struct__DOUBLE4.html#a96ed339b25fdbbe65e7a47d475f3ad8c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

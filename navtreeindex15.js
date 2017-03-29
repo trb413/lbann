@@ -1,5 +1,11 @@
 var NAVTREEINDEX15 =
 {
+"lbann__callback__summary_8hpp.html":[4,0,0,0,0,0,0,0,0,0,12],
+"lbann__callback__summary_8hpp_source.html":[4,0,0,0,0,0,0,0,0,0,12],
+"lbann__callback__timer_8cpp.html":[4,0,0,0,0,0,0,1,0,12],
+"lbann__callback__timer_8cpp_source.html":[4,0,0,0,0,0,0,1,0,12],
+"lbann__callback__timer_8hpp.html":[4,0,0,0,0,0,0,0,0,0,13],
+"lbann__callback__timer_8hpp_source.html":[4,0,0,0,0,0,0,0,0,0,13],
 "lbann__comm_8cpp.html":[4,0,0,0,0,0,0,1,12],
 "lbann__comm_8cpp.html#a7a92ceb4ddf57dc156d3a1b39f3ab962":[4,0,0,0,0,0,0,1,12,0],
 "lbann__comm_8cpp_source.html":[4,0,0,0,0,0,0,1,12],
@@ -243,11 +249,5 @@ var NAVTREEINDEX15 =
 "lbann__optimizer__sgd_8cpp_source.html":[4,0,0,0,0,0,0,1,7,4],
 "lbann__optimizer__sgd_8hpp.html":[4,0,0,0,0,0,0,0,0,7,4],
 "lbann__optimizer__sgd_8hpp_source.html":[4,0,0,0,0,0,0,0,0,7,4],
-"lbann__params_8cpp.html":[4,0,0,0,0,0,0,1,14],
-"lbann__params_8cpp_source.html":[4,0,0,0,0,0,0,1,14],
-"lbann__params_8hpp.html":[4,0,0,0,0,0,0,0,0,17],
-"lbann__params_8hpp_source.html":[4,0,0,0,0,0,0,0,0,17],
-"lbann__persist_8cpp.html":[4,0,0,0,0,0,0,1,2,2],
-"lbann__persist_8cpp.html#a1e6afc3db474d5e9159b5dedad8559f2":[4,0,0,0,0,0,0,1,2,2,1],
-"lbann__persist_8cpp.html#a8cc0d3da909c360b2a72ee0c611055cf":[4,0,0,0,0,0,0,1,2,2,2]
+"lbann__params_8cpp.html":[4,0,0,0,0,0,0,1,14]
 };

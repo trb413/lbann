@@ -1,6 +1,6 @@
 var classlbann_1_1Layer =
 [
-    [ "Layer", "classlbann_1_1Layer.html#a58d1184ec0daa0dee378f7206ff6b4f1", null ],
+    [ "Layer", "classlbann_1_1Layer.html#ae23d551b082842f730f78bfea85c54a7", null ],
     [ "~Layer", "classlbann_1_1Layer.html#a68c3f57587956da938406812f13ecb78", null ],
     [ "backProp", "classlbann_1_1Layer.html#a07f230d516c76f22ff42addb542424af", null ],
     [ "bp_linearity", "classlbann_1_1Layer.html#a3cadcd93ddac0f0231449181a72edf1b", null ],
@@ -22,6 +22,8 @@ var classlbann_1_1Layer =
     [ "get_optimizer", "classlbann_1_1Layer.html#a2f196ef8b7a8ed9562aca11eae8cf749", null ],
     [ "get_weights_biases", "classlbann_1_1Layer.html#a190982036d52d288d3528a16e30418e0", null ],
     [ "get_weights_biases_gradient", "classlbann_1_1Layer.html#a4b2b92aa11d932d62456c21ed929b263", null ],
+    [ "initialize_data_parallel_distribution", "classlbann_1_1Layer.html#aa9937720c6ac7039cb70d4defc22e1fa", null ],
+    [ "initialize_model_parallel_distribution", "classlbann_1_1Layer.html#aa7f41bcd15caf237ae8fd3bfaf68014a", null ],
     [ "loadFromCheckpoint", "classlbann_1_1Layer.html#a88c3ac4ca87586ec20558aaddda76691", null ],
     [ "loadFromCheckpointShared", "classlbann_1_1Layer.html#acd2524835a05a2d88c92e546e15a80a9", null ],
     [ "loadFromFile", "classlbann_1_1Layer.html#a29f7d292db0394489f1302b2aae81dc4", null ],
@@ -52,6 +54,7 @@ var classlbann_1_1Layer =
     [ "m_activations", "classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e", null ],
     [ "m_activations_v", "classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa", null ],
     [ "m_cudnn", "classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21", null ],
+    [ "m_data_layout", "classlbann_1_1Layer.html#a1c60dfaa889c4ba0c840ebe44f8bd6f1", null ],
     [ "m_effective_mbsize", "classlbann_1_1Layer.html#a8b07424032d1b3c4e3a1fae100aff5c5", null ],
     [ "m_error_signal", "classlbann_1_1Layer.html#a43ae6cca8efd036e6f496d3b4f5c1bf9", null ],
     [ "m_error_signal_v", "classlbann_1_1Layer.html#a2fccbe7596578869ee0317c3d2542f35", null ],

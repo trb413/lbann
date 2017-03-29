@@ -5,7 +5,7 @@ var searchData=
   ['base_5ffactory',['base_factory',['../classlbann_1_1base__factory.html#ac4ddf2abe3bf3b6ae24e2200e2022742',1,'lbann::base_factory']]],
   ['batch_5fsize',['batch_size',['../classlbann__data_1_1DataReaderMnist.html#ad4315887f2e451d523e0c9e1243d66fc',1,'lbann_data::DataReaderMnist']]],
   ['begin',['begin',['../classlbann_1_1DataReader__CIFAR10.html#a19e305bc59575f0881e4f3aeb8f84634',1,'lbann::DataReader_CIFAR10']]],
-  ['begin_5fstack',['begin_stack',['../classlbann_1_1stacked__autoencoder.html#a3396b940a47b10396b5b179f29870f71',1,'lbann::stacked_autoencoder']]],
+  ['begin_5fstack',['begin_stack',['../classlbann_1_1stacked__autoencoder.html#a398f7debe464f5db4371202b6dfa657c',1,'lbann::stacked_autoencoder']]],
   ['bernoulli_5ffill',['bernoulli_fill',['../namespacelbann.html#a1a7ffde5dcab1f39986adff100020262',1,'lbann']]],
   ['bernoulli_5ffill_5fprocdet',['bernoulli_fill_procdet',['../namespacelbann.html#a6add4d3337110d567e7b398a262fd010',1,'lbann']]],
   ['block_5fsize',['block_size',['../classlbann__data_1_1PerformanceParams.html#a5261dc32ee90c3740c95af5be8759ffc',1,'lbann_data::PerformanceParams']]],

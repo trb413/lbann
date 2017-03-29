@@ -2,7 +2,7 @@ var classlbann_1_1sequential__model =
 [
     [ "sequential_model", "classlbann_1_1sequential__model.html#a1ab9fbfdc071424ba46c14c04662835d", null ],
     [ "~sequential_model", "classlbann_1_1sequential__model.html#a05ec812bf7db0dc1b29b61aeb197c587", null ],
-    [ "add", "classlbann_1_1sequential__model.html#adba7dacaecb345849f1ea7c82a1a57cb", null ],
+    [ "add", "classlbann_1_1sequential__model.html#ad6436c2ecd1e6b0dea898d9c13068df9", null ],
     [ "add", "classlbann_1_1sequential__model.html#a2341499470419ffae075506df7983c93", null ],
     [ "at_epoch_start", "classlbann_1_1sequential__model.html#acc7bcdbc4ade874d6e2fd4e1e5e54f0c", null ],
     [ "evaluate", "classlbann_1_1sequential__model.html#a338df577fb4da0c56b532de92b6e3263", null ],

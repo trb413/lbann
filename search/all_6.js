@@ -47,5 +47,5 @@ var searchData=
   ['fullyconnected',['FullyConnected',['../classlbann__data_1_1FullyConnected.html#a12b7aa3446a6f4cec137060443450c56',1,'lbann_data::FullyConnected::FullyConnected()'],['../classlbann__data_1_1FullyConnected.html#a754cbbfed468f8de512ee6deed28867f',1,'lbann_data::FullyConnected::FullyConnected(const FullyConnected &amp;from)']]],
   ['fullyconnecteddefaulttypeinternal',['FullyConnectedDefaultTypeInternal',['../classlbann__data_1_1FullyConnectedDefaultTypeInternal.html',1,'lbann_data']]],
   ['fullyconnectedlayer',['FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html',1,'lbann']]],
-  ['fullyconnectedlayer',['FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html#afce405665ec5bf44d7095340cbf9a976',1,'lbann::FullyConnectedLayer']]]
+  ['fullyconnectedlayer',['FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html#a9c033b04665a87308d0783c658e81aea',1,'lbann::FullyConnectedLayer']]]
 ];

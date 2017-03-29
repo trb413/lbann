@@ -189,7 +189,7 @@ var searchData=
   ['smooth_5frelu',['smooth_reLU',['../classlbann_1_1smooth__reLU__layer.html#a7fb00f252eff526d400855f067b77097',1,'lbann::smooth_reLU_layer']]],
   ['smooth_5freluprime',['smooth_reLUPrime',['../classlbann_1_1smooth__reLU__layer.html#a37a4703088f434e739f287c018b41ebc',1,'lbann::smooth_reLU_layer']]],
   ['softmax',['softmax',['../classlbann__data_1_1Layer.html#a112d9809809173d6049288d5c03e785e',1,'lbann_data::Layer::softmax()'],['../classlbann__data_1_1Softmax.html#a13a2a16e50bb222affc8054b51924bb1',1,'lbann_data::Softmax::Softmax()'],['../classlbann__data_1_1Softmax.html#a5da74f506ae501ab5173897823dfcb99',1,'lbann_data::Softmax::Softmax(const Softmax &amp;from)']]],
-  ['softmaxlayer',['SoftmaxLayer',['../classlbann_1_1SoftmaxLayer.html#a9a1901a6d4e02ffffe61dc6103fc5186',1,'lbann::SoftmaxLayer']]],
+  ['softmaxlayer',['SoftmaxLayer',['../classlbann_1_1SoftmaxLayer.html#aae65ff95b2ad41fa54c131daca6b90a0',1,'lbann::SoftmaxLayer']]],
   ['stacked_5fautoencoder',['stacked_autoencoder',['../classlbann_1_1stacked__autoencoder.html#a622397cea91da5d72eecbe57f09f4d10',1,'lbann::stacked_autoencoder']]],
   ['staticdescriptorinitializer',['StaticDescriptorInitializer',['../structlbann__data_1_1protobuf__lbann__2eproto_1_1StaticDescriptorInitializer.html#aed4342117a6409209e0682e4469d6001',1,'lbann_data::protobuf_lbann_2eproto::StaticDescriptorInitializer']]],
   ['statistics',['statistics',['../classlbann_1_1metrics_1_1statistics.html#afc4d1c56faf7c870077a342e4c731086',1,'lbann::metrics::statistics::statistics()'],['../classlbann_1_1objective__functions_1_1statistics.html#ae09872294228744a19efd9510c7503a9',1,'lbann::objective_functions::statistics::statistics()']]],

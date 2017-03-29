@@ -1,6 +1,6 @@
 var classlbann_1_1target__layer =
 [
-    [ "target_layer", "classlbann_1_1target__layer.html#af59f8695f21b0d73f20e42784bcf72aa", null ],
+    [ "target_layer", "classlbann_1_1target__layer.html#ae2397978bc395d5f8d0c94c42ce5da2a", null ],
     [ "bp_nonlinearity", "classlbann_1_1target__layer.html#a43226dbd08bcf5a1d5aa17386bce6ce2", null ],
     [ "epoch_print", "classlbann_1_1target__layer.html#ab36a7f84eb5a59b3723399ffe92a446c", null ],
     [ "epoch_reset", "classlbann_1_1target__layer.html#af1edacbfc44d1a9df1df3b26fe2ea22b", null ],

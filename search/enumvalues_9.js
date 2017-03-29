@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['leaky_5frelu',['LEAKY_RELU',['../namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ac7e80a3de04936f4e423e1b564fdca10',1,'lbann']]]
+  ['kullback_5fleibler_5fdivergence',['kullback_leibler_divergence',['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a72fc2a3662849faf2e84a48b16afc598',1,'lbann::metrics']]]
 ];
