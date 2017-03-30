@@ -5,7 +5,7 @@ var searchData=
   ['tanh_5flayer',['tanh_layer',['../classlbann_1_1tanh__layer.html',1,'lbann']]],
   ['tanhprime',['tanhPrime',['../classlbann_1_1tanh__layer.html#a709d3f8e74f426bb4a5f766e903ce7c8',1,'lbann::tanh_layer']]],
   ['target',['Target',['../classlbann__data_1_1Target.html',1,'lbann_data']]],
-  ['target',['target',['../classlbann__data_1_1Layer.html#ab9984a4da46662998dd7a0088a53884d',1,'lbann_data::Layer::target()'],['../classlbann__data_1_1Target.html#acf796d984203ff6aaf10a5ead8b9e8b7',1,'lbann_data::Target::Target()'],['../classlbann__data_1_1Target.html#a1b78367c97082770c094618b8f9335dc',1,'lbann_data::Target::Target(const Target &amp;from)']]],
+  ['target',['Target',['../classlbann__data_1_1Target.html#acf796d984203ff6aaf10a5ead8b9e8b7',1,'lbann_data::Target::Target()'],['../classlbann__data_1_1Target.html#a1b78367c97082770c094618b8f9335dc',1,'lbann_data::Target::Target(const Target &amp;from)'],['../classlbann__data_1_1Layer.html#ab9984a4da46662998dd7a0088a53884d',1,'lbann_data::Layer::target()']]],
   ['target_5f',['target_',['../classlbann__data_1_1Layer.html#a23a3179107efe5b54f2553f66b4ee225',1,'lbann_data::Layer']]],
   ['target_5fdistributed_5fminibatch',['target_distributed_minibatch',['../classlbann__data_1_1Layer.html#ae6b752ac1f424272eb515025dda07ef8',1,'lbann_data::Layer::target_distributed_minibatch()'],['../namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743af5026f0a52d801c2ee10ed3fe0d6174b',1,'lbann::target_distributed_minibatch()']]],
   ['target_5fdistributed_5fminibatch_5f',['target_distributed_minibatch_',['../classlbann__data_1_1Layer.html#a36d47f33136fca635716b58a8610c553',1,'lbann_data::Layer']]],

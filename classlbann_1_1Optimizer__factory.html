@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">bb3e06b-ci216477092</span>
+   &#160;<span id="projectnumber">71d8571-ci216591842</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -113,12 +113,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a527c8c70b9913b9c93920f3e150d3059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58ddf461ad10a337e4497653de512ca5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlbann_1_1Optimizer.html">Optimizer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Optimizer__factory.html#a58ddf461ad10a337e4497653de512ca5">create_optimizer</a> (<a class="el" href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0d">matrix_format</a> format=<a class="el" href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dacf33f55c86c56389442455e8e190be2d">matrix_format::MC_MR</a>)</td></tr>
 <tr class="separator:a58ddf461ad10a337e4497653de512ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f8df795d3c6af3073a109b5ddd1d71a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classlbann_1_1Optimizer.html">Optimizer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Optimizer__factory.html#a1f8df795d3c6af3073a109b5ddd1d71a">create_optimizer</a> (<a class="el" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a> format=<a class="el" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0">data_layout::MODEL_PARALLEL</a>)</td></tr>
+<tr class="separator:a1f8df795d3c6af3073a109b5ddd1d71a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7ea71bb9f4bffbba0792df3add93fb7"><td class="memItemLeft" align="right" valign="top">virtual const string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Optimizer__factory.html#aa7ea71bb9f4bffbba0792df3add93fb7">name</a> ()=0</td></tr>
 <tr class="separator:aa7ea71bb9f4bffbba0792df3add93fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00077">77</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00078">78</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a66f4559ef9b4a3a6a0d803c17378cddc"></a>
 <div class="memitem">
@@ -141,8 +143,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00079">79</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00080">80</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -167,8 +169,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00080">80</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00081">81</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -197,8 +199,37 @@ Public Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1Adam__factory.html#acb4905a8dc1514b47fdec22fbdc6ff58">lbann::Adam_factory</a>, <a class="el" href="classlbann_1_1RMSprop__factory.html#a9d76409ddf9555a71415c59707ae0b67">lbann::RMSprop_factory</a>, <a class="el" href="classlbann_1_1Adagrad__factory.html#a9f0a8e270743b46069953d1c7f9ca8fc">lbann::Adagrad_factory</a>, and <a class="el" href="classlbann_1_1SGD__factory.html#a43c11da6989fd11bb0da00a84b226141">lbann::SGD_factory</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00081">81</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{ <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; };</div>
+<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00082">82</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{ <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; };</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a1f8df795d3c6af3073a109b5ddd1d71a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classlbann_1_1Optimizer.html">Optimizer</a>* lbann::Optimizer_factory::create_optimizer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a>&#160;</td>
+          <td class="paramname"><em>format</em> = <code><a class="el" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0">data_layout::MODEL_PARALLEL</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="classlbann_1_1Adam__factory.html#a6246fa2d9d7a3e9d0238d14fcab6a8eb">lbann::Adam_factory</a>, <a class="el" href="classlbann_1_1RMSprop__factory.html#abd8655015e2c90e632cfe4a53061c142">lbann::RMSprop_factory</a>, <a class="el" href="classlbann_1_1Adagrad__factory.html#a538ade849aebbf85cc8814d62cb3a0c7">lbann::Adagrad_factory</a>, and <a class="el" href="classlbann_1_1SGD__factory.html#a924d7f0bcb04eca4a4386c221781e549">lbann::SGD_factory</a>.</p>
+
+<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00083">83</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{ <span class="keywordflow">return</span> <span class="keyword">nullptr</span>; };</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -236,7 +267,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1Optimizer__factory.html">Optimizer_factory</a></li>
-    <li class="footer">Generated on Wed Mar 29 2017 20:41:10 for LBANN by
+    <li class="footer">Generated on Thu Mar 30 2017 01:45:04 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

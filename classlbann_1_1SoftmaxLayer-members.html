@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">bb3e06b-ci216477092</span>
+   &#160;<span id="projectnumber">71d8571-ci216591842</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -122,8 +122,8 @@ $(document).ready(function(){initNavTree('classlbann_1_1SoftmaxLayer.html','');}
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1Layer.html#a190982036d52d288d3528a16e30418e0">get_weights_biases</a>()</td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classlbann_1_1Layer.html#a4b2b92aa11d932d62456c21ed929b263">get_weights_biases_gradient</a>()</td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1Layer.html#a5d76fcdf50d7ac4fb2fe757fb0cc23d8">Index</a></td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classlbann_1_1Layer.html#aa9937720c6ac7039cb70d4defc22e1fa">initialize_data_parallel_distribution</a>()</td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1Layer.html#aa7f41bcd15caf237ae8fd3bfaf68014a">initialize_model_parallel_distribution</a>()</td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classlbann_1_1SoftmaxLayer.html#af2b27d8f9e99d8aa827e33d9f0b9ae0a">initialize_data_parallel_distribution</a>()</td><td class="entry"><a class="el" href="classlbann_1_1SoftmaxLayer.html">lbann::SoftmaxLayer</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1SoftmaxLayer.html#a3b3252028a6c1c9362733469462b4718">initialize_model_parallel_distribution</a>()</td><td class="entry"><a class="el" href="classlbann_1_1SoftmaxLayer.html">lbann::SoftmaxLayer</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classlbann_1_1Layer.html#ae23d551b082842f730f78bfea85c54a7">Layer</a>(data_layout data_dist, const uint index, lbann_comm *comm, Optimizer *optimizer, uint mbsize, activation_type activation=activation_type::ID, std::vector&lt; regularizer * &gt; regs={})</td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1SoftmaxLayer.html#a1f903958a7ee933d1c43dbd0e1f665ff">loadFromCheckpoint</a>(int fd, const char *filename, uint64_t *bytes)</td><td class="entry"><a class="el" href="classlbann_1_1SoftmaxLayer.html">lbann::SoftmaxLayer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classlbann_1_1SoftmaxLayer.html#a8a3033926097c1d329d1859b2f999473">loadFromCheckpointShared</a>(persist &amp;p)</td><td class="entry"><a class="el" href="classlbann_1_1SoftmaxLayer.html">lbann::SoftmaxLayer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
@@ -133,6 +133,8 @@ $(document).ready(function(){initNavTree('classlbann_1_1SoftmaxLayer.html','');}
   <tr><td class="entry"><a class="el" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a></td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">m_activations_v</a></td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a></td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1SoftmaxLayer.html#ac3dddaa7884d49acf1a3c841082a4669">m_curr_activations_v</a></td><td class="entry"><a class="el" href="classlbann_1_1SoftmaxLayer.html">lbann::SoftmaxLayer</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classlbann_1_1SoftmaxLayer.html#a40f8e87148482df4572bc170294ee1d1">m_curr_prev_error_signal_v</a></td><td class="entry"><a class="el" href="classlbann_1_1SoftmaxLayer.html">lbann::SoftmaxLayer</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1Layer.html#a1c60dfaa889c4ba0c840ebe44f8bd6f1">m_data_layout</a></td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classlbann_1_1Layer.html#a8b07424032d1b3c4e3a1fae100aff5c5">m_effective_mbsize</a></td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1Layer.html#a43ae6cca8efd036e6f496d3b4f5c1bf9">m_error_signal</a></td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"></td></tr>
@@ -184,12 +186,13 @@ $(document).ready(function(){initNavTree('classlbann_1_1SoftmaxLayer.html','');}
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1SoftmaxLayer.html#aa9c2be7494fa03145668e18d3eb8ccfc">ZsNormExpSum</a></td><td class="entry"><a class="el" href="classlbann_1_1SoftmaxLayer.html">lbann::SoftmaxLayer</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classlbann_1_1SoftmaxLayer.html#a142127c362d4358911b2efaed79367fd">ZsNormExpSumStar</a></td><td class="entry"><a class="el" href="classlbann_1_1SoftmaxLayer.html">lbann::SoftmaxLayer</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1Layer.html#a68c3f57587956da938406812f13ecb78">~Layer</a>()</td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classlbann_1_1SoftmaxLayer.html#acaa7f635a5815f3d60e938530a646c75">~SoftmaxLayer</a>()</td><td class="entry"><a class="el" href="classlbann_1_1SoftmaxLayer.html">lbann::SoftmaxLayer</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Mar 29 2017 20:41:10 for LBANN by
+    <li class="footer">Generated on Thu Mar 30 2017 01:45:04 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

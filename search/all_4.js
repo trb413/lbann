@@ -2,6 +2,7 @@ var searchData=
 [
   ['data_5ffilename',['data_filename',['../structlbann_1_1lbann__proto_1_1data__reader__params.html#a6f746d96ef8dc8e243efed4cd38f6ca2',1,'lbann::lbann_proto::data_reader_params']]],
   ['data_5flayout',['data_layout',['../lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db',1,'lbann_base.hpp']]],
+  ['data_5flayout_5fto_5fmatrix_5fformat',['data_layout_to_matrix_format',['../lbann__base_8hpp.html#a01c200a05e623156e827ec072b815a72',1,'lbann_base.hpp']]],
   ['data_5fparallel',['DATA_PARALLEL',['../lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638',1,'lbann_base.hpp']]],
   ['data_5freader',['data_reader',['../classlbann_1_1dataset.html#adaa41a680f5ac625bb8a4830c239a9fd',1,'lbann::dataset::data_reader()'],['../classlbann__data_1_1LbannPB.html#a6e22f9cb6f8d84ee7a9acdc53ce6df52',1,'lbann_data::LbannPB::data_reader()']]],
   ['data_5freader_5f',['data_reader_',['../classlbann__data_1_1LbannPB.html#a33568bc990e990f1701fe046071cc90e',1,'lbann_data::LbannPB']]],
@@ -95,7 +96,7 @@ var searchData=
   ['double4',['DOUBLE4',['../datatype_8hpp.html#acf56babf3d50b65f791d78b753f990ec',1,'datatype.hpp']]],
   ['doxygen',['Doxygen',['../doxygen.html',1,'getting_started']]],
   ['dropout',['dropout',['../classlbann_1_1dropout.html',1,'lbann']]],
-  ['dropout',['DropOut',['../classlbann_1_1TrainingParams.html#a682b2fe0b572a0df36a7d5f35d6edc41',1,'lbann::TrainingParams::DropOut()'],['../structlbann_1_1lbann__proto_1_1regularizer__params.html#a5b2bd04cb7baf66305e5a5d3a245ae77',1,'lbann::lbann_proto::regularizer_params::dropout()'],['../classlbann__data_1_1TrainingParams.html#a2b91f7ef3d0d691851d8b013d8c13245',1,'lbann_data::TrainingParams::dropout()'],['../classlbann_1_1dropout.html#ac7df0dc7dd229a22c33141923496c363',1,'lbann::dropout::dropout()']]],
+  ['dropout',['DropOut',['../classlbann_1_1TrainingParams.html#a682b2fe0b572a0df36a7d5f35d6edc41',1,'lbann::TrainingParams::DropOut()'],['../structlbann_1_1lbann__proto_1_1regularizer__params.html#a5b2bd04cb7baf66305e5a5d3a245ae77',1,'lbann::lbann_proto::regularizer_params::dropout()'],['../classlbann__data_1_1TrainingParams.html#a2b91f7ef3d0d691851d8b013d8c13245',1,'lbann_data::TrainingParams::dropout()'],['../classlbann_1_1dropout.html#a475a5f62e79fddc530dcf9982ace918a',1,'lbann::dropout::dropout()']]],
   ['dropout_5f',['dropout_',['../classlbann__data_1_1TrainingParams.html#a54aeca3dd8f865a6199d17bbc103fa96',1,'lbann_data::TrainingParams']]],
   ['dump_5factivations',['dump_activations',['../classlbann__data_1_1TrainingParams.html#a1ecec12bfc8256bc05bdb9a69cc49921',1,'lbann_data::TrainingParams']]],
   ['dump_5factivations_5f',['dump_activations_',['../classlbann__data_1_1TrainingParams.html#a26276b983ec179b6eaeaad6c3a7a7f7a',1,'lbann_data::TrainingParams']]],

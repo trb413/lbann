@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['data_5flayout_5fto_5fmatrix_5fformat',['data_layout_to_matrix_format',['../lbann__base_8hpp.html#a01c200a05e623156e827ec072b815a72',1,'lbann_base.hpp']]],
   ['data_5freader',['data_reader',['../classlbann__data_1_1LbannPB.html#a6e22f9cb6f8d84ee7a9acdc53ce6df52',1,'lbann_data::LbannPB']]],
   ['data_5freader_5fnci',['data_reader_nci',['../classlbann_1_1data__reader__nci.html#a630b728e6b639561f6581c4036ef2da0',1,'lbann::data_reader_nci::data_reader_nci(int batchSize, bool shuffle)'],['../classlbann_1_1data__reader__nci.html#a236c045c7c0f9a7cdef769a1d620061f',1,'lbann::data_reader_nci::data_reader_nci(int batchSize)'],['../classlbann_1_1data__reader__nci.html#a99fde9779d271578c934994e04accd6c',1,'lbann::data_reader_nci::data_reader_nci(const data_reader_nci &amp;source)']]],
   ['data_5freader_5fnci_5fregression',['data_reader_nci_regression',['../classlbann_1_1data__reader__nci__regression.html#a62fb90bf0a05b0963762abe3b081c28a',1,'lbann::data_reader_nci_regression']]],
@@ -50,7 +51,7 @@ var searchData=
   ['dot_5ffloat2',['DOT_FLOAT2',['../datatype_8hpp.html#ab8ef086bcdcdf09c15e9a5800cd8f4cc',1,'datatype.hpp']]],
   ['dot_5ffloat3',['DOT_FLOAT3',['../datatype_8hpp.html#a567610ce79c815c48c5d861ca38f1929',1,'datatype.hpp']]],
   ['dot_5ffloat4',['DOT_FLOAT4',['../datatype_8hpp.html#adb94f7fd9846690b4b1c257e93fe2e49',1,'datatype.hpp']]],
-  ['dropout',['dropout',['../classlbann__data_1_1TrainingParams.html#a2b91f7ef3d0d691851d8b013d8c13245',1,'lbann_data::TrainingParams::dropout()'],['../classlbann_1_1dropout.html#ac7df0dc7dd229a22c33141923496c363',1,'lbann::dropout::dropout()']]],
+  ['dropout',['dropout',['../classlbann__data_1_1TrainingParams.html#a2b91f7ef3d0d691851d8b013d8c13245',1,'lbann_data::TrainingParams::dropout()'],['../classlbann_1_1dropout.html#a475a5f62e79fddc530dcf9982ace918a',1,'lbann::dropout::dropout()']]],
   ['dump_5factivations',['dump_activations',['../classlbann__data_1_1TrainingParams.html#a1ecec12bfc8256bc05bdb9a69cc49921',1,'lbann_data::TrainingParams']]],
   ['dump_5fdir',['dump_dir',['../classlbann__data_1_1TrainingParams.html#aac5e095c6bce8612c27c81c88989398e',1,'lbann_data::TrainingParams']]],
   ['dump_5fgradients',['dump_gradients',['../classlbann__data_1_1TrainingParams.html#a1feac8844500275eca807d2902b71d2b',1,'lbann_data::TrainingParams']]],
