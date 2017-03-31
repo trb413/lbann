@@ -1,5 +1,8 @@
 var NAVTREEINDEX2 =
 {
+"classlbann_1_1convolutional__layer.html#a53085be18aa227a103861a0fbc4f68c1":[3,0,3,43,26],
+"classlbann_1_1convolutional__layer.html#a5bf8980deba81eb406b0ba0cf3dda263":[3,0,3,43,27],
+"classlbann_1_1convolutional__layer.html#a7d76a1acb661361afff24d517b6bce97":[3,0,3,43,28],
 "classlbann_1_1convolutional__layer.html#a80dec19f24a267700cf6ff6cc5fdc9e1":[3,0,3,43,11],
 "classlbann_1_1convolutional__layer.html#a83615fc2adf3cca9ca436e2e5b8ebea7":[3,0,3,43,21],
 "classlbann_1_1convolutional__layer.html#a8fb2830b74b665e32e774d30aa513945":[3,0,3,43,32],
@@ -246,8 +249,5 @@ var NAVTREEINDEX2 =
 "classlbann_1_1lbann__callback.html#af28078b0ddaef45124465bef01eefedf":[3,0,3,2,24],
 "classlbann_1_1lbann__callback.html#af4c9e2cf1c87cbf741bb0316f6f5fab2":[3,0,3,2,0],
 "classlbann_1_1lbann__callback__adaptive__learning__rate.html":[3,0,3,13],
-"classlbann_1_1lbann__callback__adaptive__learning__rate.html#a19596ebb10690c61068b18b786ab5716":[3,0,3,13,2],
-"classlbann_1_1lbann__callback__adaptive__learning__rate.html#a2095e4c430b3c4f206e85c963e1ec2aa":[3,0,3,13,0],
-"classlbann_1_1lbann__callback__adaptive__learning__rate.html#a44ebab009983de9235c902028244ad5f":[3,0,3,13,6],
-"classlbann_1_1lbann__callback__adaptive__learning__rate.html#a485a7cfca03b7959129ba5369fe2b473":[3,0,3,13,4]
+"classlbann_1_1lbann__callback__adaptive__learning__rate.html#a19596ebb10690c61068b18b786ab5716":[3,0,3,13,2]
 };

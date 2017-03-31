@@ -1,5 +1,8 @@
 var NAVTREEINDEX1 =
 {
+"classlbann_1_1Layer.html#a275987dded3345f86aa3c8fc5f2e37de":[3,0,3,34,37],
+"classlbann_1_1Layer.html#a2921c7947587b5d95cf8dff96000a237":[3,0,3,34,34],
+"classlbann_1_1Layer.html#a29f7d292db0394489f1302b2aae81dc4":[3,0,3,34,26],
 "classlbann_1_1Layer.html#a2f196ef8b7a8ed9562aca11eae8cf749":[3,0,3,34,19],
 "classlbann_1_1Layer.html#a2fccbe7596578869ee0317c3d2542f35":[3,0,3,34,57],
 "classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081":[3,0,3,34,59],
@@ -246,8 +249,5 @@ var NAVTREEINDEX1 =
 "classlbann_1_1convolutional__layer.html#a374678f49feddecf0758f0b170494dd6":[3,0,3,43,19],
 "classlbann_1_1convolutional__layer.html#a45fad740296dda945afdadc4df31b628":[3,0,3,43,30],
 "classlbann_1_1convolutional__layer.html#a4a6beefd3b7c00b569fa739ee8db7f7a":[3,0,3,43,3],
-"classlbann_1_1convolutional__layer.html#a50de045e7ff214f58260e3717516d089":[3,0,3,43,0],
-"classlbann_1_1convolutional__layer.html#a53085be18aa227a103861a0fbc4f68c1":[3,0,3,43,26],
-"classlbann_1_1convolutional__layer.html#a5bf8980deba81eb406b0ba0cf3dda263":[3,0,3,43,27],
-"classlbann_1_1convolutional__layer.html#a7d76a1acb661361afff24d517b6bce97":[3,0,3,43,28]
+"classlbann_1_1convolutional__layer.html#a50de045e7ff214f58260e3717516d089":[3,0,3,43,0]
 };

@@ -1,6 +1,7 @@
 var searchData=
 [
   ['data_5ffilename',['data_filename',['../structlbann_1_1lbann__proto_1_1data__reader__params.html#a6f746d96ef8dc8e243efed4cd38f6ca2',1,'lbann::lbann_proto::data_reader_params']]],
+  ['data_5ffilename_5f',['data_filename_',['../classlbann__data_1_1Reader.html#a4f551f3b8dc7eb8cc30f5509268c09b3',1,'lbann_data::Reader']]],
   ['data_5freader',['data_reader',['../classlbann_1_1dataset.html#adaa41a680f5ac625bb8a4830c239a9fd',1,'lbann::dataset']]],
   ['data_5freader_5f',['data_reader_',['../classlbann__data_1_1LbannPB.html#a33568bc990e990f1701fe046071cc90e',1,'lbann_data::LbannPB']]],
   ['data_5fseq_5fgenerator',['data_seq_generator',['../namespaceanonymous__namespace_02lbann__random_8cpp_03.html#a36d1b52a12cd2346076af0b35f49efed',1,'anonymous_namespace{lbann_random.cpp}']]],
@@ -9,6 +10,7 @@ var searchData=
   ['datatypempi',['DataTypeMPI',['../lbann__base_8hpp.html#a50107efba2c08b6188a769743a78d04e',1,'lbann_base.hpp']]],
   ['decay',['decay',['../classlbann_1_1SGD.html#adf5b54cf44636e2bce7c690821cf2fb9',1,'lbann::SGD::decay()'],['../classlbann_1_1SGD__factory.html#a179f80de13aabe1338f5252ca448d07c',1,'lbann::SGD_factory::decay()'],['../structlbann_1_1lbann__proto_1_1optimizer__params.html#a9d505eb9b38dec94c259a5f4d9bbd823',1,'lbann::lbann_proto::optimizer_params::decay()']]],
   ['decay_5f',['decay_',['../classlbann__data_1_1Optimizer.html#a74cb796be13b4d6b45b4a943c3c0eaf2',1,'lbann_data::Optimizer']]],
+  ['disable_5faugmentation_5f',['disable_augmentation_',['../classlbann__data_1_1ImagePreprocessor.html#ad02eac0e91a1f960041f28cd96a467dd',1,'lbann_data::ImagePreprocessor']]],
   ['dropout',['DropOut',['../classlbann_1_1TrainingParams.html#a682b2fe0b572a0df36a7d5f35d6edc41',1,'lbann::TrainingParams::DropOut()'],['../structlbann_1_1lbann__proto_1_1regularizer__params.html#a5b2bd04cb7baf66305e5a5d3a245ae77',1,'lbann::lbann_proto::regularizer_params::dropout()']]],
   ['dropout_5f',['dropout_',['../classlbann__data_1_1TrainingParams.html#a54aeca3dd8f865a6199d17bbc103fa96',1,'lbann_data::TrainingParams']]],
   ['dump_5factivations_5f',['dump_activations_',['../classlbann__data_1_1TrainingParams.html#a26276b983ec179b6eaeaad6c3a7a7f7a',1,'lbann_data::TrainingParams']]],

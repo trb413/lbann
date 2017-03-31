@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['label_5ffile_5f',['label_file_',['../classlbann__data_1_1DataReaderMnist.html#a94d7ecf90b3b315c4f50dcdb380412a1',1,'lbann_data::DataReaderMnist']]],
   ['label_5ffilename',['label_filename',['../structlbann_1_1lbann__proto_1_1data__reader__params.html#a2e2da242f595b1a082a820d97c2bfe3b',1,'lbann::lbann_proto::data_reader_params']]],
+  ['label_5ffilename_5f',['label_filename_',['../classlbann__data_1_1Reader.html#afa9cabc40209222663d0275bfe7b0b97',1,'lbann_data::Reader']]],
   ['lambda',['Lambda',['../classlbann_1_1TrainingParams.html#a0302f435cc2a9b7e425881cb46caedd0',1,'lbann::TrainingParams']]],
   ['lambda_5f',['lambda_',['../classlbann__data_1_1TrainingParams.html#a4efe3eca321b0a28452aff1e03915c31',1,'lbann_data::TrainingParams']]],
   ['last_5fidx',['last_idx',['../classlbann_1_1lbann__callback__learning__rate.html#a2636c9cc4bac6d52e9df40fa9ee980d9',1,'lbann::lbann_callback_learning_rate']]],

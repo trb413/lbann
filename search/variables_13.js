@@ -17,6 +17,7 @@ var searchData=
   ['to_5fpin_5ffwd',['to_pin_fwd',['../classlbann_1_1convolutional__layer.html#adc923829f3945afa12993365bbcebdf0',1,'lbann::convolutional_layer::to_pin_fwd()'],['../classlbann_1_1pooling__layer.html#a8cdff31022e4181c04aafd74e1d6f943',1,'lbann::pooling_layer::to_pin_fwd()']]],
   ['total_5fsamples',['total_samples',['../classlbann_1_1dataset.html#a95e9d0ceefc527e22318149778597727',1,'lbann::dataset']]],
   ['train_5ffile_5f',['train_file_',['../classlbann__data_1_1TrainingParams.html#a0af2664f135d7d02f00daca0df161054',1,'lbann_data::TrainingParams']]],
+  ['train_5for_5ftest_5fpercent_5f',['train_or_test_percent_',['../classlbann__data_1_1Reader.html#ab29d68eeced8c8daa498cce6ec1b1aca',1,'lbann_data::Reader']]],
   ['train_5fproc',['train_proc',['../structdataset__header.html#a7dd6822b650cb55d647f33fea50f1a20',1,'dataset_header']]],
   ['train_5ftotal',['train_total',['../structdataset__header.html#ac687bb1bff59eeede917e9e9f6c968f3',1,'dataset_header']]],
   ['trainfile',['TrainFile',['../classlbann_1_1TrainingParams.html#a4ac278410cb0a24c9dc1f6edf014d003',1,'lbann::TrainingParams']]],

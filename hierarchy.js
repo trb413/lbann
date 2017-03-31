@@ -46,13 +46,9 @@ var hierarchy =
     [ "dataset_header", "structdataset__header.html", null ],
     [ "ExplicitlyConstructed", null, [
       [ "lbann_data::ConvolutionDefaultTypeInternal", "classlbann__data_1_1ConvolutionDefaultTypeInternal.html", null ],
-      [ "lbann_data::DataReaderCifar10DefaultTypeInternal", "classlbann__data_1_1DataReaderCifar10DefaultTypeInternal.html", null ],
       [ "lbann_data::DataReaderDefaultTypeInternal", "classlbann__data_1_1DataReaderDefaultTypeInternal.html", null ],
-      [ "lbann_data::DataReaderImagenetDefaultTypeInternal", "classlbann__data_1_1DataReaderImagenetDefaultTypeInternal.html", null ],
-      [ "lbann_data::DataReaderMnistDefaultTypeInternal", "classlbann__data_1_1DataReaderMnistDefaultTypeInternal.html", null ],
-      [ "lbann_data::DataReaderNciDefaultTypeInternal", "classlbann__data_1_1DataReaderNciDefaultTypeInternal.html", null ],
-      [ "lbann_data::DataReaderNciRegressionDefaultTypeInternal", "classlbann__data_1_1DataReaderNciRegressionDefaultTypeInternal.html", null ],
       [ "lbann_data::FullyConnectedDefaultTypeInternal", "classlbann__data_1_1FullyConnectedDefaultTypeInternal.html", null ],
+      [ "lbann_data::ImagePreprocessorDefaultTypeInternal", "classlbann__data_1_1ImagePreprocessorDefaultTypeInternal.html", null ],
       [ "lbann_data::InputDefaultTypeInternal", "classlbann__data_1_1InputDefaultTypeInternal.html", null ],
       [ "lbann_data::InputDistributedMiniBatchDefaultTypeInternal", "classlbann__data_1_1InputDistributedMiniBatchDefaultTypeInternal.html", null ],
       [ "lbann_data::InputDistributedMiniBatchParallelIODefaultTypeInternal", "classlbann__data_1_1InputDistributedMiniBatchParallelIODefaultTypeInternal.html", null ],
@@ -63,6 +59,7 @@ var hierarchy =
       [ "lbann_data::OptimizerDefaultTypeInternal", "classlbann__data_1_1OptimizerDefaultTypeInternal.html", null ],
       [ "lbann_data::PerformanceParamsDefaultTypeInternal", "classlbann__data_1_1PerformanceParamsDefaultTypeInternal.html", null ],
       [ "lbann_data::PoolingDefaultTypeInternal", "classlbann__data_1_1PoolingDefaultTypeInternal.html", null ],
+      [ "lbann_data::ReaderDefaultTypeInternal", "classlbann__data_1_1ReaderDefaultTypeInternal.html", null ],
       [ "lbann_data::SoftmaxDefaultTypeInternal", "classlbann__data_1_1SoftmaxDefaultTypeInternal.html", null ],
       [ "lbann_data::SystemParamsDefaultTypeInternal", "classlbann__data_1_1SystemParamsDefaultTypeInternal.html", null ],
       [ "lbann_data::TargetDefaultTypeInternal", "classlbann__data_1_1TargetDefaultTypeInternal.html", null ],
@@ -74,12 +71,8 @@ var hierarchy =
     [ "Message", null, [
       [ "lbann_data::Convolution", "classlbann__data_1_1Convolution.html", null ],
       [ "lbann_data::DataReader", "classlbann__data_1_1DataReader.html", null ],
-      [ "lbann_data::DataReaderCifar10", "classlbann__data_1_1DataReaderCifar10.html", null ],
-      [ "lbann_data::DataReaderImagenet", "classlbann__data_1_1DataReaderImagenet.html", null ],
-      [ "lbann_data::DataReaderMnist", "classlbann__data_1_1DataReaderMnist.html", null ],
-      [ "lbann_data::DataReaderNci", "classlbann__data_1_1DataReaderNci.html", null ],
-      [ "lbann_data::DataReaderNciRegression", "classlbann__data_1_1DataReaderNciRegression.html", null ],
       [ "lbann_data::FullyConnected", "classlbann__data_1_1FullyConnected.html", null ],
+      [ "lbann_data::ImagePreprocessor", "classlbann__data_1_1ImagePreprocessor.html", null ],
       [ "lbann_data::Input", "classlbann__data_1_1Input.html", null ],
       [ "lbann_data::InputDistributedMiniBatch", "classlbann__data_1_1InputDistributedMiniBatch.html", null ],
       [ "lbann_data::InputDistributedMiniBatchParallelIO", "classlbann__data_1_1InputDistributedMiniBatchParallelIO.html", null ],
@@ -90,6 +83,7 @@ var hierarchy =
       [ "lbann_data::Optimizer", "classlbann__data_1_1Optimizer.html", null ],
       [ "lbann_data::PerformanceParams", "classlbann__data_1_1PerformanceParams.html", null ],
       [ "lbann_data::Pooling", "classlbann__data_1_1Pooling.html", null ],
+      [ "lbann_data::Reader", "classlbann__data_1_1Reader.html", null ],
       [ "lbann_data::Softmax", "classlbann__data_1_1Softmax.html", null ],
       [ "lbann_data::SystemParams", "classlbann__data_1_1SystemParams.html", null ],
       [ "lbann_data::Target", "classlbann__data_1_1Target.html", null ],
@@ -110,14 +104,6 @@ var hierarchy =
     ] ],
     [ "lbann::base_factory< Method >", "classlbann_1_1base__factory.html", null ],
     [ "lbann::CUtility", "classlbann_1_1CUtility.html", null ],
-    [ "lbann::DataReader", "classlbann_1_1DataReader.html", [
-      [ "lbann::data_reader_nci", "classlbann_1_1data__reader__nci.html", null ],
-      [ "lbann::data_reader_nci_regression", "classlbann_1_1data__reader__nci__regression.html", null ],
-      [ "lbann::DataReader_CIFAR10", "classlbann_1_1DataReader__CIFAR10.html", null ],
-      [ "lbann::DataReader_cnpy", "classlbann_1_1DataReader__cnpy.html", null ],
-      [ "lbann::DataReader_ImageNet", "classlbann_1_1DataReader__ImageNet.html", null ],
-      [ "lbann::DataReader_MNIST", "classlbann_1_1DataReader__MNIST.html", null ]
-    ] ],
     [ "lbann::dataset", "classlbann_1_1dataset.html", null ],
     [ "lbann::distributed_minibatch_parallel_io", "classlbann_1_1distributed__minibatch__parallel__io.html", [
       [ "lbann::input_layer_distributed_minibatch_parallel_io", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html", null ],
@@ -162,8 +148,14 @@ var hierarchy =
     ] ],
     [ "lbann::lbann_comm", "classlbann_1_1lbann__comm.html", null ],
     [ "lbann::lbann_image_preprocessor", "classlbann_1_1lbann__image__preprocessor.html", [
-      [ "lbann::DataReader_ImageNet", "classlbann_1_1DataReader__ImageNet.html", null ],
-      [ "lbann::DataReader_MNIST", "classlbann_1_1DataReader__MNIST.html", null ]
+      [ "lbann::DataReader", "classlbann_1_1DataReader.html", [
+        [ "lbann::data_reader_nci", "classlbann_1_1data__reader__nci.html", null ],
+        [ "lbann::data_reader_nci_regression", "classlbann_1_1data__reader__nci__regression.html", null ],
+        [ "lbann::DataReader_CIFAR10", "classlbann_1_1DataReader__CIFAR10.html", null ],
+        [ "lbann::DataReader_cnpy", "classlbann_1_1DataReader__cnpy.html", null ],
+        [ "lbann::DataReader_ImageNet", "classlbann_1_1DataReader__ImageNet.html", null ],
+        [ "lbann::DataReader_MNIST", "classlbann_1_1DataReader__MNIST.html", null ]
+      ] ]
     ] ],
     [ "lbann::lbann_proto", "classlbann_1_1lbann__proto.html", null ],
     [ "lbann::lbann_proto::data_reader_params", "structlbann_1_1lbann__proto_1_1data__reader__params.html", null ],
