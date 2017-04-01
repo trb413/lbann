@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">45b5337-ci217257514</span>
+   &#160;<span id="projectnumber">17036fe-ci217411929</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -712,22 +712,22 @@ template&lt;class _DistMat&gt; </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="comment">// KERAS: lr = self.lr * (1.0 / (1.0 + self.decay * self.iterations))</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <a class="code" href="classlbann_1_1SGD.html#a7329a0ad8a13217fdc160baabc6a51dc">lr</a> = <a class="code" href="classlbann_1_1SGD.html#a7329a0ad8a13217fdc160baabc6a51dc">lr</a> * (1.0 / (1.0 + <a class="code" href="classlbann_1_1SGD.html#adf5b54cf44636e2bce7c690821cf2fb9">decay</a> * <a class="code" href="classlbann_1_1SGD.html#aa7e5e15309d59acaf173967dace4d469">iterations</a>));</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <a class="code" href="classlbann_1_1SGD.html#aa7e5e15309d59acaf173967dace4d469">iterations</a>++;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="comment">// velocity</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="comment">// KERAS: v = self.momentum * m - lr * g  # velocity</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      Scale(<a class="code" href="classlbann_1_1SGD.html#a2ca1a9944605773211bc041da91b580d">momentum</a>, <a class="code" href="classlbann_1_1SGD.html#a9f2cf8132b758195a3847d38b0445687">velocity</a>);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      Scale(<a class="code" href="classlbann_1_1SGD.html#a7329a0ad8a13217fdc160baabc6a51dc">lr</a>, WB_D); <span class="comment">// step</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      Axpy(-1, WB_D.Matrix(), <a class="code" href="classlbann_1_1SGD.html#a9f2cf8132b758195a3847d38b0445687">velocity</a>.Matrix()); <span class="comment">// Update // TODO</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      Axpy(<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(-1), WB_D.Matrix(), <a class="code" href="classlbann_1_1SGD.html#a9f2cf8132b758195a3847d38b0445687">velocity</a>.Matrix()); <span class="comment">// Update // TODO</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1SGD.html#ad6c44f1d72c352fd9fdf5ac302e8e5a4">nesterov</a>) {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="comment">//KERAS: new_p = p + self.momentum * v - lr * g</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        Copy(<a class="code" href="classlbann_1_1SGD.html#a9f2cf8132b758195a3847d38b0445687">velocity</a>, <a class="code" href="classlbann_1_1SGD.html#a16a92b23f8dbb1040d71fee0ae9001b1">nesterov_ag</a>);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        Scale(<a class="code" href="classlbann_1_1SGD.html#a2ca1a9944605773211bc041da91b580d">momentum</a>, <a class="code" href="classlbann_1_1SGD.html#a16a92b23f8dbb1040d71fee0ae9001b1">nesterov_ag</a>);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        Axpy(-1, WB_D.Matrix(), <a class="code" href="classlbann_1_1SGD.html#a16a92b23f8dbb1040d71fee0ae9001b1">nesterov_ag</a>.Matrix()); <span class="comment">// TODO</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        Axpy(1., <a class="code" href="classlbann_1_1SGD.html#a16a92b23f8dbb1040d71fee0ae9001b1">nesterov_ag</a>.Matrix(), WB.Matrix()); <span class="comment">// TODO</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        Axpy(<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(-1), WB_D.Matrix(), <a class="code" href="classlbann_1_1SGD.html#a16a92b23f8dbb1040d71fee0ae9001b1">nesterov_ag</a>.Matrix()); <span class="comment">// TODO</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        Axpy(<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1), <a class="code" href="classlbann_1_1SGD.html#a16a92b23f8dbb1040d71fee0ae9001b1">nesterov_ag</a>.Matrix(), WB.Matrix()); <span class="comment">// TODO</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      }<span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="comment">//KERAS: new_p = p + v</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        Axpy(1., <a class="code" href="classlbann_1_1SGD.html#a9f2cf8132b758195a3847d38b0445687">velocity</a>.Matrix(), WB.Matrix()); <span class="comment">// TODO</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        Axpy(<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1), <a class="code" href="classlbann_1_1SGD.html#a9f2cf8132b758195a3847d38b0445687">velocity</a>.Matrix(), WB.Matrix()); <span class="comment">// TODO</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      }</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
@@ -736,6 +736,7 @@ template&lt;class _DistMat&gt; </div>
 <div class="ttc" id="classlbann_1_1SGD_html_ad6c44f1d72c352fd9fdf5ac302e8e5a4"><div class="ttname"><a href="classlbann_1_1SGD.html#ad6c44f1d72c352fd9fdf5ac302e8e5a4">lbann::SGD::nesterov</a></div><div class="ttdeci">bool nesterov</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__sgd_8hpp_source.html#l00052">lbann_optimizer_sgd.hpp:52</a></div></div>
 <div class="ttc" id="classlbann_1_1SGD_html_a9f2cf8132b758195a3847d38b0445687"><div class="ttname"><a href="classlbann_1_1SGD.html#a9f2cf8132b758195a3847d38b0445687">lbann::SGD::velocity</a></div><div class="ttdeci">_DistMat velocity</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__sgd_8hpp_source.html#l00056">lbann_optimizer_sgd.hpp:56</a></div></div>
 <div class="ttc" id="classlbann_1_1SGD_html_a7329a0ad8a13217fdc160baabc6a51dc"><div class="ttname"><a href="classlbann_1_1SGD.html#a7329a0ad8a13217fdc160baabc6a51dc">lbann::SGD::lr</a></div><div class="ttdeci">float lr</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__sgd_8hpp_source.html#l00049">lbann_optimizer_sgd.hpp:49</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00037">lbann_base.hpp:37</a></div></div>
 <div class="ttc" id="classlbann_1_1SGD_html_aa7e5e15309d59acaf173967dace4d469"><div class="ttname"><a href="classlbann_1_1SGD.html#aa7e5e15309d59acaf173967dace4d469">lbann::SGD::iterations</a></div><div class="ttdeci">long iterations</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__sgd_8hpp_source.html#l00055">lbann_optimizer_sgd.hpp:55</a></div></div>
 <div class="ttc" id="classlbann_1_1SGD_html_a16a92b23f8dbb1040d71fee0ae9001b1"><div class="ttname"><a href="classlbann_1_1SGD.html#a16a92b23f8dbb1040d71fee0ae9001b1">lbann::SGD::nesterov_ag</a></div><div class="ttdeci">_DistMat nesterov_ag</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__sgd_8hpp_source.html#l00057">lbann_optimizer_sgd.hpp:57</a></div></div>
 </div><!-- fragment -->
@@ -903,7 +904,7 @@ template&lt;class _DistMat&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1SGD.html">SGD</a></li>
-    <li class="footer">Generated on Fri Mar 31 2017 17:20:57 for LBANN by
+    <li class="footer">Generated on Sat Apr 1 2017 00:58:17 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

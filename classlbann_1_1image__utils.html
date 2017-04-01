@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">45b5337-ci217257514</span>
+   &#160;<span id="projectnumber">17036fe-ci217411929</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -219,11 +219,11 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; Height; y++) {</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; Width; x++) {</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keywordtype">int</span> offset = (Flip) ? ((Height - 1 - y) * Width + x) : (y * Width + x);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            Pixels[offset * 3 + 0] = bits[y * bitrowsize + x * 3 + 2];</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            Pixels[offset * 3 + 1] = bits[y * bitrowsize + x * 3 + 1];</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            Pixels[offset * 3 + 2] = bits[y * bitrowsize + x * 3 + 0];</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                }</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            Pixels[offset] = bits[y * bitrowsize + x * 3 + 2];</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            Pixels[offset + Height*Width] = bits[y * bitrowsize + x * 3 + 1];</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            Pixels[offset + 2*Height*Width] = bits[y * bitrowsize + x * 3 + 0];</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    </div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        free(info);</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        free(bits);</div>
@@ -296,32 +296,31 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__image__utils_8cpp_source.html#l00264">264</a> of file <a class="el" href="lbann__image__utils_8cpp_source.html">lbann_image_utils.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;{</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor">#ifdef __LIB_OPENCV</span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="preprocessor"></span>    <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> image = imread(Imagefile, CV_LOAD_IMAGE_COLOR);</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">if</span> (image.empty())</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<p>Definition at line <a class="el" href="lbann__image__utils_8cpp_source.html#l00261">261</a> of file <a class="el" href="lbann__image__utils_8cpp_source.html">lbann_image_utils.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;{</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor">#ifdef __LIB_OPENCV</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor"></span>    <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> image = imread(Imagefile, CV_LOAD_IMAGE_COLOR);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordflow">if</span> (image.empty())</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    Width = image.cols;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    Height = image.rows;</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    Width = image.cols;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    Height = image.rows;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; Height; y++) {</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; Width; x++) {</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            Vec3b pixel = image.at&lt;Vec3b&gt;(y, x);</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            <span class="keywordtype">int</span> offset = (Flip) ? ((Height - 1 - y) * Width + x) : (y * Width + x);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            Pixels[offset * 3 + 0] = pixel[0];</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            Pixels[offset * 3 + 1] = pixel[1];</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            Pixels[offset * 3 + 2] = pixel[2];</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        }</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    }</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; Height; y++) {</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; Width; x++) {</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            Vec3b pixel = image.at&lt;Vec3b&gt;(y, x);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            <span class="keywordtype">int</span> offset = (Flip) ? ((Height - 1 - y) * Width + x) : (y * Width + x);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            Pixels[offset] = pixel[0];</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            Pixels[offset + Height*Width] = pixel[1];</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            Pixels[offset + 2*Height*Width] = pixel[2];</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        }</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    }</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00042">lbann_base.hpp:42</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -491,19 +490,18 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; Height; y++) {</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; Width; x++) {</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            Vec3b pixel = image.at&lt;Vec3b&gt;(y, x);</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <span class="keywordtype">int</span> offset = (Flip) ? ((Height - 1 - y) * Width + x) : (y * Width + x);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            Pixels[offset * 3 + 0] = pixel[0];</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            Pixels[offset * 3 + 1] = pixel[1];</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            Pixels[offset * 3 + 2] = pixel[2];</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        }</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    }</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keywordtype">int</span> offset = (Flip) ? ((Height - 1 - y) * Width + x) : (y * Width + x);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            Pixels[offset] = pixel[0];</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            Pixels[offset + Height*Width] = pixel[1];</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            Pixels[offset + 2*Height*Width] = pixel[2];</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00042">lbann_base.hpp:42</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -626,30 +624,28 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__image__utils_8cpp_source.html#l00291">291</a> of file <a class="el" href="lbann__image__utils_8cpp_source.html">lbann_image_utils.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;{</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="preprocessor">#ifdef __LIB_OPENCV</span></div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="preprocessor"></span>    <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> image = <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>(Height, Width, CV_8UC3);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; Height; y++) {</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; Width; x++) {</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            Vec3b pixel;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            <span class="keywordtype">int</span> offset = (Flip) ? ((Height - 1 - y) * Width + x) : (y * Width + x);</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            pixel[0] = Pixels[offset * 3 + 0];</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            pixel[1] = Pixels[offset * 3 + 1];</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            pixel[2] = Pixels[offset * 3 + 2];</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            image.at&lt;Vec3b&gt;(y, x) = pixel;</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        }</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    }</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    imwrite(Imagefile, image);</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="preprocessor"></span>}</div>
+<p>Definition at line <a class="el" href="lbann__image__utils_8cpp_source.html#l00287">287</a> of file <a class="el" href="lbann__image__utils_8cpp_source.html">lbann_image_utils.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;{</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="preprocessor">#ifdef __LIB_OPENCV</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="preprocessor"></span>    <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> image = <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>(Height, Width, CV_8UC3);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; Height; y++) {</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; Width; x++) {</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            Vec3b pixel;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            <span class="keywordtype">int</span> offset = (Flip) ? ((Height - 1 - y) * Width + x) : (y * Width + x);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            pixel[0] = Pixels[offset];</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            pixel[1] = Pixels[offset + Height*Width];</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            pixel[2] = Pixels[offset + 2*Height*Width];</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            image.at&lt;Vec3b&gt;(y, x) = pixel;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        }</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    }</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    imwrite(Imagefile, image);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00042">lbann_base.hpp:42</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -789,30 +785,28 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__image__utils_8cpp_source.html#l00239">239</a> of file <a class="el" href="lbann__image__utils_8cpp_source.html">lbann_image_utils.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;{</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor">#ifdef __LIB_OPENCV</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor"></span>    <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> image = <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>(Height, Width, CV_8UC3);</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; Height; y++) {</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; Width; x++) {</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            Vec3b pixel;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            <span class="keywordtype">int</span> offset = (Flip) ? ((Height - 1 - y) * Width + x) : (y * Width + x);</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            pixel[0] = Pixels[offset * 3 + 0];</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            pixel[1] = Pixels[offset * 3 + 1];</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            pixel[2] = Pixels[offset * 3 + 2];</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            image.at&lt;Vec3b&gt;(y, x) = pixel;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        }</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    }</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    imwrite(Imagefile, image);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor"></span>}</div>
+<p>Definition at line <a class="el" href="lbann__image__utils_8cpp_source.html#l00238">238</a> of file <a class="el" href="lbann__image__utils_8cpp_source.html">lbann_image_utils.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;{</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">#ifdef __LIB_OPENCV</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="preprocessor"></span>    <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> image = <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>(Height, Width, CV_8UC3);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; Height; y++) {</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; Width; x++) {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            Vec3b pixel;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            <span class="keywordtype">int</span> offset = (Flip) ? ((Height - 1 - y) * Width + x) : (y * Width + x);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            pixel[0] = Pixels[offset];</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            pixel[1] = Pixels[offset + Height*Width];</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            pixel[2] = Pixels[offset + 2*Height*Width];</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            image.at&lt;Vec3b&gt;(y, x) = pixel;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        }</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    imwrite(Imagefile, image);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00042">lbann_base.hpp:42</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -827,7 +821,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1image__utils.html">image_utils</a></li>
-    <li class="footer">Generated on Fri Mar 31 2017 17:20:56 for LBANN by
+    <li class="footer">Generated on Sat Apr 1 2017 00:58:17 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
