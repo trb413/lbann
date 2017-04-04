@@ -126,6 +126,7 @@ var searchData=
   ['m_5fpool_5fmode',['m_pool_mode',['../classlbann_1_1pooling__layer.html#acbb87056cf0d786c6a94be06fdc3a3d0',1,'lbann::pooling_layer']]],
   ['m_5fpool_5fpads',['m_pool_pads',['../classlbann_1_1pooling__layer.html#a17cecb60c04947b2b4fd097b460c8130',1,'lbann::pooling_layer']]],
   ['m_5fpool_5fstrides',['m_pool_strides',['../classlbann_1_1pooling__layer.html#a96387a44ebd98f8cd709593f0462f061',1,'lbann::pooling_layer']]],
+  ['m_5fpositions',['m_positions',['../classlbann_1_1patchworks_1_1patch__descriptor.html#a12737e1a173553a9103bed91bdedcad9',1,'lbann::patchworks::patch_descriptor']]],
   ['m_5fprev_5factivations',['m_prev_activations',['../classlbann_1_1Layer.html#acbf8aa63927a205c28f971e91c24c89f',1,'lbann::Layer']]],
   ['m_5fprev_5factivations_5fv',['m_prev_activations_v',['../classlbann_1_1Layer.html#ac590e0f3831d1c7b204275c89375ee14',1,'lbann::Layer']]],
   ['m_5fprev_5ferror_5fsignal',['m_prev_error_signal',['../classlbann_1_1Layer.html#a81d6e3e65adcfee83e953b63ff5e9121',1,'lbann::Layer']]],

@@ -29,8 +29,8 @@ var classlbann_1_1patchworks_1_1patch__descriptor =
     [ "m_mode_center", "classlbann_1_1patchworks_1_1patch__descriptor.html#a1a6e47d8bed57a1cd4ba231bf19637dc", null ],
     [ "m_mode_chrom", "classlbann_1_1patchworks_1_1patch__descriptor.html#a918463134ba3ad9396f6e459c122e79e", null ],
     [ "m_patch_center", "classlbann_1_1patchworks_1_1patch__descriptor.html#a35c1602da335569baf961dbfc1d69c19", null ],
+    [ "m_positions", "classlbann_1_1patchworks_1_1patch__descriptor.html#a12737e1a173553a9103bed91bdedcad9", null ],
     [ "m_rg_jitter", "classlbann_1_1patchworks_1_1patch__descriptor.html#a794f6e592aa2397551962ee07112eb4b", null ],
     [ "m_sample_area", "classlbann_1_1patchworks_1_1patch__descriptor.html#a5dfe37b240d9ebd8cea6227f5df8d7f7", null ],
-    [ "m_width", "classlbann_1_1patchworks_1_1patch__descriptor.html#a667b915fa675c1277882808847264652", null ],
-    [ "positions", "classlbann_1_1patchworks_1_1patch__descriptor.html#ac722aed08dec33c4420fe4dbd59b47e8", null ]
+    [ "m_width", "classlbann_1_1patchworks_1_1patch__descriptor.html#a667b915fa675c1277882808847264652", null ]
 ];
