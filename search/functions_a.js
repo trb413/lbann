@@ -35,6 +35,7 @@ var searchData=
   ['leaky_5freluprime',['leaky_reLUPrime',['../classlbann_1_1leaky__reLU__layer.html#a8ab6988b3a86a4c652e4846b61af5fd7',1,'lbann::leaky_reLU_layer']]],
   ['learn_5frate',['learn_rate',['../classlbann__data_1_1Optimizer.html#a584b772d00e8e6bf5c6fb5e7832f0812',1,'lbann_data::Optimizer::learn_rate()'],['../classlbann__data_1_1TrainingParams.html#a82ab07fc4cccab1d9cbead67ca0ae2f7',1,'lbann_data::TrainingParams::learn_rate()']]],
   ['learn_5frate_5fmethod',['learn_rate_method',['../classlbann__data_1_1TrainingParams.html#a7d445b59135e995cb1827911d9031074',1,'lbann_data::TrainingParams']]],
+  ['left',['left',['../classlbann_1_1patchworks_1_1ROI.html#a223740dbd3dbab7f55381aa53c788d63',1,'lbann::patchworks::ROI']]],
   ['length_5ffloat2',['LENGTH_FLOAT2',['../datatype_8hpp.html#aba68770f9193752e0cd124c8603ad390',1,'datatype.hpp']]],
   ['length_5ffloat3',['LENGTH_FLOAT3',['../datatype_8hpp.html#a2233ece8e53cecc3ac76df4999cde078',1,'datatype.hpp']]],
   ['length_5ffloat4',['LENGTH_FLOAT4',['../datatype_8hpp.html#a45113ccd1c271d8369f35070b559fb70',1,'datatype.hpp']]],

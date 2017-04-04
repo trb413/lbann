@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">0d9c433-ci218370708</span>
+   &#160;<span id="projectnumber">c5d99d5-ci218399963</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -115,9 +115,22 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 <li>index_
 : <a class="el" href="classlbann__data_1_1Layer.html#a437336784de0b2dc580f8d21cd715ed4">lbann_data::Layer</a>
 </li>
+<li>init()
+: <a class="el" href="classlbann_1_1patchworks_1_1patch__descriptor.html#ac318a77f9b6161a8a56b90c1f204968d">lbann::patchworks::patch_descriptor</a>
+, <a class="el" href="classlbann_1_1patchworks_1_1ROI.html#a80f81a61a00998676e13a9dd9cb1f2c7">lbann::patchworks::ROI</a>
+</li>
+<li>init_normal()
+: <a class="el" href="classlbann_1_1patchworks_1_1rand__patch.html#af8a1c678b983e81815edfecc9b0d91e3">lbann::patchworks::rand_patch&lt; RealT, IntT &gt;</a>
+</li>
 <li>init_stats()
 : <a class="el" href="classlbann_1_1metrics_1_1statistics.html#a6b76d2a36cd31e9be202c279fdc20db2">lbann::metrics::statistics</a>
 , <a class="el" href="classlbann_1_1objective__functions_1_1statistics.html#a94dd3bde6bb9548d2a7ddf5ba836f6d7">lbann::objective_functions::statistics</a>
+</li>
+<li>init_uniform_int()
+: <a class="el" href="classlbann_1_1patchworks_1_1rand__patch.html#a330b560b5e07fa6c2d539e1792d32afe">lbann::patchworks::rand_patch&lt; RealT, IntT &gt;</a>
+</li>
+<li>init_uniform_real()
+: <a class="el" href="classlbann_1_1patchworks_1_1rand__patch.html#a4c43730b87c6cced2f6ac59071fe8852">lbann::patchworks::rand_patch&lt; RealT, IntT &gt;</a>
 </li>
 <li>InitDefaultsImpl()
 : <a class="el" href="structlbann__data_1_1protobuf__lbann__2eproto_1_1TableStruct.html#a12c1d2b7b9bd8683390c30b185726617">lbann_data::protobuf_lbann_2eproto::TableStruct</a>
@@ -213,7 +226,7 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 : <a class="el" href="classlbann_1_1lbann__comm.html#a7e52b099a9c814e7e10c6ec528ae1354">lbann::lbann_comm</a>
 </li>
 <li>intermodel_reduce()
-: <a class="el" href="classlbann_1_1lbann__comm.html#ac62f250859b2f74508d6165914a06b59">lbann::lbann_comm</a>
+: <a class="el" href="classlbann_1_1lbann__comm.html#ab76d281092d39368ac157d36945f3602">lbann::lbann_comm</a>
 </li>
 <li>intermodel_ring_allgather()
 : <a class="el" href="classlbann_1_1lbann__quantizer.html#acdfe2509be7c3761f4b98dfce03b18a6">lbann::lbann_quantizer</a>
@@ -347,7 +360,22 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 , <a class="el" href="classlbann_1_1pooling__layer.html#a98319c79cadad2c50ec20a019e48f20a">lbann::pooling_layer</a>
 </li>
 <li>is_sendable()
-: <a class="el" href="classlbann_1_1lbann__comm.html#a96bcc0bc8910272f4553cf0439a6e2f9">lbann::lbann_comm</a>
+: <a class="el" href="classlbann_1_1lbann__comm.html#a4ba1b9a6b4eb986a348d85c2d80ca3eb">lbann::lbann_comm</a>
+</li>
+<li>is_to_correct_chromatic_aberration_at_pixel()
+: <a class="el" href="classlbann_1_1patchworks_1_1patch__descriptor.html#ae2be1b3af6d9209c949dd792825ddd89">lbann::patchworks::patch_descriptor</a>
+</li>
+<li>is_to_drop_2channels()
+: <a class="el" href="classlbann_1_1patchworks_1_1patch__descriptor.html#a83964a2dbe28ce23e546045dced5477c">lbann::patchworks::patch_descriptor</a>
+</li>
+<li>is_undefined()
+: <a class="el" href="classlbann_1_1patchworks_1_1ROI.html#a1ce5f0ab846deda52ec00db5018f6ae4">lbann::patchworks::ROI</a>
+</li>
+<li>is_valid()
+: <a class="el" href="classlbann_1_1patchworks_1_1ROI.html#a951a70a78f421231cd73f63bdf842c71">lbann::patchworks::ROI</a>
+</li>
+<li>is_whole_image()
+: <a class="el" href="classlbann_1_1patchworks_1_1ROI.html#a79a7f99abcdb503b76af896f19d25266">lbann::patchworks::ROI</a>
 </li>
 <li>IsInitialized()
 : <a class="el" href="classlbann__data_1_1Convolution.html#aec43d43664202310fef0ed7e21a26b46">lbann_data::Convolution</a>
@@ -382,7 +410,7 @@ $(document).ready(function(){initNavTree('functions_i.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Apr 4 2017 08:25:12 for LBANN by
+    <li class="footer">Generated on Tue Apr 4 2017 10:06:54 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

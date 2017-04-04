@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['rand_5fpatch',['rand_patch',['../classlbann_1_1patchworks_1_1rand__patch.html',1,'lbann::patchworks']]],
   ['reader',['Reader',['../classlbann__data_1_1Reader.html',1,'lbann_data']]],
   ['readerdefaulttypeinternal',['ReaderDefaultTypeInternal',['../classlbann__data_1_1ReaderDefaultTypeInternal.html',1,'lbann_data']]],
   ['regularizer',['regularizer',['../classlbann_1_1regularizer.html',1,'lbann']]],
@@ -7,5 +8,6 @@ var searchData=
   ['relu_5flayer',['reLU_layer',['../classlbann_1_1reLU__layer.html',1,'lbann']]],
   ['rmsprop',['RMSprop',['../classlbann_1_1RMSprop.html',1,'lbann']]],
   ['rmsprop_5ffactory',['RMSprop_factory',['../classlbann_1_1RMSprop__factory.html',1,'lbann']]],
-  ['rng',['rng',['../classlbann_1_1rng.html',1,'lbann']]]
+  ['rng',['rng',['../classlbann_1_1rng.html',1,'lbann']]],
+  ['roi',['ROI',['../classlbann_1_1patchworks_1_1ROI.html',1,'lbann::patchworks']]]
 ];

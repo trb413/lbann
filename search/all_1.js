@@ -1,6 +1,7 @@
 var searchData=
 [
   ['absdistmat',['AbsDistMat',['../lbann__base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a',1,'lbann_base.hpp']]],
+  ['access_5fpositions',['access_positions',['../classlbann_1_1patchworks_1_1patch__descriptor.html#a80e1ed19f6f82f97a7242ef87e257498',1,'lbann::patchworks::patch_descriptor']]],
   ['activation',['Activation',['../classlbann_1_1Activation.html',1,'lbann']]],
   ['activation',['activation',['../structlbann_1_1lbann__proto_1_1layer__params.html#a29c2dcb5115f9c6a9ebb7922efbec84a',1,'lbann::lbann_proto::layer_params']]],
   ['activation_5fname',['activation_name',['../classlbann_1_1Activation.html#a0f754b8f10cc81f13a318ffb8fc754b3',1,'lbann::Activation']]],
@@ -9,8 +10,8 @@ var searchData=
   ['activationtype',['ActivationType',['../classlbann_1_1TrainingParams.html#a843d078db900a23792944c0b4842bfa8',1,'lbann::TrainingParams']]],
   ['adagrad',['Adagrad',['../classlbann_1_1Adagrad.html',1,'lbann']]],
   ['adagrad',['Adagrad',['../classlbann_1_1Adagrad.html#a5cf6582fca9b7c09fa5c66f7e307fc50',1,'lbann::Adagrad']]],
-  ['adagrad_5ffactory',['Adagrad_factory',['../classlbann_1_1Adagrad__factory.html',1,'lbann']]],
   ['adagrad_5ffactory',['Adagrad_factory',['../classlbann_1_1Adagrad__factory.html#a6ec787837653bdfebf0606b132ab8f88',1,'lbann::Adagrad_factory']]],
+  ['adagrad_5ffactory',['Adagrad_factory',['../classlbann_1_1Adagrad__factory.html',1,'lbann']]],
   ['adam',['Adam',['../classlbann_1_1Adam.html#a212d41fb042389e6b4495bb16e7925a9',1,'lbann::Adam']]],
   ['adam',['Adam',['../classlbann_1_1Adam.html',1,'lbann']]],
   ['adam_5ffactory',['Adam_factory',['../classlbann_1_1Adam__factory.html#ade16c4618c8be6e40826f2c782d39855',1,'lbann::Adam_factory']]],
@@ -74,10 +75,13 @@ var searchData=
   ['am_5fworld_5fmaster',['am_world_master',['../classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5',1,'lbann::lbann_comm']]],
   ['amt',['amt',['../classlbann_1_1lbann__callback__step__learning__rate.html#adb4ffb779ea433d755f0a79f5d4354bf',1,'lbann::lbann_callback_step_learning_rate::amt()'],['../classlbann_1_1lbann__callback__adaptive__learning__rate.html#a657c51917ba2d9a62cb19c8d53149e77',1,'lbann::lbann_callback_adaptive_learning_rate::amt()']]],
   ['anonymous_5fnamespace_7blbann_5frandom_2ecpp_7d',['anonymous_namespace{lbann_random.cpp}',['../namespaceanonymous__namespace_02lbann__random_8cpp_03.html',1,'']]],
+  ['area',['area',['../classlbann_1_1patchworks_1_1ROI.html#a25d38bcdf86c297ee8437758c23e7185',1,'lbann::patchworks::ROI']]],
   ['at_5fepoch_5fstart',['at_epoch_start',['../classlbann_1_1model.html#a606cc1d218b1f609b5a02b07e7f4bcee',1,'lbann::model::at_epoch_start()'],['../classlbann_1_1sequential__model.html#acc7bcdbc4ade874d6e2fd4e1e5e54f0c',1,'lbann::sequential_model::at_epoch_start()']]],
   ['at_5fnew_5fepoch',['at_new_epoch',['../classlbann_1_1DataReader.html#a8dc49d9479d54e50123a6e21ffa8d023',1,'lbann::DataReader::at_new_epoch()'],['../classlbann_1_1io__layer.html#a4f0e3bbd6bc638432723179efc2998ab',1,'lbann::io_layer::at_new_epoch()']]],
   ['augment',['augment',['../classlbann_1_1lbann__image__preprocessor.html#a27cb5182c4f764cbfa4edecbb78ef29d',1,'lbann::lbann_image_preprocessor']]],
   ['average',['average',['../lbann__base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39a6927a3a7218a3195858411433ec20a21',1,'lbann_base.hpp']]],
   ['average_5fcost',['average_cost',['../classlbann_1_1target__layer__unsupervised.html#ae7701c23a1783a943b92ea7c11478fbc',1,'lbann::target_layer_unsupervised']]],
-  ['average_5fno_5fpad',['average_no_pad',['../lbann__base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39ad91c68878ae16f6dfcd4e1551c33cdd1',1,'lbann_base.hpp']]]
+  ['average_5fno_5fpad',['average_no_pad',['../lbann__base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39ad91c68878ae16f6dfcd4e1551c33cdd1',1,'lbann_base.hpp']]],
+  ['avg',['avg',['../structlbann_1_1patchworks_1_1image__stats.html#a67797339f6a3bd2de1fa2ac4c1cb6bef',1,'lbann::patchworks::image_stats']]],
+  ['avgnz',['avgNZ',['../structlbann_1_1patchworks_1_1image__stats.html#ac3cfe9bdfb0a7563f7b633e6221591d4',1,'lbann::patchworks::image_stats']]]
 ];

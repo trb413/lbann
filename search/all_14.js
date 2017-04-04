@@ -6,6 +6,7 @@ var searchData=
   ['uchar4',['UCHAR4',['../datatype_8hpp.html#ac9ec6eae1b80cd76446a7052c79c7df2',1,'datatype.hpp']]],
   ['uint',['uint',['../datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14',1,'datatype.hpp']]],
   ['uncompress_5fthresholds',['uncompress_thresholds',['../classlbann_1_1lbann__quantizer.html#afb58d63b174c3a937f3c3b21eb269b77',1,'lbann::lbann_quantizer::uncompress_thresholds(const ThreshQuantized &amp;cq, ThreshQuantized &amp;q)'],['../classlbann_1_1lbann__quantizer.html#aad80eac1e1fe0847b52a039ec9f1c8c7',1,'lbann::lbann_quantizer::uncompress_thresholds(const ThreshQuantized &amp;cq, ThreshQuantized::const_iterator cqstart, ThreshQuantized::const_iterator cqend, ThreshQuantized &amp;q)']]],
+  ['undefined_5fcoordinate',['undefined_coordinate',['../classlbann_1_1patchworks_1_1ROI.html#aade3b25f9500d2aec52c5ebc7803a45b',1,'lbann::patchworks::ROI']]],
   ['uniform',['uniform',['../lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5aa489ffed938ef1b9e86889bc413501ee',1,'lbann_base.hpp']]],
   ['uniform_5ffill',['uniform_fill',['../namespacelbann.html#acd76b03f2b7ee00ad7c8ba83a20d1866',1,'lbann']]],
   ['uniform_5ffill_5fprocdet',['uniform_fill_procdet',['../namespacelbann.html#a5cd1cf097449bfd5bed0246819cddd13',1,'lbann']]],

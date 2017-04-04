@@ -17,6 +17,8 @@ var searchData=
   ['shuffletrainingdata',['ShuffleTrainingData',['../classlbann_1_1TrainingParams.html#a4cde94bdbbd82aabdb69e616194f74b1',1,'lbann::TrainingParams']]],
   ['softmax_5f',['softmax_',['../classlbann__data_1_1Layer.html#a3297c2fb555811d80045110cc4373cc0',1,'lbann_data::Layer']]],
   ['static_5fdescriptor_5finitializer',['static_descriptor_initializer',['../namespacelbann__data_1_1protobuf__lbann__2eproto.html#a0aa98db5216cbcd0f330460a6b6bff79',1,'lbann_data::protobuf_lbann_2eproto']]],
+  ['stdev',['stdev',['../structlbann_1_1patchworks_1_1image__stats.html#a39759501f7f427cbabeae358fdc4f5b5',1,'lbann::patchworks::image_stats']]],
+  ['stdevnz',['stdevNZ',['../structlbann_1_1patchworks_1_1image__stats.html#a917e340782c3909d778292aac57edbc7',1,'lbann::patchworks::image_stats']]],
   ['step',['step',['../structlbann__checkpoint.html#a14fc6e1f60b934876dfee2e528486239',1,'lbann_checkpoint::step()'],['../classlbann_1_1lbann__callback__step__learning__rate.html#afcb2f88eae412e84df9c43df9365732e',1,'lbann::lbann_callback_step_learning_rate::step()']]],
   ['subtract_5fmean_5f',['subtract_mean_',['../classlbann__data_1_1ImagePreprocessor.html#a0ec2118d4d3a5675cefc3fb51f64d4bc',1,'lbann_data::ImagePreprocessor']]],
   ['summarizer',['summarizer',['../classlbann_1_1lbann__callback.html#ad48ff47a64f2dff3a12d8bd282f554cb',1,'lbann::lbann_callback']]],

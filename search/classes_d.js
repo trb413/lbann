@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['patch_5fdescriptor',['patch_descriptor',['../classlbann_1_1patchworks_1_1patch__descriptor.html',1,'lbann::patchworks']]],
   ['performanceparams',['PerformanceParams',['../classlbann_1_1PerformanceParams.html',1,'lbann']]],
   ['performanceparams',['PerformanceParams',['../classlbann__data_1_1PerformanceParams.html',1,'lbann_data']]],
   ['performanceparamsdefaulttypeinternal',['PerformanceParamsDefaultTypeInternal',['../classlbann__data_1_1PerformanceParamsDefaultTypeInternal.html',1,'lbann_data']]],

@@ -197,6 +197,10 @@ var hierarchy =
       [ "lbann::RMSprop_factory", "classlbann_1_1RMSprop__factory.html", null ],
       [ "lbann::SGD_factory", "classlbann_1_1SGD__factory.html", null ]
     ] ],
+    [ "lbann::patchworks::image_stats", "structlbann_1_1patchworks_1_1image__stats.html", null ],
+    [ "lbann::patchworks::patch_descriptor", "classlbann_1_1patchworks_1_1patch__descriptor.html", null ],
+    [ "lbann::patchworks::rand_patch< RealT, IntT >", "classlbann_1_1patchworks_1_1rand__patch.html", null ],
+    [ "lbann::patchworks::ROI", "classlbann_1_1patchworks_1_1ROI.html", null ],
     [ "lbann::PerformanceParams", "classlbann_1_1PerformanceParams.html", null ],
     [ "lbann::persist", "classlbann_1_1persist.html", null ],
     [ "lbann::regularizer", "classlbann_1_1regularizer.html", [

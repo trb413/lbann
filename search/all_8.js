@@ -28,7 +28,7 @@ var searchData=
   ['he_5fnormal',['he_normal',['../lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a2d34dae1a4044190dc7572a3c8e072d8',1,'lbann_base.hpp']]],
   ['he_5funiform',['he_uniform',['../lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a10c3970ad5c688f36ccda3f77432bd5c',1,'lbann_base.hpp']]],
   ['header_5ffactor',['HEADER_FACTOR',['../classlbann_1_1lbann__quantizer.html#afb4315625e371169cabfac56c3f75d37',1,'lbann::lbann_quantizer']]],
-  ['height',['height',['../structlayer__header.html#ad986e4b92e5b455e066fd349725c6bd9',1,'layer_header']]],
+  ['height',['height',['../structlayer__header.html#ad986e4b92e5b455e066fd349725c6bd9',1,'layer_header::height()'],['../classlbann_1_1patchworks_1_1ROI.html#a55cd2106d39fe1309299bb31a5f04eb1',1,'lbann::patchworks::ROI::height()']]],
   ['hinge',['hinge',['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a2e115f4171ceb952bca742eb60fc7e81',1,'lbann::metrics']]],
   ['horizontal_5fflip',['horizontal_flip',['../classlbann_1_1lbann__image__preprocessor.html#a4ba2de0a781dfa0a2652ad4d777a241f',1,'lbann::lbann_image_preprocessor::horizontal_flip()'],['../classlbann__data_1_1ImagePreprocessor.html#a4a40c01f136e4e9cd1fb3ea8a244ee7b',1,'lbann_data::ImagePreprocessor::horizontal_flip()']]],
   ['horizontal_5fflip_5f',['horizontal_flip_',['../classlbann__data_1_1ImagePreprocessor.html#aa235ae6eb704ee53858fd20c7af02a39',1,'lbann_data::ImagePreprocessor']]],

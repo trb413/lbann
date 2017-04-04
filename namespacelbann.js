@@ -2,6 +2,7 @@ var namespacelbann =
 [
     [ "metrics", "namespacelbann_1_1metrics.html", "namespacelbann_1_1metrics" ],
     [ "objective_functions", "namespacelbann_1_1objective__functions.html", "namespacelbann_1_1objective__functions" ],
+    [ "patchworks", "namespacelbann_1_1patchworks.html", "namespacelbann_1_1patchworks" ],
     [ "lbann_callback", "classlbann_1_1lbann__callback.html", "classlbann_1_1lbann__callback" ],
     [ "lbann_callback_checknan", "classlbann_1_1lbann__callback__checknan.html", "classlbann_1_1lbann__callback__checknan" ],
     [ "lbann_callback_debug", "classlbann_1_1lbann__callback__debug.html", "classlbann_1_1lbann__callback__debug" ],

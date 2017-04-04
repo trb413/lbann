@@ -18,5 +18,7 @@ var searchData=
   ['_5f_5frad2deg',['__RAD2DEG',['../datatype_8hpp.html#af842373783c5757f3065bf48a770458e',1,'datatype.hpp']]],
   ['_5f_5fslope',['__SLOPE',['../datatype_8hpp.html#ae03f425d00e809e39fe865ce98de0f84',1,'datatype.hpp']]],
   ['_5f_5fswap16',['__SWAP16',['../datatype_8hpp.html#a0cdda834d9b9584453965a725678a7e4',1,'datatype.hpp']]],
-  ['_5f_5fswap32',['__SWAP32',['../datatype_8hpp.html#abc3d18bd07a4df8b64402da72d524a4a',1,'datatype.hpp']]]
+  ['_5f_5fswap32',['__SWAP32',['../datatype_8hpp.html#abc3d18bd07a4df8b64402da72d524a4a',1,'datatype.hpp']]],
+  ['_5fpatchworks_5fstat_5ffloat_5f',['_PATCHWORKS_STAT_FLOAT_',['../patchworks__common_8hpp.html#a26a7b265ac074659fc8f963143e81c2a',1,'patchworks_common.hpp']]],
+  ['_5fpw_5fcv_5ffp_5f',['_PW_CV_FP_',['../patchworks__common_8hpp.html#a9ac61cf4749d5bb94d17e935a529723e',1,'patchworks_common.hpp']]]
 ];

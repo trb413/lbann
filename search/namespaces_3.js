@@ -5,5 +5,6 @@ var searchData=
   ['lbann_5fdata',['lbann_data',['../namespacelbann__data.html',1,'']]],
   ['metrics',['metrics',['../namespacelbann_1_1metrics.html',1,'lbann']]],
   ['objective_5ffunctions',['objective_functions',['../namespacelbann_1_1objective__functions.html',1,'lbann']]],
+  ['patchworks',['patchworks',['../namespacelbann_1_1patchworks.html',1,'lbann']]],
   ['protobuf_5flbann_5f2eproto',['protobuf_lbann_2eproto',['../namespacelbann__data_1_1protobuf__lbann__2eproto.html',1,'lbann_data']]]
 ];

@@ -201,8 +201,8 @@ var searchData=
   ['lbann_5fproto_5fdouble',['LBANN_PROTO_DOUBLE',['../lbann__Elemental__extensions_8h.html#a1c4169a84c56c6233350847efb61e539',1,'lbann_Elemental_extensions.h']]],
   ['lbann_5fproto_5ffloat',['LBANN_PROTO_FLOAT',['../lbann__Elemental__extensions_8h.html#aabb751b985c8fbc1083ba9f0bf2b5c38',1,'lbann_Elemental_extensions.h']]],
   ['lbann_5fproto_5freal',['LBANN_PROTO_REAL',['../lbann__Elemental__extensions_8h.html#a6b884a59cd5b8dc91622f79343fad313',1,'lbann_Elemental_extensions.h']]],
-  ['lbann_5fquantizer',['lbann_quantizer',['../classlbann_1_1lbann__quantizer.html#a430cd47f333c678d2cb77f4ab2693914',1,'lbann::lbann_quantizer']]],
   ['lbann_5fquantizer',['lbann_quantizer',['../classlbann_1_1lbann__quantizer.html',1,'lbann']]],
+  ['lbann_5fquantizer',['lbann_quantizer',['../classlbann_1_1lbann__quantizer.html#a430cd47f333c678d2cb77f4ab2693914',1,'lbann::lbann_quantizer']]],
   ['lbann_5fquantizer_2ecpp',['lbann_quantizer.cpp',['../lbann__quantizer_8cpp.html',1,'']]],
   ['lbann_5fquantizer_2ehpp',['lbann_quantizer.hpp',['../lbann__quantizer_8hpp.html',1,'']]],
   ['lbann_5fquantizer_5fimpl_2ehpp',['lbann_quantizer_impl.hpp',['../lbann__quantizer__impl_8hpp.html',1,'']]],
@@ -240,6 +240,7 @@ var searchData=
   ['learning_5frate',['learning_rate',['../structlbann__checkpoint.html#a35cd46dfca2d5188fd8957867e24abdb',1,'lbann_checkpoint']]],
   ['learnrate',['LearnRate',['../classlbann_1_1TrainingParams.html#a7f6c77122caa8317cecb625f607ded70',1,'lbann::TrainingParams::LearnRate()'],['../classlbann_1_1RMSprop.html#a1a898dc2c4845d8534e14e3aeb6dd975',1,'lbann::RMSprop::LearnRate()']]],
   ['learnratemethod',['LearnRateMethod',['../classlbann_1_1TrainingParams.html#a6f1d673460c793b88c773b97d99e89ee',1,'lbann::TrainingParams']]],
+  ['left',['left',['../classlbann_1_1patchworks_1_1ROI.html#a223740dbd3dbab7f55381aa53c788d63',1,'lbann::patchworks::ROI']]],
   ['length_5ffloat2',['LENGTH_FLOAT2',['../datatype_8hpp.html#aba68770f9193752e0cd124c8603ad390',1,'datatype.hpp']]],
   ['length_5ffloat3',['LENGTH_FLOAT3',['../datatype_8hpp.html#a2233ece8e53cecc3ac76df4999cde078',1,'datatype.hpp']]],
   ['length_5ffloat4',['LENGTH_FLOAT4',['../datatype_8hpp.html#a45113ccd1c271d8369f35070b559fb70',1,'datatype.hpp']]],
@@ -274,5 +275,6 @@ var searchData=
   ['lrmomentum',['LrMomentum',['../classlbann_1_1TrainingParams.html#ae9c7d4d910f6fc399b176ebf2b213675',1,'lbann::TrainingParams']]],
   ['metrics',['metrics',['../namespacelbann_1_1metrics.html',1,'lbann']]],
   ['objective_5ffunctions',['objective_functions',['../namespacelbann_1_1objective__functions.html',1,'lbann']]],
+  ['patchworks',['patchworks',['../namespacelbann_1_1patchworks.html',1,'lbann']]],
   ['protobuf_5flbann_5f2eproto',['protobuf_lbann_2eproto',['../namespacelbann__data_1_1protobuf__lbann__2eproto.html',1,'lbann_data']]]
 ];
