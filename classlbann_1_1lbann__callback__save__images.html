@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">48e4a22-ci218560653</span>
+   &#160;<span id="projectnumber">4fdedc0-ci218695290</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -182,8 +182,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a9739e7fd2b9b28397d9849066790a338"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__callback__save__images.html#a9739e7fd2b9b28397d9849066790a338">save_image</a> (<a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *input, <a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *output)</td></tr>
-<tr class="separator:a9739e7fd2b9b28397d9849066790a338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82367af43521153dd4449ac028bb8393"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__callback__save__images.html#a82367af43521153dd4449ac028bb8393">save_image</a> (<a class="el" href="classlbann_1_1model.html">model</a> *m, <a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *input, <a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *output, <a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> index)</td></tr>
+<tr class="separator:a82367af43521153dd4449ac028bb8393"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -308,22 +308,24 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                                      {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">auto</span> layers = m-&gt;get_layers();</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">auto</span> phase = m-&gt;get_current_phase();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="classlbann_1_1lbann__callback__save__images.html#a9739e7fd2b9b28397d9849066790a338">save_image</a>(layers[phase]-&gt;m_activations, layers[phase+2]-&gt;m_activations);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1lbann__callback__save__images_html_a9739e7fd2b9b28397d9849066790a338"><div class="ttname"><a href="classlbann_1_1lbann__callback__save__images.html#a9739e7fd2b9b28397d9849066790a338">lbann::lbann_callback_save_images::save_image</a></div><div class="ttdeci">void save_image(ElMat *input, ElMat *output)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__save__images_8cpp_source.html#l00041">lbann_callback_save_images.cpp:41</a></div></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">auto</span> epoch = m-&gt;get_cur_epoch();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">auto</span> index = phase*epoch + epoch;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="classlbann_1_1lbann__callback__save__images.html#a82367af43521153dd4449ac028bb8393">save_image</a>(m,layers[phase]-&gt;m_activations, layers[phase+2]-&gt;m_activations,index);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1lbann__callback__save__images_html_a82367af43521153dd4449ac028bb8393"><div class="ttname"><a href="classlbann_1_1lbann__callback__save__images.html#a82367af43521153dd4449ac028bb8393">lbann::lbann_callback_save_images::save_image</a></div><div class="ttdeci">void save_image(model *m, ElMat *input, ElMat *output, uint index)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__save__images_8cpp_source.html#l00043">lbann_callback_save_images.cpp:43</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1lbann__callback__save__images_a53218aeb5da183b483311b1c37cf3e1a_cgraph.png" border="0" usemap="#classlbann_1_1lbann__callback__save__images_a53218aeb5da183b483311b1c37cf3e1a_cgraph" alt=""/></div>
 <map name="classlbann_1_1lbann__callback__save__images_a53218aeb5da183b483311b1c37cf3e1a_cgraph" id="classlbann_1_1lbann__callback__save__images_a53218aeb5da183b483311b1c37cf3e1a_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1model.html#a45e75790d328ac2a85aac59faf35094a" title="lbann::model::get_layers" alt="" coords="263,5,427,32"/><area shape="rect" id="node3" href="classlbann_1_1model.html#aaac76906df59991f6adcf354b4b1b570" title="lbann::model::get_current\l_phase" alt="" coords="261,57,430,98"/><area shape="rect" id="node4" href="classlbann_1_1lbann__callback__save__images.html#a9739e7fd2b9b28397d9849066790a338" title="lbann::lbann_callback\l_save_images::save_image" alt="" coords="253,122,437,163"/><area shape="rect" id="node5" href="classlbann_1_1DataReader.html#ace9dcc14b29fad80a394bd952f122a72" title="lbann::DataReader::\lsave_image" alt="" coords="485,122,624,163"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1model.html#a45e75790d328ac2a85aac59faf35094a" title="lbann::model::get_layers" alt="" coords="263,5,427,32"/><area shape="rect" id="node3" href="classlbann_1_1model.html#aaac76906df59991f6adcf354b4b1b570" title="lbann::model::get_current\l_phase" alt="" coords="261,57,430,98"/><area shape="rect" id="node4" href="classlbann_1_1model.html#a3f6f0384573e9ca4bea93ce0dbebfd28" title="lbann::model::get_cur\l_epoch" alt="" coords="272,122,419,163"/><area shape="rect" id="node5" href="classlbann_1_1lbann__callback__save__images.html#a82367af43521153dd4449ac028bb8393" title="lbann::lbann_callback\l_save_images::save_image" alt="" coords="253,187,437,229"/><area shape="rect" id="node6" href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca" title="lbann::model::get_comm" alt="" coords="485,136,651,163"/><area shape="rect" id="node7" href="classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5" title="lbann::lbann_comm::\lam_world_master" alt="" coords="497,187,639,229"/><area shape="rect" id="node8" href="classlbann_1_1DataReader.html#ace9dcc14b29fad80a394bd952f122a72" title="lbann::DataReader::\lsave_image" alt="" coords="499,253,637,294"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a9739e7fd2b9b28397d9849066790a338"></a>
+<a class="anchor" id="a82367af43521153dd4449ac028bb8393"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -333,6 +335,12 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void lbann::lbann_callback_save_images::save_image </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="classlbann_1_1model.html">model</a> *&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *&#160;</td>
           <td class="paramname"><em>input</em>, </td>
         </tr>
@@ -340,7 +348,13 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *&#160;</td>
-          <td class="paramname"><em>output</em>&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -355,16 +369,19 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__callback__save__images_8cpp_source.html#l00041">41</a> of file <a class="el" href="lbann__callback__save__images_8cpp_source.html">lbann_callback_save_images.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                                                      {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a> in_col,out_col;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  View(in_col,*input, ALL, IR(0));<span class="comment">//@todo: remove hardcoded 0, save any image (index) you want, 0 as default</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  View(out_col,*output, ALL, IR(0));</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="lbann__base_8hpp.html#aaf89a79f1476644edba844c4937abbcc">CircMat</a> in_pixel = in_col;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="lbann__base_8hpp.html#aaf89a79f1476644edba844c4937abbcc">CircMat</a> out_pixel = out_col;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="classlbann_1_1lbann__callback__save__images.html#abbe2e8b71a2ef81ddf559a805bbb200d">m_reader</a>-&gt;<a class="code" href="classlbann_1_1DataReader.html#ace9dcc14b29fad80a394bd952f122a72">save_image</a>(in_pixel.Matrix(), <a class="code" href="classlbann_1_1lbann__callback__save__images.html#aeb69e2814c78d33a93b9ddc276c4cc57">m_image_dir</a>+<span class="stringliteral">&quot;gt.&quot;</span>+<a class="code" href="classlbann_1_1lbann__callback__save__images.html#a7b37fa08f49051897ef427b8c810ca3a">m_extension</a>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="classlbann_1_1lbann__callback__save__images.html#abbe2e8b71a2ef81ddf559a805bbb200d">m_reader</a>-&gt;<a class="code" href="classlbann_1_1DataReader.html#ace9dcc14b29fad80a394bd952f122a72">save_image</a>(out_pixel.Matrix(), <a class="code" href="classlbann_1_1lbann__callback__save__images.html#aeb69e2814c78d33a93b9ddc276c4cc57">m_image_dir</a>+<span class="stringliteral">&quot;rc.&quot;</span>+<a class="code" href="classlbann_1_1lbann__callback__save__images.html#a7b37fa08f49051897ef427b8c810ca3a">m_extension</a>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__callback__save__images_8cpp_source.html#l00043">43</a> of file <a class="el" href="lbann__callback__save__images_8cpp_source.html">lbann_callback_save_images.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                                                                           {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a> in_col,out_col;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  View(in_col,*input, ALL, IR(0));<span class="comment">//@todo: remove hardcoded 0, save any image (index) you want, 0 as default</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  View(out_col,*output, ALL, IR(0));</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="lbann__base_8hpp.html#aaf89a79f1476644edba844c4937abbcc">CircMat</a> in_pixel = in_col;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="lbann__base_8hpp.html#aaf89a79f1476644edba844c4937abbcc">CircMat</a> out_pixel = out_col;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">if</span> (m-&gt;get_comm()-&gt;am_world_master()) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Saving images to &quot;</span> &lt;&lt; <a class="code" href="classlbann_1_1lbann__callback__save__images.html#aeb69e2814c78d33a93b9ddc276c4cc57">m_image_dir</a> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classlbann_1_1lbann__callback__save__images.html#abbe2e8b71a2ef81ddf559a805bbb200d">m_reader</a>-&gt;<a class="code" href="classlbann_1_1DataReader.html#ace9dcc14b29fad80a394bd952f122a72">save_image</a>(in_pixel.Matrix(), <a class="code" href="classlbann_1_1lbann__callback__save__images.html#aeb69e2814c78d33a93b9ddc276c4cc57">m_image_dir</a>+<span class="stringliteral">&quot;gt_&quot;</span>+ std::to_string(index)+<span class="stringliteral">&quot;.&quot;</span>+<a class="code" href="classlbann_1_1lbann__callback__save__images.html#a7b37fa08f49051897ef427b8c810ca3a">m_extension</a>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classlbann_1_1lbann__callback__save__images.html#abbe2e8b71a2ef81ddf559a805bbb200d">m_reader</a>-&gt;<a class="code" href="classlbann_1_1DataReader.html#ace9dcc14b29fad80a394bd952f122a72">save_image</a>(out_pixel.Matrix(), <a class="code" href="classlbann_1_1lbann__callback__save__images.html#aeb69e2814c78d33a93b9ddc276c4cc57">m_image_dir</a>+<span class="stringliteral">&quot;rc_&quot;</span>+ std::to_string(index)+<span class="stringliteral">&quot;.&quot;</span>+<a class="code" href="classlbann_1_1lbann__callback__save__images.html#a7b37fa08f49051897ef427b8c810ca3a">m_extension</a>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1lbann__callback__save__images_html_abbe2e8b71a2ef81ddf559a805bbb200d"><div class="ttname"><a href="classlbann_1_1lbann__callback__save__images.html#abbe2e8b71a2ef81ddf559a805bbb200d">lbann::lbann_callback_save_images::m_reader</a></div><div class="ttdeci">DataReader * m_reader</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__save__images_8hpp_source.html#l00056">lbann_callback_save_images.hpp:56</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a270ddda44ad6a3abd3cfe8358cf581e6"><div class="ttname"><a href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00044">lbann_base.hpp:44</a></div></div>
 <div class="ttc" id="classlbann_1_1DataReader_html_ace9dcc14b29fad80a394bd952f122a72"><div class="ttname"><a href="classlbann_1_1DataReader.html#ace9dcc14b29fad80a394bd952f122a72">lbann::DataReader::save_image</a></div><div class="ttdeci">virtual void save_image(Mat &amp;pixels, const std::string filename, bool scale=true)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00182">lbann_data_reader.hpp:182</a></div></div>
@@ -375,17 +392,17 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1lbann__callback__save__images_a9739e7fd2b9b28397d9849066790a338_cgraph.png" border="0" usemap="#classlbann_1_1lbann__callback__save__images_a9739e7fd2b9b28397d9849066790a338_cgraph" alt=""/></div>
-<map name="classlbann_1_1lbann__callback__save__images_a9739e7fd2b9b28397d9849066790a338_cgraph" id="classlbann_1_1lbann__callback__save__images_a9739e7fd2b9b28397d9849066790a338_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1DataReader.html#ace9dcc14b29fad80a394bd952f122a72" title="lbann::DataReader::\lsave_image" alt="" coords="237,5,376,46"/></map>
+<div class="center"><img src="classlbann_1_1lbann__callback__save__images_a82367af43521153dd4449ac028bb8393_cgraph.png" border="0" usemap="#classlbann_1_1lbann__callback__save__images_a82367af43521153dd4449ac028bb8393_cgraph" alt=""/></div>
+<map name="classlbann_1_1lbann__callback__save__images_a82367af43521153dd4449ac028bb8393_cgraph" id="classlbann_1_1lbann__callback__save__images_a82367af43521153dd4449ac028bb8393_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca" title="lbann::model::get_comm" alt="" coords="237,5,403,32"/><area shape="rect" id="node3" href="classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5" title="lbann::lbann_comm::\lam_world_master" alt="" coords="249,57,391,98"/><area shape="rect" id="node4" href="classlbann_1_1DataReader.html#ace9dcc14b29fad80a394bd952f122a72" title="lbann::DataReader::\lsave_image" alt="" coords="251,122,389,163"/></map>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1lbann__callback__save__images_a9739e7fd2b9b28397d9849066790a338_icgraph.png" border="0" usemap="#classlbann_1_1lbann__callback__save__images_a9739e7fd2b9b28397d9849066790a338_icgraph" alt=""/></div>
-<map name="classlbann_1_1lbann__callback__save__images_a9739e7fd2b9b28397d9849066790a338_icgraph" id="classlbann_1_1lbann__callback__save__images_a9739e7fd2b9b28397d9849066790a338_icgraph">
+<div class="center"><img src="classlbann_1_1lbann__callback__save__images_a82367af43521153dd4449ac028bb8393_icgraph.png" border="0" usemap="#classlbann_1_1lbann__callback__save__images_a82367af43521153dd4449ac028bb8393_icgraph" alt=""/></div>
+<map name="classlbann_1_1lbann__callback__save__images_a82367af43521153dd4449ac028bb8393_icgraph" id="classlbann_1_1lbann__callback__save__images_a82367af43521153dd4449ac028bb8393_icgraph">
 <area shape="rect" id="node2" href="classlbann_1_1lbann__callback__save__images.html#a53218aeb5da183b483311b1c37cf3e1a" title="lbann::lbann_callback\l_save_images::on_phase_end" alt="" coords="238,5,437,46"/></map>
 </div>
 </p>
@@ -469,7 +486,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__callback__save__images.html">lbann_callback_save_images</a></li>
-    <li class="footer">Generated on Tue Apr 4 2017 17:50:11 for LBANN by
+    <li class="footer">Generated on Wed Apr 5 2017 00:46:32 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
