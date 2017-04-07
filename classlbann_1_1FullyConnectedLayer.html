@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">cd8f6a3-ci219773049</span>
+   &#160;<span id="projectnumber">a0481d4-ci219875430</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -579,7 +579,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;         <a class="code" href="classlbann_1_1FullyConnectedLayer.html#a435572396cbcce4fda14925a9b47472d">m_bias_weights_gradient_v</a>-&gt;Matrix());</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="comment">// Add gradients from all processes</span></div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    AllReduce(*<a class="code" href="classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7">m_weights_gradient</a>,</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;              <a class="code" href="classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7">m_weights_gradient</a>-&gt;DistComm());</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;              <a class="code" href="classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7">m_weights_gradient</a>-&gt;RedundantComm());</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  }</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
@@ -1389,7 +1389,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1FullyConnectedLayer.html">FullyConnectedLayer</a></li>
-    <li class="footer">Generated on Fri Apr 7 2017 17:09:57 for LBANN by
+    <li class="footer">Generated on Fri Apr 7 2017 22:19:50 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
