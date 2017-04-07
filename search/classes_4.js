@@ -3,6 +3,7 @@ var searchData=
   ['data_5freader_5fnci',['data_reader_nci',['../classlbann_1_1data__reader__nci.html',1,'lbann']]],
   ['data_5freader_5fnci_5fregression',['data_reader_nci_regression',['../classlbann_1_1data__reader__nci__regression.html',1,'lbann']]],
   ['data_5freader_5fparams',['data_reader_params',['../structlbann_1_1lbann__proto_1_1data__reader__params.html',1,'lbann::lbann_proto']]],
+  ['data_5freader_5fsynthetic',['data_reader_synthetic',['../classlbann_1_1data__reader__synthetic.html',1,'lbann']]],
   ['datareader',['DataReader',['../classlbann_1_1DataReader.html',1,'lbann']]],
   ['datareader',['DataReader',['../classlbann__data_1_1DataReader.html',1,'lbann_data']]],
   ['datareader_5fcifar10',['DataReader_CIFAR10',['../classlbann_1_1DataReader__CIFAR10.html',1,'lbann']]],

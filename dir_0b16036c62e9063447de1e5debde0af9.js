@@ -20,6 +20,9 @@ var dir_0b16036c62e9063447de1e5debde0af9 =
     [ "lbann_data_reader_nci_regression.hpp", "lbann__data__reader__nci__regression_8hpp.html", [
       [ "data_reader_nci_regression", "classlbann_1_1data__reader__nci__regression.html", "classlbann_1_1data__reader__nci__regression" ]
     ] ],
+    [ "lbann_data_reader_synthetic.hpp", "lbann__data__reader__synthetic_8hpp.html", [
+      [ "data_reader_synthetic", "classlbann_1_1data__reader__synthetic.html", "classlbann_1_1data__reader__synthetic" ]
+    ] ],
     [ "lbann_image_preprocessor.hpp", "lbann__image__preprocessor_8hpp.html", [
       [ "lbann_image_preprocessor", "classlbann_1_1lbann__image__preprocessor.html", "classlbann_1_1lbann__image__preprocessor" ]
     ] ],

@@ -49,6 +49,8 @@ var searchData=
   ['lbann_5fdata_5freader_5fnci_2ehpp',['lbann_data_reader_nci.hpp',['../lbann__data__reader__nci_8hpp.html',1,'']]],
   ['lbann_5fdata_5freader_5fnci_5fregression_2ecpp',['lbann_data_reader_nci_regression.cpp',['../lbann__data__reader__nci__regression_8cpp.html',1,'']]],
   ['lbann_5fdata_5freader_5fnci_5fregression_2ehpp',['lbann_data_reader_nci_regression.hpp',['../lbann__data__reader__nci__regression_8hpp.html',1,'']]],
+  ['lbann_5fdata_5freader_5fsynthetic_2ecpp',['lbann_data_reader_synthetic.cpp',['../lbann__data__reader__synthetic_8cpp.html',1,'']]],
+  ['lbann_5fdata_5freader_5fsynthetic_2ehpp',['lbann_data_reader_synthetic.hpp',['../lbann__data__reader__synthetic_8hpp.html',1,'']]],
   ['lbann_5fdataset_2ehpp',['lbann_dataset.hpp',['../lbann__dataset_8hpp.html',1,'']]],
   ['lbann_5fdistributed_5fminibatch_5fparallel_5fio_2ecpp',['lbann_distributed_minibatch_parallel_io.cpp',['../lbann__distributed__minibatch__parallel__io_8cpp.html',1,'']]],
   ['lbann_5fdistributed_5fminibatch_5fparallel_5fio_2ehpp',['lbann_distributed_minibatch_parallel_io.hpp',['../lbann__distributed__minibatch__parallel__io_8hpp.html',1,'']]],

@@ -27,6 +27,7 @@ var namespacelbann =
     [ "DataReader_MNIST", "classlbann_1_1DataReader__MNIST.html", "classlbann_1_1DataReader__MNIST" ],
     [ "data_reader_nci", "classlbann_1_1data__reader__nci.html", "classlbann_1_1data__reader__nci" ],
     [ "data_reader_nci_regression", "classlbann_1_1data__reader__nci__regression.html", "classlbann_1_1data__reader__nci__regression" ],
+    [ "data_reader_synthetic", "classlbann_1_1data__reader__synthetic.html", "classlbann_1_1data__reader__synthetic" ],
     [ "lbann_image_preprocessor", "classlbann_1_1lbann__image__preprocessor.html", "classlbann_1_1lbann__image__preprocessor" ],
     [ "image_utils", "classlbann_1_1image__utils.html", "classlbann_1_1image__utils" ],
     [ "distributed_minibatch_parallel_io", "classlbann_1_1distributed__minibatch__parallel__io.html", "classlbann_1_1distributed__minibatch__parallel__io" ],

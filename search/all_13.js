@@ -45,6 +45,7 @@ var searchData=
   ['test_5fwith_5ftrain_5fdata_5f',['test_with_train_data_',['../classlbann__data_1_1TrainingParams.html#aef8ef4fce15f505d5f9f955b89817fe1',1,'lbann_data::TrainingParams']]],
   ['testfile',['TestFile',['../classlbann_1_1TrainingParams.html#a99502fc87d50df2055a992266fdeee05',1,'lbann::TrainingParams']]],
   ['testing',['testing',['../lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aae2b1fca515949e5d54fb22b8ed95575',1,'lbann_base.hpp']]],
+  ['testingsamples',['TestingSamples',['../classlbann_1_1TrainingParams.html#a7ae1711dab1dc6cce9238b578d198117',1,'lbann::TrainingParams']]],
   ['testwithtraindata',['TestWithTrainData',['../classlbann_1_1TrainingParams.html#a39a6893582111d1934c85f50c0111c1e',1,'lbann::TrainingParams']]],
   ['thresh_5fquantization',['THRESH_QUANTIZATION',['../classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aa76420a96a3df1d5b60140bab6bc32dc4',1,'lbann::lbann_callback_imcomm']]],
   ['threshold_5fquantize',['threshold_quantize',['../classlbann_1_1lbann__quantizer.html#a00106e69ea8a6dfe9e9a91c75b845bcd',1,'lbann::lbann_quantizer::threshold_quantize(const Mat &amp;mat, ThreshQuantized &amp;q, Mat &amp;qerror, DataType pos_thresh, DataType neg_thresh, bool delta=false)'],['../classlbann_1_1lbann__quantizer.html#ae9949af6bec1e95adf5a32ba9bb4afd8',1,'lbann::lbann_quantizer::threshold_quantize(const DistMat &amp;mat, ThreshQuantized &amp;q, Mat &amp;qerror, DataType pos_thresh, DataType neg_thresh, bool delta=false)']]],
@@ -74,9 +75,10 @@ var searchData=
   ['training_5fparams',['training_params',['../classlbann__data_1_1LbannPB.html#afab34483ae94fae1b9f3730efb24a749',1,'lbann_data::LbannPB']]],
   ['training_5fparams_5f',['training_params_',['../classlbann__data_1_1LbannPB.html#ac88400ea370a2e0705c08eebd946082d',1,'lbann_data::LbannPB']]],
   ['trainingparams',['TrainingParams',['../classlbann_1_1TrainingParams.html#a0530f1ed33dd848017f392c4245b415a',1,'lbann::TrainingParams::TrainingParams()'],['../classlbann__data_1_1TrainingParams.html#ad1df5fa319d812adf4ec027c48e97887',1,'lbann_data::TrainingParams::TrainingParams()'],['../classlbann__data_1_1TrainingParams.html#a0e6177930d9a60acae7c534ac59f04a4',1,'lbann_data::TrainingParams::TrainingParams(const TrainingParams &amp;from)']]],
-  ['trainingparams',['TrainingParams',['../classlbann_1_1TrainingParams.html',1,'lbann']]],
   ['trainingparams',['TrainingParams',['../classlbann__data_1_1TrainingParams.html',1,'lbann_data']]],
+  ['trainingparams',['TrainingParams',['../classlbann_1_1TrainingParams.html',1,'lbann']]],
   ['trainingparamsdefaulttypeinternal',['TrainingParamsDefaultTypeInternal',['../classlbann__data_1_1TrainingParamsDefaultTypeInternal.html',1,'lbann_data']]],
+  ['trainingsamples',['TrainingSamples',['../classlbann_1_1TrainingParams.html#adf012a044d64191b7d0de8b0278c7060',1,'lbann::TrainingParams']]],
   ['trim_5fdata_5fset',['trim_data_set',['../classlbann_1_1DataReader.html#ad7224861140c574158c1373c8d341a40',1,'lbann::DataReader']]],
   ['type',['type',['../classlbann_1_1metrics_1_1metric.html#ab4118ce33325ab57e57ad21c7dde8fa0',1,'lbann::metrics::metric::type()'],['../classlbann_1_1objective__functions_1_1objective__fn.html#a960a2e2ea129fb64bc4112c989766584',1,'lbann::objective_functions::objective_fn::type()']]]
 ];
