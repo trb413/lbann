@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">d3dc5e2-ci219483345</span>
+   &#160;<span id="projectnumber">bd22a0a-ci219519303</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -181,7 +181,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a198fba8645c2d61452182294f62b965e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e">is_good</a> (const <a class="el" href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a> &amp;m)</td></tr>
+<tr class="memitem:a198fba8645c2d61452182294f62b965e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e">is_good</a> (const <a class="el" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a> &amp;m)</td></tr>
 <tr class="separator:a198fba8645c2d61452182294f62b965e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -248,7 +248,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool lbann::lbann_callback_checknan::is_good </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a> &amp;&#160;</td>
           <td class="paramname"><em>m</em></td><td>)</td>
           <td></td>
         </tr>
@@ -337,7 +337,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordflow">if</span> (l-&gt;get_index() == 0 || l-&gt;get_index() == m-&gt;get_layers().size() - 1) {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a>&amp; grad = (<a class="code" href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a>&amp;) l-&gt;get_weights_biases_gradient();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>&amp; grad = (<a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>&amp;) l-&gt;get_weights_biases_gradient();</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e">is_good</a>(grad)) {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    lbann_comm* <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a> = m-&gt;get_comm();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; comm-&gt;get_rank_in_world() &lt;&lt; <span class="stringliteral">&quot;]: error in layer &quot;</span> &lt;&lt;</div>
@@ -346,8 +346,8 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(<span class="stringliteral">&quot;checknan: error in gradients&quot;</span>);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
-<div class="ttc" id="lbann__base_8hpp_html_a270ddda44ad6a3abd3cfe8358cf581e6"><div class="ttname"><a href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00044">lbann_base.hpp:44</a></div></div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a8e774b79084797a8f87918d8f66b6802"><div class="ttname"><a href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::MC, El::MR &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00044">lbann_base.hpp:44</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__checknan_html_a198fba8645c2d61452182294f62b965e"><div class="ttname"><a href="classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e">lbann::lbann_callback_checknan::is_good</a></div><div class="ttdeci">bool is_good(const DistMat &amp;m)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__checknan_8cpp_source.html#l00080">lbann_callback_checknan.cpp:80</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -392,7 +392,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="comment">// Skip input/output layers-- they don&#39;t have weights.</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; layers.size() - 1; ++i) {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    Layer* l = layers[i];</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a>&amp; weights = (<a class="code" href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a>&amp;) l-&gt;get_weights_biases();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>&amp; weights = (<a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>&amp;) l-&gt;get_weights_biases();</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e">is_good</a>(weights)) {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      lbann_comm* <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a> = m-&gt;get_comm();</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; comm-&gt;get_rank_in_world() &lt;&lt; <span class="stringliteral">&quot;]: error in layer &quot;</span> &lt;&lt;</div>
@@ -402,8 +402,8 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
-<div class="ttc" id="lbann__base_8hpp_html_a270ddda44ad6a3abd3cfe8358cf581e6"><div class="ttname"><a href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00044">lbann_base.hpp:44</a></div></div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a8e774b79084797a8f87918d8f66b6802"><div class="ttname"><a href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::MC, El::MR &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00044">lbann_base.hpp:44</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__checknan_html_a198fba8645c2d61452182294f62b965e"><div class="ttname"><a href="classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e">lbann::lbann_callback_checknan::is_good</a></div><div class="ttdeci">bool is_good(const DistMat &amp;m)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__checknan_8cpp_source.html#l00080">lbann_callback_checknan.cpp:80</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -458,7 +458,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordflow">if</span> (l-&gt;get_index() == m-&gt;get_layers().size() - 1) {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a>&amp; acts = (<a class="code" href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a>&amp;) l-&gt;get_activations();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>&amp; acts = (<a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>&amp;) l-&gt;get_activations();</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e">is_good</a>(acts)) {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    lbann_comm* <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a> = m-&gt;get_comm();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; comm-&gt;get_rank_in_world() &lt;&lt; <span class="stringliteral">&quot;]: error in layer &quot;</span> &lt;&lt;</div>
@@ -467,8 +467,8 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(<span class="stringliteral">&quot;checknan: error in activations&quot;</span>);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
-<div class="ttc" id="lbann__base_8hpp_html_a270ddda44ad6a3abd3cfe8358cf581e6"><div class="ttname"><a href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00044">lbann_base.hpp:44</a></div></div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a8e774b79084797a8f87918d8f66b6802"><div class="ttname"><a href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::MC, El::MR &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00044">lbann_base.hpp:44</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__checknan_html_a198fba8645c2d61452182294f62b965e"><div class="ttname"><a href="classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e">lbann::lbann_callback_checknan::is_good</a></div><div class="ttdeci">bool is_good(const DistMat &amp;m)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__checknan_8cpp_source.html#l00080">lbann_callback_checknan.cpp:80</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -492,7 +492,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__callback__checknan.html">lbann_callback_checknan</a></li>
-    <li class="footer">Generated on Thu Apr 6 2017 23:14:33 for LBANN by
+    <li class="footer">Generated on Fri Apr 7 2017 01:25:40 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

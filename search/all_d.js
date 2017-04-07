@@ -29,7 +29,6 @@ var searchData=
   ['normal',['NORMAL',['../classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aa5f19efb5bef79cea24be992a2137962e',1,'lbann::lbann_callback_imcomm::NORMAL()'],['../lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5afea087517c26fadd409bd4b9dc642555',1,'normal():&#160;lbann_base.hpp']]],
   ['normal_5far',['NORMAL_AR',['../classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aa7d9b361cd28f08b327ebe76b4d9b35cd',1,'lbann::lbann_callback_imcomm']]],
   ['normalize',['normalize',['../classlbann_1_1lbann__image__preprocessor.html#ae370cdc9f776ce8cce94a45cacf47425',1,'lbann::lbann_image_preprocessor']]],
-  ['norms',['norms',['../classlbann_1_1SoftmaxLayer.html#a17bb35a7656e1a81f75940ddd52b5066',1,'lbann::SoftmaxLayer']]],
   ['not_5fimplemented',['NOT_IMPLEMENTED',['../lbann__data__reader_8hpp.html#a10d485225119e927ae18857acf81bdc6',1,'lbann_data_reader.hpp']]],
   ['null',['NULL',['../datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4',1,'datatype.hpp']]],
   ['num_5fbits',['NUM_BITS',['../classlbann_1_1lbann__quantizer.html#a33ea17392f53b90e91aea1ffb7e11d68',1,'lbann::lbann_quantizer']]],

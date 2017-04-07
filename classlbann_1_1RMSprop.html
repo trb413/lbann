@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">d3dc5e2-ci219483345</span>
+   &#160;<span id="projectnumber">bd22a0a-ci219519303</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -490,13 +490,13 @@ template&lt;class _DistMat&gt; </div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      <span class="comment">// read in the cache of gradients for WB</span></div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      sprintf(name, <span class="stringliteral">&quot;L%d_rmsprop_%dx%d.bin&quot;</span>, Index, <a class="code" href="classlbann_1_1RMSprop.html#a7fc91f21cd19180ed8e7057ab11b0aff">WB_D_Cache</a>.Height(), <a class="code" href="classlbann_1_1RMSprop.html#a7fc91f21cd19180ed8e7057ab11b0aff">WB_D_Cache</a>.Width());</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      p.read_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, name, (<a class="code" href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a>*)&amp;<a class="code" href="classlbann_1_1RMSprop.html#a7fc91f21cd19180ed8e7057ab11b0aff">WB_D_Cache</a>);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      p.read_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, name, (<a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>*)&amp;<a class="code" href="classlbann_1_1RMSprop.html#a7fc91f21cd19180ed8e7057ab11b0aff">WB_D_Cache</a>);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
 <div class="ttc" id="classlbann_1_1RMSprop_html_a7fc91f21cd19180ed8e7057ab11b0aff"><div class="ttname"><a href="classlbann_1_1RMSprop.html#a7fc91f21cd19180ed8e7057ab11b0aff">lbann::RMSprop::WB_D_Cache</a></div><div class="ttdeci">_DistMat WB_D_Cache</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__rmsprop_8hpp_source.html#l00051">lbann_optimizer_rmsprop.hpp:51</a></div></div>
 <div class="ttc" id="classlbann_1_1RMSprop_html_a1a898dc2c4845d8534e14e3aeb6dd975"><div class="ttname"><a href="classlbann_1_1RMSprop.html#a1a898dc2c4845d8534e14e3aeb6dd975">lbann::RMSprop::LearnRate</a></div><div class="ttdeci">float LearnRate</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__rmsprop_8hpp_source.html#l00046">lbann_optimizer_rmsprop.hpp:46</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_a270ddda44ad6a3abd3cfe8358cf581e6"><div class="ttname"><a href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00044">lbann_base.hpp:44</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a8e774b79084797a8f87918d8f66b6802"><div class="ttname"><a href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::MC, El::MR &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00044">lbann_base.hpp:44</a></div></div>
 <div class="ttc" id="classlbann_1_1Optimizer_html_a6984da040ad703476b8f4d807c6439f1"><div class="ttname"><a href="classlbann_1_1Optimizer.html#a6984da040ad703476b8f4d807c6439f1">lbann::Optimizer::name</a></div><div class="ttdeci">const string name()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00069">lbann_optimizer.hpp:69</a></div></div>
 <div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">lbann::persist_type::train</a></div></div>
 </div><!-- fragment -->
@@ -609,13 +609,13 @@ template&lt;class _DistMat&gt; </div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      <span class="comment">// build name of the checkpoint file</span></div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      sprintf(name, <span class="stringliteral">&quot;L%d_rmsprop_%dx%d&quot;</span>, Index, <a class="code" href="classlbann_1_1RMSprop.html#a7fc91f21cd19180ed8e7057ab11b0aff">WB_D_Cache</a>.Height(), <a class="code" href="classlbann_1_1RMSprop.html#a7fc91f21cd19180ed8e7057ab11b0aff">WB_D_Cache</a>.Width());</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      p.write_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, name, (<a class="code" href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a>*)&amp;<a class="code" href="classlbann_1_1RMSprop.html#a7fc91f21cd19180ed8e7057ab11b0aff">WB_D_Cache</a>);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      p.write_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, name, (<a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>*)&amp;<a class="code" href="classlbann_1_1RMSprop.html#a7fc91f21cd19180ed8e7057ab11b0aff">WB_D_Cache</a>);</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
 <div class="ttc" id="classlbann_1_1RMSprop_html_a7fc91f21cd19180ed8e7057ab11b0aff"><div class="ttname"><a href="classlbann_1_1RMSprop.html#a7fc91f21cd19180ed8e7057ab11b0aff">lbann::RMSprop::WB_D_Cache</a></div><div class="ttdeci">_DistMat WB_D_Cache</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__rmsprop_8hpp_source.html#l00051">lbann_optimizer_rmsprop.hpp:51</a></div></div>
 <div class="ttc" id="classlbann_1_1RMSprop_html_a1a898dc2c4845d8534e14e3aeb6dd975"><div class="ttname"><a href="classlbann_1_1RMSprop.html#a1a898dc2c4845d8534e14e3aeb6dd975">lbann::RMSprop::LearnRate</a></div><div class="ttdeci">float LearnRate</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__rmsprop_8hpp_source.html#l00046">lbann_optimizer_rmsprop.hpp:46</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_a270ddda44ad6a3abd3cfe8358cf581e6"><div class="ttname"><a href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00044">lbann_base.hpp:44</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a8e774b79084797a8f87918d8f66b6802"><div class="ttname"><a href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::MC, El::MR &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00044">lbann_base.hpp:44</a></div></div>
 <div class="ttc" id="classlbann_1_1Optimizer_html_a6984da040ad703476b8f4d807c6439f1"><div class="ttname"><a href="classlbann_1_1Optimizer.html#a6984da040ad703476b8f4d807c6439f1">lbann::Optimizer::name</a></div><div class="ttdeci">const string name()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00069">lbann_optimizer.hpp:69</a></div></div>
 <div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">lbann::persist_type::train</a></div></div>
 </div><!-- fragment -->
@@ -911,7 +911,7 @@ template&lt;class _DistMat&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1RMSprop.html">RMSprop</a></li>
-    <li class="footer">Generated on Thu Apr 6 2017 23:14:34 for LBANN by
+    <li class="footer">Generated on Fri Apr 7 2017 01:25:41 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

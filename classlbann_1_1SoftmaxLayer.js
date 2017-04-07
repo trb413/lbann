@@ -7,6 +7,7 @@ var classlbann_1_1SoftmaxLayer =
     [ "checkGradient", "classlbann_1_1SoftmaxLayer.html#a30a79112054c8b32e4f667eb0b59f75d", null ],
     [ "fp_linearity", "classlbann_1_1SoftmaxLayer.html#a024eedef18ff10e82a88ede326a6bad6", null ],
     [ "fp_nonlinearity", "classlbann_1_1SoftmaxLayer.html#a01b38e99350dc6ba4b8aabd4709f942e", null ],
+    [ "fp_set_std_matrix_view", "classlbann_1_1SoftmaxLayer.html#a68d0276c4e6608cab22d4d58288fecfc", null ],
     [ "initialize_data_parallel_distribution", "classlbann_1_1SoftmaxLayer.html#af2b27d8f9e99d8aa827e33d9f0b9ae0a", null ],
     [ "initialize_model_parallel_distribution", "classlbann_1_1SoftmaxLayer.html#a3b3252028a6c1c9362733469462b4718", null ],
     [ "loadFromCheckpoint", "classlbann_1_1SoftmaxLayer.html#a1f903958a7ee933d1c43dbd0e1f665ff", null ],
@@ -16,13 +17,8 @@ var classlbann_1_1SoftmaxLayer =
     [ "setup", "classlbann_1_1SoftmaxLayer.html#ae9e5733f6d95b0d682c9d0763119deec", null ],
     [ "update", "classlbann_1_1SoftmaxLayer.html#a74ab0d29045acb9c2f62fc6d5b0a73b1", null ],
     [ "WBL2norm", "classlbann_1_1SoftmaxLayer.html#af8aae11cac219647cb225cf80ce8bb66", null ],
-    [ "m_curr_activations_v", "classlbann_1_1SoftmaxLayer.html#ac3dddaa7884d49acf1a3c841082a4669", null ],
-    [ "m_curr_prev_error_signal_v", "classlbann_1_1SoftmaxLayer.html#a40f8e87148482df4572bc170294ee1d1", null ],
     [ "m_weight_initialization", "classlbann_1_1SoftmaxLayer.html#a80edd4e7f0c3f1bcc90602f6025e2cfd", null ],
-    [ "norms", "classlbann_1_1SoftmaxLayer.html#a17bb35a7656e1a81f75940ddd52b5066", null ],
-    [ "WBL2NormSum", "classlbann_1_1SoftmaxLayer.html#ab2ba1019c428cb3e2195e14f887a9e8c", null ],
-    [ "ZsColMax", "classlbann_1_1SoftmaxLayer.html#a311d9d53ea4a4b8443ae826f31e6c24e", null ],
-    [ "ZsColMaxStar", "classlbann_1_1SoftmaxLayer.html#a9bdce8ed0fd1fd015bfdc0b6a12f6ba3", null ],
-    [ "ZsNormExpSum", "classlbann_1_1SoftmaxLayer.html#aa9c2be7494fa03145668e18d3eb8ccfc", null ],
-    [ "ZsNormExpSumStar", "classlbann_1_1SoftmaxLayer.html#a142127c362d4358911b2efaed79367fd", null ]
+    [ "m_workspace", "classlbann_1_1SoftmaxLayer.html#a43230d6b5732539b98c2b39130ddad37", null ],
+    [ "m_workspace_v", "classlbann_1_1SoftmaxLayer.html#a611e898bc9c1e64283759a328ead5e92", null ],
+    [ "WBL2NormSum", "classlbann_1_1SoftmaxLayer.html#ab2ba1019c428cb3e2195e14f887a9e8c", null ]
 ];

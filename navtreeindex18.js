@@ -1,6 +1,5 @@
 var NAVTREEINDEX18 =
 {
-"structlbann_1_1lbann__quantizer_1_1adaptive__reconstructions.html":[3,0,3,80,0],
 "structlbann_1_1lbann__quantizer_1_1adaptive__reconstructions.html#a631231c118cc17ba4ed569380e6c6711":[3,0,3,80,0,0],
 "structlbann_1_1lbann__quantizer_1_1adaptive__reconstructions.html#a9b3b4970e067920e056cdd54c2ad8e95":[3,0,3,80,0,1],
 "structlbann_1_1lbann__quantizer_1_1adaptive__thresholds.html":[3,0,3,80,1],

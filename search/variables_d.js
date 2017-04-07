@@ -13,7 +13,6 @@ var searchData=
   ['networkstr',['NetworkStr',['../classlbann_1_1NetworkParams.html#a8b503690c7475582b5a843f0959c3f2a',1,'lbann::NetworkParams']]],
   ['neural_5fnetwork_5fmodel',['neural_network_model',['../classlbann_1_1Layer.html#a9699f8d327ed26f98a52c750f38f8312',1,'lbann::Layer::neural_network_model()'],['../classlbann_1_1metrics_1_1metric.html#aa2923a8982c083c63d3414bd3a6670a1',1,'lbann::metrics::metric::neural_network_model()']]],
   ['node_5fcomm',['node_comm',['../classlbann_1_1lbann__comm.html#a9f1f65663ca1d441f98f003b612eeb8c',1,'lbann::lbann_comm']]],
-  ['norms',['norms',['../classlbann_1_1SoftmaxLayer.html#a17bb35a7656e1a81f75940ddd52b5066',1,'lbann::SoftmaxLayer']]],
   ['num_5fbits',['NUM_BITS',['../classlbann_1_1lbann__quantizer.html#a33ea17392f53b90e91aea1ffb7e11d68',1,'lbann::lbann_quantizer']]],
   ['num_5fchannels_5f',['num_channels_',['../classlbann__data_1_1Pooling.html#aa9efce9a1c981610c925502c04830e4a',1,'lbann_data::Pooling']]],
   ['num_5fcores_5f',['num_cores_',['../classlbann__data_1_1SystemParams.html#a63ab123895ba527d959b6d64d8266aad',1,'lbann_data::SystemParams']]],

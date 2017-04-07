@@ -1,6 +1,5 @@
 var NAVTREEINDEX16 =
 {
-"lbann__model__sequential_8cpp_source.html":[4,0,0,0,0,0,0,1,5,3],
 "lbann__model__sequential_8hpp.html":[4,0,0,0,0,0,0,0,0,5,3],
 "lbann__model__sequential_8hpp_source.html":[4,0,0,0,0,0,0,0,0,5,3],
 "lbann__model__stacked__autoencoder_8cpp.html":[4,0,0,0,0,0,0,1,5,4],
@@ -178,16 +177,16 @@ var NAVTREEINDEX16 =
 "namespacelbann.html":[2,0,3],
 "namespacelbann_1_1metrics.html":[3,0,3,0],
 "namespacelbann_1_1metrics.html":[2,0,3,0],
-"namespacelbann_1_1objective__functions.html":[2,0,3,1],
 "namespacelbann_1_1objective__functions.html":[3,0,3,1],
-"namespacelbann_1_1patchworks.html":[2,0,3,2],
+"namespacelbann_1_1objective__functions.html":[2,0,3,1],
 "namespacelbann_1_1patchworks.html":[3,0,3,2],
-"namespacelbann__data.html":[3,0,4],
+"namespacelbann_1_1patchworks.html":[2,0,3,2],
 "namespacelbann__data.html":[2,0,4],
-"namespacelbann__data_1_1protobuf__lbann__2eproto.html":[3,0,4,0],
+"namespacelbann__data.html":[3,0,4],
 "namespacelbann__data_1_1protobuf__lbann__2eproto.html":[2,0,4,0],
-"namespacelbann__data_1_1protobuf__lbann__2eproto_1_1anonymous__namespace_02lbann_8pb_8cc_03.html":[2,0,4,0,0],
+"namespacelbann__data_1_1protobuf__lbann__2eproto.html":[3,0,4,0],
 "namespacelbann__data_1_1protobuf__lbann__2eproto_1_1anonymous__namespace_02lbann_8pb_8cc_03.html":[3,0,4,0,0],
+"namespacelbann__data_1_1protobuf__lbann__2eproto_1_1anonymous__namespace_02lbann_8pb_8cc_03.html":[2,0,4,0,0],
 "namespacemembers.html":[2,1,0],
 "namespacemembers_enum.html":[2,1,4],
 "namespacemembers_eval.html":[2,1,5],
@@ -249,5 +248,6 @@ var NAVTREEINDEX16 =
 "protobuf.html":[0,3,8],
 "protobuf.html#protobuf_download":[0,3,8,0],
 "protobuf.html#protobuf_install":[0,3,8,1],
-"publications.html":[0,6]
+"publications.html":[0,6],
+"struct__BOX2__CHAR.html":[3,0,9]
 };

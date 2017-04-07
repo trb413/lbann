@@ -90,7 +90,7 @@ var searchData=
   ['set_5ffile_5fdir',['set_file_dir',['../classlbann_1_1DataReader.html#ade9dddf74dce0b116a8f8c1fdbbfa11b',1,'lbann::DataReader']]],
   ['set_5ffile_5fext',['set_file_ext',['../classlbann_1_1patchworks_1_1patch__descriptor.html#aca8c08275cbb62603ddfef46cf42a025',1,'lbann::patchworks::patch_descriptor']]],
   ['set_5ffilter_5fdims',['set_filter_dims',['../classlbann__data_1_1Convolution.html#afb074b716e2a0b92a90fc408db6ad323',1,'lbann_data::Convolution']]],
-  ['set_5ffirstn',['set_firstn',['../classlbann__data_1_1Reader.html#a9773705e35bf0e73d596931abb24204c',1,'lbann_data::Reader::set_firstn()'],['../classlbann_1_1DataReader.html#ae38cd0062f4293192b6f8e97d91d4698',1,'lbann::DataReader::set_firstN()']]],
+  ['set_5ffirstn',['set_firstN',['../classlbann_1_1DataReader.html#ae38cd0062f4293192b6f8e97d91d4698',1,'lbann::DataReader::set_firstN()'],['../classlbann__data_1_1Reader.html#a9773705e35bf0e73d596931abb24204c',1,'lbann_data::Reader::set_firstn()']]],
   ['set_5ffor_5fregression',['set_for_regression',['../classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#afd0c499155e7fd6dc94e5ddf4f67036a',1,'lbann_data::TargetDistributedMinibatchParallelIO']]],
   ['set_5ffp_5finput',['set_fp_input',['../classlbann_1_1sequential__model.html#ae4fa1fd95dae51edf2b0db11258dca51',1,'lbann::sequential_model']]],
   ['set_5fgap',['set_gap',['../classlbann_1_1patchworks_1_1patch__descriptor.html#a494505c8d6ec68bc74270e06bc52f8c8',1,'lbann::patchworks::patch_descriptor']]],

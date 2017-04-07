@@ -1,7 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"classlbann__data_1_1TrainingParams.html#ab0c8dbb3c82c24dd1cd1866389be610d":[3,0,4,44,233],
-"classlbann__data_1_1TrainingParams.html#ab16f4e15e99949449820837ba00b8ac1":[3,0,4,44,202],
 "classlbann__data_1_1TrainingParams.html#ab18d87c9181000dd3f4153f9142ce5f2":[3,0,4,44,10],
 "classlbann__data_1_1TrainingParams.html#ab1984217e74d8abc639ef5d1bfdeba33":[3,0,4,44,66],
 "classlbann__data_1_1TrainingParams.html#ab31f6d6e36f077ab81a154254744bd4f":[3,0,4,44,198],
@@ -249,5 +247,7 @@ var NAVTREEINDEX13 =
 "functions_b.html":[3,3,0,2],
 "functions_c.html":[3,3,0,3],
 "functions_d.html":[3,3,0,4],
-"functions_e.html":[3,3,0,5]
+"functions_e.html":[3,3,0,5],
+"functions_enum.html":[3,3,4],
+"functions_eval.html":[3,3,5]
 };

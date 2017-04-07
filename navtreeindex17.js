@@ -1,6 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"struct__BOX2__CHAR.html":[3,0,9],
 "struct__BOX2__CHAR.html#a13324d09b1583b0df71cfd34632cf05f":[3,0,9,2],
 "struct__BOX2__CHAR.html#a1fe54e6aa1b657325c6370adcedf454e":[3,0,9,0],
 "struct__BOX2__CHAR.html#a4a22e4f25deebc985790040910f2a8a6":[3,0,9,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX17 =
 "structlbann_1_1lbann__proto_1_1optimizer__params.html#a9d505eb9b38dec94c259a5f4d9bbd823":[3,0,3,75,3,1],
 "structlbann_1_1lbann__proto_1_1regularizer__params.html":[3,0,3,75,4],
 "structlbann_1_1lbann__proto_1_1regularizer__params.html#a3ac3a1d22eaf003b7e89431a04782849":[3,0,3,75,4,1],
-"structlbann_1_1lbann__proto_1_1regularizer__params.html#a5b2bd04cb7baf66305e5a5d3a245ae77":[3,0,3,75,4,0]
+"structlbann_1_1lbann__proto_1_1regularizer__params.html#a5b2bd04cb7baf66305e5a5d3a245ae77":[3,0,3,75,4,0],
+"structlbann_1_1lbann__quantizer_1_1adaptive__reconstructions.html":[3,0,3,80,0]
 };

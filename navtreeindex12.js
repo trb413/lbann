@@ -1,7 +1,5 @@
 var NAVTREEINDEX12 =
 {
-"classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#a7a721a9a0810506ca7a2f7eebc6ae712":[3,0,4,40,18],
-"classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#a7abed4a7151362b0249cae7fff3ca722":[3,0,4,40,37],
 "classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#a7d1a36e08b3e4bb03d8c99ab62ee47d0":[3,0,4,40,41],
 "classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#a82216a74e841040f8c060897067bf243":[3,0,4,40,23],
 "classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#a87658eb9f4a34bb65ae04faabe673d6f":[3,0,4,40,14],
@@ -249,5 +247,7 @@ var NAVTREEINDEX12 =
 "classlbann__data_1_1TrainingParams.html#ab0030e063551a5b7f6391c2124287e7e":[3,0,4,44,28],
 "classlbann__data_1_1TrainingParams.html#ab0321c27a9115deb0998df5db72cf3da":[3,0,4,44,120],
 "classlbann__data_1_1TrainingParams.html#ab0370114e609db6433fdf0179211c1cb":[3,0,4,44,220],
-"classlbann__data_1_1TrainingParams.html#ab0ab266e3f3fc3bbaf2855999f7752bd":[3,0,4,44,34]
+"classlbann__data_1_1TrainingParams.html#ab0ab266e3f3fc3bbaf2855999f7752bd":[3,0,4,44,34],
+"classlbann__data_1_1TrainingParams.html#ab0c8dbb3c82c24dd1cd1866389be610d":[3,0,4,44,233],
+"classlbann__data_1_1TrainingParams.html#ab16f4e15e99949449820837ba00b8ac1":[3,0,4,44,202]
 };

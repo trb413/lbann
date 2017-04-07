@@ -54,7 +54,7 @@ var searchData=
   ['dist_5funiform_5fint_5ft',['dist_uniform_int_t',['../classlbann_1_1patchworks_1_1rand__patch.html#aa37bbc1517b3cee52e36f37dc5d4ee56',1,'lbann::patchworks::rand_patch']]],
   ['dist_5funiform_5freal',['dist_uniform_real',['../classlbann_1_1patchworks_1_1rand__patch.html#a8e2e8aba4b0687418006cad0d6f9c1f6',1,'lbann::patchworks::rand_patch']]],
   ['dist_5funiform_5freal_5ft',['dist_uniform_real_t',['../classlbann_1_1patchworks_1_1rand__patch.html#a8c24e53924da2db622d9a31a7316d2e5',1,'lbann::patchworks::rand_patch']]],
-  ['distmat',['DistMat',['../lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6',1,'lbann_base.hpp']]],
+  ['distmat',['DistMat',['../lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802',1,'lbann_base.hpp']]],
   ['distribute_5ffrom_5flocal_5fmatrix',['distribute_from_local_matrix',['../classlbann_1_1distributed__minibatch__parallel__io.html#ac5d6b3b6740f91ef083eeac3cc52c10a',1,'lbann::distributed_minibatch_parallel_io']]],
   ['distributed_5fminibatch_5fparallel_5fio',['distributed_minibatch_parallel_io',['../classlbann_1_1distributed__minibatch__parallel__io.html',1,'lbann']]],
   ['distributed_5fminibatch_5fparallel_5fio',['distributed_minibatch_parallel_io',['../classlbann_1_1distributed__minibatch__parallel__io.html#aa35307f86d664e0fd3cc98a645f1589d',1,'lbann::distributed_minibatch_parallel_io']]],

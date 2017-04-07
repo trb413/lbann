@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">d3dc5e2-ci219483345</span>
+   &#160;<span id="projectnumber">bd22a0a-ci219519303</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -360,7 +360,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif  // LBANN_PROCDET_DROPOUT</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="ttc" id="classlbann_1_1Layer_html_a7a28e5b795fcd852dea62e57d7a6f97e"><div class="ttname"><a href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">lbann::Layer::m_activations</a></div><div class="ttdeci">ElMat * m_activations</div><div class="ttdoc">Error signal to &quot;next&quot; layer (i.e. deltas) ((# neurons) x mini-batch size) </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00206">lbann_layer.hpp:206</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_afad88fb587c304caea8a36ee5a5c1df8"><div class="ttname"><a href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a></div><div class="ttdeci">El::ElementalMatrix&lt; DataType &gt; ElMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00050">lbann_base.hpp:50</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_afad88fb587c304caea8a36ee5a5c1df8"><div class="ttname"><a href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a></div><div class="ttdeci">El::ElementalMatrix&lt; DataType &gt; ElMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00051">lbann_base.hpp:51</a></div></div>
 <div class="ttc" id="namespacelbann_html_a6add4d3337110d567e7b398a262fd010"><div class="ttname"><a href="namespacelbann.html#a6add4d3337110d567e7b398a262fd010">lbann::bernoulli_fill_procdet</a></div><div class="ttdeci">void bernoulli_fill_procdet(ElMat &amp;mat, El::Int m, El::Int n, double p)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__random_8cpp_source.html#l00164">lbann_random.cpp:164</a></div></div>
 <div class="ttc" id="classlbann_1_1dropout_html_a1da084708f189cdc5f53cb59ab5c18d0"><div class="ttname"><a href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">lbann::dropout::m_cur_mask</a></div><div class="ttdeci">Mat * m_cur_mask</div><div class="ttdef"><b>Definition:</b> <a href="lbann__dropout_8hpp_source.html#l00067">lbann_dropout.hpp:67</a></div></div>
 <div class="ttc" id="namespacelbann_html_ae6ce9c2fdec6f81803f6b1a6555c31c5"><div class="ttname"><a href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5">lbann::get_fast_generator</a></div><div class="ttdeci">fast_rng_gen &amp; get_fast_generator()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__random_8cpp_source.html#l00053">lbann_random.cpp:53</a></div></div>
@@ -449,15 +449,15 @@ Here is the caller graph for this function:</div>
 <p>Definition at line <a class="el" href="lbann__dropout_8cpp_source.html#l00060">60</a> of file <a class="el" href="lbann__dropout_8cpp_source.html">lbann_dropout.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                                     {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#ifdef LBANN_PROCDET_DROPOUT</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span>  <a class="code" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a> = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a>(<a class="code" href="classlbann_1_1dropout.html#a8d771ad4215b0235d3270a71ca8bd33e">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>());</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span>  <a class="code" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a> = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(<a class="code" href="classlbann_1_1dropout.html#a8d771ad4215b0235d3270a71ca8bd33e">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>());</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span>  <a class="code" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a> = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="ttc" id="classlbann_1_1dropout_html_a1da084708f189cdc5f53cb59ab5c18d0"><div class="ttname"><a href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">lbann::dropout::m_cur_mask</a></div><div class="ttdeci">Mat * m_cur_mask</div><div class="ttdef"><b>Definition:</b> <a href="lbann__dropout_8hpp_source.html#l00067">lbann_dropout.hpp:67</a></div></div>
 <div class="ttc" id="classlbann_1_1dropout_html_a8d771ad4215b0235d3270a71ca8bd33e"><div class="ttname"><a href="classlbann_1_1dropout.html#a8d771ad4215b0235d3270a71ca8bd33e">lbann::dropout::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__dropout_8hpp_source.html#l00059">lbann_dropout.hpp:59</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_a270ddda44ad6a3abd3cfe8358cf581e6"><div class="ttname"><a href="lbann__base_8hpp.html#a270ddda44ad6a3abd3cfe8358cf581e6">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00044">lbann_base.hpp:44</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00042">lbann_base.hpp:42</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a8e774b79084797a8f87918d8f66b6802"><div class="ttname"><a href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::MC, El::MR &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00044">lbann_base.hpp:44</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a483bf8a72d44a0e83da45f3d47bd20d4"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">lbann::lbann_comm::get_model_grid</a></div><div class="ttdeci">Grid &amp; get_model_grid()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00083">lbann_comm.hpp:83</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -559,7 +559,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1dropout.html">dropout</a></li>
-    <li class="footer">Generated on Thu Apr 6 2017 23:14:34 for LBANN by
+    <li class="footer">Generated on Fri Apr 7 2017 01:25:41 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
