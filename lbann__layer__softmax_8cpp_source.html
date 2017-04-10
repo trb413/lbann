@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">5fb0108-ci220533732</span>
+   &#160;<span id="projectnumber">843c25d-ci220683127</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -244,7 +244,7 @@ $(document).ready(function(){initNavTree('lbann__layer__softmax_8cpp_source.html
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    workspace_local.Set(Int(0), c, max_entry);</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  }</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  AllReduce(*m_workspace_v, m_workspace_v-&gt;ColComm(), mpi::MAX);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  AllReduce(*m_workspace_v, m_workspace_v-&gt;RedundantComm(), mpi::MAX);</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="comment">// Subtract column max and exponentiate activations</span></div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="comment">// Note: Subtracting the column max prevents activations from blowing</span></div>
@@ -264,7 +264,7 @@ $(document).ready(function(){initNavTree('lbann__layer__softmax_8cpp_source.html
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    }</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    workspace_local.Set(Int(0), c, sum);</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  }</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  AllReduce(*m_workspace_v, m_workspace_v-&gt;ColComm(), mpi::SUM);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  AllReduce(*m_workspace_v, m_workspace_v-&gt;RedundantComm(), mpi::SUM);</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="comment">// Divide activations by column sums</span></div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  IndexDependentMap(activations_local,</div>
@@ -341,7 +341,7 @@ $(document).ready(function(){initNavTree('lbann__layer__softmax_8cpp_source.html
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                        Dot(prev_error_signal_local(ALL,IR(c)),</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                            activations_local(ALL,IR(c))));</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  }</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  AllReduce(*m_workspace_v, m_workspace_v-&gt;ColComm(), mpi::SUM);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  AllReduce(*m_workspace_v, m_workspace_v-&gt;RedundantComm(), mpi::SUM);</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <span class="comment">// Update error signal</span></div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="comment">// Note: prev_error_signal := activations * (prev_error_signal - prev_error_signal^T activations)</span></div>
@@ -460,7 +460,7 @@ $(document).ready(function(){initNavTree('lbann__layer__softmax_8cpp_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_faacdbae24c4b7c4a8fbaf54f29a6b8e.html">layers</a></li><li class="navelem"><a class="el" href="lbann__layer__softmax_8cpp.html">lbann_layer_softmax.cpp</a></li>
-    <li class="footer">Generated on Mon Apr 10 2017 12:20:12 for LBANN by
+    <li class="footer">Generated on Mon Apr 10 2017 19:14:06 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
