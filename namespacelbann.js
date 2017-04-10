@@ -76,7 +76,6 @@ var namespacelbann =
     [ "RMSprop_factory", "classlbann_1_1RMSprop__factory.html", "classlbann_1_1RMSprop__factory" ],
     [ "SGD", "classlbann_1_1SGD.html", "classlbann_1_1SGD" ],
     [ "SGD_factory", "classlbann_1_1SGD__factory.html", "classlbann_1_1SGD__factory" ],
-    [ "lbann_proto", "classlbann_1_1lbann__proto.html", "classlbann_1_1lbann__proto" ],
     [ "dropout", "classlbann_1_1dropout.html", "classlbann_1_1dropout" ],
     [ "regularizer", "classlbann_1_1regularizer.html", "classlbann_1_1regularizer" ],
     [ "dataset", "classlbann_1_1dataset.html", "classlbann_1_1dataset" ],

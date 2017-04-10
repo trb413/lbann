@@ -24,8 +24,7 @@ var NAVTREE =
         [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
-        [ "Enumerator", "functions_eval.html", null ],
-        [ "Related Functions", "functions_rela.html", null ]
+        [ "Enumerator", "functions_eval.html", null ]
       ] ]
     ] ],
     [ "Files", null, [
@@ -50,20 +49,12 @@ var NAVTREEINDEX =
 "classlbann_1_1convolutional__layer.html#a5bf8980deba81eb406b0ba0cf3dda263",
 "classlbann_1_1lbann__callback.html#ab96adb1d77180e00fdd668cd381323fd",
 "classlbann_1_1lbann__image__preprocessor.html#a27cb5182c4f764cbfa4edecbb78ef29d",
-"classlbann_1_1model.html#a5bafc4e84671490c6118959becb22e16",
-"classlbann_1_1rng.html",
-"classlbann__data_1_1DataReader.html#a4eb7466d32d8cea685ad5967f1681f03",
-"classlbann__data_1_1Input.html#afb10db058eb97fb9a6bf20fcc91b7a5f",
-"classlbann__data_1_1LbannPB.html#a4f8d9e2aa866990c84e4a08d2f421ff8",
-"classlbann__data_1_1Optimizer.html#a5f43401eecf9c01aed2a978668d3c85d",
-"classlbann__data_1_1Reader.html#a904eb1dabd3146a78cc49a0a31b86e66",
-"classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#a1ea6d2563d935125400eec60f0e2e185",
-"classlbann__data_1_1TrainingParams.html#aa432d82aa581ddcf4f432dbd5275516a",
-"doxygen.html",
-"lbann__base_8hpp.html#ae115877b16af7ee9d8624f738f1ccaa5",
-"lbann__metric__categorical__accuracy_8hpp_source.html",
-"patchworks__patch__descriptor_8cpp.html#a97e5fb4cea27b5d898cb73759fee2c8a",
-"structlbann_1_1lbann__proto_1_1layer__params.html#adbd91acd2848c1aa05007aaa06fccc06"
+"classlbann_1_1model.html#a93e43a6c5aaf8ad890ef50ff97dfa176",
+"classlbann_1_1sequential__model.html#a7b841c06d54724caecbd2eee309af1c3",
+"dir_a6b45e92f0bfd71c0512203df27069a2.html",
+"lbann__callback__save__images_8cpp.html",
+"lbann__optimizer__adam_8hpp.html",
+"struct__BOX3__FLOAT.html#a1fddc58e7ad0cf69387d2ce33afe4502"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

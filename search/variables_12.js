@@ -1,28 +1,4 @@
 var searchData=
 [
-  ['s_5finstance',['s_instance',['../classlbann_1_1lbann__proto.html#a0ab139013854f796950520f69fb3d1e1',1,'lbann::lbann_proto']]],
-  ['save_5fimage_5fdir_5f',['save_image_dir_',['../classlbann__data_1_1TrainingParams.html#a4a3484a894d7099230caa6eb1f9a8813',1,'lbann_data::TrainingParams']]],
-  ['save_5fmodel_5f',['save_model_',['../classlbann__data_1_1TrainingParams.html#a71827806b2e8f4046c174ad56db729d5',1,'lbann_data::TrainingParams']]],
-  ['saveimagedir',['SaveImageDir',['../classlbann_1_1TrainingParams.html#a05e53af778b1e88671b839f860e83a84',1,'lbann::TrainingParams']]],
-  ['savemodel',['SaveModel',['../classlbann_1_1TrainingParams.html#a7b828e13978654bf472399668b19cc6a',1,'lbann::TrainingParams']]],
-  ['scale_5f',['scale_',['../classlbann__data_1_1ImagePreprocessor.html#a74cf1a8836b86075ddf2bf0f1c6d3d2d',1,'lbann_data::ImagePreprocessor']]],
-  ['schemas',['schemas',['../namespacelbann__data_1_1protobuf__lbann__2eproto.html#a0b670e322a8ed6098870629c5ae75b49',1,'lbann_data::protobuf_lbann_2eproto']]],
-  ['shared_5fdata_5freader',['shared_data_reader',['../structlbann_1_1lbann__proto_1_1layer__params.html#aff89bbdd0dcc5176b6d316bd2d5e4211',1,'lbann::lbann_proto::layer_params']]],
-  ['shared_5fdata_5freader_5f',['shared_data_reader_',['../classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#af913bbe6f7dc14def8d6a0f677c0bb53',1,'lbann_data::TargetDistributedMinibatchParallelIO']]],
-  ['shear_5frange_5f',['shear_range_',['../classlbann__data_1_1ImagePreprocessor.html#ae888b57afdb08a26cea1dcdea016a61c',1,'lbann_data::ImagePreprocessor']]],
-  ['shuffle',['shuffle',['../structlbann_1_1lbann__proto_1_1data__reader__params.html#a644f581ad7b27243d10228b8cdece176',1,'lbann::lbann_proto::data_reader_params']]],
-  ['shuffle_5f',['shuffle_',['../classlbann__data_1_1Reader.html#a889bd6f70dd576c7118d98f12aa23cbd',1,'lbann_data::Reader']]],
-  ['shuffle_5ftraining_5fdata_5f',['shuffle_training_data_',['../classlbann__data_1_1TrainingParams.html#ac2ef4db6c21c4839e8e322f4fe55436b',1,'lbann_data::TrainingParams']]],
-  ['shuffledindices',['ShuffledIndices',['../classlbann_1_1DataReader.html#a17405e51da149192baadc64a601fd352',1,'lbann::DataReader']]],
-  ['shuffletrainingdata',['ShuffleTrainingData',['../classlbann_1_1TrainingParams.html#a4cde94bdbbd82aabdb69e616194f74b1',1,'lbann::TrainingParams']]],
-  ['softmax_5f',['softmax_',['../classlbann__data_1_1Layer.html#a3297c2fb555811d80045110cc4373cc0',1,'lbann_data::Layer']]],
-  ['static_5fdescriptor_5finitializer',['static_descriptor_initializer',['../namespacelbann__data_1_1protobuf__lbann__2eproto.html#a0aa98db5216cbcd0f330460a6b6bff79',1,'lbann_data::protobuf_lbann_2eproto']]],
-  ['stdev',['stdev',['../structlbann_1_1patchworks_1_1image__stats.html#a39759501f7f427cbabeae358fdc4f5b5',1,'lbann::patchworks::image_stats']]],
-  ['stdevnz',['stdevNZ',['../structlbann_1_1patchworks_1_1image__stats.html#a917e340782c3909d778292aac57edbc7',1,'lbann::patchworks::image_stats']]],
-  ['step',['step',['../structlbann__checkpoint.html#a14fc6e1f60b934876dfee2e528486239',1,'lbann_checkpoint::step()'],['../classlbann_1_1lbann__callback__step__learning__rate.html#afcb2f88eae412e84df9c43df9365732e',1,'lbann::lbann_callback_step_learning_rate::step()']]],
-  ['subtract_5fmean_5f',['subtract_mean_',['../classlbann__data_1_1ImagePreprocessor.html#a0ec2118d4d3a5675cefc3fb51f64d4bc',1,'lbann_data::ImagePreprocessor']]],
-  ['summarizer',['summarizer',['../classlbann_1_1lbann__callback.html#ad48ff47a64f2dff3a12d8bd282f554cb',1,'lbann::lbann_callback']]],
-  ['summary_5fdir_5f',['summary_dir_',['../classlbann__data_1_1TrainingParams.html#ac152316f5ddd245d3a84a74b3308e009',1,'lbann_data::TrainingParams']]],
-  ['summarydir',['SummaryDir',['../classlbann_1_1TrainingParams.html#ad01ff40b34ff8b7adf4c547aa60ee87f',1,'lbann::TrainingParams']]],
-  ['system_5fparams_5f',['system_params_',['../classlbann__data_1_1LbannPB.html#ac478555a20ca1288a90bd2be4738342d',1,'lbann_data::LbannPB']]]
+  ['undefined_5fcoordinate',['undefined_coordinate',['../classlbann_1_1patchworks_1_1ROI.html#aade3b25f9500d2aec52c5ebc7803a45b',1,'lbann::patchworks::ROI']]]
 ];

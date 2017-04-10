@@ -1,8 +1,6 @@
 var searchData=
 [
   ['lbann_2ehpp',['lbann.hpp',['../lbann_8hpp.html',1,'']]],
-  ['lbann_2epb_2ecc',['lbann.pb.cc',['../lbann_8pb_8cc.html',1,'']]],
-  ['lbann_2epb_2eh',['lbann.pb.h',['../lbann_8pb_8h.html',1,'']]],
   ['lbann_5fbase_2ecpp',['lbann_base.cpp',['../lbann__base_8cpp.html',1,'']]],
   ['lbann_5fbase_2ehpp',['lbann_base.hpp',['../lbann__base_8hpp.html',1,'']]],
   ['lbann_5fbase_5ffactory_2ehpp',['lbann_base_factory.hpp',['../lbann__base__factory_8hpp.html',1,'']]],
@@ -122,8 +120,6 @@ var searchData=
   ['lbann_5fparams_2ehpp',['lbann_params.hpp',['../lbann__params_8hpp.html',1,'']]],
   ['lbann_5fpersist_2ecpp',['lbann_persist.cpp',['../lbann__persist_8cpp.html',1,'']]],
   ['lbann_5fpersist_2ehpp',['lbann_persist.hpp',['../lbann__persist_8hpp.html',1,'']]],
-  ['lbann_5fproto_2ecpp',['lbann_proto.cpp',['../lbann__proto_8cpp.html',1,'']]],
-  ['lbann_5fproto_2ehpp',['lbann_proto.hpp',['../lbann__proto_8hpp.html',1,'']]],
   ['lbann_5fproto_5fcommon_2ecpp',['lbann_proto_common.cpp',['../lbann__proto__common_8cpp.html',1,'']]],
   ['lbann_5fproto_5fcommon_2ehpp',['lbann_proto_common.hpp',['../lbann__proto__common_8hpp.html',1,'']]],
   ['lbann_5fquantizer_2ecpp',['lbann_quantizer.cpp',['../lbann__quantizer_8cpp.html',1,'']]],
