@@ -1,5 +1,9 @@
 var NAVTREEINDEX7 =
 {
+"dir_86ea002d1bbf4ba4531b8a232bdd1c36.html":[4,0,0,0,0,0,0,0,0,0],
+"dir_9304cbe20bcd7bb4253987a19ee1c289.html":[4,0,0,0,0,0,0,1,1,0],
+"dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html":[4,0,0,0,0,0,0,1],
+"dir_a21641b66a36c02418a5501ab2e6062e.html":[4,0,0,0,0,0,0,0,0,6],
 "dir_a6b45e92f0bfd71c0512203df27069a2.html":[4,0,0,0,0,0,0,0,0,3],
 "dir_a6f8d8b19bd1411ec381c5cd89d82b32.html":[4,0,0,0,0,0,0,1,8],
 "dir_ae19bb3c4b74b705a5918893bf9adbdd.html":[4,0,0,0,0,0,0,0,0],
@@ -69,8 +73,8 @@ var NAVTREEINDEX7 =
 "functions_type.html":[3,3,3],
 "functions_u.html":[3,3,0,19],
 "functions_v.html":[3,3,0,20],
-"functions_vars.html":[3,3,2],
 "functions_vars.html":[3,3,2,0],
+"functions_vars.html":[3,3,2],
 "functions_vars_b.html":[3,3,2,1],
 "functions_vars_c.html":[3,3,2,2],
 "functions_vars_d.html":[3,3,2,3],
@@ -104,8 +108,8 @@ var NAVTREEINDEX7 =
 "getting_started.html#getting_started_dependencies":[0,3,1],
 "getting_started.html#getting_started_download":[0,3,0],
 "getting_started.html#getting_started_scripts":[0,3,3],
-"globals.html":[4,1,0,0],
 "globals.html":[4,1,0],
+"globals.html":[4,1,0,0],
 "globals_a.html":[4,1,0,1],
 "globals_b.html":[4,1,0,2],
 "globals_c.html":[4,1,0,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX7 =
 "lbann__callback__learning__rate_8cpp.html":[4,0,0,0,0,0,0,1,0,8],
 "lbann__callback__learning__rate_8cpp_source.html":[4,0,0,0,0,0,0,1,0,8],
 "lbann__callback__learning__rate_8hpp.html":[4,0,0,0,0,0,0,0,0,0,9],
-"lbann__callback__learning__rate_8hpp_source.html":[4,0,0,0,0,0,0,0,0,0,9],
-"lbann__callback__print_8cpp.html":[4,0,0,0,0,0,0,1,0,9],
-"lbann__callback__print_8cpp_source.html":[4,0,0,0,0,0,0,1,0,9],
-"lbann__callback__print_8hpp.html":[4,0,0,0,0,0,0,0,0,0,10],
-"lbann__callback__print_8hpp_source.html":[4,0,0,0,0,0,0,0,0,0,10]
+"lbann__callback__learning__rate_8hpp_source.html":[4,0,0,0,0,0,0,0,0,0,9]
 };

@@ -39,7 +39,7 @@ var searchData=
   ['operator_3e',['operator&gt;',['../classlbann_1_1patchworks_1_1ROI.html#ac702a8cbc5324f4e709df2bbb966a545',1,'lbann::patchworks::ROI']]],
   ['operator_3e_3d',['operator&gt;=',['../classlbann_1_1patchworks_1_1ROI.html#a786b68fdcaa0ac18e49f65f000a78c94',1,'lbann::patchworks::ROI']]],
   ['optimizer',['Optimizer',['../classlbann_1_1Optimizer.html',1,'lbann']]],
-  ['optimizer',['optimizer',['../classlbann_1_1Layer.html#a5caea149f8ecebff4b77efd1248b8267',1,'lbann::Layer::optimizer()'],['../classlbann_1_1Optimizer.html#ac47f4b7d603acd6a4c89c16b6b55b58a',1,'lbann::Optimizer::Optimizer()']]],
+  ['optimizer',['Optimizer',['../classlbann_1_1Optimizer.html#ac47f4b7d603acd6a4c89c16b6b55b58a',1,'lbann::Optimizer::Optimizer()'],['../classlbann_1_1Layer.html#a5caea149f8ecebff4b77efd1248b8267',1,'lbann::Layer::optimizer()']]],
   ['optimizer_5ffac',['optimizer_fac',['../classlbann_1_1sequential__model.html#a592e67ddb0dc61bffcca628765effe7d',1,'lbann::sequential_model']]],
   ['optimizer_5ffactory',['Optimizer_factory',['../classlbann_1_1Optimizer__factory.html#a66f4559ef9b4a3a6a0d803c17378cddc',1,'lbann::Optimizer_factory']]],
   ['optimizer_5ffactory',['Optimizer_factory',['../classlbann_1_1Optimizer__factory.html',1,'lbann']]]

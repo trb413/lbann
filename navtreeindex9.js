@@ -1,5 +1,9 @@
 var NAVTREEINDEX9 =
 {
+"lbann__optimizer__adagrad_8hpp.html":[4,0,0,0,0,0,0,0,0,7,1],
+"lbann__optimizer__adagrad_8hpp_source.html":[4,0,0,0,0,0,0,0,0,7,1],
+"lbann__optimizer__adam_8cpp.html":[4,0,0,0,0,0,0,1,7,2],
+"lbann__optimizer__adam_8cpp_source.html":[4,0,0,0,0,0,0,1,7,2],
 "lbann__optimizer__adam_8hpp.html":[4,0,0,0,0,0,0,0,0,7,2],
 "lbann__optimizer__adam_8hpp_source.html":[4,0,0,0,0,0,0,0,0,7,2],
 "lbann__optimizer__rmsprop_8cpp.html":[4,0,0,0,0,0,0,1,7,3],
@@ -124,18 +128,18 @@ var NAVTREEINDEX9 =
 "mpi.html":[0,3,5],
 "mpi.html#mpi_install_linux":[0,3,5,0],
 "mpi.html#mpi_install_osx":[0,3,5,1],
-"namespaceEl.html":[3,0,2],
 "namespaceEl.html":[2,0,2],
-"namespaceanonymous__namespace_02lbann__random_8cpp_03.html":[2,0,0],
+"namespaceEl.html":[3,0,2],
 "namespaceanonymous__namespace_02lbann__random_8cpp_03.html":[3,0,0],
+"namespaceanonymous__namespace_02lbann__random_8cpp_03.html":[2,0,0],
 "namespacecudnn.html":[2,0,1],
 "namespacecudnn.html":[3,0,1],
 "namespacelbann.html":[2,0,3],
 "namespacelbann.html":[3,0,3],
 "namespacelbann_1_1metrics.html":[3,0,3,0],
 "namespacelbann_1_1metrics.html":[2,0,3,0],
-"namespacelbann_1_1objective__functions.html":[3,0,3,1],
 "namespacelbann_1_1objective__functions.html":[2,0,3,1],
+"namespacelbann_1_1objective__functions.html":[3,0,3,1],
 "namespacelbann_1_1patchworks.html":[2,0,3,2],
 "namespacelbann_1_1patchworks.html":[3,0,3,2],
 "namespacemembers.html":[2,1,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX9 =
 "struct__BOX2__USHORT.html#adbd6159498474788d1aa9342d575bae9":[3,0,14,1],
 "struct__BOX3__CHAR.html":[3,0,15],
 "struct__BOX3__CHAR.html#a05632878c4748c34c80598cd63756f90":[3,0,15,4],
-"struct__BOX3__CHAR.html#a1e53ca8bcac56a322db55f7729374b62":[3,0,15,1],
-"struct__BOX3__CHAR.html#a2fa53faa175f5f79b7cbc81e88654c04":[3,0,15,2],
-"struct__BOX3__CHAR.html#ad5f165dcce0f8f36af9cc2a5c5c5cfda":[3,0,15,3],
-"struct__BOX3__CHAR.html#adafed923057f0d9e98e7261af75b8bef":[3,0,15,5],
-"struct__BOX3__CHAR.html#adb2a528b85cdb4da96099f5309a51598":[3,0,15,0]
+"struct__BOX3__CHAR.html#a1e53ca8bcac56a322db55f7729374b62":[3,0,15,1]
 };
