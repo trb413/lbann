@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">422a724-ci221016653</span>
+   &#160;<span id="projectnumber">989ced9-ci221146878</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -118,136 +118,122 @@ $(document).ready(function(){initNavTree('patchworks__stats_8cpp_source.html',''
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// patchworks_stats.cpp - LBANN PATCHWORKS implementation for pixel statistics</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="patchworks__stats_8hpp.html">lbann/data_readers/patchworks/patchworks_stats.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>lbann {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>patchworks {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespacelbann_1_1patchworks.html#a3e37e3d26cf9f8030b4fda3fbe1afac8">   38</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacelbann_1_1patchworks.html#a3e37e3d26cf9f8030b4fda3fbe1afac8">get_single_channel_stats</a>(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&amp; _img, <a class="code" href="structlbann_1_1patchworks_1_1image__stats.html">image_stats</a>&amp; stats)</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">if</span> (_img.channels() != 1) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> img; <span class="comment">// pw_fp_t matrix</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  _img.convertTo(img, <a class="code" href="patchworks__common_8hpp.html#a9ac61cf4749d5bb94d17e935a529723e">_PW_CV_FP_</a>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  cv::MatIterator_&lt;pw_fp_t&gt; itBegin = img.begin&lt;<a class="code" href="namespacelbann_1_1patchworks.html#afdf96672b17c0629f5ba72b72e02e678">pw_fp_t</a>&gt;();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  cv::MatIterator_&lt;pw_fp_t&gt; itEnd = img.end&lt;<a class="code" href="namespacelbann_1_1patchworks.html#afdf96672b17c0629f5ba72b72e02e678">pw_fp_t</a>&gt;();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">const</span> <a class="code" href="namespacelbann_1_1patchworks.html#afdf96672b17c0629f5ba72b72e02e678">pw_fp_t</a> typeZero = <span class="keyword">static_cast&lt;</span><a class="code" href="namespacelbann_1_1patchworks.html#afdf96672b17c0629f5ba72b72e02e678">pw_fp_t</a><span class="keyword">&gt;</span>(0);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordtype">double</span> sum = 0.0;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  std::vector&lt;pw_fp_t&gt; data(itBegin, itEnd);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#a47ca64cebff8317b8355c7b36f57624a">cnt</a> = data.size();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">if</span> (stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#a47ca64cebff8317b8355c7b36f57624a">cnt</a> == 0u) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  std::sort(data.begin(), data.end());</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">if</span> (data[0] &lt; typeZero) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#a21136ab136d357119540ac432e023d1d">max</a> = data.back();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#a0fb91c0d80d37455554597ce990fc70a">min</a> = data[0];</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  std::vector&lt;pw_fp_t&gt;::const_iterator itbeg = data.begin();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  std::vector&lt;pw_fp_t&gt;::const_iterator itend = data.end();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  std::vector&lt;pw_fp_t&gt;::const_iterator itbegNZ = std::upper_bound(data.begin(), data.end(), <span class="keyword">static_cast&lt;</span><a class="code" href="namespacelbann_1_1patchworks.html#afdf96672b17c0629f5ba72b72e02e678">pw_fp_t</a><span class="keyword">&gt;</span>(0));</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#af8c8a5935681a9747a5d24361dc96893">cntZeros</a> = std::distance(itbeg, itbegNZ);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#a26928b1cff1bc8b79717c4fb26158041">minNZ</a> = *itbegNZ;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> nnz = stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#a47ca64cebff8317b8355c7b36f57624a">cnt</a> - stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#af8c8a5935681a9747a5d24361dc96893">cntZeros</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> halfPointNZ = nnz/2;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> halfPoint   = stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#a47ca64cebff8317b8355c7b36f57624a">cnt</a>/2;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  std::vector&lt;pw_fp_t&gt;::const_iterator itMedNZ = itbegNZ;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  std::vector&lt;pw_fp_t&gt;::const_iterator itMed   = itbeg;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  std::advance(itMedNZ, halfPointNZ);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  std::advance(itMed,   halfPoint);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#ab89beaa7adec093caaee3f33a21778d8">medianNZ</a> = *itMedNZ;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#a43efb012d9f65cbd262a62fa6680fa8e">median</a>   = *itMed;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  std::vector&lt;pw_fp_t&gt;::const_iterator it = itbegNZ;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">for</span>( ; it != itend; ++it) sum += *it;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#a67797339f6a3bd2de1fa2ac4c1cb6bef">avg</a> = sum/stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#a47ca64cebff8317b8355c7b36f57624a">cnt</a>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordflow">if</span> (nnz == 0u) stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#ac3cfe9bdfb0a7563f7b633e6221591d4">avgNZ</a> = stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#a67797339f6a3bd2de1fa2ac4c1cb6bef">avg</a>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">else</span> stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#ac3cfe9bdfb0a7563f7b633e6221591d4">avgNZ</a> = sum/nnz;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">double</span> var = 0.0;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">double</span> varNZ = 0.0;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  it = itbegNZ;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">for</span>(it = itbeg; it != itbegNZ; ++it) {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> dev = (*it-stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#a67797339f6a3bd2de1fa2ac4c1cb6bef">avg</a>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    var += dev*dev;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordflow">for</span>( ; it != itend; ++it) {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> dev = (*it-stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#a67797339f6a3bd2de1fa2ac4c1cb6bef">avg</a>);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    var += dev*dev;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> devNZ = (*it-stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#ac3cfe9bdfb0a7563f7b633e6221591d4">avgNZ</a>);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    varNZ += devNZ*devNZ;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#a39759501f7f427cbabeae358fdc4f5b5">stdev</a> = sqrt(var/stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#a47ca64cebff8317b8355c7b36f57624a">cnt</a>);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  stats.<a class="code" href="structlbann_1_1patchworks_1_1image__stats.html#a917e340782c3909d778292aac57edbc7">stdevNZ</a> = sqrt(varNZ/nnz);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="namespacelbann_1_1patchworks.html#afe4bb9ba05739a9d3e24ce75cf3ef302">  111</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacelbann_1_1patchworks.html#afe4bb9ba05739a9d3e24ce75cf3ef302">get_channel_stats</a>(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&amp; img, std::vector&lt;image_stats&gt;&amp; stats)</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordflow">if</span> (img.data == <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;get_channel_stats(): img not set&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  }</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nCh = img.channels();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  std::vector&lt;cv::Mat&gt; imgCh; <span class="comment">// image data per channel</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  cv::split(img, imgCh); <span class="comment">// split the image into individual channels</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  stats.clear();</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  stats.resize(nCh);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">bool</span> ok = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> ch=0; ok &amp;&amp; (ch &lt; img.channels()); ++ch) { <span class="comment">// compute statistics per channel</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    ok = <a class="code" href="namespacelbann_1_1patchworks.html#a3e37e3d26cf9f8030b4fda3fbe1afac8">get_single_channel_stats</a>(imgCh[ch], stats[ch]);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordflow">if</span> (!ok) std::cout &lt;&lt; <span class="stringliteral">&quot;Failed to get stats&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordflow">return</span> ok;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;} <span class="comment">// end of namespace patchworks</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;} <span class="comment">// end of namespace lbann</span></div>
-<div class="ttc" id="structlbann_1_1patchworks_1_1image__stats_html_a43efb012d9f65cbd262a62fa6680fa8e"><div class="ttname"><a href="structlbann_1_1patchworks_1_1image__stats.html#a43efb012d9f65cbd262a62fa6680fa8e">lbann::patchworks::image_stats::median</a></div><div class="ttdeci">pw_fp_t median</div><div class="ttdoc">median intensity of a pixel </div><div class="ttdef"><b>Definition:</b> <a href="patchworks__stats_8hpp_source.html#l00049">patchworks_stats.hpp:49</a></div></div>
-<div class="ttc" id="structlbann_1_1patchworks_1_1image__stats_html_a47ca64cebff8317b8355c7b36f57624a"><div class="ttname"><a href="structlbann_1_1patchworks_1_1image__stats.html#a47ca64cebff8317b8355c7b36f57624a">lbann::patchworks::image_stats::cnt</a></div><div class="ttdeci">size_t cnt</div><div class="ttdoc">number of values (pixels) </div><div class="ttdef"><b>Definition:</b> <a href="patchworks__stats_8hpp_source.html#l00045">patchworks_stats.hpp:45</a></div></div>
-<div class="ttc" id="structlbann_1_1patchworks_1_1image__stats_html_a67797339f6a3bd2de1fa2ac4c1cb6bef"><div class="ttname"><a href="structlbann_1_1patchworks_1_1image__stats.html#a67797339f6a3bd2de1fa2ac4c1cb6bef">lbann::patchworks::image_stats::avg</a></div><div class="ttdeci">double avg</div><div class="ttdoc">average intensity </div><div class="ttdef"><b>Definition:</b> <a href="patchworks__stats_8hpp_source.html#l00052">patchworks_stats.hpp:52</a></div></div>
-<div class="ttc" id="structlbann_1_1patchworks_1_1image__stats_html_af8c8a5935681a9747a5d24361dc96893"><div class="ttname"><a href="structlbann_1_1patchworks_1_1image__stats.html#af8c8a5935681a9747a5d24361dc96893">lbann::patchworks::image_stats::cntZeros</a></div><div class="ttdeci">size_t cntZeros</div><div class="ttdoc">number of zero values </div><div class="ttdef"><b>Definition:</b> <a href="patchworks__stats_8hpp_source.html#l00046">patchworks_stats.hpp:46</a></div></div>
-<div class="ttc" id="structlbann_1_1patchworks_1_1image__stats_html_a39759501f7f427cbabeae358fdc4f5b5"><div class="ttname"><a href="structlbann_1_1patchworks_1_1image__stats.html#a39759501f7f427cbabeae358fdc4f5b5">lbann::patchworks::image_stats::stdev</a></div><div class="ttdeci">double stdev</div><div class="ttdoc">standard deviation of intensity </div><div class="ttdef"><b>Definition:</b> <a href="patchworks__stats_8hpp_source.html#l00054">patchworks_stats.hpp:54</a></div></div>
-<div class="ttc" id="patchworks__common_8hpp_html_a9ac61cf4749d5bb94d17e935a529723e"><div class="ttname"><a href="patchworks__common_8hpp.html#a9ac61cf4749d5bb94d17e935a529723e">_PW_CV_FP_</a></div><div class="ttdeci">#define _PW_CV_FP_</div><div class="ttdef"><b>Definition:</b> <a href="patchworks__common_8hpp_source.html#l00060">patchworks_common.hpp:60</a></div></div>
-<div class="ttc" id="structlbann_1_1patchworks_1_1image__stats_html_ab89beaa7adec093caaee3f33a21778d8"><div class="ttname"><a href="structlbann_1_1patchworks_1_1image__stats.html#ab89beaa7adec093caaee3f33a21778d8">lbann::patchworks::image_stats::medianNZ</a></div><div class="ttdeci">pw_fp_t medianNZ</div><div class="ttdoc">median among non-zero values </div><div class="ttdef"><b>Definition:</b> <a href="patchworks__stats_8hpp_source.html#l00051">patchworks_stats.hpp:51</a></div></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifdef __LIB_OPENCV</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="patchworks__stats_8hpp.html">lbann/data_readers/patchworks/patchworks_stats.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>lbann {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span>patchworks {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">bool</span> get_single_channel_stats(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&amp; _img, image_stats&amp; stats)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordflow">if</span> (_img.channels() != 1) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> img; <span class="comment">// pw_fp_t matrix</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  _img.convertTo(img, _PW_CV_FP_);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  cv::MatIterator_&lt;pw_fp_t&gt; itBegin = img.begin&lt;pw_fp_t&gt;();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  cv::MatIterator_&lt;pw_fp_t&gt; itEnd = img.end&lt;pw_fp_t&gt;();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">const</span> pw_fp_t typeZero = <span class="keyword">static_cast&lt;</span>pw_fp_t<span class="keyword">&gt;</span>(0);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">double</span> sum = 0.0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  std::vector&lt;pw_fp_t&gt; data(itBegin, itEnd);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  stats.cnt = data.size();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">if</span> (stats.cnt == 0u) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  std::sort(data.begin(), data.end());</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">if</span> (data[0] &lt; typeZero) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  stats.max = data.back();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  stats.min = data[0];</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  std::vector&lt;pw_fp_t&gt;::const_iterator itbeg = data.begin();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  std::vector&lt;pw_fp_t&gt;::const_iterator itend = data.end();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  std::vector&lt;pw_fp_t&gt;::const_iterator itbegNZ = std::upper_bound(data.begin(), data.end(), <span class="keyword">static_cast&lt;</span>pw_fp_t<span class="keyword">&gt;</span>(0));</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  stats.cntZeros = std::distance(itbeg, itbegNZ);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  stats.minNZ = *itbegNZ;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> nnz = stats.cnt - stats.cntZeros;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> halfPointNZ = nnz/2;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> halfPoint   = stats.cnt/2;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  std::vector&lt;pw_fp_t&gt;::const_iterator itMedNZ = itbegNZ;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  std::vector&lt;pw_fp_t&gt;::const_iterator itMed   = itbeg;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  std::advance(itMedNZ, halfPointNZ);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  std::advance(itMed,   halfPoint);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  stats.medianNZ = *itMedNZ;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  stats.median   = *itMed;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  std::vector&lt;pw_fp_t&gt;::const_iterator it = itbegNZ;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">for</span>( ; it != itend; ++it) sum += *it;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  stats.avg = sum/stats.cnt;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">if</span> (nnz == 0u) stats.avgNZ = stats.avg;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">else</span> stats.avgNZ = sum/nnz;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">double</span> var = 0.0;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">double</span> varNZ = 0.0;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  it = itbegNZ;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordflow">for</span>(it = itbeg; it != itbegNZ; ++it) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> dev = (*it-stats.avg);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    var += dev*dev;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordflow">for</span>( ; it != itend; ++it) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> dev = (*it-stats.avg);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    var += dev*dev;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">double</span> devNZ = (*it-stats.avgNZ);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    varNZ += devNZ*devNZ;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  stats.stdev = sqrt(var/stats.cnt);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  stats.stdevNZ = sqrt(varNZ/nnz);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordtype">bool</span> get_channel_stats(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&amp; img, std::vector&lt;image_stats&gt;&amp; stats)</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordflow">if</span> (img.data == <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;get_channel_stats(): img not set&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nCh = img.channels();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  std::vector&lt;cv::Mat&gt; imgCh; <span class="comment">// image data per channel</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  cv::split(img, imgCh); <span class="comment">// split the image into individual channels</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  stats.clear();</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  stats.resize(nCh);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordtype">bool</span> ok = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> ch=0; ok &amp;&amp; (ch &lt; img.channels()); ++ch) { <span class="comment">// compute statistics per channel</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    ok = get_single_channel_stats(imgCh[ch], stats[ch]);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordflow">if</span> (!ok) std::cout &lt;&lt; <span class="stringliteral">&quot;Failed to get stats&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordflow">return</span> ok;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;} <span class="comment">// end of namespace patchworks</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;} <span class="comment">// end of namespace lbann</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#endif // __LIB_OPENCV</span></div>
 <div class="ttc" id="patchworks__stats_8hpp_html"><div class="ttname"><a href="patchworks__stats_8hpp.html">patchworks_stats.hpp</a></div></div>
-<div class="ttc" id="structlbann_1_1patchworks_1_1image__stats_html_a917e340782c3909d778292aac57edbc7"><div class="ttname"><a href="structlbann_1_1patchworks_1_1image__stats.html#a917e340782c3909d778292aac57edbc7">lbann::patchworks::image_stats::stdevNZ</a></div><div class="ttdeci">double stdevNZ</div><div class="ttdoc">standard deviation among non-zero values </div><div class="ttdef"><b>Definition:</b> <a href="patchworks__stats_8hpp_source.html#l00055">patchworks_stats.hpp:55</a></div></div>
-<div class="ttc" id="structlbann_1_1patchworks_1_1image__stats_html_a21136ab136d357119540ac432e023d1d"><div class="ttname"><a href="structlbann_1_1patchworks_1_1image__stats.html#a21136ab136d357119540ac432e023d1d">lbann::patchworks::image_stats::max</a></div><div class="ttdeci">pw_fp_t max</div><div class="ttdoc">maximum intensity of a pixel </div><div class="ttdef"><b>Definition:</b> <a href="patchworks__stats_8hpp_source.html#l00048">patchworks_stats.hpp:48</a></div></div>
-<div class="ttc" id="structlbann_1_1patchworks_1_1image__stats_html_ac3cfe9bdfb0a7563f7b633e6221591d4"><div class="ttname"><a href="structlbann_1_1patchworks_1_1image__stats.html#ac3cfe9bdfb0a7563f7b633e6221591d4">lbann::patchworks::image_stats::avgNZ</a></div><div class="ttdeci">double avgNZ</div><div class="ttdoc">average intensity among non-zeros </div><div class="ttdef"><b>Definition:</b> <a href="patchworks__stats_8hpp_source.html#l00053">patchworks_stats.hpp:53</a></div></div>
 <div class="ttc" id="datatype_8hpp_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00035">datatype.hpp:35</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00042">lbann_base.hpp:42</a></div></div>
-<div class="ttc" id="structlbann_1_1patchworks_1_1image__stats_html_a0fb91c0d80d37455554597ce990fc70a"><div class="ttname"><a href="structlbann_1_1patchworks_1_1image__stats.html#a0fb91c0d80d37455554597ce990fc70a">lbann::patchworks::image_stats::min</a></div><div class="ttdeci">pw_fp_t min</div><div class="ttdoc">minimum intensity of a pixel </div><div class="ttdef"><b>Definition:</b> <a href="patchworks__stats_8hpp_source.html#l00047">patchworks_stats.hpp:47</a></div></div>
-<div class="ttc" id="namespacelbann_1_1patchworks_html_afdf96672b17c0629f5ba72b72e02e678"><div class="ttname"><a href="namespacelbann_1_1patchworks.html#afdf96672b17c0629f5ba72b72e02e678">lbann::patchworks::pw_fp_t</a></div><div class="ttdeci">double pw_fp_t</div><div class="ttdef"><b>Definition:</b> <a href="patchworks__common_8hpp_source.html#l00057">patchworks_common.hpp:57</a></div></div>
-<div class="ttc" id="structlbann_1_1patchworks_1_1image__stats_html_a26928b1cff1bc8b79717c4fb26158041"><div class="ttname"><a href="structlbann_1_1patchworks_1_1image__stats.html#a26928b1cff1bc8b79717c4fb26158041">lbann::patchworks::image_stats::minNZ</a></div><div class="ttdeci">pw_fp_t minNZ</div><div class="ttdoc">number of non-zero pixels </div><div class="ttdef"><b>Definition:</b> <a href="patchworks__stats_8hpp_source.html#l00050">patchworks_stats.hpp:50</a></div></div>
-<div class="ttc" id="structlbann_1_1patchworks_1_1image__stats_html"><div class="ttname"><a href="structlbann_1_1patchworks_1_1image__stats.html">lbann::patchworks::image_stats</a></div><div class="ttdoc">Pixel statistics of an image. </div><div class="ttdef"><b>Definition:</b> <a href="patchworks__stats_8hpp_source.html#l00044">patchworks_stats.hpp:44</a></div></div>
-<div class="ttc" id="namespacelbann_1_1patchworks_html_afe4bb9ba05739a9d3e24ce75cf3ef302"><div class="ttname"><a href="namespacelbann_1_1patchworks.html#afe4bb9ba05739a9d3e24ce75cf3ef302">lbann::patchworks::get_channel_stats</a></div><div class="ttdeci">bool get_channel_stats(const cv::Mat &amp;img, std::vector&lt; image_stats &gt; &amp;stats)</div><div class="ttdoc">Compute the pixel statistics of an image per channel. </div><div class="ttdef"><b>Definition:</b> <a href="patchworks__stats_8cpp_source.html#l00111">patchworks_stats.cpp:111</a></div></div>
-<div class="ttc" id="namespacelbann_1_1patchworks_html_a3e37e3d26cf9f8030b4fda3fbe1afac8"><div class="ttname"><a href="namespacelbann_1_1patchworks.html#a3e37e3d26cf9f8030b4fda3fbe1afac8">lbann::patchworks::get_single_channel_stats</a></div><div class="ttdeci">bool get_single_channel_stats(const cv::Mat &amp;_img, image_stats &amp;stats)</div><div class="ttdoc">Compute the pixel statistics for a mono channel image. </div><div class="ttdef"><b>Definition:</b> <a href="patchworks__stats_8cpp_source.html#l00038">patchworks_stats.cpp:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_4fd9b0f9a8d3454cc4920413ede2913f.html">data_readers</a></li><li class="navelem"><a class="el" href="dir_9304cbe20bcd7bb4253987a19ee1c289.html">patchworks</a></li><li class="navelem"><a class="el" href="patchworks__stats_8cpp.html">patchworks_stats.cpp</a></li>
-    <li class="footer">Generated on Tue Apr 11 2017 16:00:23 for LBANN by
+    <li class="footer">Generated on Tue Apr 11 2017 22:43:04 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -28,7 +28,6 @@ var searchData=
   ['leaky_5frelu',['leaky_reLU',['../classlbann_1_1leaky__reLU__layer.html#aed7e13f8f66fd440a459eb887cac9d41',1,'lbann::leaky_reLU_layer']]],
   ['leaky_5frelu_5flayer',['leaky_reLU_layer',['../classlbann_1_1leaky__reLU__layer.html#a07c88c989b3660f37f0770778cac03b6',1,'lbann::leaky_reLU_layer']]],
   ['leaky_5freluprime',['leaky_reLUPrime',['../classlbann_1_1leaky__reLU__layer.html#a8ab6988b3a86a4c652e4846b61af5fd7',1,'lbann::leaky_reLU_layer']]],
-  ['left',['left',['../classlbann_1_1patchworks_1_1ROI.html#a223740dbd3dbab7f55381aa53c788d63',1,'lbann::patchworks::ROI']]],
   ['length_5ffloat2',['LENGTH_FLOAT2',['../datatype_8hpp.html#aba68770f9193752e0cd124c8603ad390',1,'datatype.hpp']]],
   ['length_5ffloat3',['LENGTH_FLOAT3',['../datatype_8hpp.html#a2233ece8e53cecc3ac76df4999cde078',1,'datatype.hpp']]],
   ['length_5ffloat4',['LENGTH_FLOAT4',['../datatype_8hpp.html#a45113ccd1c271d8369f35070b559fb70',1,'datatype.hpp']]],

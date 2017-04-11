@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['take_5fpatch',['take_patch',['../namespacelbann_1_1patchworks.html#a44c705ae200e5ff4352651e894b42709',1,'lbann::patchworks']]],
   ['tanh',['tanh',['../classlbann_1_1tanh__layer.html#addef58611ec7ea58cb575e985aee0237',1,'lbann::tanh_layer']]],
   ['tanhprime',['tanhPrime',['../classlbann_1_1tanh__layer.html#a709d3f8e74f426bb4a5f766e903ce7c8',1,'lbann::tanh_layer']]],
   ['target_5flayer',['target_layer',['../classlbann_1_1target__layer.html#ae2397978bc395d5f8d0c94c42ce5da2a',1,'lbann::target_layer']]],
@@ -11,7 +10,6 @@ var searchData=
   ['threshold_5fquantize_5fapply',['threshold_quantize_apply',['../classlbann_1_1lbann__quantizer.html#a616ff1a37dcf931a5eb6bd36ec9c395e',1,'lbann::lbann_quantizer']]],
   ['threshold_5funquantize',['threshold_unquantize',['../classlbann_1_1lbann__quantizer.html#a0f5f3b0149715ab59202b8884a87c7d5',1,'lbann::lbann_quantizer::threshold_unquantize(const ThreshQuantized &amp;q, Mat &amp;mat, DataType pos_thresh, DataType neg_thresh, bool delta=false)'],['../classlbann_1_1lbann__quantizer.html#a2324bba3cbb6c0d3e51bbe21555e7f1a',1,'lbann::lbann_quantizer::threshold_unquantize(const ThreshQuantized &amp;q, DistMat &amp;mat, DataType pos_thresh, DataType neg_thresh, bool delta=false)']]],
   ['threshold_5funquantize_5fapply',['threshold_unquantize_apply',['../classlbann_1_1lbann__quantizer.html#a6336263dbcf910503df46e1ae36c7a9b',1,'lbann::lbann_quantizer']]],
-  ['top',['top',['../classlbann_1_1patchworks_1_1ROI.html#a4e01c265b3a7bf2fe98c1bdd06de2515',1,'lbann::patchworks::ROI']]],
   ['train',['train',['../classlbann_1_1deep__neural__network.html#a34b3396b7645276c067ecdd118a5a00c',1,'lbann::deep_neural_network::train()'],['../classlbann_1_1greedy__layerwise__autoencoder.html#aa600aaacda4275602021b612e1a36e9f',1,'lbann::greedy_layerwise_autoencoder::train()'],['../classlbann_1_1sequential__model.html#afa3b9ca110b10aac19b7f1748f6c6291',1,'lbann::sequential_model::train()'],['../classlbann_1_1stacked__autoencoder.html#ab0be82f2e4cf447e2bbc13d498518f9b',1,'lbann::stacked_autoencoder::train()']]],
   ['train_5fmini_5fbatch',['train_mini_batch',['../classlbann_1_1deep__neural__network.html#ac05a9fd08fdaaf089bf2cf07f2e0ae9a',1,'lbann::deep_neural_network::train_mini_batch()'],['../classlbann_1_1greedy__layerwise__autoencoder.html#a1a0daefb6ece648c3c5ca0571ad0fe26',1,'lbann::greedy_layerwise_autoencoder::train_mini_batch()'],['../classlbann_1_1sequential__model.html#a13f177924130ae2748d6b457d0778ed8',1,'lbann::sequential_model::train_mini_batch()'],['../classlbann_1_1stacked__autoencoder.html#a9df69076b6202ad5969731dbe5305beb',1,'lbann::stacked_autoencoder::train_mini_batch()']]],
   ['train_5fphase',['train_phase',['../classlbann_1_1greedy__layerwise__autoencoder.html#a9ccd3dbaef125a5cd993307be7d11ba4',1,'lbann::greedy_layerwise_autoencoder']]],

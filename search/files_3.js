@@ -106,6 +106,7 @@ var searchData=
   ['lbann_5fobjective_5ffn_5fcategorical_5fcross_5fentropy_2ehpp',['lbann_objective_fn_categorical_cross_entropy.hpp',['../lbann__objective__fn__categorical__cross__entropy_8hpp.html',1,'']]],
   ['lbann_5fobjective_5ffn_5fmean_5fsquared_5ferror_2ecpp',['lbann_objective_fn_mean_squared_error.cpp',['../lbann__objective__fn__mean__squared__error_8cpp.html',1,'']]],
   ['lbann_5fobjective_5ffn_5fmean_5fsquared_5ferror_2ehpp',['lbann_objective_fn_mean_squared_error.hpp',['../lbann__objective__fn__mean__squared__error_8hpp.html',1,'']]],
+  ['lbann_5fopencv_2ehpp',['lbann_opencv.hpp',['../lbann__opencv_8hpp.html',1,'']]],
   ['lbann_5foptimizer_2ecpp',['lbann_optimizer.cpp',['../lbann__optimizer_8cpp.html',1,'']]],
   ['lbann_5foptimizer_2ehpp',['lbann_optimizer.hpp',['../lbann__optimizer_8hpp.html',1,'']]],
   ['lbann_5foptimizer_5fadagrad_2ecpp',['lbann_optimizer_adagrad.cpp',['../lbann__optimizer__adagrad_8cpp.html',1,'']]],

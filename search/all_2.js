@@ -42,7 +42,6 @@ var searchData=
   ['bmp_5finfo',['BMP_INFO',['../lbann__image__utils_8cpp.html#a24328dfb2d45e939d2576b7b4bfce310',1,'lbann_image_utils.cpp']]],
   ['bmp_5finfoheader',['BMP_INFOHEADER',['../lbann__image__utils_8cpp.html#a3eec4493d501d8ccadc44096f57a6754',1,'lbann_image_utils.cpp']]],
   ['bmp_5frgbquad',['BMP_RGBQUAD',['../lbann__image__utils_8cpp.html#a8baf369947014831914343943ef22473',1,'lbann_image_utils.cpp']]],
-  ['bottom',['bottom',['../classlbann_1_1patchworks_1_1ROI.html#a1fb873d425a7bb5a1dc3c05acb3e76d1',1,'lbann::patchworks::ROI']]],
   ['box2_5fchar',['BOX2_CHAR',['../datatype_8hpp.html#abbaa77fb3472aa0194de7378111cd94b',1,'datatype.hpp']]],
   ['box2_5fdouble',['BOX2_DOUBLE',['../datatype_8hpp.html#a2899be14f0257747e792c2f1c8e4c273',1,'datatype.hpp']]],
   ['box2_5ffloat',['BOX2_FLOAT',['../datatype_8hpp.html#a85137f467481fab31c128dbda43005fb',1,'datatype.hpp']]],

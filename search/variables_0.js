@@ -17,7 +17,5 @@ var searchData=
   ['ag_5ftime',['ag_time',['../classlbann_1_1lbann__quantizer.html#a4d3c330826fbaff8ee38f4b05cafa84a',1,'lbann::lbann_quantizer']]],
   ['aggregate_5fcost',['aggregate_cost',['../classlbann_1_1target__layer__unsupervised.html#af41d733b8678685c0adff8f4c45d9cde',1,'lbann::target_layer_unsupervised']]],
   ['alpha',['alpha',['../classlbann_1_1ELU__layer.html#a71875ccb1f1ce08a74c6ffa687e350cf',1,'lbann::ELU_layer']]],
-  ['amt',['amt',['../classlbann_1_1lbann__callback__step__learning__rate.html#adb4ffb779ea433d755f0a79f5d4354bf',1,'lbann::lbann_callback_step_learning_rate::amt()'],['../classlbann_1_1lbann__callback__adaptive__learning__rate.html#a657c51917ba2d9a62cb19c8d53149e77',1,'lbann::lbann_callback_adaptive_learning_rate::amt()']]],
-  ['avg',['avg',['../structlbann_1_1patchworks_1_1image__stats.html#a67797339f6a3bd2de1fa2ac4c1cb6bef',1,'lbann::patchworks::image_stats']]],
-  ['avgnz',['avgNZ',['../structlbann_1_1patchworks_1_1image__stats.html#ac3cfe9bdfb0a7563f7b633e6221591d4',1,'lbann::patchworks::image_stats']]]
+  ['amt',['amt',['../classlbann_1_1lbann__callback__step__learning__rate.html#adb4ffb779ea433d755f0a79f5d4354bf',1,'lbann::lbann_callback_step_learning_rate::amt()'],['../classlbann_1_1lbann__callback__adaptive__learning__rate.html#a657c51917ba2d9a62cb19c8d53149e77',1,'lbann::lbann_callback_adaptive_learning_rate::amt()']]]
 ];

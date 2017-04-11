@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">422a724-ci221016653</span>
+   &#160;<span id="projectnumber">989ced9-ci221146878</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -118,46 +118,43 @@ $(document).ready(function(){initNavTree('patchworks_8hpp_source.html','');});
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// patchworks.hpp - LBANN PATCHWORKS main interface header</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifndef _PATCHWORKS_H_INCLUDED_</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _PATCHWORKS_H_INCLUDED_</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="patchworks__common_8hpp.html">patchworks_common.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="patchworks__patch__descriptor_8hpp.html">patchworks_patch_descriptor.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span>lbann {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">namespace </span>patchworks {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;std::pair&lt;double,double&gt; <a class="code" href="namespacelbann_1_1patchworks.html#a1a30a89efaeea1a9c218ecfe2ff353c4">check_min_max</a>(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&amp; _img);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> <a class="code" href="namespacelbann_1_1patchworks.html#aa8babff4a207cf722b77f858f8ea83e6">correct_chromatic_aberration</a>(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&amp; _img);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> <a class="code" href="namespacelbann_1_1patchworks.html#a58b1211eeb8e8fdd7d7b027057437081">drop_2channels</a>(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&amp; _img);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifdef __LIB_OPENCV</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef _PATCHWORKS_H_INCLUDED_</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _PATCHWORKS_H_INCLUDED_</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="patchworks__common_8hpp.html">patchworks_common.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="patchworks__patch__descriptor_8hpp.html">patchworks_patch_descriptor.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">namespace </span>lbann {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">namespace </span>patchworks {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;std::pair&lt;double,double&gt; check_min_max(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&amp; _img);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> correct_chromatic_aberration(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&amp; _img);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> drop_2channels(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&amp; _img);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacelbann_1_1patchworks.html#a44c705ae200e5ff4352651e894b42709">take_patch</a>(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&amp; img, <span class="keyword">const</span> patch_descriptor&amp; pi, </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keyword">const</span> ROI&amp; roi, std::vector&lt;cv::Mat&gt;&amp; patches);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacelbann_1_1patchworks.html#a347312a3df026d8d37d4c7ce4d54f6f7">extract_patches</a>(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&amp; img, patch_descriptor&amp; pi, std::vector&lt;cv::Mat&gt;&amp; patches);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;} <span class="comment">// end of namespace patchworks</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;} <span class="comment">// end of namespace lbann</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif //_PATCHWORKS_H_INCLUDED_</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">bool</span> take_patch(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&amp; img, <span class="keyword">const</span> patch_descriptor&amp; pi, </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <span class="keyword">const</span> ROI&amp; roi, std::vector&lt;cv::Mat&gt;&amp; patches);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">bool</span> extract_patches(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&amp; img, patch_descriptor&amp; pi, std::vector&lt;cv::Mat&gt;&amp; patches);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;} <span class="comment">// end of namespace patchworks</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// end of namespace lbann</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif //_PATCHWORKS_H_INCLUDED_</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif // __LIB_OPENCV</span></div>
 <div class="ttc" id="patchworks__common_8hpp_html"><div class="ttname"><a href="patchworks__common_8hpp.html">patchworks_common.hpp</a></div></div>
-<div class="ttc" id="namespacelbann_1_1patchworks_html_a347312a3df026d8d37d4c7ce4d54f6f7"><div class="ttname"><a href="namespacelbann_1_1patchworks.html#a347312a3df026d8d37d4c7ce4d54f6f7">lbann::patchworks::extract_patches</a></div><div class="ttdeci">bool extract_patches(const cv::Mat &amp;img, patch_descriptor &amp;pi, std::vector&lt; cv::Mat &gt; &amp;patches)</div><div class="ttdoc">Extract patches according to the given patch description. </div><div class="ttdef"><b>Definition:</b> <a href="patchworks_8cpp_source.html#l00188">patchworks.cpp:188</a></div></div>
-<div class="ttc" id="namespacelbann_1_1patchworks_html_a44c705ae200e5ff4352651e894b42709"><div class="ttname"><a href="namespacelbann_1_1patchworks.html#a44c705ae200e5ff4352651e894b42709">lbann::patchworks::take_patch</a></div><div class="ttdeci">bool take_patch(const cv::Mat &amp;img, const patch_descriptor &amp;pi, const ROI &amp;roi, std::vector&lt; cv::Mat &gt; &amp;patches)</div><div class="ttdoc">Take one patch. </div><div class="ttdef"><b>Definition:</b> <a href="patchworks_8cpp_source.html#l00171">patchworks.cpp:171</a></div></div>
-<div class="ttc" id="namespacelbann_1_1patchworks_html_a58b1211eeb8e8fdd7d7b027057437081"><div class="ttname"><a href="namespacelbann_1_1patchworks.html#a58b1211eeb8e8fdd7d7b027057437081">lbann::patchworks::drop_2channels</a></div><div class="ttdeci">cv::Mat drop_2channels(const cv::Mat &amp;_img)</div><div class="ttdoc">Drop 2 channels randomly. </div><div class="ttdef"><b>Definition:</b> <a href="patchworks_8cpp_source.html#l00116">patchworks.cpp:116</a></div></div>
 <div class="ttc" id="patchworks__patch__descriptor_8hpp_html"><div class="ttname"><a href="patchworks__patch__descriptor_8hpp.html">patchworks_patch_descriptor.hpp</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00042">lbann_base.hpp:42</a></div></div>
-<div class="ttc" id="namespacelbann_1_1patchworks_html_a1a30a89efaeea1a9c218ecfe2ff353c4"><div class="ttname"><a href="namespacelbann_1_1patchworks.html#a1a30a89efaeea1a9c218ecfe2ff353c4">lbann::patchworks::check_min_max</a></div><div class="ttdeci">std::pair&lt; double, double &gt; check_min_max(const cv::Mat &amp;_img)</div><div class="ttdoc">Compute the min and max value of pixels. </div><div class="ttdef"><b>Definition:</b> <a href="patchworks_8cpp_source.html#l00049">patchworks.cpp:49</a></div></div>
-<div class="ttc" id="namespacelbann_1_1patchworks_html_aa8babff4a207cf722b77f858f8ea83e6"><div class="ttname"><a href="namespacelbann_1_1patchworks.html#aa8babff4a207cf722b77f858f8ea83e6">lbann::patchworks::correct_chromatic_aberration</a></div><div class="ttdeci">cv::Mat correct_chromatic_aberration(const cv::Mat &amp;_img)</div><div class="ttdoc">Adjust for reducing chromatic aberration. </div><div class="ttdef"><b>Definition:</b> <a href="patchworks_8cpp_source.html#l00065">patchworks.cpp:65</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_eb8329679e609af11719ceffa3ff5139.html">include</a></li><li class="navelem"><a class="el" href="dir_ae19bb3c4b74b705a5918893bf9adbdd.html">lbann</a></li><li class="navelem"><a class="el" href="dir_0b16036c62e9063447de1e5debde0af9.html">data_readers</a></li><li class="navelem"><a class="el" href="dir_0aad4685e5a488fb75343b7c622656d3.html">patchworks</a></li><li class="navelem"><a class="el" href="patchworks_8hpp.html">patchworks.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 11 2017 16:00:23 for LBANN by
+    <li class="footer">Generated on Tue Apr 11 2017 22:43:03 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

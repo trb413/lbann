@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['init',['init',['../classlbann_1_1patchworks_1_1patch__descriptor.html#ac318a77f9b6161a8a56b90c1f204968d',1,'lbann::patchworks::patch_descriptor::init()'],['../classlbann_1_1patchworks_1_1ROI.html#a80f81a61a00998676e13a9dd9cb1f2c7',1,'lbann::patchworks::ROI::init()']]],
   ['init_5fdata_5freaders',['init_data_readers',['../lbann__proto__common_8cpp.html#aaac7a1330b8214080e589950fac79b3e',1,'init_data_readers(bool master, const lbann_data::LbannPB &amp;p, std::map&lt; execution_mode, DataReader * &gt; &amp;data_readers, int &amp;mb_size):&#160;lbann_proto_common.cpp'],['../lbann__proto__common_8hpp.html#a53a00c050e9cc6752ee1542e125806e2',1,'init_data_readers(bool master, const lbann_data::LbannPB &amp;p, std::map&lt; execution_mode, lbann::DataReader * &gt; &amp;data_readers, int &amp;mini_batch_size):&#160;lbann_proto_common.cpp']]],
   ['init_5fdata_5fseq_5frandom',['init_data_seq_random',['../namespacelbann.html#a8987701a637ff0e678114aa77e9c4d40',1,'lbann']]],
   ['init_5fnormal',['init_normal',['../classlbann_1_1patchworks_1_1rand__patch.html#af8a1c678b983e81815edfecc9b0d91e3',1,'lbann::patchworks::rand_patch']]],
@@ -38,10 +37,5 @@ var searchData=
   ['is_5ffor_5fregression',['is_for_regression',['../classlbann_1_1io__layer.html#a84f62786812c100923e7553f704a5edc',1,'lbann::io_layer']]],
   ['is_5fgood',['is_good',['../classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e',1,'lbann::lbann_callback_checknan']]],
   ['is_5flast_5flayer',['is_last_layer',['../classlbann_1_1lbann__callback__learning__rate.html#ae7a704c0b5d1d09c35981cfe96dd64e2',1,'lbann::lbann_callback_learning_rate']]],
-  ['is_5fsendable',['is_sendable',['../classlbann_1_1lbann__comm.html#a4ba1b9a6b4eb986a348d85c2d80ca3eb',1,'lbann::lbann_comm::is_sendable(const Mat &amp;mat)'],['../classlbann_1_1lbann__comm.html#a96bcc0bc8910272f4553cf0439a6e2f9',1,'lbann::lbann_comm::is_sendable(const ElMat &amp;dist_mat)']]],
-  ['is_5fto_5fcorrect_5fchromatic_5faberration_5fat_5fpixel',['is_to_correct_chromatic_aberration_at_pixel',['../classlbann_1_1patchworks_1_1patch__descriptor.html#ae2be1b3af6d9209c949dd792825ddd89',1,'lbann::patchworks::patch_descriptor']]],
-  ['is_5fto_5fdrop_5f2channels',['is_to_drop_2channels',['../classlbann_1_1patchworks_1_1patch__descriptor.html#a83964a2dbe28ce23e546045dced5477c',1,'lbann::patchworks::patch_descriptor']]],
-  ['is_5fundefined',['is_undefined',['../classlbann_1_1patchworks_1_1ROI.html#a1ce5f0ab846deda52ec00db5018f6ae4',1,'lbann::patchworks::ROI']]],
-  ['is_5fvalid',['is_valid',['../classlbann_1_1patchworks_1_1ROI.html#a951a70a78f421231cd73f63bdf842c71',1,'lbann::patchworks::ROI']]],
-  ['is_5fwhole_5fimage',['is_whole_image',['../classlbann_1_1patchworks_1_1ROI.html#a79a7f99abcdb503b76af896f19d25266',1,'lbann::patchworks::ROI']]]
+  ['is_5fsendable',['is_sendable',['../classlbann_1_1lbann__comm.html#a4ba1b9a6b4eb986a348d85c2d80ca3eb',1,'lbann::lbann_comm::is_sendable(const Mat &amp;mat)'],['../classlbann_1_1lbann__comm.html#a96bcc0bc8910272f4553cf0439a6e2f9',1,'lbann::lbann_comm::is_sendable(const ElMat &amp;dist_mat)']]]
 ];

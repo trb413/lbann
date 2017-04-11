@@ -28,5 +28,6 @@ var dir_0b16036c62e9063447de1e5debde0af9 =
     ] ],
     [ "lbann_image_utils.hpp", "lbann__image__utils_8hpp.html", [
       [ "image_utils", "classlbann_1_1image__utils.html", "classlbann_1_1image__utils" ]
-    ] ]
+    ] ],
+    [ "lbann_opencv.hpp", "lbann__opencv_8hpp.html", null ]
 ];

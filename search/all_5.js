@@ -20,6 +20,5 @@ var searchData=
   ['evaluate_5fmini_5fbatch',['evaluate_mini_batch',['../classlbann_1_1deep__neural__network.html#acf9712a3864611c4a26fdc34c8c71f7f',1,'lbann::deep_neural_network::evaluate_mini_batch()'],['../classlbann_1_1greedy__layerwise__autoencoder.html#a74f80fe1f5473ea853bf55dfebd12416',1,'lbann::greedy_layerwise_autoencoder::evaluate_mini_batch()'],['../classlbann_1_1sequential__model.html#a7b021498067b8bfe52d390996395bff6',1,'lbann::sequential_model::evaluate_mini_batch()'],['../classlbann_1_1stacked__autoencoder.html#ae7f076bb2aa7d9cf3e80993734c86e25',1,'lbann::stacked_autoencoder::evaluate_mini_batch()']]],
   ['evaluate_5fphase',['evaluate_phase',['../classlbann_1_1greedy__layerwise__autoencoder.html#a67182a4d151a780452c14ff487e52089',1,'lbann::greedy_layerwise_autoencoder']]],
   ['execution_5fmode',['execution_mode',['../structlbann__model__header.html#aa3921e546a7235875456e55b74c430f7',1,'lbann_model_header::execution_mode()'],['../lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8',1,'execution_mode():&#160;lbann_base.hpp']]],
-  ['exists',['exists',['../namespacelbann.html#aefae2a9fc9d742ece0fa8ca7ed9ee137',1,'lbann']]],
-  ['extract_5fpatches',['extract_patches',['../namespacelbann_1_1patchworks.html#a347312a3df026d8d37d4c7ce4d54f6f7',1,'lbann::patchworks']]]
+  ['exists',['exists',['../namespacelbann.html#aefae2a9fc9d742ece0fa8ca7ed9ee137',1,'lbann']]]
 ];

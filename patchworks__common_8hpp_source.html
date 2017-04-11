@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">422a724-ci221016653</span>
+   &#160;<span id="projectnumber">989ced9-ci221146878</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -118,49 +118,48 @@ $(document).ready(function(){initNavTree('patchworks__common_8hpp_source.html','
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// patchworks_common.hpp - LBANN PATCHWORKS header for common definitions</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifndef _PATCHWORKS_COMMON_H_</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _PATCHWORKS_COMMON_H_</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span> <span class="comment">// std::pair</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="patchworks__opencv_8hpp.html">patchworks_opencv.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">namespace </span>lbann {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">namespace </span>patchworks {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="namespacelbann_1_1patchworks.html#a3028aca1246c3f3e5c8209067d4f5c54">   47</a></span>&#160;<span class="keyword">typedef</span> std::pair&lt;int, int&gt; <a class="code" href="namespacelbann_1_1patchworks.html#a3028aca1246c3f3e5c8209067d4f5c54">displacement_type</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span>  <span class="comment">// using 32-bit floating point for intermediate image data processing</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">float</span> <a class="code" href="namespacelbann_1_1patchworks.html#afdf96672b17c0629f5ba72b72e02e678">pw_fp_t</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">typedef</span> cv::Vec3f <a class="code" href="namespacelbann_1_1patchworks.html#a0c0cf24e905b2bdda0b9c19352475c6a">pw_cv_vec3</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">  #define _PATCHWORKS_STAT_FLOAT_ 32</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #define _PW_CV_FP_ CV_32FC3</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span>  <span class="comment">// using 64-bit floating point for intermediate image data processing</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="namespacelbann_1_1patchworks.html#afdf96672b17c0629f5ba72b72e02e678">   57</a></span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">double</span> <a class="code" href="namespacelbann_1_1patchworks.html#afdf96672b17c0629f5ba72b72e02e678">pw_fp_t</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="namespacelbann_1_1patchworks.html#a0c0cf24e905b2bdda0b9c19352475c6a">   58</a></span>&#160;  <span class="keyword">typedef</span> cv::Vec3d <a class="code" href="namespacelbann_1_1patchworks.html#a0c0cf24e905b2bdda0b9c19352475c6a">pw_cv_vec3</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="patchworks__common_8hpp.html#a26a7b265ac074659fc8f963143e81c2a">   59</a></span>&#160;<span class="preprocessor">  #define _PATCHWORKS_STAT_FLOAT_ 64</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="patchworks__common_8hpp.html#a9ac61cf4749d5bb94d17e935a529723e">   60</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #define _PW_CV_FP_ CV_64FC3</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;} <span class="comment">// end of namespace patchworks</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;} <span class="comment">// end of namespace lbann</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif // _PATCHWORKS_COMMON_H_</span></div>
-<div class="ttc" id="namespacelbann_1_1patchworks_html_a3028aca1246c3f3e5c8209067d4f5c54"><div class="ttname"><a href="namespacelbann_1_1patchworks.html#a3028aca1246c3f3e5c8209067d4f5c54">lbann::patchworks::displacement_type</a></div><div class="ttdeci">std::pair&lt; int, int &gt; displacement_type</div><div class="ttdoc">Patch displacement type. </div><div class="ttdef"><b>Definition:</b> <a href="patchworks__common_8hpp_source.html#l00047">patchworks_common.hpp:47</a></div></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifdef __LIB_OPENCV</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifndef _PATCHWORKS_COMMON_H_</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _PATCHWORKS_COMMON_H_</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span> <span class="comment">// std::pair</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="patchworks__opencv_8hpp.html">patchworks_opencv.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">namespace </span>lbann {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">namespace </span>patchworks {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">typedef</span> std::pair&lt;int, int&gt; displacement_type;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor"></span>  <span class="comment">// using 32-bit floating point for intermediate image data processing</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">float</span> pw_fp_t;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">typedef</span> cv::Vec3f pw_cv_vec3;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">  #define _PATCHWORKS_STAT_FLOAT_ 32</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #define _PW_CV_FP_ CV_32FC3</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span>  <span class="comment">// using 64-bit floating point for intermediate image data processing</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">double</span> pw_fp_t;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">typedef</span> cv::Vec3d pw_cv_vec3;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">  #define _PATCHWORKS_STAT_FLOAT_ 64</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #define _PW_CV_FP_ CV_64FC3</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;} <span class="comment">// end of namespace patchworks</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;} <span class="comment">// end of namespace lbann</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif // _PATCHWORKS_COMMON_H_</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif // __LIB_OPENCV</span></div>
 <div class="ttc" id="patchworks__opencv_8hpp_html"><div class="ttname"><a href="patchworks__opencv_8hpp.html">patchworks_opencv.hpp</a></div></div>
-<div class="ttc" id="namespacelbann_1_1patchworks_html_afdf96672b17c0629f5ba72b72e02e678"><div class="ttname"><a href="namespacelbann_1_1patchworks.html#afdf96672b17c0629f5ba72b72e02e678">lbann::patchworks::pw_fp_t</a></div><div class="ttdeci">double pw_fp_t</div><div class="ttdef"><b>Definition:</b> <a href="patchworks__common_8hpp_source.html#l00057">patchworks_common.hpp:57</a></div></div>
-<div class="ttc" id="namespacelbann_1_1patchworks_html_a0c0cf24e905b2bdda0b9c19352475c6a"><div class="ttname"><a href="namespacelbann_1_1patchworks.html#a0c0cf24e905b2bdda0b9c19352475c6a">lbann::patchworks::pw_cv_vec3</a></div><div class="ttdeci">cv::Vec3d pw_cv_vec3</div><div class="ttdef"><b>Definition:</b> <a href="patchworks__common_8hpp_source.html#l00058">patchworks_common.hpp:58</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_eb8329679e609af11719ceffa3ff5139.html">include</a></li><li class="navelem"><a class="el" href="dir_ae19bb3c4b74b705a5918893bf9adbdd.html">lbann</a></li><li class="navelem"><a class="el" href="dir_0b16036c62e9063447de1e5debde0af9.html">data_readers</a></li><li class="navelem"><a class="el" href="dir_0aad4685e5a488fb75343b7c622656d3.html">patchworks</a></li><li class="navelem"><a class="el" href="patchworks__common_8hpp.html">patchworks_common.hpp</a></li>
-    <li class="footer">Generated on Tue Apr 11 2017 16:00:23 for LBANN by
+    <li class="footer">Generated on Tue Apr 11 2017 22:43:03 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -11,7 +11,6 @@ var searchData=
   ['datareader_5fmnist',['DataReader_MNIST',['../classlbann_1_1DataReader__MNIST.html#af0ebcd544c96f9e3d52447537b6ea3e3',1,'lbann::DataReader_MNIST::DataReader_MNIST(int batchSize, bool shuffle)'],['../classlbann_1_1DataReader__MNIST.html#a811dc78c156c1eaf0ccb13f93910967f',1,'lbann::DataReader_MNIST::DataReader_MNIST(int batchSize)']]],
   ['dataset',['dataset',['../classlbann_1_1dataset.html#a1390264fd7c176b4dda8f2f33bcae7ba',1,'lbann::dataset']]],
   ['deep_5fneural_5fnetwork',['deep_neural_network',['../classlbann_1_1deep__neural__network.html#ac8575065b5213d9c00de2e97c436d834',1,'lbann::deep_neural_network']]],
-  ['define_5fpatch_5fset',['define_patch_set',['../classlbann_1_1patchworks_1_1patch__descriptor.html#a9ac3eef2405eebb204cc099bd35d6d83',1,'lbann::patchworks::patch_descriptor']]],
   ['disable_5faugmentation',['disable_augmentation',['../classlbann_1_1lbann__image__preprocessor.html#a871cb543ee6c132a76e16045a1a2a9f3',1,'lbann::lbann_image_preprocessor']]],
   ['distribute_5ffrom_5flocal_5fmatrix',['distribute_from_local_matrix',['../classlbann_1_1distributed__minibatch__parallel__io.html#ac5d6b3b6740f91ef083eeac3cc52c10a',1,'lbann::distributed_minibatch_parallel_io']]],
   ['distributed_5fminibatch_5fparallel_5fio',['distributed_minibatch_parallel_io',['../classlbann_1_1distributed__minibatch__parallel__io.html#aa35307f86d664e0fd3cc98a645f1589d',1,'lbann::distributed_minibatch_parallel_io']]],
@@ -43,6 +42,5 @@ var searchData=
   ['dot_5ffloat2',['DOT_FLOAT2',['../datatype_8hpp.html#ab8ef086bcdcdf09c15e9a5800cd8f4cc',1,'datatype.hpp']]],
   ['dot_5ffloat3',['DOT_FLOAT3',['../datatype_8hpp.html#a567610ce79c815c48c5d861ca38f1929',1,'datatype.hpp']]],
   ['dot_5ffloat4',['DOT_FLOAT4',['../datatype_8hpp.html#adb94f7fd9846690b4b1c257e93fe2e49',1,'datatype.hpp']]],
-  ['drop_5f2channels',['drop_2channels',['../namespacelbann_1_1patchworks.html#a58b1211eeb8e8fdd7d7b027057437081',1,'lbann::patchworks']]],
   ['dropout',['dropout',['../classlbann_1_1dropout.html#a475a5f62e79fddc530dcf9982ace918a',1,'lbann::dropout']]]
 ];

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['access_5fpositions',['access_positions',['../classlbann_1_1patchworks_1_1patch__descriptor.html#a80e1ed19f6f82f97a7242ef87e257498',1,'lbann::patchworks::patch_descriptor']]],
   ['activation_5fname',['activation_name',['../classlbann_1_1Activation.html#a0f754b8f10cc81f13a318ffb8fc754b3',1,'lbann::Activation']]],
   ['adagrad',['Adagrad',['../classlbann_1_1Adagrad.html#a5cf6582fca9b7c09fa5c66f7e307fc50',1,'lbann::Adagrad']]],
   ['adagrad_5ffactory',['Adagrad_factory',['../classlbann_1_1Adagrad__factory.html#a6ec787837653bdfebf0606b132ab8f88',1,'lbann::Adagrad_factory']]],
@@ -25,7 +24,6 @@ var searchData=
   ['affine_5ftrans',['affine_trans',['../classlbann_1_1lbann__image__preprocessor.html#adb9e017aeac52a9b5d392f17188d1057',1,'lbann::lbann_image_preprocessor']]],
   ['am_5fmodel_5fmaster',['am_model_master',['../classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac',1,'lbann::lbann_comm']]],
   ['am_5fworld_5fmaster',['am_world_master',['../classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5',1,'lbann::lbann_comm']]],
-  ['area',['area',['../classlbann_1_1patchworks_1_1ROI.html#a25d38bcdf86c297ee8437758c23e7185',1,'lbann::patchworks::ROI']]],
   ['at_5fepoch_5fstart',['at_epoch_start',['../classlbann_1_1model.html#a606cc1d218b1f609b5a02b07e7f4bcee',1,'lbann::model::at_epoch_start()'],['../classlbann_1_1sequential__model.html#acc7bcdbc4ade874d6e2fd4e1e5e54f0c',1,'lbann::sequential_model::at_epoch_start()']]],
   ['at_5fnew_5fepoch',['at_new_epoch',['../classlbann_1_1DataReader.html#a8dc49d9479d54e50123a6e21ffa8d023',1,'lbann::DataReader::at_new_epoch()'],['../classlbann_1_1io__layer.html#a4f0e3bbd6bc638432723179efc2998ab',1,'lbann::io_layer::at_new_epoch()']]],
   ['augment',['augment',['../classlbann_1_1lbann__image__preprocessor.html#a27cb5182c4f764cbfa4edecbb78ef29d',1,'lbann::lbann_image_preprocessor']]],
