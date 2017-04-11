@@ -9,6 +9,7 @@ var searchData=
   ['_5f_5fswapbyteorder32',['__swapByteOrder32',['../datatype_8hpp.html#a7e002d4c58f444af882340b4a8d4d4d5',1,'datatype.hpp']]],
   ['_5f_5fswapendianint',['__swapEndianInt',['../lbann__data__reader__mnist_8cpp.html#a04d24318b3dbcb7816ebd12552647803',1,'lbann_data_reader_mnist.cpp']]],
   ['_5f_5fuincgamma',['__uincgamma',['../datatype_8hpp.html#ac182250ba70e0934329cf26d00244873',1,'datatype.hpp']]],
+  ['_5fdef_5fcv_5fimage_5ftype_5fb_5fu',['_def_cv_image_type_B_U',['../namespacelbann_1_1patchworks.html#acd8a94e6f7f8c41e6db14752775debad',1,'lbann::patchworks::_def_cv_image_type_B_U(8, U, uint8_t) _def_cv_image_type_B_U(8'],['../namespacelbann_1_1patchworks.html#ae9778569323779204394315f7e0c5009',1,'lbann::patchworks::_def_cv_image_type_B_U(16, U, uint16_t) _def_cv_image_type_B_U(16'],['../namespacelbann_1_1patchworks.html#acb090e166f4ef212fd9d4c89e19caba5',1,'lbann::patchworks::_def_cv_image_type_B_U(32, S, int32_t) _def_cv_image_type_B_U(32']]],
   ['_5fdisp_5funit',['_disp_unit',['../namespacelbann_1_1metrics.html#aaa0e50becab147be6623e1e0feb27b81',1,'lbann::metrics']]],
   ['_5fdisplay_5fmatrix',['_display_matrix',['../lbann__base_8hpp.html#aa5a078e4333b551f498feb743c5d3fc9',1,'lbann_base.hpp']]],
   ['_5flayer_5ftype_5fto_5fstring',['_layer_type_to_string',['../namespacelbann.html#a65056cb9ae34866d6252f18da0697c58',1,'lbann']]],

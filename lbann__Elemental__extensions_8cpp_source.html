@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">843c25d-ci220683127</span>
+   &#160;<span id="projectnumber">e1e78be-ci220882541</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -132,12 +132,12 @@ $(document).ready(function(){initNavTree('lbann__Elemental__extensions_8cpp_sour
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// Input matrix parameters</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">const</span> Int m = X.Height();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">const</span> Int n = X.Width();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> F* XBuf = X.LockedBuffer();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> <a class="code" href="namespacelbann_1_1patchworks.html#a69892c255d7f3af24fa1bf737735655b">F</a>* XBuf = X.LockedBuffer();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">const</span> Int XLDim = X.LDim();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// Initialize output</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    Zeros( sums, n, 1 );</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    F* sumsBuf = sums.Buffer();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="namespacelbann_1_1patchworks.html#a69892c255d7f3af24fa1bf737735655b">F</a>* sumsBuf = sums.Buffer();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// Compute sum over each column</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    EL_PARALLEL_FOR</div>
@@ -168,6 +168,7 @@ $(document).ready(function(){initNavTree('lbann__Elemental__extensions_8cpp_sour
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <span class="comment">// namespace El</span></div>
 <div class="ttc" id="lbann__Elemental__extensions_8h_html_a1c4169a84c56c6233350847efb61e539"><div class="ttname"><a href="lbann__Elemental__extensions_8h.html#a1c4169a84c56c6233350847efb61e539">LBANN_PROTO_DOUBLE</a></div><div class="ttdeci">#define LBANN_PROTO_DOUBLE</div><div class="ttdef"><b>Definition:</b> <a href="lbann__Elemental__extensions_8h_source.html#l00072">lbann_Elemental_extensions.h:72</a></div></div>
 <div class="ttc" id="lbann__Elemental__extensions_8h_html_aabb751b985c8fbc1083ba9f0bf2b5c38"><div class="ttname"><a href="lbann__Elemental__extensions_8h.html#aabb751b985c8fbc1083ba9f0bf2b5c38">LBANN_PROTO_FLOAT</a></div><div class="ttdeci">#define LBANN_PROTO_FLOAT</div><div class="ttdef"><b>Definition:</b> <a href="lbann__Elemental__extensions_8h_source.html#l00069">lbann_Elemental_extensions.h:69</a></div></div>
+<div class="ttc" id="namespacelbann_1_1patchworks_html_a69892c255d7f3af24fa1bf737735655b"><div class="ttname"><a href="namespacelbann_1_1patchworks.html#a69892c255d7f3af24fa1bf737735655b">lbann::patchworks::F</a></div><div class="ttdeci">int8_t int16_t F</div><div class="ttdef"><b>Definition:</b> <a href="patchworks__opencv_8hpp_source.html#l00108">patchworks_opencv.hpp:108</a></div></div>
 <div class="ttc" id="lbann__Elemental__extensions_8h_html"><div class="ttname"><a href="lbann__Elemental__extensions_8h.html">lbann_Elemental_extensions.h</a></div></div>
 <div class="ttc" id="namespaceEl_html_a09d5c471681b2b48fbe4c5e6bfd0b3d3"><div class="ttname"><a href="namespaceEl.html#a09d5c471681b2b48fbe4c5e6bfd0b3d3">El::ColumnSum</a></div><div class="ttdeci">void ColumnSum(const Matrix&lt; F &gt; &amp;X, Matrix&lt; F &gt; &amp;sums)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__Elemental__extensions_8cpp_source.html#l00036">lbann_Elemental_extensions.cpp:36</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -176,7 +177,7 @@ $(document).ready(function(){initNavTree('lbann__Elemental__extensions_8cpp_sour
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="lbann__Elemental__extensions_8cpp.html">lbann_Elemental_extensions.cpp</a></li>
-    <li class="footer">Generated on Mon Apr 10 2017 19:14:06 for LBANN by
+    <li class="footer">Generated on Tue Apr 11 2017 09:13:00 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

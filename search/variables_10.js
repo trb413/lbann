@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['s',['S',['../namespacelbann_1_1patchworks.html#a936d0f99fadec35a11027b6062be630e',1,'lbann::patchworks']]],
   ['saveimagedir',['SaveImageDir',['../classlbann_1_1TrainingParams.html#a05e53af778b1e88671b839f860e83a84',1,'lbann::TrainingParams']]],
   ['savemodel',['SaveModel',['../classlbann_1_1TrainingParams.html#a7b828e13978654bf472399668b19cc6a',1,'lbann::TrainingParams']]],
   ['shuffledindices',['ShuffledIndices',['../classlbann_1_1DataReader.html#a17405e51da149192baadc64a601fd352',1,'lbann::DataReader']]],

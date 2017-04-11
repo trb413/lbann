@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">843c25d-ci220683127</span>
+   &#160;<span id="projectnumber">e1e78be-ci220882541</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -138,12 +138,12 @@ template&lt;typename F &gt; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// Input matrix parameters</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">const</span> Int m = X.Height();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">const</span> Int n = X.Width();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> F* XBuf = X.LockedBuffer();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> <a class="code" href="namespacelbann_1_1patchworks.html#a69892c255d7f3af24fa1bf737735655b">F</a>* XBuf = X.LockedBuffer();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">const</span> Int XLDim = X.LDim();</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// Initialize output</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    Zeros( sums, n, 1 );</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    F* sumsBuf = sums.Buffer();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="namespacelbann_1_1patchworks.html#a69892c255d7f3af24fa1bf737735655b">F</a>* sumsBuf = sums.Buffer();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// Compute sum over each column</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    EL_PARALLEL_FOR</div>
@@ -155,6 +155,7 @@ template&lt;typename F &gt; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="ttc" id="namespacelbann_1_1patchworks_html_a69892c255d7f3af24fa1bf737735655b"><div class="ttname"><a href="namespacelbann_1_1patchworks.html#a69892c255d7f3af24fa1bf737735655b">lbann::patchworks::F</a></div><div class="ttdeci">int8_t int16_t F</div><div class="ttdef"><b>Definition:</b> <a href="patchworks__opencv_8hpp_source.html#l00108">patchworks_opencv.hpp:108</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -221,7 +222,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceEl.html">El</a></li>
-    <li class="footer">Generated on Mon Apr 10 2017 19:14:07 for LBANN by
+    <li class="footer">Generated on Tue Apr 11 2017 09:13:01 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

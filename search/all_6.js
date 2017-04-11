@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['f',['F',['../namespacelbann_1_1patchworks.html#a69892c255d7f3af24fa1bf737735655b',1,'lbann::patchworks']]],
   ['false',['false',['../lbann__target__layer__unsupervised_8cpp.html#ae6c865df784842196d411c1466b01686',1,'lbann_target_layer_unsupervised.cpp']]],
   ['fast_5fgenerator',['fast_generator',['../namespaceanonymous__namespace_02lbann__random_8cpp_03.html#a7aed666418d5fc8497675f4508a6f5ef',1,'anonymous_namespace{lbann_random.cpp}']]],
   ['fast_5frand_5fint',['fast_rand_int',['../namespacelbann.html#a557aaed6267e7aaf583a75149e9c670c',1,'lbann']]],
@@ -34,6 +35,6 @@ var searchData=
   ['fp_5fweights',['fp_weights',['../classlbann_1_1regularizer.html#ab36e9a970736527ae2e8e73b723a3de4',1,'lbann::regularizer']]],
   ['free',['free',['../classlbann_1_1DataReader__CIFAR10.html#aee6167d540f2e11c50cb10d0998da744',1,'lbann::DataReader_CIFAR10::free()'],['../classlbann_1_1DataReader__ImageNet.html#af7903ee803e3212919c67769850f4ddf',1,'lbann::DataReader_ImageNet::free()']]],
   ['fully_5fconnected',['fully_connected',['../namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a156e322bc71c040cbb092c46ed11c5cb',1,'lbann']]],
-  ['fullyconnectedlayer',['FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html#a9c033b04665a87308d0783c658e81aea',1,'lbann::FullyConnectedLayer']]],
-  ['fullyconnectedlayer',['FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html',1,'lbann']]]
+  ['fullyconnectedlayer',['FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html',1,'lbann']]],
+  ['fullyconnectedlayer',['FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html#a9c033b04665a87308d0783c658e81aea',1,'lbann::FullyConnectedLayer']]]
 ];

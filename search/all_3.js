@@ -68,5 +68,14 @@ var searchData=
   ['currentpos',['CurrentPos',['../classlbann_1_1DataReader.html#a50648e62f6eafb634aa1faae9e3c8cac',1,'lbann::DataReader']]],
   ['custom_5fschedule',['custom_schedule',['../classlbann_1_1lbann__callback__custom__learning__rate.html#ac6b8d106a3b4c77bf50ae28ddfb53a31',1,'lbann::lbann_callback_custom_learning_rate']]],
   ['cutility',['CUtility',['../classlbann_1_1CUtility.html',1,'lbann']]],
+  ['cv_5fdepth_5ftype',['cv_depth_type',['../structlbann_1_1patchworks_1_1cv__depth__type.html',1,'lbann::patchworks']]],
+  ['cv_5fdepth_5ftype_3c_20cv_5f16s_20_3e',['cv_depth_type&lt; CV_16S &gt;',['../structlbann_1_1patchworks_1_1cv__depth__type_3_01CV__16S_01_4.html',1,'lbann::patchworks']]],
+  ['cv_5fdepth_5ftype_3c_20cv_5f16u_20_3e',['cv_depth_type&lt; CV_16U &gt;',['../structlbann_1_1patchworks_1_1cv__depth__type_3_01CV__16U_01_4.html',1,'lbann::patchworks']]],
+  ['cv_5fdepth_5ftype_3c_20cv_5f32f_20_3e',['cv_depth_type&lt; CV_32F &gt;',['../structlbann_1_1patchworks_1_1cv__depth__type_3_01CV__32F_01_4.html',1,'lbann::patchworks']]],
+  ['cv_5fdepth_5ftype_3c_20cv_5f32s_20_3e',['cv_depth_type&lt; CV_32S &gt;',['../structlbann_1_1patchworks_1_1cv__depth__type_3_01CV__32S_01_4.html',1,'lbann::patchworks']]],
+  ['cv_5fdepth_5ftype_3c_20cv_5f64f_20_3e',['cv_depth_type&lt; CV_64F &gt;',['../structlbann_1_1patchworks_1_1cv__depth__type_3_01CV__64F_01_4.html',1,'lbann::patchworks']]],
+  ['cv_5fdepth_5ftype_3c_20cv_5f8s_20_3e',['cv_depth_type&lt; CV_8S &gt;',['../structlbann_1_1patchworks_1_1cv__depth__type_3_01CV__8S_01_4.html',1,'lbann::patchworks']]],
+  ['cv_5fdepth_5ftype_3c_20cv_5f8u_20_3e',['cv_depth_type&lt; CV_8U &gt;',['../structlbann_1_1patchworks_1_1cv__depth__type_3_01CV__8U_01_4.html',1,'lbann::patchworks']]],
+  ['cv_5fimage_5ftype',['cv_image_type',['../structlbann_1_1patchworks_1_1cv__image__type.html',1,'lbann::patchworks']]],
   ['cv_5fpixels',['cv_pixels',['../classlbann_1_1lbann__image__preprocessor.html#a7dc609e33febdc7fc29bdc9270594bea',1,'lbann::lbann_image_preprocessor']]]
 ];
