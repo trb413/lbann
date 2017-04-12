@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"functions_l.html":[3,3,0,10],
+"functions_m.html":[3,3,0,11],
 "functions_n.html":[3,3,0,12],
 "functions_o.html":[3,3,0,13],
 "functions_p.html":[3,3,0,14],
@@ -44,8 +46,8 @@ var NAVTREEINDEX7 =
 "getting_started.html#getting_started_dependencies":[0,3,1],
 "getting_started.html#getting_started_download":[0,3,0],
 "getting_started.html#getting_started_scripts":[0,3,3],
-"globals.html":[4,1,0],
 "globals.html":[4,1,0,0],
+"globals.html":[4,1,0],
 "globals_a.html":[4,1,0,1],
 "globals_b.html":[4,1,0,2],
 "globals_c.html":[4,1,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "lbann__distributed__minibatch__parallel__io_8cpp_source.html":[4,0,0,0,0,0,0,1,2,0],
 "lbann__distributed__minibatch__parallel__io_8hpp.html":[4,0,0,0,0,0,0,0,0,2,0],
 "lbann__distributed__minibatch__parallel__io_8hpp_source.html":[4,0,0,0,0,0,0,0,0,2,0],
-"lbann__dropout_8cpp.html":[4,0,0,0,0,0,0,1,9,0],
-"lbann__dropout_8cpp_source.html":[4,0,0,0,0,0,0,1,9,0],
-"lbann__dropout_8hpp.html":[4,0,0,0,0,0,0,0,0,9,0]
+"lbann__dropout_8cpp.html":[4,0,0,0,0,0,0,1,9,0]
 };

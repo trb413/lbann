@@ -1,5 +1,7 @@
 var NAVTREEINDEX9 =
 {
+"lbann__quantizer__impl_8hpp_source.html":[4,0,0,0,0,0,0,0,0,10,4],
+"lbann__random_8cpp.html":[4,0,0,0,0,0,0,1,10,2],
 "lbann__random_8cpp.html#a057b6c1efb3f6fcbe8ebe08f8506fee1":[4,0,0,0,0,0,0,1,10,2,2],
 "lbann__random_8cpp.html#a1a7ffde5dcab1f39986adff100020262":[4,0,0,0,0,0,0,1,10,2,0],
 "lbann__random_8cpp.html#a36d1b52a12cd2346076af0b35f49efed":[4,0,0,0,0,0,0,1,10,2,12],
@@ -74,12 +76,12 @@ var NAVTREEINDEX9 =
 "namespacecudnn.html":[3,0,1],
 "namespacelbann.html":[2,0,3],
 "namespacelbann.html":[3,0,3],
-"namespacelbann_1_1metrics.html":[2,0,3,0],
 "namespacelbann_1_1metrics.html":[3,0,3,0],
+"namespacelbann_1_1metrics.html":[2,0,3,0],
 "namespacelbann_1_1objective__functions.html":[3,0,3,1],
 "namespacelbann_1_1objective__functions.html":[2,0,3,1],
-"namespacelbann_1_1patchworks.html":[3,0,3,2],
 "namespacelbann_1_1patchworks.html":[2,0,3,2],
+"namespacelbann_1_1patchworks.html":[3,0,3,2],
 "namespacemembers.html":[2,1,0],
 "namespacemembers_enum.html":[2,1,4],
 "namespacemembers_eval.html":[2,1,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "struct__INT3.html#adfdd79e81f0ccc4232d48624fe123775":[3,0,32,2],
 "struct__INT3.html#ae176143b9d0ccc19ef89b9de5c21cc0f":[3,0,32,0],
 "struct__INT4.html":[3,0,33],
-"struct__INT4.html#a6026a55e90f3ae7f073a76c1b49a358b":[3,0,33,0],
-"struct__INT4.html#a7461ee770492ed80fb7c600eeaad7207":[3,0,33,3],
-"struct__INT4.html#a994609950db7a4f9f9dc4f99a6b70f44":[3,0,33,1]
+"struct__INT4.html#a6026a55e90f3ae7f073a76c1b49a358b":[3,0,33,0]
 };

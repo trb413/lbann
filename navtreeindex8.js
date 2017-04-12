@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"lbann__dropout_8cpp_source.html":[4,0,0,0,0,0,0,1,9,0],
+"lbann__dropout_8hpp.html":[4,0,0,0,0,0,0,0,0,9,0],
 "lbann__dropout_8hpp_source.html":[4,0,0,0,0,0,0,0,0,9,0],
 "lbann__exception_8hpp.html":[4,0,0,0,0,0,0,0,0,10,2],
 "lbann__exception_8hpp.html#a06fd1f9a7d05d355fa9936c46347a77f":[4,0,0,0,0,0,0,0,0,10,2,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "lbann__quantizer_8hpp.html":[4,0,0,0,0,0,0,0,0,10,3],
 "lbann__quantizer_8hpp.html#a91ab3ec5ad5377e7d83209c938b0cfcc":[4,0,0,0,0,0,0,0,0,10,3,3],
 "lbann__quantizer_8hpp_source.html":[4,0,0,0,0,0,0,0,0,10,3],
-"lbann__quantizer__impl_8hpp.html":[4,0,0,0,0,0,0,0,0,10,4],
-"lbann__quantizer__impl_8hpp_source.html":[4,0,0,0,0,0,0,0,0,10,4],
-"lbann__random_8cpp.html":[4,0,0,0,0,0,0,1,10,2]
+"lbann__quantizer__impl_8hpp.html":[4,0,0,0,0,0,0,0,0,10,4]
 };
