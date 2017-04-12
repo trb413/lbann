@@ -27,6 +27,7 @@ var searchData=
   ['_7elbann_5fexception',['~lbann_exception',['../classlbann_1_1lbann__exception.html#aaab0c49d82dbbfde7faee4c661b5979a',1,'lbann::lbann_exception']]],
   ['_7elbann_5fimage_5fpreprocessor',['~lbann_image_preprocessor',['../classlbann_1_1lbann__image__preprocessor.html#aaabfad8d6923680cf4943f6f5290c682',1,'lbann::lbann_image_preprocessor']]],
   ['_7elbann_5fquantizer',['~lbann_quantizer',['../classlbann_1_1lbann__quantizer.html#ac0cc07008ff963949c2cb7b91786c61c',1,'lbann::lbann_quantizer']]],
+  ['_7elocal_5fresponse_5fnormalization_5flayer',['~local_response_normalization_layer',['../classlbann_1_1local__response__normalization__layer.html#adc47042e57fd7c406c70def96fc7802a',1,'lbann::local_response_normalization_layer']]],
   ['_7emean_5fsquared_5ferror',['~mean_squared_error',['../classlbann_1_1metrics_1_1mean__squared__error.html#ac83d4649d2816d02f94d90924cfa06fa',1,'lbann::metrics::mean_squared_error::~mean_squared_error()'],['../classlbann_1_1objective__functions_1_1mean__squared__error.html#a01008f4a9fb66335fc6773b5410bc879',1,'lbann::objective_functions::mean_squared_error::~mean_squared_error()']]],
   ['_7emetric',['~metric',['../classlbann_1_1metrics_1_1metric.html#af8dda0ac0fe667b4a5f770e3b6ddc6f8',1,'lbann::metrics::metric']]],
   ['_7emodel',['~model',['../classlbann_1_1model.html#a11eeeb534f3fee908e59e9b5fb1abf42',1,'lbann::model']]],

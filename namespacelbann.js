@@ -48,6 +48,7 @@ var namespacelbann =
     [ "convolutional_layer", "classlbann_1_1convolutional__layer.html", "classlbann_1_1convolutional__layer" ],
     [ "layer_factory", "classlbann_1_1layer__factory.html", "classlbann_1_1layer__factory" ],
     [ "FullyConnectedLayer", "classlbann_1_1FullyConnectedLayer.html", "classlbann_1_1FullyConnectedLayer" ],
+    [ "local_response_normalization_layer", "classlbann_1_1local__response__normalization__layer.html", "classlbann_1_1local__response__normalization__layer" ],
     [ "pooling_layer", "classlbann_1_1pooling__layer.html", "classlbann_1_1pooling__layer" ],
     [ "SoftmaxLayer", "classlbann_1_1SoftmaxLayer.html", "classlbann_1_1SoftmaxLayer" ],
     [ "target_layer", "classlbann_1_1target__layer.html", "classlbann_1_1target__layer" ],

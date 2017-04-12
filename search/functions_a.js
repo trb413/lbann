@@ -45,5 +45,6 @@ var searchData=
   ['loadfromfile',['loadFromFile',['../classlbann_1_1Layer.html#a29f7d292db0394489f1302b2aae81dc4',1,'lbann::Layer']]],
   ['loadjpg',['loadJPG',['../classlbann_1_1image__utils.html#abefdf10cea3cdaf7dfdf758752ecbd6b',1,'lbann::image_utils']]],
   ['loadpgm',['loadPGM',['../classlbann_1_1image__utils.html#a76d25c0798c6ea147345521633279a9b',1,'lbann::image_utils']]],
-  ['loadpng',['loadPNG',['../classlbann_1_1image__utils.html#aabe8724b1066c59b2d5b85b183b7f99a',1,'lbann::image_utils']]]
+  ['loadpng',['loadPNG',['../classlbann_1_1image__utils.html#aabe8724b1066c59b2d5b85b183b7f99a',1,'lbann::image_utils']]],
+  ['local_5fresponse_5fnormalization_5flayer',['local_response_normalization_layer',['../classlbann_1_1local__response__normalization__layer.html#ab3f45647ecd01ce1603e06144955958d',1,'lbann::local_response_normalization_layer']]]
 ];

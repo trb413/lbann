@@ -29,5 +29,6 @@ var searchData=
   ['lbann_5fmodel_5fsequential_5fheader',['lbann_model_sequential_header',['../structlbann__model__sequential__header.html',1,'']]],
   ['lbann_5fquantizer',['lbann_quantizer',['../classlbann_1_1lbann__quantizer.html',1,'lbann']]],
   ['lbann_5fsummary',['lbann_summary',['../classlbann_1_1lbann__summary.html',1,'lbann']]],
-  ['leaky_5frelu_5flayer',['leaky_reLU_layer',['../classlbann_1_1leaky__reLU__layer.html',1,'lbann']]]
+  ['leaky_5frelu_5flayer',['leaky_reLU_layer',['../classlbann_1_1leaky__reLU__layer.html',1,'lbann']]],
+  ['local_5fresponse_5fnormalization_5flayer',['local_response_normalization_layer',['../classlbann_1_1local__response__normalization__layer.html',1,'lbann']]]
 ];

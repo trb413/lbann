@@ -6,6 +6,7 @@ var lbann__layer_8hpp =
       [ "softmax", "lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743ace2f1fbd249d24aabc07ac4488ab5b8c", null ],
       [ "convolution", "lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743aa9595c1c24c33b16056d2ad07e71682d", null ],
       [ "pooling", "lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743a4abcef116566139e94c82bb1bb37583f", null ],
+      [ "local_response_normalization", "lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743a0d5ea8f7814c623a6835706757368095", null ],
       [ "input_distributed_minibatch", "lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743ad109efb5d48783a82b85444cfe2e99e6", null ],
       [ "input_distributed_minibatch_parallel_io", "lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743ac62fbbd85bba7838c656c60724e6afca", null ],
       [ "target_distributed_minibatch", "lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743af5026f0a52d801c2ee10ed3fe0d6174b", null ],

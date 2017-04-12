@@ -80,6 +80,8 @@ var searchData=
   ['lbann_5flayer_5ffactory_2ehpp',['lbann_layer_factory.hpp',['../lbann__layer__factory_8hpp.html',1,'']]],
   ['lbann_5flayer_5ffully_5fconnected_2ecpp',['lbann_layer_fully_connected.cpp',['../lbann__layer__fully__connected_8cpp.html',1,'']]],
   ['lbann_5flayer_5ffully_5fconnected_2ehpp',['lbann_layer_fully_connected.hpp',['../lbann__layer__fully__connected_8hpp.html',1,'']]],
+  ['lbann_5flayer_5flocal_5fresponse_5fnormalization_2ecpp',['lbann_layer_local_response_normalization.cpp',['../lbann__layer__local__response__normalization_8cpp.html',1,'']]],
+  ['lbann_5flayer_5flocal_5fresponse_5fnormalization_2ehpp',['lbann_layer_local_response_normalization.hpp',['../lbann__layer__local__response__normalization_8hpp.html',1,'']]],
   ['lbann_5flayer_5fpooling_2ecpp',['lbann_layer_pooling.cpp',['../lbann__layer__pooling_8cpp.html',1,'']]],
   ['lbann_5flayer_5fpooling_2ehpp',['lbann_layer_pooling.hpp',['../lbann__layer__pooling_8hpp.html',1,'']]],
   ['lbann_5flayer_5fsoftmax_2ecpp',['lbann_layer_softmax.cpp',['../lbann__layer__softmax_8cpp.html',1,'']]],

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">ccb1075-ci221460348</span>
+   &#160;<span id="projectnumber">d383827-ci221463901</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -201,6 +201,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1FullyConnectedLayer.html">FullyConnectedLayer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1local__response__normalization__layer.html">local_response_normalization_layer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pooling layer.  <a href="classlbann_1_1local__response__normalization__layer.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1pooling__layer.html">pooling_layer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pooling layer.  <a href="classlbann_1_1pooling__layer.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -295,12 +298,13 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743aa9595c1c24c33b16056d2ad07e71682d">layer_type::convolution</a>, 
 <a class="el" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a4abcef116566139e94c82bb1bb37583f">layer_type::pooling</a>, 
 <br/>
-&#160;&#160;<a class="el" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743ad109efb5d48783a82b85444cfe2e99e6">layer_type::input_distributed_minibatch</a>, 
+&#160;&#160;<a class="el" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a0d5ea8f7814c623a6835706757368095">layer_type::local_response_normalization</a>, 
+<a class="el" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743ad109efb5d48783a82b85444cfe2e99e6">layer_type::input_distributed_minibatch</a>, 
 <a class="el" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743ac62fbbd85bba7838c656c60724e6afca">layer_type::input_distributed_minibatch_parallel_io</a>, 
 <a class="el" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743af5026f0a52d801c2ee10ed3fe0d6174b">layer_type::target_distributed_minibatch</a>, 
-<a class="el" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a824c8cd6e0c951b7a752369374ab723a">layer_type::target_distributed_minibatch_parallel_io</a>, 
 <br/>
-&#160;&#160;<a class="el" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743aa2aad58e3ddee94e14c0e34188d8446a">layer_type::target_unsupervised</a>, 
+&#160;&#160;<a class="el" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a824c8cd6e0c951b7a752369374ab723a">layer_type::target_distributed_minibatch_parallel_io</a>, 
+<a class="el" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743aa2aad58e3ddee94e14c0e34188d8446a">layer_type::target_unsupervised</a>, 
 <a class="el" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743accc0377a8afbf50e7094f5c23a8af223">layer_type::INVALID</a>
 <br/>
  }</td></tr>
@@ -544,6 +548,8 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a33be342c4bdc4c00e9f91ff3a2f20743a4abcef116566139e94c82bb1bb37583f"></a>pooling</em>&#160;</td><td class="fielddoc">
 </td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a33be342c4bdc4c00e9f91ff3a2f20743a0d5ea8f7814c623a6835706757368095"></a>local_response_normalization</em>&#160;</td><td class="fielddoc">
+</td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a33be342c4bdc4c00e9f91ff3a2f20743ad109efb5d48783a82b85444cfe2e99e6"></a>input_distributed_minibatch</em>&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="a33be342c4bdc4c00e9f91ff3a2f20743ac62fbbd85bba7838c656c60724e6afca"></a>input_distributed_minibatch_parallel_io</em>&#160;</td><td class="fielddoc">
@@ -560,10 +566,13 @@ Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lbann__layer_8hpp_source.html#l00055">55</a> of file <a class="el" href="lbann__layer_8hpp_source.html">lbann_layer.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                        {<a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a156e322bc71c040cbb092c46ed11c5cb">fully_connected</a>, <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743ace2f1fbd249d24aabc07ac4488ab5b8c">softmax</a>, <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743aa9595c1c24c33b16056d2ad07e71682d">convolution</a>, <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a4abcef116566139e94c82bb1bb37583f">pooling</a>,</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743ad109efb5d48783a82b85444cfe2e99e6">input_distributed_minibatch</a>, <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743ac62fbbd85bba7838c656c60724e6afca">input_distributed_minibatch_parallel_io</a>,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743af5026f0a52d801c2ee10ed3fe0d6174b">target_distributed_minibatch</a>, <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a824c8cd6e0c951b7a752369374ab723a">target_distributed_minibatch_parallel_io</a>, <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743aa2aad58e3ddee94e14c0e34188d8446a">target_unsupervised</a>,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743accc0377a8afbf50e7094f5c23a8af223">INVALID</a>};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a0d5ea8f7814c623a6835706757368095">local_response_normalization</a>,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743ad109efb5d48783a82b85444cfe2e99e6">input_distributed_minibatch</a>, <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743ac62fbbd85bba7838c656c60724e6afca">input_distributed_minibatch_parallel_io</a>,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743af5026f0a52d801c2ee10ed3fe0d6174b">target_distributed_minibatch</a>, <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a824c8cd6e0c951b7a752369374ab723a">target_distributed_minibatch_parallel_io</a>,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743aa2aad58e3ddee94e14c0e34188d8446a">target_unsupervised</a>,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743accc0377a8afbf50e7094f5c23a8af223">INVALID</a>};</div>
 <div class="ttc" id="namespacelbann_html_a33be342c4bdc4c00e9f91ff3a2f20743af5026f0a52d801c2ee10ed3fe0d6174b"><div class="ttname"><a href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743af5026f0a52d801c2ee10ed3fe0d6174b">lbann::layer_type::target_distributed_minibatch</a></div></div>
+<div class="ttc" id="namespacelbann_html_a33be342c4bdc4c00e9f91ff3a2f20743a0d5ea8f7814c623a6835706757368095"><div class="ttname"><a href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a0d5ea8f7814c623a6835706757368095">lbann::layer_type::local_response_normalization</a></div></div>
 <div class="ttc" id="namespacelbann_html_a33be342c4bdc4c00e9f91ff3a2f20743aa2aad58e3ddee94e14c0e34188d8446a"><div class="ttname"><a href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743aa2aad58e3ddee94e14c0e34188d8446a">lbann::layer_type::target_unsupervised</a></div></div>
 <div class="ttc" id="namespacelbann_html_a33be342c4bdc4c00e9f91ff3a2f20743a156e322bc71c040cbb092c46ed11c5cb"><div class="ttname"><a href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a156e322bc71c040cbb092c46ed11c5cb">lbann::layer_type::fully_connected</a></div></div>
 <div class="ttc" id="namespacelbann_html_a33be342c4bdc4c00e9f91ff3a2f20743ac62fbbd85bba7838c656c60724e6afca"><div class="ttname"><a href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743ac62fbbd85bba7838c656c60724e6afca">lbann::layer_type::input_distributed_minibatch_parallel_io</a></div></div>
@@ -633,34 +642,36 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__layer_8hpp_source.html#l00059">59</a> of file <a class="el" href="lbann__layer_8hpp_source.html">lbann_layer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                                                               {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">switch</span>(l) {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">case</span> layer_type::fully_connected:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;fully_connected&quot;</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">case</span> layer_type::softmax:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;softmax&quot;</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">case</span> layer_type::convolution:</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;convolution&quot;</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">case</span> layer_type::pooling:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;pooling&quot;</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">case</span> layer_type::input_distributed_minibatch:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;input_distributed_minibatch&quot;</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">case</span> layer_type::input_distributed_minibatch_parallel_io:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;input_distributed_minibatch_parallel_io&quot;</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">case</span> layer_type::target_distributed_minibatch:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;target_distributed_minibatch&quot;</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">case</span> layer_type::target_distributed_minibatch_parallel_io:</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;target_distributed_minibatch_parallel_io&quot;</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">case</span> layer_type::target_unsupervised:</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;target_unsupervised&quot;</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">case</span> layer_type::INVALID:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;INVALID&quot;</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keywordflow">throw</span>(std::string{} + __FILE__ + <span class="stringliteral">&quot; &quot;</span> + std::to_string(__LINE__) + <span class="stringliteral">&quot; Invalid layer_type specified&quot;</span>);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="lbann__layer_8hpp_source.html#l00061">61</a> of file <a class="el" href="lbann__layer_8hpp_source.html">lbann_layer.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                                               {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">switch</span>(l) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">case</span> layer_type::fully_connected:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;fully_connected&quot;</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">case</span> layer_type::softmax:</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;softmax&quot;</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">case</span> layer_type::convolution:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;convolution&quot;</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">case</span> layer_type::pooling:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;pooling&quot;</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">case</span> layer_type::local_response_normalization:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;local_response_normalization&quot;</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">case</span> layer_type::input_distributed_minibatch:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;input_distributed_minibatch&quot;</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">case</span> layer_type::input_distributed_minibatch_parallel_io:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;input_distributed_minibatch_parallel_io&quot;</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">case</span> layer_type::target_distributed_minibatch:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;target_distributed_minibatch&quot;</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">case</span> layer_type::target_distributed_minibatch_parallel_io:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;target_distributed_minibatch_parallel_io&quot;</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">case</span> layer_type::target_unsupervised:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;target_unsupervised&quot;</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">case</span> layer_type::INVALID:</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;INVALID&quot;</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <span class="keywordflow">throw</span>(std::string{} + __FILE__ + <span class="stringliteral">&quot; &quot;</span> + std::to_string(__LINE__) + <span class="stringliteral">&quot; Invalid layer_type specified&quot;</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
 <div class="ttc" id="datatype_8hpp_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00035">datatype.hpp:35</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -3132,7 +3143,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li>
-    <li class="footer">Generated on Wed Apr 12 2017 18:56:32 for LBANN by
+    <li class="footer">Generated on Wed Apr 12 2017 19:37:12 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -76,6 +76,7 @@ var hierarchy =
           [ "lbann::target_layer_unsupervised", "classlbann_1_1target__layer__unsupervised.html", null ]
         ] ]
       ] ],
+      [ "lbann::local_response_normalization_layer", "classlbann_1_1local__response__normalization__layer.html", null ],
       [ "lbann::pooling_layer", "classlbann_1_1pooling__layer.html", null ],
       [ "lbann::SoftmaxLayer", "classlbann_1_1SoftmaxLayer.html", null ]
     ] ],
