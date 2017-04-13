@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">cea29d3-ci221577051</span>
+   &#160;<span id="projectnumber">0d326fa-ci221580377</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -390,9 +390,9 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; Width; x++) {</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            cv::Vec3b pixel = image.at&lt;cv::Vec3b&gt;(y, x);</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            <span class="keywordtype">int</span> offset = (Flip) ? ((Height - 1 - y) * Width + x) : (y * Width + x);</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            Pixels[offset] = pixel[0];</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            Pixels[offset + Height*Width] = pixel[1];</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            Pixels[offset + 2*Height*Width] = pixel[2];</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            Pixels[offset]                  = pixel[_LBANN_CV_BLUE_];</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            Pixels[offset + Height*Width]   = pixel[_LBANN_CV_GREEN_];</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            Pixels[offset + 2*Height*Width] = pixel[_LBANN_CV_RED_];</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        }</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    }</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
@@ -571,9 +571,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; Width; x++) {</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            cv::Vec3b pixel = image.at&lt;cv::Vec3b&gt;(y, x);</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <span class="keywordtype">int</span> offset = (Flip) ? ((Height - 1 - y) * Width + x) : (y * Width + x);</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            Pixels[offset] = pixel[0];</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            Pixels[offset + Height*Width] = pixel[1];</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            Pixels[offset + 2*Height*Width] = pixel[2];</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            Pixels[offset]                  = pixel[_LBANN_CV_BLUE_];</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            Pixels[offset + Height*Width]   = pixel[_LBANN_CV_GREEN_];</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            Pixels[offset + 2*Height*Width] = pixel[_LBANN_CV_RED_];</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        }</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    }</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
@@ -785,9 +785,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; Width; x++) {</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            cv::Vec3b pixel;</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            <span class="keywordtype">int</span> offset = (Flip) ? ((Height - 1 - y) * Width + x) : (y * Width + x);</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            pixel[0] = Pixels[offset];</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            pixel[1] = Pixels[offset + Height*Width];</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            pixel[2] = Pixels[offset + 2*Height*Width];</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;            pixel[_LBANN_CV_BLUE_]  = Pixels[offset];</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            pixel[_LBANN_CV_GREEN_] = Pixels[offset + Height*Width];</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            pixel[_LBANN_CV_RED_]   = Pixels[offset + 2*Height*Width];</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            image.at&lt;cv::Vec3b&gt;(y, x) = pixel;</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        }</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    }</div>
@@ -946,9 +946,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; Width; x++) {</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            cv::Vec3b pixel;</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            <span class="keywordtype">int</span> offset = (Flip) ? ((Height - 1 - y) * Width + x) : (y * Width + x);</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            pixel[0] = Pixels[offset];</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            pixel[1] = Pixels[offset + Height*Width];</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            pixel[2] = Pixels[offset + 2*Height*Width];</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            pixel[_LBANN_CV_BLUE_] = Pixels[offset];</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            pixel[_LBANN_CV_GREEN_] = Pixels[offset + Height*Width];</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            pixel[_LBANN_CV_RED_] = Pixels[offset + 2*Height*Width];</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            image.at&lt;cv::Vec3b&gt;(y, x) = pixel;</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        }</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    }</div>
@@ -973,7 +973,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1image__utils.html">image_utils</a></li>
-    <li class="footer">Generated on Thu Apr 13 2017 02:00:10 for LBANN by
+    <li class="footer">Generated on Thu Apr 13 2017 02:15:23 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
