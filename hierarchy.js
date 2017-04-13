@@ -71,6 +71,7 @@ var hierarchy =
           [ "lbann::input_layer_distributed_minibatch_parallel_io", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html", null ]
         ] ],
         [ "lbann::target_layer", "classlbann_1_1target__layer.html", [
+          [ "lbann::reconstruction_layer", "classlbann_1_1reconstruction__layer.html", null ],
           [ "lbann::target_layer_distributed_minibatch", "classlbann_1_1target__layer__distributed__minibatch.html", null ],
           [ "lbann::target_layer_distributed_minibatch_parallel_io", "classlbann_1_1target__layer__distributed__minibatch__parallel__io.html", null ],
           [ "lbann::target_layer_unsupervised", "classlbann_1_1target__layer__unsupervised.html", null ]

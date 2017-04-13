@@ -9,7 +9,7 @@ var searchData=
   ['neural_5fnetwork_5fmodel',['neural_network_model',['../classlbann_1_1Layer.html#a9699f8d327ed26f98a52c750f38f8312',1,'lbann::Layer::neural_network_model()'],['../classlbann_1_1metrics_1_1metric.html#aa2923a8982c083c63d3414bd3a6670a1',1,'lbann::metrics::metric::neural_network_model()']]],
   ['node_5fcomm',['node_comm',['../classlbann_1_1lbann__comm.html#a9f1f65663ca1d441f98f003b612eeb8c',1,'lbann::lbann_comm']]],
   ['num_5fbits',['NUM_BITS',['../classlbann_1_1lbann__quantizer.html#a33ea17392f53b90e91aea1ffb7e11d68',1,'lbann::lbann_quantizer']]],
-  ['num_5fforwardprop_5fsteps',['num_forwardprop_steps',['../classlbann_1_1target__layer__unsupervised.html#afe34159f9aaa70b419c97a21b1f613dc',1,'lbann::target_layer_unsupervised']]],
+  ['num_5fforwardprop_5fsteps',['num_forwardprop_steps',['../classlbann_1_1reconstruction__layer.html#aea756a99f5848fb6dbc8d3f77e50374e',1,'lbann::reconstruction_layer::num_forwardprop_steps()'],['../classlbann_1_1target__layer__unsupervised.html#afe34159f9aaa70b419c97a21b1f613dc',1,'lbann::target_layer_unsupervised::num_forwardprop_steps()']]],
   ['num_5fglobal_5fbarriers',['num_global_barriers',['../classlbann_1_1lbann__comm.html#a4f01e2f2d8220dc34cf39eb4a255cd7d',1,'lbann::lbann_comm']]],
   ['num_5fintermodel_5fbarriers',['num_intermodel_barriers',['../classlbann_1_1lbann__comm.html#a03d946ef5ea5d3b15351e78a2eed10fe',1,'lbann::lbann_comm']]],
   ['num_5fmodel_5fbarriers',['num_model_barriers',['../classlbann_1_1lbann__comm.html#aa4f15459eca2a06174a877ba0c23feb7',1,'lbann::lbann_comm']]],

@@ -84,6 +84,8 @@ var searchData=
   ['lbann_5flayer_5flocal_5fresponse_5fnormalization_2ehpp',['lbann_layer_local_response_normalization.hpp',['../lbann__layer__local__response__normalization_8hpp.html',1,'']]],
   ['lbann_5flayer_5fpooling_2ecpp',['lbann_layer_pooling.cpp',['../lbann__layer__pooling_8cpp.html',1,'']]],
   ['lbann_5flayer_5fpooling_2ehpp',['lbann_layer_pooling.hpp',['../lbann__layer__pooling_8hpp.html',1,'']]],
+  ['lbann_5flayer_5freconstruction_2ecpp',['lbann_layer_reconstruction.cpp',['../lbann__layer__reconstruction_8cpp.html',1,'']]],
+  ['lbann_5flayer_5freconstruction_2ehpp',['lbann_layer_reconstruction.hpp',['../lbann__layer__reconstruction_8hpp.html',1,'']]],
   ['lbann_5flayer_5fsoftmax_2ecpp',['lbann_layer_softmax.cpp',['../lbann__layer__softmax_8cpp.html',1,'']]],
   ['lbann_5flayer_5fsoftmax_2ehpp',['lbann_layer_softmax.hpp',['../lbann__layer__softmax_8hpp.html',1,'']]],
   ['lbann_5fmetric_2ecpp',['lbann_metric.cpp',['../lbann__metric_8cpp.html',1,'']]],

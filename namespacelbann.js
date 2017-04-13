@@ -50,6 +50,7 @@ var namespacelbann =
     [ "FullyConnectedLayer", "classlbann_1_1FullyConnectedLayer.html", "classlbann_1_1FullyConnectedLayer" ],
     [ "local_response_normalization_layer", "classlbann_1_1local__response__normalization__layer.html", "classlbann_1_1local__response__normalization__layer" ],
     [ "pooling_layer", "classlbann_1_1pooling__layer.html", "classlbann_1_1pooling__layer" ],
+    [ "reconstruction_layer", "classlbann_1_1reconstruction__layer.html", "classlbann_1_1reconstruction__layer" ],
     [ "SoftmaxLayer", "classlbann_1_1SoftmaxLayer.html", "classlbann_1_1SoftmaxLayer" ],
     [ "target_layer", "classlbann_1_1target__layer.html", "classlbann_1_1target__layer" ],
     [ "target_layer_distributed_minibatch", "classlbann_1_1target__layer__distributed__minibatch.html", "classlbann_1_1target__layer__distributed__minibatch" ],

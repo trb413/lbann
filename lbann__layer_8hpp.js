@@ -11,7 +11,7 @@ var lbann__layer_8hpp =
       [ "input_distributed_minibatch_parallel_io", "lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743ac62fbbd85bba7838c656c60724e6afca", null ],
       [ "target_distributed_minibatch", "lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743af5026f0a52d801c2ee10ed3fe0d6174b", null ],
       [ "target_distributed_minibatch_parallel_io", "lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743a824c8cd6e0c951b7a752369374ab723a", null ],
-      [ "target_unsupervised", "lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743aa2aad58e3ddee94e14c0e34188d8446a", null ],
+      [ "reconstruction", "lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743ae75ffd9ae04f68e5ef32915baeebe761", null ],
       [ "INVALID", "lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743accc0377a8afbf50e7094f5c23a8af223", null ]
     ] ],
     [ "_layer_type_to_string", "lbann__layer_8hpp.html#a65056cb9ae34866d6252f18da0697c58", null ]

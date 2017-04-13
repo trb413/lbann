@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">d383827-ci221463901</span>
+   &#160;<span id="projectnumber">4f3c634-ci221571858</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -662,7 +662,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="comment">// build mirror layer</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  Layer* original_layer = <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[layer_index];</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  Optimizer *optimizer = <a class="code" href="classlbann_1_1sequential__model.html#a592e67ddb0dc61bffcca628765effe7d">optimizer_fac</a>-&gt;<a class="code" href="classlbann_1_1Optimizer__factory.html#a58ddf461ad10a337e4497653de512ca5">create_optimizer</a>(original_layer-&gt;m_data_layout);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  target_layer_unsupervised* mirror_layer = <span class="keyword">new</span> target_layer_unsupervised(original_layer-&gt;m_data_layout, mirror_index, <a class="code" href="classlbann_1_1model.html#ae5a400e2f0a044c33383975298719cc2">comm</a>, optimizer, <a class="code" href="classlbann_1_1sequential__model.html#ad4f27748b8cdf0da723f39b3aba9ef2d">m_mini_batch_size</a>, original_layer);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  reconstruction_layer* mirror_layer = <span class="keyword">new</span> reconstruction_layer(original_layer-&gt;m_data_layout, mirror_index, <a class="code" href="classlbann_1_1model.html#ae5a400e2f0a044c33383975298719cc2">comm</a>, optimizer, <a class="code" href="classlbann_1_1sequential__model.html#ad4f27748b8cdf0da723f39b3aba9ef2d">m_mini_batch_size</a>, original_layer);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="comment">// insert mirror layer into model</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <a class="code" href="classlbann_1_1sequential__model.html#ae992c83737819d406e1311ebe24e07f0">insert</a>(mirror_index, mirror_layer);</div>
@@ -987,7 +987,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <a class="code" href="classlbann_1_1greedy__layerwise__autoencoder.html#a962398da3f5738ec92a1680b0814219b">m_phase_end</a> = <a class="code" href="classlbann_1_1model.html#ab018cbcf5052fab3b5dc6a065d709c16">m_current_phase</a>+2;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    Layer* original_layer = <a class="code" href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">m_layers</a>[<a class="code" href="classlbann_1_1model.html#ab018cbcf5052fab3b5dc6a065d709c16">m_current_phase</a>];</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    Optimizer *optimizer = <a class="code" href="classlbann_1_1sequential__model.html#a592e67ddb0dc61bffcca628765effe7d">optimizer_fac</a>-&gt;<a class="code" href="classlbann_1_1Optimizer__factory.html#a58ddf461ad10a337e4497653de512ca5">create_optimizer</a>(original_layer-&gt;m_data_layout);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    target_layer_unsupervised*  mirror_layer = <span class="keyword">new</span> target_layer_unsupervised(original_layer-&gt;m_data_layout, <a class="code" href="classlbann_1_1greedy__layerwise__autoencoder.html#a962398da3f5738ec92a1680b0814219b">m_phase_end</a>, <a class="code" href="classlbann_1_1model.html#ae5a400e2f0a044c33383975298719cc2">comm</a>, optimizer, <a class="code" href="classlbann_1_1sequential__model.html#ad4f27748b8cdf0da723f39b3aba9ef2d">m_mini_batch_size</a>,original_layer);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    reconstruction_layer*  mirror_layer = <span class="keyword">new</span> reconstruction_layer(original_layer-&gt;m_data_layout, <a class="code" href="classlbann_1_1greedy__layerwise__autoencoder.html#a962398da3f5738ec92a1680b0814219b">m_phase_end</a>, <a class="code" href="classlbann_1_1model.html#ae5a400e2f0a044c33383975298719cc2">comm</a>, optimizer, <a class="code" href="classlbann_1_1sequential__model.html#ad4f27748b8cdf0da723f39b3aba9ef2d">m_mini_batch_size</a>,original_layer);</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    Layer* tmp;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="comment">//if not at the last layer/phase, swap otherwise insert new</span></div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1model.html#ab018cbcf5052fab3b5dc6a065d709c16">m_current_phase</a> &lt; num_phases-1) tmp = <a class="code" href="classlbann_1_1sequential__model.html#a8aa4ddbd6efa79896749838e442b6168">swap</a>(<a class="code" href="classlbann_1_1greedy__layerwise__autoencoder.html#a962398da3f5738ec92a1680b0814219b">m_phase_end</a>,mirror_layer);</div>
@@ -1343,7 +1343,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1greedy__layerwise__autoencoder.html">greedy_layerwise_autoencoder</a></li>
-    <li class="footer">Generated on Wed Apr 12 2017 19:37:13 for LBANN by
+    <li class="footer">Generated on Thu Apr 13 2017 01:27:59 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

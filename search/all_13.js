@@ -13,7 +13,6 @@ var searchData=
   ['target_5flayer_5fdistributed_5fminibatch_5fparallel_5fio',['target_layer_distributed_minibatch_parallel_io',['../classlbann_1_1target__layer__distributed__minibatch__parallel__io.html#a14a9b55d869a9ee19256856106ddf3e7',1,'lbann::target_layer_distributed_minibatch_parallel_io']]],
   ['target_5flayer_5funsupervised',['target_layer_unsupervised',['../classlbann_1_1target__layer__unsupervised.html',1,'lbann']]],
   ['target_5flayer_5funsupervised',['target_layer_unsupervised',['../classlbann_1_1target__layer__unsupervised.html#ac785a033cd6beb653074a2b6baf2c060',1,'lbann::target_layer_unsupervised']]],
-  ['target_5funsupervised',['target_unsupervised',['../namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743aa2aad58e3ddee94e14c0e34188d8446a',1,'lbann']]],
   ['taskspernode',['TasksPerNode',['../classlbann_1_1SystemParams.html#a93758103d73bcd95146f99464203aa86',1,'lbann::SystemParams']]],
   ['terminate_5ftraining',['terminate_training',['../structlbann__model__header.html#a1fece5153abf60dba8fc1324f80c903a',1,'lbann_model_header']]],
   ['test_5fproc',['test_proc',['../structdataset__header.html#a9560ba3a2e84cdb1eff33c6f5d36026f',1,'dataset_header']]],
@@ -42,8 +41,8 @@ var searchData=
   ['train_5ftotal',['train_total',['../structdataset__header.html#ac687bb1bff59eeede917e9e9f6c968f3',1,'dataset_header']]],
   ['trainfile',['TrainFile',['../classlbann_1_1TrainingParams.html#a4ac278410cb0a24c9dc1f6edf014d003',1,'lbann::TrainingParams']]],
   ['training',['training',['../lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214',1,'lbann_base.hpp']]],
-  ['trainingparams',['TrainingParams',['../classlbann_1_1TrainingParams.html#a0530f1ed33dd848017f392c4245b415a',1,'lbann::TrainingParams']]],
   ['trainingparams',['TrainingParams',['../classlbann_1_1TrainingParams.html',1,'lbann']]],
+  ['trainingparams',['TrainingParams',['../classlbann_1_1TrainingParams.html#a0530f1ed33dd848017f392c4245b415a',1,'lbann::TrainingParams']]],
   ['trainingsamples',['TrainingSamples',['../classlbann_1_1TrainingParams.html#adf012a044d64191b7d0de8b0278c7060',1,'lbann::TrainingParams']]],
   ['trim_5fdata_5fset',['trim_data_set',['../classlbann_1_1DataReader.html#ad7224861140c574158c1373c8d341a40',1,'lbann::DataReader']]],
   ['type',['type',['../classlbann_1_1metrics_1_1metric.html#ab4118ce33325ab57e57ad21c7dde8fa0',1,'lbann::metrics::metric::type()'],['../classlbann_1_1objective__functions_1_1objective__fn.html#a960a2e2ea129fb64bc4112c989766584',1,'lbann::objective_functions::objective_fn::type()']]]

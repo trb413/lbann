@@ -47,7 +47,7 @@ var searchData=
   ['ag_5freduced_5ftrans_5ftime',['ag_reduced_trans_time',['../classlbann_1_1lbann__quantizer.html#a0e997657d1164ed23f912809492d8999',1,'lbann::lbann_quantizer']]],
   ['ag_5fsend_5ftime',['ag_send_time',['../classlbann_1_1lbann__quantizer.html#ab74ab07fa1c26bcf29d9d8bf267905a4',1,'lbann::lbann_quantizer']]],
   ['ag_5ftime',['ag_time',['../classlbann_1_1lbann__quantizer.html#a4d3c330826fbaff8ee38f4b05cafa84a',1,'lbann::lbann_quantizer']]],
-  ['aggregate_5fcost',['aggregate_cost',['../classlbann_1_1target__layer__unsupervised.html#af41d733b8678685c0adff8f4c45d9cde',1,'lbann::target_layer_unsupervised']]],
+  ['aggregate_5fcost',['aggregate_cost',['../classlbann_1_1reconstruction__layer.html#a6941459598d08242eee5395f9e25d1e0',1,'lbann::reconstruction_layer::aggregate_cost()'],['../classlbann_1_1target__layer__unsupervised.html#af41d733b8678685c0adff8f4c45d9cde',1,'lbann::target_layer_unsupervised::aggregate_cost()']]],
   ['alpha',['alpha',['../classlbann_1_1ELU__layer.html#a71875ccb1f1ce08a74c6ffa687e350cf',1,'lbann::ELU_layer']]],
   ['am_5fmodel_5fmaster',['am_model_master',['../classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac',1,'lbann::lbann_comm']]],
   ['am_5fworld_5fmaster',['am_world_master',['../classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5',1,'lbann::lbann_comm']]],
@@ -57,6 +57,6 @@ var searchData=
   ['at_5fnew_5fepoch',['at_new_epoch',['../classlbann_1_1DataReader.html#a8dc49d9479d54e50123a6e21ffa8d023',1,'lbann::DataReader::at_new_epoch()'],['../classlbann_1_1io__layer.html#a4f0e3bbd6bc638432723179efc2998ab',1,'lbann::io_layer::at_new_epoch()']]],
   ['augment',['augment',['../classlbann_1_1lbann__image__preprocessor.html#a27cb5182c4f764cbfa4edecbb78ef29d',1,'lbann::lbann_image_preprocessor']]],
   ['average',['average',['../lbann__base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39a6927a3a7218a3195858411433ec20a21',1,'lbann_base.hpp']]],
-  ['average_5fcost',['average_cost',['../classlbann_1_1target__layer__unsupervised.html#ae7701c23a1783a943b92ea7c11478fbc',1,'lbann::target_layer_unsupervised']]],
+  ['average_5fcost',['average_cost',['../classlbann_1_1reconstruction__layer.html#ad08970ab8f7874eee20fce4afe98c2d5',1,'lbann::reconstruction_layer::average_cost()'],['../classlbann_1_1target__layer__unsupervised.html#ae7701c23a1783a943b92ea7c11478fbc',1,'lbann::target_layer_unsupervised::average_cost()']]],
   ['average_5fno_5fpad',['average_no_pad',['../lbann__base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39ad91c68878ae16f6dfcd4e1551c33cdd1',1,'lbann_base.hpp']]]
 ];
