@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"lbann__file__io_8cpp.html#a8a08135bfddb4c7375212d2ace2e24b7":[4,0,0,0,0,0,0,1,2,1,1],
 "lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe":[4,0,0,0,0,0,0,1,2,1,0],
 "lbann__file__io_8cpp_source.html":[4,0,0,0,0,0,0,1,2,1],
 "lbann__file__io_8hpp.html":[4,0,0,0,0,0,0,0,0,2,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "lbann__proto__common_8cpp.html#a412ce24eaf3f2bff1884da396f2542dc":[4,0,0,0,0,0,0,1,8,0,1],
 "lbann__proto__common_8cpp.html#a88ace24fdc2491da9c6fd95126799a80":[4,0,0,0,0,0,0,1,8,0,2],
 "lbann__proto__common_8cpp.html#aaac7a1330b8214080e589950fac79b3e":[4,0,0,0,0,0,0,1,8,0,0],
-"lbann__proto__common_8cpp_source.html":[4,0,0,0,0,0,0,1,8,0],
-"lbann__proto__common_8hpp.html":[4,0,0,0,0,0,0,0,0,8,0]
+"lbann__proto__common_8cpp_source.html":[4,0,0,0,0,0,0,1,8,0]
 };

@@ -27,6 +27,7 @@ var dir_0b16036c62e9063447de1e5debde0af9 =
       [ "lbann_image_preprocessor", "classlbann_1_1lbann__image__preprocessor.html", "classlbann_1_1lbann__image__preprocessor" ]
     ] ],
     [ "lbann_image_utils.hpp", "lbann__image__utils_8hpp.html", [
+      [ "cvMat_proc_params", "structlbann_1_1cvMat__proc__params.html", "structlbann_1_1cvMat__proc__params" ],
       [ "image_utils", "classlbann_1_1image__utils.html", "classlbann_1_1image__utils" ]
     ] ],
     [ "lbann_opencv.hpp", "lbann__opencv_8hpp.html", null ]

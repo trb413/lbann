@@ -1,6 +1,12 @@
 var searchData=
 [
-  ['none',['NONE',['../classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aafa59156bc4d5bcbf6bd80918d062da03',1,'lbann::lbann_callback_imcomm']]],
-  ['normal',['NORMAL',['../classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aa5f19efb5bef79cea24be992a2137962e',1,'lbann::lbann_callback_imcomm::NORMAL()'],['../lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5afea087517c26fadd409bd4b9dc642555',1,'normal():&#160;lbann_base.hpp']]],
-  ['normal_5far',['NORMAL_AR',['../classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aa7d9b361cd28f08b327ebe76b4d9b35cd',1,'lbann::lbann_callback_imcomm']]]
+  ['matthews_5fcorrelation',['matthews_correlation',['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a539becbe3ba1dcc201d64529f6e8e928',1,'lbann::metrics']]],
+  ['max',['max',['../lbann__base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39a2ffe4e77325d9a7152f7086ea7aa5114',1,'lbann_base.hpp']]],
+  ['mc_5fmr',['MC_MR',['../lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dacf33f55c86c56389442455e8e190be2d',1,'lbann_base.hpp']]],
+  ['mean_5fabsolute_5ferror',['mean_absolute_error',['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a8bf4b333617f6e128047db047fba8b3d',1,'lbann::metrics']]],
+  ['mean_5fabsolute_5fpercentage_5ferror',['mean_absolute_percentage_error',['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1ae34cce237b6571cc4e4b8c24339daf72',1,'lbann::metrics']]],
+  ['mean_5fsquared_5ferror',['mean_squared_error',['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1acb5e6aed7bcf8192b1e2be7ac124c307',1,'lbann::metrics::mean_squared_error()'],['../namespacelbann_1_1objective__functions.html#a84a6b5226a98ba2d0c65c3a2a9afb43cacb5e6aed7bcf8192b1e2be7ac124c307',1,'lbann::objective_functions::mean_squared_error()']]],
+  ['mean_5fsquared_5flogarithmic_5ferror',['mean_squared_logarithmic_error',['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a20f18c8bfe460877005ad8a49e0b7f20',1,'lbann::metrics']]],
+  ['model',['model',['../namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c',1,'lbann']]],
+  ['model_5fparallel',['MODEL_PARALLEL',['../lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0',1,'lbann_base.hpp']]]
 ];

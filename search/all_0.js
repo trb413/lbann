@@ -32,6 +32,7 @@ var searchData=
   ['_5f_5fswapbyteorder32',['__swapByteOrder32',['../datatype_8hpp.html#a7e002d4c58f444af882340b4a8d4d4d5',1,'datatype.hpp']]],
   ['_5f_5fswapendianint',['__swapEndianInt',['../lbann__data__reader__mnist_8cpp.html#a04d24318b3dbcb7816ebd12552647803',1,'lbann_data_reader_mnist.cpp']]],
   ['_5f_5fuincgamma',['__uincgamma',['../datatype_8hpp.html#ac182250ba70e0934329cf26d00244873',1,'datatype.hpp']]],
+  ['_5fboth_5faxes_5f',['_both_axes_',['../structlbann_1_1cvMat__proc__params.html#a94340113a380c389c8f3d4ca39fef6fead84faf29bb2e3859cecace07d660f4c8',1,'lbann::cvMat_proc_params']]],
   ['_5fbox2_5fchar',['_BOX2_CHAR',['../struct__BOX2__CHAR.html',1,'']]],
   ['_5fbox2_5fdouble',['_BOX2_DOUBLE',['../struct__BOX2__DOUBLE.html',1,'']]],
   ['_5fbox2_5ffloat',['_BOX2_FLOAT',['../struct__BOX2__FLOAT.html',1,'']]],
@@ -57,10 +58,12 @@ var searchData=
   ['_5ffloat2',['_FLOAT2',['../struct__FLOAT2.html',1,'']]],
   ['_5ffloat3',['_FLOAT3',['../struct__FLOAT3.html',1,'']]],
   ['_5ffloat4',['_FLOAT4',['../struct__FLOAT4.html',1,'']]],
+  ['_5fhorizontal_5f',['_horizontal_',['../structlbann_1_1cvMat__proc__params.html#a94340113a380c389c8f3d4ca39fef6feac8baf2c879bbdbdf750e19f37e5663be',1,'lbann::cvMat_proc_params']]],
   ['_5fint2',['_INT2',['../struct__INT2.html',1,'']]],
   ['_5fint3',['_INT3',['../struct__INT3.html',1,'']]],
   ['_5fint4',['_INT4',['../struct__INT4.html',1,'']]],
   ['_5flayer_5ftype_5fto_5fstring',['_layer_type_to_string',['../namespacelbann.html#a65056cb9ae34866d6252f18da0697c58',1,'lbann']]],
+  ['_5fnone_5f',['_none_',['../structlbann_1_1cvMat__proc__params.html#a94340113a380c389c8f3d4ca39fef6fea6b8caf2797d1e332458e81895ae7a920',1,'lbann::cvMat_proc_params']]],
   ['_5fshort2',['_SHORT2',['../struct__SHORT2.html',1,'']]],
   ['_5fshort3',['_SHORT3',['../struct__SHORT3.html',1,'']]],
   ['_5fshort4',['_SHORT4',['../struct__SHORT4.html',1,'']]],
@@ -72,5 +75,6 @@ var searchData=
   ['_5fuchar4',['_UCHAR4',['../struct__UCHAR4.html',1,'']]],
   ['_5fushort2',['_USHORT2',['../struct__USHORT2.html',1,'']]],
   ['_5fushort3',['_USHORT3',['../struct__USHORT3.html',1,'']]],
-  ['_5fushort4',['_USHORT4',['../struct__USHORT4.html',1,'']]]
+  ['_5fushort4',['_USHORT4',['../struct__USHORT4.html',1,'']]],
+  ['_5fvertical_5f',['_vertical_',['../structlbann_1_1cvMat__proc__params.html#a94340113a380c389c8f3d4ca39fef6fea9b3f9dafe8eb06f291098ca7b7b6343a',1,'lbann::cvMat_proc_params']]]
 ];

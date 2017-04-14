@@ -62,5 +62,7 @@ var searchData=
   ['currentpos',['CurrentPos',['../classlbann_1_1DataReader.html#a50648e62f6eafb634aa1faae9e3c8cac',1,'lbann::DataReader']]],
   ['custom_5fschedule',['custom_schedule',['../classlbann_1_1lbann__callback__custom__learning__rate.html#ac6b8d106a3b4c77bf50ae28ddfb53a31',1,'lbann::lbann_callback_custom_learning_rate']]],
   ['cutility',['CUtility',['../classlbann_1_1CUtility.html',1,'lbann']]],
-  ['cv_5fpixels',['cv_pixels',['../classlbann_1_1lbann__image__preprocessor.html#a7dc609e33febdc7fc29bdc9270594bea',1,'lbann::lbann_image_preprocessor']]]
+  ['cv_5fpixels',['cv_pixels',['../classlbann_1_1lbann__image__preprocessor.html#a7dc609e33febdc7fc29bdc9270594bea',1,'lbann::lbann_image_preprocessor']]],
+  ['cvmat_5fproc_5fparams',['cvMat_proc_params',['../structlbann_1_1cvMat__proc__params.html',1,'lbann']]],
+  ['cvmat_5fproc_5fparams',['cvMat_proc_params',['../structlbann_1_1cvMat__proc__params.html#ac2cac9e8c03949904696d5df76040de6',1,'lbann::cvMat_proc_params::cvMat_proc_params(void)'],['../structlbann_1_1cvMat__proc__params.html#a82ac760b279ee3cf1d105b2641e9b37f',1,'lbann::cvMat_proc_params::cvMat_proc_params(const flpping flip_code, const bool tosplit)']]]
 ];
