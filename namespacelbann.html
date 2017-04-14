@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">a972491-ci221992383</span>
+   &#160;<span id="projectnumber">4eaaa9d-ci222164592</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -1116,10 +1116,10 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Perform finalization. </p>
 
-<p>Definition at line <a class="el" href="lbann__base_8cpp_source.html#l00072">72</a> of file <a class="el" href="lbann__base_8cpp_source.html">lbann_base.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__base_8cpp_source.html#l00076">76</a> of file <a class="el" href="lbann__base_8cpp_source.html">lbann_base.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1570,41 +1570,41 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="lbann__base_8cpp_source.html#l00037">37</a> of file <a class="el" href="lbann__base_8cpp_source.html">lbann_base.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                  {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="comment">// Determine the number of NUMA nodes present.</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  hwloc_topology_t topo;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  hwloc_topology_init(&amp;topo);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  hwloc_topology_load(topo);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">int</span> numa_depth = hwloc_get_type_depth(topo, HWLOC_OBJ_NUMANODE);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">if</span> (numa_depth == HWLOC_TYPE_DEPTH_UNKNOWN) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::cout &lt;&lt; <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_rank_in_world() &lt;&lt;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="stringliteral">&quot;: cannot determine hwloc NUMA-node depth&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">int</span> num_numa_nodes = hwloc_get_nbobjs_by_depth(topo, numa_depth);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="comment">// Warn if there are more NUMA nodes than processes per node.</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="comment">// It&#39;s probably fine if there are more processes than NUMA nodes for now.</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="comment">// We can adjust that later when we better understand the threaded perf.</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">int</span> ppn = <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_procs_per_node();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">if</span> (num_numa_nodes &gt; ppn) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_rank_in_node() == 0) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      std::cout &lt;&lt; <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_rank_in_world() &lt;&lt;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="stringliteral">&quot;: WARNING: node has &quot;</span> &lt;&lt; num_numa_nodes &lt;&lt;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="stringliteral">&quot; NUMA nodes but you have &quot;</span> &lt;&lt; ppn &lt;&lt; <span class="stringliteral">&quot; processes per node&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        std::endl;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span>  <span class="comment">// Initialize the default number of threads to use for parallel regions.</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="comment">// Note the num_threads directive can override this if specifically set.</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="comment">// Further, if the OMP_NUM_THREADS environment variable is set, we don&#39;t</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="comment">// change it.</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">if</span> (getenv(<span class="stringliteral">&quot;OMP_NUM_THREADS&quot;</span>) == <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> threads_per_rank = std::thread::hardware_concurrency() / ppn;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    omp_set_num_threads(threads_per_rank);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif  // _OPENMP</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span>}</div>
+<p>Definition at line <a class="el" href="lbann__base_8cpp_source.html#l00041">41</a> of file <a class="el" href="lbann__base_8cpp_source.html">lbann_base.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                  {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="comment">// Determine the number of NUMA nodes present.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  hwloc_topology_t topo;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  hwloc_topology_init(&amp;topo);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  hwloc_topology_load(topo);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">int</span> numa_depth = hwloc_get_type_depth(topo, HWLOC_OBJ_NUMANODE);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">if</span> (numa_depth == HWLOC_TYPE_DEPTH_UNKNOWN) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::cout &lt;&lt; <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_rank_in_world() &lt;&lt;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="stringliteral">&quot;: cannot determine hwloc NUMA-node depth&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">int</span> num_numa_nodes = hwloc_get_nbobjs_by_depth(topo, numa_depth);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="comment">// Warn if there are more NUMA nodes than processes per node.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="comment">// It&#39;s probably fine if there are more processes than NUMA nodes for now.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="comment">// We can adjust that later when we better understand the threaded perf.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">int</span> ppn = <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_procs_per_node();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">if</span> (num_numa_nodes &gt; ppn) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_rank_in_node() == 0) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      std::cout &lt;&lt; <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_rank_in_world() &lt;&lt;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="stringliteral">&quot;: WARNING: node has &quot;</span> &lt;&lt; num_numa_nodes &lt;&lt;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="stringliteral">&quot; NUMA nodes but you have &quot;</span> &lt;&lt; ppn &lt;&lt; <span class="stringliteral">&quot; processes per node&quot;</span> &lt;&lt;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        std::endl;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span>  <span class="comment">// Initialize the default number of threads to use for parallel regions.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="comment">// Note the num_threads directive can override this if specifically set.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="comment">// Further, if the OMP_NUM_THREADS environment variable is set, we don&#39;t</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="comment">// change it.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">if</span> (getenv(<span class="stringliteral">&quot;OMP_NUM_THREADS&quot;</span>) == <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> threads_per_rank = std::thread::hardware_concurrency() / ppn;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    omp_set_num_threads(threads_per_rank);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif  // _OPENMP</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
 <div class="ttc" id="datatype_8hpp_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00035">datatype.hpp:35</a></div></div>
 </div><!-- fragment -->
@@ -3172,7 +3172,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li>
-    <li class="footer">Generated on Fri Apr 14 2017 07:16:57 for LBANN by
+    <li class="footer">Generated on Fri Apr 14 2017 18:49:49 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
