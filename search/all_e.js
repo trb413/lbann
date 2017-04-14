@@ -32,9 +32,9 @@ var searchData=
   ['openwrite',['openwrite',['../namespacelbann.html#af596e6d2be603e9cf808c98f5412490a',1,'lbann']]],
   ['operator_3c',['operator&lt;',['../struct__INT2.html#a5bcb8b0690ef2f49c424c6980c0bcb51',1,'_INT2::operator&lt;()'],['../struct__INT3.html#ae176143b9d0ccc19ef89b9de5c21cc0f',1,'_INT3::operator&lt;()']]],
   ['operator_3d',['operator=',['../classlbann_1_1DataReader.html#a497d6b1c3ac47e14e9795ff771888905',1,'lbann::DataReader::operator=()'],['../classlbann_1_1DataReader__cnpy.html#a6df2d196178925375dcce2913a975392',1,'lbann::DataReader_cnpy::operator=()'],['../classlbann_1_1DataReader__ImageNet.html#aa6da0a41aaa3bfd66bf50555e15adc18',1,'lbann::DataReader_ImageNet::operator=()'],['../classlbann_1_1data__reader__nci.html#a4408a11dd0cfcca9fa086ce8eb3bc6d6',1,'lbann::data_reader_nci::operator=()'],['../classlbann_1_1data__reader__synthetic.html#a0b95d6960551517c8c1f090f2d9add0e',1,'lbann::data_reader_synthetic::operator=()']]],
-  ['optimizer',['Optimizer',['../classlbann_1_1Optimizer.html',1,'lbann']]],
-  ['optimizer',['Optimizer',['../classlbann_1_1Optimizer.html#ac47f4b7d603acd6a4c89c16b6b55b58a',1,'lbann::Optimizer::Optimizer()'],['../classlbann_1_1Layer.html#a5caea149f8ecebff4b77efd1248b8267',1,'lbann::Layer::optimizer()']]],
-  ['optimizer_5ffac',['optimizer_fac',['../classlbann_1_1sequential__model.html#a592e67ddb0dc61bffcca628765effe7d',1,'lbann::sequential_model']]],
-  ['optimizer_5ffactory',['Optimizer_factory',['../classlbann_1_1Optimizer__factory.html#a66f4559ef9b4a3a6a0d803c17378cddc',1,'lbann::Optimizer_factory']]],
-  ['optimizer_5ffactory',['Optimizer_factory',['../classlbann_1_1Optimizer__factory.html',1,'lbann']]]
+  ['optimizer',['optimizer',['../classlbann_1_1optimizer.html',1,'lbann']]],
+  ['optimizer',['optimizer',['../classlbann_1_1optimizer.html#a42150ad8b3dc9cfdedf2ca63d26aa20a',1,'lbann::optimizer']]],
+  ['optimizer_5ffac',['optimizer_fac',['../classlbann_1_1sequential__model.html#a6113fd0b569d302ba515b1d33c6e0678',1,'lbann::sequential_model']]],
+  ['optimizer_5ffactory',['optimizer_factory',['../classlbann_1_1optimizer__factory.html#a6180e1301ee5cd1a4fd77cc6ba9a4ef5',1,'lbann::optimizer_factory']]],
+  ['optimizer_5ffactory',['optimizer_factory',['../classlbann_1_1optimizer__factory.html',1,'lbann']]]
 ];

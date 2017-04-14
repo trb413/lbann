@@ -4,7 +4,6 @@ var searchData=
   ['data_5fseq_5fgenerator',['data_seq_generator',['../namespaceanonymous__namespace_02lbann__random_8cpp_03.html#a36d1b52a12cd2346076af0b35f49efed',1,'anonymous_namespace{lbann_random.cpp}']]],
   ['datasetrootdir',['DatasetRootDir',['../classlbann_1_1TrainingParams.html#a14bda5205da357abe30d7685735932dd',1,'lbann::TrainingParams']]],
   ['datatypempi',['DataTypeMPI',['../lbann__base_8hpp.html#a50107efba2c08b6188a769743a78d04e',1,'lbann_base.hpp']]],
-  ['decay',['decay',['../classlbann_1_1SGD.html#adf5b54cf44636e2bce7c690821cf2fb9',1,'lbann::SGD::decay()'],['../classlbann_1_1SGD__factory.html#a179f80de13aabe1338f5252ca448d07c',1,'lbann::SGD_factory::decay()']]],
   ['dist_5fnormal',['dist_normal',['../classlbann_1_1patchworks_1_1rand__patch.html#a158de94b60e899de910d8e470279d453',1,'lbann::patchworks::rand_patch']]],
   ['dist_5funiform_5fint',['dist_uniform_int',['../classlbann_1_1patchworks_1_1rand__patch.html#a1281cc42ebeb5a5dafa7a47ce2edd489',1,'lbann::patchworks::rand_patch']]],
   ['dist_5funiform_5freal',['dist_uniform_real',['../classlbann_1_1patchworks_1_1rand__patch.html#a8e2e8aba4b0687418006cad0d6f9c1f6',1,'lbann::patchworks::rand_patch']]],

@@ -1,6 +1,6 @@
 var classlbann_1_1deep__neural__network =
 [
-    [ "deep_neural_network", "classlbann_1_1deep__neural__network.html#ac8575065b5213d9c00de2e97c436d834", null ],
+    [ "deep_neural_network", "classlbann_1_1deep__neural__network.html#a8baefc992f7f2fc2a466425440641b23", null ],
     [ "~deep_neural_network", "classlbann_1_1deep__neural__network.html#a4183ad0bac95d0e36f3e137c82530775", null ],
     [ "check_gradient", "classlbann_1_1deep__neural__network.html#a4095db900926a90d40020b5598ca5215", null ],
     [ "evaluate", "classlbann_1_1deep__neural__network.html#a6a7fe9037bf2d01d0c3c43c4f79ff265", null ],

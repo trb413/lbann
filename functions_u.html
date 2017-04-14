@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">422d49a-ci221955210</span>
+   &#160;<span id="projectnumber">a972491-ci221992383</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -119,15 +119,20 @@ $(document).ready(function(){initNavTree('functions_u.html','');});
 : <a class="el" href="classlbann_1_1lbann__quantizer.html#aa1e0ef48887b28d16e22efcd215b4d8a">lbann::lbann_quantizer</a>
 </li>
 <li>update()
-: <a class="el" href="classlbann_1_1convolutional__layer.html#a106690c11d33b28a48c39d5512f500b2">lbann::convolutional_layer</a>
+: <a class="el" href="classlbann_1_1adagrad.html#a2189fad7d43175458d613bd078ff2b78">lbann::adagrad</a>
+, <a class="el" href="classlbann_1_1adam.html#a7dfa3e4109715f019d496c6bd14c0d8e">lbann::adam</a>
+, <a class="el" href="classlbann_1_1convolutional__layer.html#a106690c11d33b28a48c39d5512f500b2">lbann::convolutional_layer</a>
 , <a class="el" href="classlbann_1_1DataReader.html#ad98fb0d0e54179177c83acf57a58986d">lbann::DataReader</a>
 , <a class="el" href="classlbann_1_1FullyConnectedLayer.html#a833f3d06c344e7f5857f87b4da4ffa94">lbann::FullyConnectedLayer</a>
 , <a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#a089d3b4debe9bce1e862d979a9ba9f3c">lbann::input_layer_distributed_minibatch</a>
 , <a class="el" href="classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#ad4c080ab55daafb34cbf80fb9ab48efe">lbann::input_layer_distributed_minibatch_parallel_io</a>
 , <a class="el" href="classlbann_1_1Layer.html#a0fbb376cebdaa4692fdc92df34bb366c">lbann::Layer</a>
 , <a class="el" href="classlbann_1_1local__response__normalization__layer.html#aa531edfe1bb0e27dd6063371c4464f7d">lbann::local_response_normalization_layer</a>
+, <a class="el" href="classlbann_1_1optimizer.html#a15f0487c474d261086723422a8bad921">lbann::optimizer</a>
 , <a class="el" href="classlbann_1_1pooling__layer.html#a53e49068475c14e1e0fd8925a7b3c822">lbann::pooling_layer</a>
 , <a class="el" href="classlbann_1_1reconstruction__layer.html#af6de20b22380a0bc696c52d191275c49">lbann::reconstruction_layer</a>
+, <a class="el" href="classlbann_1_1rmsprop.html#a5b5dbad87f271c8dcb180dca1b7f0b12">lbann::rmsprop</a>
+, <a class="el" href="classlbann_1_1sgd.html#a86e774886726d5b4a14d1b30323c6f5a">lbann::sgd</a>
 , <a class="el" href="classlbann_1_1SoftmaxLayer.html#a74ab0d29045acb9c2f62fc6d5b0a73b1">lbann::SoftmaxLayer</a>
 , <a class="el" href="classlbann_1_1target__layer__distributed__minibatch.html#a9e6fb3d242f50ca174110f238d75a2f8">lbann::target_layer_distributed_minibatch</a>
 , <a class="el" href="classlbann_1_1target__layer__distributed__minibatch__parallel__io.html#a628b485db774f8a5a4e093edd8b73f3f">lbann::target_layer_distributed_minibatch_parallel_io</a>
@@ -141,13 +146,6 @@ $(document).ready(function(){initNavTree('functions_u.html','');});
 <li>update_num_samples_processed()
 : <a class="el" href="classlbann_1_1io__layer.html#abbf07dd592d714852090c12855983592">lbann::io_layer</a>
 </li>
-<li>update_weight_bias_matrix()
-: <a class="el" href="classlbann_1_1Adagrad.html#aff3cdabac05cb2ee74135e06ad5bf96d">lbann::Adagrad&lt; _DistMat &gt;</a>
-, <a class="el" href="classlbann_1_1Adam.html#a00a29ea63525caa97045e1f16d6f7132">lbann::Adam&lt; _DistMat &gt;</a>
-, <a class="el" href="classlbann_1_1Optimizer.html#ac7b941b3f1191fbb020cddc6c0ca67ef">lbann::Optimizer</a>
-, <a class="el" href="classlbann_1_1RMSprop.html#a68f6af6b3558e3e762d9b16415b40c21">lbann::RMSprop&lt; _DistMat &gt;</a>
-, <a class="el" href="classlbann_1_1SGD.html#ad6f71f3d4745f2c996ef9d9274927bc0">lbann::SGD&lt; _DistMat &gt;</a>
-</li>
 <li>uqtype
 : <a class="el" href="classlbann_1_1lbann__quantizer.html#a018cddfc9b73d94c2d60bdd7a11a0079">lbann::lbann_quantizer</a>
 </li>
@@ -160,7 +158,7 @@ $(document).ready(function(){initNavTree('functions_u.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Apr 14 2017 02:46:11 for LBANN by
+    <li class="footer">Generated on Fri Apr 14 2017 07:16:59 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

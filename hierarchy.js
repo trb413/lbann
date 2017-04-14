@@ -134,17 +134,17 @@ var hierarchy =
       [ "lbann::objective_functions::mean_squared_error", "classlbann_1_1objective__functions_1_1mean__squared__error.html", null ]
     ] ],
     [ "lbann::objective_functions::statistics", "classlbann_1_1objective__functions_1_1statistics.html", null ],
-    [ "lbann::Optimizer", "classlbann_1_1Optimizer.html", [
-      [ "lbann::Adagrad< _DistMat >", "classlbann_1_1Adagrad.html", null ],
-      [ "lbann::Adam< _DistMat >", "classlbann_1_1Adam.html", null ],
-      [ "lbann::RMSprop< _DistMat >", "classlbann_1_1RMSprop.html", null ],
-      [ "lbann::SGD< _DistMat >", "classlbann_1_1SGD.html", null ]
+    [ "lbann::optimizer", "classlbann_1_1optimizer.html", [
+      [ "lbann::adagrad", "classlbann_1_1adagrad.html", null ],
+      [ "lbann::adam", "classlbann_1_1adam.html", null ],
+      [ "lbann::rmsprop", "classlbann_1_1rmsprop.html", null ],
+      [ "lbann::sgd", "classlbann_1_1sgd.html", null ]
     ] ],
-    [ "lbann::Optimizer_factory", "classlbann_1_1Optimizer__factory.html", [
-      [ "lbann::Adagrad_factory", "classlbann_1_1Adagrad__factory.html", null ],
-      [ "lbann::Adam_factory", "classlbann_1_1Adam__factory.html", null ],
-      [ "lbann::RMSprop_factory", "classlbann_1_1RMSprop__factory.html", null ],
-      [ "lbann::SGD_factory", "classlbann_1_1SGD__factory.html", null ]
+    [ "lbann::optimizer_factory", "classlbann_1_1optimizer__factory.html", [
+      [ "lbann::adagrad_factory", "classlbann_1_1adagrad__factory.html", null ],
+      [ "lbann::adam_factory", "classlbann_1_1adam__factory.html", null ],
+      [ "lbann::rmsprop_factory", "classlbann_1_1rmsprop__factory.html", null ],
+      [ "lbann::sgd_factory", "classlbann_1_1sgd__factory.html", null ]
     ] ],
     [ "lbann::patchworks::rand_patch< RealT, IntT >", "classlbann_1_1patchworks_1_1rand__patch.html", null ],
     [ "lbann::PerformanceParams", "classlbann_1_1PerformanceParams.html", null ],

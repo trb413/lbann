@@ -1,6 +1,6 @@
 var classlbann_1_1Layer =
 [
-    [ "Layer", "classlbann_1_1Layer.html#ae23d551b082842f730f78bfea85c54a7", null ],
+    [ "Layer", "classlbann_1_1Layer.html#a1483cd7103a5f739c4f8bac4a0d005dc", null ],
     [ "~Layer", "classlbann_1_1Layer.html#a68c3f57587956da938406812f13ecb78", null ],
     [ "backProp", "classlbann_1_1Layer.html#a07f230d516c76f22ff42addb542424af", null ],
     [ "bp_linearity", "classlbann_1_1Layer.html#a3cadcd93ddac0f0231449181a72edf1b", null ],
@@ -19,7 +19,7 @@ var classlbann_1_1Layer =
     [ "get_effective_minibatch_size", "classlbann_1_1Layer.html#adaab698fe711b0dd0ada944059a18142", null ],
     [ "get_index", "classlbann_1_1Layer.html#ab178f73070d2764151a7e6be2614acda", null ],
     [ "get_minibatch_size", "classlbann_1_1Layer.html#ad0c18464cd5ea40f5f0c1f33e82fb803", null ],
-    [ "get_optimizer", "classlbann_1_1Layer.html#a2f196ef8b7a8ed9562aca11eae8cf749", null ],
+    [ "get_optimizer", "classlbann_1_1Layer.html#a3d59d2a12813c584efcc63bc5bcbbf14", null ],
     [ "get_weights_biases", "classlbann_1_1Layer.html#a190982036d52d288d3528a16e30418e0", null ],
     [ "get_weights_biases_gradient", "classlbann_1_1Layer.html#a4b2b92aa11d932d62456c21ed929b263", null ],
     [ "initialize_data_parallel_distribution", "classlbann_1_1Layer.html#aa9937720c6ac7039cb70d4defc22e1fa", null ],
@@ -67,6 +67,7 @@ var classlbann_1_1Layer =
     [ "m_next_layer_type", "classlbann_1_1Layer.html#a3694a0b47f2eb1f99d0b3f2dc01c859e", null ],
     [ "m_next_layer_using_gpus", "classlbann_1_1Layer.html#a9121ac562e8627e535880280adf2ce7b", null ],
     [ "m_num_prev_neurons", "classlbann_1_1Layer.html#a85c02c636fad7ad8136ef9448173d345", null ],
+    [ "m_optimizer", "classlbann_1_1Layer.html#a54d5ada095360c0933ff8692e14bd253", null ],
     [ "m_prev_activations", "classlbann_1_1Layer.html#acbf8aa63927a205c28f971e91c24c89f", null ],
     [ "m_prev_activations_v", "classlbann_1_1Layer.html#ac590e0f3831d1c7b204275c89375ee14", null ],
     [ "m_prev_error_signal", "classlbann_1_1Layer.html#a81d6e3e65adcfee83e953b63ff5e9121", null ],
@@ -81,6 +82,5 @@ var classlbann_1_1Layer =
     [ "m_weights_gradient", "classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7", null ],
     [ "neural_network_model", "classlbann_1_1Layer.html#a9699f8d327ed26f98a52c750f38f8312", null ],
     [ "NumNeurons", "classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44", null ],
-    [ "optimizer", "classlbann_1_1Layer.html#a5caea149f8ecebff4b77efd1248b8267", null ],
     [ "regularizers", "classlbann_1_1Layer.html#a9989c75430678d69efc2794ed40693b3", null ]
 ];

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">422d49a-ci221955210</span>
+   &#160;<span id="projectnumber">a972491-ci221992383</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -116,90 +116,65 @@ $(document).ready(function(){initNavTree('lbann__optimizer_8cpp_source.html','')
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// implied. See the License for the specific language governing</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// permissions and limitations under the license.</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// lbann_optimizer .hpp .cpp - Abstract class for neural network optimizers</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// lbann_optimizer .hpp .cpp - Abstract optimizer class</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lbann__optimizer_8hpp.html">lbann/optimizers/lbann_optimizer.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lbann__optimizer__sgd_8hpp.html">lbann/optimizers/lbann_optimizer_sgd.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lbann__optimizer__adagrad_8hpp.html">lbann/optimizers/lbann_optimizer_adagrad.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lbann__optimizer__rmsprop_8hpp.html">lbann/optimizers/lbann_optimizer_rmsprop.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">using namespace </span>El;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">using namespace </span>El;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classlbann_1_1Optimizer.html#ac7b941b3f1191fbb020cddc6c0ca67ef">   37</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1Optimizer.html#ac7b941b3f1191fbb020cddc6c0ca67ef">lbann::Optimizer::update_weight_bias_matrix</a>(<a class="code" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;WB_D, <a class="code" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a>&amp; WB) {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="comment">// TODO: throw exception</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  printf(<span class="stringliteral">&quot;LBANN Error: optimizer update not defined\n&quot;</span>);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  exit(-1);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span><a class="code" href="classlbann_1_1Optimizer.html#ac47f4b7d603acd6a4c89c16b6b55b58a">lbann::Optimizer::Optimizer</a>() {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<a class="code" href="classlbann_1_1Optimizer.html#a2963ad8b56b487481adfe8c676786771">lbann::Optimizer::~Optimizer</a>() {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">static</span> Optimizer *lbann::Optimizer::create_optimizer(<span class="keywordtype">int</span> method) {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  Optimizer *optimizer = <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">if</span> (LearnRateMethod == 1) { <span class="comment">// Adagrad</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    optimizer = <span class="keyword">new</span> Adagrad((<span class="keywordtype">float</span>) 0.1 <span class="comment">/*0.01*/</span>, (<span class="keywordtype">float</span>) 1e-6, grid);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }<span class="keywordflow">else</span> <span class="keywordflow">if</span> (LearnRateMethod == 2) { <span class="comment">// RMSprop</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    optimizer = <span class="keyword">new</span> RMSprop((<span class="keywordtype">float</span>) 0.001, (<span class="keywordtype">float</span>) 0.9, (<span class="keywordtype">float</span>) 1e-6, grid);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }<span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    optimizer = <span class="keyword">new</span> SGD();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">return</span> optimizer;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classlbann_1_1Optimizer.html#a56184a8dafa24b43089458f0cd07450b">lbann::Optimizer::saveToCheckpoint</a>(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keywordtype">char</span>* filename, uint64_t* bytes) {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classlbann_1_1Optimizer.html#aeda7e360675072eef1e245e028415001">lbann::Optimizer::loadFromCheckpoint</a>(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keywordtype">char</span>* filename, uint64_t* bytes) {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classlbann_1_1Optimizer.html#a09581840cdb97e871e263a2115da6497">lbann::Optimizer::saveToCheckpointShared</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* dir, <span class="keywordtype">int</span> Index, uint64_t* bytes) {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classlbann_1_1Optimizer.html#a4410d61597fcbe8bfbe06629c3761ba3">lbann::Optimizer::loadFromCheckpointShared</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* dir, <span class="keywordtype">int</span> Index, uint64_t* bytes) {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<a class="code" href="classlbann_1_1Optimizer__factory.html#a66f4559ef9b4a3a6a0d803c17378cddc">lbann::Optimizer_factory::Optimizer_factory</a>() {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<a class="code" href="classlbann_1_1Optimizer__factory.html#a527c8c70b9913b9c93920f3e150d3059">lbann::Optimizer_factory::~Optimizer_factory</a>() {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="lbann__optimizer__sgd_8hpp_html"><div class="ttname"><a href="lbann__optimizer__sgd_8hpp.html">lbann_optimizer_sgd.hpp</a></div></div>
-<div class="ttc" id="lbann__optimizer__rmsprop_8hpp_html"><div class="ttname"><a href="lbann__optimizer__rmsprop_8hpp.html">lbann_optimizer_rmsprop.hpp</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_afad88fb587c304caea8a36ee5a5c1df8"><div class="ttname"><a href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a></div><div class="ttdeci">El::ElementalMatrix&lt; DataType &gt; ElMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00051">lbann_base.hpp:51</a></div></div>
-<div class="ttc" id="classlbann_1_1Optimizer_html_a4410d61597fcbe8bfbe06629c3761ba3"><div class="ttname"><a href="classlbann_1_1Optimizer.html#a4410d61597fcbe8bfbe06629c3761ba3">lbann::Optimizer::loadFromCheckpointShared</a></div><div class="ttdeci">virtual bool loadFromCheckpointShared(persist &amp;p, int Index)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00065">lbann_optimizer.hpp:65</a></div></div>
-<div class="ttc" id="classlbann_1_1Optimizer_html_a09581840cdb97e871e263a2115da6497"><div class="ttname"><a href="classlbann_1_1Optimizer.html#a09581840cdb97e871e263a2115da6497">lbann::Optimizer::saveToCheckpointShared</a></div><div class="ttdeci">virtual bool saveToCheckpointShared(persist &amp;p, int Index)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00062">lbann_optimizer.hpp:62</a></div></div>
-<div class="ttc" id="classlbann_1_1Optimizer_html_ac47f4b7d603acd6a4c89c16b6b55b58a"><div class="ttname"><a href="classlbann_1_1Optimizer.html#ac47f4b7d603acd6a4c89c16b6b55b58a">lbann::Optimizer::Optimizer</a></div><div class="ttdeci">Optimizer()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00047">lbann_optimizer.hpp:47</a></div></div>
-<div class="ttc" id="classlbann_1_1Optimizer__factory_html_a66f4559ef9b4a3a6a0d803c17378cddc"><div class="ttname"><a href="classlbann_1_1Optimizer__factory.html#a66f4559ef9b4a3a6a0d803c17378cddc">lbann::Optimizer_factory::Optimizer_factory</a></div><div class="ttdeci">Optimizer_factory()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00080">lbann_optimizer.hpp:80</a></div></div>
-<div class="ttc" id="classlbann_1_1Optimizer_html_a56184a8dafa24b43089458f0cd07450b"><div class="ttname"><a href="classlbann_1_1Optimizer.html#a56184a8dafa24b43089458f0cd07450b">lbann::Optimizer::saveToCheckpoint</a></div><div class="ttdeci">virtual bool saveToCheckpoint(int fd, const char *filename, uint64_t *bytes)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00056">lbann_optimizer.hpp:56</a></div></div>
-<div class="ttc" id="classlbann_1_1Optimizer_html_aeda7e360675072eef1e245e028415001"><div class="ttname"><a href="classlbann_1_1Optimizer.html#aeda7e360675072eef1e245e028415001">lbann::Optimizer::loadFromCheckpoint</a></div><div class="ttdeci">virtual bool loadFromCheckpoint(int fd, const char *filename, uint64_t *bytes)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00059">lbann_optimizer.hpp:59</a></div></div>
-<div class="ttc" id="datatype_8hpp_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00035">datatype.hpp:35</a></div></div>
-<div class="ttc" id="lbann__optimizer__adagrad_8hpp_html"><div class="ttname"><a href="lbann__optimizer__adagrad_8hpp.html">lbann_optimizer_adagrad.hpp</a></div></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<a class="code" href="classlbann_1_1optimizer.html#a42150ad8b3dc9cfdedf2ca63d26aa20a">lbann::optimizer::optimizer</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classlbann_1_1optimizer.html#a42150ad8b3dc9cfdedf2ca63d26aa20a">   35</a></span>&#160;(<a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, <span class="keyword">const</span> std::string name, <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> learning_rate)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  : <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>(comm), m_name(name), m_learning_rate(learning_rate) {}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classlbann_1_1optimizer.html#abbee0e2cb021f835b669d9ba0da5145a">   38</a></span>&#160;<a class="code" href="classlbann_1_1optimizer.html#abbee0e2cb021f835b669d9ba0da5145a">lbann::optimizer::~optimizer</a>() {}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classlbann_1_1optimizer.html#a6eb6169ed46ad602339c7b0bc2633c37">   40</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1optimizer.html#a6eb6169ed46ad602339c7b0bc2633c37">lbann::optimizer::setup</a>(<a class="code" href="lbann__base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>* parameters)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  m_parameters = parameters;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  m_height = m_parameters-&gt;Height();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  m_width = m_parameters-&gt;Width();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  DistData dist(*m_parameters);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">if</span>(dist.colDist == MC &amp;&amp; dist.rowDist == MR)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    m_matrix_format = <a class="code" href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dacf33f55c86c56389442455e8e190be2d">matrix_format::MC_MR</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(dist.colDist == CIRC &amp;&amp; dist.rowDist == CIRC)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    m_matrix_format = <a class="code" href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dad9fe2079b84227e0894774795402ec69">matrix_format::CIRC_CIRC</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(dist.colDist == STAR &amp;&amp; dist.rowDist == STAR)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    m_matrix_format = <a class="code" href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0da41478dbc562bc2cdaa328e2fa04558b2">matrix_format::STAR_STAR</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(dist.colDist == STAR &amp;&amp; dist.rowDist == VC)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    m_matrix_format = <a class="code" href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dab05461c65c89f42d7e1b8c9cea626032">matrix_format::STAR_VC</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    m_matrix_format = <a class="code" href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dafedb2d84cafe20862cb4399751a8a7e3">matrix_format::invalid</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<a class="code" href="classlbann_1_1optimizer__factory.html#a6180e1301ee5cd1a4fd77cc6ba9a4ef5">lbann::optimizer_factory::optimizer_factory</a></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classlbann_1_1optimizer__factory.html#a6180e1301ee5cd1a4fd77cc6ba9a4ef5">   59</a></span>&#160;(<a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* comm,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; <span class="keyword">const</span> std::string name)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  : <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>(comm), m_name(name) {}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classlbann_1_1optimizer__factory.html#a97310dc2c882c1137d3582624cecc3b5">   63</a></span>&#160;<a class="code" href="classlbann_1_1optimizer__factory.html#a97310dc2c882c1137d3582624cecc3b5">lbann::optimizer_factory::~optimizer_factory</a>() {}</div>
+<div class="ttc" id="classlbann_1_1optimizer__factory_html_a6180e1301ee5cd1a4fd77cc6ba9a4ef5"><div class="ttname"><a href="classlbann_1_1optimizer__factory.html#a6180e1301ee5cd1a4fd77cc6ba9a4ef5">lbann::optimizer_factory::optimizer_factory</a></div><div class="ttdeci">optimizer_factory(lbann_comm *comm, const std::string name)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8cpp_source.html#l00059">lbann_optimizer.cpp:59</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html"><div class="ttname"><a href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00048">lbann_comm.hpp:48</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer__factory_html_a97310dc2c882c1137d3582624cecc3b5"><div class="ttname"><a href="classlbann_1_1optimizer__factory.html#a97310dc2c882c1137d3582624cecc3b5">lbann::optimizer_factory::~optimizer_factory</a></div><div class="ttdeci">virtual ~optimizer_factory()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8cpp_source.html#l00063">lbann_optimizer.cpp:63</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a6eb6169ed46ad602339c7b0bc2633c37"><div class="ttname"><a href="classlbann_1_1optimizer.html#a6eb6169ed46ad602339c7b0bc2633c37">lbann::optimizer::setup</a></div><div class="ttdeci">virtual void setup(AbsDistMat *parameters)</div><div class="ttdoc">Set parameters to optimize and initialize optimizer. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8cpp_source.html#l00040">lbann_optimizer.cpp:40</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a42150ad8b3dc9cfdedf2ca63d26aa20a"><div class="ttname"><a href="classlbann_1_1optimizer.html#a42150ad8b3dc9cfdedf2ca63d26aa20a">lbann::optimizer::optimizer</a></div><div class="ttdeci">optimizer(lbann_comm *comm, const std::string name, DataType learning_rate=DataType(0))</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8cpp_source.html#l00035">lbann_optimizer.cpp:35</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0dacf33f55c86c56389442455e8e190be2d"><div class="ttname"><a href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dacf33f55c86c56389442455e8e190be2d">matrix_format::MC_MR</a></div></div>
+<div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0dafedb2d84cafe20862cb4399751a8a7e3"><div class="ttname"><a href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dafedb2d84cafe20862cb4399751a8a7e3">matrix_format::invalid</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_abbee0e2cb021f835b669d9ba0da5145a"><div class="ttname"><a href="classlbann_1_1optimizer.html#abbee0e2cb021f835b669d9ba0da5145a">lbann::optimizer::~optimizer</a></div><div class="ttdeci">virtual ~optimizer()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8cpp_source.html#l00038">lbann_optimizer.cpp:38</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a059664ed36d5eedd5ff4f7838d9c7a5a"><div class="ttname"><a href="lbann__base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a></div><div class="ttdeci">El::AbstractDistMatrix&lt; DataType &gt; AbsDistMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00043">lbann_base.hpp:43</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0da41478dbc562bc2cdaa328e2fa04558b2"><div class="ttname"><a href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0da41478dbc562bc2cdaa328e2fa04558b2">matrix_format::STAR_STAR</a></div></div>
 <div class="ttc" id="lbann__optimizer_8hpp_html"><div class="ttname"><a href="lbann__optimizer_8hpp.html">lbann_optimizer.hpp</a></div></div>
-<div class="ttc" id="classlbann_1_1Optimizer_html_ac7b941b3f1191fbb020cddc6c0ca67ef"><div class="ttname"><a href="classlbann_1_1Optimizer.html#ac7b941b3f1191fbb020cddc6c0ca67ef">lbann::Optimizer::update_weight_bias_matrix</a></div><div class="ttdeci">virtual void update_weight_bias_matrix(ElMat &amp;WB_D, ElMat &amp;WB)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8cpp_source.html#l00037">lbann_optimizer.cpp:37</a></div></div>
-<div class="ttc" id="classlbann_1_1Optimizer_html_a2963ad8b56b487481adfe8c676786771"><div class="ttname"><a href="classlbann_1_1Optimizer.html#a2963ad8b56b487481adfe8c676786771">lbann::Optimizer::~Optimizer</a></div><div class="ttdeci">virtual ~Optimizer()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00048">lbann_optimizer.hpp:48</a></div></div>
-<div class="ttc" id="classlbann_1_1Optimizer__factory_html_a527c8c70b9913b9c93920f3e150d3059"><div class="ttname"><a href="classlbann_1_1Optimizer__factory.html#a527c8c70b9913b9c93920f3e150d3059">lbann::Optimizer_factory::~Optimizer_factory</a></div><div class="ttdeci">virtual ~Optimizer_factory()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00081">lbann_optimizer.hpp:81</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00037">lbann_base.hpp:37</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0dab05461c65c89f42d7e1b8c9cea626032"><div class="ttname"><a href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dab05461c65c89f42d7e1b8c9cea626032">matrix_format::STAR_VC</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0dad9fe2079b84227e0894774795402ec69"><div class="ttname"><a href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dad9fe2079b84227e0894774795402ec69">matrix_format::CIRC_CIRC</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_68e74cb6399bafec1ede909ca86fb89b.html">optimizers</a></li><li class="navelem"><a class="el" href="lbann__optimizer_8cpp.html">lbann_optimizer.cpp</a></li>
-    <li class="footer">Generated on Fri Apr 14 2017 02:46:09 for LBANN by
+    <li class="footer">Generated on Fri Apr 14 2017 07:16:57 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

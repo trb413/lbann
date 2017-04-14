@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">422d49a-ci221955210</span>
+   &#160;<span id="projectnumber">a972491-ci221992383</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -132,11 +132,11 @@ $(document).ready(function(){initNavTree('lbann__layer_8cpp_source.html','');});
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">using namespace </span>El;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classlbann_1_1Layer.html#ae23d551b082842f730f78bfea85c54a7">   43</a></span>&#160;<a class="code" href="classlbann_1_1Layer.html#ae23d551b082842f730f78bfea85c54a7">lbann::Layer::Layer</a>(<a class="code" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a> data_dist, <span class="keyword">const</span> <a class="code" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> index, </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                    <a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, <a class="code" href="classlbann_1_1Optimizer.html">Optimizer</a> *optimizer,</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classlbann_1_1Layer.html#a1483cd7103a5f739c4f8bac4a0d005dc">   43</a></span>&#160;<a class="code" href="classlbann_1_1Layer.html#a1483cd7103a5f739c4f8bac4a0d005dc">lbann::Layer::Layer</a>(<a class="code" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a> data_dist, <span class="keyword">const</span> <a class="code" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> index, </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                    <a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, <a class="code" href="classlbann_1_1optimizer.html">optimizer</a> *opt,</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                    <a class="code" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> mbsize, <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76">activation_type</a> activation,</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                    std::vector&lt;regularizer*&gt; regs)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  : m_activation_type(activation), m_data_layout(data_dist), optimizer(optimizer), comm(comm),</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  : m_activation_type(activation), m_data_layout(data_dist), m_optimizer(opt), comm(comm),</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    regularizers(regs), m_mini_batch_size(mbsize),</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    m_effective_mbsize(mbsize),</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    fp_time(0.0), bp_time(0.0),</div>
@@ -481,7 +481,7 @@ $(document).ready(function(){initNavTree('lbann__layer_8cpp_source.html','');});
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="comment">//writeDist(fd, filename, *m_weights, bytes);</span></div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;</div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="comment">// Need to catch return value from function</span></div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    optimizer-&gt;saveToCheckpoint(fd, filename, bytes);</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="comment">// m_optimizer-&gt;saveToCheckpoint(fd, filename, bytes);</span></div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;}</div>
 <div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;</div>
@@ -491,7 +491,7 @@ $(document).ready(function(){initNavTree('lbann__layer_8cpp_source.html','');});
 <div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="comment">//readDist(fd, filename, (DistMat&amp;) *m_weights, bytes);</span></div>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;</div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="comment">// Need to catch return value from function</span></div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    optimizer-&gt;loadFromCheckpoint(fd, filename, bytes);</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="comment">// m_optimizer-&gt;loadFromCheckpoint(fd, filename, bytes);</span></div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;}</div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;</div>
@@ -505,7 +505,7 @@ $(document).ready(function(){initNavTree('lbann__layer_8cpp_source.html','');});
 <div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    p.<a class="code" href="classlbann_1_1persist.html#a9170de652405d86d9ba9b3793f8781c6">write_distmat</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c">persist_type::model</a>, name, (<a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>*)m_weights);</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;    <span class="comment">// if saving training state, also write out state of optimizer</span></div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    optimizer-&gt;saveToCheckpointShared(p, Index);</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    <span class="comment">// m_optimizer-&gt;saveToCheckpointShared(p, Index);</span></div>
 <div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;</div>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;}</div>
@@ -520,7 +520,7 @@ $(document).ready(function(){initNavTree('lbann__layer_8cpp_source.html','');});
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    p.<a class="code" href="classlbann_1_1persist.html#aa98be93f33b510e5b506b61de6bd79bd">read_distmat</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c">persist_type::model</a>, name, (<a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>*)m_weights);</div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;</div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="comment">// if loading training state, read in state of optimizer</span></div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    optimizer-&gt;loadFromCheckpointShared(p, Index);</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <span class="comment">// m_optimizer-&gt;loadFromCheckpointShared(p, Index);</span></div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;}</div>
@@ -615,7 +615,6 @@ $(document).ready(function(){initNavTree('lbann__layer_8cpp_source.html','');});
 <div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1Layer_html_a07f230d516c76f22ff42addb542424af"><div class="ttname"><a href="classlbann_1_1Layer.html#a07f230d516c76f22ff42addb542424af">lbann::Layer::backProp</a></div><div class="ttdeci">virtual void backProp()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00201">lbann_layer.cpp:201</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a786677cbfb3f5677b4d84f3056eb08db"><div class="ttname"><a href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a></div><div class="ttdeci">data_layout</div><div class="ttdoc">Data layout that is optimized for different modes of parallelism. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00057">lbann_base.hpp:57</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_ae23d551b082842f730f78bfea85c54a7"><div class="ttname"><a href="classlbann_1_1Layer.html#ae23d551b082842f730f78bfea85c54a7">lbann::Layer::Layer</a></div><div class="ttdeci">Layer(data_layout data_dist, const uint index, lbann_comm *comm, Optimizer *optimizer, uint mbsize, activation_type activation=activation_type::ID, std::vector&lt; regularizer * &gt; regs={})</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00043">lbann_layer.cpp:43</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a677833ec998be158873f880c7bd08179"><div class="ttname"><a href="classlbann_1_1Layer.html#a677833ec998be158873f880c7bd08179">lbann::Layer::set_prev_layer_using_gpus</a></div><div class="ttdeci">void set_prev_layer_using_gpus(bool using_gpus)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00363">lbann_layer.cpp:363</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_ac46bf08faa4b4f0bea3dcbd88aa3dfe4"><div class="ttname"><a href="classlbann_1_1Layer.html#ac46bf08faa4b4f0bea3dcbd88aa3dfe4">lbann::Layer::saveToFile</a></div><div class="ttdeci">bool saveToFile(int fd, const char *filename)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00373">lbann_layer.cpp:373</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a935881e25a98b4ffad1985dc04c19572"><div class="ttname"><a href="classlbann_1_1Layer.html#a935881e25a98b4ffad1985dc04c19572">lbann::Layer::fp_set_std_matrix_view</a></div><div class="ttdeci">virtual void fp_set_std_matrix_view()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00440">lbann_layer.cpp:440</a></div></div>
@@ -648,6 +647,7 @@ $(document).ready(function(){initNavTree('lbann__layer_8cpp_source.html','');});
 <div class="ttc" id="classlbann_1_1Layer_html_acd2524835a05a2d88c92e546e15a80a9"><div class="ttname"><a href="classlbann_1_1Layer.html#acd2524835a05a2d88c92e546e15a80a9">lbann::Layer::loadFromCheckpointShared</a></div><div class="ttdeci">virtual bool loadFromCheckpointShared(persist &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00425">lbann_layer.cpp:425</a></div></div>
 <div class="ttc" id="lbann__file__io_8hpp_html"><div class="ttname"><a href="lbann__file__io_8hpp.html">lbann_file_io.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_ad547eae2227e9db8f5621b8f616be083"><div class="ttname"><a href="classlbann_1_1Layer.html#ad547eae2227e9db8f5621b8f616be083">lbann::Layer::fp_output</a></div><div class="ttdeci">ElMat * fp_output()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00305">lbann_layer.cpp:305</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html"><div class="ttname"><a href="classlbann_1_1optimizer.html">lbann::optimizer</a></div><div class="ttdoc">Optimizer base class. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00040">lbann_optimizer.hpp:40</a></div></div>
 <div class="ttc" id="namespacelbann_html_a33be342c4bdc4c00e9f91ff3a2f20743accc0377a8afbf50e7094f5c23a8af223"><div class="ttname"><a href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743accc0377a8afbf50e7094f5c23a8af223">lbann::layer_type::INVALID</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a20442464265da1cb2aeb1cf82640702f"><div class="ttname"><a href="classlbann_1_1Layer.html#a20442464265da1cb2aeb1cf82640702f">lbann::Layer::setup</a></div><div class="ttdeci">virtual void setup(int)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00290">lbann_layer.cpp:290</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__summary_html_a92a483db3f0232bf31c851a172c0964d"><div class="ttname"><a href="classlbann_1_1lbann__summary.html#a92a483db3f0232bf31c851a172c0964d">lbann::lbann_summary::reduce_mean</a></div><div class="ttdeci">void reduce_mean(const std::string tag, const ElMat &amp;mat, int64_t step)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__summary_8hpp_source.html#l00192">lbann_summary.hpp:192</a></div></div>
@@ -668,7 +668,6 @@ $(document).ready(function(){initNavTree('lbann__layer_8cpp_source.html','');});
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a4ba1b9a6b4eb986a348d85c2d80ca3eb"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a4ba1b9a6b4eb986a348d85c2d80ca3eb">lbann::lbann_comm::is_sendable</a></div><div class="ttdeci">static bool is_sendable(const Mat &amp;mat)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00373">lbann_comm.hpp:373</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a030edc2fd4cc62d9e13c3b7e81167be3"><div class="ttname"><a href="classlbann_1_1Layer.html#a030edc2fd4cc62d9e13c3b7e81167be3">lbann::Layer::bp_output</a></div><div class="ttdeci">ElMat * bp_output()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00309">lbann_layer.cpp:309</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a3694a0b47f2eb1f99d0b3f2dc01c859e"><div class="ttname"><a href="classlbann_1_1Layer.html#a3694a0b47f2eb1f99d0b3f2dc01c859e">lbann::Layer::m_next_layer_type</a></div><div class="ttdeci">layer_type m_next_layer_type</div><div class="ttdoc">Type of next layer. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00199">lbann_layer.hpp:199</a></div></div>
-<div class="ttc" id="classlbann_1_1Optimizer_html"><div class="ttname"><a href="classlbann_1_1Optimizer.html">lbann::Optimizer</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00045">lbann_optimizer.hpp:45</a></div></div>
 <div class="ttc" id="namespacelbann_html_aa7b4e710f444588dfcf4188b84b33420"><div class="ttname"><a href="namespacelbann.html#aa7b4e710f444588dfcf4188b84b33420">lbann::write_distmat</a></div><div class="ttdeci">bool write_distmat(int fd, const char *name, DistMat *M, uint64_t *bytes)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8cpp_source.html#l00674">lbann_persist.cpp:674</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a9b5e6cb0069ebb71450a43a6d3d52b57"><div class="ttname"><a href="classlbann_1_1Layer.html#a9b5e6cb0069ebb71450a43a6d3d52b57">lbann::Layer::set_next_layer_type</a></div><div class="ttdeci">void set_next_layer_type(layer_type type)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00354">lbann_layer.cpp:354</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_adeefecf61c8a8d5e7a54367fc3806edd"><div class="ttname"><a href="classlbann_1_1Layer.html#adeefecf61c8a8d5e7a54367fc3806edd">lbann::Layer::m_prev_layer_using_gpus</a></div><div class="ttdeci">bool m_prev_layer_using_gpus</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00252">lbann_layer.hpp:252</a></div></div>
@@ -701,13 +700,14 @@ $(document).ready(function(){initNavTree('lbann__layer_8cpp_source.html','');});
 <div class="ttc" id="lbann__base_8hpp_html_a763b3164342a5d73db851e85c76d385a"><div class="ttname"><a href="lbann__base_8hpp.html#a763b3164342a5d73db851e85c76d385a">StarVCMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::STAR, El::VC &gt; StarVCMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00048">lbann_base.hpp:48</a></div></div>
 <div class="ttc" id="classlbann_1_1persist_html"><div class="ttname"><a href="classlbann_1_1persist.html">lbann::persist</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00042">lbann_persist.hpp:42</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a7ab6aada4b2438de8ca3dd783775c2f5ad02c4c4cde7ae76252540d116a40f23a"><div class="ttname"><a href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ad02c4c4cde7ae76252540d116a40f23a">weight_initialization::zero</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a1483cd7103a5f739c4f8bac4a0d005dc"><div class="ttname"><a href="classlbann_1_1Layer.html#a1483cd7103a5f739c4f8bac4a0d005dc">lbann::Layer::Layer</a></div><div class="ttdeci">Layer(data_layout data_dist, const uint index, lbann_comm *comm, optimizer *opt, uint mbsize, activation_type activation=activation_type::ID, std::vector&lt; regularizer * &gt; regs={})</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00043">lbann_layer.cpp:43</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_faacdbae24c4b7c4a8fbaf54f29a6b8e.html">layers</a></li><li class="navelem"><a class="el" href="lbann__layer_8cpp.html">lbann_layer.cpp</a></li>
-    <li class="footer">Generated on Fri Apr 14 2017 02:46:09 for LBANN by
+    <li class="footer">Generated on Fri Apr 14 2017 07:16:56 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

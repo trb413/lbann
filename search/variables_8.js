@@ -7,6 +7,5 @@ var searchData=
   ['intermodelcommmethod',['IntermodelCommMethod',['../classlbann_1_1TrainingParams.html#aa30088e066d4d5cf2d2007667aef7a8a',1,'lbann::TrainingParams']]],
   ['internal_5fobj_5ffn',['internal_obj_fn',['../classlbann_1_1metrics_1_1mean__squared__error.html#a281a1f5f15d6acd1973beaf17fb129f1',1,'lbann::metrics::mean_squared_error']]],
   ['is_5fpinned_5fbwd',['is_pinned_bwd',['../classlbann_1_1convolutional__layer.html#aa02f0f56a82c6ad829a6320c915471ff',1,'lbann::convolutional_layer::is_pinned_bwd()'],['../classlbann_1_1pooling__layer.html#a81828d086aa30474b79b1f497116128f',1,'lbann::pooling_layer::is_pinned_bwd()']]],
-  ['is_5fpinned_5ffwd',['is_pinned_fwd',['../classlbann_1_1convolutional__layer.html#a008c0e8a55bc9e334e46fbb483fe77e8',1,'lbann::convolutional_layer::is_pinned_fwd()'],['../classlbann_1_1pooling__layer.html#a98319c79cadad2c50ec20a019e48f20a',1,'lbann::pooling_layer::is_pinned_fwd()']]],
-  ['iterations',['iterations',['../classlbann_1_1SGD.html#aa7e5e15309d59acaf173967dace4d469',1,'lbann::SGD']]]
+  ['is_5fpinned_5ffwd',['is_pinned_fwd',['../classlbann_1_1convolutional__layer.html#a008c0e8a55bc9e334e46fbb483fe77e8',1,'lbann::convolutional_layer::is_pinned_fwd()'],['../classlbann_1_1pooling__layer.html#a98319c79cadad2c50ec20a019e48f20a',1,'lbann::pooling_layer::is_pinned_fwd()']]]
 ];

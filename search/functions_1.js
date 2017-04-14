@@ -1,10 +1,10 @@
 var searchData=
 [
   ['activation_5fname',['activation_name',['../classlbann_1_1Activation.html#a0f754b8f10cc81f13a318ffb8fc754b3',1,'lbann::Activation']]],
-  ['adagrad',['Adagrad',['../classlbann_1_1Adagrad.html#a5cf6582fca9b7c09fa5c66f7e307fc50',1,'lbann::Adagrad']]],
-  ['adagrad_5ffactory',['Adagrad_factory',['../classlbann_1_1Adagrad__factory.html#a6ec787837653bdfebf0606b132ab8f88',1,'lbann::Adagrad_factory']]],
-  ['adam',['Adam',['../classlbann_1_1Adam.html#a212d41fb042389e6b4495bb16e7925a9',1,'lbann::Adam']]],
-  ['adam_5ffactory',['Adam_factory',['../classlbann_1_1Adam__factory.html#ade16c4618c8be6e40826f2c782d39855',1,'lbann::Adam_factory']]],
+  ['adagrad',['adagrad',['../classlbann_1_1adagrad.html#a5fd780af1ac4394dd82a1fa885fc935b',1,'lbann::adagrad']]],
+  ['adagrad_5ffactory',['adagrad_factory',['../classlbann_1_1adagrad__factory.html#ae16b10f82068610c876f9f2f4513a1fe',1,'lbann::adagrad_factory']]],
+  ['adam',['adam',['../classlbann_1_1adam.html#a5235379ec894e4544cfbe1b20f20a4c4',1,'lbann::adam']]],
+  ['adam_5ffactory',['adam_factory',['../classlbann_1_1adam__factory.html#a4248f090cce8b9603fb4875a10c37c68',1,'lbann::adam_factory']]],
   ['adaptive_5fthreshold_5fbound',['adaptive_threshold_bound',['../classlbann_1_1lbann__quantizer.html#a30825c7e6f42ad2d9dad842fad41f237',1,'lbann::lbann_quantizer']]],
   ['adaptive_5fthreshold_5fquantize',['adaptive_threshold_quantize',['../classlbann_1_1lbann__quantizer.html#af1d5338e2e1682156e4f654b110be70d',1,'lbann::lbann_quantizer::adaptive_threshold_quantize(const Mat &amp;mat, std::vector&lt; rowT &gt; &amp;q, Mat &amp;qerror, int proportion)'],['../classlbann_1_1lbann__quantizer.html#af1e9dc46de4c29a6ae7867b61107ba10',1,'lbann::lbann_quantizer::adaptive_threshold_quantize(const DistMat &amp;mat, std::vector&lt; rowT &gt; &amp;q, Mat &amp;qerror, int proportion)']]],
   ['adaptive_5fthreshold_5fquantize_5freplace',['adaptive_threshold_quantize_replace',['../classlbann_1_1lbann__quantizer.html#ad1fe245c411c515540f9d0ac289f2203',1,'lbann::lbann_quantizer']]],

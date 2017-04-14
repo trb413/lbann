@@ -36,6 +36,6 @@ var searchData=
   ['fp_5fweights',['fp_weights',['../classlbann_1_1regularizer.html#ab36e9a970736527ae2e8e73b723a3de4',1,'lbann::regularizer']]],
   ['free',['free',['../classlbann_1_1DataReader__CIFAR10.html#aee6167d540f2e11c50cb10d0998da744',1,'lbann::DataReader_CIFAR10::free()'],['../classlbann_1_1DataReader__ImageNet.html#af7903ee803e3212919c67769850f4ddf',1,'lbann::DataReader_ImageNet::free()']]],
   ['fully_5fconnected',['fully_connected',['../namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a156e322bc71c040cbb092c46ed11c5cb',1,'lbann']]],
-  ['fullyconnectedlayer',['FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html#a9c033b04665a87308d0783c658e81aea',1,'lbann::FullyConnectedLayer']]],
+  ['fullyconnectedlayer',['FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html#a5047027b416ca0ab719245c38d7721b0',1,'lbann::FullyConnectedLayer']]],
   ['fullyconnectedlayer',['FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html',1,'lbann']]]
 ];

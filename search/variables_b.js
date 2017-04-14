@@ -2,8 +2,6 @@ var searchData=
 [
   ['neg_5frecon',['neg_recon',['../structlbann_1_1lbann__quantizer_1_1adaptive__reconstructions.html#a631231c118cc17ba4ed569380e6c6711',1,'lbann::lbann_quantizer::adaptive_reconstructions']]],
   ['neg_5fthresh',['neg_thresh',['../structlbann_1_1lbann__quantizer_1_1adaptive__thresholds.html#a4626553695545cf0783c3f7302f92fbf',1,'lbann::lbann_quantizer::adaptive_thresholds']]],
-  ['nesterov',['nesterov',['../classlbann_1_1SGD.html#ad6c44f1d72c352fd9fdf5ac302e8e5a4',1,'lbann::SGD::nesterov()'],['../classlbann_1_1SGD__factory.html#a87f3915879ce1212154645729fe82e51',1,'lbann::SGD_factory::nesterov()']]],
-  ['nesterov_5fag',['nesterov_ag',['../classlbann_1_1SGD.html#a16a92b23f8dbb1040d71fee0ae9001b1',1,'lbann::SGD']]],
   ['network',['Network',['../classlbann_1_1NetworkParams.html#a17ccde99dec30d27c836a23f003fa34d',1,'lbann::NetworkParams']]],
   ['networkstr',['NetworkStr',['../classlbann_1_1NetworkParams.html#a8b503690c7475582b5a843f0959c3f2a',1,'lbann::NetworkParams']]],
   ['neural_5fnetwork_5fmodel',['neural_network_model',['../classlbann_1_1Layer.html#a9699f8d327ed26f98a52c750f38f8312',1,'lbann::Layer::neural_network_model()'],['../classlbann_1_1metrics_1_1metric.html#aa2923a8982c083c63d3414bd3a6670a1',1,'lbann::metrics::metric::neural_network_model()']]],
