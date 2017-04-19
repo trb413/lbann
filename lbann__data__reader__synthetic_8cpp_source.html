@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">c429ee2-ci222256740</span>
+   &#160;<span id="projectnumber">6823bc6-ci223769824</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -172,63 +172,35 @@ $(document).ready(function(){initNavTree('lbann__data__reader__synthetic_8cpp_so
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  ShuffledIndices.clear();</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  ShuffledIndices.resize(m_num_samples);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">if</span> (has_max_sample_count()) {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">size_t</span> max_sample_count = get_max_sample_count();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">bool</span> firstN = get_firstN();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    load(max_sample_count, firstN);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  } </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (has_use_percent()) {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">double</span> use_percent = get_use_percent();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">bool</span> firstN = get_firstN();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    load(use_percent, firstN);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  select_subset_of_data();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classlbann_1_1data__reader__synthetic.html#a0b95d6960551517c8c1f090f2d9add0e">   86</a></span>&#160;<a class="code" href="classlbann_1_1data__reader__synthetic.html">lbann::data_reader_synthetic</a>&amp; <a class="code" href="classlbann_1_1data__reader__synthetic.html#a0b95d6960551517c8c1f090f2d9add0e">lbann::data_reader_synthetic::operator=</a>(<span class="keyword">const</span> <a class="code" href="classlbann_1_1data__reader__synthetic.html">data_reader_synthetic</a>&amp; source)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="comment">// check for self-assignment</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">this</span> == &amp;source)</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="comment">// Call the parent operator= function</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="classlbann_1_1DataReader.html#a497d6b1c3ac47e14e9795ff771888905">DataReader::operator=</a>(source);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classlbann_1_1data__reader__synthetic.html#a5bbe05a304807914675d8aee7a310292">   96</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1data__reader__synthetic.html#a833a30b4b809bb2f8efa1af41590e02d">lbann::data_reader_synthetic::load</a>(<span class="keywordtype">size_t</span> max_sample_count, <span class="keywordtype">bool</span> firstN)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordflow">if</span>(max_sample_count &gt; getNumData() || ((<span class="keywordtype">long</span>) max_sample_count) &lt; 0) {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(<span class="stringliteral">&quot;Synthetic: data reader load error: invalid number of samples selected&quot;</span>);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  select_subset_of_data(max_sample_count, firstN);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classlbann_1_1data__reader__synthetic.html#ac2d64f6956c40a1f498a605177fddf07">  104</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1data__reader__synthetic.html#a833a30b4b809bb2f8efa1af41590e02d">lbann::data_reader_synthetic::load</a>(<span class="keywordtype">double</span> use_percentage, <span class="keywordtype">bool</span> firstN) {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">size_t</span> max_sample_count = rint(getNumData()*use_percentage);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordflow">if</span>(max_sample_count &gt; getNumData() || ((<span class="keywordtype">long</span>) max_sample_count) &lt; 0) {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(<span class="stringliteral">&quot;Synthetic: data reader load error: invalid number of samples selected&quot;</span>);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  select_subset_of_data(max_sample_count, firstN);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classlbann_1_1data__reader__synthetic.html#a0b95d6960551517c8c1f090f2d9add0e">  113</a></span>&#160;<a class="code" href="classlbann_1_1data__reader__synthetic.html">lbann::data_reader_synthetic</a>&amp; <a class="code" href="classlbann_1_1data__reader__synthetic.html#a0b95d6960551517c8c1f090f2d9add0e">lbann::data_reader_synthetic::operator=</a>(<span class="keyword">const</span> <a class="code" href="classlbann_1_1data__reader__synthetic.html">data_reader_synthetic</a>&amp; source)</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="comment">// check for self-assignment</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">this</span> == &amp;source)</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="comment">// Call the parent operator= function</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <a class="code" href="classlbann_1_1DataReader.html#a497d6b1c3ac47e14e9795ff771888905">DataReader::operator=</a>(source);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  this-&gt;m_num_samples = source.<a class="code" href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">m_num_samples</a>;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  this-&gt;m_num_features = source.<a class="code" href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">m_num_features</a>;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_a0b95d6960551517c8c1f090f2d9add0e"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#a0b95d6960551517c8c1f090f2d9add0e">lbann::data_reader_synthetic::operator=</a></div><div class="ttdeci">data_reader_synthetic &amp; operator=(const data_reader_synthetic &amp;source)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8cpp_source.html#l00113">lbann_data_reader_synthetic.cpp:113</a></div></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  this-&gt;m_num_samples = source.<a class="code" href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">m_num_samples</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  this-&gt;m_num_features = source.<a class="code" href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">m_num_features</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_a0b95d6960551517c8c1f090f2d9add0e"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#a0b95d6960551517c8c1f090f2d9add0e">lbann::data_reader_synthetic::operator=</a></div><div class="ttdeci">data_reader_synthetic &amp; operator=(const data_reader_synthetic &amp;source)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8cpp_source.html#l00086">lbann_data_reader_synthetic.cpp:86</a></div></div>
 <div class="ttc" id="classlbann_1_1data__reader__synthetic_html"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html">lbann::data_reader_synthetic</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00037">lbann_data_reader_synthetic.hpp:37</a></div></div>
 <div class="ttc" id="classlbann_1_1data__reader__synthetic_html_a18f0ba6014a0f1edec24c7c3c109c520"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">lbann::data_reader_synthetic::m_num_features</a></div><div class="ttdeci">int m_num_features</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00058">lbann_data_reader_synthetic.hpp:58</a></div></div>
 <div class="ttc" id="classlbann_1_1DataReader_html"><div class="ttname"><a href="classlbann_1_1DataReader.html">lbann::DataReader</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00057">lbann_data_reader.hpp:57</a></div></div>
-<div class="ttc" id="classlbann_1_1DataReader_html_a497d6b1c3ac47e14e9795ff771888905"><div class="ttname"><a href="classlbann_1_1DataReader.html#a497d6b1c3ac47e14e9795ff771888905">lbann::DataReader::operator=</a></div><div class="ttdeci">DataReader &amp; operator=(const DataReader &amp;source)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8cpp_source.html#l00136">lbann_data_reader.cpp:136</a></div></div>
+<div class="ttc" id="classlbann_1_1DataReader_html_a497d6b1c3ac47e14e9795ff771888905"><div class="ttname"><a href="classlbann_1_1DataReader.html#a497d6b1c3ac47e14e9795ff771888905">lbann::DataReader::operator=</a></div><div class="ttdeci">DataReader &amp; operator=(const DataReader &amp;source)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8cpp_source.html#l00142">lbann_data_reader.cpp:142</a></div></div>
 <div class="ttc" id="classlbann_1_1data__reader__synthetic_html_a1fb97f1bb06bb13153576228a22f90b3"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#a1fb97f1bb06bb13153576228a22f90b3">lbann::data_reader_synthetic::data_reader_synthetic</a></div><div class="ttdeci">data_reader_synthetic(int batchSize, int num_samples, int num_features, bool shuffle)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8cpp_source.html#l00038">lbann_data_reader_synthetic.cpp:38</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__exception_8hpp_source.html#l00041">lbann_exception.hpp:41</a></div></div>
 <div class="ttc" id="classlbann_1_1data__reader__synthetic_html_a833a30b4b809bb2f8efa1af41590e02d"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#a833a30b4b809bb2f8efa1af41590e02d">lbann::data_reader_synthetic::load</a></div><div class="ttdeci">void load()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8cpp_source.html#l00077">lbann_data_reader_synthetic.cpp:77</a></div></div>
 <div class="ttc" id="lbann__data__reader__synthetic_8hpp_html"><div class="ttname"><a href="lbann__data__reader__synthetic_8hpp.html">lbann_data_reader_synthetic.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1data__reader__synthetic_html_aa71d4bc62be7cf93eb6e85abf82d6b1f"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">lbann::data_reader_synthetic::m_num_samples</a></div><div class="ttdeci">int m_num_samples</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00057">lbann_data_reader_synthetic.hpp:57</a></div></div>
-<div class="ttc" id="classlbann_1_1DataReader_html_a0cb7850655f78075dec9875c9ef40a31"><div class="ttname"><a href="classlbann_1_1DataReader.html#a0cb7850655f78075dec9875c9ef40a31">lbann::DataReader::position_valid</a></div><div class="ttdeci">bool position_valid()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00199">lbann_data_reader.hpp:199</a></div></div>
+<div class="ttc" id="classlbann_1_1DataReader_html_a0cb7850655f78075dec9875c9ef40a31"><div class="ttname"><a href="classlbann_1_1DataReader.html#a0cb7850655f78075dec9875c9ef40a31">lbann::DataReader::position_valid</a></div><div class="ttdeci">bool position_valid()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00244">lbann_data_reader.hpp:244</a></div></div>
 <div class="ttc" id="classlbann_1_1data__reader__synthetic_html_aea1e928af14befe1b56f85512dcc32c0"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#aea1e928af14befe1b56f85512dcc32c0">lbann::data_reader_synthetic::fetch_data</a></div><div class="ttdeci">int fetch_data(Mat &amp;X)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8cpp_source.html#l00062">lbann_data_reader_synthetic.cpp:62</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00042">lbann_base.hpp:42</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00037">lbann_base.hpp:37</a></div></div>
@@ -239,7 +211,7 @@ $(document).ready(function(){initNavTree('lbann__data__reader__synthetic_8cpp_so
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_4fd9b0f9a8d3454cc4920413ede2913f.html">data_readers</a></li><li class="navelem"><a class="el" href="lbann__data__reader__synthetic_8cpp.html">lbann_data_reader_synthetic.cpp</a></li>
-    <li class="footer">Generated on Sat Apr 15 2017 00:52:53 for LBANN by
+    <li class="footer">Generated on Wed Apr 19 2017 23:58:32 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

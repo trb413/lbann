@@ -43,9 +43,8 @@ var searchData=
   ['train_5ftotal',['train_total',['../structdataset__header.html#ac687bb1bff59eeede917e9e9f6c968f3',1,'dataset_header']]],
   ['trainfile',['TrainFile',['../classlbann_1_1TrainingParams.html#a4ac278410cb0a24c9dc1f6edf014d003',1,'lbann::TrainingParams']]],
   ['training',['training',['../lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214',1,'lbann_base.hpp']]],
-  ['trainingparams',['TrainingParams',['../classlbann_1_1TrainingParams.html',1,'lbann']]],
   ['trainingparams',['TrainingParams',['../classlbann_1_1TrainingParams.html#a0530f1ed33dd848017f392c4245b415a',1,'lbann::TrainingParams']]],
+  ['trainingparams',['TrainingParams',['../classlbann_1_1TrainingParams.html',1,'lbann']]],
   ['trainingsamples',['TrainingSamples',['../classlbann_1_1TrainingParams.html#adf012a044d64191b7d0de8b0278c7060',1,'lbann::TrainingParams']]],
-  ['trim_5fdata_5fset',['trim_data_set',['../classlbann_1_1DataReader.html#ad7224861140c574158c1373c8d341a40',1,'lbann::DataReader']]],
   ['type',['type',['../classlbann_1_1metrics_1_1metric.html#ab4118ce33325ab57e57ad21c7dde8fa0',1,'lbann::metrics::metric::type()'],['../classlbann_1_1objective__functions_1_1objective__fn.html#a960a2e2ea129fb64bc4112c989766584',1,'lbann::objective_functions::objective_fn::type()']]]
 ];

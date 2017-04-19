@@ -14,8 +14,6 @@ var classlbann_1_1DataReader__ImageNet =
     [ "get_linearized_label_size", "classlbann_1_1DataReader__ImageNet.html#af84040e0397167e5fbfcc5e330b2dc6b", null ],
     [ "get_num_labels", "classlbann_1_1DataReader__ImageNet.html#a9ff5dd36543588c90061ed949792ea8a", null ],
     [ "load", "classlbann_1_1DataReader__ImageNet.html#a99549a8264a2d181f8ca09cec9f2fed8", null ],
-    [ "load", "classlbann_1_1DataReader__ImageNet.html#ab92a11485be74ec0ff352fc6d145b4a5", null ],
-    [ "load", "classlbann_1_1DataReader__ImageNet.html#ae6d0efe3272c7657e25a7b5ea9656a8e", null ],
     [ "operator=", "classlbann_1_1DataReader__ImageNet.html#aa6da0a41aaa3bfd66bf50555e15adc18", null ],
     [ "save_image", "classlbann_1_1DataReader__ImageNet.html#ade29f36b9d6a5185573de3046f139913", null ],
     [ "ImageList", "classlbann_1_1DataReader__ImageNet.html#aa4203ab75865ebf9b14696d9a4ef1739", null ],

@@ -16,7 +16,7 @@ var searchData=
   ['scale',['scale',['../classlbann_1_1lbann__image__preprocessor.html#a977b2fdd417acb1eb37dbea0cfdd4b60',1,'lbann::lbann_image_preprocessor']]],
   ['schedule',['schedule',['../classlbann_1_1lbann__callback__learning__rate.html#a60a4147b916b6e72846f90ca83c533c9',1,'lbann::lbann_callback_learning_rate::schedule()'],['../classlbann_1_1lbann__callback__step__learning__rate.html#a4ce3dda1b50487c96d9d593efacb0dae',1,'lbann::lbann_callback_step_learning_rate::schedule()'],['../classlbann_1_1lbann__callback__adaptive__learning__rate.html#a19596ebb10690c61068b18b786ab5716',1,'lbann::lbann_callback_adaptive_learning_rate::schedule()'],['../classlbann_1_1lbann__callback__custom__learning__rate.html#a501b29888681bb829f3e15b20b4a5f84',1,'lbann::lbann_callback_custom_learning_rate::schedule()']]],
   ['select_5fdata_5freader',['select_data_reader',['../classlbann_1_1io__layer.html#ae400abb9ed5e3ad2c8df1efc0168bc0a',1,'lbann::io_layer']]],
-  ['select_5fsubset_5fof_5fdata',['select_subset_of_data',['../classlbann_1_1DataReader.html#a4c0af35054f8ec755187eab77b34803a',1,'lbann::DataReader']]],
+  ['select_5fsubset_5fof_5fdata',['select_subset_of_data',['../classlbann_1_1DataReader.html#ac8a62e0656e6279040b7edc26d6fb996',1,'lbann::DataReader']]],
   ['send',['send',['../classlbann_1_1lbann__comm.html#a086078b881e7250df140ac116adb1939',1,'lbann::lbann_comm::send(const T *data, int count, int model, int rank)'],['../classlbann_1_1lbann__comm.html#a12ddcc441fa1073aff23797c3c923ef6',1,'lbann::lbann_comm::send(const T *data, int count, int model)'],['../classlbann_1_1lbann__comm.html#afe61fbe179f33f90d313497a1f146cbb',1,'lbann::lbann_comm::send(Mat &amp;mat, int model, int rank)'],['../classlbann_1_1lbann__comm.html#a79f36c9c66f8134d319df614ec599230',1,'lbann::lbann_comm::send(DistMat &amp;mat, int model, int rank)'],['../classlbann_1_1lbann__comm.html#aa91c0587ae25a9824e6323002f59c040',1,'lbann::lbann_comm::send(Mat &amp;mat, int model)'],['../classlbann_1_1lbann__comm.html#a1f8cff639b94813cb79963e2ce3d49da',1,'lbann::lbann_comm::send(DistMat &amp;mat, int model)']]],
   ['sequential_5fmodel',['sequential_model',['../classlbann_1_1sequential__model.html',1,'lbann']]],
   ['sequential_5fmodel',['sequential_model',['../classlbann_1_1sequential__model.html#a701aeee99dda6d5ad39b834d76e765e5',1,'lbann::sequential_model']]],
@@ -103,7 +103,7 @@ var searchData=
   ['summarizer',['summarizer',['../classlbann_1_1lbann__callback.html#ad48ff47a64f2dff3a12d8bd282f554cb',1,'lbann::lbann_callback']]],
   ['summarydir',['SummaryDir',['../classlbann_1_1TrainingParams.html#ad01ff40b34ff8b7adf4c547aa60ee87f',1,'lbann::TrainingParams']]],
   ['swap',['swap',['../classlbann_1_1sequential__model.html#a8aa4ddbd6efa79896749838e442b6168',1,'lbann::sequential_model']]],
-  ['swap_5fused_5fand_5funused_5findex_5fsets',['swap_used_and_unused_index_sets',['../classlbann_1_1DataReader.html#a7f71d8c5542a1050d817ce2a7905b914',1,'lbann::DataReader']]],
+  ['swap_5fused_5fand_5funused_5findex_5fsets',['swap_used_and_unused_index_sets',['../classlbann_1_1DataReader.html#a45e1e6451ca76aedf6214c17c887bee0',1,'lbann::DataReader']]],
   ['systemparams',['SystemParams',['../classlbann_1_1SystemParams.html#a4dc0a32571543d65f7f99e1050979697',1,'lbann::SystemParams']]],
   ['systemparams',['SystemParams',['../classlbann_1_1SystemParams.html',1,'lbann']]]
 ];
