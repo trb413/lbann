@@ -125,6 +125,7 @@ var searchData=
   ['m_5fnum_5fsamples_5fin_5fbatch',['m_num_samples_in_batch',['../classlbann_1_1distributed__minibatch__parallel__io.html#a6317ad7cb24eb412983458c79ec94def',1,'lbann::distributed_minibatch_parallel_io']]],
   ['m_5fnum_5fvalid_5freaders',['m_num_valid_readers',['../classlbann_1_1distributed__minibatch__parallel__io.html#abd82e203a6580d2f249931817902142e',1,'lbann::distributed_minibatch_parallel_io']]],
   ['m_5foptimizer',['m_optimizer',['../classlbann_1_1Layer.html#a54d5ada095360c0933ff8692e14bd253',1,'lbann::Layer']]],
+  ['m_5foptimizer_5ffac',['m_optimizer_fac',['../classlbann_1_1model.html#a7bc38833924198617cf353382884cacf',1,'lbann::model']]],
   ['m_5foriginal_5flayer',['m_original_layer',['../classlbann_1_1reconstruction__layer.html#ac1cd1e57341d1f58180c446b7b0cb28f',1,'lbann::reconstruction_layer::m_original_layer()'],['../classlbann_1_1target__layer__unsupervised.html#a9bd09cb27cf9201e2f979b3df8e002d9',1,'lbann::target_layer_unsupervised::m_original_layer()']]],
   ['m_5foutput_5fdims',['m_output_dims',['../classlbann_1_1convolutional__layer.html#af39e291247954c3aa063d54c6c75c4f3',1,'lbann::convolutional_layer::m_output_dims()'],['../classlbann_1_1pooling__layer.html#a5d20be4798684b62025e4dec145c6bfa',1,'lbann::pooling_layer::m_output_dims()']]],
   ['m_5fparameters',['m_parameters',['../classlbann_1_1optimizer.html#a32e8063fd84d0754e7546a016e65e093',1,'lbann::optimizer']]],

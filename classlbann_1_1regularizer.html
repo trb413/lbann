@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">7c5e9f8-ci224133733</span>
+   &#160;<span id="projectnumber">4708c00-ci224151056</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -110,7 +110,7 @@ Collaboration diagram for lbann::regularizer:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1regularizer__coll__graph.png" border="0" usemap="#lbann_1_1regularizer_coll__map" alt="Collaboration graph"/></div>
 <map name="lbann_1_1regularizer_coll__map" id="lbann_1_1regularizer_coll__map">
-<area shape="rect" id="node2" href="classlbann_1_1Layer.html" title="lbann::Layer" alt="" coords="941,120,1035,147"/><area shape="rect" id="node3" href="classcudnn_1_1cudnn__manager.html" title="cudnn::cudnn_manager" alt="" coords="600,7,757,33"/><area shape="rect" id="node4" href="classlbann_1_1lbann__comm.html" title="lbann::lbann_comm" alt="" coords="355,107,490,133"/><area shape="rect" id="node5" href="classlbann_1_1optimizer.html" title="Optimizer base class. " alt="" coords="621,120,736,147"/><area shape="rect" id="node6" href="classlbann_1_1model.html" title="lbann::model" alt="" coords="631,171,727,197"/><area shape="rect" id="node7" href="classlbann_1_1objective__functions_1_1objective__fn.html" title="lbann::objective_functions\l::objective_fn" alt="" coords="336,190,509,231"/><area shape="rect" id="node8" href="classlbann_1_1objective__functions_1_1statistics.html" title="lbann::objective_functions\l::statistics" alt="" coords="5,190,179,231"/><area shape="rect" id="node9" href="classlbann_1_1Activation.html" title="lbann::Activation" alt="" coords="619,221,738,248"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1Layer.html" title="lbann::Layer" alt="" coords="1013,111,1107,137"/><area shape="rect" id="node3" href="classcudnn_1_1cudnn__manager.html" title="cudnn::cudnn_manager" alt="" coords="672,8,829,35"/><area shape="rect" id="node4" href="classlbann_1_1lbann__comm.html" title="lbann::lbann_comm" alt="" coords="25,136,159,163"/><area shape="rect" id="node5" href="classlbann_1_1optimizer.html" title="Optimizer base class. " alt="" coords="533,109,648,136"/><area shape="rect" id="node6" href="classlbann_1_1model.html" title="lbann::model" alt="" coords="703,172,799,199"/><area shape="rect" id="node7" href="classlbann_1_1optimizer__factory.html" title="Optimizer factory base class. " alt="" coords="342,223,503,249"/><area shape="rect" id="node8" href="classlbann_1_1objective__functions_1_1objective__fn.html" title="lbann::objective_functions\l::objective_fn" alt="" coords="336,274,509,315"/><area shape="rect" id="node9" href="classlbann_1_1objective__functions_1_1statistics.html" title="lbann::objective_functions\l::statistics" alt="" coords="5,274,179,315"/><area shape="rect" id="node10" href="classlbann_1_1Activation.html" title="lbann::Activation" alt="" coords="691,223,810,249"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -127,6 +127,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8006f575c31fd152d2f048d50994e9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a520fb6e3ff605f4c5c6de7eda003f0aa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1regularizer.html#a520fb6e3ff605f4c5c6de7eda003f0aa">bp_activations</a> ()</td></tr>
 <tr class="separator:a520fb6e3ff605f4c5c6de7eda003f0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0fd1a331a6fd12025843c7d84783ea4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1regularizer.html#ad0fd1a331a6fd12025843c7d84783ea4">update</a> ()</td></tr>
+<tr class="separator:ad0fd1a331a6fd12025843c7d84783ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fda5d9230f7fe9f33348dc494245cb3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1regularizer.html#a8fda5d9230f7fe9f33348dc494245cb3">setup</a> (<a class="el" href="classlbann_1_1Layer.html">Layer</a> *l)</td></tr>
 <tr class="separator:a8fda5d9230f7fe9f33348dc494245cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -329,9 +331,36 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Set up to regularize layer l. </p>
 
+<p>Definition at line <a class="el" href="lbann__regularizer_8hpp_source.html#l00074">74</a> of file <a class="el" href="lbann__regularizer_8hpp_source.html">lbann_regularizer.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{ <a class="code" href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">m_layer</a> = l; }</div>
+<div class="ttc" id="classlbann_1_1regularizer_html_a6d0d44f4f9a3c8c24d0acdda8cf7d4b5"><div class="ttname"><a href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">lbann::regularizer::m_layer</a></div><div class="ttdeci">Layer * m_layer</div><div class="ttdef"><b>Definition:</b> <a href="lbann__regularizer_8hpp_source.html#l00077">lbann_regularizer.hpp:77</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ad0fd1a331a6fd12025843c7d84783ea4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void lbann::regularizer::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Update the regularizer after backprop. </p>
+
 <p>Definition at line <a class="el" href="lbann__regularizer_8hpp_source.html#l00071">71</a> of file <a class="el" href="lbann__regularizer_8hpp_source.html">lbann_regularizer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{ <a class="code" href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">m_layer</a> = l; }</div>
-<div class="ttc" id="classlbann_1_1regularizer_html_a6d0d44f4f9a3c8c24d0acdda8cf7d4b5"><div class="ttname"><a href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">lbann::regularizer::m_layer</a></div><div class="ttdeci">Layer * m_layer</div><div class="ttdef"><b>Definition:</b> <a href="lbann__regularizer_8hpp_source.html#l00074">lbann_regularizer.hpp:74</a></div></div>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -355,7 +384,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p><a class="el" href="classlbann_1_1Layer.html">Layer</a> being regularized. </p>
 
-<p>Definition at line <a class="el" href="lbann__regularizer_8hpp_source.html#l00074">74</a> of file <a class="el" href="lbann__regularizer_8hpp_source.html">lbann_regularizer.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__regularizer_8hpp_source.html#l00077">77</a> of file <a class="el" href="lbann__regularizer_8hpp_source.html">lbann_regularizer.hpp</a>.</p>
 
 </div>
 </div>
@@ -368,7 +397,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1regularizer.html">regularizer</a></li>
-    <li class="footer">Generated on Thu Apr 20 2017 21:55:16 for LBANN by
+    <li class="footer">Generated on Thu Apr 20 2017 22:53:37 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

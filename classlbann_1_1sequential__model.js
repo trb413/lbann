@@ -27,6 +27,5 @@ var classlbann_1_1sequential__model =
     [ "train_mini_batch", "classlbann_1_1sequential__model.html#a13f177924130ae2748d6b457d0778ed8", null ],
     [ "layer_fac", "classlbann_1_1sequential__model.html#a539722d26abf5a9b6cd748da8e9fa930", null ],
     [ "m_layers", "classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a", null ],
-    [ "m_mini_batch_size", "classlbann_1_1sequential__model.html#ad4f27748b8cdf0da723f39b3aba9ef2d", null ],
-    [ "optimizer_fac", "classlbann_1_1sequential__model.html#a6113fd0b569d302ba515b1d33c6e0678", null ]
+    [ "m_mini_batch_size", "classlbann_1_1sequential__model.html#ad4f27748b8cdf0da723f39b3aba9ef2d", null ]
 ];

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">7c5e9f8-ci224133733</span>
+   &#160;<span id="projectnumber">4708c00-ci224151056</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -162,12 +162,39 @@ $(document).ready(function(){initNavTree('lbann__Elemental__extensions_8cpp_sour
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    AllReduce( sums.Matrix(), A.ColComm(), mpi::SUM );</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<a class="code" href="lbann__Elemental__extensions_8h.html#aabb751b985c8fbc1083ba9f0bf2b5c38">LBANN_PROTO_FLOAT</a></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<a class="code" href="lbann__Elemental__extensions_8h.html#a1c4169a84c56c6233350847efb61e539">LBANN_PROTO_DOUBLE</a></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <span class="comment">// namespace El</span></div>
-<div class="ttc" id="lbann__Elemental__extensions_8h_html_a1c4169a84c56c6233350847efb61e539"><div class="ttname"><a href="lbann__Elemental__extensions_8h.html#a1c4169a84c56c6233350847efb61e539">LBANN_PROTO_DOUBLE</a></div><div class="ttdeci">#define LBANN_PROTO_DOUBLE</div><div class="ttdef"><b>Definition:</b> <a href="lbann__Elemental__extensions_8h_source.html#l00072">lbann_Elemental_extensions.h:72</a></div></div>
-<div class="ttc" id="lbann__Elemental__extensions_8h_html_aabb751b985c8fbc1083ba9f0bf2b5c38"><div class="ttname"><a href="lbann__Elemental__extensions_8h.html#aabb751b985c8fbc1083ba9f0bf2b5c38">LBANN_PROTO_FLOAT</a></div><div class="ttdeci">#define LBANN_PROTO_FLOAT</div><div class="ttdef"><b>Definition:</b> <a href="lbann__Elemental__extensions_8h_source.html#l00069">lbann_Elemental_extensions.h:69</a></div></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> F&gt;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="namespaceEl.html#a584f088a3325a8222d4d6ac37be04b04">   74</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceEl.html#a584f088a3325a8222d4d6ac37be04b04">RowSum</a>(<span class="keyword">const</span> Matrix&lt;F&gt;&amp; X, Matrix&lt;F&gt;&amp; sums) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">const</span> Int m = X.Height();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">const</span> Int n = X.Width();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">const</span> F* XBuf = X.LockedBuffer();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">const</span> Int XLDim = X.LDim();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  Zeros(sums, m, 1);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  F* sumsBuf = sums.Buffer();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="comment">// Note: Iterating over columns helps cache locality for X but means we can&#39;t</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="comment">// naively parallelize the outer loop (race conditions).</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="comment">// Could probably do a local accumulation to avoid this.</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">for</span> (Int j = 0; j &lt; n; ++j) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">for</span> (Int i = 0; i &lt; m; ++i) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      sumsBuf[i] += XBuf[i+j*XLDim];</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> F,Dist U,Dist V,DistWrap W&gt;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="namespaceEl.html#adf313e4dfa2f795795b274b793d2512b">   92</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceEl.html#a584f088a3325a8222d4d6ac37be04b04">RowSum</a>(<span class="keyword">const</span> DistMatrix&lt;F,U,V,W&gt;&amp; A, DistMatrix&lt;F,U,STAR,W&gt;&amp; sums) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  sums.AlignWith(A);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  sums.Resize(A.Height(), 1);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="namespaceEl.html#a584f088a3325a8222d4d6ac37be04b04">RowSum</a>(A.LockedMatrix(), sums.Matrix());</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  AllReduce(sums, A.RowComm(), mpi::SUM);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<a class="code" href="lbann__Elemental__extensions_8h.html#aabb751b985c8fbc1083ba9f0bf2b5c38">LBANN_PROTO_FLOAT</a></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<a class="code" href="lbann__Elemental__extensions_8h.html#a1c4169a84c56c6233350847efb61e539">LBANN_PROTO_DOUBLE</a></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;} <span class="comment">// namespace El</span></div>
+<div class="ttc" id="namespaceEl_html_a584f088a3325a8222d4d6ac37be04b04"><div class="ttname"><a href="namespaceEl.html#a584f088a3325a8222d4d6ac37be04b04">El::RowSum</a></div><div class="ttdeci">void RowSum(const Matrix&lt; F &gt; &amp;X, Matrix&lt; F &gt; &amp;sums)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__Elemental__extensions_8cpp_source.html#l00074">lbann_Elemental_extensions.cpp:74</a></div></div>
+<div class="ttc" id="lbann__Elemental__extensions_8h_html_a1c4169a84c56c6233350847efb61e539"><div class="ttname"><a href="lbann__Elemental__extensions_8h.html#a1c4169a84c56c6233350847efb61e539">LBANN_PROTO_DOUBLE</a></div><div class="ttdeci">#define LBANN_PROTO_DOUBLE</div><div class="ttdef"><b>Definition:</b> <a href="lbann__Elemental__extensions_8h_source.html#l00084">lbann_Elemental_extensions.h:84</a></div></div>
+<div class="ttc" id="lbann__Elemental__extensions_8h_html_aabb751b985c8fbc1083ba9f0bf2b5c38"><div class="ttname"><a href="lbann__Elemental__extensions_8h.html#aabb751b985c8fbc1083ba9f0bf2b5c38">LBANN_PROTO_FLOAT</a></div><div class="ttdeci">#define LBANN_PROTO_FLOAT</div><div class="ttdef"><b>Definition:</b> <a href="lbann__Elemental__extensions_8h_source.html#l00081">lbann_Elemental_extensions.h:81</a></div></div>
 <div class="ttc" id="lbann__Elemental__extensions_8h_html"><div class="ttname"><a href="lbann__Elemental__extensions_8h.html">lbann_Elemental_extensions.h</a></div></div>
 <div class="ttc" id="namespaceEl_html_a09d5c471681b2b48fbe4c5e6bfd0b3d3"><div class="ttname"><a href="namespaceEl.html#a09d5c471681b2b48fbe4c5e6bfd0b3d3">El::ColumnSum</a></div><div class="ttdeci">void ColumnSum(const Matrix&lt; F &gt; &amp;X, Matrix&lt; F &gt; &amp;sums)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__Elemental__extensions_8cpp_source.html#l00036">lbann_Elemental_extensions.cpp:36</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -176,7 +203,7 @@ $(document).ready(function(){initNavTree('lbann__Elemental__extensions_8cpp_sour
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="lbann__Elemental__extensions_8cpp.html">lbann_Elemental_extensions.cpp</a></li>
-    <li class="footer">Generated on Thu Apr 20 2017 21:55:15 for LBANN by
+    <li class="footer">Generated on Thu Apr 20 2017 22:53:35 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

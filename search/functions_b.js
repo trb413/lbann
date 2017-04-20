@@ -45,7 +45,7 @@ var searchData=
   ['mean_5fsquared_5ferror',['mean_squared_error',['../classlbann_1_1metrics_1_1mean__squared__error.html#a18c45f8d1b23a57f004454910f06e37a',1,'lbann::metrics::mean_squared_error::mean_squared_error()'],['../classlbann_1_1objective__functions_1_1mean__squared__error.html#a72b1cfc638b998c4db07da782ac72bf1',1,'lbann::objective_functions::mean_squared_error::mean_squared_error()']]],
   ['mean_5fsubtraction',['mean_subtraction',['../classlbann_1_1lbann__image__preprocessor.html#ab499dd9f11d98998b5902d639f70fa8e',1,'lbann::lbann_image_preprocessor']]],
   ['metric',['metric',['../classlbann_1_1metrics_1_1metric.html#a88766bc9201d38a3240d89dcb91fcab5',1,'lbann::metrics::metric']]],
-  ['model',['model',['../classlbann_1_1model.html#a1aa712dcc0f99fb9802d1b93802907fe',1,'lbann::model']]],
+  ['model',['model',['../classlbann_1_1model.html#aa5c16a70390f56c1279ff22df7511802',1,'lbann::model']]],
   ['model_5fallreduce',['model_allreduce',['../classlbann_1_1lbann__comm.html#ab2bc3d526045ba1b5fedcd442b58a8f9',1,'lbann::lbann_comm::model_allreduce(T send, mpi::Op op=mpi::SUM)'],['../classlbann_1_1lbann__comm.html#a1fd37bdaa3498455235f98b5e10b5e21',1,'lbann::lbann_comm::model_allreduce(T *send, int count, T *recv, mpi::Op op=mpi::SUM)']]],
   ['model_5fbarrier',['model_barrier',['../classlbann_1_1lbann__comm.html#a6086ced12c3eefeea6e2a78eff286983',1,'lbann::lbann_comm']]],
   ['model_5fbroadcast',['model_broadcast',['../classlbann_1_1lbann__comm.html#a929f44a9a9563ae9e4ffe7d44235a195',1,'lbann::lbann_comm']]],

@@ -1,8 +1,8 @@
 var NAVTREEINDEX1 =
 {
-"classlbann_1_1Layer.html#adc0a8d274f10860b3b1f1d8e4388a503":[3,0,3,37,53],
 "classlbann_1_1Layer.html#adeefecf61c8a8d5e7a54367fc3806edd":[3,0,3,37,73],
 "classlbann_1_1Layer.html#adfcdbf9d382ca3018107fb39c176ea5a":[3,0,3,37,10],
+"classlbann_1_1Layer.html#ae4a050e51e3a9bec431cf8b7a5660f2c":[3,0,3,37,40],
 "classlbann_1_1Layer.html#aeec1c710c3d53b5e43a4d4f67b0a21b2":[3,0,3,37,6],
 "classlbann_1_1Layer.html#aefa1214f0220d47344b60436b2e52b53":[3,0,3,37,77],
 "classlbann_1_1Layer.html#af258db35456927df5df31af6bcd33473":[3,0,3,37,8],

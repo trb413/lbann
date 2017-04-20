@@ -48,5 +48,6 @@ var searchData=
   ['rmsprop_5ffactory',['rmsprop_factory',['../classlbann_1_1rmsprop__factory.html#ac8f104a60c79c2461ceb30e561479852',1,'lbann::rmsprop_factory']]],
   ['rng',['rng',['../classlbann_1_1rng.html#a7f510fb55d7f261efb4ba86ed623509a',1,'lbann::rng::rng()'],['../classlbann_1_1rng.html#aedb81fe65719eb1864f8f891d48772b1',1,'lbann::rng::rng(DType p)'],['../classlbann_1_1rng.html#aede986b92f5d075b4881f8cca86459dd',1,'lbann::rng::rng(DType a, DType b)']]],
   ['rng_5fbernoulli',['rng_bernoulli',['../namespacelbann.html#a481f0c268c74d3ec8b81861472559870',1,'lbann']]],
-  ['rotation',['rotation',['../classlbann_1_1lbann__image__preprocessor.html#a1a293733368dd9eceba3e99cf9e5ae24',1,'lbann::lbann_image_preprocessor']]]
+  ['rotation',['rotation',['../classlbann_1_1lbann__image__preprocessor.html#a1a293733368dd9eceba3e99cf9e5ae24',1,'lbann::lbann_image_preprocessor']]],
+  ['rowsum',['RowSum',['../namespaceEl.html#a584f088a3325a8222d4d6ac37be04b04',1,'El::RowSum(const Matrix&lt; F &gt; &amp;X, Matrix&lt; F &gt; &amp;sums)'],['../namespaceEl.html#adf313e4dfa2f795795b274b793d2512b',1,'El::RowSum(const DistMatrix&lt; F, U, V, W &gt; &amp;A, DistMatrix&lt; F, U, STAR, W &gt; &amp;sums)']]]
 ];

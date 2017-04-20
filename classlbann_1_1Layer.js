@@ -40,7 +40,7 @@ var classlbann_1_1Layer =
     [ "setup_bp_input", "classlbann_1_1Layer.html#a275987dded3345f86aa3c8fc5f2e37de", null ],
     [ "setup_fp_input", "classlbann_1_1Layer.html#a77218f0f8e30061563495930f5f454dd", null ],
     [ "summarize", "classlbann_1_1Layer.html#aff82d98a534f0dfc3b0cb200a9aff90a", null ],
-    [ "update", "classlbann_1_1Layer.html#a0fbb376cebdaa4692fdc92df34bb366c", null ],
+    [ "update", "classlbann_1_1Layer.html#ae4a050e51e3a9bec431cf8b7a5660f2c", null ],
     [ "using_gpus", "classlbann_1_1Layer.html#acee56be91337bbd78bc4371a8159b760", null ],
     [ "weight_initialization_name", "classlbann_1_1Layer.html#a7a55c61403cf1ecadc465d7d8663be07", null ],
     [ "bp_input", "classlbann_1_1Layer.html#ab8ec7fc7bd902123d7b7788b6284ca62", null ],

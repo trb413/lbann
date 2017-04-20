@@ -4,6 +4,7 @@ var searchData=
   ['lbann_5fbase_2ecpp',['lbann_base.cpp',['../lbann__base_8cpp.html',1,'']]],
   ['lbann_5fbase_2ehpp',['lbann_base.hpp',['../lbann__base_8hpp.html',1,'']]],
   ['lbann_5fbase_5ffactory_2ehpp',['lbann_base_factory.hpp',['../lbann__base__factory_8hpp.html',1,'']]],
+  ['lbann_5fbatch_5fnormalization_2ecpp',['lbann_batch_normalization.cpp',['../lbann__batch__normalization_8cpp.html',1,'']]],
   ['lbann_5fcallback_2ehpp',['lbann_callback.hpp',['../lbann__callback_8hpp.html',1,'']]],
   ['lbann_5fcallback_5fchecknan_2ecpp',['lbann_callback_checknan.cpp',['../lbann__callback__checknan_8cpp.html',1,'']]],
   ['lbann_5fcallback_5fchecknan_2ehpp',['lbann_callback_checknan.hpp',['../lbann__callback__checknan_8hpp.html',1,'']]],

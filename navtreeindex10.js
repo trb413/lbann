@@ -1,5 +1,15 @@
 var NAVTREEINDEX10 =
 {
+"struct__INT2.html#ae0b0e6c9d09621269fd0e28036f4f16e":[3,0,31,2],
+"struct__INT3.html":[3,0,32],
+"struct__INT3.html#a8174e89311956de4ab6a9458c4359c29":[3,0,32,3],
+"struct__INT3.html#abf9b0540c26ae8c3d24f8ba2e0ec6432":[3,0,32,1],
+"struct__INT3.html#adfdd79e81f0ccc4232d48624fe123775":[3,0,32,2],
+"struct__INT3.html#ae176143b9d0ccc19ef89b9de5c21cc0f":[3,0,32,0],
+"struct__INT4.html":[3,0,33],
+"struct__INT4.html#a6026a55e90f3ae7f073a76c1b49a358b":[3,0,33,0],
+"struct__INT4.html#a7461ee770492ed80fb7c600eeaad7207":[3,0,33,3],
+"struct__INT4.html#a994609950db7a4f9f9dc4f99a6b70f44":[3,0,33,1],
 "struct__INT4.html#aed2751ec0cfd064effc9140aa52ad83b":[3,0,33,2],
 "struct__SHORT2.html":[3,0,34],
 "struct__SHORT2.html#a1c78e5988e2b6b4eb95fddb3b73c86e1":[3,0,34,0],

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">7c5e9f8-ci224133733</span>
+   &#160;<span id="projectnumber">4708c00-ci224151056</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -103,6 +103,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a76d4388650bbfd78adaf57d150423020"><td class="memTemplParams" colspan="2">template&lt;typename F , Dist U, Dist V, DistWrap W&gt; </td></tr>
 <tr class="memitem:a76d4388650bbfd78adaf57d150423020"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceEl.html#a76d4388650bbfd78adaf57d150423020">ColumnSum</a> (const DistMatrix&lt; F, U, V, W &gt; &amp;A, DistMatrix&lt; F, V, STAR, W &gt; &amp;sums)</td></tr>
 <tr class="separator:a76d4388650bbfd78adaf57d150423020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a584f088a3325a8222d4d6ac37be04b04"><td class="memTemplParams" colspan="2">template&lt;typename F &gt; </td></tr>
+<tr class="memitem:a584f088a3325a8222d4d6ac37be04b04"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceEl.html#a584f088a3325a8222d4d6ac37be04b04">RowSum</a> (const Matrix&lt; F &gt; &amp;X, Matrix&lt; F &gt; &amp;sums)</td></tr>
+<tr class="separator:a584f088a3325a8222d4d6ac37be04b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf313e4dfa2f795795b274b793d2512b"><td class="memTemplParams" colspan="2">template&lt;typename F , Dist U, Dist V, DistWrap W&gt; </td></tr>
+<tr class="memitem:adf313e4dfa2f795795b274b793d2512b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceEl.html#adf313e4dfa2f795795b274b793d2512b">RowSum</a> (const DistMatrix&lt; F, U, V, W &gt; &amp;A, DistMatrix&lt; F, U, STAR, W &gt; &amp;sums)</td></tr>
+<tr class="separator:adf313e4dfa2f795795b274b793d2512b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a09d5c471681b2b48fbe4c5e6bfd0b3d3"></a>
@@ -215,13 +221,114 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a584f088a3325a8222d4d6ac37be04b04"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void El::RowSum </td>
+          <td>(</td>
+          <td class="paramtype">const Matrix&lt; F &gt; &amp;&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Matrix&lt; F &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sums</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lbann__Elemental__extensions_8cpp_source.html#l00074">74</a> of file <a class="el" href="lbann__Elemental__extensions_8cpp_source.html">lbann_Elemental_extensions.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                 {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">const</span> Int m = X.Height();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">const</span> Int n = X.Width();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">const</span> F* XBuf = X.LockedBuffer();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">const</span> Int XLDim = X.LDim();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  Zeros(sums, m, 1);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  F* sumsBuf = sums.Buffer();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="comment">// Note: Iterating over columns helps cache locality for X but means we can&#39;t</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="comment">// naively parallelize the outer loop (race conditions).</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="comment">// Could probably do a local accumulation to avoid this.</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">for</span> (Int j = 0; j &lt; n; ++j) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">for</span> (Int i = 0; i &lt; m; ++i) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      sumsBuf[i] += XBuf[i+j*XLDim];</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  }</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceEl_a584f088a3325a8222d4d6ac37be04b04_icgraph.png" border="0" usemap="#namespaceEl_a584f088a3325a8222d4d6ac37be04b04_icgraph" alt=""/></div>
+<map name="namespaceEl_a584f088a3325a8222d4d6ac37be04b04_icgraph" id="namespaceEl_a584f088a3325a8222d4d6ac37be04b04_icgraph">
+<area shape="rect" id="node2" href="namespaceEl.html#adf313e4dfa2f795795b274b793d2512b" title="El::RowSum" alt="" coords="149,5,245,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adf313e4dfa2f795795b274b793d2512b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename F , Dist U, Dist V, DistWrap W&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void El::RowSum </td>
+          <td>(</td>
+          <td class="paramtype">const DistMatrix&lt; F, U, V, W &gt; &amp;&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DistMatrix&lt; F, U, STAR, W &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sums</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lbann__Elemental__extensions_8cpp_source.html#l00092">92</a> of file <a class="el" href="lbann__Elemental__extensions_8cpp_source.html">lbann_Elemental_extensions.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                                                        {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  sums.AlignWith(A);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  sums.Resize(A.Height(), 1);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="namespaceEl.html#adf313e4dfa2f795795b274b793d2512b">RowSum</a>(A.LockedMatrix(), sums.Matrix());</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  AllReduce(sums, A.RowComm(), mpi::SUM);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="ttc" id="namespaceEl_html_adf313e4dfa2f795795b274b793d2512b"><div class="ttname"><a href="namespaceEl.html#adf313e4dfa2f795795b274b793d2512b">El::RowSum</a></div><div class="ttdeci">void RowSum(const DistMatrix&lt; F, U, V, W &gt; &amp;A, DistMatrix&lt; F, U, STAR, W &gt; &amp;sums)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__Elemental__extensions_8cpp_source.html#l00092">lbann_Elemental_extensions.cpp:92</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceEl_adf313e4dfa2f795795b274b793d2512b_cgraph.png" border="0" usemap="#namespaceEl_adf313e4dfa2f795795b274b793d2512b_cgraph" alt=""/></div>
+<map name="namespaceEl_adf313e4dfa2f795795b274b793d2512b_cgraph" id="namespaceEl_adf313e4dfa2f795795b274b793d2512b_cgraph">
+<area shape="rect" id="node2" href="namespaceEl.html#a584f088a3325a8222d4d6ac37be04b04" title="El::RowSum" alt="" coords="149,5,245,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespaceEl.html">El</a></li>
-    <li class="footer">Generated on Thu Apr 20 2017 21:55:15 for LBANN by
+    <li class="footer">Generated on Thu Apr 20 2017 22:53:36 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

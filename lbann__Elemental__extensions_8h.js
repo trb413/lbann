@@ -6,5 +6,7 @@ var lbann__Elemental__extensions_8h =
     [ "LBANN_PROTO_FLOAT", "lbann__Elemental__extensions_8h.html#aabb751b985c8fbc1083ba9f0bf2b5c38", null ],
     [ "LBANN_PROTO_REAL", "lbann__Elemental__extensions_8h.html#a6b884a59cd5b8dc91622f79343fad313", null ],
     [ "ColumnSum", "lbann__Elemental__extensions_8h.html#a09d5c471681b2b48fbe4c5e6bfd0b3d3", null ],
-    [ "ColumnSum", "lbann__Elemental__extensions_8h.html#a76d4388650bbfd78adaf57d150423020", null ]
+    [ "ColumnSum", "lbann__Elemental__extensions_8h.html#a76d4388650bbfd78adaf57d150423020", null ],
+    [ "RowSum", "lbann__Elemental__extensions_8h.html#a584f088a3325a8222d4d6ac37be04b04", null ],
+    [ "RowSum", "lbann__Elemental__extensions_8h.html#adf313e4dfa2f795795b274b793d2512b", null ]
 ];

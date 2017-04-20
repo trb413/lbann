@@ -12,6 +12,7 @@ var lbann__base_8hpp =
     [ "ElMat", "lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8", null ],
     [ "Grid", "lbann__base_8hpp.html#a4c600bf682fbf8018385607476e4bd13", null ],
     [ "Mat", "lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34", null ],
+    [ "RowSumMat", "lbann__base_8hpp.html#a6c236b0664425bd2551cb530f77a2372", null ],
     [ "StarMat", "lbann__base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86", null ],
     [ "StarMRMat", "lbann__base_8hpp.html#a99cdf61e316c00f3e39aeaa1509197c1", null ],
     [ "StarVCMat", "lbann__base_8hpp.html#a763b3164342a5d73db851e85c76d385a", null ],
@@ -31,6 +32,7 @@ var lbann__base_8hpp =
       [ "CIRC_CIRC", "lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dad9fe2079b84227e0894774795402ec69", null ],
       [ "STAR_STAR", "lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0da41478dbc562bc2cdaa328e2fa04558b2", null ],
       [ "STAR_VC", "lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dab05461c65c89f42d7e1b8c9cea626032", null ],
+      [ "MC_STAR", "lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0da99fe60b6c6fbf8dd05bf45c7898674bf", null ],
       [ "invalid", "lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dafedb2d84cafe20862cb4399751a8a7e3", null ]
     ] ],
     [ "pool_mode", "lbann__base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39", [
