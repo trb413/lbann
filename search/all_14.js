@@ -20,6 +20,7 @@ var searchData=
   ['update_5fdata_5freader',['update_data_reader',['../classlbann_1_1distributed__minibatch__parallel__io.html#a44e74967c30e4bc0faf54a1d50cab79d',1,'lbann::distributed_minibatch_parallel_io::update_data_reader()'],['../classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#adc092363f45b022429bf094ce1633f56',1,'lbann::input_layer_distributed_minibatch_parallel_io::update_data_reader()'],['../classlbann_1_1target__layer__distributed__minibatch__parallel__io.html#a06800a7f630fef832057bd232911efb2',1,'lbann::target_layer_distributed_minibatch_parallel_io::update_data_reader()']]],
   ['update_5fnum_5fsamples_5fprocessed',['update_num_samples_processed',['../classlbann_1_1io__layer.html#abbf07dd592d714852090c12855983592',1,'lbann::io_layer']]],
   ['uqtype',['uqtype',['../classlbann_1_1lbann__quantizer.html#a018cddfc9b73d94c2d60bdd7a11a0079',1,'lbann::lbann_quantizer']]],
+  ['use_5funused_5findex_5fset',['use_unused_index_set',['../classlbann_1_1DataReader.html#a300ffca0d03ad6b12aa800ec3683ddcf',1,'lbann::DataReader']]],
   ['ushort',['ushort',['../datatype_8hpp.html#ab95f123a6c9bcfee6a343170ef8c5f69',1,'datatype.hpp']]],
   ['ushort2',['USHORT2',['../datatype_8hpp.html#a7ced9d24fc3183eb85a21793088d5801',1,'datatype.hpp']]],
   ['ushort3',['USHORT3',['../datatype_8hpp.html#a6b29e46092c87f20c972c8dcac0293a0',1,'datatype.hpp']]],

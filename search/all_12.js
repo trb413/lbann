@@ -88,8 +88,8 @@ var searchData=
   ['starmrmat',['StarMRMat',['../lbann__base_8hpp.html#a99cdf61e316c00f3e39aeaa1509197c1',1,'lbann_base.hpp']]],
   ['starvcmat',['StarVCMat',['../lbann__base_8hpp.html#a763b3164342a5d73db851e85c76d385a',1,'lbann_base.hpp']]],
   ['statistics',['statistics',['../classlbann_1_1objective__functions_1_1statistics.html',1,'lbann::objective_functions']]],
-  ['statistics',['statistics',['../classlbann_1_1metrics_1_1statistics.html',1,'lbann::metrics']]],
   ['statistics',['statistics',['../classlbann_1_1metrics_1_1statistics.html#afc4d1c56faf7c870077a342e4c731086',1,'lbann::metrics::statistics::statistics()'],['../classlbann_1_1objective__functions_1_1statistics.html#ae09872294228744a19efd9510c7503a9',1,'lbann::objective_functions::statistics::statistics()']]],
+  ['statistics',['statistics',['../classlbann_1_1metrics_1_1statistics.html',1,'lbann::metrics']]],
   ['step',['step',['../structlbann__checkpoint.html#a14fc6e1f60b934876dfee2e528486239',1,'lbann_checkpoint::step()'],['../classlbann_1_1lbann__callback__step__learning__rate.html#afcb2f88eae412e84df9c43df9365732e',1,'lbann::lbann_callback_step_learning_rate::step()']]],
   ['subtract_5ffloat2',['SUBTRACT_FLOAT2',['../datatype_8hpp.html#a3c63177e6b72d2c03cc5868df55f60c5',1,'datatype.hpp']]],
   ['subtract_5ffloat3',['SUBTRACT_FLOAT3',['../datatype_8hpp.html#a24f2b43650a03b60ea2401572fdc899c',1,'datatype.hpp']]],
@@ -103,7 +103,6 @@ var searchData=
   ['summarizer',['summarizer',['../classlbann_1_1lbann__callback.html#ad48ff47a64f2dff3a12d8bd282f554cb',1,'lbann::lbann_callback']]],
   ['summarydir',['SummaryDir',['../classlbann_1_1TrainingParams.html#ad01ff40b34ff8b7adf4c547aa60ee87f',1,'lbann::TrainingParams']]],
   ['swap',['swap',['../classlbann_1_1sequential__model.html#a8aa4ddbd6efa79896749838e442b6168',1,'lbann::sequential_model']]],
-  ['swap_5fused_5fand_5funused_5findex_5fsets',['swap_used_and_unused_index_sets',['../classlbann_1_1DataReader.html#a45e1e6451ca76aedf6214c17c887bee0',1,'lbann::DataReader']]],
-  ['systemparams',['SystemParams',['../classlbann_1_1SystemParams.html#a4dc0a32571543d65f7f99e1050979697',1,'lbann::SystemParams']]],
-  ['systemparams',['SystemParams',['../classlbann_1_1SystemParams.html',1,'lbann']]]
+  ['systemparams',['SystemParams',['../classlbann_1_1SystemParams.html',1,'lbann']]],
+  ['systemparams',['SystemParams',['../classlbann_1_1SystemParams.html#a4dc0a32571543d65f7f99e1050979697',1,'lbann::SystemParams']]]
 ];
