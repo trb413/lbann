@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">13794bb-ci224188182</span>
+   &#160;<span id="projectnumber">f3636c6-ci224191306</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -361,8 +361,8 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        bp_local(row, col);</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  }</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  AllReduce(*<a class="code" href="classlbann_1_1batch__normalization.html#acfd8faa61d209247504fe2f72f7c9d5e">m_dbeta</a>, <a class="code" href="classlbann_1_1batch__normalization.html#acfd8faa61d209247504fe2f72f7c9d5e">m_dbeta</a>-&gt;RowComm(), mpi::SUM);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  AllReduce(*<a class="code" href="classlbann_1_1batch__normalization.html#ab8045b219aade3ab1d3406afa8cf33a4">m_dgamma</a>, <a class="code" href="classlbann_1_1batch__normalization.html#ab8045b219aade3ab1d3406afa8cf33a4">m_dgamma</a>-&gt;RowComm(), mpi::SUM);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  AllReduce(*<a class="code" href="classlbann_1_1batch__normalization.html#acfd8faa61d209247504fe2f72f7c9d5e">m_dbeta</a>, <a class="code" href="classlbann_1_1batch__normalization.html#acfd8faa61d209247504fe2f72f7c9d5e">m_dbeta</a>-&gt;RedundantComm(), mpi::SUM);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  AllReduce(*<a class="code" href="classlbann_1_1batch__normalization.html#ab8045b219aade3ab1d3406afa8cf33a4">m_dgamma</a>, <a class="code" href="classlbann_1_1batch__normalization.html#ab8045b219aade3ab1d3406afa8cf33a4">m_dgamma</a>-&gt;RedundantComm(), mpi::SUM);</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="comment">// Update the backprop gradient signal.</span></div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="keywordflow">for</span> (Int row = 0; row &lt; local_height; ++row) {</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordflow">for</span> (Int col = 0; col &lt; local_width; ++col) {</div>
@@ -444,8 +444,8 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      mean_local(row, 0) = sum;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      var_local(row, 0) = sqsum;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    AllReduce(*<a class="code" href="classlbann_1_1batch__normalization.html#a90994634aaccb9e2ad735ba5079f85d9">m_mean</a>, <a class="code" href="classlbann_1_1batch__normalization.html#a90994634aaccb9e2ad735ba5079f85d9">m_mean</a>-&gt;RowComm(), mpi::SUM);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    AllReduce(*<a class="code" href="classlbann_1_1batch__normalization.html#a572279bb7a37f7c228042ad3f99c06be">m_var</a>, <a class="code" href="classlbann_1_1batch__normalization.html#a572279bb7a37f7c228042ad3f99c06be">m_var</a>-&gt;RowComm(), mpi::SUM);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    AllReduce(*<a class="code" href="classlbann_1_1batch__normalization.html#a90994634aaccb9e2ad735ba5079f85d9">m_mean</a>, <a class="code" href="classlbann_1_1batch__normalization.html#a90994634aaccb9e2ad735ba5079f85d9">m_mean</a>-&gt;RedundantComm(), mpi::SUM);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    AllReduce(*<a class="code" href="classlbann_1_1batch__normalization.html#a572279bb7a37f7c228042ad3f99c06be">m_var</a>, <a class="code" href="classlbann_1_1batch__normalization.html#a572279bb7a37f7c228042ad3f99c06be">m_var</a>-&gt;RedundantComm(), mpi::SUM);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">for</span> (Int row = 0; row &lt; local_height; ++row) {</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      mean_local(row, 0) /= mbsize;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      var_local(row, 0) = Sqrt(var_local(row, 0) / mbsize -</div>
@@ -1093,7 +1093,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1batch__normalization.html">batch_normalization</a></li>
-    <li class="footer">Generated on Fri Apr 21 2017 01:56:19 for LBANN by
+    <li class="footer">Generated on Fri Apr 21 2017 02:25:26 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
