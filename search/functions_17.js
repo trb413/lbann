@@ -6,6 +6,7 @@ var searchData=
   ['_7eadam',['~adam',['../classlbann_1_1adam.html#ac8be11c9e17ee0d5ad412f9d0c2cff6f',1,'lbann::adam']]],
   ['_7eadam_5ffactory',['~adam_factory',['../classlbann_1_1adam__factory.html#a8231915b839eb0f6a3dd935677d9b2b7',1,'lbann::adam_factory']]],
   ['_7ebase_5ffactory',['~base_factory',['../classlbann_1_1base__factory.html#a183127f3eb9a8f2dbf81970cd301fd4a',1,'lbann::base_factory']]],
+  ['_7ebatch_5fnormalization',['~batch_normalization',['../classlbann_1_1batch__normalization.html#a27476b2494a861e413ecbb7febfc0098',1,'lbann::batch_normalization']]],
   ['_7ecategorical_5faccuracy',['~categorical_accuracy',['../classlbann_1_1metrics_1_1categorical__accuracy.html#ae49f33ab5a68ffccb390f0eb089fc69e',1,'lbann::metrics::categorical_accuracy']]],
   ['_7ecategorical_5fcross_5fentropy',['~categorical_cross_entropy',['../classlbann_1_1objective__functions_1_1categorical__cross__entropy.html#a6c25231a65dec17fab0733971ed1c243',1,'lbann::objective_functions::categorical_cross_entropy']]],
   ['_7econvolutional_5flayer',['~convolutional_layer',['../classlbann_1_1convolutional__layer.html#aa4b4d34bf7060486c9cf294015cc2428',1,'lbann::convolutional_layer']]],

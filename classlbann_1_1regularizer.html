@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">4708c00-ci224151056</span>
+   &#160;<span id="projectnumber">328a06b-ci224187279</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -103,7 +103,7 @@ Inheritance diagram for lbann::regularizer:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1regularizer__inherit__graph.png" border="0" usemap="#lbann_1_1regularizer_inherit__map" alt="Inheritance graph"/></div>
 <map name="lbann_1_1regularizer_inherit__map" id="lbann_1_1regularizer_inherit__map">
-<area shape="rect" id="node2" href="classlbann_1_1dropout.html" title="lbann::dropout" alt="" coords="13,80,117,107"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1batch__normalization.html" title="lbann::batch_normalization" alt="" coords="5,80,181,107"/><area shape="rect" id="node3" href="classlbann_1_1dropout.html" title="lbann::dropout" alt="" coords="207,80,311,107"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for lbann::regularizer:</div>
@@ -220,6 +220,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Corresponding backward-propagation regularization to fp_weights. </p>
 
+<p>Reimplemented in <a class="el" href="classlbann_1_1batch__normalization.html#aed81fefa1d55983393f69e14b6fdba9d">lbann::batch_normalization</a>.</p>
+
 <p>Definition at line <a class="el" href="lbann__regularizer_8hpp_source.html#l00060">60</a> of file <a class="el" href="lbann__regularizer_8hpp_source.html">lbann_regularizer.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{}</div>
 </div><!-- fragment -->
@@ -303,6 +305,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Forward propagation regularization of weights. This is called after applying a layer's linearity and before its nonlinearity. Example: L2 normalization. </p>
 
+<p>Reimplemented in <a class="el" href="classlbann_1_1batch__normalization.html#a0f4d0e84b153d00449d21e5d84bbbc58">lbann::batch_normalization</a>.</p>
+
 <p>Definition at line <a class="el" href="lbann__regularizer_8hpp_source.html#l00058">58</a> of file <a class="el" href="lbann__regularizer_8hpp_source.html">lbann_regularizer.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{}</div>
 </div><!-- fragment -->
@@ -331,10 +335,21 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Set up to regularize layer l. </p>
 
+<p>Reimplemented in <a class="el" href="classlbann_1_1batch__normalization.html#a68cb5fd5879349ff0c4a7b2826869178">lbann::batch_normalization</a>.</p>
+
 <p>Definition at line <a class="el" href="lbann__regularizer_8hpp_source.html#l00074">74</a> of file <a class="el" href="lbann__regularizer_8hpp_source.html">lbann_regularizer.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{ <a class="code" href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">m_layer</a> = l; }</div>
 <div class="ttc" id="classlbann_1_1regularizer_html_a6d0d44f4f9a3c8c24d0acdda8cf7d4b5"><div class="ttname"><a href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">lbann::regularizer::m_layer</a></div><div class="ttdeci">Layer * m_layer</div><div class="ttdef"><b>Definition:</b> <a href="lbann__regularizer_8hpp_source.html#l00077">lbann_regularizer.hpp:77</a></div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1regularizer_a8fda5d9230f7fe9f33348dc494245cb3_icgraph.png" border="0" usemap="#classlbann_1_1regularizer_a8fda5d9230f7fe9f33348dc494245cb3_icgraph" alt=""/></div>
+<map name="classlbann_1_1regularizer_a8fda5d9230f7fe9f33348dc494245cb3_icgraph" id="classlbann_1_1regularizer_a8fda5d9230f7fe9f33348dc494245cb3_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1batch__normalization.html#a68cb5fd5879349ff0c4a7b2826869178" title="lbann::batch_normalization\l::setup" alt="" coords="177,5,354,46"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="ad0fd1a331a6fd12025843c7d84783ea4"></a>
@@ -359,9 +374,20 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Update the regularizer after backprop. </p>
 
+<p>Reimplemented in <a class="el" href="classlbann_1_1batch__normalization.html#aca4343eb11c300d993c842a4c8643dc9">lbann::batch_normalization</a>.</p>
+
 <p>Definition at line <a class="el" href="lbann__regularizer_8hpp_source.html#l00071">71</a> of file <a class="el" href="lbann__regularizer_8hpp_source.html">lbann_regularizer.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{}</div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1regularizer_ad0fd1a331a6fd12025843c7d84783ea4_icgraph.png" border="0" usemap="#classlbann_1_1regularizer_ad0fd1a331a6fd12025843c7d84783ea4_icgraph" alt=""/></div>
+<map name="classlbann_1_1regularizer_ad0fd1a331a6fd12025843c7d84783ea4_icgraph" id="classlbann_1_1regularizer_ad0fd1a331a6fd12025843c7d84783ea4_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1batch__normalization.html#aca4343eb11c300d993c842a4c8643dc9" title="lbann::batch_normalization\l::update" alt="" coords="177,5,354,46"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -397,7 +423,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1regularizer.html">regularizer</a></li>
-    <li class="footer">Generated on Thu Apr 20 2017 22:53:37 for LBANN by
+    <li class="footer">Generated on Fri Apr 21 2017 01:49:25 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

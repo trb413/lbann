@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">4708c00-ci224151056</span>
+   &#160;<span id="projectnumber">328a06b-ci224187279</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -115,6 +115,9 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_base_offset
 : <a class="el" href="classlbann_1_1DataReader.html#a268d9205d61d0c58864ac26a687941a6">lbann::DataReader</a>
 </li>
+<li>m_beta
+: <a class="el" href="classlbann_1_1batch__normalization.html#a52f2a71c357cd8bdfa094275b9d057db">lbann::batch_normalization</a>
+</li>
 <li>m_beta1
 : <a class="el" href="classlbann_1_1adam.html#a73af15a28066edbfad9ba6a900746a19">lbann::adam</a>
 , <a class="el" href="classlbann_1_1adam__factory.html#a269a3cf9e65711dfe451d52e10025252">lbann::adam_factory</a>
@@ -122,6 +125,12 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_beta2
 : <a class="el" href="classlbann_1_1adam.html#ab1f2a16b8eb7e265895ea9eef3fe87b2">lbann::adam</a>
 , <a class="el" href="classlbann_1_1adam__factory.html#a70b4f38daa6ed2933514c9561d636e2c">lbann::adam_factory</a>
+</li>
+<li>m_beta_init
+: <a class="el" href="classlbann_1_1batch__normalization.html#ad98a49c141091ec52b4c3a29d0d547d8">lbann::batch_normalization</a>
+</li>
+<li>m_beta_optimizer
+: <a class="el" href="classlbann_1_1batch__normalization.html#a088b30f4141f4b10e2ab59072a862b9d">lbann::batch_normalization</a>
 </li>
 <li>m_bias_bp_t
 : <a class="el" href="classlbann_1_1FullyConnectedLayer.html#a22fec3eab97193da7df43095b7edf910">lbann::FullyConnectedLayer</a>
@@ -215,16 +224,23 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_data_sets_span_models
 : <a class="el" href="classlbann_1_1io__layer.html#a8ce9b172521bbcf55c1040a3c28719b1">lbann::io_layer</a>
 </li>
+<li>m_dbeta
+: <a class="el" href="classlbann_1_1batch__normalization.html#acfd8faa61d209247504fe2f72f7c9d5e">lbann::batch_normalization</a>
+</li>
 <li>m_debug_phase
 : <a class="el" href="classlbann_1_1lbann__callback__debug.html#acc66ab699534e42aa958148f1fb3fd6f">lbann::lbann_callback_debug</a>
 </li>
 <li>m_decay
-: <a class="el" href="classlbann_1_1sgd.html#ab4e82f13b9545bdff955bfb1ff609e7a">lbann::sgd</a>
+: <a class="el" href="classlbann_1_1batch__normalization.html#a73ed285344613b713a29e97a9bc18d69">lbann::batch_normalization</a>
+, <a class="el" href="classlbann_1_1sgd.html#ab4e82f13b9545bdff955bfb1ff609e7a">lbann::sgd</a>
 , <a class="el" href="classlbann_1_1sgd__factory.html#addd6b5182e910b69affd57be2a04a106">lbann::sgd_factory</a>
 </li>
 <li>m_decay_rate
 : <a class="el" href="classlbann_1_1rmsprop.html#a9cd712c44e7c4995120e2933b0387d71">lbann::rmsprop</a>
 , <a class="el" href="classlbann_1_1rmsprop__factory.html#a524b16d48b01fa6d61729e93df37cb22">lbann::rmsprop_factory</a>
+</li>
+<li>m_dgamma
+: <a class="el" href="classlbann_1_1batch__normalization.html#ab8045b219aade3ab1d3406afa8cf33a4">lbann::batch_normalization</a>
 </li>
 <li>m_dims
 : <a class="el" href="classlbann_1_1local__response__normalization__layer.html#a0bf04c83b7d60005f01a0632bf396abb">lbann::local_response_normalization_layer</a>
@@ -282,6 +298,15 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 </li>
 <li>m_for_regression
 : <a class="el" href="classlbann_1_1io__layer.html#a8d722320c4a9c9b5e59b55938e3ed667">lbann::io_layer</a>
+</li>
+<li>m_gamma
+: <a class="el" href="classlbann_1_1batch__normalization.html#ae956c124789c517780c4ebfc9c10629e">lbann::batch_normalization</a>
+</li>
+<li>m_gamma_init
+: <a class="el" href="classlbann_1_1batch__normalization.html#a47b4ecd433e9dfa1ee239d91e98e1186">lbann::batch_normalization</a>
+</li>
+<li>m_gamma_optimizer
+: <a class="el" href="classlbann_1_1batch__normalization.html#af31bdfd117d03957a234ccffc7782e26">lbann::batch_normalization</a>
 </li>
 <li>m_have_mirror
 : <a class="el" href="classlbann_1_1greedy__layerwise__autoencoder.html#a4848353f20ff957a9e0bd7c8d374644e">lbann::greedy_layerwise_autoencoder</a>
@@ -395,6 +420,9 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 </li>
 <li>m_max_sample_count_was_set
 : <a class="el" href="classlbann_1_1DataReader.html#aecc3fffed06874a1339aed31032119d1">lbann::DataReader</a>
+</li>
+<li>m_mean
+: <a class="el" href="classlbann_1_1batch__normalization.html#a90994634aaccb9e2ad735ba5079f85d9">lbann::batch_normalization</a>
 </li>
 <li>m_mean_subtraction
 : <a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a734002307d0ef95a31d75a295fa5c3d1">lbann::lbann_image_preprocessor</a>
@@ -593,6 +621,12 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <li>m_rotation_range
 : <a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a7518ae40fe38862c831832fdaf948d45">lbann::lbann_image_preprocessor</a>
 </li>
+<li>m_running_mean
+: <a class="el" href="classlbann_1_1batch__normalization.html#a8436d502ae49d92e2193bd1324e4b5d8">lbann::batch_normalization</a>
+</li>
+<li>m_running_var
+: <a class="el" href="classlbann_1_1batch__normalization.html#a013b023913a508aac28748df51624b91">lbann::batch_normalization</a>
+</li>
 <li>m_samples_per_epoch
 : <a class="el" href="classlbann_1_1metrics_1_1statistics.html#aeb7738af85340d8346f14378d80f2625">lbann::metrics::statistics</a>
 </li>
@@ -674,6 +708,9 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="classlbann_1_1metrics_1_1metric.html#a28589fea20a9ed6bcc043e0f17ad5453">lbann::metrics::metric</a>
 , <a class="el" href="classlbann_1_1objective__functions_1_1objective__fn.html#afed83dea78d6b545160b142df8d5e71b">lbann::objective_functions::objective_fn</a>
 </li>
+<li>m_var
+: <a class="el" href="classlbann_1_1batch__normalization.html#a572279bb7a37f7c228042ad3f99c06be">lbann::batch_normalization</a>
+</li>
 <li>m_velocity
 : <a class="el" href="classlbann_1_1sgd.html#a27f2d893014cef8357edffb63bf649f0">lbann::sgd</a>
 </li>
@@ -692,6 +729,9 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 </li>
 <li>m_weighted_sum
 : <a class="el" href="classlbann_1_1Layer.html#a06ff15d046be0425b409062ef984f4d5">lbann::Layer</a>
+</li>
+<li>m_weighted_sum_copy
+: <a class="el" href="classlbann_1_1batch__normalization.html#a128c26c48f4548efab7d30caad99564c">lbann::batch_normalization</a>
 </li>
 <li>m_weighted_sum_v
 : <a class="el" href="classlbann_1_1Layer.html#aefa1214f0220d47344b60436b2e52b53">lbann::Layer</a>
@@ -755,7 +795,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="classlbann_1_1model.html#aa5c16a70390f56c1279ff22df7511802">lbann::model</a>
 </li>
 <li>model_allreduce()
-: <a class="el" href="classlbann_1_1lbann__comm.html#a1fd37bdaa3498455235f98b5e10b5e21">lbann::lbann_comm</a>
+: <a class="el" href="classlbann_1_1lbann__comm.html#ab2bc3d526045ba1b5fedcd442b58a8f9">lbann::lbann_comm</a>
 </li>
 <li>model_barrier()
 : <a class="el" href="classlbann_1_1lbann__comm.html#a6086ced12c3eefeea6e2a78eff286983">lbann::lbann_comm</a>
@@ -770,7 +810,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 : <a class="el" href="classlbann_1_1lbann__comm.html#a1f3f90a996dbba4cd1cca60596933ea3">lbann::lbann_comm</a>
 </li>
 <li>model_reduce()
-: <a class="el" href="classlbann_1_1lbann__comm.html#a814ac3a49f07cb8e939f9acb34ac2a1d">lbann::lbann_comm</a>
+: <a class="el" href="classlbann_1_1lbann__comm.html#a188beae3d95179409ab446e2f36bce96">lbann::lbann_comm</a>
 </li>
 <li>msg
 : <a class="el" href="classlbann_1_1lbann__exception.html#a8698ff209b53c8452b5ca1d0caf7b824">lbann::lbann_exception</a>
@@ -781,7 +821,7 @@ $(document).ready(function(){initNavTree('functions_m.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Apr 20 2017 22:53:37 for LBANN by
+    <li class="footer">Generated on Fri Apr 21 2017 01:49:26 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
