@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"functions_func_v.html":[3,3,1,19],
 "functions_func_w.html":[3,3,1,20],
 "functions_func_z.html":[3,3,1,21],
 "functions_func_~.html":[3,3,1,22],
@@ -18,8 +19,8 @@ var NAVTREEINDEX7 =
 "functions_type.html":[3,3,3],
 "functions_u.html":[3,3,0,19],
 "functions_v.html":[3,3,0,20],
-"functions_vars.html":[3,3,2],
 "functions_vars.html":[3,3,2,0],
+"functions_vars.html":[3,3,2],
 "functions_vars_b.html":[3,3,2,1],
 "functions_vars_c.html":[3,3,2,2],
 "functions_vars_d.html":[3,3,2,3],
@@ -37,11 +38,12 @@ var NAVTREEINDEX7 =
 "functions_vars_r.html":[3,3,2,15],
 "functions_vars_s.html":[3,3,2,16],
 "functions_vars_t.html":[3,3,2,17],
-"functions_vars_v.html":[3,3,2,18],
-"functions_vars_w.html":[3,3,2,19],
-"functions_vars_x.html":[3,3,2,20],
-"functions_vars_y.html":[3,3,2,21],
-"functions_vars_z.html":[3,3,2,22],
+"functions_vars_u.html":[3,3,2,18],
+"functions_vars_v.html":[3,3,2,19],
+"functions_vars_w.html":[3,3,2,20],
+"functions_vars_x.html":[3,3,2,21],
+"functions_vars_y.html":[3,3,2,22],
+"functions_vars_z.html":[3,3,2,23],
 "functions_w.html":[3,3,0,21],
 "functions_x.html":[3,3,0,22],
 "functions_y.html":[3,3,0,23],
@@ -52,8 +54,8 @@ var NAVTREEINDEX7 =
 "getting_started.html#getting_started_dependencies":[0,3,1],
 "getting_started.html#getting_started_download":[0,3,0],
 "getting_started.html#getting_started_scripts":[0,3,3],
-"globals.html":[4,1,0,0],
 "globals.html":[4,1,0],
+"globals.html":[4,1,0,0],
 "globals_a.html":[4,1,0,1],
 "globals_b.html":[4,1,0,2],
 "globals_c.html":[4,1,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "lbann__data__reader__mnist_8cpp_source.html":[4,0,0,0,0,0,0,1,1,5],
 "lbann__data__reader__mnist_8hpp.html":[4,0,0,0,0,0,0,0,0,1,5],
 "lbann__data__reader__mnist_8hpp_source.html":[4,0,0,0,0,0,0,0,0,1,5],
-"lbann__data__reader__nci_8cpp.html":[4,0,0,0,0,0,0,1,1,6],
-"lbann__data__reader__nci_8cpp_source.html":[4,0,0,0,0,0,0,1,1,6],
-"lbann__data__reader__nci_8hpp.html":[4,0,0,0,0,0,0,0,0,1,6]
+"lbann__data__reader__nci_8cpp.html":[4,0,0,0,0,0,0,1,1,6]
 };

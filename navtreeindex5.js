@@ -1,5 +1,6 @@
 var NAVTREEINDEX5 =
 {
+"classlbann_1_1objective__functions_1_1objective__fn.html#afed83dea78d6b545160b142df8d5e71b":[3,0,3,1,1,16],
 "classlbann_1_1objective__functions_1_1statistics.html":[3,0,3,1,0],
 "classlbann_1_1objective__functions_1_1statistics.html#a01644876ce91989ed818aac93a2d0b7d":[3,0,3,1,0,4],
 "classlbann_1_1objective__functions_1_1statistics.html#a09539c4fbb94e1444424a501bfca3ccd":[3,0,3,1,0,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "classlbann_1_1target__layer.html":[3,0,3,53],
 "classlbann_1_1target__layer.html#a0de2e0aaa3763c82f67f24cc26e32711":[3,0,3,53,6],
 "classlbann_1_1target__layer.html#a18a25cbfe594cc6ee0c4e433435852d7":[3,0,3,53,11],
-"classlbann_1_1target__layer.html#a1c872b29d3d81ed04e34dcaf557beb2b":[3,0,3,53,14],
-"classlbann_1_1target__layer.html#a22b644b111036ed25f03b1359c537273":[3,0,3,53,7]
+"classlbann_1_1target__layer.html#a1c872b29d3d81ed04e34dcaf557beb2b":[3,0,3,53,14]
 };

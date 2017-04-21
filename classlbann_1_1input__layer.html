@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">f3636c6-ci224191306</span>
+   &#160;<span id="projectnumber">42cae79-ci224513266</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -356,6 +356,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a2ebe7fe151ec7f2af1a7f85dc494eeaa inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a6336e597d08c7054f2c53fea841dca inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a2a6336e597d08c7054f2c53fea841dca">bp_nonlinearity_time</a></td></tr>
 <tr class="separator:a2a6336e597d08c7054f2c53fea841dca inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd6c1fa01659749b22de59baf8259b84 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#abd6c1fa01659749b22de59baf8259b84">update_time</a></td></tr>
+<tr class="separator:abd6c1fa01659749b22de59baf8259b84 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -409,9 +411,9 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">NumNeurons</a> = <a class="code" href="classlbann_1_1io__layer.html#abe71d3ff37e3a3ddbb470347458a07ec">io_layer::get_linearized_data_size</a>();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1io__layer_html_ab64672a40366e264067ed065321bc294"><div class="ttname"><a href="classlbann_1_1io__layer.html#ab64672a40366e264067ed065321bc294">lbann::io_layer::io_layer</a></div><div class="ttdeci">io_layer(data_layout data_dist, lbann_comm *comm, uint mini_batch_size, std::map&lt; execution_mode, DataReader * &gt; data_readers, std::vector&lt; regularizer * &gt; regs={}, bool data_sets_span_models=true, bool for_regression=false)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__io__layer_8cpp_source.html#l00037">lbann_io_layer.cpp:37</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_a9d4a379d5c9e1102e63b48c53dd8ed44"><div class="ttname"><a href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">lbann::Layer::NumNeurons</a></div><div class="ttdeci">uint NumNeurons</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00202">lbann_layer.hpp:202</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a9d4a379d5c9e1102e63b48c53dd8ed44"><div class="ttname"><a href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">lbann::Layer::NumNeurons</a></div><div class="ttdeci">uint NumNeurons</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00204">lbann_layer.hpp:204</a></div></div>
 <div class="ttc" id="classlbann_1_1io__layer_html_abe71d3ff37e3a3ddbb470347458a07ec"><div class="ttname"><a href="classlbann_1_1io__layer.html#abe71d3ff37e3a3ddbb470347458a07ec">lbann::io_layer::get_linearized_data_size</a></div><div class="ttdeci">long get_linearized_data_size()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__io__layer_8cpp_source.html#l00133">lbann_io_layer.cpp:133</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_ad20dd05617ed950162e0fdb95bc23096"><div class="ttname"><a href="classlbann_1_1Layer.html#ad20dd05617ed950162e0fdb95bc23096">lbann::Layer::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdoc">Pointer to the input for the backward propagation - no local storage. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00229">lbann_layer.hpp:229</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_ad20dd05617ed950162e0fdb95bc23096"><div class="ttname"><a href="classlbann_1_1Layer.html#ad20dd05617ed950162e0fdb95bc23096">lbann::Layer::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdoc">Pointer to the input for the backward propagation - no local storage. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00231">lbann_layer.hpp:231</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -652,7 +654,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1input__layer.html">input_layer</a></li>
-    <li class="footer">Generated on Fri Apr 21 2017 02:25:25 for LBANN by
+    <li class="footer">Generated on Fri Apr 21 2017 21:58:09 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

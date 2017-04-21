@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">f3636c6-ci224191306</span>
+   &#160;<span id="projectnumber">42cae79-ci224513266</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -363,156 +363,158 @@ $(document).ready(function(){initNavTree('lbann__layer__fully__connected_8cpp_so
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
 <div class="line"><a name="l00284"></a><span class="lineno"><a class="line" href="classlbann_1_1FullyConnectedLayer.html#a833f3d06c344e7f5857f87b4da4ffa94">  284</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classlbann_1_1FullyConnectedLayer.html#a833f3d06c344e7f5857f87b4da4ffa94">lbann::FullyConnectedLayer::update</a>()</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;{</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#ae4a050e51e3a9bec431cf8b7a5660f2c">Layer::update</a>();</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <span class="keywordflow">if</span>(m_execution_mode == <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>) {</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    m_optimizer-&gt;update(m_weights_gradient);</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  }</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;}</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
-<div class="line"><a name="l00293"></a><span class="lineno"><a class="line" href="classlbann_1_1FullyConnectedLayer.html#ac062d3eace627bfa97a3d8b93de6761c">  293</a></span>&#160;<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> <a class="code" href="classlbann_1_1FullyConnectedLayer.html#ac062d3eace627bfa97a3d8b93de6761c">lbann::FullyConnectedLayer::checkGradient</a>(<a class="code" href="classlbann_1_1Layer.html">Layer</a>&amp; PrevLayer, <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> Epsilon)</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;{</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a> WB_E1(m_weights-&gt;Grid());</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a> WB_E2(m_weights-&gt;Grid());</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a> Zs_E1(m_weighted_sum-&gt;Grid());</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a> Zs_E2(m_weighted_sum-&gt;Grid());</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a> Acts_E1(m_activations-&gt;Grid());</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a> Acts_E2(m_activations-&gt;Grid());</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> grad_diff = 0;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> grad_sum = 0;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    Zeros(WB_E1, m_weights-&gt;Height(), m_weights-&gt;Width());</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    Zeros(WB_E2, m_weights-&gt;Height(), m_weights-&gt;Width());</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    Zeros(Zs_E1, m_weighted_sum-&gt;Height(), m_weighted_sum-&gt;Width());</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    Zeros(Zs_E2, m_weighted_sum-&gt;Height(), m_weighted_sum-&gt;Width());</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    Zeros(Acts_E1, m_activations-&gt;Height(), m_activations-&gt;Width());</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    Zeros(Acts_E2, m_activations-&gt;Height(), m_activations-&gt;Width());</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    Copy(*m_weights, WB_E1);</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    Copy(*m_weights, WB_E2);</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> sum_error = 0;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    Int prow = 0;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    Int pcol = 0;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordflow">if</span>(WB_E1.IsLocal(prow, pcol)) {</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      Int _prow = WB_E1.LocalRow(prow);</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;      Int _pcol = WB_E1.LocalCol(pcol);</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      WB_E1.SetLocal(_prow, _pcol, WB_E1.GetLocal(_prow, _pcol) + Epsilon);</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    }</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keywordflow">if</span>(WB_E2.IsLocal(prow, pcol)) {</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      Int _prow = WB_E2.LocalRow(prow);</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      Int _pcol = WB_E2.LocalCol(pcol);</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      WB_E2.SetLocal(_prow, _pcol, WB_E2.GetLocal(_prow, _pcol) - Epsilon);</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    }</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keywordflow">for</span> (Int row = 0; row &lt; m_weights-&gt;Height(); row++) {</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordflow">for</span> (Int col = 0; col &lt; m_weights-&gt;Width(); col++) {</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;          <span class="comment">//          printf(&quot;Updating %d: %d x %d\n&quot;, Index, row, col);</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;            <span class="keywordflow">if</span>(WB_E1.IsLocal(prow, pcol)) {</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;              Int _prow = WB_E1.LocalRow(prow);</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;              Int _pcol = WB_E1.LocalCol(pcol);</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;              WB_E1.SetLocal(_prow, _pcol, WB_E1.GetLocal(_prow, _pcol) - Epsilon);</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            }</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;            <span class="keywordflow">if</span>(WB_E2.IsLocal(prow, pcol)) {</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;              Int _prow = WB_E2.LocalRow(prow);</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;              Int _pcol = WB_E2.LocalCol(pcol);</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;              WB_E2.SetLocal(_prow, _pcol, WB_E2.GetLocal(_prow, _pcol) + Epsilon);</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            }</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            <span class="keywordflow">if</span>(WB_E1.IsLocal(row, col)) {</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;              Int _row = WB_E1.LocalRow(row);</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;              Int _col = WB_E1.LocalCol(col);</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;              WB_E1.SetLocal(_row,  _col,  WB_E1.GetLocal(_row, _col)   + Epsilon);</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            }</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            <span class="keywordflow">if</span>(WB_E2.IsLocal(row, col)) {</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;              Int _row = WB_E2.LocalRow(row);</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;              Int _col = WB_E2.LocalCol(col);</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;              WB_E2.SetLocal(_row,  _col,  WB_E2.GetLocal(_row, _col)   - Epsilon);</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            }</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            <span class="comment">// J(theta)</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            <span class="comment">//            this-&gt;fp_linearity(*WB, *(PrevLayer.Acts), *Zs, *Acts);</span></div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            <span class="comment">//this-&gt;fp_nonlinearity(*Acts);</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            <span class="comment">// J(thetaPlus(i))</span></div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            <span class="comment">//            this-&gt;fp_linearity(WB_E1, *(PrevLayer.Acts), Zs_E1, Acts_E1);</span></div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            <span class="comment">//this-&gt;fp_nonlinearity(Acts_E1);</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            <span class="comment">// J(thetaMinus(i))</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;            <span class="comment">//            this-&gt;fp_linearity(WB_E2, *(PrevLayer.Acts), Zs_E2, Acts_E2);</span></div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            <span class="comment">//this-&gt;fp_nonlinearity(Acts_E2);</span></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            <span class="comment">//            this-&gt;getCost();</span></div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="keywordtype">double</span> start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#ae4a050e51e3a9bec431cf8b7a5660f2c">Layer::update</a>();</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  <span class="keywordflow">if</span>(m_execution_mode == <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>) {</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    m_optimizer-&gt;update(m_weights_gradient);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  }</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  update_time += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - start;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;}</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
+<div class="line"><a name="l00295"></a><span class="lineno"><a class="line" href="classlbann_1_1FullyConnectedLayer.html#ac062d3eace627bfa97a3d8b93de6761c">  295</a></span>&#160;<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> <a class="code" href="classlbann_1_1FullyConnectedLayer.html#ac062d3eace627bfa97a3d8b93de6761c">lbann::FullyConnectedLayer::checkGradient</a>(<a class="code" href="classlbann_1_1Layer.html">Layer</a>&amp; PrevLayer, <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> Epsilon)</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;{</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a> WB_E1(m_weights-&gt;Grid());</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a> WB_E2(m_weights-&gt;Grid());</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a> Zs_E1(m_weighted_sum-&gt;Grid());</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a> Zs_E2(m_weighted_sum-&gt;Grid());</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a> Acts_E1(m_activations-&gt;Grid());</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a> Acts_E2(m_activations-&gt;Grid());</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> grad_diff = 0;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> grad_sum = 0;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    Zeros(WB_E1, m_weights-&gt;Height(), m_weights-&gt;Width());</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    Zeros(WB_E2, m_weights-&gt;Height(), m_weights-&gt;Width());</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    Zeros(Zs_E1, m_weighted_sum-&gt;Height(), m_weighted_sum-&gt;Width());</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    Zeros(Zs_E2, m_weighted_sum-&gt;Height(), m_weighted_sum-&gt;Width());</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    Zeros(Acts_E1, m_activations-&gt;Height(), m_activations-&gt;Width());</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    Zeros(Acts_E2, m_activations-&gt;Height(), m_activations-&gt;Width());</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    Copy(*m_weights, WB_E1);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    Copy(*m_weights, WB_E2);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> sum_error = 0;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    Int prow = 0;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    Int pcol = 0;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordflow">if</span>(WB_E1.IsLocal(prow, pcol)) {</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      Int _prow = WB_E1.LocalRow(prow);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      Int _pcol = WB_E1.LocalCol(pcol);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;      WB_E1.SetLocal(_prow, _pcol, WB_E1.GetLocal(_prow, _pcol) + Epsilon);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    }</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">if</span>(WB_E2.IsLocal(prow, pcol)) {</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      Int _prow = WB_E2.LocalRow(prow);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      Int _pcol = WB_E2.LocalCol(pcol);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;      WB_E2.SetLocal(_prow, _pcol, WB_E2.GetLocal(_prow, _pcol) - Epsilon);</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    }</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordflow">for</span> (Int row = 0; row &lt; m_weights-&gt;Height(); row++) {</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="keywordflow">for</span> (Int col = 0; col &lt; m_weights-&gt;Width(); col++) {</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;          <span class="comment">//          printf(&quot;Updating %d: %d x %d\n&quot;, Index, row, col);</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;            <span class="keywordflow">if</span>(WB_E1.IsLocal(prow, pcol)) {</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;              Int _prow = WB_E1.LocalRow(prow);</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;              Int _pcol = WB_E1.LocalCol(pcol);</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;              WB_E1.SetLocal(_prow, _pcol, WB_E1.GetLocal(_prow, _pcol) - Epsilon);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            }</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;            <span class="keywordflow">if</span>(WB_E2.IsLocal(prow, pcol)) {</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;              Int _prow = WB_E2.LocalRow(prow);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;              Int _pcol = WB_E2.LocalCol(pcol);</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;              WB_E2.SetLocal(_prow, _pcol, WB_E2.GetLocal(_prow, _pcol) + Epsilon);</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;            }</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            <span class="keywordflow">if</span>(WB_E1.IsLocal(row, col)) {</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;              Int _row = WB_E1.LocalRow(row);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;              Int _col = WB_E1.LocalCol(col);</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;              WB_E1.SetLocal(_row,  _col,  WB_E1.GetLocal(_row, _col)   + Epsilon);</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            }</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            <span class="keywordflow">if</span>(WB_E2.IsLocal(row, col)) {</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;              Int _row = WB_E2.LocalRow(row);</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;              Int _col = WB_E2.LocalCol(col);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;              WB_E2.SetLocal(_row,  _col,  WB_E2.GetLocal(_row, _col)   - Epsilon);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            }</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            <span class="comment">// J(theta)</span></div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            <span class="comment">//            this-&gt;fp_linearity(*WB, *(PrevLayer.Acts), *Zs, *Acts);</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;            <span class="comment">//this-&gt;fp_nonlinearity(*Acts);</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            <span class="comment">// J(thetaPlus(i))</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            <span class="comment">//            this-&gt;fp_linearity(WB_E1, *(PrevLayer.Acts), Zs_E1, Acts_E1);</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            <span class="comment">//this-&gt;fp_nonlinearity(Acts_E1);</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            <span class="comment">// J(thetaMinus(i))</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            <span class="comment">//            this-&gt;fp_linearity(WB_E2, *(PrevLayer.Acts), Zs_E2, Acts_E2);</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            <span class="comment">//this-&gt;fp_nonlinearity(Acts_E2);</span></div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            <span class="comment">// gradApprox(i) = J(thetaPlus(i)) - J(thetaMinus(i)) / (2*Epsilon)</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            Axpy(-1.0, *m_activations, Acts_E1);</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            Axpy(-1.0, *m_activations, Acts_E2);</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            <span class="keywordtype">bool</span> bad_E1 = <span class="keyword">false</span>, bad_E2 = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            <span class="keywordflow">for</span>(Int r = 0; r &lt; m_activations-&gt;Height(); r++) {</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;              <span class="keywordflow">for</span>(Int c = 0; c &lt; m_activations-&gt;Width(); c++) {</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;                <span class="keywordflow">if</span>(Acts_E1.IsLocal(r,c)) {</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;                  Int _r = Acts_E1.LocalRow(r);</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                  Int _c = Acts_E1.LocalCol(c);</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                  <span class="keywordflow">if</span>((Acts_E1.GetLocal(_r,_c) &gt; 1e-12 || Acts_E1.GetLocal(_r,_c) &lt; -1e-12) &amp;&amp; r != row) {</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                    bad_E1 = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                    <span class="comment">//                    cout &lt;&lt; &quot;Acts_E1=[&quot;&lt;&lt; r &lt;&lt; &quot;,&quot; &lt;&lt; c &lt;&lt; &quot;]=&quot;&lt;&lt;Acts_E1.GetLocal(_r,_c)&lt;&lt;endl;</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                  }</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                }</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                <span class="keywordflow">if</span>(Acts_E2.IsLocal(r,c)) {</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                  Int _r = Acts_E2.LocalRow(r);</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                  Int _c = Acts_E2.LocalCol(c);</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                  <span class="keywordflow">if</span>((Acts_E2.GetLocal(_r,_c) &gt; 1e-12 || Acts_E2.GetLocal(_r,_c) &lt; -1e-12) &amp;&amp; r != row) {</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                    bad_E2 = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                    <span class="comment">//                    cout &lt;&lt; &quot;Acts_E2=[&quot;&lt;&lt; r &lt;&lt; &quot;,&quot; &lt;&lt; c &lt;&lt; &quot;]=&quot;&lt;&lt;Acts_E2.GetLocal(_r,_c)&lt;&lt;endl;</span></div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                  }</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                }</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;              }</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;            }</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            <span class="keywordflow">if</span>(bad_E1) {</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;              <span class="keywordflow">if</span>(Acts_E1.Grid().Rank() == 0) {</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                printf(<span class="stringliteral">&quot;BAD ENTRY Acts_E1 %d x %d\n&quot;</span>, row, col);</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;              }</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;              cout.precision(20);</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;              Print(Acts_E1);</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;              <span class="keywordflow">if</span>(Acts_E1.Grid().Rank() == 0) {</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;                printf(<span class="stringliteral">&quot;Acts\n&quot;</span>);</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;              }</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;              Print(*m_activations);</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;            }</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;            <span class="keywordflow">if</span>(bad_E2) {</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;              <span class="keywordflow">if</span>(Acts_E2.Grid().Rank() == 0) {</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;                printf(<span class="stringliteral">&quot;BAD ENTRY Acts_E2 %d x %d\n&quot;</span>, row, col);</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;              }</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;              Print(Acts_E2);</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;            }</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;            prow = row;</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;            pcol = col;</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        }</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    }</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> grad_error = sqrt(grad_diff / grad_sum);</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    <span class="keywordflow">return</span> grad_error;</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;}</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            <span class="comment">//            this-&gt;getCost();</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;            <span class="comment">// gradApprox(i) = J(thetaPlus(i)) - J(thetaMinus(i)) / (2*Epsilon)</span></div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            Axpy(-1.0, *m_activations, Acts_E1);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            Axpy(-1.0, *m_activations, Acts_E2);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;            <span class="keywordtype">bool</span> bad_E1 = <span class="keyword">false</span>, bad_E2 = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;            <span class="keywordflow">for</span>(Int r = 0; r &lt; m_activations-&gt;Height(); r++) {</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;              <span class="keywordflow">for</span>(Int c = 0; c &lt; m_activations-&gt;Width(); c++) {</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;                <span class="keywordflow">if</span>(Acts_E1.IsLocal(r,c)) {</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;                  Int _r = Acts_E1.LocalRow(r);</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;                  Int _c = Acts_E1.LocalCol(c);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;                  <span class="keywordflow">if</span>((Acts_E1.GetLocal(_r,_c) &gt; 1e-12 || Acts_E1.GetLocal(_r,_c) &lt; -1e-12) &amp;&amp; r != row) {</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;                    bad_E1 = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                    <span class="comment">//                    cout &lt;&lt; &quot;Acts_E1=[&quot;&lt;&lt; r &lt;&lt; &quot;,&quot; &lt;&lt; c &lt;&lt; &quot;]=&quot;&lt;&lt;Acts_E1.GetLocal(_r,_c)&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                  }</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;                }</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                <span class="keywordflow">if</span>(Acts_E2.IsLocal(r,c)) {</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                  Int _r = Acts_E2.LocalRow(r);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;                  Int _c = Acts_E2.LocalCol(c);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                  <span class="keywordflow">if</span>((Acts_E2.GetLocal(_r,_c) &gt; 1e-12 || Acts_E2.GetLocal(_r,_c) &lt; -1e-12) &amp;&amp; r != row) {</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;                    bad_E2 = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                    <span class="comment">//                    cout &lt;&lt; &quot;Acts_E2=[&quot;&lt;&lt; r &lt;&lt; &quot;,&quot; &lt;&lt; c &lt;&lt; &quot;]=&quot;&lt;&lt;Acts_E2.GetLocal(_r,_c)&lt;&lt;endl;</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                  }</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                }</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;              }</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            }</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;            <span class="keywordflow">if</span>(bad_E1) {</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;              <span class="keywordflow">if</span>(Acts_E1.Grid().Rank() == 0) {</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;                printf(<span class="stringliteral">&quot;BAD ENTRY Acts_E1 %d x %d\n&quot;</span>, row, col);</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;              }</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;              cout.precision(20);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;              Print(Acts_E1);</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;              <span class="keywordflow">if</span>(Acts_E1.Grid().Rank() == 0) {</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;                printf(<span class="stringliteral">&quot;Acts\n&quot;</span>);</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;              }</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;              Print(*m_activations);</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;            }</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;            <span class="keywordflow">if</span>(bad_E2) {</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;              <span class="keywordflow">if</span>(Acts_E2.Grid().Rank() == 0) {</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;                printf(<span class="stringliteral">&quot;BAD ENTRY Acts_E2 %d x %d\n&quot;</span>, row, col);</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;              }</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;              Print(Acts_E2);</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;            }</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;            prow = row;</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;            pcol = col;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        }</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    }</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> grad_error = sqrt(grad_diff / grad_sum);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <span class="keywordflow">return</span> grad_error;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1FullyConnectedLayer_html_a6203dc19e38727d42947102637daaa12"><div class="ttname"><a href="classlbann_1_1FullyConnectedLayer.html#a6203dc19e38727d42947102637daaa12">lbann::FullyConnectedLayer::fp_set_std_matrix_view</a></div><div class="ttdeci">void fp_set_std_matrix_view()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__fully__connected_8cpp_source.html#l00164">lbann_layer_fully_connected.cpp:164</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a786677cbfb3f5677b4d84f3056eb08db"><div class="ttname"><a href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a></div><div class="ttdeci">data_layout</div><div class="ttdoc">Data layout that is optimized for different modes of parallelism. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00058">lbann_base.hpp:58</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a6034e0823933305d0bd7b5ef860f5c50"><div class="ttname"><a href="lbann__base_8hpp.html#a6034e0823933305d0bd7b5ef860f5c50">ColSumMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::MR, El::STAR &gt; ColSumMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00047">lbann_base.hpp:47</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_a935881e25a98b4ffad1985dc04c19572"><div class="ttname"><a href="classlbann_1_1Layer.html#a935881e25a98b4ffad1985dc04c19572">lbann::Layer::fp_set_std_matrix_view</a></div><div class="ttdeci">virtual void fp_set_std_matrix_view()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00465">lbann_layer.cpp:465</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a935881e25a98b4ffad1985dc04c19572"><div class="ttname"><a href="classlbann_1_1Layer.html#a935881e25a98b4ffad1985dc04c19572">lbann::Layer::fp_set_std_matrix_view</a></div><div class="ttdeci">virtual void fp_set_std_matrix_view()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00466">lbann_layer.cpp:466</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_ac1f107dfdc1d078904b4b666af5b6b86"><div class="ttname"><a href="lbann__base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86">StarMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::STAR, El::STAR &gt; StarMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00046">lbann_base.hpp:46</a></div></div>
 <div class="ttc" id="classlbann_1_1FullyConnectedLayer_html_aac9c91ba44bdc008f5524351f6c873b5"><div class="ttname"><a href="classlbann_1_1FullyConnectedLayer.html#aac9c91ba44bdc008f5524351f6c873b5">lbann::FullyConnectedLayer::initialize_model_parallel_distribution</a></div><div class="ttdeci">void initialize_model_parallel_distribution()</div><div class="ttdoc">Matrices should be in MC,MR distributions. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__fully__connected_8cpp_source.html#l00105">lbann_layer_fully_connected.cpp:105</a></div></div>
 <div class="ttc" id="classlbann_1_1FullyConnectedLayer_html_a833f3d06c344e7f5857f87b4da4ffa94"><div class="ttname"><a href="classlbann_1_1FullyConnectedLayer.html#a833f3d06c344e7f5857f87b4da4ffa94">lbann::FullyConnectedLayer::update</a></div><div class="ttdeci">bool update()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__fully__connected_8cpp_source.html#l00284">lbann_layer_fully_connected.cpp:284</a></div></div>
-<div class="ttc" id="classlbann_1_1FullyConnectedLayer_html_ac062d3eace627bfa97a3d8b93de6761c"><div class="ttname"><a href="classlbann_1_1FullyConnectedLayer.html#ac062d3eace627bfa97a3d8b93de6761c">lbann::FullyConnectedLayer::checkGradient</a></div><div class="ttdeci">DataType checkGradient(Layer &amp;PrevLayer, const DataType Epsilon=1e-4)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__fully__connected_8cpp_source.html#l00293">lbann_layer_fully_connected.cpp:293</a></div></div>
+<div class="ttc" id="classlbann_1_1FullyConnectedLayer_html_ac062d3eace627bfa97a3d8b93de6761c"><div class="ttname"><a href="classlbann_1_1FullyConnectedLayer.html#ac062d3eace627bfa97a3d8b93de6761c">lbann::FullyConnectedLayer::checkGradient</a></div><div class="ttdeci">DataType checkGradient(Layer &amp;PrevLayer, const DataType Epsilon=1e-4)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__fully__connected_8cpp_source.html#l00295">lbann_layer_fully_connected.cpp:295</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html"><div class="ttname"><a href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00048">lbann_comm.hpp:48</a></div></div>
 <div class="ttc" id="namespacelbann_html_afda802d107be9203db432ae5f6c276fd"><div class="ttname"><a href="namespacelbann.html#afda802d107be9203db432ae5f6c276fd">lbann::initialize_matrix</a></div><div class="ttdeci">void initialize_matrix(ElMat &amp;matrix_v, weight_initialization initialization, Int fan_in, Int fan_out)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__random_8cpp_source.html#l00197">lbann_random.cpp:197</a></div></div>
 <div class="ttc" id="classlbann_1_1FullyConnectedLayer_html_a46dfd12dae650d102c33e7d5ca8abd19"><div class="ttname"><a href="classlbann_1_1FullyConnectedLayer.html#a46dfd12dae650d102c33e7d5ca8abd19">lbann::FullyConnectedLayer::initialize_data_parallel_distribution</a></div><div class="ttdeci">void initialize_data_parallel_distribution()</div><div class="ttdoc">Weight matrices should be in Star,Star and data matrices Star,VC distributions. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__fully__connected_8cpp_source.html#l00118">lbann_layer_fully_connected.cpp:118</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html"><div class="ttname"><a href="classlbann_1_1Layer.html">lbann::Layer</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00092">lbann_layer.hpp:92</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html"><div class="ttname"><a href="classlbann_1_1Layer.html">lbann::Layer</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00093">lbann_layer.hpp:93</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214"><div class="ttname"><a href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638"><div class="ttname"><a href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a></div></div>
 <div class="ttc" id="namespacelbann_html_a33be342c4bdc4c00e9f91ff3a2f20743a156e322bc71c040cbb092c46ed11c5cb"><div class="ttname"><a href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a156e322bc71c040cbb092c46ed11c5cb">lbann::layer_type::fully_connected</a></div></div>
 <div class="ttc" id="classlbann_1_1FullyConnectedLayer_html_a814e23d0abe277389426d3a6270d2db1"><div class="ttname"><a href="classlbann_1_1FullyConnectedLayer.html#a814e23d0abe277389426d3a6270d2db1">lbann::FullyConnectedLayer::setup</a></div><div class="ttdeci">void setup(int numPrevNeurons)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__fully__connected_8cpp_source.html#l00130">lbann_layer_fully_connected.cpp:130</a></div></div>
 <div class="ttc" id="lbann__layer__convolutional_8cpp_html_acf6a2677c9dc565b7f3379c1544d709e"><div class="ttname"><a href="lbann__layer__convolutional_8cpp.html#acf6a2677c9dc565b7f3379c1544d709e">m_weight_initialization</a></div><div class="ttdeci">m_weight_initialization(init)</div></div>
 <div class="ttc" id="classlbann_1_1optimizer_html"><div class="ttname"><a href="classlbann_1_1optimizer.html">lbann::optimizer</a></div><div class="ttdoc">Optimizer base class. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00040">lbann_optimizer.hpp:40</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_a20442464265da1cb2aeb1cf82640702f"><div class="ttname"><a href="classlbann_1_1Layer.html#a20442464265da1cb2aeb1cf82640702f">lbann::Layer::setup</a></div><div class="ttdeci">virtual void setup(int)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00315">lbann_layer.cpp:315</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a20442464265da1cb2aeb1cf82640702f"><div class="ttname"><a href="classlbann_1_1Layer.html#a20442464265da1cb2aeb1cf82640702f">lbann::Layer::setup</a></div><div class="ttdeci">virtual void setup(int)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00316">lbann_layer.cpp:316</a></div></div>
 <div class="ttc" id="lbann__model_8hpp_html"><div class="ttname"><a href="lbann__model_8hpp.html">lbann_model.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_ae4a050e51e3a9bec431cf8b7a5660f2c"><div class="ttname"><a href="classlbann_1_1Layer.html#ae4a050e51e3a9bec431cf8b7a5660f2c">lbann::Layer::update</a></div><div class="ttdeci">virtual bool update()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00278">lbann_layer.cpp:278</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0"><div class="ttname"><a href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0">data_layout::MODEL_PARALLEL</a></div></div>
@@ -528,8 +530,9 @@ $(document).ready(function(){initNavTree('lbann__layer__fully__connected_8cpp_so
 <div class="ttc" id="lbann__layer__fully__connected_8cpp_html_a199b2df97e18b083eb9ee655fec2dfc7"><div class="ttname"><a href="lbann__layer__fully__connected_8cpp.html#a199b2df97e18b083eb9ee655fec2dfc7">_sq</a></div><div class="ttdeci">DataType _sq(DataType x)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__fully__connected_8cpp_source.html#l00281">lbann_layer_fully_connected.cpp:281</a></div></div>
 <div class="ttc" id="classlbann_1_1FullyConnectedLayer_html_ab8cf987d1e95ad1fbacd3851a07b3954"><div class="ttname"><a href="classlbann_1_1FullyConnectedLayer.html#ab8cf987d1e95ad1fbacd3851a07b3954">lbann::FullyConnectedLayer::fp_linearity</a></div><div class="ttdeci">void fp_linearity()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__fully__connected_8cpp_source.html#l00174">lbann_layer_fully_connected.cpp:174</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a8e774b79084797a8f87918d8f66b6802"><div class="ttname"><a href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::MC, El::MR &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00044">lbann_base.hpp:44</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_a6941c1ec005f88a7af80eaebf652e16f"><div class="ttname"><a href="classlbann_1_1Layer.html#a6941c1ec005f88a7af80eaebf652e16f">lbann::Layer::m_type</a></div><div class="ttdeci">layer_type m_type</div><div class="ttdoc">Layer type. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00195">lbann_layer.hpp:195</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_a9d4a379d5c9e1102e63b48c53dd8ed44"><div class="ttname"><a href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">lbann::Layer::NumNeurons</a></div><div class="ttdeci">uint NumNeurons</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00202">lbann_layer.hpp:202</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a6941c1ec005f88a7af80eaebf652e16f"><div class="ttname"><a href="classlbann_1_1Layer.html#a6941c1ec005f88a7af80eaebf652e16f">lbann::Layer::m_type</a></div><div class="ttdeci">layer_type m_type</div><div class="ttdoc">Layer type. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00197">lbann_layer.hpp:197</a></div></div>
+<div class="ttc" id="namespacelbann_html_a478d36031ff0659893c4322cd856157f"><div class="ttname"><a href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">lbann::get_time</a></div><div class="ttdeci">double get_time()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__timer_8hpp_source.html#l00037">lbann_timer.hpp:37</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a9d4a379d5c9e1102e63b48c53dd8ed44"><div class="ttname"><a href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">lbann::Layer::NumNeurons</a></div><div class="ttdeci">uint NumNeurons</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00204">lbann_layer.hpp:204</a></div></div>
 <div class="ttc" id="datatype_8hpp_html_a91ad9478d81a7aaf2593e8d9c3d06a14"><div class="ttname"><a href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00074">datatype.hpp:74</a></div></div>
 <div class="ttc" id="classlbann_1_1FullyConnectedLayer_html_a860ce37b50b47b339861061c9a8a6879"><div class="ttname"><a href="classlbann_1_1FullyConnectedLayer.html#a860ce37b50b47b339861061c9a8a6879">lbann::FullyConnectedLayer::bp_linearity</a></div><div class="ttdeci">void bp_linearity()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__fully__connected_8cpp_source.html#l00210">lbann_layer_fully_connected.cpp:210</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00037">lbann_base.hpp:37</a></div></div>
@@ -539,7 +542,7 @@ $(document).ready(function(){initNavTree('lbann__layer__fully__connected_8cpp_so
 <div class="ttc" id="classlbann_1_1FullyConnectedLayer_html_ae68be669391380c6fd506e0bed0c4a1b"><div class="ttname"><a href="classlbann_1_1FullyConnectedLayer.html#ae68be669391380c6fd506e0bed0c4a1b">lbann::FullyConnectedLayer::WBL2norm</a></div><div class="ttdeci">DataType WBL2norm()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__fully__connected_8cpp_source.html#l00276">lbann_layer_fully_connected.cpp:276</a></div></div>
 <div class="ttc" id="namespacelbann_html_ab00e153fabca7ab166e4d79d47c05c76"><div class="ttname"><a href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76">lbann::activation_type</a></div><div class="ttdeci">activation_type</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__activations_8hpp_source.html#l00035">lbann_layer_activations.hpp:35</a></div></div>
 <div class="ttc" id="classlbann_1_1FullyConnectedLayer_html_a355ecf2e648ed388a73bb24a89a31437"><div class="ttname"><a href="classlbann_1_1FullyConnectedLayer.html#a355ecf2e648ed388a73bb24a89a31437">lbann::FullyConnectedLayer::computeCost</a></div><div class="ttdeci">DataType computeCost(DistMat &amp;deltas)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__fully__connected_8cpp_source.html#l00261">lbann_layer_fully_connected.cpp:261</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_a5d76fcdf50d7ac4fb2fe757fb0cc23d8"><div class="ttname"><a href="classlbann_1_1Layer.html#a5d76fcdf50d7ac4fb2fe757fb0cc23d8">lbann::Layer::Index</a></div><div class="ttdeci">uint Index</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00201">lbann_layer.hpp:201</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a5d76fcdf50d7ac4fb2fe757fb0cc23d8"><div class="ttname"><a href="classlbann_1_1Layer.html#a5d76fcdf50d7ac4fb2fe757fb0cc23d8">lbann::Layer::Index</a></div><div class="ttdeci">uint Index</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00203">lbann_layer.hpp:203</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a763b3164342a5d73db851e85c76d385a"><div class="ttname"><a href="lbann__base_8hpp.html#a763b3164342a5d73db851e85c76d385a">StarVCMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::STAR, El::VC &gt; StarVCMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00049">lbann_base.hpp:49</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -547,7 +550,7 @@ $(document).ready(function(){initNavTree('lbann__layer__fully__connected_8cpp_so
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_faacdbae24c4b7c4a8fbaf54f29a6b8e.html">layers</a></li><li class="navelem"><a class="el" href="lbann__layer__fully__connected_8cpp.html">lbann_layer_fully_connected.cpp</a></li>
-    <li class="footer">Generated on Fri Apr 21 2017 02:25:24 for LBANN by
+    <li class="footer">Generated on Fri Apr 21 2017 21:58:09 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
