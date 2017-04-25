@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">b4040fe-ci224922258</span>
+   &#160;<span id="projectnumber">7c701f4-ci225438508</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -232,24 +232,23 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  m_forward_algo = CUDNN_CONVOLUTION_FWD_ALGO_IMPLICIT_GEMM;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  m_backward_filter_algo = CUDNN_CONVOLUTION_BWD_FILTER_ALGO_0;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  m_backward_data_algo = CUDNN_CONVOLUTION_BWD_DATA_ALGO_0;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  m_work_space_size = 0;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="comment">// Set parameters for GPU implementation</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordflow">if</span>(cudnn) {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    m_using_gpus = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    m_cudnn = cudnn;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">const</span> Int num_gpus = m_cudnn-&gt;get_num_gpus();</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">const</span> Int num_processes = <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_procs_per_model();</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">const</span> Int local_mini_batch_size = (mini_batch_size + num_processes - 1) / num_processes;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    m_mini_batch_size_per_gpu = (local_mini_batch_size + num_gpus - 1) / num_gpus;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="comment">// Default behavior set to pin memory blocks used by cuDNN</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    pin_mem();</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  }</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif // #ifdef __LIB_CUDNN</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="comment">// Set parameters for GPU implementation</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordflow">if</span>(cudnn) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    m_using_gpus = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    m_cudnn = cudnn;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keyword">const</span> Int num_gpus = m_cudnn-&gt;get_num_gpus();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keyword">const</span> Int num_processes = <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_procs_per_model();</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">const</span> Int local_mini_batch_size = (mini_batch_size + num_processes - 1) / num_processes;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    m_mini_batch_size_per_gpu = (local_mini_batch_size + num_gpus - 1) / num_gpus;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">// Default behavior set to pin memory blocks used by cuDNN</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    pin_mem();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#endif // #ifdef __LIB_CUDNN</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
 <div class="ttc" id="lbann__base_8hpp_html_ac1f107dfdc1d078904b4b666af5b6b86"><div class="ttname"><a href="lbann__base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86">StarMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::STAR, El::STAR &gt; StarMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00046">lbann_base.hpp:46</a></div></div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
 <div class="ttc" id="datatype_8hpp_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00035">datatype.hpp:35</a></div></div>
@@ -308,7 +307,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_faacdbae24c4b7c4a8fbaf54f29a6b8e.html">layers</a></li><li class="navelem"><a class="el" href="lbann__layer__convolutional_8cpp.html">lbann_layer_convolutional.cpp</a></li>
-    <li class="footer">Generated on Sun Apr 23 2017 15:00:03 for LBANN by
+    <li class="footer">Generated on Tue Apr 25 2017 00:58:19 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
