@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"classlbann_1_1target__layer.html#a18a25cbfe594cc6ee0c4e433435852d7":[3,0,3,53,11],
+"classlbann_1_1target__layer.html#a1c872b29d3d81ed04e34dcaf557beb2b":[3,0,3,53,14],
 "classlbann_1_1target__layer.html#a22b644b111036ed25f03b1359c537273":[3,0,3,53,7],
 "classlbann_1_1target__layer.html#a34a2da13b32938e52f7bfd8b3e500589":[3,0,3,53,10],
 "classlbann_1_1target__layer.html#a43226dbd08bcf5a1d5aa17386bce6ce2":[3,0,3,53,1],
@@ -220,8 +222,8 @@ var NAVTREEINDEX6 =
 "elemental.html#elemental_install":[0,3,6,1],
 "elemental.html#elemental_issues":[0,3,6,2],
 "files.html":[4,0],
-"functions.html":[3,3,0,0],
 "functions.html":[3,3,0],
+"functions.html":[3,3,0,0],
 "functions_a.html":[3,3,0,1],
 "functions_b.html":[3,3,0,2],
 "functions_c.html":[3,3,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX6 =
 "functions_func_p.html":[3,3,1,13],
 "functions_func_q.html":[3,3,1,14],
 "functions_func_r.html":[3,3,1,15],
-"functions_func_s.html":[3,3,1,16],
-"functions_func_t.html":[3,3,1,17],
-"functions_func_u.html":[3,3,1,18]
+"functions_func_s.html":[3,3,1,16]
 };

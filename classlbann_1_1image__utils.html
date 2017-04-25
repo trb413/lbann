@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">7c701f4-ci225438508</span>
+   &#160;<span id="projectnumber">741564c-ci225691035</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -122,10 +122,16 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af3b4eccea45d53398528ff682223c817"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1image__utils.html#af3b4eccea45d53398528ff682223c817">save_image</a> (const std::string &amp;filename, const int Width, const int Height, const int Type, const <a class="el" href="structlbann_1_1cvMat__proc__params.html">cvMat_proc_params</a> &amp;pp, const std::vector&lt; uint8_t &gt; &amp;buf)</td></tr>
 <tr class="memdesc:af3b4eccea45d53398528ff682223c817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save an image from a serialized buffer into a file.  <a href="#af3b4eccea45d53398528ff682223c817">More...</a><br/></td></tr>
 <tr class="separator:af3b4eccea45d53398528ff682223c817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada5d8985d0293027a897209c8c0a8b17"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1image__utils.html#ada5d8985d0293027a897209c8c0a8b17">load_image</a> (const std::string &amp;filename, int &amp;Width, int &amp;Height, int &amp;Type, const <a class="el" href="structlbann_1_1cvMat__proc__params.html">cvMat_proc_params</a> &amp;pp,::<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;buf)</td></tr>
+<tr class="memdesc:ada5d8985d0293027a897209c8c0a8b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an image from a file and put it into an LBANN Mat data block.  <a href="#ada5d8985d0293027a897209c8c0a8b17">More...</a><br/></td></tr>
+<tr class="separator:ada5d8985d0293027a897209c8c0a8b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e28ef795052cba7855755ecad03bf7d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1image__utils.html#a3e28ef795052cba7855755ecad03bf7d">save_image</a> (const std::string &amp;filename, const int Width, const int Height, const int Type, const <a class="el" href="structlbann_1_1cvMat__proc__params.html">cvMat_proc_params</a> &amp;pp, const ::<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;buf)</td></tr>
+<tr class="memdesc:a3e28ef795052cba7855755ecad03bf7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save an image using data from an LBANN Mat block.  <a href="#a3e28ef795052cba7855755ecad03bf7d">More...</a><br/></td></tr>
+<tr class="separator:a3e28ef795052cba7855755ecad03bf7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="lbann__image__utils_8hpp_source.html#l00067">67</a> of file <a class="el" href="lbann__image__utils_8hpp_source.html">lbann_image_utils.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__image__utils_8hpp_source.html#l00069">69</a> of file <a class="el" href="lbann__image__utils_8hpp_source.html">lbann_image_utils.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a5d54e088e1184ac658d89b1bb7d1978b"></a>
 <div class="memitem">
@@ -185,19 +191,104 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Load an image from a file and put it into a serialized buffer. </p>
 
-<p>Definition at line <a class="el" href="lbann__image__utils_8cpp_source.html#l00372">372</a> of file <a class="el" href="lbann__image__utils_8cpp_source.html">lbann_image_utils.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;{</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="preprocessor">#ifdef __LIB_OPENCV</span></div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="preprocessor"></span>  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> image = cv::imread(filename, cv::IMREAD_ANYCOLOR | cv::IMREAD_ANYDEPTH);</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  Width  = image.cols;</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  Height = image.rows;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;  Type   = image.type();</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  <span class="keywordtype">bool</span> ok = preprocess_cvMat(image, pp);</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  <span class="keywordflow">return</span> (ok &amp;&amp; copy_cvMat_to_buf(image, buf, pp));</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;<span class="preprocessor">#endif // __LIB_OPENCV</span></div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;<span class="preprocessor"></span>}</div>
+<p>Definition at line <a class="el" href="lbann__image__utils_8cpp_source.html#l00407">407</a> of file <a class="el" href="lbann__image__utils_8cpp_source.html">lbann_image_utils.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;{</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;<span class="preprocessor">#ifdef __LIB_OPENCV</span></div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;<span class="preprocessor"></span>  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> image = cv::imread(filename, cv::IMREAD_ANYCOLOR | cv::IMREAD_ANYDEPTH);</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  <span class="keywordtype">bool</span> ok = preprocess_cvMat(image, pp);</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;  <span class="keywordflow">if</span> (!ok || !copy_cvMat_to_buf(image, buf, pp)) {</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    <a class="code" href="lbann__image__utils_8hpp.html#ad18453c3df8ca2dd844e5cf1d284579a">_LBANN_DEBUG_MSG</a>(<span class="stringliteral">&quot;Image preprocessing or copying failed.&quot;</span>);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  }</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  Width  = image.cols;</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  Height = image.rows;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  Type   = image.type();</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;<span class="preprocessor">#endif // __LIB_OPENCV</span></div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="ttc" id="lbann__image__utils_8hpp_html_ad18453c3df8ca2dd844e5cf1d284579a"><div class="ttname"><a href="lbann__image__utils_8hpp.html#ad18453c3df8ca2dd844e5cf1d284579a">_LBANN_DEBUG_MSG</a></div><div class="ttdeci">#define _LBANN_DEBUG_MSG(_MSG_)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__image__utils_8hpp_source.html#l00188">lbann_image_utils.hpp:188</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00042">lbann_base.hpp:42</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ada5d8985d0293027a897209c8c0a8b17"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lbann::image_utils::load_image </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>Width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>Height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>Type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structlbann_1_1cvMat__proc__params.html">cvMat_proc_params</a> &amp;&#160;</td>
+          <td class="paramname"><em>pp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">::<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;&#160;</td>
+          <td class="paramname"><em>buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load an image from a file and put it into an LBANN Mat data block. </p>
+
+<p>Definition at line <a class="el" href="lbann__image__utils_8cpp_source.html#l00440">440</a> of file <a class="el" href="lbann__image__utils_8cpp_source.html">lbann_image_utils.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;{</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;<span class="preprocessor">#ifdef __LIB_OPENCV</span></div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="preprocessor"></span>  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> image = cv::imread(filename, cv::IMREAD_ANYCOLOR | cv::IMREAD_ANYDEPTH);</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;  <span class="keywordtype">bool</span> ok = preprocess_cvMat(image, pp);</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;  <span class="keywordflow">if</span> (!ok || !copy_cvMat_to_buf(image, buf, pp)) {</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    <a class="code" href="lbann__image__utils_8hpp.html#ad18453c3df8ca2dd844e5cf1d284579a">_LBANN_DEBUG_MSG</a>(<span class="stringliteral">&quot;Image preprocessing or copying failed.&quot;</span>);</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;  }</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;  Width  = image.cols;</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;  Height = image.rows;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;  Type   = image.type();</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="preprocessor">#endif // __LIB_OPENCV</span></div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="ttc" id="lbann__image__utils_8hpp_html_ad18453c3df8ca2dd844e5cf1d284579a"><div class="ttname"><a href="lbann__image__utils_8hpp.html#ad18453c3df8ca2dd844e5cf1d284579a">_LBANN_DEBUG_MSG</a></div><div class="ttdeci">#define _LBANN_DEBUG_MSG(_MSG_)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__image__utils_8hpp_source.html#l00188">lbann_image_utils.hpp:188</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00042">lbann_base.hpp:42</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -645,17 +736,98 @@ Here is the caller graph for this function:</div>
 
 <p>Save an image from a serialized buffer into a file. </p>
 
-<p>Definition at line <a class="el" href="lbann__image__utils_8cpp_source.html#l00386">386</a> of file <a class="el" href="lbann__image__utils_8cpp_source.html">lbann_image_utils.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;{</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="preprocessor">#ifdef __LIB_OPENCV</span></div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;<span class="preprocessor"></span>  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> image = copy_buf_to_cvMat(buf, Width, Height, Type, pp);</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  <span class="keywordflow">if</span> (image.empty()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  <span class="keywordtype">bool</span> ok = postprocess_cvMat(image, pp);</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  <span class="keywordflow">return</span> (ok &amp;&amp; cv::imwrite(filename, image));</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;<span class="preprocessor">#endif // __LIB_OPENCV</span></div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;<span class="preprocessor"></span>}</div>
+<p>Definition at line <a class="el" href="lbann__image__utils_8cpp_source.html#l00425">425</a> of file <a class="el" href="lbann__image__utils_8cpp_source.html">lbann_image_utils.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;{</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;<span class="preprocessor">#ifdef __LIB_OPENCV</span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="preprocessor"></span>  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> image = copy_buf_to_cvMat(buf, Width, Height, Type, pp);</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;  <span class="keywordtype">bool</span> ok = !image.empty() &amp;&amp; postprocess_cvMat(image, pp);</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;  <span class="keywordflow">if</span> (!ok) {</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    <a class="code" href="lbann__image__utils_8hpp.html#ad18453c3df8ca2dd844e5cf1d284579a">_LBANN_DEBUG_MSG</a>(<span class="stringliteral">&quot;Either the image is empty or postprocessing has failed.&quot;</span>);</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;  }</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;  <span class="keywordflow">return</span> (ok &amp;&amp; cv::imwrite(filename, image));</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="preprocessor">#endif // __LIB_OPENCV</span></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="ttc" id="lbann__image__utils_8hpp_html_ad18453c3df8ca2dd844e5cf1d284579a"><div class="ttname"><a href="lbann__image__utils_8hpp.html#ad18453c3df8ca2dd844e5cf1d284579a">_LBANN_DEBUG_MSG</a></div><div class="ttdeci">#define _LBANN_DEBUG_MSG(_MSG_)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__image__utils_8hpp_source.html#l00188">lbann_image_utils.hpp:188</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00042">lbann_base.hpp:42</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a3e28ef795052cba7855755ecad03bf7d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lbann::image_utils::save_image </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>Width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>Height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>Type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structlbann_1_1cvMat__proc__params.html">cvMat_proc_params</a> &amp;&#160;</td>
+          <td class="paramname"><em>pp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ::<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;&#160;</td>
+          <td class="paramname"><em>buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Save an image using data from an LBANN Mat block. </p>
+
+<p>Definition at line <a class="el" href="lbann__image__utils_8cpp_source.html#l00458">458</a> of file <a class="el" href="lbann__image__utils_8cpp_source.html">lbann_image_utils.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;{</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="preprocessor">#ifdef __LIB_OPENCV</span></div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="preprocessor"></span>  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> image = copy_buf_to_cvMat(buf, Width, Height, Type, pp);</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;  <span class="keywordtype">bool</span> ok = !image.empty() &amp;&amp; postprocess_cvMat(image, pp);</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;  <span class="keywordflow">if</span> (!ok) {</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    <a class="code" href="lbann__image__utils_8hpp.html#ad18453c3df8ca2dd844e5cf1d284579a">_LBANN_DEBUG_MSG</a>(<span class="stringliteral">&quot;Either the image is empty or postprocessing has failed.&quot;</span>);</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;  }</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;  <span class="keywordflow">return</span> (ok &amp;&amp; cv::imwrite(filename, image));</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;<span class="preprocessor">#endif // __LIB_OPENCV</span></div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="ttc" id="lbann__image__utils_8hpp_html_ad18453c3df8ca2dd844e5cf1d284579a"><div class="ttname"><a href="lbann__image__utils_8hpp.html#ad18453c3df8ca2dd844e5cf1d284579a">_LBANN_DEBUG_MSG</a></div><div class="ttdeci">#define _LBANN_DEBUG_MSG(_MSG_)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__image__utils_8hpp_source.html#l00188">lbann_image_utils.hpp:188</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00042">lbann_base.hpp:42</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -975,7 +1147,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1image__utils.html">image_utils</a></li>
-    <li class="footer">Generated on Tue Apr 25 2017 00:58:20 for LBANN by
+    <li class="footer">Generated on Tue Apr 25 2017 18:19:02 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
