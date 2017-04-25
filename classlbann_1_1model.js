@@ -1,12 +1,11 @@
 var classlbann_1_1model =
 [
-    [ "model", "classlbann_1_1model.html#aa5c16a70390f56c1279ff22df7511802", null ],
+    [ "model", "classlbann_1_1model.html#a1aa712dcc0f99fb9802d1b93802907fe", null ],
     [ "~model", "classlbann_1_1model.html#a11eeeb534f3fee908e59e9b5fb1abf42", null ],
     [ "add_callback", "classlbann_1_1model.html#a8f45cdca82dbc0cc1f519898474cc6ec", null ],
     [ "add_metric", "classlbann_1_1model.html#adbb03deb321b99e8dbdbe65d7e1a423e", null ],
     [ "at_epoch_start", "classlbann_1_1model.html#a606cc1d218b1f609b5a02b07e7f4bcee", null ],
     [ "checkpointShared", "classlbann_1_1model.html#a731757adee63f97593e7ddbfa3c97ce1", null ],
-    [ "create_optimizer", "classlbann_1_1model.html#afa7829863a71eb47a3d023413dbe464d", null ],
     [ "do_batch_begin_cbs", "classlbann_1_1model.html#a717aa5b84ad1f779403a052848a8eb37", null ],
     [ "do_batch_end_cbs", "classlbann_1_1model.html#a1b925c322faaba8c9d9f78c224a31e89", null ],
     [ "do_batch_evaluate_begin_cbs", "classlbann_1_1model.html#a29250ca6e08353e282a378b73f6b3688", null ],
@@ -69,7 +68,6 @@ var classlbann_1_1model =
     [ "m_current_testing_step", "classlbann_1_1model.html#acc60d902aecf1ecc1f953d7b06ff43d6", null ],
     [ "m_current_validation_step", "classlbann_1_1model.html#a0431d6b271b5718ec8db4744bc353e95", null ],
     [ "m_execution_mode", "classlbann_1_1model.html#a2166e2aad256a335ace3bdcae5da2614", null ],
-    [ "m_optimizer_fac", "classlbann_1_1model.html#a7bc38833924198617cf353382884cacf", null ],
     [ "m_rank", "classlbann_1_1model.html#ac460ba72f8c4edbff8c871c433b03b22", null ],
     [ "m_ranks", "classlbann_1_1model.html#a3b7bfb0045ef4ee8d4691aa41ff78465", null ],
     [ "m_terminate_training", "classlbann_1_1model.html#a639f9c3fcb81b905085f8b1932f8920f", null ],

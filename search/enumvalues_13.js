@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uniform',['uniform',['../lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5aa489ffed938ef1b9e86889bc413501ee',1,'lbann_base.hpp']]]
+  ['zero',['zero',['../lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ad02c4c4cde7ae76252540d116a40f23a',1,'lbann_base.hpp']]]
 ];

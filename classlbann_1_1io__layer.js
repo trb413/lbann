@@ -1,6 +1,6 @@
 var classlbann_1_1io__layer =
 [
-    [ "io_layer", "classlbann_1_1io__layer.html#ab64672a40366e264067ed065321bc294", null ],
+    [ "io_layer", "classlbann_1_1io__layer.html#a813f3e5f412caf7897a33df236685b73", null ],
     [ "at_new_epoch", "classlbann_1_1io__layer.html#a4f0e3bbd6bc638432723179efc2998ab", null ],
     [ "get_linearized_data_size", "classlbann_1_1io__layer.html#abe71d3ff37e3a3ddbb470347458a07ec", null ],
     [ "get_linearized_label_size", "classlbann_1_1io__layer.html#a3c39307b9bc8166e5034488344445d1e", null ],

@@ -12,6 +12,8 @@ var classlbann_1_1data__reader__nci =
     [ "get_num_samples", "classlbann_1_1data__reader__nci.html#a4d7957f76b96d3ff7f5f8a8226130255", null ],
     [ "getNumLabels", "classlbann_1_1data__reader__nci.html#a5120ec3bfcd3475e1acf860ebd52f3ab", null ],
     [ "load", "classlbann_1_1data__reader__nci.html#aef57f36eb0db7bbccb4e9676d9d62b6c", null ],
+    [ "load", "classlbann_1_1data__reader__nci.html#a9297c3d39f9af0eb6edeeefe8f362ba1", null ],
+    [ "load", "classlbann_1_1data__reader__nci.html#a011ddf013511d1f67db7c4bebf251a39", null ],
     [ "map_label_2int", "classlbann_1_1data__reader__nci.html#aceb1170d93d94d922e86b13532e1f966", null ],
     [ "operator=", "classlbann_1_1data__reader__nci.html#a4408a11dd0cfcca9fa086ce8eb3bc6d6", null ],
     [ "m_index_map", "classlbann_1_1data__reader__nci.html#a3220912c74b9acc78d31efd1f008b2aa", null ],

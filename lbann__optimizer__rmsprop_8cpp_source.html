@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">741564c-ci225691035</span>
+   &#160;<span id="projectnumber">6541941-ci225714568</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('lbann__optimizer__rmsprop_8cpp_source.
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -116,187 +116,65 @@ $(document).ready(function(){initNavTree('lbann__optimizer__rmsprop_8cpp_source.
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// implied. See the License for the specific language governing</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// permissions and limitations under the license.</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// lbann_optimizer_rmsprop .hpp .cpp - SGD with RMSprop</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lbann__optimizer__rmsprop_8hpp.html">lbann/optimizers/lbann_optimizer_rmsprop.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lbann__exception_8hpp.html">lbann/utils/lbann_exception.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">using namespace </span>El;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<a class="code" href="classlbann_1_1rmsprop.html#af42c8e3336e72aac926e19c57b56e59f">lbann::rmsprop::rmsprop</a></div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classlbann_1_1rmsprop.html#af42c8e3336e72aac926e19c57b56e59f">   36</a></span>&#160;(<a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> learning_rate,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> decay_rate,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> eps)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  : <a class="code" href="classlbann_1_1optimizer.html">optimizer</a>(comm, <span class="stringliteral">&quot;rmsprop&quot;</span>, learning_rate),</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    m_decay_rate(decay_rate),</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    m_eps(eps) {}</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classlbann_1_1rmsprop.html#a1ad75c751b92efe0e3e00072baa233ad">   44</a></span>&#160;<a class="code" href="classlbann_1_1rmsprop.html#a1ad75c751b92efe0e3e00072baa233ad">lbann::rmsprop::~rmsprop</a>()</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">if</span>(m_cache)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">delete</span> m_cache;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// lbann_optimizer_rmsprop .hpp .cpp - Stochastic gradient descent optimizer with RMSprop</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">// Inspired by Kera.io implementation</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// Stochastic gradient descent with RMSprop.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//  lr: float &gt;= 0. Learning rate.</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">//  rho: float &gt;= 0.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lbann__optimizer__rmsprop_8hpp.html">lbann/optimizers/lbann_optimizer_rmsprop.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;sys/types.h&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">using namespace </span>El;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classlbann_1_1RMSprop__factory.html#a9a0d8b72d33b37e3c5774f1d86653594">   41</a></span>&#160;<a class="code" href="classlbann_1_1RMSprop__factory.html#a9a0d8b72d33b37e3c5774f1d86653594">lbann::RMSprop_factory::RMSprop_factory</a>(<a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, <span class="keywordtype">float</span> lr, <span class="keywordtype">float</span> rho)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  : comm(comm), lr(lr), rho(rho)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classlbann_1_1RMSprop__factory.html#aa9131b82ce65d3eb84f76fdf899070ce">   46</a></span>&#160;<a class="code" href="classlbann_1_1RMSprop__factory.html#aa9131b82ce65d3eb84f76fdf899070ce">lbann::RMSprop_factory::~RMSprop_factory</a>()</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classlbann_1_1rmsprop.html#a0a62ec54e0d435ffb4d77f2ac9b70322">   50</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1rmsprop.html#a0a62ec54e0d435ffb4d77f2ac9b70322">lbann::rmsprop::setup</a>(<a class="code" href="lbann__base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>* parameters)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  optimizer::setup(parameters);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="comment">// Initialize RMSprop cache</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">switch</span>(m_matrix_format) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dacf33f55c86c56389442455e8e190be2d">matrix_format::MC_MR</a>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    m_cache = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>()); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0da41478dbc562bc2cdaa328e2fa04558b2">matrix_format::STAR_STAR</a>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    m_cache = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86">StarMat</a>(comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>()); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0da99fe60b6c6fbf8dd05bf45c7898674bf">matrix_format::MC_STAR</a>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    m_cache = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a6c236b0664425bd2551cb530f77a2372">RowSumMat</a>(comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>()); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dab05461c65c89f42d7e1b8c9cea626032">matrix_format::STAR_VC</a>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    m_cache = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a763b3164342a5d73db851e85c76d385a">StarVCMat</a>(comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>()); <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(<span class="stringliteral">&quot;lbann_optimizer_rmsprop: invalid data layout&quot;</span>);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  Zeros(*m_cache, m_height, m_width);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classlbann_1_1rmsprop.html#a5b5dbad87f271c8dcb180dca1b7f0b12">   71</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1rmsprop.html#a5b5dbad87f271c8dcb180dca1b7f0b12">lbann::rmsprop::update</a>(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>* gradient)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="comment">// Get local matrix data</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">const</span> Int local_height = m_parameters-&gt;LocalHeight();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">const</span> Int local_width = m_parameters-&gt;LocalWidth();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>* parameters_buffer = m_parameters-&gt;Buffer();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">const</span> Int parameters_ldim = m_parameters-&gt;LDim();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>* gradient_buffer = gradient-&gt;LockedBuffer();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">const</span> Int gradient_ldim = gradient-&gt;LDim();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>* cache_buffer = m_cache-&gt;Buffer();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">const</span> Int cache_ldim = m_cache-&gt;LDim();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="comment">// Check if matrix data is contiguous</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">if</span>(parameters_ldim != local_height</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;     || gradient_ldim != local_height</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;     || cache_ldim != local_height) {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">// Update with non-contiguous data</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#pragma omp parallel for collapse(2)</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">for</span>(Int j=0; j&lt;local_width; ++j) {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="keywordflow">for</span>(Int i=0; i&lt;local_height; ++i) {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp; x = parameters_buffer[i+j*parameters_ldim];</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> g = gradient_buffer[i+j*gradient_ldim];</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp; c = cache_buffer[i+j*cache_ldim];</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        c = m_decay_rate * c + (<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1) - m_decay_rate) * g * g;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        x -= m_learning_rate * g / (Sqrt(c) + m_eps);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// Update with contiguous data</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#pragma omp parallel for</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">for</span>(Int i=0; i&lt;local_height*local_width; ++i) {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp; x = parameters_buffer[i];</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> g = gradient_buffer[i];</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp; c = cache_buffer[i];</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      c = m_decay_rate * c + (<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1) - m_decay_rate) * g * g;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      x -= m_learning_rate * g / (Sqrt(c) + m_eps);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor"></span>    <span class="keywordtype">bool</span> saveToCheckpoint(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keywordtype">char</span>* filename, uint64_t* bytes) {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <span class="comment">//    writeDist(fd, filename, WB_D_Cache, bytes);</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">bool</span> loadFromCheckpoint(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keywordtype">char</span>* filename, uint64_t* bytes) {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <span class="comment">//    readDist(fd, filename, WB_D_Cache, bytes);</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">bool</span> saveToCheckpointShared(persist&amp; p, <span class="keywordtype">int</span> Index) {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      <span class="keywordtype">char</span> name[512];</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <span class="comment">// current learning rate value</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      <span class="keywordflow">if</span> (p.m_rank == 0) {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        sprintf(name, <span class="stringliteral">&quot;L%d_learning_rate&quot;</span>, Index);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        p.write_float(persist_type::train, name, LearnRate);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      }</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      <span class="comment">// build name of the checkpoint file</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      sprintf(name, <span class="stringliteral">&quot;L%d_rmsprop_%dx%d&quot;</span>, Index, WB_D_Cache.Height(), WB_D_Cache.Width());</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;      p.write_distmat(persist_type::train, name, (<a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>*)&amp;WB_D_Cache);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordtype">bool</span> loadFromCheckpointShared(persist&amp; p, <span class="keywordtype">int</span> Index) {</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;      <span class="keywordtype">char</span> name[512];</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      <span class="comment">// current learning rate value</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;      <span class="keywordflow">if</span> (p.m_rank == 0) {</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        sprintf(name, <span class="stringliteral">&quot;L%d_learning_rate&quot;</span>, Index);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        p.read_float(persist_type::train, name, &amp;LearnRate);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      }</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;      MPI_Bcast(&amp;LearnRate, 1, MPI_FLOAT, 0, MPI_COMM_WORLD);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      <span class="comment">// read in the cache of gradients for WB</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      sprintf(name, <span class="stringliteral">&quot;L%d_rmsprop_%dx%d.bin&quot;</span>, Index, WB_D_Cache.Height(), WB_D_Cache.Width());</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      p.read_distmat(persist_type::train, name, (<a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>*)&amp;WB_D_Cache);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    }</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<a class="code" href="classlbann_1_1rmsprop__factory.html#ac8f104a60c79c2461ceb30e561479852">lbann::rmsprop_factory::rmsprop_factory</a></div>
-<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="classlbann_1_1rmsprop__factory.html#ac8f104a60c79c2461ceb30e561479852">  160</a></span>&#160;(<a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* comm,</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> learning_rate,</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> decay_rate,</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> eps)</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  : <a class="code" href="classlbann_1_1optimizer__factory.html">optimizer_factory</a>(comm, <span class="stringliteral">&quot;rmsprop&quot;</span>),</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    m_learning_rate(learning_rate),</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    m_decay_rate(decay_rate),</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    m_eps(eps) {}</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno"><a class="line" href="classlbann_1_1rmsprop__factory.html#a64d80f3ef799a4ba0c1acc7295bfbed0">  169</a></span>&#160;<a class="code" href="classlbann_1_1rmsprop__factory.html#a64d80f3ef799a4ba0c1acc7295bfbed0">lbann::rmsprop_factory::~rmsprop_factory</a>() {}</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="classlbann_1_1rmsprop__factory.html#a0fbdd8d01f9a9d30cdfba6f466d299f6">  171</a></span>&#160;<a class="code" href="classlbann_1_1optimizer.html">lbann::optimizer</a>* <a class="code" href="classlbann_1_1rmsprop__factory.html#a0fbdd8d01f9a9d30cdfba6f466d299f6">lbann::rmsprop_factory::create_optimizer</a>()</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;{</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1rmsprop.html">rmsprop</a>(comm, m_learning_rate, m_decay_rate, m_eps);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classlbann_1_1RMSprop__factory.html#a9d76409ddf9555a71415c59707ae0b67">   50</a></span>&#160;<a class="code" href="classlbann_1_1Optimizer.html">lbann::Optimizer</a> *<a class="code" href="classlbann_1_1RMSprop__factory.html#a9d76409ddf9555a71415c59707ae0b67">lbann::RMSprop_factory::create_optimizer</a>(<a class="code" href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0d">matrix_format</a> format) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordflow">switch</span>(format) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dacf33f55c86c56389442455e8e190be2d">matrix_format::MC_MR</a>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1RMSprop.html">RMSprop&lt;DistMat&gt;</a>(this-&gt;<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, this-&gt;lr, this-&gt;rho);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dad9fe2079b84227e0894774795402ec69">matrix_format::CIRC_CIRC</a>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1RMSprop.html">RMSprop&lt;CircMat&gt;</a>(this-&gt;<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, this-&gt;lr, this-&gt;rho);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0da41478dbc562bc2cdaa328e2fa04558b2">matrix_format::STAR_STAR</a>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1RMSprop.html">RMSprop&lt;StarMat&gt;</a>(this-&gt;<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, this-&gt;lr, this-&gt;rho);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dab05461c65c89f42d7e1b8c9cea626032">matrix_format::STAR_VC</a>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1RMSprop.html">RMSprop&lt;StarVCMat&gt;</a>(this-&gt;<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, this-&gt;lr, this-&gt;rho);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// TODO: throw an exception</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    printf(<span class="stringliteral">&quot;LBANN Error: unknown matrix distribution for RMSprop optimizer\n&quot;</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    exit(-1);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1RMSprop__factory_html_a9d76409ddf9555a71415c59707ae0b67"><div class="ttname"><a href="classlbann_1_1RMSprop__factory.html#a9d76409ddf9555a71415c59707ae0b67">lbann::RMSprop_factory::create_optimizer</a></div><div class="ttdeci">Optimizer * create_optimizer(matrix_format format=matrix_format::MC_MR)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__rmsprop_8cpp_source.html#l00050">lbann_optimizer_rmsprop.cpp:50</a></div></div>
 <div class="ttc" id="lbann__optimizer__rmsprop_8hpp_html"><div class="ttname"><a href="lbann__optimizer__rmsprop_8hpp.html">lbann_optimizer_rmsprop.hpp</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_ac1f107dfdc1d078904b4b666af5b6b86"><div class="ttname"><a href="lbann__base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86">StarMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::STAR, El::STAR &gt; StarMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00046">lbann_base.hpp:46</a></div></div>
-<div class="ttc" id="classlbann_1_1rmsprop__factory_html_a0fbdd8d01f9a9d30cdfba6f466d299f6"><div class="ttname"><a href="classlbann_1_1rmsprop__factory.html#a0fbdd8d01f9a9d30cdfba6f466d299f6">lbann::rmsprop_factory::create_optimizer</a></div><div class="ttdeci">optimizer * create_optimizer()</div><div class="ttdoc">Create RMSprop optimizer. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__rmsprop_8cpp_source.html#l00171">lbann_optimizer_rmsprop.cpp:171</a></div></div>
-<div class="ttc" id="classlbann_1_1rmsprop_html_af42c8e3336e72aac926e19c57b56e59f"><div class="ttname"><a href="classlbann_1_1rmsprop.html#af42c8e3336e72aac926e19c57b56e59f">lbann::rmsprop::rmsprop</a></div><div class="ttdeci">rmsprop(lbann_comm *comm, DataType learning_rate, DataType decay_rate, DataType eps=DataType(1e-8))</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__rmsprop_8cpp_source.html#l00036">lbann_optimizer_rmsprop.cpp:36</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html"><div class="ttname"><a href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00048">lbann_comm.hpp:48</a></div></div>
-<div class="ttc" id="classlbann_1_1rmsprop_html"><div class="ttname"><a href="classlbann_1_1rmsprop.html">lbann::rmsprop</a></div><div class="ttdoc">RMSprop optimizer. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__rmsprop_8hpp_source.html#l00039">lbann_optimizer_rmsprop.hpp:39</a></div></div>
-<div class="ttc" id="classlbann_1_1rmsprop_html_a1ad75c751b92efe0e3e00072baa233ad"><div class="ttname"><a href="classlbann_1_1rmsprop.html#a1ad75c751b92efe0e3e00072baa233ad">lbann::rmsprop::~rmsprop</a></div><div class="ttdeci">~rmsprop()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__rmsprop_8cpp_source.html#l00044">lbann_optimizer_rmsprop.cpp:44</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer_html"><div class="ttname"><a href="classlbann_1_1optimizer.html">lbann::optimizer</a></div><div class="ttdoc">Optimizer base class. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00040">lbann_optimizer.hpp:40</a></div></div>
-<div class="ttc" id="classlbann_1_1rmsprop__factory_html_ac8f104a60c79c2461ceb30e561479852"><div class="ttname"><a href="classlbann_1_1rmsprop__factory.html#ac8f104a60c79c2461ceb30e561479852">lbann::rmsprop_factory::rmsprop_factory</a></div><div class="ttdeci">rmsprop_factory(lbann_comm *comm, DataType learning_rate, DataType decay_rate=DataType(0.9), DataType eps=DataType(1e-8))</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__rmsprop_8cpp_source.html#l00160">lbann_optimizer_rmsprop.cpp:160</a></div></div>
-<div class="ttc" id="classlbann_1_1rmsprop_html_a5b5dbad87f271c8dcb180dca1b7f0b12"><div class="ttname"><a href="classlbann_1_1rmsprop.html#a5b5dbad87f271c8dcb180dca1b7f0b12">lbann::rmsprop::update</a></div><div class="ttdeci">void update(const AbsDistMat *gradient)</div><div class="ttdoc">Update parameters using objective function gradient. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__rmsprop_8cpp_source.html#l00071">lbann_optimizer_rmsprop.cpp:71</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__exception_8hpp_source.html#l00041">lbann_exception.hpp:41</a></div></div>
+<div class="ttc" id="classlbann_1_1RMSprop__factory_html_aa9131b82ce65d3eb84f76fdf899070ce"><div class="ttname"><a href="classlbann_1_1RMSprop__factory.html#aa9131b82ce65d3eb84f76fdf899070ce">lbann::RMSprop_factory::~RMSprop_factory</a></div><div class="ttdeci">~RMSprop_factory()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__rmsprop_8cpp_source.html#l00046">lbann_optimizer_rmsprop.cpp:46</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0dacf33f55c86c56389442455e8e190be2d"><div class="ttname"><a href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dacf33f55c86c56389442455e8e190be2d">matrix_format::MC_MR</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_a6c236b0664425bd2551cb530f77a2372"><div class="ttname"><a href="lbann__base_8hpp.html#a6c236b0664425bd2551cb530f77a2372">RowSumMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::MC, El::STAR &gt; RowSumMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00048">lbann_base.hpp:48</a></div></div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
-<div class="ttc" id="classlbann_1_1rmsprop_html_a0a62ec54e0d435ffb4d77f2ac9b70322"><div class="ttname"><a href="classlbann_1_1rmsprop.html#a0a62ec54e0d435ffb4d77f2ac9b70322">lbann::rmsprop::setup</a></div><div class="ttdeci">void setup(AbsDistMat *parameters)</div><div class="ttdoc">Set parameters to optimize and initialize optimizer. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__rmsprop_8cpp_source.html#l00050">lbann_optimizer_rmsprop.cpp:50</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_a059664ed36d5eedd5ff4f7838d9c7a5a"><div class="ttname"><a href="lbann__base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a></div><div class="ttdeci">El::AbstractDistMatrix&lt; DataType &gt; AbsDistMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00043">lbann_base.hpp:43</a></div></div>
+<div class="ttc" id="classlbann_1_1Optimizer_html"><div class="ttname"><a href="classlbann_1_1Optimizer.html">lbann::Optimizer</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00044">lbann_optimizer.hpp:44</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0da41478dbc562bc2cdaa328e2fa04558b2"><div class="ttname"><a href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0da41478dbc562bc2cdaa328e2fa04558b2">matrix_format::STAR_STAR</a></div></div>
-<div class="ttc" id="classlbann_1_1rmsprop__factory_html_a64d80f3ef799a4ba0c1acc7295bfbed0"><div class="ttname"><a href="classlbann_1_1rmsprop__factory.html#a64d80f3ef799a4ba0c1acc7295bfbed0">lbann::rmsprop_factory::~rmsprop_factory</a></div><div class="ttdeci">virtual ~rmsprop_factory()</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__rmsprop_8cpp_source.html#l00169">lbann_optimizer_rmsprop.cpp:169</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_a8e774b79084797a8f87918d8f66b6802"><div class="ttname"><a href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::MC, El::MR &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00044">lbann_base.hpp:44</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_a483bf8a72d44a0e83da45f3d47bd20d4"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">lbann::lbann_comm::get_model_grid</a></div><div class="ttdeci">Grid &amp; get_model_grid()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00083">lbann_comm.hpp:83</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer__factory_html"><div class="ttname"><a href="classlbann_1_1optimizer__factory.html">lbann::optimizer_factory</a></div><div class="ttdoc">Optimizer factory base class. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00108">lbann_optimizer.hpp:108</a></div></div>
-<div class="ttc" id="lbann__exception_8hpp_html"><div class="ttname"><a href="lbann__exception_8hpp.html">lbann_exception.hpp</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00037">lbann_base.hpp:37</a></div></div>
+<div class="ttc" id="classlbann_1_1RMSprop__factory_html_a9a0d8b72d33b37e3c5774f1d86653594"><div class="ttname"><a href="classlbann_1_1RMSprop__factory.html#a9a0d8b72d33b37e3c5774f1d86653594">lbann::RMSprop_factory::RMSprop_factory</a></div><div class="ttdeci">RMSprop_factory(lbann_comm *comm, float lr=0.001, float rho=0.9)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__rmsprop_8cpp_source.html#l00041">lbann_optimizer_rmsprop.cpp:41</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0dab05461c65c89f42d7e1b8c9cea626032"><div class="ttname"><a href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dab05461c65c89f42d7e1b8c9cea626032">matrix_format::STAR_VC</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0da99fe60b6c6fbf8dd05bf45c7898674bf"><div class="ttname"><a href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0da99fe60b6c6fbf8dd05bf45c7898674bf">matrix_format::MC_STAR</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_a763b3164342a5d73db851e85c76d385a"><div class="ttname"><a href="lbann__base_8hpp.html#a763b3164342a5d73db851e85c76d385a">StarVCMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::STAR, El::VC &gt; StarVCMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00049">lbann_base.hpp:49</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0dad9fe2079b84227e0894774795402ec69"><div class="ttname"><a href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dad9fe2079b84227e0894774795402ec69">matrix_format::CIRC_CIRC</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0d"><div class="ttname"><a href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0d">matrix_format</a></div><div class="ttdeci">matrix_format</div><div class="ttdoc">Distributed matrix format. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00053">lbann_base.hpp:53</a></div></div>
+<div class="ttc" id="classlbann_1_1RMSprop_html"><div class="ttname"><a href="classlbann_1_1RMSprop.html">lbann::RMSprop</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__rmsprop_8hpp_source.html#l00043">lbann_optimizer_rmsprop.hpp:43</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_68e74cb6399bafec1ede909ca86fb89b.html">optimizers</a></li><li class="navelem"><a class="el" href="lbann__optimizer__rmsprop_8cpp.html">lbann_optimizer_rmsprop.cpp</a></li>
-    <li class="footer">Generated on Tue Apr 25 2017 18:19:01 for LBANN by
+    <li class="footer">Generated on Tue Apr 25 2017 19:35:11 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

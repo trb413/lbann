@@ -5,7 +5,7 @@ var classlbann_1_1layer__factory =
     [ "layer_types", "classlbann_1_1layer__factory.html#a5b38c639d3f40bb0a00f958d51ad7b1d", null ],
     [ "layer_factory", "classlbann_1_1layer__factory.html#aa87de245964675e110a0546a84734c64", null ],
     [ "~layer_factory", "classlbann_1_1layer__factory.html#acd5f652a3974f029abc2d5e535436f94", null ],
-    [ "create_layer", "classlbann_1_1layer__factory.html#a0c85062bb96f8c54d95dad9dd0ef3494", null ],
+    [ "create_layer", "classlbann_1_1layer__factory.html#ad2a475c2dfd7a9d2218df4850909be34", null ],
     [ "get_layer", "classlbann_1_1layer__factory.html#af641623a91e1c70ced7c98d691c0f945", null ],
     [ "print", "classlbann_1_1layer__factory.html#a4853705da9f15c8f8859c02adfcc2502", null ],
     [ "size", "classlbann_1_1layer__factory.html#a1939a41968a91f7e9263e56538e7bffa", null ]

@@ -2,6 +2,7 @@ var searchData=
 [
   ['wait',['wait',['../classlbann_1_1lbann__comm.html#a44faf6c010f45067e2951350e9e52d37',1,'lbann::lbann_comm']]],
   ['wbl2norm',['WBL2norm',['../classlbann_1_1FullyConnectedLayer.html#ae68be669391380c6fd506e0bed0c4a1b',1,'lbann::FullyConnectedLayer::WBL2norm()'],['../classlbann_1_1SoftmaxLayer.html#af8aae11cac219647cb225cf80ce8bb66',1,'lbann::SoftmaxLayer::WBL2norm()']]],
+  ['weight_5finitialization',['weight_initialization',['../classlbann__data_1_1FullyConnected.html#a8b3a5311a795250491105f390c3f1fdf',1,'lbann_data::FullyConnected::weight_initialization()'],['../classlbann__data_1_1Convolution.html#a391f6ec9ae3796d4d51c89b49e312157',1,'lbann_data::Convolution::weight_initialization()'],['../classlbann__data_1_1Softmax.html#ab3ba40d2c48fd55f57bbc1f283dbe3ca',1,'lbann_data::Softmax::weight_initialization()'],['../classlbann__data_1_1TrainingParams.html#aea238ff7e45038be34d36f51d2add8b8',1,'lbann_data::TrainingParams::weight_initialization()']]],
   ['weight_5finitialization_5fname',['weight_initialization_name',['../classlbann_1_1Layer.html#a7a55c61403cf1ecadc465d7d8663be07',1,'lbann::Layer']]],
   ['what',['what',['../classlbann_1_1lbann__exception.html#aad345f2f724f8bbc00ef455ae2707414',1,'lbann::lbann_exception']]],
   ['write_5fbytes',['write_bytes',['../classlbann_1_1persist.html#aa965a57769d140849ca61e0a159ca04f',1,'lbann::persist::write_bytes()'],['../namespacelbann.html#af0c8fc38d05bfc6aaf4bc78d06e6710a',1,'lbann::write_bytes()']]],
@@ -14,5 +15,5 @@ var searchData=
   ['write_5fuint32',['write_uint32',['../classlbann_1_1persist.html#a742334568de0aca958dbaf7bbabd3cba',1,'lbann::persist::write_uint32()'],['../namespacelbann.html#a3a801c9f48655f81b886af4bff083f27',1,'lbann::write_uint32()']]],
   ['write_5fuint64',['write_uint64',['../classlbann_1_1persist.html#aced95e3bc711276b072af97b65ef9fc1',1,'lbann::persist::write_uint64()'],['../namespacelbann.html#a234f8c7b9bbc2d9310d3e40314eb497c',1,'lbann::write_uint64()']]],
   ['writedist',['writeDist',['../namespacelbann.html#af640a9302803636e0b5deb110c1aee57',1,'lbann']]],
-  ['writeprototextfile',['writePrototextFile',['../lbann__proto__common_8cpp.html#a88ace24fdc2491da9c6fd95126799a80',1,'writePrototextFile(const char *fn, lbann_data::LbannPB &amp;pb):&#160;lbann_proto_common.cpp'],['../lbann__proto__common_8hpp.html#a41f19f7ed592fab1e876640a635ae52e',1,'writePrototextFile(string fn, lbann_data::LbannPB &amp;pb):&#160;lbann_proto_common.hpp']]]
+  ['writeprototextfile',['writePrototextFile',['../classlbann_1_1lbann__proto.html#a27fa01bf31621ad554707312e442eee1',1,'lbann::lbann_proto']]]
 ];

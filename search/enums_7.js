@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['obj_5ffn_5ftype',['obj_fn_type',['../namespacelbann_1_1objective__functions.html#a84a6b5226a98ba2d0c65c3a2a9afb43c',1,'lbann::objective_functions']]]
+  ['weight_5finitialization',['weight_initialization',['../lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5',1,'lbann_base.hpp']]]
 ];

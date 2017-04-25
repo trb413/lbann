@@ -1,8 +1,10 @@
 var searchData=
 [
   ['layer',['Layer',['../classlbann_1_1Layer.html',1,'lbann']]],
+  ['layer',['Layer',['../classlbann__data_1_1Layer.html',1,'lbann_data']]],
   ['layer_5ffactory',['layer_factory',['../classlbann_1_1layer__factory.html',1,'lbann']]],
   ['layer_5fheader',['layer_header',['../structlayer__header.html',1,'']]],
+  ['layer_5fparams',['layer_params',['../structlbann_1_1lbann__proto_1_1layer__params.html',1,'lbann::lbann_proto']]],
   ['lbann_5fcallback',['lbann_callback',['../classlbann_1_1lbann__callback.html',1,'lbann']]],
   ['lbann_5fcallback_5fadaptive_5flearning_5frate',['lbann_callback_adaptive_learning_rate',['../classlbann_1_1lbann__callback__adaptive__learning__rate.html',1,'lbann']]],
   ['lbann_5fcallback_5fchecknan',['lbann_callback_checknan',['../classlbann_1_1lbann__callback__checknan.html',1,'lbann']]],
@@ -27,8 +29,9 @@ var searchData=
   ['lbann_5fmodel_5fgreedy_5flayerwise_5fautoencoder_5fheader',['lbann_model_greedy_layerwise_autoencoder_header',['../structlbann__model__greedy__layerwise__autoencoder__header.html',1,'']]],
   ['lbann_5fmodel_5fheader',['lbann_model_header',['../structlbann__model__header.html',1,'']]],
   ['lbann_5fmodel_5fsequential_5fheader',['lbann_model_sequential_header',['../structlbann__model__sequential__header.html',1,'']]],
+  ['lbann_5fproto',['lbann_proto',['../classlbann_1_1lbann__proto.html',1,'lbann']]],
   ['lbann_5fquantizer',['lbann_quantizer',['../classlbann_1_1lbann__quantizer.html',1,'lbann']]],
   ['lbann_5fsummary',['lbann_summary',['../classlbann_1_1lbann__summary.html',1,'lbann']]],
-  ['leaky_5frelu_5flayer',['leaky_reLU_layer',['../classlbann_1_1leaky__reLU__layer.html',1,'lbann']]],
-  ['local_5fresponse_5fnormalization_5flayer',['local_response_normalization_layer',['../classlbann_1_1local__response__normalization__layer.html',1,'lbann']]]
+  ['lbannpb',['LbannPB',['../classlbann__data_1_1LbannPB.html',1,'lbann_data']]],
+  ['leaky_5frelu_5flayer',['leaky_reLU_layer',['../classlbann_1_1leaky__reLU__layer.html',1,'lbann']]]
 ];

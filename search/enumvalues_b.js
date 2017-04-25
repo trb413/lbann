@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['leaky_5frelu',['LEAKY_RELU',['../namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ac7e80a3de04936f4e423e1b564fdca10',1,'lbann']]],
-  ['local_5fresponse_5fnormalization',['local_response_normalization',['../namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a0d5ea8f7814c623a6835706757368095',1,'lbann']]]
+  ['none',['NONE',['../classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aafa59156bc4d5bcbf6bd80918d062da03',1,'lbann::lbann_callback_imcomm']]],
+  ['normal',['NORMAL',['../classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aa5f19efb5bef79cea24be992a2137962e',1,'lbann::lbann_callback_imcomm::NORMAL()'],['../lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5afea087517c26fadd409bd4b9dc642555',1,'normal():&#160;lbann_base.hpp']]],
+  ['normal_5far',['NORMAL_AR',['../classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aa7d9b361cd28f08b327ebe76b4d9b35cd',1,'lbann::lbann_callback_imcomm']]]
 ];

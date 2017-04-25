@@ -35,9 +35,7 @@ var classlbann_1_1TrainingParams =
     [ "ShuffleTrainingData", "classlbann_1_1TrainingParams.html#a4cde94bdbbd82aabdb69e616194f74b1", null ],
     [ "SummaryDir", "classlbann_1_1TrainingParams.html#ad01ff40b34ff8b7adf4c547aa60ee87f", null ],
     [ "TestFile", "classlbann_1_1TrainingParams.html#a99502fc87d50df2055a992266fdeee05", null ],
-    [ "TestingSamples", "classlbann_1_1TrainingParams.html#a7ae1711dab1dc6cce9238b578d198117", null ],
     [ "TestWithTrainData", "classlbann_1_1TrainingParams.html#a39a6893582111d1934c85f50c0111c1e", null ],
     [ "TrainFile", "classlbann_1_1TrainingParams.html#a4ac278410cb0a24c9dc1f6edf014d003", null ],
-    [ "TrainingSamples", "classlbann_1_1TrainingParams.html#adf012a044d64191b7d0de8b0278c7060", null ],
     [ "WeightInitType", "classlbann_1_1TrainingParams.html#ae6c49c818856f2e21ae9628d1c9addd5", null ]
 ];

@@ -10,6 +10,8 @@ var classlbann_1_1data__reader__nci__regression =
     [ "get_num_samples", "classlbann_1_1data__reader__nci__regression.html#af154b6598b89f0d5f4d13aca1e8b2113", null ],
     [ "getNumLabels", "classlbann_1_1data__reader__nci__regression.html#ae2e00a84db3d9060a15d4e67c985948a", null ],
     [ "load", "classlbann_1_1data__reader__nci__regression.html#a0e825b857cd006de7defe4cd4d9c8f36", null ],
+    [ "load", "classlbann_1_1data__reader__nci__regression.html#a50ab759bbb2fd28719415cf00b4a07c5", null ],
+    [ "load", "classlbann_1_1data__reader__nci__regression.html#a7f2725bd3c1f35f1a6910a79b63ba6fe", null ],
     [ "m_index_map", "classlbann_1_1data__reader__nci__regression.html#a1720aa708fcb1cb4fec75ea73f8b84fb", null ],
     [ "m_infile", "classlbann_1_1data__reader__nci__regression.html#aca20bfd23911c0e6045ba12e0028c6fd", null ],
     [ "m_num_features", "classlbann_1_1data__reader__nci__regression.html#a819c622d3fcff48a54ec2a81952c79d8", null ],
