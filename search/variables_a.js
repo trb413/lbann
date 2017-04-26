@@ -96,6 +96,7 @@ var searchData=
   ['m_5flrn_5falpha',['m_lrn_alpha',['../classlbann_1_1local__response__normalization__layer.html#ac5a5193bdf4ca504e3d9af42259af898',1,'lbann::local_response_normalization_layer']]],
   ['m_5flrn_5fbeta',['m_lrn_beta',['../classlbann_1_1local__response__normalization__layer.html#a44f92ed114f70f4db7db85e5ec2030fe',1,'lbann::local_response_normalization_layer']]],
   ['m_5flrn_5fk',['m_lrn_k',['../classlbann_1_1local__response__normalization__layer.html#a7c62f3de9853eac684666f5337fe3978',1,'lbann::local_response_normalization_layer']]],
+  ['m_5fmaster',['m_master',['../classlbann_1_1DataReader.html#a9e5af7d02edcc51d4a421e3be0f8a797',1,'lbann::DataReader']]],
   ['m_5fmatrix_5fformat',['m_matrix_format',['../classlbann_1_1optimizer.html#a55f17cd98721e80b6a1999b5a71adf4d',1,'lbann::optimizer']]],
   ['m_5fmax_5findex',['m_max_index',['../classlbann_1_1metrics_1_1categorical__accuracy.html#a1f25c3cb498ab7fd452bc077fc4441f1',1,'lbann::metrics::categorical_accuracy']]],
   ['m_5fmax_5findex_5fv',['m_max_index_v',['../classlbann_1_1metrics_1_1categorical__accuracy.html#a3f9bdcd78bd9ce8cf8450fb3d0588132',1,'lbann::metrics::categorical_accuracy']]],

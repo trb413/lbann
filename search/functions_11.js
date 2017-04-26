@@ -31,6 +31,7 @@ var searchData=
   ['set_5flabel_5ffilename',['set_label_filename',['../classlbann_1_1DataReader.html#acfea3134bcfa4542b3b056bcd014dda9',1,'lbann::DataReader']]],
   ['set_5flayers',['set_layers',['../classlbann_1_1sequential__model.html#aa7d372ff4bc1d1041eae423e837677c5',1,'lbann::sequential_model']]],
   ['set_5flearning_5frate',['set_learning_rate',['../classlbann_1_1optimizer.html#a54ba552b1691daeacdbb2d11f8f705af',1,'lbann::optimizer']]],
+  ['set_5fmaster',['set_master',['../classlbann_1_1DataReader.html#ab6a340ed1367ea64d5f5fd77a84f8aad',1,'lbann::DataReader']]],
   ['set_5fmax_5fsample_5fcount',['set_max_sample_count',['../classlbann_1_1DataReader.html#a25a2a3cfb56195c3f495780818ae85bd',1,'lbann::DataReader']]],
   ['set_5fname',['set_name',['../classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c',1,'lbann::lbann_callback']]],
   ['set_5fnext_5flayer_5ftype',['set_next_layer_type',['../classlbann_1_1Layer.html#a9b5e6cb0069ebb71450a43a6d3d52b57',1,'lbann::Layer']]],

@@ -1,5 +1,8 @@
 var NAVTREEINDEX8 =
 {
+"lbann__data__reader__mnist_8cpp.html#a04d24318b3dbcb7816ebd12552647803":[4,0,0,0,0,0,0,1,1,5,0],
+"lbann__data__reader__mnist_8cpp_source.html":[4,0,0,0,0,0,0,1,1,5],
+"lbann__data__reader__mnist_8hpp.html":[4,0,0,0,0,0,0,0,0,1,5],
 "lbann__data__reader__mnist_8hpp_source.html":[4,0,0,0,0,0,0,0,0,1,5],
 "lbann__data__reader__nci_8cpp.html":[4,0,0,0,0,0,0,1,1,6],
 "lbann__data__reader__nci_8cpp_source.html":[4,0,0,0,0,0,0,1,1,6],
@@ -246,8 +249,5 @@ var NAVTREEINDEX8 =
 "lbann__params_8cpp.html":[4,0,0,0,0,0,0,1,14],
 "lbann__params_8cpp_source.html":[4,0,0,0,0,0,0,1,14],
 "lbann__params_8hpp.html":[4,0,0,0,0,0,0,0,0,17],
-"lbann__params_8hpp_source.html":[4,0,0,0,0,0,0,0,0,17],
-"lbann__persist_8cpp.html":[4,0,0,0,0,0,0,1,2,2],
-"lbann__persist_8cpp.html#a1e6afc3db474d5e9159b5dedad8559f2":[4,0,0,0,0,0,0,1,2,2,1],
-"lbann__persist_8cpp.html#a8cc0d3da909c360b2a72ee0c611055cf":[4,0,0,0,0,0,0,1,2,2,2]
+"lbann__params_8hpp_source.html":[4,0,0,0,0,0,0,0,0,17]
 };
