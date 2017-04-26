@@ -1,0 +1,26 @@
+var classlbann_1_1batch__normalization =
+[
+    [ "batch_normalization", "classlbann_1_1batch__normalization.html#a9afe6eee02452cba784b8e807cc88cc0", null ],
+    [ "~batch_normalization", "classlbann_1_1batch__normalization.html#a27476b2494a861e413ecbb7febfc0098", null ],
+    [ "bp_weights", "classlbann_1_1batch__normalization.html#aed81fefa1d55983393f69e14b6fdba9d", null ],
+    [ "fp_weights", "classlbann_1_1batch__normalization.html#a0f4d0e84b153d00449d21e5d84bbbc58", null ],
+    [ "initialize_data_parallel_distribution", "classlbann_1_1batch__normalization.html#a2c798d41403efc36d8325339191262eb", null ],
+    [ "initialize_model_parallel_distribution", "classlbann_1_1batch__normalization.html#aa6ccc60854176d1daa51ac5f8b6e4d01", null ],
+    [ "setup", "classlbann_1_1batch__normalization.html#a68cb5fd5879349ff0c4a7b2826869178", null ],
+    [ "update", "classlbann_1_1batch__normalization.html#aca4343eb11c300d993c842a4c8643dc9", null ],
+    [ "comm", "classlbann_1_1batch__normalization.html#aa88301fade414021297d81f2558378d0", null ],
+    [ "m_beta", "classlbann_1_1batch__normalization.html#a52f2a71c357cd8bdfa094275b9d057db", null ],
+    [ "m_beta_init", "classlbann_1_1batch__normalization.html#ad98a49c141091ec52b4c3a29d0d547d8", null ],
+    [ "m_beta_optimizer", "classlbann_1_1batch__normalization.html#a088b30f4141f4b10e2ab59072a862b9d", null ],
+    [ "m_dbeta", "classlbann_1_1batch__normalization.html#acfd8faa61d209247504fe2f72f7c9d5e", null ],
+    [ "m_decay", "classlbann_1_1batch__normalization.html#a73ed285344613b713a29e97a9bc18d69", null ],
+    [ "m_dgamma", "classlbann_1_1batch__normalization.html#ab8045b219aade3ab1d3406afa8cf33a4", null ],
+    [ "m_gamma", "classlbann_1_1batch__normalization.html#ae956c124789c517780c4ebfc9c10629e", null ],
+    [ "m_gamma_init", "classlbann_1_1batch__normalization.html#a47b4ecd433e9dfa1ee239d91e98e1186", null ],
+    [ "m_gamma_optimizer", "classlbann_1_1batch__normalization.html#af31bdfd117d03957a234ccffc7782e26", null ],
+    [ "m_mean", "classlbann_1_1batch__normalization.html#a90994634aaccb9e2ad735ba5079f85d9", null ],
+    [ "m_running_mean", "classlbann_1_1batch__normalization.html#a8436d502ae49d92e2193bd1324e4b5d8", null ],
+    [ "m_running_var", "classlbann_1_1batch__normalization.html#a013b023913a508aac28748df51624b91", null ],
+    [ "m_var", "classlbann_1_1batch__normalization.html#a572279bb7a37f7c228042ad3f99c06be", null ],
+    [ "m_weighted_sum_copy", "classlbann_1_1batch__normalization.html#a128c26c48f4548efab7d30caad99564c", null ]
+];

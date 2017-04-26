@@ -24,8 +24,7 @@ var NAVTREE =
         [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
-        [ "Enumerator", "functions_eval.html", null ],
-        [ "Related Functions", "functions_rela.html", null ]
+        [ "Enumerator", "functions_eval.html", null ]
       ] ]
     ] ],
     [ "Files", null, [
@@ -46,24 +45,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classlbann_1_1Layer.html#a3f1ab0c18e78cd82af4cf24b73ec96bc",
-"classlbann_1_1convolutional__layer.html#ae2c905ba710e04e39213ee966c296f03",
-"classlbann_1_1lbann__callback__debug.html#a6e6a59d03698ccfffb8528bb7b4087ad",
-"classlbann_1_1lbann__proto.html#a356b2064eeb27c46ad91c2b907159a4d",
-"classlbann_1_1model.html#ac9f71f855106019f5c949568d259f175",
-"classlbann_1_1target__layer__unsupervised.html#ae7701c23a1783a943b92ea7c11478fbc",
-"classlbann__data_1_1DataReaderImagenet.html#a3c95d2a035f9db794885a50ad9e5cab2",
-"classlbann__data_1_1FullyConnected.html#a9f6583ad6fe65e1db9dcb1d9951d67f2",
-"classlbann__data_1_1Layer.html#aa7ca56da991aa4cd4a7883d1b1dfec14",
-"classlbann__data_1_1Model.html#abffddf90a0fa39cfa984ff0c19e1ce0f",
-"classlbann__data_1_1Pooling.html#a8ce48cc887daa5d03925c329cf74cdaf",
-"classlbann__data_1_1TargetDistributedMinibatchParallelIO.html#a0acfbd3946e2a61bb34f802dba237a3b",
-"classlbann__data_1_1TrainingParams.html#a9abd7d311909e67aea29e31a51d4f233",
-"dir_ae19bb3c4b74b705a5918893bf9adbdd.html",
-"lbann_8pb_8h.html",
-"lbann__layer__convolutional_8hpp.html",
-"namespacemembers_func.html",
-"structlbann_1_1lbann__proto_1_1model__params.html#ac644a8ef0a1a98cd48bc75f77305235b"
+"classlbann_1_1Layer.html#adc0a8d274f10860b3b1f1d8e4388a503",
+"classlbann_1_1dataset.html#a1390264fd7c176b4dda8f2f33bcae7ba",
+"classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aa7d9b361cd28f08b327ebe76b4d9b35cd",
+"classlbann_1_1lbann__quantizer.html#a882dcd266f67f98d5dfdf339edb8c31e",
+"classlbann_1_1objective__functions_1_1objective__fn.html#ae6bda5e522698f3c9f7e994465a5f181",
+"classlbann_1_1target__layer.html#a18a25cbfe594cc6ee0c4e433435852d7",
+"functions_func_t.html",
+"lbann__data__reader__mnist_8hpp_source.html",
+"lbann__persist_8cpp.html#aaedba0aa0df9b047cdaaf1ce45072394",
+"struct__CHAR4.html#a40b8f824b2d4321b7c2bab94c4aad44f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

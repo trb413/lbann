@@ -14,6 +14,7 @@ var lbann__random_8hpp =
     [ "get_generator", "lbann__random_8hpp.html#a4fea7ba21017b49d1e34394b4c20c764", null ],
     [ "init_data_seq_random", "lbann__random_8hpp.html#a8987701a637ff0e678114aa77e9c4d40", null ],
     [ "init_random", "lbann__random_8hpp.html#acef152f20e422b3aea1a3c1691a533ac", null ],
+    [ "initialize_matrix", "lbann__random_8hpp.html#afda802d107be9203db432ae5f6c276fd", null ],
     [ "rng_bernoulli", "lbann__random_8hpp.html#a481f0c268c74d3ec8b81861472559870", null ],
     [ "uniform_fill", "lbann__random_8hpp.html#acd76b03f2b7ee00ad7c8ba83a20d1866", null ],
     [ "uniform_fill_procdet", "lbann__random_8hpp.html#a5cd1cf097449bfd5bed0246819cddd13", null ]

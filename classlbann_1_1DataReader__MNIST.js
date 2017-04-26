@@ -11,8 +11,6 @@ var classlbann_1_1DataReader__MNIST =
     [ "getImageWidth", "classlbann_1_1DataReader__MNIST.html#a84f6cf5c5d5b4561ec10c7e51d6b7748", null ],
     [ "getNumLabels", "classlbann_1_1DataReader__MNIST.html#a52abbbf68078415b9db34f256d88e491", null ],
     [ "load", "classlbann_1_1DataReader__MNIST.html#a031f0bdd6561ffcd126a19af6728b504", null ],
-    [ "load", "classlbann_1_1DataReader__MNIST.html#aad0c3d72d4a1a2ad3bea90fa5dd16d9d", null ],
-    [ "load", "classlbann_1_1DataReader__MNIST.html#a3cff7d72dc3f958e2ad4fcff6b4c35af", null ],
     [ "save_image", "classlbann_1_1DataReader__MNIST.html#aa392da58cc506eed6e848ef0dc51c325", null ],
     [ "m_image_data", "classlbann_1_1DataReader__MNIST.html#aea635353a2480de7b726899524fb8775", null ],
     [ "m_image_height", "classlbann_1_1DataReader__MNIST.html#afacb0134cac6e35671cc2ef941cef3a2", null ],

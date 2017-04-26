@@ -4,7 +4,6 @@ var annotated =
     [ "cudnn", "namespacecudnn.html", "namespacecudnn" ],
     [ "El", "namespaceEl.html", null ],
     [ "lbann", "namespacelbann.html", "namespacelbann" ],
-    [ "lbann_data", "namespacelbann__data.html", "namespacelbann__data" ],
     [ "__BMP_FILEHEADER", "struct____BMP__FILEHEADER.html", "struct____BMP__FILEHEADER" ],
     [ "__BMP_INFO", "struct____BMP__INFO.html", "struct____BMP__INFO" ],
     [ "__BMP_INFOHEADER", "struct____BMP__INFOHEADER.html", "struct____BMP__INFOHEADER" ],

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['persist_5ftype',['persist_type',['../namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56',1,'lbann']]],
-  ['pool_5fmode',['pool_mode',['../lbann__base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39',1,'lbann_base.hpp']]]
+  ['matrix_5fformat',['matrix_format',['../lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0d',1,'lbann_base.hpp']]],
+  ['metric_5ftype',['metric_type',['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1',1,'lbann::metrics']]]
 ];

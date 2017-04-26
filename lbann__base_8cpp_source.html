@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">399af67-ci225767924</span>
+   &#160;<span id="projectnumber">ac6b1f3-ci225820039</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('lbann__base_8cpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -120,37 +120,65 @@ $(document).ready(function(){initNavTree('lbann__base_8cpp_source.html','');});
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;omp.h&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lbann__base_8hpp.html">lbann/lbann_base.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lbann__comm_8hpp.html">lbann/lbann_comm.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span>lbann {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespacelbann.html#aa7eae9c1a433564435e5464eabd29ea4">   36</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann.html#aa7eae9c1a433564435e5464eabd29ea4">initialize</a>(<a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>) {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span>  <span class="comment">// Initialize the default number of threads to use for parallel regions.</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="comment">// Note the num_threads directive can override this if specifically set.</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">// Further, if the OMP_NUM_THREADS environment variable is set, we don&#39;t</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="comment">// change it.</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">if</span> (getenv(<span class="stringliteral">&quot;OMP_NUM_THREADS&quot;</span>) == <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> threads_per_rank = std::thread::hardware_concurrency() /</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a845c62c2a55ef3eb4416deb3e8c5cd1a">get_procs_per_node</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    omp_set_num_threads(threads_per_rank);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif  // _OPENMP</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="namespacelbann.html#af7729c7ef241072e5db720242b4d49b0">   50</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann.html#af7729c7ef241072e5db720242b4d49b0">finalize</a>() {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}  <span class="comment">// namespace lbann</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;hwloc.h&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#if defined(HWLOC_API_VERSION) &amp;&amp; (HWLOC_API_VERSION &lt; 0x00010b00)</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #define HWLOC_OBJ_NUMANODE HWLOC_OBJ_NODE</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lbann__base_8hpp.html">lbann/lbann_base.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lbann__comm_8hpp.html">lbann/lbann_comm.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span>lbann {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="namespacelbann.html#aa7eae9c1a433564435e5464eabd29ea4">   41</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann.html#aa7eae9c1a433564435e5464eabd29ea4">initialize</a>(<a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="comment">// Determine the number of NUMA nodes present.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  hwloc_topology_t topo;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  hwloc_topology_init(&amp;topo);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  hwloc_topology_load(topo);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">int</span> numa_depth = hwloc_get_type_depth(topo, HWLOC_OBJ_NUMANODE);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">if</span> (numa_depth == HWLOC_TYPE_DEPTH_UNKNOWN) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    std::cout &lt;&lt; comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a615265cd20ffb4863089bb94e4c82fe7">get_rank_in_world</a>() &lt;&lt;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="stringliteral">&quot;: cannot determine hwloc NUMA-node depth&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">int</span> num_numa_nodes = hwloc_get_nbobjs_by_depth(topo, numa_depth);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="comment">// Warn if there are more NUMA nodes than processes per node.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="comment">// It&#39;s probably fine if there are more processes than NUMA nodes for now.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="comment">// We can adjust that later when we better understand the threaded perf.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">int</span> ppn = comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a845c62c2a55ef3eb4416deb3e8c5cd1a">get_procs_per_node</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">if</span> (num_numa_nodes &gt; ppn) {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> (comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a339bc17f07a2e40663df8b5d8cf80bf6">get_rank_in_node</a>() == 0) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      std::cout &lt;&lt; comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a615265cd20ffb4863089bb94e4c82fe7">get_rank_in_world</a>() &lt;&lt;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="stringliteral">&quot;: WARNING: node has &quot;</span> &lt;&lt; num_numa_nodes &lt;&lt;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="stringliteral">&quot; NUMA nodes but you have &quot;</span> &lt;&lt; ppn &lt;&lt; <span class="stringliteral">&quot; processes per node&quot;</span> &lt;&lt;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        std::endl;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span>  <span class="comment">// Initialize the default number of threads to use for parallel regions.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="comment">// Note the num_threads directive can override this if specifically set.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="comment">// Further, if the OMP_NUM_THREADS environment variable is set, we don&#39;t</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="comment">// change it.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">if</span> (getenv(<span class="stringliteral">&quot;OMP_NUM_THREADS&quot;</span>) == <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> threads_per_rank = std::thread::hardware_concurrency() / ppn;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    omp_set_num_threads(threads_per_rank);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif  // _OPENMP</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="namespacelbann.html#af7729c7ef241072e5db720242b4d49b0">   76</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann.html#af7729c7ef241072e5db720242b4d49b0">finalize</a>() {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}  <span class="comment">// namespace lbann</span></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_a339bc17f07a2e40663df8b5d8cf80bf6"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a339bc17f07a2e40663df8b5d8cf80bf6">lbann::lbann_comm::get_rank_in_node</a></div><div class="ttdeci">int get_rank_in_node() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00091">lbann_comm.hpp:91</a></div></div>
 <div class="ttc" id="lbann__comm_8hpp_html"><div class="ttname"><a href="lbann__comm_8hpp.html">lbann_comm.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html"><div class="ttname"><a href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00048">lbann_comm.hpp:48</a></div></div>
-<div class="ttc" id="namespacelbann_html_af7729c7ef241072e5db720242b4d49b0"><div class="ttname"><a href="namespacelbann.html#af7729c7ef241072e5db720242b4d49b0">lbann::finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8cpp_source.html#l00050">lbann_base.cpp:50</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_a615265cd20ffb4863089bb94e4c82fe7"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a615265cd20ffb4863089bb94e4c82fe7">lbann::lbann_comm::get_rank_in_world</a></div><div class="ttdeci">int get_rank_in_world() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00063">lbann_comm.hpp:63</a></div></div>
+<div class="ttc" id="namespacelbann_html_af7729c7ef241072e5db720242b4d49b0"><div class="ttname"><a href="namespacelbann.html#af7729c7ef241072e5db720242b4d49b0">lbann::finalize</a></div><div class="ttdeci">void finalize()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8cpp_source.html#l00076">lbann_base.cpp:76</a></div></div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
 <div class="ttc" id="datatype_8hpp_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00035">datatype.hpp:35</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a845c62c2a55ef3eb4416deb3e8c5cd1a"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a845c62c2a55ef3eb4416deb3e8c5cd1a">lbann::lbann_comm::get_procs_per_node</a></div><div class="ttdeci">int get_procs_per_node() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00089">lbann_comm.hpp:89</a></div></div>
-<div class="ttc" id="namespacelbann_html_aa7eae9c1a433564435e5464eabd29ea4"><div class="ttname"><a href="namespacelbann.html#aa7eae9c1a433564435e5464eabd29ea4">lbann::initialize</a></div><div class="ttdeci">void initialize(lbann_comm *comm)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8cpp_source.html#l00036">lbann_base.cpp:36</a></div></div>
+<div class="ttc" id="namespacelbann_html_aa7eae9c1a433564435e5464eabd29ea4"><div class="ttname"><a href="namespacelbann.html#aa7eae9c1a433564435e5464eabd29ea4">lbann::initialize</a></div><div class="ttdeci">void initialize(lbann_comm *comm)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8cpp_source.html#l00041">lbann_base.cpp:41</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html"><div class="ttname"><a href="lbann__base_8hpp.html">lbann_base.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -158,7 +186,7 @@ $(document).ready(function(){initNavTree('lbann__base_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="lbann__base_8cpp.html">lbann_base.cpp</a></li>
-    <li class="footer">Generated on Tue Apr 25 2017 21:54:54 for LBANN by
+    <li class="footer">Generated on Wed Apr 26 2017 00:13:22 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
