@@ -1,5 +1,11 @@
 var NAVTREEINDEX8 =
 {
+"lbann__data__reader__cnpy_8hpp_source.html":[4,0,0,0,0,0,0,0,0,1,3],
+"lbann__data__reader__imagenet_8cpp.html":[4,0,0,0,0,0,0,1,1,4],
+"lbann__data__reader__imagenet_8cpp_source.html":[4,0,0,0,0,0,0,1,1,4],
+"lbann__data__reader__imagenet_8hpp.html":[4,0,0,0,0,0,0,0,0,1,4],
+"lbann__data__reader__imagenet_8hpp_source.html":[4,0,0,0,0,0,0,0,0,1,4],
+"lbann__data__reader__mnist_8cpp.html":[4,0,0,0,0,0,0,1,1,5],
 "lbann__data__reader__mnist_8cpp.html#a04d24318b3dbcb7816ebd12552647803":[4,0,0,0,0,0,0,1,1,5,0],
 "lbann__data__reader__mnist_8cpp_source.html":[4,0,0,0,0,0,0,1,1,5],
 "lbann__data__reader__mnist_8hpp.html":[4,0,0,0,0,0,0,0,0,1,5],
@@ -71,6 +77,10 @@ var NAVTREEINDEX8 =
 "lbann__io__layer_8cpp_source.html":[4,0,0,0,0,0,0,1,3,3],
 "lbann__io__layer_8hpp.html":[4,0,0,0,0,0,0,0,0,3,3],
 "lbann__io__layer_8hpp_source.html":[4,0,0,0,0,0,0,0,0,3,3],
+"lbann__l2__regularization_8cpp.html":[4,0,0,0,0,0,0,1,9,2],
+"lbann__l2__regularization_8cpp_source.html":[4,0,0,0,0,0,0,1,9,2],
+"lbann__l2__regularization_8hpp.html":[4,0,0,0,0,0,0,0,0,9,2],
+"lbann__l2__regularization_8hpp_source.html":[4,0,0,0,0,0,0,0,0,9,2],
 "lbann__layer_8cpp.html":[4,0,0,0,0,0,0,1,3,4],
 "lbann__layer_8cpp_source.html":[4,0,0,0,0,0,0,1,3,4],
 "lbann__layer_8hpp.html":[4,0,0,0,0,0,0,0,0,3,4],
@@ -103,10 +113,6 @@ var NAVTREEINDEX8 =
 "lbann__layer__activations_8hpp.html#ac5723897a72209964fd0eb14ad416d18":[4,0,0,0,0,0,0,0,0,3,5,9],
 "lbann__layer__activations_8hpp_source.html":[4,0,0,0,0,0,0,0,0,3,5],
 "lbann__layer__convolutional_8cpp.html":[4,0,0,0,0,0,0,1,3,6],
-"lbann__layer__convolutional_8cpp.html#a3b0f43cffeba6f6e6f4c3520f476ebad":[4,0,0,0,0,0,0,1,3,6,2],
-"lbann__layer__convolutional_8cpp.html#a626e49af1247e96b0658d9dfdf5bd392":[4,0,0,0,0,0,0,1,3,6,1],
-"lbann__layer__convolutional_8cpp.html#a7a202a20a84c0d306cc1ad8b2526d540":[4,0,0,0,0,0,0,1,3,6,0],
-"lbann__layer__convolutional_8cpp.html#acf6a2677c9dc565b7f3379c1544d709e":[4,0,0,0,0,0,0,1,3,6,3],
 "lbann__layer__convolutional_8cpp_source.html":[4,0,0,0,0,0,0,1,3,6],
 "lbann__layer__convolutional_8hpp.html":[4,0,0,0,0,0,0,0,0,3,6],
 "lbann__layer__convolutional_8hpp_source.html":[4,0,0,0,0,0,0,0,0,3,6],
@@ -243,11 +249,5 @@ var NAVTREEINDEX8 =
 "lbann__optimizer__rmsprop_8hpp.html":[4,0,0,0,0,0,0,0,0,7,3],
 "lbann__optimizer__rmsprop_8hpp_source.html":[4,0,0,0,0,0,0,0,0,7,3],
 "lbann__optimizer__sgd_8cpp.html":[4,0,0,0,0,0,0,1,7,4],
-"lbann__optimizer__sgd_8cpp_source.html":[4,0,0,0,0,0,0,1,7,4],
-"lbann__optimizer__sgd_8hpp.html":[4,0,0,0,0,0,0,0,0,7,4],
-"lbann__optimizer__sgd_8hpp_source.html":[4,0,0,0,0,0,0,0,0,7,4],
-"lbann__params_8cpp.html":[4,0,0,0,0,0,0,1,14],
-"lbann__params_8cpp_source.html":[4,0,0,0,0,0,0,1,14],
-"lbann__params_8hpp.html":[4,0,0,0,0,0,0,0,0,17],
-"lbann__params_8hpp_source.html":[4,0,0,0,0,0,0,0,0,17]
+"lbann__optimizer__sgd_8cpp_source.html":[4,0,0,0,0,0,0,1,7,4]
 };

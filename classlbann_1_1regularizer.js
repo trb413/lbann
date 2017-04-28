@@ -8,5 +8,6 @@ var classlbann_1_1regularizer =
     [ "fp_weights", "classlbann_1_1regularizer.html#ab36e9a970736527ae2e8e73b723a3de4", null ],
     [ "setup", "classlbann_1_1regularizer.html#a8fda5d9230f7fe9f33348dc494245cb3", null ],
     [ "update", "classlbann_1_1regularizer.html#ad0fd1a331a6fd12025843c7d84783ea4", null ],
+    [ "update_gradients", "classlbann_1_1regularizer.html#af438ba42815eb0ed5ae22a4dae456795", null ],
     [ "m_layer", "classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5", null ]
 ];

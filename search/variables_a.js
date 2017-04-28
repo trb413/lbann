@@ -84,6 +84,7 @@ var searchData=
   ['m_5fkeep_5fprob',['m_keep_prob',['../classlbann_1_1dropout.html#a2b4540ea622609b518d691d68e6db92c',1,'lbann::dropout']]],
   ['m_5flabel_5ffn',['m_label_fn',['../classlbann_1_1DataReader.html#a27cd5b3e3a5d55cd060330e8be20d6e7',1,'lbann::DataReader']]],
   ['m_5flabels',['m_labels',['../classlbann_1_1data__reader__nci.html#ad07c090a7d827eb71e516de30040a2b1',1,'lbann::data_reader_nci']]],
+  ['m_5flambda',['m_lambda',['../classlbann_1_1l2__regularization.html#a8327feb42579f52cf9dfa1a4c1a6c52b',1,'lbann::l2_regularization']]],
   ['m_5flast_5fmini_5fbatch_5favg_5fcost',['m_last_mini_batch_avg_cost',['../classlbann_1_1objective__functions_1_1statistics.html#a268a3124904ad55f24c3277cdb7816f2',1,'lbann::objective_functions::statistics']]],
   ['m_5flast_5fmini_5fbatch_5fsize',['m_last_mini_batch_size',['../classlbann_1_1DataReader.html#a71174addb26104d8207d7552a5da37c0',1,'lbann::DataReader']]],
   ['m_5flast_5fmini_5fbatch_5fstride',['m_last_mini_batch_stride',['../classlbann_1_1DataReader.html#a0ecd034d1dbc3ed595a551b2afb9320c',1,'lbann::DataReader']]],

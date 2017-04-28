@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">17c3be4-ci226479662</span>
+   &#160;<span id="projectnumber">5d80486-ci226715302</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -103,7 +103,7 @@ Inheritance diagram for lbann::regularizer:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1regularizer__inherit__graph.png" border="0" usemap="#lbann_1_1regularizer_inherit__map" alt="Inheritance graph"/></div>
 <map name="lbann_1_1regularizer_inherit__map" id="lbann_1_1regularizer_inherit__map">
-<area shape="rect" id="node2" href="classlbann_1_1batch__normalization.html" title="lbann::batch_normalization" alt="" coords="5,80,181,107"/><area shape="rect" id="node3" href="classlbann_1_1dropout.html" title="lbann::dropout" alt="" coords="207,80,311,107"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1batch__normalization.html" title="lbann::batch_normalization" alt="" coords="5,80,181,107"/><area shape="rect" id="node3" href="classlbann_1_1dropout.html" title="lbann::dropout" alt="" coords="207,80,311,107"/><area shape="rect" id="node4" href="classlbann_1_1l2__regularization.html" title="lbann::l2_regularization" alt="" coords="335,80,488,107"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for lbann::regularizer:</div>
@@ -127,6 +127,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8006f575c31fd152d2f048d50994e9f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a520fb6e3ff605f4c5c6de7eda003f0aa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1regularizer.html#a520fb6e3ff605f4c5c6de7eda003f0aa">bp_activations</a> ()</td></tr>
 <tr class="separator:a520fb6e3ff605f4c5c6de7eda003f0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af438ba42815eb0ed5ae22a4dae456795"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1regularizer.html#af438ba42815eb0ed5ae22a4dae456795">update_gradients</a> ()</td></tr>
+<tr class="separator:af438ba42815eb0ed5ae22a4dae456795"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0fd1a331a6fd12025843c7d84783ea4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1regularizer.html#ad0fd1a331a6fd12025843c7d84783ea4">update</a> ()</td></tr>
 <tr class="separator:ad0fd1a331a6fd12025843c7d84783ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fda5d9230f7fe9f33348dc494245cb3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1regularizer.html#a8fda5d9230f7fe9f33348dc494245cb3">setup</a> (<a class="el" href="classlbann_1_1Layer.html">Layer</a> *l)</td></tr>
@@ -337,9 +339,9 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1batch__normalization.html#a68cb5fd5879349ff0c4a7b2826869178">lbann::batch_normalization</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__regularizer_8hpp_source.html#l00074">74</a> of file <a class="el" href="lbann__regularizer_8hpp_source.html">lbann_regularizer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{ <a class="code" href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">m_layer</a> = l; }</div>
-<div class="ttc" id="classlbann_1_1regularizer_html_a6d0d44f4f9a3c8c24d0acdda8cf7d4b5"><div class="ttname"><a href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">lbann::regularizer::m_layer</a></div><div class="ttdeci">Layer * m_layer</div><div class="ttdef"><b>Definition:</b> <a href="lbann__regularizer_8hpp_source.html#l00077">lbann_regularizer.hpp:77</a></div></div>
+<p>Definition at line <a class="el" href="lbann__regularizer_8hpp_source.html#l00076">76</a> of file <a class="el" href="lbann__regularizer_8hpp_source.html">lbann_regularizer.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{ <a class="code" href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">m_layer</a> = l; }</div>
+<div class="ttc" id="classlbann_1_1regularizer_html_a6d0d44f4f9a3c8c24d0acdda8cf7d4b5"><div class="ttname"><a href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">lbann::regularizer::m_layer</a></div><div class="ttdeci">Layer * m_layer</div><div class="ttdef"><b>Definition:</b> <a href="lbann__regularizer_8hpp_source.html#l00079">lbann_regularizer.hpp:79</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -376,8 +378,8 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1batch__normalization.html#aca4343eb11c300d993c842a4c8643dc9">lbann::batch_normalization</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__regularizer_8hpp_source.html#l00071">71</a> of file <a class="el" href="lbann__regularizer_8hpp_source.html">lbann_regularizer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__regularizer_8hpp_source.html#l00073">73</a> of file <a class="el" href="lbann__regularizer_8hpp_source.html">lbann_regularizer.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{}</div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -388,6 +390,35 @@ Here is the caller graph for this function:</div>
 </div>
 </p>
 
+</div>
+</div>
+<a class="anchor" id="af438ba42815eb0ed5ae22a4dae456795"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void lbann::regularizer::update_gradients </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Regularization of weight gradients. </p>
+
+<p>Reimplemented in <a class="el" href="classlbann_1_1l2__regularization.html#a785095535853c74b60410011d8e5bc47">lbann::l2_regularization</a>.</p>
+
+<p>Definition at line <a class="el" href="lbann__regularizer_8hpp_source.html#l00070">70</a> of file <a class="el" href="lbann__regularizer_8hpp_source.html">lbann_regularizer.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -410,7 +441,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p><a class="el" href="classlbann_1_1Layer.html">Layer</a> being regularized. </p>
 
-<p>Definition at line <a class="el" href="lbann__regularizer_8hpp_source.html#l00077">77</a> of file <a class="el" href="lbann__regularizer_8hpp_source.html">lbann_regularizer.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__regularizer_8hpp_source.html#l00079">79</a> of file <a class="el" href="lbann__regularizer_8hpp_source.html">lbann_regularizer.hpp</a>.</p>
 
 </div>
 </div>
@@ -423,7 +454,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1regularizer.html">regularizer</a></li>
-    <li class="footer">Generated on Thu Apr 27 2017 17:42:02 for LBANN by
+    <li class="footer">Generated on Fri Apr 28 2017 07:49:21 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

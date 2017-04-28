@@ -152,7 +152,8 @@ var hierarchy =
     [ "lbann::persist", "classlbann_1_1persist.html", null ],
     [ "lbann::regularizer", "classlbann_1_1regularizer.html", [
       [ "lbann::batch_normalization", "classlbann_1_1batch__normalization.html", null ],
-      [ "lbann::dropout", "classlbann_1_1dropout.html", null ]
+      [ "lbann::dropout", "classlbann_1_1dropout.html", null ],
+      [ "lbann::l2_regularization", "classlbann_1_1l2__regularization.html", null ]
     ] ],
     [ "lbann::rng< DistType, DType >", "classlbann_1_1rng.html", null ],
     [ "lbann::SystemParams", "classlbann_1_1SystemParams.html", null ],

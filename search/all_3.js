@@ -42,7 +42,7 @@ var searchData=
   ['compute_5fobj_5ffn_5fderivative',['compute_obj_fn_derivative',['../classlbann_1_1objective__functions_1_1objective__fn.html#ab86c1d273d80104764fb5fb72f5d6875',1,'lbann::objective_functions::objective_fn::compute_obj_fn_derivative()'],['../classlbann_1_1objective__functions_1_1categorical__cross__entropy.html#a92feb11bce937be491f837384d625323',1,'lbann::objective_functions::categorical_cross_entropy::compute_obj_fn_derivative()'],['../classlbann_1_1objective__functions_1_1mean__squared__error.html#aedd9585447557339a1753dfe7d520a19',1,'lbann::objective_functions::mean_squared_error::compute_obj_fn_derivative()']]],
   ['computecost',['computeCost',['../classlbann_1_1FullyConnectedLayer.html#a355ecf2e648ed388a73bb24a89a31437',1,'lbann::FullyConnectedLayer']]],
   ['convolution',['convolution',['../namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743aa9595c1c24c33b16056d2ad07e71682d',1,'lbann']]],
-  ['convolutional_5flayer',['convolutional_layer',['../classlbann_1_1convolutional__layer.html#a82e054769ca3ed9b8b1de0ba2fe8c8f4',1,'lbann::convolutional_layer']]],
+  ['convolutional_5flayer',['convolutional_layer',['../classlbann_1_1convolutional__layer.html#a209510f0137b788c7364df0039627bf2',1,'lbann::convolutional_layer']]],
   ['convolutional_5flayer',['convolutional_layer',['../classlbann_1_1convolutional__layer.html',1,'lbann']]],
   ['convolvemat',['convolveMat',['../classlbann_1_1CUtility.html#a70867a001ddcc7c71ab62a334ff89eca',1,'lbann::CUtility']]],
   ['cosine_5fproximity',['cosine_proximity',['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1ad552dc3282907ae4a391e1c228225410',1,'lbann::metrics']]],

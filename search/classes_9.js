@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['l2_5fregularization',['l2_regularization',['../classlbann_1_1l2__regularization.html',1,'lbann']]],
   ['layer',['Layer',['../classlbann_1_1Layer.html',1,'lbann']]],
   ['layer_5ffactory',['layer_factory',['../classlbann_1_1layer__factory.html',1,'lbann']]],
   ['layer_5fheader',['layer_header',['../structlayer__header.html',1,'']]],

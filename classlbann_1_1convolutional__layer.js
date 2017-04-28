@@ -1,6 +1,6 @@
 var classlbann_1_1convolutional__layer =
 [
-    [ "convolutional_layer", "classlbann_1_1convolutional__layer.html#a82e054769ca3ed9b8b1de0ba2fe8c8f4", null ],
+    [ "convolutional_layer", "classlbann_1_1convolutional__layer.html#a209510f0137b788c7364df0039627bf2", null ],
     [ "~convolutional_layer", "classlbann_1_1convolutional__layer.html#aa4b4d34bf7060486c9cf294015cc2428", null ],
     [ "backProp", "classlbann_1_1convolutional__layer.html#a30fcab5aa5564533f65692e2d925ede3", null ],
     [ "bp_linearity", "classlbann_1_1convolutional__layer.html#a4a6beefd3b7c00b569fa739ee8db7f7a", null ],

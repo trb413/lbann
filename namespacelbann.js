@@ -81,6 +81,7 @@ var namespacelbann =
     [ "sgd_factory", "classlbann_1_1sgd__factory.html", "classlbann_1_1sgd__factory" ],
     [ "batch_normalization", "classlbann_1_1batch__normalization.html", "classlbann_1_1batch__normalization" ],
     [ "dropout", "classlbann_1_1dropout.html", "classlbann_1_1dropout" ],
+    [ "l2_regularization", "classlbann_1_1l2__regularization.html", "classlbann_1_1l2__regularization" ],
     [ "regularizer", "classlbann_1_1regularizer.html", "classlbann_1_1regularizer" ],
     [ "dataset", "classlbann_1_1dataset.html", "classlbann_1_1dataset" ],
     [ "lbann_exception", "classlbann_1_1lbann__exception.html", "classlbann_1_1lbann__exception" ],
