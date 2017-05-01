@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">1c60ad4-ci227632618</span>
+   &#160;<span id="projectnumber">831fa1f-ci227648672</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -99,37 +99,54 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8hpp_source.html'
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lbann_8hpp.html">lbann/lbann.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lbann__model__dnn_8hpp.html">lbann/models/lbann_model_dnn.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;lbann.pb.h&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">int</span> <a class="code" href="lbann__proto__common_8hpp.html#a53a00c050e9cc6752ee1542e125806e2">init_data_readers</a>(<span class="keywordtype">bool</span> master, <span class="keyword">const</span> lbann_data::LbannPB &amp;p, std::map&lt;execution_mode, lbann::DataReader*&gt; &amp;data_readers, <span class="keywordtype">int</span> &amp;mini_batch_size);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<a class="code" href="classlbann_1_1optimizer__factory.html">lbann::optimizer_factory</a> * <a class="code" href="lbann__proto__common_8hpp.html#ae21ca118313260dcd12be3e8e2d540ae">init_optimizer_factory</a>(<a class="code" href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a> *<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, <span class="keyword">const</span> lbann_data::LbannPB &amp;p); </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<a class="code" href="classlbann_1_1sequential__model.html">lbann::sequential_model</a> * <a class="code" href="lbann__proto__common_8hpp.html#a6e47c1bc98abae53a8c67b9ebf80fab3">init_model</a>(<a class="code" href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a> *<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, <a class="code" href="classlbann_1_1optimizer__factory.html">lbann::optimizer_factory</a> * optimizer_fac, <span class="keyword">const</span> lbann_data::LbannPB &amp;p);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lbann__model__sequential_8hpp.html">lbann/models/lbann_model_sequential.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lbann__optimizer_8hpp.html">lbann/optimizers/lbann_optimizer.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">int</span> <a class="code" href="lbann__proto__common_8hpp.html#a53a00c050e9cc6752ee1542e125806e2">init_data_readers</a>(</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keywordtype">bool</span> master, </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">const</span> lbann_data::LbannPB &amp;p, </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  std::map&lt;execution_mode, lbann::DataReader*&gt; &amp;data_readers, </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordtype">int</span> &amp;mini_batch_size);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span> <a class="code" href="lbann__proto__common_8hpp.html#a412ce24eaf3f2bff1884da396f2542dc">readPrototextFile</a>(<span class="keywordtype">string</span> fn, lbann_data::LbannPB &amp;pb);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> <a class="code" href="lbann__proto__common_8hpp.html#a41f19f7ed592fab1e876640a635ae52e">writePrototextFile</a>(<span class="keywordtype">string</span> fn, lbann_data::LbannPB &amp;pb);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<a class="code" href="classlbann_1_1sequential__model.html">lbann::sequential_model</a> * <a class="code" href="lbann__proto__common_8hpp.html#ae5d5ad4404f8d97e0d49c85003a72ecc">init_model</a>(</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <a class="code" href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a> *<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  lbann::Optimizer_factory *optimizer_fac, </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">const</span> lbann_data::LbannPB &amp;p); </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;lbann::Optimizer_factory * <a class="code" href="lbann__proto__common_8hpp.html#a1bb1cfcab2d30f56bd559b8b43cb95d0">init_optimizer_factory</a>(</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a> *<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">const</span> lbann_data::LbannPB &amp;p); </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="lbann__proto__common_8hpp.html#a412ce24eaf3f2bff1884da396f2542dc">readPrototextFile</a>(</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">string</span> fn, </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  lbann_data::LbannPB &amp;pb);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="lbann__proto__common_8hpp.html#a41f19f7ed592fab1e876640a635ae52e">writePrototextFile</a>(</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">string</span> fn, </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  lbann_data::LbannPB &amp;pb);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="lbann__proto__common_8hpp_html_a1bb1cfcab2d30f56bd559b8b43cb95d0"><div class="ttname"><a href="lbann__proto__common_8hpp.html#a1bb1cfcab2d30f56bd559b8b43cb95d0">init_optimizer_factory</a></div><div class="ttdeci">lbann::Optimizer_factory * init_optimizer_factory(lbann::lbann_comm *comm, const lbann_data::LbannPB &amp;p)</div><div class="ttdoc">returns a optimizer factory that is one of: adagrad, rmsprop, adam, sgd </div><div class="ttdef"><b>Definition:</b> <a href="lbann__proto__common_8cpp_source.html#l00097">lbann_proto_common.cpp:97</a></div></div>
 <div class="ttc" id="lbann__data__reader_8hpp_html"><div class="ttname"><a href="lbann__data__reader_8hpp.html">lbann_data_reader.hpp</a></div></div>
+<div class="ttc" id="lbann__proto__common_8hpp_html_ae5d5ad4404f8d97e0d49c85003a72ecc"><div class="ttname"><a href="lbann__proto__common_8hpp.html#ae5d5ad4404f8d97e0d49c85003a72ecc">init_model</a></div><div class="ttdeci">lbann::sequential_model * init_model(lbann::lbann_comm *comm, lbann::Optimizer_factory *optimizer_fac, const lbann_data::LbannPB &amp;p)</div><div class="ttdoc">returns a sequential model that is on of: dnn, stacked_autoencoder, greedy_layerwise_autoencoder ...</div></div>
+<div class="ttc" id="lbann__model__sequential_8hpp_html"><div class="ttname"><a href="lbann__model__sequential_8hpp.html">lbann_model_sequential.hpp</a></div></div>
 <div class="ttc" id="lbann__model__dnn_8hpp_html"><div class="ttname"><a href="lbann__model__dnn_8hpp.html">lbann_model_dnn.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1sequential__model_html"><div class="ttname"><a href="classlbann_1_1sequential__model.html">lbann::sequential_model</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8hpp_source.html#l00043">lbann_model_sequential.hpp:43</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html"><div class="ttname"><a href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00048">lbann_comm.hpp:48</a></div></div>
 <div class="ttc" id="lbann__proto__common_8hpp_html_a41f19f7ed592fab1e876640a635ae52e"><div class="ttname"><a href="lbann__proto__common_8hpp.html#a41f19f7ed592fab1e876640a635ae52e">writePrototextFile</a></div><div class="ttdeci">void writePrototextFile(string fn, lbann_data::LbannPB &amp;pb)</div></div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer__factory_html"><div class="ttname"><a href="classlbann_1_1optimizer__factory.html">lbann::optimizer_factory</a></div><div class="ttdoc">Optimizer factory base class. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00108">lbann_optimizer.hpp:108</a></div></div>
-<div class="ttc" id="lbann__proto__common_8hpp_html_ae21ca118313260dcd12be3e8e2d540ae"><div class="ttname"><a href="lbann__proto__common_8hpp.html#ae21ca118313260dcd12be3e8e2d540ae">init_optimizer_factory</a></div><div class="ttdeci">lbann::optimizer_factory * init_optimizer_factory(lbann::lbann_comm *comm, const lbann_data::LbannPB &amp;p)</div><div class="ttdoc">returns an optimizer factory </div><div class="ttdef"><b>Definition:</b> <a href="lbann__proto__common_8cpp_source.html#l00085">lbann_proto_common.cpp:85</a></div></div>
-<div class="ttc" id="lbann__proto__common_8hpp_html_a6e47c1bc98abae53a8c67b9ebf80fab3"><div class="ttname"><a href="lbann__proto__common_8hpp.html#a6e47c1bc98abae53a8c67b9ebf80fab3">init_model</a></div><div class="ttdeci">lbann::sequential_model * init_model(lbann::lbann_comm *comm, lbann::optimizer_factory *optimizer_fac, const lbann_data::LbannPB &amp;p)</div><div class="ttdoc">returns a model that contains an optimizer_factory and metric(s) </div><div class="ttdef"><b>Definition:</b> <a href="lbann__proto__common_8cpp_source.html#l00019">lbann_proto_common.cpp:19</a></div></div>
+<div class="ttc" id="lbann__optimizer_8hpp_html"><div class="ttname"><a href="lbann__optimizer_8hpp.html">lbann_optimizer.hpp</a></div></div>
 <div class="ttc" id="lbann_8hpp_html"><div class="ttname"><a href="lbann_8hpp.html">lbann.hpp</a></div></div>
-<div class="ttc" id="lbann__proto__common_8hpp_html_a412ce24eaf3f2bff1884da396f2542dc"><div class="ttname"><a href="lbann__proto__common_8hpp.html#a412ce24eaf3f2bff1884da396f2542dc">readPrototextFile</a></div><div class="ttdeci">void readPrototextFile(string fn, lbann_data::LbannPB &amp;pb)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__proto__common_8cpp_source.html#l00278">lbann_proto_common.cpp:278</a></div></div>
-<div class="ttc" id="lbann__proto__common_8hpp_html_a53a00c050e9cc6752ee1542e125806e2"><div class="ttname"><a href="lbann__proto__common_8hpp.html#a53a00c050e9cc6752ee1542e125806e2">init_data_readers</a></div><div class="ttdeci">int init_data_readers(bool master, const lbann_data::LbannPB &amp;p, std::map&lt; execution_mode, lbann::DataReader * &gt; &amp;data_readers, int &amp;mini_batch_size)</div><div class="ttdoc">returns mini_batch_size </div><div class="ttdef"><b>Definition:</b> <a href="lbann__proto__common_8cpp_source.html#l00119">lbann_proto_common.cpp:119</a></div></div>
+<div class="ttc" id="lbann__proto__common_8hpp_html_a412ce24eaf3f2bff1884da396f2542dc"><div class="ttname"><a href="lbann__proto__common_8hpp.html#a412ce24eaf3f2bff1884da396f2542dc">readPrototextFile</a></div><div class="ttdeci">void readPrototextFile(string fn, lbann_data::LbannPB &amp;pb)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__proto__common_8cpp_source.html#l00290">lbann_proto_common.cpp:290</a></div></div>
+<div class="ttc" id="lbann__proto__common_8hpp_html_a53a00c050e9cc6752ee1542e125806e2"><div class="ttname"><a href="lbann__proto__common_8hpp.html#a53a00c050e9cc6752ee1542e125806e2">init_data_readers</a></div><div class="ttdeci">int init_data_readers(bool master, const lbann_data::LbannPB &amp;p, std::map&lt; execution_mode, lbann::DataReader * &gt; &amp;data_readers, int &amp;mini_batch_size)</div><div class="ttdoc">returns mini_batch_size </div><div class="ttdef"><b>Definition:</b> <a href="lbann__proto__common_8cpp_source.html#l00131">lbann_proto_common.cpp:131</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_eb8329679e609af11719ceffa3ff5139.html">include</a></li><li class="navelem"><a class="el" href="dir_ae19bb3c4b74b705a5918893bf9adbdd.html">lbann</a></li><li class="navelem"><a class="el" href="dir_4c7b98bbc86e016df9eb563a8634aea6.html">proto</a></li><li class="navelem"><a class="el" href="lbann__proto__common_8hpp.html">lbann_proto_common.hpp</a></li>
-    <li class="footer">Generated on Mon May 1 2017 16:23:37 for LBANN by
+    <li class="footer">Generated on Mon May 1 2017 16:57:12 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
