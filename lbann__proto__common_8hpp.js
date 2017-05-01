@@ -1,6 +1,6 @@
 var lbann__proto__common_8hpp =
 [
-    [ "init_callbacks", "lbann__proto__common_8hpp.html#a0ac645528145a5788d506289008e68cf", null ],
+    [ "init_callbacks", "lbann__proto__common_8hpp.html#ab6478b69ca9d23685a050a929809aae9", null ],
     [ "init_data_readers", "lbann__proto__common_8hpp.html#a53a00c050e9cc6752ee1542e125806e2", null ],
     [ "init_model", "lbann__proto__common_8hpp.html#a6e47c1bc98abae53a8c67b9ebf80fab3", null ],
     [ "init_optimizer_factory", "lbann__proto__common_8hpp.html#ae21ca118313260dcd12be3e8e2d540ae", null ],
