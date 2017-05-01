@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">39755d7-ci227671767</span>
+   &#160;<span id="projectnumber">34e09f4-ci227686217</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -121,11 +121,12 @@ Include dependency graph for lbann_proto_common.cpp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa0a747b9489931e76c0176945b0c4ffd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1sequential__model.html">sequential_model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lbann__proto__common_8cpp.html#aa0a747b9489931e76c0176945b0c4ffd">init_model</a> (<a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, Optimizer_factory *optimizer_fac, const lbann_data::LbannPB &amp;p)</td></tr>
-<tr class="separator:aa0a747b9489931e76c0176945b0c4ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3bf439c18108f3831e51009cc6a8c99"><td class="memItemLeft" align="right" valign="top">Optimizer_factory *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lbann__proto__common_8cpp.html#ad3bf439c18108f3831e51009cc6a8c99">init_optimizer_factory</a> (<a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, const lbann_data::LbannPB &amp;p)</td></tr>
-<tr class="memdesc:ad3bf439c18108f3831e51009cc6a8c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a optimizer factory that is one of: adagrad, rmsprop, adam, sgd  <a href="#ad3bf439c18108f3831e51009cc6a8c99">More...</a><br/></td></tr>
-<tr class="separator:ad3bf439c18108f3831e51009cc6a8c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65210505c1def636a8c1d230388d2660"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1sequential__model.html">sequential_model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lbann__proto__common_8cpp.html#a65210505c1def636a8c1d230388d2660">init_model</a> (<a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, <a class="el" href="classlbann_1_1optimizer__factory.html">optimizer_factory</a> *optimizer_fac, const lbann_data::LbannPB &amp;p)</td></tr>
+<tr class="memdesc:a65210505c1def636a8c1d230388d2660"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a sequential model that is on of: dnn, stacked_autoencoder, greedy_layerwise_autoencoder  <a href="#a65210505c1def636a8c1d230388d2660">More...</a><br/></td></tr>
+<tr class="separator:a65210505c1def636a8c1d230388d2660"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1157a7f2b93a65f5e55e075cacbed91d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1optimizer__factory.html">optimizer_factory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lbann__proto__common_8cpp.html#a1157a7f2b93a65f5e55e075cacbed91d">init_optimizer_factory</a> (<a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, const lbann_data::LbannPB &amp;p)</td></tr>
+<tr class="memdesc:a1157a7f2b93a65f5e55e075cacbed91d"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a optimizer factory that is one of: adagrad, rmsprop, adam, sgd  <a href="#a1157a7f2b93a65f5e55e075cacbed91d">More...</a><br/></td></tr>
+<tr class="separator:a1157a7f2b93a65f5e55e075cacbed91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaac7a1330b8214080e589950fac79b3e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lbann__proto__common_8cpp.html#aaac7a1330b8214080e589950fac79b3e">init_data_readers</a> (bool master, const lbann_data::LbannPB &amp;p, std::map&lt; <a class="el" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a>, <a class="el" href="classlbann_1_1DataReader.html">DataReader</a> * &gt; &amp;data_readers, int &amp;mb_size)</td></tr>
 <tr class="memdesc:aaac7a1330b8214080e589950fac79b3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns mini_batch_size  <a href="#aaac7a1330b8214080e589950fac79b3e">More...</a><br/></td></tr>
 <tr class="separator:aaac7a1330b8214080e589950fac79b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -375,7 +376,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="aa0a747b9489931e76c0176945b0c4ffd"></a>
+<a class="anchor" id="a65210505c1def636a8c1d230388d2660"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -388,7 +389,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Optimizer_factory *&#160;</td>
+          <td class="paramtype"><a class="el" href="classlbann_1_1optimizer__factory.html">optimizer_factory</a> *&#160;</td>
           <td class="paramname"><em>optimizer_fac</em>, </td>
         </tr>
         <tr>
@@ -404,6 +405,8 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>returns a sequential model that is on of: dnn, stacked_autoencoder, greedy_layerwise_autoencoder </p>
 
 <p>Definition at line <a class="el" href="lbann__proto__common_8cpp_source.html#l00025">25</a> of file <a class="el" href="lbann__proto__common_8cpp_source.html">lbann_proto_common.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                                                                                              {</div>
@@ -501,20 +504,20 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="lbann__proto__common_8cpp_aa0a747b9489931e76c0176945b0c4ffd_cgraph.png" border="0" usemap="#lbann__proto__common_8cpp_aa0a747b9489931e76c0176945b0c4ffd_cgraph" alt=""/></div>
-<map name="lbann__proto__common_8cpp_aa0a747b9489931e76c0176945b0c4ffd_cgraph" id="lbann__proto__common_8cpp_aa0a747b9489931e76c0176945b0c4ffd_cgraph">
+<div class="center"><img src="lbann__proto__common_8cpp_a65210505c1def636a8c1d230388d2660_cgraph.png" border="0" usemap="#lbann__proto__common_8cpp_a65210505c1def636a8c1d230388d2660_cgraph" alt=""/></div>
+<map name="lbann__proto__common_8cpp_a65210505c1def636a8c1d230388d2660_cgraph" id="lbann__proto__common_8cpp_a65210505c1def636a8c1d230388d2660_cgraph">
 <area shape="rect" id="node2" href="classlbann_1_1model.html#adbb03deb321b99e8dbdbe65d7e1a423e" title="lbann::model::add_metric" alt="" coords="165,5,333,32"/><area shape="rect" id="node3" href="classlbann_1_1model.html#a2707333b9bef9650334b25caf4d099f2" title="lbann::model::set_checkpoint_dir" alt="" coords="143,56,356,83"/><area shape="rect" id="node4" href="classlbann_1_1model.html#a930c92a3085d1f09e24ad114345b2e34" title="lbann::model::set_checkpoint\l_epochs" alt="" coords="153,107,345,149"/><area shape="rect" id="node5" href="classlbann_1_1model.html#a05502fc0d1ca9d9b164118b9a6f04163" title="lbann::model::set_checkpoint\l_steps" alt="" coords="153,173,345,214"/><area shape="rect" id="node6" href="classlbann_1_1model.html#a4332ad949eb1733fcb2a0a6e6c9f56e9" title="lbann::model::set_checkpoint_secs" alt="" coords="136,239,363,265"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ad3bf439c18108f3831e51009cc6a8c99"></a>
+<a class="anchor" id="a1157a7f2b93a65f5e55e075cacbed91d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Optimizer_factory* init_optimizer_factory </td>
+          <td class="memname"><a class="el" href="classlbann_1_1optimizer__factory.html">optimizer_factory</a>* init_optimizer_factory </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *&#160;</td>
           <td class="paramname"><em>comm</em>, </td>
@@ -549,37 +552,42 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="comment">//note: learn_rate, momentum, decay are DataType in LBANN, which is</span></div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="comment">//      probably float. They&#39;ll be properly cast in the following</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  Optimizer_factory *factory;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <a class="code" href="classlbann_1_1optimizer__factory.html">optimizer_factory</a> *factory;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;adagrad&quot;</span>) {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    factory = <span class="keyword">new</span> Adagrad_factory(comm, learn_rate);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    factory = <span class="keyword">new</span> <a class="code" href="classlbann_1_1adagrad__factory.html">adagrad_factory</a>(comm, learn_rate);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;rmsprop&quot;</span>) {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    factory = <span class="keyword">new</span> RMSprop_factory(comm, learn_rate);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    factory = <span class="keyword">new</span> <a class="code" href="classlbann_1_1rmsprop__factory.html">rmsprop_factory</a>(comm, learn_rate);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;adam&quot;</span>) {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    factory = <span class="keyword">new</span> Adam_factory(comm, learn_rate);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    factory = <span class="keyword">new</span> <a class="code" href="classlbann_1_1adam__factory.html">adam_factory</a>(comm, learn_rate);</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;sgd&quot;</span>) {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    factory = <span class="keyword">new</span> SGD_factory(comm, learn_rate, momentum, decay_rate, nesterov);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    factory = <span class="keyword">new</span> <a class="code" href="classlbann_1_1sgd__factory.html">sgd_factory</a>(comm, learn_rate, momentum, decay_rate, nesterov);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    stringstream err;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; :: unknown name for Optimizer; should be one of: adagrad, rmsprop, adam, sgd\n&quot;</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; :: unknown name for optimizer; should be one of: adagrad, rmsprop, adam, sgd\n&quot;</span></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;instead we found: &quot;</span> &lt;&lt; name;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  }</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordflow">return</span> factory;</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1sgd__factory_html"><div class="ttname"><a href="classlbann_1_1sgd__factory.html">lbann::sgd_factory</a></div><div class="ttdoc">Factory for stochastic gradient descent optimizer. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__sgd_8hpp_source.html#l00079">lbann_optimizer_sgd.hpp:79</a></div></div>
+<div class="ttc" id="classlbann_1_1adagrad__factory_html"><div class="ttname"><a href="classlbann_1_1adagrad__factory.html">lbann::adagrad_factory</a></div><div class="ttdoc">Factory for AdaGrad optimizer. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__adagrad_8hpp_source.html#l00060">lbann_optimizer_adagrad.hpp:60</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_aa5c16a70390f56c1279ff22df7511802"><div class="ttname"><a href="classlbann_1_1model.html#aa5c16a70390f56c1279ff22df7511802">lbann::model::model</a></div><div class="ttdeci">model(lbann_comm *comm, objective_functions::objective_fn *obj_fn, optimizer_factory *optimizer_fac)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8cpp_source.html#l00040">lbann_model.cpp:40</a></div></div>
 <div class="ttc" id="classlbann_1_1optimizer_html"><div class="ttname"><a href="classlbann_1_1optimizer.html">lbann::optimizer</a></div><div class="ttdoc">Optimizer base class. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00040">lbann_optimizer.hpp:40</a></div></div>
 <div class="ttc" id="classlbann_1_1optimizer_html_a42150ad8b3dc9cfdedf2ca63d26aa20a"><div class="ttname"><a href="classlbann_1_1optimizer.html#a42150ad8b3dc9cfdedf2ca63d26aa20a">lbann::optimizer::optimizer</a></div><div class="ttdeci">optimizer(lbann_comm *comm, const std::string name, DataType learning_rate=DataType(0))</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8cpp_source.html#l00035">lbann_optimizer.cpp:35</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__exception_8hpp_source.html#l00041">lbann_exception.hpp:41</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html"><div class="ttname"><a href="classlbann_1_1model.html">lbann::model</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00055">lbann_model.hpp:55</a></div></div>
+<div class="ttc" id="classlbann_1_1rmsprop__factory_html"><div class="ttname"><a href="classlbann_1_1rmsprop__factory.html">lbann::rmsprop_factory</a></div><div class="ttdoc">Factory for RMSprop optimizer. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__rmsprop_8hpp_source.html#l00064">lbann_optimizer_rmsprop.hpp:64</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer__factory_html"><div class="ttname"><a href="classlbann_1_1optimizer__factory.html">lbann::optimizer_factory</a></div><div class="ttdoc">Optimizer factory base class. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00108">lbann_optimizer.hpp:108</a></div></div>
+<div class="ttc" id="classlbann_1_1adam__factory_html"><div class="ttname"><a href="classlbann_1_1adam__factory.html">lbann::adam_factory</a></div><div class="ttdoc">Factory for Adam optimizer. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__adam_8hpp_source.html#l00074">lbann_optimizer_adam.hpp:74</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="lbann__proto__common_8cpp_ad3bf439c18108f3831e51009cc6a8c99_cgraph.png" border="0" usemap="#lbann__proto__common_8cpp_ad3bf439c18108f3831e51009cc6a8c99_cgraph" alt=""/></div>
-<map name="lbann__proto__common_8cpp_ad3bf439c18108f3831e51009cc6a8c99_cgraph" id="lbann__proto__common_8cpp_ad3bf439c18108f3831e51009cc6a8c99_cgraph">
+<div class="center"><img src="lbann__proto__common_8cpp_a1157a7f2b93a65f5e55e075cacbed91d_cgraph.png" border="0" usemap="#lbann__proto__common_8cpp_a1157a7f2b93a65f5e55e075cacbed91d_cgraph" alt=""/></div>
+<map name="lbann__proto__common_8cpp_a1157a7f2b93a65f5e55e075cacbed91d_cgraph" id="lbann__proto__common_8cpp_a1157a7f2b93a65f5e55e075cacbed91d_cgraph">
 <area shape="rect" id="node2" href="classlbann_1_1model.html#aa5c16a70390f56c1279ff22df7511802" title="lbann::model::model" alt="" coords="219,5,357,32"/><area shape="rect" id="node3" href="classlbann_1_1optimizer.html#a42150ad8b3dc9cfdedf2ca63d26aa20a" title="Constructor. " alt="" coords="201,56,375,83"/></map>
 </div>
 </p>
@@ -678,7 +686,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_a6f8d8b19bd1411ec381c5cd89d82b32.html">proto</a></li><li class="navelem"><a class="el" href="lbann__proto__common_8cpp.html">lbann_proto_common.cpp</a></li>
-    <li class="footer">Generated on Mon May 1 2017 18:03:25 for LBANN by
+    <li class="footer">Generated on Mon May 1 2017 18:49:34 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
