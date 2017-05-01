@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"functions_func_h.html":[3,3,1,7],
 "functions_func_i.html":[3,3,1,8],
 "functions_func_l.html":[3,3,1,9],
 "functions_func_m.html":[3,3,1,10],
@@ -30,8 +31,8 @@ var NAVTREEINDEX7 =
 "functions_type.html":[3,3,3],
 "functions_u.html":[3,3,0,19],
 "functions_v.html":[3,3,0,20],
-"functions_vars.html":[3,3,2,0],
 "functions_vars.html":[3,3,2],
+"functions_vars.html":[3,3,2,0],
 "functions_vars_b.html":[3,3,2,1],
 "functions_vars_c.html":[3,3,2,2],
 "functions_vars_d.html":[3,3,2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "lbann__data__reader__cifar10_8hpp.html":[4,0,0,0,0,0,0,0,0,1,2],
 "lbann__data__reader__cifar10_8hpp_source.html":[4,0,0,0,0,0,0,0,0,1,2],
 "lbann__data__reader__cnpy_8cpp.html":[4,0,0,0,0,0,0,1,1,3],
-"lbann__data__reader__cnpy_8cpp_source.html":[4,0,0,0,0,0,0,1,1,3],
-"lbann__data__reader__cnpy_8hpp.html":[4,0,0,0,0,0,0,0,0,1,3]
+"lbann__data__reader__cnpy_8cpp_source.html":[4,0,0,0,0,0,0,1,1,3]
 };

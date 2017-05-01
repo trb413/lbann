@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"classlbann_1_1stacked__autoencoder.html#ad6ea6c81d2ab32faddee9ba3077c8a8a":[3,0,3,68,11],
 "classlbann_1_1stacked__autoencoder.html#ad906765d9274270167f57e00337ac6b7":[3,0,3,68,6],
 "classlbann_1_1stacked__autoencoder.html#ae7f076bb2aa7d9cf3e80993734c86e25":[3,0,3,68,4],
 "classlbann_1_1tanh__layer.html":[3,0,3,40],
@@ -231,8 +232,8 @@ var NAVTREEINDEX6 =
 "elemental.html#elemental_install":[0,3,6,1],
 "elemental.html#elemental_issues":[0,3,6,2],
 "files.html":[4,0],
-"functions.html":[3,3,0],
 "functions.html":[3,3,0,0],
+"functions.html":[3,3,0],
 "functions_a.html":[3,3,0,1],
 "functions_b.html":[3,3,0,2],
 "functions_c.html":[3,3,0,3],
@@ -241,13 +242,12 @@ var NAVTREEINDEX6 =
 "functions_enum.html":[3,3,4],
 "functions_eval.html":[3,3,5],
 "functions_f.html":[3,3,0,6],
-"functions_func.html":[3,3,1,0],
 "functions_func.html":[3,3,1],
+"functions_func.html":[3,3,1,0],
 "functions_func_b.html":[3,3,1,1],
 "functions_func_c.html":[3,3,1,2],
 "functions_func_d.html":[3,3,1,3],
 "functions_func_e.html":[3,3,1,4],
 "functions_func_f.html":[3,3,1,5],
-"functions_func_g.html":[3,3,1,6],
-"functions_func_h.html":[3,3,1,7]
+"functions_func_g.html":[3,3,1,6]
 };

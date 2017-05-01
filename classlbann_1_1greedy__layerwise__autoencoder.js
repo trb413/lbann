@@ -9,6 +9,7 @@ var classlbann_1_1greedy__layerwise__autoencoder =
     [ "load_from_checkpoint_shared", "classlbann_1_1greedy__layerwise__autoencoder.html#a05dce313fe4e587c6ca9088f78c6b84f", null ],
     [ "name", "classlbann_1_1greedy__layerwise__autoencoder.html#a3f03c96c2a9d47e0eeb6897aa39956ce", null ],
     [ "remove_mirror", "classlbann_1_1greedy__layerwise__autoencoder.html#a90afd0c31448bb8f9f6e1e9f39f416a3", null ],
+    [ "reset_phase", "classlbann_1_1greedy__layerwise__autoencoder.html#ad25bea9fcdcf77b7749b356d4a67bd25", null ],
     [ "save_to_checkpoint_shared", "classlbann_1_1greedy__layerwise__autoencoder.html#ae0ec210d3ecf58caa0d8d80e6768ba1b", null ],
     [ "summarize", "classlbann_1_1greedy__layerwise__autoencoder.html#a90cb5fd376e06a0cd37b3e0710824c15", null ],
     [ "train", "classlbann_1_1greedy__layerwise__autoencoder.html#aa600aaacda4275602021b612e1a36e9f", null ],

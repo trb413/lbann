@@ -39,6 +39,7 @@ var searchData=
   ['reset_5fcounters',['reset_counters',['../classlbann_1_1Layer.html#a0a0f8e32e2b17953f87652f855ccfbf9',1,'lbann::Layer']]],
   ['reset_5fmetric',['reset_metric',['../classlbann_1_1metrics_1_1metric.html#a5cc1d6d2f40977a2b19c77961564a37d',1,'lbann::metrics::metric']]],
   ['reset_5fobj_5ffn',['reset_obj_fn',['../classlbann_1_1objective__functions_1_1objective__fn.html#aa4a532228e0d8cd65d5bc672c6797cf4',1,'lbann::objective_functions::objective_fn']]],
+  ['reset_5fphase',['reset_phase',['../classlbann_1_1greedy__layerwise__autoencoder.html#ad25bea9fcdcf77b7749b356d4a67bd25',1,'lbann::greedy_layerwise_autoencoder']]],
   ['reset_5fstats',['reset_stats',['../classlbann_1_1metrics_1_1statistics.html#acc7848c0873042bcb797a850afd3d96a',1,'lbann::metrics::statistics::reset_stats()'],['../classlbann_1_1objective__functions_1_1statistics.html#a58c4b04be5a52957cd08d5fe0b4e7d4e',1,'lbann::objective_functions::statistics::reset_stats()']]],
   ['reset_5fstats_5fcounters',['reset_stats_counters',['../classlbann_1_1lbann__comm.html#adb9afab1b8af03276e6e6347f8021ef5',1,'lbann::lbann_comm']]],
   ['reset_5ftime_5fcounters',['reset_time_counters',['../classlbann_1_1lbann__quantizer.html#abdba3762c51a2820f70adba32169f57b',1,'lbann::lbann_quantizer']]],
