@@ -1,7 +1,7 @@
 var classlbann_1_1metrics_1_1metric =
 [
     [ "metric", "classlbann_1_1metrics_1_1metric.html#a88766bc9201d38a3240d89dcb91fcab5", null ],
-    [ "~metric", "classlbann_1_1metrics_1_1metric.html#af8dda0ac0fe667b4a5f770e3b6ddc6f8", null ],
+    [ "~metric", "classlbann_1_1metrics_1_1metric.html#a90f80d226b74ee2489559c1e3e49dbb3", null ],
     [ "compute_metric", "classlbann_1_1metrics_1_1metric.html#affe1a598c434133ea19509beb20383bc", null ],
     [ "fp_set_std_matrix_view", "classlbann_1_1metrics_1_1metric.html#a073c6c2c2861c1bd53d2a0d32e3251fe", null ],
     [ "get_statistics", "classlbann_1_1metrics_1_1metric.html#ac061126c26394ba06314e0924c214299", null ],

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">85a1a55-ci227733184</span>
+   &#160;<span id="projectnumber">71cdcbe-ci227799112</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -135,9 +135,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a88766bc9201d38a3240d89dcb91fcab5 inherit pub_methods_classlbann_1_1metrics_1_1metric"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1metric.html#a88766bc9201d38a3240d89dcb91fcab5">metric</a> (<a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">comm</a>)</td></tr>
 <tr class="memdesc:a88766bc9201d38a3240d89dcb91fcab5 inherit pub_methods_classlbann_1_1metrics_1_1metric"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a88766bc9201d38a3240d89dcb91fcab5">More...</a><br/></td></tr>
 <tr class="separator:a88766bc9201d38a3240d89dcb91fcab5 inherit pub_methods_classlbann_1_1metrics_1_1metric"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8dda0ac0fe667b4a5f770e3b6ddc6f8 inherit pub_methods_classlbann_1_1metrics_1_1metric"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1metric.html#af8dda0ac0fe667b4a5f770e3b6ddc6f8">~metric</a> ()</td></tr>
-<tr class="memdesc:af8dda0ac0fe667b4a5f770e3b6ddc6f8 inherit pub_methods_classlbann_1_1metrics_1_1metric"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#af8dda0ac0fe667b4a5f770e3b6ddc6f8">More...</a><br/></td></tr>
-<tr class="separator:af8dda0ac0fe667b4a5f770e3b6ddc6f8 inherit pub_methods_classlbann_1_1metrics_1_1metric"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90f80d226b74ee2489559c1e3e49dbb3 inherit pub_methods_classlbann_1_1metrics_1_1metric"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1metric.html#a90f80d226b74ee2489559c1e3e49dbb3">~metric</a> ()</td></tr>
+<tr class="memdesc:a90f80d226b74ee2489559c1e3e49dbb3 inherit pub_methods_classlbann_1_1metrics_1_1metric"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a90f80d226b74ee2489559c1e3e49dbb3">More...</a><br/></td></tr>
+<tr class="separator:a90f80d226b74ee2489559c1e3e49dbb3 inherit pub_methods_classlbann_1_1metrics_1_1metric"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac061126c26394ba06314e0924c214299 inherit pub_methods_classlbann_1_1metrics_1_1metric"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1metrics_1_1statistics.html">statistics</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1metric.html#ac061126c26394ba06314e0924c214299">get_statistics</a> (<a class="el" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a> mode)</td></tr>
 <tr class="separator:ac061126c26394ba06314e0924c214299 inherit pub_methods_classlbann_1_1metrics_1_1metric"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0962c210248b591fafb5aa158f2287f6 inherit pub_methods_classlbann_1_1metrics_1_1metric"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1metric.html#a0962c210248b591fafb5aa158f2287f6">record_error</a> (double error, long num_samples)</td></tr>
@@ -217,10 +217,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lbann__metric__mean__squared__error_8cpp_source.html#l00040">40</a> of file <a class="el" href="lbann__metric__mean__squared__error_8cpp_source.html">lbann_metric_mean_squared_error.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                                    {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="classlbann_1_1metrics_1_1mean__squared__error.html#a281a1f5f15d6acd1973beaf17fb129f1">internal_obj_fn</a>.<a class="code" href="classlbann_1_1objective__functions_1_1mean__squared__error.html#a01008f4a9fb66335fc6773b5410bc879">~mean_squared_error</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="comment">//internal_obj_fn.~mean_squared_error();</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1mean__squared__error_html_a01008f4a9fb66335fc6773b5410bc879"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1mean__squared__error.html#a01008f4a9fb66335fc6773b5410bc879">lbann::objective_functions::mean_squared_error::~mean_squared_error</a></div><div class="ttdeci">~mean_squared_error()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn__mean__squared__error_8cpp_source.html#l00042">lbann_objective_fn_mean_squared_error.cpp:42</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1mean__squared__error_html_a281a1f5f15d6acd1973beaf17fb129f1"><div class="ttname"><a href="classlbann_1_1metrics_1_1mean__squared__error.html#a281a1f5f15d6acd1973beaf17fb129f1">lbann::metrics::mean_squared_error::internal_obj_fn</a></div><div class="ttdeci">lbann::objective_functions::mean_squared_error internal_obj_fn</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__mean__squared__error_8hpp_source.html#l00055">lbann_metric_mean_squared_error.hpp:55</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -471,7 +469,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="namespacelbann_1_1metrics.html">metrics</a></li><li class="navelem"><a class="el" href="classlbann_1_1metrics_1_1mean__squared__error.html">mean_squared_error</a></li>
-    <li class="footer">Generated on Mon May 1 2017 21:47:07 for LBANN by
+    <li class="footer">Generated on Tue May 2 2017 02:39:58 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
