@@ -5,8 +5,8 @@ var searchData=
   ['elemental',['Elemental',['../elemental.html',1,'getting_started']]],
   ['elmat',['ElMat',['../lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8',1,'lbann_base.hpp']]],
   ['elu',['elu',['../classlbann_1_1ELU__layer.html#a3c5880239def490442dfbd54e2fbd85a',1,'lbann::ELU_layer::elu()'],['../namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a5b44c930bf0ddeef48b50ef11e5ddd58',1,'lbann::ELU()']]],
-  ['elu_5flayer',['ELU_layer',['../classlbann_1_1ELU__layer.html#a51e7fc2ae3d934de55e3cb7172bc306d',1,'lbann::ELU_layer']]],
   ['elu_5flayer',['ELU_layer',['../classlbann_1_1ELU__layer.html',1,'lbann']]],
+  ['elu_5flayer',['ELU_layer',['../classlbann_1_1ELU__layer.html#a51e7fc2ae3d934de55e3cb7172bc306d',1,'lbann::ELU_layer']]],
   ['eluprime',['eluPrime',['../classlbann_1_1ELU__layer.html#acf37e81250ae7ae58dab3ececdf251ff',1,'lbann::ELU_layer']]],
   ['enableprofiling',['EnableProfiling',['../classlbann_1_1TrainingParams.html#a45628c16fa42fb47276e1ebc34759bfa',1,'lbann::TrainingParams']]],
   ['epoch',['epoch',['../structlbann__checkpoint.html#a6819c0b7456d58941f541d755c3f578a',1,'lbann_checkpoint']]],
@@ -19,5 +19,6 @@ var searchData=
   ['evaluate_5fmini_5fbatch',['evaluate_mini_batch',['../classlbann_1_1deep__neural__network.html#acf9712a3864611c4a26fdc34c8c71f7f',1,'lbann::deep_neural_network::evaluate_mini_batch()'],['../classlbann_1_1greedy__layerwise__autoencoder.html#a74f80fe1f5473ea853bf55dfebd12416',1,'lbann::greedy_layerwise_autoencoder::evaluate_mini_batch()'],['../classlbann_1_1sequential__model.html#a7b021498067b8bfe52d390996395bff6',1,'lbann::sequential_model::evaluate_mini_batch()'],['../classlbann_1_1stacked__autoencoder.html#ae7f076bb2aa7d9cf3e80993734c86e25',1,'lbann::stacked_autoencoder::evaluate_mini_batch()']]],
   ['evaluate_5fphase',['evaluate_phase',['../classlbann_1_1greedy__layerwise__autoencoder.html#a67182a4d151a780452c14ff487e52089',1,'lbann::greedy_layerwise_autoencoder']]],
   ['execution_5fmode',['execution_mode',['../structlbann__model__header.html#aa3921e546a7235875456e55b74c430f7',1,'lbann_model_header::execution_mode()'],['../lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8',1,'execution_mode():&#160;lbann_base.hpp']]],
-  ['exists',['exists',['../namespacelbann.html#aefae2a9fc9d742ece0fa8ca7ed9ee137',1,'lbann']]]
+  ['exists',['exists',['../namespacelbann.html#aefae2a9fc9d742ece0fa8ca7ed9ee137',1,'lbann']]],
+  ['export_5fimage',['export_image',['../classlbann_1_1image__utils.html#a828cca00fe12e05616b085bccde60255',1,'lbann::image_utils']]]
 ];

@@ -47,14 +47,14 @@ var NAVTREEINDEX =
 "annotated.html",
 "classlbann_1_1Layer.html#ad20dd05617ed950162e0fdb95bc23096",
 "classlbann_1_1data__reader__synthetic.html#aea1e928af14befe1b56f85512dcc32c0",
-"classlbann_1_1lbann__callback__imcomm.html#aa617c54b0bba0aaba9a916c0cda2cfba",
-"classlbann_1_1lbann__quantizer.html#a6bd266728f578df0c86fc2e493742cc1",
-"classlbann_1_1objective__functions_1_1objective__fn.html#a5692b2dbe1b5f95d9a51b9805f8eea08",
-"classlbann_1_1stacked__autoencoder.html#ad6ea6c81d2ab32faddee9ba3077c8a8a",
-"functions_func_h.html",
-"lbann__data__reader__cnpy_8hpp.html",
-"lbann__optimizer__sgd_8cpp_source.html",
-"struct__BOX3__UCHAR.html#ad01b5973ff99809d0adb382235e5b671"
+"classlbann_1_1lbann__callback__imcomm.html#a8a6db1ae85f466653f6d3b3bdef9f0e6",
+"classlbann_1_1lbann__quantizer.html#a6336263dbcf910503df46e1ae36c7a9b",
+"classlbann_1_1objective__functions_1_1objective__fn.html#a49cea5efb7d5cb9a5e2bb3bcacfab62f",
+"classlbann_1_1stacked__autoencoder.html#abb5828c330bbb69c34e64ecae45d33ec",
+"functions_func_f.html",
+"lbann__data__reader__cnpy_8cpp.html",
+"lbann__optimizer__rmsprop_8hpp.html",
+"struct__BOX3__UCHAR.html#aaa3ef23ef9e994288b07be14835e65bc"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
