@@ -43,5 +43,6 @@ var searchData=
   ['is_5fgood',['is_good',['../classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e',1,'lbann::lbann_callback_checknan']]],
   ['is_5flast_5flayer',['is_last_layer',['../classlbann_1_1lbann__callback__learning__rate.html#ae7a704c0b5d1d09c35981cfe96dd64e2',1,'lbann::lbann_callback_learning_rate']]],
   ['is_5fmaster',['is_master',['../classlbann_1_1DataReader.html#ad0aba57ce00d0c0d525f9defd828158e',1,'lbann::DataReader']]],
+  ['is_5fmodel_5frank_5fon_5fnode',['is_model_rank_on_node',['../classlbann_1_1lbann__comm.html#a7da0bf384fde9968ba1aef88398cc66b',1,'lbann::lbann_comm']]],
   ['is_5fsendable',['is_sendable',['../classlbann_1_1lbann__comm.html#a4ba1b9a6b4eb986a348d85c2d80ca3eb',1,'lbann::lbann_comm::is_sendable(const Mat &amp;mat)'],['../classlbann_1_1lbann__comm.html#a96bcc0bc8910272f4553cf0439a6e2f9',1,'lbann::lbann_comm::is_sendable(const ElMat &amp;dist_mat)']]]
 ];
