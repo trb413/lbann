@@ -1,5 +1,7 @@
 var NAVTREEINDEX7 =
 {
+"functions_func_b.html":[3,3,1,1],
+"functions_func_c.html":[3,3,1,2],
 "functions_func_d.html":[3,3,1,3],
 "functions_func_e.html":[3,3,1,4],
 "functions_func_f.html":[3,3,1,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "lbann__data__reader_8cpp_source.html":[4,0,0,0,0,0,0,1,1,1],
 "lbann__data__reader_8hpp.html":[4,0,0,0,0,0,0,0,0,1,1],
 "lbann__data__reader_8hpp.html#a10d485225119e927ae18857acf81bdc6":[4,0,0,0,0,0,0,0,0,1,1,1],
-"lbann__data__reader_8hpp_source.html":[4,0,0,0,0,0,0,0,0,1,1],
-"lbann__data__reader__cifar10_8cpp.html":[4,0,0,0,0,0,0,1,1,2],
-"lbann__data__reader__cifar10_8cpp_source.html":[4,0,0,0,0,0,0,1,1,2]
+"lbann__data__reader_8hpp_source.html":[4,0,0,0,0,0,0,0,0,1,1]
 };

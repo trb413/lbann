@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"lbann__data__reader__cifar10_8cpp.html":[4,0,0,0,0,0,0,1,1,2],
+"lbann__data__reader__cifar10_8cpp_source.html":[4,0,0,0,0,0,0,1,1,2],
 "lbann__data__reader__cifar10_8hpp.html":[4,0,0,0,0,0,0,0,0,1,2],
 "lbann__data__reader__cifar10_8hpp_source.html":[4,0,0,0,0,0,0,0,0,1,2],
 "lbann__data__reader__cnpy_8cpp.html":[4,0,0,0,0,0,0,1,1,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "lbann__optimizer__adagrad_8hpp.html":[4,0,0,0,0,0,0,0,0,7,1],
 "lbann__optimizer__adagrad_8hpp_source.html":[4,0,0,0,0,0,0,0,0,7,1],
 "lbann__optimizer__adam_8cpp.html":[4,0,0,0,0,0,0,1,7,2],
-"lbann__optimizer__adam_8cpp_source.html":[4,0,0,0,0,0,0,1,7,2],
-"lbann__optimizer__adam_8hpp.html":[4,0,0,0,0,0,0,0,0,7,2],
-"lbann__optimizer__adam_8hpp_source.html":[4,0,0,0,0,0,0,0,0,7,2]
+"lbann__optimizer__adam_8cpp_source.html":[4,0,0,0,0,0,0,1,7,2]
 };

@@ -1,5 +1,7 @@
 var NAVTREEINDEX9 =
 {
+"lbann__optimizer__adam_8hpp.html":[4,0,0,0,0,0,0,0,0,7,2],
+"lbann__optimizer__adam_8hpp_source.html":[4,0,0,0,0,0,0,0,0,7,2],
 "lbann__optimizer__rmsprop_8cpp.html":[4,0,0,0,0,0,0,1,7,3],
 "lbann__optimizer__rmsprop_8cpp_source.html":[4,0,0,0,0,0,0,1,7,3],
 "lbann__optimizer__rmsprop_8hpp.html":[4,0,0,0,0,0,0,0,0,7,3],
@@ -140,8 +142,8 @@ var NAVTREEINDEX9 =
 "namespacelbann_1_1metrics.html":[3,0,3,0],
 "namespacelbann_1_1objective__functions.html":[2,0,3,1],
 "namespacelbann_1_1objective__functions.html":[3,0,3,1],
-"namespacelbann_1_1patchworks.html":[2,0,3,2],
 "namespacelbann_1_1patchworks.html":[3,0,3,2],
+"namespacelbann_1_1patchworks.html":[2,0,3,2],
 "namespacemembers.html":[2,1,0],
 "namespacemembers_enum.html":[2,1,4],
 "namespacemembers_eval.html":[2,1,5],
@@ -247,7 +249,5 @@ var NAVTREEINDEX9 =
 "struct__BOX3__SHORT.html#a1a1654ca09e5e0ca7143e302b64a865c":[3,0,19,5],
 "struct__BOX3__SHORT.html#a2e8ff44bf22dc7ede9057b38b26181bc":[3,0,19,1],
 "struct__BOX3__SHORT.html#a492dd8de59787a0e29dc0aefcccada1b":[3,0,19,0],
-"struct__BOX3__SHORT.html#ab3289c53028f75cd25aba6ec84b493de":[3,0,19,4],
-"struct__BOX3__SHORT.html#abfcafcbf16e1f9ca4ed1ed0e3e961ca6":[3,0,19,3],
-"struct__BOX3__UCHAR.html":[3,0,20]
+"struct__BOX3__SHORT.html#ab3289c53028f75cd25aba6ec84b493de":[3,0,19,4]
 };
