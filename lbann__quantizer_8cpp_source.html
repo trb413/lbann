@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">0f127da-ci229319287</span>
+   &#160;<span id="projectnumber">5f0dad8-ci229457743</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -158,8 +158,8 @@ $(document).ready(function(){initNavTree('lbann__quantizer_8cpp_source.html','')
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    [&amp;rs_recv] (<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>*, <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; accum) {</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      accum += rs_recv;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    };</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  intermodel_ring_reduce_scatter&lt;DataType&gt;(<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, mat, <span class="keyword">false</span>, rs_send_trans,</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                           rs_get_recv_buf, rs_recv_trans);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  intermodel_pairwise_exchange_reduce_scatter&lt;DataType&gt;(</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, mat, <span class="keyword">false</span>, rs_send_trans, rs_get_recv_buf, rs_recv_trans);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> ag_send;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> ag_recv;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">auto</span> ag_reduced_trans =</div>
@@ -388,8 +388,8 @@ $(document).ready(function(){initNavTree('lbann__quantizer_8cpp_source.html','')
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    [&amp;rs_recv, <span class="keyword">this</span>] (<a class="code" href="classlbann_1_1lbann__quantizer.html#ab93df328abd13df0403d7483c8edfa89">qtype</a>*, <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; accum) {</div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      <a class="code" href="classlbann_1_1lbann__quantizer.html#aa1e0ef48887b28d16e22efcd215b4d8a">unquantize_add</a>(rs_recv, accum);</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    };</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  intermodel_ring_reduce_scatter&lt;qtype&gt;(<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, mat, <span class="keyword">false</span>, rs_send_trans,</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                                        rs_get_recv_buf, rs_recv_trans);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;  intermodel_pairwise_exchange_reduce_scatter&lt;qtype&gt;(</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, mat, <span class="keyword">false</span>, rs_send_trans, rs_get_recv_buf, rs_recv_trans);</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  <a class="code" href="classlbann_1_1lbann__quantizer.html#a2f0b1c91b994c91dfa506869e3329db6">QuantizedMatrix</a> ag_send;</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;  <a class="code" href="classlbann_1_1lbann__quantizer.html#a2f0b1c91b994c91dfa506869e3329db6">QuantizedMatrix</a> ag_recv;</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  std::function&lt;DataType(const DataType&amp;)&gt; <a class="code" href="lbann__layer__fully__connected_8cpp.html#a199b2df97e18b083eb9ee655fec2dfc7">_sq</a> = [](<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp; x) { <span class="keywordflow">return</span> x*x; };</div>
@@ -660,8 +660,8 @@ $(document).ready(function(){initNavTree('lbann__quantizer_8cpp_source.html','')
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;      <a class="code" href="classlbann_1_1lbann__quantizer.html#a6336263dbcf910503df46e1ae36c7a9b">threshold_unquantize_apply</a>(rs_recv, accum, pos_thresh,</div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;                                 neg_thresh, positions, compress);</div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    };</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;  intermodel_ring_reduce_scatter&lt;uqtype&gt;(<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, mat, <span class="keyword">true</span>, rs_send_trans,</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;                                         rs_get_recv_buf, rs_recv_trans);</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;  intermodel_pairwise_exchange_reduce_scatter&lt;uqtype&gt;(</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, mat, <span class="keyword">true</span>, rs_send_trans, rs_get_recv_buf, rs_recv_trans);</div>
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;  <a class="code" href="classlbann_1_1lbann__quantizer.html#a84c968d0f772235faa39f6ad91e7eadb">ThreshQuantized</a> ag_send;</div>
 <div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;  <a class="code" href="classlbann_1_1lbann__quantizer.html#a84c968d0f772235faa39f6ad91e7eadb">ThreshQuantized</a> ag_recv;</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;  <span class="keyword">auto</span> ag_reduced_trans =</div>
@@ -1098,7 +1098,7 @@ $(document).ready(function(){initNavTree('lbann__quantizer_8cpp_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_e3a975d7a6e3e1ec3d3053fd7df1ad72.html">utils</a></li><li class="navelem"><a class="el" href="lbann__quantizer_8cpp.html">lbann_quantizer.cpp</a></li>
-    <li class="footer">Generated on Fri May 5 2017 23:27:32 for LBANN by
+    <li class="footer">Generated on Sat May 6 2017 15:01:05 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -83,6 +83,8 @@ var classlbann_1_1lbann__comm =
     [ "send", "classlbann_1_1lbann__comm.html#a79f36c9c66f8134d319df614ec599230", null ],
     [ "send", "classlbann_1_1lbann__comm.html#aa91c0587ae25a9824e6323002f59c040", null ],
     [ "send", "classlbann_1_1lbann__comm.html#a1f8cff639b94813cb79963e2ce3d49da", null ],
+    [ "sendrecv", "classlbann_1_1lbann__comm.html#a178261e3ecb101cf9add514845235eb3", null ],
+    [ "sendrecv", "classlbann_1_1lbann__comm.html#af2f85e0c03f0f4f48a0ae466882bc4f3", null ],
     [ "setup_node_comm", "classlbann_1_1lbann__comm.html#a44bc6b8683f04c2a3fc2f01fc734a946", null ],
     [ "wait", "classlbann_1_1lbann__comm.html#a44faf6c010f45067e2951350e9e52d37", null ],
     [ "bytes_received", "classlbann_1_1lbann__comm.html#afb99f57f7eafc0695bf28e6c26a8120f", null ],

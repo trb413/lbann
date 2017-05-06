@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">0f127da-ci229319287</span>
+   &#160;<span id="projectnumber">5f0dad8-ci229457743</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -377,7 +377,7 @@ $(document).ready(function(){initNavTree('lbann__quantizer_8hpp_source.html','')
 <div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  }</div>
 <div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;</div>
 <div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;  <span class="keywordtype">void</span> intermodel_ring_reduce_scatter(</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;  <span class="keywordtype">void</span> intermodel_pairwise_exchange_reduce_scatter(</div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; mat, <span class="keywordtype">bool</span> var_recv,</div>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    std::function&lt;T*(<a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp;, IR, IR, <span class="keywordtype">int</span>&amp;)&gt; send_trans,</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;    std::function&lt;T*(<a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp;, <span class="keywordtype">int</span>&amp;)&gt; get_recv_buf,</div>
@@ -391,13 +391,21 @@ $(document).ready(function(){initNavTree('lbann__quantizer_8hpp_source.html','')
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    std::function&lt;T*(<a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp;, <span class="keywordtype">int</span>&amp;)&gt; get_recv_buf,</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    std::function&lt;<span class="keywordtype">void</span>(T*, <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp;)&gt; recv_trans,</div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    std::function&lt;<span class="keywordtype">void</span>(T*, T*)&gt; swap_bufs);</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;};</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;}  <span class="comment">// namespace lbann</span></div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lbann__quantizer__impl_8hpp.html">lbann_quantizer_impl.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;<span class="preprocessor">#endif  // LBANN_QUANTIZER_HPP_INCLUDED</span></div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;  <span class="keywordtype">void</span> intermodel_recursive_doubling_allreduce(</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* comm, <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; mat,</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    std::function&lt;T*(<a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp;, <span class="keywordtype">int</span>&amp;)&gt; send_trans,</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    std::function&lt;T*(<a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp;, <span class="keywordtype">int</span>&amp;)&gt; get_recv_buf,</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    std::function&lt;<span class="keywordtype">void</span>(T*, <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp;)&gt; recv_trans,</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    std::function&lt;<span class="keywordtype">void</span>(T*, T*)&gt; swap_bufs);</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;};</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;}  <span class="comment">// namespace lbann</span></div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lbann__quantizer__impl_8hpp.html">lbann_quantizer_impl.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;<span class="preprocessor">#endif  // LBANN_QUANTIZER_HPP_INCLUDED</span></div>
 <div class="ttc" id="classlbann_1_1lbann__quantizer_html_a22b898932caed41ccf24abcb67c00ba1"><div class="ttname"><a href="classlbann_1_1lbann__quantizer.html#a22b898932caed41ccf24abcb67c00ba1">lbann::lbann_quantizer::get_adaptive_quantization_copy_threads</a></div><div class="ttdeci">int get_adaptive_quantization_copy_threads(El::Int width)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__quantizer_8hpp_source.html#l00488">lbann_quantizer.hpp:488</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__quantizer_html_a64b9d2a56f4f2c64482377104d26c1f0"><div class="ttname"><a href="classlbann_1_1lbann__quantizer.html#a64b9d2a56f4f2c64482377104d26c1f0">lbann::lbann_quantizer::ag_recv_wait_time</a></div><div class="ttdeci">double ag_recv_wait_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__quantizer_8hpp_source.html#l00375">lbann_quantizer.hpp:375</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__quantizer_html_aaa0c20f755437130172c40ca8e95bc3f"><div class="ttname"><a href="classlbann_1_1lbann__quantizer.html#aaa0c20f755437130172c40ca8e95bc3f">lbann::lbann_quantizer::get_adaptive_quantization_threads</a></div><div class="ttdeci">int get_adaptive_quantization_threads(El::Int width)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__quantizer_8hpp_source.html#l00465">lbann_quantizer.hpp:465</a></div></div>
@@ -475,7 +483,7 @@ $(document).ready(function(){initNavTree('lbann__quantizer_8hpp_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_eb8329679e609af11719ceffa3ff5139.html">include</a></li><li class="navelem"><a class="el" href="dir_ae19bb3c4b74b705a5918893bf9adbdd.html">lbann</a></li><li class="navelem"><a class="el" href="dir_54599f7ab652be0f2f38b8574c3c4860.html">utils</a></li><li class="navelem"><a class="el" href="lbann__quantizer_8hpp.html">lbann_quantizer.hpp</a></li>
-    <li class="footer">Generated on Fri May 5 2017 23:27:32 for LBANN by
+    <li class="footer">Generated on Sat May 6 2017 15:01:05 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
