@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">5f0dad8-ci229457743</span>
+   &#160;<span id="projectnumber">b0e0884-ci230093894</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -339,7 +339,7 @@ $(document).ready(function(){initNavTree('lbann__layer_8cpp_source.html','');});
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="comment">// Backprop activation regularization.</span></div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="keywordflow">for</span>(Int i=regularizers.size()-1; i&gt;=0; --i) {</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    regularizers[i]-&gt;fp_activations();</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    regularizers[i]-&gt;bp_activations();</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  }</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <span class="comment">// Backprop the activation function/nonlinearity.</span></div>
@@ -349,7 +349,7 @@ $(document).ready(function(){initNavTree('lbann__layer_8cpp_source.html','');});
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <span class="comment">// Backprop weight regularization.</span></div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keywordflow">for</span>(Int i=regularizers.size()-1; i&gt;=0; --i) {</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    regularizers[i]-&gt;fp_weights();</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    regularizers[i]-&gt;bp_weights();</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  }</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="comment">// Backprop the layer&#39;s linearity.</span></div>
@@ -359,7 +359,7 @@ $(document).ready(function(){initNavTree('lbann__layer_8cpp_source.html','');});
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="comment">// Backprop connection regularization.</span></div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <span class="keywordflow">for</span>(Int i=regularizers.size()-1; i&gt;=0; --i) {</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    regularizers[i]-&gt;fp_connections();</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    regularizers[i]-&gt;bp_connections();</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  }</div>
 <div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor">#ifdef __LIB_CUDNN</span></div>
@@ -749,7 +749,7 @@ $(document).ready(function(){initNavTree('lbann__layer_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_faacdbae24c4b7c4a8fbaf54f29a6b8e.html">layers</a></li><li class="navelem"><a class="el" href="lbann__layer_8cpp.html">lbann_layer.cpp</a></li>
-    <li class="footer">Generated on Sat May 6 2017 15:01:05 for LBANN by
+    <li class="footer">Generated on Mon May 8 2017 20:19:47 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
