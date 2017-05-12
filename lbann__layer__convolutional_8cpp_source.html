@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">b0e0884-ci230093894</span>
+   &#160;<span id="projectnumber">0ba0102-ci231401449</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -1577,30 +1577,32 @@ $(document).ready(function(){initNavTree('lbann__layer__convolutional_8cpp_sourc
 <div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;</div>
 <div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1Layer.html#af8b115cb89d6e8081de3f148a8ad2ef7">m_execution_mode</a> == <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>) {</div>
 <div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;    <span class="comment">// Obtain filter gradient with reduction and scaling</span></div>
-<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;<span class="preprocessor">#ifdef __LIB_CUDNN</span></div>
-<div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;<span class="preprocessor"></span>    <span class="keyword">const</span> Int num_gpus = <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_num_gpus();</div>
-<div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1Layer.html#af7881cb5eff5207c15fa835d65462e8f">m_using_gpus</a>) {</div>
-<div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;      <span class="keywordflow">for</span>(Int i=1; i&lt;num_gpus; ++i) {</div>
-<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;        *<a class="code" href="classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7">m_weights_gradient</a> += m_weights_gradient_per_gpu(ALL, IR(i));</div>
-<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;      }</div>
-<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;    }</div>
-<div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;<span class="preprocessor">#endif // #ifdef __LIB_CUDNN  </span></div>
-<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;<span class="preprocessor"></span>    *<a class="code" href="classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7">m_weights_gradient</a> *= <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1) / <a class="code" href="classlbann_1_1Layer.html#adaab698fe711b0dd0ada944059a18142">get_effective_minibatch_size</a>();</div>
-<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;    AllReduce(*<a class="code" href="classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7">m_weights_gradient</a>, <a class="code" href="classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7">m_weights_gradient</a>-&gt;RedundantComm());</div>
-<div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;  }</div>
-<div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;</div>
-<div class="line"><a name="l01520"></a><span class="lineno"> 1520</span>&#160;  <span class="comment">// Regularize gradients and update regularizers</span></div>
-<div class="line"><a name="l01521"></a><span class="lineno"> 1521</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#ae4a050e51e3a9bec431cf8b7a5660f2c">Layer::update</a>();</div>
-<div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160;</div>
-<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1Layer.html#af8b115cb89d6e8081de3f148a8ad2ef7">m_execution_mode</a> == <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>) {</div>
-<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160;    <span class="comment">// Apply optimizer</span></div>
-<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a54d5ada095360c0933ff8692e14bd253">m_optimizer</a>-&gt;<a class="code" href="classlbann_1_1optimizer.html#a15f0487c474d261086723422a8bad921">update</a>(<a class="code" href="classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7">m_weights_gradient</a>);</div>
-<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;  }</div>
-<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;</div>
-<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#abd6c1fa01659749b22de59baf8259b84">update_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - start;</div>
-<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;}</div>
-<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;</div>
+<div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; weights_gradient_local = <a class="code" href="classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7">m_weights_gradient</a>-&gt;Matrix();</div>
+<div class="line"><a name="l01509"></a><span class="lineno"> 1509</span>&#160;<span class="preprocessor">#ifdef __LIB_CUDNN</span></div>
+<div class="line"><a name="l01510"></a><span class="lineno"> 1510</span>&#160;<span class="preprocessor"></span>    <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; weights_gradient_per_gpu_local = m_weights_gradient_per_gpu.Matrix();</div>
+<div class="line"><a name="l01511"></a><span class="lineno"> 1511</span>&#160;    <span class="keyword">const</span> Int num_gpus = <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_num_gpus();</div>
+<div class="line"><a name="l01512"></a><span class="lineno"> 1512</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1Layer.html#af7881cb5eff5207c15fa835d65462e8f">m_using_gpus</a>) {</div>
+<div class="line"><a name="l01513"></a><span class="lineno"> 1513</span>&#160;      <span class="keywordflow">for</span>(Int i=1; i&lt;num_gpus; ++i) {</div>
+<div class="line"><a name="l01514"></a><span class="lineno"> 1514</span>&#160;        weights_gradient_local += weights_gradient_per_gpu_local(ALL, IR(i));</div>
+<div class="line"><a name="l01515"></a><span class="lineno"> 1515</span>&#160;      }</div>
+<div class="line"><a name="l01516"></a><span class="lineno"> 1516</span>&#160;    }</div>
+<div class="line"><a name="l01517"></a><span class="lineno"> 1517</span>&#160;<span class="preprocessor">#endif // #ifdef __LIB_CUDNN  </span></div>
+<div class="line"><a name="l01518"></a><span class="lineno"> 1518</span>&#160;<span class="preprocessor"></span>    weights_gradient_local *= <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1) / <a class="code" href="classlbann_1_1Layer.html#adaab698fe711b0dd0ada944059a18142">get_effective_minibatch_size</a>();</div>
+<div class="line"><a name="l01519"></a><span class="lineno"> 1519</span>&#160;    AllReduce(*<a class="code" href="classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7">m_weights_gradient</a>, <a class="code" href="classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7">m_weights_gradient</a>-&gt;RedundantComm());</div>
+<div class="line"><a name="l01520"></a><span class="lineno"> 1520</span>&#160;  }</div>
+<div class="line"><a name="l01521"></a><span class="lineno"> 1521</span>&#160;</div>
+<div class="line"><a name="l01522"></a><span class="lineno"> 1522</span>&#160;  <span class="comment">// Regularize gradients and update regularizers</span></div>
+<div class="line"><a name="l01523"></a><span class="lineno"> 1523</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#ae4a050e51e3a9bec431cf8b7a5660f2c">Layer::update</a>();</div>
+<div class="line"><a name="l01524"></a><span class="lineno"> 1524</span>&#160;</div>
+<div class="line"><a name="l01525"></a><span class="lineno"> 1525</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1Layer.html#af8b115cb89d6e8081de3f148a8ad2ef7">m_execution_mode</a> == <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>) {</div>
+<div class="line"><a name="l01526"></a><span class="lineno"> 1526</span>&#160;    <span class="comment">// Apply optimizer</span></div>
+<div class="line"><a name="l01527"></a><span class="lineno"> 1527</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a54d5ada095360c0933ff8692e14bd253">m_optimizer</a>-&gt;<a class="code" href="classlbann_1_1optimizer.html#a15f0487c474d261086723422a8bad921">update</a>(<a class="code" href="classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7">m_weights_gradient</a>);</div>
+<div class="line"><a name="l01528"></a><span class="lineno"> 1528</span>&#160;  }</div>
+<div class="line"><a name="l01529"></a><span class="lineno"> 1529</span>&#160;</div>
+<div class="line"><a name="l01530"></a><span class="lineno"> 1530</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#abd6c1fa01659749b22de59baf8259b84">update_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - start;</div>
+<div class="line"><a name="l01531"></a><span class="lineno"> 1531</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l01532"></a><span class="lineno"> 1532</span>&#160;}</div>
+<div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;</div>
 <div class="ttc" id="classlbann_1_1Layer_html_a07f230d516c76f22ff42addb542424af"><div class="ttname"><a href="classlbann_1_1Layer.html#a07f230d516c76f22ff42addb542424af">lbann::Layer::backProp</a></div><div class="ttdeci">virtual void backProp()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00214">lbann_layer.cpp:214</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a786677cbfb3f5677b4d84f3056eb08db"><div class="ttname"><a href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a></div><div class="ttdeci">data_layout</div><div class="ttdoc">Data layout that is optimized for different modes of parallelism. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00058">lbann_base.hpp:58</a></div></div>
 <div class="ttc" id="classlbann_1_1convolutional__layer_html_af39e291247954c3aa063d54c6c75c4f3"><div class="ttname"><a href="classlbann_1_1convolutional__layer.html#af39e291247954c3aa063d54c6c75c4f3">lbann::convolutional_layer::m_output_dims</a></div><div class="ttdeci">std::vector&lt; Int &gt; m_output_dims</div><div class="ttdoc">Output dimensions. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__convolutional_8hpp_source.html#l00096">lbann_layer_convolutional.hpp:96</a></div></div>
@@ -1703,7 +1705,7 @@ $(document).ready(function(){initNavTree('lbann__layer__convolutional_8cpp_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_faacdbae24c4b7c4a8fbaf54f29a6b8e.html">layers</a></li><li class="navelem"><a class="el" href="lbann__layer__convolutional_8cpp.html">lbann_layer_convolutional.cpp</a></li>
-    <li class="footer">Generated on Mon May 8 2017 20:19:47 for LBANN by
+    <li class="footer">Generated on Fri May 12 2017 02:12:24 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
