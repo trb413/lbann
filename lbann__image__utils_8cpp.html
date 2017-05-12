@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">2c65b6c-ci231640048</span>
+   &#160;<span id="projectnumber">5d8e91e-ci231643936</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -91,8 +91,7 @@ $(document).ready(function(){initNavTree('lbann__image__utils_8cpp.html','');});
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
 <div class="title">lbann_image_utils.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -136,12 +135,6 @@ Typedefs</h2></td></tr>
 <tr class="separator:a8baf369947014831914343943ef22473"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24328dfb2d45e939d2576b7b4bfce310"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct____BMP__INFO.html">__BMP_INFO</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lbann__image__utils_8cpp.html#a24328dfb2d45e939d2576b7b4bfce310">BMP_INFO</a></td></tr>
 <tr class="separator:a24328dfb2d45e939d2576b7b4bfce310"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a17d6498d2cd7442019f3df828e7b9775"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lbann__image__utils_8cpp.html#a17d6498d2cd7442019f3df828e7b9775">image_data_amount</a> (const <a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> &amp;img)</td></tr>
-<tr class="memdesc:a17d6498d2cd7442019f3df828e7b9775"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the number of bytes that would be used for the image without compresstion and any header  <a href="#a17d6498d2cd7442019f3df828e7b9775">More...</a><br/></td></tr>
-<tr class="separator:a17d6498d2cd7442019f3df828e7b9775"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ab2bfd573ac04ccb3176cfb693415f2de"></a>
@@ -154,7 +147,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__image__utils_8cpp_source.html#l00039">39</a> of file <a class="el" href="lbann__image__utils_8cpp_source.html">lbann_image_utils.cpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__image__utils_8cpp_source.html#l00038">38</a> of file <a class="el" href="lbann__image__utils_8cpp_source.html">lbann_image_utils.cpp</a>.</p>
 
 </div>
 </div>
@@ -207,46 +200,13 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a17d6498d2cd7442019f3df828e7b9775"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t image_data_amount </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> &amp;&#160;</td>
-          <td class="paramname"><em>img</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>returns the number of bytes that would be used for the image without compresstion and any header </p>
-
-<p>Definition at line <a class="el" href="lbann__image__utils_8cpp_source.html#l00516">516</a> of file <a class="el" href="lbann__image__utils_8cpp_source.html">lbann_image_utils.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;{</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(CV_ELEM_SIZE(img.depth())*CV_MAT_CN(img.type())*img.cols*img.rows);</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;}</div>
-</div><!-- fragment -->
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="lbann__image__utils_8cpp_a17d6498d2cd7442019f3df828e7b9775_icgraph.png" border="0" usemap="#lbann__image__utils_8cpp_a17d6498d2cd7442019f3df828e7b9775_icgraph" alt=""/></div>
-<map name="lbann__image__utils_8cpp_a17d6498d2cd7442019f3df828e7b9775_icgraph" id="lbann__image__utils_8cpp_a17d6498d2cd7442019f3df828e7b9775_icgraph">
-<area shape="rect" id="node2" href="classlbann_1_1image__utils.html#a155896efaea4c03897a3a2a6c82cf7b2" title="Export an image using data from an LBANN Mat block into a file buffer (outbuf) " alt="" coords="193,5,319,46"/></map>
-</div>
-</p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_4fd9b0f9a8d3454cc4920413ede2913f.html">data_readers</a></li><li class="navelem"><a class="el" href="lbann__image__utils_8cpp.html">lbann_image_utils.cpp</a></li>
-    <li class="footer">Generated on Fri May 12 2017 17:15:13 for LBANN by
+    <li class="footer">Generated on Fri May 12 2017 17:26:58 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

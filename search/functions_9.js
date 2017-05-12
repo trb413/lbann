@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['image_5fdata_5famount',['image_data_amount',['../lbann__image__utils_8cpp.html#a17d6498d2cd7442019f3df828e7b9775',1,'lbann_image_utils.cpp']]],
   ['import_5fimage',['import_image',['../classlbann_1_1image__utils.html#abf21938b97f2dd760b76c32e21ffe8b8',1,'lbann::image_utils']]],
   ['init_5fcallbacks',['init_callbacks',['../lbann__proto__common_8cpp.html#a23037b7b1f337f1437cfa31c26a9cf27',1,'init_callbacks(lbann_comm *comm, lbann::sequential_model *model, const lbann_data::LbannPB &amp;p):&#160;lbann_proto_common.cpp'],['../lbann__proto__common_8hpp.html#ab6478b69ca9d23685a050a929809aae9',1,'init_callbacks(lbann::lbann_comm *comm, lbann::sequential_model *model, const lbann_data::LbannPB &amp;p):&#160;lbann_proto_common.cpp']]],
   ['init_5fdata_5freaders',['init_data_readers',['../lbann__proto__common_8cpp.html#aaac7a1330b8214080e589950fac79b3e',1,'init_data_readers(bool master, const lbann_data::LbannPB &amp;p, std::map&lt; execution_mode, DataReader * &gt; &amp;data_readers, int &amp;mb_size):&#160;lbann_proto_common.cpp'],['../lbann__proto__common_8hpp.html#a53a00c050e9cc6752ee1542e125806e2',1,'init_data_readers(bool master, const lbann_data::LbannPB &amp;p, std::map&lt; execution_mode, lbann::DataReader * &gt; &amp;data_readers, int &amp;mini_batch_size):&#160;lbann_proto_common.cpp']]],

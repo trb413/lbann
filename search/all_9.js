@@ -3,7 +3,6 @@ var searchData=
   ['id',['ID',['../namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ab718adec73e04ce3ec720dd11a06a308',1,'lbann']]],
   ['id_5flayer',['id_layer',['../classlbann_1_1id__layer.html',1,'lbann']]],
   ['im_5fquantization_5ferrors',['im_quantization_errors',['../classlbann_1_1lbann__callback__imcomm.html#ab4c3627c1cd73ca8fc994918a4adbe7a',1,'lbann::lbann_callback_imcomm']]],
-  ['image_5fdata_5famount',['image_data_amount',['../lbann__image__utils_8cpp.html#a17d6498d2cd7442019f3df828e7b9775',1,'lbann_image_utils.cpp']]],
   ['image_5futils',['image_utils',['../classlbann_1_1image__utils.html',1,'lbann']]],
   ['imagelist',['ImageList',['../classlbann_1_1DataReader__ImageNet.html#aa4203ab75865ebf9b14696d9a4ef1739',1,'lbann::DataReader_ImageNet']]],
   ['import_5fimage',['import_image',['../classlbann_1_1image__utils.html#abf21938b97f2dd760b76c32e21ffe8b8',1,'lbann::image_utils']]],
