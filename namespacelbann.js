@@ -29,7 +29,6 @@ var namespacelbann =
     [ "data_reader_nci_regression", "classlbann_1_1data__reader__nci__regression.html", "classlbann_1_1data__reader__nci__regression" ],
     [ "data_reader_synthetic", "classlbann_1_1data__reader__synthetic.html", "classlbann_1_1data__reader__synthetic" ],
     [ "lbann_image_preprocessor", "classlbann_1_1lbann__image__preprocessor.html", "classlbann_1_1lbann__image__preprocessor" ],
-    [ "cvMat_proc_params", "structlbann_1_1cvMat__proc__params.html", "structlbann_1_1cvMat__proc__params" ],
     [ "image_utils", "classlbann_1_1image__utils.html", "classlbann_1_1image__utils" ],
     [ "distributed_minibatch_parallel_io", "classlbann_1_1distributed__minibatch__parallel__io.html", "classlbann_1_1distributed__minibatch__parallel__io" ],
     [ "persist", "classlbann_1_1persist.html", "classlbann_1_1persist" ],

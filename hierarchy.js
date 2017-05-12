@@ -56,7 +56,6 @@ var hierarchy =
     ] ],
     [ "lbann::base_factory< Method >", "classlbann_1_1base__factory.html", null ],
     [ "lbann::CUtility", "classlbann_1_1CUtility.html", null ],
-    [ "lbann::cvMat_proc_params", "structlbann_1_1cvMat__proc__params.html", null ],
     [ "lbann::dataset", "classlbann_1_1dataset.html", null ],
     [ "lbann::distributed_minibatch_parallel_io", "classlbann_1_1distributed__minibatch__parallel__io.html", [
       [ "lbann::input_layer_distributed_minibatch_parallel_io", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html", null ],

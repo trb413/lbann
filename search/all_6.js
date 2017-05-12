@@ -16,7 +16,6 @@ var searchData=
   ['float2',['FLOAT2',['../datatype_8hpp.html#a3a71b60f9c187eaa005999c74b5c3390',1,'datatype.hpp']]],
   ['float3',['FLOAT3',['../datatype_8hpp.html#ab2d901eb69adcc8d1c6177bc9dbeca1d',1,'datatype.hpp']]],
   ['float4',['FLOAT4',['../datatype_8hpp.html#a0188980d73a8726e1292995f15ac7ed8',1,'datatype.hpp']]],
-  ['flpping',['flpping',['../structlbann_1_1cvMat__proc__params.html#a94340113a380c389c8f3d4ca39fef6fe',1,'lbann::cvMat_proc_params']]],
   ['flush',['flush',['../classlbann_1_1lbann__summary.html#afca72ec49f3e813b6563285a2153a5be',1,'lbann::lbann_summary']]],
   ['fmeasure',['fmeasure',['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a7f0f9953c22b34d50a59ac970c71b584',1,'lbann::metrics']]],
   ['forwardprop',['forwardProp',['../classlbann_1_1Layer.html#adfcdbf9d382ca3018107fb39c176ea5a',1,'lbann::Layer::forwardProp()'],['../classlbann_1_1Activation.html#a64622e2dd77075a3aad4f0af8d5307f8',1,'lbann::Activation::forwardProp()'],['../classlbann_1_1sigmoid__layer.html#a9ad0a702a440ad58cff171a029c1db72',1,'lbann::sigmoid_layer::forwardProp()'],['../classlbann_1_1tanh__layer.html#a769f1c96a07571579d5390b93f7a2482',1,'lbann::tanh_layer::forwardProp()'],['../classlbann_1_1reLU__layer.html#a081f3b26b98d1a0df9f5d716a6fd1bc0',1,'lbann::reLU_layer::forwardProp()'],['../classlbann_1_1id__layer.html#a5cdba1b63398db433fb18ead0845a1b9',1,'lbann::id_layer::forwardProp()'],['../classlbann_1_1leaky__reLU__layer.html#ac54932ecd1ca08e7370f9437bfc5eab9',1,'lbann::leaky_reLU_layer::forwardProp()'],['../classlbann_1_1smooth__reLU__layer.html#a28d16911310477f4852aeb60da11b030',1,'lbann::smooth_reLU_layer::forwardProp()'],['../classlbann_1_1ELU__layer.html#af513c7fa40c17bb43ab484d6aae0baae',1,'lbann::ELU_layer::forwardProp()'],['../classlbann_1_1convolutional__layer.html#ace1e3a03b64dd74a6b18c28302e39a44',1,'lbann::convolutional_layer::forwardProp()'],['../classlbann_1_1pooling__layer.html#ae7e65b8d4c5e4837127a24b57440438e',1,'lbann::pooling_layer::forwardProp()']]],
@@ -38,6 +37,6 @@ var searchData=
   ['fp_5fweights',['fp_weights',['../classlbann_1_1batch__normalization.html#a0f4d0e84b153d00449d21e5d84bbbc58',1,'lbann::batch_normalization::fp_weights()'],['../classlbann_1_1regularizer.html#ab36e9a970736527ae2e8e73b723a3de4',1,'lbann::regularizer::fp_weights()']]],
   ['free',['free',['../classlbann_1_1DataReader__CIFAR10.html#aee6167d540f2e11c50cb10d0998da744',1,'lbann::DataReader_CIFAR10::free()'],['../classlbann_1_1DataReader__ImageNet.html#af7903ee803e3212919c67769850f4ddf',1,'lbann::DataReader_ImageNet::free()']]],
   ['fully_5fconnected',['fully_connected',['../namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a156e322bc71c040cbb092c46ed11c5cb',1,'lbann']]],
-  ['fullyconnectedlayer',['FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html',1,'lbann']]],
-  ['fullyconnectedlayer',['FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html#a5047027b416ca0ab719245c38d7721b0',1,'lbann::FullyConnectedLayer']]]
+  ['fullyconnectedlayer',['FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html#a5047027b416ca0ab719245c38d7721b0',1,'lbann::FullyConnectedLayer']]],
+  ['fullyconnectedlayer',['FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html',1,'lbann']]]
 ];

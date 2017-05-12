@@ -7,6 +7,7 @@ var dir_54599f7ab652be0f2f38b8574c3c4860 =
       [ "dataset", "classlbann_1_1dataset.html", "classlbann_1_1dataset" ]
     ] ],
     [ "lbann_exception.hpp", "lbann__exception_8hpp.html", "lbann__exception_8hpp" ],
+    [ "lbann_mild_exception.hpp", "lbann__mild__exception_8hpp.html", "lbann__mild__exception_8hpp" ],
     [ "lbann_quantizer.hpp", "lbann__quantizer_8hpp.html", "lbann__quantizer_8hpp" ],
     [ "lbann_quantizer_impl.hpp", "lbann__quantizer__impl_8hpp.html", null ],
     [ "lbann_random.hpp", "lbann__random_8hpp.html", "lbann__random_8hpp" ],

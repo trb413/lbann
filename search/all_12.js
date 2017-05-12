@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['save_5fimage',['save_image',['../classlbann_1_1lbann__callback__save__images.html#a82367af43521153dd4449ac028bb8393',1,'lbann::lbann_callback_save_images::save_image()'],['../classlbann_1_1DataReader.html#ace9dcc14b29fad80a394bd952f122a72',1,'lbann::DataReader::save_image()'],['../classlbann_1_1DataReader__ImageNet.html#ade29f36b9d6a5185573de3046f139913',1,'lbann::DataReader_ImageNet::save_image()'],['../classlbann_1_1DataReader__MNIST.html#aa392da58cc506eed6e848ef0dc51c325',1,'lbann::DataReader_MNIST::save_image()'],['../classlbann_1_1lbann__image__preprocessor.html#ab46384375c66b01d8e50142478e0cc73',1,'lbann::lbann_image_preprocessor::save_image()'],['../classlbann_1_1image__utils.html#af3b4eccea45d53398528ff682223c817',1,'lbann::image_utils::save_image(const std::string &amp;filename, const int Width, const int Height, const int Type, const cvMat_proc_params &amp;pp, const std::vector&lt; uint8_t &gt; &amp;buf)'],['../classlbann_1_1image__utils.html#ab2b74e8914be5202d72c2a1bc1af9df1',1,'lbann::image_utils::save_image(const std::string &amp;filename, const int Width, const int Height, const int Type, const cvMat_proc_params &amp;pp, const ::Mat &amp;data)']]],
+  ['save_5fimage',['save_image',['../classlbann_1_1lbann__callback__save__images.html#a82367af43521153dd4449ac028bb8393',1,'lbann::lbann_callback_save_images::save_image()'],['../classlbann_1_1DataReader.html#ace9dcc14b29fad80a394bd952f122a72',1,'lbann::DataReader::save_image()'],['../classlbann_1_1DataReader__ImageNet.html#ade29f36b9d6a5185573de3046f139913',1,'lbann::DataReader_ImageNet::save_image()'],['../classlbann_1_1DataReader__MNIST.html#aa392da58cc506eed6e848ef0dc51c325',1,'lbann::DataReader_MNIST::save_image()'],['../classlbann_1_1lbann__image__preprocessor.html#ab46384375c66b01d8e50142478e0cc73',1,'lbann::lbann_image_preprocessor::save_image()'],['../classlbann_1_1image__utils.html#a97ede7472f1412c6a268a097bf6fcf12',1,'lbann::image_utils::save_image(const std::string &amp;filename, const int Width, const int Height, const int Type, cv_process &amp;pp, const std::vector&lt; uint8_t &gt; &amp;buf)'],['../classlbann_1_1image__utils.html#aa1ed8c27cf46820ac013cd63598302c1',1,'lbann::image_utils::save_image(const std::string &amp;filename, const int Width, const int Height, const int Type, cv_process &amp;pp, const ::Mat &amp;data)']]],
   ['save_5fto_5fcheckpoint',['save_to_checkpoint',['../classlbann_1_1sequential__model.html#aa249267bd3e129b480c4615f51bfaed5',1,'lbann::sequential_model']]],
   ['save_5fto_5fcheckpoint_5fshared',['save_to_checkpoint_shared',['../classlbann_1_1model.html#a41098c2b2b23e49cdbe8746ef7cac5c8',1,'lbann::model::save_to_checkpoint_shared()'],['../classlbann_1_1greedy__layerwise__autoencoder.html#ae0ec210d3ecf58caa0d8d80e6768ba1b',1,'lbann::greedy_layerwise_autoencoder::save_to_checkpoint_shared()'],['../classlbann_1_1sequential__model.html#abd91f8469ac7a5d73df540d12936cf4a',1,'lbann::sequential_model::save_to_checkpoint_shared()']]],
   ['save_5fto_5ffile',['save_to_file',['../classlbann_1_1sequential__model.html#a10e9245e9c58c4b3c3c365f0b65e92b8',1,'lbann::sequential_model']]],
@@ -46,7 +46,6 @@ var searchData=
   ['set_5fsummarizer',['set_summarizer',['../classlbann_1_1lbann__callback.html#a95a4372d04e804fd2318a464ca20aa1c',1,'lbann::lbann_callback']]],
   ['set_5fterminate_5ftraining',['set_terminate_training',['../classlbann_1_1model.html#a5bafc4e84671490c6118959becb22e16',1,'lbann::model']]],
   ['set_5ftesting_5fdata_5freader',['set_testing_data_reader',['../classlbann_1_1io__layer.html#a73ebdd84af9e419d2f21013cf60da207',1,'lbann::io_layer::set_testing_data_reader()'],['../classlbann_1_1target__layer.html#a96accfb72fb8244d3741361b1de5e6ff',1,'lbann::target_layer::set_testing_data_reader()']]],
-  ['set_5fto_5fflip',['set_to_flip',['../structlbann_1_1cvMat__proc__params.html#abf66efe9127a7a58a6daa5f278882660',1,'lbann::cvMat_proc_params']]],
   ['set_5ftraining_5fdata_5freader',['set_training_data_reader',['../classlbann_1_1io__layer.html#a2f041f30ef460bd2064be4c9988b6ffe',1,'lbann::io_layer::set_training_data_reader()'],['../classlbann_1_1target__layer.html#ac89369f405bde43949b46ec19bfd9201',1,'lbann::target_layer::set_training_data_reader()']]],
   ['set_5fuse_5fpercent',['set_use_percent',['../classlbann_1_1DataReader.html#ae241f1274f0742f819f40a0ef99ee752',1,'lbann::DataReader']]],
   ['set_5fvalidation_5fdata_5freader',['set_validation_data_reader',['../classlbann_1_1io__layer.html#a147126a1a4372a36a9a52e9632dd2bfc',1,'lbann::io_layer']]],
@@ -82,16 +81,16 @@ var searchData=
   ['sparse_5fcategorical_5faccuracy',['sparse_categorical_accuracy',['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a131ca04fc47acb9452ac40b960ef4a8b',1,'lbann::metrics']]],
   ['sparse_5fcategorical_5fcrossentropy',['sparse_categorical_crossentropy',['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a205eea9ff70a6d6286dd5e880b172b8b',1,'lbann::metrics']]],
   ['squared_5fhinge',['squared_hinge',['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1abaf871b30c1bb57f8cc96367f53ef93b',1,'lbann::metrics']]],
-  ['stacked_5fautoencoder',['stacked_autoencoder',['../classlbann_1_1stacked__autoencoder.html',1,'lbann']]],
   ['stacked_5fautoencoder',['stacked_autoencoder',['../classlbann_1_1stacked__autoencoder.html#a1367885122e9f4c9332fa513f0a490ad',1,'lbann::stacked_autoencoder']]],
+  ['stacked_5fautoencoder',['stacked_autoencoder',['../classlbann_1_1stacked__autoencoder.html',1,'lbann']]],
   ['star_5fstar',['STAR_STAR',['../lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0da41478dbc562bc2cdaa328e2fa04558b2',1,'lbann_base.hpp']]],
   ['star_5fvc',['STAR_VC',['../lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dab05461c65c89f42d7e1b8c9cea626032',1,'lbann_base.hpp']]],
   ['starmat',['StarMat',['../lbann__base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86',1,'lbann_base.hpp']]],
   ['starmrmat',['StarMRMat',['../lbann__base_8hpp.html#a99cdf61e316c00f3e39aeaa1509197c1',1,'lbann_base.hpp']]],
   ['starvcmat',['StarVCMat',['../lbann__base_8hpp.html#a763b3164342a5d73db851e85c76d385a',1,'lbann_base.hpp']]],
-  ['statistics',['statistics',['../classlbann_1_1objective__functions_1_1statistics.html',1,'lbann::objective_functions']]],
   ['statistics',['statistics',['../classlbann_1_1metrics_1_1statistics.html',1,'lbann::metrics']]],
   ['statistics',['statistics',['../classlbann_1_1metrics_1_1statistics.html#afc4d1c56faf7c870077a342e4c731086',1,'lbann::metrics::statistics::statistics()'],['../classlbann_1_1objective__functions_1_1statistics.html#ae09872294228744a19efd9510c7503a9',1,'lbann::objective_functions::statistics::statistics()']]],
+  ['statistics',['statistics',['../classlbann_1_1objective__functions_1_1statistics.html',1,'lbann::objective_functions']]],
   ['step',['step',['../structlbann__checkpoint.html#a14fc6e1f60b934876dfee2e528486239',1,'lbann_checkpoint::step()'],['../classlbann_1_1lbann__callback__step__learning__rate.html#afcb2f88eae412e84df9c43df9365732e',1,'lbann::lbann_callback_step_learning_rate::step()']]],
   ['subtract_5ffloat2',['SUBTRACT_FLOAT2',['../datatype_8hpp.html#a3c63177e6b72d2c03cc5868df55f60c5',1,'datatype.hpp']]],
   ['subtract_5ffloat3',['SUBTRACT_FLOAT3',['../datatype_8hpp.html#a24f2b43650a03b60ea2401572fdc899c',1,'datatype.hpp']]],
@@ -105,6 +104,6 @@ var searchData=
   ['summarizer',['summarizer',['../classlbann_1_1lbann__callback.html#ad48ff47a64f2dff3a12d8bd282f554cb',1,'lbann::lbann_callback']]],
   ['summarydir',['SummaryDir',['../classlbann_1_1TrainingParams.html#ad01ff40b34ff8b7adf4c547aa60ee87f',1,'lbann::TrainingParams']]],
   ['swap',['swap',['../classlbann_1_1sequential__model.html#a8aa4ddbd6efa79896749838e442b6168',1,'lbann::sequential_model']]],
-  ['systemparams',['SystemParams',['../classlbann_1_1SystemParams.html',1,'lbann']]],
-  ['systemparams',['SystemParams',['../classlbann_1_1SystemParams.html#a4dc0a32571543d65f7f99e1050979697',1,'lbann::SystemParams']]]
+  ['systemparams',['SystemParams',['../classlbann_1_1SystemParams.html#a4dc0a32571543d65f7f99e1050979697',1,'lbann::SystemParams']]],
+  ['systemparams',['SystemParams',['../classlbann_1_1SystemParams.html',1,'lbann']]]
 ];

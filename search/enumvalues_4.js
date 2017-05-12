@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['data_5fparallel',['DATA_PARALLEL',['../lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638',1,'lbann_base.hpp']]]
+  ['elu',['ELU',['../namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a5b44c930bf0ddeef48b50ef11e5ddd58',1,'lbann']]]
 ];

@@ -1,6 +1,9 @@
 var dir_0b16036c62e9063447de1e5debde0af9 =
 [
     [ "patchworks", "dir_0aad4685e5a488fb75343b7c622656d3.html", "dir_0aad4685e5a488fb75343b7c622656d3" ],
+    [ "lbann_cv_preprocessor.hpp", "lbann__cv__preprocessor_8hpp.html", null ],
+    [ "lbann_cv_process.hpp", "lbann__cv__process_8hpp.html", null ],
+    [ "lbann_cv_utils.hpp", "lbann__cv__utils_8hpp.html", null ],
     [ "lbann_data_reader.hpp", "lbann__data__reader_8hpp.html", "lbann__data__reader_8hpp" ],
     [ "lbann_data_reader_cifar10.hpp", "lbann__data__reader__cifar10_8hpp.html", [
       [ "DataReader_CIFAR10", "classlbann_1_1DataReader__CIFAR10.html", "classlbann_1_1DataReader__CIFAR10" ]
@@ -26,6 +29,8 @@ var dir_0b16036c62e9063447de1e5debde0af9 =
     [ "lbann_image_preprocessor.hpp", "lbann__image__preprocessor_8hpp.html", [
       [ "lbann_image_preprocessor", "classlbann_1_1lbann__image__preprocessor.html", "classlbann_1_1lbann__image__preprocessor" ]
     ] ],
-    [ "lbann_image_utils.hpp", "lbann__image__utils_8hpp.html", "lbann__image__utils_8hpp" ],
+    [ "lbann_image_utils.hpp", "lbann__image__utils_8hpp.html", [
+      [ "image_utils", "classlbann_1_1image__utils.html", "classlbann_1_1image__utils" ]
+    ] ],
     [ "lbann_opencv.hpp", "lbann__opencv_8hpp.html", null ]
 ];

@@ -5,7 +5,6 @@ var searchData=
   ['batch_5fstart',['batch_start',['../classlbann_1_1lbann__callback__timer.html#ae2c5d7f3b707eb3bbcfe1a212c426008',1,'lbann::lbann_callback_timer']]],
   ['batch_5ftimes',['batch_times',['../classlbann_1_1lbann__callback__timer.html#afbf8768331b3b4ce8b68e8c26ddae5a8',1,'lbann::lbann_callback_timer']]],
   ['batchsize',['BatchSize',['../classlbann_1_1DataReader.html#a1e63767a90c178c901675baeb8101ded',1,'lbann::DataReader']]],
-  ['beta',['beta',['../structlbann_1_1cvMat__proc__params.html#a96d6e286e041763acdc66779fae54efd',1,'lbann::cvMat_proc_params']]],
   ['bfoffbits',['bfOffBits',['../struct____BMP__FILEHEADER.html#a81b96134066c15b97ce5abd27f45a300',1,'__BMP_FILEHEADER']]],
   ['bfreserved1',['bfReserved1',['../struct____BMP__FILEHEADER.html#abe885353027167dd6f99c2f152788d81',1,'__BMP_FILEHEADER']]],
   ['bfreserved2',['bfReserved2',['../struct____BMP__FILEHEADER.html#abdb44f0e8901e7e1cc3ca94a864be527',1,'__BMP_FILEHEADER']]],

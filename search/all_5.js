@@ -20,5 +20,5 @@ var searchData=
   ['evaluate_5fphase',['evaluate_phase',['../classlbann_1_1greedy__layerwise__autoencoder.html#a67182a4d151a780452c14ff487e52089',1,'lbann::greedy_layerwise_autoencoder']]],
   ['execution_5fmode',['execution_mode',['../structlbann__model__header.html#aa3921e546a7235875456e55b74c430f7',1,'lbann_model_header::execution_mode()'],['../lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8',1,'execution_mode():&#160;lbann_base.hpp']]],
   ['exists',['exists',['../namespacelbann.html#aefae2a9fc9d742ece0fa8ca7ed9ee137',1,'lbann']]],
-  ['export_5fimage',['export_image',['../classlbann_1_1image__utils.html#a828cca00fe12e05616b085bccde60255',1,'lbann::image_utils']]]
+  ['export_5fimage',['export_image',['../classlbann_1_1image__utils.html#a155896efaea4c03897a3a2a6c82cf7b2',1,'lbann::image_utils']]]
 ];

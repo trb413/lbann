@@ -11,6 +11,5 @@ var searchData=
   ['hinge',['hinge',['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a2e115f4171ceb952bca742eb60fc7e81',1,'lbann::metrics']]],
   ['horizontal_5fflip',['horizontal_flip',['../classlbann_1_1lbann__image__preprocessor.html#a4ba2de0a781dfa0a2652ad4d777a241f',1,'lbann::lbann_image_preprocessor']]],
   ['horizontal_5fshift',['horizontal_shift',['../classlbann_1_1lbann__image__preprocessor.html#ae62596b4af5d1940aa0499cde2bdd005',1,'lbann::lbann_image_preprocessor']]],
-  ['hostname',['HostName',['../classlbann_1_1SystemParams.html#a4aa517715ee0a454ee7ca2cc23fe30ee',1,'lbann::SystemParams']]],
-  ['how_5fto_5fflip',['how_to_flip',['../structlbann_1_1cvMat__proc__params.html#aeeb471880f531635072d2ae925bb5a11',1,'lbann::cvMat_proc_params']]]
+  ['hostname',['HostName',['../classlbann_1_1SystemParams.html#a4aa517715ee0a454ee7ca2cc23fe30ee',1,'lbann::SystemParams']]]
 ];

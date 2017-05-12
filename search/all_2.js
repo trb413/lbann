@@ -17,7 +17,6 @@ var searchData=
   ['begin_5fstack',['begin_stack',['../classlbann_1_1stacked__autoencoder.html#a398f7debe464f5db4371202b6dfa657c',1,'lbann::stacked_autoencoder']]],
   ['bernoulli_5ffill',['bernoulli_fill',['../namespacelbann.html#a1a7ffde5dcab1f39986adff100020262',1,'lbann']]],
   ['bernoulli_5ffill_5fprocdet',['bernoulli_fill_procdet',['../namespacelbann.html#a6add4d3337110d567e7b398a262fd010',1,'lbann']]],
-  ['beta',['beta',['../structlbann_1_1cvMat__proc__params.html#a96d6e286e041763acdc66779fae54efd',1,'lbann::cvMat_proc_params']]],
   ['bfoffbits',['bfOffBits',['../struct____BMP__FILEHEADER.html#a81b96134066c15b97ce5abd27f45a300',1,'__BMP_FILEHEADER']]],
   ['bfreserved1',['bfReserved1',['../struct____BMP__FILEHEADER.html#abe885353027167dd6f99c2f152788d81',1,'__BMP_FILEHEADER']]],
   ['bfreserved2',['bfReserved2',['../struct____BMP__FILEHEADER.html#abdb44f0e8901e7e1cc3ca94a864be527',1,'__BMP_FILEHEADER']]],
