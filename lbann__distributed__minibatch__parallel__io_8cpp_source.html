@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">1083ad1-ci232488866</span>
+   &#160;<span id="projectnumber">f8ee01e-ci232537339</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -231,8 +231,8 @@ $(document).ready(function(){initNavTree('lbann__distributed__minibatch__paralle
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">if</span>(!m_local_data_valid) {</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      stringstream err;</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;          &lt;&lt;<span class="stringliteral">&quot; :: lbann_distributed_minibatch_parallel_io: No valid data for this step -- local data was invalid&quot;</span>;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;          &lt;&lt; <span class="stringliteral">&quot; :: lbann_distributed_minibatch_parallel_io: No valid data for this step -- local data was invalid&quot;</span>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    }</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    CopyFromRoot(M_local, Ms);</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    m_local_data_valid = <span class="keyword">false</span>;</div>
@@ -257,44 +257,50 @@ $(document).ready(function(){initNavTree('lbann__distributed__minibatch__paralle
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_rank_in_model() &lt; num_parallel_readers) {</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordflow">if</span>((<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_rank_in_model()+1)%num_parallel_readers == m_root) {</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      <span class="keywordflow">if</span>(m_local_data_valid) { </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(<span class="stringliteral">&quot;lbann_input_layer_distributed_minibatch_parallel_io: all valid data was not processed.&quot;</span>);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      }</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      m_local_reader_done = !update_data_reader();</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    }</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  }</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordflow">if</span>(m_local_reader_done) {</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    num_readers_done = 1;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  }</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  num_readers_done = <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;model_allreduce(num_readers_done);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordflow">if</span>(num_readers_done == max_active_parallel_readers) {</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    m_local_reader_done = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    m_root = 0; </div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    m_num_data_per_epoch = 0;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  }<span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  }</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
-<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="classlbann_1_1distributed__minibatch__parallel__io.html#ae63fb14ed9851fdebd6fde53a15b450d">  200</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classlbann_1_1distributed__minibatch__parallel__io.html#ae63fb14ed9851fdebd6fde53a15b450d">lbann::distributed_minibatch_parallel_io::get_num_parallel_readers</a>() {</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="keywordtype">int</span> num_parallel_readers = 0;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordflow">switch</span>(get_execution_mode()) {</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>:</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    num_parallel_readers = m_num_parallel_readers_training;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0">execution_mode::validation</a>:</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    num_parallel_readers = m_num_parallel_readers_validating;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        stringstream err;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span>&lt;&lt;  __LINE__</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            &lt;&lt; <span class="stringliteral">&quot; :: lbann_input_layer_distributed_minibatch_parallel_io: all valid data was not processed.&quot;</span>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      m_local_reader_done = !update_data_reader();</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;  <span class="keywordflow">if</span>(m_local_reader_done) {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    num_readers_done = 1;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  num_readers_done = <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;model_allreduce(num_readers_done);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  <span class="keywordflow">if</span>(num_readers_done == max_active_parallel_readers) {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    m_local_reader_done = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    m_root = 0; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    m_num_data_per_epoch = 0;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  }<span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  }</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno"><a class="line" href="classlbann_1_1distributed__minibatch__parallel__io.html#ae63fb14ed9851fdebd6fde53a15b450d">  203</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classlbann_1_1distributed__minibatch__parallel__io.html#ae63fb14ed9851fdebd6fde53a15b450d">lbann::distributed_minibatch_parallel_io::get_num_parallel_readers</a>() {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keywordtype">int</span> num_parallel_readers = 0;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keywordflow">switch</span>(get_execution_mode()) {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>:</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    num_parallel_readers = m_num_parallel_readers_training;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aae2b1fca515949e5d54fb22b8ed95575">execution_mode::testing</a>:</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    num_parallel_readers = m_num_parallel_readers_testing;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0">execution_mode::validation</a>:</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    num_parallel_readers = m_num_parallel_readers_validating;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(<span class="stringliteral">&quot;lbann_distributed_minibatch_parallel_io: invalid execution phase&quot;</span>);</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  }</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <span class="keywordflow">return</span> num_parallel_readers;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;}</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aae2b1fca515949e5d54fb22b8ed95575">execution_mode::testing</a>:</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    num_parallel_readers = m_num_parallel_readers_testing;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    stringstream err;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span>&lt;&lt;  __LINE__</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; :: lbann_distributed_minibatch_parallel_io: invalid execution phase&quot;</span>;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  }</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keywordflow">return</span> num_parallel_readers;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1distributed__minibatch__parallel__io_html_aa35307f86d664e0fd3cc98a645f1589d"><div class="ttname"><a href="classlbann_1_1distributed__minibatch__parallel__io.html#aa35307f86d664e0fd3cc98a645f1589d">lbann::distributed_minibatch_parallel_io::distributed_minibatch_parallel_io</a></div><div class="ttdeci">distributed_minibatch_parallel_io(lbann_comm *comm, int num_parallel_readers, uint mini_batch_size, std::map&lt; execution_mode, DataReader * &gt; data_readers)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__distributed__minibatch__parallel__io_8cpp_source.html#l00034">lbann_distributed_minibatch_parallel_io.cpp:34</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0"><div class="ttname"><a href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0">execution_mode::validation</a></div></div>
 <div class="ttc" id="classlbann_1_1distributed__minibatch__parallel__io_html_a17aa20ba6b971b6433da058be0d4545a"><div class="ttname"><a href="classlbann_1_1distributed__minibatch__parallel__io.html#a17aa20ba6b971b6433da058be0d4545a">lbann::distributed_minibatch_parallel_io::is_data_set_processed</a></div><div class="ttdeci">bool is_data_set_processed()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__distributed__minibatch__parallel__io_8cpp_source.html#l00165">lbann_distributed_minibatch_parallel_io.cpp:165</a></div></div>
@@ -315,7 +321,7 @@ $(document).ready(function(){initNavTree('lbann__distributed__minibatch__paralle
 <div class="ttc" id="datatype_8hpp_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00035">datatype.hpp:35</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00042">lbann_base.hpp:42</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a483bf8a72d44a0e83da45f3d47bd20d4"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">lbann::lbann_comm::get_model_grid</a></div><div class="ttdeci">Grid &amp; get_model_grid()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00083">lbann_comm.hpp:83</a></div></div>
-<div class="ttc" id="classlbann_1_1distributed__minibatch__parallel__io_html_ae63fb14ed9851fdebd6fde53a15b450d"><div class="ttname"><a href="classlbann_1_1distributed__minibatch__parallel__io.html#ae63fb14ed9851fdebd6fde53a15b450d">lbann::distributed_minibatch_parallel_io::get_num_parallel_readers</a></div><div class="ttdeci">int get_num_parallel_readers()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__distributed__minibatch__parallel__io_8cpp_source.html#l00200">lbann_distributed_minibatch_parallel_io.cpp:200</a></div></div>
+<div class="ttc" id="classlbann_1_1distributed__minibatch__parallel__io_html_ae63fb14ed9851fdebd6fde53a15b450d"><div class="ttname"><a href="classlbann_1_1distributed__minibatch__parallel__io.html#ae63fb14ed9851fdebd6fde53a15b450d">lbann::distributed_minibatch_parallel_io::get_num_parallel_readers</a></div><div class="ttdeci">int get_num_parallel_readers()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__distributed__minibatch__parallel__io_8cpp_source.html#l00203">lbann_distributed_minibatch_parallel_io.cpp:203</a></div></div>
 <div class="ttc" id="datatype_8hpp_html_a91ad9478d81a7aaf2593e8d9c3d06a14"><div class="ttname"><a href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00074">datatype.hpp:74</a></div></div>
 <div class="ttc" id="lbann__exception_8hpp_html"><div class="ttname"><a href="lbann__exception_8hpp.html">lbann_exception.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1distributed__minibatch__parallel__io_html_aa27d55e192717c28ce6785411585e60a"><div class="ttname"><a href="classlbann_1_1distributed__minibatch__parallel__io.html#aa27d55e192717c28ce6785411585e60a">lbann::distributed_minibatch_parallel_io::m_num_parallel_readers_testing</a></div><div class="ttdeci">int m_num_parallel_readers_testing</div><div class="ttdef"><b>Definition:</b> <a href="lbann__distributed__minibatch__parallel__io_8hpp_source.html#l00060">lbann_distributed_minibatch_parallel_io.hpp:60</a></div></div>
@@ -326,7 +332,7 @@ $(document).ready(function(){initNavTree('lbann__distributed__minibatch__paralle
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_b1b1c468b04d51abcf88577efe98abd8.html">io</a></li><li class="navelem"><a class="el" href="lbann__distributed__minibatch__parallel__io_8cpp.html">lbann_distributed_minibatch_parallel_io.cpp</a></li>
-    <li class="footer">Generated on Mon May 15 2017 15:59:30 for LBANN by
+    <li class="footer">Generated on Mon May 15 2017 18:21:34 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
