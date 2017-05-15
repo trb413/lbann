@@ -24,6 +24,7 @@ var namespacelbann =
     [ "DataReader_CIFAR10", "classlbann_1_1DataReader__CIFAR10.html", "classlbann_1_1DataReader__CIFAR10" ],
     [ "DataReader_cnpy", "classlbann_1_1DataReader__cnpy.html", "classlbann_1_1DataReader__cnpy" ],
     [ "DataReader_ImageNet", "classlbann_1_1DataReader__ImageNet.html", "classlbann_1_1DataReader__ImageNet" ],
+    [ "DataReader_ImageNetSingle", "classlbann_1_1DataReader__ImageNetSingle.html", "classlbann_1_1DataReader__ImageNetSingle" ],
     [ "DataReader_MNIST", "classlbann_1_1DataReader__MNIST.html", "classlbann_1_1DataReader__MNIST" ],
     [ "data_reader_nci", "classlbann_1_1data__reader__nci.html", "classlbann_1_1data__reader__nci" ],
     [ "data_reader_nci_regression", "classlbann_1_1data__reader__nci__regression.html", "classlbann_1_1data__reader__nci__regression" ],

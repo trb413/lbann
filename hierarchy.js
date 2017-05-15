@@ -108,7 +108,9 @@ var hierarchy =
         [ "lbann::data_reader_synthetic", "classlbann_1_1data__reader__synthetic.html", null ],
         [ "lbann::DataReader_CIFAR10", "classlbann_1_1DataReader__CIFAR10.html", null ],
         [ "lbann::DataReader_cnpy", "classlbann_1_1DataReader__cnpy.html", null ],
-        [ "lbann::DataReader_ImageNet", "classlbann_1_1DataReader__ImageNet.html", null ],
+        [ "lbann::DataReader_ImageNet", "classlbann_1_1DataReader__ImageNet.html", [
+          [ "lbann::DataReader_ImageNetSingle", "classlbann_1_1DataReader__ImageNetSingle.html", null ]
+        ] ],
         [ "lbann::DataReader_MNIST", "classlbann_1_1DataReader__MNIST.html", null ]
       ] ]
     ] ],

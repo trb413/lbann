@@ -8,6 +8,7 @@ var dir_4fd9b0f9a8d3454cc4920413ede2913f =
     [ "lbann_data_reader_cifar10.cpp", "lbann__data__reader__cifar10_8cpp.html", null ],
     [ "lbann_data_reader_cnpy.cpp", "lbann__data__reader__cnpy_8cpp.html", null ],
     [ "lbann_data_reader_imagenet.cpp", "lbann__data__reader__imagenet_8cpp.html", null ],
+    [ "lbann_data_reader_imagenet_single.cpp", "lbann__data__reader__imagenet__single_8cpp.html", null ],
     [ "lbann_data_reader_mnist.cpp", "lbann__data__reader__mnist_8cpp.html", "lbann__data__reader__mnist_8cpp" ],
     [ "lbann_data_reader_nci.cpp", "lbann__data__reader__nci_8cpp.html", null ],
     [ "lbann_data_reader_nci_regression.cpp", "lbann__data__reader__nci__regression_8cpp.html", null ],
