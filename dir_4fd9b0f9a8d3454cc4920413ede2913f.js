@@ -1,7 +1,8 @@
 var dir_4fd9b0f9a8d3454cc4920413ede2913f =
 [
     [ "patchworks", "dir_9304cbe20bcd7bb4253987a19ee1c289.html", "dir_9304cbe20bcd7bb4253987a19ee1c289" ],
-    [ "lbann_cv_preprocessor.cpp", "lbann__cv__preprocessor_8cpp.html", null ],
+    [ "lbann_cv_augmenter.cpp", "lbann__cv__augmenter_8cpp.html", null ],
+    [ "lbann_cv_normalizer.cpp", "lbann__cv__normalizer_8cpp.html", null ],
     [ "lbann_cv_process.cpp", "lbann__cv__process_8cpp.html", null ],
     [ "lbann_cv_utils.cpp", "lbann__cv__utils_8cpp.html", null ],
     [ "lbann_data_reader.cpp", "lbann__data__reader_8cpp.html", null ],

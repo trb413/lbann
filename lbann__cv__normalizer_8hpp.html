@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>LBANN: /home/travis/build/LLNL/lbann/src/data_readers/lbann_cv_preprocessor.cpp File Reference</title>
+<title>LBANN: /home/travis/build/LLNL/lbann/include/lbann/data_readers/lbann_cv_normalizer.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">edcd9df-ci232554573</span>
+   &#160;<span id="projectnumber">b5a4145-ci232858263</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('lbann__cv__preprocessor_8cpp.html','');});
+$(document).ready(function(){initNavTree('lbann__cv__normalizer_8hpp.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -89,27 +89,36 @@ $(document).ready(function(){initNavTree('lbann__cv__preprocessor_8cpp.html','')
 
 <div class="header">
   <div class="headertitle">
-<div class="title">lbann_cv_preprocessor.cpp File Reference</div>  </div>
+<div class="title">lbann_cv_normalizer.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="lbann__cv__preprocessor_8hpp_source.html">lbann/data_readers/lbann_cv_preprocessor.hpp</a>&quot;</code><br/>
-<code>#include &lt;cmath&gt;</code><br/>
+<div class="textblock"><code>#include &quot;<a class="el" href="lbann__cv__transform_8hpp_source.html">lbann/data_readers/lbann_cv_transform.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="patchworks__opencv_8hpp_source.html">lbann/data_readers/patchworks/patchworks_opencv.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="lbann__base_8hpp_source.html">lbann/lbann_base.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="lbann__mild__exception_8hpp_source.html">lbann/utils/lbann_mild_exception.hpp</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
-Include dependency graph for lbann_cv_preprocessor.cpp:</div>
+Include dependency graph for lbann_cv_normalizer.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="lbann__cv__preprocessor_8cpp__incl.png" border="0" usemap="#_2home_2travis_2build_2LLNL_2lbann_2src_2data__readers_2lbann__cv__preprocessor_8cpp" alt=""/></div>
-<map name="_2home_2travis_2build_2LLNL_2lbann_2src_2data__readers_2lbann__cv__preprocessor_8cpp" id="_2home_2travis_2build_2LLNL_2lbann_2src_2data__readers_2lbann__cv__preprocessor_8cpp">
-<area shape="rect" id="node2" href="lbann__cv__preprocessor_8hpp.html" title="lbann/data_readers\l/lbann_cv_preprocessor.hpp" alt="" coords="174,110,359,151"/><area shape="rect" id="node3" href="patchworks__opencv_8hpp.html" title="lbann/data_readers\l/patchworks/patchworks\l_opencv.hpp" alt="" coords="5,200,168,256"/><area shape="rect" id="node4" href="lbann__base_8hpp.html" title="lbann/lbann_base.hpp" alt="" coords="193,215,340,241"/><area shape="rect" id="node8" href="lbann__mild__exception_8hpp.html" title="lbann/utils/lbann_mild\l_exception.hpp" alt="" coords="365,207,512,249"/><area shape="rect" id="node5" href="datatype_8hpp.html" title="datatype.hpp" alt="" coords="157,304,253,331"/></map>
+<div class="center"><img src="lbann__cv__normalizer_8hpp__incl.png" border="0" usemap="#_2home_2travis_2build_2LLNL_2lbann_2include_2lbann_2data__readers_2lbann__cv__normalizer_8hpp" alt=""/></div>
+<map name="_2home_2travis_2build_2LLNL_2lbann_2include_2lbann_2data__readers_2lbann__cv__normalizer_8hpp" id="_2home_2travis_2build_2LLNL_2lbann_2include_2lbann_2data__readers_2lbann__cv__normalizer_8hpp">
+<area shape="rect" id="node2" href="lbann__cv__transform_8hpp.html" title="lbann/data_readers\l/lbann_cv_transform.hpp" alt="" coords="5,133,169,174"/><area shape="rect" id="node4" href="patchworks__opencv_8hpp.html" title="lbann/data_readers\l/patchworks/patchworks\l_opencv.hpp" alt="" coords="195,125,359,181"/><area shape="rect" id="node5" href="lbann__base_8hpp.html" title="lbann/lbann_base.hpp" alt="" coords="383,140,531,167"/><area shape="rect" id="node9" href="lbann__mild__exception_8hpp.html" title="lbann/utils/lbann_mild\l_exception.hpp" alt="" coords="556,133,703,174"/><area shape="rect" id="node3" href="lbann__opencv_8hpp.html" title="lbann/data_readers\l/lbann_opencv.hpp" alt="" coords="22,230,153,271"/><area shape="rect" id="node6" href="datatype_8hpp.html" title="datatype.hpp" alt="" coords="347,237,444,264"/></map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="lbann__cv__normalizer_8hpp__dep__incl.png" border="0" usemap="#_2home_2travis_2build_2LLNL_2lbann_2include_2lbann_2data__readers_2lbann__cv__normalizer_8hppdep" alt=""/></div>
+<map name="_2home_2travis_2build_2LLNL_2lbann_2include_2lbann_2data__readers_2lbann__cv__normalizer_8hppdep" id="_2home_2travis_2build_2LLNL_2lbann_2include_2lbann_2data__readers_2lbann__cv__normalizer_8hppdep">
+<area shape="rect" id="node2" href="lbann__cv__normalizer_8cpp.html" title="/home/travis/build\l/LLNL/lbann/src/data\l_readers/lbann_cv_normalizer.cpp" alt="" coords="5,133,224,189"/><area shape="rect" id="node3" href="lbann__cv__process_8hpp.html" title="/home/travis/build\l/LLNL/lbann/include\l/lbann/data_readers/lbann\l_cv_process.hpp" alt="" coords="249,126,420,197"/><area shape="rect" id="node4" href="lbann__cv__process_8cpp.html" title="/home/travis/build\l/LLNL/lbann/src/data\l_readers/lbann_cv_process.cpp" alt="" coords="125,253,331,309"/><area shape="rect" id="node5" href="lbann__cv__utils_8hpp.html" title="/home/travis/build\l/LLNL/lbann/include\l/lbann/data_readers/lbann\l_cv_utils.hpp" alt="" coords="356,246,527,317"/><area shape="rect" id="node6" href="lbann__cv__utils_8cpp.html" title="/home/travis/build\l/LLNL/lbann/src/data\l_readers/lbann_cv_utils.cpp" alt="" coords="349,365,533,421"/></map>
 </div>
 </div>
-<p><a href="lbann__cv__preprocessor_8cpp_source.html">Go to the source code of this file.</a></p>
+<p><a href="lbann__cv__normalizer_8hpp_source.html">Go to the source code of this file.</a></p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_4fd9b0f9a8d3454cc4920413ede2913f.html">data_readers</a></li><li class="navelem"><a class="el" href="lbann__cv__preprocessor_8cpp.html">lbann_cv_preprocessor.cpp</a></li>
-    <li class="footer">Generated on Mon May 15 2017 19:13:04 for LBANN by
+    <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_eb8329679e609af11719ceffa3ff5139.html">include</a></li><li class="navelem"><a class="el" href="dir_ae19bb3c4b74b705a5918893bf9adbdd.html">lbann</a></li><li class="navelem"><a class="el" href="dir_0b16036c62e9063447de1e5debde0af9.html">data_readers</a></li><li class="navelem"><a class="el" href="lbann__cv__normalizer_8hpp.html">lbann_cv_normalizer.hpp</a></li>
+    <li class="footer">Generated on Tue May 16 2017 15:01:08 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

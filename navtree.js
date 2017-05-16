@@ -53,8 +53,8 @@ var NAVTREEINDEX =
 "classlbann_1_1sigmoid__layer.html",
 "elemental.html#elemental_download",
 "lbann__callback__summary_8hpp_source.html",
-"lbann__model__sequential_8cpp_source.html",
-"struct__BOX2__USHORT.html#ac851c43e280df373793d9b21f021432c"
+"lbann__model__dnn_8hpp_source.html",
+"struct__BOX2__UCHAR.html#a27e6ca6bb0bba9b3249c85adb8f5078b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

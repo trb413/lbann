@@ -1,5 +1,11 @@
 var NAVTREEINDEX10 =
 {
+"struct__BOX2__UCHAR.html#a27e6ca6bb0bba9b3249c85adb8f5078b":[3,0,13,2],
+"struct__BOX2__UCHAR.html#a57975fa179f7716e18bcf23d9fa4009a":[3,0,13,0],
+"struct__BOX2__UCHAR.html#a88654a8d867d5cada89cd0f88e820bf1":[3,0,13,1],
+"struct__BOX2__USHORT.html":[3,0,14],
+"struct__BOX2__USHORT.html#a0bcd43f9c29598dd2c981822a10ebfef":[3,0,14,3],
+"struct__BOX2__USHORT.html#a0e8fe26a0bcfb74533b8f324924cd763":[3,0,14,0],
 "struct__BOX2__USHORT.html#ac851c43e280df373793d9b21f021432c":[3,0,14,2],
 "struct__BOX2__USHORT.html#adbd6159498474788d1aa9342d575bae9":[3,0,14,1],
 "struct__BOX3__CHAR.html":[3,0,15],
