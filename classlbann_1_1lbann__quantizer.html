@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">ed0cb23-ci233776024</span>
+   &#160;<span id="projectnumber">0c4c763-ci233788861</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -222,8 +222,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ab91c3defbec372e4b5c35db7dfe522b0"><td class="memItemLeft" align="right" valign="top">Int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__quantizer.html#ab91c3defbec372e4b5c35db7dfe522b0">get_quantized_matrix_height</a> (const <a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;mat) const </td></tr>
-<tr class="separator:ab91c3defbec372e4b5c35db7dfe522b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12d481b919e35f150cc9617711e0e712"><td class="memItemLeft" align="right" valign="top">Int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__quantizer.html#a12d481b919e35f150cc9617711e0e712">get_onebit_quantized_matrix_height</a> (const <a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;mat) const </td></tr>
+<tr class="separator:a12d481b919e35f150cc9617711e0e712"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a879cea8464408b8265be9e55edd83b2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__quantizer.html#a879cea8464408b8265be9e55edd83b2c">onebit_unquantize_add</a> (const <a class="el" href="classlbann_1_1lbann__quantizer.html#a2f0b1c91b994c91dfa506869e3329db6">QuantizedMatrix</a> &amp;qmat, <a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;mat)</td></tr>
 <tr class="separator:a879cea8464408b8265be9e55edd83b2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6336263dbcf910503df46e1ae36c7a9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__quantizer.html#a6336263dbcf910503df46e1ae36c7a9b">threshold_unquantize_apply</a> (const <a class="el" href="classlbann_1_1lbann__quantizer.html#a84c968d0f772235faa39f6ad91e7eadb">ThreshQuantized</a> &amp;q, <a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;mat, <a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> pos_thresh, <a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> neg_thresh, std::vector&lt; Unsigned &gt; &amp;positions, bool delta=<a class="el" href="lbann__target__layer__unsupervised_8cpp.html#ae6c865df784842196d411c1466b01686">false</a>)</td></tr>
@@ -1922,6 +1922,46 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a12d481b919e35f150cc9617711e0e712"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Int lbann::lbann_quantizer::get_onebit_quantized_matrix_height </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the height of mat after quantization with <a class="el" href="classlbann_1_1lbann__quantizer.html#a4dd4696cbbfd93c73e5fb3c40fcb16c3">onebit_quantize()</a>. </p>
+
+<p>Definition at line <a class="el" href="lbann__quantizer_8hpp_source.html#l00355">355</a> of file <a class="el" href="lbann__quantizer_8hpp_source.html">lbann_quantizer.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                                                                      {</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="keywordflow">return</span> (mat.Height() + (<a class="code" href="classlbann_1_1lbann__quantizer.html#a33ea17392f53b90e91aea1ffb7e11d68">NUM_BITS</a>-1)) / <a class="code" href="classlbann_1_1lbann__quantizer.html#a33ea17392f53b90e91aea1ffb7e11d68">NUM_BITS</a> + 2;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1lbann__quantizer_html_a33ea17392f53b90e91aea1ffb7e11d68"><div class="ttname"><a href="classlbann_1_1lbann__quantizer.html#a33ea17392f53b90e91aea1ffb7e11d68">lbann::lbann_quantizer::NUM_BITS</a></div><div class="ttdeci">static const size_t NUM_BITS</div><div class="ttdef"><b>Definition:</b> <a href="lbann__quantizer_8hpp_source.html#l00301">lbann_quantizer.hpp:301</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1lbann__quantizer_a12d481b919e35f150cc9617711e0e712_icgraph.png" border="0" usemap="#classlbann_1_1lbann__quantizer_a12d481b919e35f150cc9617711e0e712_icgraph" alt=""/></div>
+<map name="classlbann_1_1lbann__quantizer_a12d481b919e35f150cc9617711e0e712_icgraph" id="classlbann_1_1lbann__quantizer_a12d481b919e35f150cc9617711e0e712_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1lbann__quantizer.html#a4dd4696cbbfd93c73e5fb3c40fcb16c3" title="lbann::lbann_quantizer\l::onebit_quantize" alt="" coords="208,18,360,59"/><area shape="rect" id="node4" href="classlbann_1_1lbann__quantizer.html#a4b326de1ca5b7eba6415b6f42f83335b" title="lbann::lbann_quantizer\l::intermodel_sum_onebit\l_quantized" alt="" coords="409,69,573,125"/><area shape="rect" id="node3" href="classlbann_1_1lbann__quantizer.html#a9eeb89150026bf4b7bea15bffdba10d3" title="lbann::lbann_quantizer\l::onebit_quantize" alt="" coords="415,5,567,46"/><area shape="rect" id="node5" href="classlbann_1_1lbann__callback__imcomm.html#ace11211398e94728880476981f25fdc2" title="lbann::lbann_callback\l_imcomm::on_backward\l_prop_end" alt="" coords="622,29,786,85"/><area shape="rect" id="node6" href="classlbann_1_1lbann__quantizer.html#af24e00e26e157f102f3cef547de40ae1" title="lbann::lbann_quantizer\l::intermodel_sum_onebit\l_quantized" alt="" coords="622,109,786,165"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a5b9d72b9133517e0212f73908a576c7e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1982,46 +2022,6 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classlbann_1_1lbann__quantizer_a0d9f7cc689b44935a347ff0b7e3d1820_icgraph.png" border="0" usemap="#classlbann_1_1lbann__quantizer_a0d9f7cc689b44935a347ff0b7e3d1820_icgraph" alt=""/></div>
 <map name="classlbann_1_1lbann__quantizer_a0d9f7cc689b44935a347ff0b7e3d1820_icgraph" id="classlbann_1_1lbann__quantizer_a0d9f7cc689b44935a347ff0b7e3d1820_icgraph">
 <area shape="rect" id="node2" href="classlbann_1_1lbann__callback__imcomm.html#ace11211398e94728880476981f25fdc2" title="lbann::lbann_callback\l_imcomm::on_backward\l_prop_end" alt="" coords="206,4,370,60"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ab91c3defbec372e4b5c35db7dfe522b0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Int lbann::lbann_quantizer::get_quantized_matrix_height </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;&#160;</td>
-          <td class="paramname"><em>mat</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Return the height of mat after quantization with quantize(). </p>
-
-<p>Definition at line <a class="el" href="lbann__quantizer_8hpp_source.html#l00355">355</a> of file <a class="el" href="lbann__quantizer_8hpp_source.html">lbann_quantizer.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                                                               {</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="keywordflow">return</span> (mat.Height() + (<a class="code" href="classlbann_1_1lbann__quantizer.html#a33ea17392f53b90e91aea1ffb7e11d68">NUM_BITS</a>-1)) / <a class="code" href="classlbann_1_1lbann__quantizer.html#a33ea17392f53b90e91aea1ffb7e11d68">NUM_BITS</a> + 2;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  }</div>
-<div class="ttc" id="classlbann_1_1lbann__quantizer_html_a33ea17392f53b90e91aea1ffb7e11d68"><div class="ttname"><a href="classlbann_1_1lbann__quantizer.html#a33ea17392f53b90e91aea1ffb7e11d68">lbann::lbann_quantizer::NUM_BITS</a></div><div class="ttdeci">static const size_t NUM_BITS</div><div class="ttdef"><b>Definition:</b> <a href="lbann__quantizer_8hpp_source.html#l00301">lbann_quantizer.hpp:301</a></div></div>
-</div><!-- fragment -->
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classlbann_1_1lbann__quantizer_ab91c3defbec372e4b5c35db7dfe522b0_icgraph.png" border="0" usemap="#classlbann_1_1lbann__quantizer_ab91c3defbec372e4b5c35db7dfe522b0_icgraph" alt=""/></div>
-<map name="classlbann_1_1lbann__quantizer_ab91c3defbec372e4b5c35db7dfe522b0_icgraph" id="classlbann_1_1lbann__quantizer_ab91c3defbec372e4b5c35db7dfe522b0_icgraph">
-<area shape="rect" id="node2" href="classlbann_1_1lbann__quantizer.html#a4dd4696cbbfd93c73e5fb3c40fcb16c3" title="lbann::lbann_quantizer\l::onebit_quantize" alt="" coords="208,18,360,59"/><area shape="rect" id="node4" href="classlbann_1_1lbann__quantizer.html#a4b326de1ca5b7eba6415b6f42f83335b" title="lbann::lbann_quantizer\l::intermodel_sum_onebit\l_quantized" alt="" coords="409,69,573,125"/><area shape="rect" id="node3" href="classlbann_1_1lbann__quantizer.html#a9eeb89150026bf4b7bea15bffdba10d3" title="lbann::lbann_quantizer\l::onebit_quantize" alt="" coords="415,5,567,46"/><area shape="rect" id="node5" href="classlbann_1_1lbann__callback__imcomm.html#ace11211398e94728880476981f25fdc2" title="lbann::lbann_callback\l_imcomm::on_backward\l_prop_end" alt="" coords="622,29,786,85"/><area shape="rect" id="node6" href="classlbann_1_1lbann__quantizer.html#af24e00e26e157f102f3cef547de40ae1" title="lbann::lbann_quantizer\l::intermodel_sum_onebit\l_quantized" alt="" coords="622,109,786,165"/></map>
 </div>
 </p>
 
@@ -2600,23 +2600,23 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keyword">auto</span> recv_transform =</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    [<span class="keyword">this</span>] (uint8_t* recv_buf, <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; accum) {</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <a class="code" href="classlbann_1_1lbann__quantizer.html#a2f0b1c91b994c91dfa506869e3329db6">QuantizedMatrix</a> recv_mat;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    recv_mat.LockedAttach(<a class="code" href="classlbann_1_1lbann__quantizer.html#ab91c3defbec372e4b5c35db7dfe522b0">get_quantized_matrix_height</a>(accum), accum.Width(),</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                          (<a class="code" href="classlbann_1_1lbann__quantizer.html#ab93df328abd13df0403d7483c8edfa89">qtype</a>*) recv_buf,</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                          <a class="code" href="classlbann_1_1lbann__quantizer.html#ab91c3defbec372e4b5c35db7dfe522b0">get_quantized_matrix_height</a>(accum));</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    recv_mat.LockedAttach(</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      <a class="code" href="classlbann_1_1lbann__quantizer.html#a12d481b919e35f150cc9617711e0e712">get_onebit_quantized_matrix_height</a>(accum), accum.Width(),</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      (<a class="code" href="classlbann_1_1lbann__quantizer.html#ab93df328abd13df0403d7483c8edfa89">qtype</a>*) recv_buf, <a class="code" href="classlbann_1_1lbann__quantizer.html#a12d481b919e35f150cc9617711e0e712">get_onebit_quantized_matrix_height</a>(accum));</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <a class="code" href="classlbann_1_1lbann__quantizer.html#ad5592daa122b40c275cce3dc93bba41e">onebit_unquantize</a>(recv_mat, accum);</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="classlbann_1_1lbann__quantizer.html#ab93df328abd13df0403d7483c8edfa89">qtype</a>) * recv_mat.Height() * recv_mat.Width();</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  };</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="keyword">auto</span> recv_apply_transform =</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    [<span class="keyword">this</span>] (uint8_t* recv_buf, <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; accum) {</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <a class="code" href="classlbann_1_1lbann__quantizer.html#a2f0b1c91b994c91dfa506869e3329db6">QuantizedMatrix</a> recv_mat;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    recv_mat.LockedAttach(<a class="code" href="classlbann_1_1lbann__quantizer.html#ab91c3defbec372e4b5c35db7dfe522b0">get_quantized_matrix_height</a>(accum), accum.Width(),</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                          (<a class="code" href="classlbann_1_1lbann__quantizer.html#ab93df328abd13df0403d7483c8edfa89">qtype</a>*) recv_buf,</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                          <a class="code" href="classlbann_1_1lbann__quantizer.html#ab91c3defbec372e4b5c35db7dfe522b0">get_quantized_matrix_height</a>(accum));</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    recv_mat.LockedAttach(<a class="code" href="classlbann_1_1lbann__quantizer.html#a12d481b919e35f150cc9617711e0e712">get_onebit_quantized_matrix_height</a>(accum),</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                          accum.Width(), (<a class="code" href="classlbann_1_1lbann__quantizer.html#ab93df328abd13df0403d7483c8edfa89">qtype</a>*) recv_buf,</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                          <a class="code" href="classlbann_1_1lbann__quantizer.html#a12d481b919e35f150cc9617711e0e712">get_onebit_quantized_matrix_height</a>(accum));</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <a class="code" href="classlbann_1_1lbann__quantizer.html#a879cea8464408b8265be9e55edd83b2c">onebit_unquantize_add</a>(recv_mat, accum);</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">sizeof</span>(<a class="code" href="classlbann_1_1lbann__quantizer.html#ab93df328abd13df0403d7483c8edfa89">qtype</a>) * recv_mat.Height() * recv_mat.Width();</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  };</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;intermodel_allreduce(</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    mat, <span class="keyword">sizeof</span>(<a class="code" href="classlbann_1_1lbann__quantizer.html#ab93df328abd13df0403d7483c8edfa89">qtype</a>) * <a class="code" href="classlbann_1_1lbann__quantizer.html#ab91c3defbec372e4b5c35db7dfe522b0">get_quantized_matrix_height</a>(mat) * mat.Width(),</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    mat, <span class="keyword">sizeof</span>(<a class="code" href="classlbann_1_1lbann__quantizer.html#ab93df328abd13df0403d7483c8edfa89">qtype</a>) * <a class="code" href="classlbann_1_1lbann__quantizer.html#a12d481b919e35f150cc9617711e0e712">get_onebit_quantized_matrix_height</a>(mat) * mat.Width(),</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    std::function&lt;uint8_t*(Mat&amp;, IR, IR, int&amp;, bool)&gt;(send_transform),</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    std::function&lt;<span class="keywordtype">int</span>(uint8_t*, <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp;)&gt;(recv_transform),</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    std::function&lt;<span class="keywordtype">int</span>(uint8_t*, <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp;)&gt;(recv_apply_transform));</div>
@@ -2625,17 +2625,17 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="classlbann_1_1lbann__quantizer_html_a2f0b1c91b994c91dfa506869e3329db6"><div class="ttname"><a href="classlbann_1_1lbann__quantizer.html#a2f0b1c91b994c91dfa506869e3329db6">lbann::lbann_quantizer::QuantizedMatrix</a></div><div class="ttdeci">El::Matrix&lt; qtype &gt; QuantizedMatrix</div><div class="ttdef"><b>Definition:</b> <a href="lbann__quantizer_8hpp_source.html#l00072">lbann_quantizer.hpp:72</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__quantizer_html_ad5592daa122b40c275cce3dc93bba41e"><div class="ttname"><a href="classlbann_1_1lbann__quantizer.html#ad5592daa122b40c275cce3dc93bba41e">lbann::lbann_quantizer::onebit_unquantize</a></div><div class="ttdeci">void onebit_unquantize(const QuantizedMatrix &amp;qmat, Mat &amp;mat)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__quantizer_8cpp_source.html#l00142">lbann_quantizer.cpp:142</a></div></div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__quantizer_html_ab91c3defbec372e4b5c35db7dfe522b0"><div class="ttname"><a href="classlbann_1_1lbann__quantizer.html#ab91c3defbec372e4b5c35db7dfe522b0">lbann::lbann_quantizer::get_quantized_matrix_height</a></div><div class="ttdeci">Int get_quantized_matrix_height(const Mat &amp;mat) const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__quantizer_8hpp_source.html#l00355">lbann_quantizer.hpp:355</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__quantizer_html_a879cea8464408b8265be9e55edd83b2c"><div class="ttname"><a href="classlbann_1_1lbann__quantizer.html#a879cea8464408b8265be9e55edd83b2c">lbann::lbann_quantizer::onebit_unquantize_add</a></div><div class="ttdeci">void onebit_unquantize_add(const QuantizedMatrix &amp;qmat, Mat &amp;mat)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__quantizer_8cpp_source.html#l00179">lbann_quantizer.cpp:179</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00042">lbann_base.hpp:42</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__quantizer_html_a4dd4696cbbfd93c73e5fb3c40fcb16c3"><div class="ttname"><a href="classlbann_1_1lbann__quantizer.html#a4dd4696cbbfd93c73e5fb3c40fcb16c3">lbann::lbann_quantizer::onebit_quantize</a></div><div class="ttdeci">void onebit_quantize(const Mat &amp;mat, QuantizedMatrix &amp;qmat, Mat &amp;qerror, bool sample=true)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__quantizer_8cpp_source.html#l00047">lbann_quantizer.cpp:47</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__quantizer_html_a12d481b919e35f150cc9617711e0e712"><div class="ttname"><a href="classlbann_1_1lbann__quantizer.html#a12d481b919e35f150cc9617711e0e712">lbann::lbann_quantizer::get_onebit_quantized_matrix_height</a></div><div class="ttdeci">Int get_onebit_quantized_matrix_height(const Mat &amp;mat) const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__quantizer_8hpp_source.html#l00355">lbann_quantizer.hpp:355</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1lbann__quantizer_a4b326de1ca5b7eba6415b6f42f83335b_cgraph.png" border="0" usemap="#classlbann_1_1lbann__quantizer_a4b326de1ca5b7eba6415b6f42f83335b_cgraph" alt=""/></div>
 <map name="classlbann_1_1lbann__quantizer_a4b326de1ca5b7eba6415b6f42f83335b_cgraph" id="classlbann_1_1lbann__quantizer_a4b326de1ca5b7eba6415b6f42f83335b_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1lbann__quantizer.html#a4dd4696cbbfd93c73e5fb3c40fcb16c3" title="lbann::lbann_quantizer\l::onebit_quantize" alt="" coords="224,75,376,117"/><area shape="rect" id="node3" href="classlbann_1_1lbann__quantizer.html#ab91c3defbec372e4b5c35db7dfe522b0" title="lbann::lbann_quantizer\l::get_quantized_matrix\l_height" alt="" coords="437,5,592,61"/><area shape="rect" id="node6" href="classlbann_1_1lbann__quantizer.html#ad5592daa122b40c275cce3dc93bba41e" title="lbann::lbann_quantizer\l::onebit_unquantize" alt="" coords="224,141,376,182"/><area shape="rect" id="node7" href="classlbann_1_1lbann__quantizer.html#a879cea8464408b8265be9e55edd83b2c" title="lbann::lbann_quantizer\l::onebit_unquantize_add" alt="" coords="219,206,381,247"/><area shape="rect" id="node8" href="classlbann_1_1lbann__comm.html#a01f1a49d07b57bb36de71171d4d59b49" title="lbann::lbann_comm::\lintermodel_allreduce" alt="" coords="229,271,371,313"/><area shape="rect" id="node4" href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5" title="lbann::get_fast_generator" alt="" coords="430,85,599,112"/><area shape="rect" id="node5" href="namespacelbann.html#a557aaed6267e7aaf583a75149e9c670c" title="lbann::fast_rand_int" alt="" coords="447,136,583,163"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1lbann__quantizer.html#a4dd4696cbbfd93c73e5fb3c40fcb16c3" title="lbann::lbann_quantizer\l::onebit_quantize" alt="" coords="224,75,376,117"/><area shape="rect" id="node3" href="classlbann_1_1lbann__quantizer.html#a12d481b919e35f150cc9617711e0e712" title="lbann::lbann_quantizer\l::get_onebit_quantized\l_matrix_height" alt="" coords="438,5,591,61"/><area shape="rect" id="node6" href="classlbann_1_1lbann__quantizer.html#ad5592daa122b40c275cce3dc93bba41e" title="lbann::lbann_quantizer\l::onebit_unquantize" alt="" coords="224,141,376,182"/><area shape="rect" id="node7" href="classlbann_1_1lbann__quantizer.html#a879cea8464408b8265be9e55edd83b2c" title="lbann::lbann_quantizer\l::onebit_unquantize_add" alt="" coords="219,206,381,247"/><area shape="rect" id="node8" href="classlbann_1_1lbann__comm.html#a01f1a49d07b57bb36de71171d4d59b49" title="lbann::lbann_comm::\lintermodel_allreduce" alt="" coords="229,271,371,313"/><area shape="rect" id="node4" href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5" title="lbann::get_fast_generator" alt="" coords="430,85,599,112"/><area shape="rect" id="node5" href="namespacelbann.html#a557aaed6267e7aaf583a75149e9c670c" title="lbann::fast_rand_int" alt="" coords="447,136,583,163"/></map>
 </div>
 </p>
 
@@ -2692,7 +2692,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1lbann__quantizer_af24e00e26e157f102f3cef547de40ae1_cgraph.png" border="0" usemap="#classlbann_1_1lbann__quantizer_af24e00e26e157f102f3cef547de40ae1_cgraph" alt=""/></div>
 <map name="classlbann_1_1lbann__quantizer_af24e00e26e157f102f3cef547de40ae1_cgraph" id="classlbann_1_1lbann__quantizer_af24e00e26e157f102f3cef547de40ae1_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1lbann__quantizer.html#a4b326de1ca5b7eba6415b6f42f83335b" title="lbann::lbann_quantizer\l::intermodel_sum_onebit\l_quantized" alt="" coords="219,133,383,189"/><area shape="rect" id="node3" href="classlbann_1_1lbann__quantizer.html#a4dd4696cbbfd93c73e5fb3c40fcb16c3" title="lbann::lbann_quantizer\l::onebit_quantize" alt="" coords="437,75,589,117"/><area shape="rect" id="node4" href="classlbann_1_1lbann__quantizer.html#ab91c3defbec372e4b5c35db7dfe522b0" title="lbann::lbann_quantizer\l::get_quantized_matrix\l_height" alt="" coords="651,5,805,61"/><area shape="rect" id="node7" href="classlbann_1_1lbann__quantizer.html#ad5592daa122b40c275cce3dc93bba41e" title="lbann::lbann_quantizer\l::onebit_unquantize" alt="" coords="437,141,589,182"/><area shape="rect" id="node8" href="classlbann_1_1lbann__quantizer.html#a879cea8464408b8265be9e55edd83b2c" title="lbann::lbann_quantizer\l::onebit_unquantize_add" alt="" coords="432,206,595,247"/><area shape="rect" id="node9" href="classlbann_1_1lbann__comm.html#a01f1a49d07b57bb36de71171d4d59b49" title="lbann::lbann_comm::\lintermodel_allreduce" alt="" coords="442,271,585,313"/><area shape="rect" id="node5" href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5" title="lbann::get_fast_generator" alt="" coords="643,85,813,112"/><area shape="rect" id="node6" href="namespacelbann.html#a557aaed6267e7aaf583a75149e9c670c" title="lbann::fast_rand_int" alt="" coords="660,136,796,163"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1lbann__quantizer.html#a4b326de1ca5b7eba6415b6f42f83335b" title="lbann::lbann_quantizer\l::intermodel_sum_onebit\l_quantized" alt="" coords="219,133,383,189"/><area shape="rect" id="node3" href="classlbann_1_1lbann__quantizer.html#a4dd4696cbbfd93c73e5fb3c40fcb16c3" title="lbann::lbann_quantizer\l::onebit_quantize" alt="" coords="437,75,589,117"/><area shape="rect" id="node4" href="classlbann_1_1lbann__quantizer.html#a12d481b919e35f150cc9617711e0e712" title="lbann::lbann_quantizer\l::get_onebit_quantized\l_matrix_height" alt="" coords="651,5,805,61"/><area shape="rect" id="node7" href="classlbann_1_1lbann__quantizer.html#ad5592daa122b40c275cce3dc93bba41e" title="lbann::lbann_quantizer\l::onebit_unquantize" alt="" coords="437,141,589,182"/><area shape="rect" id="node8" href="classlbann_1_1lbann__quantizer.html#a879cea8464408b8265be9e55edd83b2c" title="lbann::lbann_quantizer\l::onebit_unquantize_add" alt="" coords="432,206,595,247"/><area shape="rect" id="node9" href="classlbann_1_1lbann__comm.html#a01f1a49d07b57bb36de71171d4d59b49" title="lbann::lbann_comm::\lintermodel_allreduce" alt="" coords="442,271,585,313"/><area shape="rect" id="node5" href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5" title="lbann::get_fast_generator" alt="" coords="643,85,813,112"/><area shape="rect" id="node6" href="namespacelbann.html#a557aaed6267e7aaf583a75149e9c670c" title="lbann::fast_rand_int" alt="" coords="660,136,796,163"/></map>
 </div>
 </p>
 
@@ -2869,7 +2869,7 @@ Here is the call graph for this function:</div>
 <p>Definition at line <a class="el" href="lbann__quantizer_8cpp_source.html#l00047">47</a> of file <a class="el" href="lbann__quantizer_8cpp_source.html">lbann_quantizer.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                                                   {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="comment">// Set up the quantized matrix. (+2 for the averages.)</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">const</span> Int qheight = <a class="code" href="classlbann_1_1lbann__quantizer.html#ab91c3defbec372e4b5c35db7dfe522b0">get_quantized_matrix_height</a>(mat);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">const</span> Int qheight = <a class="code" href="classlbann_1_1lbann__quantizer.html#a12d481b919e35f150cc9617711e0e712">get_onebit_quantized_matrix_height</a>(mat);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">const</span> Int qwidth = mat.Width();</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  qmat.Resize(qheight, qwidth);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
@@ -2960,17 +2960,17 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="classlbann_1_1lbann__quantizer_html_a37f0c719ced064cfe80dacfa90b4a0b6"><div class="ttname"><a href="classlbann_1_1lbann__quantizer.html#a37f0c719ced064cfe80dacfa90b4a0b6">lbann::lbann_quantizer::NUM_ONEBIT_SAMPLES</a></div><div class="ttdeci">static const Int NUM_ONEBIT_SAMPLES</div><div class="ttdef"><b>Definition:</b> <a href="lbann__quantizer_8hpp_source.html#l00307">lbann_quantizer.hpp:307</a></div></div>
 <div class="ttc" id="namespacelbann_html_ae6ce9c2fdec6f81803f6b1a6555c31c5"><div class="ttname"><a href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5">lbann::get_fast_generator</a></div><div class="ttdeci">fast_rng_gen &amp; get_fast_generator()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__random_8cpp_source.html#l00064">lbann_random.cpp:64</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__quantizer_html_a018cddfc9b73d94c2d60bdd7a11a0079"><div class="ttname"><a href="classlbann_1_1lbann__quantizer.html#a018cddfc9b73d94c2d60bdd7a11a0079">lbann::lbann_quantizer::uqtype</a></div><div class="ttdeci">El::Unsigned uqtype</div><div class="ttdef"><b>Definition:</b> <a href="lbann__quantizer_8hpp_source.html#l00062">lbann_quantizer.hpp:62</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__quantizer_html_ab91c3defbec372e4b5c35db7dfe522b0"><div class="ttname"><a href="classlbann_1_1lbann__quantizer.html#ab91c3defbec372e4b5c35db7dfe522b0">lbann::lbann_quantizer::get_quantized_matrix_height</a></div><div class="ttdeci">Int get_quantized_matrix_height(const Mat &amp;mat) const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__quantizer_8hpp_source.html#l00355">lbann_quantizer.hpp:355</a></div></div>
 <div class="ttc" id="namespacelbann_html_ab909b5afe4b0047a3bfe13d519a90290"><div class="ttname"><a href="namespacelbann.html#ab909b5afe4b0047a3bfe13d519a90290">lbann::fast_rng_gen</a></div><div class="ttdeci">std::minstd_rand fast_rng_gen</div><div class="ttdef"><b>Definition:</b> <a href="lbann__random_8hpp_source.html#l00037">lbann_random.hpp:37</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__quantizer_html_a33ea17392f53b90e91aea1ffb7e11d68"><div class="ttname"><a href="classlbann_1_1lbann__quantizer.html#a33ea17392f53b90e91aea1ffb7e11d68">lbann::lbann_quantizer::NUM_BITS</a></div><div class="ttdeci">static const size_t NUM_BITS</div><div class="ttdef"><b>Definition:</b> <a href="lbann__quantizer_8hpp_source.html#l00301">lbann_quantizer.hpp:301</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00037">lbann_base.hpp:37</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__quantizer_html_a12d481b919e35f150cc9617711e0e712"><div class="ttname"><a href="classlbann_1_1lbann__quantizer.html#a12d481b919e35f150cc9617711e0e712">lbann::lbann_quantizer::get_onebit_quantized_matrix_height</a></div><div class="ttdeci">Int get_onebit_quantized_matrix_height(const Mat &amp;mat) const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__quantizer_8hpp_source.html#l00355">lbann_quantizer.hpp:355</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1lbann__quantizer_a4dd4696cbbfd93c73e5fb3c40fcb16c3_cgraph.png" border="0" usemap="#classlbann_1_1lbann__quantizer_a4dd4696cbbfd93c73e5fb3c40fcb16c3_cgraph" alt=""/></div>
 <map name="classlbann_1_1lbann__quantizer_a4dd4696cbbfd93c73e5fb3c40fcb16c3_cgraph" id="classlbann_1_1lbann__quantizer_a4dd4696cbbfd93c73e5fb3c40fcb16c3_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1lbann__quantizer.html#ab91c3defbec372e4b5c35db7dfe522b0" title="lbann::lbann_quantizer\l::get_quantized_matrix\l_height" alt="" coords="213,5,368,61"/><area shape="rect" id="node3" href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5" title="lbann::get_fast_generator" alt="" coords="206,85,375,112"/><area shape="rect" id="node4" href="namespacelbann.html#a557aaed6267e7aaf583a75149e9c670c" title="lbann::fast_rand_int" alt="" coords="223,136,359,163"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1lbann__quantizer.html#a12d481b919e35f150cc9617711e0e712" title="lbann::lbann_quantizer\l::get_onebit_quantized\l_matrix_height" alt="" coords="214,5,367,61"/><area shape="rect" id="node3" href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5" title="lbann::get_fast_generator" alt="" coords="206,85,375,112"/><area shape="rect" id="node4" href="namespacelbann.html#a557aaed6267e7aaf583a75149e9c670c" title="lbann::fast_rand_int" alt="" coords="223,136,359,163"/></map>
 </div>
 </p>
 
@@ -3032,7 +3032,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1lbann__quantizer_a9eeb89150026bf4b7bea15bffdba10d3_cgraph.png" border="0" usemap="#classlbann_1_1lbann__quantizer_a9eeb89150026bf4b7bea15bffdba10d3_cgraph" alt=""/></div>
 <map name="classlbann_1_1lbann__quantizer_a9eeb89150026bf4b7bea15bffdba10d3_cgraph" id="classlbann_1_1lbann__quantizer_a9eeb89150026bf4b7bea15bffdba10d3_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1lbann__quantizer.html#a4dd4696cbbfd93c73e5fb3c40fcb16c3" title="lbann::lbann_quantizer\l::onebit_quantize" alt="" coords="205,78,357,119"/><area shape="rect" id="node3" href="classlbann_1_1lbann__quantizer.html#ab91c3defbec372e4b5c35db7dfe522b0" title="lbann::lbann_quantizer\l::get_quantized_matrix\l_height" alt="" coords="413,5,568,61"/><area shape="rect" id="node4" href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5" title="lbann::get_fast_generator" alt="" coords="406,85,575,112"/><area shape="rect" id="node5" href="namespacelbann.html#a557aaed6267e7aaf583a75149e9c670c" title="lbann::fast_rand_int" alt="" coords="423,136,559,163"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1lbann__quantizer.html#a4dd4696cbbfd93c73e5fb3c40fcb16c3" title="lbann::lbann_quantizer\l::onebit_quantize" alt="" coords="205,78,357,119"/><area shape="rect" id="node3" href="classlbann_1_1lbann__quantizer.html#a12d481b919e35f150cc9617711e0e712" title="lbann::lbann_quantizer\l::get_onebit_quantized\l_matrix_height" alt="" coords="414,5,567,61"/><area shape="rect" id="node4" href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5" title="lbann::get_fast_generator" alt="" coords="406,85,575,112"/><area shape="rect" id="node5" href="namespacelbann.html#a557aaed6267e7aaf583a75149e9c670c" title="lbann::fast_rand_int" alt="" coords="423,136,559,163"/></map>
 </div>
 </p>
 
@@ -4606,7 +4606,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__quantizer.html">lbann_quantizer</a></li>
-    <li class="footer">Generated on Thu May 18 2017 20:15:59 for LBANN by
+    <li class="footer">Generated on Thu May 18 2017 21:01:01 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

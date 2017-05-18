@@ -48,7 +48,7 @@ var NAVTREEINDEX =
 "classlbann_1_1Layer.html#ab8ec7fc7bd902123d7b7788b6284ca62",
 "classlbann_1_1data__reader__nci__regression.html#af154b6598b89f0d5f4d13aca1e8b2113",
 "classlbann_1_1lbann__callback__dump__weights.html",
-"classlbann_1_1lbann__quantizer.html#a3fe3493cb16b85bd4eaf251980408f1b",
+"classlbann_1_1lbann__quantizer.html#a3a9e25785189c84ba5a7fe055382ca92",
 "classlbann_1_1objective__functions_1_1objective__fn.html#a031268be60cba917d94d876aaa36c7f7",
 "classlbann_1_1stacked__autoencoder.html#a69a11143ad8fdb00004b38768b33add7",
 "functions_func_c.html",
