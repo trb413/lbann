@@ -1,6 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"classlbann_1_1lbann__quantizer.html#a3a9e25785189c84ba5a7fe055382ca92":[3,0,3,85,64],
 "classlbann_1_1lbann__quantizer.html#a3fe3493cb16b85bd4eaf251980408f1b":[3,0,3,85,44],
 "classlbann_1_1lbann__quantizer.html#a430cd47f333c678d2cb77f4ab2693914":[3,0,3,85,8],
 "classlbann_1_1lbann__quantizer.html#a4484f37237d53c4992d00698b72fd45f":[3,0,3,85,41],
@@ -249,5 +248,6 @@ var NAVTREEINDEX4 =
 "classlbann_1_1objective__functions_1_1mean__squared__error.html#a72b1cfc638b998c4db07da782ac72bf1":[3,0,3,1,3,0],
 "classlbann_1_1objective__functions_1_1mean__squared__error.html#a862570ae6234c97b3f3bea66b1929890":[3,0,3,1,3,5],
 "classlbann_1_1objective__functions_1_1mean__squared__error.html#ab76353be04778e98d80e555e2d6cf6cb":[3,0,3,1,3,8],
-"classlbann_1_1objective__functions_1_1mean__squared__error.html#aedd9585447557339a1753dfe7d520a19":[3,0,3,1,3,4]
+"classlbann_1_1objective__functions_1_1mean__squared__error.html#aedd9585447557339a1753dfe7d520a19":[3,0,3,1,3,4],
+"classlbann_1_1objective__functions_1_1objective__fn.html":[3,0,3,1,1]
 };

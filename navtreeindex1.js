@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classlbann_1_1Layer.html#ab178f73070d2764151a7e6be2614acda":[3,0,3,37,17],
 "classlbann_1_1Layer.html#ab8ec7fc7bd902123d7b7788b6284ca62":[3,0,3,37,43],
 "classlbann_1_1Layer.html#abaa9acb195346090fffcd64013295479":[3,0,3,37,46],
 "classlbann_1_1Layer.html#abd6c1fa01659749b22de59baf8259b84":[3,0,3,37,83],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "classlbann_1_1data__reader__nci__regression.html#a819c622d3fcff48a54ec2a81952c79d8":[3,0,3,27,12],
 "classlbann_1_1data__reader__nci__regression.html#aa8ce278fb6506141347da302858cba99":[3,0,3,27,15],
 "classlbann_1_1data__reader__nci__regression.html#ab43ef50caa675ec59405f6335fe4c5b6":[3,0,3,27,4],
-"classlbann_1_1data__reader__nci__regression.html#aca20bfd23911c0e6045ba12e0028c6fd":[3,0,3,27,11]
+"classlbann_1_1data__reader__nci__regression.html#aca20bfd23911c0e6045ba12e0028c6fd":[3,0,3,27,11],
+"classlbann_1_1data__reader__nci__regression.html#ae2e00a84db3d9060a15d4e67c985948a":[3,0,3,27,8]
 };

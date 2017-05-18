@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"classlbann_1_1data__reader__nci__regression.html#ae2e00a84db3d9060a15d4e67c985948a":[3,0,3,27,8],
 "classlbann_1_1data__reader__nci__regression.html#af154b6598b89f0d5f4d13aca1e8b2113":[3,0,3,27,7],
 "classlbann_1_1data__reader__nci__regression.html#af30f0151957bcd17ff72e96581139eb1":[3,0,3,27,2],
 "classlbann_1_1data__reader__synthetic.html":[3,0,3,28],
@@ -94,13 +93,13 @@ var NAVTREEINDEX2 =
 "classlbann_1_1image__utils.html#a29b07947ccdb99ff3acba88829a7588f":[3,0,3,30,11],
 "classlbann_1_1image__utils.html#a627f2e2d430616eb4e029fb7a3c8d7e5":[3,0,3,30,13],
 "classlbann_1_1image__utils.html#a76d25c0798c6ea147345521633279a9b":[3,0,3,30,7],
-"classlbann_1_1image__utils.html#a7d9ab7284d1408d9a0e8fdf976d6a4a2":[3,0,3,30,6],
 "classlbann_1_1image__utils.html#a86e65a4c267319e77ae9e8c65033ac15":[3,0,3,30,10],
 "classlbann_1_1image__utils.html#aa1b42ae8de26099d13cc300a7faea3e0":[3,0,3,30,4],
 "classlbann_1_1image__utils.html#aabe8724b1066c59b2d5b85b183b7f99a":[3,0,3,30,8],
 "classlbann_1_1image__utils.html#aae26f1ab054267e66d23f34c2f3bb170":[3,0,3,30,3],
-"classlbann_1_1image__utils.html#abefdf10cea3cdaf7dfdf758752ecbd6b":[3,0,3,30,5],
+"classlbann_1_1image__utils.html#abefdf10cea3cdaf7dfdf758752ecbd6b":[3,0,3,30,6],
 "classlbann_1_1image__utils.html#ac324a04f877601387cfb10750f1f6b8d":[3,0,3,30,2],
+"classlbann_1_1image__utils.html#ac6194e29215ffefccfcc058e6390af8f":[3,0,3,30,5],
 "classlbann_1_1image__utils.html#ae72e084345ad5b62847f6bd9675438d8":[3,0,3,30,14],
 "classlbann_1_1image__utils.html#af4b1658b13cff3af68139d903fc85735":[3,0,3,30,1],
 "classlbann_1_1input__layer.html":[3,0,3,33],
@@ -249,5 +248,6 @@ var NAVTREEINDEX2 =
 "classlbann_1_1lbann__callback__dump__activations.html#aa671216de198f71d84f179b3fdfb8adc":[3,0,3,6,2],
 "classlbann_1_1lbann__callback__dump__gradients.html":[3,0,3,7],
 "classlbann_1_1lbann__callback__dump__gradients.html#a781f771d7ebfc80310d316869bd74f71":[3,0,3,7,1],
-"classlbann_1_1lbann__callback__dump__gradients.html#a9a58e0b9c6786bfbbf0ba419dad4b8b7":[3,0,3,7,0]
+"classlbann_1_1lbann__callback__dump__gradients.html#a9a58e0b9c6786bfbbf0ba419dad4b8b7":[3,0,3,7,0],
+"classlbann_1_1lbann__callback__dump__gradients.html#ac7515aa8900813cf1f71248ae4e34fa6":[3,0,3,7,2]
 };

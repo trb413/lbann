@@ -1,6 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"classlbann_1_1lbann__callback__dump__gradients.html#ac7515aa8900813cf1f71248ae4e34fa6":[3,0,3,7,2],
 "classlbann_1_1lbann__callback__dump__weights.html":[3,0,3,8],
 "classlbann_1_1lbann__callback__dump__weights.html#a214d46826f6b64b321b34321451e9ab4":[3,0,3,8,1],
 "classlbann_1_1lbann__callback__dump__weights.html#a8766f51733ac84bec3fc816396e13067":[3,0,3,8,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX3 =
 "classlbann_1_1lbann__quantizer.html#a2c1b69b38cf93d43e9b4eca7d4c5e28f":[3,0,3,85,35],
 "classlbann_1_1lbann__quantizer.html#a2f0b1c91b994c91dfa506869e3329db6":[3,0,3,85,3],
 "classlbann_1_1lbann__quantizer.html#a33ea17392f53b90e91aea1ffb7e11d68":[3,0,3,85,73],
-"classlbann_1_1lbann__quantizer.html#a37f0c719ced064cfe80dacfa90b4a0b6":[3,0,3,85,74]
+"classlbann_1_1lbann__quantizer.html#a37f0c719ced064cfe80dacfa90b4a0b6":[3,0,3,85,74],
+"classlbann_1_1lbann__quantizer.html#a3a9e25785189c84ba5a7fe055382ca92":[3,0,3,85,64]
 };

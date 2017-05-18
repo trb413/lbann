@@ -68,7 +68,6 @@ var classlbann_1_1DataReader =
     [ "m_model_offset", "classlbann_1_1DataReader.html#adfeaf6f5582249708f352cdd514dd339", null ],
     [ "m_num_mini_batches_per_reader", "classlbann_1_1DataReader.html#aebe858a5f6753c6990d3222a0d16526b", null ],
     [ "m_role", "classlbann_1_1DataReader.html#a78e8fc29b260db80e35e7e0a7e1d8648", null ],
-    [ "m_shuffle", "classlbann_1_1DataReader.html#a4aa1e8a5487e2866aa285468a6644e67", null ],
     [ "m_stride", "classlbann_1_1DataReader.html#ad3e0f709e38f0df8f60fd7de7ea6d206", null ],
     [ "m_unused_indices", "classlbann_1_1DataReader.html#a61ac29e25ce443c76a54f588c4923776", null ],
     [ "m_use_alt_last_mini_batch_size", "classlbann_1_1DataReader.html#acb4e6f0cf96f590ca6244343a14d5a86", null ],

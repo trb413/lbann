@@ -10,5 +10,5 @@ var classlbann_1_1DataReader__ImageNetSingle =
     [ "m_data_filestream", "classlbann_1_1DataReader__ImageNetSingle.html#a0956180533d732f848fecaf4247f61ea", null ],
     [ "m_offsets", "classlbann_1_1DataReader__ImageNetSingle.html#a1b0e94e69b36c8b32041e0fc56ebb29f", null ],
     [ "m_pixels", "classlbann_1_1DataReader__ImageNetSingle.html#a2f571206c3e6fcfae0fca89fbfad867b", null ],
-    [ "m_work_buffer", "classlbann_1_1DataReader__ImageNetSingle.html#a6c68070cad76b29085ac5fcadff6c50f", null ]
+    [ "m_work_buffer", "classlbann_1_1DataReader__ImageNetSingle.html#ab9082d6326e228293a9ca416a965c6c9", null ]
 ];
