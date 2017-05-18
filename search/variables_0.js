@@ -1,12 +1,6 @@
 var searchData=
 [
   ['activationtype',['ActivationType',['../classlbann_1_1TrainingParams.html#a843d078db900a23792944c0b4842bfa8',1,'lbann::TrainingParams']]],
-  ['adaptive_5frecv16_5fbufs1',['adaptive_recv16_bufs1',['../classlbann_1_1lbann__quantizer.html#a1c040e0ac664033c11be7508b748ab9e',1,'lbann::lbann_quantizer']]],
-  ['adaptive_5frecv16_5fbufs2',['adaptive_recv16_bufs2',['../classlbann_1_1lbann__quantizer.html#a30dbfa80352a74ef679621aec49baa03',1,'lbann::lbann_quantizer']]],
-  ['adaptive_5frecv32_5fbufs1',['adaptive_recv32_bufs1',['../classlbann_1_1lbann__quantizer.html#aebbc279d18ea35693ce5bbcb22c0b9e6',1,'lbann::lbann_quantizer']]],
-  ['adaptive_5frecv32_5fbufs2',['adaptive_recv32_bufs2',['../classlbann_1_1lbann__quantizer.html#a38765ea10abe26432832e91da9f3adc0',1,'lbann::lbann_quantizer']]],
-  ['adaptive_5frecv64_5fbufs1',['adaptive_recv64_bufs1',['../classlbann_1_1lbann__quantizer.html#a487b6490b8452e85fce46c8c1b75ec7b',1,'lbann::lbann_quantizer']]],
-  ['adaptive_5frecv64_5fbufs2',['adaptive_recv64_bufs2',['../classlbann_1_1lbann__quantizer.html#a24ba8dd73278f8b10410fa7e6dec676f',1,'lbann::lbann_quantizer']]],
   ['ag_5fbytes_5freceived',['ag_bytes_received',['../classlbann_1_1lbann__quantizer.html#ae29843bccd4f211f36f4dd357a066a5d',1,'lbann::lbann_quantizer']]],
   ['ag_5fbytes_5fsent',['ag_bytes_sent',['../classlbann_1_1lbann__quantizer.html#a3a9e25785189c84ba5a7fe055382ca92',1,'lbann::lbann_quantizer']]],
   ['ag_5frecv_5fbuf_5ftime',['ag_recv_buf_time',['../classlbann_1_1lbann__quantizer.html#a0b7575ba8c4c3c2fcd7ea7e668c02178',1,'lbann::lbann_quantizer']]],

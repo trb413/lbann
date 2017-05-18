@@ -2,6 +2,7 @@ var searchData=
 [
   ['parse_5fnetwork_5fstring',['parse_network_string',['../classlbann_1_1NetworkParams.html#adea4a4400b03bdfd8c8a9a27561eb43c',1,'lbann::NetworkParams']]],
   ['parse_5fparams',['parse_params',['../classlbann_1_1TrainingParams.html#a245c0674a2132cb15f1198b1f4dd2bf8',1,'lbann::TrainingParams::parse_params()'],['../classlbann_1_1PerformanceParams.html#abde9f8ab7421f863f11542721c93768f',1,'lbann::PerformanceParams::parse_params()'],['../classlbann_1_1NetworkParams.html#a40db1f34f89a65763c9634fd71ebbc07',1,'lbann::NetworkParams::parse_params()'],['../classlbann_1_1SystemParams.html#a87e7db31ab92668900a6b2bb5b449d66',1,'lbann::SystemParams::parse_params()']]],
+  ['pe_5fring_5fallreduce',['pe_ring_allreduce',['../classlbann_1_1lbann__comm.html#a118fa47d34f7ab5eb5080eca6e6683aa',1,'lbann::lbann_comm']]],
   ['performanceparams',['PerformanceParams',['../classlbann_1_1PerformanceParams.html#ae284808f500feb48cf3f0a1976e52e39',1,'lbann::PerformanceParams']]],
   ['persist',['persist',['../classlbann_1_1persist.html#abf1454f4d5b61617ccfa60ba9989f1a3',1,'lbann::persist']]],
   ['pin_5fmem',['pin_mem',['../classlbann_1_1convolutional__layer.html#afb02fc08adfd2c009556428c69d4ae36',1,'lbann::convolutional_layer::pin_mem()'],['../classlbann_1_1pooling__layer.html#aa3b6b1ed167e41320c6070c805186ef3',1,'lbann::pooling_layer::pin_mem()']]],

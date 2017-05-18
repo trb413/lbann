@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['im_5fquantization_5ferrors',['im_quantization_errors',['../classlbann_1_1lbann__callback__imcomm.html#ab4c3627c1cd73ca8fc994918a4adbe7a',1,'lbann::lbann_callback_imcomm']]],
   ['imagelist',['ImageList',['../classlbann_1_1DataReader__ImageNet.html#aa4203ab75865ebf9b14696d9a4ef1739',1,'lbann::DataReader_ImageNet']]],
   ['index',['Index',['../classlbann_1_1Layer.html#a5d76fcdf50d7ac4fb2fe757fb0cc23d8',1,'lbann::Layer']]],
   ['intermodel_5fcomm',['intermodel_comm',['../classlbann_1_1lbann__comm.html#a4797dcdf39d18c4c8335dc012186a8b1',1,'lbann::lbann_comm']]],
