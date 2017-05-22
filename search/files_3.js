@@ -54,6 +54,8 @@ var searchData=
   ['lbann_5fdata_5freader_5fimagenet_2ehpp',['lbann_data_reader_imagenet.hpp',['../lbann__data__reader__imagenet_8hpp.html',1,'']]],
   ['lbann_5fdata_5freader_5fimagenet_5fsingle_2ecpp',['lbann_data_reader_imagenet_single.cpp',['../lbann__data__reader__imagenet__single_8cpp.html',1,'']]],
   ['lbann_5fdata_5freader_5fimagenet_5fsingle_2ehpp',['lbann_data_reader_imagenet_single.hpp',['../lbann__data__reader__imagenet__single_8hpp.html',1,'']]],
+  ['lbann_5fdata_5freader_5fimagenet_5fsingle_5fcv_2ecpp',['lbann_data_reader_imagenet_single_cv.cpp',['../lbann__data__reader__imagenet__single__cv_8cpp.html',1,'']]],
+  ['lbann_5fdata_5freader_5fimagenet_5fsingle_5fcv_2ehpp',['lbann_data_reader_imagenet_single_cv.hpp',['../lbann__data__reader__imagenet__single__cv_8hpp.html',1,'']]],
   ['lbann_5fdata_5freader_5fmnist_2ecpp',['lbann_data_reader_mnist.cpp',['../lbann__data__reader__mnist_8cpp.html',1,'']]],
   ['lbann_5fdata_5freader_5fmnist_2ehpp',['lbann_data_reader_mnist.hpp',['../lbann__data__reader__mnist_8hpp.html',1,'']]],
   ['lbann_5fdata_5freader_5fnci_2ecpp',['lbann_data_reader_nci.cpp',['../lbann__data__reader__nci_8cpp.html',1,'']]],

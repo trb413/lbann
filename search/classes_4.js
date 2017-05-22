@@ -8,6 +8,7 @@ var searchData=
   ['datareader_5fcnpy',['DataReader_cnpy',['../classlbann_1_1DataReader__cnpy.html',1,'lbann']]],
   ['datareader_5fimagenet',['DataReader_ImageNet',['../classlbann_1_1DataReader__ImageNet.html',1,'lbann']]],
   ['datareader_5fimagenetsingle',['DataReader_ImageNetSingle',['../classlbann_1_1DataReader__ImageNetSingle.html',1,'lbann']]],
+  ['datareader_5fimagenetsingle_5fcv',['DataReader_ImageNetSingle_cv',['../classlbann_1_1DataReader__ImageNetSingle__cv.html',1,'lbann']]],
   ['datareader_5fmnist',['DataReader_MNIST',['../classlbann_1_1DataReader__MNIST.html',1,'lbann']]],
   ['dataset',['dataset',['../classlbann_1_1dataset.html',1,'lbann']]],
   ['dataset_5fheader',['dataset_header',['../structdataset__header.html',1,'']]],
