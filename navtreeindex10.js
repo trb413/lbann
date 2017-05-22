@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"struct__BOX2__FLOAT.html#a39fd38650ae3fa7e03eeb6b2a3345984":[3,0,10,2],
 "struct__BOX2__FLOAT.html#a63d955695d166001e5fc4a25173cb75f":[3,0,10,0],
 "struct__BOX2__FLOAT.html#abdadd19c61a803a2b16b8adf7eac24fa":[3,0,10,3],
 "struct__BOX2__FLOAT.html#af0b0a02c5d169b6e93b01bf7eaa71cd7":[3,0,10,1],

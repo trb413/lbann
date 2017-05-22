@@ -89,6 +89,7 @@ var classlbann_1_1lbann__comm =
     [ "nb_send", "classlbann_1_1lbann__comm.html#ae2e920f0167eaf66a30b19706dec3ee1", null ],
     [ "nb_send", "classlbann_1_1lbann__comm.html#a3ffd8fc57e7ac7d44829370921b807aa", null ],
     [ "pe_ring_allreduce", "classlbann_1_1lbann__comm.html#ad1cc14ad0e6e3eeb863c25854574ec6f", null ],
+    [ "rabenseifner_allreduce", "classlbann_1_1lbann__comm.html#af5761d6fd48871b5e6074962fa503db1", null ],
     [ "recursive_doubling_allreduce_pow2", "classlbann_1_1lbann__comm.html#abc19e4d1440f6c2c94405d04f85e8fe0", null ],
     [ "recv", "classlbann_1_1lbann__comm.html#af8842cd4cea390f76d9146e1c4578de4", null ],
     [ "recv", "classlbann_1_1lbann__comm.html#a7f2f06772bdee76b4d736c1d7ab84329", null ],

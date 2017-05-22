@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['rabenseifner_5fallreduce',['rabenseifner_allreduce',['../classlbann_1_1lbann__comm.html#af5761d6fd48871b5e6074962fa503db1',1,'lbann::lbann_comm']]],
   ['rand_5fpatch',['rand_patch',['../classlbann_1_1patchworks_1_1rand__patch.html#ab2c490cd4379e930ba910fa6aa22bc07',1,'lbann::patchworks::rand_patch::rand_patch(void)'],['../classlbann_1_1patchworks_1_1rand__patch.html#aae69828a2ae6a079ef172141256f2406',1,'lbann::patchworks::rand_patch::rand_patch(const generator_t::result_type _seed)']]],
   ['read_5fbytes',['read_bytes',['../classlbann_1_1persist.html#af24f635f634c8cf30cf53a0e90ec641b',1,'lbann::persist::read_bytes()'],['../namespacelbann.html#a85385e2a9e058b6720300b4cbdd2b1d0',1,'lbann::read_bytes()']]],
   ['read_5fdistmat',['read_distmat',['../classlbann_1_1persist.html#aa98be93f33b510e5b506b61de6bd79bd',1,'lbann::persist::read_distmat()'],['../namespacelbann.html#a0306ed35d6d90cf4fbdce7a72ad62ca7',1,'lbann::read_distmat()']]],

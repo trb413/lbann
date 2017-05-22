@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"lbann__mild__exception_8hpp.html":[4,0,0,0,0,0,0,0,0,10,3],
 "lbann__mild__exception_8hpp.html#a2383d19fc8bacf3fdc0b50f419f65cba":[4,0,0,0,0,0,0,0,0,10,3,0],
 "lbann__mild__exception_8hpp.html#a2a543bf15443091137425765aa002d4d":[4,0,0,0,0,0,0,0,0,10,3,1],
 "lbann__mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9":[4,0,0,0,0,0,0,0,0,10,3,3],
@@ -187,14 +188,14 @@ var NAVTREEINDEX9 =
 "mpi.html":[0,3,5],
 "mpi.html#mpi_install_linux":[0,3,5,0],
 "mpi.html#mpi_install_osx":[0,3,5,1],
-"namespaceEl.html":[2,0,2],
 "namespaceEl.html":[3,0,2],
-"namespaceanonymous__namespace_02lbann__random_8cpp_03.html":[3,0,0],
+"namespaceEl.html":[2,0,2],
 "namespaceanonymous__namespace_02lbann__random_8cpp_03.html":[2,0,0],
+"namespaceanonymous__namespace_02lbann__random_8cpp_03.html":[3,0,0],
 "namespacecudnn.html":[3,0,1],
 "namespacecudnn.html":[2,0,1],
-"namespacelbann.html":[3,0,3],
 "namespacelbann.html":[2,0,3],
+"namespacelbann.html":[3,0,3],
 "namespacelbann_1_1metrics.html":[2,0,3,0],
 "namespacelbann_1_1metrics.html":[3,0,3,0],
 "namespacelbann_1_1objective__functions.html":[3,0,3,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "struct__BOX2__DOUBLE.html#a8b714addc1eec171524be2c9215fae1e":[3,0,9,1],
 "struct__BOX2__DOUBLE.html#ad282e562abf752759c8f7e55e3f0c51c":[3,0,9,2],
 "struct__BOX2__DOUBLE.html#ae292572cc38b29eaa7ca7f260f645e96":[3,0,9,3],
-"struct__BOX2__FLOAT.html":[3,0,10],
-"struct__BOX2__FLOAT.html#a39fd38650ae3fa7e03eeb6b2a3345984":[3,0,10,2]
+"struct__BOX2__FLOAT.html":[3,0,10]
 };
