@@ -13,6 +13,7 @@ var searchData=
   ['batch_5fstart',['batch_start',['../classlbann_1_1lbann__callback__timer.html#ae2c5d7f3b707eb3bbcfe1a212c426008',1,'lbann::lbann_callback_timer']]],
   ['batch_5ftimes',['batch_times',['../classlbann_1_1lbann__callback__timer.html#afbf8768331b3b4ce8b68e8c26ddae5a8',1,'lbann::lbann_callback_timer']]],
   ['batchsize',['BatchSize',['../classlbann_1_1DataReader.html#a1e63767a90c178c901675baeb8101ded',1,'lbann::DataReader']]],
+  ['begin',['begin',['../classlbann_1_1DataReader__CIFAR10.html#a19e305bc59575f0881e4f3aeb8f84634',1,'lbann::DataReader_CIFAR10']]],
   ['begin_5fstack',['begin_stack',['../classlbann_1_1stacked__autoencoder.html#a398f7debe464f5db4371202b6dfa657c',1,'lbann::stacked_autoencoder']]],
   ['bernoulli_5ffill',['bernoulli_fill',['../namespacelbann.html#a1a7ffde5dcab1f39986adff100020262',1,'lbann']]],
   ['bernoulli_5ffill_5fprocdet',['bernoulli_fill_procdet',['../namespacelbann.html#a6add4d3337110d567e7b398a262fd010',1,'lbann']]],

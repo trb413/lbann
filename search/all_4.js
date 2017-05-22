@@ -13,7 +13,7 @@ var searchData=
   ['data_5fseq_5fgenerator',['data_seq_generator',['../namespaceanonymous__namespace_02lbann__random_8cpp_03.html#a36d1b52a12cd2346076af0b35f49efed',1,'anonymous_namespace{lbann_random.cpp}']]],
   ['datareader',['DataReader',['../classlbann_1_1DataReader.html',1,'lbann']]],
   ['datareader',['DataReader',['../classlbann_1_1DataReader.html#a69ca77afdbe79e8a53c6440e31a854f9',1,'lbann::DataReader']]],
-  ['datareader_5fcifar10',['DataReader_CIFAR10',['../classlbann_1_1DataReader__CIFAR10.html#abf21ea6c016843e9fc7fb495110dbbf2',1,'lbann::DataReader_CIFAR10::DataReader_CIFAR10(int batchSize, bool shuffle=true)'],['../classlbann_1_1DataReader__CIFAR10.html#a3455105e222af7441b2cf53de2bd5903',1,'lbann::DataReader_CIFAR10::DataReader_CIFAR10(const DataReader_CIFAR10 &amp;source)']]],
+  ['datareader_5fcifar10',['DataReader_CIFAR10',['../classlbann_1_1DataReader__CIFAR10.html#ae86c5cc4b076c79b0f4227ecc1883053',1,'lbann::DataReader_CIFAR10']]],
   ['datareader_5fcifar10',['DataReader_CIFAR10',['../classlbann_1_1DataReader__CIFAR10.html',1,'lbann']]],
   ['datareader_5fcnpy',['DataReader_cnpy',['../classlbann_1_1DataReader__cnpy.html#ac1d7bd4ea8df9e8f785dc36519bf3915',1,'lbann::DataReader_cnpy::DataReader_cnpy(int batchSize, bool shuffle=true)'],['../classlbann_1_1DataReader__cnpy.html#a20bf08fc6a03917c3a0f46c617e5d5e5',1,'lbann::DataReader_cnpy::DataReader_cnpy(const DataReader_cnpy &amp;source)']]],
   ['datareader_5fcnpy',['DataReader_cnpy',['../classlbann_1_1DataReader__cnpy.html',1,'lbann']]],
