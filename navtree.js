@@ -45,16 +45,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classlbann_1_1Layer.html#ab8ec7fc7bd902123d7b7788b6284ca62",
-"classlbann_1_1data__reader__nci__regression.html#af154b6598b89f0d5f4d13aca1e8b2113",
-"classlbann_1_1lbann__callback__dump__weights.html",
-"classlbann_1_1lbann__image__preprocessor.html#a977b2fdd417acb1eb37dbea0cfdd4b60",
-"classlbann_1_1objective__functions_1_1objective__fn.html",
-"classlbann_1_1stacked__autoencoder.html#a6653c99b5b198737433895b745b42d0e",
-"functions_func_b.html",
-"lbann__cv__normalizer_8hpp.html",
-"lbann__objective__fn_8hpp.html#a84a6b5226a98ba2d0c65c3a2a9afb43c",
-"struct__BOX3__DOUBLE.html#a03a4036c3c79e3c29f356db4c2c25958"
+"classlbann_1_1Layer.html#a8b07424032d1b3c4e3a1fae100aff5c5",
+"classlbann_1_1data__reader__nci__regression.html#a1720aa708fcb1cb4fec75ea73f8b84fb",
+"classlbann_1_1lbann__callback__debug.html#acedd35c5f1ca7d5a7200f79c99a34104",
+"classlbann_1_1lbann__image__preprocessor.html#a27cb5182c4f764cbfa4edecbb78ef29d",
+"classlbann_1_1objective__functions_1_1categorical__cross__entropy.html#aa0f8dbd4ae6310690cedb281b19eaa6f",
+"classlbann_1_1sigmoid__layer.html#a9ad0a702a440ad58cff171a029c1db72",
+"elemental.html#elemental_issues",
+"lbann__callback__timer_8hpp.html",
+"lbann__model__greedy__layerwise__autoencoder_8hpp.html",
+"struct__BOX2__USHORT.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

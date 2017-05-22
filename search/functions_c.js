@@ -6,7 +6,6 @@ var searchData=
   ['need_5fcheckpoint',['need_checkpoint',['../classlbann_1_1model.html#a94fccb9e764f50f437689ef6292e7ff1',1,'lbann::model']]],
   ['networkparams',['NetworkParams',['../classlbann_1_1NetworkParams.html#a4215c353913bbe4ba1137d1525487446',1,'lbann::NetworkParams']]],
   ['new_5factivation',['new_activation',['../namespacelbann.html#ac5723897a72209964fd0eb14ad416d18',1,'lbann']]],
-  ['next',['next',['../classlbann_1_1DataReader__CIFAR10.html#ad989daac62b6628e53e36eeda4bde787',1,'lbann::DataReader_CIFAR10']]],
   ['normalize',['normalize',['../classlbann_1_1lbann__image__preprocessor.html#ae370cdc9f776ce8cce94a45cacf47425',1,'lbann::lbann_image_preprocessor']]],
   ['num_5fprevious_5fneurons',['num_previous_neurons',['../classlbann_1_1sequential__model.html#aa8c82036ab32a3caf35811ff887bb64b',1,'lbann::sequential_model']]]
 ];

@@ -39,6 +39,7 @@ var searchData=
   ['set_5fnext_5flayer_5fusing_5fgpus',['set_next_layer_using_gpus',['../classlbann_1_1Layer.html#afba864aae1cba1174489e28dd0b5d0ba',1,'lbann::Layer']]],
   ['set_5fprev_5flayer_5ftype',['set_prev_layer_type',['../classlbann_1_1Layer.html#a2921c7947587b5d95cf8dff96000a237',1,'lbann::Layer']]],
   ['set_5fprev_5flayer_5fusing_5fgpus',['set_prev_layer_using_gpus',['../classlbann_1_1Layer.html#a677833ec998be158873f880c7bd08179',1,'lbann::Layer']]],
+  ['set_5frank',['set_rank',['../classlbann_1_1DataReader.html#acc598369fe9e63c3aae507aa1bba0c1c',1,'lbann::DataReader']]],
   ['set_5frole',['set_role',['../classlbann_1_1DataReader.html#aa3f58b65ce8725334390791e923a498f',1,'lbann::DataReader']]],
   ['set_5fsummarizer',['set_summarizer',['../classlbann_1_1lbann__callback.html#a95a4372d04e804fd2318a464ca20aa1c',1,'lbann::lbann_callback']]],
   ['set_5fterminate_5ftraining',['set_terminate_training',['../classlbann_1_1model.html#a5bafc4e84671490c6118959becb22e16',1,'lbann::model']]],
