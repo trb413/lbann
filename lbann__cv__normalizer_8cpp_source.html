@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">24efac0-ci234924833</span>
+   &#160;<span id="projectnumber">dd12dc8-ci234966379</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -320,8 +320,23 @@ $(document).ready(function(){initNavTree('lbann__cv__normalizer_8cpp_source.html
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;}</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;} <span class="comment">// end of namespace lbann</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="preprocessor">#endif // __LIB_OPENCV</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;std::ostream&amp; cv_normalizer::print(std::ostream&amp; os)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  os &lt;&lt; <span class="stringliteral">&quot;m_mean_subtraction: &quot;</span> &lt;&lt; (m_mean_subtraction? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>) &lt;&lt; std::endl</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;     &lt;&lt; <span class="stringliteral">&quot;m_unit_variance: &quot;</span> &lt;&lt; (m_unit_variance? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>) &lt;&lt; std::endl</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;     &lt;&lt; <span class="stringliteral">&quot;m_unit_scale: &quot;</span> &lt;&lt; (m_unit_scale? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>) &lt;&lt; std::endl</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;     &lt;&lt; <span class="stringliteral">&quot;m_z_score&quot;</span> &lt;&lt; (m_z_score? <span class="stringliteral">&quot;true&quot;</span> : <span class="stringliteral">&quot;false&quot;</span>) &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  os &lt;&lt; <span class="stringliteral">&quot;transform:&quot;</span>;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> channel_trans_t&amp; tr: m_trans)</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    os &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; tr.first &lt;&lt; <span class="charliteral">&#39; &#39;</span> &lt;&lt; tr.second;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  os &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <span class="keywordflow">return</span> os;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;}</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;} <span class="comment">// end of namespace lbann</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="preprocessor">#endif // __LIB_OPENCV</span></div>
 <div class="ttc" id="lbann__layer__reconstruction_8cpp_html_ae6c865df784842196d411c1466b01686"><div class="ttname"><a href="lbann__layer__reconstruction_8cpp.html#ae6c865df784842196d411c1466b01686">false</a></div><div class="ttdeci">false</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8cpp_source.html#l00041">lbann_layer_reconstruction.cpp:41</a></div></div>
 <div class="ttc" id="lbann__mild__exception_8hpp_html_ac9ca456b1c43797e0bed8ccf7bda8482"><div class="ttname"><a href="lbann__mild__exception_8hpp.html#ac9ca456b1c43797e0bed8ccf7bda8482">_LBANN_SILENT_EXCEPTION</a></div><div class="ttdeci">#define _LBANN_SILENT_EXCEPTION(_COND_, _MSG_, _RETVAL_)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__mild__exception_8hpp_source.html#l00090">lbann_mild_exception.hpp:90</a></div></div>
 <div class="ttc" id="lbann__mild__exception_8hpp_html"><div class="ttname"><a href="lbann__mild__exception_8hpp.html">lbann_mild_exception.hpp</a></div></div>
@@ -333,7 +348,7 @@ $(document).ready(function(){initNavTree('lbann__cv__normalizer_8cpp_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_4fd9b0f9a8d3454cc4920413ede2913f.html">data_readers</a></li><li class="navelem"><a class="el" href="lbann__cv__normalizer_8cpp.html">lbann_cv_normalizer.cpp</a></li>
-    <li class="footer">Generated on Mon May 22 2017 18:44:34 for LBANN by
+    <li class="footer">Generated on Mon May 22 2017 21:25:15 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

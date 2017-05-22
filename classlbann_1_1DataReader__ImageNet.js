@@ -4,7 +4,6 @@ var classlbann_1_1DataReader__ImageNet =
     [ "DataReader_ImageNet", "classlbann_1_1DataReader__ImageNet.html#a3f312c42c12f2a8195d366c7d93dc4c7", null ],
     [ "~DataReader_ImageNet", "classlbann_1_1DataReader__ImageNet.html#ab6f3ecb20b6c6db029c5107d021800ee", null ],
     [ "fetch_data", "classlbann_1_1DataReader__ImageNet.html#a75900ca7c2eac253c8a312166de5d538", null ],
-    [ "fetch_data", "classlbann_1_1DataReader__ImageNet.html#a8ad5f97e57b1077d382059d9ca4435bf", null ],
     [ "fetch_label", "classlbann_1_1DataReader__ImageNet.html#ae175069346f04b23527c7d75def68201", null ],
     [ "free", "classlbann_1_1DataReader__ImageNet.html#af7903ee803e3212919c67769850f4ddf", null ],
     [ "get_image_height", "classlbann_1_1DataReader__ImageNet.html#a0a175467836131a9cffb7daf68f2774d", null ],

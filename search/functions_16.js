@@ -14,7 +14,7 @@ var searchData=
   ['_7edata_5freader_5fnci_5fregression',['~data_reader_nci_regression',['../classlbann_1_1data__reader__nci__regression.html#a1a2210776573bce314ba1841b970c8c2',1,'lbann::data_reader_nci_regression']]],
   ['_7edata_5freader_5fsynthetic',['~data_reader_synthetic',['../classlbann_1_1data__reader__synthetic.html#ad8b37f06ffd386c1838a4b102512243d',1,'lbann::data_reader_synthetic']]],
   ['_7edatareader',['~DataReader',['../classlbann_1_1DataReader.html#ae559f6e9339766da36b312be91dd8b2b',1,'lbann::DataReader']]],
-  ['_7edatareader_5fcifar10',['~DataReader_CIFAR10',['../classlbann_1_1DataReader__CIFAR10.html#a7dc26a9c0a4db749115a673d745777c0',1,'lbann::DataReader_CIFAR10']]],
+  ['_7edatareader_5fcifar10',['~DataReader_CIFAR10',['../classlbann_1_1DataReader__CIFAR10.html#aa5ff21c6fbec1512c66f584dc981a794',1,'lbann::DataReader_CIFAR10']]],
   ['_7edatareader_5fcnpy',['~DataReader_cnpy',['../classlbann_1_1DataReader__cnpy.html#a09bf584ff673e5b71c3ae4dafff46b02',1,'lbann::DataReader_cnpy']]],
   ['_7edatareader_5fimagenet',['~DataReader_ImageNet',['../classlbann_1_1DataReader__ImageNet.html#ab6f3ecb20b6c6db029c5107d021800ee',1,'lbann::DataReader_ImageNet']]],
   ['_7edatareader_5fimagenetsingle',['~DataReader_ImageNetSingle',['../classlbann_1_1DataReader__ImageNetSingle.html#aa37be85edf9cb43b1ec9775f131829e6',1,'lbann::DataReader_ImageNetSingle']]],

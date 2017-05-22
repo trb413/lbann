@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">24efac0-ci234924833</span>
+   &#160;<span id="projectnumber">dd12dc8-ci234966379</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -476,11 +476,11 @@ $(document).ready(function(){initNavTree('cudnn__wrapper_8cpp_source.html','');}
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  gather_from_gpus(temp, gpu_data, width);</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  <span class="comment">// Reduce data from different GPUs</span></div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  Zero(cpu_data);</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  synchronize();</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  <span class="keywordflow">for</span>(Int i=0; i&lt;m_num_gpus; ++i) {</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    cpu_data += temp(ALL, IR(i*width, (i+1)*width));</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  }</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  synchronize();</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  <span class="keywordflow">for</span>(Int i=1; i&lt;m_num_gpus; ++i) {</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    temp(ALL, IR(0,width)) += temp(ALL, IR(i*width, (i+1)*width));</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  }</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  Copy(temp(ALL,IR(0,width)), cpu_data);</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;}</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;</div>
@@ -682,7 +682,7 @@ $(document).ready(function(){initNavTree('cudnn__wrapper_8cpp_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_e3a975d7a6e3e1ec3d3053fd7df1ad72.html">utils</a></li><li class="navelem"><a class="el" href="cudnn__wrapper_8cpp.html">cudnn_wrapper.cpp</a></li>
-    <li class="footer">Generated on Mon May 22 2017 18:44:35 for LBANN by
+    <li class="footer">Generated on Mon May 22 2017 21:25:16 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
