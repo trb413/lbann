@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"lbann__callback__dump__activations_8hpp_source.html":[4,0,0,0,0,0,0,0,0,0,3],
 "lbann__callback__dump__gradients_8cpp.html":[4,0,0,0,0,0,0,1,0,3],
 "lbann__callback__dump__gradients_8cpp_source.html":[4,0,0,0,0,0,0,1,0,3],
 "lbann__callback__dump__gradients_8hpp.html":[4,0,0,0,0,0,0,0,0,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "lbann__metric_8cpp_source.html":[4,0,0,0,0,0,0,1,4,0],
 "lbann__metric_8hpp.html":[4,0,0,0,0,0,0,0,0,4,0],
 "lbann__metric_8hpp.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1":[4,0,0,0,0,0,0,0,0,4,0,2],
-"lbann__metric_8hpp.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a03a6de919a7de725650618ba698fbdfc":[4,0,0,0,0,0,0,0,0,4,0,2,12],
-"lbann__metric_8hpp.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a131ca04fc47acb9452ac40b960ef4a8b":[4,0,0,0,0,0,0,0,0,4,0,2,2]
+"lbann__metric_8hpp.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a03a6de919a7de725650618ba698fbdfc":[4,0,0,0,0,0,0,0,0,4,0,2,12]
 };

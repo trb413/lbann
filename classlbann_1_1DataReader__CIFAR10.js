@@ -10,6 +10,7 @@ var classlbann_1_1DataReader__CIFAR10 =
     [ "get_image_width", "classlbann_1_1DataReader__CIFAR10.html#a18b9228a54c6028f62d3331bfde5d1ce", null ],
     [ "get_linearized_data_size", "classlbann_1_1DataReader__CIFAR10.html#ae076bdf2a7f06ec3676b9b739aa926d6", null ],
     [ "get_linearized_label_size", "classlbann_1_1DataReader__CIFAR10.html#ac65c9bff668b8e750d7dc62f96f7ac59", null ],
+    [ "get_num_labels", "classlbann_1_1DataReader__CIFAR10.html#adab64cf16389bef2f0f6574290f5f7a7", null ],
     [ "load", "classlbann_1_1DataReader__CIFAR10.html#a594f2e5ea283309426ee3262420113ac", null ],
     [ "operator=", "classlbann_1_1DataReader__CIFAR10.html#a615365a1e093da1ce0b36eab6fc2bb30", null ],
     [ "m_data", "classlbann_1_1DataReader__CIFAR10.html#a2aa5e108ef5948c68a13df3a5e7daffa", null ],

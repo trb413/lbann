@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classlbann_1_1convolutional__layer.html#acb151c2f0255fdbd43b8437aa67d4221":[3,0,3,48,12],
 "classlbann_1_1convolutional__layer.html#ace1e3a03b64dd74a6b18c28302e39a44":[3,0,3,48,10],
 "classlbann_1_1convolutional__layer.html#ad4143f6a99da6e4c7b027addb6ee9333":[3,0,3,48,5],
 "classlbann_1_1convolutional__layer.html#ad494e08f7d39847d5959565b99236ffb":[3,0,3,48,33],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "classlbann_1_1lbann__callback.html#ab96adb1d77180e00fdd668cd381323fd":[3,0,3,3,17],
 "classlbann_1_1lbann__callback.html#aba03b59c056ace8094095c08e39b9ac4":[3,0,3,3,5],
 "classlbann_1_1lbann__callback.html#abeb1e486e259fd358332abf1e952f630":[3,0,3,3,3],
-"classlbann_1_1lbann__callback.html#accbad4dd004c1ced33642db6398b2efe":[3,0,3,3,22],
-"classlbann_1_1lbann__callback.html#ace7452239c9ad7aa6247e9496adbcffe":[3,0,3,3,20]
+"classlbann_1_1lbann__callback.html#accbad4dd004c1ced33642db6398b2efe":[3,0,3,3,22]
 };

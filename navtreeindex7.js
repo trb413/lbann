@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"developer_guide.html":[0,5],
 "dir_060b188870e6c9f21f070cc0d16ef707.html":[4,0,0,0,0,0,0,1,4],
 "dir_0aad4685e5a488fb75343b7c622656d3.html":[4,0,0,0,0,0,0,0,0,1,0],
 "dir_0b16036c62e9063447de1e5debde0af9.html":[4,0,0,0,0,0,0,0,0,1],
@@ -40,8 +41,8 @@ var NAVTREEINDEX7 =
 "elemental.html#elemental_install":[0,3,6,1],
 "elemental.html#elemental_issues":[0,3,6,2],
 "files.html":[4,0],
-"functions.html":[3,3,0,0],
 "functions.html":[3,3,0],
+"functions.html":[3,3,0,0],
 "functions_b.html":[3,3,0,1],
 "functions_c.html":[3,3,0,2],
 "functions_d.html":[3,3,0,3],
@@ -49,8 +50,8 @@ var NAVTREEINDEX7 =
 "functions_enum.html":[3,3,4],
 "functions_eval.html":[3,3,5],
 "functions_f.html":[3,3,0,5],
-"functions_func.html":[3,3,1],
 "functions_func.html":[3,3,1,0],
+"functions_func.html":[3,3,1],
 "functions_func_b.html":[3,3,1,1],
 "functions_func_c.html":[3,3,1,2],
 "functions_func_d.html":[3,3,1,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "lbann__callback__debug_8hpp_source.html":[4,0,0,0,0,0,0,0,0,0,2],
 "lbann__callback__dump__activations_8cpp.html":[4,0,0,0,0,0,0,1,0,2],
 "lbann__callback__dump__activations_8cpp_source.html":[4,0,0,0,0,0,0,1,0,2],
-"lbann__callback__dump__activations_8hpp.html":[4,0,0,0,0,0,0,0,0,0,3],
-"lbann__callback__dump__activations_8hpp_source.html":[4,0,0,0,0,0,0,0,0,0,3]
+"lbann__callback__dump__activations_8hpp.html":[4,0,0,0,0,0,0,0,0,0,3]
 };
