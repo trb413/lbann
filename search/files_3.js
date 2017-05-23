@@ -37,6 +37,8 @@ var searchData=
   ['lbann_5fcomm_2ehpp',['lbann_comm.hpp',['../lbann__comm_8hpp.html',1,'']]],
   ['lbann_5fcv_5faugmenter_2ecpp',['lbann_cv_augmenter.cpp',['../lbann__cv__augmenter_8cpp.html',1,'']]],
   ['lbann_5fcv_5faugmenter_2ehpp',['lbann_cv_augmenter.hpp',['../lbann__cv__augmenter_8hpp.html',1,'']]],
+  ['lbann_5fcv_5fcolorizer_2ecpp',['lbann_cv_colorizer.cpp',['../lbann__cv__colorizer_8cpp.html',1,'']]],
+  ['lbann_5fcv_5fcolorizer_2ehpp',['lbann_cv_colorizer.hpp',['../lbann__cv__colorizer_8hpp.html',1,'']]],
   ['lbann_5fcv_5fnormalizer_2ecpp',['lbann_cv_normalizer.cpp',['../lbann__cv__normalizer_8cpp.html',1,'']]],
   ['lbann_5fcv_5fnormalizer_2ehpp',['lbann_cv_normalizer.hpp',['../lbann__cv__normalizer_8hpp.html',1,'']]],
   ['lbann_5fcv_5fprocess_2ecpp',['lbann_cv_process.cpp',['../lbann__cv__process_8cpp.html',1,'']]],

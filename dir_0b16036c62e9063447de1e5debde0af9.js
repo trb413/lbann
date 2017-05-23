@@ -2,6 +2,7 @@ var dir_0b16036c62e9063447de1e5debde0af9 =
 [
     [ "patchworks", "dir_0aad4685e5a488fb75343b7c622656d3.html", "dir_0aad4685e5a488fb75343b7c622656d3" ],
     [ "lbann_cv_augmenter.hpp", "lbann__cv__augmenter_8hpp.html", null ],
+    [ "lbann_cv_colorizer.hpp", "lbann__cv__colorizer_8hpp.html", null ],
     [ "lbann_cv_normalizer.hpp", "lbann__cv__normalizer_8hpp.html", null ],
     [ "lbann_cv_process.hpp", "lbann__cv__process_8hpp.html", null ],
     [ "lbann_cv_transform.hpp", "lbann__cv__transform_8hpp.html", null ],
