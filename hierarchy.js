@@ -112,6 +112,7 @@ var hierarchy =
           [ "lbann::DataReader_ImageNetSingle", "classlbann_1_1DataReader__ImageNetSingle.html", null ],
           [ "lbann::DataReader_ImageNetSingle_cv", "classlbann_1_1DataReader__ImageNetSingle__cv.html", null ]
         ] ],
+        [ "lbann::DataReader_ImageNet_cv", "classlbann_1_1DataReader__ImageNet__cv.html", null ],
         [ "lbann::DataReader_MNIST", "classlbann_1_1DataReader__MNIST.html", null ]
       ] ]
     ] ],

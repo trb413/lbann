@@ -16,6 +16,9 @@ var dir_0b16036c62e9063447de1e5debde0af9 =
     [ "lbann_data_reader_imagenet.hpp", "lbann__data__reader__imagenet_8hpp.html", [
       [ "DataReader_ImageNet", "classlbann_1_1DataReader__ImageNet.html", "classlbann_1_1DataReader__ImageNet" ]
     ] ],
+    [ "lbann_data_reader_imagenet_cv.hpp", "lbann__data__reader__imagenet__cv_8hpp.html", [
+      [ "DataReader_ImageNet_cv", "classlbann_1_1DataReader__ImageNet__cv.html", "classlbann_1_1DataReader__ImageNet__cv" ]
+    ] ],
     [ "lbann_data_reader_imagenet_single.hpp", "lbann__data__reader__imagenet__single_8hpp.html", [
       [ "DataReader_ImageNetSingle", "classlbann_1_1DataReader__ImageNetSingle.html", "classlbann_1_1DataReader__ImageNetSingle" ]
     ] ],

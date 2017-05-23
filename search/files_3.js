@@ -52,6 +52,8 @@ var searchData=
   ['lbann_5fdata_5freader_5fcnpy_2ehpp',['lbann_data_reader_cnpy.hpp',['../lbann__data__reader__cnpy_8hpp.html',1,'']]],
   ['lbann_5fdata_5freader_5fimagenet_2ecpp',['lbann_data_reader_imagenet.cpp',['../lbann__data__reader__imagenet_8cpp.html',1,'']]],
   ['lbann_5fdata_5freader_5fimagenet_2ehpp',['lbann_data_reader_imagenet.hpp',['../lbann__data__reader__imagenet_8hpp.html',1,'']]],
+  ['lbann_5fdata_5freader_5fimagenet_5fcv_2ecpp',['lbann_data_reader_imagenet_cv.cpp',['../lbann__data__reader__imagenet__cv_8cpp.html',1,'']]],
+  ['lbann_5fdata_5freader_5fimagenet_5fcv_2ehpp',['lbann_data_reader_imagenet_cv.hpp',['../lbann__data__reader__imagenet__cv_8hpp.html',1,'']]],
   ['lbann_5fdata_5freader_5fimagenet_5fsingle_2ecpp',['lbann_data_reader_imagenet_single.cpp',['../lbann__data__reader__imagenet__single_8cpp.html',1,'']]],
   ['lbann_5fdata_5freader_5fimagenet_5fsingle_2ehpp',['lbann_data_reader_imagenet_single.hpp',['../lbann__data__reader__imagenet__single_8hpp.html',1,'']]],
   ['lbann_5fdata_5freader_5fimagenet_5fsingle_5fcv_2ecpp',['lbann_data_reader_imagenet_single_cv.cpp',['../lbann__data__reader__imagenet__single__cv_8cpp.html',1,'']]],
