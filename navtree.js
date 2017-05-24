@@ -47,15 +47,15 @@ var NAVTREEINDEX =
 "annotated.html",
 "classlbann_1_1Layer.html#a190982036d52d288d3528a16e30418e0",
 "classlbann_1_1convolutional__layer.html#acb151c2f0255fdbd43b8437aa67d4221",
-"classlbann_1_1lbann__callback.html#ace7452239c9ad7aa6247e9496adbcffe",
-"classlbann_1_1lbann__comm.html#ad2ece549c49a0569ac8fd9b56632fdd2",
-"classlbann_1_1model.html#a7bc38833924198617cf353382884cacf",
-"classlbann_1_1sequential__model.html#a539722d26abf5a9b6cd748da8e9fa930",
-"datatype_8hpp_source.html",
-"lbann__callback__dump__activations_8hpp.html",
-"lbann__metric_8hpp.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a03a6de919a7de725650618ba698fbdfc",
-"patchworks__ROI_8cpp.html",
-"structlbann__model__header.html#ae9261039775c8b0f24f9c47c10f09f3e"
+"classlbann_1_1lbann__callback.html#accbad4dd004c1ced33642db6398b2efe",
+"classlbann_1_1lbann__comm.html#ad1f146ae7337ece6266fd307944928e0",
+"classlbann_1_1model.html#a7889df80a48db23b1b7a1c276e2d53e4",
+"classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a",
+"datatype_8hpp.html#aff0f25d9549ed2ade9fc15840d3daca1",
+"lbann__callback__dump__activations_8cpp_source.html",
+"lbann__metric_8hpp.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1",
+"patchworks_8hpp_source.html",
+"structlbann__model__header.html#abc0a59c9871095d2a6dec05a82fafc1e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

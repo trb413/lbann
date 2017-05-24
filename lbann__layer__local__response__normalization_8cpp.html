@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">727fe58-ci235791632</span>
+   &#160;<span id="projectnumber">9436b7a-ci235837635</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -108,6 +108,10 @@ Include dependency graph for lbann_layer_local_response_normalization.cpp:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a7a202a20a84c0d306cc1ad8b2526d540"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lbann__layer__local__response__normalization_8cpp.html#a7a202a20a84c0d306cc1ad8b2526d540">m_num_dims</a> (num_dims)</td></tr>
+<tr class="separator:a7a202a20a84c0d306cc1ad8b2526d540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ac156a3f6c715574f4868ef49dd6667"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lbann__layer__local__response__normalization_8cpp.html#a8ac156a3f6c715574f4868ef49dd6667">m_num_channels</a> (num_channels)</td></tr>
+<tr class="separator:a8ac156a3f6c715574f4868ef49dd6667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a076370bd6cf1ed504c5f4825629b6619"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lbann__layer__local__response__normalization_8cpp.html#a076370bd6cf1ed504c5f4825629b6619">m_window_width</a> (window_width)</td></tr>
 <tr class="separator:a076370bd6cf1ed504c5f4825629b6619"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a9a2a5de62efcad9b24d9ad5b646823"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lbann__layer__local__response__normalization_8cpp.html#a4a9a2a5de62efcad9b24d9ad5b646823">m_lrn_alpha</a> (lrn_alpha)</td></tr>
@@ -116,10 +120,6 @@ Functions</h2></td></tr>
 <tr class="separator:a2ecb2901d9545e05f9401572a3f8faa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bc3449c5e69f1cfa40a523edb02f20f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lbann__layer__local__response__normalization_8cpp.html#a5bc3449c5e69f1cfa40a523edb02f20f">m_lrn_k</a> (lrn_k)</td></tr>
 <tr class="separator:a5bc3449c5e69f1cfa40a523edb02f20f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a202a20a84c0d306cc1ad8b2526d540"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lbann__layer__local__response__normalization_8cpp.html#a7a202a20a84c0d306cc1ad8b2526d540">m_num_dims</a> (num_dims)</td></tr>
-<tr class="separator:a7a202a20a84c0d306cc1ad8b2526d540"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ac156a3f6c715574f4868ef49dd6667"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lbann__layer__local__response__normalization_8cpp.html#a8ac156a3f6c715574f4868ef49dd6667">m_num_channels</a> (num_channels)</td></tr>
-<tr class="separator:a8ac156a3f6c715574f4868ef49dd6667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a4a9a2a5de62efcad9b24d9ad5b646823"></a>
@@ -186,6 +186,53 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
+<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00051">51</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  m_type = layer_type::local_response_normalization;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// Initialize data dimensions</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  m_dims.resize(num_dims);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  NumNeurons = num_channels;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;num_dims; ++i) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    m_dims[i] = dims[i];</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    NumNeurons *= dims[i];</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#ifdef __LIB_CUDNN</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="comment">// Initialize cuDNN objects</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  m_tensor_desc = <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  m_lrn_desc = <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="comment">// Initialize GPU memory if using GPU</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">if</span>(cudnn) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    m_using_gpus = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    m_cudnn = cudnn;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// Get number of GPUs</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> num_gpus = m_cudnn-&gt;get_num_gpus();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// Get number of columns per GPU</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> num_processes = <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_procs_per_model();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> local_mini_batch_size = (mini_batch_size + num_processes - 1) / num_processes;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    m_mini_batch_size_per_gpu = (local_mini_batch_size + num_gpus - 1) / num_gpus;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif // __LIB_CUDNN</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
+<div class="ttc" id="datatype_8hpp_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00035">datatype.hpp:35</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="lbann__layer__local__response__normalization_8cpp_a5bc3449c5e69f1cfa40a523edb02f20f_cgraph.png" border="0" usemap="#lbann__layer__local__response__normalization_8cpp_a5bc3449c5e69f1cfa40a523edb02f20f_cgraph" alt=""/></div>
+<map name="lbann__layer__local__response__normalization_8cpp_a5bc3449c5e69f1cfa40a523edb02f20f_cgraph" id="lbann__layer__local__response__normalization_8cpp_a5bc3449c5e69f1cfa40a523edb02f20f_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1lbann__comm.html#ad67668baa49b8713f3c74816d1aeb175" title="lbann::lbann_comm::\lget_procs_per_model" alt="" coords="123,5,269,46"/></map>
+</div>
+</p>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -210,53 +257,6 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00050">50</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  m_type = layer_type::local_response_normalization;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="comment">// Initialize data dimensions</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  m_dims.resize(num_dims);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  NumNeurons = num_channels;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;num_dims; ++i) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    m_dims[i] = dims[i];</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    NumNeurons *= dims[i];</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#ifdef __LIB_CUDNN</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="comment">// Initialize cuDNN objects</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  m_tensor_desc = <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  m_lrn_desc = <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="comment">// Initialize GPU memory if using GPU</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">if</span>(cudnn) {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    m_using_gpus = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    m_cudnn = cudnn;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// Get number of GPUs</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> num_gpus = m_cudnn-&gt;get_num_gpus();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// Get number of columns per GPU</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> num_processes = <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_procs_per_model();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> local_mini_batch_size = (mini_batch_size + num_processes - 1) / num_processes;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    m_mini_batch_size_per_gpu = (local_mini_batch_size + num_gpus - 1) / num_gpus;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif // __LIB_CUDNN</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
-<div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
-<div class="ttc" id="datatype_8hpp_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00035">datatype.hpp:35</a></div></div>
-</div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="lbann__layer__local__response__normalization_8cpp_a8ac156a3f6c715574f4868ef49dd6667_cgraph.png" border="0" usemap="#lbann__layer__local__response__normalization_8cpp_a8ac156a3f6c715574f4868ef49dd6667_cgraph" alt=""/></div>
-<map name="lbann__layer__local__response__normalization_8cpp_a8ac156a3f6c715574f4868ef49dd6667_cgraph" id="lbann__layer__local__response__normalization_8cpp_a8ac156a3f6c715574f4868ef49dd6667_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1lbann__comm.html#ad67668baa49b8713f3c74816d1aeb175" title="lbann::lbann_comm::\lget_procs_per_model" alt="" coords="179,5,325,46"/></map>
-</div>
-</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -325,7 +325,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_faacdbae24c4b7c4a8fbaf54f29a6b8e.html">layers</a></li><li class="navelem"><a class="el" href="lbann__layer__local__response__normalization_8cpp.html">lbann_layer_local_response_normalization.cpp</a></li>
-    <li class="footer">Generated on Wed May 24 2017 20:32:06 for LBANN by
+    <li class="footer">Generated on Wed May 24 2017 22:50:43 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

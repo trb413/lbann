@@ -28,6 +28,7 @@ var searchData=
   ['_7el2_5fregularization',['~l2_regularization',['../classlbann_1_1l2__regularization.html#afb4e53382c8bdc219c4a586494245543',1,'lbann::l2_regularization']]],
   ['_7elayer',['~Layer',['../classlbann_1_1Layer.html#a68c3f57587956da938406812f13ecb78',1,'lbann::Layer']]],
   ['_7elayer_5ffactory',['~layer_factory',['../classlbann_1_1layer__factory.html#acd5f652a3974f029abc2d5e535436f94',1,'lbann::layer_factory']]],
+  ['_7elbann_5fcallback',['~lbann_callback',['../classlbann_1_1lbann__callback.html#ac91abaec389f8d2547512c45ae587304',1,'lbann::lbann_callback']]],
   ['_7elbann_5fcomm',['~lbann_comm',['../classlbann_1_1lbann__comm.html#af17b1093313c5e4223f9036798f9e12f',1,'lbann::lbann_comm']]],
   ['_7elbann_5fexception',['~lbann_exception',['../classlbann_1_1lbann__exception.html#aaab0c49d82dbbfde7faee4c661b5979a',1,'lbann::lbann_exception']]],
   ['_7elbann_5fimage_5fpreprocessor',['~lbann_image_preprocessor',['../classlbann_1_1lbann__image__preprocessor.html#aaabfad8d6923680cf4943f6f5290c682',1,'lbann::lbann_image_preprocessor']]],

@@ -1,13 +1,14 @@
 var NAVTREEINDEX3 =
 {
-"classlbann_1_1lbann__callback.html#ace7452239c9ad7aa6247e9496adbcffe":[3,0,3,3,20],
-"classlbann_1_1lbann__callback.html#ad10891b8ab3de74ee1a70e6255e7d58a":[3,0,3,3,9],
-"classlbann_1_1lbann__callback.html#ad48ff47a64f2dff3a12d8bd282f554cb":[3,0,3,3,32],
-"classlbann_1_1lbann__callback.html#adc16e42e5064dc2dc8d84dfbfc1325eb":[3,0,3,3,26],
-"classlbann_1_1lbann__callback.html#ae23c5a61b81dbdfbd79736ac2b6035aa":[3,0,3,3,15],
-"classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c":[3,0,3,3,27],
-"classlbann_1_1lbann__callback.html#af183624e63ba65e0003fa988f53dee0c":[3,0,3,3,4],
-"classlbann_1_1lbann__callback.html#af28078b0ddaef45124465bef01eefedf":[3,0,3,3,24],
+"classlbann_1_1lbann__callback.html#accbad4dd004c1ced33642db6398b2efe":[3,0,3,3,23],
+"classlbann_1_1lbann__callback.html#ace7452239c9ad7aa6247e9496adbcffe":[3,0,3,3,21],
+"classlbann_1_1lbann__callback.html#ad10891b8ab3de74ee1a70e6255e7d58a":[3,0,3,3,10],
+"classlbann_1_1lbann__callback.html#ad48ff47a64f2dff3a12d8bd282f554cb":[3,0,3,3,33],
+"classlbann_1_1lbann__callback.html#adc16e42e5064dc2dc8d84dfbfc1325eb":[3,0,3,3,27],
+"classlbann_1_1lbann__callback.html#ae23c5a61b81dbdfbd79736ac2b6035aa":[3,0,3,3,16],
+"classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c":[3,0,3,3,28],
+"classlbann_1_1lbann__callback.html#af183624e63ba65e0003fa988f53dee0c":[3,0,3,3,5],
+"classlbann_1_1lbann__callback.html#af28078b0ddaef45124465bef01eefedf":[3,0,3,3,25],
 "classlbann_1_1lbann__callback.html#af4c9e2cf1c87cbf741bb0316f6f5fab2":[3,0,3,3,0],
 "classlbann_1_1lbann__callback__adaptive__learning__rate.html":[3,0,3,14],
 "classlbann_1_1lbann__callback__adaptive__learning__rate.html#a19596ebb10690c61068b18b786ab5716":[3,0,3,14,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "classlbann_1_1lbann__comm.html#ac62f250859b2f74508d6165914a06b59":[3,0,3,61,58],
 "classlbann_1_1lbann__comm.html#ac74bcfb565c1bb6604f336c6d1b647cc":[3,0,3,61,124],
 "classlbann_1_1lbann__comm.html#aca557d3ba0d76c2a957e60e417e09bc4":[3,0,3,61,49],
-"classlbann_1_1lbann__comm.html#acc92b86b30287689870e018b062076f8":[3,0,3,61,100],
-"classlbann_1_1lbann__comm.html#ad1f146ae7337ece6266fd307944928e0":[3,0,3,61,132]
+"classlbann_1_1lbann__comm.html#acc92b86b30287689870e018b062076f8":[3,0,3,61,100]
 };

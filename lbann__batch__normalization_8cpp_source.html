@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">727fe58-ci235791632</span>
+   &#160;<span id="projectnumber">9436b7a-ci235837635</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -129,7 +129,7 @@ $(document).ready(function(){initNavTree('lbann__batch__normalization_8cpp_sourc
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classlbann_1_1batch__normalization.html#a9afe6eee02452cba784b8e807cc88cc0">   37</a></span>&#160;batch_normalization::batch_normalization(<a class="code" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a> data_dist,</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                         <a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> decay,</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                         <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> gamma, <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> beta) :</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  comm(comm), m_decay(decay), m_gamma_init(gamma), m_beta_init(beta) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  comm(comm), m_gamma_init(gamma), m_beta_init(beta), m_decay(decay) {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="comment">// Setup the data distribution</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">switch</span>(data_dist) {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0">data_layout::MODEL_PARALLEL</a>:</div>
@@ -378,7 +378,7 @@ $(document).ready(function(){initNavTree('lbann__batch__normalization_8cpp_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_641edc1f9c3202270a1ac1aafbaaf998.html">regularization</a></li><li class="navelem"><a class="el" href="lbann__batch__normalization_8cpp.html">lbann_batch_normalization.cpp</a></li>
-    <li class="footer">Generated on Wed May 24 2017 20:32:06 for LBANN by
+    <li class="footer">Generated on Wed May 24 2017 22:50:43 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

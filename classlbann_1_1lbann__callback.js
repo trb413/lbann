@@ -1,6 +1,7 @@
 var classlbann_1_1lbann__callback =
 [
     [ "lbann_callback", "classlbann_1_1lbann__callback.html#af4c9e2cf1c87cbf741bb0316f6f5fab2", null ],
+    [ "~lbann_callback", "classlbann_1_1lbann__callback.html#ac91abaec389f8d2547512c45ae587304", null ],
     [ "name", "classlbann_1_1lbann__callback.html#a1a14e9228f1606d3492b6011d56937f5", null ],
     [ "on_backward_prop_begin", "classlbann_1_1lbann__callback.html#a2c0709a26179d115ff85b7561786ee27", null ],
     [ "on_backward_prop_begin", "classlbann_1_1lbann__callback.html#abeb1e486e259fd358332abf1e952f630", null ],

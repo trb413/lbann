@@ -1,7 +1,7 @@
 var searchData=
 [
   ['data_5flayout',['data_layout',['../lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db',1,'lbann_base.hpp']]],
-  ['data_5flayout_5fto_5fmatrix_5fformat',['data_layout_to_matrix_format',['../lbann__base_8hpp.html#a01c200a05e623156e827ec072b815a72',1,'lbann_base.hpp']]],
+  ['data_5flayout_5fto_5fmatrix_5fformat',['data_layout_to_matrix_format',['../lbann__base_8hpp.html#a4fbdf9191dcd272075cef33d9c75d46e',1,'lbann_base.hpp']]],
   ['data_5fparallel',['DATA_PARALLEL',['../lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638',1,'lbann_base.hpp']]],
   ['data_5freader',['data_reader',['../classlbann_1_1dataset.html#adaa41a680f5ac625bb8a4830c239a9fd',1,'lbann::dataset']]],
   ['data_5freader_5fnci',['data_reader_nci',['../classlbann_1_1data__reader__nci.html',1,'lbann']]],

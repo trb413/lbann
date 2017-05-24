@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">727fe58-ci235791632</span>
+   &#160;<span id="projectnumber">9436b7a-ci235837635</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -521,7 +521,7 @@ communicator". You can also do point-to-point or broadcast communication to arbi
 <div class="ttc" id="classlbann_1_1lbann__comm_html_afb99f57f7eafc0695bf28e6c26a8120f"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#afb99f57f7eafc0695bf28e6c26a8120f">lbann::lbann_comm::bytes_received</a></div><div class="ttdeci">size_t bytes_received</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00587">lbann_comm.hpp:587</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a2ffc59f0c1d97df2ca6845312c8c8b3e"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a2ffc59f0c1d97df2ca6845312c8c8b3e">lbann::lbann_comm::procs_per_node</a></div><div class="ttdeci">int procs_per_node</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00574">lbann_comm.hpp:574</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a29fb31be115db3225b145f250a7778d9"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a29fb31be115db3225b145f250a7778d9">lbann::lbann_comm::grid</a></div><div class="ttdeci">Grid * grid</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00564">lbann_comm.hpp:564</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_a44bc6b8683f04c2a3fc2f01fc734a946"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a44bc6b8683f04c2a3fc2f01fc734a946">lbann::lbann_comm::setup_node_comm</a></div><div class="ttdeci">void setup_node_comm()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8cpp_source.html#l00838">lbann_comm.cpp:838</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_a44bc6b8683f04c2a3fc2f01fc734a946"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a44bc6b8683f04c2a3fc2f01fc734a946">lbann::lbann_comm::setup_node_comm</a></div><div class="ttdeci">void setup_node_comm()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8cpp_source.html#l00837">lbann_comm.cpp:837</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_aa4f15459eca2a06174a877ba0c23feb7"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#aa4f15459eca2a06174a877ba0c23feb7">lbann::lbann_comm::num_model_barriers</a></div><div class="ttdeci">size_t num_model_barriers</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00583">lbann_comm.hpp:583</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a1f3f90a996dbba4cd1cca60596933ea3"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a1f3f90a996dbba4cd1cca60596933ea3">lbann::lbann_comm::model_rank</a></div><div class="ttdeci">int model_rank</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00570">lbann_comm.hpp:570</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a03d946ef5ea5d3b15351e78a2eed10fe"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a03d946ef5ea5d3b15351e78a2eed10fe">lbann::lbann_comm::num_intermodel_barriers</a></div><div class="ttdeci">size_t num_intermodel_barriers</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00584">lbann_comm.hpp:584</a></div></div>
@@ -1543,30 +1543,30 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="lbann__comm_8cpp_source.html#l00878">878</a> of file <a class="el" href="lbann__comm_8cpp_source.html">lbann_comm.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;                                                                       {</div>
-<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;  <span class="keyword">auto</span> buf_iter = <a class="code" href="classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec">collective_bufs</a>.find(size);</div>
-<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;  <span class="keywordflow">if</span> (buf_iter == <a class="code" href="classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec">collective_bufs</a>.end()) {</div>
-<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;    <span class="keywordflow">if</span> (idx != 0) {</div>
-<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;      <span class="comment">// TODO: Raise exception.</span></div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;    }</div>
-<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec">collective_bufs</a>.emplace(std::make_pair(size, std::vector&lt;uint8_t*&gt;()));</div>
-<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec">collective_bufs</a>[size].push_back(<span class="keyword">new</span> uint8_t[size]);</div>
-<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec">collective_bufs</a>[size][0];</div>
-<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec">collective_bufs</a>[size].size() &gt; idx) {</div>
-<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec">collective_bufs</a>[size][idx];</div>
-<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec">collective_bufs</a>[size].size() != idx) {</div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;        <span class="comment">// TODO: Raise exception.</span></div>
-<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;      }</div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;      <a class="code" href="classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec">collective_bufs</a>[size].push_back(<span class="keyword">new</span> uint8_t[size]);</div>
-<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec">collective_bufs</a>[size][idx];</div>
-<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;    }</div>
-<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;  }</div>
-<div class="line"><a name="l00900"></a><span class="lineno">  900</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__comm_8cpp_source.html#l00877">877</a> of file <a class="el" href="lbann__comm_8cpp_source.html">lbann_comm.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00877"></a><span class="lineno">  877</span>&#160;                                                                       {</div>
+<div class="line"><a name="l00878"></a><span class="lineno">  878</span>&#160;  <span class="keyword">auto</span> buf_iter = <a class="code" href="classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec">collective_bufs</a>.find(size);</div>
+<div class="line"><a name="l00879"></a><span class="lineno">  879</span>&#160;  <span class="keywordflow">if</span> (buf_iter == <a class="code" href="classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec">collective_bufs</a>.end()) {</div>
+<div class="line"><a name="l00880"></a><span class="lineno">  880</span>&#160;    <span class="keywordflow">if</span> (idx != 0) {</div>
+<div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;      <span class="comment">// TODO: Raise exception.</span></div>
+<div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;    }</div>
+<div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec">collective_bufs</a>.emplace(std::make_pair(size, std::vector&lt;uint8_t*&gt;()));</div>
+<div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec">collective_bufs</a>[size].push_back(<span class="keyword">new</span> uint8_t[size]);</div>
+<div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec">collective_bufs</a>[size][0];</div>
+<div class="line"><a name="l00887"></a><span class="lineno">  887</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00888"></a><span class="lineno">  888</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec">collective_bufs</a>[size].size() &gt; idx) {</div>
+<div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec">collective_bufs</a>[size][idx];</div>
+<div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec">collective_bufs</a>[size].size() != idx) {</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;        <span class="comment">// TODO: Raise exception.</span></div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;      }</div>
+<div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;      <a class="code" href="classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec">collective_bufs</a>[size].push_back(<span class="keyword">new</span> uint8_t[size]);</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec">collective_bufs</a>[size][idx];</div>
+<div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    }</div>
+<div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;  }</div>
+<div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a79fa8f1cc5a6a57cc0640cd81ce7f3ec"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec">lbann::lbann_comm::collective_bufs</a></div><div class="ttdeci">std::unordered_map&lt; size_t, std::vector&lt; uint8_t * &gt; &gt; collective_bufs</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00580">lbann_comm.hpp:580</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1992,7 +1992,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1lbann__comm_ad67668baa49b8713f3c74816d1aeb175_icgraph.png" border="0" usemap="#classlbann_1_1lbann__comm_ad67668baa49b8713f3c74816d1aeb175_icgraph" alt=""/></div>
 <map name="classlbann_1_1lbann__comm_ad67668baa49b8713f3c74816d1aeb175_icgraph" id="classlbann_1_1lbann__comm_ad67668baa49b8713f3c74816d1aeb175_icgraph">
-<area shape="rect" id="node2" href="classlbann_1_1convolutional__layer.html#a209510f0137b788c7364df0039627bf2" title="Constructor. " alt="" coords="200,74,376,115"/><area shape="rect" id="node3" href="lbann__layer__local__response__normalization_8cpp.html#a8ac156a3f6c715574f4868ef49dd6667" title="m_num_channels" alt="" coords="226,140,350,167"/><area shape="rect" id="node4" href="classlbann_1_1local__response__normalization__layer.html#ac44b798abbec68fcbb87cc11dc5ceb53" title="lbann::local_response\l_normalization_layer\l::setup" alt="" coords="425,5,573,61"/><area shape="rect" id="node5" href="classlbann_1_1local__response__normalization__layer.html#a09b8afc4b25a6d0de1c7bb2bfbdedb2e" title="Initialize GPU objects. " alt="" coords="425,85,573,141"/><area shape="rect" id="node6" href="classlbann_1_1local__response__normalization__layer.html#a52c3c797bc06e43a251423ccf330aada" title="CPU implementation of forward propagation linearity. " alt="" coords="425,165,573,221"/><area shape="rect" id="node7" href="classlbann_1_1local__response__normalization__layer.html#a0b6ff893cd58e40603907391fd362d9a" title="CPU implementation of backward propagation linearity. " alt="" coords="425,245,573,301"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1convolutional__layer.html#a209510f0137b788c7364df0039627bf2" title="Constructor. " alt="" coords="200,34,376,75"/><area shape="rect" id="node3" href="lbann__layer__local__response__normalization_8cpp.html#a5bc3449c5e69f1cfa40a523edb02f20f" title="m_lrn_k" alt="" coords="254,100,322,127"/><area shape="rect" id="node4" href="classlbann_1_1local__response__normalization__layer.html#a09b8afc4b25a6d0de1c7bb2bfbdedb2e" title="Initialize GPU objects. " alt="" coords="425,5,573,61"/><area shape="rect" id="node5" href="classlbann_1_1local__response__normalization__layer.html#a52c3c797bc06e43a251423ccf330aada" title="CPU implementation of forward propagation linearity. " alt="" coords="425,85,573,141"/><area shape="rect" id="node6" href="classlbann_1_1local__response__normalization__layer.html#a0b6ff893cd58e40603907391fd362d9a" title="CPU implementation of backward propagation linearity. " alt="" coords="425,165,573,221"/></map>
 </div>
 </p>
 
@@ -4459,7 +4459,7 @@ template&lt;typename T &gt; </div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_aa57d2fbeef85fd8a3c9f2a37ca7687c8"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#aa57d2fbeef85fd8a3c9f2a37ca7687c8">lbann::lbann_comm::ar_time</a></div><div class="ttdeci">double ar_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00595">lbann_comm.hpp:595</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a2c3e1db0f6d2345748132322b0555db7"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a2c3e1db0f6d2345748132322b0555db7">lbann::lbann_comm::ar_rs_bytes_received</a></div><div class="ttdeci">size_t ar_rs_bytes_received</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00592">lbann_comm.hpp:592</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_ae925ac5eaf2895717c709b252961b3bf"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#ae925ac5eaf2895717c709b252961b3bf">lbann::lbann_comm::get_collective_buffer</a></div><div class="ttdeci">uint8_t * get_collective_buffer(size_t size, size_t idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8cpp_source.html#l00878">lbann_comm.cpp:878</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_ae925ac5eaf2895717c709b252961b3bf"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#ae925ac5eaf2895717c709b252961b3bf">lbann::lbann_comm::get_collective_buffer</a></div><div class="ttdeci">uint8_t * get_collective_buffer(size_t size, size_t idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8cpp_source.html#l00877">lbann_comm.cpp:877</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_aa5f3c53358bf9002b9fab41918b0c8c1"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#aa5f3c53358bf9002b9fab41918b0c8c1">lbann::lbann_comm::ar_bytes_received</a></div><div class="ttdeci">size_t ar_bytes_received</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00590">lbann_comm.hpp:590</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a60a664f47efb52d9936b72d34059d1ef"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a60a664f47efb52d9936b72d34059d1ef">lbann::lbann_comm::ar_send_time</a></div><div class="ttdeci">double ar_send_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00601">lbann_comm.hpp:601</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_adefa0ee8b0a6b74072448e20d40f502d"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#adefa0ee8b0a6b74072448e20d40f502d">lbann::lbann_comm::ar_rs_recv_time</a></div><div class="ttdeci">double ar_rs_recv_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00604">lbann_comm.hpp:604</a></div></div>
@@ -4544,176 +4544,176 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>An allreduce using a recursive-halving reduce-scatter followed by a recursive-doubling allgather. </p>
 
-<p>Definition at line <a class="el" href="lbann__comm_8cpp_source.html#l00663">663</a> of file <a class="el" href="lbann__comm_8cpp_source.html">lbann_comm.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;                                     {</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;  <span class="keywordtype">double</span> ar_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="structlayer__header.html#a325142c0466170c6627710106275c7fd">rank</a> = mpi::Rank(<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nprocs = mpi::Size(<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;  <span class="keywordflow">if</span> (nprocs == 1) <span class="keywordflow">return</span>;  <span class="comment">// Nothing to do.</span></div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;  <span class="comment">// This implementation requires a power-of-2 number of processes.</span></div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;  <span class="keywordflow">if</span> (nprocs &amp; (nprocs - 1)) {</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(<span class="stringliteral">&quot;lbann_comm: Rabenseifner allreduce requires&quot;</span></div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;                          <span class="stringliteral">&quot; a power-of-2 number of participating processes&quot;</span>);</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;  }</div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;  <span class="comment">// Compute the slices on each processor.</span></div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;  <span class="keyword">const</span> Int cols_per_proc = mat.Width() / nprocs;</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;  <span class="keyword">const</span> Int cols_remainder = mat.Width() % nprocs;</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;  <span class="comment">// Compute the lengths/ends of the slices.</span></div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;  std::vector&lt;Int&gt; slice_lengths(nprocs, cols_per_proc);</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; cols_remainder; ++i) {</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;    slice_lengths[i] += 1;</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;  }</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;  std::vector&lt;Int&gt; slice_ends(nprocs);</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;  std::partial_sum(slice_lengths.begin(), slice_lengths.end(),</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;                   slice_ends.begin());</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;  <span class="comment">// Do a recursive-halving reduce-scatter.</span></div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;  <span class="comment">// In each step here a process sends all the data needed for the other</span></div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;  <span class="comment">// &quot;half&quot; of the processes. i.e. each process sends half their data in the</span></div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;  <span class="comment">// first step, a quarter in the second step, etc.</span></div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;  <span class="keywordtype">double</span> rs_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> partner_mask = nprocs &gt;&gt; 1;</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> slice_mask = 1;</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> send_idx = 0;</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> recv_idx = 0;</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> last_idx = nprocs;</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;  uint8_t* recv_buf = <a class="code" href="classlbann_1_1lbann__comm.html#ae925ac5eaf2895717c709b252961b3bf">get_collective_buffer</a>(max_recv_count);</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;  <span class="keywordflow">while</span> (partner_mask &gt; 0) {</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    <span class="keywordtype">int</span> partner = rank ^ partner_mask;  <span class="comment">// The rank we exchange with this step.</span></div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> is_local = no_local_trans &amp;&amp; <a class="code" href="classlbann_1_1lbann__comm.html#afbe095ac6cb11393a3e8173feb03f255">is_rank_node_local</a>(partner, <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    <span class="comment">// Determine the range of data to send/recv.</span></div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    IR send_range, recv_range;</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;    <span class="keywordflow">if</span> (rank &lt; partner) {</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;      send_idx = recv_idx + nprocs / (slice_mask*2);</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;      send_range = IR(slice_ends[send_idx] - slice_lengths[send_idx],</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;                      slice_ends[last_idx-1]);</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;      recv_range = IR(slice_ends[recv_idx] - slice_lengths[recv_idx],</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;                      slice_ends[send_idx-1]);</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;      recv_idx = send_idx + nprocs / (slice_mask*2);</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;      send_range = IR(slice_ends[send_idx] - slice_lengths[send_idx],</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;                      slice_ends[recv_idx-1]);</div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;      recv_range = IR(slice_ends[recv_idx] - slice_lengths[recv_idx],</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;                      slice_ends[last_idx-1]);</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    }</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    <span class="keyword">auto</span> recv_view = mat(ALL, recv_range);</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    <span class="comment">// Transform the data to send.</span></div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    <span class="keywordtype">double</span> send_trans_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    <span class="keywordtype">int</span> send_size;</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    <span class="keywordtype">int</span> recv_size = max_recv_count;</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    uint8_t* send_buf = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    <span class="keywordflow">if</span> (is_local) {</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;      <span class="keyword">auto</span> send_view = mat(ALL, send_range);</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;      send_buf = (uint8_t*) send_view.Buffer();</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;      send_size = <span class="keyword">sizeof</span>(<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) * send_view.Height() * send_view.Width();</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;      recv_size = <span class="keyword">sizeof</span>(<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) * recv_view.Height() * recv_view.Width();</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;      send_buf = send_transform(mat, ALL, send_range, send_size, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    }</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a4e3d35520a8f567579f9235e9808ba1c">ar_send_transform_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - send_trans_start;</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#ad1f146ae7337ece6266fd307944928e0">bytes_sent</a> += send_size;</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#aa520c16eafde742b70daf60866afc6a8">ar_bytes_sent</a> += send_size;</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#ac74bcfb565c1bb6604f336c6d1b647cc">ar_rs_bytes_sent</a> += send_size;</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    <span class="keywordtype">double</span> sendrecv_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    mpi::SendRecv(send_buf, send_size, partner,</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;                  recv_buf, recv_size, partner, <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    <span class="keywordtype">double</span> sendrecv_tot = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - sendrecv_start;</div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a60a664f47efb52d9936b72d34059d1ef">ar_send_time</a> += sendrecv_tot;</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a4c9323938961c3524dc67f4b7b47e3ae">ar_recv_time</a> += sendrecv_tot;</div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#aaadab22d368e8004a9877828a3bc9e93">ar_rs_send_time</a> += sendrecv_tot;</div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#adefa0ee8b0a6b74072448e20d40f502d">ar_rs_recv_time</a> += sendrecv_tot;</div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    <span class="comment">// Transform the received data.</span></div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;    <span class="keywordtype">double</span> recv_apply_trans_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;    recv_size = recv_apply_transform(recv_buf, recv_view, is_local);</div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#aa642b0ae2321fa464b0092da527f6375">ar_recv_apply_transform_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - recv_apply_trans_start;</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#afb99f57f7eafc0695bf28e6c26a8120f">bytes_received</a> += recv_size;</div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#aa5f3c53358bf9002b9fab41918b0c8c1">ar_bytes_received</a> += recv_size;</div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a2c3e1db0f6d2345748132322b0555db7">ar_rs_bytes_received</a> += send_size;</div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    <span class="comment">// Update info for next iteration.</span></div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    <span class="comment">// Except last_idx when needed for the allgather.</span></div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;    send_idx = recv_idx;</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    partner_mask &gt;&gt;= 1;</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;    slice_mask &lt;&lt;= 1;</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;    <span class="keywordflow">if</span> (partner_mask &gt; 0) {</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;      last_idx = recv_idx + nprocs / (slice_mask);</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;    }</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;  }</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;  <a class="code" href="classlbann_1_1lbann__comm.html#a85022d803e339eb14a15129a07876c2b">ar_rs_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - rs_start;</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;  <span class="comment">// Do a recursive-doubling algather.</span></div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;  <span class="keywordtype">double</span> ag_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;  slice_mask &gt;&gt;= 1;</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;  partner_mask = 1;</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;  <span class="comment">// Now do the remaining steps.</span></div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;  <span class="keywordflow">while</span> (partner_mask &lt; nprocs) {</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    <span class="keywordtype">int</span> partner = rank ^ partner_mask;</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> is_local = no_local_trans &amp;&amp; <a class="code" href="classlbann_1_1lbann__comm.html#afbe095ac6cb11393a3e8173feb03f255">is_rank_node_local</a>(partner, <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;    <span class="comment">// Determine range to send/recv.</span></div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;    IR send_range, recv_range;</div>
-<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;    <span class="keywordflow">if</span> (rank &lt; partner) {</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;      <span class="keywordflow">if</span> (slice_mask != nprocs / 2) {</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        last_idx = last_idx + nprocs / (slice_mask*2);</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;      }</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;      recv_idx = send_idx + nprocs / (slice_mask*2);</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;      send_range = IR(slice_ends[send_idx] - slice_lengths[send_idx],</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;                      slice_ends[recv_idx-1]);</div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;      recv_range = IR(slice_ends[recv_idx] - slice_lengths[recv_idx],</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;                      slice_ends[last_idx-1]);</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;      recv_idx = send_idx - nprocs / (slice_mask*2);</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;      send_range = IR(slice_ends[send_idx] - slice_lengths[send_idx],</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;                      slice_ends[last_idx-1]);</div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;      recv_range = IR(slice_ends[recv_idx] - slice_lengths[recv_idx],</div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;                      slice_ends[send_idx-1]);</div>
-<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;    }</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;    <span class="keyword">auto</span> recv_view = mat(ALL, recv_range);</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;    <span class="comment">// Transform the data to send.</span></div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;    <span class="keywordtype">double</span> send_trans_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;    <span class="keywordtype">int</span> send_size;</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;    <span class="keywordtype">int</span> recv_size = max_recv_count;</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    uint8_t* send_buf = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;    <span class="keywordflow">if</span> (is_local) {</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;      <span class="keyword">auto</span> send_view = mat(ALL, send_range);</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;      send_buf = (uint8_t*) send_view.Buffer();</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;      send_size = <span class="keyword">sizeof</span>(<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) * send_view.Height() * send_view.Width();</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;      recv_size = <span class="keyword">sizeof</span>(<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) * recv_view.Height() * recv_view.Width();</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;      send_buf = send_transform(mat, ALL, send_range, send_size, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;    }</div>
-<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a4e3d35520a8f567579f9235e9808ba1c">ar_send_transform_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - send_trans_start;</div>
-<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;    <span class="keywordflow">if</span> (id_recv || is_local) {</div>
-<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;      recv_buf = (uint8_t*) recv_view.Buffer();</div>
-<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;      recv_size = <span class="keyword">sizeof</span>(<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) * recv_view.Height() * recv_view.Width();</div>
-<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;    }</div>
-<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#ad1f146ae7337ece6266fd307944928e0">bytes_sent</a> += send_size;</div>
-<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#aa520c16eafde742b70daf60866afc6a8">ar_bytes_sent</a> += send_size;</div>
-<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a2cfe1264a83865360692c48d7869fe67">ar_ag_bytes_sent</a> += send_size;</div>
-<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;    <span class="keywordtype">double</span> sendrecv_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
-<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;    mpi::SendRecv(send_buf, send_size, partner,</div>
-<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;                  recv_buf, recv_size, partner, <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
-<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;    <span class="keywordtype">double</span> sendrecv_tot = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - sendrecv_start;</div>
-<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a60a664f47efb52d9936b72d34059d1ef">ar_send_time</a> += sendrecv_tot;</div>
-<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a4c9323938961c3524dc67f4b7b47e3ae">ar_recv_time</a> += sendrecv_tot;</div>
-<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a64cb0b86e9368c1d83370ba6cb0083ba">ar_ag_send_time</a> += sendrecv_tot;</div>
-<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a1896c3ecd1d5b084497c6ed47c1c9bae">ar_ag_recv_time</a> += sendrecv_tot;</div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;    <span class="keywordtype">double</span> recv_trans_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
-<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    <span class="keywordflow">if</span> (id_recv) {</div>
-<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;      recv_size = <span class="keyword">sizeof</span>(<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) * recv_view.Height() * recv_view.Width();</div>
-<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;      recv_size = recv_transform(recv_buf, recv_view);</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;    }</div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#adb393f47d60eaa59bace80d2d3dd3bf2">ar_recv_transform_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - recv_trans_start;</div>
-<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#afb99f57f7eafc0695bf28e6c26a8120f">bytes_received</a> += recv_size;</div>
-<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#aa5f3c53358bf9002b9fab41918b0c8c1">ar_bytes_received</a> += recv_size;</div>
-<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#afded6f478dc5021d1edec306dc6c528c">ar_ag_bytes_received</a> += send_size;</div>
-<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;    <span class="comment">// Update for the next iteration.</span></div>
-<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;    <span class="keywordflow">if</span> (rank &gt; partner) {</div>
-<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;      send_idx = recv_idx;</div>
-<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;    }</div>
-<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;    partner_mask &lt;&lt;= 1;</div>
-<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;    slice_mask &gt;&gt;= 1;</div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;  }</div>
-<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;  <a class="code" href="classlbann_1_1lbann__comm.html#a48768342eb05c1c6cdaa52c3599b93c8">ar_ag_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - ag_start;</div>
-<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;  <a class="code" href="classlbann_1_1lbann__comm.html#aa57d2fbeef85fd8a3c9f2a37ca7687c8">ar_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - ar_start;</div>
-<div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__comm_8cpp_source.html#l00662">662</a> of file <a class="el" href="lbann__comm_8cpp_source.html">lbann_comm.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;                                     {</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;  <span class="keywordtype">double</span> ar_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="structlayer__header.html#a325142c0466170c6627710106275c7fd">rank</a> = mpi::Rank(<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nprocs = mpi::Size(<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;  <span class="keywordflow">if</span> (nprocs == 1) <span class="keywordflow">return</span>;  <span class="comment">// Nothing to do.</span></div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;  <span class="comment">// This implementation requires a power-of-2 number of processes.</span></div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;  <span class="keywordflow">if</span> (nprocs &amp; (nprocs - 1)) {</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(<span class="stringliteral">&quot;lbann_comm: Rabenseifner allreduce requires&quot;</span></div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;                          <span class="stringliteral">&quot; a power-of-2 number of participating processes&quot;</span>);</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;  }</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;  <span class="comment">// Compute the slices on each processor.</span></div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;  <span class="keyword">const</span> Int cols_per_proc = mat.Width() / nprocs;</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;  <span class="keyword">const</span> Int cols_remainder = mat.Width() % nprocs;</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;  <span class="comment">// Compute the lengths/ends of the slices.</span></div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;  std::vector&lt;Int&gt; slice_lengths(nprocs, cols_per_proc);</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; cols_remainder; ++i) {</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    slice_lengths[i] += 1;</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;  }</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;  std::vector&lt;Int&gt; slice_ends(nprocs);</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;  std::partial_sum(slice_lengths.begin(), slice_lengths.end(),</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;                   slice_ends.begin());</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;  <span class="comment">// Do a recursive-halving reduce-scatter.</span></div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;  <span class="comment">// In each step here a process sends all the data needed for the other</span></div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;  <span class="comment">// &quot;half&quot; of the processes. i.e. each process sends half their data in the</span></div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;  <span class="comment">// first step, a quarter in the second step, etc.</span></div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;  <span class="keywordtype">double</span> rs_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> partner_mask = nprocs &gt;&gt; 1;</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> slice_mask = 1;</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> send_idx = 0;</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> recv_idx = 0;</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> last_idx = nprocs;</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;  uint8_t* recv_buf = <a class="code" href="classlbann_1_1lbann__comm.html#ae925ac5eaf2895717c709b252961b3bf">get_collective_buffer</a>(max_recv_count);</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;  <span class="keywordflow">while</span> (partner_mask &gt; 0) {</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    <span class="keywordtype">int</span> partner = rank ^ partner_mask;  <span class="comment">// The rank we exchange with this step.</span></div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> is_local = no_local_trans &amp;&amp; <a class="code" href="classlbann_1_1lbann__comm.html#afbe095ac6cb11393a3e8173feb03f255">is_rank_node_local</a>(partner, <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    <span class="comment">// Determine the range of data to send/recv.</span></div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;    IR send_range, recv_range;</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    <span class="keywordflow">if</span> (rank &lt; partner) {</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;      send_idx = recv_idx + nprocs / (slice_mask*2);</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;      send_range = IR(slice_ends[send_idx] - slice_lengths[send_idx],</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;                      slice_ends[last_idx-1]);</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;      recv_range = IR(slice_ends[recv_idx] - slice_lengths[recv_idx],</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;                      slice_ends[send_idx-1]);</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;      recv_idx = send_idx + nprocs / (slice_mask*2);</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;      send_range = IR(slice_ends[send_idx] - slice_lengths[send_idx],</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;                      slice_ends[recv_idx-1]);</div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;      recv_range = IR(slice_ends[recv_idx] - slice_lengths[recv_idx],</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;                      slice_ends[last_idx-1]);</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    }</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    <span class="keyword">auto</span> recv_view = mat(ALL, recv_range);</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    <span class="comment">// Transform the data to send.</span></div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    <span class="keywordtype">double</span> send_trans_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    <span class="keywordtype">int</span> send_size;</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    <span class="keywordtype">int</span> recv_size = max_recv_count;</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    uint8_t* send_buf = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    <span class="keywordflow">if</span> (is_local) {</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;      <span class="keyword">auto</span> send_view = mat(ALL, send_range);</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;      send_buf = (uint8_t*) send_view.Buffer();</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;      send_size = <span class="keyword">sizeof</span>(<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) * send_view.Height() * send_view.Width();</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;      recv_size = <span class="keyword">sizeof</span>(<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) * recv_view.Height() * recv_view.Width();</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;      send_buf = send_transform(mat, ALL, send_range, send_size, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    }</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a4e3d35520a8f567579f9235e9808ba1c">ar_send_transform_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - send_trans_start;</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#ad1f146ae7337ece6266fd307944928e0">bytes_sent</a> += send_size;</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#aa520c16eafde742b70daf60866afc6a8">ar_bytes_sent</a> += send_size;</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#ac74bcfb565c1bb6604f336c6d1b647cc">ar_rs_bytes_sent</a> += send_size;</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    <span class="keywordtype">double</span> sendrecv_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    mpi::SendRecv(send_buf, send_size, partner,</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;                  recv_buf, recv_size, partner, <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;    <span class="keywordtype">double</span> sendrecv_tot = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - sendrecv_start;</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a60a664f47efb52d9936b72d34059d1ef">ar_send_time</a> += sendrecv_tot;</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a4c9323938961c3524dc67f4b7b47e3ae">ar_recv_time</a> += sendrecv_tot;</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#aaadab22d368e8004a9877828a3bc9e93">ar_rs_send_time</a> += sendrecv_tot;</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#adefa0ee8b0a6b74072448e20d40f502d">ar_rs_recv_time</a> += sendrecv_tot;</div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;    <span class="comment">// Transform the received data.</span></div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;    <span class="keywordtype">double</span> recv_apply_trans_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;    recv_size = recv_apply_transform(recv_buf, recv_view, is_local);</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#aa642b0ae2321fa464b0092da527f6375">ar_recv_apply_transform_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - recv_apply_trans_start;</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#afb99f57f7eafc0695bf28e6c26a8120f">bytes_received</a> += recv_size;</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#aa5f3c53358bf9002b9fab41918b0c8c1">ar_bytes_received</a> += recv_size;</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a2c3e1db0f6d2345748132322b0555db7">ar_rs_bytes_received</a> += send_size;</div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    <span class="comment">// Update info for next iteration.</span></div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    <span class="comment">// Except last_idx when needed for the allgather.</span></div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    send_idx = recv_idx;</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;    partner_mask &gt;&gt;= 1;</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    slice_mask &lt;&lt;= 1;</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;    <span class="keywordflow">if</span> (partner_mask &gt; 0) {</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;      last_idx = recv_idx + nprocs / (slice_mask);</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;    }</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;  }</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;  <a class="code" href="classlbann_1_1lbann__comm.html#a85022d803e339eb14a15129a07876c2b">ar_rs_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - rs_start;</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;  <span class="comment">// Do a recursive-doubling algather.</span></div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;  <span class="keywordtype">double</span> ag_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;  slice_mask &gt;&gt;= 1;</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;  partner_mask = 1;</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;  <span class="comment">// Now do the remaining steps.</span></div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;  <span class="keywordflow">while</span> (partner_mask &lt; nprocs) {</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;    <span class="keywordtype">int</span> partner = rank ^ partner_mask;</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> is_local = no_local_trans &amp;&amp; <a class="code" href="classlbann_1_1lbann__comm.html#afbe095ac6cb11393a3e8173feb03f255">is_rank_node_local</a>(partner, <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;    <span class="comment">// Determine range to send/recv.</span></div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;    IR send_range, recv_range;</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;    <span class="keywordflow">if</span> (rank &lt; partner) {</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;      <span class="keywordflow">if</span> (slice_mask != nprocs / 2) {</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;        last_idx = last_idx + nprocs / (slice_mask*2);</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;      }</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;      recv_idx = send_idx + nprocs / (slice_mask*2);</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;      send_range = IR(slice_ends[send_idx] - slice_lengths[send_idx],</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;                      slice_ends[recv_idx-1]);</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;      recv_range = IR(slice_ends[recv_idx] - slice_lengths[recv_idx],</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;                      slice_ends[last_idx-1]);</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;      recv_idx = send_idx - nprocs / (slice_mask*2);</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;      send_range = IR(slice_ends[send_idx] - slice_lengths[send_idx],</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;                      slice_ends[last_idx-1]);</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;      recv_range = IR(slice_ends[recv_idx] - slice_lengths[recv_idx],</div>
+<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;                      slice_ends[send_idx-1]);</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;    }</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;    <span class="keyword">auto</span> recv_view = mat(ALL, recv_range);</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;    <span class="comment">// Transform the data to send.</span></div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;    <span class="keywordtype">double</span> send_trans_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;    <span class="keywordtype">int</span> send_size;</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;    <span class="keywordtype">int</span> recv_size = max_recv_count;</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;    uint8_t* send_buf = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    <span class="keywordflow">if</span> (is_local) {</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;      <span class="keyword">auto</span> send_view = mat(ALL, send_range);</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;      send_buf = (uint8_t*) send_view.Buffer();</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;      send_size = <span class="keyword">sizeof</span>(<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) * send_view.Height() * send_view.Width();</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;      recv_size = <span class="keyword">sizeof</span>(<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) * recv_view.Height() * recv_view.Width();</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;      send_buf = send_transform(mat, ALL, send_range, send_size, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;    }</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a4e3d35520a8f567579f9235e9808ba1c">ar_send_transform_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - send_trans_start;</div>
+<div class="line"><a name="l00801"></a><span class="lineno">  801</span>&#160;    <span class="keywordflow">if</span> (id_recv || is_local) {</div>
+<div class="line"><a name="l00802"></a><span class="lineno">  802</span>&#160;      recv_buf = (uint8_t*) recv_view.Buffer();</div>
+<div class="line"><a name="l00803"></a><span class="lineno">  803</span>&#160;      recv_size = <span class="keyword">sizeof</span>(<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) * recv_view.Height() * recv_view.Width();</div>
+<div class="line"><a name="l00804"></a><span class="lineno">  804</span>&#160;    }</div>
+<div class="line"><a name="l00805"></a><span class="lineno">  805</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#ad1f146ae7337ece6266fd307944928e0">bytes_sent</a> += send_size;</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#aa520c16eafde742b70daf60866afc6a8">ar_bytes_sent</a> += send_size;</div>
+<div class="line"><a name="l00807"></a><span class="lineno">  807</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a2cfe1264a83865360692c48d7869fe67">ar_ag_bytes_sent</a> += send_size;</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;    <span class="keywordtype">double</span> sendrecv_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
+<div class="line"><a name="l00809"></a><span class="lineno">  809</span>&#160;    mpi::SendRecv(send_buf, send_size, partner,</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;                  recv_buf, recv_size, partner, <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;    <span class="keywordtype">double</span> sendrecv_tot = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - sendrecv_start;</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a60a664f47efb52d9936b72d34059d1ef">ar_send_time</a> += sendrecv_tot;</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a4c9323938961c3524dc67f4b7b47e3ae">ar_recv_time</a> += sendrecv_tot;</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a64cb0b86e9368c1d83370ba6cb0083ba">ar_ag_send_time</a> += sendrecv_tot;</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a1896c3ecd1d5b084497c6ed47c1c9bae">ar_ag_recv_time</a> += sendrecv_tot;</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;    <span class="keywordtype">double</span> recv_trans_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;    <span class="keywordflow">if</span> (id_recv) {</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;      recv_size = <span class="keyword">sizeof</span>(<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) * recv_view.Height() * recv_view.Width();</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;      recv_size = recv_transform(recv_buf, recv_view);</div>
+<div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;    }</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#adb393f47d60eaa59bace80d2d3dd3bf2">ar_recv_transform_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - recv_trans_start;</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#afb99f57f7eafc0695bf28e6c26a8120f">bytes_received</a> += recv_size;</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#aa5f3c53358bf9002b9fab41918b0c8c1">ar_bytes_received</a> += recv_size;</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#afded6f478dc5021d1edec306dc6c528c">ar_ag_bytes_received</a> += send_size;</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;    <span class="comment">// Update for the next iteration.</span></div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;    <span class="keywordflow">if</span> (rank &gt; partner) {</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;      send_idx = recv_idx;</div>
+<div class="line"><a name="l00829"></a><span class="lineno">  829</span>&#160;    }</div>
+<div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;    partner_mask &lt;&lt;= 1;</div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;    slice_mask &gt;&gt;= 1;</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;  }</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;  <a class="code" href="classlbann_1_1lbann__comm.html#a48768342eb05c1c6cdaa52c3599b93c8">ar_ag_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - ag_start;</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;  <a class="code" href="classlbann_1_1lbann__comm.html#aa57d2fbeef85fd8a3c9f2a37ca7687c8">ar_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - ar_start;</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a48768342eb05c1c6cdaa52c3599b93c8"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a48768342eb05c1c6cdaa52c3599b93c8">lbann::lbann_comm::ar_ag_time</a></div><div class="ttdeci">double ar_ag_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00597">lbann_comm.hpp:597</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_aa642b0ae2321fa464b0092da527f6375"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#aa642b0ae2321fa464b0092da527f6375">lbann::lbann_comm::ar_recv_apply_transform_time</a></div><div class="ttdeci">double ar_recv_apply_transform_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00600">lbann_comm.hpp:600</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a85022d803e339eb14a15129a07876c2b"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a85022d803e339eb14a15129a07876c2b">lbann::lbann_comm::ar_rs_time</a></div><div class="ttdeci">double ar_rs_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00596">lbann_comm.hpp:596</a></div></div>
@@ -4728,7 +4728,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_aa57d2fbeef85fd8a3c9f2a37ca7687c8"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#aa57d2fbeef85fd8a3c9f2a37ca7687c8">lbann::lbann_comm::ar_time</a></div><div class="ttdeci">double ar_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00595">lbann_comm.hpp:595</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a2c3e1db0f6d2345748132322b0555db7"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a2c3e1db0f6d2345748132322b0555db7">lbann::lbann_comm::ar_rs_bytes_received</a></div><div class="ttdeci">size_t ar_rs_bytes_received</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00592">lbann_comm.hpp:592</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_ae925ac5eaf2895717c709b252961b3bf"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#ae925ac5eaf2895717c709b252961b3bf">lbann::lbann_comm::get_collective_buffer</a></div><div class="ttdeci">uint8_t * get_collective_buffer(size_t size, size_t idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8cpp_source.html#l00878">lbann_comm.cpp:878</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_ae925ac5eaf2895717c709b252961b3bf"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#ae925ac5eaf2895717c709b252961b3bf">lbann::lbann_comm::get_collective_buffer</a></div><div class="ttdeci">uint8_t * get_collective_buffer(size_t size, size_t idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8cpp_source.html#l00877">lbann_comm.cpp:877</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_aa5f3c53358bf9002b9fab41918b0c8c1"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#aa5f3c53358bf9002b9fab41918b0c8c1">lbann::lbann_comm::ar_bytes_received</a></div><div class="ttdeci">size_t ar_bytes_received</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00590">lbann_comm.hpp:590</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a60a664f47efb52d9936b72d34059d1ef"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a60a664f47efb52d9936b72d34059d1ef">lbann::lbann_comm::ar_send_time</a></div><div class="ttdeci">double ar_send_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00601">lbann_comm.hpp:601</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_adefa0ee8b0a6b74072448e20d40f502d"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#adefa0ee8b0a6b74072448e20d40f502d">lbann::lbann_comm::ar_rs_recv_time</a></div><div class="ttdeci">double ar_rs_recv_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00604">lbann_comm.hpp:604</a></div></div>
@@ -4811,7 +4811,7 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                                     {</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <span class="keywordtype">double</span> ar_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="structlayer__header.html#a325142c0466170c6627710106275c7fd">rank</a> = mpi::Rank(<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> nprocs = mpi::Size(<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nprocs = mpi::Size(<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <span class="keywordflow">if</span> (nprocs == 1) <span class="keywordflow">return</span>;  <span class="comment">// Nothing to do.</span></div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="comment">// This implementation requires a power-of-2 number of processes.</span></div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="keywordflow">if</span> (nprocs &amp; (nprocs - 1)) {</div>
@@ -4863,7 +4863,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_aa520c16eafde742b70daf60866afc6a8"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#aa520c16eafde742b70daf60866afc6a8">lbann::lbann_comm::ar_bytes_sent</a></div><div class="ttdeci">size_t ar_bytes_sent</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00589">lbann_comm.hpp:589</a></div></div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_aa57d2fbeef85fd8a3c9f2a37ca7687c8"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#aa57d2fbeef85fd8a3c9f2a37ca7687c8">lbann::lbann_comm::ar_time</a></div><div class="ttdeci">double ar_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00595">lbann_comm.hpp:595</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_ae925ac5eaf2895717c709b252961b3bf"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#ae925ac5eaf2895717c709b252961b3bf">lbann::lbann_comm::get_collective_buffer</a></div><div class="ttdeci">uint8_t * get_collective_buffer(size_t size, size_t idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8cpp_source.html#l00878">lbann_comm.cpp:878</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_ae925ac5eaf2895717c709b252961b3bf"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#ae925ac5eaf2895717c709b252961b3bf">lbann::lbann_comm::get_collective_buffer</a></div><div class="ttdeci">uint8_t * get_collective_buffer(size_t size, size_t idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8cpp_source.html#l00877">lbann_comm.cpp:877</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_aa5f3c53358bf9002b9fab41918b0c8c1"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#aa5f3c53358bf9002b9fab41918b0c8c1">lbann::lbann_comm::ar_bytes_received</a></div><div class="ttdeci">size_t ar_bytes_received</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00590">lbann_comm.hpp:590</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a60a664f47efb52d9936b72d34059d1ef"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a60a664f47efb52d9936b72d34059d1ef">lbann::lbann_comm::ar_send_time</a></div><div class="ttdeci">double ar_send_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00601">lbann_comm.hpp:601</a></div></div>
 <div class="ttc" id="namespacelbann_html_a478d36031ff0659893c4322cd856157f"><div class="ttname"><a href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">lbann::get_time</a></div><div class="ttdeci">double get_time()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__timer_8hpp_source.html#l00037">lbann_timer.hpp:37</a></div></div>
@@ -5548,44 +5548,43 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    recv_buf2 = <a class="code" href="classlbann_1_1lbann__comm.html#ae925ac5eaf2895717c709b252961b3bf">get_collective_buffer</a>(max_recv_count, 1);</div>
 <div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;  }</div>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> step = 1; step &lt; nprocs - 1; ++step) {</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> send_slice = (rank - step + 1 + nprocs) % nprocs;</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> recv_slice = (rank - step + nprocs) % nprocs;</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;    <span class="keyword">auto</span> recv_view = mat(ALL,</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;                         IR(slice_ends[recv_slice] - slice_lengths[recv_slice],</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;                            slice_ends[recv_slice]));</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    <span class="keywordflow">if</span> (id_recv) {</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;      recv_buf2 = (uint8_t*) recv_view.Buffer();</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;      max_recv_count = <span class="keyword">sizeof</span>(<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) * recv_view.Height() * recv_view.Width();</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    }</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#ad1f146ae7337ece6266fd307944928e0">bytes_sent</a> += send_size;</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#aa520c16eafde742b70daf60866afc6a8">ar_bytes_sent</a> += send_size;</div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a2cfe1264a83865360692c48d7869fe67">ar_ag_bytes_sent</a> += send_size;</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    <span class="keywordtype">double</span> sendrecv_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    mpi::SendRecv(recv_buf, send_size, dst,</div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;                  recv_buf2, max_recv_count, src, <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    <span class="keywordtype">double</span> sendrecv_tot = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - sendrecv_start;</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a60a664f47efb52d9936b72d34059d1ef">ar_send_time</a> += sendrecv_tot;</div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a4c9323938961c3524dc67f4b7b47e3ae">ar_recv_time</a> += sendrecv_tot;</div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a64cb0b86e9368c1d83370ba6cb0083ba">ar_ag_send_time</a> += sendrecv_tot;</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a1896c3ecd1d5b084497c6ed47c1c9bae">ar_ag_recv_time</a> += sendrecv_tot;</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    <span class="keywordtype">double</span> recv_trans_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    <span class="keywordtype">int</span> recv_size = 0;</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    <span class="keywordflow">if</span> (id_recv) {</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;      recv_size = <span class="keyword">sizeof</span>(<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) * recv_view.Height() * recv_view.Width();</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;      recv_size = recv_transform(recv_buf2, recv_view);</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;    }</div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#adb393f47d60eaa59bace80d2d3dd3bf2">ar_recv_transform_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - recv_trans_start;</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    <span class="comment">// Swap the send and receive buffers.</span></div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    std::swap(recv_buf, recv_buf2);</div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    send_size = recv_size;</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#afb99f57f7eafc0695bf28e6c26a8120f">bytes_received</a> += recv_size;</div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#aa5f3c53358bf9002b9fab41918b0c8c1">ar_bytes_received</a> += recv_size;</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#afded6f478dc5021d1edec306dc6c528c">ar_ag_bytes_received</a> += recv_size;</div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;  }</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;  <a class="code" href="classlbann_1_1lbann__comm.html#a48768342eb05c1c6cdaa52c3599b93c8">ar_ag_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - ag_start;</div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;  <a class="code" href="classlbann_1_1lbann__comm.html#aa57d2fbeef85fd8a3c9f2a37ca7687c8">ar_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - ar_start;</div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;}</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> recv_slice = (rank - step + nprocs) % nprocs;</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;    <span class="keyword">auto</span> recv_view = mat(ALL,</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;                         IR(slice_ends[recv_slice] - slice_lengths[recv_slice],</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;                            slice_ends[recv_slice]));</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    <span class="keywordflow">if</span> (id_recv) {</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;      recv_buf2 = (uint8_t*) recv_view.Buffer();</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;      max_recv_count = <span class="keyword">sizeof</span>(<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) * recv_view.Height() * recv_view.Width();</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;    }</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#ad1f146ae7337ece6266fd307944928e0">bytes_sent</a> += send_size;</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#aa520c16eafde742b70daf60866afc6a8">ar_bytes_sent</a> += send_size;</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a2cfe1264a83865360692c48d7869fe67">ar_ag_bytes_sent</a> += send_size;</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    <span class="keywordtype">double</span> sendrecv_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;    mpi::SendRecv(recv_buf, send_size, dst,</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;                  recv_buf2, max_recv_count, src, <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;    <span class="keywordtype">double</span> sendrecv_tot = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - sendrecv_start;</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a60a664f47efb52d9936b72d34059d1ef">ar_send_time</a> += sendrecv_tot;</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a4c9323938961c3524dc67f4b7b47e3ae">ar_recv_time</a> += sendrecv_tot;</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a64cb0b86e9368c1d83370ba6cb0083ba">ar_ag_send_time</a> += sendrecv_tot;</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a1896c3ecd1d5b084497c6ed47c1c9bae">ar_ag_recv_time</a> += sendrecv_tot;</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    <span class="keywordtype">double</span> recv_trans_start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    <span class="keywordtype">int</span> recv_size = 0;</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;    <span class="keywordflow">if</span> (id_recv) {</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;      recv_size = <span class="keyword">sizeof</span>(<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) * recv_view.Height() * recv_view.Width();</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;      recv_size = recv_transform(recv_buf2, recv_view);</div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;    }</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#adb393f47d60eaa59bace80d2d3dd3bf2">ar_recv_transform_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - recv_trans_start;</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    <span class="comment">// Swap the send and receive buffers.</span></div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    std::swap(recv_buf, recv_buf2);</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    send_size = recv_size;</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#afb99f57f7eafc0695bf28e6c26a8120f">bytes_received</a> += recv_size;</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#aa5f3c53358bf9002b9fab41918b0c8c1">ar_bytes_received</a> += recv_size;</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#afded6f478dc5021d1edec306dc6c528c">ar_ag_bytes_received</a> += recv_size;</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;  }</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;  <a class="code" href="classlbann_1_1lbann__comm.html#a48768342eb05c1c6cdaa52c3599b93c8">ar_ag_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - ag_start;</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;  <a class="code" href="classlbann_1_1lbann__comm.html#aa57d2fbeef85fd8a3c9f2a37ca7687c8">ar_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - ar_start;</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a48768342eb05c1c6cdaa52c3599b93c8"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a48768342eb05c1c6cdaa52c3599b93c8">lbann::lbann_comm::ar_ag_time</a></div><div class="ttdeci">double ar_ag_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00597">lbann_comm.hpp:597</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_aa642b0ae2321fa464b0092da527f6375"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#aa642b0ae2321fa464b0092da527f6375">lbann::lbann_comm::ar_recv_apply_transform_time</a></div><div class="ttdeci">double ar_recv_apply_transform_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00600">lbann_comm.hpp:600</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a85022d803e339eb14a15129a07876c2b"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a85022d803e339eb14a15129a07876c2b">lbann::lbann_comm::ar_rs_time</a></div><div class="ttdeci">double ar_rs_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00596">lbann_comm.hpp:596</a></div></div>
@@ -5600,7 +5599,7 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_aa57d2fbeef85fd8a3c9f2a37ca7687c8"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#aa57d2fbeef85fd8a3c9f2a37ca7687c8">lbann::lbann_comm::ar_time</a></div><div class="ttdeci">double ar_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00595">lbann_comm.hpp:595</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a2c3e1db0f6d2345748132322b0555db7"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a2c3e1db0f6d2345748132322b0555db7">lbann::lbann_comm::ar_rs_bytes_received</a></div><div class="ttdeci">size_t ar_rs_bytes_received</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00592">lbann_comm.hpp:592</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_ae925ac5eaf2895717c709b252961b3bf"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#ae925ac5eaf2895717c709b252961b3bf">lbann::lbann_comm::get_collective_buffer</a></div><div class="ttdeci">uint8_t * get_collective_buffer(size_t size, size_t idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8cpp_source.html#l00878">lbann_comm.cpp:878</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_ae925ac5eaf2895717c709b252961b3bf"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#ae925ac5eaf2895717c709b252961b3bf">lbann::lbann_comm::get_collective_buffer</a></div><div class="ttdeci">uint8_t * get_collective_buffer(size_t size, size_t idx=0)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8cpp_source.html#l00877">lbann_comm.cpp:877</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_aa5f3c53358bf9002b9fab41918b0c8c1"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#aa5f3c53358bf9002b9fab41918b0c8c1">lbann::lbann_comm::ar_bytes_received</a></div><div class="ttdeci">size_t ar_bytes_received</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00590">lbann_comm.hpp:590</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a60a664f47efb52d9936b72d34059d1ef"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a60a664f47efb52d9936b72d34059d1ef">lbann::lbann_comm::ar_send_time</a></div><div class="ttdeci">double ar_send_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00601">lbann_comm.hpp:601</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_adefa0ee8b0a6b74072448e20d40f502d"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#adefa0ee8b0a6b74072448e20d40f502d">lbann::lbann_comm::ar_rs_recv_time</a></div><div class="ttdeci">double ar_rs_recv_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00604">lbann_comm.hpp:604</a></div></div>
@@ -6112,46 +6111,46 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Setup communicator for processes in the same compute node. We obtain a string specifying the compute node. The string is hashed (with salt) and used to split the communicators. To avoid hash collisions, the splitting procedure is repeated with a different salt. </p>
 
-<p>Definition at line <a class="el" href="lbann__comm_8cpp_source.html#l00838">838</a> of file <a class="el" href="lbann__comm_8cpp_source.html">lbann_comm.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;                                      {</div>
-<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160; </div>
-<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;  <span class="comment">// Get string specifying compute node</span></div>
-<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;  <span class="keywordtype">char</span> node_name[MPI_MAX_PROCESSOR_NAME];</div>
-<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;  <span class="keywordtype">int</span> node_name_len;</div>
-<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;  <a class="code" href="lbann__comm_8cpp.html#a7a92ceb4ddf57dc156d3a1b39f3ab962">checkMPI</a>(MPI_Get_processor_name(node_name, &amp;node_name_len));</div>
-<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;  <span class="keyword">const</span> std::string node_string(node_name);</div>
-<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;</div>
-<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;  <span class="comment">// Hash node names and split MPI processes</span></div>
-<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;  <span class="keywordtype">int</span> hash = std::hash&lt;std::string&gt;()(node_string);</div>
-<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;  hash = hash &gt;= 0 ? hash : -hash;  <span class="comment">// Make sure hash is non-negative</span></div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;  mpi::Comm hash_comm;</div>
-<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;  mpi::Split(mpi::COMM_WORLD, hash, mpi::Rank(mpi::COMM_WORLD), hash_comm);</div>
-<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> hash_comm_size = mpi::Size(hash_comm);</div>
-<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;</div>
-<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;  <span class="comment">// Compare node names and split MPI processes</span></div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;  <span class="keywordtype">char</span>* node_name_list = <span class="keyword">new</span> <span class="keywordtype">char</span>[hash_comm_size*MPI_MAX_PROCESSOR_NAME];</div>
-<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;  <a class="code" href="lbann__comm_8cpp.html#a7a92ceb4ddf57dc156d3a1b39f3ab962">checkMPI</a>(MPI_Allgather(node_name, MPI_MAX_PROCESSOR_NAME, MPI_CHAR,</div>
-<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;                         node_name_list, MPI_MAX_PROCESSOR_NAME, MPI_CHAR,</div>
-<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;                         hash_comm.comm));</div>
-<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;  <span class="keywordtype">int</span> node_num = mpi::Rank(hash_comm);</div>
-<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;hash_comm_size; ++i) {</div>
-<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;    <span class="keyword">const</span> std::string other_node_string(node_name_list + i*MPI_MAX_PROCESSOR_NAME);</div>
-<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;    <span class="keywordflow">if</span>(node_string == other_node_string) {</div>
-<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;      node_num = i;</div>
-<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;    }</div>
-<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;  }</div>
-<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;  <span class="keyword">delete</span>[] node_name_list;</div>
-<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;  mpi::Split(hash_comm, node_num, mpi::Rank(mpi::COMM_WORLD), <a class="code" href="classlbann_1_1lbann__comm.html#a9f1f65663ca1d441f98f003b612eeb8c">node_comm</a>);</div>
-<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;  mpi::Free(hash_comm);</div>
-<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;</div>
-<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;  <span class="comment">// Set up list of ranks that are local.</span></div>
-<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;  <span class="keywordtype">int</span> node_comm_size = mpi::Size(<a class="code" href="classlbann_1_1lbann__comm.html#a9f1f65663ca1d441f98f003b612eeb8c">node_comm</a>);</div>
-<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; node_comm_size; ++i) {</div>
-<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a3299a37fe7b0eae43a5c154148ab6dc2">world_ranks_on_node</a>.push_back(</div>
-<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;      mpi::Translate(<a class="code" href="classlbann_1_1lbann__comm.html#a9f1f65663ca1d441f98f003b612eeb8c">node_comm</a>, i, mpi::COMM_WORLD));</div>
-<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;  }</div>
-<div class="line"><a name="l00876"></a><span class="lineno">  876</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__comm_8cpp_source.html#l00837">837</a> of file <a class="el" href="lbann__comm_8cpp_source.html">lbann_comm.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;                                      {</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160; </div>
+<div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160;  <span class="comment">// Get string specifying compute node</span></div>
+<div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;  <span class="keywordtype">char</span> node_name[MPI_MAX_PROCESSOR_NAME];</div>
+<div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;  <span class="keywordtype">int</span> node_name_len;</div>
+<div class="line"><a name="l00842"></a><span class="lineno">  842</span>&#160;  <a class="code" href="lbann__comm_8cpp.html#a7a92ceb4ddf57dc156d3a1b39f3ab962">checkMPI</a>(MPI_Get_processor_name(node_name, &amp;node_name_len));</div>
+<div class="line"><a name="l00843"></a><span class="lineno">  843</span>&#160;  <span class="keyword">const</span> std::string node_string(node_name);</div>
+<div class="line"><a name="l00844"></a><span class="lineno">  844</span>&#160;</div>
+<div class="line"><a name="l00845"></a><span class="lineno">  845</span>&#160;  <span class="comment">// Hash node names and split MPI processes</span></div>
+<div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;  <span class="keywordtype">int</span> hash = std::hash&lt;std::string&gt;()(node_string);</div>
+<div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;  hash = hash &gt;= 0 ? hash : -hash;  <span class="comment">// Make sure hash is non-negative</span></div>
+<div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;  mpi::Comm hash_comm;</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;  mpi::Split(mpi::COMM_WORLD, hash, mpi::Rank(mpi::COMM_WORLD), hash_comm);</div>
+<div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> hash_comm_size = mpi::Size(hash_comm);</div>
+<div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;</div>
+<div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;  <span class="comment">// Compare node names and split MPI processes</span></div>
+<div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160;  <span class="keywordtype">char</span>* node_name_list = <span class="keyword">new</span> <span class="keywordtype">char</span>[hash_comm_size*MPI_MAX_PROCESSOR_NAME];</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;  <a class="code" href="lbann__comm_8cpp.html#a7a92ceb4ddf57dc156d3a1b39f3ab962">checkMPI</a>(MPI_Allgather(node_name, MPI_MAX_PROCESSOR_NAME, MPI_CHAR,</div>
+<div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;                         node_name_list, MPI_MAX_PROCESSOR_NAME, MPI_CHAR,</div>
+<div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;                         hash_comm.comm));</div>
+<div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;  <span class="keywordtype">int</span> node_num = mpi::Rank(hash_comm);</div>
+<div class="line"><a name="l00858"></a><span class="lineno">  858</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;hash_comm_size; ++i) {</div>
+<div class="line"><a name="l00859"></a><span class="lineno">  859</span>&#160;    <span class="keyword">const</span> std::string other_node_string(node_name_list + i*MPI_MAX_PROCESSOR_NAME);</div>
+<div class="line"><a name="l00860"></a><span class="lineno">  860</span>&#160;    <span class="keywordflow">if</span>(node_string == other_node_string) {</div>
+<div class="line"><a name="l00861"></a><span class="lineno">  861</span>&#160;      node_num = i;</div>
+<div class="line"><a name="l00862"></a><span class="lineno">  862</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00863"></a><span class="lineno">  863</span>&#160;    }</div>
+<div class="line"><a name="l00864"></a><span class="lineno">  864</span>&#160;  }</div>
+<div class="line"><a name="l00865"></a><span class="lineno">  865</span>&#160;  <span class="keyword">delete</span>[] node_name_list;</div>
+<div class="line"><a name="l00866"></a><span class="lineno">  866</span>&#160;  mpi::Split(hash_comm, node_num, mpi::Rank(mpi::COMM_WORLD), <a class="code" href="classlbann_1_1lbann__comm.html#a9f1f65663ca1d441f98f003b612eeb8c">node_comm</a>);</div>
+<div class="line"><a name="l00867"></a><span class="lineno">  867</span>&#160;  mpi::Free(hash_comm);</div>
+<div class="line"><a name="l00868"></a><span class="lineno">  868</span>&#160;</div>
+<div class="line"><a name="l00869"></a><span class="lineno">  869</span>&#160;  <span class="comment">// Set up list of ranks that are local.</span></div>
+<div class="line"><a name="l00870"></a><span class="lineno">  870</span>&#160;  <span class="keywordtype">int</span> node_comm_size = mpi::Size(<a class="code" href="classlbann_1_1lbann__comm.html#a9f1f65663ca1d441f98f003b612eeb8c">node_comm</a>);</div>
+<div class="line"><a name="l00871"></a><span class="lineno">  871</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; node_comm_size; ++i) {</div>
+<div class="line"><a name="l00872"></a><span class="lineno">  872</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#a3299a37fe7b0eae43a5c154148ab6dc2">world_ranks_on_node</a>.push_back(</div>
+<div class="line"><a name="l00873"></a><span class="lineno">  873</span>&#160;      mpi::Translate(<a class="code" href="classlbann_1_1lbann__comm.html#a9f1f65663ca1d441f98f003b612eeb8c">node_comm</a>, i, mpi::COMM_WORLD));</div>
+<div class="line"><a name="l00874"></a><span class="lineno">  874</span>&#160;  }</div>
+<div class="line"><a name="l00875"></a><span class="lineno">  875</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a3299a37fe7b0eae43a5c154148ab6dc2"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a3299a37fe7b0eae43a5c154148ab6dc2">lbann::lbann_comm::world_ranks_on_node</a></div><div class="ttdeci">std::vector&lt; int &gt; world_ranks_on_node</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00578">lbann_comm.hpp:578</a></div></div>
 <div class="ttc" id="lbann__comm_8cpp_html_a7a92ceb4ddf57dc156d3a1b39f3ab962"><div class="ttname"><a href="lbann__comm_8cpp.html#a7a92ceb4ddf57dc156d3a1b39f3ab962">checkMPI</a></div><div class="ttdeci">#define checkMPI(status)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8cpp_source.html#l00052">lbann_comm.cpp:52</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a9f1f65663ca1d441f98f003b612eeb8c"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a9f1f65663ca1d441f98f003b612eeb8c">lbann::lbann_comm::node_comm</a></div><div class="ttdeci">mpi::Comm node_comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00562">lbann_comm.hpp:562</a></div></div>
@@ -7015,7 +7014,7 @@ template&lt;typename T &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a></li>
-    <li class="footer">Generated on Wed May 24 2017 20:32:07 for LBANN by
+    <li class="footer">Generated on Wed May 24 2017 22:50:44 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX9 =
 {
+"lbann__metric_8hpp.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1":[4,0,0,0,0,0,0,0,0,4,0,2],
 "lbann__metric_8hpp.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a03a6de919a7de725650618ba698fbdfc":[4,0,0,0,0,0,0,0,0,4,0,2,12],
 "lbann__metric_8hpp.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a131ca04fc47acb9452ac40b960ef4a8b":[4,0,0,0,0,0,0,0,0,4,0,2,2],
 "lbann__metric_8hpp.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a1dffebe028d20c267303dadf8ea7cc71":[4,0,0,0,0,0,0,0,0,4,0,2,0],
@@ -221,20 +222,20 @@ var NAVTREEINDEX9 =
 "mpi.html":[0,3,5],
 "mpi.html#mpi_install_linux":[0,3,5,0],
 "mpi.html#mpi_install_osx":[0,3,5,1],
-"namespaceEl.html":[2,0,2],
 "namespaceEl.html":[3,0,2],
+"namespaceEl.html":[2,0,2],
 "namespaceanonymous__namespace_02lbann__random_8cpp_03.html":[3,0,0],
 "namespaceanonymous__namespace_02lbann__random_8cpp_03.html":[2,0,0],
 "namespacecudnn.html":[2,0,1],
 "namespacecudnn.html":[3,0,1],
 "namespacelbann.html":[2,0,3],
 "namespacelbann.html":[3,0,3],
-"namespacelbann_1_1metrics.html":[3,0,3,0],
 "namespacelbann_1_1metrics.html":[2,0,3,0],
-"namespacelbann_1_1objective__functions.html":[3,0,3,1],
+"namespacelbann_1_1metrics.html":[3,0,3,0],
 "namespacelbann_1_1objective__functions.html":[2,0,3,1],
-"namespacelbann_1_1patchworks.html":[2,0,3,2],
+"namespacelbann_1_1objective__functions.html":[3,0,3,1],
 "namespacelbann_1_1patchworks.html":[3,0,3,2],
+"namespacelbann_1_1patchworks.html":[2,0,3,2],
 "namespacemembers.html":[2,1,0],
 "namespacemembers_enum.html":[2,1,4],
 "namespacemembers_eval.html":[2,1,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "pages.html":[],
 "patchworks_8cpp.html":[4,0,0,0,0,0,0,1,1,0,0],
 "patchworks_8cpp_source.html":[4,0,0,0,0,0,0,1,1,0,0],
-"patchworks_8hpp.html":[4,0,0,0,0,0,0,0,0,1,0,0],
-"patchworks_8hpp_source.html":[4,0,0,0,0,0,0,0,0,1,0,0]
+"patchworks_8hpp.html":[4,0,0,0,0,0,0,0,0,1,0,0]
 };

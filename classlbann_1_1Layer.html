@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">727fe58-ci235791632</span>
+   &#160;<span id="projectnumber">9436b7a-ci235837635</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -375,48 +375,49 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lbann__layer_8cpp_source.html#l00043">43</a> of file <a class="el" href="lbann__layer_8cpp_source.html">lbann_layer.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  : <a class="code" href="classlbann_1_1Layer.html#a7fb36ea1c2256cf0e330d1f9fabe83ba">m_activation_type</a>(activation), <a class="code" href="classlbann_1_1Layer.html#a1c60dfaa889c4ba0c840ebe44f8bd6f1">m_data_layout</a>(data_dist), <a class="code" href="classlbann_1_1Layer.html#a54d5ada095360c0933ff8692e14bd253">m_optimizer</a>(opt), <a class="code" href="classlbann_1_1Layer.html#ad20dd05617ed950162e0fdb95bc23096">comm</a>(<a class="code" href="classlbann_1_1Layer.html#ad20dd05617ed950162e0fdb95bc23096">comm</a>),</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a9989c75430678d69efc2794ed40693b3">regularizers</a>(regs), <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>(mbsize),</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a8b07424032d1b3c4e3a1fae100aff5c5">m_effective_mbsize</a>(mbsize),</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a94ee7bf7544942bc8cf208b565349c66">fp_time</a>(0.0), <a class="code" href="classlbann_1_1Layer.html#abaa9acb195346090fffcd64013295479">bp_time</a>(0.0),</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>(<a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a6941c1ec005f88a7af80eaebf652e16f">m_type</a> = <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743accc0377a8afbf50e7094f5c23a8af223">layer_type::INVALID</a>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a44254c29e29a8e8b4ccb1aaaea46ff48">m_prev_layer_type</a> = <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743accc0377a8afbf50e7094f5c23a8af223">layer_type::INVALID</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a3694a0b47f2eb1f99d0b3f2dc01c859e">m_next_layer_type</a> = <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743accc0377a8afbf50e7094f5c23a8af223">layer_type::INVALID</a>;    </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a5d76fcdf50d7ac4fb2fe757fb0cc23d8">Index</a> = index;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#af8b115cb89d6e8081de3f148a8ad2ef7">m_execution_mode</a> = <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#aa4f7b14ea6448703edc07ae4e43cb20a">fp_input</a> = <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#ab8ec7fc7bd902123d7b7788b6284ca62">bp_input</a> = <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a9699f8d327ed26f98a52c750f38f8312">neural_network_model</a> = <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#af7881cb5eff5207c15fa835d65462e8f">m_using_gpus</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#adeefecf61c8a8d5e7a54367fc3806edd">m_prev_layer_using_gpus</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a9121ac562e8627e535880280adf2ce7b">m_next_layer_using_gpus</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#ifdef __LIB_CUDNN</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span>    fp_input_d = <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    bp_input_d = <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// Setup the data distribution</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">switch</span>(data_dist) {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0">data_layout::MODEL_PARALLEL</a>:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <a class="code" href="classlbann_1_1Layer.html#aa7f41bcd15caf237ae8fd3bfaf68014a">initialize_model_parallel_distribution</a>();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>:</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <a class="code" href="classlbann_1_1Layer.html#aa9937720c6ac7039cb70d4defc22e1fa">initialize_data_parallel_distribution</a>();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">throw</span> lbann_exception(std::string{} + __FILE__ + <span class="stringliteral">&quot; &quot;</span> +</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                            std::to_string(__LINE__) +</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                            <span class="stringliteral">&quot;Invalid data layout selected&quot;</span>);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">// Initialize activation function</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#adc0a8d274f10860b3b1f1d8e4388a503">m_activation_fn</a> = <a class="code" href="namespacelbann.html#ac5723897a72209964fd0eb14ad416d18">new_activation</a>(activation);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>(<span class="keyword">nullptr</span>), <a class="code" href="classlbann_1_1Layer.html#a9989c75430678d69efc2794ed40693b3">regularizers</a>(regs), <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>(mbsize),</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a8b07424032d1b3c4e3a1fae100aff5c5">m_effective_mbsize</a>(mbsize)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a6941c1ec005f88a7af80eaebf652e16f">m_type</a> = <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743accc0377a8afbf50e7094f5c23a8af223">layer_type::INVALID</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a44254c29e29a8e8b4ccb1aaaea46ff48">m_prev_layer_type</a> = <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743accc0377a8afbf50e7094f5c23a8af223">layer_type::INVALID</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a3694a0b47f2eb1f99d0b3f2dc01c859e">m_next_layer_type</a> = <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743accc0377a8afbf50e7094f5c23a8af223">layer_type::INVALID</a>;    </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a5d76fcdf50d7ac4fb2fe757fb0cc23d8">Index</a> = index;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#af8b115cb89d6e8081de3f148a8ad2ef7">m_execution_mode</a> = <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#aa4f7b14ea6448703edc07ae4e43cb20a">fp_input</a> = <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#ab8ec7fc7bd902123d7b7788b6284ca62">bp_input</a> = <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a9699f8d327ed26f98a52c750f38f8312">neural_network_model</a> = <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#af7881cb5eff5207c15fa835d65462e8f">m_using_gpus</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#adeefecf61c8a8d5e7a54367fc3806edd">m_prev_layer_using_gpus</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a9121ac562e8627e535880280adf2ce7b">m_next_layer_using_gpus</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#ifdef __LIB_CUDNN</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span>    fp_input_d = <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    bp_input_d = <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// Setup the data distribution</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">switch</span>(data_dist) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0">data_layout::MODEL_PARALLEL</a>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <a class="code" href="classlbann_1_1Layer.html#aa7f41bcd15caf237ae8fd3bfaf68014a">initialize_model_parallel_distribution</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <a class="code" href="classlbann_1_1Layer.html#aa9937720c6ac7039cb70d4defc22e1fa">initialize_data_parallel_distribution</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordflow">throw</span> lbann_exception(std::string{} + __FILE__ + <span class="stringliteral">&quot; &quot;</span> +</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                            std::to_string(__LINE__) +</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                            <span class="stringliteral">&quot;Invalid data layout selected&quot;</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// Initialize activation function</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#adc0a8d274f10860b3b1f1d8e4388a503">m_activation_fn</a> = <a class="code" href="namespacelbann.html#ac5723897a72209964fd0eb14ad416d18">new_activation</a>(activation);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a0a0f8e32e2b17953f87652f855ccfbf9">reset_counters</a>();</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1Layer_html_a0a0f8e32e2b17953f87652f855ccfbf9"><div class="ttname"><a href="classlbann_1_1Layer.html#a0a0f8e32e2b17953f87652f855ccfbf9">lbann::Layer::reset_counters</a></div><div class="ttdeci">virtual void reset_counters()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00140">lbann_layer.hpp:140</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a7fb36ea1c2256cf0e330d1f9fabe83ba"><div class="ttname"><a href="classlbann_1_1Layer.html#a7fb36ea1c2256cf0e330d1f9fabe83ba">lbann::Layer::m_activation_type</a></div><div class="ttdeci">activation_type m_activation_type</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00207">lbann_layer.hpp:207</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_af7881cb5eff5207c15fa835d65462e8f"><div class="ttname"><a href="classlbann_1_1Layer.html#af7881cb5eff5207c15fa835d65462e8f">lbann::Layer::m_using_gpus</a></div><div class="ttdeci">bool m_using_gpus</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00252">lbann_layer.hpp:252</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214"><div class="ttname"><a href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a></div></div>
@@ -443,8 +444,6 @@ Protected Attributes</h2></td></tr>
 <div class="ttc" id="classlbann_1_1Layer_html_a6941c1ec005f88a7af80eaebf652e16f"><div class="ttname"><a href="classlbann_1_1Layer.html#a6941c1ec005f88a7af80eaebf652e16f">lbann::Layer::m_type</a></div><div class="ttdeci">layer_type m_type</div><div class="ttdoc">Layer type. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00197">lbann_layer.hpp:197</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a08dbb94239e3b8c96329786c57c72e21"><div class="ttname"><a href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">lbann::Layer::m_cudnn</a></div><div class="ttdeci">cudnn::cudnn_manager * m_cudnn</div><div class="ttdoc">cuDNN manager </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00259">lbann_layer.hpp:259</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_af8b115cb89d6e8081de3f148a8ad2ef7"><div class="ttname"><a href="classlbann_1_1Layer.html#af8b115cb89d6e8081de3f148a8ad2ef7">lbann::Layer::m_execution_mode</a></div><div class="ttdeci">execution_mode m_execution_mode</div><div class="ttdoc">Number of neurons in previous layer. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00206">lbann_layer.hpp:206</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_abaa9acb195346090fffcd64013295479"><div class="ttname"><a href="classlbann_1_1Layer.html#abaa9acb195346090fffcd64013295479">lbann::Layer::bp_time</a></div><div class="ttdeci">double bp_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00299">lbann_layer.hpp:299</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_a94ee7bf7544942bc8cf208b565349c66"><div class="ttname"><a href="classlbann_1_1Layer.html#a94ee7bf7544942bc8cf208b565349c66">lbann::Layer::fp_time</a></div><div class="ttdeci">double fp_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00293">lbann_layer.hpp:293</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a5d76fcdf50d7ac4fb2fe757fb0cc23d8"><div class="ttname"><a href="classlbann_1_1Layer.html#a5d76fcdf50d7ac4fb2fe757fb0cc23d8">lbann::Layer::Index</a></div><div class="ttdeci">uint Index</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00203">lbann_layer.hpp:203</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_ad20dd05617ed950162e0fdb95bc23096"><div class="ttname"><a href="classlbann_1_1Layer.html#ad20dd05617ed950162e0fdb95bc23096">lbann::Layer::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdoc">Pointer to the input for the backward propagation - no local storage. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00231">lbann_layer.hpp:231</a></div></div>
 </div><!-- fragment -->
@@ -453,7 +452,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1Layer_a1483cd7103a5f739c4f8bac4a0d005dc_cgraph.png" border="0" usemap="#classlbann_1_1Layer_a1483cd7103a5f739c4f8bac4a0d005dc_cgraph" alt=""/></div>
 <map name="classlbann_1_1Layer_a1483cd7103a5f739c4f8bac4a0d005dc_cgraph" id="classlbann_1_1Layer_a1483cd7103a5f739c4f8bac4a0d005dc_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1Layer.html#aa7f41bcd15caf237ae8fd3bfaf68014a" title="Matrices should be in MC,MR distributions. " alt="" coords="187,5,370,46"/><area shape="rect" id="node3" href="classlbann_1_1Layer.html#aa9937720c6ac7039cb70d4defc22e1fa" title="Weight matrices should be in Star,Star and data matrices Star,VC distributions. " alt="" coords="193,70,365,111"/><area shape="rect" id="node4" href="namespacelbann.html#ac5723897a72209964fd0eb14ad416d18" title="lbann::new_activation" alt="" coords="205,136,353,163"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1Layer.html#aa7f41bcd15caf237ae8fd3bfaf68014a" title="Matrices should be in MC,MR distributions. " alt="" coords="187,5,370,46"/><area shape="rect" id="node3" href="classlbann_1_1Layer.html#aa9937720c6ac7039cb70d4defc22e1fa" title="Weight matrices should be in Star,Star and data matrices Star,VC distributions. " alt="" coords="193,70,365,111"/><area shape="rect" id="node4" href="namespacelbann.html#ac5723897a72209964fd0eb14ad416d18" title="lbann::new_activation" alt="" coords="205,136,353,163"/><area shape="rect" id="node5" href="classlbann_1_1Layer.html#a0a0f8e32e2b17953f87652f855ccfbf9" title="lbann::Layer::reset\l_counters" alt="" coords="213,187,344,229"/></map>
 </div>
 </p>
 
@@ -961,7 +960,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="comment">// Apply connection regularization. (e.g. DropConnect).</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordflow">for</span>(Int i=0; i&lt;<a class="code" href="classlbann_1_1Layer.html#a9989c75430678d69efc2794ed40693b3">regularizers</a>.size(); ++i) {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0; i&lt;<a class="code" href="classlbann_1_1Layer.html#a9989c75430678d69efc2794ed40693b3">regularizers</a>.size(); ++i) {</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a9989c75430678d69efc2794ed40693b3">regularizers</a>[i]-&gt;fp_connections();</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  }</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
@@ -971,7 +970,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#ace021f94a7463ab505202713c640f7bd">fp_linearity_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - fp_lin_start;</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="comment">// Apply weight regularization (e.g. L2 normalization).</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keywordflow">for</span>(Int i=0; i&lt;<a class="code" href="classlbann_1_1Layer.html#a9989c75430678d69efc2794ed40693b3">regularizers</a>.size(); ++i) {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0; i&lt;<a class="code" href="classlbann_1_1Layer.html#a9989c75430678d69efc2794ed40693b3">regularizers</a>.size(); ++i) {</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a9989c75430678d69efc2794ed40693b3">regularizers</a>[i]-&gt;fp_weights();</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  }</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
@@ -981,7 +980,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#a2ce4be0bd88c2441b963be1ed47e4385">fp_nonlinearity_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - fp_nonlin_start;</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="comment">// Apply activation regularization (e.g. Dropout).</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordflow">for</span>(Int i=0; i&lt;<a class="code" href="classlbann_1_1Layer.html#a9989c75430678d69efc2794ed40693b3">regularizers</a>.size(); ++i) {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0; i&lt;<a class="code" href="classlbann_1_1Layer.html#a9989c75430678d69efc2794ed40693b3">regularizers</a>.size(); ++i) {</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a9989c75430678d69efc2794ed40693b3">regularizers</a>[i]-&gt;fp_activations();</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  }</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
@@ -1789,6 +1788,15 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="classlbann_1_1Layer_html_a94ee7bf7544942bc8cf208b565349c66"><div class="ttname"><a href="classlbann_1_1Layer.html#a94ee7bf7544942bc8cf208b565349c66">lbann::Layer::fp_time</a></div><div class="ttdeci">double fp_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00293">lbann_layer.hpp:293</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_ace021f94a7463ab505202713c640f7bd"><div class="ttname"><a href="classlbann_1_1Layer.html#ace021f94a7463ab505202713c640f7bd">lbann::Layer::fp_linearity_time</a></div><div class="ttdeci">double fp_linearity_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00295">lbann_layer.hpp:295</a></div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1Layer_a0a0f8e32e2b17953f87652f855ccfbf9_icgraph.png" border="0" usemap="#classlbann_1_1Layer_a0a0f8e32e2b17953f87652f855ccfbf9_icgraph" alt=""/></div>
+<map name="classlbann_1_1Layer_a0a0f8e32e2b17953f87652f855ccfbf9_icgraph" id="classlbann_1_1Layer_a0a0f8e32e2b17953f87652f855ccfbf9_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1Layer.html#a1483cd7103a5f739c4f8bac4a0d005dc" title="lbann::Layer::Layer" alt="" coords="184,12,317,39"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="abe469288e72b03dcd5da83b994148f7b"></a>
@@ -2296,7 +2304,7 @@ Here is the caller graph for this function:</div>
 <p>Definition at line <a class="el" href="lbann__layer_8cpp_source.html#l00290">290</a> of file <a class="el" href="lbann__layer_8cpp_source.html">lbann_layer.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                        {</div>
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1Layer.html#af8b115cb89d6e8081de3f148a8ad2ef7">m_execution_mode</a> == <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>) {</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordflow">for</span>(Int i=0; i&lt;<a class="code" href="classlbann_1_1Layer.html#a9989c75430678d69efc2794ed40693b3">regularizers</a>.size(); ++i) {</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0; i&lt;<a class="code" href="classlbann_1_1Layer.html#a9989c75430678d69efc2794ed40693b3">regularizers</a>.size(); ++i) {</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      <a class="code" href="classlbann_1_1Layer.html#a9989c75430678d69efc2794ed40693b3">regularizers</a>[i]-&gt;update_gradients();</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      <a class="code" href="classlbann_1_1Layer.html#a9989c75430678d69efc2794ed40693b3">regularizers</a>[i]-&gt;update();</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    }</div>
@@ -3142,7 +3150,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1Layer.html">Layer</a></li>
-    <li class="footer">Generated on Wed May 24 2017 20:32:07 for LBANN by
+    <li class="footer">Generated on Wed May 24 2017 22:50:44 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
