@@ -215,6 +215,5 @@ var searchData=
   ['mode_5fdir',['mode_dir',['../lbann__file__io_8cpp.html#a8a08135bfddb4c7375212d2ace2e24b7',1,'lbann_file_io.cpp']]],
   ['model_5fcomm',['model_comm',['../classlbann_1_1lbann__comm.html#a3a9eff49cac3746acd169889fda79893',1,'lbann::lbann_comm']]],
   ['model_5frank',['model_rank',['../classlbann_1_1lbann__comm.html#a1f3f90a996dbba4cd1cca60596933ea3',1,'lbann::lbann_comm']]],
-  ['model_5franks_5fon_5fnode',['model_ranks_on_node',['../classlbann_1_1lbann__comm.html#a2289ce67222485f0df95ce75af4a9a50',1,'lbann::lbann_comm']]],
   ['msg',['msg',['../classlbann_1_1lbann__exception.html#a8698ff209b53c8452b5ca1d0caf7b824',1,'lbann::lbann_exception']]]
 ];

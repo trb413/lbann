@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"patchworks__ROI_8cpp.html":[4,0,0,0,0,0,0,1,1,0,2],
 "patchworks__ROI_8cpp_source.html":[4,0,0,0,0,0,0,1,1,0,2],
 "patchworks__ROI_8hpp.html":[4,0,0,0,0,0,0,0,0,1,0,5],
 "patchworks__ROI_8hpp_source.html":[4,0,0,0,0,0,0,0,0,1,0,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "structlbann__model__header.html#a1fece5153abf60dba8fc1324f80c903a":[3,0,47,4],
 "structlbann__model__header.html#a35c523d94beb5593af480ae8ec3996bb":[3,0,47,2],
 "structlbann__model__header.html#aa3921e546a7235875456e55b74c430f7":[3,0,47,3],
-"structlbann__model__header.html#abc0a59c9871095d2a6dec05a82fafc1e":[3,0,47,1],
-"structlbann__model__header.html#ae9261039775c8b0f24f9c47c10f09f3e":[3,0,47,0]
+"structlbann__model__header.html#abc0a59c9871095d2a6dec05a82fafc1e":[3,0,47,1]
 };

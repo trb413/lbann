@@ -15,7 +15,7 @@ var searchData=
   ['patchworks_5fstats_2ecpp',['patchworks_stats.cpp',['../patchworks__stats_8cpp.html',1,'']]],
   ['patchworks_5fstats_2ehpp',['patchworks_stats.hpp',['../patchworks__stats_8hpp.html',1,'']]],
   ['patience',['patience',['../classlbann_1_1lbann__callback__early__stopping.html#a097e297eb256e9546ce5aeb9f8583118',1,'lbann::lbann_callback_early_stopping::patience()'],['../classlbann_1_1lbann__callback__adaptive__learning__rate.html#ac645c3cdf945f8439cef3d891e752db6',1,'lbann::lbann_callback_adaptive_learning_rate::patience()']]],
-  ['pe_5fring_5fallreduce',['pe_ring_allreduce',['../classlbann_1_1lbann__comm.html#ad1cc14ad0e6e3eeb863c25854574ec6f',1,'lbann::lbann_comm']]],
+  ['pe_5fring_5fallreduce',['pe_ring_allreduce',['../classlbann_1_1lbann__comm.html#a78c527658fccc22ed9d7249ba98dcc80',1,'lbann::lbann_comm']]],
   ['percentagetestingsamples',['PercentageTestingSamples',['../classlbann_1_1TrainingParams.html#acd5f8e76266a47f83518a694ff89e303',1,'lbann::TrainingParams']]],
   ['percentagetrainingsamples',['PercentageTrainingSamples',['../classlbann_1_1TrainingParams.html#a3763014b64c2e0396173221796a2bbfa',1,'lbann::TrainingParams']]],
   ['percentagevalidationsamples',['PercentageValidationSamples',['../classlbann_1_1TrainingParams.html#a0dcb312e1714bfeec89a8119167d115f',1,'lbann::TrainingParams']]],

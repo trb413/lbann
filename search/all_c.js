@@ -271,7 +271,6 @@ var searchData=
   ['model_5fcomm',['model_comm',['../classlbann_1_1lbann__comm.html#a3a9eff49cac3746acd169889fda79893',1,'lbann::lbann_comm']]],
   ['model_5fparallel',['MODEL_PARALLEL',['../lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0',1,'lbann_base.hpp']]],
   ['model_5frank',['model_rank',['../classlbann_1_1lbann__comm.html#a1f3f90a996dbba4cd1cca60596933ea3',1,'lbann::lbann_comm']]],
-  ['model_5franks_5fon_5fnode',['model_ranks_on_node',['../classlbann_1_1lbann__comm.html#a2289ce67222485f0df95ce75af4a9a50',1,'lbann::lbann_comm']]],
   ['model_5freduce',['model_reduce',['../classlbann_1_1lbann__comm.html#a188beae3d95179409ab446e2f36bce96',1,'lbann::lbann_comm::model_reduce(T send, int root, mpi::Op op=mpi::SUM)'],['../classlbann_1_1lbann__comm.html#ab2f02d1ed26949f61b0cc5a552a0909d',1,'lbann::lbann_comm::model_reduce(T send, mpi::Op op=mpi::SUM)'],['../classlbann_1_1lbann__comm.html#aac12deb9c3a0ba5580f8584d209baba6',1,'lbann::lbann_comm::model_reduce(T *send, int count, int root, mpi::Op op=mpi::SUM)'],['../classlbann_1_1lbann__comm.html#a814ac3a49f07cb8e939f9acb34ac2a1d',1,'lbann::lbann_comm::model_reduce(T *send, int count, T *recv, mpi::Op op=mpi::SUM)']]],
   ['mpi',['MPI',['../mpi.html',1,'getting_started']]],
   ['msg',['msg',['../classlbann_1_1lbann__exception.html#a8698ff209b53c8452b5ca1d0caf7b824',1,'lbann::lbann_exception']]]
