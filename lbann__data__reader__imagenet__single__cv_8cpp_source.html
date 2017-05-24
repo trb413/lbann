@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">bce4c7a-ci235710907</span>
+   &#160;<span id="projectnumber">727fe58-ci235791632</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -313,26 +313,28 @@ $(document).ready(function(){initNavTree('lbann__data__reader__imagenet__single_
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  m_pp = source.<a class="code" href="classlbann_1_1DataReader__ImageNetSingle__cv.html#a6079fd9c66dce83437e2f802da182a74">m_pp</a>;</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="comment">//m_pixels = source.m_pixels;</span></div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  openDataStream();</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;}</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
-<div class="line"><a name="l00226"></a><span class="lineno"><a class="line" href="classlbann_1_1DataReader__ImageNetSingle__cv.html#a5d317d66afef35264cb198750a2bb579">  226</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1DataReader__ImageNetSingle__cv.html#a5d317d66afef35264cb198750a2bb579">lbann::DataReader_ImageNetSingle_cv::openDataStream</a>() {</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keywordtype">string</span> image_dir = get_file_dir();</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keywordtype">string</span> base_filename = get_data_filename();</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  stringstream b;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  b &lt;&lt; image_dir &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; base_filename &lt;&lt; <span class="stringliteral">&quot;_data.bin&quot;</span>;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="keywordflow">if</span> (is_master()) cout &lt;&lt; <span class="stringliteral">&quot;opening: &quot;</span> &lt;&lt; b.str() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  m_data_filestream.open(b.str().c_str(), ios::in | ios::binary);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keywordflow">if</span> (not m_data_filestream.is_open() and m_data_filestream.good()) {</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    stringstream err;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; ::  failed to open &quot;</span> &lt;&lt; b.str() &lt;&lt; <span class="stringliteral">&quot; for reading&quot;</span>;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  }</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  m_data_filestream.seekg(0, m_data_filestream.end);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  m_file_size = m_data_filestream.tellg();</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  m_data_filestream.seekg(0, m_data_filestream.beg);</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1DataReader__ImageNetSingle__cv_html_a5d317d66afef35264cb198750a2bb579"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNetSingle__cv.html#a5d317d66afef35264cb198750a2bb579">lbann::DataReader_ImageNetSingle_cv::openDataStream</a></div><div class="ttdeci">void openDataStream()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__single__cv_8cpp_source.html#l00226">lbann_data_reader_imagenet_single_cv.cpp:226</a></div></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keywordflow">return</span> (*<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;}</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
+<div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="classlbann_1_1DataReader__ImageNetSingle__cv.html#a5d317d66afef35264cb198750a2bb579">  228</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1DataReader__ImageNetSingle__cv.html#a5d317d66afef35264cb198750a2bb579">lbann::DataReader_ImageNetSingle_cv::openDataStream</a>() {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keywordtype">string</span> image_dir = get_file_dir();</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <span class="keywordtype">string</span> base_filename = get_data_filename();</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  stringstream b;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  b &lt;&lt; image_dir &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; base_filename &lt;&lt; <span class="stringliteral">&quot;_data.bin&quot;</span>;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <span class="keywordflow">if</span> (is_master()) cout &lt;&lt; <span class="stringliteral">&quot;opening: &quot;</span> &lt;&lt; b.str() &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  m_data_filestream.open(b.str().c_str(), ios::in | ios::binary);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keywordflow">if</span> (not m_data_filestream.is_open() and m_data_filestream.good()) {</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    stringstream err;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; ::  failed to open &quot;</span> &lt;&lt; b.str() &lt;&lt; <span class="stringliteral">&quot; for reading&quot;</span>;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  }</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  m_data_filestream.seekg(0, m_data_filestream.end);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  m_file_size = m_data_filestream.tellg();</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  m_data_filestream.seekg(0, m_data_filestream.beg);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1DataReader__ImageNetSingle__cv_html_a5d317d66afef35264cb198750a2bb579"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNetSingle__cv.html#a5d317d66afef35264cb198750a2bb579">lbann::DataReader_ImageNetSingle_cv::openDataStream</a></div><div class="ttdeci">void openDataStream()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__single__cv_8cpp_source.html#l00228">lbann_data_reader_imagenet_single_cv.cpp:228</a></div></div>
 <div class="ttc" id="lbann__mild__exception_8hpp_html_a2383d19fc8bacf3fdc0b50f419f65cba"><div class="ttname"><a href="lbann__mild__exception_8hpp.html#a2383d19fc8bacf3fdc0b50f419f65cba">_BUILTIN_FALSE</a></div><div class="ttdeci">#define _BUILTIN_FALSE(_COND_)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__mild__exception_8hpp_source.html#l00034">lbann_mild_exception.hpp:34</a></div></div>
 <div class="ttc" id="classlbann_1_1DataReader__ImageNetSingle__cv_html_a86ef100ce5765f1543c0425c4f608403"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNetSingle__cv.html#a86ef100ce5765f1543c0425c4f608403">lbann::DataReader_ImageNetSingle_cv::~DataReader_ImageNetSingle_cv</a></div><div class="ttdeci">~DataReader_ImageNetSingle_cv()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__single__cv_8cpp_source.html#l00056">lbann_data_reader_imagenet_single_cv.cpp:56</a></div></div>
 <div class="ttc" id="classlbann_1_1DataReader__ImageNetSingle__cv_html_a6a1e5973ca7c5c134e43b993cce005c3"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNetSingle__cv.html#a6a1e5973ca7c5c134e43b993cce005c3">lbann::DataReader_ImageNetSingle_cv::load</a></div><div class="ttdeci">void load()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__single__cv_8cpp_source.html#l00087">lbann_data_reader_imagenet_single_cv.cpp:87</a></div></div>
@@ -357,7 +359,7 @@ $(document).ready(function(){initNavTree('lbann__data__reader__imagenet__single_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_4fd9b0f9a8d3454cc4920413ede2913f.html">data_readers</a></li><li class="navelem"><a class="el" href="lbann__data__reader__imagenet__single__cv_8cpp.html">lbann_data_reader_imagenet_single_cv.cpp</a></li>
-    <li class="footer">Generated on Wed May 24 2017 16:28:02 for LBANN by
+    <li class="footer">Generated on Wed May 24 2017 20:32:05 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
