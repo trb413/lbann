@@ -7,6 +7,7 @@ var searchData=
   ['testfile',['TestFile',['../classlbann_1_1TrainingParams.html#a99502fc87d50df2055a992266fdeee05',1,'lbann::TrainingParams']]],
   ['testingsamples',['TestingSamples',['../classlbann_1_1TrainingParams.html#a7ae1711dab1dc6cce9238b578d198117',1,'lbann::TrainingParams']]],
   ['testwithtraindata',['TestWithTrainData',['../classlbann_1_1TrainingParams.html#a39a6893582111d1934c85f50c0111c1e',1,'lbann::TrainingParams']]],
+  ['threshold',['threshold',['../classlbann_1_1lbann__callback__checksmall.html#aacce4b5c8d53755b13beea20d45bf228',1,'lbann::lbann_callback_checksmall']]],
   ['to_5fpin_5fbwd',['to_pin_bwd',['../classlbann_1_1convolutional__layer.html#ae3f41f209beb76715a44572ee3747d9c',1,'lbann::convolutional_layer::to_pin_bwd()'],['../classlbann_1_1pooling__layer.html#acc288de8414f594d1766a1d76a906288',1,'lbann::pooling_layer::to_pin_bwd()']]],
   ['to_5fpin_5ffwd',['to_pin_fwd',['../classlbann_1_1convolutional__layer.html#adc923829f3945afa12993365bbcebdf0',1,'lbann::convolutional_layer::to_pin_fwd()'],['../classlbann_1_1pooling__layer.html#a8cdff31022e4181c04aafd74e1d6f943',1,'lbann::pooling_layer::to_pin_fwd()']]],
   ['total_5fsamples',['total_samples',['../classlbann_1_1dataset.html#a95e9d0ceefc527e22318149778597727',1,'lbann::dataset']]],

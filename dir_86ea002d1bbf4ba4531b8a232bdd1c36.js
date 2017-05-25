@@ -6,6 +6,9 @@ var dir_86ea002d1bbf4ba4531b8a232bdd1c36 =
     [ "lbann_callback_checknan.hpp", "lbann__callback__checknan_8hpp.html", [
       [ "lbann_callback_checknan", "classlbann_1_1lbann__callback__checknan.html", "classlbann_1_1lbann__callback__checknan" ]
     ] ],
+    [ "lbann_callback_checksmall.hpp", "lbann__callback__checksmall_8hpp.html", [
+      [ "lbann_callback_checksmall", "classlbann_1_1lbann__callback__checksmall.html", "classlbann_1_1lbann__callback__checksmall" ]
+    ] ],
     [ "lbann_callback_debug.hpp", "lbann__callback__debug_8hpp.html", [
       [ "lbann_callback_debug", "classlbann_1_1lbann__callback__debug.html", "classlbann_1_1lbann__callback__debug" ]
     ] ],

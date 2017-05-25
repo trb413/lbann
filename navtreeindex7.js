@@ -1,5 +1,12 @@
 var NAVTREEINDEX7 =
 {
+"datatype_8hpp.html#af71c957c9b52b41c679873b342ab9241":[4,0,0,0,0,0,0,0,0,11,142],
+"datatype_8hpp.html#af842373783c5757f3065bf48a770458e":[4,0,0,0,0,0,0,0,0,11,50],
+"datatype_8hpp.html#af8a6b12c080b8ad02555905f07affec1":[4,0,0,0,0,0,0,0,0,11,118],
+"datatype_8hpp.html#af9fd3e99941e2642de7e7e502062fdf6":[4,0,0,0,0,0,0,0,0,11,140],
+"datatype_8hpp.html#afa01d7b42034c32d4cc1362367efc38e":[4,0,0,0,0,0,0,0,0,11,124],
+"datatype_8hpp.html#afa4e49244ad5493d8f83ff571bac8f58":[4,0,0,0,0,0,0,0,0,11,101],
+"datatype_8hpp.html#afaa69d69f8e9344c79a69f2e3ad1075f":[4,0,0,0,0,0,0,0,0,11,86],
 "datatype_8hpp.html#aff0f25d9549ed2ade9fc15840d3daca1":[4,0,0,0,0,0,0,0,0,11,137],
 "datatype_8hpp_source.html":[4,0,0,0,0,0,0,0,0,11],
 "developer_guide.html":[0,5],
@@ -43,8 +50,8 @@ var NAVTREEINDEX7 =
 "elemental.html#elemental_install":[0,3,6,1],
 "elemental.html#elemental_issues":[0,3,6,2],
 "files.html":[4,0],
-"functions.html":[3,3,0],
 "functions.html":[3,3,0,0],
+"functions.html":[3,3,0],
 "functions_b.html":[3,3,0,1],
 "functions_c.html":[3,3,0,2],
 "functions_d.html":[3,3,0,3],
@@ -90,8 +97,8 @@ var NAVTREEINDEX7 =
 "functions_type.html":[3,3,3],
 "functions_u.html":[3,3,0,18],
 "functions_v.html":[3,3,0,19],
-"functions_vars.html":[3,3,2,0],
 "functions_vars.html":[3,3,2],
+"functions_vars.html":[3,3,2,0],
 "functions_vars_b.html":[3,3,2,1],
 "functions_vars_c.html":[3,3,2,2],
 "functions_vars_d.html":[3,3,2,3],
@@ -242,12 +249,5 @@ var NAVTREEINDEX7 =
 "lbann__callback_8hpp.html":[4,0,0,0,0,0,0,0,0,0,0],
 "lbann__callback_8hpp_source.html":[4,0,0,0,0,0,0,0,0,0,0],
 "lbann__callback__checknan_8cpp.html":[4,0,0,0,0,0,0,1,0,0],
-"lbann__callback__checknan_8cpp_source.html":[4,0,0,0,0,0,0,1,0,0],
-"lbann__callback__checknan_8hpp.html":[4,0,0,0,0,0,0,0,0,0,1],
-"lbann__callback__checknan_8hpp_source.html":[4,0,0,0,0,0,0,0,0,0,1],
-"lbann__callback__debug_8cpp.html":[4,0,0,0,0,0,0,1,0,1],
-"lbann__callback__debug_8cpp_source.html":[4,0,0,0,0,0,0,1,0,1],
-"lbann__callback__debug_8hpp.html":[4,0,0,0,0,0,0,0,0,0,2],
-"lbann__callback__debug_8hpp_source.html":[4,0,0,0,0,0,0,0,0,0,2],
-"lbann__callback__dump__activations_8cpp.html":[4,0,0,0,0,0,0,1,0,2]
+"lbann__callback__checknan_8cpp_source.html":[4,0,0,0,0,0,0,1,0,0]
 };

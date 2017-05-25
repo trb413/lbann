@@ -36,7 +36,7 @@ var searchData=
   ['is_5fcurrent_5froot',['is_current_root',['../classlbann_1_1distributed__minibatch__parallel__io.html#a1a1c8e6038e112145fa6eaf37e6cb3d4',1,'lbann::distributed_minibatch_parallel_io']]],
   ['is_5fdata_5fset_5fprocessed',['is_data_set_processed',['../classlbann_1_1distributed__minibatch__parallel__io.html#a17aa20ba6b971b6433da058be0d4545a',1,'lbann::distributed_minibatch_parallel_io']]],
   ['is_5ffor_5fregression',['is_for_regression',['../classlbann_1_1io__layer.html#a84f62786812c100923e7553f704a5edc',1,'lbann::io_layer']]],
-  ['is_5fgood',['is_good',['../classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e',1,'lbann::lbann_callback_checknan']]],
+  ['is_5fgood',['is_good',['../classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e',1,'lbann::lbann_callback_checknan::is_good()'],['../classlbann_1_1lbann__callback__checksmall.html#ac32525e09231fe0bfb051e4a9b4dce9b',1,'lbann::lbann_callback_checksmall::is_good()']]],
   ['is_5flast_5flayer',['is_last_layer',['../classlbann_1_1lbann__callback__learning__rate.html#ae7a704c0b5d1d09c35981cfe96dd64e2',1,'lbann::lbann_callback_learning_rate']]],
   ['is_5fmaster',['is_master',['../classlbann_1_1DataReader.html#ad0aba57ce00d0c0d525f9defd828158e',1,'lbann::DataReader']]],
   ['is_5frank_5fnode_5flocal',['is_rank_node_local',['../classlbann_1_1lbann__comm.html#afbe095ac6cb11393a3e8173feb03f255',1,'lbann::lbann_comm']]],

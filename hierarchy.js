@@ -83,6 +83,7 @@ var hierarchy =
     ] ],
     [ "lbann::lbann_callback", "classlbann_1_1lbann__callback.html", [
       [ "lbann::lbann_callback_checknan", "classlbann_1_1lbann__callback__checknan.html", null ],
+      [ "lbann::lbann_callback_checksmall", "classlbann_1_1lbann__callback__checksmall.html", null ],
       [ "lbann::lbann_callback_debug", "classlbann_1_1lbann__callback__debug.html", null ],
       [ "lbann::lbann_callback_dump_activations", "classlbann_1_1lbann__callback__dump__activations.html", null ],
       [ "lbann::lbann_callback_dump_gradients", "classlbann_1_1lbann__callback__dump__gradients.html", null ],
