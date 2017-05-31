@@ -25,6 +25,7 @@ var searchData=
   ['set_5fcheckpoint_5fsteps',['set_checkpoint_steps',['../classlbann_1_1model.html#a05502fc0d1ca9d9b164118b9a6f04163',1,'lbann::model']]],
   ['set_5fcurrent_5fmini_5fbatch_5fsize',['set_current_mini_batch_size',['../classlbann_1_1model.html#abc88f1013abefa3b9e4c0bbc902a05d0',1,'lbann::model']]],
   ['set_5fdata_5ffilename',['set_data_filename',['../classlbann_1_1DataReader.html#a90f48f14fb8b7f6a2e94aabf1b7eeaa3',1,'lbann::DataReader']]],
+  ['set_5fdefault_5fallreduce_5falgorithm',['set_default_allreduce_algorithm',['../classlbann_1_1lbann__comm.html#aaae50e4643ca06671e7cb7872d455708',1,'lbann::lbann_comm']]],
   ['set_5feffective_5fminibatch_5fsize',['set_effective_minibatch_size',['../classlbann_1_1Layer.html#a764387b1c6c66436120bbbff79649e70',1,'lbann::Layer']]],
   ['set_5ffile_5fdir',['set_file_dir',['../classlbann_1_1DataReader.html#ade9dddf74dce0b116a8f8c1fdbbfa11b',1,'lbann::DataReader']]],
   ['set_5ffirstn',['set_firstN',['../classlbann_1_1DataReader.html#ae38cd0062f4293192b6f8e97d91d4698',1,'lbann::DataReader']]],

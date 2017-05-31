@@ -12,6 +12,5 @@ var searchData=
   ['procs_5fper_5fmodel',['procs_per_model',['../classlbann_1_1lbann__comm.html#a7cb55d127259d7ed9f07ccde6f4ebd8c',1,'lbann::lbann_comm']]],
   ['procs_5fper_5fnode',['procs_per_node',['../classlbann_1_1lbann__comm.html#a2ffc59f0c1d97df2ca6845312c8c8b3e',1,'lbann::lbann_comm']]],
   ['procspermodel',['ProcsPerModel',['../classlbann_1_1TrainingParams.html#afd0c134f11e1f44d8a07a55f86f3cfa0',1,'lbann::TrainingParams']]],
-  ['proportion_5ftime',['proportion_time',['../classlbann_1_1lbann__quantizer.html#a6bd266728f578df0c86fc2e493742cc1',1,'lbann::lbann_quantizer']]],
-  ['pt2pt_5ftag',['PT2PT_TAG',['../classlbann_1_1lbann__comm.html#a5650eece94f78b913f47aa2274853366',1,'lbann::lbann_comm']]]
+  ['proportion_5ftime',['proportion_time',['../classlbann_1_1lbann__quantizer.html#a6bd266728f578df0c86fc2e493742cc1',1,'lbann::lbann_quantizer']]]
 ];

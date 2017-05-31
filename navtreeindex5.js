@@ -1,5 +1,15 @@
 var NAVTREEINDEX5 =
 {
+"classlbann_1_1model.html#a3d3f29cd9ce38447407e8423bdcec0ba":[3,0,3,68,59],
+"classlbann_1_1model.html#a3f6f0384573e9ca4bea93ce0dbebfd28":[3,0,3,68,33],
+"classlbann_1_1model.html#a41098c2b2b23e49cdbe8746ef7cac5c8":[3,0,3,68,45],
+"classlbann_1_1model.html#a4332ad949eb1733fcb2a0a6e6c9f56e9":[3,0,3,68,48],
+"classlbann_1_1model.html#a45e75790d328ac2a85aac59faf35094a":[3,0,3,68,40],
+"classlbann_1_1model.html#a49f85b10f117ac69e3b88fafc422fd61":[3,0,3,68,30],
+"classlbann_1_1model.html#a4a9fe726740e2351e4280d1de57624cb":[3,0,3,68,55],
+"classlbann_1_1model.html#a51dc59ea8dd4bc689854732269aaf001":[3,0,3,68,13],
+"classlbann_1_1model.html#a5bafc4e84671490c6118959becb22e16":[3,0,3,68,51],
+"classlbann_1_1model.html#a5fe57d079f5fd31d8d6df35cecaa1924":[3,0,3,68,22],
 "classlbann_1_1model.html#a606cc1d218b1f609b5a02b07e7f4bcee":[3,0,3,68,4],
 "classlbann_1_1model.html#a61534dec88b64ec5fc672376e50ee00c":[3,0,3,68,44],
 "classlbann_1_1model.html#a639f9c3fcb81b905085f8b1932f8920f":[3,0,3,68,72],
@@ -239,15 +249,5 @@ var NAVTREEINDEX5 =
 "classlbann_1_1rmsprop.html#a5b5dbad87f271c8dcb180dca1b7f0b12":[3,0,3,79,3],
 "classlbann_1_1rmsprop.html#a6ea73caf5b2769451dfd798665877208":[3,0,3,79,6],
 "classlbann_1_1rmsprop.html#a9cd712c44e7c4995120e2933b0387d71":[3,0,3,79,5],
-"classlbann_1_1rmsprop.html#af42c8e3336e72aac926e19c57b56e59f":[3,0,3,79,0],
-"classlbann_1_1rmsprop__factory.html":[3,0,3,80],
-"classlbann_1_1rmsprop__factory.html#a0fbdd8d01f9a9d30cdfba6f466d299f6":[3,0,3,80,2],
-"classlbann_1_1rmsprop__factory.html#a524b16d48b01fa6d61729e93df37cb22":[3,0,3,80,3],
-"classlbann_1_1rmsprop__factory.html#a64d80f3ef799a4ba0c1acc7295bfbed0":[3,0,3,80,1],
-"classlbann_1_1rmsprop__factory.html#a8d664e42a5c7717126beab9c2d5c96b5":[3,0,3,80,5],
-"classlbann_1_1rmsprop__factory.html#ac8f104a60c79c2461ceb30e561479852":[3,0,3,80,0],
-"classlbann_1_1rmsprop__factory.html#ad39de2689ac4b2fde1e5b1c178effb19":[3,0,3,80,4],
-"classlbann_1_1rng.html":[3,0,3,90],
-"classlbann_1_1rng.html#a07a437f5344e29d6cf557e95ae83a24c":[3,0,3,90,4],
-"classlbann_1_1rng.html#a1c8a2640dd522c6fc63bf2de09ff3e84":[3,0,3,90,3]
+"classlbann_1_1rmsprop.html#af42c8e3336e72aac926e19c57b56e59f":[3,0,3,79,0]
 };

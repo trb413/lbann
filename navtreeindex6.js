@@ -1,5 +1,15 @@
 var NAVTREEINDEX6 =
 {
+"classlbann_1_1rmsprop__factory.html":[3,0,3,80],
+"classlbann_1_1rmsprop__factory.html#a0fbdd8d01f9a9d30cdfba6f466d299f6":[3,0,3,80,2],
+"classlbann_1_1rmsprop__factory.html#a524b16d48b01fa6d61729e93df37cb22":[3,0,3,80,3],
+"classlbann_1_1rmsprop__factory.html#a64d80f3ef799a4ba0c1acc7295bfbed0":[3,0,3,80,1],
+"classlbann_1_1rmsprop__factory.html#a8d664e42a5c7717126beab9c2d5c96b5":[3,0,3,80,5],
+"classlbann_1_1rmsprop__factory.html#ac8f104a60c79c2461ceb30e561479852":[3,0,3,80,0],
+"classlbann_1_1rmsprop__factory.html#ad39de2689ac4b2fde1e5b1c178effb19":[3,0,3,80,4],
+"classlbann_1_1rng.html":[3,0,3,90],
+"classlbann_1_1rng.html#a07a437f5344e29d6cf557e95ae83a24c":[3,0,3,90,4],
+"classlbann_1_1rng.html#a1c8a2640dd522c6fc63bf2de09ff3e84":[3,0,3,90,3],
 "classlbann_1_1rng.html#a7f510fb55d7f261efb4ba86ed623509a":[3,0,3,90,0],
 "classlbann_1_1rng.html#aedb81fe65719eb1864f8f891d48772b1":[3,0,3,90,1],
 "classlbann_1_1rng.html#aede986b92f5d075b4881f8cca86459dd":[3,0,3,90,2],
@@ -239,15 +249,5 @@ var NAVTREEINDEX6 =
 "datatype_8hpp.html#aba68770f9193752e0cd124c8603ad390":[4,0,0,0,0,0,0,0,0,11,110],
 "datatype_8hpp.html#abbaa77fb3472aa0194de7378111cd94b":[4,0,0,0,0,0,0,0,0,11,55],
 "datatype_8hpp.html#abc3d18bd07a4df8b64402da72d524a4a":[4,0,0,0,0,0,0,0,0,11,53],
-"datatype_8hpp.html#ac182250ba70e0934329cf26d00244873":[4,0,0,0,0,0,0,0,0,11,100],
-"datatype_8hpp.html#ac9ec6eae1b80cd76446a7052c79c7df2":[4,0,0,0,0,0,0,0,0,11,87],
-"datatype_8hpp.html#ace73b71670a5902968c184fe1e6c41c1":[4,0,0,0,0,0,0,0,0,11,47],
-"datatype_8hpp.html#acf56babf3d50b65f791d78b753f990ec":[4,0,0,0,0,0,0,0,0,11,74],
-"datatype_8hpp.html#ad211b0e020c63fb6d85623c76fbc789a":[4,0,0,0,0,0,0,0,0,11,58],
-"datatype_8hpp.html#adb5f23e5ea7901d5a9db45c55950bcac":[4,0,0,0,0,0,0,0,0,11,43],
-"datatype_8hpp.html#adb94f7fd9846690b4b1c257e93fe2e49":[4,0,0,0,0,0,0,0,0,11,109],
-"datatype_8hpp.html#adc250172d0544930d4aada3c7b31ac23":[4,0,0,0,0,0,0,0,0,11,70],
-"datatype_8hpp.html#ae03f425d00e809e39fe865ce98de0f84":[4,0,0,0,0,0,0,0,0,11,51],
-"datatype_8hpp.html#ae4a23a856a78231831148e053299ecc8":[4,0,0,0,0,0,0,0,0,11,102],
-"datatype_8hpp.html#aea0fb5e04d178f32ed1d817281fcffc4":[4,0,0,0,0,0,0,0,0,11,104]
+"datatype_8hpp.html#ac182250ba70e0934329cf26d00244873":[4,0,0,0,0,0,0,0,0,11,100]
 };

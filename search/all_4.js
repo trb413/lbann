@@ -36,6 +36,8 @@ var searchData=
   ['datatypempi',['DataTypeMPI',['../lbann__base_8hpp.html#a50107efba2c08b6188a769743a78d04e',1,'lbann_base.hpp']]],
   ['deep_5fneural_5fnetwork',['deep_neural_network',['../classlbann_1_1deep__neural__network.html#a8baefc992f7f2fc2a466425440641b23',1,'lbann::deep_neural_network']]],
   ['deep_5fneural_5fnetwork',['deep_neural_network',['../classlbann_1_1deep__neural__network.html',1,'lbann']]],
+  ['default',['DEFAULT',['../classlbann_1_1lbann__comm.html#a02a03227cc27e3516f0d9f9812f32019a5b39c8b553c821e7cddc6da64b5bd2ee',1,'lbann::lbann_comm']]],
+  ['default_5fallreduce_5falgo',['default_allreduce_algo',['../classlbann_1_1lbann__comm.html#ac7731d6bcdb6775009467cf4138d4bab',1,'lbann::lbann_comm']]],
   ['developer_20guide',['Developer Guide',['../developer_guide.html',1,'index']]],
   ['developer_5fguide_2edox',['developer_guide.dox',['../developer__guide_8dox.html',1,'']]],
   ['disable_5faugmentation',['disable_augmentation',['../classlbann_1_1lbann__image__preprocessor.html#a871cb543ee6c132a76e16045a1a2a9f3',1,'lbann::lbann_image_preprocessor']]],
@@ -82,10 +84,11 @@ var searchData=
   ['double3',['DOUBLE3',['../datatype_8hpp.html#a4bd4f6ffa2ec9bae8144e35efb356520',1,'datatype.hpp']]],
   ['double4',['DOUBLE4',['../datatype_8hpp.html#acf56babf3d50b65f791d78b753f990ec',1,'datatype.hpp']]],
   ['doxygen',['Doxygen',['../doxygen.html',1,'getting_started']]],
-  ['dropout',['dropout',['../classlbann_1_1dropout.html',1,'lbann']]],
   ['dropout',['DropOut',['../classlbann_1_1TrainingParams.html#a682b2fe0b572a0df36a7d5f35d6edc41',1,'lbann::TrainingParams::DropOut()'],['../classlbann_1_1dropout.html#a475a5f62e79fddc530dcf9982ace918a',1,'lbann::dropout::dropout()']]],
+  ['dropout',['dropout',['../classlbann_1_1dropout.html',1,'lbann']]],
   ['dumpactivations',['DumpActivations',['../classlbann_1_1TrainingParams.html#a4707689cbc2dd7cd45d05bf18026f2f4',1,'lbann::TrainingParams']]],
   ['dumpdir',['DumpDir',['../classlbann_1_1TrainingParams.html#a56e113da8b3b5acc6a26ac710c1d77d8',1,'lbann::TrainingParams']]],
   ['dumpgradients',['DumpGradients',['../classlbann_1_1TrainingParams.html#a88d652f4579b464ce6d961712d7b0235',1,'lbann::TrainingParams']]],
-  ['dumpweights',['DumpWeights',['../classlbann_1_1TrainingParams.html#a58022c3da1e279e0a209cb5f90677aa7',1,'lbann::TrainingParams']]]
+  ['dumpweights',['DumpWeights',['../classlbann_1_1TrainingParams.html#a58022c3da1e279e0a209cb5f90677aa7',1,'lbann::TrainingParams']]],
+  ['dynamic',['DYNAMIC',['../classlbann_1_1lbann__comm.html#a02a03227cc27e3516f0d9f9812f32019a0fcc90da4811c877ba9f9c12f7d60bc9',1,'lbann::lbann_comm']]]
 ];

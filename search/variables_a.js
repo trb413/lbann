@@ -208,6 +208,7 @@ var searchData=
   ['m_5fworkspace_5fv',['m_workspace_v',['../classlbann_1_1SoftmaxLayer.html#a611e898bc9c1e64283759a328ead5e92',1,'lbann::SoftmaxLayer']]],
   ['m_5fz_5fscore',['m_z_score',['../classlbann_1_1lbann__image__preprocessor.html#a6abe54ada0cacf23e8ac8b6d113bd26b',1,'lbann::lbann_image_preprocessor']]],
   ['max_5fquantized_5fexcess',['MAX_QUANTIZED_EXCESS',['../classlbann_1_1lbann__quantizer.html#a4bbd160584fc34cf42cfd8c38752b7bd',1,'lbann::lbann_quantizer']]],
+  ['max_5freduces',['max_reduces',['../structlbann_1_1lbann__comm_1_1allreduce__options.html#a4b3cd4eb74dd5a49ee3ffafa2edc1607',1,'lbann::lbann_comm::allreduce_options']]],
   ['maxpariosize',['MaxParIOSize',['../classlbann_1_1PerformanceParams.html#a6869434b1b4ff69d91f2998f9d194a8f',1,'lbann::PerformanceParams']]],
   ['mbsize',['MBSize',['../classlbann_1_1TrainingParams.html#aeeeaac2fc6b692fa8dbe2faa6c30d73e',1,'lbann::TrainingParams']]],
   ['methods',['methods',['../classlbann_1_1base__factory.html#af073d31a0c9cb8452cd4a0e0bbaa8317',1,'lbann::base_factory']]],

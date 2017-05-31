@@ -28,6 +28,7 @@ var searchData=
   ['set_5fcheckpoint_5fsteps',['set_checkpoint_steps',['../classlbann_1_1model.html#a05502fc0d1ca9d9b164118b9a6f04163',1,'lbann::model']]],
   ['set_5fcurrent_5fmini_5fbatch_5fsize',['set_current_mini_batch_size',['../classlbann_1_1model.html#abc88f1013abefa3b9e4c0bbc902a05d0',1,'lbann::model']]],
   ['set_5fdata_5ffilename',['set_data_filename',['../classlbann_1_1DataReader.html#a90f48f14fb8b7f6a2e94aabf1b7eeaa3',1,'lbann::DataReader']]],
+  ['set_5fdefault_5fallreduce_5falgorithm',['set_default_allreduce_algorithm',['../classlbann_1_1lbann__comm.html#aaae50e4643ca06671e7cb7872d455708',1,'lbann::lbann_comm']]],
   ['set_5feffective_5fminibatch_5fsize',['set_effective_minibatch_size',['../classlbann_1_1Layer.html#a764387b1c6c66436120bbbff79649e70',1,'lbann::Layer']]],
   ['set_5ffile_5fdir',['set_file_dir',['../classlbann_1_1DataReader.html#ade9dddf74dce0b116a8f8c1fdbbfa11b',1,'lbann::DataReader']]],
   ['set_5ffirstn',['set_firstN',['../classlbann_1_1DataReader.html#ae38cd0062f4293192b6f8e97d91d4698',1,'lbann::DataReader']]],
@@ -61,8 +62,8 @@ var searchData=
   ['setup_5fnode_5fcomm',['setup_node_comm',['../classlbann_1_1lbann__comm.html#a44bc6b8683f04c2a3fc2f01fc734a946',1,'lbann::lbann_comm']]],
   ['sgd',['sgd',['../classlbann_1_1sgd.html#acf660b032fbc45feb0eb860a47126455',1,'lbann::sgd']]],
   ['sgd',['sgd',['../classlbann_1_1sgd.html',1,'lbann']]],
-  ['sgd_5ffactory',['sgd_factory',['../classlbann_1_1sgd__factory.html#a2db223b7c18759450d07f54a5c320839',1,'lbann::sgd_factory']]],
   ['sgd_5ffactory',['sgd_factory',['../classlbann_1_1sgd__factory.html',1,'lbann']]],
+  ['sgd_5ffactory',['sgd_factory',['../classlbann_1_1sgd__factory.html#a2db223b7c18759450d07f54a5c320839',1,'lbann::sgd_factory']]],
   ['shear_5frange',['shear_range',['../classlbann_1_1lbann__image__preprocessor.html#aef1e2375fd518e69df800b0dcbcb37d0',1,'lbann::lbann_image_preprocessor']]],
   ['short2',['SHORT2',['../datatype_8hpp.html#a11df0709fb5c69d10c61a6d898355c7b',1,'datatype.hpp']]],
   ['short3',['SHORT3',['../datatype_8hpp.html#a5b0511121f6b8a5f3e8af964ee079688',1,'datatype.hpp']]],
@@ -89,9 +90,9 @@ var searchData=
   ['starmat',['StarMat',['../lbann__base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86',1,'lbann_base.hpp']]],
   ['starmrmat',['StarMRMat',['../lbann__base_8hpp.html#a99cdf61e316c00f3e39aeaa1509197c1',1,'lbann_base.hpp']]],
   ['starvcmat',['StarVCMat',['../lbann__base_8hpp.html#a763b3164342a5d73db851e85c76d385a',1,'lbann_base.hpp']]],
-  ['statistics',['statistics',['../classlbann_1_1objective__functions_1_1statistics.html',1,'lbann::objective_functions']]],
-  ['statistics',['statistics',['../classlbann_1_1metrics_1_1statistics.html',1,'lbann::metrics']]],
   ['statistics',['statistics',['../classlbann_1_1metrics_1_1statistics.html#afc4d1c56faf7c870077a342e4c731086',1,'lbann::metrics::statistics::statistics()'],['../classlbann_1_1objective__functions_1_1statistics.html#ae09872294228744a19efd9510c7503a9',1,'lbann::objective_functions::statistics::statistics()']]],
+  ['statistics',['statistics',['../classlbann_1_1metrics_1_1statistics.html',1,'lbann::metrics']]],
+  ['statistics',['statistics',['../classlbann_1_1objective__functions_1_1statistics.html',1,'lbann::objective_functions']]],
   ['step',['step',['../structlbann__checkpoint.html#a14fc6e1f60b934876dfee2e528486239',1,'lbann_checkpoint::step()'],['../classlbann_1_1lbann__callback__step__learning__rate.html#afcb2f88eae412e84df9c43df9365732e',1,'lbann::lbann_callback_step_learning_rate::step()']]],
   ['subtract_5ffloat2',['SUBTRACT_FLOAT2',['../datatype_8hpp.html#a3c63177e6b72d2c03cc5868df55f60c5',1,'datatype.hpp']]],
   ['subtract_5ffloat3',['SUBTRACT_FLOAT3',['../datatype_8hpp.html#a24f2b43650a03b60ea2401572fdc899c',1,'datatype.hpp']]],
@@ -105,6 +106,6 @@ var searchData=
   ['summarizer',['summarizer',['../classlbann_1_1lbann__callback.html#ad48ff47a64f2dff3a12d8bd282f554cb',1,'lbann::lbann_callback']]],
   ['summarydir',['SummaryDir',['../classlbann_1_1TrainingParams.html#ad01ff40b34ff8b7adf4c547aa60ee87f',1,'lbann::TrainingParams']]],
   ['swap',['swap',['../classlbann_1_1sequential__model.html#a8aa4ddbd6efa79896749838e442b6168',1,'lbann::sequential_model']]],
-  ['systemparams',['SystemParams',['../classlbann_1_1SystemParams.html',1,'lbann']]],
-  ['systemparams',['SystemParams',['../classlbann_1_1SystemParams.html#a4dc0a32571543d65f7f99e1050979697',1,'lbann::SystemParams']]]
+  ['systemparams',['SystemParams',['../classlbann_1_1SystemParams.html#a4dc0a32571543d65f7f99e1050979697',1,'lbann::SystemParams']]],
+  ['systemparams',['SystemParams',['../classlbann_1_1SystemParams.html',1,'lbann']]]
 ];

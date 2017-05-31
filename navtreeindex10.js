@@ -1,6 +1,16 @@
 var NAVTREEINDEX10 =
 {
+"mpi.html#mpi_install_osx":[0,3,5,1],
+"namespaceEl.html":[3,0,2],
+"namespaceEl.html":[2,0,2],
+"namespaceanonymous__namespace_02lbann__random_8cpp_03.html":[2,0,0],
+"namespaceanonymous__namespace_02lbann__random_8cpp_03.html":[3,0,0],
+"namespacecudnn.html":[2,0,1],
+"namespacecudnn.html":[3,0,1],
+"namespacelbann.html":[2,0,3],
+"namespacelbann.html":[3,0,3],
 "namespacelbann_1_1metrics.html":[3,0,3,0],
+"namespacelbann_1_1metrics.html":[2,0,3,0],
 "namespacelbann_1_1objective__functions.html":[2,0,3,1],
 "namespacelbann_1_1objective__functions.html":[3,0,3,1],
 "namespacelbann_1_1patchworks.html":[2,0,3,2],
@@ -239,15 +249,5 @@ var NAVTREEINDEX10 =
 "struct____BMP__RGBQUAD.html#aaa4043c220458a0d8245a4f087192ed3":[3,0,7,3],
 "struct____BMP__RGBQUAD.html#afaa3d49b3b472415944f44631659e2fe":[3,0,7,0],
 "structdataset__header.html":[3,0,43],
-"structdataset__header.html#a576e557f0d210fdd3a728d1b93fcf928":[3,0,43,5],
-"structdataset__header.html#a7dd6822b650cb55d647f33fea50f1a20":[3,0,43,2],
-"structdataset__header.html#a9560ba3a2e84cdb1eff33c6f5d36026f":[3,0,43,0],
-"structdataset__header.html#ac687bb1bff59eeede917e9e9f6c968f3":[3,0,43,3],
-"structdataset__header.html#ae315f52feace31d9b992d90c370fe9c2":[3,0,43,4],
-"structdataset__header.html#ae675db7cdfcab8e857c1d7bc1fa89d79":[3,0,43,1],
-"structlayer__header.html":[3,0,44],
-"structlayer__header.html#a325142c0466170c6627710106275c7fd":[3,0,44,4],
-"structlayer__header.html#a5b4ee2de6371d894b5646b74ceb5c321":[3,0,44,1],
-"structlayer__header.html#a9ba1c0891787cf3b01611ef27e575a8b":[3,0,44,2],
-"structlayer__header.html#abb4a41358a68da8466879972fbcd034d":[3,0,44,3]
+"structdataset__header.html#a576e557f0d210fdd3a728d1b93fcf928":[3,0,43,5]
 };

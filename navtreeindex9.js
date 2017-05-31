@@ -1,5 +1,15 @@
 var NAVTREEINDEX9 =
 {
+"lbann__layer__local__response__normalization_8cpp.html#a5bc3449c5e69f1cfa40a523edb02f20f":[4,0,0,0,0,0,0,1,3,8,2],
+"lbann__layer__local__response__normalization_8cpp.html#a7a202a20a84c0d306cc1ad8b2526d540":[4,0,0,0,0,0,0,1,3,8,4],
+"lbann__layer__local__response__normalization_8cpp.html#a8ac156a3f6c715574f4868ef49dd6667":[4,0,0,0,0,0,0,1,3,8,3],
+"lbann__layer__local__response__normalization_8cpp_source.html":[4,0,0,0,0,0,0,1,3,8],
+"lbann__layer__local__response__normalization_8hpp.html":[4,0,0,0,0,0,0,0,0,3,9],
+"lbann__layer__local__response__normalization_8hpp_source.html":[4,0,0,0,0,0,0,0,0,3,9],
+"lbann__layer__pooling_8cpp.html":[4,0,0,0,0,0,0,1,3,9],
+"lbann__layer__pooling_8cpp.html#a00a0327dab70822f4e305bff0f61e656":[4,0,0,0,0,0,0,1,3,9,2],
+"lbann__layer__pooling_8cpp.html#a7a202a20a84c0d306cc1ad8b2526d540":[4,0,0,0,0,0,0,1,3,9,1],
+"lbann__layer__pooling_8cpp.html#a8ac156a3f6c715574f4868ef49dd6667":[4,0,0,0,0,0,0,1,3,9,0],
 "lbann__layer__pooling_8cpp_source.html":[4,0,0,0,0,0,0,1,3,9],
 "lbann__layer__pooling_8hpp.html":[4,0,0,0,0,0,0,0,0,3,10],
 "lbann__layer__pooling_8hpp_source.html":[4,0,0,0,0,0,0,0,0,3,10],
@@ -239,15 +249,5 @@ var NAVTREEINDEX9 =
 "lbann__timer_8hpp.html#a478d36031ff0659893c4322cd856157f":[4,0,0,0,0,0,0,0,0,10,8,0],
 "lbann__timer_8hpp_source.html":[4,0,0,0,0,0,0,0,0,10,8],
 "mpi.html":[0,3,5],
-"mpi.html#mpi_install_linux":[0,3,5,0],
-"mpi.html#mpi_install_osx":[0,3,5,1],
-"namespaceEl.html":[2,0,2],
-"namespaceEl.html":[3,0,2],
-"namespaceanonymous__namespace_02lbann__random_8cpp_03.html":[3,0,0],
-"namespaceanonymous__namespace_02lbann__random_8cpp_03.html":[2,0,0],
-"namespacecudnn.html":[2,0,1],
-"namespacecudnn.html":[3,0,1],
-"namespacelbann.html":[2,0,3],
-"namespacelbann.html":[3,0,3],
-"namespacelbann_1_1metrics.html":[2,0,3,0]
+"mpi.html#mpi_install_linux":[0,3,5,0]
 };
