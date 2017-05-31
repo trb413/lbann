@@ -6,6 +6,7 @@ var searchData=
   ['layer_5fheader',['layer_header',['../structlayer__header.html',1,'']]],
   ['lbann_5fcallback',['lbann_callback',['../classlbann_1_1lbann__callback.html',1,'lbann']]],
   ['lbann_5fcallback_5fadaptive_5flearning_5frate',['lbann_callback_adaptive_learning_rate',['../classlbann_1_1lbann__callback__adaptive__learning__rate.html',1,'lbann']]],
+  ['lbann_5fcallback_5fcheck_5finit',['lbann_callback_check_init',['../classlbann_1_1lbann__callback__check__init.html',1,'lbann']]],
   ['lbann_5fcallback_5fchecknan',['lbann_callback_checknan',['../classlbann_1_1lbann__callback__checknan.html',1,'lbann']]],
   ['lbann_5fcallback_5fchecksmall',['lbann_callback_checksmall',['../classlbann_1_1lbann__callback__checksmall.html',1,'lbann']]],
   ['lbann_5fcallback_5fcustom_5flearning_5frate',['lbann_callback_custom_learning_rate',['../classlbann_1_1lbann__callback__custom__learning__rate.html',1,'lbann']]],

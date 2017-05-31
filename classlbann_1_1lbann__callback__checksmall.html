@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">04d41a3-ci237973093</span>
+   &#160;<span id="projectnumber">dfb8bb2-ci237993859</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -204,9 +204,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a023264b245b2ceb384abe17eab202552 inherit pro_attribs_classlbann_1_1lbann__callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Check matrices for whether they include any NaNs or infs to help debugging. This will kill the rank if such values are discovered. Check matrices for whether they include any very small values to avoid getting denormalized values. Denormalized values can significantly slow floating point computations. Since we often square values, the check is based on the square root of the smallest floating point value. This will kill the rank if such values are discovered. </p>
+<div class="textblock"><p>Check matrices for whether they include any very small values to avoid getting denormalized values. Denormalized values can significantly slow floating point computations. Since we often square values, the check is based on the square root of the smallest floating point value. This will kill the rank if such values are discovered. </p>
 
-<p>Definition at line <a class="el" href="lbann__callback__checksmall_8hpp_source.html#l00048">48</a> of file <a class="el" href="lbann__callback__checksmall_8hpp_source.html">lbann_callback_checksmall.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__callback__checksmall_8hpp_source.html#l00044">44</a> of file <a class="el" href="lbann__callback__checksmall_8hpp_source.html">lbann_callback_checksmall.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2a5769a9309807f6952212d5ea3a4466"></a>
 <div class="memitem">
@@ -229,8 +229,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__callback__checksmall_8hpp_source.html#l00050">50</a> of file <a class="el" href="lbann__callback__checksmall_8hpp_source.html">lbann_callback_checksmall.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;: <a class="code" href="classlbann_1_1lbann__callback.html#af4c9e2cf1c87cbf741bb0316f6f5fab2">lbann_callback</a>() { <a class="code" href="classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c">set_name</a>(<span class="stringliteral">&quot;checksmall&quot;</span>); }</div>
+<p>Definition at line <a class="el" href="lbann__callback__checksmall_8hpp_source.html#l00046">46</a> of file <a class="el" href="lbann__callback__checksmall_8hpp_source.html">lbann_callback_checksmall.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;: <a class="code" href="classlbann_1_1lbann__callback.html#af4c9e2cf1c87cbf741bb0316f6f5fab2">lbann_callback</a>() { <a class="code" href="classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c">set_name</a>(<span class="stringliteral">&quot;checksmall&quot;</span>); }</div>
 <div class="ttc" id="classlbann_1_1lbann__callback_html_ae8c3014d503a9ae1b0a16f6cc0cb5b4c"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c">lbann::lbann_callback::set_name</a></div><div class="ttdeci">void set_name(std::string name)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00112">lbann_callback.hpp:112</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback_html_af4c9e2cf1c87cbf741bb0316f6f5fab2"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#af4c9e2cf1c87cbf741bb0316f6f5fab2">lbann::lbann_callback::lbann_callback</a></div><div class="ttdeci">lbann_callback(int _batch_interval=1, lbann_summary *_summarizer=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00049">lbann_callback.hpp:49</a></div></div>
 </div><!-- fragment -->
@@ -287,7 +287,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
 <div class="ttc" id="structlayer__header_html_ad986e4b92e5b455e066fd349725c6bd9"><div class="ttname"><a href="structlayer__header.html#ad986e4b92e5b455e066fd349725c6bd9">layer_header::height</a></div><div class="ttdeci">uint64_t height</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8cpp_source.html#l00061">lbann_persist.cpp:61</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__callback__checksmall_html_aacce4b5c8d53755b13beea20d45bf228"><div class="ttname"><a href="classlbann_1_1lbann__callback__checksmall.html#aacce4b5c8d53755b13beea20d45bf228">lbann::lbann_callback_checksmall::threshold</a></div><div class="ttdeci">const DataType threshold</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__checksmall_8hpp_source.html#l00059">lbann_callback_checksmall.hpp:59</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__callback__checksmall_html_aacce4b5c8d53755b13beea20d45bf228"><div class="ttname"><a href="classlbann_1_1lbann__callback__checksmall.html#aacce4b5c8d53755b13beea20d45bf228">lbann::lbann_callback_checksmall::threshold</a></div><div class="ttdeci">const DataType threshold</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__checksmall_8hpp_source.html#l00055">lbann_callback_checksmall.hpp:55</a></div></div>
 <div class="ttc" id="structlayer__header_html_af1f45c9c74db048ea424114418f22d50"><div class="ttname"><a href="structlayer__header.html#af1f45c9c74db048ea424114418f22d50">layer_header::width</a></div><div class="ttdeci">uint64_t width</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8cpp_source.html#l00060">lbann_persist.cpp:60</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00042">lbann_base.hpp:42</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00037">lbann_base.hpp:37</a></div></div>
@@ -510,7 +510,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>Smallest allowable value. </p>
 
-<p>Definition at line <a class="el" href="lbann__callback__checksmall_8hpp_source.html#l00059">59</a> of file <a class="el" href="lbann__callback__checksmall_8hpp_source.html">lbann_callback_checksmall.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__callback__checksmall_8hpp_source.html#l00055">55</a> of file <a class="el" href="lbann__callback__checksmall_8hpp_source.html">lbann_callback_checksmall.hpp</a>.</p>
 
 </div>
 </div>
@@ -524,7 +524,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__callback__checksmall.html">lbann_callback_checksmall</a></li>
-    <li class="footer">Generated on Wed May 31 2017 16:03:02 for LBANN by
+    <li class="footer">Generated on Wed May 31 2017 16:53:15 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,5 +1,13 @@
 var NAVTREEINDEX9 =
 {
+"lbann__layer__pooling_8cpp_source.html":[4,0,0,0,0,0,0,1,3,9],
+"lbann__layer__pooling_8hpp.html":[4,0,0,0,0,0,0,0,0,3,10],
+"lbann__layer__pooling_8hpp_source.html":[4,0,0,0,0,0,0,0,0,3,10],
+"lbann__layer__reconstruction_8cpp.html":[4,0,0,0,0,0,0,1,3,10],
+"lbann__layer__reconstruction_8cpp.html#a10ab2a6119489f64f9e5f489981bd64f":[4,0,0,0,0,0,0,1,3,10,0],
+"lbann__layer__reconstruction_8cpp.html#acf6a2677c9dc565b7f3379c1544d709e":[4,0,0,0,0,0,0,1,3,10,1],
+"lbann__layer__reconstruction_8cpp.html#ae6c865df784842196d411c1466b01686":[4,0,0,0,0,0,0,1,3,10,2],
+"lbann__layer__reconstruction_8cpp_source.html":[4,0,0,0,0,0,0,1,3,10],
 "lbann__layer__reconstruction_8hpp.html":[4,0,0,0,0,0,0,0,0,3,11],
 "lbann__layer__reconstruction_8hpp_source.html":[4,0,0,0,0,0,0,0,0,3,11],
 "lbann__layer__softmax_8cpp.html":[4,0,0,0,0,0,0,1,3,11],
@@ -241,13 +249,5 @@ var NAVTREEINDEX9 =
 "namespacecudnn.html":[3,0,1],
 "namespacelbann.html":[2,0,3],
 "namespacelbann.html":[3,0,3],
-"namespacelbann_1_1metrics.html":[3,0,3,0],
-"namespacelbann_1_1metrics.html":[2,0,3,0],
-"namespacelbann_1_1objective__functions.html":[3,0,3,1],
-"namespacelbann_1_1objective__functions.html":[2,0,3,1],
-"namespacelbann_1_1patchworks.html":[3,0,3,2],
-"namespacelbann_1_1patchworks.html":[2,0,3,2],
-"namespacemembers.html":[2,1,0],
-"namespacemembers_enum.html":[2,1,4],
-"namespacemembers_eval.html":[2,1,5]
+"namespacelbann_1_1metrics.html":[2,0,3,0]
 };

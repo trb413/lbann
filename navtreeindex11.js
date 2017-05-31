@@ -1,5 +1,13 @@
 var NAVTREEINDEX11 =
 {
+"structlayer__header.html#ad986e4b92e5b455e066fd349725c6bd9":[3,0,44,0],
+"structlayer__header.html#af1f45c9c74db048ea424114418f22d50":[3,0,44,5],
+"structlbann_1_1lbann__quantizer_1_1adaptive__reconstructions.html":[3,0,3,89,0],
+"structlbann_1_1lbann__quantizer_1_1adaptive__reconstructions.html#a631231c118cc17ba4ed569380e6c6711":[3,0,3,89,0,0],
+"structlbann_1_1lbann__quantizer_1_1adaptive__reconstructions.html#a9b3b4970e067920e056cdd54c2ad8e95":[3,0,3,89,0,1],
+"structlbann_1_1lbann__quantizer_1_1adaptive__thresholds.html":[3,0,3,89,1],
+"structlbann_1_1lbann__quantizer_1_1adaptive__thresholds.html#a4626553695545cf0783c3f7302f92fbf":[3,0,3,89,1,0],
+"structlbann_1_1lbann__quantizer_1_1adaptive__thresholds.html#a6f6aee51ed629c2ab68666d577189bb9":[3,0,3,89,1,1],
 "structlbann__checkpoint.html":[3,0,45],
 "structlbann__checkpoint.html#a14fc6e1f60b934876dfee2e528486239":[3,0,45,2],
 "structlbann__checkpoint.html#a35cd46dfca2d5188fd8957867e24abdb":[3,0,45,1],

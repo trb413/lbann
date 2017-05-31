@@ -3,6 +3,7 @@ var searchData=
   ['calculate_5fmulti_5fmodel_5fdata_5fdistribution',['calculate_multi_model_data_distribution',['../classlbann_1_1DataReader.html#a6ca8592b2271ceaac8cb1e29dbecbb82',1,'lbann::DataReader']]],
   ['categorical_5faccuracy',['categorical_accuracy',['../classlbann_1_1metrics_1_1categorical__accuracy.html#a5b81bed3c1255cdc7cb53e02d5ed49f5',1,'lbann::metrics::categorical_accuracy']]],
   ['categorical_5fcross_5fentropy',['categorical_cross_entropy',['../classlbann_1_1objective__functions_1_1categorical__cross__entropy.html#adb4271938e0bce0f188b2786d1742def',1,'lbann::objective_functions::categorical_cross_entropy']]],
+  ['check_5fequal',['check_equal',['../classlbann_1_1lbann__callback__check__init.html#a7c178c15fd32be7ad4e00b1f6f54f7aa',1,'lbann::lbann_callback_check_init']]],
   ['check_5fgradient',['check_gradient',['../classlbann_1_1deep__neural__network.html#a4095db900926a90d40020b5598ca5215',1,'lbann::deep_neural_network']]],
   ['check_5fsetup',['check_setup',['../classlbann_1_1Layer.html#aeec1c710c3d53b5e43a4d4f67b0a21b2',1,'lbann::Layer']]],
   ['checkgradient',['checkGradient',['../classlbann_1_1FullyConnectedLayer.html#ac062d3eace627bfa97a3d8b93de6761c',1,'lbann::FullyConnectedLayer::checkGradient()'],['../classlbann_1_1SoftmaxLayer.html#a30a79112054c8b32e4f667eb0b59f75d',1,'lbann::SoftmaxLayer::checkGradient()']]],

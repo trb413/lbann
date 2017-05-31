@@ -82,6 +82,7 @@ var hierarchy =
       [ "lbann::SoftmaxLayer", "classlbann_1_1SoftmaxLayer.html", null ]
     ] ],
     [ "lbann::lbann_callback", "classlbann_1_1lbann__callback.html", [
+      [ "lbann::lbann_callback_check_init", "classlbann_1_1lbann__callback__check__init.html", null ],
       [ "lbann::lbann_callback_checknan", "classlbann_1_1lbann__callback__checknan.html", null ],
       [ "lbann::lbann_callback_checksmall", "classlbann_1_1lbann__callback__checksmall.html", null ],
       [ "lbann::lbann_callback_debug", "classlbann_1_1lbann__callback__debug.html", null ],

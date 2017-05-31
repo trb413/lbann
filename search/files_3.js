@@ -7,6 +7,8 @@ var searchData=
   ['lbann_5fbatch_5fnormalization_2ecpp',['lbann_batch_normalization.cpp',['../lbann__batch__normalization_8cpp.html',1,'']]],
   ['lbann_5fbatch_5fnormalization_2ehpp',['lbann_batch_normalization.hpp',['../lbann__batch__normalization_8hpp.html',1,'']]],
   ['lbann_5fcallback_2ehpp',['lbann_callback.hpp',['../lbann__callback_8hpp.html',1,'']]],
+  ['lbann_5fcallback_5fcheck_5finit_2ecpp',['lbann_callback_check_init.cpp',['../lbann__callback__check__init_8cpp.html',1,'']]],
+  ['lbann_5fcallback_5fcheck_5finit_2ehpp',['lbann_callback_check_init.hpp',['../lbann__callback__check__init_8hpp.html',1,'']]],
   ['lbann_5fcallback_5fchecknan_2ecpp',['lbann_callback_checknan.cpp',['../lbann__callback__checknan_8cpp.html',1,'']]],
   ['lbann_5fcallback_5fchecknan_2ehpp',['lbann_callback_checknan.hpp',['../lbann__callback__checknan_8hpp.html',1,'']]],
   ['lbann_5fcallback_5fchecksmall_2ecpp',['lbann_callback_checksmall.cpp',['../lbann__callback__checksmall_8cpp.html',1,'']]],

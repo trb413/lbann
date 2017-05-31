@@ -1,5 +1,13 @@
 var NAVTREEINDEX10 =
 {
+"namespacelbann_1_1metrics.html":[3,0,3,0],
+"namespacelbann_1_1objective__functions.html":[2,0,3,1],
+"namespacelbann_1_1objective__functions.html":[3,0,3,1],
+"namespacelbann_1_1patchworks.html":[2,0,3,2],
+"namespacelbann_1_1patchworks.html":[3,0,3,2],
+"namespacemembers.html":[2,1,0],
+"namespacemembers_enum.html":[2,1,4],
+"namespacemembers_eval.html":[2,1,5],
 "namespacemembers_func.html":[2,1,1],
 "namespacemembers_type.html":[2,1,3],
 "namespacemembers_vars.html":[2,1,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX10 =
 "structlayer__header.html#a325142c0466170c6627710106275c7fd":[3,0,44,4],
 "structlayer__header.html#a5b4ee2de6371d894b5646b74ceb5c321":[3,0,44,1],
 "structlayer__header.html#a9ba1c0891787cf3b01611ef27e575a8b":[3,0,44,2],
-"structlayer__header.html#abb4a41358a68da8466879972fbcd034d":[3,0,44,3],
-"structlayer__header.html#ad986e4b92e5b455e066fd349725c6bd9":[3,0,44,0],
-"structlayer__header.html#af1f45c9c74db048ea424114418f22d50":[3,0,44,5],
-"structlbann_1_1lbann__quantizer_1_1adaptive__reconstructions.html":[3,0,3,88,0],
-"structlbann_1_1lbann__quantizer_1_1adaptive__reconstructions.html#a631231c118cc17ba4ed569380e6c6711":[3,0,3,88,0,0],
-"structlbann_1_1lbann__quantizer_1_1adaptive__reconstructions.html#a9b3b4970e067920e056cdd54c2ad8e95":[3,0,3,88,0,1],
-"structlbann_1_1lbann__quantizer_1_1adaptive__thresholds.html":[3,0,3,88,1],
-"structlbann_1_1lbann__quantizer_1_1adaptive__thresholds.html#a4626553695545cf0783c3f7302f92fbf":[3,0,3,88,1,0],
-"structlbann_1_1lbann__quantizer_1_1adaptive__thresholds.html#a6f6aee51ed629c2ab68666d577189bb9":[3,0,3,88,1,1]
+"structlayer__header.html#abb4a41358a68da8466879972fbcd034d":[3,0,44,3]
 };

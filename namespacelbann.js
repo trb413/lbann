@@ -4,6 +4,7 @@ var namespacelbann =
     [ "objective_functions", "namespacelbann_1_1objective__functions.html", "namespacelbann_1_1objective__functions" ],
     [ "patchworks", "namespacelbann_1_1patchworks.html", "namespacelbann_1_1patchworks" ],
     [ "lbann_callback", "classlbann_1_1lbann__callback.html", "classlbann_1_1lbann__callback" ],
+    [ "lbann_callback_check_init", "classlbann_1_1lbann__callback__check__init.html", "classlbann_1_1lbann__callback__check__init" ],
     [ "lbann_callback_checknan", "classlbann_1_1lbann__callback__checknan.html", "classlbann_1_1lbann__callback__checknan" ],
     [ "lbann_callback_checksmall", "classlbann_1_1lbann__callback__checksmall.html", "classlbann_1_1lbann__callback__checksmall" ],
     [ "lbann_callback_debug", "classlbann_1_1lbann__callback__debug.html", "classlbann_1_1lbann__callback__debug" ],
