@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['rabenseifner_5fallreduce',['rabenseifner_allreduce',['../classlbann_1_1lbann__comm.html#a631d1196746ff4d16a28328d9292eb80',1,'lbann::lbann_comm']]],
+  ['rabenseifner_5fallreduce',['rabenseifner_allreduce',['../classlbann_1_1lbann__comm.html#a42520a77134abf810d31f2060c81b288',1,'lbann::lbann_comm']]],
   ['rand_5fpatch',['rand_patch',['../classlbann_1_1patchworks_1_1rand__patch.html',1,'lbann::patchworks']]],
   ['rand_5fpatch',['rand_patch',['../classlbann_1_1patchworks_1_1rand__patch.html#ab2c490cd4379e930ba910fa6aa22bc07',1,'lbann::patchworks::rand_patch::rand_patch(void)'],['../classlbann_1_1patchworks_1_1rand__patch.html#aae69828a2ae6a079ef172141256f2406',1,'lbann::patchworks::rand_patch::rand_patch(const generator_t::result_type _seed)']]],
   ['randomseed',['RandomSeed',['../classlbann_1_1TrainingParams.html#a67d8fbbee9f7899f800aa3de688e9094',1,'lbann::TrainingParams']]],
@@ -26,7 +26,7 @@ var searchData=
   ['reconstruction_5fmini_5fbatch',['reconstruction_mini_batch',['../classlbann_1_1stacked__autoencoder.html#a6653c99b5b198737433895b745b42d0e',1,'lbann::stacked_autoencoder']]],
   ['record_5ferror',['record_error',['../classlbann_1_1metrics_1_1metric.html#a0962c210248b591fafb5aa158f2287f6',1,'lbann::metrics::metric']]],
   ['record_5fobj_5ffn',['record_obj_fn',['../classlbann_1_1objective__functions_1_1objective__fn.html#a4c3581c1a8dd01ad5a7e5be824584396',1,'lbann::objective_functions::objective_fn']]],
-  ['recursive_5fdoubling_5fallreduce_5fpow2',['recursive_doubling_allreduce_pow2',['../classlbann_1_1lbann__comm.html#a05e762ed26ae7a82a562c194fb16ec67',1,'lbann::lbann_comm']]],
+  ['recursive_5fdoubling_5fallreduce_5fpow2',['recursive_doubling_allreduce_pow2',['../classlbann_1_1lbann__comm.html#a41ad826d1554e1d59ff4f8808b9d1b6f',1,'lbann::lbann_comm']]],
   ['recv',['recv',['../classlbann_1_1lbann__comm.html#af8842cd4cea390f76d9146e1c4578de4',1,'lbann::lbann_comm::recv(T *data, int count, int model, int rank)'],['../classlbann_1_1lbann__comm.html#a7f2f06772bdee76b4d736c1d7ab84329',1,'lbann::lbann_comm::recv(T *data, int count, int model)'],['../classlbann_1_1lbann__comm.html#ac1ed8dd7b6f839b69bfb33f88728b18d',1,'lbann::lbann_comm::recv(Mat &amp;mat, int model, int rank)'],['../classlbann_1_1lbann__comm.html#a1376b4f3c0941e19ff23a8baf30eb63d',1,'lbann::lbann_comm::recv(DistMat &amp;mat, int model, int rank)'],['../classlbann_1_1lbann__comm.html#a6b1ecfe900346c0996fb8066e4f76fe2',1,'lbann::lbann_comm::recv(Mat &amp;mat, int model)'],['../classlbann_1_1lbann__comm.html#a018f0451e2a984d28b6a1f099cf9d421',1,'lbann::lbann_comm::recv(DistMat &amp;mat, int model)'],['../classlbann_1_1lbann__comm.html#ab96fe808a236d41ecd05c0cc2461dba0',1,'lbann::lbann_comm::recv(T *data, int count)'],['../classlbann_1_1lbann__comm.html#a3d0cca55711c9c9913f3d940c5bba4eb',1,'lbann::lbann_comm::recv(Mat &amp;mat)'],['../classlbann_1_1lbann__comm.html#acc92b86b30287689870e018b062076f8',1,'lbann::lbann_comm::recv(DistMat &amp;mat)']]],
   ['reduce_5fhistogram',['reduce_histogram',['../classlbann_1_1lbann__summary.html#ae5d1a49baa1dfbe939a8142b4adaa135',1,'lbann::lbann_summary']]],
   ['reduce_5fmax',['reduce_max',['../classlbann_1_1lbann__summary.html#a1f15efb9235faddb685265503c903782',1,'lbann::lbann_summary']]],
@@ -59,7 +59,7 @@ var searchData=
   ['rgbgreen',['rgbGreen',['../struct____BMP__RGBQUAD.html#aa54eed0e4ec693221ec4879c9659d37c',1,'__BMP_RGBQUAD']]],
   ['rgbred',['rgbRed',['../struct____BMP__RGBQUAD.html#a34b96f92976a29bb13d96ad28bad938f',1,'__BMP_RGBQUAD']]],
   ['rgbreserved',['rgbReserved',['../struct____BMP__RGBQUAD.html#aaa4043c220458a0d8245a4f087192ed3',1,'__BMP_RGBQUAD']]],
-  ['ring_5fallreduce',['ring_allreduce',['../classlbann_1_1lbann__comm.html#a49db53e94f6b3aa10e069979598acdd1',1,'lbann::lbann_comm']]],
+  ['ring_5fallreduce',['ring_allreduce',['../classlbann_1_1lbann__comm.html#acc972ac8334eb84149dc7c517b9798d8',1,'lbann::lbann_comm']]],
   ['rmsprop',['rmsprop',['../classlbann_1_1rmsprop.html#af42c8e3336e72aac926e19c57b56e59f',1,'lbann::rmsprop']]],
   ['rmsprop',['rmsprop',['../classlbann_1_1rmsprop.html',1,'lbann']]],
   ['rmsprop_5ffactory',['rmsprop_factory',['../classlbann_1_1rmsprop__factory.html',1,'lbann']]],
