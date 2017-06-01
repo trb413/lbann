@@ -1,5 +1,18 @@
 var NAVTREEINDEX11 =
 {
+"struct____BMP__INFOHEADER.html#a53f1818cfc8ae4496c9fa1797fcaa362":[3,0,6,0],
+"struct____BMP__INFOHEADER.html#a77f65b50524a487d08f5e3cac9d2ae41":[3,0,6,6],
+"struct____BMP__INFOHEADER.html#aba9e12869626a3c126ea321209b32856":[3,0,6,7],
+"struct____BMP__INFOHEADER.html#ac41bb390f4b84dfe547e4c10cc175432":[3,0,6,4],
+"struct____BMP__INFOHEADER.html#ad4345711570377bb8426f9db93742dc7":[3,0,6,5],
+"struct____BMP__INFOHEADER.html#aea45a2f4b1c9b9744207df15a6cfe050":[3,0,6,10],
+"struct____BMP__RGBQUAD.html":[3,0,7],
+"struct____BMP__RGBQUAD.html#a34b96f92976a29bb13d96ad28bad938f":[3,0,7,2],
+"struct____BMP__RGBQUAD.html#aa54eed0e4ec693221ec4879c9659d37c":[3,0,7,1],
+"struct____BMP__RGBQUAD.html#aaa4043c220458a0d8245a4f087192ed3":[3,0,7,3],
+"struct____BMP__RGBQUAD.html#afaa3d49b3b472415944f44631659e2fe":[3,0,7,0],
+"structdataset__header.html":[3,0,43],
+"structdataset__header.html#a576e557f0d210fdd3a728d1b93fcf928":[3,0,43,5],
 "structdataset__header.html#a7dd6822b650cb55d647f33fea50f1a20":[3,0,43,2],
 "structdataset__header.html#a9560ba3a2e84cdb1eff33c6f5d36026f":[3,0,43,0],
 "structdataset__header.html#ac687bb1bff59eeede917e9e9f6c968f3":[3,0,43,3],

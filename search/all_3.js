@@ -27,6 +27,8 @@ var searchData=
   ['closeread',['closeread',['../namespacelbann.html#a38dd30b2ae8214f6595708264369ddb8',1,'lbann']]],
   ['closewrite',['closewrite',['../namespacelbann.html#aceeccedbbafccfa071b21ee99be794a5',1,'lbann']]],
   ['cmake',['CMake',['../cmake.html',1,'getting_started']]],
+  ['col2im',['col2im',['../namespacelbann.html#a207630bb79a5ebea1f7da21510c16ed7',1,'lbann::col2im(const Mat &amp;col, Mat &amp;im, const std::vector&lt; Int &gt; &amp;im_dims, const std::vector&lt; Int &gt; &amp;im_pads, Int num_im_channels, const std::vector&lt; Int &gt; &amp;window_dims, const std::vector&lt; Int &gt; &amp;window_strides)'],['../namespacelbann.html#a744d521bafc98dd1289e55766e0331f8',1,'lbann::col2im(const Mat &amp;col, Mat &amp;im, const std::vector&lt; El::Int &gt; &amp;im_dims, const std::vector&lt; El::Int &gt; &amp;im_pads, El::Int num_im_channels, const std::vector&lt; El::Int &gt; &amp;window_dims, const std::vector&lt; El::Int &gt; &amp;window_strides)']]],
+  ['col2im_5f2d',['col2im_2d',['../namespacelbann.html#a31db5098d6c03e89a32c41df6ffb388a',1,'lbann']]],
   ['col_5fpixels',['col_pixels',['../classlbann_1_1lbann__image__preprocessor.html#a3e99be32b95a415fd8d616cb85075df1',1,'lbann::lbann_image_preprocessor']]],
   ['col_5freconstruction',['col_reconstruction',['../classlbann_1_1lbann__quantizer.html#aa58689369b5b3898b75b7b31ca574b38',1,'lbann::lbann_quantizer']]],
   ['collective_5fbufs',['collective_bufs',['../classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec',1,'lbann::lbann_comm']]],

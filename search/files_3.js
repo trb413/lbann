@@ -82,6 +82,8 @@ var searchData=
   ['lbann_5fexception_2ehpp',['lbann_exception.hpp',['../lbann__exception_8hpp.html',1,'']]],
   ['lbann_5ffile_5fio_2ecpp',['lbann_file_io.cpp',['../lbann__file__io_8cpp.html',1,'']]],
   ['lbann_5ffile_5fio_2ehpp',['lbann_file_io.hpp',['../lbann__file__io_8hpp.html',1,'']]],
+  ['lbann_5fim2col_2ecpp',['lbann_im2col.cpp',['../lbann__im2col_8cpp.html',1,'']]],
+  ['lbann_5fim2col_2ehpp',['lbann_im2col.hpp',['../lbann__im2col_8hpp.html',1,'']]],
   ['lbann_5fimage_5fpreprocessor_2ecpp',['lbann_image_preprocessor.cpp',['../lbann__image__preprocessor_8cpp.html',1,'']]],
   ['lbann_5fimage_5fpreprocessor_2ehpp',['lbann_image_preprocessor.hpp',['../lbann__image__preprocessor_8hpp.html',1,'']]],
   ['lbann_5fimage_5futils_2ecpp',['lbann_image_utils.cpp',['../lbann__image__utils_8cpp.html',1,'']]],
