@@ -1,5 +1,12 @@
 var NAVTREEINDEX8 =
 {
+"lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db":[4,0,0,0,0,0,0,0,0,13,16],
+"lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638":[4,0,0,0,0,0,0,0,0,13,16,1],
+"lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0":[4,0,0,0,0,0,0,0,0,13,16,0],
+"lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5":[4,0,0,0,0,0,0,0,0,13,20],
+"lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a10c3970ad5c688f36ccda3f77432bd5c":[4,0,0,0,0,0,0,0,0,13,20,6],
+"lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a2d34dae1a4044190dc7572a3c8e072d8":[4,0,0,0,0,0,0,0,0,13,20,5],
+"lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a4b78361151cbfcca33e1d560fbaedd59":[4,0,0,0,0,0,0,0,0,13,20,4],
 "lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5aa489ffed938ef1b9e86889bc413501ee":[4,0,0,0,0,0,0,0,0,13,20,1],
 "lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ab507cf76b5f5f5bf34a68f6376bf0238":[4,0,0,0,0,0,0,0,0,13,20,3],
 "lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ad02c4c4cde7ae76252540d116a40f23a":[4,0,0,0,0,0,0,0,0,13,20,0],
@@ -242,12 +249,5 @@ var NAVTREEINDEX8 =
 "lbann__layer_8cpp.html":[4,0,0,0,0,0,0,1,3,4],
 "lbann__layer_8cpp_source.html":[4,0,0,0,0,0,0,1,3,4],
 "lbann__layer_8hpp.html":[4,0,0,0,0,0,0,0,0,3,4],
-"lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743":[4,0,0,0,0,0,0,0,0,3,4,1],
-"lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743a0d5ea8f7814c623a6835706757368095":[4,0,0,0,0,0,0,0,0,3,4,1,4],
-"lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743a156e322bc71c040cbb092c46ed11c5cb":[4,0,0,0,0,0,0,0,0,3,4,1,0],
-"lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743a4abcef116566139e94c82bb1bb37583f":[4,0,0,0,0,0,0,0,0,3,4,1,3],
-"lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743a824c8cd6e0c951b7a752369374ab723a":[4,0,0,0,0,0,0,0,0,3,4,1,8],
-"lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743aa9595c1c24c33b16056d2ad07e71682d":[4,0,0,0,0,0,0,0,0,3,4,1,2],
-"lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743ac62fbbd85bba7838c656c60724e6afca":[4,0,0,0,0,0,0,0,0,3,4,1,6],
-"lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743accc0377a8afbf50e7094f5c23a8af223":[4,0,0,0,0,0,0,0,0,3,4,1,10]
+"lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743":[4,0,0,0,0,0,0,0,0,3,4,1]
 };

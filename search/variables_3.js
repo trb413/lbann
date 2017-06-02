@@ -5,6 +5,7 @@ var searchData=
   ['datasetrootdir',['DatasetRootDir',['../classlbann_1_1TrainingParams.html#a14bda5205da357abe30d7685735932dd',1,'lbann::TrainingParams']]],
   ['datatypempi',['DataTypeMPI',['../lbann__base_8hpp.html#a50107efba2c08b6188a769743a78d04e',1,'lbann_base.hpp']]],
   ['default_5fallreduce_5falgo',['default_allreduce_algo',['../classlbann_1_1lbann__comm.html#ac7731d6bcdb6775009467cf4138d4bab',1,'lbann::lbann_comm']]],
+  ['default_5fct',['default_ct',['../classlbann_1_1lbann__callback__imcomm.html#ab15fe97715ba7e7a62684581c00750a9',1,'lbann::lbann_callback_imcomm']]],
   ['dist_5fnormal',['dist_normal',['../classlbann_1_1patchworks_1_1rand__patch.html#a158de94b60e899de910d8e470279d453',1,'lbann::patchworks::rand_patch']]],
   ['dist_5funiform_5fint',['dist_uniform_int',['../classlbann_1_1patchworks_1_1rand__patch.html#a1281cc42ebeb5a5dafa7a47ce2edd489',1,'lbann::patchworks::rand_patch']]],
   ['dist_5funiform_5freal',['dist_uniform_real',['../classlbann_1_1patchworks_1_1rand__patch.html#a8e2e8aba4b0687418006cad0d6f9c1f6',1,'lbann::patchworks::rand_patch']]],

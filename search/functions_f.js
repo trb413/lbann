@@ -44,6 +44,7 @@ var searchData=
   ['reset_5fstats',['reset_stats',['../classlbann_1_1metrics_1_1statistics.html#acc7848c0873042bcb797a850afd3d96a',1,'lbann::metrics::statistics::reset_stats()'],['../classlbann_1_1objective__functions_1_1statistics.html#a58c4b04be5a52957cd08d5fe0b4e7d4e',1,'lbann::objective_functions::statistics::reset_stats()']]],
   ['reset_5fstats_5fcounters',['reset_stats_counters',['../classlbann_1_1lbann__comm.html#adb9afab1b8af03276e6e6347f8021ef5',1,'lbann::lbann_comm']]],
   ['resetcost',['resetCost',['../classlbann_1_1target__layer.html#a4fe63768651b4f2bb593ca7249c205f4',1,'lbann::target_layer']]],
+  ['reshape_5fmat',['reshape_mat',['../classlbann_1_1lbann__callback__imcomm.html#ab263486c1b9943be2a7b7e9d35d13602',1,'lbann::lbann_callback_imcomm']]],
   ['restartshared',['restartShared',['../classlbann_1_1model.html#a61534dec88b64ec5fc672376e50ee00c',1,'lbann::model']]],
   ['ring_5fallreduce',['ring_allreduce',['../classlbann_1_1lbann__comm.html#a66d15cad06b3a9e56ade586fa6a85464',1,'lbann::lbann_comm']]],
   ['rmsprop',['rmsprop',['../classlbann_1_1rmsprop.html#af42c8e3336e72aac926e19c57b56e59f',1,'lbann::rmsprop']]],

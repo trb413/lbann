@@ -1,5 +1,6 @@
 var classlbann_1_1lbann__callback__imcomm =
 [
+    [ "imcomm_params", "structlbann_1_1lbann__callback__imcomm_1_1imcomm__params.html", "structlbann_1_1lbann__callback__imcomm_1_1imcomm__params" ],
     [ "comm_type", "classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6a", [
       [ "NONE", "classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aafa59156bc4d5bcbf6bd80918d062da03", null ],
       [ "NORMAL", "classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aa5f19efb5bef79cea24be992a2137962e", null ],
@@ -7,14 +8,19 @@ var classlbann_1_1lbann__callback__imcomm =
       [ "THRESH_QUANTIZATION", "classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aa76420a96a3df1d5b60140bab6bc32dc4", null ],
       [ "ADAPTIVE_QUANTIZATION", "classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aaeb95973ab89fc579b91554cd783031b7", null ]
     ] ],
-    [ "lbann_callback_imcomm", "classlbann_1_1lbann__callback__imcomm.html#aef048c5bdeb5b36d7b5e0fdfddfb6a7a", null ],
+    [ "lbann_callback_imcomm", "classlbann_1_1lbann__callback__imcomm.html#a96415a41433178e0e083e95480575d53", null ],
     [ "lbann_callback_imcomm", "classlbann_1_1lbann__callback__imcomm.html#a84d47e38ad45417f88d32eb37d94ebbd", null ],
-    [ "ct_does_quantization", "classlbann_1_1lbann__callback__imcomm.html#ad3a9f43ceb08af462ce9d378e70bd76d", null ],
+    [ "ct_does_quantization", "classlbann_1_1lbann__callback__imcomm.html#a4f38fa45a0f7a8b290f6d2b701d20622", null ],
+    [ "do_summary", "classlbann_1_1lbann__callback__imcomm.html#ae51efbf4dc5a0c762ea5960e7e60296d", null ],
     [ "on_backward_prop_end", "classlbann_1_1lbann__callback__imcomm.html#ace11211398e94728880476981f25fdc2", null ],
     [ "on_epoch_end", "classlbann_1_1lbann__callback__imcomm.html#a9e409109c25b6173bc57108281e7aeb5", null ],
+    [ "reshape_mat", "classlbann_1_1lbann__callback__imcomm.html#ab263486c1b9943be2a7b7e9d35d13602", null ],
+    [ "set_layer_adaptive", "classlbann_1_1lbann__callback__imcomm.html#a5a59259596eceb7de381908dcfc41a7d", null ],
+    [ "set_layer_comm", "classlbann_1_1lbann__callback__imcomm.html#af0111b845be440f871083c965dbb1752", null ],
+    [ "set_layer_threshold", "classlbann_1_1lbann__callback__imcomm.html#ad6b0242d2ac5b9b9a601a887822085fb", null ],
     [ "setup", "classlbann_1_1lbann__callback__imcomm.html#a1cc160d368f1dd5bd30f1504c0df8003", null ],
-    [ "ct", "classlbann_1_1lbann__callback__imcomm.html#aa617c54b0bba0aaba9a916c0cda2cfba", null ],
-    [ "layer_indices", "classlbann_1_1lbann__callback__imcomm.html#a8a6db1ae85f466653f6d3b3bdef9f0e6", null ],
-    [ "quantization_errors", "classlbann_1_1lbann__callback__imcomm.html#a55de5c89215eb0b0ebc9186cf7a0f5e6", null ],
+    [ "default_ct", "classlbann_1_1lbann__callback__imcomm.html#ab15fe97715ba7e7a62684581c00750a9", null ],
+    [ "layer_params", "classlbann_1_1lbann__callback__imcomm.html#a6a016de82da3111b1591de43d899da50", null ],
+    [ "param_choices", "classlbann_1_1lbann__callback__imcomm.html#a1c55e41ca7028c8405afdd6b951da5a3", null ],
     [ "quantizer", "classlbann_1_1lbann__callback__imcomm.html#acb4f04304f91457885902812f354d9a7", null ]
 ];

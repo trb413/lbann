@@ -1,16 +1,17 @@
 var NAVTREEINDEX2 =
 {
+"classlbann_1_1convolutional__layer.html#abeecb5a713f1f3ad39a09acfb4c12a30":[3,0,3,50,4],
 "classlbann_1_1convolutional__layer.html#ac0bbc981f0b6afaad37d80901d34b2e0":[3,0,3,50,22],
 "classlbann_1_1convolutional__layer.html#aca65eff227a059b9426d5e2b491c06ed":[3,0,3,50,8],
 "classlbann_1_1convolutional__layer.html#ace1e3a03b64dd74a6b18c28302e39a44":[3,0,3,50,10],
-"classlbann_1_1convolutional__layer.html#ad494e08f7d39847d5959565b99236ffb":[3,0,3,50,33],
-"classlbann_1_1convolutional__layer.html#ad6df4fc3b8c7f01e0ceaaa6afee21a89":[3,0,3,50,39],
+"classlbann_1_1convolutional__layer.html#ad494e08f7d39847d5959565b99236ffb":[3,0,3,50,34],
+"classlbann_1_1convolutional__layer.html#ad6df4fc3b8c7f01e0ceaaa6afee21a89":[3,0,3,50,40],
 "classlbann_1_1convolutional__layer.html#ad9664f0b090b1dca04e856b51ed54eec":[3,0,3,50,24],
 "classlbann_1_1convolutional__layer.html#ad9f05a9bfaa670d641ccc454f5f1aaf0":[3,0,3,50,17],
-"classlbann_1_1convolutional__layer.html#adc923829f3945afa12993365bbcebdf0":[3,0,3,50,41],
+"classlbann_1_1convolutional__layer.html#adc923829f3945afa12993365bbcebdf0":[3,0,3,50,42],
 "classlbann_1_1convolutional__layer.html#ae2c905ba710e04e39213ee966c296f03":[3,0,3,50,7],
-"classlbann_1_1convolutional__layer.html#ae3f41f209beb76715a44572ee3747d9c":[3,0,3,50,40],
-"classlbann_1_1convolutional__layer.html#af39e291247954c3aa063d54c6c75c4f3":[3,0,3,50,38],
+"classlbann_1_1convolutional__layer.html#ae3f41f209beb76715a44572ee3747d9c":[3,0,3,50,41],
+"classlbann_1_1convolutional__layer.html#af39e291247954c3aa063d54c6c75c4f3":[3,0,3,50,39],
 "classlbann_1_1convolutional__layer.html#af5001f75394ef3664ba1893cd3a72cf0":[3,0,3,50,9],
 "classlbann_1_1convolutional__layer.html#af843455381cac1e151f097476152efc2":[3,0,3,50,18],
 "classlbann_1_1convolutional__layer.html#af926cf7d8530cf13a2e84becedd59aca":[3,0,3,50,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "classlbann_1_1layer__factory.html#ab3f1a9297d9c1b4fa58b93587a0c08bb":[3,0,3,51,1],
 "classlbann_1_1layer__factory.html#acd5f652a3974f029abc2d5e535436f94":[3,0,3,51,4],
 "classlbann_1_1layer__factory.html#af641623a91e1c70ced7c98d691c0f945":[3,0,3,51,6],
-"classlbann_1_1lbann__callback.html":[3,0,3,3],
-"classlbann_1_1lbann__callback.html#a023264b245b2ceb384abe17eab202552":[3,0,3,3,32]
+"classlbann_1_1lbann__callback.html":[3,0,3,3]
 };

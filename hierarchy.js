@@ -102,6 +102,7 @@ var hierarchy =
       [ "lbann::lbann_callback_summary", "classlbann_1_1lbann__callback__summary.html", null ],
       [ "lbann::lbann_callback_timer", "classlbann_1_1lbann__callback__timer.html", null ]
     ] ],
+    [ "lbann::lbann_callback_imcomm::imcomm_params", "structlbann_1_1lbann__callback__imcomm_1_1imcomm__params.html", null ],
     [ "lbann::lbann_comm", "classlbann_1_1lbann__comm.html", null ],
     [ "lbann::lbann_comm::allreduce_options", "structlbann_1_1lbann__comm_1_1allreduce__options.html", null ],
     [ "lbann::lbann_image_preprocessor", "classlbann_1_1lbann__image__preprocessor.html", [

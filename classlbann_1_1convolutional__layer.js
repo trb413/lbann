@@ -28,6 +28,7 @@ var classlbann_1_1convolutional__layer =
     [ "unpin_memory_blocks_bwd", "classlbann_1_1convolutional__layer.html#a83615fc2adf3cca9ca436e2e5b8ebea7", null ],
     [ "unpin_memory_blocks_fwd", "classlbann_1_1convolutional__layer.html#a0dfc58d34fe471485e93b50dbefe752b", null ],
     [ "update", "classlbann_1_1convolutional__layer.html#a106690c11d33b28a48c39d5512f500b2", null ],
+    [ "lbann_callback_imcomm", "classlbann_1_1convolutional__layer.html#a6d54673503b45aeb6526f041224900c6", null ],
     [ "is_pinned_bwd", "classlbann_1_1convolutional__layer.html#aa02f0f56a82c6ad829a6320c915471ff", null ],
     [ "is_pinned_fwd", "classlbann_1_1convolutional__layer.html#a008c0e8a55bc9e334e46fbb483fe77e8", null ],
     [ "m_conv_pads", "classlbann_1_1convolutional__layer.html#a53085be18aa227a103861a0fbc4f68c1", null ],

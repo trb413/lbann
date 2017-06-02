@@ -28,7 +28,8 @@ var dir_86ea002d1bbf4ba4531b8a232bdd1c36 =
       [ "lbann_callback_early_stopping", "classlbann_1_1lbann__callback__early__stopping.html", "classlbann_1_1lbann__callback__early__stopping" ]
     ] ],
     [ "lbann_callback_imcomm.hpp", "lbann__callback__imcomm_8hpp.html", [
-      [ "lbann_callback_imcomm", "classlbann_1_1lbann__callback__imcomm.html", "classlbann_1_1lbann__callback__imcomm" ]
+      [ "lbann_callback_imcomm", "classlbann_1_1lbann__callback__imcomm.html", "classlbann_1_1lbann__callback__imcomm" ],
+      [ "imcomm_params", "structlbann_1_1lbann__callback__imcomm_1_1imcomm__params.html", "structlbann_1_1lbann__callback__imcomm_1_1imcomm__params" ]
     ] ],
     [ "lbann_callback_io.hpp", "lbann__callback__io_8hpp.html", [
       [ "lbann_callback_io", "classlbann_1_1lbann__callback__io.html", "classlbann_1_1lbann__callback__io" ]
