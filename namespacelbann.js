@@ -79,6 +79,8 @@ var namespacelbann =
     [ "adagrad_factory", "classlbann_1_1adagrad__factory.html", "classlbann_1_1adagrad__factory" ],
     [ "adam", "classlbann_1_1adam.html", "classlbann_1_1adam" ],
     [ "adam_factory", "classlbann_1_1adam__factory.html", "classlbann_1_1adam__factory" ],
+    [ "hypergradient_adam", "classlbann_1_1hypergradient__adam.html", "classlbann_1_1hypergradient__adam" ],
+    [ "hypergradient_adam_factory", "classlbann_1_1hypergradient__adam__factory.html", "classlbann_1_1hypergradient__adam__factory" ],
     [ "rmsprop", "classlbann_1_1rmsprop.html", "classlbann_1_1rmsprop" ],
     [ "rmsprop_factory", "classlbann_1_1rmsprop__factory.html", "classlbann_1_1rmsprop__factory" ],
     [ "sgd", "classlbann_1_1sgd.html", "classlbann_1_1sgd" ],

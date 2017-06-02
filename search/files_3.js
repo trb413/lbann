@@ -145,6 +145,8 @@ var searchData=
   ['lbann_5foptimizer_5fadagrad_2ehpp',['lbann_optimizer_adagrad.hpp',['../lbann__optimizer__adagrad_8hpp.html',1,'']]],
   ['lbann_5foptimizer_5fadam_2ecpp',['lbann_optimizer_adam.cpp',['../lbann__optimizer__adam_8cpp.html',1,'']]],
   ['lbann_5foptimizer_5fadam_2ehpp',['lbann_optimizer_adam.hpp',['../lbann__optimizer__adam_8hpp.html',1,'']]],
+  ['lbann_5foptimizer_5fhypergradient_5fadam_2ecpp',['lbann_optimizer_hypergradient_adam.cpp',['../lbann__optimizer__hypergradient__adam_8cpp.html',1,'']]],
+  ['lbann_5foptimizer_5fhypergradient_5fadam_2ehpp',['lbann_optimizer_hypergradient_adam.hpp',['../lbann__optimizer__hypergradient__adam_8hpp.html',1,'']]],
   ['lbann_5foptimizer_5frmsprop_2ecpp',['lbann_optimizer_rmsprop.cpp',['../lbann__optimizer__rmsprop_8cpp.html',1,'']]],
   ['lbann_5foptimizer_5frmsprop_2ehpp',['lbann_optimizer_rmsprop.hpp',['../lbann__optimizer__rmsprop_8hpp.html',1,'']]],
   ['lbann_5foptimizer_5fsgd_2ecpp',['lbann_optimizer_sgd.cpp',['../lbann__optimizer__sgd_8cpp.html',1,'']]],

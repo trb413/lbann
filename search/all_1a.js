@@ -25,6 +25,8 @@ var searchData=
   ['_7edropout',['~dropout',['../classlbann_1_1dropout.html#abcec1bc033a38501bb60797ac1b97dbf',1,'lbann::dropout']]],
   ['_7efullyconnectedlayer',['~FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html#a7e718fd3251cd43a5775c4ff2719e9d6',1,'lbann::FullyConnectedLayer']]],
   ['_7egreedy_5flayerwise_5fautoencoder',['~greedy_layerwise_autoencoder',['../classlbann_1_1greedy__layerwise__autoencoder.html#a6adbff4f4d116927a4b6613fcac66d41',1,'lbann::greedy_layerwise_autoencoder']]],
+  ['_7ehypergradient_5fadam',['~hypergradient_adam',['../classlbann_1_1hypergradient__adam.html#af88b1143c16ac3fb640844112d9a67ad',1,'lbann::hypergradient_adam']]],
+  ['_7ehypergradient_5fadam_5ffactory',['~hypergradient_adam_factory',['../classlbann_1_1hypergradient__adam__factory.html#a467156177e6a88ca24112728a24f25a6',1,'lbann::hypergradient_adam_factory']]],
   ['_7el2_5fregularization',['~l2_regularization',['../classlbann_1_1l2__regularization.html#afb4e53382c8bdc219c4a586494245543',1,'lbann::l2_regularization']]],
   ['_7elayer',['~Layer',['../classlbann_1_1Layer.html#a68c3f57587956da938406812f13ecb78',1,'lbann::Layer']]],
   ['_7elayer_5ffactory',['~layer_factory',['../classlbann_1_1layer__factory.html#acd5f652a3974f029abc2d5e535436f94',1,'lbann::layer_factory']]],

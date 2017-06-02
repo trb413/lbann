@@ -1,10 +1,6 @@
 var searchData=
 [
-  ['rand_5fpatch',['rand_patch',['../classlbann_1_1patchworks_1_1rand__patch.html',1,'lbann::patchworks']]],
-  ['reconstruction_5flayer',['reconstruction_layer',['../classlbann_1_1reconstruction__layer.html',1,'lbann']]],
-  ['regularizer',['regularizer',['../classlbann_1_1regularizer.html',1,'lbann']]],
-  ['relu_5flayer',['reLU_layer',['../classlbann_1_1reLU__layer.html',1,'lbann']]],
-  ['rmsprop',['rmsprop',['../classlbann_1_1rmsprop.html',1,'lbann']]],
-  ['rmsprop_5ffactory',['rmsprop_factory',['../classlbann_1_1rmsprop__factory.html',1,'lbann']]],
-  ['rng',['rng',['../classlbann_1_1rng.html',1,'lbann']]]
+  ['performanceparams',['PerformanceParams',['../classlbann_1_1PerformanceParams.html',1,'lbann']]],
+  ['persist',['persist',['../classlbann_1_1persist.html',1,'lbann']]],
+  ['pooling_5flayer',['pooling_layer',['../classlbann_1_1pooling__layer.html',1,'lbann']]]
 ];

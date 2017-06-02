@@ -144,12 +144,14 @@ var hierarchy =
     [ "lbann::optimizer", "classlbann_1_1optimizer.html", [
       [ "lbann::adagrad", "classlbann_1_1adagrad.html", null ],
       [ "lbann::adam", "classlbann_1_1adam.html", null ],
+      [ "lbann::hypergradient_adam", "classlbann_1_1hypergradient__adam.html", null ],
       [ "lbann::rmsprop", "classlbann_1_1rmsprop.html", null ],
       [ "lbann::sgd", "classlbann_1_1sgd.html", null ]
     ] ],
     [ "lbann::optimizer_factory", "classlbann_1_1optimizer__factory.html", [
       [ "lbann::adagrad_factory", "classlbann_1_1adagrad__factory.html", null ],
       [ "lbann::adam_factory", "classlbann_1_1adam__factory.html", null ],
+      [ "lbann::hypergradient_adam_factory", "classlbann_1_1hypergradient__adam__factory.html", null ],
       [ "lbann::rmsprop_factory", "classlbann_1_1rmsprop__factory.html", null ],
       [ "lbann::sgd_factory", "classlbann_1_1sgd__factory.html", null ]
     ] ],
