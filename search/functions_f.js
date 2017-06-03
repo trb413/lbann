@@ -27,8 +27,6 @@ var searchData=
   ['reduce_5fmin',['reduce_min',['../classlbann_1_1lbann__summary.html#ac12b58821be8d438d2715b3f80bfe566',1,'lbann::lbann_summary']]],
   ['reduce_5fscalar',['reduce_scalar',['../classlbann_1_1lbann__summary.html#aacd54e77d45bd1bd56df3a4d71c01ce8',1,'lbann::lbann_summary']]],
   ['reduce_5fstdev',['reduce_stdev',['../classlbann_1_1lbann__summary.html#ac388826d8854491b3df706a91cb4a689',1,'lbann::lbann_summary']]],
-  ['relu',['reLU',['../classlbann_1_1reLU__layer.html#a06955735ff7d6d97a8cf554371d709f7',1,'lbann::reLU_layer']]],
-  ['reluprime',['reLUPrime',['../classlbann_1_1reLU__layer.html#a6fa1b5ad06cb8cd6277bcfae76efc0e4',1,'lbann::reLU_layer']]],
   ['remove',['remove',['../classlbann_1_1sequential__model.html#a65505f140bd9ffa43af0ead3b911ae52',1,'lbann::sequential_model']]],
   ['remove_5fmirror',['remove_mirror',['../classlbann_1_1greedy__layerwise__autoencoder.html#a90afd0c31448bb8f9f6e1e9f39f416a3',1,'lbann::greedy_layerwise_autoencoder']]],
   ['report_5faggregate_5favg_5fobj_5ffn',['report_aggregate_avg_obj_fn',['../classlbann_1_1objective__functions_1_1objective__fn.html#a42e838b20ca5f1c6550ec2c8fe04500f',1,'lbann::objective_functions::objective_fn']]],

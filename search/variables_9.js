@@ -8,7 +8,6 @@ var searchData=
   ['layer_5fparams',['layer_params',['../classlbann_1_1lbann__callback__imcomm.html#a6a016de82da3111b1591de43d899da50',1,'lbann::lbann_callback_imcomm']]],
   ['layers',['layers',['../structlbann__model__sequential__header.html#a048e5c0b369cdafbbc97edb9f34bae35',1,'lbann_model_sequential_header']]],
   ['ldim',['ldim',['../structlayer__header.html#a5b4ee2de6371d894b5646b74ceb5c321',1,'layer_header']]],
-  ['leak',['leak',['../classlbann_1_1leaky__reLU__layer.html#a7634576fcba52ce9bee806a1f59bc28f',1,'lbann::leaky_reLU_layer']]],
   ['learning_5frate',['learning_rate',['../structlbann__checkpoint.html#a35cd46dfca2d5188fd8957867e24abdb',1,'lbann_checkpoint']]],
   ['learnrate',['LearnRate',['../classlbann_1_1TrainingParams.html#a7f6c77122caa8317cecb625f607ded70',1,'lbann::TrainingParams']]],
   ['learnratemethod',['LearnRateMethod',['../classlbann_1_1TrainingParams.html#a6f1d673460c793b88c773b97d99e89ee',1,'lbann::TrainingParams']]],

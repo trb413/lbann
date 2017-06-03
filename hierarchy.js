@@ -52,6 +52,7 @@ var hierarchy =
       [ "lbann::reLU_layer", "classlbann_1_1reLU__layer.html", null ],
       [ "lbann::sigmoid_layer", "classlbann_1_1sigmoid__layer.html", null ],
       [ "lbann::smooth_reLU_layer", "classlbann_1_1smooth__reLU__layer.html", null ],
+      [ "lbann::softplus_layer", "classlbann_1_1softplus__layer.html", null ],
       [ "lbann::tanh_layer", "classlbann_1_1tanh__layer.html", null ]
     ] ],
     [ "lbann::base_factory< Method >", "classlbann_1_1base__factory.html", null ],

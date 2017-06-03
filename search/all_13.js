@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['tanh',['tanh',['../classlbann_1_1tanh__layer.html#addef58611ec7ea58cb575e985aee0237',1,'lbann::tanh_layer::tanh()'],['../namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a143c8c6f51b9bb893ce71e38702e3cc1',1,'lbann::TANH()']]],
+  ['tanh',['TANH',['../namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a143c8c6f51b9bb893ce71e38702e3cc1',1,'lbann']]],
   ['tanh_5flayer',['tanh_layer',['../classlbann_1_1tanh__layer.html',1,'lbann']]],
-  ['tanhprime',['tanhPrime',['../classlbann_1_1tanh__layer.html#a709d3f8e74f426bb4a5f766e903ce7c8',1,'lbann::tanh_layer']]],
   ['target_5fdistributed_5fminibatch',['target_distributed_minibatch',['../namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743af5026f0a52d801c2ee10ed3fe0d6174b',1,'lbann']]],
   ['target_5fdistributed_5fminibatch_5fparallel_5fio',['target_distributed_minibatch_parallel_io',['../namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a824c8cd6e0c951b7a752369374ab723a',1,'lbann']]],
   ['target_5flayer',['target_layer',['../classlbann_1_1target__layer.html',1,'lbann']]],

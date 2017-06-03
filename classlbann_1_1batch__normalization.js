@@ -21,6 +21,5 @@ var classlbann_1_1batch__normalization =
     [ "m_mean", "classlbann_1_1batch__normalization.html#a90994634aaccb9e2ad735ba5079f85d9", null ],
     [ "m_running_mean", "classlbann_1_1batch__normalization.html#a8436d502ae49d92e2193bd1324e4b5d8", null ],
     [ "m_running_var", "classlbann_1_1batch__normalization.html#a013b023913a508aac28748df51624b91", null ],
-    [ "m_var", "classlbann_1_1batch__normalization.html#a572279bb7a37f7c228042ad3f99c06be", null ],
-    [ "m_weighted_sum_copy", "classlbann_1_1batch__normalization.html#a128c26c48f4548efab7d30caad99564c", null ]
+    [ "m_var", "classlbann_1_1batch__normalization.html#a572279bb7a37f7c228042ad3f99c06be", null ]
 ];

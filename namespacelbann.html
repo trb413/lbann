@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">b98b173-ci238908271</span>
+   &#160;<span id="projectnumber">ea8b2b9-ci238959250</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -200,6 +200,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1leaky__reLU__layer.html">leaky_reLU_layer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1softplus__layer.html">softplus_layer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1smooth__reLU__layer.html">smooth_reLU_layer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1ELU__layer.html">ELU_layer</a></td></tr>
@@ -348,6 +350,7 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ab718adec73e04ce3ec720dd11a06a308">activation_type::ID</a>, 
 <br/>
 &#160;&#160;<a class="el" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ac7e80a3de04936f4e423e1b564fdca10">activation_type::LEAKY_RELU</a>, 
+<a class="el" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a350cd38d0a0443f60c8fffa3fba3a45d">activation_type::SOFTPLUS</a>, 
 <a class="el" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a03fd8eb91a5c2091541dd9815a011f63">activation_type::SMOOTH_RELU</a>, 
 <a class="el" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a5b44c930bf0ddeef48b50ef11e5ddd58">activation_type::ELU</a>
 <br/>
@@ -356,8 +359,6 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac5723897a72209964fd0eb14ad416d18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1Activation.html">Activation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#ac5723897a72209964fd0eb14ad416d18">new_activation</a> (<a class="el" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76">activation_type</a> act_fn, <a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> param)</td></tr>
-<tr class="separator:ac5723897a72209964fd0eb14ad416d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7eae9c1a433564435e5464eabd29ea4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#aa7eae9c1a433564435e5464eabd29ea4">initialize</a> (<a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>)</td></tr>
 <tr class="separator:aa7eae9c1a433564435e5464eabd29ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7729c7ef241072e5db720242b4d49b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#af7729c7ef241072e5db720242b4d49b0">finalize</a> ()</td></tr>
@@ -444,6 +445,9 @@ Functions</h2></td></tr>
 <tr class="separator:a66f98f36cf54dca622f1186309961dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65056cb9ae34866d6252f18da0697c58"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#a65056cb9ae34866d6252f18da0697c58">_layer_type_to_string</a> (<a class="el" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743">layer_type</a> l)</td></tr>
 <tr class="separator:a65056cb9ae34866d6252f18da0697c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc1a6b4f98b412f48a2f29b02e48a77"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a6bc1a6b4f98b412f48a2f29b02e48a77"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1Activation.html">Activation</a> *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelbann.html#a6bc1a6b4f98b412f48a2f29b02e48a77">new_activation</a> (<a class="el" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76">activation_type</a> act_fn, Args...params)</td></tr>
+<tr class="separator:a6bc1a6b4f98b412f48a2f29b02e48a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06fd1f9a7d05d355fa9936c46347a77f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#a06fd1f9a7d05d355fa9936c46347a77f">lbann_report_exception</a> (<a class="el" href="classlbann_1_1lbann__exception.html">lbann_exception</a> &amp;e, <a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>=<a class="el" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>, std::ostream &amp;os=std::cerr)</td></tr>
 <tr class="separator:a06fd1f9a7d05d355fa9936c46347a77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2ef30c32c60eeb1d6d2b6ef29707f08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#af2ef30c32c60eeb1d6d2b6ef29707f08">im2col</a> (const <a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;im, <a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;col, const std::vector&lt; El::Int &gt; &amp;im_dims, const std::vector&lt; El::Int &gt; &amp;im_pads, El::Int num_im_channels, const std::vector&lt; El::Int &gt; &amp;window_dims, const std::vector&lt; El::Int &gt; &amp;window_strides)</td></tr>
@@ -534,31 +538,31 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="ab00e153fabca7ab166e4d79d47c05c76ac7e80a3de04936f4e423e1b564fdca10"></a>LEAKY_RELU</em>&#160;</td><td class="fielddoc">
 </td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="ab00e153fabca7ab166e4d79d47c05c76a350cd38d0a0443f60c8fffa3fba3a45d"></a>SOFTPLUS</em>&#160;</td><td class="fielddoc">
+</td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="ab00e153fabca7ab166e4d79d47c05c76a03fd8eb91a5c2091541dd9815a011f63"></a>SMOOTH_RELU</em>&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><em><a class="anchor" id="ab00e153fabca7ab166e4d79d47c05c76a5b44c930bf0ddeef48b50ef11e5ddd58"></a>ELU</em>&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00035">35</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                           {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="comment">//if you add or change the following enums, please also edit the </span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="comment">//activation_name() method in the Activation class</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ab299f45b5de2a8f7c45192590290742b">SIGMOID</a> = 1,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a143c8c6f51b9bb893ce71e38702e3cc1">TANH</a>,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ad346bb4679d29be241279f15d7795c1c">RELU</a>,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ab718adec73e04ce3ec720dd11a06a308">ID</a>,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ac7e80a3de04936f4e423e1b564fdca10">LEAKY_RELU</a>,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor"></span>  SOFTPLUS,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span>  <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a03fd8eb91a5c2091541dd9815a011f63">SMOOTH_RELU</a>,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span>  <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a5b44c930bf0ddeef48b50ef11e5ddd58">ELU</a></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00036">36</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                           {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="comment">//if you add or change the following enums, please also edit the </span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="comment">//activation_name() method in the Activation class</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ab299f45b5de2a8f7c45192590290742b">SIGMOID</a> = 1,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a143c8c6f51b9bb893ce71e38702e3cc1">TANH</a>,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ad346bb4679d29be241279f15d7795c1c">RELU</a>,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ab718adec73e04ce3ec720dd11a06a308">ID</a>,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ac7e80a3de04936f4e423e1b564fdca10">LEAKY_RELU</a>,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a350cd38d0a0443f60c8fffa3fba3a45d">SOFTPLUS</a>,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a03fd8eb91a5c2091541dd9815a011f63">SMOOTH_RELU</a>,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a5b44c930bf0ddeef48b50ef11e5ddd58">ELU</a></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
 <div class="ttc" id="namespacelbann_html_ab00e153fabca7ab166e4d79d47c05c76a143c8c6f51b9bb893ce71e38702e3cc1"><div class="ttname"><a href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a143c8c6f51b9bb893ce71e38702e3cc1">lbann::activation_type::TANH</a></div></div>
 <div class="ttc" id="namespacelbann_html_ab00e153fabca7ab166e4d79d47c05c76ab299f45b5de2a8f7c45192590290742b"><div class="ttname"><a href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ab299f45b5de2a8f7c45192590290742b">lbann::activation_type::SIGMOID</a></div></div>
 <div class="ttc" id="namespacelbann_html_ab00e153fabca7ab166e4d79d47c05c76ad346bb4679d29be241279f15d7795c1c"><div class="ttname"><a href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ad346bb4679d29be241279f15d7795c1c">lbann::activation_type::RELU</a></div></div>
+<div class="ttc" id="namespacelbann_html_ab00e153fabca7ab166e4d79d47c05c76a350cd38d0a0443f60c8fffa3fba3a45d"><div class="ttname"><a href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a350cd38d0a0443f60c8fffa3fba3a45d">lbann::activation_type::SOFTPLUS</a></div></div>
 <div class="ttc" id="namespacelbann_html_ab00e153fabca7ab166e4d79d47c05c76a03fd8eb91a5c2091541dd9815a011f63"><div class="ttname"><a href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a03fd8eb91a5c2091541dd9815a011f63">lbann::activation_type::SMOOTH_RELU</a></div></div>
 <div class="ttc" id="namespacelbann_html_ab00e153fabca7ab166e4d79d47c05c76a5b44c930bf0ddeef48b50ef11e5ddd58"><div class="ttname"><a href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a5b44c930bf0ddeef48b50ef11e5ddd58">lbann::activation_type::ELU</a></div></div>
 <div class="ttc" id="namespacelbann_html_ab00e153fabca7ab166e4d79d47c05c76ab718adec73e04ce3ec720dd11a06a308"><div class="ttname"><a href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ab718adec73e04ce3ec720dd11a06a308">lbann::activation_type::ID</a></div></div>
@@ -2677,12 +2681,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ac5723897a72209964fd0eb14ad416d18"></a>
+<a class="anchor" id="a6bc1a6b4f98b412f48a2f29b02e48a77"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classlbann_1_1Activation.html">Activation</a> * lbann::new_activation </td>
+          <td class="memname"><a class="el" href="classlbann_1_1Activation.html">Activation</a>* lbann::new_activation </td>
           <td>(</td>
           <td class="paramtype">activation_type&#160;</td>
           <td class="paramname"><em>act_fn</em>, </td>
@@ -2690,8 +2696,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&#160;</td>
-          <td class="paramname"><em>param</em> = <code>0.0f</code>&#160;</td>
+          <td class="paramtype">Args...&#160;</td>
+          <td class="paramname"><em>params</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2702,39 +2708,36 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Return a new <a class="el" href="classlbann_1_1Activation.html">Activation</a> class of type act_fn. </p>
 
-<p>Definition at line <a class="el" href="lbann__layer__activations_8cpp_source.html#l00037">37</a> of file <a class="el" href="lbann__layer__activations_8cpp_source.html">lbann_layer_activations.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                                                   {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">switch</span> (act_fn) {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordflow">case</span> activation_type::SIGMOID:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> sigmoid_layer();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordflow">case</span> activation_type::TANH:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> tanh_layer();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">case</span> activation_type::RELU:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> reLU_layer();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordflow">case</span> activation_type::ID:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> id_layer();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">case</span> activation_type::LEAKY_RELU:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> leaky_reLU_layer(param);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">case</span> activation_type::SOFTPLUS:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> softplus_layer();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">case</span> activation_type::SMOOTH_RELU:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> smooth_reLU_layer();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">case</span> activation_type::ELU:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> ELU_layer();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(<span class="stringliteral">&quot;Unsupported activation type.&quot;</span>);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;  <span class="comment">// Never reached.</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00210">210</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                                                                   {</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="keywordflow">switch</span> (act_fn) {</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keywordflow">case</span> activation_type::SIGMOID:</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> sigmoid_layer();</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keywordflow">case</span> activation_type::TANH:</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> tanh_layer();</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keywordflow">case</span> activation_type::RELU:</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> reLU_layer();</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keywordflow">case</span> activation_type::ID:</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> id_layer();</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keywordflow">case</span> activation_type::LEAKY_RELU:</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> leaky_reLU_layer(params...);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="keywordflow">case</span> activation_type::SOFTPLUS:</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> softplus_layer();</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordflow">case</span> activation_type::SMOOTH_RELU:</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> smooth_reLU_layer();</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordflow">case</span> activation_type::ELU:</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> ELU_layer(params...);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(<span class="stringliteral">&quot;Unsupported activation type.&quot;</span>);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;  <span class="comment">// Never reached.</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;}</div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespacelbann_ac5723897a72209964fd0eb14ad416d18_icgraph.png" border="0" usemap="#namespacelbann_ac5723897a72209964fd0eb14ad416d18_icgraph" alt=""/></div>
-<map name="namespacelbann_ac5723897a72209964fd0eb14ad416d18_icgraph" id="namespacelbann_ac5723897a72209964fd0eb14ad416d18_icgraph">
+<div class="center"><img src="namespacelbann_a6bc1a6b4f98b412f48a2f29b02e48a77_icgraph.png" border="0" usemap="#namespacelbann_a6bc1a6b4f98b412f48a2f29b02e48a77_icgraph" alt=""/></div>
+<map name="namespacelbann_a6bc1a6b4f98b412f48a2f29b02e48a77_icgraph" id="namespacelbann_a6bc1a6b4f98b412f48a2f29b02e48a77_icgraph">
 <area shape="rect" id="node2" href="classlbann_1_1Layer.html#a1483cd7103a5f739c4f8bac4a0d005dc" title="lbann::Layer::Layer" alt="" coords="203,5,336,32"/></map>
 </div>
 </p>
@@ -3999,7 +4002,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li>
-    <li class="footer">Generated on Fri Jun 2 2017 20:59:00 for LBANN by
+    <li class="footer">Generated on Sat Jun 3 2017 00:04:51 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

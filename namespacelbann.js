@@ -48,6 +48,7 @@ var namespacelbann =
     [ "reLU_layer", "classlbann_1_1reLU__layer.html", "classlbann_1_1reLU__layer" ],
     [ "id_layer", "classlbann_1_1id__layer.html", "classlbann_1_1id__layer" ],
     [ "leaky_reLU_layer", "classlbann_1_1leaky__reLU__layer.html", "classlbann_1_1leaky__reLU__layer" ],
+    [ "softplus_layer", "classlbann_1_1softplus__layer.html", "classlbann_1_1softplus__layer" ],
     [ "smooth_reLU_layer", "classlbann_1_1smooth__reLU__layer.html", "classlbann_1_1smooth__reLU__layer" ],
     [ "ELU_layer", "classlbann_1_1ELU__layer.html", "classlbann_1_1ELU__layer" ],
     [ "convolutional_layer", "classlbann_1_1convolutional__layer.html", "classlbann_1_1convolutional__layer" ],

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">b98b173-ci238908271</span>
+   &#160;<span id="projectnumber">ea8b2b9-ci238959250</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -95,16 +95,19 @@ $(document).ready(function(){initNavTree('classlbann_1_1id__layer.html','');});
 
 <p>This is the complete list of members for <a class="el" href="classlbann_1_1id__layer.html">lbann::id_layer</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1Activation.html#a0f754b8f10cc81f13a318ffb8fc754b3">activation_name</a>(activation_type id)</td><td class="entry"><a class="el" href="classlbann_1_1Activation.html">lbann::Activation</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classlbann_1_1id__layer.html#aa7d9cade77244bde172aa071a9ca029f">backwardProp</a>(ElMat &amp;m)</td><td class="entry"><a class="el" href="classlbann_1_1id__layer.html">lbann::id_layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1id__layer.html#a5cdba1b63398db433fb18ead0845a1b9">forwardProp</a>(ElMat &amp;m)</td><td class="entry"><a class="el" href="classlbann_1_1id__layer.html">lbann::id_layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classlbann_1_1Activation.html#a93f28dac9ec750472f9fc3058fffc705">~Activation</a>()</td><td class="entry"><a class="el" href="classlbann_1_1Activation.html">lbann::Activation</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1id__layer.html#a212ebdf14565099b8bd9bd580313986c">act</a>(const DataType &amp;z)</td><td class="entry"><a class="el" href="classlbann_1_1id__layer.html">lbann::id_layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classlbann_1_1id__layer.html#af185f422baca254f851d942198ca46df">act_prime</a>(const DataType &amp;z)</td><td class="entry"><a class="el" href="classlbann_1_1id__layer.html">lbann::id_layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1Activation.html#a8b5e4d5c75488511c80a7ee39ff1cd46">activation_name</a>(activation_type id)</td><td class="entry"><a class="el" href="classlbann_1_1Activation.html">lbann::Activation</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classlbann_1_1id__layer.html#aa7d9cade77244bde172aa071a9ca029f">backwardProp</a>(ElMat &amp;m)</td><td class="entry"><a class="el" href="classlbann_1_1id__layer.html">lbann::id_layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1id__layer.html#ae6327122f60cff1b3b3ade35f87e1afc">backwardPropError</a>(const ElMat &amp;m, ElMat &amp;prev_error_signal)</td><td class="entry"><a class="el" href="classlbann_1_1id__layer.html">lbann::id_layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classlbann_1_1id__layer.html#a5cdba1b63398db433fb18ead0845a1b9">forwardProp</a>(ElMat &amp;m)</td><td class="entry"><a class="el" href="classlbann_1_1id__layer.html">lbann::id_layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">private</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1Activation.html#a93f28dac9ec750472f9fc3058fffc705">~Activation</a>()</td><td class="entry"><a class="el" href="classlbann_1_1Activation.html">lbann::Activation</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jun 2 2017 20:59:01 for LBANN by
+    <li class="footer">Generated on Sat Jun 3 2017 00:04:52 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

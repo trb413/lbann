@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['tanh',['tanh',['../classlbann_1_1tanh__layer.html#addef58611ec7ea58cb575e985aee0237',1,'lbann::tanh_layer']]],
-  ['tanhprime',['tanhPrime',['../classlbann_1_1tanh__layer.html#a709d3f8e74f426bb4a5f766e903ce7c8',1,'lbann::tanh_layer']]],
   ['target_5flayer',['target_layer',['../classlbann_1_1target__layer.html#ae2397978bc395d5f8d0c94c42ce5da2a',1,'lbann::target_layer']]],
   ['target_5flayer_5fdistributed_5fminibatch',['target_layer_distributed_minibatch',['../classlbann_1_1target__layer__distributed__minibatch.html#a67a30cf25b6475d01e468264836f4e6f',1,'lbann::target_layer_distributed_minibatch']]],
   ['target_5flayer_5fdistributed_5fminibatch_5fparallel_5fio',['target_layer_distributed_minibatch_parallel_io',['../classlbann_1_1target__layer__distributed__minibatch__parallel__io.html#a14a9b55d869a9ee19256856106ddf3e7',1,'lbann::target_layer_distributed_minibatch_parallel_io']]],
