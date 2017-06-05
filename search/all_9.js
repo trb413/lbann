@@ -4,7 +4,7 @@ var searchData=
   ['id_5flayer',['id_layer',['../classlbann_1_1id__layer.html',1,'lbann']]],
   ['id_5frecv',['id_recv',['../structlbann_1_1lbann__comm_1_1allreduce__options.html#a91ab3b21e8345915d3a8eedb65c2f52e',1,'lbann::lbann_comm::allreduce_options']]],
   ['im2col',['im2col',['../namespacelbann.html#a527cf8b31e4625a550eccdb5485e3660',1,'lbann::im2col(const Mat &amp;im, Mat &amp;col, const std::vector&lt; Int &gt; &amp;im_dims, const std::vector&lt; Int &gt; &amp;im_pads, Int num_im_channels, const std::vector&lt; Int &gt; &amp;window_dims, const std::vector&lt; Int &gt; &amp;window_strides)'],['../namespacelbann.html#af2ef30c32c60eeb1d6d2b6ef29707f08',1,'lbann::im2col(const Mat &amp;im, Mat &amp;col, const std::vector&lt; El::Int &gt; &amp;im_dims, const std::vector&lt; El::Int &gt; &amp;im_pads, El::Int num_im_channels, const std::vector&lt; El::Int &gt; &amp;window_dims, const std::vector&lt; El::Int &gt; &amp;window_strides)']]],
-  ['im2col_5f2d',['im2col_2d',['../namespacelbann.html#ad58f2be3b75e6b36a4bf717f6fdab928',1,'lbann']]],
+  ['im2col_5f2d',['im2col_2d',['../namespacelbann.html#adc05d10657be77ccd9a74b1621c416c3',1,'lbann']]],
   ['image_5futils',['image_utils',['../classlbann_1_1image__utils.html',1,'lbann']]],
   ['imagelist',['ImageList',['../classlbann_1_1DataReader__ImageNet.html#aa4203ab75865ebf9b14696d9a4ef1739',1,'lbann::DataReader_ImageNet::ImageList()'],['../classlbann_1_1DataReader__ImageNet__cv.html#a06529c2c6127c56d95c111d7859db5a0',1,'lbann::DataReader_ImageNet_cv::ImageList()']]],
   ['imcomm_5fparams',['imcomm_params',['../structlbann_1_1lbann__callback__imcomm_1_1imcomm__params.html',1,'lbann::lbann_callback_imcomm']]],
