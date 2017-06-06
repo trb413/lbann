@@ -8,6 +8,7 @@ var searchData=
   ['gen_5funiform_5freal',['gen_uniform_real',['../classlbann_1_1patchworks_1_1rand__patch.html#adf3b751278ff2e6644e33d6493b12bba',1,'lbann::patchworks::rand_patch']]],
   ['generator',['generator',['../classlbann_1_1patchworks_1_1rand__patch.html#ae26b4d14a81a135646a1502663e141ea',1,'lbann::patchworks::rand_patch::generator()'],['../namespaceanonymous__namespace_02lbann__random_8cpp_03.html#a6381148d83b28d7418e6736b1b8c0280',1,'anonymous_namespace{lbann_random.cpp}::generator()']]],
   ['generator_5ft',['generator_t',['../classlbann_1_1patchworks_1_1rand__patch.html#a077c3ee003b9ab8cf2966a820c131caa',1,'lbann::patchworks::rand_patch']]],
+  ['get_5factivation_5ftype',['get_activation_type',['../lbann__proto__common_8cpp.html#a1a091b865579703925507218ce639fbe',1,'lbann_proto_common.cpp']]],
   ['get_5factivations',['get_activations',['../classlbann_1_1Layer.html#a6ae06b86f19fbfacdc7b4ec171a793d3',1,'lbann::Layer']]],
   ['get_5fadaptive_5fquantization_5fcopy_5fthreads',['get_adaptive_quantization_copy_threads',['../classlbann_1_1lbann__quantizer.html#a22b898932caed41ccf24abcb67c00ba1',1,'lbann::lbann_quantizer']]],
   ['get_5fadaptive_5fquantization_5fthreads',['get_adaptive_quantization_threads',['../classlbann_1_1lbann__quantizer.html#aaa0c20f755437130172c40ca8e95bc3f',1,'lbann::lbann_quantizer']]],
@@ -43,6 +44,7 @@ var searchData=
   ['get_5fcurrent_5fmini_5fbatch_5fsize',['get_current_mini_batch_size',['../classlbann_1_1model.html#a7889df80a48db23b1b7a1c276e2d53e4',1,'lbann::model']]],
   ['get_5fcurrent_5fphase',['get_current_phase',['../classlbann_1_1model.html#aaac76906df59991f6adcf354b4b1b570',1,'lbann::model']]],
   ['get_5fdata_5ffilename',['get_data_filename',['../classlbann_1_1DataReader.html#a4afa84358dfd71b5fe3cb4e8203b9ca9',1,'lbann::DataReader']]],
+  ['get_5fdata_5flayout',['get_data_layout',['../lbann__proto__common_8cpp.html#a25c2b5549b17bccf63d27682923877e8',1,'lbann_proto_common.cpp']]],
   ['get_5fdata_5fseq_5fgenerator',['get_data_seq_generator',['../namespacelbann.html#aba9d11cb3a739cd84e7234ceeb32d098',1,'lbann']]],
   ['get_5fdefault_5fallreduce_5falgorithm',['get_default_allreduce_algorithm',['../classlbann_1_1lbann__comm.html#a593144edfb5094bb9dbfd302d0f6e21b',1,'lbann::lbann_comm']]],
   ['get_5fdist_5fmat',['get_dist_mat',['../classlbann_1_1input__layer__distributed__minibatch.html#accc27f5067841f5430a45dc09a617758',1,'lbann::input_layer_distributed_minibatch::get_dist_mat()'],['../classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a72de912cb132a30996ae35caa7c3e339',1,'lbann::input_layer_distributed_minibatch_parallel_io::get_dist_mat()']]],
@@ -106,6 +108,7 @@ var searchData=
   ['get_5funused_5fdata',['get_unused_data',['../classlbann_1_1DataReader.html#a9053f8473ddf7ea172500c29373b8c70',1,'lbann::DataReader']]],
   ['get_5fuse_5fpercent',['get_use_percent',['../classlbann_1_1DataReader.html#a598360c61ad8f2dcef4f25c620be26ce',1,'lbann::DataReader']]],
   ['get_5fvalidation_5fpercent',['get_validation_percent',['../classlbann_1_1DataReader.html#a71a80fa6b6aab290baba41bcd6b1e4bc',1,'lbann::DataReader']]],
+  ['get_5fweight_5finitialization',['get_weight_initialization',['../lbann__proto__common_8cpp.html#a83d7858d59d2e3855206d15a6c42ad93',1,'lbann_proto_common.cpp']]],
   ['get_5fweights_5fbiases',['get_weights_biases',['../classlbann_1_1Layer.html#a190982036d52d288d3528a16e30418e0',1,'lbann::Layer']]],
   ['get_5fweights_5fbiases_5fgradient',['get_weights_biases_gradient',['../classlbann_1_1Layer.html#a4b2b92aa11d932d62456c21ed929b263',1,'lbann::Layer']]],
   ['get_5fworld_5fmaster',['get_world_master',['../classlbann_1_1lbann__comm.html#ac1bcd6a5e38ad3a7e86171435642bc9f',1,'lbann::lbann_comm']]],
@@ -123,7 +126,7 @@ var searchData=
   ['global_5fbarrier',['global_barrier',['../classlbann_1_1lbann__comm.html#ae12af95f4826571efa03fb8520260daa',1,'lbann::lbann_comm']]],
   ['glorot_5fnormal',['glorot_normal',['../lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ab507cf76b5f5f5bf34a68f6376bf0238',1,'lbann_base.hpp']]],
   ['glorot_5funiform',['glorot_uniform',['../lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a4b78361151cbfcca33e1d560fbaedd59',1,'lbann_base.hpp']]],
-  ['greedy_5flayerwise_5fautoencoder',['greedy_layerwise_autoencoder',['../classlbann_1_1greedy__layerwise__autoencoder.html',1,'lbann']]],
   ['greedy_5flayerwise_5fautoencoder',['greedy_layerwise_autoencoder',['../classlbann_1_1greedy__layerwise__autoencoder.html#a99f87e486e5887b379b148a8c67c2a82',1,'lbann::greedy_layerwise_autoencoder']]],
+  ['greedy_5flayerwise_5fautoencoder',['greedy_layerwise_autoencoder',['../classlbann_1_1greedy__layerwise__autoencoder.html',1,'lbann']]],
   ['grid',['grid',['../classlbann_1_1lbann__comm.html#a29fb31be115db3225b145f250a7778d9',1,'lbann::lbann_comm::grid()'],['../lbann__base_8hpp.html#a4c600bf682fbf8018385607476e4bd13',1,'Grid():&#160;lbann_base.hpp']]]
 ];

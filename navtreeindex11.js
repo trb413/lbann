@@ -1,5 +1,11 @@
 var NAVTREEINDEX11 =
 {
+"struct__UCHAR3.html":[3,0,38],
+"struct__UCHAR3.html#a2e38cba7d5af017c4160b02f8c70bab8":[3,0,38,1],
+"struct__UCHAR3.html#a5d6ef45c531e60396a455779fbe416d0":[3,0,38,2],
+"struct__UCHAR3.html#a652b71ed1a06e71323bcafb80c1199a8":[3,0,38,0],
+"struct__UCHAR4.html":[3,0,39],
+"struct__UCHAR4.html#a118296cf6346c2e4b35a59c8b16eaaac":[3,0,39,0],
 "struct__UCHAR4.html#a3fc1b39fc999aee1d4f2e89534ef8687":[3,0,39,2],
 "struct__UCHAR4.html#aafa610562d1617ca95274827d828f8a5":[3,0,39,3],
 "struct__UCHAR4.html#aebaf44f3fecd56d6e8d4b977a34f0eef":[3,0,39,1],
