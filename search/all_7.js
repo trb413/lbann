@@ -40,7 +40,7 @@ var searchData=
   ['get_5fcurrent_5fmini_5fbatch_5fsize',['get_current_mini_batch_size',['../classlbann_1_1model.html#a7889df80a48db23b1b7a1c276e2d53e4',1,'lbann::model']]],
   ['get_5fcurrent_5fphase',['get_current_phase',['../classlbann_1_1model.html#aaac76906df59991f6adcf354b4b1b570',1,'lbann::model']]],
   ['get_5fdata_5ffilename',['get_data_filename',['../classlbann_1_1DataReader.html#a4afa84358dfd71b5fe3cb4e8203b9ca9',1,'lbann::DataReader']]],
-  ['get_5fdata_5flayout',['get_data_layout',['../lbann__proto__common_8cpp.html#a25c2b5549b17bccf63d27682923877e8',1,'lbann_proto_common.cpp']]],
+  ['get_5fdata_5flayout',['get_data_layout',['../lbann__proto__common_8cpp.html#acf81b14e87938b50bb380a34773fa135',1,'lbann_proto_common.cpp']]],
   ['get_5fdata_5fseq_5fgenerator',['get_data_seq_generator',['../namespacelbann.html#aba9d11cb3a739cd84e7234ceeb32d098',1,'lbann']]],
   ['get_5fdefault_5fallreduce_5falgorithm',['get_default_allreduce_algorithm',['../classlbann_1_1lbann__comm.html#a593144edfb5094bb9dbfd302d0f6e21b',1,'lbann::lbann_comm']]],
   ['get_5fdist_5fmat',['get_dist_mat',['../classlbann_1_1input__layer__distributed__minibatch.html#accc27f5067841f5430a45dc09a617758',1,'lbann::input_layer_distributed_minibatch::get_dist_mat()'],['../classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a72de912cb132a30996ae35caa7c3e339',1,'lbann::input_layer_distributed_minibatch_parallel_io::get_dist_mat()']]],
