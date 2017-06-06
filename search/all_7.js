@@ -3,11 +3,7 @@ var searchData=
   ['gaussian_5ffill',['gaussian_fill',['../namespacelbann.html#a057b6c1efb3f6fcbe8ebe08f8506fee1',1,'lbann']]],
   ['gaussian_5ffill_5fprocdet',['gaussian_fill_procdet',['../namespacelbann.html#a4fab058e5091cf12e918d879c340f125',1,'lbann']]],
   ['gen',['gen',['../classlbann_1_1rng.html#a1c8a2640dd522c6fc63bf2de09ff3e84',1,'lbann::rng']]],
-  ['gen_5fnormal',['gen_normal',['../classlbann_1_1patchworks_1_1rand__patch.html#a4c085a00c660b51767a7f2f08f30e74c',1,'lbann::patchworks::rand_patch']]],
-  ['gen_5funiform_5fint',['gen_uniform_int',['../classlbann_1_1patchworks_1_1rand__patch.html#a01e0e6719812cb5bb405dbb98ed9b47f',1,'lbann::patchworks::rand_patch']]],
-  ['gen_5funiform_5freal',['gen_uniform_real',['../classlbann_1_1patchworks_1_1rand__patch.html#adf3b751278ff2e6644e33d6493b12bba',1,'lbann::patchworks::rand_patch']]],
-  ['generator',['generator',['../classlbann_1_1patchworks_1_1rand__patch.html#ae26b4d14a81a135646a1502663e141ea',1,'lbann::patchworks::rand_patch::generator()'],['../namespaceanonymous__namespace_02lbann__random_8cpp_03.html#a6381148d83b28d7418e6736b1b8c0280',1,'anonymous_namespace{lbann_random.cpp}::generator()']]],
-  ['generator_5ft',['generator_t',['../classlbann_1_1patchworks_1_1rand__patch.html#a077c3ee003b9ab8cf2966a820c131caa',1,'lbann::patchworks::rand_patch']]],
+  ['generator',['generator',['../namespaceanonymous__namespace_02lbann__random_8cpp_03.html#a6381148d83b28d7418e6736b1b8c0280',1,'anonymous_namespace{lbann_random.cpp}']]],
   ['get_5factivation_5ftype',['get_activation_type',['../lbann__proto__common_8cpp.html#a1a091b865579703925507218ce639fbe',1,'lbann_proto_common.cpp']]],
   ['get_5factivations',['get_activations',['../classlbann_1_1Layer.html#a6ae06b86f19fbfacdc7b4ec171a793d3',1,'lbann::Layer']]],
   ['get_5fadaptive_5fquantization_5fcopy_5fthreads',['get_adaptive_quantization_copy_threads',['../classlbann_1_1lbann__quantizer.html#a22b898932caed41ccf24abcb67c00ba1',1,'lbann::lbann_quantizer']]],
@@ -126,7 +122,7 @@ var searchData=
   ['global_5fbarrier',['global_barrier',['../classlbann_1_1lbann__comm.html#ae12af95f4826571efa03fb8520260daa',1,'lbann::lbann_comm']]],
   ['glorot_5fnormal',['glorot_normal',['../lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ab507cf76b5f5f5bf34a68f6376bf0238',1,'lbann_base.hpp']]],
   ['glorot_5funiform',['glorot_uniform',['../lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a4b78361151cbfcca33e1d560fbaedd59',1,'lbann_base.hpp']]],
-  ['greedy_5flayerwise_5fautoencoder',['greedy_layerwise_autoencoder',['../classlbann_1_1greedy__layerwise__autoencoder.html#a99f87e486e5887b379b148a8c67c2a82',1,'lbann::greedy_layerwise_autoencoder']]],
   ['greedy_5flayerwise_5fautoencoder',['greedy_layerwise_autoencoder',['../classlbann_1_1greedy__layerwise__autoencoder.html',1,'lbann']]],
+  ['greedy_5flayerwise_5fautoencoder',['greedy_layerwise_autoencoder',['../classlbann_1_1greedy__layerwise__autoencoder.html#a99f87e486e5887b379b148a8c67c2a82',1,'lbann::greedy_layerwise_autoencoder']]],
   ['grid',['grid',['../classlbann_1_1lbann__comm.html#a29fb31be115db3225b145f250a7778d9',1,'lbann::lbann_comm::grid()'],['../lbann__base_8hpp.html#a4c600bf682fbf8018385607476e4bd13',1,'Grid():&#160;lbann_base.hpp']]]
 ];

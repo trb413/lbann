@@ -157,7 +157,6 @@ var hierarchy =
       [ "lbann::rmsprop_factory", "classlbann_1_1rmsprop__factory.html", null ],
       [ "lbann::sgd_factory", "classlbann_1_1sgd__factory.html", null ]
     ] ],
-    [ "lbann::patchworks::rand_patch< RealT, IntT >", "classlbann_1_1patchworks_1_1rand__patch.html", null ],
     [ "lbann::PerformanceParams", "classlbann_1_1PerformanceParams.html", null ],
     [ "lbann::persist", "classlbann_1_1persist.html", null ],
     [ "lbann::regularizer", "classlbann_1_1regularizer.html", [

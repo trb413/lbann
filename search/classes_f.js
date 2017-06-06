@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['rand_5fpatch',['rand_patch',['../classlbann_1_1patchworks_1_1rand__patch.html',1,'lbann::patchworks']]],
   ['reconstruction_5flayer',['reconstruction_layer',['../classlbann_1_1reconstruction__layer.html',1,'lbann']]],
   ['regularizer',['regularizer',['../classlbann_1_1regularizer.html',1,'lbann']]],
   ['relu_5flayer',['reLU_layer',['../classlbann_1_1reLU__layer.html',1,'lbann']]],

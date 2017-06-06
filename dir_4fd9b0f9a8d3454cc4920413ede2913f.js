@@ -5,6 +5,7 @@ var dir_4fd9b0f9a8d3454cc4920413ede2913f =
     [ "lbann_cv_colorizer.cpp", "lbann__cv__colorizer_8cpp.html", null ],
     [ "lbann_cv_normalizer.cpp", "lbann__cv__normalizer_8cpp.html", null ],
     [ "lbann_cv_process.cpp", "lbann__cv__process_8cpp.html", null ],
+    [ "lbann_cv_process_patches.cpp", "lbann__cv__process__patches_8cpp.html", null ],
     [ "lbann_cv_utils.cpp", "lbann__cv__utils_8cpp.html", null ],
     [ "lbann_data_reader.cpp", "lbann__data__reader_8cpp.html", null ],
     [ "lbann_data_reader_cifar10.cpp", "lbann__data__reader__cifar10_8cpp.html", null ],

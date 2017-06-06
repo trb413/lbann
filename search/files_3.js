@@ -47,6 +47,8 @@ var searchData=
   ['lbann_5fcv_5fnormalizer_2ehpp',['lbann_cv_normalizer.hpp',['../lbann__cv__normalizer_8hpp.html',1,'']]],
   ['lbann_5fcv_5fprocess_2ecpp',['lbann_cv_process.cpp',['../lbann__cv__process_8cpp.html',1,'']]],
   ['lbann_5fcv_5fprocess_2ehpp',['lbann_cv_process.hpp',['../lbann__cv__process_8hpp.html',1,'']]],
+  ['lbann_5fcv_5fprocess_5fpatches_2ecpp',['lbann_cv_process_patches.cpp',['../lbann__cv__process__patches_8cpp.html',1,'']]],
+  ['lbann_5fcv_5fprocess_5fpatches_2ehpp',['lbann_cv_process_patches.hpp',['../lbann__cv__process__patches_8hpp.html',1,'']]],
   ['lbann_5fcv_5ftransform_2ehpp',['lbann_cv_transform.hpp',['../lbann__cv__transform_8hpp.html',1,'']]],
   ['lbann_5fcv_5futils_2ecpp',['lbann_cv_utils.cpp',['../lbann__cv__utils_8cpp.html',1,'']]],
   ['lbann_5fcv_5futils_2ehpp',['lbann_cv_utils.hpp',['../lbann__cv__utils_8hpp.html',1,'']]],
