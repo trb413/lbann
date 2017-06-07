@@ -20,6 +20,6 @@ var classlbann_1_1batch__normalization =
     [ "m_gamma_optimizer", "classlbann_1_1batch__normalization.html#af31bdfd117d03957a234ccffc7782e26", null ],
     [ "m_mean", "classlbann_1_1batch__normalization.html#a90994634aaccb9e2ad735ba5079f85d9", null ],
     [ "m_running_mean", "classlbann_1_1batch__normalization.html#a8436d502ae49d92e2193bd1324e4b5d8", null ],
-    [ "m_running_var", "classlbann_1_1batch__normalization.html#a013b023913a508aac28748df51624b91", null ],
-    [ "m_var", "classlbann_1_1batch__normalization.html#a572279bb7a37f7c228042ad3f99c06be", null ]
+    [ "m_running_stdev", "classlbann_1_1batch__normalization.html#a4bbb81665ba0ebb99a32588453299cc5", null ],
+    [ "m_stdev", "classlbann_1_1batch__normalization.html#a9c2bf352b502bf583d51c222851ad458", null ]
 ];

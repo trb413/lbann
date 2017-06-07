@@ -167,6 +167,8 @@ var searchData=
   ['lbann_5frandom_2ecpp',['lbann_random.cpp',['../lbann__random_8cpp.html',1,'']]],
   ['lbann_5frandom_2ehpp',['lbann_random.hpp',['../lbann__random_8hpp.html',1,'']]],
   ['lbann_5fregularizer_2ehpp',['lbann_regularizer.hpp',['../lbann__regularizer_8hpp.html',1,'']]],
+  ['lbann_5fstatistics_2ecpp',['lbann_statistics.cpp',['../lbann__statistics_8cpp.html',1,'']]],
+  ['lbann_5fstatistics_2ehpp',['lbann_statistics.hpp',['../lbann__statistics_8hpp.html',1,'']]],
   ['lbann_5fsummary_2ecpp',['lbann_summary.cpp',['../lbann__summary_8cpp.html',1,'']]],
   ['lbann_5fsummary_2ehpp',['lbann_summary.hpp',['../lbann__summary_8hpp.html',1,'']]],
   ['lbann_5ftarget_5flayer_2ecpp',['lbann_target_layer.cpp',['../lbann__target__layer_8cpp.html',1,'']]],

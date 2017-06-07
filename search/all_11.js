@@ -65,13 +65,14 @@ var searchData=
   ['ring_5fallreduce',['ring_allreduce',['../classlbann_1_1lbann__comm.html#a66d15cad06b3a9e56ade586fa6a85464',1,'lbann::lbann_comm']]],
   ['rmsprop',['rmsprop',['../classlbann_1_1rmsprop.html',1,'lbann']]],
   ['rmsprop',['rmsprop',['../classlbann_1_1rmsprop.html#af42c8e3336e72aac926e19c57b56e59f',1,'lbann::rmsprop']]],
-  ['rmsprop_5ffactory',['rmsprop_factory',['../classlbann_1_1rmsprop__factory.html#ac8f104a60c79c2461ceb30e561479852',1,'lbann::rmsprop_factory']]],
   ['rmsprop_5ffactory',['rmsprop_factory',['../classlbann_1_1rmsprop__factory.html',1,'lbann']]],
-  ['rng',['rng',['../classlbann_1_1rng.html',1,'lbann']]],
+  ['rmsprop_5ffactory',['rmsprop_factory',['../classlbann_1_1rmsprop__factory.html#ac8f104a60c79c2461ceb30e561479852',1,'lbann::rmsprop_factory']]],
   ['rng',['rng',['../classlbann_1_1rng.html#a7f510fb55d7f261efb4ba86ed623509a',1,'lbann::rng::rng()'],['../classlbann_1_1rng.html#aedb81fe65719eb1864f8f891d48772b1',1,'lbann::rng::rng(DType p)'],['../classlbann_1_1rng.html#aede986b92f5d075b4881f8cca86459dd',1,'lbann::rng::rng(DType a, DType b)']]],
+  ['rng',['rng',['../classlbann_1_1rng.html',1,'lbann']]],
   ['rng_5fbernoulli',['rng_bernoulli',['../namespacelbann.html#a481f0c268c74d3ec8b81861472559870',1,'lbann']]],
   ['rng_5fgen',['rng_gen',['../namespacelbann.html#aa54070c91e931f303a89f162e91de8cc',1,'lbann']]],
   ['rotation',['rotation',['../classlbann_1_1lbann__image__preprocessor.html#a1a293733368dd9eceba3e99cf9e5ae24',1,'lbann::lbann_image_preprocessor']]],
   ['rowsum',['RowSum',['../namespaceEl.html#a584f088a3325a8222d4d6ac37be04b04',1,'El::RowSum(const Matrix&lt; F &gt; &amp;X, Matrix&lt; F &gt; &amp;sums)'],['../namespaceEl.html#adf313e4dfa2f795795b274b793d2512b',1,'El::RowSum(const DistMatrix&lt; F, U, V, W &gt; &amp;A, DistMatrix&lt; F, U, STAR, W &gt; &amp;sums)']]],
-  ['rowsummat',['RowSumMat',['../lbann__base_8hpp.html#a6c236b0664425bd2551cb530f77a2372',1,'lbann_base.hpp']]]
+  ['rowsummat',['RowSumMat',['../lbann__base_8hpp.html#a6c236b0664425bd2551cb530f77a2372',1,'lbann_base.hpp']]],
+  ['rowwise_5fmean_5fand_5fstdev',['rowwise_mean_and_stdev',['../namespacelbann.html#a0c713b77f8e191addc1e0210037f9e5f',1,'lbann::rowwise_mean_and_stdev(const Mat &amp;data, Mat &amp;means, Mat &amp;stdevs)'],['../namespacelbann.html#a9b1fd2f864f421aa0bd9f8582ad87c14',1,'lbann::rowwise_mean_and_stdev(const AbsDistMat &amp;data, AbsDistMat &amp;means, AbsDistMat &amp;stdevs)']]]
 ];
