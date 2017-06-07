@@ -1,8 +1,10 @@
 var lbann__proto__common_8cpp =
 [
-    [ "add_layers", "lbann__proto__common_8cpp.html#a08c5ca9b3b0f5afbc1fc71908ba02c17", null ],
+    [ "add_layers", "lbann__proto__common_8cpp.html#a4c753f83094949c4373c0a00c375f46b", null ],
     [ "get_activation_type", "lbann__proto__common_8cpp.html#a1a091b865579703925507218ce639fbe", null ],
     [ "get_data_layout", "lbann__proto__common_8cpp.html#acf81b14e87938b50bb380a34773fa135", null ],
+    [ "get_pool_mode", "lbann__proto__common_8cpp.html#ac90a3f0426a98ae70e1089c3e7cb942e", null ],
+    [ "get_prev_neurons_and_index", "lbann__proto__common_8cpp.html#ad7e0b249b3481b7555c2991a4a04b41a", null ],
     [ "get_weight_initialization", "lbann__proto__common_8cpp.html#a83d7858d59d2e3855206d15a6c42ad93", null ],
     [ "init_callbacks", "lbann__proto__common_8cpp.html#a23037b7b1f337f1437cfa31c26a9cf27", null ],
     [ "init_data_readers", "lbann__proto__common_8cpp.html#a58002800cba21c5723346220dc77f79f", null ],

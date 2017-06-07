@@ -87,6 +87,8 @@ var searchData=
   ['get_5fonebit_5fquantized_5fmatrix_5fheight',['get_onebit_quantized_matrix_height',['../classlbann_1_1lbann__quantizer.html#a12d481b919e35f150cc9617711e0e712',1,'lbann::lbann_quantizer']]],
   ['get_5foptimizer',['get_optimizer',['../classlbann_1_1Layer.html#a3d59d2a12813c584efcc63bc5bcbbf14',1,'lbann::Layer']]],
   ['get_5fparameters',['get_parameters',['../classlbann_1_1optimizer.html#acf2c05f0490e9675d57dc9cf1f7e3fad',1,'lbann::optimizer']]],
+  ['get_5fpool_5fmode',['get_pool_mode',['../lbann__proto__common_8cpp.html#ac90a3f0426a98ae70e1089c3e7cb942e',1,'lbann_proto_common.cpp']]],
+  ['get_5fprev_5fneurons_5fand_5findex',['get_prev_neurons_and_index',['../lbann__proto__common_8cpp.html#ad7e0b249b3481b7555c2991a4a04b41a',1,'lbann_proto_common.cpp']]],
   ['get_5fprocs_5fper_5fmodel',['get_procs_per_model',['../classlbann_1_1lbann__comm.html#ad67668baa49b8713f3c74816d1aeb175',1,'lbann::lbann_comm']]],
   ['get_5fprocs_5fper_5fnode',['get_procs_per_node',['../classlbann_1_1lbann__comm.html#a845c62c2a55ef3eb4416deb3e8c5cd1a',1,'lbann::lbann_comm']]],
   ['get_5fproportion_5ftime',['get_proportion_time',['../classlbann_1_1lbann__quantizer.html#a5b9d72b9133517e0212f73908a576c7e',1,'lbann::lbann_quantizer']]],
@@ -122,7 +124,7 @@ var searchData=
   ['global_5fbarrier',['global_barrier',['../classlbann_1_1lbann__comm.html#ae12af95f4826571efa03fb8520260daa',1,'lbann::lbann_comm']]],
   ['glorot_5fnormal',['glorot_normal',['../lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ab507cf76b5f5f5bf34a68f6376bf0238',1,'lbann_base.hpp']]],
   ['glorot_5funiform',['glorot_uniform',['../lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a4b78361151cbfcca33e1d560fbaedd59',1,'lbann_base.hpp']]],
-  ['greedy_5flayerwise_5fautoencoder',['greedy_layerwise_autoencoder',['../classlbann_1_1greedy__layerwise__autoencoder.html',1,'lbann']]],
   ['greedy_5flayerwise_5fautoencoder',['greedy_layerwise_autoencoder',['../classlbann_1_1greedy__layerwise__autoencoder.html#a99f87e486e5887b379b148a8c67c2a82',1,'lbann::greedy_layerwise_autoencoder']]],
+  ['greedy_5flayerwise_5fautoencoder',['greedy_layerwise_autoencoder',['../classlbann_1_1greedy__layerwise__autoencoder.html',1,'lbann']]],
   ['grid',['grid',['../classlbann_1_1lbann__comm.html#a29fb31be115db3225b145f250a7778d9',1,'lbann::lbann_comm::grid()'],['../lbann__base_8hpp.html#a4c600bf682fbf8018385607476e4bd13',1,'Grid():&#160;lbann_base.hpp']]]
 ];
