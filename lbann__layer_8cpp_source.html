@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">cac7f06-ci240561570</span>
+   &#160;<span id="projectnumber">f7d6e82-ci240580007</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -570,82 +570,86 @@ $(document).ready(function(){initNavTree('lbann__layer_8cpp_source.html','');});
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;  Int cur_mini_batch_size = neural_network_model-&gt;get_current_mini_batch_size();</div>
 <div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;</div>
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;  View(*m_prev_activations_v, *m_prev_activations, ALL, IR(0, cur_mini_batch_size));</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;  View(*m_prev_error_signal_v, *m_prev_error_signal, ALL, IR(0, cur_mini_batch_size));</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;  View(*m_weighted_sum_v, *m_weighted_sum, ALL, IR(0, cur_mini_batch_size));</div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;  View(*m_error_signal_v, *m_error_signal, ALL, IR(0, cur_mini_batch_size));</div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;  View(*m_activations_v, *m_activations, ALL, IR(0, cur_mini_batch_size));</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;  <span class="comment">// Update the layer&#39;s effective mini-batch size so it averages properly.</span></div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;  <span class="keywordflow">if</span>(cur_mini_batch_size != m_mini_batch_size) {</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;    <span class="comment">// When the current mini-batch is partial, check with the other</span></div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;    <span class="comment">// models to figure out the entire size of the complete mini-batch</span></div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;    Int total_mini_batch_size = <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;intermodel_allreduce((Int) cur_mini_batch_size);</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;    set_effective_minibatch_size(total_mini_batch_size);</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;  }</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;  <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    set_effective_minibatch_size(cur_mini_batch_size * <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_num_models());</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;  }</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;}</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;<span class="preprocessor">#if 0</span></div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;<span class="preprocessor"></span><span class="keywordtype">void</span> lbann::Layer::bp_set_std_matrix_view() {</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;  int64_t cur_mini_batch_size = neural_network_model-&gt;get_current_mini_batch_size();</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;  <span class="keywordflow">if</span> (m_prev_error_signal-&gt;Height() &gt; 0) {</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    <span class="comment">// No previous error signal for the final layer.</span></div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    View(*m_prev_error_signal_v, *m_prev_error_signal, ALL,</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;         IR(0, cur_mini_batch_size));</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;  }</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;  View(*m_weighted_sum_v, *m_weighted_sum, ALL, IR(0, cur_mini_batch_size));</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;  View(*m_error_signal_v, *m_error_signal, ALL, IR(0, cur_mini_batch_size));</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;  View(*m_activations_v, *m_activations, ALL, IR(0, cur_mini_batch_size));</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;  <span class="comment">// Update the layer&#39;s effective mini-batch size so it averages properly.</span></div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;  <span class="keywordflow">if</span>(cur_mini_batch_size != m_mini_batch_size) {</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;    <span class="comment">// When the current mini-batch is partial, check with the other</span></div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;    <span class="comment">// models to figure out the entire size of the complete mini-batch</span></div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    Int total_mini_batch_size = <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;intermodel_allreduce((Int) cur_mini_batch_size);</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    set_effective_minibatch_size(total_mini_batch_size);</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;  }</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;  <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    set_effective_minibatch_size(cur_mini_batch_size * <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_num_models());</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;  }</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;}</div>
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;  <span class="keywordflow">if</span>(m_prev_activations != <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) { <span class="comment">// Input layers will not have a valid fp_input</span></div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    View(*m_prev_activations_v, *m_prev_activations, IR(0, m_prev_activations-&gt;Height()), IR(0, cur_mini_batch_size));</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;  }</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;  View(*m_weighted_sum_v, *m_weighted_sum, IR(0, m_weighted_sum-&gt;Height()), IR(0, cur_mini_batch_size));</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;  <span class="keywordflow">if</span>(m_prev_error_signal != <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) { <span class="comment">// Target layers will not have a valid bp_input</span></div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    View(*m_prev_error_signal_v, *m_prev_error_signal, IR(0, m_prev_error_signal-&gt;Height()), IR(0, cur_mini_batch_size));</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;<span class="preprocessor"></span><span class="keywordtype">void</span> lbann::Layer::bp_set_std_matrix_view() {</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;  int64_t cur_mini_batch_size = neural_network_model-&gt;get_current_mini_batch_size();</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;  <span class="keywordflow">if</span>(m_prev_activations != <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) { <span class="comment">// Input layers will not have a valid fp_input</span></div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;    View(*m_prev_activations_v, *m_prev_activations, IR(0, m_prev_activations-&gt;Height()), IR(0, cur_mini_batch_size));</div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;  }</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;  View(*m_error_signal_v, *m_error_signal, IR(0, m_error_signal-&gt;Height()), IR(0, cur_mini_batch_size));</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;  View(*m_activations_v, *m_activations, IR(0, m_activations-&gt;Height()), IR(0, cur_mini_batch_size));</div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;  <span class="comment">// Update the layer&#39;s effective mini-batch size so it averages properly.</span></div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;  <span class="keywordflow">if</span>(cur_mini_batch_size != m_mini_batch_size) { </div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;    <span class="keywordtype">int</span> total_mini_batch_size = <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;intermodel_allreduce((<span class="keywordtype">int</span>) cur_mini_batch_size);</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;    <span class="comment">//    cout &lt;&lt; &quot;[&quot; &lt;&lt; comm-&gt;get_rank_in_world() &lt;&lt; &quot;] total_mini_batch_size &quot; &lt;&lt; total_mini_batch_size &lt;&lt; &quot; and cur mini batch size &quot; &lt;&lt; cur_mini_batch_size &lt;&lt; endl;</span></div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    set_effective_minibatch_size(total_mini_batch_size);</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;  }<span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    set_effective_minibatch_size(cur_mini_batch_size * <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_num_models());</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;  }</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;}</div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00526"></a><span class="lineno"><a class="line" href="classlbann_1_1Layer.html#aa5ca9f046b4833f3d914d301af8a8640">  526</a></span>&#160;<span class="preprocessor"></span><span class="keywordtype">void</span> <a class="code" href="classlbann_1_1Layer.html#aa5ca9f046b4833f3d914d301af8a8640">lbann::Layer::fp_nonlinearity</a>() {</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;  <span class="comment">// Forward propagation</span></div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;  m_activation_fn-&gt;forwardProp(*m_activations_v);</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;}</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;</div>
-<div class="line"><a name="l00531"></a><span class="lineno"><a class="line" href="classlbann_1_1Layer.html#a4bb6b1be36cd28cddbaedcb39a5f5230">  531</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1Layer.html#a4bb6b1be36cd28cddbaedcb39a5f5230">lbann::Layer::bp_nonlinearity</a>() {</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;  <span class="comment">// Backward propagation</span></div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;  m_activation_fn-&gt;backwardPropError(*m_weighted_sum_v, *m_prev_error_signal_v);</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;}</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;<span class="comment">//enum class weight_initialization {zero, uniform, normal, glorot_normal, glorot_uniform, he_normal, he_uniform};</span></div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;</div>
-<div class="line"><a name="l00539"></a><span class="lineno"><a class="line" href="classlbann_1_1Layer.html#a7a55c61403cf1ecadc465d7d8663be07">  539</a></span>&#160;std::string <a class="code" href="classlbann_1_1Layer.html#a7a55c61403cf1ecadc465d7d8663be07">lbann::Layer::weight_initialization_name</a>(<a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5">weight_initialization</a> <span class="keywordtype">id</span>) {</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;  <span class="keywordflow">switch</span>(<span class="keywordtype">id</span>) {</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ad02c4c4cde7ae76252540d116a40f23a">weight_initialization::zero</a> : <span class="keywordflow">return</span> <span class="stringliteral">&quot;zero&quot;</span>;</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;         <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5aa489ffed938ef1b9e86889bc413501ee">weight_initialization::uniform</a> : <span class="keywordflow">return</span> <span class="stringliteral">&quot;uniform&quot;</span>;</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;         <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5afea087517c26fadd409bd4b9dc642555">weight_initialization::normal</a> : <span class="keywordflow">return</span> <span class="stringliteral">&quot;normal&quot;</span>;</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;  View(*m_weighted_sum_v, *m_weighted_sum, IR(0, m_weighted_sum-&gt;Height()), IR(0, cur_mini_batch_size));</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;  <span class="keywordflow">if</span>(m_prev_error_signal != <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) { <span class="comment">// Target layers will not have a valid bp_input</span></div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    View(*m_prev_error_signal_v, *m_prev_error_signal, IR(0, m_prev_error_signal-&gt;Height()), IR(0, cur_mini_batch_size));</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;  }</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;  View(*m_error_signal_v, *m_error_signal, IR(0, m_error_signal-&gt;Height()), IR(0, cur_mini_batch_size));</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;  View(*m_activations_v, *m_activations, IR(0, m_activations-&gt;Height()), IR(0, cur_mini_batch_size));</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;  <span class="comment">// Update the layer&#39;s effective mini-batch size so it averages properly.</span></div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;  <span class="keywordflow">if</span>(cur_mini_batch_size != m_mini_batch_size) { </div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;    <span class="keywordtype">int</span> total_mini_batch_size = <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;intermodel_allreduce((<span class="keywordtype">int</span>) cur_mini_batch_size);</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    <span class="comment">//    cout &lt;&lt; &quot;[&quot; &lt;&lt; comm-&gt;get_rank_in_world() &lt;&lt; &quot;] total_mini_batch_size &quot; &lt;&lt; total_mini_batch_size &lt;&lt; &quot; and cur mini batch size &quot; &lt;&lt; cur_mini_batch_size &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    set_effective_minibatch_size(total_mini_batch_size);</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;  }<span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;    set_effective_minibatch_size(cur_mini_batch_size * <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_num_models());</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;  }</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;}</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00530"></a><span class="lineno"><a class="line" href="classlbann_1_1Layer.html#aa5ca9f046b4833f3d914d301af8a8640">  530</a></span>&#160;<span class="preprocessor"></span><span class="keywordtype">void</span> <a class="code" href="classlbann_1_1Layer.html#aa5ca9f046b4833f3d914d301af8a8640">lbann::Layer::fp_nonlinearity</a>() {</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;  <span class="comment">// Forward propagation</span></div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;  m_activation_fn-&gt;forwardProp(*m_activations_v);</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;}</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;</div>
+<div class="line"><a name="l00535"></a><span class="lineno"><a class="line" href="classlbann_1_1Layer.html#a4bb6b1be36cd28cddbaedcb39a5f5230">  535</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1Layer.html#a4bb6b1be36cd28cddbaedcb39a5f5230">lbann::Layer::bp_nonlinearity</a>() {</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;  <span class="comment">// Backward propagation</span></div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;  m_activation_fn-&gt;backwardPropError(*m_weighted_sum_v, *m_prev_error_signal_v);</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;}</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;<span class="comment">//enum class weight_initialization {zero, uniform, normal, glorot_normal, glorot_uniform, he_normal, he_uniform};</span></div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;</div>
+<div class="line"><a name="l00543"></a><span class="lineno"><a class="line" href="classlbann_1_1Layer.html#a7a55c61403cf1ecadc465d7d8663be07">  543</a></span>&#160;std::string <a class="code" href="classlbann_1_1Layer.html#a7a55c61403cf1ecadc465d7d8663be07">lbann::Layer::weight_initialization_name</a>(<a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5">weight_initialization</a> <span class="keywordtype">id</span>) {</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;  <span class="keywordflow">switch</span>(<span class="keywordtype">id</span>) {</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ad02c4c4cde7ae76252540d116a40f23a">weight_initialization::zero</a> : <span class="keywordflow">return</span> <span class="stringliteral">&quot;zero&quot;</span>;</div>
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;         <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ab507cf76b5f5f5bf34a68f6376bf0238">weight_initialization::glorot_normal</a> : <span class="keywordflow">return</span> <span class="stringliteral">&quot;glorot_normal&quot;</span>;</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5aa489ffed938ef1b9e86889bc413501ee">weight_initialization::uniform</a> : <span class="keywordflow">return</span> <span class="stringliteral">&quot;uniform&quot;</span>;</div>
 <div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;         <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a4b78361151cbfcca33e1d560fbaedd59">weight_initialization::glorot_uniform</a> : <span class="keywordflow">return</span> <span class="stringliteral">&quot;glorot_uniform&quot;</span>;</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5afea087517c26fadd409bd4b9dc642555">weight_initialization::normal</a> : <span class="keywordflow">return</span> <span class="stringliteral">&quot;normal&quot;</span>;</div>
 <div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;         <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a2d34dae1a4044190dc7572a3c8e072d8">weight_initialization::he_normal</a> : <span class="keywordflow">return</span> <span class="stringliteral">&quot;he_normal&quot;</span>;</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ab507cf76b5f5f5bf34a68f6376bf0238">weight_initialization::glorot_normal</a> : <span class="keywordflow">return</span> <span class="stringliteral">&quot;glorot_normal&quot;</span>;</div>
 <div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;         <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a10c3970ad5c688f36ccda3f77432bd5c">weight_initialization::he_uniform</a> : <span class="keywordflow">return</span> <span class="stringliteral">&quot;he_uniform&quot;</span>;</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a4b78361151cbfcca33e1d560fbaedd59">weight_initialization::glorot_uniform</a> : <span class="keywordflow">return</span> <span class="stringliteral">&quot;glorot_uniform&quot;</span>;</div>
 <div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;         <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;      <span class="keywordtype">char</span> b[1024];</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;      sprintf(b, <span class="stringliteral">&quot;%s %d :: unknown weight_initialization: %d&quot;</span>, __FILE__, __LINE__, <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(b);</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;  }</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;}</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a2d34dae1a4044190dc7572a3c8e072d8">weight_initialization::he_normal</a> : <span class="keywordflow">return</span> <span class="stringliteral">&quot;he_normal&quot;</span>;</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;         <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a10c3970ad5c688f36ccda3f77432bd5c">weight_initialization::he_uniform</a> : <span class="keywordflow">return</span> <span class="stringliteral">&quot;he_uniform&quot;</span>;</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;         <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;      <span class="keywordtype">char</span> b[1024];</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;      sprintf(b, <span class="stringliteral">&quot;%s %d :: unknown weight_initialization: %d&quot;</span>, __FILE__, __LINE__, <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(b);</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;  }</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1Layer_html_a07f230d516c76f22ff42addb542424af"><div class="ttname"><a href="classlbann_1_1Layer.html#a07f230d516c76f22ff42addb542424af">lbann::Layer::backProp</a></div><div class="ttdeci">virtual void backProp()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00214">lbann_layer.cpp:214</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a0a0f8e32e2b17953f87652f855ccfbf9"><div class="ttname"><a href="classlbann_1_1Layer.html#a0a0f8e32e2b17953f87652f855ccfbf9">lbann::Layer::reset_counters</a></div><div class="ttdeci">virtual void reset_counters()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00140">lbann_layer.hpp:140</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a786677cbfb3f5677b4d84f3056eb08db"><div class="ttname"><a href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a></div><div class="ttdeci">data_layout</div><div class="ttdoc">Data layout that is optimized for different modes of parallelism. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00058">lbann_base.hpp:58</a></div></div>
@@ -662,7 +666,7 @@ $(document).ready(function(){initNavTree('lbann__layer_8cpp_source.html','');});
 <div class="ttc" id="lbann__base_8hpp_html_a7ab6aada4b2438de8ca3dd783775c2f5a4b78361151cbfcca33e1d560fbaedd59"><div class="ttname"><a href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a4b78361151cbfcca33e1d560fbaedd59">weight_initialization::glorot_uniform</a></div></div>
 <div class="ttc" id="namespacelbann_html_a33be342c4bdc4c00e9f91ff3a2f20743"><div class="ttname"><a href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743">lbann::layer_type</a></div><div class="ttdeci">layer_type</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00056">lbann_layer.hpp:56</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a7ab6aada4b2438de8ca3dd783775c2f5afea087517c26fadd409bd4b9dc642555"><div class="ttname"><a href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5afea087517c26fadd409bd4b9dc642555">weight_initialization::normal</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_aa5ca9f046b4833f3d914d301af8a8640"><div class="ttname"><a href="classlbann_1_1Layer.html#aa5ca9f046b4833f3d914d301af8a8640">lbann::Layer::fp_nonlinearity</a></div><div class="ttdeci">virtual void fp_nonlinearity()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00526">lbann_layer.cpp:526</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_aa5ca9f046b4833f3d914d301af8a8640"><div class="ttname"><a href="classlbann_1_1Layer.html#aa5ca9f046b4833f3d914d301af8a8640">lbann::Layer::fp_nonlinearity</a></div><div class="ttdeci">virtual void fp_nonlinearity()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00530">lbann_layer.cpp:530</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_aeec1c710c3d53b5e43a4d4f67b0a21b2"><div class="ttname"><a href="classlbann_1_1Layer.html#aeec1c710c3d53b5e43a4d4f67b0a21b2">lbann::Layer::check_setup</a></div><div class="ttdeci">virtual void check_setup()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00336">lbann_layer.cpp:336</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_af7881cb5eff5207c15fa835d65462e8f"><div class="ttname"><a href="classlbann_1_1Layer.html#af7881cb5eff5207c15fa835d65462e8f">lbann::Layer::m_using_gpus</a></div><div class="ttdeci">bool m_using_gpus</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00252">lbann_layer.hpp:252</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a7ab6aada4b2438de8ca3dd783775c2f5a2d34dae1a4044190dc7572a3c8e072d8"><div class="ttname"><a href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a2d34dae1a4044190dc7572a3c8e072d8">weight_initialization::he_normal</a></div></div>
@@ -671,7 +675,7 @@ $(document).ready(function(){initNavTree('lbann__layer_8cpp_source.html','');});
 <div class="ttc" id="classlbann_1_1persist_html_aa98be93f33b510e5b506b61de6bd79bd"><div class="ttname"><a href="classlbann_1_1persist.html#aa98be93f33b510e5b506b61de6bd79bd">lbann::persist::read_distmat</a></div><div class="ttdeci">bool read_distmat(persist_type type, const char *name, DistMat *M)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8cpp_source.html#l00553">lbann_persist.cpp:553</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214"><div class="ttname"><a href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_adfcdbf9d382ca3018107fb39c176ea5a"><div class="ttname"><a href="classlbann_1_1Layer.html#adfcdbf9d382ca3018107fb39c176ea5a">lbann::Layer::forwardProp</a></div><div class="ttdeci">virtual void forwardProp()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00143">lbann_layer.cpp:143</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_a7a55c61403cf1ecadc465d7d8663be07"><div class="ttname"><a href="classlbann_1_1Layer.html#a7a55c61403cf1ecadc465d7d8663be07">lbann::Layer::weight_initialization_name</a></div><div class="ttdeci">static std::string weight_initialization_name(weight_initialization id)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00539">lbann_layer.cpp:539</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a7a55c61403cf1ecadc465d7d8663be07"><div class="ttname"><a href="classlbann_1_1Layer.html#a7a55c61403cf1ecadc465d7d8663be07">lbann::Layer::weight_initialization_name</a></div><div class="ttdeci">static std::string weight_initialization_name(weight_initialization id)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00543">lbann_layer.cpp:543</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638"><div class="ttname"><a href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a9121ac562e8627e535880280adf2ce7b"><div class="ttname"><a href="classlbann_1_1Layer.html#a9121ac562e8627e535880280adf2ce7b">lbann::Layer::m_next_layer_using_gpus</a></div><div class="ttdeci">bool m_next_layer_using_gpus</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00256">lbann_layer.hpp:256</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_aa4f7b14ea6448703edc07ae4e43cb20a"><div class="ttname"><a href="classlbann_1_1Layer.html#aa4f7b14ea6448703edc07ae4e43cb20a">lbann::Layer::fp_input</a></div><div class="ttdeci">ElMat * fp_input</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00228">lbann_layer.hpp:228</a></div></div>
@@ -729,7 +733,7 @@ $(document).ready(function(){initNavTree('lbann__layer_8cpp_source.html','');});
 <div class="ttc" id="classlbann_1_1Layer_html_aff82d98a534f0dfc3b0cb200a9aff90a"><div class="ttname"><a href="classlbann_1_1Layer.html#aff82d98a534f0dfc3b0cb200a9aff90a">lbann::Layer::summarize</a></div><div class="ttdeci">virtual void summarize(lbann_summary &amp;summarizer, int64_t step)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00300">lbann_layer.cpp:300</a></div></div>
 <div class="ttc" id="classlbann_1_1persist_html_a9170de652405d86d9ba9b3793f8781c6"><div class="ttname"><a href="classlbann_1_1persist.html#a9170de652405d86d9ba9b3793f8781c6">lbann::persist::write_distmat</a></div><div class="ttdeci">bool write_distmat(persist_type type, const char *name, DistMat *M)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8cpp_source.html#l00534">lbann_persist.cpp:534</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__summary_html_ac388826d8854491b3df706a91cb4a689"><div class="ttname"><a href="classlbann_1_1lbann__summary.html#ac388826d8854491b3df706a91cb4a689">lbann::lbann_summary::reduce_stdev</a></div><div class="ttdeci">void reduce_stdev(const std::string tag, const ElMat &amp;mat, int64_t step)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__summary_8hpp_source.html#l00195">lbann_summary.hpp:195</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_a4bb6b1be36cd28cddbaedcb39a5f5230"><div class="ttname"><a href="classlbann_1_1Layer.html#a4bb6b1be36cd28cddbaedcb39a5f5230">lbann::Layer::bp_nonlinearity</a></div><div class="ttdeci">virtual void bp_nonlinearity()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00531">lbann_layer.cpp:531</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a4bb6b1be36cd28cddbaedcb39a5f5230"><div class="ttname"><a href="classlbann_1_1Layer.html#a4bb6b1be36cd28cddbaedcb39a5f5230">lbann::Layer::bp_nonlinearity</a></div><div class="ttdeci">virtual void bp_nonlinearity()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00535">lbann_layer.cpp:535</a></div></div>
 <div class="ttc" id="lbann__timer_8hpp_html"><div class="ttname"><a href="lbann__timer_8hpp.html">lbann_timer.hpp</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a763b3164342a5d73db851e85c76d385a"><div class="ttname"><a href="lbann__base_8hpp.html#a763b3164342a5d73db851e85c76d385a">StarVCMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::STAR, El::VC &gt; StarVCMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00049">lbann_base.hpp:49</a></div></div>
 <div class="ttc" id="classlbann_1_1persist_html"><div class="ttname"><a href="classlbann_1_1persist.html">lbann::persist</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00042">lbann_persist.hpp:42</a></div></div>
@@ -741,7 +745,7 @@ $(document).ready(function(){initNavTree('lbann__layer_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_faacdbae24c4b7c4a8fbaf54f29a6b8e.html">layers</a></li><li class="navelem"><a class="el" href="lbann__layer_8cpp.html">lbann_layer.cpp</a></li>
-    <li class="footer">Generated on Wed Jun 7 2017 21:51:30 for LBANN by
+    <li class="footer">Generated on Wed Jun 7 2017 22:50:01 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
