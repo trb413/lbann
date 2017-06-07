@@ -98,6 +98,7 @@ var hierarchy =
         [ "lbann::lbann_callback_custom_learning_rate", "classlbann_1_1lbann__callback__custom__learning__rate.html", null ],
         [ "lbann::lbann_callback_step_learning_rate", "classlbann_1_1lbann__callback__step__learning__rate.html", null ]
       ] ],
+      [ "lbann::lbann_callback_ltfb", "classlbann_1_1lbann__callback__ltfb.html", null ],
       [ "lbann::lbann_callback_print", "classlbann_1_1lbann__callback__print.html", null ],
       [ "lbann::lbann_callback_save_images", "classlbann_1_1lbann__callback__save__images.html", null ],
       [ "lbann::lbann_callback_summary", "classlbann_1_1lbann__callback__summary.html", null ],

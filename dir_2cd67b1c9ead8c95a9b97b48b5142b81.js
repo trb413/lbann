@@ -11,6 +11,7 @@ var dir_2cd67b1c9ead8c95a9b97b48b5142b81 =
     [ "lbann_callback_imcomm.cpp", "lbann__callback__imcomm_8cpp.html", null ],
     [ "lbann_callback_io.cpp", "lbann__callback__io_8cpp.html", null ],
     [ "lbann_callback_learning_rate.cpp", "lbann__callback__learning__rate_8cpp.html", null ],
+    [ "lbann_callback_ltfb.cpp", "lbann__callback__ltfb_8cpp.html", null ],
     [ "lbann_callback_print.cpp", "lbann__callback__print_8cpp.html", null ],
     [ "lbann_callback_save_images.cpp", "lbann__callback__save__images_8cpp.html", null ],
     [ "lbann_callback_summary.cpp", "lbann__callback__summary_8cpp.html", null ],
