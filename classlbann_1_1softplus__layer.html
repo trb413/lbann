@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">3280402-ci240532950</span>
+   &#160;<span id="projectnumber">6572c25-ci240545554</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -137,7 +137,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Softplus activation function. This is a smooth approximation of the ReLU. See: <a href="https://en.wikipedia.org/wiki/Rectifier_(neural_networks)">https://en.wikipedia.org/wiki/Rectifier_(neural_networks)</a> </p>
 
-<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00150">150</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00148">148</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a57f7b949c442b6e09cb0433448762d69"></a>
 <div class="memitem">
@@ -164,13 +164,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classlbann_1_1Activation.html#a3843eb7539e4f77678ea3c6ed73acb9b">lbann::Activation</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00152">152</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                                  {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="comment">// Warning: Not numerically stable.</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">// Better approach is to determine a threshold so that for large z,</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">// softplus(z) ~= z and for small z, softplus(z) ~= exp(z).</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">return</span> std::log1p(std::exp(z));</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00150">150</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                                  {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="comment">// Warning: Not numerically stable.</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="comment">// Better approach is to determine a threshold so that for large z,</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="comment">// softplus(z) ~= z and for small z, softplus(z) ~= exp(z).</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">return</span> std::log1p(std::exp(z));</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -199,10 +199,10 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classlbann_1_1Activation.html#a32afd50758faa927a8cb599a025dd044">lbann::Activation</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00158">158</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                                        {</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1.0) / (<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1.0) + std::exp(-z));</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00156">156</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                                        {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1.0) / (<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1.0) + std::exp(-z));</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  }</div>
 <div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00037">lbann_base.hpp:37</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -216,7 +216,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1softplus__layer.html">softplus_layer</a></li>
-    <li class="footer">Generated on Wed Jun 7 2017 20:31:13 for LBANN by
+    <li class="footer">Generated on Wed Jun 7 2017 21:10:10 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

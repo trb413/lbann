@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">3280402-ci240532950</span>
+   &#160;<span id="projectnumber">6572c25-ci240545554</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -149,7 +149,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Exponential linear unit. Tries to speed up learning by pushing the mean of activations more towards zero by allowing negative values. Helps avoid the need for batch normalization. See: Djork-Arne Clevert, Thomas Unterthiner, and Sepp Hochreiter "Fast and Accurate Deep Network Learning by Exponential Linear Units (ELUs)" ICLR 2016. </p>
 
-<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00188">188</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00186">186</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a51e7fc2ae3d934de55e3cb7172bc306d"></a>
 <div class="memitem">
@@ -174,9 +174,9 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>alpha controls the value to which the ELU saturates for negative inputs. alpha must be &gt;= 0. If alpha = 0, this turns into a ReLU. Paper uses alpha = 1.0 as a good starting point. </p>
 
-<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00196">196</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;: <a class="code" href="classlbann_1_1ELU__layer.html#a83fbddd0b20064e2c08770d3f2056134">m_alpha</a>(alpha) {}</div>
-<div class="ttc" id="classlbann_1_1ELU__layer_html_a83fbddd0b20064e2c08770d3f2056134"><div class="ttname"><a href="classlbann_1_1ELU__layer.html#a83fbddd0b20064e2c08770d3f2056134">lbann::ELU_layer::m_alpha</a></div><div class="ttdeci">DataType m_alpha</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__activations_8hpp_source.html#l00205">lbann_layer_activations.hpp:205</a></div></div>
+<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00194">194</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;: <a class="code" href="classlbann_1_1ELU__layer.html#a83fbddd0b20064e2c08770d3f2056134">m_alpha</a>(alpha) {}</div>
+<div class="ttc" id="classlbann_1_1ELU__layer_html_a83fbddd0b20064e2c08770d3f2056134"><div class="ttname"><a href="classlbann_1_1ELU__layer.html#a83fbddd0b20064e2c08770d3f2056134">lbann::ELU_layer::m_alpha</a></div><div class="ttdeci">DataType m_alpha</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__activations_8hpp_source.html#l00203">lbann_layer_activations.hpp:203</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -206,11 +206,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classlbann_1_1Activation.html#a3843eb7539e4f77678ea3c6ed73acb9b">lbann::Activation</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00198">198</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                                  {</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">return</span> (z &gt; <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0)) ? z : (<a class="code" href="classlbann_1_1ELU__layer.html#a83fbddd0b20064e2c08770d3f2056134">m_alpha</a>*std::expm1(z));</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  }</div>
-<div class="ttc" id="classlbann_1_1ELU__layer_html_a83fbddd0b20064e2c08770d3f2056134"><div class="ttname"><a href="classlbann_1_1ELU__layer.html#a83fbddd0b20064e2c08770d3f2056134">lbann::ELU_layer::m_alpha</a></div><div class="ttdeci">DataType m_alpha</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__activations_8hpp_source.html#l00205">lbann_layer_activations.hpp:205</a></div></div>
+<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00196">196</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                                  {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">return</span> (z &gt; <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0)) ? z : (<a class="code" href="classlbann_1_1ELU__layer.html#a83fbddd0b20064e2c08770d3f2056134">m_alpha</a>*std::expm1(z));</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1ELU__layer_html_a83fbddd0b20064e2c08770d3f2056134"><div class="ttname"><a href="classlbann_1_1ELU__layer.html#a83fbddd0b20064e2c08770d3f2056134">lbann::ELU_layer::m_alpha</a></div><div class="ttdeci">DataType m_alpha</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__activations_8hpp_source.html#l00203">lbann_layer_activations.hpp:203</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00037">lbann_base.hpp:37</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -240,11 +240,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classlbann_1_1Activation.html#a32afd50758faa927a8cb599a025dd044">lbann::Activation</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00201">201</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                                        {</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">return</span> (z &gt; <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0)) ? <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1) : (<a class="code" href="classlbann_1_1ELU__layer.html#a83fbddd0b20064e2c08770d3f2056134">m_alpha</a>*std::expm1(z) + <a class="code" href="classlbann_1_1ELU__layer.html#a83fbddd0b20064e2c08770d3f2056134">m_alpha</a>);</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  }</div>
-<div class="ttc" id="classlbann_1_1ELU__layer_html_a83fbddd0b20064e2c08770d3f2056134"><div class="ttname"><a href="classlbann_1_1ELU__layer.html#a83fbddd0b20064e2c08770d3f2056134">lbann::ELU_layer::m_alpha</a></div><div class="ttdeci">DataType m_alpha</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__activations_8hpp_source.html#l00205">lbann_layer_activations.hpp:205</a></div></div>
+<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00199">199</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                                        {</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordflow">return</span> (z &gt; <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0)) ? <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1) : (<a class="code" href="classlbann_1_1ELU__layer.html#a83fbddd0b20064e2c08770d3f2056134">m_alpha</a>*std::expm1(z) + <a class="code" href="classlbann_1_1ELU__layer.html#a83fbddd0b20064e2c08770d3f2056134">m_alpha</a>);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1ELU__layer_html_a83fbddd0b20064e2c08770d3f2056134"><div class="ttname"><a href="classlbann_1_1ELU__layer.html#a83fbddd0b20064e2c08770d3f2056134">lbann::ELU_layer::m_alpha</a></div><div class="ttdeci">DataType m_alpha</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__activations_8hpp_source.html#l00203">lbann_layer_activations.hpp:203</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00037">lbann_base.hpp:37</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -268,7 +268,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00205">205</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00203">203</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
 
 </div>
 </div>
@@ -281,7 +281,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1ELU__layer.html">ELU_layer</a></li>
-    <li class="footer">Generated on Wed Jun 7 2017 20:31:13 for LBANN by
+    <li class="footer">Generated on Wed Jun 7 2017 21:10:10 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
