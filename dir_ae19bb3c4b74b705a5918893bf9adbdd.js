@@ -18,8 +18,7 @@ var dir_ae19bb3c4b74b705a5918893bf9adbdd =
       [ "base_factory", "classlbann_1_1base__factory.html", "classlbann_1_1base__factory" ]
     ] ],
     [ "lbann_comm.hpp", "lbann__comm_8hpp.html", [
-      [ "lbann_comm", "classlbann_1_1lbann__comm.html", "classlbann_1_1lbann__comm" ],
-      [ "allreduce_options", "structlbann_1_1lbann__comm_1_1allreduce__options.html", "structlbann_1_1lbann__comm_1_1allreduce__options" ]
+      [ "lbann_comm", "classlbann_1_1lbann__comm.html", "classlbann_1_1lbann__comm" ]
     ] ],
     [ "lbann_Elemental_extensions.h", "lbann__Elemental__extensions_8h.html", "lbann__Elemental__extensions_8h" ],
     [ "lbann_params.hpp", "lbann__params_8hpp.html", [

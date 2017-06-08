@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">f7d6e82-ci240580007</span>
+   &#160;<span id="projectnumber">3ba730b-ci240830175</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('cudnn__wrapper_8cpp_source.html','');}
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -476,11 +476,11 @@ $(document).ready(function(){initNavTree('cudnn__wrapper_8cpp_source.html','');}
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  gather_from_gpus(temp, gpu_data, width);</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  <span class="comment">// Reduce data from different GPUs</span></div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  Zero(cpu_data);</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  synchronize();</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  <span class="keywordflow">for</span>(Int i=0; i&lt;m_num_gpus; ++i) {</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    cpu_data += temp(ALL, IR(i*width, (i+1)*width));</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  }</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  synchronize();</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  <span class="keywordflow">for</span>(Int i=1; i&lt;m_num_gpus; ++i) {</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    temp(ALL, IR(0,width)) += temp(ALL, IR(i*width, (i+1)*width));</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  }</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  Copy(temp(ALL,IR(0,width)), cpu_data);</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;</div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;}</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;</div>
@@ -627,49 +627,52 @@ $(document).ready(function(){initNavTree('cudnn__wrapper_8cpp_source.html','');}
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;}</div>
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;</div>
 <div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;std::vector&lt;void*&gt; cudnn_manager::get_work_spaces() {</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;  <span class="keywordflow">for</span>(Int i=0; i&lt;m_num_gpus; ++i) {</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    <span class="keywordflow">if</span>(m_work_spaces[i] == <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; m_work_space_sizes[i] &gt; 0) {</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;      checkCUDA(m_gpu_memory-&gt;DeviceAllocate(m_gpus[i],</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;                                             &amp;m_work_spaces[i],</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;                                             m_work_space_sizes[i],</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;                                             m_streams[i]));</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;    }</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;  }</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;  <span class="keywordflow">return</span> m_work_spaces;</div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;}</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;  <span class="keywordflow">return</span> m_work_spaces;</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;}</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;<span class="keywordtype">void</span>* cudnn_manager::get_work_space(Int i) {</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;  <span class="keywordflow">return</span> m_work_spaces[i];</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;}</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;std::vector&lt;size_t&gt; cudnn_manager::get_work_space_sizes() {</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;  <span class="keywordflow">return</span> m_work_space_sizes;</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;};</div>
 <div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;<span class="keywordtype">void</span>* cudnn_manager::get_work_space(Int i) {</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;  <span class="keywordflow">if</span>(m_work_spaces[i] == <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a> &amp;&amp; m_work_space_sizes[i] &gt; 0) {</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;    checkCUDA(m_gpu_memory-&gt;DeviceAllocate(m_gpus[i],</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;                                           &amp;m_work_spaces[i],</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;                                           m_work_space_sizes[i],</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;                                           m_streams[i]));</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;  }</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;  <span class="keywordflow">return</span> m_work_spaces[i];</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;}</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;std::vector&lt;size_t&gt; cudnn_manager::get_work_space_sizes() {</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;  <span class="keywordflow">return</span> m_work_space_sizes;</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;};</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;<span class="keyword">const</span> <span class="keywordtype">size_t</span> cudnn_manager::get_work_space_size(Int i)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;  <span class="keywordflow">return</span> m_work_space_sizes[i];</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;}</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;<span class="keywordtype">void</span> cudnn_manager::set_work_space_size(Int i, <span class="keywordtype">size_t</span> size) {</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;  <span class="comment">// Reallocate GPU memory if work space size changes</span></div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;  <span class="keywordflow">if</span>(size != m_work_space_sizes[i]) {</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    </div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;    <span class="comment">// Deallocate previous work space</span></div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    <span class="keywordflow">if</span>(m_work_space_sizes[i] != <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;      checkCUDA(m_gpu_memory-&gt;DeviceFree(m_gpus[i], m_work_spaces[i]));</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    }</div>
 <div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;<span class="keyword">const</span> <span class="keywordtype">size_t</span> cudnn_manager::get_work_space_size(Int i)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;  <span class="keywordflow">return</span> m_work_space_sizes[i];</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;}</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;<span class="keywordtype">void</span> cudnn_manager::set_work_space_size(Int i, <span class="keywordtype">size_t</span> size) {</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;  <span class="keywordflow">if</span>(m_work_space_sizes[i] != size) {</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;    m_work_space_sizes[i] = size;</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    <span class="keywordflow">if</span>(m_work_spaces[i] != <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;      checkCUDA(m_gpu_memory-&gt;DeviceFree(m_gpus[i], m_work_spaces[i]));</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    <span class="comment">// Allocate new work space or set work space to null</span></div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    m_work_space_sizes[i] = size;</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    <span class="keywordflow">if</span>(size &gt; 0) {</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;      checkCUDA(m_gpu_memory-&gt;DeviceAllocate(m_gpus[i],</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;                                             &amp;m_work_spaces[i],</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;                                             size,</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;                                             m_streams[i]));</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    }</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;    <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;      m_work_spaces[i] = <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    }</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;  }</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;}</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;  }</div>
 <div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;<span class="preprocessor">#endif // #ifdef __LIB_CUDNN</span></div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;}</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;<span class="preprocessor">#endif // #ifdef __LIB_CUDNN</span></div>
 <div class="ttc" id="cudnn__wrapper_8hpp_html"><div class="ttname"><a href="cudnn__wrapper_8hpp.html">cudnn_wrapper.hpp</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_afad88fb587c304caea8a36ee5a5c1df8"><div class="ttname"><a href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a></div><div class="ttdeci">El::ElementalMatrix&lt; DataType &gt; ElMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00052">lbann_base.hpp:52</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html"><div class="ttname"><a href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00049">lbann_comm.hpp:49</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html"><div class="ttname"><a href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00048">lbann_comm.hpp:48</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__exception_8hpp_source.html#l00041">lbann_exception.hpp:41</a></div></div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
 <div class="ttc" id="datatype_8hpp_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00035">datatype.hpp:35</a></div></div>
@@ -682,7 +685,7 @@ $(document).ready(function(){initNavTree('cudnn__wrapper_8cpp_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_e3a975d7a6e3e1ec3d3053fd7df1ad72.html">utils</a></li><li class="navelem"><a class="el" href="cudnn__wrapper_8cpp.html">cudnn_wrapper.cpp</a></li>
-    <li class="footer">Generated on Wed Jun 7 2017 22:50:01 for LBANN by
+    <li class="footer">Generated on Thu Jun 8 2017 15:16:23 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

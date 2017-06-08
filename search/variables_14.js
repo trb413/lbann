@@ -4,6 +4,5 @@ var searchData=
   ['wait',['wait',['../classlbann_1_1lbann__callback__early__stopping.html#a110df71074a0dcf218d3c73b83b9023f',1,'lbann::lbann_callback_early_stopping::wait()'],['../classlbann_1_1lbann__callback__adaptive__learning__rate.html#a44ebab009983de9235c902028244ad5f',1,'lbann::lbann_callback_adaptive_learning_rate::wait()']]],
   ['wbl2normsum',['WBL2NormSum',['../classlbann_1_1FullyConnectedLayer.html#a48d783a5862cd4ec172dbd89370e5238',1,'lbann::FullyConnectedLayer::WBL2NormSum()'],['../classlbann_1_1SoftmaxLayer.html#ab2ba1019c428cb3e2195e14f887a9e8c',1,'lbann::SoftmaxLayer::WBL2NormSum()']]],
   ['weightinittype',['WeightInitType',['../classlbann_1_1TrainingParams.html#ae6c49c818856f2e21ae9628d1c9addd5',1,'lbann::TrainingParams']]],
-  ['width',['width',['../structlayer__header.html#af1f45c9c74db048ea424114418f22d50',1,'layer_header']]],
-  ['world_5franks_5fon_5fnode',['world_ranks_on_node',['../classlbann_1_1lbann__comm.html#a3299a37fe7b0eae43a5c154148ab6dc2',1,'lbann::lbann_comm']]]
+  ['width',['width',['../structlayer__header.html#af1f45c9c74db048ea424114418f22d50',1,'layer_header']]]
 ];

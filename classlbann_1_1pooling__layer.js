@@ -26,10 +26,9 @@ var classlbann_1_1pooling__layer =
     [ "m_num_channels", "classlbann_1_1pooling__layer.html#a94d443e36e1ad6935de561d3b942276f", null ],
     [ "m_num_dims", "classlbann_1_1pooling__layer.html#a1c76ee1ab2a29a3e9a18ed9be72c25eb", null ],
     [ "m_output_dims", "classlbann_1_1pooling__layer.html#a5d20be4798684b62025e4dec145c6bfa", null ],
-    [ "m_pool_dims", "classlbann_1_1pooling__layer.html#ac9f09fcc27efe8a9008895c0ab1d0dc9", null ],
+    [ "m_pool_dims", "classlbann_1_1pooling__layer.html#a904a67eea20b8b126bdeabd832b6ba27", null ],
     [ "m_pool_mode", "classlbann_1_1pooling__layer.html#acbb87056cf0d786c6a94be06fdc3a3d0", null ],
     [ "m_pool_pads", "classlbann_1_1pooling__layer.html#a17cecb60c04947b2b4fd097b460c8130", null ],
-    [ "m_pool_size", "classlbann_1_1pooling__layer.html#aff54fb21bf2946a03db7f64c665bb177", null ],
     [ "m_pool_strides", "classlbann_1_1pooling__layer.html#a96387a44ebd98f8cd709593f0462f061", null ],
     [ "to_pin_bwd", "classlbann_1_1pooling__layer.html#acc288de8414f594d1766a1d76a906288", null ],
     [ "to_pin_fwd", "classlbann_1_1pooling__layer.html#a8cdff31022e4181c04aafd74e1d6f943", null ]

@@ -1,10 +1,7 @@
 var classlbann_1_1Activation =
 [
     [ "~Activation", "classlbann_1_1Activation.html#a93f28dac9ec750472f9fc3058fffc705", null ],
-    [ "act", "classlbann_1_1Activation.html#a3843eb7539e4f77678ea3c6ed73acb9b", null ],
-    [ "act_prime", "classlbann_1_1Activation.html#a32afd50758faa927a8cb599a025dd044", null ],
-    [ "activation_name", "classlbann_1_1Activation.html#a8b5e4d5c75488511c80a7ee39ff1cd46", null ],
-    [ "backwardProp", "classlbann_1_1Activation.html#aa3a4bc5761dbeab6d5e649ea9d1e2fb8", null ],
-    [ "backwardPropError", "classlbann_1_1Activation.html#a9e6e14d78d344289794dd72c4a336910", null ],
-    [ "forwardProp", "classlbann_1_1Activation.html#a027767c99c9b728601e6efcc58d0f3f2", null ]
+    [ "activation_name", "classlbann_1_1Activation.html#a0f754b8f10cc81f13a318ffb8fc754b3", null ],
+    [ "backwardProp", "classlbann_1_1Activation.html#a601bdda39d70c503e171fce5c5e942fa", null ],
+    [ "forwardProp", "classlbann_1_1Activation.html#a64622e2dd77075a3aad4f0af8d5307f8", null ]
 ];

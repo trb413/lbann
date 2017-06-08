@@ -7,7 +7,7 @@ var dir_faacdbae24c4b7c4a8fbaf54f29a6b8e =
       [ "dataset_header", "structdataset__header.html", "structdataset__header" ]
     ] ],
     [ "lbann_layer.cpp", "lbann__layer_8cpp.html", null ],
-    [ "lbann_layer_activations.cpp", "lbann__layer__activations_8cpp.html", null ],
+    [ "lbann_layer_activations.cpp", "lbann__layer__activations_8cpp.html", "lbann__layer__activations_8cpp" ],
     [ "lbann_layer_convolutional.cpp", "lbann__layer__convolutional_8cpp.html", null ],
     [ "lbann_layer_fully_connected.cpp", "lbann__layer__fully__connected_8cpp.html", "lbann__layer__fully__connected_8cpp" ],
     [ "lbann_layer_local_response_normalization.cpp", "lbann__layer__local__response__normalization_8cpp.html", "lbann__layer__local__response__normalization_8cpp" ],

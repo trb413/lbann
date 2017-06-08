@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">f7d6e82-ci240580007</span>
+   &#160;<span id="projectnumber">3ba730b-ci240830175</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('classlbann_1_1local__response__normali
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -473,29 +473,29 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00087">87</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#ifdef __LIB_CUDNN</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1Layer.html#af7881cb5eff5207c15fa835d65462e8f">m_using_gpus</a>) {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// Destroy cuDNN objects</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">if</span>(m_tensor_desc)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      checkCUDNN(cudnnDestroyTensorDescriptor(m_tensor_desc));</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span>(m_lrn_desc)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      checkCUDNN(cudnnDestroyLRNDescriptor(m_lrn_desc));</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// Deallocate GPU memory</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;deallocate_on_gpus(m_weighted_sum_d);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;deallocate_on_gpus(m_activations_d);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;deallocate_on_gpus(m_error_signal_d);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1Layer.html#adeefecf61c8a8d5e7a54367fc3806edd">m_prev_layer_using_gpus</a>)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;deallocate_on_gpus(m_prev_activations_d);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1Layer.html#a9121ac562e8627e535880280adf2ce7b">m_next_layer_using_gpus</a>)</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;deallocate_on_gpus(m_prev_error_signal_d);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif // __LIB_CUDNN</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor"></span>}</div>
+<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00086">86</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#ifdef __LIB_CUDNN</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1Layer.html#af7881cb5eff5207c15fa835d65462e8f">m_using_gpus</a>) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// Destroy cuDNN objects</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span>(m_tensor_desc)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      checkCUDNN(cudnnDestroyTensorDescriptor(m_tensor_desc));</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span>(m_lrn_desc)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      checkCUDNN(cudnnDestroyLRNDescriptor(m_lrn_desc));</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// Deallocate GPU memory</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;deallocate_on_gpus(m_weighted_sum_d);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;deallocate_on_gpus(m_activations_d);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;deallocate_on_gpus(m_error_signal_d);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1Layer.html#adeefecf61c8a8d5e7a54367fc3806edd">m_prev_layer_using_gpus</a>)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;deallocate_on_gpus(m_prev_activations_d);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1Layer.html#a9121ac562e8627e535880280adf2ce7b">m_next_layer_using_gpus</a>)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;deallocate_on_gpus(m_prev_error_signal_d);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif // __LIB_CUDNN</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="ttc" id="classlbann_1_1Layer_html_af7881cb5eff5207c15fa835d65462e8f"><div class="ttname"><a href="classlbann_1_1Layer.html#af7881cb5eff5207c15fa835d65462e8f">lbann::Layer::m_using_gpus</a></div><div class="ttdeci">bool m_using_gpus</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00252">lbann_layer.hpp:252</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a9121ac562e8627e535880280adf2ce7b"><div class="ttname"><a href="classlbann_1_1Layer.html#a9121ac562e8627e535880280adf2ce7b">lbann::Layer::m_next_layer_using_gpus</a></div><div class="ttdeci">bool m_next_layer_using_gpus</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00256">lbann_layer.hpp:256</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_adeefecf61c8a8d5e7a54367fc3806edd"><div class="ttname"><a href="classlbann_1_1Layer.html#adeefecf61c8a8d5e7a54367fc3806edd">lbann::Layer::m_prev_layer_using_gpus</a></div><div class="ttdeci">bool m_prev_layer_using_gpus</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00254">lbann_layer.hpp:254</a></div></div>
@@ -528,18 +528,18 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1Layer.html#a3cadcd93ddac0f0231449181a72edf1b">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00206">206</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                                                           {</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1Layer.html#af7881cb5eff5207c15fa835d65462e8f">m_using_gpus</a>) {</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ae4d504dc04f33501237fec81746129de">bp_linearity_gpu</a>();</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  }</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0b6ff893cd58e40603907391fd362d9a">bp_linearity_cpu</a>();</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  }</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00205">205</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                                                           {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1Layer.html#af7881cb5eff5207c15fa835d65462e8f">m_using_gpus</a>) {</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ae4d504dc04f33501237fec81746129de">bp_linearity_gpu</a>();</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  }</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0b6ff893cd58e40603907391fd362d9a">bp_linearity_cpu</a>();</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1Layer_html_af7881cb5eff5207c15fa835d65462e8f"><div class="ttname"><a href="classlbann_1_1Layer.html#af7881cb5eff5207c15fa835d65462e8f">lbann::Layer::m_using_gpus</a></div><div class="ttdeci">bool m_using_gpus</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00252">lbann_layer.hpp:252</a></div></div>
-<div class="ttc" id="classlbann_1_1local__response__normalization__layer_html_ae4d504dc04f33501237fec81746129de"><div class="ttname"><a href="classlbann_1_1local__response__normalization__layer.html#ae4d504dc04f33501237fec81746129de">lbann::local_response_normalization_layer::bp_linearity_gpu</a></div><div class="ttdeci">void bp_linearity_gpu()</div><div class="ttdoc">GPU implementation of backward propagation linearity. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__local__response__normalization_8cpp_source.html#l00320">lbann_layer_local_response_normalization.cpp:320</a></div></div>
-<div class="ttc" id="classlbann_1_1local__response__normalization__layer_html_a0b6ff893cd58e40603907391fd362d9a"><div class="ttname"><a href="classlbann_1_1local__response__normalization__layer.html#a0b6ff893cd58e40603907391fd362d9a">lbann::local_response_normalization_layer::bp_linearity_cpu</a></div><div class="ttdeci">void bp_linearity_cpu()</div><div class="ttdoc">CPU implementation of backward propagation linearity. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__local__response__normalization_8cpp_source.html#l00355">lbann_layer_local_response_normalization.cpp:355</a></div></div>
+<div class="ttc" id="classlbann_1_1local__response__normalization__layer_html_ae4d504dc04f33501237fec81746129de"><div class="ttname"><a href="classlbann_1_1local__response__normalization__layer.html#ae4d504dc04f33501237fec81746129de">lbann::local_response_normalization_layer::bp_linearity_gpu</a></div><div class="ttdeci">void bp_linearity_gpu()</div><div class="ttdoc">GPU implementation of backward propagation linearity. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__local__response__normalization_8cpp_source.html#l00319">lbann_layer_local_response_normalization.cpp:319</a></div></div>
+<div class="ttc" id="classlbann_1_1local__response__normalization__layer_html_a0b6ff893cd58e40603907391fd362d9a"><div class="ttname"><a href="classlbann_1_1local__response__normalization__layer.html#a0b6ff893cd58e40603907391fd362d9a">lbann::local_response_normalization_layer::bp_linearity_cpu</a></div><div class="ttdeci">void bp_linearity_cpu()</div><div class="ttdoc">CPU implementation of backward propagation linearity. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__local__response__normalization_8cpp_source.html#l00354">lbann_layer_local_response_normalization.cpp:354</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -566,95 +566,95 @@ Additional Inherited Members</h2></td></tr>
 
 <p>CPU implementation of backward propagation linearity. </p>
 
-<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00355">355</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;                                                               {</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  <span class="comment">// Get local matrices</span></div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; prev_activations_local = <a class="code" href="classlbann_1_1Layer.html#ac590e0f3831d1c7b204275c89375ee14">m_prev_activations_v</a>-&gt;LockedMatrix();</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; activations_local = <a class="code" href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">m_activations_v</a>-&gt;LockedMatrix();</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; prev_error_signal_local = <a class="code" href="classlbann_1_1Layer.html#a3f1ab0c18e78cd82af4cf24b73ec96bc">m_prev_error_signal_v</a>-&gt;LockedMatrix();</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; error_signal_local = <a class="code" href="classlbann_1_1Layer.html#a2fccbe7596578869ee0317c3d2542f35">m_error_signal_v</a>-&gt;Matrix();</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  <span class="comment">// Initialize error signal to zero</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;  Zero(error_signal_local);</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  <span class="comment">// Input and output entries are divided amongst channels</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  <span class="keyword">const</span> Int num_per_channel = <a class="code" href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">NumNeurons</a> / <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0d75e4896d57f16afde8231065614bbd">m_num_channels</a>;</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  <span class="comment">// error_signal(i)</span></div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  <span class="comment">//   = prev_error_signal(i) / scale_factor(i) ^ beta </span></div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  <span class="comment">//     - 2 * alpha * beta / window_width * prev_activations(i) </span></div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  <span class="comment">//       * sum( prev_error_signal(j) * activations(j)</span></div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  <span class="comment">//              / scale_factor(j) )</span></div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  <span class="comment">// Note: See comments in fp_linearity_cpu for a definition of</span></div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  <span class="comment">//   scale_factor. The sum is over entries in the normalization</span></div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;  <span class="comment">//   window.</span></div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;<span class="comment"></span>  </div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;  <span class="comment">// Iterate through data samples in mini-batch</span></div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="preprocessor">#pragma omp parallel for collapse(2)</span></div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span>(Int sample = 0; sample &lt; prev_activations_local.Width(); ++sample) {</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="comment">// Iterate through positions in sample</span></div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="keywordflow">for</span>(Int pos = 0; pos &lt; num_per_channel; ++pos) {</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;      <span class="comment">// Initialize normalization window</span></div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;      Int window_start = - <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac07d73f9ba8f64b624e7d451830bc426">m_window_width</a> / 2;</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;      Int window_end = <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac07d73f9ba8f64b624e7d451830bc426">m_window_width</a> / 2;</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;      <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> window_sum = 0;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;      <span class="keywordflow">for</span>(Int c = Max(window_start, 0);</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;          c &lt;= Min(window_end, <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0d75e4896d57f16afde8231065614bbd">m_num_channels</a>-1);</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;          ++c) {</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> x</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;          = prev_activations_local.Get(pos + num_per_channel*c, sample);</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        window_sum += x * x;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;      }</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;      <span class="comment">// Iterate through channels at current position</span></div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;      <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> error_signal_update;</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;      <span class="keywordflow">for</span>(Int channel = 0; channel &lt; <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0d75e4896d57f16afde8231065614bbd">m_num_channels</a>; ++channel) {</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <span class="keyword">const</span> Int index = pos + num_per_channel * channel;</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        <span class="comment">// Get data for current entry</span></div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> activations_entry = activations_local.Get(index, sample);</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> prev_error_signal_entry = prev_error_signal_local.Get(index, sample);</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> scale_factor = <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a7c62f3de9853eac684666f5337fe3978">m_lrn_k</a> + <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac5a5193bdf4ca504e3d9af42259af898">m_lrn_alpha</a> / <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac07d73f9ba8f64b624e7d451830bc426">m_window_width</a> * window_sum;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        <span class="comment">// Update current error signal entry</span></div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        error_signal_update = prev_error_signal_entry * Pow(scale_factor, -<a class="code" href="classlbann_1_1local__response__normalization__layer.html#a44f92ed114f70f4db7db85e5ec2030fe">m_lrn_beta</a>);</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        error_signal_local.Update(index, sample, error_signal_update);</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        <span class="comment">// Update error signal entries in normalization window</span></div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;        <span class="keywordflow">for</span>(Int c = Max(window_start, 0);</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;            c &lt;= Min(window_end, m_num_channels-1);</div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;            ++c) {</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;          <span class="keyword">const</span> Int i = pos + num_per_channel * c;</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;          <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> prev_activations_entry = prev_activations_local.Get(i, sample);</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;          error_signal_update</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;            = (-2 * <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac5a5193bdf4ca504e3d9af42259af898">m_lrn_alpha</a> * <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a44f92ed114f70f4db7db85e5ec2030fe">m_lrn_beta</a> / <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac07d73f9ba8f64b624e7d451830bc426">m_window_width</a> * prev_activations_entry</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;               * prev_error_signal_entry * activations_entry / scale_factor);</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;          error_signal_local.Update(i, sample, error_signal_update);</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        }</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        </div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        <span class="comment">// Shift normalization window by one entry</span></div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        <span class="keywordflow">if</span>(window_start &gt;= 0) {</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;          <span class="keyword">const</span> Int i = pos + num_per_channel*window_start;</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;          <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> x = prev_activations_local.Get(i, sample);</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;          window_sum -= x * x;</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        }</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        ++window_start;</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        ++window_end;</div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        <span class="keywordflow">if</span>(window_end &lt; m_num_channels) {</div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;          <span class="keyword">const</span> Int i = pos + num_per_channel*window_end;</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;          <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> x = prev_activations_local.Get(i, sample);</div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;          window_sum += x * x;</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        }</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;      }</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    }</div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;    </div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;  }</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00354">354</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                                                               {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  <span class="comment">// Get local matrices</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; prev_activations_local = <a class="code" href="classlbann_1_1Layer.html#ac590e0f3831d1c7b204275c89375ee14">m_prev_activations_v</a>-&gt;LockedMatrix();</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; activations_local = <a class="code" href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">m_activations_v</a>-&gt;LockedMatrix();</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; prev_error_signal_local = <a class="code" href="classlbann_1_1Layer.html#a3f1ab0c18e78cd82af4cf24b73ec96bc">m_prev_error_signal_v</a>-&gt;LockedMatrix();</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; error_signal_local = <a class="code" href="classlbann_1_1Layer.html#a2fccbe7596578869ee0317c3d2542f35">m_error_signal_v</a>-&gt;Matrix();</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  <span class="comment">// Initialize error signal to zero</span></div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  Zero(error_signal_local);</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  <span class="comment">// Input and output entries are divided amongst channels</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  <span class="keyword">const</span> Int num_per_channel = <a class="code" href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">NumNeurons</a> / <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0d75e4896d57f16afde8231065614bbd">m_num_channels</a>;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  <span class="comment">// error_signal(i)</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  <span class="comment">//   = prev_error_signal(i) / scale_factor(i) ^ beta </span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  <span class="comment">//     - 2 * alpha * beta / window_width * prev_activations(i) </span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  <span class="comment">//       * sum( prev_error_signal(j) * activations(j)</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  <span class="comment">//              / scale_factor(j) )</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  <span class="comment">// Note: See comments in fp_linearity_cpu for a definition of</span></div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  <span class="comment">//   scale_factor. The sum is over entries in the normalization</span></div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  <span class="comment">//   window.</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="comment"></span>  </div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;  <span class="comment">// Iterate through data samples in mini-batch</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="preprocessor">#pragma omp parallel for collapse(2)</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span>(Int sample = 0; sample &lt; prev_activations_local.Width(); ++sample) {</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <span class="comment">// Iterate through positions in sample</span></div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="keywordflow">for</span>(Int pos = 0; pos &lt; num_per_channel; ++pos) {</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;      <span class="comment">// Initialize normalization window</span></div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;      Int window_start = - <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac07d73f9ba8f64b624e7d451830bc426">m_window_width</a> / 2;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;      Int window_end = <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac07d73f9ba8f64b624e7d451830bc426">m_window_width</a> / 2;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;      <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> window_sum = 0;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;      <span class="keywordflow">for</span>(Int c = Max(window_start, 0);</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;          c &lt;= Min(window_end, <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0d75e4896d57f16afde8231065614bbd">m_num_channels</a>-1);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;          ++c) {</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> x</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;          = prev_activations_local.Get(pos + num_per_channel*c, sample);</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        window_sum += x * x;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;      }</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;      <span class="comment">// Iterate through channels at current position</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;      <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> error_signal_update;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;      <span class="keywordflow">for</span>(Int channel = 0; channel &lt; <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0d75e4896d57f16afde8231065614bbd">m_num_channels</a>; ++channel) {</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        <span class="keyword">const</span> Int index = pos + num_per_channel * channel;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        <span class="comment">// Get data for current entry</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> activations_entry = activations_local.Get(index, sample);</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> prev_error_signal_entry = prev_error_signal_local.Get(index, sample);</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;        <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> scale_factor = <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a7c62f3de9853eac684666f5337fe3978">m_lrn_k</a> + <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac5a5193bdf4ca504e3d9af42259af898">m_lrn_alpha</a> / <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac07d73f9ba8f64b624e7d451830bc426">m_window_width</a> * window_sum;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        <span class="comment">// Update current error signal entry</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        error_signal_update = prev_error_signal_entry * Pow(scale_factor, -<a class="code" href="classlbann_1_1local__response__normalization__layer.html#a44f92ed114f70f4db7db85e5ec2030fe">m_lrn_beta</a>);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        error_signal_local.Update(index, sample, error_signal_update);</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        <span class="comment">// Update error signal entries in normalization window</span></div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        <span class="keywordflow">for</span>(Int c = Max(window_start, 0);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;            c &lt;= Min(window_end, m_num_channels-1);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;            ++c) {</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;          <span class="keyword">const</span> Int i = pos + num_per_channel * c;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;          <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> prev_activations_entry = prev_activations_local.Get(i, sample);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;          error_signal_update</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;            = (-2 * <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac5a5193bdf4ca504e3d9af42259af898">m_lrn_alpha</a> * <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a44f92ed114f70f4db7db85e5ec2030fe">m_lrn_beta</a> / <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac07d73f9ba8f64b624e7d451830bc426">m_window_width</a> * prev_activations_entry</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;               * prev_error_signal_entry * activations_entry / scale_factor);</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;          error_signal_local.Update(i, sample, error_signal_update);</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;        }</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;        </div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        <span class="comment">// Shift normalization window by one entry</span></div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;        <span class="keywordflow">if</span>(window_start &gt;= 0) {</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;          <span class="keyword">const</span> Int i = pos + num_per_channel*window_start;</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;          <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> x = prev_activations_local.Get(i, sample);</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;          window_sum -= x * x;</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        }</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;        ++window_start;</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        ++window_end;</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        <span class="keywordflow">if</span>(window_end &lt; m_num_channels) {</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;          <span class="keyword">const</span> Int i = pos + num_per_channel*window_end;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;          <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> x = prev_activations_local.Get(i, sample);</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;          window_sum += x * x;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        }</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;      }</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    }</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    </div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  }</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1Layer_html_a871b103aedbd95b5205c24b66ef74dfa"><div class="ttname"><a href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">lbann::Layer::m_activations_v</a></div><div class="ttdeci">ElMat * m_activations_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00223">lbann_layer.hpp:223</a></div></div>
 <div class="ttc" id="classlbann_1_1local__response__normalization__layer_html_a44f92ed114f70f4db7db85e5ec2030fe"><div class="ttname"><a href="classlbann_1_1local__response__normalization__layer.html#a44f92ed114f70f4db7db85e5ec2030fe">lbann::local_response_normalization_layer::m_lrn_beta</a></div><div class="ttdeci">DataType m_lrn_beta</div><div class="ttdoc">LRN beta power parameter. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__local__response__normalization_8hpp_source.html#l00086">lbann_layer_local_response_normalization.hpp:86</a></div></div>
 <div class="ttc" id="classlbann_1_1local__response__normalization__layer_html_a0d75e4896d57f16afde8231065614bbd"><div class="ttname"><a href="classlbann_1_1local__response__normalization__layer.html#a0d75e4896d57f16afde8231065614bbd">lbann::local_response_normalization_layer::m_num_channels</a></div><div class="ttdeci">const Int m_num_channels</div><div class="ttdoc">Number of channels. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__local__response__normalization_8hpp_source.html#l00077">lbann_layer_local_response_normalization.hpp:77</a></div></div>
@@ -673,7 +673,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1local__response__normalization__layer_a0b6ff893cd58e40603907391fd362d9a_cgraph.png" border="0" usemap="#classlbann_1_1local__response__normalization__layer_a0b6ff893cd58e40603907391fd362d9a_cgraph" alt=""/></div>
 <map name="classlbann_1_1local__response__normalization__layer_a0b6ff893cd58e40603907391fd362d9a_cgraph" id="classlbann_1_1local__response__normalization__layer_a0b6ff893cd58e40603907391fd362d9a_cgraph">
-<area shape="rect" id="node2" href="lbann__layer__local__response__normalization_8cpp.html#a8ac156a3f6c715574f4868ef49dd6667" title="m_num_channels" alt="" coords="203,5,327,32"/><area shape="rect" id="node3" href="lbann__layer__local__response__normalization_8cpp.html#a076370bd6cf1ed504c5f4825629b6619" title="m_window_width" alt="" coords="204,56,327,83"/><area shape="rect" id="node4" href="lbann__layer__local__response__normalization_8cpp.html#a5bc3449c5e69f1cfa40a523edb02f20f" title="m_lrn_k" alt="" coords="231,107,299,133"/><area shape="rect" id="node6" href="lbann__layer__local__response__normalization_8cpp.html#a4a9a2a5de62efcad9b24d9ad5b646823" title="m_lrn_alpha" alt="" coords="219,157,311,184"/><area shape="rect" id="node7" href="lbann__layer__local__response__normalization_8cpp.html#a2ecb2901d9545e05f9401572a3f8faa5" title="m_lrn_beta" alt="" coords="222,208,309,235"/><area shape="rect" id="node5" href="classlbann_1_1lbann__comm.html#ad67668baa49b8713f3c74816d1aeb175" title="lbann::lbann_comm::\lget_procs_per_model" alt="" coords="376,99,523,141"/></map>
+<area shape="rect" id="node2" href="lbann__layer__local__response__normalization_8cpp.html#a8ac156a3f6c715574f4868ef49dd6667" title="m_num_channels" alt="" coords="203,12,327,39"/><area shape="rect" id="node4" href="lbann__layer__local__response__normalization_8cpp.html#a076370bd6cf1ed504c5f4825629b6619" title="m_window_width" alt="" coords="204,63,327,89"/><area shape="rect" id="node5" href="lbann__layer__local__response__normalization_8cpp.html#a5bc3449c5e69f1cfa40a523edb02f20f" title="m_lrn_k" alt="" coords="231,113,299,140"/><area shape="rect" id="node6" href="lbann__layer__local__response__normalization_8cpp.html#a4a9a2a5de62efcad9b24d9ad5b646823" title="m_lrn_alpha" alt="" coords="219,164,311,191"/><area shape="rect" id="node7" href="lbann__layer__local__response__normalization_8cpp.html#a2ecb2901d9545e05f9401572a3f8faa5" title="m_lrn_beta" alt="" coords="222,215,309,241"/><area shape="rect" id="node3" href="classlbann_1_1lbann__comm.html#ad67668baa49b8713f3c74816d1aeb175" title="lbann::lbann_comm::\lget_procs_per_model" alt="" coords="376,5,523,46"/></map>
 </div>
 </p>
 
@@ -702,41 +702,41 @@ Here is the call graph for this function:</div>
 
 <p>GPU implementation of backward propagation linearity. </p>
 
-<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00320">320</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                                                               {</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor">#ifndef __LIB_CUDNN</span></div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(<span class="stringliteral">&quot;lbann_layer_local_response_normalization: cuDNN not detected&quot;</span>);</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="preprocessor"></span>  </div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  <span class="comment">// Useful constants</span></div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> one = 1;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ad02c4c4cde7ae76252540d116a40f23a">zero</a> = 0;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <span class="comment">// Get number of GPUs</span></div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keyword">const</span> Int num_gpus = <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_num_gpus();</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="comment">// Perform back propagation on each GPU</span></div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;num_gpus; ++i) {</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    checkCUDA(cudaSetDevice(<a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_gpu(i)));</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    checkCUDNN(cudnnSetStream(<a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_handle(i),</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                              <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_stream(i)));</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    checkCUDNN(cudnnLRNCrossChannelBackward(<a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_handle(i),</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                                            m_lrn_desc,</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                                            CUDNN_LRN_CROSS_CHANNEL_DIM1,</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                                            &amp;one,</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                                            m_tensor_desc,</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                                            m_weighted_sum_d[i],</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                                            m_tensor_desc,</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                                            m_prev_error_signal_d[i],</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                                            m_tensor_desc,</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                                            m_prev_activations_d[i],</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                                            &amp;<a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ad02c4c4cde7ae76252540d116a40f23a">zero</a>,</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                                            m_tensor_desc,</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;                                            m_error_signal_d[i]));</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  }</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="preprocessor">#endif // #ifndef __LIB_CUDNN</span></div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="preprocessor"></span>}</div>
+<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00319">319</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                                                               {</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;<span class="preprocessor">#ifndef __LIB_CUDNN</span></div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(<span class="stringliteral">&quot;lbann_layer_local_response_normalization: cuDNN not detected&quot;</span>);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="preprocessor"></span>  </div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  <span class="comment">// Useful constants</span></div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> one = 1;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ad02c4c4cde7ae76252540d116a40f23a">zero</a> = 0;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  <span class="comment">// Get number of GPUs</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  <span class="keyword">const</span> Int num_gpus = <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_num_gpus();</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="comment">// Perform back propagation on each GPU</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;num_gpus; ++i) {</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    checkCUDA(cudaSetDevice(<a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_gpu(i)));</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    checkCUDNN(cudnnSetStream(<a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_handle(i),</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                              <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_stream(i)));</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    checkCUDNN(cudnnLRNCrossChannelBackward(<a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_handle(i),</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                                            m_lrn_desc,</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;                                            CUDNN_LRN_CROSS_CHANNEL_DIM1,</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;                                            &amp;one,</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                                            m_tensor_desc,</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;                                            m_weighted_sum_d[i],</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                                            m_tensor_desc,</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                                            m_prev_error_signal_d[i],</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;                                            m_tensor_desc,</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;                                            m_prev_activations_d[i],</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;                                            &amp;<a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ad02c4c4cde7ae76252540d116a40f23a">zero</a>,</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                                            m_tensor_desc,</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                                            m_error_signal_d[i]));</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  }</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;<span class="preprocessor">#endif // #ifndef __LIB_CUDNN</span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__exception_8hpp_source.html#l00041">lbann_exception.hpp:41</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a08dbb94239e3b8c96329786c57c72e21"><div class="ttname"><a href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">lbann::Layer::m_cudnn</a></div><div class="ttdeci">cudnn::cudnn_manager * m_cudnn</div><div class="ttdoc">cuDNN manager </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00259">lbann_layer.hpp:259</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00037">lbann_base.hpp:37</a></div></div>
@@ -768,18 +768,18 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1Layer.html#a5005998d7912d354ecf7994bc3b661af">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00197">197</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                                                           {</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1Layer.html#af7881cb5eff5207c15fa835d65462e8f">m_using_gpus</a>) {</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac2b3ab0cb2ca1c5d9f2e71de1da89370">fp_linearity_gpu</a>();</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  }</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a52c3c797bc06e43a251423ccf330aada">fp_linearity_cpu</a>();</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  }</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00196">196</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                                                           {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1Layer.html#af7881cb5eff5207c15fa835d65462e8f">m_using_gpus</a>) {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac2b3ab0cb2ca1c5d9f2e71de1da89370">fp_linearity_gpu</a>();</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  }</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a52c3c797bc06e43a251423ccf330aada">fp_linearity_cpu</a>();</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1Layer_html_af7881cb5eff5207c15fa835d65462e8f"><div class="ttname"><a href="classlbann_1_1Layer.html#af7881cb5eff5207c15fa835d65462e8f">lbann::Layer::m_using_gpus</a></div><div class="ttdeci">bool m_using_gpus</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00252">lbann_layer.hpp:252</a></div></div>
-<div class="ttc" id="classlbann_1_1local__response__normalization__layer_html_a52c3c797bc06e43a251423ccf330aada"><div class="ttname"><a href="classlbann_1_1local__response__normalization__layer.html#a52c3c797bc06e43a251423ccf330aada">lbann::local_response_normalization_layer::fp_linearity_cpu</a></div><div class="ttdeci">void fp_linearity_cpu()</div><div class="ttdoc">CPU implementation of forward propagation linearity. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__local__response__normalization_8cpp_source.html#l00250">lbann_layer_local_response_normalization.cpp:250</a></div></div>
-<div class="ttc" id="classlbann_1_1local__response__normalization__layer_html_ac2b3ab0cb2ca1c5d9f2e71de1da89370"><div class="ttname"><a href="classlbann_1_1local__response__normalization__layer.html#ac2b3ab0cb2ca1c5d9f2e71de1da89370">lbann::local_response_normalization_layer::fp_linearity_gpu</a></div><div class="ttdeci">void fp_linearity_gpu()</div><div class="ttdoc">GPU implementation of forward propagation linearity. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__local__response__normalization_8cpp_source.html#l00215">lbann_layer_local_response_normalization.cpp:215</a></div></div>
+<div class="ttc" id="classlbann_1_1local__response__normalization__layer_html_a52c3c797bc06e43a251423ccf330aada"><div class="ttname"><a href="classlbann_1_1local__response__normalization__layer.html#a52c3c797bc06e43a251423ccf330aada">lbann::local_response_normalization_layer::fp_linearity_cpu</a></div><div class="ttdeci">void fp_linearity_cpu()</div><div class="ttdoc">CPU implementation of forward propagation linearity. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__local__response__normalization_8cpp_source.html#l00249">lbann_layer_local_response_normalization.cpp:249</a></div></div>
+<div class="ttc" id="classlbann_1_1local__response__normalization__layer_html_ac2b3ab0cb2ca1c5d9f2e71de1da89370"><div class="ttname"><a href="classlbann_1_1local__response__normalization__layer.html#ac2b3ab0cb2ca1c5d9f2e71de1da89370">lbann::local_response_normalization_layer::fp_linearity_gpu</a></div><div class="ttdeci">void fp_linearity_gpu()</div><div class="ttdoc">GPU implementation of forward propagation linearity. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__local__response__normalization_8cpp_source.html#l00214">lbann_layer_local_response_normalization.cpp:214</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -806,74 +806,74 @@ Here is the call graph for this function:</div>
 
 <p>CPU implementation of forward propagation linearity. </p>
 
-<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00250">250</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                                                               {</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="comment">// Get local matrices</span></div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; prev_activations_local = <a class="code" href="classlbann_1_1Layer.html#ac590e0f3831d1c7b204275c89375ee14">m_prev_activations_v</a>-&gt;LockedMatrix();</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; weighted_sum_local = <a class="code" href="classlbann_1_1Layer.html#aefa1214f0220d47344b60436b2e52b53">m_weighted_sum_v</a>-&gt;Matrix();</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; activations_local = <a class="code" href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">m_activations_v</a>-&gt;Matrix();</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <span class="comment">// Input and output entries are divided amongst channels</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="keyword">const</span> Int num_per_channel = <a class="code" href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">NumNeurons</a> / <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0d75e4896d57f16afde8231065614bbd">m_num_channels</a>;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <span class="comment">// activations(i) = prev_activations(i) / scale_factor(i) ^ beta</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <span class="comment">// scale_factor(i)</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="comment">//   = k + alpha / window_width * sum( prev_activations(j) ^ 2 )</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="comment">// Note: The sum is over entries in the normalization window.</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="comment"></span>  </div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="comment">// Iterate through data samples in mini-batch</span></div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="preprocessor">#pragma omp parallel for collapse(2)</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span>(Int sample = 0; sample &lt; prev_activations_local.Width(); ++sample) {</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="comment">// Iterate through positions in sample</span></div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordflow">for</span>(Int pos = 0; pos &lt; num_per_channel; ++pos) {</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <span class="comment">// Initialize normalization window</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      Int window_start = - <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac07d73f9ba8f64b624e7d451830bc426">m_window_width</a> / 2;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      Int window_end = <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac07d73f9ba8f64b624e7d451830bc426">m_window_width</a> / 2;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> window_sum = 0;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      <span class="keywordflow">for</span>(Int c = Max(window_start, 0);</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;          c &lt;= Min(window_end, <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0d75e4896d57f16afde8231065614bbd">m_num_channels</a>-1);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;          ++c) {</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> x</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;          = prev_activations_local.Get(pos + num_per_channel*c, sample);</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        window_sum += x * x;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      }</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      <span class="comment">// Iterate through channels at current position</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      <span class="keywordflow">for</span>(Int channel = 0; channel &lt; <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0d75e4896d57f16afde8231065614bbd">m_num_channels</a>; ++channel) {</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <span class="keyword">const</span> Int index = pos + num_per_channel * channel;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="comment">// Apply local response normalization to current entry</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> input_entry = prev_activations_local.Get(index, sample);</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> scale_factor = <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a7c62f3de9853eac684666f5337fe3978">m_lrn_k</a> + <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac5a5193bdf4ca504e3d9af42259af898">m_lrn_alpha</a> / <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac07d73f9ba8f64b624e7d451830bc426">m_window_width</a> * window_sum;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> output_entry = input_entry * Pow(scale_factor, -<a class="code" href="classlbann_1_1local__response__normalization__layer.html#a44f92ed114f70f4db7db85e5ec2030fe">m_lrn_beta</a>);</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        weighted_sum_local.Set(index, sample, output_entry);</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        </div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="comment">// Shift normalization window by one entry</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        <span class="keywordflow">if</span>(window_start &gt;= 0) {</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;          <span class="keyword">const</span> Int i = pos + num_per_channel*window_start;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;          <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> x = prev_activations_local.Get(i, sample);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;          window_sum -= x * x;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        }</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        ++window_start;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        ++window_end;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="keywordflow">if</span>(window_end &lt; m_num_channels) {</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;          <span class="keyword">const</span> Int i = pos + num_per_channel*window_end;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;          <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> x = prev_activations_local.Get(i, sample);</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;          window_sum += x * x;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        }</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      }</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    }</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    </div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  }</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  <span class="comment">// weighted_sum and output are identical after fp linearity step</span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  Copy(weighted_sum_local, activations_local);</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00249">249</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                                                               {</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <span class="comment">// Get local matrices</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; prev_activations_local = <a class="code" href="classlbann_1_1Layer.html#ac590e0f3831d1c7b204275c89375ee14">m_prev_activations_v</a>-&gt;LockedMatrix();</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; weighted_sum_local = <a class="code" href="classlbann_1_1Layer.html#aefa1214f0220d47344b60436b2e52b53">m_weighted_sum_v</a>-&gt;Matrix();</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; activations_local = <a class="code" href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">m_activations_v</a>-&gt;Matrix();</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="comment">// Input and output entries are divided amongst channels</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <span class="keyword">const</span> Int num_per_channel = <a class="code" href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">NumNeurons</a> / <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0d75e4896d57f16afde8231065614bbd">m_num_channels</a>;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <span class="comment">// activations(i) = prev_activations(i) / scale_factor(i) ^ beta</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <span class="comment">// scale_factor(i)</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <span class="comment">//   = k + alpha / window_width * sum( prev_activations(j) ^ 2 )</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="comment">// Note: The sum is over entries in the normalization window.</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="comment"></span>  </div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="comment">// Iterate through data samples in mini-batch</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="preprocessor">#pragma omp parallel for collapse(2)</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span>(Int sample = 0; sample &lt; prev_activations_local.Width(); ++sample) {</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="comment">// Iterate through positions in sample</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordflow">for</span>(Int pos = 0; pos &lt; num_per_channel; ++pos) {</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      <span class="comment">// Initialize normalization window</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      Int window_start = - <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac07d73f9ba8f64b624e7d451830bc426">m_window_width</a> / 2;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      Int window_end = <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac07d73f9ba8f64b624e7d451830bc426">m_window_width</a> / 2;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> window_sum = 0;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      <span class="keywordflow">for</span>(Int c = Max(window_start, 0);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;          c &lt;= Min(window_end, <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0d75e4896d57f16afde8231065614bbd">m_num_channels</a>-1);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;          ++c) {</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> x</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;          = prev_activations_local.Get(pos + num_per_channel*c, sample);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        window_sum += x * x;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;      }</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      <span class="comment">// Iterate through channels at current position</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      <span class="keywordflow">for</span>(Int channel = 0; channel &lt; <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0d75e4896d57f16afde8231065614bbd">m_num_channels</a>; ++channel) {</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="keyword">const</span> Int index = pos + num_per_channel * channel;</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="comment">// Apply local response normalization to current entry</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> input_entry = prev_activations_local.Get(index, sample);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> scale_factor = <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a7c62f3de9853eac684666f5337fe3978">m_lrn_k</a> + <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac5a5193bdf4ca504e3d9af42259af898">m_lrn_alpha</a> / <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac07d73f9ba8f64b624e7d451830bc426">m_window_width</a> * window_sum;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> output_entry = input_entry * Pow(scale_factor, -<a class="code" href="classlbann_1_1local__response__normalization__layer.html#a44f92ed114f70f4db7db85e5ec2030fe">m_lrn_beta</a>);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        weighted_sum_local.Set(index, sample, output_entry);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="comment">// Shift normalization window by one entry</span></div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="keywordflow">if</span>(window_start &gt;= 0) {</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;          <span class="keyword">const</span> Int i = pos + num_per_channel*window_start;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;          <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> x = prev_activations_local.Get(i, sample);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;          window_sum -= x * x;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        }</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        ++window_start;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        ++window_end;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <span class="keywordflow">if</span>(window_end &lt; m_num_channels) {</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;          <span class="keyword">const</span> Int i = pos + num_per_channel*window_end;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;          <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> x = prev_activations_local.Get(i, sample);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;          window_sum += x * x;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        }</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;      }</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    }</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    </div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  }</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  <span class="comment">// weighted_sum and output are identical after fp linearity step</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  Copy(weighted_sum_local, activations_local);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1Layer_html_a871b103aedbd95b5205c24b66ef74dfa"><div class="ttname"><a href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">lbann::Layer::m_activations_v</a></div><div class="ttdeci">ElMat * m_activations_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00223">lbann_layer.hpp:223</a></div></div>
 <div class="ttc" id="classlbann_1_1local__response__normalization__layer_html_a44f92ed114f70f4db7db85e5ec2030fe"><div class="ttname"><a href="classlbann_1_1local__response__normalization__layer.html#a44f92ed114f70f4db7db85e5ec2030fe">lbann::local_response_normalization_layer::m_lrn_beta</a></div><div class="ttdeci">DataType m_lrn_beta</div><div class="ttdoc">LRN beta power parameter. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__local__response__normalization_8hpp_source.html#l00086">lbann_layer_local_response_normalization.hpp:86</a></div></div>
 <div class="ttc" id="classlbann_1_1local__response__normalization__layer_html_a0d75e4896d57f16afde8231065614bbd"><div class="ttname"><a href="classlbann_1_1local__response__normalization__layer.html#a0d75e4896d57f16afde8231065614bbd">lbann::local_response_normalization_layer::m_num_channels</a></div><div class="ttdeci">const Int m_num_channels</div><div class="ttdoc">Number of channels. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__local__response__normalization_8hpp_source.html#l00077">lbann_layer_local_response_normalization.hpp:77</a></div></div>
@@ -891,7 +891,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1local__response__normalization__layer_a52c3c797bc06e43a251423ccf330aada_cgraph.png" border="0" usemap="#classlbann_1_1local__response__normalization__layer_a52c3c797bc06e43a251423ccf330aada_cgraph" alt=""/></div>
 <map name="classlbann_1_1local__response__normalization__layer_a52c3c797bc06e43a251423ccf330aada_cgraph" id="classlbann_1_1local__response__normalization__layer_a52c3c797bc06e43a251423ccf330aada_cgraph">
-<area shape="rect" id="node2" href="lbann__layer__local__response__normalization_8cpp.html#a8ac156a3f6c715574f4868ef49dd6667" title="m_num_channels" alt="" coords="203,5,327,32"/><area shape="rect" id="node3" href="lbann__layer__local__response__normalization_8cpp.html#a076370bd6cf1ed504c5f4825629b6619" title="m_window_width" alt="" coords="204,56,327,83"/><area shape="rect" id="node4" href="lbann__layer__local__response__normalization_8cpp.html#a5bc3449c5e69f1cfa40a523edb02f20f" title="m_lrn_k" alt="" coords="231,107,299,133"/><area shape="rect" id="node6" href="lbann__layer__local__response__normalization_8cpp.html#a4a9a2a5de62efcad9b24d9ad5b646823" title="m_lrn_alpha" alt="" coords="219,157,311,184"/><area shape="rect" id="node7" href="lbann__layer__local__response__normalization_8cpp.html#a2ecb2901d9545e05f9401572a3f8faa5" title="m_lrn_beta" alt="" coords="222,208,309,235"/><area shape="rect" id="node5" href="classlbann_1_1lbann__comm.html#ad67668baa49b8713f3c74816d1aeb175" title="lbann::lbann_comm::\lget_procs_per_model" alt="" coords="376,99,523,141"/></map>
+<area shape="rect" id="node2" href="lbann__layer__local__response__normalization_8cpp.html#a8ac156a3f6c715574f4868ef49dd6667" title="m_num_channels" alt="" coords="203,12,327,39"/><area shape="rect" id="node4" href="lbann__layer__local__response__normalization_8cpp.html#a076370bd6cf1ed504c5f4825629b6619" title="m_window_width" alt="" coords="204,63,327,89"/><area shape="rect" id="node5" href="lbann__layer__local__response__normalization_8cpp.html#a5bc3449c5e69f1cfa40a523edb02f20f" title="m_lrn_k" alt="" coords="231,113,299,140"/><area shape="rect" id="node6" href="lbann__layer__local__response__normalization_8cpp.html#a4a9a2a5de62efcad9b24d9ad5b646823" title="m_lrn_alpha" alt="" coords="219,164,311,191"/><area shape="rect" id="node7" href="lbann__layer__local__response__normalization_8cpp.html#a2ecb2901d9545e05f9401572a3f8faa5" title="m_lrn_beta" alt="" coords="222,215,309,241"/><area shape="rect" id="node3" href="classlbann_1_1lbann__comm.html#ad67668baa49b8713f3c74816d1aeb175" title="lbann::lbann_comm::\lget_procs_per_model" alt="" coords="376,5,523,46"/></map>
 </div>
 </p>
 
@@ -920,41 +920,41 @@ Here is the call graph for this function:</div>
 
 <p>GPU implementation of forward propagation linearity. </p>
 
-<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00215">215</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                                                               {</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor">#ifndef __LIB_CUDNN</span></div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(<span class="stringliteral">&quot;lbann_layer_local_response_normalization: cuDNN not detected&quot;</span>);</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="comment">// Useful constants</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> one = 1;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ad02c4c4cde7ae76252540d116a40f23a">zero</a> = 0;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="comment">// Perform local response normalization with each GPU</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keyword">const</span> Int num_gpus = <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_num_gpus();</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordflow">for</span>(Int i=0; i&lt;num_gpus; ++i) {</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    checkCUDA(cudaSetDevice(<a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_gpu(i)));</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    checkCUDNN(cudnnSetStream(<a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_handle(i),</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                              <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_stream(i)));</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    checkCUDNN(cudnnLRNCrossChannelForward(<a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_handle(i),</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                                           m_lrn_desc,</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                                           CUDNN_LRN_CROSS_CHANNEL_DIM1,</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                                           &amp;one,</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                                           m_tensor_desc,</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                                           m_prev_activations_d[i],</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                                           &amp;<a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ad02c4c4cde7ae76252540d116a40f23a">zero</a>,</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                                           m_tensor_desc,</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                                           m_weighted_sum_d[i]));</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  }</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="comment">// Copy result to output matrix</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;copy_on_gpus(m_activations_d,</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                        m_weighted_sum_d,</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                        <a class="code" href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">NumNeurons</a>,</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                        m_mini_batch_size_per_gpu);</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor">#endif // #ifndef __LIB_CUDNN</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor"></span>}</div>
+<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00214">214</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                                                               {</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="preprocessor">#ifndef __LIB_CUDNN</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(<span class="stringliteral">&quot;lbann_layer_local_response_normalization: cuDNN not detected&quot;</span>);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="comment">// Useful constants</span></div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> one = 1;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ad02c4c4cde7ae76252540d116a40f23a">zero</a> = 0;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="comment">// Perform local response normalization with each GPU</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keyword">const</span> Int num_gpus = <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_num_gpus();</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keywordflow">for</span>(Int i=0; i&lt;num_gpus; ++i) {</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    checkCUDA(cudaSetDevice(<a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_gpu(i)));</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    checkCUDNN(cudnnSetStream(<a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_handle(i),</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                              <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_stream(i)));</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    checkCUDNN(cudnnLRNCrossChannelForward(<a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_handle(i),</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                                           m_lrn_desc,</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                                           CUDNN_LRN_CROSS_CHANNEL_DIM1,</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                                           &amp;one,</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;                                           m_tensor_desc,</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                                           m_prev_activations_d[i],</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                                           &amp;<a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ad02c4c4cde7ae76252540d116a40f23a">zero</a>,</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;                                           m_tensor_desc,</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                                           m_weighted_sum_d[i]));</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="comment">// Copy result to output matrix</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;copy_on_gpus(m_activations_d,</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                        m_weighted_sum_d,</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                        <a class="code" href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">NumNeurons</a>,</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                        m_mini_batch_size_per_gpu);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">#endif // #ifndef __LIB_CUDNN</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__exception_8hpp_source.html#l00041">lbann_exception.hpp:41</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a08dbb94239e3b8c96329786c57c72e21"><div class="ttname"><a href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">lbann::Layer::m_cudnn</a></div><div class="ttdeci">cudnn::cudnn_manager * m_cudnn</div><div class="ttdoc">cuDNN manager </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00259">lbann_layer.hpp:259</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a9d4a379d5c9e1102e63b48c53dd8ed44"><div class="ttname"><a href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">lbann::Layer::NumNeurons</a></div><div class="ttdeci">uint NumNeurons</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00204">lbann_layer.hpp:204</a></div></div>
@@ -987,38 +987,38 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1Layer.html#a20442464265da1cb2aeb1cf82640702f">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00111">111</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#a20442464265da1cb2aeb1cf82640702f">Layer::setup</a>(num_prev_neurons);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#ifdef __LIB_CUDNN</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor"></span>  <span class="comment">// Setup cuDNN objects</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1Layer.html#af7881cb5eff5207c15fa835d65462e8f">m_using_gpus</a>) {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a09b8afc4b25a6d0de1c7bb2bfbdedb2e">setup_gpu</a>();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  }</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif // __LIB_CUDNN</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#ifdef LBANN_DEBUG</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor"></span>  <span class="comment">// Check if input dimensions are valid</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordtype">int</span> num_inputs = <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0d75e4896d57f16afde8231065614bbd">m_num_channels</a>;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="classlbann_1_1local__response__normalization__layer.html#a4fca9b77ac5577b6b6e9903108fff960">m_num_dims</a>; ++i)</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    num_inputs *= <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0bf04c83b7d60005f01a0632bf396abb">m_dims</a>[i];</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordflow">if</span>(num_inputs != num_prev_neurons) {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(<span class="stringliteral">&quot;lbann_layer_local_response_normalization: unexpected number of input neurons&quot;</span>);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="comment">// Initialize matrices</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  Zeros(*<a class="code" href="classlbann_1_1Layer.html#acbf8aa63927a205c28f971e91c24c89f">m_prev_activations</a>, <a class="code" href="classlbann_1_1Layer.html#a85c02c636fad7ad8136ef9448173d345">m_num_prev_neurons</a>, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  Zeros(*<a class="code" href="classlbann_1_1Layer.html#a43ae6cca8efd036e6f496d3b4f5c1bf9">m_error_signal</a>, <a class="code" href="classlbann_1_1Layer.html#a85c02c636fad7ad8136ef9448173d345">m_num_prev_neurons</a>, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  Zeros(*<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>, <a class="code" href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">NumNeurons</a>, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  Zeros(*<a class="code" href="classlbann_1_1Layer.html#a81d6e3e65adcfee83e953b63ff5e9121">m_prev_error_signal</a>, <a class="code" href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">NumNeurons</a>, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  Zeros(*<a class="code" href="classlbann_1_1Layer.html#a06ff15d046be0425b409062ef984f4d5">m_weighted_sum</a>, <a class="code" href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">NumNeurons</a>, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00110">110</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#a20442464265da1cb2aeb1cf82640702f">Layer::setup</a>(num_prev_neurons);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#ifdef __LIB_CUDNN</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor"></span>  <span class="comment">// Setup cuDNN objects</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1Layer.html#af7881cb5eff5207c15fa835d65462e8f">m_using_gpus</a>) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a09b8afc4b25a6d0de1c7bb2bfbdedb2e">setup_gpu</a>();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif // __LIB_CUDNN</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#ifdef LBANN_DEBUG</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor"></span>  <span class="comment">// Check if input dimensions are valid</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordtype">int</span> num_inputs = <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0d75e4896d57f16afde8231065614bbd">m_num_channels</a>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="classlbann_1_1local__response__normalization__layer.html#a4fca9b77ac5577b6b6e9903108fff960">m_num_dims</a>; ++i)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    num_inputs *= <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0bf04c83b7d60005f01a0632bf396abb">m_dims</a>[i];</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordflow">if</span>(num_inputs != num_prev_neurons) {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(<span class="stringliteral">&quot;lbann_layer_local_response_normalization: unexpected number of input neurons&quot;</span>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="comment">// Initialize matrices</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  Zeros(*<a class="code" href="classlbann_1_1Layer.html#acbf8aa63927a205c28f971e91c24c89f">m_prev_activations</a>, <a class="code" href="classlbann_1_1Layer.html#a85c02c636fad7ad8136ef9448173d345">m_num_prev_neurons</a>, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  Zeros(*<a class="code" href="classlbann_1_1Layer.html#a43ae6cca8efd036e6f496d3b4f5c1bf9">m_error_signal</a>, <a class="code" href="classlbann_1_1Layer.html#a85c02c636fad7ad8136ef9448173d345">m_num_prev_neurons</a>, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  Zeros(*<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>, <a class="code" href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">NumNeurons</a>, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  Zeros(*<a class="code" href="classlbann_1_1Layer.html#a81d6e3e65adcfee83e953b63ff5e9121">m_prev_error_signal</a>, <a class="code" href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">NumNeurons</a>, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  Zeros(*<a class="code" href="classlbann_1_1Layer.html#a06ff15d046be0425b409062ef984f4d5">m_weighted_sum</a>, <a class="code" href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">NumNeurons</a>, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1Layer_html_a06ff15d046be0425b409062ef984f4d5"><div class="ttname"><a href="classlbann_1_1Layer.html#a06ff15d046be0425b409062ef984f4d5">lbann::Layer::m_weighted_sum</a></div><div class="ttdeci">ElMat * m_weighted_sum</div><div class="ttdoc">Gradient w.r.t. weight matrix ((# neurons) x (# previous layer&#39;s neurons)) </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00212">lbann_layer.hpp:212</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a7a28e5b795fcd852dea62e57d7a6f97e"><div class="ttname"><a href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">lbann::Layer::m_activations</a></div><div class="ttdeci">ElMat * m_activations</div><div class="ttdoc">Error signal to &quot;next&quot; layer (i.e. deltas) ((# neurons) x mini-batch size) </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00216">lbann_layer.hpp:216</a></div></div>
-<div class="ttc" id="classlbann_1_1local__response__normalization__layer_html_a09b8afc4b25a6d0de1c7bb2bfbdedb2e"><div class="ttname"><a href="classlbann_1_1local__response__normalization__layer.html#a09b8afc4b25a6d0de1c7bb2bfbdedb2e">lbann::local_response_normalization_layer::setup_gpu</a></div><div class="ttdeci">void setup_gpu()</div><div class="ttdoc">Initialize GPU objects. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__local__response__normalization_8cpp_source.html#l00141">lbann_layer_local_response_normalization.cpp:141</a></div></div>
+<div class="ttc" id="classlbann_1_1local__response__normalization__layer_html_a09b8afc4b25a6d0de1c7bb2bfbdedb2e"><div class="ttname"><a href="classlbann_1_1local__response__normalization__layer.html#a09b8afc4b25a6d0de1c7bb2bfbdedb2e">lbann::local_response_normalization_layer::setup_gpu</a></div><div class="ttdeci">void setup_gpu()</div><div class="ttdoc">Initialize GPU objects. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__local__response__normalization_8cpp_source.html#l00140">lbann_layer_local_response_normalization.cpp:140</a></div></div>
 <div class="ttc" id="classlbann_1_1local__response__normalization__layer_html_a0d75e4896d57f16afde8231065614bbd"><div class="ttname"><a href="classlbann_1_1local__response__normalization__layer.html#a0d75e4896d57f16afde8231065614bbd">lbann::local_response_normalization_layer::m_num_channels</a></div><div class="ttdeci">const Int m_num_channels</div><div class="ttdoc">Number of channels. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__local__response__normalization_8hpp_source.html#l00077">lbann_layer_local_response_normalization.hpp:77</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_af7881cb5eff5207c15fa835d65462e8f"><div class="ttname"><a href="classlbann_1_1Layer.html#af7881cb5eff5207c15fa835d65462e8f">lbann::Layer::m_using_gpus</a></div><div class="ttdeci">bool m_using_gpus</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00252">lbann_layer.hpp:252</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_acbf8aa63927a205c28f971e91c24c89f"><div class="ttname"><a href="classlbann_1_1Layer.html#acbf8aa63927a205c28f971e91c24c89f">lbann::Layer::m_prev_activations</a></div><div class="ttdeci">ElMat * m_prev_activations</div><div class="ttdoc">Activations - non-linearity applied to weighted sum ((# neurons) x mini-batch size) ...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00217">lbann_layer.hpp:217</a></div></div>
@@ -1037,7 +1037,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1local__response__normalization__layer_ac44b798abbec68fcbb87cc11dc5ceb53_cgraph.png" border="0" usemap="#classlbann_1_1local__response__normalization__layer_ac44b798abbec68fcbb87cc11dc5ceb53_cgraph" alt=""/></div>
 <map name="classlbann_1_1local__response__normalization__layer_ac44b798abbec68fcbb87cc11dc5ceb53_cgraph" id="classlbann_1_1local__response__normalization__layer_ac44b798abbec68fcbb87cc11dc5ceb53_cgraph">
-<area shape="rect" id="node2" href="lbann__layer__local__response__normalization_8cpp.html#a8ac156a3f6c715574f4868ef49dd6667" title="m_num_channels" alt="" coords="203,5,327,32"/><area shape="rect" id="node3" href="lbann__layer__local__response__normalization_8cpp.html#a7a202a20a84c0d306cc1ad8b2526d540" title="m_num_dims" alt="" coords="215,56,315,83"/></map>
+<area shape="rect" id="node2" href="lbann__layer__local__response__normalization_8cpp.html#a8ac156a3f6c715574f4868ef49dd6667" title="m_num_channels" alt="" coords="203,12,327,39"/><area shape="rect" id="node4" href="lbann__layer__local__response__normalization_8cpp.html#a7a202a20a84c0d306cc1ad8b2526d540" title="m_num_dims" alt="" coords="215,63,315,89"/><area shape="rect" id="node3" href="classlbann_1_1lbann__comm.html#ad67668baa49b8713f3c74816d1aeb175" title="lbann::lbann_comm::\lget_procs_per_model" alt="" coords="376,5,523,46"/></map>
 </div>
 </p>
 
@@ -1066,62 +1066,62 @@ Here is the call graph for this function:</div>
 
 <p>Initialize GPU objects. </p>
 
-<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00141">141</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                                                        {</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor">#ifndef __LIB_CUDNN</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(<span class="stringliteral">&quot;lbann_layer_local_response_normalization: cuDNN not detected&quot;</span>);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="comment">// Initialize descriptors</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  checkCUDNN(cudnnCreateTensorDescriptor(&amp;m_tensor_desc));</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  checkCUDNN(cudnnCreateLRNDescriptor(&amp;m_lrn_desc));</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="comment">// Set input tensor descriptor</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  std::vector&lt;int&gt; dims(<a class="code" href="classlbann_1_1local__response__normalization__layer.html#a4fca9b77ac5577b6b6e9903108fff960">m_num_dims</a>+2);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  dims[0] = m_mini_batch_size_per_gpu;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  dims[1] = <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0d75e4896d57f16afde8231065614bbd">m_num_channels</a>;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="keywordflow">for</span>(Int i=0; i&lt;<a class="code" href="classlbann_1_1local__response__normalization__layer.html#a4fca9b77ac5577b6b6e9903108fff960">m_num_dims</a>; ++i)</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    dims[i+2] = <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0bf04c83b7d60005f01a0632bf396abb">m_dims</a>[i];</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  std::vector&lt;int&gt; strides(m_num_dims+2);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  strides[m_num_dims + 1] = 1;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordflow">for</span>(Int i=m_num_dims; i&gt;=0; --i)</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    strides[i] = strides[i+1] * dims[i+1];</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  checkCUDNN(cudnnSetTensorNdDescriptor(m_tensor_desc,</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                                        <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_cudnn_data_type(),</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                                        m_num_dims+2,</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                                        dims.data(),</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                                        strides.data()));</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="comment">// Set local response normalization descriptor</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  checkCUDNN(cudnnSetLRNDescriptor(m_lrn_desc,</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                   (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>) <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac07d73f9ba8f64b624e7d451830bc426">m_window_width</a>,</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                                   (<span class="keywordtype">double</span>) <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac5a5193bdf4ca504e3d9af42259af898">m_lrn_alpha</a>,</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                                   (<span class="keywordtype">double</span>) <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a44f92ed114f70f4db7db85e5ec2030fe">m_lrn_beta</a>,</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                                   (<span class="keywordtype">double</span>) <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a7c62f3de9853eac684666f5337fe3978">m_lrn_k</a>));</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="comment">// Allocate GPU memory</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;allocate_on_gpus(m_weighted_sum_d,</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                            <a class="code" href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">NumNeurons</a>,</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                            m_mini_batch_size_per_gpu);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;allocate_on_gpus(m_activations_d,</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                            <a class="code" href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">NumNeurons</a>,</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                            m_mini_batch_size_per_gpu);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;allocate_on_gpus(m_error_signal_d,</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                            <a class="code" href="classlbann_1_1Layer.html#a85c02c636fad7ad8136ef9448173d345">m_num_prev_neurons</a>,</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                            m_mini_batch_size_per_gpu);</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1Layer.html#adeefecf61c8a8d5e7a54367fc3806edd">m_prev_layer_using_gpus</a>) {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;allocate_on_gpus(m_prev_activations_d,</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                              <a class="code" href="classlbann_1_1Layer.html#a85c02c636fad7ad8136ef9448173d345">m_num_prev_neurons</a>,</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                              m_mini_batch_size_per_gpu);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  }</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1Layer.html#a9121ac562e8627e535880280adf2ce7b">m_next_layer_using_gpus</a>) {</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;allocate_on_gpus(m_prev_error_signal_d,</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                              <a class="code" href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">NumNeurons</a>,</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                              m_mini_batch_size_per_gpu);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  }</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#endif // #ifndef __LIB_CUDNN</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor"></span>}</div>
+<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00140">140</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                                                        {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="preprocessor">#ifndef __LIB_CUDNN</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(<span class="stringliteral">&quot;lbann_layer_local_response_normalization: cuDNN not detected&quot;</span>);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="comment">// Initialize descriptors</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  checkCUDNN(cudnnCreateTensorDescriptor(&amp;m_tensor_desc));</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  checkCUDNN(cudnnCreateLRNDescriptor(&amp;m_lrn_desc));</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="comment">// Set input tensor descriptor</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  std::vector&lt;int&gt; dims(<a class="code" href="classlbann_1_1local__response__normalization__layer.html#a4fca9b77ac5577b6b6e9903108fff960">m_num_dims</a>+2);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  dims[0] = m_mini_batch_size_per_gpu;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  dims[1] = <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0d75e4896d57f16afde8231065614bbd">m_num_channels</a>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordflow">for</span>(Int i=0; i&lt;<a class="code" href="classlbann_1_1local__response__normalization__layer.html#a4fca9b77ac5577b6b6e9903108fff960">m_num_dims</a>; ++i)</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    dims[i+2] = <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a0bf04c83b7d60005f01a0632bf396abb">m_dims</a>[i];</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  std::vector&lt;int&gt; strides(m_num_dims+2);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  strides[m_num_dims + 1] = 1;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordflow">for</span>(Int i=m_num_dims; i&gt;=0; --i)</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    strides[i] = strides[i+1] * dims[i+1];</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  checkCUDNN(cudnnSetTensorNdDescriptor(m_tensor_desc,</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                                        <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;get_cudnn_data_type(),</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                                        m_num_dims+2,</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                                        dims.data(),</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                                        strides.data()));</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="comment">// Set local response normalization descriptor</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  checkCUDNN(cudnnSetLRNDescriptor(m_lrn_desc,</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                                   (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>) <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac07d73f9ba8f64b624e7d451830bc426">m_window_width</a>,</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                   (<span class="keywordtype">double</span>) <a class="code" href="classlbann_1_1local__response__normalization__layer.html#ac5a5193bdf4ca504e3d9af42259af898">m_lrn_alpha</a>,</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                                   (<span class="keywordtype">double</span>) <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a44f92ed114f70f4db7db85e5ec2030fe">m_lrn_beta</a>,</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                                   (<span class="keywordtype">double</span>) <a class="code" href="classlbann_1_1local__response__normalization__layer.html#a7c62f3de9853eac684666f5337fe3978">m_lrn_k</a>));</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="comment">// Allocate GPU memory</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;allocate_on_gpus(m_weighted_sum_d,</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                            <a class="code" href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">NumNeurons</a>,</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                            m_mini_batch_size_per_gpu);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;allocate_on_gpus(m_activations_d,</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                            <a class="code" href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">NumNeurons</a>,</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                            m_mini_batch_size_per_gpu);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;allocate_on_gpus(m_error_signal_d,</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                            <a class="code" href="classlbann_1_1Layer.html#a85c02c636fad7ad8136ef9448173d345">m_num_prev_neurons</a>,</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                            m_mini_batch_size_per_gpu);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1Layer.html#adeefecf61c8a8d5e7a54367fc3806edd">m_prev_layer_using_gpus</a>) {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;allocate_on_gpus(m_prev_activations_d,</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                              <a class="code" href="classlbann_1_1Layer.html#a85c02c636fad7ad8136ef9448173d345">m_num_prev_neurons</a>,</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                              m_mini_batch_size_per_gpu);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1Layer.html#a9121ac562e8627e535880280adf2ce7b">m_next_layer_using_gpus</a>) {</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a>-&gt;allocate_on_gpus(m_prev_error_signal_d,</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                              <a class="code" href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">NumNeurons</a>,</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                              m_mini_batch_size_per_gpu);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="preprocessor">#endif // #ifndef __LIB_CUDNN</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="ttc" id="classlbann_1_1local__response__normalization__layer_html_a44f92ed114f70f4db7db85e5ec2030fe"><div class="ttname"><a href="classlbann_1_1local__response__normalization__layer.html#a44f92ed114f70f4db7db85e5ec2030fe">lbann::local_response_normalization_layer::m_lrn_beta</a></div><div class="ttdeci">DataType m_lrn_beta</div><div class="ttdoc">LRN beta power parameter. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__local__response__normalization_8hpp_source.html#l00086">lbann_layer_local_response_normalization.hpp:86</a></div></div>
 <div class="ttc" id="classlbann_1_1local__response__normalization__layer_html_a0d75e4896d57f16afde8231065614bbd"><div class="ttname"><a href="classlbann_1_1local__response__normalization__layer.html#a0d75e4896d57f16afde8231065614bbd">lbann::local_response_normalization_layer::m_num_channels</a></div><div class="ttdeci">const Int m_num_channels</div><div class="ttdoc">Number of channels. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__local__response__normalization_8hpp_source.html#l00077">lbann_layer_local_response_normalization.hpp:77</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a9121ac562e8627e535880280adf2ce7b"><div class="ttname"><a href="classlbann_1_1Layer.html#a9121ac562e8627e535880280adf2ce7b">lbann::Layer::m_next_layer_using_gpus</a></div><div class="ttdeci">bool m_next_layer_using_gpus</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00256">lbann_layer.hpp:256</a></div></div>
@@ -1141,7 +1141,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1local__response__normalization__layer_a09b8afc4b25a6d0de1c7bb2bfbdedb2e_cgraph.png" border="0" usemap="#classlbann_1_1local__response__normalization__layer_a09b8afc4b25a6d0de1c7bb2bfbdedb2e_cgraph" alt=""/></div>
 <map name="classlbann_1_1local__response__normalization__layer_a09b8afc4b25a6d0de1c7bb2bfbdedb2e_cgraph" id="classlbann_1_1local__response__normalization__layer_a09b8afc4b25a6d0de1c7bb2bfbdedb2e_cgraph">
-<area shape="rect" id="node2" href="lbann__layer__local__response__normalization_8cpp.html#a7a202a20a84c0d306cc1ad8b2526d540" title="m_num_dims" alt="" coords="215,5,315,32"/><area shape="rect" id="node3" href="lbann__layer__local__response__normalization_8cpp.html#a8ac156a3f6c715574f4868ef49dd6667" title="m_num_channels" alt="" coords="203,56,327,83"/><area shape="rect" id="node4" href="lbann__layer__local__response__normalization_8cpp.html#a076370bd6cf1ed504c5f4825629b6619" title="m_window_width" alt="" coords="204,107,327,133"/><area shape="rect" id="node5" href="lbann__layer__local__response__normalization_8cpp.html#a4a9a2a5de62efcad9b24d9ad5b646823" title="m_lrn_alpha" alt="" coords="219,157,311,184"/><area shape="rect" id="node6" href="lbann__layer__local__response__normalization_8cpp.html#a2ecb2901d9545e05f9401572a3f8faa5" title="m_lrn_beta" alt="" coords="222,208,309,235"/><area shape="rect" id="node7" href="lbann__layer__local__response__normalization_8cpp.html#a5bc3449c5e69f1cfa40a523edb02f20f" title="m_lrn_k" alt="" coords="231,259,299,285"/><area shape="rect" id="node8" href="classlbann_1_1lbann__comm.html#ad67668baa49b8713f3c74816d1aeb175" title="lbann::lbann_comm::\lget_procs_per_model" alt="" coords="376,251,523,293"/></map>
+<area shape="rect" id="node2" href="lbann__layer__local__response__normalization_8cpp.html#a7a202a20a84c0d306cc1ad8b2526d540" title="m_num_dims" alt="" coords="215,5,315,32"/><area shape="rect" id="node3" href="lbann__layer__local__response__normalization_8cpp.html#a8ac156a3f6c715574f4868ef49dd6667" title="m_num_channels" alt="" coords="203,56,327,83"/><area shape="rect" id="node5" href="lbann__layer__local__response__normalization_8cpp.html#a076370bd6cf1ed504c5f4825629b6619" title="m_window_width" alt="" coords="204,107,327,133"/><area shape="rect" id="node6" href="lbann__layer__local__response__normalization_8cpp.html#a4a9a2a5de62efcad9b24d9ad5b646823" title="m_lrn_alpha" alt="" coords="219,157,311,184"/><area shape="rect" id="node7" href="lbann__layer__local__response__normalization_8cpp.html#a2ecb2901d9545e05f9401572a3f8faa5" title="m_lrn_beta" alt="" coords="222,208,309,235"/><area shape="rect" id="node8" href="lbann__layer__local__response__normalization_8cpp.html#a5bc3449c5e69f1cfa40a523edb02f20f" title="m_lrn_k" alt="" coords="231,259,299,285"/><area shape="rect" id="node4" href="classlbann_1_1lbann__comm.html#ad67668baa49b8713f3c74816d1aeb175" title="lbann::lbann_comm::\lget_procs_per_model" alt="" coords="376,49,523,90"/></map>
 </div>
 </p>
 
@@ -1170,13 +1170,13 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1Layer.html#ae4a050e51e3a9bec431cf8b7a5660f2c">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00446">446</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;{</div>
-<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;  <span class="keywordtype">double</span> start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
-<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#ae4a050e51e3a9bec431cf8b7a5660f2c">Layer::update</a>();</div>
-<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#abd6c1fa01659749b22de59baf8259b84">update_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - start;</div>
-<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html#l00445">445</a> of file <a class="el" href="lbann__layer__local__response__normalization_8cpp_source.html">lbann_layer_local_response_normalization.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;{</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;  <span class="keywordtype">double</span> start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#ae4a050e51e3a9bec431cf8b7a5660f2c">Layer::update</a>();</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#abd6c1fa01659749b22de59baf8259b84">update_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - start;</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1Layer_html_abd6c1fa01659749b22de59baf8259b84"><div class="ttname"><a href="classlbann_1_1Layer.html#abd6c1fa01659749b22de59baf8259b84">lbann::Layer::update_time</a></div><div class="ttdeci">double update_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00305">lbann_layer.hpp:305</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_ae4a050e51e3a9bec431cf8b7a5660f2c"><div class="ttname"><a href="classlbann_1_1Layer.html#ae4a050e51e3a9bec431cf8b7a5660f2c">lbann::Layer::update</a></div><div class="ttdeci">virtual bool update()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00290">lbann_layer.cpp:290</a></div></div>
 <div class="ttc" id="namespacelbann_html_a478d36031ff0659893c4322cd856157f"><div class="ttname"><a href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">lbann::get_time</a></div><div class="ttdeci">double get_time()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__timer_8hpp_source.html#l00037">lbann_timer.hpp:37</a></div></div>
@@ -1372,7 +1372,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1local__response__normalization__layer.html">local_response_normalization_layer</a></li>
-    <li class="footer">Generated on Wed Jun 7 2017 22:50:02 for LBANN by
+    <li class="footer">Generated on Thu Jun 8 2017 15:16:24 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

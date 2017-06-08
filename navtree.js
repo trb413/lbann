@@ -24,8 +24,7 @@ var NAVTREE =
         [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
-        [ "Enumerator", "functions_eval.html", null ],
-        [ "Related Functions", "functions_rela.html", null ]
+        [ "Enumerator", "functions_eval.html", null ]
       ] ]
     ] ],
     [ "Files", null, [
@@ -46,17 +45,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classlbann_1_1Layer.html#a165d07794df1b67b6034e80ce003f714",
-"classlbann_1_1convolutional__layer.html#abeecb5a713f1f3ad39a09acfb4c12a30",
-"classlbann_1_1layer__factory.html#aa87de245964675e110a0546a84734c64",
-"classlbann_1_1lbann__comm.html#a4f01e2f2d8220dc34cf39eb4a255cd7d",
-"classlbann_1_1metrics_1_1metric.html#a0962c210248b591fafb5aa158f2287f6",
-"classlbann_1_1reconstruction__layer.html#ac676cb20b20be8fce938fa74cfbe2aa3",
-"datatype_8hpp.html#a95e80fbc79ec98a3d2acde2088dfa7df",
-"lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ad02c4c4cde7ae76252540d116a40f23a",
-"lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743a156e322bc71c040cbb092c46ed11c5cb",
-"lbann__random_8cpp.html#acd76b03f2b7ee00ad7c8ba83a20d1866",
-"struct__SHORT2.html"
+"classlbann_1_1Layer.html#ab178f73070d2764151a7e6be2614acda",
+"classlbann_1_1data__reader__nci__regression.html#ae2e00a84db3d9060a15d4e67c985948a",
+"classlbann_1_1lbann__callback__dump__gradients.html#ac7515aa8900813cf1f71248ae4e34fa6",
+"classlbann_1_1lbann__quantizer.html#a37f0c719ced064cfe80dacfa90b4a0b6",
+"classlbann_1_1objective__functions_1_1categorical__cross__entropy.html#a6c25231a65dec17fab0733971ed1c243",
+"classlbann_1_1sigmoid__layer.html",
+"elemental.html#elemental_download",
+"lbann__callback__summary_8hpp_source.html",
+"lbann__model__dnn_8hpp_source.html",
+"struct__BOX2__UCHAR.html#a27e6ca6bb0bba9b3249c85adb8f5078b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
