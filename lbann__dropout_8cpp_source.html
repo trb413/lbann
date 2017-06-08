@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">441a002-ci240910419</span>
+   &#160;<span id="projectnumber">8198626-ci240935542</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('lbann__dropout_8cpp_source.html','');}
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>lbann {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classlbann_1_1dropout.html#a475a5f62e79fddc530dcf9982ace918a">   37</a></span>&#160;dropout::dropout(<a class="code" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a> data_dist, <a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, <span class="keywordtype">float</span> keep_prob) :</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  comm(comm), m_keep_prob(keep_prob)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  m_comm(comm), m_keep_prob(keep_prob)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">// Setup the data distribution</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordflow">switch</span>(data_dist) {</div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('lbann__dropout_8cpp_source.html','');}
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classlbann_1_1dropout.html#adac8d66b5add45bd1dcea08c109ef68e">   60</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1dropout.html#adac8d66b5add45bd1dcea08c109ef68e">dropout::initialize_model_parallel_distribution</a>() {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#ifdef LBANN_PROCDET_DROPOUT</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span>  <a class="code" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a> = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(<a class="code" href="classlbann_1_1dropout.html#a8d771ad4215b0235d3270a71ca8bd33e">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>());</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span>  <a class="code" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a> = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(<a class="code" href="classlbann_1_1dropout.html#af52965eae7232c51e0e3801b02ac7de0">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>());</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor"></span>  <a class="code" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a> = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('lbann__dropout_8cpp_source.html','');}
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
 <div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classlbann_1_1dropout.html#a9d871f6dd815b3883b472c40858e11c1">   69</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1dropout.html#a9d871f6dd815b3883b472c40858e11c1">dropout::initialize_data_parallel_distribution</a>() {</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#ifdef LBANN_PROCDET_DROPOUT</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span>  <a class="code" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a> = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86">StarMat</a>(<a class="code" href="classlbann_1_1dropout.html#a8d771ad4215b0235d3270a71ca8bd33e">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>());</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor"></span>  <a class="code" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a> = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86">StarMat</a>(<a class="code" href="classlbann_1_1dropout.html#af52965eae7232c51e0e3801b02ac7de0">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>());</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor"></span>  <a class="code" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a> = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -230,8 +230,8 @@ $(document).ready(function(){initNavTree('lbann__dropout_8cpp_source.html','');}
 <div class="ttc" id="classlbann_1_1lbann__comm_html"><div class="ttname"><a href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00049">lbann_comm.hpp:49</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214"><div class="ttname"><a href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638"><div class="ttname"><a href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a></div></div>
+<div class="ttc" id="classlbann_1_1dropout_html_af52965eae7232c51e0e3801b02ac7de0"><div class="ttname"><a href="classlbann_1_1dropout.html#af52965eae7232c51e0e3801b02ac7de0">lbann::dropout::m_comm</a></div><div class="ttdeci">lbann_comm * m_comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__dropout_8hpp_source.html#l00059">lbann_dropout.hpp:59</a></div></div>
 <div class="ttc" id="lbann__dropout_8hpp_html"><div class="ttname"><a href="lbann__dropout_8hpp.html">lbann_dropout.hpp</a></div></div>
-<div class="ttc" id="classlbann_1_1dropout_html_a8d771ad4215b0235d3270a71ca8bd33e"><div class="ttname"><a href="classlbann_1_1dropout.html#a8d771ad4215b0235d3270a71ca8bd33e">lbann::dropout::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__dropout_8hpp_source.html#l00059">lbann_dropout.hpp:59</a></div></div>
 <div class="ttc" id="classlbann_1_1dropout_html_a9b1ecd42b39fb914cfb04fde2278e8ed"><div class="ttname"><a href="classlbann_1_1dropout.html#a9b1ecd42b39fb914cfb04fde2278e8ed">lbann::dropout::bp_activations</a></div><div class="ttdeci">void bp_activations()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__dropout_8cpp_source.html#l00116">lbann_dropout.cpp:116</a></div></div>
 <div class="ttc" id="classlbann_1_1regularizer_html_a6d0d44f4f9a3c8c24d0acdda8cf7d4b5"><div class="ttname"><a href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">lbann::regularizer::m_layer</a></div><div class="ttdeci">Layer * m_layer</div><div class="ttdef"><b>Definition:</b> <a href="lbann__regularizer_8hpp_source.html#l00079">lbann_regularizer.hpp:79</a></div></div>
 <div class="ttc" id="classlbann_1_1dropout_html_a2b4540ea622609b518d691d68e6db92c"><div class="ttname"><a href="classlbann_1_1dropout.html#a2b4540ea622609b518d691d68e6db92c">lbann::dropout::m_keep_prob</a></div><div class="ttdeci">float m_keep_prob</div><div class="ttdef"><b>Definition:</b> <a href="lbann__dropout_8hpp_source.html#l00061">lbann_dropout.hpp:61</a></div></div>
@@ -254,7 +254,7 @@ $(document).ready(function(){initNavTree('lbann__dropout_8cpp_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_641edc1f9c3202270a1ac1aafbaaf998.html">regularization</a></li><li class="navelem"><a class="el" href="lbann__dropout_8cpp.html">lbann_dropout.cpp</a></li>
-    <li class="footer">Generated on Thu Jun 8 2017 18:54:06 for LBANN by
+    <li class="footer">Generated on Thu Jun 8 2017 20:06:16 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

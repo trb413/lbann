@@ -27,6 +27,7 @@ var searchData=
   ['m_5fcheckpoint_5flast',['m_checkpoint_last',['../classlbann_1_1model.html#a3d3f29cd9ce38447407e8423bdcec0ba',1,'lbann::model']]],
   ['m_5fcheckpoint_5fsecs',['m_checkpoint_secs',['../classlbann_1_1model.html#abf1e48ce5a6385f57b4c6eb414da2c93',1,'lbann::model']]],
   ['m_5fcheckpoint_5fsteps',['m_checkpoint_steps',['../classlbann_1_1model.html#a279391f37a01179d27d121cc8695bc5b',1,'lbann::model']]],
+  ['m_5fcomm',['m_comm',['../classlbann_1_1batch__normalization.html#a6e44c123524fbb03106bd01d95b31e7c',1,'lbann::batch_normalization::m_comm()'],['../classlbann_1_1dropout.html#af52965eae7232c51e0e3801b02ac7de0',1,'lbann::dropout::m_comm()']]],
   ['m_5fconv_5fpads',['m_conv_pads',['../classlbann_1_1convolutional__layer.html#a53085be18aa227a103861a0fbc4f68c1',1,'lbann::convolutional_layer']]],
   ['m_5fconv_5fstrides',['m_conv_strides',['../classlbann_1_1convolutional__layer.html#a5bf8980deba81eb406b0ba0cf3dda263',1,'lbann::convolutional_layer']]],
   ['m_5fcudnn',['m_cudnn',['../classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21',1,'lbann::Layer']]],
