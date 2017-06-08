@@ -12,6 +12,10 @@ var dir_60ff17fb255bbd939ae2c9b44bd446a2 =
       [ "adam", "classlbann_1_1adam.html", "classlbann_1_1adam" ],
       [ "adam_factory", "classlbann_1_1adam__factory.html", "classlbann_1_1adam__factory" ]
     ] ],
+    [ "lbann_optimizer_hypergradient_adam.hpp", "lbann__optimizer__hypergradient__adam_8hpp.html", [
+      [ "hypergradient_adam", "classlbann_1_1hypergradient__adam.html", "classlbann_1_1hypergradient__adam" ],
+      [ "hypergradient_adam_factory", "classlbann_1_1hypergradient__adam__factory.html", "classlbann_1_1hypergradient__adam__factory" ]
+    ] ],
     [ "lbann_optimizer_rmsprop.hpp", "lbann__optimizer__rmsprop_8hpp.html", [
       [ "rmsprop", "classlbann_1_1rmsprop.html", "classlbann_1_1rmsprop" ],
       [ "rmsprop_factory", "classlbann_1_1rmsprop__factory.html", "classlbann_1_1rmsprop__factory" ]

@@ -40,6 +40,7 @@ var searchData=
   ['make_5fushort4',['MAKE_USHORT4',['../datatype_8hpp.html#a78abd78ba40111e3eeb2f70caa25c415',1,'datatype.hpp']]],
   ['makedir',['makedir',['../namespacelbann.html#a8830dea8eef0ab5b93d68e2358ceeb1a',1,'lbann']]],
   ['map_5flabel_5f2int',['map_label_2int',['../classlbann_1_1data__reader__nci.html#aceb1170d93d94d922e86b13532e1f966',1,'lbann::data_reader_nci']]],
+  ['mean_5fand_5fstdev',['mean_and_stdev',['../namespacelbann.html#aed55242cd2815936e081336908876cca',1,'lbann']]],
   ['mean_5fsquared_5ferror',['mean_squared_error',['../classlbann_1_1metrics_1_1mean__squared__error.html#a18c45f8d1b23a57f004454910f06e37a',1,'lbann::metrics::mean_squared_error::mean_squared_error()'],['../classlbann_1_1objective__functions_1_1mean__squared__error.html#a72b1cfc638b998c4db07da782ac72bf1',1,'lbann::objective_functions::mean_squared_error::mean_squared_error()']]],
   ['mean_5fsubtraction',['mean_subtraction',['../classlbann_1_1lbann__image__preprocessor.html#ab499dd9f11d98998b5902d639f70fa8e',1,'lbann::lbann_image_preprocessor']]],
   ['metric',['metric',['../classlbann_1_1metrics_1_1metric.html#a88766bc9201d38a3240d89dcb91fcab5',1,'lbann::metrics::metric']]],

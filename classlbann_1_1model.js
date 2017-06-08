@@ -51,6 +51,7 @@ var classlbann_1_1model =
     [ "set_checkpoint_secs", "classlbann_1_1model.html#a4332ad949eb1733fcb2a0a6e6c9f56e9", null ],
     [ "set_checkpoint_steps", "classlbann_1_1model.html#a05502fc0d1ca9d9b164118b9a6f04163", null ],
     [ "set_current_mini_batch_size", "classlbann_1_1model.html#abc88f1013abefa3b9e4c0bbc902a05d0", null ],
+    [ "set_execution_mode", "classlbann_1_1model.html#a375372b5b864ffbc4eaa0963f6939f65", null ],
     [ "set_terminate_training", "classlbann_1_1model.html#a5bafc4e84671490c6118959becb22e16", null ],
     [ "setup", "classlbann_1_1model.html#a0d278ffa94dd6749e017c2af5c78178d", null ],
     [ "setup_callbacks", "classlbann_1_1model.html#af61c38d8d5ce7dad5a74dcf459758dea", null ],
