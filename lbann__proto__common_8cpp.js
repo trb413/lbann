@@ -6,7 +6,7 @@ var lbann__proto__common_8cpp =
     [ "get_pool_mode", "lbann__proto__common_8cpp.html#ac90a3f0426a98ae70e1089c3e7cb942e", null ],
     [ "get_prev_neurons_and_index", "lbann__proto__common_8cpp.html#ad7e0b249b3481b7555c2991a4a04b41a", null ],
     [ "get_weight_initialization", "lbann__proto__common_8cpp.html#a83d7858d59d2e3855206d15a6c42ad93", null ],
-    [ "init_callbacks", "lbann__proto__common_8cpp.html#a23037b7b1f337f1437cfa31c26a9cf27", null ],
+    [ "init_callbacks", "lbann__proto__common_8cpp.html#ac0bf967a432aaaf80e8545586acfefd1", null ],
     [ "init_data_readers", "lbann__proto__common_8cpp.html#a58002800cba21c5723346220dc77f79f", null ],
     [ "init_model", "lbann__proto__common_8cpp.html#a65210505c1def636a8c1d230388d2660", null ],
     [ "init_optimizer_factory", "lbann__proto__common_8cpp.html#a1157a7f2b93a65f5e55e075cacbed91d", null ],
