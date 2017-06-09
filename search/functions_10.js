@@ -66,7 +66,6 @@ var searchData=
   ['sgd',['sgd',['../classlbann_1_1sgd.html#acf660b032fbc45feb0eb860a47126455',1,'lbann::sgd']]],
   ['sgd_5ffactory',['sgd_factory',['../classlbann_1_1sgd__factory.html#a2db223b7c18759450d07f54a5c320839',1,'lbann::sgd_factory']]],
   ['shear_5frange',['shear_range',['../classlbann_1_1lbann__image__preprocessor.html#aef1e2375fd518e69df800b0dcbcb37d0',1,'lbann::lbann_image_preprocessor']]],
-  ['size',['size',['../classlbann_1_1layer__factory.html#a1939a41968a91f7e9263e56538e7bffa',1,'lbann::layer_factory']]],
   ['softmaxlayer',['SoftmaxLayer',['../classlbann_1_1SoftmaxLayer.html#a9138d5ee9a08a596826113bd06ddafa1',1,'lbann::SoftmaxLayer']]],
   ['stacked_5fautoencoder',['stacked_autoencoder',['../classlbann_1_1stacked__autoencoder.html#a1367885122e9f4c9332fa513f0a490ad',1,'lbann::stacked_autoencoder']]],
   ['statistics',['statistics',['../classlbann_1_1metrics_1_1statistics.html#afc4d1c56faf7c870077a342e4c731086',1,'lbann::metrics::statistics::statistics()'],['../classlbann_1_1objective__functions_1_1statistics.html#ae09872294228744a19efd9510c7503a9',1,'lbann::objective_functions::statistics::statistics()']]],

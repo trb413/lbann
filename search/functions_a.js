@@ -2,7 +2,6 @@ var searchData=
 [
   ['l2_5fregularization',['l2_regularization',['../classlbann_1_1l2__regularization.html#ae093be199ec313ae0e4f7fa26e330e38',1,'lbann::l2_regularization']]],
   ['layer',['Layer',['../classlbann_1_1Layer.html#a1483cd7103a5f739c4f8bac4a0d005dc',1,'lbann::Layer']]],
-  ['layer_5ffactory',['layer_factory',['../classlbann_1_1layer__factory.html#aa87de245964675e110a0546a84734c64',1,'lbann::layer_factory']]],
   ['lbann_5fcallback',['lbann_callback',['../classlbann_1_1lbann__callback.html#af4c9e2cf1c87cbf741bb0316f6f5fab2',1,'lbann::lbann_callback']]],
   ['lbann_5fcallback_5fadaptive_5flearning_5frate',['lbann_callback_adaptive_learning_rate',['../classlbann_1_1lbann__callback__adaptive__learning__rate.html#a2095e4c430b3c4f206e85c963e1ec2aa',1,'lbann::lbann_callback_adaptive_learning_rate::lbann_callback_adaptive_learning_rate(int64_t patience, float amt)'],['../classlbann_1_1lbann__callback__adaptive__learning__rate.html#abe65a214e3824bfcedb8617df40df927',1,'lbann::lbann_callback_adaptive_learning_rate::lbann_callback_adaptive_learning_rate(int64_t patience, float amt, std::unordered_set&lt; uint &gt; _layers)']]],
   ['lbann_5fcallback_5fcheck_5finit',['lbann_callback_check_init',['../classlbann_1_1lbann__callback__check__init.html#a3910da2c4e972567d79e5e414404a3da',1,'lbann::lbann_callback_check_init']]],

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-24-gd3bbbf6-ci241364986</span>
+   &#160;<span id="projectnumber">v0.93-rc0-25-gaf96ac4-ci241380454</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('lbann__model__stacked__autoencoder_8hp
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classlbann_1_1stacked__autoencoder.html#a1367885122e9f4c9332fa513f0a490ad">stacked_autoencoder</a>(<a class="code" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> mini_batch_size,</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                      <a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="code" href="classlbann_1_1model.html#ae5a400e2f0a044c33383975298719cc2">comm</a>,</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                      <a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html">objective_functions::objective_fn</a> *<a class="code" href="classlbann_1_1model.html#a92e0ae701d5f786e324ddcaa7db0ead8">obj_fn</a>,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                      <a class="code" href="classlbann_1_1layer__factory.html">layer_factory</a> *_layer_fac,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                      layer_factory *_layer_fac,</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                      <a class="code" href="classlbann_1_1optimizer__factory.html">optimizer_factory</a> *_optimizer_fac);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="classlbann_1_1stacked__autoencoder.html#a69a11143ad8fdb00004b38768b33add7">~stacked_autoencoder</a>();</div>
@@ -196,7 +196,6 @@ $(document).ready(function(){initNavTree('lbann__model__stacked__autoencoder_8hp
 <div class="ttc" id="classlbann_1_1target__layer__unsupervised_html"><div class="ttname"><a href="classlbann_1_1target__layer__unsupervised.html">lbann::target_layer_unsupervised</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__target__layer__unsupervised_8hpp_source.html#l00034">lbann_target_layer_unsupervised.hpp:34</a></div></div>
 <div class="ttc" id="classlbann_1_1stacked__autoencoder_html_a398f7debe464f5db4371202b6dfa657c"><div class="ttname"><a href="classlbann_1_1stacked__autoencoder.html#a398f7debe464f5db4371202b6dfa657c">lbann::stacked_autoencoder::begin_stack</a></div><div class="ttdeci">void begin_stack(const std::string layer_name, data_layout data_dist, int layer_dim, activation_type activation=activation_type::RELU, weight_initialization init=weight_initialization::glorot_uniform, std::vector&lt; regularizer * &gt; regularizers={})</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__stacked__autoencoder_8cpp_source.html#l00069">lbann_model_stacked_autoencoder.cpp:69</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a7ab6aada4b2438de8ca3dd783775c2f5"><div class="ttname"><a href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5">weight_initialization</a></div><div class="ttdeci">weight_initialization</div><div class="ttdoc">Weight matrix initialization scheme. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00095">lbann_base.hpp:95</a></div></div>
-<div class="ttc" id="classlbann_1_1layer__factory_html"><div class="ttname"><a href="classlbann_1_1layer__factory.html">lbann::layer_factory</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__factory_8hpp_source.html#l00044">lbann_layer_factory.hpp:44</a></div></div>
 <div class="ttc" id="classlbann_1_1stacked__autoencoder_html_ad03569f0b42c97a5654fc13840be7cb0"><div class="ttname"><a href="classlbann_1_1stacked__autoencoder.html#ad03569f0b42c97a5654fc13840be7cb0">lbann::stacked_autoencoder::m_num_layers</a></div><div class="ttdeci">size_t m_num_layers</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__stacked__autoencoder_8hpp_source.html#l00090">lbann_model_stacked_autoencoder.hpp:90</a></div></div>
 <div class="ttc" id="classlbann_1_1stacked__autoencoder_html_ae7f076bb2aa7d9cf3e80993734c86e25"><div class="ttname"><a href="classlbann_1_1stacked__autoencoder.html#ae7f076bb2aa7d9cf3e80993734c86e25">lbann::stacked_autoencoder::evaluate_mini_batch</a></div><div class="ttdeci">bool evaluate_mini_batch()</div><div class="ttdoc">Evaluation step on one mini-batch. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__stacked__autoencoder_8hpp_source.html#l00074">lbann_model_stacked_autoencoder.hpp:74</a></div></div>
 <div class="ttc" id="classlbann_1_1stacked__autoencoder_html_ab0be82f2e4cf447e2bbc13d498518f9b"><div class="ttname"><a href="classlbann_1_1stacked__autoencoder.html#ab0be82f2e4cf447e2bbc13d498518f9b">lbann::stacked_autoencoder::train</a></div><div class="ttdeci">void train(int num_epochs, int evaluation_frequency=0)</div><div class="ttdoc">pre train stacked autoencoder neural network </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__stacked__autoencoder_8cpp_source.html#l00153">lbann_model_stacked_autoencoder.cpp:153</a></div></div>
@@ -216,7 +215,7 @@ $(document).ready(function(){initNavTree('lbann__model__stacked__autoencoder_8hp
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_eb8329679e609af11719ceffa3ff5139.html">include</a></li><li class="navelem"><a class="el" href="dir_ae19bb3c4b74b705a5918893bf9adbdd.html">lbann</a></li><li class="navelem"><a class="el" href="dir_344799d9324fc636ddbbacc95bee068e.html">models</a></li><li class="navelem"><a class="el" href="lbann__model__stacked__autoencoder_8hpp.html">lbann_model_stacked_autoencoder.hpp</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 21:46:29 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 22:41:32 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

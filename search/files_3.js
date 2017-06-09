@@ -112,7 +112,6 @@ var searchData=
   ['lbann_5flayer_5factivations_2ehpp',['lbann_layer_activations.hpp',['../lbann__layer__activations_8hpp.html',1,'']]],
   ['lbann_5flayer_5fconvolutional_2ecpp',['lbann_layer_convolutional.cpp',['../lbann__layer__convolutional_8cpp.html',1,'']]],
   ['lbann_5flayer_5fconvolutional_2ehpp',['lbann_layer_convolutional.hpp',['../lbann__layer__convolutional_8hpp.html',1,'']]],
-  ['lbann_5flayer_5ffactory_2ehpp',['lbann_layer_factory.hpp',['../lbann__layer__factory_8hpp.html',1,'']]],
   ['lbann_5flayer_5ffully_5fconnected_2ecpp',['lbann_layer_fully_connected.cpp',['../lbann__layer__fully__connected_8cpp.html',1,'']]],
   ['lbann_5flayer_5ffully_5fconnected_2ehpp',['lbann_layer_fully_connected.hpp',['../lbann__layer__fully__connected_8hpp.html',1,'']]],
   ['lbann_5flayer_5flocal_5fresponse_5fnormalization_2ecpp',['lbann_layer_local_response_normalization.cpp',['../lbann__layer__local__response__normalization_8cpp.html',1,'']]],

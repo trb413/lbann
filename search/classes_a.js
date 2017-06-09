@@ -2,7 +2,6 @@ var searchData=
 [
   ['l2_5fregularization',['l2_regularization',['../classlbann_1_1l2__regularization.html',1,'lbann']]],
   ['layer',['Layer',['../classlbann_1_1Layer.html',1,'lbann']]],
-  ['layer_5ffactory',['layer_factory',['../classlbann_1_1layer__factory.html',1,'lbann']]],
   ['layer_5fheader',['layer_header',['../structlayer__header.html',1,'']]],
   ['lbann_5fcallback',['lbann_callback',['../classlbann_1_1lbann__callback.html',1,'lbann']]],
   ['lbann_5fcallback_5fadaptive_5flearning_5frate',['lbann_callback_adaptive_learning_rate',['../classlbann_1_1lbann__callback__adaptive__learning__rate.html',1,'lbann']]],

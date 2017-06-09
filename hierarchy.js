@@ -39,9 +39,6 @@ var hierarchy =
     [ "_USHORT2", "struct__USHORT2.html", null ],
     [ "_USHORT3", "struct__USHORT3.html", null ],
     [ "_USHORT4", "struct__USHORT4.html", null ],
-    [ "lbann::base_factory< Layer >", "classlbann_1_1base__factory.html", [
-      [ "lbann::layer_factory", "classlbann_1_1layer__factory.html", null ]
-    ] ],
     [ "cudnn::cudnn_manager", "classcudnn_1_1cudnn__manager.html", null ],
     [ "dataset_header", "structdataset__header.html", null ],
     [ "layer_header", "structlayer__header.html", null ],

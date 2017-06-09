@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-24-gd3bbbf6-ci241364986</span>
+   &#160;<span id="projectnumber">v0.93-rc0-25-gaf96ac4-ci241380454</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('lbann__model__sequential_8cpp_source.h
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classlbann_1_1sequential__model.html#a701aeee99dda6d5ad39b834d76e765e5">   51</a></span>&#160;<a class="code" href="classlbann_1_1sequential__model.html#a701aeee99dda6d5ad39b834d76e765e5">lbann::sequential_model::sequential_model</a>(<span class="keyword">const</span> <a class="code" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> mini_batch_size,</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>,</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html">objective_functions::objective_fn</a> *obj_fn,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classlbann_1_1layer__factory.html">layer_factory</a> *_layer_fac,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    layer_factory *_layer_fac,</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classlbann_1_1optimizer__factory.html">optimizer_factory</a> *optimizer_fac)</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  : <a class="code" href="classlbann_1_1model.html">model</a>(comm, obj_fn, optimizer_fac),</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    m_mini_batch_size(mini_batch_size),</div>
@@ -505,7 +505,6 @@ $(document).ready(function(){initNavTree('lbann__model__sequential_8cpp_source.h
 <div class="ttc" id="lbann__layer__convolutional_8hpp_html"><div class="ttname"><a href="lbann__layer__convolutional_8hpp.html">lbann_layer_convolutional.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html"><div class="ttname"><a href="classlbann_1_1model.html">lbann::model</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00055">lbann_model.hpp:55</a></div></div>
 <div class="ttc" id="lbann__layer__softmax_8hpp_html"><div class="ttname"><a href="lbann__layer__softmax_8hpp.html">lbann_layer_softmax.hpp</a></div></div>
-<div class="ttc" id="classlbann_1_1layer__factory_html"><div class="ttname"><a href="classlbann_1_1layer__factory.html">lbann::layer_factory</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__factory_8hpp_source.html#l00044">lbann_layer_factory.hpp:44</a></div></div>
 <div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c">lbann::persist_type::model</a></div></div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
 <div class="ttc" id="classlbann_1_1sequential__model_html_a65505f140bd9ffa43af0ead3b911ae52"><div class="ttname"><a href="classlbann_1_1sequential__model.html#a65505f140bd9ffa43af0ead3b911ae52">lbann::sequential_model::remove</a></div><div class="ttdeci">virtual void remove(int index)</div><div class="ttdoc">Remove layer from sequential model. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8cpp_source.html#l00316">lbann_model_sequential.cpp:316</a></div></div>
@@ -542,7 +541,7 @@ $(document).ready(function(){initNavTree('lbann__model__sequential_8cpp_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_e8e3d10a664feac46c9de523d11ac34a.html">models</a></li><li class="navelem"><a class="el" href="lbann__model__sequential_8cpp.html">lbann_model_sequential.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 21:46:29 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 22:41:33 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

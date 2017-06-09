@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-24-gd3bbbf6-ci241364986</span>
+   &#160;<span id="projectnumber">v0.93-rc0-25-gaf96ac4-ci241380454</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -558,7 +558,7 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;</div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;  <a class="code" href="classlbann_1_1sequential__model.html">sequential_model</a> *<a class="code" href="classlbann_1_1model.html">model</a>;</div>
 <div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;  <a class="code" href="classlbann_1_1layer__factory.html">layer_factory</a> *lfac = <span class="keyword">new</span> <a class="code" href="classlbann_1_1layer__factory.html">layer_factory</a>();</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;  layer_factory *lfac = <span class="keyword">new</span> layer_factory();</div>
 <div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;</div>
 <div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;  <span class="keyword">const</span> lbann_data::Model&amp; m = p.model();</div>
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">string</span> name = m.name();</div>
@@ -922,7 +922,6 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div class="ttc" id="lbann__data__reader__imagenet_8hpp_html"><div class="ttname"><a href="lbann__data__reader__imagenet_8hpp.html">lbann_data_reader_imagenet.hpp</a></div></div>
 <div class="ttc" id="lbann__proto__common_8cpp_html_ace09e432d5386a8fa822b70335ab87ca"><div class="ttname"><a href="lbann__proto__common_8cpp.html#ace09e432d5386a8fa822b70335ab87ca">init_data_readers</a></div><div class="ttdeci">void init_data_readers(bool master, const lbann_data::LbannPB &amp;p, std::map&lt; execution_mode, generic_data_reader * &gt; &amp;data_readers, int mini_batch_size)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__proto__common_8cpp_source.html#l00572">lbann_proto_common.cpp:572</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_afa7829863a71eb47a3d023413dbe464d"><div class="ttname"><a href="classlbann_1_1model.html#afa7829863a71eb47a3d023413dbe464d">lbann::model::create_optimizer</a></div><div class="ttdeci">optimizer * create_optimizer()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00134">lbann_model.hpp:134</a></div></div>
-<div class="ttc" id="classlbann_1_1layer__factory_html"><div class="ttname"><a href="classlbann_1_1layer__factory.html">lbann::layer_factory</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__factory_8hpp_source.html#l00044">lbann_layer_factory.hpp:44</a></div></div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
 <div class="ttc" id="lbann__batch__normalization_8hpp_html"><div class="ttname"><a href="lbann__batch__normalization_8hpp.html">lbann_batch_normalization.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1generic__data__reader_html_a47aba0f39423e8e1d2f42952e343ef10"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#a47aba0f39423e8e1d2f42952e343ef10">lbann::generic_data_reader::set_role</a></div><div class="ttdeci">void set_role(std::string role)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00184">lbann_data_reader.hpp:184</a></div></div>
@@ -999,7 +998,7 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_a6f8d8b19bd1411ec381c5cd89d82b32.html">proto</a></li><li class="navelem"><a class="el" href="lbann__proto__common_8cpp.html">lbann_proto_common.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 21:46:29 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 22:41:33 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

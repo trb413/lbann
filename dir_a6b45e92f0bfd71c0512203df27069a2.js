@@ -20,9 +20,6 @@ var dir_a6b45e92f0bfd71c0512203df27069a2 =
     [ "lbann_layer_convolutional.hpp", "lbann__layer__convolutional_8hpp.html", [
       [ "convolutional_layer", "classlbann_1_1convolutional__layer.html", "classlbann_1_1convolutional__layer" ]
     ] ],
-    [ "lbann_layer_factory.hpp", "lbann__layer__factory_8hpp.html", [
-      [ "layer_factory", "classlbann_1_1layer__factory.html", "classlbann_1_1layer__factory" ]
-    ] ],
     [ "lbann_layer_fully_connected.hpp", "lbann__layer__fully__connected_8hpp.html", [
       [ "FullyConnectedLayer", "classlbann_1_1FullyConnectedLayer.html", "classlbann_1_1FullyConnectedLayer" ]
     ] ],

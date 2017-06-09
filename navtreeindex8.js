@@ -1,15 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"globals_w.html":[4,1,0,19],
-"globals_z.html":[4,1,0,20],
-"hierarchy.html":[3,2],
-"index.html":[],
-"index.html":[0],
-"index.html#license":[0,2],
-"index.html#overview":[0,0],
-"index.html#team":[0,1],
-"lbann_8hpp.html":[4,0,0,0,0,0,0,0,0,12],
-"lbann_8hpp_source.html":[4,0,0,0,0,0,0,0,0,12],
 "lbann__Elemental__extensions_8cpp.html":[4,0,0,0,0,0,0,1,13],
 "lbann__Elemental__extensions_8cpp.html#a09d5c471681b2b48fbe4c5e6bfd0b3d3":[4,0,0,0,0,0,0,1,13,0],
 "lbann__Elemental__extensions_8cpp.html#a584f088a3325a8222d4d6ac37be04b04":[4,0,0,0,0,0,0,1,13,2],
@@ -249,5 +239,15 @@ var NAVTREEINDEX8 =
 "lbann__dropout_8hpp.html":[4,0,0,0,0,0,0,0,0,9,1],
 "lbann__dropout_8hpp_source.html":[4,0,0,0,0,0,0,0,0,9,1],
 "lbann__exception_8hpp.html":[4,0,0,0,0,0,0,0,0,10,2],
-"lbann__exception_8hpp.html#a06fd1f9a7d05d355fa9936c46347a77f":[4,0,0,0,0,0,0,0,0,10,2,1]
+"lbann__exception_8hpp.html#a06fd1f9a7d05d355fa9936c46347a77f":[4,0,0,0,0,0,0,0,0,10,2,1],
+"lbann__exception_8hpp_source.html":[4,0,0,0,0,0,0,0,0,10,2],
+"lbann__file__io_8cpp.html":[4,0,0,0,0,0,0,1,2,1],
+"lbann__file__io_8cpp.html#a8a08135bfddb4c7375212d2ace2e24b7":[4,0,0,0,0,0,0,1,2,1,1],
+"lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe":[4,0,0,0,0,0,0,1,2,1,0],
+"lbann__file__io_8cpp_source.html":[4,0,0,0,0,0,0,1,2,1],
+"lbann__file__io_8hpp.html":[4,0,0,0,0,0,0,0,0,2,1],
+"lbann__file__io_8hpp.html#a38dd30b2ae8214f6595708264369ddb8":[4,0,0,0,0,0,0,0,0,2,1,0],
+"lbann__file__io_8hpp.html#a6084b9319eea1997f8446fa3e6879532":[4,0,0,0,0,0,0,0,0,2,1,4],
+"lbann__file__io_8hpp.html#a8830dea8eef0ab5b93d68e2358ceeb1a":[4,0,0,0,0,0,0,0,0,2,1,3],
+"lbann__file__io_8hpp.html#aceeccedbbafccfa071b21ee99be794a5":[4,0,0,0,0,0,0,0,0,2,1,1]
 };
