@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"datatype_8hpp.html#a3a71b60f9c187eaa005999c74b5c3390":[4,0,0,0,0,0,0,0,0,11,75],
 "datatype_8hpp.html#a3c63177e6b72d2c03cc5868df55f60c5":[4,0,0,0,0,0,0,0,0,11,145],
 "datatype_8hpp.html#a3cbf2ea61c36710387042aeae0e7a506":[4,0,0,0,0,0,0,0,0,11,35],
 "datatype_8hpp.html#a3d9dc05ceef8678116d62c4f85c69028":[4,0,0,0,0,0,0,0,0,11,143],
@@ -183,8 +184,8 @@ var NAVTREEINDEX7 =
 "functions_type.html":[3,3,3],
 "functions_u.html":[3,3,0,19],
 "functions_v.html":[3,3,0,20],
-"functions_vars.html":[3,3,2,0],
 "functions_vars.html":[3,3,2],
+"functions_vars.html":[3,3,2,0],
 "functions_vars_b.html":[3,3,2,1],
 "functions_vars_c.html":[3,3,2,2],
 "functions_vars_d.html":[3,3,2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "globals_z.html":[4,1,0,20],
 "hierarchy.html":[3,2],
 "index.html":[],
-"index.html":[0],
-"index.html#license":[0,2]
+"index.html":[0]
 };

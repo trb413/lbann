@@ -44,6 +44,7 @@ var searchData=
   ['_7eoptimizer_5ffactory',['~optimizer_factory',['../classlbann_1_1optimizer__factory.html#a97310dc2c882c1137d3582624cecc3b5',1,'lbann::optimizer_factory']]],
   ['_7epersist',['~persist',['../classlbann_1_1persist.html#ac0d475c0174f7dbd805a0b0603277cfa',1,'lbann::persist']]],
   ['_7epooling_5flayer',['~pooling_layer',['../classlbann_1_1pooling__layer.html#ac6c5ce86280196a055697940eb1ff4da',1,'lbann::pooling_layer']]],
+  ['_7eregularizer',['~regularizer',['../classlbann_1_1regularizer.html#aa3a41a0805c11e26758cbbd9f66d662e',1,'lbann::regularizer']]],
   ['_7ermsprop',['~rmsprop',['../classlbann_1_1rmsprop.html#a1ad75c751b92efe0e3e00072baa233ad',1,'lbann::rmsprop']]],
   ['_7ermsprop_5ffactory',['~rmsprop_factory',['../classlbann_1_1rmsprop__factory.html#a64d80f3ef799a4ba0c1acc7295bfbed0',1,'lbann::rmsprop_factory']]],
   ['_7esequential_5fmodel',['~sequential_model',['../classlbann_1_1sequential__model.html#a05ec812bf7db0dc1b29b61aeb197c587',1,'lbann::sequential_model']]],

@@ -10,7 +10,7 @@ var classlbann_1_1metrics_1_1metric =
     [ "report_metric", "classlbann_1_1metrics_1_1metric.html#a98acba8f5dbcce2d3b639fbcc97a56fe", null ],
     [ "reset_metric", "classlbann_1_1metrics_1_1metric.html#a5cc1d6d2f40977a2b19c77961564a37d", null ],
     [ "setup", "classlbann_1_1metrics_1_1metric.html#ad87909c3c9793a05c88420ab8473dbd2", null ],
-    [ "comm", "classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b", null ],
+    [ "m_comm", "classlbann_1_1metrics_1_1metric.html#a13a38b9b0c81442d7e5c8c378cad8117", null ],
     [ "m_data_layout", "classlbann_1_1metrics_1_1metric.html#a5f85bb1542968ddd312dae8fee04ce65", null ],
     [ "m_testing_stats", "classlbann_1_1metrics_1_1metric.html#a52dcd2cbed8053d9a00462dd326cebd6", null ],
     [ "m_training_stats", "classlbann_1_1metrics_1_1metric.html#a33b3527a28a6e8d8eaf719d9327fe303", null ],

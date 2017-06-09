@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"index.html#license":[0,2],
 "index.html#overview":[0,0],
 "index.html#team":[0,1],
 "lbann_8hpp.html":[4,0,0,0,0,0,0,0,0,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "lbann__file__io_8cpp.html":[4,0,0,0,0,0,0,1,2,1],
 "lbann__file__io_8cpp.html#a8a08135bfddb4c7375212d2ace2e24b7":[4,0,0,0,0,0,0,1,2,1,1],
 "lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe":[4,0,0,0,0,0,0,1,2,1,0],
-"lbann__file__io_8cpp_source.html":[4,0,0,0,0,0,0,1,2,1],
-"lbann__file__io_8hpp.html":[4,0,0,0,0,0,0,0,0,2,1]
+"lbann__file__io_8cpp_source.html":[4,0,0,0,0,0,0,1,2,1]
 };

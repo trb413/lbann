@@ -1,5 +1,6 @@
 var classlbann_1_1regularizer =
 [
+    [ "~regularizer", "classlbann_1_1regularizer.html#aa3a41a0805c11e26758cbbd9f66d662e", null ],
     [ "bp_activations", "classlbann_1_1regularizer.html#a520fb6e3ff605f4c5c6de7eda003f0aa", null ],
     [ "bp_connections", "classlbann_1_1regularizer.html#a3b36f80c1f2d359e263527eb00c75341", null ],
     [ "bp_weights", "classlbann_1_1regularizer.html#a6a399de786010af74ec685bc27b9edba", null ],
