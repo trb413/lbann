@@ -1,8 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"globals_r.html":[4,1,0,14],
-"globals_s.html":[4,1,0,15],
-"globals_t.html":[4,1,0,16],
 "globals_type.html":[4,1,3],
 "globals_u.html":[4,1,0,17],
 "globals_v.html":[4,1,0,18],
@@ -10,8 +7,8 @@ var NAVTREEINDEX8 =
 "globals_w.html":[4,1,0,19],
 "globals_z.html":[4,1,0,20],
 "hierarchy.html":[3,2],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "index.html#license":[0,2],
 "index.html#overview":[0,0],
 "index.html#team":[0,1],
@@ -249,5 +246,8 @@ var NAVTREEINDEX8 =
 "lbann__dataset_8hpp.html":[4,0,0,0,0,0,0,0,0,10,1],
 "lbann__dataset_8hpp_source.html":[4,0,0,0,0,0,0,0,0,10,1],
 "lbann__distributed__minibatch__parallel__io_8cpp.html":[4,0,0,0,0,0,0,1,2,0],
-"lbann__distributed__minibatch__parallel__io_8cpp_source.html":[4,0,0,0,0,0,0,1,2,0]
+"lbann__distributed__minibatch__parallel__io_8cpp_source.html":[4,0,0,0,0,0,0,1,2,0],
+"lbann__distributed__minibatch__parallel__io_8hpp.html":[4,0,0,0,0,0,0,0,0,2,0],
+"lbann__distributed__minibatch__parallel__io_8hpp_source.html":[4,0,0,0,0,0,0,0,0,2,0],
+"lbann__dropout_8cpp.html":[4,0,0,0,0,0,0,1,9,1]
 };

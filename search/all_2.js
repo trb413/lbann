@@ -74,7 +74,6 @@ var searchData=
   ['bp_5foutput',['bp_output',['../classlbann_1_1input__layer.html#a066fffe134e26411764a8734f25fb35e',1,'lbann::input_layer::bp_output()'],['../classlbann_1_1Layer.html#a030edc2fd4cc62d9e13c3b7e81167be3',1,'lbann::Layer::bp_output()']]],
   ['bp_5ftime',['bp_time',['../classlbann_1_1Layer.html#abaa9acb195346090fffcd64013295479',1,'lbann::Layer']]],
   ['bp_5fweights',['bp_weights',['../classlbann_1_1batch__normalization.html#aed81fefa1d55983393f69e14b6fdba9d',1,'lbann::batch_normalization::bp_weights()'],['../classlbann_1_1regularizer.html#a6a399de786010af74ec685bc27b9edba',1,'lbann::regularizer::bp_weights()']]],
-  ['broadcast',['broadcast',['../classlbann_1_1lbann__comm.html#a6b7f19e96c92f2e6a98ad2cb0daaa0d1',1,'lbann::lbann_comm::broadcast(T *data, int count, std::vector&lt; int &gt; &amp;dests, int root)'],['../classlbann_1_1lbann__comm.html#a1cf976a743a4d0718681c45340a975d4',1,'lbann::lbann_comm::broadcast(Mat &amp;mat, std::vector&lt; int &gt; &amp;dests, int root)'],['../classlbann_1_1lbann__comm.html#a9ec7f646ba99e1f23af5f756cd2d730b',1,'lbann::lbann_comm::broadcast(DistMat &amp;mat, std::vector&lt; int &gt; &amp;dests, int root)']]],
   ['bytes_5freceived',['bytes_received',['../classlbann_1_1lbann__comm.html#afb99f57f7eafc0695bf28e6c26a8120f',1,'lbann::lbann_comm']]],
   ['bytes_5fsent',['bytes_sent',['../classlbann_1_1lbann__comm.html#ad1f146ae7337ece6266fd307944928e0',1,'lbann::lbann_comm']]]
 ];

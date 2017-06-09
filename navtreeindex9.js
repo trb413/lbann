@@ -1,8 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"lbann__distributed__minibatch__parallel__io_8hpp.html":[4,0,0,0,0,0,0,0,0,2,0],
-"lbann__distributed__minibatch__parallel__io_8hpp_source.html":[4,0,0,0,0,0,0,0,0,2,0],
-"lbann__dropout_8cpp.html":[4,0,0,0,0,0,0,1,9,1],
 "lbann__dropout_8cpp_source.html":[4,0,0,0,0,0,0,1,9,1],
 "lbann__dropout_8hpp.html":[4,0,0,0,0,0,0,0,0,9,1],
 "lbann__dropout_8hpp_source.html":[4,0,0,0,0,0,0,0,0,9,1],
@@ -249,5 +246,8 @@ var NAVTREEINDEX9 =
 "lbann__optimizer__adam_8hpp.html":[4,0,0,0,0,0,0,0,0,7,2],
 "lbann__optimizer__adam_8hpp_source.html":[4,0,0,0,0,0,0,0,0,7,2],
 "lbann__optimizer__hypergradient__adam_8cpp.html":[4,0,0,0,0,0,0,1,7,3],
-"lbann__optimizer__hypergradient__adam_8cpp_source.html":[4,0,0,0,0,0,0,1,7,3]
+"lbann__optimizer__hypergradient__adam_8cpp_source.html":[4,0,0,0,0,0,0,1,7,3],
+"lbann__optimizer__hypergradient__adam_8hpp.html":[4,0,0,0,0,0,0,0,0,7,3],
+"lbann__optimizer__hypergradient__adam_8hpp_source.html":[4,0,0,0,0,0,0,0,0,7,3],
+"lbann__optimizer__rmsprop_8cpp.html":[4,0,0,0,0,0,0,1,7,4]
 };
