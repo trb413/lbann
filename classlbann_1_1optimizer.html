@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-8-g93c5223-ci241311511</span>
+   &#160;<span id="projectnumber">v0.93-rc0-9-gdbc8ffc-ci241314686</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -211,9 +211,9 @@ Private Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="lbann__optimizer_8cpp_source.html#l00035">35</a> of file <a class="el" href="lbann__optimizer_8cpp_source.html">lbann_optimizer.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  : <a class="code" href="classlbann_1_1optimizer.html#a5ab3dd1ebbfbbed8e461742f80aa32e0">comm</a>(<a class="code" href="classlbann_1_1optimizer.html#a5ab3dd1ebbfbbed8e461742f80aa32e0">comm</a>), <a class="code" href="classlbann_1_1optimizer.html#ad393dcdcb82b44510c586ed5ec46d4dd">m_learning_rate</a>(learning_rate), <a class="code" href="classlbann_1_1optimizer.html#a3e32c0a85307f54f8a6845082cbc14b7">m_name</a>(<a class="code" href="classlbann_1_1optimizer.html#a07f6a342defa633674bef68b91bac877">name</a>) {}</div>
 <div class="ttc" id="classlbann_1_1optimizer_html_a07f6a342defa633674bef68b91bac877"><div class="ttname"><a href="classlbann_1_1optimizer.html#a07f6a342defa633674bef68b91bac877">lbann::optimizer::name</a></div><div class="ttdeci">const string name() const </div><div class="ttdoc">Get optimizer name. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00074">lbann_optimizer.hpp:74</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer_html_ad393dcdcb82b44510c586ed5ec46d4dd"><div class="ttname"><a href="classlbann_1_1optimizer.html#ad393dcdcb82b44510c586ed5ec46d4dd">lbann::optimizer::m_learning_rate</a></div><div class="ttdeci">DataType m_learning_rate</div><div class="ttdoc">Learning rate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00107">lbann_optimizer.hpp:107</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer_html_a5ab3dd1ebbfbbed8e461742f80aa32e0"><div class="ttname"><a href="classlbann_1_1optimizer.html#a5ab3dd1ebbfbbed8e461742f80aa32e0">lbann::optimizer::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdoc">LBANN communicator. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00097">lbann_optimizer.hpp:97</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer_html_a3e32c0a85307f54f8a6845082cbc14b7"><div class="ttname"><a href="classlbann_1_1optimizer.html#a3e32c0a85307f54f8a6845082cbc14b7">lbann::optimizer::m_name</a></div><div class="ttdeci">const std::string m_name</div><div class="ttdoc">Optimizer name. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00111">lbann_optimizer.hpp:111</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_ad393dcdcb82b44510c586ed5ec46d4dd"><div class="ttname"><a href="classlbann_1_1optimizer.html#ad393dcdcb82b44510c586ed5ec46d4dd">lbann::optimizer::m_learning_rate</a></div><div class="ttdeci">DataType m_learning_rate</div><div class="ttdoc">Learning rate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00090">lbann_optimizer.hpp:90</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a5ab3dd1ebbfbbed8e461742f80aa32e0"><div class="ttname"><a href="classlbann_1_1optimizer.html#a5ab3dd1ebbfbbed8e461742f80aa32e0">lbann::optimizer::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdoc">LBANN communicator. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00080">lbann_optimizer.hpp:80</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a3e32c0a85307f54f8a6845082cbc14b7"><div class="ttname"><a href="classlbann_1_1optimizer.html#a3e32c0a85307f54f8a6845082cbc14b7">lbann::optimizer::m_name</a></div><div class="ttdeci">const std::string m_name</div><div class="ttdoc">Optimizer name. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00094">lbann_optimizer.hpp:94</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -282,7 +282,7 @@ Here is the caller graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                             {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1optimizer.html#ad393dcdcb82b44510c586ed5ec46d4dd">m_learning_rate</a>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
-<div class="ttc" id="classlbann_1_1optimizer_html_ad393dcdcb82b44510c586ed5ec46d4dd"><div class="ttname"><a href="classlbann_1_1optimizer.html#ad393dcdcb82b44510c586ed5ec46d4dd">lbann::optimizer::m_learning_rate</a></div><div class="ttdeci">DataType m_learning_rate</div><div class="ttdoc">Learning rate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00107">lbann_optimizer.hpp:107</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_ad393dcdcb82b44510c586ed5ec46d4dd"><div class="ttname"><a href="classlbann_1_1optimizer.html#ad393dcdcb82b44510c586ed5ec46d4dd">lbann::optimizer::m_learning_rate</a></div><div class="ttdeci">DataType m_learning_rate</div><div class="ttdoc">Learning rate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00090">lbann_optimizer.hpp:90</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -322,7 +322,7 @@ Here is the caller graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                               {</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1optimizer.html#a32e8063fd84d0754e7546a016e65e093">m_parameters</a>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
-<div class="ttc" id="classlbann_1_1optimizer_html_a32e8063fd84d0754e7546a016e65e093"><div class="ttname"><a href="classlbann_1_1optimizer.html#a32e8063fd84d0754e7546a016e65e093">lbann::optimizer::m_parameters</a></div><div class="ttdeci">AbsDistMat * m_parameters</div><div class="ttdoc">Parameters to optimize. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00099">lbann_optimizer.hpp:99</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a32e8063fd84d0754e7546a016e65e093"><div class="ttname"><a href="classlbann_1_1optimizer.html#a32e8063fd84d0754e7546a016e65e093">lbann::optimizer::m_parameters</a></div><div class="ttdeci">AbsDistMat * m_parameters</div><div class="ttdoc">Parameters to optimize. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00082">lbann_optimizer.hpp:82</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -353,7 +353,7 @@ Here is the caller graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                            {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1optimizer.html#a3e32c0a85307f54f8a6845082cbc14b7">m_name</a>;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
-<div class="ttc" id="classlbann_1_1optimizer_html_a3e32c0a85307f54f8a6845082cbc14b7"><div class="ttname"><a href="classlbann_1_1optimizer.html#a3e32c0a85307f54f8a6845082cbc14b7">lbann::optimizer::m_name</a></div><div class="ttdeci">const std::string m_name</div><div class="ttdoc">Optimizer name. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00111">lbann_optimizer.hpp:111</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a3e32c0a85307f54f8a6845082cbc14b7"><div class="ttname"><a href="classlbann_1_1optimizer.html#a3e32c0a85307f54f8a6845082cbc14b7">lbann::optimizer::m_name</a></div><div class="ttdeci">const std::string m_name</div><div class="ttdoc">Optimizer name. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00094">lbann_optimizer.hpp:94</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -385,7 +385,7 @@ Here is the caller graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                                         {</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classlbann_1_1optimizer.html#ad393dcdcb82b44510c586ed5ec46d4dd">m_learning_rate</a> = learning_rate;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  };</div>
-<div class="ttc" id="classlbann_1_1optimizer_html_ad393dcdcb82b44510c586ed5ec46d4dd"><div class="ttname"><a href="classlbann_1_1optimizer.html#ad393dcdcb82b44510c586ed5ec46d4dd">lbann::optimizer::m_learning_rate</a></div><div class="ttdeci">DataType m_learning_rate</div><div class="ttdoc">Learning rate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00107">lbann_optimizer.hpp:107</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_ad393dcdcb82b44510c586ed5ec46d4dd"><div class="ttname"><a href="classlbann_1_1optimizer.html#ad393dcdcb82b44510c586ed5ec46d4dd">lbann::optimizer::m_learning_rate</a></div><div class="ttdeci">DataType m_learning_rate</div><div class="ttdoc">Learning rate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00090">lbann_optimizer.hpp:90</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -444,15 +444,15 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classlbann_1_1optimizer.html#a55f17cd98721e80b6a1999b5a71adf4d">m_matrix_format</a> = <a class="code" href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dafedb2d84cafe20862cb4399751a8a7e3">matrix_format::invalid</a>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1optimizer_html_a55f17cd98721e80b6a1999b5a71adf4d"><div class="ttname"><a href="classlbann_1_1optimizer.html#a55f17cd98721e80b6a1999b5a71adf4d">lbann::optimizer::m_matrix_format</a></div><div class="ttdeci">matrix_format m_matrix_format</div><div class="ttdoc">Parameter matrix format. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00105">lbann_optimizer.hpp:105</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a55f17cd98721e80b6a1999b5a71adf4d"><div class="ttname"><a href="classlbann_1_1optimizer.html#a55f17cd98721e80b6a1999b5a71adf4d">lbann::optimizer::m_matrix_format</a></div><div class="ttdeci">matrix_format m_matrix_format</div><div class="ttdoc">Parameter matrix format. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00088">lbann_optimizer.hpp:88</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0dacf33f55c86c56389442455e8e190be2d"><div class="ttname"><a href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dacf33f55c86c56389442455e8e190be2d">matrix_format::MC_MR</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0dafedb2d84cafe20862cb4399751a8a7e3"><div class="ttname"><a href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dafedb2d84cafe20862cb4399751a8a7e3">matrix_format::invalid</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer_html_ac98dc3c120b84fd48ef84105a6e1ca6c"><div class="ttname"><a href="classlbann_1_1optimizer.html#ac98dc3c120b84fd48ef84105a6e1ca6c">lbann::optimizer::m_height</a></div><div class="ttdeci">Int m_height</div><div class="ttdoc">Parameter matrix height. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00101">lbann_optimizer.hpp:101</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_ac98dc3c120b84fd48ef84105a6e1ca6c"><div class="ttname"><a href="classlbann_1_1optimizer.html#ac98dc3c120b84fd48ef84105a6e1ca6c">lbann::optimizer::m_height</a></div><div class="ttdeci">Int m_height</div><div class="ttdoc">Parameter matrix height. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00084">lbann_optimizer.hpp:84</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0da41478dbc562bc2cdaa328e2fa04558b2"><div class="ttname"><a href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0da41478dbc562bc2cdaa328e2fa04558b2">matrix_format::STAR_STAR</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer_html_adddaffd5728dc3ac00a1eedea0f4a4c6"><div class="ttname"><a href="classlbann_1_1optimizer.html#adddaffd5728dc3ac00a1eedea0f4a4c6">lbann::optimizer::m_width</a></div><div class="ttdeci">Int m_width</div><div class="ttdoc">Parameter matrix width. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00103">lbann_optimizer.hpp:103</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_adddaffd5728dc3ac00a1eedea0f4a4c6"><div class="ttname"><a href="classlbann_1_1optimizer.html#adddaffd5728dc3ac00a1eedea0f4a4c6">lbann::optimizer::m_width</a></div><div class="ttdeci">Int m_width</div><div class="ttdoc">Parameter matrix width. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00086">lbann_optimizer.hpp:86</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0dab05461c65c89f42d7e1b8c9cea626032"><div class="ttname"><a href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dab05461c65c89f42d7e1b8c9cea626032">matrix_format::STAR_VC</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0dad9fe2079b84227e0894774795402ec69"><div class="ttname"><a href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dad9fe2079b84227e0894774795402ec69">matrix_format::CIRC_CIRC</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer_html_a32e8063fd84d0754e7546a016e65e093"><div class="ttname"><a href="classlbann_1_1optimizer.html#a32e8063fd84d0754e7546a016e65e093">lbann::optimizer::m_parameters</a></div><div class="ttdeci">AbsDistMat * m_parameters</div><div class="ttdoc">Parameters to optimize. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00099">lbann_optimizer.hpp:99</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a32e8063fd84d0754e7546a016e65e093"><div class="ttname"><a href="classlbann_1_1optimizer.html#a32e8063fd84d0754e7546a016e65e093">lbann::optimizer::m_parameters</a></div><div class="ttdeci">AbsDistMat * m_parameters</div><div class="ttdoc">Parameters to optimize. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00082">lbann_optimizer.hpp:82</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0da99fe60b6c6fbf8dd05bf45c7898674bf"><div class="ttname"><a href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0da99fe60b6c6fbf8dd05bf45c7898674bf">matrix_format::MC_STAR</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -524,7 +524,7 @@ Here is the caller graph for this function:</div>
 
 <p>LBANN communicator. </p>
 
-<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00097">97</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00080">80</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
 
 </div>
 </div>
@@ -548,7 +548,7 @@ Here is the caller graph for this function:</div>
 
 <p>Parameter matrix height. </p>
 
-<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00101">101</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00084">84</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
 
 </div>
 </div>
@@ -572,7 +572,7 @@ Here is the caller graph for this function:</div>
 
 <p>Learning rate. </p>
 
-<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00107">107</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00090">90</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
 
 </div>
 </div>
@@ -596,7 +596,7 @@ Here is the caller graph for this function:</div>
 
 <p>Parameter matrix format. </p>
 
-<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00105">105</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00088">88</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
 
 </div>
 </div>
@@ -620,7 +620,7 @@ Here is the caller graph for this function:</div>
 
 <p>Optimizer name. </p>
 
-<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00111">111</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00094">94</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
 
 </div>
 </div>
@@ -644,7 +644,7 @@ Here is the caller graph for this function:</div>
 
 <p>Parameters to optimize. </p>
 
-<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00099">99</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00082">82</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
 
 </div>
 </div>
@@ -668,7 +668,7 @@ Here is the caller graph for this function:</div>
 
 <p>Parameter matrix width. </p>
 
-<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00103">103</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__optimizer_8hpp_source.html#l00086">86</a> of file <a class="el" href="lbann__optimizer_8hpp_source.html">lbann_optimizer.hpp</a>.</p>
 
 </div>
 </div>
@@ -682,7 +682,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1optimizer.html">optimizer</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 19:01:19 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 19:03:17 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
