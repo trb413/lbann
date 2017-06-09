@@ -46,11 +46,11 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21",
-"classlbann_1_1convolutional__layer.html#a9fc985265db92ca21de7463570b450a7",
-"classlbann_1_1io__layer.html#abe71d3ff37e3a3ddbb470347458a07ec",
-"classlbann_1_1lbann__comm.html#a343e23a30883ef1897addfb6a0f2766f",
-"classlbann_1_1metrics_1_1categorical__accuracy.html#ab0f46ce61471c2301b3c80ef8bd64fd8",
+"classlbann_1_1base__factory.html#ae93942a7f0777d8fcb87ff500c4ca678",
+"classlbann_1_1generic__data__reader.html#a91bd71b9bbfbe1e839dff6dcacef2b5b",
+"classlbann_1_1layer__factory.html#aa87de245964675e110a0546a84734c64",
+"classlbann_1_1lbann__comm.html#a4e3d35520a8f567579f9235e9808ba1c",
+"classlbann_1_1metrics_1_1metric.html",
 "classlbann_1_1pooling__layer.html#a45c53f7dae2f37d68291ccbd4a614517",
 "datatype_8hpp.html#a2a705677dedb5a90b1ba70974d2e5c04",
 "globals_w.html",

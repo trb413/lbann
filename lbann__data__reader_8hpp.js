@@ -1,5 +1,5 @@
 var lbann__data__reader_8hpp =
 [
-    [ "DataReader", "classlbann_1_1DataReader.html", "classlbann_1_1DataReader" ],
+    [ "generic_data_reader", "classlbann_1_1generic__data__reader.html", "classlbann_1_1generic__data__reader" ],
     [ "NOT_IMPLEMENTED", "lbann__data__reader_8hpp.html#a10d485225119e927ae18857acf81bdc6", null ]
 ];

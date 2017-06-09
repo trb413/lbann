@@ -1,7 +1,7 @@
 var classlbann_1_1partitioned__minibatch__parallel__io =
 [
-    [ "partitioned_minibatch_parallel_io", "classlbann_1_1partitioned__minibatch__parallel__io.html#a4628fb8c60f7a9f045bbc630cd6fe74b", null ],
-    [ "calculate_num_iterations_per_epoch", "classlbann_1_1partitioned__minibatch__parallel__io.html#a0eed48bbbe3846be70af6e27b3402060", null ],
+    [ "partitioned_minibatch_parallel_io", "classlbann_1_1partitioned__minibatch__parallel__io.html#a2c997d378c7cd9bd5d38da9e73f461da", null ],
+    [ "calculate_num_iterations_per_epoch", "classlbann_1_1partitioned__minibatch__parallel__io.html#a138ce5d3d35dbb07236fef78e26d5dfb", null ],
     [ "distribute_from_local_matrix", "classlbann_1_1partitioned__minibatch__parallel__io.html#a2e0cc109d99d9be6f615fd7b27d691ec", null ],
     [ "fetch_from_data_reader", "classlbann_1_1partitioned__minibatch__parallel__io.html#abbe25ec14effe57a3128313429103e15", null ],
     [ "fetch_to_local_matrix", "classlbann_1_1partitioned__minibatch__parallel__io.html#acb5e4f7ba2b31da3a52972f29be23adf", null ],
@@ -14,7 +14,7 @@ var classlbann_1_1partitioned__minibatch__parallel__io =
     [ "update_data_reader", "classlbann_1_1partitioned__minibatch__parallel__io.html#a8d2655e360ad105ef24e84b28a900136", null ],
     [ "comm", "classlbann_1_1partitioned__minibatch__parallel__io.html#afbd6174e81834884a9fa1278b6bf22f3", null ],
     [ "m_cur_step_in_epoch", "classlbann_1_1partitioned__minibatch__parallel__io.html#a2c66393dbeba238892b8380e47c48256", null ],
-    [ "m_data_readers", "classlbann_1_1partitioned__minibatch__parallel__io.html#a16fe32b39ea95df1056e60a85ae314c0", null ],
+    [ "m_data_readers", "classlbann_1_1partitioned__minibatch__parallel__io.html#a0b26cc745ac37e1c3f23fe854ef09871", null ],
     [ "m_local_data_valid", "classlbann_1_1partitioned__minibatch__parallel__io.html#a76ee5dccb1f392731415e9c43ded0352", null ],
     [ "m_local_reader_done", "classlbann_1_1partitioned__minibatch__parallel__io.html#a08e53e9c8d5f0eee4b2d66addf5b7179", null ],
     [ "m_max_mini_batch_size", "classlbann_1_1partitioned__minibatch__parallel__io.html#a9842e1da3765079986696009903f3a1a", null ],

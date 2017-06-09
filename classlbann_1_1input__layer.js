@@ -1,6 +1,6 @@
 var classlbann_1_1input__layer =
 [
-    [ "input_layer", "classlbann_1_1input__layer.html#a38bca0c4eb381adc8a380351aca4cd7f", null ],
+    [ "input_layer", "classlbann_1_1input__layer.html#ae30b658b9b07b1aff3b6bdb219cb2e79", null ],
     [ "bp_nonlinearity", "classlbann_1_1input__layer.html#af00f0dd52b767206fd2d057f02f5857e", null ],
     [ "bp_output", "classlbann_1_1input__layer.html#a066fffe134e26411764a8734f25fb35e", null ],
     [ "fp_nonlinearity", "classlbann_1_1input__layer.html#abd30eb911e33d2f5246db72f79cbaf3b", null ],

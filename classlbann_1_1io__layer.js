@@ -1,6 +1,6 @@
 var classlbann_1_1io__layer =
 [
-    [ "io_layer", "classlbann_1_1io__layer.html#ab64672a40366e264067ed065321bc294", null ],
+    [ "io_layer", "classlbann_1_1io__layer.html#a2b7560d2736ba0ddb24cd0c026c1c710", null ],
     [ "at_new_epoch", "classlbann_1_1io__layer.html#a4f0e3bbd6bc638432723179efc2998ab", null ],
     [ "get_linearized_data_size", "classlbann_1_1io__layer.html#abe71d3ff37e3a3ddbb470347458a07ec", null ],
     [ "get_linearized_label_size", "classlbann_1_1io__layer.html#a3c39307b9bc8166e5034488344445d1e", null ],
@@ -13,10 +13,10 @@ var classlbann_1_1io__layer =
     [ "is_for_regression", "classlbann_1_1io__layer.html#a84f62786812c100923e7553f704a5edc", null ],
     [ "loadFromCheckpointShared", "classlbann_1_1io__layer.html#a2c62c0b4e30f80c3edaf39e6530ccb49", null ],
     [ "saveToCheckpointShared", "classlbann_1_1io__layer.html#ae59b49fad28d273f72035f227fa846af", null ],
-    [ "select_data_reader", "classlbann_1_1io__layer.html#ae400abb9ed5e3ad2c8df1efc0168bc0a", null ],
-    [ "set_testing_data_reader", "classlbann_1_1io__layer.html#a73ebdd84af9e419d2f21013cf60da207", null ],
-    [ "set_training_data_reader", "classlbann_1_1io__layer.html#a2f041f30ef460bd2064be4c9988b6ffe", null ],
-    [ "set_validation_data_reader", "classlbann_1_1io__layer.html#a147126a1a4372a36a9a52e9632dd2bfc", null ],
+    [ "select_data_reader", "classlbann_1_1io__layer.html#afeab6bcd4e2aaa537c1c031ab4033e34", null ],
+    [ "set_testing_data_reader", "classlbann_1_1io__layer.html#a1767e85b5f8165f85b1d186d632054c8", null ],
+    [ "set_training_data_reader", "classlbann_1_1io__layer.html#a1dcdb596d37db4827cf286001f703653", null ],
+    [ "set_validation_data_reader", "classlbann_1_1io__layer.html#ac11705779ca97cd3b5787a4446c21247", null ],
     [ "setup_data_readers_for_evaluation", "classlbann_1_1io__layer.html#a16a5c386d44d12a6332c01c80cf380c2", null ],
     [ "setup_data_readers_for_training", "classlbann_1_1io__layer.html#ad2dd20955a1ab72a83a9adad85992554", null ],
     [ "update_num_samples_processed", "classlbann_1_1io__layer.html#abbf07dd592d714852090c12855983592", null ],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['calculate_5fnum_5fiterations_5fper_5fepoch',['calculate_num_iterations_per_epoch',['../classlbann_1_1distributed__minibatch__parallel__io.html#a4165f9b98de5946458f28dbd07462543',1,'lbann::distributed_minibatch_parallel_io::calculate_num_iterations_per_epoch()'],['../classlbann_1_1partitioned__minibatch__parallel__io.html#a0eed48bbbe3846be70af6e27b3402060',1,'lbann::partitioned_minibatch_parallel_io::calculate_num_iterations_per_epoch()']]],
+  ['calculate_5fnum_5fiterations_5fper_5fepoch',['calculate_num_iterations_per_epoch',['../classlbann_1_1distributed__minibatch__parallel__io.html#aab0bb911e329a56d13a791849dca8ccc',1,'lbann::distributed_minibatch_parallel_io::calculate_num_iterations_per_epoch()'],['../classlbann_1_1partitioned__minibatch__parallel__io.html#a138ce5d3d35dbb07236fef78e26d5dfb',1,'lbann::partitioned_minibatch_parallel_io::calculate_num_iterations_per_epoch()']]],
   ['callbacks',['callbacks',['../classlbann_1_1model.html#aeb879b39af5e71c322616d72980e1334',1,'lbann::model']]],
   ['categorical_5faccuracy',['categorical_accuracy',['../classlbann_1_1metrics_1_1categorical__accuracy.html',1,'lbann::metrics']]],
   ['categorical_5faccuracy',['categorical_accuracy',['../classlbann_1_1metrics_1_1categorical__accuracy.html#afa4e32440e5edf1f010d07399cecbabd',1,'lbann::metrics::categorical_accuracy::categorical_accuracy()'],['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a576ea1a64c846beca09a6346ba791d6c',1,'lbann::metrics::categorical_accuracy()']]],
@@ -16,6 +16,8 @@ var searchData=
   ['checkgradientmb',['checkGradientMB',['../classlbann_1_1Layer.html#a165d07794df1b67b6034e80ce003f714',1,'lbann::Layer']]],
   ['checkmpi',['checkMPI',['../lbann__comm_8cpp.html#a7a92ceb4ddf57dc156d3a1b39f3ab962',1,'lbann_comm.cpp']]],
   ['checkpointshared',['checkpointShared',['../classlbann_1_1model.html#a731757adee63f97593e7ddbfa3c97ce1',1,'lbann::model']]],
+  ['cifar10_5freader',['cifar10_reader',['../classlbann_1_1cifar10__reader.html#ada9cd4fc45639b319e399b1b40107064',1,'lbann::cifar10_reader::cifar10_reader(int batchSize, bool shuffle=true)'],['../classlbann_1_1cifar10__reader.html#acbd9830c126cb874408c522fcf42d93f',1,'lbann::cifar10_reader::cifar10_reader(const cifar10_reader &amp;source)']]],
+  ['cifar10_5freader',['cifar10_reader',['../classlbann_1_1cifar10__reader.html',1,'lbann']]],
   ['circ_5fcirc',['CIRC_CIRC',['../lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dad9fe2079b84227e0894774795402ec69',1,'lbann_base.hpp']]],
   ['circmat',['CircMat',['../lbann__base_8hpp.html#aaf89a79f1476644edba844c4937abbcc',1,'lbann_base.hpp']]],
   ['ckptepochs',['CkptEpochs',['../classlbann_1_1TrainingParams.html#ad113dc144a2c77609091fd36fc5816bf',1,'lbann::TrainingParams']]],
@@ -26,6 +28,8 @@ var searchData=
   ['closeread',['closeread',['../namespacelbann.html#a38dd30b2ae8214f6595708264369ddb8',1,'lbann']]],
   ['closewrite',['closewrite',['../namespacelbann.html#aceeccedbbafccfa071b21ee99be794a5',1,'lbann']]],
   ['cmake',['CMake',['../cmake.html',1,'getting_started']]],
+  ['cnpy_5freader',['cnpy_reader',['../classlbann_1_1cnpy__reader.html',1,'lbann']]],
+  ['cnpy_5freader',['cnpy_reader',['../classlbann_1_1cnpy__reader.html#a2f6c249ee07bc87c7a95970426ab1c61',1,'lbann::cnpy_reader::cnpy_reader(int batchSize, bool shuffle=true)'],['../classlbann_1_1cnpy__reader.html#a7f95b4061be611f73c34a86ba8d52183',1,'lbann::cnpy_reader::cnpy_reader(const cnpy_reader &amp;source)']]],
   ['col2im',['col2im',['../namespacelbann.html#a207630bb79a5ebea1f7da21510c16ed7',1,'lbann::col2im(const Mat &amp;col, Mat &amp;im, const std::vector&lt; Int &gt; &amp;im_dims, const std::vector&lt; Int &gt; &amp;im_pads, Int num_im_channels, const std::vector&lt; Int &gt; &amp;window_dims, const std::vector&lt; Int &gt; &amp;window_strides)'],['../namespacelbann.html#a744d521bafc98dd1289e55766e0331f8',1,'lbann::col2im(const Mat &amp;col, Mat &amp;im, const std::vector&lt; El::Int &gt; &amp;im_dims, const std::vector&lt; El::Int &gt; &amp;im_pads, El::Int num_im_channels, const std::vector&lt; El::Int &gt; &amp;window_dims, const std::vector&lt; El::Int &gt; &amp;window_strides)']]],
   ['col2im_5f2d',['col2im_2d',['../namespacelbann.html#a1953674a43b284f0abb5c5e4db94b2b9',1,'lbann']]],
   ['col_5fpixels',['col_pixels',['../classlbann_1_1lbann__image__preprocessor.html#a3e99be32b95a415fd8d616cb85075df1',1,'lbann::lbann_image_preprocessor']]],
@@ -63,7 +67,6 @@ var searchData=
   ['current_5fepoch',['current_epoch',['../structlbann__model__header.html#ae9261039775c8b0f24f9c47c10f09f3e',1,'lbann_model_header']]],
   ['current_5fphase',['current_phase',['../structlbann__model__header.html#abc0a59c9871095d2a6dec05a82fafc1e',1,'lbann_model_header']]],
   ['current_5fstep',['current_step',['../structlbann__model__header.html#a35c523d94beb5593af480ae8ec3996bb',1,'lbann_model_header']]],
-  ['currentpos',['CurrentPos',['../classlbann_1_1DataReader.html#a50648e62f6eafb634aa1faae9e3c8cac',1,'lbann::DataReader']]],
   ['custom_5fschedule',['custom_schedule',['../classlbann_1_1lbann__callback__custom__learning__rate.html#a491d5d215477d46ec69450d10c5e46d3',1,'lbann::lbann_callback_custom_learning_rate']]],
   ['cutility',['CUtility',['../classlbann_1_1CUtility.html',1,'lbann']]],
   ['cv_5fpixels',['cv_pixels',['../classlbann_1_1lbann__image__preprocessor.html#a7dc609e33febdc7fc29bdc9270594bea',1,'lbann::lbann_image_preprocessor']]]

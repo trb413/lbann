@@ -10,25 +10,25 @@ var dir_0b16036c62e9063447de1e5debde0af9 =
     [ "lbann_cv_utils.hpp", "lbann__cv__utils_8hpp.html", null ],
     [ "lbann_data_reader.hpp", "lbann__data__reader_8hpp.html", "lbann__data__reader_8hpp" ],
     [ "lbann_data_reader_cifar10.hpp", "lbann__data__reader__cifar10_8hpp.html", [
-      [ "DataReader_CIFAR10", "classlbann_1_1DataReader__CIFAR10.html", "classlbann_1_1DataReader__CIFAR10" ]
+      [ "cifar10_reader", "classlbann_1_1cifar10__reader.html", "classlbann_1_1cifar10__reader" ]
     ] ],
     [ "lbann_data_reader_cnpy.hpp", "lbann__data__reader__cnpy_8hpp.html", [
-      [ "DataReader_cnpy", "classlbann_1_1DataReader__cnpy.html", "classlbann_1_1DataReader__cnpy" ]
+      [ "cnpy_reader", "classlbann_1_1cnpy__reader.html", "classlbann_1_1cnpy__reader" ]
     ] ],
     [ "lbann_data_reader_imagenet.hpp", "lbann__data__reader__imagenet_8hpp.html", [
-      [ "DataReader_ImageNet", "classlbann_1_1DataReader__ImageNet.html", "classlbann_1_1DataReader__ImageNet" ]
+      [ "imagenet_reader", "classlbann_1_1imagenet__reader.html", "classlbann_1_1imagenet__reader" ]
     ] ],
     [ "lbann_data_reader_imagenet_cv.hpp", "lbann__data__reader__imagenet__cv_8hpp.html", [
-      [ "DataReader_ImageNet_cv", "classlbann_1_1DataReader__ImageNet__cv.html", "classlbann_1_1DataReader__ImageNet__cv" ]
+      [ "imagenet_reader_cv", "classlbann_1_1imagenet__reader__cv.html", "classlbann_1_1imagenet__reader__cv" ]
     ] ],
     [ "lbann_data_reader_imagenet_single.hpp", "lbann__data__reader__imagenet__single_8hpp.html", [
-      [ "DataReader_ImageNetSingle", "classlbann_1_1DataReader__ImageNetSingle.html", "classlbann_1_1DataReader__ImageNetSingle" ]
+      [ "imagenet_readerSingle", "classlbann_1_1imagenet__readerSingle.html", "classlbann_1_1imagenet__readerSingle" ]
     ] ],
     [ "lbann_data_reader_imagenet_single_cv.hpp", "lbann__data__reader__imagenet__single__cv_8hpp.html", [
-      [ "DataReader_ImageNetSingle_cv", "classlbann_1_1DataReader__ImageNetSingle__cv.html", "classlbann_1_1DataReader__ImageNetSingle__cv" ]
+      [ "imagenet_readerSingle_cv", "classlbann_1_1imagenet__readerSingle__cv.html", "classlbann_1_1imagenet__readerSingle__cv" ]
     ] ],
     [ "lbann_data_reader_mnist.hpp", "lbann__data__reader__mnist_8hpp.html", [
-      [ "DataReader_MNIST", "classlbann_1_1DataReader__MNIST.html", "classlbann_1_1DataReader__MNIST" ]
+      [ "mnist_reader", "classlbann_1_1mnist__reader.html", "classlbann_1_1mnist__reader" ]
     ] ],
     [ "lbann_data_reader_nci.hpp", "lbann__data__reader__nci_8hpp.html", [
       [ "data_reader_nci", "classlbann_1_1data__reader__nci.html", "classlbann_1_1data__reader__nci" ]

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['id_5frecv',['id_recv',['../structlbann_1_1lbann__comm_1_1allreduce__options.html#a91ab3b21e8345915d3a8eedb65c2f52e',1,'lbann::lbann_comm::allreduce_options']]],
-  ['imagelist',['ImageList',['../classlbann_1_1DataReader__ImageNet.html#aa4203ab75865ebf9b14696d9a4ef1739',1,'lbann::DataReader_ImageNet::ImageList()'],['../classlbann_1_1DataReader__ImageNet__cv.html#a06529c2c6127c56d95c111d7859db5a0',1,'lbann::DataReader_ImageNet_cv::ImageList()']]],
+  ['image_5flist',['image_list',['../classlbann_1_1imagenet__reader.html#ac85ca44c549dd783af48edc3120464cb',1,'lbann::imagenet_reader::image_list()'],['../classlbann_1_1imagenet__reader__cv.html#a09ec0506631b93eb6eb33e97b47461a2',1,'lbann::imagenet_reader_cv::image_list()']]],
   ['index',['Index',['../classlbann_1_1Layer.html#a5d76fcdf50d7ac4fb2fe757fb0cc23d8',1,'lbann::Layer']]],
   ['intermodel_5fcomm',['intermodel_comm',['../classlbann_1_1lbann__comm.html#a4797dcdf39d18c4c8335dc012186a8b1',1,'lbann::lbann_comm']]],
   ['intermodelcommmethod',['IntermodelCommMethod',['../classlbann_1_1TrainingParams.html#aa30088e066d4d5cf2d2007667aef7a8a',1,'lbann::TrainingParams']]],

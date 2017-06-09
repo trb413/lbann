@@ -111,18 +111,18 @@ var hierarchy =
     [ "lbann::lbann_comm", "classlbann_1_1lbann__comm.html", null ],
     [ "lbann::lbann_comm::allreduce_options", "structlbann_1_1lbann__comm_1_1allreduce__options.html", null ],
     [ "lbann::lbann_image_preprocessor", "classlbann_1_1lbann__image__preprocessor.html", [
-      [ "lbann::DataReader", "classlbann_1_1DataReader.html", [
+      [ "lbann::generic_data_reader", "classlbann_1_1generic__data__reader.html", [
+        [ "lbann::cifar10_reader", "classlbann_1_1cifar10__reader.html", null ],
+        [ "lbann::cnpy_reader", "classlbann_1_1cnpy__reader.html", null ],
         [ "lbann::data_reader_nci", "classlbann_1_1data__reader__nci.html", null ],
         [ "lbann::data_reader_nci_regression", "classlbann_1_1data__reader__nci__regression.html", null ],
         [ "lbann::data_reader_synthetic", "classlbann_1_1data__reader__synthetic.html", null ],
-        [ "lbann::DataReader_CIFAR10", "classlbann_1_1DataReader__CIFAR10.html", null ],
-        [ "lbann::DataReader_cnpy", "classlbann_1_1DataReader__cnpy.html", null ],
-        [ "lbann::DataReader_ImageNet", "classlbann_1_1DataReader__ImageNet.html", [
-          [ "lbann::DataReader_ImageNetSingle", "classlbann_1_1DataReader__ImageNetSingle.html", null ],
-          [ "lbann::DataReader_ImageNetSingle_cv", "classlbann_1_1DataReader__ImageNetSingle__cv.html", null ]
+        [ "lbann::imagenet_reader", "classlbann_1_1imagenet__reader.html", [
+          [ "lbann::imagenet_readerSingle", "classlbann_1_1imagenet__readerSingle.html", null ],
+          [ "lbann::imagenet_readerSingle_cv", "classlbann_1_1imagenet__readerSingle__cv.html", null ]
         ] ],
-        [ "lbann::DataReader_ImageNet_cv", "classlbann_1_1DataReader__ImageNet__cv.html", null ],
-        [ "lbann::DataReader_MNIST", "classlbann_1_1DataReader__MNIST.html", null ]
+        [ "lbann::imagenet_reader_cv", "classlbann_1_1imagenet__reader__cv.html", null ],
+        [ "lbann::mnist_reader", "classlbann_1_1mnist__reader.html", null ]
       ] ]
     ] ],
     [ "lbann::lbann_quantizer", "classlbann_1_1lbann__quantizer.html", null ],
