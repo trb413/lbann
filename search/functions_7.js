@@ -118,5 +118,5 @@ var searchData=
   ['getnumresponses',['getNumResponses',['../classlbann_1_1generic__data__reader.html#a57124a33cf43aaaca5b7cc7602ffddf6',1,'lbann::generic_data_reader']]],
   ['getposition',['getPosition',['../classlbann_1_1generic__data__reader.html#a0b5204f69760628c1ff2eaf60592f129',1,'lbann::generic_data_reader']]],
   ['global_5fbarrier',['global_barrier',['../classlbann_1_1lbann__comm.html#ae12af95f4826571efa03fb8520260daa',1,'lbann::lbann_comm']]],
-  ['greedy_5flayerwise_5fautoencoder',['greedy_layerwise_autoencoder',['../classlbann_1_1greedy__layerwise__autoencoder.html#a99f87e486e5887b379b148a8c67c2a82',1,'lbann::greedy_layerwise_autoencoder']]]
+  ['greedy_5flayerwise_5fautoencoder',['greedy_layerwise_autoencoder',['../classlbann_1_1greedy__layerwise__autoencoder.html#ae0fceac4061eea17753eedd397f4988f',1,'lbann::greedy_layerwise_autoencoder']]]
 ];

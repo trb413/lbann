@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-34-g26c7aa0-ci241387970</span>
+   &#160;<span id="projectnumber">v0.93-rc0-35-g4eaf163-ci241391432</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (s == <span class="stringliteral">&quot;average_no_pad&quot;</span>) {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="lbann__base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39ad91c68878ae16f6dfcd4e1551c33cdd1">pool_mode::average_no_pad</a>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    stringstream err;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    std::stringstream err;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt;__LINE__</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; :: unkown pool_mode: &quot;</span> &lt;&lt; s</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; should be one of: max, average, average_no_pad&quot;</span>;</div>
@@ -175,7 +175,7 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (s == <span class="stringliteral">&quot;elu&quot;</span>) {</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a5b44c930bf0ddeef48b50ef11e5ddd58">activation_type::ELU</a>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    stringstream err;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    std::stringstream err;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt;__LINE__</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; :: unkown activation_type: &quot;</span> &lt;&lt; s</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; should be one of: sigmoid tanh relu id leaky_relu softplus smooth_relu elu&quot;</span>;</div>
@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (s == <span class="stringliteral">&quot;he_uniform&quot;</span>) {</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a10c3970ad5c688f36ccda3f77432bd5c">weight_initialization::he_uniform</a>;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    stringstream err;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    std::stringstream err;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt;__LINE__</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; :: unkown weight_initialization: &quot;</span> &lt;&lt; s</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; should be one of: zero uniform normal glorot_normal glorot_uniform he_normal he_uniform&quot;</span>;</div>
@@ -213,7 +213,7 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (s == <span class="stringliteral">&quot;data_parallel&quot;</span>) {</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    stringstream err;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    std::stringstream err;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    err &lt;&lt; file &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; line</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; :: unknown value for data_layout; should be model_parallel&quot;</span></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; or data_parallel; we got: &quot;</span> &lt;&lt; s;</div>
@@ -258,7 +258,7 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  std::map&lt;execution_mode, generic_data_reader *&gt;&amp; data_readers,</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <a class="code" href="classcudnn_1_1cudnn__manager.html">cudnn::cudnn_manager</a> *cudnn,</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keyword">const</span> lbann_data::LbannPB&amp; p) {</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  stringstream err;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  std::stringstream err;</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a> = model-&gt;<a class="code" href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca">get_comm</a>();</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordtype">bool</span> master = comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5">am_world_master</a>();</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
@@ -337,7 +337,7 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      vector&lt;int&gt; input_dims;</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      <span class="keywordtype">int</span> i;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      stringstream ss(ell.input_dims());</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      std::stringstream ss(ell.input_dims());</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      <span class="keywordflow">while</span> (ss &gt;&gt; i) {</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        input_dims.push_back(i);</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;      }</div>
@@ -385,7 +385,7 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;      <span class="keyword">const</span> lbann_data::Convolution&amp; ell = layer.convolution();</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      vector&lt;Int&gt; input_dims;</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      stringstream ss(ell.input_dims());</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      std::stringstream ss(ell.input_dims());</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      <span class="keywordtype">int</span> i;</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      <span class="keywordflow">while</span> (ss &gt;&gt; i) {</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        input_dims.push_back(i);</div>
@@ -496,7 +496,7 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;  <a class="code" href="classlbann_1_1sequential__model.html">lbann::sequential_model</a> *<a class="code" href="classlbann_1_1model.html">model</a>,</div>
 <div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;  std::map&lt;execution_mode, lbann::generic_data_reader *&gt;&amp; data_readers,</div>
 <div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  <span class="keyword">const</span> lbann_data::LbannPB&amp; p) {</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  stringstream err;</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  std::stringstream err;</div>
 <div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  <span class="keywordtype">bool</span> master = comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5">am_world_master</a>();</div>
 <div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;</div>
 <div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;  <span class="keyword">const</span> lbann_data::Model&amp; m = p.model();</div>
@@ -592,294 +592,292 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;</div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;</div>
 <div class="line"><a name="l00512"></a><span class="lineno"><a class="line" href="lbann__proto__common_8hpp.html#a6e47c1bc98abae53a8c67b9ebf80fab3">  512</a></span>&#160;<a class="code" href="classlbann_1_1sequential__model.html">sequential_model</a> *<a class="code" href="lbann__proto__common_8cpp.html#a65210505c1def636a8c1d230388d2660">init_model</a>(<a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, <a class="code" href="classlbann_1_1optimizer__factory.html">optimizer_factory</a> *optimizer_fac, <span class="keyword">const</span> lbann_data::LbannPB&amp; p) {</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;  stringstream err;</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;  std::stringstream err;</div>
 <div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;</div>
 <div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;  <a class="code" href="classlbann_1_1sequential__model.html">sequential_model</a> *<a class="code" href="classlbann_1_1model.html">model</a>;</div>
 <div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;</div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;  layer_factory *lfac = <span class="keyword">new</span> layer_factory();</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;  <span class="keyword">const</span> lbann_data::Model&amp; m = p.model();</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">string</span> name = m.name();</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">string</span> objective_function = m.objective_function();</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;  <a class="code" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> mini_batch_size = m.mini_batch_size();</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;  <span class="comment">//instantiate the objective function</span></div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;  <a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html">objective_functions::objective_fn</a> *obj;</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;  <span class="keywordflow">if</span> (objective_function == <span class="stringliteral">&quot;categorical_cross_entropy&quot;</span>) {</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    obj = <span class="keyword">new</span> <a class="code" href="classlbann_1_1objective__functions_1_1categorical__cross__entropy.html">objective_functions::categorical_cross_entropy</a>(comm);</div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (objective_function == <span class="stringliteral">&quot;mean_squared_error&quot;</span>) {</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    obj = <span class="keyword">new</span> <a class="code" href="classlbann_1_1objective__functions_1_1mean__squared__error.html">objective_functions::mean_squared_error</a>(comm);</div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; :: init_model() - unknown objective function name: &quot;</span> &lt;&lt; name &lt;&lt; endl</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;; should be one of: categorical_cross_entropy, mean_squared_error&quot;</span>;</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;  }</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;</div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;  <span class="comment">//instantiate the network; layers will be added in a separate function call</span></div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;  <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;dnn&quot;</span>) {</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    model = <span class="keyword">new</span> <a class="code" href="classlbann_1_1deep__neural__network.html">deep_neural_network</a>(mini_batch_size, comm, obj, lfac, optimizer_fac);</div>
-<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;stacked_autoencoder&quot;</span>) {</div>
-<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    model = <span class="keyword">new</span> <a class="code" href="classlbann_1_1stacked__autoencoder.html">stacked_autoencoder</a>(mini_batch_size, comm, obj, lfac, optimizer_fac);</div>
-<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;greedy_layerwise_autoencoder&quot;</span>) {</div>
-<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    model = <span class="keyword">new</span> <a class="code" href="classlbann_1_1greedy__layerwise__autoencoder.html">greedy_layerwise_autoencoder</a>(mini_batch_size, comm, obj, lfac, optimizer_fac);</div>
-<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__</div>
-<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; :: init_model() - unknown model name: &quot;</span> &lt;&lt; name &lt;&lt; endl</div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;; should be one of: dnn, stacked_autoencoder, greedy_layerwise_autoencoder&quot;</span>;</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;  }</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;  <span class="comment">//add the metrics</span></div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;  <span class="keywordtype">int</span> size = m.metric_size();</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0; j&lt;size; j++) {</div>
-<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    <span class="keywordtype">string</span> metric = m.metric(j);</div>
-<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    <span class="keywordflow">if</span> (metric == <span class="stringliteral">&quot;categorical_accuracy&quot;</span>) {</div>
-<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;      model-&gt;<a class="code" href="classlbann_1_1model.html#adbb03deb321b99e8dbdbe65d7e1a423e">add_metric</a>(<span class="keyword">new</span> <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html">metrics::categorical_accuracy</a>(<a class="code" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>, comm));</div>
-<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (metric == <span class="stringliteral">&quot;mean_squared_error&quot;</span>) {</div>
-<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;      model-&gt;<a class="code" href="classlbann_1_1model.html#adbb03deb321b99e8dbdbe65d7e1a423e">add_metric</a>(<span class="keyword">new</span> <a class="code" href="classlbann_1_1metrics_1_1mean__squared__error.html">metrics::mean_squared_error</a>(<a class="code" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>, comm));</div>
-<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;      err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__</div>
-<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;          &lt;&lt; <span class="stringliteral">&quot; :: init_model() - unknown metric name: &quot;</span> &lt;&lt; metric &lt;&lt; endl</div>
-<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;; should be one of: categorical_accuracy, mean_squared_error&quot;</span>;</div>
-<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    }</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;  }</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;</div>
-<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;  <span class="comment">//set checkpoint values</span></div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;  model-&gt;<a class="code" href="classlbann_1_1model.html#a2707333b9bef9650334b25caf4d099f2">set_checkpoint_dir</a>(m.checkpoint_dir());</div>
-<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;  model-&gt;<a class="code" href="classlbann_1_1model.html#a930c92a3085d1f09e24ad114345b2e34">set_checkpoint_epochs</a>(m.checkpoint_epochs());</div>
-<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;  model-&gt;<a class="code" href="classlbann_1_1model.html#a05502fc0d1ca9d9b164118b9a6f04163">set_checkpoint_steps</a>(m.checkpoint_steps());</div>
-<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;  model-&gt;<a class="code" href="classlbann_1_1model.html#a4332ad949eb1733fcb2a0a6e6c9f56e9">set_checkpoint_secs</a>(m.checkpoint_secs());</div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;  <span class="keywordflow">return</span> model;</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;}</div>
-<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;</div>
-<div class="line"><a name="l00576"></a><span class="lineno"><a class="line" href="lbann__proto__common_8hpp.html#ae21ca118313260dcd12be3e8e2d540ae">  576</a></span>&#160;<a class="code" href="classlbann_1_1optimizer__factory.html">optimizer_factory</a> *<a class="code" href="lbann__proto__common_8cpp.html#a1157a7f2b93a65f5e55e075cacbed91d">init_optimizer_factory</a>(<a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, <span class="keyword">const</span> lbann_data::LbannPB&amp; p) {</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;  <span class="keyword">const</span> lbann_data::Model&amp; <a class="code" href="classlbann_1_1model.html">model</a> = p.<a class="code" href="classlbann_1_1model.html#aa5c16a70390f56c1279ff22df7511802">model</a>();</div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;  <span class="keyword">const</span> lbann_data::Optimizer&amp; <a class="code" href="classlbann_1_1optimizer.html">optimizer</a> = model.<a class="code" href="classlbann_1_1optimizer.html#a42150ad8b3dc9cfdedf2ca63d26aa20a">optimizer</a>();</div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">string</span> name = optimizer.name();</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;  <span class="keywordtype">double</span> learn_rate = optimizer.learn_rate();</div>
-<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;  <span class="keywordtype">double</span> momentum = optimizer.momentum();</div>
-<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;  <span class="keywordtype">double</span> decay_rate = optimizer.decay();</div>
-<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;  <span class="keywordtype">bool</span> nesterov = optimizer.nesterov();</div>
-<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;</div>
-<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;  <span class="comment">//note: learn_rate, momentum, decay are DataType in LBANN, which is</span></div>
-<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;  <span class="comment">//      probably float. They&#39;ll be properly cast in the following</span></div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;  <span class="keyword">const</span> lbann_data::Model&amp; m = p.<a class="code" href="classlbann_1_1model.html#aa5c16a70390f56c1279ff22df7511802">model</a>();</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">string</span> name = m.name();</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">string</span> objective_function = m.objective_function();</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;  <a class="code" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> mini_batch_size = m.mini_batch_size();</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;  <span class="comment">//instantiate the objective function</span></div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;  <a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html">objective_functions::objective_fn</a> *obj;</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;  <span class="keywordflow">if</span> (objective_function == <span class="stringliteral">&quot;categorical_cross_entropy&quot;</span>) {</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;    obj = <span class="keyword">new</span> <a class="code" href="classlbann_1_1objective__functions_1_1categorical__cross__entropy.html">objective_functions::categorical_cross_entropy</a>(comm);</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (objective_function == <span class="stringliteral">&quot;mean_squared_error&quot;</span>) {</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;    obj = <span class="keyword">new</span> <a class="code" href="classlbann_1_1objective__functions_1_1mean__squared__error.html">objective_functions::mean_squared_error</a>(comm);</div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__</div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; :: init_model() - unknown objective function name: &quot;</span> &lt;&lt; name &lt;&lt; endl</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;; should be one of: categorical_cross_entropy, mean_squared_error&quot;</span>;</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;  }</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;  <span class="comment">//instantiate the network; layers will be added in a separate function call</span></div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;  <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;dnn&quot;</span>) {</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    model = <span class="keyword">new</span> <a class="code" href="classlbann_1_1deep__neural__network.html">deep_neural_network</a>(mini_batch_size, comm, obj, optimizer_fac);</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;stacked_autoencoder&quot;</span>) {</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;    model = <span class="keyword">new</span> <a class="code" href="classlbann_1_1stacked__autoencoder.html">stacked_autoencoder</a>(mini_batch_size, comm, obj, optimizer_fac);</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;greedy_layerwise_autoencoder&quot;</span>) {</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;    model = <span class="keyword">new</span> <a class="code" href="classlbann_1_1greedy__layerwise__autoencoder.html">greedy_layerwise_autoencoder</a>(mini_batch_size, comm, obj, optimizer_fac);</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; :: init_model() - unknown model name: &quot;</span> &lt;&lt; name &lt;&lt; endl</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;; should be one of: dnn, stacked_autoencoder, greedy_layerwise_autoencoder&quot;</span>;</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;  }</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;  <span class="comment">//add the metrics</span></div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;  <span class="keywordtype">int</span> size = m.metric_size();</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0; j&lt;size; j++) {</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;    <span class="keywordtype">string</span> metric = m.metric(j);</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    <span class="keywordflow">if</span> (metric == <span class="stringliteral">&quot;categorical_accuracy&quot;</span>) {</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;      model-&gt;<a class="code" href="classlbann_1_1model.html#adbb03deb321b99e8dbdbe65d7e1a423e">add_metric</a>(<span class="keyword">new</span> <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html">metrics::categorical_accuracy</a>(<a class="code" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>, comm));</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (metric == <span class="stringliteral">&quot;mean_squared_error&quot;</span>) {</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;      model-&gt;<a class="code" href="classlbann_1_1model.html#adbb03deb321b99e8dbdbe65d7e1a423e">add_metric</a>(<span class="keyword">new</span> <a class="code" href="classlbann_1_1metrics_1_1mean__squared__error.html">metrics::mean_squared_error</a>(<a class="code" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>, comm));</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;      err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;          &lt;&lt; <span class="stringliteral">&quot; :: init_model() - unknown metric name: &quot;</span> &lt;&lt; metric &lt;&lt; endl</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;; should be one of: categorical_accuracy, mean_squared_error&quot;</span>;</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;    }</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;  }</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;  <span class="comment">//set checkpoint values</span></div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;  model-&gt;<a class="code" href="classlbann_1_1model.html#a2707333b9bef9650334b25caf4d099f2">set_checkpoint_dir</a>(m.checkpoint_dir());</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;  model-&gt;<a class="code" href="classlbann_1_1model.html#a930c92a3085d1f09e24ad114345b2e34">set_checkpoint_epochs</a>(m.checkpoint_epochs());</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;  model-&gt;<a class="code" href="classlbann_1_1model.html#a05502fc0d1ca9d9b164118b9a6f04163">set_checkpoint_steps</a>(m.checkpoint_steps());</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;  model-&gt;<a class="code" href="classlbann_1_1model.html#a4332ad949eb1733fcb2a0a6e6c9f56e9">set_checkpoint_secs</a>(m.checkpoint_secs());</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;  <span class="keywordflow">return</span> model;</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;}</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;</div>
+<div class="line"><a name="l00574"></a><span class="lineno"><a class="line" href="lbann__proto__common_8hpp.html#ae21ca118313260dcd12be3e8e2d540ae">  574</a></span>&#160;<a class="code" href="classlbann_1_1optimizer__factory.html">optimizer_factory</a> *<a class="code" href="lbann__proto__common_8cpp.html#a1157a7f2b93a65f5e55e075cacbed91d">init_optimizer_factory</a>(<a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, <span class="keyword">const</span> lbann_data::LbannPB&amp; p) {</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;  <span class="keyword">const</span> lbann_data::Model&amp; <a class="code" href="classlbann_1_1model.html">model</a> = p.<a class="code" href="classlbann_1_1model.html#aa5c16a70390f56c1279ff22df7511802">model</a>();</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;  <span class="keyword">const</span> lbann_data::Optimizer&amp; <a class="code" href="classlbann_1_1optimizer.html">optimizer</a> = model.<a class="code" href="classlbann_1_1optimizer.html#a42150ad8b3dc9cfdedf2ca63d26aa20a">optimizer</a>();</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">string</span> name = optimizer.name();</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;  <span class="keywordtype">double</span> learn_rate = optimizer.learn_rate();</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;  <span class="keywordtype">double</span> momentum = optimizer.momentum();</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;  <span class="keywordtype">double</span> decay_rate = optimizer.decay();</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;  <span class="keywordtype">bool</span> nesterov = optimizer.nesterov();</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;  <span class="comment">//note: learn_rate, momentum, decay are DataType in LBANN, which is</span></div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;  <span class="comment">//      probably float. They&#39;ll be properly cast in the following</span></div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;  <a class="code" href="classlbann_1_1optimizer__factory.html">optimizer_factory</a> *factory;</div>
 <div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;</div>
-<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;  <a class="code" href="classlbann_1_1optimizer__factory.html">optimizer_factory</a> *factory;</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;</div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;  <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;adagrad&quot;</span>) {</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;    factory = <span class="keyword">new</span> <a class="code" href="classlbann_1_1adagrad__factory.html">adagrad_factory</a>(comm, learn_rate);</div>
-<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;rmsprop&quot;</span>) {</div>
-<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    factory = <span class="keyword">new</span> <a class="code" href="classlbann_1_1rmsprop__factory.html">rmsprop_factory</a>(comm, learn_rate);</div>
-<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;adam&quot;</span>) {</div>
-<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    factory = <span class="keyword">new</span> <a class="code" href="classlbann_1_1adam__factory.html">adam_factory</a>(comm, learn_rate);</div>
-<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;sgd&quot;</span>) {</div>
-<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    factory = <span class="keyword">new</span> <a class="code" href="classlbann_1_1sgd__factory.html">sgd_factory</a>(comm, learn_rate, momentum, decay_rate, nesterov);</div>
-<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    stringstream err;</div>
-<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; :: unknown name for optimizer; should be one of: adagrad, rmsprop, adam, sgd\n&quot;</span></div>
-<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;instead we found: &quot;</span> &lt;&lt; name;</div>
-<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
-<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;  }</div>
-<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;</div>
-<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;  <span class="keywordflow">return</span> factory;</div>
-<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;}</div>
-<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;</div>
-<div class="line"><a name="l00610"></a><span class="lineno"><a class="line" href="lbann__proto__common_8hpp.html#a954150c50e90b511638c4b402791483a">  610</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="lbann__proto__common_8cpp.html#ace09e432d5386a8fa822b70335ab87ca">init_data_readers</a>(<span class="keywordtype">bool</span> master, <span class="keyword">const</span> lbann_data::LbannPB&amp; p, std::map&lt;execution_mode, generic_data_reader *&gt;&amp; data_readers, <span class="keywordtype">int</span> mini_batch_size) {</div>
-<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;  stringstream err;</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;</div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;  <span class="keyword">const</span> lbann_data::DataReader &amp; d_reader = p.data_reader();</div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;  <span class="keywordtype">int</span> size = d_reader.reader_size();</div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;</div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0; j&lt;size; j++) {</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    <span class="keyword">const</span> lbann_data::Reader&amp; readme = d_reader.reader(j);</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    <span class="keyword">const</span> lbann_data::ImagePreprocessor&amp; preprocessor = readme.image_preprocessor();</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;  <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;adagrad&quot;</span>) {</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;    factory = <span class="keyword">new</span> <a class="code" href="classlbann_1_1adagrad__factory.html">adagrad_factory</a>(comm, learn_rate);</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;rmsprop&quot;</span>) {</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;    factory = <span class="keyword">new</span> <a class="code" href="classlbann_1_1rmsprop__factory.html">rmsprop_factory</a>(comm, learn_rate);</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;adam&quot;</span>) {</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    factory = <span class="keyword">new</span> <a class="code" href="classlbann_1_1adam__factory.html">adam_factory</a>(comm, learn_rate);</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;sgd&quot;</span>) {</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    factory = <span class="keyword">new</span> <a class="code" href="classlbann_1_1sgd__factory.html">sgd_factory</a>(comm, learn_rate, momentum, decay_rate, nesterov);</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    std::stringstream err;</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; :: unknown name for optimizer; should be one of: adagrad, rmsprop, adam, sgd\n&quot;</span></div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;instead we found: &quot;</span> &lt;&lt; name;</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;  }</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;  <span class="keywordflow">return</span> factory;</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;}</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;</div>
+<div class="line"><a name="l00608"></a><span class="lineno"><a class="line" href="lbann__proto__common_8hpp.html#a954150c50e90b511638c4b402791483a">  608</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="lbann__proto__common_8cpp.html#ace09e432d5386a8fa822b70335ab87ca">init_data_readers</a>(<span class="keywordtype">bool</span> master, <span class="keyword">const</span> lbann_data::LbannPB&amp; p, std::map&lt;execution_mode, generic_data_reader *&gt;&amp; data_readers, <span class="keywordtype">int</span> mini_batch_size) {</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;  std::stringstream err;</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;  <span class="keyword">const</span> lbann_data::DataReader &amp; d_reader = p.data_reader();</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;  <span class="keywordtype">int</span> size = d_reader.reader_size();</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0; j&lt;size; j++) {</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    <span class="keyword">const</span> lbann_data::Reader&amp; readme = d_reader.reader(j);</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;    <span class="keyword">const</span> lbann_data::ImagePreprocessor&amp; preprocessor = readme.image_preprocessor();</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name = readme.name();</div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">string</span>&amp; name = readme.name();</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    <span class="keywordtype">bool</span> shuffle = readme.shuffle();</div>
 <div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;</div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    <span class="keywordtype">bool</span> shuffle = readme.shuffle();</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    <a class="code" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a> *reader = 0;</div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;    <a class="code" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a> *reader_validation = 0;</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;mnist&quot;</span>) {</div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;      reader = <span class="keyword">new</span> <a class="code" href="classlbann_1_1mnist__reader.html">mnist_reader</a>(mini_batch_size, shuffle);</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;imagenet&quot;</span>) {</div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;      reader = <span class="keyword">new</span> <a class="code" href="classlbann_1_1imagenet__reader.html">imagenet_reader</a>(mini_batch_size, shuffle);</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;      <span class="comment">/*</span></div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;<span class="comment">      } else if (name == &quot;imagenet_cv&quot;) {</span></div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;<span class="comment">      std::shared_ptr&lt;cv_process&gt; pp = std::make_shared&lt;cv_process&gt;();</span></div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;<span class="comment">      pp-&gt;set_normalizer(std::move(normalizer));</span></div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;<span class="comment">      pp-&gt;set_custom_transform2(std::move(colorizer));</span></div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;<span class="comment">      reader = new imagenet_reader_cv(mini_batch_size, pp, shuffle);</span></div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;<span class="comment">      } else if (name == &quot;imagenet_single&quot;) {</span></div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;<span class="comment">      reader = new imagenet_reader_single(mini_batch_size, shuffle);</span></div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;<span class="comment">      } else if (name == &quot;imagenet_single_cv&quot;) {</span></div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;<span class="comment">      reader = new imagenet_reader_single_cv(mini_batch_size, shuffle);</span></div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;<span class="comment">      */</span></div>
-<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;nci&quot;</span>) {</div>
-<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;      reader = <span class="keyword">new</span> <a class="code" href="classlbann_1_1data__reader__nci.html">data_reader_nci</a>(mini_batch_size, shuffle);</div>
-<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;nci_regression&quot;</span>) {</div>
-<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;      reader = <span class="keyword">new</span> <a class="code" href="classlbann_1_1data__reader__nci__regression.html">data_reader_nci_regression</a>(mini_batch_size, shuffle);</div>
-<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;cnpy&quot;</span>) {</div>
-<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;      reader = <span class="keyword">new</span> <a class="code" href="classlbann_1_1cnpy__reader.html">cnpy_reader</a>(mini_batch_size, shuffle);</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;cifar10&quot;</span>) {</div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;      reader = <span class="keyword">new</span> <a class="code" href="classlbann_1_1cifar10__reader.html">cifar10_reader</a>(mini_batch_size, shuffle);</div>
-<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;      <span class="comment">/*</span></div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;<span class="comment">      } else if (name == &quot;synthetic&quot;) {</span></div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;<span class="comment">      reader = new data_reader_synthetic(mini_batch_size, shuffle);</span></div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;<span class="comment">      */</span></div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;      err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot; :: unknown name for data reader: &quot;</span></div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;          &lt;&lt; name;</div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    }</div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;</div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#a74b7ef4fe0dc7d3a96868ca3b5fbf897">set_data_filename</a>( readme.data_filename() );</div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;    <span class="keywordflow">if</span> (readme.label_filename() != <span class="stringliteral">&quot;&quot;</span>) {</div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;      reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#af45f301cc9adc2f8184b81d8d2600b8f">set_label_filename</a>( readme.label_filename() );</div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;    }</div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#ae6929a8bd2e59da72a8c2e537f0b2b37">set_use_percent</a>( readme.train_or_test_percent() );</div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#a073d248ab1927aa2c19e1d02b8acda32">set_firstN</a>( readme.firstn() );</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;    <span class="keywordflow">if</span> (readme.max_sample_count()) {</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;      reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#a44e8eab5fc577d39eba5ce8f31760878">set_max_sample_count</a>( readme.max_sample_count() );</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;    }</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    <span class="keywordflow">if</span> (readme.percent_of_data_to_use()) {</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;      reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#ae6929a8bd2e59da72a8c2e537f0b2b37">set_use_percent</a>( readme.percent_of_data_to_use() );</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;    }</div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#ae6929a8bd2e59da72a8c2e537f0b2b37">set_use_percent</a>( readme.train_or_test_percent() );</div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#a4ba2de0a781dfa0a2652ad4d777a241f">horizontal_flip</a>( preprocessor.horizontal_flip() );</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#aeb7d75e4d3361ae2836afabc14510d74">vertical_flip</a>( preprocessor.vertical_flip() );</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#a1a293733368dd9eceba3e99cf9e5ae24">rotation</a>( preprocessor.rotation() );</div>
-<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#ae62596b4af5d1940aa0499cde2bdd005">horizontal_shift</a>( preprocessor.horizontal_shift() );</div>
-<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#a50ac63e1f6b1b9806cbf6c06f53f4aca">vertical_shift</a>( preprocessor.vertical_shift() );</div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#aef1e2375fd518e69df800b0dcbcb37d0">shear_range</a>( preprocessor.shear_range() );</div>
-<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#afa470b696ba435c20050187a0232717d">subtract_mean</a>( preprocessor.subtract_mean() );</div>
-<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#a05c4cb5cb842df5d46eebe15c6ea9de3">unit_variance</a>( preprocessor.unit_variance() );</div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#a977b2fdd417acb1eb37dbea0cfdd4b60">scale</a>( preprocessor.scale() );</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#a02cfd4d8c26a317540b587eb52cef0d5">z_score</a>( preprocessor.z_score() );</div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;    <span class="keywordflow">if</span> (preprocessor.disable_augmentation()) {</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;      reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#a871cb543ee6c132a76e16045a1a2a9f3">disable_augmentation</a>();</div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;    }</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    <span class="keywordflow">if</span> (readme.role() == <span class="stringliteral">&quot;train&quot;</span>) {</div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;      reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#a47aba0f39423e8e1d2f42952e343ef10">set_role</a>(<span class="stringliteral">&quot;train&quot;</span>);</div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (readme.role() == <span class="stringliteral">&quot;test&quot;</span>) {</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;      reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#a47aba0f39423e8e1d2f42952e343ef10">set_role</a>(<span class="stringliteral">&quot;test&quot;</span>);</div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;      reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#a47aba0f39423e8e1d2f42952e343ef10">set_role</a>(<span class="stringliteral">&quot;error&quot;</span>);</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    }</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    <span class="keywordflow">if</span> (readme.role() == <span class="stringliteral">&quot;train&quot;</span>) {</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;      reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#a18b67bfa426eb4d2c8195d115c4df49f">set_validation_percent</a>( readme.validation_percent() );</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;      <span class="keywordflow">if</span> (master) {</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Training using &quot;</span> &lt;&lt; (readme.train_or_test_percent()*100)</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;             &lt;&lt; <span class="stringliteral">&quot;% of the training data set, which is &quot;</span> &lt;&lt; reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#aeeee5f93f349a05fc509523eb95ab811">getNumData</a>()</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;             &lt;&lt; <span class="stringliteral">&quot; samples.\n&quot;</span>;</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;      }</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    }</div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    <a class="code" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a> *reader = 0;</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;    <a class="code" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a> *reader_validation = 0;</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;    <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;mnist&quot;</span>) {</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;      reader = <span class="keyword">new</span> <a class="code" href="classlbann_1_1mnist__reader.html">mnist_reader</a>(mini_batch_size, shuffle);</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;imagenet&quot;</span>) {</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;      reader = <span class="keyword">new</span> <a class="code" href="classlbann_1_1imagenet__reader.html">imagenet_reader</a>(mini_batch_size, shuffle);</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;      <span class="comment">/*</span></div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;<span class="comment">      } else if (name == &quot;imagenet_cv&quot;) {</span></div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;<span class="comment">      std::shared_ptr&lt;cv_process&gt; pp = std::make_shared&lt;cv_process&gt;();</span></div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;<span class="comment">      pp-&gt;set_normalizer(std::move(normalizer));</span></div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;<span class="comment">      pp-&gt;set_custom_transform2(std::move(colorizer));</span></div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;<span class="comment">      reader = new imagenet_reader_cv(mini_batch_size, pp, shuffle);</span></div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;<span class="comment">      } else if (name == &quot;imagenet_single&quot;) {</span></div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;<span class="comment">      reader = new imagenet_reader_single(mini_batch_size, shuffle);</span></div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;<span class="comment">      } else if (name == &quot;imagenet_single_cv&quot;) {</span></div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;<span class="comment">      reader = new imagenet_reader_single_cv(mini_batch_size, shuffle);</span></div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;<span class="comment">      */</span></div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;nci&quot;</span>) {</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;      reader = <span class="keyword">new</span> <a class="code" href="classlbann_1_1data__reader__nci.html">data_reader_nci</a>(mini_batch_size, shuffle);</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;nci_regression&quot;</span>) {</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;      reader = <span class="keyword">new</span> <a class="code" href="classlbann_1_1data__reader__nci__regression.html">data_reader_nci_regression</a>(mini_batch_size, shuffle);</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;cnpy&quot;</span>) {</div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;      reader = <span class="keyword">new</span> <a class="code" href="classlbann_1_1cnpy__reader.html">cnpy_reader</a>(mini_batch_size, shuffle);</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;cifar10&quot;</span>) {</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;      reader = <span class="keyword">new</span> <a class="code" href="classlbann_1_1cifar10__reader.html">cifar10_reader</a>(mini_batch_size, shuffle);</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;      <span class="comment">/*</span></div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;<span class="comment">      } else if (name == &quot;synthetic&quot;) {</span></div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;<span class="comment">      reader = new data_reader_synthetic(mini_batch_size, shuffle);</span></div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;<span class="comment">      */</span></div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;      err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot; :: unknown name for data reader: &quot;</span></div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;          &lt;&lt; name;</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    }</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#a74b7ef4fe0dc7d3a96868ca3b5fbf897">set_data_filename</a>( readme.data_filename() );</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;    <span class="keywordflow">if</span> (readme.label_filename() != <span class="stringliteral">&quot;&quot;</span>) {</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;      reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#af45f301cc9adc2f8184b81d8d2600b8f">set_label_filename</a>( readme.label_filename() );</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;    }</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#ae6929a8bd2e59da72a8c2e537f0b2b37">set_use_percent</a>( readme.train_or_test_percent() );</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#a073d248ab1927aa2c19e1d02b8acda32">set_firstN</a>( readme.firstn() );</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    <span class="keywordflow">if</span> (readme.max_sample_count()) {</div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;      reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#a44e8eab5fc577d39eba5ce8f31760878">set_max_sample_count</a>( readme.max_sample_count() );</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;    }</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;    <span class="keywordflow">if</span> (readme.percent_of_data_to_use()) {</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;      reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#ae6929a8bd2e59da72a8c2e537f0b2b37">set_use_percent</a>( readme.percent_of_data_to_use() );</div>
+<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;    }</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#ae6929a8bd2e59da72a8c2e537f0b2b37">set_use_percent</a>( readme.train_or_test_percent() );</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#a4ba2de0a781dfa0a2652ad4d777a241f">horizontal_flip</a>( preprocessor.horizontal_flip() );</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#aeb7d75e4d3361ae2836afabc14510d74">vertical_flip</a>( preprocessor.vertical_flip() );</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#a1a293733368dd9eceba3e99cf9e5ae24">rotation</a>( preprocessor.rotation() );</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#ae62596b4af5d1940aa0499cde2bdd005">horizontal_shift</a>( preprocessor.horizontal_shift() );</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#a50ac63e1f6b1b9806cbf6c06f53f4aca">vertical_shift</a>( preprocessor.vertical_shift() );</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#aef1e2375fd518e69df800b0dcbcb37d0">shear_range</a>( preprocessor.shear_range() );</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#afa470b696ba435c20050187a0232717d">subtract_mean</a>( preprocessor.subtract_mean() );</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#a05c4cb5cb842df5d46eebe15c6ea9de3">unit_variance</a>( preprocessor.unit_variance() );</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#a977b2fdd417acb1eb37dbea0cfdd4b60">scale</a>( preprocessor.scale() );</div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#a02cfd4d8c26a317540b587eb52cef0d5">z_score</a>( preprocessor.z_score() );</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;    <span class="keywordflow">if</span> (preprocessor.disable_augmentation()) {</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;      reader-&gt;<a class="code" href="classlbann_1_1lbann__image__preprocessor.html#a871cb543ee6c132a76e16045a1a2a9f3">disable_augmentation</a>();</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;    }</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    <span class="keywordflow">if</span> (readme.role() == <span class="stringliteral">&quot;train&quot;</span>) {</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;      reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#a47aba0f39423e8e1d2f42952e343ef10">set_role</a>(<span class="stringliteral">&quot;train&quot;</span>);</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (readme.role() == <span class="stringliteral">&quot;test&quot;</span>) {</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;      reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#a47aba0f39423e8e1d2f42952e343ef10">set_role</a>(<span class="stringliteral">&quot;test&quot;</span>);</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;      reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#a47aba0f39423e8e1d2f42952e343ef10">set_role</a>(<span class="stringliteral">&quot;error&quot;</span>);</div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    }</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    <span class="keywordflow">if</span> (readme.role() == <span class="stringliteral">&quot;train&quot;</span>) {</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;      reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#a18b67bfa426eb4d2c8195d115c4df49f">set_validation_percent</a>( readme.validation_percent() );</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;      <span class="keywordflow">if</span> (master) {</div>
+<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Training using &quot;</span> &lt;&lt; (readme.train_or_test_percent()*100)</div>
+<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;             &lt;&lt; <span class="stringliteral">&quot;% of the training data set, which is &quot;</span> &lt;&lt; reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#aeeee5f93f349a05fc509523eb95ab811">getNumData</a>()</div>
+<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;             &lt;&lt; <span class="stringliteral">&quot; samples.\n&quot;</span>;</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;      }</div>
+<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    }</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;</div>
+<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#abc5ad0fd7518d59cc6120706866af387">set_master</a>(master);</div>
 <div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#abc5ad0fd7518d59cc6120706866af387">set_master</a>(master);</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#afeb47703d988a230a59859cbfc178215">load</a>();</div>
 <div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;</div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;    reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#afeb47703d988a230a59859cbfc178215">load</a>();</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    <span class="keywordflow">if</span> (readme.role() == <span class="stringliteral">&quot;train&quot;</span>) {</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;      data_readers[<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>] = reader;</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (readme.role() == <span class="stringliteral">&quot;test&quot;</span>) {</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;      data_readers[<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aae2b1fca515949e5d54fb22b8ed95575">execution_mode::testing</a>] = reader;</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    }</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    <span class="comment">//double validation_percent = readme.validation_percent();</span></div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    <span class="comment">//TODO remove this hack!</span></div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    <span class="keywordtype">double</span> validation_percent = 1.0 - readme.validation_percent();</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    <span class="keywordflow">if</span> (readme.role() == <span class="stringliteral">&quot;train&quot;</span>) {</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;      <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;mnist&quot;</span>) {</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;        reader_validation = <span class="keyword">new</span> <a class="code" href="classlbann_1_1mnist__reader.html">mnist_reader</a>(mini_batch_size, shuffle);</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;        (*(<a class="code" href="classlbann_1_1mnist__reader.html">mnist_reader</a> *)reader_validation) = (*(<a class="code" href="classlbann_1_1mnist__reader.html">mnist_reader</a> *)reader);</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;imagenet&quot;</span>) {</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;        reader_validation = <span class="keyword">new</span> <a class="code" href="classlbann_1_1mnist__reader.html">mnist_reader</a>(mini_batch_size, shuffle);</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;        (*(<a class="code" href="classlbann_1_1imagenet__reader.html">imagenet_reader</a> *)reader_validation) = (*(<a class="code" href="classlbann_1_1imagenet__reader.html">imagenet_reader</a> *)reader);</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;nci&quot;</span>) {</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;        reader_validation = <span class="keyword">new</span> <a class="code" href="classlbann_1_1data__reader__nci.html">data_reader_nci</a>(mini_batch_size, shuffle);</div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;        (*(<a class="code" href="classlbann_1_1data__reader__nci.html">data_reader_nci</a> *)reader_validation) = (*(<a class="code" href="classlbann_1_1data__reader__nci.html">data_reader_nci</a> *)reader);</div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;nci_regression&quot;</span>) {</div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;        reader_validation = <span class="keyword">new</span> <a class="code" href="classlbann_1_1data__reader__nci__regression.html">data_reader_nci_regression</a>(mini_batch_size, shuffle);</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;        (*(<a class="code" href="classlbann_1_1data__reader__nci__regression.html">data_reader_nci_regression</a> *)reader_validation) = (*(<a class="code" href="classlbann_1_1data__reader__nci__regression.html">data_reader_nci_regression</a> *)reader);</div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;cnpy&quot;</span>) {</div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        reader_validation = <span class="keyword">new</span> <a class="code" href="classlbann_1_1cnpy__reader.html">cnpy_reader</a>(mini_batch_size, shuffle);</div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;        (*(<a class="code" href="classlbann_1_1cnpy__reader.html">cnpy_reader</a> *)reader_validation) = (*(<a class="code" href="classlbann_1_1cnpy__reader.html">cnpy_reader</a> *)reader);</div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;cifar10&quot;</span>) {</div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;        reader_validation = <span class="keyword">new</span> <a class="code" href="classlbann_1_1cifar10__reader.html">cifar10_reader</a>(mini_batch_size, shuffle);</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;        <span class="comment">/*</span></div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;<span class="comment">        } else if (name == &quot;synthetic&quot;) {</span></div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;<span class="comment">        reader_validation = new data_reader_synthetic(mini_batch_size, shuffle);</span></div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;<span class="comment">        */</span></div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;      }</div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;      <span class="comment">/*</span></div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;<span class="comment">      } else if (name == &quot;imagenet_cv&quot;) {</span></div>
-<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;<span class="comment">      std::shared_ptr&lt;cv_process&gt; pp = std::make_shared&lt;cv_process&gt;();</span></div>
-<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;<span class="comment">      pp-&gt;set_normalizer(std::move(normalizer));</span></div>
-<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;<span class="comment">      pp-&gt;set_custom_transform2(std::move(colorizer));</span></div>
-<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;<span class="comment">      reader = new imagenet_reader_cv(mini_batch_size, pp, shuffle);</span></div>
-<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;<span class="comment">      reader_validation = new imagenet_reader_cv(mini_batch_size, pp, shuffle);</span></div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;<span class="comment">      } else if (name == &quot;imagenet_single&quot;) {</span></div>
-<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;<span class="comment">      reader_validation = new imagenet_reader_single(mini_batch_size, shuffle);</span></div>
-<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;<span class="comment">      } else if (name == &quot;imagenet_single_cv&quot;) {</span></div>
-<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;<span class="comment">      reader_validation = new imagenet_reader_single_cv(mini_batch_size, shuffle);</span></div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;<span class="comment">      */</span></div>
-<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;</div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;      reader_validation-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#a47aba0f39423e8e1d2f42952e343ef10">set_role</a>(<span class="stringliteral">&quot;validate&quot;</span>);</div>
-<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;      reader_validation-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#afa621af16f1a582b5a22405b79dbe052">use_unused_index_set</a>();</div>
-<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;</div>
-<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;      <span class="keywordflow">if</span> (master) {</div>
-<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        <span class="keywordtype">size_t</span> num_train = reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#aeeee5f93f349a05fc509523eb95ab811">getNumData</a>();</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        <span class="keywordtype">size_t</span> num_validate = reader_validation-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#aeeee5f93f349a05fc509523eb95ab811">getNumData</a>();</div>
-<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;        <span class="keywordtype">double</span> validate_percent = num_validate / (num_train+num_validate)*100.0;</div>
-<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        <span class="keywordtype">double</span> train_percent = num_train / (num_train+num_validate)*100.0;</div>
-<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Training using &quot;</span> &lt;&lt; train_percent &lt;&lt; <span class="stringliteral">&quot;% of the training data set, which is &quot;</span> &lt;&lt; reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#aeeee5f93f349a05fc509523eb95ab811">getNumData</a>() &lt;&lt; <span class="stringliteral">&quot; samples.&quot;</span> &lt;&lt; endl</div>
-<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;             &lt;&lt; <span class="stringliteral">&quot;Validating training using &quot;</span> &lt;&lt; validate_percent &lt;&lt; <span class="stringliteral">&quot;% of the training data set, which is &quot;</span> &lt;&lt; reader_validation-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#aeeee5f93f349a05fc509523eb95ab811">getNumData</a>() &lt;&lt; <span class="stringliteral">&quot; samples.&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;      }</div>
-<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;</div>
-<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;      data_readers[<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0">execution_mode::validation</a>] = reader_validation;</div>
-<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    }</div>
-<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;  }</div>
-<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;}</div>
-<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;</div>
-<div class="line"><a name="l00771"></a><span class="lineno"><a class="line" href="lbann__proto__common_8hpp.html#a412ce24eaf3f2bff1884da396f2542dc">  771</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="lbann__proto__common_8cpp.html#a412ce24eaf3f2bff1884da396f2542dc">readPrototextFile</a>(<span class="keywordtype">string</span> fn, lbann_data::LbannPB&amp; pb) {</div>
-<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;  stringstream err;</div>
-<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;  <span class="keywordtype">int</span> fd = open(fn.c_str(), O_RDONLY);</div>
-<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;  <span class="keywordflow">if</span> (fd == -1) {</div>
-<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    err &lt;&lt;  __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot; :: failed to open &quot;</span> &lt;&lt; fn &lt;&lt; <span class="stringliteral">&quot; for reading&quot;</span>;</div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
-<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;  }</div>
-<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;  google::protobuf::io::FileInputStream *input = <span class="keyword">new</span> google::protobuf::io::FileInputStream(fd);</div>
-<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;  <span class="keywordtype">bool</span> success = google::protobuf::TextFormat::Parse(input, &amp;pb);</div>
-<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;  <span class="keywordflow">if</span> (not success) {</div>
-<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;    err &lt;&lt;  __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot; :: failed to read or parse prototext file: &quot;</span> &lt;&lt; fn &lt;&lt; endl;</div>
-<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
-<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;  }</div>
-<div class="line"><a name="l00784"></a><span class="lineno">  784</span>&#160;}</div>
-<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;</div>
-<div class="line"><a name="l00786"></a><span class="lineno"><a class="line" href="lbann__proto__common_8cpp.html#a88ace24fdc2491da9c6fd95126799a80">  786</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="lbann__proto__common_8cpp.html#a88ace24fdc2491da9c6fd95126799a80">writePrototextFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *fn, lbann_data::LbannPB&amp; pb) {</div>
-<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;  <span class="keywordtype">int</span> fd = open(fn, O_WRONLY | O_CREAT | O_TRUNC, 0644);</div>
-<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;  <span class="keywordflow">if</span> (fd == -1) {</div>
-<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;  }</div>
-<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;  google::protobuf::io::FileOutputStream *output = <span class="keyword">new</span> google::protobuf::io::FileOutputStream(fd);</div>
-<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;  <span class="keywordflow">if</span> (not google::protobuf::TextFormat::Print(pb, output)) {</div>
-<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;    close(fd);</div>
-<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;    <span class="keyword">delete</span> output;</div>
-<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;  }</div>
-<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;  <span class="keyword">delete</span> output;</div>
-<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;  close(fd);</div>
-<div class="line"><a name="l00799"></a><span class="lineno">  799</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;}</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;    <span class="keywordflow">if</span> (readme.role() == <span class="stringliteral">&quot;train&quot;</span>) {</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;      data_readers[<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>] = reader;</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (readme.role() == <span class="stringliteral">&quot;test&quot;</span>) {</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;      data_readers[<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aae2b1fca515949e5d54fb22b8ed95575">execution_mode::testing</a>] = reader;</div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;    }</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    <span class="comment">//double validation_percent = readme.validation_percent();</span></div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    <span class="comment">//TODO remove this hack!</span></div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    <span class="keywordtype">double</span> validation_percent = 1.0 - readme.validation_percent();</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    <span class="keywordflow">if</span> (readme.role() == <span class="stringliteral">&quot;train&quot;</span>) {</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;      <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;mnist&quot;</span>) {</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;        reader_validation = <span class="keyword">new</span> <a class="code" href="classlbann_1_1mnist__reader.html">mnist_reader</a>(mini_batch_size, shuffle);</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;        (*(<a class="code" href="classlbann_1_1mnist__reader.html">mnist_reader</a> *)reader_validation) = (*(<a class="code" href="classlbann_1_1mnist__reader.html">mnist_reader</a> *)reader);</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;imagenet&quot;</span>) {</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;        reader_validation = <span class="keyword">new</span> <a class="code" href="classlbann_1_1mnist__reader.html">mnist_reader</a>(mini_batch_size, shuffle);</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;        (*(<a class="code" href="classlbann_1_1imagenet__reader.html">imagenet_reader</a> *)reader_validation) = (*(<a class="code" href="classlbann_1_1imagenet__reader.html">imagenet_reader</a> *)reader);</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;nci&quot;</span>) {</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;        reader_validation = <span class="keyword">new</span> <a class="code" href="classlbann_1_1data__reader__nci.html">data_reader_nci</a>(mini_batch_size, shuffle);</div>
+<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;        (*(<a class="code" href="classlbann_1_1data__reader__nci.html">data_reader_nci</a> *)reader_validation) = (*(<a class="code" href="classlbann_1_1data__reader__nci.html">data_reader_nci</a> *)reader);</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;nci_regression&quot;</span>) {</div>
+<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;        reader_validation = <span class="keyword">new</span> <a class="code" href="classlbann_1_1data__reader__nci__regression.html">data_reader_nci_regression</a>(mini_batch_size, shuffle);</div>
+<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;        (*(<a class="code" href="classlbann_1_1data__reader__nci__regression.html">data_reader_nci_regression</a> *)reader_validation) = (*(<a class="code" href="classlbann_1_1data__reader__nci__regression.html">data_reader_nci_regression</a> *)reader);</div>
+<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;cnpy&quot;</span>) {</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;        reader_validation = <span class="keyword">new</span> <a class="code" href="classlbann_1_1cnpy__reader.html">cnpy_reader</a>(mini_batch_size, shuffle);</div>
+<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;        (*(<a class="code" href="classlbann_1_1cnpy__reader.html">cnpy_reader</a> *)reader_validation) = (*(<a class="code" href="classlbann_1_1cnpy__reader.html">cnpy_reader</a> *)reader);</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (name == <span class="stringliteral">&quot;cifar10&quot;</span>) {</div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;        reader_validation = <span class="keyword">new</span> <a class="code" href="classlbann_1_1cifar10__reader.html">cifar10_reader</a>(mini_batch_size, shuffle);</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;        <span class="comment">/*</span></div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;<span class="comment">        } else if (name == &quot;synthetic&quot;) {</span></div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;<span class="comment">        reader_validation = new data_reader_synthetic(mini_batch_size, shuffle);</span></div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;<span class="comment">        */</span></div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;      }</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;      <span class="comment">/*</span></div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;<span class="comment">      } else if (name == &quot;imagenet_cv&quot;) {</span></div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;<span class="comment">      std::shared_ptr&lt;cv_process&gt; pp = std::make_shared&lt;cv_process&gt;();</span></div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;<span class="comment">      pp-&gt;set_normalizer(std::move(normalizer));</span></div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;<span class="comment">      pp-&gt;set_custom_transform2(std::move(colorizer));</span></div>
+<div class="line"><a name="l00744"></a><span class="lineno">  744</span>&#160;<span class="comment">      reader = new imagenet_reader_cv(mini_batch_size, pp, shuffle);</span></div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;<span class="comment">      reader_validation = new imagenet_reader_cv(mini_batch_size, pp, shuffle);</span></div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;<span class="comment">      } else if (name == &quot;imagenet_single&quot;) {</span></div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;<span class="comment">      reader_validation = new imagenet_reader_single(mini_batch_size, shuffle);</span></div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;<span class="comment">      } else if (name == &quot;imagenet_single_cv&quot;) {</span></div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;<span class="comment">      reader_validation = new imagenet_reader_single_cv(mini_batch_size, shuffle);</span></div>
+<div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;<span class="comment">      */</span></div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;      reader_validation-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#a47aba0f39423e8e1d2f42952e343ef10">set_role</a>(<span class="stringliteral">&quot;validate&quot;</span>);</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;      reader_validation-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#afa621af16f1a582b5a22405b79dbe052">use_unused_index_set</a>();</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;      <span class="keywordflow">if</span> (master) {</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;        <span class="keywordtype">size_t</span> num_train = reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#aeeee5f93f349a05fc509523eb95ab811">getNumData</a>();</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;        <span class="keywordtype">size_t</span> num_validate = reader_validation-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#aeeee5f93f349a05fc509523eb95ab811">getNumData</a>();</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        <span class="keywordtype">double</span> validate_percent = num_validate / (num_train+num_validate)*100.0;</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        <span class="keywordtype">double</span> train_percent = num_train / (num_train+num_validate)*100.0;</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Training using &quot;</span> &lt;&lt; train_percent &lt;&lt; <span class="stringliteral">&quot;% of the training data set, which is &quot;</span> &lt;&lt; reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#aeeee5f93f349a05fc509523eb95ab811">getNumData</a>() &lt;&lt; <span class="stringliteral">&quot; samples.&quot;</span> &lt;&lt; endl</div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;             &lt;&lt; <span class="stringliteral">&quot;Validating training using &quot;</span> &lt;&lt; validate_percent &lt;&lt; <span class="stringliteral">&quot;% of the training data set, which is &quot;</span> &lt;&lt; reader_validation-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#aeeee5f93f349a05fc509523eb95ab811">getNumData</a>() &lt;&lt; <span class="stringliteral">&quot; samples.&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;      }</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;      data_readers[<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0">execution_mode::validation</a>] = reader_validation;</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;    }</div>
+<div class="line"><a name="l00766"></a><span class="lineno">  766</span>&#160;  }</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;}</div>
+<div class="line"><a name="l00768"></a><span class="lineno">  768</span>&#160;</div>
+<div class="line"><a name="l00769"></a><span class="lineno"><a class="line" href="lbann__proto__common_8hpp.html#a412ce24eaf3f2bff1884da396f2542dc">  769</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="lbann__proto__common_8cpp.html#a412ce24eaf3f2bff1884da396f2542dc">readPrototextFile</a>(<span class="keywordtype">string</span> fn, lbann_data::LbannPB&amp; pb) {</div>
+<div class="line"><a name="l00770"></a><span class="lineno">  770</span>&#160;  std::stringstream err;</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;  <span class="keywordtype">int</span> fd = open(fn.c_str(), O_RDONLY);</div>
+<div class="line"><a name="l00772"></a><span class="lineno">  772</span>&#160;  <span class="keywordflow">if</span> (fd == -1) {</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;    err &lt;&lt;  __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot; :: failed to open &quot;</span> &lt;&lt; fn &lt;&lt; <span class="stringliteral">&quot; for reading&quot;</span>;</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;  }</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;  google::protobuf::io::FileInputStream *input = <span class="keyword">new</span> google::protobuf::io::FileInputStream(fd);</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;  <span class="keywordtype">bool</span> success = google::protobuf::TextFormat::Parse(input, &amp;pb);</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;  <span class="keywordflow">if</span> (not success) {</div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;    err &lt;&lt;  __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot; :: failed to read or parse prototext file: &quot;</span> &lt;&lt; fn &lt;&lt; endl;</div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;  }</div>
+<div class="line"><a name="l00782"></a><span class="lineno">  782</span>&#160;}</div>
+<div class="line"><a name="l00783"></a><span class="lineno">  783</span>&#160;</div>
+<div class="line"><a name="l00784"></a><span class="lineno"><a class="line" href="lbann__proto__common_8cpp.html#a88ace24fdc2491da9c6fd95126799a80">  784</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="lbann__proto__common_8cpp.html#a88ace24fdc2491da9c6fd95126799a80">writePrototextFile</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *fn, lbann_data::LbannPB&amp; pb) {</div>
+<div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;  <span class="keywordtype">int</span> fd = open(fn, O_WRONLY | O_CREAT | O_TRUNC, 0644);</div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;  <span class="keywordflow">if</span> (fd == -1) {</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;  }</div>
+<div class="line"><a name="l00789"></a><span class="lineno">  789</span>&#160;  google::protobuf::io::FileOutputStream *output = <span class="keyword">new</span> google::protobuf::io::FileOutputStream(fd);</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;  <span class="keywordflow">if</span> (not google::protobuf::TextFormat::Print(pb, output)) {</div>
+<div class="line"><a name="l00791"></a><span class="lineno">  791</span>&#160;    close(fd);</div>
+<div class="line"><a name="l00792"></a><span class="lineno">  792</span>&#160;    <span class="keyword">delete</span> output;</div>
+<div class="line"><a name="l00793"></a><span class="lineno">  793</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00794"></a><span class="lineno">  794</span>&#160;  }</div>
+<div class="line"><a name="l00795"></a><span class="lineno">  795</span>&#160;  <span class="keyword">delete</span> output;</div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;  close(fd);</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1generic__data__reader_html_aeeee5f93f349a05fc509523eb95ab811"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#aeeee5f93f349a05fc509523eb95ab811">lbann::generic_data_reader::getNumData</a></div><div class="ttdeci">int getNumData()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00272">lbann_data_reader.hpp:272</a></div></div>
 <div class="ttc" id="lbann__callback__dump__weights_8hpp_html"><div class="ttname"><a href="lbann__callback__dump__weights_8hpp.html">lbann_callback_dump_weights.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1sgd__factory_html"><div class="ttname"><a href="classlbann_1_1sgd__factory.html">lbann::sgd_factory</a></div><div class="ttdoc">Factory for stochastic gradient descent optimizer. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__sgd_8hpp_source.html#l00077">lbann_optimizer_sgd.hpp:77</a></div></div>
@@ -958,7 +956,7 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div class="ttc" id="lbann__l2__regularization_8hpp_html"><div class="ttname"><a href="lbann__l2__regularization_8hpp.html">lbann_l2_regularization.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html"><div class="ttname"><a href="classlbann_1_1model.html">lbann::model</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00055">lbann_model.hpp:55</a></div></div>
 <div class="ttc" id="lbann__data__reader__imagenet_8hpp_html"><div class="ttname"><a href="lbann__data__reader__imagenet_8hpp.html">lbann_data_reader_imagenet.hpp</a></div></div>
-<div class="ttc" id="lbann__proto__common_8cpp_html_ace09e432d5386a8fa822b70335ab87ca"><div class="ttname"><a href="lbann__proto__common_8cpp.html#ace09e432d5386a8fa822b70335ab87ca">init_data_readers</a></div><div class="ttdeci">void init_data_readers(bool master, const lbann_data::LbannPB &amp;p, std::map&lt; execution_mode, generic_data_reader * &gt; &amp;data_readers, int mini_batch_size)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__proto__common_8cpp_source.html#l00610">lbann_proto_common.cpp:610</a></div></div>
+<div class="ttc" id="lbann__proto__common_8cpp_html_ace09e432d5386a8fa822b70335ab87ca"><div class="ttname"><a href="lbann__proto__common_8cpp.html#ace09e432d5386a8fa822b70335ab87ca">init_data_readers</a></div><div class="ttdeci">void init_data_readers(bool master, const lbann_data::LbannPB &amp;p, std::map&lt; execution_mode, generic_data_reader * &gt; &amp;data_readers, int mini_batch_size)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__proto__common_8cpp_source.html#l00608">lbann_proto_common.cpp:608</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_afa7829863a71eb47a3d023413dbe464d"><div class="ttname"><a href="classlbann_1_1model.html#afa7829863a71eb47a3d023413dbe464d">lbann::model::create_optimizer</a></div><div class="ttdeci">optimizer * create_optimizer()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00134">lbann_model.hpp:134</a></div></div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
 <div class="ttc" id="lbann__batch__normalization_8hpp_html"><div class="ttname"><a href="lbann__batch__normalization_8hpp.html">lbann_batch_normalization.hpp</a></div></div>
@@ -999,7 +997,7 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div class="ttc" id="classlbann_1_1model_html_a930c92a3085d1f09e24ad114345b2e34"><div class="ttname"><a href="classlbann_1_1model.html#a930c92a3085d1f09e24ad114345b2e34">lbann::model::set_checkpoint_epochs</a></div><div class="ttdeci">void set_checkpoint_epochs(int64_t epochs)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00155">lbann_model.hpp:155</a></div></div>
 <div class="ttc" id="lbann__data__reader__imagenet__single_8hpp_html"><div class="ttname"><a href="lbann__data__reader__imagenet__single_8hpp.html">lbann_data_reader_imagenet_single.hpp</a></div></div>
 <div class="ttc" id="datatype_8hpp_html_a91ad9478d81a7aaf2593e8d9c3d06a14"><div class="ttname"><a href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00074">datatype.hpp:74</a></div></div>
-<div class="ttc" id="lbann__proto__common_8cpp_html_a1157a7f2b93a65f5e55e075cacbed91d"><div class="ttname"><a href="lbann__proto__common_8cpp.html#a1157a7f2b93a65f5e55e075cacbed91d">init_optimizer_factory</a></div><div class="ttdeci">optimizer_factory * init_optimizer_factory(lbann_comm *comm, const lbann_data::LbannPB &amp;p)</div><div class="ttdoc">returns a optimizer factory that is one of: adagrad, rmsprop, adam, sgd </div><div class="ttdef"><b>Definition:</b> <a href="lbann__proto__common_8cpp_source.html#l00576">lbann_proto_common.cpp:576</a></div></div>
+<div class="ttc" id="lbann__proto__common_8cpp_html_a1157a7f2b93a65f5e55e075cacbed91d"><div class="ttname"><a href="lbann__proto__common_8cpp.html#a1157a7f2b93a65f5e55e075cacbed91d">init_optimizer_factory</a></div><div class="ttdeci">optimizer_factory * init_optimizer_factory(lbann_comm *comm, const lbann_data::LbannPB &amp;p)</div><div class="ttdoc">returns a optimizer factory that is one of: adagrad, rmsprop, adam, sgd </div><div class="ttdef"><b>Definition:</b> <a href="lbann__proto__common_8cpp_source.html#l00574">lbann_proto_common.cpp:574</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__image__preprocessor_html_aeb7d75e4d3361ae2836afabc14510d74"><div class="ttname"><a href="classlbann_1_1lbann__image__preprocessor.html#aeb7d75e4d3361ae2836afabc14510d74">lbann::lbann_image_preprocessor::vertical_flip</a></div><div class="ttdeci">void vertical_flip(bool b)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__image__preprocessor_8hpp_source.html#l00064">lbann_image_preprocessor.hpp:64</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a7ab6aada4b2438de8ca3dd783775c2f5a10c3970ad5c688f36ccda3f77432bd5c"><div class="ttname"><a href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a10c3970ad5c688f36ccda3f77432bd5c">weight_initialization::he_uniform</a></div></div>
 <div class="ttc" id="namespacelbann_html_ab00e153fabca7ab166e4d79d47c05c76a03fd8eb91a5c2091541dd9815a011f63"><div class="ttname"><a href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a03fd8eb91a5c2091541dd9815a011f63">lbann::activation_type::SMOOTH_RELU</a></div></div>
@@ -1012,11 +1010,11 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div class="ttc" id="namespacelbann_html_ab00e153fabca7ab166e4d79d47c05c76a5b44c930bf0ddeef48b50ef11e5ddd58"><div class="ttname"><a href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a5b44c930bf0ddeef48b50ef11e5ddd58">lbann::activation_type::ELU</a></div></div>
 <div class="ttc" id="namespacelbann_html_ab00e153fabca7ab166e4d79d47c05c76"><div class="ttname"><a href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76">lbann::activation_type</a></div><div class="ttdeci">activation_type</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__activations_8hpp_source.html#l00036">lbann_layer_activations.hpp:36</a></div></div>
 <div class="ttc" id="namespacelbann_html_ab00e153fabca7ab166e4d79d47c05c76ab718adec73e04ce3ec720dd11a06a308"><div class="ttname"><a href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ab718adec73e04ce3ec720dd11a06a308">lbann::activation_type::ID</a></div></div>
-<div class="ttc" id="lbann__proto__common_8cpp_html_a88ace24fdc2491da9c6fd95126799a80"><div class="ttname"><a href="lbann__proto__common_8cpp.html#a88ace24fdc2491da9c6fd95126799a80">writePrototextFile</a></div><div class="ttdeci">bool writePrototextFile(const char *fn, lbann_data::LbannPB &amp;pb)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__proto__common_8cpp_source.html#l00786">lbann_proto_common.cpp:786</a></div></div>
+<div class="ttc" id="lbann__proto__common_8cpp_html_a88ace24fdc2491da9c6fd95126799a80"><div class="ttname"><a href="lbann__proto__common_8cpp.html#a88ace24fdc2491da9c6fd95126799a80">writePrototextFile</a></div><div class="ttdeci">bool writePrototextFile(const char *fn, lbann_data::LbannPB &amp;pb)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__proto__common_8cpp_source.html#l00784">lbann_proto_common.cpp:784</a></div></div>
 <div class="ttc" id="namespacelbann_html_ab00e153fabca7ab166e4d79d47c05c76ac7e80a3de04936f4e423e1b564fdca10"><div class="ttname"><a href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ac7e80a3de04936f4e423e1b564fdca10">lbann::activation_type::LEAKY_RELU</a></div></div>
 <div class="ttc" id="classlbann_1_1data__reader__nci__regression_html"><div class="ttname"><a href="classlbann_1_1data__reader__nci__regression.html">lbann::data_reader_nci_regression</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__nci__regression_8hpp_source.html#l00038">lbann_data_reader_nci_regression.hpp:38</a></div></div>
 <div class="ttc" id="classlbann_1_1generic__data__reader_html_a18b67bfa426eb4d2c8195d115c4df49f"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#a18b67bfa426eb4d2c8195d115c4df49f">lbann::generic_data_reader::set_validation_percent</a></div><div class="ttdeci">void set_validation_percent(double s)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8cpp_source.html#l00319">lbann_data_reader.cpp:319</a></div></div>
-<div class="ttc" id="lbann__proto__common_8cpp_html_a412ce24eaf3f2bff1884da396f2542dc"><div class="ttname"><a href="lbann__proto__common_8cpp.html#a412ce24eaf3f2bff1884da396f2542dc">readPrototextFile</a></div><div class="ttdeci">void readPrototextFile(string fn, lbann_data::LbannPB &amp;pb)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__proto__common_8cpp_source.html#l00771">lbann_proto_common.cpp:771</a></div></div>
+<div class="ttc" id="lbann__proto__common_8cpp_html_a412ce24eaf3f2bff1884da396f2542dc"><div class="ttname"><a href="lbann__proto__common_8cpp.html#a412ce24eaf3f2bff1884da396f2542dc">readPrototextFile</a></div><div class="ttdeci">void readPrototextFile(string fn, lbann_data::LbannPB &amp;pb)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__proto__common_8cpp_source.html#l00769">lbann_proto_common.cpp:769</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__image__preprocessor_html_a4ba2de0a781dfa0a2652ad4d777a241f"><div class="ttname"><a href="classlbann_1_1lbann__image__preprocessor.html#a4ba2de0a781dfa0a2652ad4d777a241f">lbann::lbann_image_preprocessor::horizontal_flip</a></div><div class="ttdeci">void horizontal_flip(bool b)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__image__preprocessor_8hpp_source.html#l00060">lbann_image_preprocessor.hpp:60</a></div></div>
 <div class="ttc" id="lbann__data__reader__cnpy_8hpp_html"><div class="ttname"><a href="lbann__data__reader__cnpy_8hpp.html">lbann_data_reader_cnpy.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1mnist__reader_html"><div class="ttname"><a href="classlbann_1_1mnist__reader.html">lbann::mnist_reader</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__mnist_8hpp_source.html#l00036">lbann_data_reader_mnist.hpp:36</a></div></div>
@@ -1036,7 +1034,7 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_a6f8d8b19bd1411ec381c5cd89d82b32.html">proto</a></li><li class="navelem"><a class="el" href="lbann__proto__common_8cpp.html">lbann_proto_common.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 23:14:45 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 23:37:40 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

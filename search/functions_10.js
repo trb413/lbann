@@ -67,7 +67,7 @@ var searchData=
   ['sgd_5ffactory',['sgd_factory',['../classlbann_1_1sgd__factory.html#a2db223b7c18759450d07f54a5c320839',1,'lbann::sgd_factory']]],
   ['shear_5frange',['shear_range',['../classlbann_1_1lbann__image__preprocessor.html#aef1e2375fd518e69df800b0dcbcb37d0',1,'lbann::lbann_image_preprocessor']]],
   ['softmaxlayer',['SoftmaxLayer',['../classlbann_1_1SoftmaxLayer.html#a5be57a6d13c3a836c0bc696dbd1f1798',1,'lbann::SoftmaxLayer']]],
-  ['stacked_5fautoencoder',['stacked_autoencoder',['../classlbann_1_1stacked__autoencoder.html#a1367885122e9f4c9332fa513f0a490ad',1,'lbann::stacked_autoencoder']]],
+  ['stacked_5fautoencoder',['stacked_autoencoder',['../classlbann_1_1stacked__autoencoder.html#a8d3beb4c9e8d5d31486f49d87039cba0',1,'lbann::stacked_autoencoder']]],
   ['statistics',['statistics',['../classlbann_1_1metrics_1_1statistics.html#afc4d1c56faf7c870077a342e4c731086',1,'lbann::metrics::statistics::statistics()'],['../classlbann_1_1objective__functions_1_1statistics.html#ae09872294228744a19efd9510c7503a9',1,'lbann::objective_functions::statistics::statistics()']]],
   ['subtract_5ffloat2',['SUBTRACT_FLOAT2',['../datatype_8hpp.html#a3c63177e6b72d2c03cc5868df55f60c5',1,'datatype.hpp']]],
   ['subtract_5ffloat3',['SUBTRACT_FLOAT3',['../datatype_8hpp.html#a24f2b43650a03b60ea2401572fdc899c',1,'datatype.hpp']]],

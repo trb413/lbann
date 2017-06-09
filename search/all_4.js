@@ -18,7 +18,7 @@ var searchData=
   ['datatype',['DataType',['../lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa',1,'lbann_base.hpp']]],
   ['datatype_2ehpp',['datatype.hpp',['../datatype_8hpp.html',1,'']]],
   ['debug',['DEBUG',['../lbann__base_8hpp.html#ad72dbcf6d0153db1b8d8a58001feed83',1,'lbann_base.hpp']]],
-  ['deep_5fneural_5fnetwork',['deep_neural_network',['../classlbann_1_1deep__neural__network.html#a8baefc992f7f2fc2a466425440641b23',1,'lbann::deep_neural_network']]],
+  ['deep_5fneural_5fnetwork',['deep_neural_network',['../classlbann_1_1deep__neural__network.html#a5b80c1fb8a41aa7f1d3878b3917de641',1,'lbann::deep_neural_network']]],
   ['deep_5fneural_5fnetwork',['deep_neural_network',['../classlbann_1_1deep__neural__network.html',1,'lbann']]],
   ['default',['DEFAULT',['../classlbann_1_1lbann__comm.html#a02a03227cc27e3516f0d9f9812f32019a5b39c8b553c821e7cddc6da64b5bd2ee',1,'lbann::lbann_comm']]],
   ['default_5fallreduce_5falgo',['default_allreduce_algo',['../classlbann_1_1lbann__comm.html#ac7731d6bcdb6775009467cf4138d4bab',1,'lbann::lbann_comm']]],

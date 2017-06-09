@@ -1,6 +1,6 @@
 var classlbann_1_1stacked__autoencoder =
 [
-    [ "stacked_autoencoder", "classlbann_1_1stacked__autoencoder.html#a1367885122e9f4c9332fa513f0a490ad", null ],
+    [ "stacked_autoencoder", "classlbann_1_1stacked__autoencoder.html#a8d3beb4c9e8d5d31486f49d87039cba0", null ],
     [ "~stacked_autoencoder", "classlbann_1_1stacked__autoencoder.html#a69a11143ad8fdb00004b38768b33add7", null ],
     [ "begin_stack", "classlbann_1_1stacked__autoencoder.html#a398f7debe464f5db4371202b6dfa657c", null ],
     [ "evaluate", "classlbann_1_1stacked__autoencoder.html#abb5828c330bbb69c34e64ecae45d33ec", null ],
