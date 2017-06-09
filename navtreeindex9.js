@@ -1,6 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"lbann__exception_8hpp.html#a06fd1f9a7d05d355fa9936c46347a77f":[4,0,0,0,0,0,0,0,0,10,2,1],
 "lbann__exception_8hpp_source.html":[4,0,0,0,0,0,0,0,0,10,2],
 "lbann__file__io_8cpp.html":[4,0,0,0,0,0,0,1,2,1],
 "lbann__file__io_8cpp.html#a8a08135bfddb4c7375212d2ace2e24b7":[4,0,0,0,0,0,0,1,2,1,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX9 =
 "lbann__optimizer__rmsprop_8cpp_source.html":[4,0,0,0,0,0,0,1,7,4],
 "lbann__optimizer__rmsprop_8hpp.html":[4,0,0,0,0,0,0,0,0,7,4],
 "lbann__optimizer__rmsprop_8hpp_source.html":[4,0,0,0,0,0,0,0,0,7,4],
-"lbann__optimizer__sgd_8cpp.html":[4,0,0,0,0,0,0,1,7,5]
+"lbann__optimizer__sgd_8cpp.html":[4,0,0,0,0,0,0,1,7,5],
+"lbann__optimizer__sgd_8cpp_source.html":[4,0,0,0,0,0,0,1,7,5]
 };

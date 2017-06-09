@@ -1,6 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"lbann__optimizer__sgd_8cpp_source.html":[4,0,0,0,0,0,0,1,7,5],
 "lbann__optimizer__sgd_8hpp.html":[4,0,0,0,0,0,0,0,0,7,5],
 "lbann__optimizer__sgd_8hpp_source.html":[4,0,0,0,0,0,0,0,0,7,5],
 "lbann__params_8cpp.html":[4,0,0,0,0,0,0,1,14],
@@ -153,14 +152,14 @@ var NAVTREEINDEX10 =
 "mpi.html":[0,3,5],
 "mpi.html#mpi_install_linux":[0,3,5,0],
 "mpi.html#mpi_install_osx":[0,3,5,1],
-"namespaceEl.html":[2,0,2],
 "namespaceEl.html":[3,0,2],
-"namespaceanonymous__namespace_02lbann__random_8cpp_03.html":[2,0,0],
+"namespaceEl.html":[2,0,2],
 "namespaceanonymous__namespace_02lbann__random_8cpp_03.html":[3,0,0],
+"namespaceanonymous__namespace_02lbann__random_8cpp_03.html":[2,0,0],
 "namespacecudnn.html":[3,0,1],
 "namespacecudnn.html":[2,0,1],
-"namespacelbann.html":[3,0,3],
 "namespacelbann.html":[2,0,3],
+"namespacelbann.html":[3,0,3],
 "namespacelbann_1_1metrics.html":[3,0,3,0],
 "namespacelbann_1_1metrics.html":[2,0,3,0],
 "namespacelbann_1_1objective__functions.html":[2,0,3,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX10 =
 "struct__BOX3__DOUBLE.html#a5b7492bcb21a44337d719f38c8aa74bc":[3,0,16,4],
 "struct__BOX3__DOUBLE.html#aa8e42c058b749e637d8b353b6e657c8a":[3,0,16,5],
 "struct__BOX3__DOUBLE.html#aea6248b1df9198dff140438994957c3b":[3,0,16,2],
-"struct__BOX3__FLOAT.html":[3,0,17]
+"struct__BOX3__FLOAT.html":[3,0,17],
+"struct__BOX3__FLOAT.html#a1fddc58e7ad0cf69387d2ce33afe4502":[3,0,17,3]
 };
