@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-26-g635c5a0-ci241381871</span>
+   &#160;<span id="projectnumber">v0.93-rc0-31-g76055e0-ci241383843</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -177,7 +177,7 @@ $(document).ready(function(){initNavTree('lbann__model__stacked__autoencoder_8cp
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">if</span>(layer_name == <span class="stringliteral">&quot;FullyConnected&quot;</span>) {</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <a class="code" href="classlbann_1_1optimizer.html">optimizer</a> *new_optimizer = create_optimizer();</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <a class="code" href="classlbann_1_1Layer.html">Layer</a> *new_layer</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        = layer_fac-&gt;create_layer&lt;<a class="code" href="classlbann_1_1FullyConnectedLayer.html">FullyConnectedLayer</a>&gt;(<span class="stringliteral">&quot;FullyConnected&quot;</span>,data_dist,cur_size,</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        = layer_fac-&gt;create_layer&lt;<a class="code" href="classlbann_1_1FullyConnectedLayer.html">FullyConnectedLayer&lt;data_layout::MODEL_PARALLEL&gt;</a>&gt;(<span class="stringliteral">&quot;FullyConnected&quot;</span>,data_dist,cur_size,</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            prev_layer_dim,layer_dim,</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            m_mini_batch_size, activation, init,</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>,new_optimizer, regularizers);</div>
@@ -185,7 +185,7 @@ $(document).ready(function(){initNavTree('lbann__model__stacked__autoencoder_8cp
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="comment">// create output/mirror layer</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <a class="code" href="classlbann_1_1optimizer.html">optimizer</a> *mirror_optimizer = create_optimizer();</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <a class="code" href="classlbann_1_1Layer.html">Layer</a> *mirror_layer</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        = layer_fac-&gt;create_layer&lt;<a class="code" href="classlbann_1_1FullyConnectedLayer.html">FullyConnectedLayer</a>&gt;(<span class="stringliteral">&quot;FullyConnected&quot;</span>,data_dist,cur_size+1,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        = layer_fac-&gt;create_layer&lt;<a class="code" href="classlbann_1_1FullyConnectedLayer.html">FullyConnectedLayer&lt;data_layout::MODEL_PARALLEL&gt;</a>&gt;(<span class="stringliteral">&quot;FullyConnected&quot;</span>,data_dist,cur_size+1,</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            layer_dim,prev_layer_dim,</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            m_mini_batch_size,activation, init,</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>,mirror_optimizer,regularizers);</div>
@@ -196,7 +196,7 @@ $(document).ready(function(){initNavTree('lbann__model__stacked__autoencoder_8cp
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">if</span>(layer_name == <span class="stringliteral">&quot;FullyConnected&quot;</span>) {</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <a class="code" href="classlbann_1_1optimizer.html">optimizer</a> *hidden_optimizer = create_optimizer();</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <a class="code" href="classlbann_1_1Layer.html">Layer</a> *hidden_layer</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        = layer_fac-&gt;create_layer&lt;<a class="code" href="classlbann_1_1FullyConnectedLayer.html">FullyConnectedLayer</a>&gt;(<span class="stringliteral">&quot;FullyConnected&quot;</span>,data_dist,cur_size,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        = layer_fac-&gt;create_layer&lt;<a class="code" href="classlbann_1_1FullyConnectedLayer.html">FullyConnectedLayer&lt;data_layout::MODEL_PARALLEL&gt;</a>&gt;(<span class="stringliteral">&quot;FullyConnected&quot;</span>,data_dist,cur_size,</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            prev_layer_dim,layer_dim,</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            m_mini_batch_size, activation, init,</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>,hidden_optimizer, regularizers);</div>
@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('lbann__model__stacked__autoencoder_8cp
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="comment">// create mirror layer</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <a class="code" href="classlbann_1_1optimizer.html">optimizer</a> *mirror_hidden_optimizer = create_optimizer();</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <a class="code" href="classlbann_1_1Layer.html">Layer</a> *mirror_hidden_layer</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        = layer_fac-&gt;create_layer&lt;<a class="code" href="classlbann_1_1FullyConnectedLayer.html">FullyConnectedLayer</a>&gt;(<span class="stringliteral">&quot;FullyConnected&quot;</span>,data_dist,cur_size+1,</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        = layer_fac-&gt;create_layer&lt;<a class="code" href="classlbann_1_1FullyConnectedLayer.html">FullyConnectedLayer&lt;data_layout::MODEL_PARALLEL&gt;</a>&gt;(<span class="stringliteral">&quot;FullyConnected&quot;</span>,data_dist,cur_size+1,</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            layer_dim,prev_layer_dim,</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            m_mini_batch_size,activation, init,</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>,mirror_hidden_optimizer,regularizers);</div>
@@ -392,7 +392,7 @@ $(document).ready(function(){initNavTree('lbann__model__stacked__autoencoder_8cp
 <div class="ttc" id="lbann__optimizer_8hpp_html"><div class="ttname"><a href="lbann__optimizer_8hpp.html">lbann_optimizer.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a9d4a379d5c9e1102e63b48c53dd8ed44"><div class="ttname"><a href="classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44">lbann::Layer::NumNeurons</a></div><div class="ttdeci">uint NumNeurons</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00249">lbann_layer.hpp:249</a></div></div>
 <div class="ttc" id="datatype_8hpp_html_a91ad9478d81a7aaf2593e8d9c3d06a14"><div class="ttname"><a href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00074">datatype.hpp:74</a></div></div>
-<div class="ttc" id="classlbann_1_1FullyConnectedLayer_html"><div class="ttname"><a href="classlbann_1_1FullyConnectedLayer.html">lbann::FullyConnectedLayer</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__fully__connected_8hpp_source.html#l00040">lbann_layer_fully_connected.hpp:40</a></div></div>
+<div class="ttc" id="classlbann_1_1FullyConnectedLayer_html"><div class="ttname"><a href="classlbann_1_1FullyConnectedLayer.html">lbann::FullyConnectedLayer</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__fully__connected_8hpp_source.html#l00044">lbann_layer_fully_connected.hpp:44</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__summary_html"><div class="ttname"><a href="classlbann_1_1lbann__summary.html">lbann::lbann_summary</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__summary_8hpp_source.html#l00188">lbann_summary.hpp:188</a></div></div>
 <div class="ttc" id="namespacelbann_html_ab00e153fabca7ab166e4d79d47c05c76"><div class="ttname"><a href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76">lbann::activation_type</a></div><div class="ttdeci">activation_type</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__activations_8hpp_source.html#l00036">lbann_layer_activations.hpp:36</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a5d76fcdf50d7ac4fb2fe757fb0cc23d8"><div class="ttname"><a href="classlbann_1_1Layer.html#a5d76fcdf50d7ac4fb2fe757fb0cc23d8">lbann::Layer::Index</a></div><div class="ttdeci">uint Index</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00248">lbann_layer.hpp:248</a></div></div>
@@ -403,7 +403,7 @@ $(document).ready(function(){initNavTree('lbann__model__stacked__autoencoder_8cp
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_e8e3d10a664feac46c9de523d11ac34a.html">models</a></li><li class="navelem"><a class="el" href="lbann__model__stacked__autoencoder_8cpp.html">lbann_model_stacked_autoencoder.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 22:47:47 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 22:55:36 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

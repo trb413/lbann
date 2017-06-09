@@ -62,7 +62,7 @@ var hierarchy =
     [ "lbann::image_utils", "classlbann_1_1image__utils.html", null ],
     [ "lbann::Layer", "classlbann_1_1Layer.html", [
       [ "lbann::convolutional_layer", "classlbann_1_1convolutional__layer.html", null ],
-      [ "lbann::FullyConnectedLayer", "classlbann_1_1FullyConnectedLayer.html", null ],
+      [ "lbann::FullyConnectedLayer< DATA_DIST >", "classlbann_1_1FullyConnectedLayer.html", null ],
       [ "lbann::io_layer", "classlbann_1_1io__layer.html", [
         [ "lbann::input_layer", "classlbann_1_1input__layer.html", [
           [ "lbann::input_layer_distributed_minibatch", "classlbann_1_1input__layer__distributed__minibatch.html", null ],
@@ -79,7 +79,7 @@ var hierarchy =
       ] ],
       [ "lbann::local_response_normalization_layer", "classlbann_1_1local__response__normalization__layer.html", null ],
       [ "lbann::pooling_layer", "classlbann_1_1pooling__layer.html", null ],
-      [ "lbann::SoftmaxLayer", "classlbann_1_1SoftmaxLayer.html", null ]
+      [ "lbann::SoftmaxLayer< DATA_DIST >", "classlbann_1_1SoftmaxLayer.html", null ]
     ] ],
     [ "lbann::lbann_callback", "classlbann_1_1lbann__callback.html", [
       [ "lbann::lbann_callback_check_init", "classlbann_1_1lbann__callback__check__init.html", null ],

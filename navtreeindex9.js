@@ -1,5 +1,10 @@
 var NAVTREEINDEX9 =
 {
+"lbann__file__io_8hpp.html#a38dd30b2ae8214f6595708264369ddb8":[4,0,0,0,0,0,0,0,0,2,1,0],
+"lbann__file__io_8hpp.html#a6084b9319eea1997f8446fa3e6879532":[4,0,0,0,0,0,0,0,0,2,1,4],
+"lbann__file__io_8hpp.html#a8830dea8eef0ab5b93d68e2358ceeb1a":[4,0,0,0,0,0,0,0,0,2,1,3],
+"lbann__file__io_8hpp.html#aceeccedbbafccfa071b21ee99be794a5":[4,0,0,0,0,0,0,0,0,2,1,1],
+"lbann__file__io_8hpp.html#aefae2a9fc9d742ece0fa8ca7ed9ee137":[4,0,0,0,0,0,0,0,0,2,1,2],
 "lbann__file__io_8hpp.html#af596e6d2be603e9cf808c98f5412490a":[4,0,0,0,0,0,0,0,0,2,1,5],
 "lbann__file__io_8hpp_source.html":[4,0,0,0,0,0,0,0,0,2,1],
 "lbann__im2col_8cpp.html":[4,0,0,0,0,0,0,1,10,1],
@@ -95,8 +100,6 @@ var NAVTREEINDEX9 =
 "lbann__layer__convolutional_8hpp.html":[4,0,0,0,0,0,0,0,0,3,7],
 "lbann__layer__convolutional_8hpp_source.html":[4,0,0,0,0,0,0,0,0,3,7],
 "lbann__layer__fully__connected_8cpp.html":[4,0,0,0,0,0,0,1,3,8],
-"lbann__layer__fully__connected_8cpp.html#a199b2df97e18b083eb9ee655fec2dfc7":[4,0,0,0,0,0,0,1,3,8,0],
-"lbann__layer__fully__connected_8cpp.html#afc141da3841a084e603a2e8db5b4a839":[4,0,0,0,0,0,0,1,3,8,1],
 "lbann__layer__fully__connected_8cpp_source.html":[4,0,0,0,0,0,0,1,3,8],
 "lbann__layer__fully__connected_8hpp.html":[4,0,0,0,0,0,0,0,0,3,8],
 "lbann__layer__fully__connected_8hpp_source.html":[4,0,0,0,0,0,0,0,0,3,8],
@@ -125,8 +128,6 @@ var NAVTREEINDEX9 =
 "lbann__layer__reconstruction_8hpp.html":[4,0,0,0,0,0,0,0,0,3,11],
 "lbann__layer__reconstruction_8hpp_source.html":[4,0,0,0,0,0,0,0,0,3,11],
 "lbann__layer__softmax_8cpp.html":[4,0,0,0,0,0,0,1,3,12],
-"lbann__layer__softmax_8cpp.html#a199b2df97e18b083eb9ee655fec2dfc7":[4,0,0,0,0,0,0,1,3,12,0],
-"lbann__layer__softmax_8cpp.html#afc141da3841a084e603a2e8db5b4a839":[4,0,0,0,0,0,0,1,3,12,1],
 "lbann__layer__softmax_8cpp_source.html":[4,0,0,0,0,0,0,1,3,12],
 "lbann__layer__softmax_8hpp.html":[4,0,0,0,0,0,0,0,0,3,12],
 "lbann__layer__softmax_8hpp_source.html":[4,0,0,0,0,0,0,0,0,3,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX9 =
 "lbann__partitioned__minibatch__parallel__io_8hpp.html":[4,0,0,0,0,0,0,0,0,2,2],
 "lbann__partitioned__minibatch__parallel__io_8hpp_source.html":[4,0,0,0,0,0,0,0,0,2,2],
 "lbann__persist_8cpp.html":[4,0,0,0,0,0,0,1,2,3],
-"lbann__persist_8cpp.html#a1e6afc3db474d5e9159b5dedad8559f2":[4,0,0,0,0,0,0,1,2,3,1],
-"lbann__persist_8cpp.html#a8cc0d3da909c360b2a72ee0c611055cf":[4,0,0,0,0,0,0,1,2,3,2]
+"lbann__persist_8cpp.html#a1e6afc3db474d5e9159b5dedad8559f2":[4,0,0,0,0,0,0,1,2,3,1]
 };

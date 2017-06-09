@@ -24,7 +24,7 @@ var searchData=
   ['adaptive_5fthresholds',['adaptive_thresholds',['../structlbann_1_1lbann__quantizer_1_1adaptive__thresholds.html',1,'lbann::lbann_quantizer']]],
   ['adaptive_5funquantize',['adaptive_unquantize',['../classlbann_1_1lbann__quantizer.html#acf8d21e8114a00fdea53d919d76dd511',1,'lbann::lbann_quantizer::adaptive_unquantize(const rowT *q, Mat &amp;mat)'],['../classlbann_1_1lbann__quantizer.html#a5456c31af080fce7f85aa7a01b7ee939',1,'lbann::lbann_quantizer::adaptive_unquantize(const rowT *q, DistMat &amp;mat)']]],
   ['adaptive_5funquantize_5fadd',['adaptive_unquantize_add',['../classlbann_1_1lbann__quantizer.html#a1f63f7be2e227a48ebaa25056e6f85bc',1,'lbann::lbann_quantizer']]],
-  ['add',['add',['../classlbann_1_1sequential__model.html#ad6436c2ecd1e6b0dea898d9c13068df9',1,'lbann::sequential_model::add(const std::string layer_name, data_layout data_dist, int layer_dim, activation_type activation=activation_type::RELU, weight_initialization init=weight_initialization::glorot_uniform, std::vector&lt; regularizer * &gt; regularizers={})'],['../classlbann_1_1sequential__model.html#a2341499470419ffae075506df7983c93',1,'lbann::sequential_model::add(Layer *new_layer)']]],
+  ['add',['add',['../classlbann_1_1sequential__model.html#a2341499470419ffae075506df7983c93',1,'lbann::sequential_model']]],
   ['add_5fcallback',['add_callback',['../classlbann_1_1model.html#a8f45cdca82dbc0cc1f519898474cc6ec',1,'lbann::model']]],
   ['add_5ffloat2',['ADD_FLOAT2',['../datatype_8hpp.html#afa4e49244ad5493d8f83ff571bac8f58',1,'datatype.hpp']]],
   ['add_5ffloat3',['ADD_FLOAT3',['../datatype_8hpp.html#ae4a23a856a78231831148e053299ecc8',1,'datatype.hpp']]],
