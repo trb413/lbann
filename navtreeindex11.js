@@ -1,9 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"struct__BOX3__DOUBLE.html#a5b7492bcb21a44337d719f38c8aa74bc":[3,0,16,4],
-"struct__BOX3__DOUBLE.html#aa8e42c058b749e637d8b353b6e657c8a":[3,0,16,5],
-"struct__BOX3__DOUBLE.html#aea6248b1df9198dff140438994957c3b":[3,0,16,2],
-"struct__BOX3__FLOAT.html":[3,0,17],
 "struct__BOX3__FLOAT.html#a1fddc58e7ad0cf69387d2ce33afe4502":[3,0,17,3],
 "struct__BOX3__FLOAT.html#a2b6691a869442f618ca92d97639ecb86":[3,0,17,4],
 "struct__BOX3__FLOAT.html#a7cd84616e6269e15117b00b07d922b24":[3,0,17,1],

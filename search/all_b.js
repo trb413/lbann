@@ -5,7 +5,7 @@ var searchData=
   ['l2_5fregularization',['l2_regularization',['../classlbann_1_1l2__regularization.html#ae093be199ec313ae0e4f7fa26e330e38',1,'lbann::l2_regularization']]],
   ['lambda',['Lambda',['../classlbann_1_1TrainingParams.html#a0302f435cc2a9b7e425881cb46caedd0',1,'lbann::TrainingParams']]],
   ['last_5fidx',['last_idx',['../classlbann_1_1lbann__callback__learning__rate.html#a2636c9cc4bac6d52e9df40fa9ee980d9',1,'lbann::lbann_callback_learning_rate']]],
-  ['last_5fscore',['last_score',['../classlbann_1_1lbann__callback__early__stopping.html#abeb5917f06723fc4b9c48716cdd12a50',1,'lbann::lbann_callback_early_stopping::last_score()'],['../classlbann_1_1lbann__callback__adaptive__learning__rate.html#a485a7cfca03b7959129ba5369fe2b473',1,'lbann::lbann_callback_adaptive_learning_rate::last_score()']]],
+  ['last_5fscore',['last_score',['../classlbann_1_1lbann__callback__adaptive__learning__rate.html#a485a7cfca03b7959129ba5369fe2b473',1,'lbann::lbann_callback_adaptive_learning_rate']]],
   ['layer',['Layer',['../classlbann_1_1Layer.html',1,'lbann']]],
   ['layer',['Layer',['../classlbann_1_1Layer.html#a1483cd7103a5f739c4f8bac4a0d005dc',1,'lbann::Layer']]],
   ['layer_5fcategory',['layer_category',['../namespacelbann.html#aedf7ea3c07affe9278486158f759cc26',1,'lbann']]],
