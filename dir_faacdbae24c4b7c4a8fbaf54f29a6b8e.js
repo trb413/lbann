@@ -3,6 +3,7 @@ var dir_faacdbae24c4b7c4a8fbaf54f29a6b8e =
     [ "lbann_input_layer.cpp", "lbann__input__layer_8cpp.html", null ],
     [ "lbann_input_layer_distributed_minibatch.cpp", "lbann__input__layer__distributed__minibatch_8cpp.html", null ],
     [ "lbann_input_layer_distributed_minibatch_parallel_io.cpp", "lbann__input__layer__distributed__minibatch__parallel__io_8cpp.html", null ],
+    [ "lbann_input_layer_partitioned_minibatch_parallel_io.cpp", "lbann__input__layer__partitioned__minibatch__parallel__io_8cpp.html", null ],
     [ "lbann_io_layer.cpp", "lbann__io__layer_8cpp.html", [
       [ "dataset_header", "structdataset__header.html", "structdataset__header" ]
     ] ],
@@ -17,5 +18,6 @@ var dir_faacdbae24c4b7c4a8fbaf54f29a6b8e =
     [ "lbann_target_layer.cpp", "lbann__target__layer_8cpp.html", null ],
     [ "lbann_target_layer_distributed_minibatch.cpp", "lbann__target__layer__distributed__minibatch_8cpp.html", null ],
     [ "lbann_target_layer_distributed_minibatch_parallel_io.cpp", "lbann__target__layer__distributed__minibatch__parallel__io_8cpp.html", null ],
+    [ "lbann_target_layer_partitioned_minibatch_parallel_io.cpp", "lbann__target__layer__partitioned__minibatch__parallel__io_8cpp.html", null ],
     [ "lbann_target_layer_unsupervised.cpp", "lbann__target__layer__unsupervised_8cpp.html", "lbann__target__layer__unsupervised_8cpp" ]
 ];

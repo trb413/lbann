@@ -13,6 +13,7 @@ var searchData=
   ['lbann_5fcallback_5fdebug',['lbann_callback_debug',['../classlbann_1_1lbann__callback__debug.html',1,'lbann']]],
   ['lbann_5fcallback_5fdump_5factivations',['lbann_callback_dump_activations',['../classlbann_1_1lbann__callback__dump__activations.html',1,'lbann']]],
   ['lbann_5fcallback_5fdump_5fgradients',['lbann_callback_dump_gradients',['../classlbann_1_1lbann__callback__dump__gradients.html',1,'lbann']]],
+  ['lbann_5fcallback_5fdump_5fminibatch_5fsample_5findices',['lbann_callback_dump_minibatch_sample_indices',['../classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html',1,'lbann']]],
   ['lbann_5fcallback_5fdump_5fweights',['lbann_callback_dump_weights',['../classlbann_1_1lbann__callback__dump__weights.html',1,'lbann']]],
   ['lbann_5fcallback_5fearly_5fstopping',['lbann_callback_early_stopping',['../classlbann_1_1lbann__callback__early__stopping.html',1,'lbann']]],
   ['lbann_5fcallback_5fimcomm',['lbann_callback_imcomm',['../classlbann_1_1lbann__callback__imcomm.html',1,'lbann']]],

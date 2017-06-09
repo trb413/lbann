@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">88df806-ci241036721</span>
+   &#160;<span id="projectnumber">v0.92-ci241062038</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -107,7 +107,10 @@ $(document).ready(function(){initNavTree('functions_f.html','');});
 <li>fetch_from_data_reader()
 : <a class="el" href="classlbann_1_1distributed__minibatch__parallel__io.html#aa62a8e46c053771fe20831f81aeb0a25">lbann::distributed_minibatch_parallel_io</a>
 , <a class="el" href="classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a63ac1e19f5ef461c23496a5169eaa3f4">lbann::input_layer_distributed_minibatch_parallel_io</a>
+, <a class="el" href="classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#ab9031c6e35fa6ff7134368f54fafa8c2">lbann::input_layer_partitioned_minibatch_parallel_io</a>
+, <a class="el" href="classlbann_1_1partitioned__minibatch__parallel__io.html#abbe25ec14effe57a3128313429103e15">lbann::partitioned_minibatch_parallel_io</a>
 , <a class="el" href="classlbann_1_1target__layer__distributed__minibatch__parallel__io.html#ac848395e55b96cf53462d67efc42efb9">lbann::target_layer_distributed_minibatch_parallel_io</a>
+, <a class="el" href="classlbann_1_1target__layer__partitioned__minibatch__parallel__io.html#ada447b887b6f88b54dce4b0785733c5d">lbann::target_layer_partitioned_minibatch_parallel_io</a>
 </li>
 <li>fetch_label()
 : <a class="el" href="classlbann_1_1data__reader__nci.html#abc8fa6fee6f2e8d7c1c9a958224f3b23">lbann::data_reader_nci</a>
@@ -125,6 +128,7 @@ $(document).ready(function(){initNavTree('functions_f.html','');});
 </li>
 <li>fetch_to_local_matrix()
 : <a class="el" href="classlbann_1_1distributed__minibatch__parallel__io.html#ad5cc95374bcb47c97105b387950ca8e1">lbann::distributed_minibatch_parallel_io</a>
+, <a class="el" href="classlbann_1_1partitioned__minibatch__parallel__io.html#acb5e4f7ba2b31da3a52972f29be23adf">lbann::partitioned_minibatch_parallel_io</a>
 </li>
 <li>flip()
 : <a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a12d9f7056a5e68185ea0e85e14c17bcf">lbann::lbann_image_preprocessor</a>
@@ -154,6 +158,7 @@ $(document).ready(function(){initNavTree('functions_f.html','');});
 , <a class="el" href="classlbann_1_1FullyConnectedLayer.html#ab8cf987d1e95ad1fbacd3851a07b3954">lbann::FullyConnectedLayer</a>
 , <a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#ad197c20defc9e43a60370fdf20587405">lbann::input_layer_distributed_minibatch</a>
 , <a class="el" href="classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a2ca3d853397e62184101325cd2b87f4d">lbann::input_layer_distributed_minibatch_parallel_io</a>
+, <a class="el" href="classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#a26ab5dcfd425ee5b4d4aead303cd1526">lbann::input_layer_partitioned_minibatch_parallel_io</a>
 , <a class="el" href="classlbann_1_1Layer.html#a5005998d7912d354ecf7994bc3b661af">lbann::Layer</a>
 , <a class="el" href="classlbann_1_1local__response__normalization__layer.html#a5b58cb0f4277cef24f0c16dcbd333b8b">lbann::local_response_normalization_layer</a>
 , <a class="el" href="classlbann_1_1pooling__layer.html#a2d9efa294d3c3d0319e05666f73cd545">lbann::pooling_layer</a>
@@ -161,6 +166,7 @@ $(document).ready(function(){initNavTree('functions_f.html','');});
 , <a class="el" href="classlbann_1_1SoftmaxLayer.html#a024eedef18ff10e82a88ede326a6bad6">lbann::SoftmaxLayer</a>
 , <a class="el" href="classlbann_1_1target__layer__distributed__minibatch.html#af58b920d63418c232cf2c26579675492">lbann::target_layer_distributed_minibatch</a>
 , <a class="el" href="classlbann_1_1target__layer__distributed__minibatch__parallel__io.html#afca413b0943350f2bd64164a5f268e0d">lbann::target_layer_distributed_minibatch_parallel_io</a>
+, <a class="el" href="classlbann_1_1target__layer__partitioned__minibatch__parallel__io.html#a8d0a8c288f20da7efcf939b52a48f162">lbann::target_layer_partitioned_minibatch_parallel_io</a>
 , <a class="el" href="classlbann_1_1target__layer__unsupervised.html#a97a4d94db50e704a525220e85c65c5b1">lbann::target_layer_unsupervised</a>
 </li>
 <li>fp_linearity_cpu()
@@ -236,7 +242,7 @@ $(document).ready(function(){initNavTree('functions_f.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Jun 9 2017 02:20:46 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 05:14:17 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

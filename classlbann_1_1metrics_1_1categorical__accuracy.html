@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">88df806-ci241036721</span>
+   &#160;<span id="projectnumber">v0.92-ci241062038</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -115,12 +115,18 @@ Collaboration diagram for lbann::metrics::categorical_accuracy:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5b81bed3c1255cdc7cb53e02d5ed49f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a5b81bed3c1255cdc7cb53e02d5ed49f5">categorical_accuracy</a> (<a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">comm</a>)</td></tr>
-<tr class="memdesc:a5b81bed3c1255cdc7cb53e02d5ed49f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a5b81bed3c1255cdc7cb53e02d5ed49f5">More...</a><br/></td></tr>
-<tr class="separator:a5b81bed3c1255cdc7cb53e02d5ed49f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa4e32440e5edf1f010d07399cecbabd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#afa4e32440e5edf1f010d07399cecbabd">categorical_accuracy</a> (<a class="el" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a> data_dist, <a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">comm</a>)</td></tr>
+<tr class="memdesc:afa4e32440e5edf1f010d07399cecbabd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#afa4e32440e5edf1f010d07399cecbabd">More...</a><br/></td></tr>
+<tr class="separator:afa4e32440e5edf1f010d07399cecbabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae49f33ab5a68ffccb390f0eb089fc69e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ae49f33ab5a68ffccb390f0eb089fc69e">~categorical_accuracy</a> ()</td></tr>
 <tr class="memdesc:ae49f33ab5a68ffccb390f0eb089fc69e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#ae49f33ab5a68ffccb390f0eb089fc69e">More...</a><br/></td></tr>
 <tr class="separator:ae49f33ab5a68ffccb390f0eb089fc69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3bf712c930338a6f93112a1e62858b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a5c3bf712c930338a6f93112a1e62858b">initialize_model_parallel_distribution</a> ()</td></tr>
+<tr class="memdesc:a5c3bf712c930338a6f93112a1e62858b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Workspace matrices should be in MR,Star distributions.  <a href="#a5c3bf712c930338a6f93112a1e62858b">More...</a><br/></td></tr>
+<tr class="separator:a5c3bf712c930338a6f93112a1e62858b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82bdc1ff60485c03421192b060d2d3a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a82bdc1ff60485c03421192b060d2d3a9">initialize_data_parallel_distribution</a> ()</td></tr>
+<tr class="memdesc:a82bdc1ff60485c03421192b060d2d3a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Workspace matrices should be in VC,Star distributions.  <a href="#a82bdc1ff60485c03421192b060d2d3a9">More...</a><br/></td></tr>
+<tr class="separator:a82bdc1ff60485c03421192b060d2d3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad36940d8d172ed27804c5d5a45e83510"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ad36940d8d172ed27804c5d5a45e83510">setup</a> (int num_neurons, int mini_batch_size)</td></tr>
 <tr class="separator:ad36940d8d172ed27804c5d5a45e83510"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27db52797078e300d7e4bb18f34cd0bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a27db52797078e300d7e4bb18f34cd0bc">fp_set_std_matrix_view</a> (int64_t cur_mini_batch_size)</td></tr>
@@ -132,9 +138,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5ea9c31c2ca6aae3538d4e3646a60f30"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a5ea9c31c2ca6aae3538d4e3646a60f30">report_lifetime_metric</a> (<a class="el" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a> mode)</td></tr>
 <tr class="separator:a5ea9c31c2ca6aae3538d4e3646a60f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classlbann_1_1metrics_1_1metric"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classlbann_1_1metrics_1_1metric')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classlbann_1_1metrics_1_1metric.html">lbann::metrics::metric</a></td></tr>
-<tr class="memitem:a88766bc9201d38a3240d89dcb91fcab5 inherit pub_methods_classlbann_1_1metrics_1_1metric"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1metric.html#a88766bc9201d38a3240d89dcb91fcab5">metric</a> (<a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">comm</a>)</td></tr>
-<tr class="memdesc:a88766bc9201d38a3240d89dcb91fcab5 inherit pub_methods_classlbann_1_1metrics_1_1metric"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a88766bc9201d38a3240d89dcb91fcab5">More...</a><br/></td></tr>
-<tr class="separator:a88766bc9201d38a3240d89dcb91fcab5 inherit pub_methods_classlbann_1_1metrics_1_1metric"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59fabfba70b7d22843bb6dca1ad90dd7 inherit pub_methods_classlbann_1_1metrics_1_1metric"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1metric.html#a59fabfba70b7d22843bb6dca1ad90dd7">metric</a> (<a class="el" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a> data_dist, <a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">comm</a>)</td></tr>
+<tr class="memdesc:a59fabfba70b7d22843bb6dca1ad90dd7 inherit pub_methods_classlbann_1_1metrics_1_1metric"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a59fabfba70b7d22843bb6dca1ad90dd7">More...</a><br/></td></tr>
+<tr class="separator:a59fabfba70b7d22843bb6dca1ad90dd7 inherit pub_methods_classlbann_1_1metrics_1_1metric"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90f80d226b74ee2489559c1e3e49dbb3 inherit pub_methods_classlbann_1_1metrics_1_1metric"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1metric.html#a90f80d226b74ee2489559c1e3e49dbb3">~metric</a> ()</td></tr>
 <tr class="memdesc:a90f80d226b74ee2489559c1e3e49dbb3 inherit pub_methods_classlbann_1_1metrics_1_1metric"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a90f80d226b74ee2489559c1e3e49dbb3">More...</a><br/></td></tr>
 <tr class="separator:a90f80d226b74ee2489559c1e3e49dbb3 inherit pub_methods_classlbann_1_1metrics_1_1metric"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,8 +153,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a464ca031dce11f2d46ded261c263bc23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a6034e0823933305d0bd7b5ef860f5c50">ColSumMat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a464ca031dce11f2d46ded261c263bc23">YsColMax</a></td></tr>
-<tr class="separator:a464ca031dce11f2d46ded261c263bc23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dd38e947e85a788e331d7d2405bd274"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a4dd38e947e85a788e331d7d2405bd274">YsColMax</a></td></tr>
+<tr class="separator:a4dd38e947e85a788e331d7d2405bd274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a496f920cb794d0423b2ec977c738f505"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86">StarMat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a496f920cb794d0423b2ec977c738f505">YsColMaxStar</a></td></tr>
 <tr class="memdesc:a496f920cb794d0423b2ec977c738f505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Note that the column max matrix has the number of mini-batches on the rows instead of columns.  <a href="#a496f920cb794d0423b2ec977c738f505">More...</a><br/></td></tr>
 <tr class="separator:a496f920cb794d0423b2ec977c738f505"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,9 +164,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ae4ad56bd1105d2aaf432897b08982407"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ae4ad56bd1105d2aaf432897b08982407">m_reduced_max_indices</a></td></tr>
 <tr class="memdesc:ae4ad56bd1105d2aaf432897b08982407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local array to hold max indicies.  <a href="#ae4ad56bd1105d2aaf432897b08982407">More...</a><br/></td></tr>
 <tr class="separator:ae4ad56bd1105d2aaf432897b08982407"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bd065ef13773745a5e0cccb12198c99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a6034e0823933305d0bd7b5ef860f5c50">ColSumMat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a3bd065ef13773745a5e0cccb12198c99">YsColMax_v</a></td></tr>
-<tr class="memdesc:a3bd065ef13773745a5e0cccb12198c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local array to build global view of maximum indicies.  <a href="#a3bd065ef13773745a5e0cccb12198c99">More...</a><br/></td></tr>
-<tr class="separator:a3bd065ef13773745a5e0cccb12198c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f46ce61471c2301b3c80ef8bd64fd8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ab0f46ce61471c2301b3c80ef8bd64fd8">YsColMax_v</a></td></tr>
+<tr class="memdesc:ab0f46ce61471c2301b3c80ef8bd64fd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local array to build global view of maximum indicies.  <a href="#ab0f46ce61471c2301b3c80ef8bd64fd8">More...</a><br/></td></tr>
+<tr class="separator:ab0f46ce61471c2301b3c80ef8bd64fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbfed96e84884d2ac2f2fa5229a88e48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86">StarMat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#adbfed96e84884d2ac2f2fa5229a88e48">YsColMaxStar_v</a></td></tr>
 <tr class="separator:adbfed96e84884d2ac2f2fa5229a88e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f9bdcd78bd9ce8cf8450fb3d0588132"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a3f9bdcd78bd9ce8cf8450fb3d0588132">m_max_index_v</a></td></tr>
@@ -185,21 +191,33 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:aa2923a8982c083c63d3414bd3a6670a1 inherit pub_attribs_classlbann_1_1metrics_1_1metric"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4118ce33325ab57e57ad21c7dde8fa0 inherit pub_attribs_classlbann_1_1metrics_1_1metric"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1">metric_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1metric.html#ab4118ce33325ab57e57ad21c7dde8fa0">type</a></td></tr>
 <tr class="separator:ab4118ce33325ab57e57ad21c7dde8fa0 inherit pub_attribs_classlbann_1_1metrics_1_1metric"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f85bb1542968ddd312dae8fee04ce65 inherit pub_attribs_classlbann_1_1metrics_1_1metric"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1metric.html#a5f85bb1542968ddd312dae8fee04ce65">m_data_layout</a></td></tr>
+<tr class="separator:a5f85bb1542968ddd312dae8fee04ce65 inherit pub_attribs_classlbann_1_1metrics_1_1metric"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html#l00038">38</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html">lbann_metric_categorical_accuracy.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a5b81bed3c1255cdc7cb53e02d5ed49f5"></a>
+<a class="anchor" id="afa4e32440e5edf1f010d07399cecbabd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">lbann::metrics::categorical_accuracy::categorical_accuracy </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *&#160;</td>
-          <td class="paramname"><em>comm</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a>&#160;</td>
+          <td class="paramname"><em>data_dist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *&#160;</td>
+          <td class="paramname"><em>comm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -207,24 +225,47 @@ Additional Inherited Members</h2></td></tr>
 <p>Constructor. </p>
 
 <p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html#l00033">33</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html">lbann_metric_categorical_accuracy.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  : <a class="code" href="classlbann_1_1metrics_1_1metric.html#a88766bc9201d38a3240d89dcb91fcab5">metric</a>(<a class="code" href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">comm</a>),</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a464ca031dce11f2d46ded261c263bc23">YsColMax</a>(<a class="code" href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>()),</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a496f920cb794d0423b2ec977c738f505">YsColMaxStar</a>(<a class="code" href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>()),</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a3bd065ef13773745a5e0cccb12198c99">YsColMax_v</a>(<a class="code" href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>()),</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#adbfed96e84884d2ac2f2fa5229a88e48">YsColMaxStar_v</a>(<a class="code" href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>())</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  this-&gt;<a class="code" href="classlbann_1_1metrics_1_1metric.html#ab4118ce33325ab57e57ad21c7dde8fa0">type</a> = <a class="code" href="namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a576ea1a64c846beca09a6346ba791d6c">metric_type::categorical_accuracy</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  : <a class="code" href="classlbann_1_1metrics_1_1metric.html#a59fabfba70b7d22843bb6dca1ad90dd7">metric</a>(data_dist, <a class="code" href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">comm</a>),</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a496f920cb794d0423b2ec977c738f505">YsColMaxStar</a>(<a class="code" href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>()),</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#adbfed96e84884d2ac2f2fa5229a88e48">YsColMaxStar_v</a>(<a class="code" href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>())</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  this-&gt;<a class="code" href="classlbann_1_1metrics_1_1metric.html#ab4118ce33325ab57e57ad21c7dde8fa0">type</a> = <a class="code" href="namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a576ea1a64c846beca09a6346ba791d6c">metric_type::categorical_accuracy</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">// Setup the data distribution</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordflow">switch</span>(data_dist) {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0">data_layout::MODEL_PARALLEL</a>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a5c3bf712c930338a6f93112a1e62858b">initialize_model_parallel_distribution</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a82bdc1ff60485c03421192b060d2d3a9">initialize_data_parallel_distribution</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(std::string{} + __FILE__ + <span class="stringliteral">&quot; &quot;</span> +</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                          std::to_string(__LINE__) +</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                          <span class="stringliteral">&quot;Invalid data layout selected&quot;</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a5c3bf712c930338a6f93112a1e62858b"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a5c3bf712c930338a6f93112a1e62858b">lbann::metrics::categorical_accuracy::initialize_model_parallel_distribution</a></div><div class="ttdeci">void initialize_model_parallel_distribution()</div><div class="ttdoc">Workspace matrices should be in MR,Star distributions. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8cpp_source.html#l00061">lbann_metric_categorical_accuracy.cpp:61</a></div></div>
 <div class="ttc" id="namespacelbann_1_1metrics_html_a5bb88e5c5dd16c8fce1d3c8abb00aeb1a576ea1a64c846beca09a6346ba791d6c"><div class="ttname"><a href="namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a576ea1a64c846beca09a6346ba791d6c">lbann::metrics::metric_type::categorical_accuracy</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a3bd065ef13773745a5e0cccb12198c99"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a3bd065ef13773745a5e0cccb12198c99">lbann::metrics::categorical_accuracy::YsColMax_v</a></div><div class="ttdeci">ColSumMat YsColMax_v</div><div class="ttdoc">Local array to build global view of maximum indicies. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00061">lbann_metric_categorical_accuracy.hpp:61</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1metric_html_ab4118ce33325ab57e57ad21c7dde8fa0"><div class="ttname"><a href="classlbann_1_1metrics_1_1metric.html#ab4118ce33325ab57e57ad21c7dde8fa0">lbann::metrics::metric::type</a></div><div class="ttdeci">metric_type type</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00144">lbann_metric.hpp:144</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1metric_html_abc54e22801ebf70fef5210294a833a9b"><div class="ttname"><a href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">lbann::metrics::metric::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00142">lbann_metric.hpp:142</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1metric_html_a88766bc9201d38a3240d89dcb91fcab5"><div class="ttname"><a href="classlbann_1_1metrics_1_1metric.html#a88766bc9201d38a3240d89dcb91fcab5">lbann::metrics::metric::metric</a></div><div class="ttdeci">metric(lbann_comm *comm)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00115">lbann_metric.hpp:115</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a496f920cb794d0423b2ec977c738f505"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a496f920cb794d0423b2ec977c738f505">lbann::metrics::categorical_accuracy::YsColMaxStar</a></div><div class="ttdeci">StarMat YsColMaxStar</div><div class="ttdoc">Note that the column max matrix has the number of mini-batches on the rows instead of columns...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00056">lbann_metric_categorical_accuracy.hpp:56</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a464ca031dce11f2d46ded261c263bc23"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a464ca031dce11f2d46ded261c263bc23">lbann::metrics::categorical_accuracy::YsColMax</a></div><div class="ttdeci">ColSumMat YsColMax</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00055">lbann_metric_categorical_accuracy.hpp:55</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_adbfed96e84884d2ac2f2fa5229a88e48"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#adbfed96e84884d2ac2f2fa5229a88e48">lbann::metrics::categorical_accuracy::YsColMaxStar_v</a></div><div class="ttdeci">StarMat YsColMaxStar_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00062">lbann_metric_categorical_accuracy.hpp:62</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638"><div class="ttname"><a href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1metric_html_ab4118ce33325ab57e57ad21c7dde8fa0"><div class="ttname"><a href="classlbann_1_1metrics_1_1metric.html#ab4118ce33325ab57e57ad21c7dde8fa0">lbann::metrics::metric::type</a></div><div class="ttdeci">metric_type type</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00146">lbann_metric.hpp:146</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1metric_html_abc54e22801ebf70fef5210294a833a9b"><div class="ttname"><a href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">lbann::metrics::metric::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00144">lbann_metric.hpp:144</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a82bdc1ff60485c03421192b060d2d3a9"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a82bdc1ff60485c03421192b060d2d3a9">lbann::metrics::categorical_accuracy::initialize_data_parallel_distribution</a></div><div class="ttdeci">void initialize_data_parallel_distribution()</div><div class="ttdoc">Workspace matrices should be in VC,Star distributions. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8cpp_source.html#l00067">lbann_metric_categorical_accuracy.cpp:67</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0"><div class="ttname"><a href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0">data_layout::MODEL_PARALLEL</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1metric_html_a59fabfba70b7d22843bb6dca1ad90dd7"><div class="ttname"><a href="classlbann_1_1metrics_1_1metric.html#a59fabfba70b7d22843bb6dca1ad90dd7">lbann::metrics::metric::metric</a></div><div class="ttdeci">metric(data_layout data_dist, lbann_comm *comm)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00115">lbann_metric.hpp:115</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a496f920cb794d0423b2ec977c738f505"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a496f920cb794d0423b2ec977c738f505">lbann::metrics::categorical_accuracy::YsColMaxStar</a></div><div class="ttdeci">StarMat YsColMaxStar</div><div class="ttdoc">Note that the column max matrix has the number of mini-batches on the rows instead of columns...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00058">lbann_metric_categorical_accuracy.hpp:58</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_adbfed96e84884d2ac2f2fa5229a88e48"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#adbfed96e84884d2ac2f2fa5229a88e48">lbann::metrics::categorical_accuracy::YsColMaxStar_v</a></div><div class="ttdeci">StarMat YsColMaxStar_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00064">lbann_metric_categorical_accuracy.hpp:64</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a483bf8a72d44a0e83da45f3d47bd20d4"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">lbann::lbann_comm::get_model_grid</a></div><div class="ttdeci">Grid &amp; get_model_grid()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00084">lbann_comm.hpp:84</a></div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1metrics_1_1categorical__accuracy_afa4e32440e5edf1f010d07399cecbabd_cgraph.png" border="0" usemap="#classlbann_1_1metrics_1_1categorical__accuracy_afa4e32440e5edf1f010d07399cecbabd_cgraph" alt=""/></div>
+<map name="classlbann_1_1metrics_1_1categorical__accuracy_afa4e32440e5edf1f010d07399cecbabd_cgraph" id="classlbann_1_1metrics_1_1categorical__accuracy_afa4e32440e5edf1f010d07399cecbabd_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a5c3bf712c930338a6f93112a1e62858b" title="Workspace matrices should be in MR,Star distributions. " alt="" coords="267,5,445,61"/><area shape="rect" id="node3" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a82bdc1ff60485c03421192b060d2d3a9" title="Workspace matrices should be in VC,Star distributions. " alt="" coords="269,85,443,141"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="ae49f33ab5a68ffccb390f0eb089fc69e"></a>
@@ -242,20 +283,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html#l00043">43</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html">lbann_metric_categorical_accuracy.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                                        {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">  YsColMax.Empty();</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">  YsColMaxStar.Empty();</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">  m_max_index.Empty();</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">  m_reduced_max_indices.Empty();</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">  YsColMax_v.Empty();</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">  YsColMaxStar_v.Empty();</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">  m_max_index_v.Empty();</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">  m_reduced_max_indices_v.Empty();</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html#l00055">55</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html">lbann_metric_categorical_accuracy.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                                        {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">delete</span> <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a4dd38e947e85a788e331d7d2405bd274">YsColMax</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">delete</span> <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ab0f46ce61471c2301b3c80ef8bd64fd8">YsColMax_v</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_ab0f46ce61471c2301b3c80ef8bd64fd8"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#ab0f46ce61471c2301b3c80ef8bd64fd8">lbann::metrics::categorical_accuracy::YsColMax_v</a></div><div class="ttdeci">AbsDistMat * YsColMax_v</div><div class="ttdoc">Local array to build global view of maximum indicies. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00063">lbann_metric_categorical_accuracy.hpp:63</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a4dd38e947e85a788e331d7d2405bd274"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a4dd38e947e85a788e331d7d2405bd274">lbann::metrics::categorical_accuracy::YsColMax</a></div><div class="ttdeci">AbsDistMat * YsColMax</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00057">lbann_metric_categorical_accuracy.hpp:57</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -291,15 +325,14 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Compute the error between the previous layers activations and the ground truth</p>
-<p>For each minibatch (column) find the maximimum value</p>
+<p>Compute the error between the previous layers activations and the ground truth For each minibatch (column) find the maximimum value</p>
 <p>Give every rank a copy so that they can find the max index locally</p>
 <p>Find which rank holds the index for the maxmimum value</p>
 <p>For each sample in mini-batch that this rank has</p>
 <p>For each feature</p>
 <p>Merge all of the local index sets into a common buffer, if there are two potential maximum values, highest index wins Note that this has to operate on the raw buffer, not the view</p>
 <p>Check to see if the predicted results match the target results</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo:</a></b></dt><dd><ul>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo:</a></b></dt><dd><ul>
 <li>BVE I believe that the following code works, but doesn't need to be this hard it shouldn't have to check the inequality since there should only be one category turned on in the ground truth </li>
 </ul>
 </dd></dl>
@@ -310,67 +343,84 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1metrics_1_1metric.html#affe1a598c434133ea19509beb20383bc">lbann::metrics::metric</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html#l00076">76</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html">lbann_metric_categorical_accuracy.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                                                                                  {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="comment">// Clear the contents of the intermediate matrices</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  Zeros(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a464ca031dce11f2d46ded261c263bc23">YsColMax</a>, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#af18fb0b9aefaa767522c4af4860b1a46">m_max_mini_batch_size</a>, 1);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  Zeros(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a496f920cb794d0423b2ec977c738f505">YsColMaxStar</a>, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#af18fb0b9aefaa767522c4af4860b1a46">m_max_mini_batch_size</a>, 1);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  ColumnMaxNorms((<a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>) predictions_v, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a3bd065ef13773745a5e0cccb12198c99">YsColMax_v</a>); </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  Copy(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a3bd065ef13773745a5e0cccb12198c99">YsColMax_v</a>, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#adbfed96e84884d2ac2f2fa5229a88e48">YsColMaxStar_v</a>); </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  Zeros(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1f25c3cb498ab7fd452bc077fc4441f1">m_max_index</a>, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#af18fb0b9aefaa767522c4af4860b1a46">m_max_mini_batch_size</a>, 1); <span class="comment">// Clear the entire matrix</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordflow">for</span>(Int mb_index = 0; mb_index &lt; predictions_v.LocalWidth(); mb_index++) { </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">int</span> mb_global_index = predictions_v.GlobalCol(mb_index);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> sample_max = <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#adbfed96e84884d2ac2f2fa5229a88e48">YsColMaxStar_v</a>.GetLocal(mb_global_index, 0);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">for</span>(Int f_index = 0; f_index &lt; predictions_v.LocalHeight(); f_index++) { </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keywordflow">if</span>(predictions_v.GetLocal(f_index, mb_index) == sample_max) {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a3f9bdcd78bd9ce8cf8450fb3d0588132">m_max_index_v</a>.Set(mb_global_index, 0, predictions_v.GlobalRow(f_index));</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  Zeros(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ae4ad56bd1105d2aaf432897b08982407">m_reduced_max_indices</a>, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#af18fb0b9aefaa767522c4af4860b1a46">m_max_mini_batch_size</a>, 1); <span class="comment">// Clear the entire matrix</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"></span>  <a class="code" href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#ab2bc3d526045ba1b5fedcd442b58a8f9">model_allreduce</a>(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1f25c3cb498ab7fd452bc077fc4441f1">m_max_index</a>.Buffer(), <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1f25c3cb498ab7fd452bc077fc4441f1">m_max_index</a>.Height() * <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1f25c3cb498ab7fd452bc077fc4441f1">m_max_index</a>.Width(), <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ae4ad56bd1105d2aaf432897b08982407">m_reduced_max_indices</a>.Buffer(), mpi::MAX);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">int</span> num_errors = 0;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="comment">//  Copy(groundtruth_v, Y_local);</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html#l00091">91</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html">lbann_metric_categorical_accuracy.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                                                                                  {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="comment">// Clear the contents of the intermediate matrices</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  Zeros(*<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a4dd38e947e85a788e331d7d2405bd274">YsColMax</a>, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#af18fb0b9aefaa767522c4af4860b1a46">m_max_mini_batch_size</a>, 1);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  Zeros(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a496f920cb794d0423b2ec977c738f505">YsColMaxStar</a>, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#af18fb0b9aefaa767522c4af4860b1a46">m_max_mini_batch_size</a>, 1);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordflow">switch</span>(<a class="code" href="classlbann_1_1metrics_1_1metric.html#a5f85bb1542968ddd312dae8fee04ce65">m_data_layout</a>) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0">data_layout::MODEL_PARALLEL</a>:</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    ColumnMaxNorms((<a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>) predictions_v, *((<a class="code" href="lbann__base_8hpp.html#a6034e0823933305d0bd7b5ef860f5c50">ColSumMat</a> *) <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ab0f46ce61471c2301b3c80ef8bd64fd8">YsColMax_v</a>));</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>:</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    ColumnMaxNorms((<a class="code" href="lbann__base_8hpp.html#a763b3164342a5d73db851e85c76d385a">StarVCMat</a>) predictions_v, *((<a class="code" href="lbann__base_8hpp.html#a2ea5e8901a69d1ea68208c313773f47e">ColSumStarVCMat</a> *) <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ab0f46ce61471c2301b3c80ef8bd64fd8">YsColMax_v</a>)); </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(std::string{} + __FILE__ + <span class="stringliteral">&quot; &quot;</span> +</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                          std::to_string(__LINE__) +</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                          <span class="stringliteral">&quot;Invalid data layout selected&quot;</span>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  Copy(*<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ab0f46ce61471c2301b3c80ef8bd64fd8">YsColMax_v</a>, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#adbfed96e84884d2ac2f2fa5229a88e48">YsColMaxStar_v</a>); </div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordflow">for</span>(Int mb_index= 0; mb_index &lt; groundtruth_v.LocalWidth(); mb_index++) { </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    Int targetidx = -1;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">for</span>(Int f_index= 0; f_index &lt; groundtruth_v.LocalHeight(); f_index++) {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="keywordflow">if</span>(groundtruth_v.GetLocal(f_index, mb_index) == (<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) 1.) {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        targetidx = groundtruth_v.GlobalRow(f_index); </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">if</span>(targetidx != -1) { </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      Int global_mb_index = groundtruth_v.GlobalCol(mb_index);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a877dd91e36f9f345d704c25d20501d7e">m_reduced_max_indices_v</a>.Get(global_mb_index, 0) != targetidx) {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        num_errors++;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  }</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  num_errors = <a class="code" href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#ab2bc3d526045ba1b5fedcd442b58a8f9">model_allreduce</a>(num_errors);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordflow">return</span> num_errors;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a3f9bdcd78bd9ce8cf8450fb3d0588132"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a3f9bdcd78bd9ce8cf8450fb3d0588132">lbann::metrics::categorical_accuracy::m_max_index_v</a></div><div class="ttdeci">Mat m_max_index_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00063">lbann_metric_categorical_accuracy.hpp:63</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a1f25c3cb498ab7fd452bc077fc4441f1"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1f25c3cb498ab7fd452bc077fc4441f1">lbann::metrics::categorical_accuracy::m_max_index</a></div><div class="ttdeci">Mat m_max_index</div><div class="ttdoc">Fully replicated set of the column max matrix. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00057">lbann_metric_categorical_accuracy.hpp:57</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a3bd065ef13773745a5e0cccb12198c99"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a3bd065ef13773745a5e0cccb12198c99">lbann::metrics::categorical_accuracy::YsColMax_v</a></div><div class="ttdeci">ColSumMat YsColMax_v</div><div class="ttdoc">Local array to build global view of maximum indicies. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00061">lbann_metric_categorical_accuracy.hpp:61</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1metric_html_abc54e22801ebf70fef5210294a833a9b"><div class="ttname"><a href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">lbann::metrics::metric::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00142">lbann_metric.hpp:142</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a877dd91e36f9f345d704c25d20501d7e"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a877dd91e36f9f345d704c25d20501d7e">lbann::metrics::categorical_accuracy::m_reduced_max_indices_v</a></div><div class="ttdeci">Mat m_reduced_max_indices_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00064">lbann_metric_categorical_accuracy.hpp:64</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a496f920cb794d0423b2ec977c738f505"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a496f920cb794d0423b2ec977c738f505">lbann::metrics::categorical_accuracy::YsColMaxStar</a></div><div class="ttdeci">StarMat YsColMaxStar</div><div class="ttdoc">Note that the column max matrix has the number of mini-batches on the rows instead of columns...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00056">lbann_metric_categorical_accuracy.hpp:56</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a464ca031dce11f2d46ded261c263bc23"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a464ca031dce11f2d46ded261c263bc23">lbann::metrics::categorical_accuracy::YsColMax</a></div><div class="ttdeci">ColSumMat YsColMax</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00055">lbann_metric_categorical_accuracy.hpp:55</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_adbfed96e84884d2ac2f2fa5229a88e48"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#adbfed96e84884d2ac2f2fa5229a88e48">lbann::metrics::categorical_accuracy::YsColMaxStar_v</a></div><div class="ttdeci">StarMat YsColMaxStar_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00062">lbann_metric_categorical_accuracy.hpp:62</a></div></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  Zeros(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1f25c3cb498ab7fd452bc077fc4441f1">m_max_index</a>, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#af18fb0b9aefaa767522c4af4860b1a46">m_max_mini_batch_size</a>, 1); <span class="comment">// Clear the entire matrix</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordflow">for</span>(Int mb_index = 0; mb_index &lt; predictions_v.LocalWidth(); mb_index++) { </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">int</span> mb_global_index = predictions_v.GlobalCol(mb_index);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> sample_max = <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#adbfed96e84884d2ac2f2fa5229a88e48">YsColMaxStar_v</a>.GetLocal(mb_global_index, 0);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">for</span>(Int f_index = 0; f_index &lt; predictions_v.LocalHeight(); f_index++) { </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      <span class="keywordflow">if</span>(predictions_v.GetLocal(f_index, mb_index) == sample_max) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a3f9bdcd78bd9ce8cf8450fb3d0588132">m_max_index_v</a>.Set(mb_global_index, 0, predictions_v.GlobalRow(f_index));</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  Zeros(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ae4ad56bd1105d2aaf432897b08982407">m_reduced_max_indices</a>, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#af18fb0b9aefaa767522c4af4860b1a46">m_max_mini_batch_size</a>, 1); <span class="comment">// Clear the entire matrix</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment"></span>  <a class="code" href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#ab2bc3d526045ba1b5fedcd442b58a8f9">model_allreduce</a>(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1f25c3cb498ab7fd452bc077fc4441f1">m_max_index</a>.Buffer(), <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1f25c3cb498ab7fd452bc077fc4441f1">m_max_index</a>.Height() * <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1f25c3cb498ab7fd452bc077fc4441f1">m_max_index</a>.Width(), <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ae4ad56bd1105d2aaf432897b08982407">m_reduced_max_indices</a>.Buffer(), mpi::MAX);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordtype">int</span> num_errors = 0;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="comment">//  Copy(groundtruth_v, Y_local);</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keywordflow">for</span>(Int mb_index= 0; mb_index &lt; groundtruth_v.LocalWidth(); mb_index++) { </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    Int targetidx = -1;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">for</span>(Int f_index= 0; f_index &lt; groundtruth_v.LocalHeight(); f_index++) {</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;      <span class="keywordflow">if</span>(groundtruth_v.GetLocal(f_index, mb_index) == (<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) 1.) {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        targetidx = groundtruth_v.GlobalRow(f_index); </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;      }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordflow">if</span>(targetidx != -1) { </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      Int global_mb_index = groundtruth_v.GlobalCol(mb_index);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a877dd91e36f9f345d704c25d20501d7e">m_reduced_max_indices_v</a>.Get(global_mb_index, 0) != targetidx) {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        num_errors++;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  num_errors = <a class="code" href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#ab2bc3d526045ba1b5fedcd442b58a8f9">model_allreduce</a>(num_errors);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  <span class="keywordflow">return</span> num_errors;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;}</div>
+<div class="ttc" id="lbann__base_8hpp_html_a6034e0823933305d0bd7b5ef860f5c50"><div class="ttname"><a href="lbann__base_8hpp.html#a6034e0823933305d0bd7b5ef860f5c50">ColSumMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::MR, El::STAR &gt; ColSumMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00047">lbann_base.hpp:47</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a3f9bdcd78bd9ce8cf8450fb3d0588132"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a3f9bdcd78bd9ce8cf8450fb3d0588132">lbann::metrics::categorical_accuracy::m_max_index_v</a></div><div class="ttdeci">Mat m_max_index_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00065">lbann_metric_categorical_accuracy.hpp:65</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a1f25c3cb498ab7fd452bc077fc4441f1"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1f25c3cb498ab7fd452bc077fc4441f1">lbann::metrics::categorical_accuracy::m_max_index</a></div><div class="ttdeci">Mat m_max_index</div><div class="ttdoc">Fully replicated set of the column max matrix. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00059">lbann_metric_categorical_accuracy.hpp:59</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_ab0f46ce61471c2301b3c80ef8bd64fd8"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#ab0f46ce61471c2301b3c80ef8bd64fd8">lbann::metrics::categorical_accuracy::YsColMax_v</a></div><div class="ttdeci">AbsDistMat * YsColMax_v</div><div class="ttdoc">Local array to build global view of maximum indicies. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00063">lbann_metric_categorical_accuracy.hpp:63</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1metric_html_a5f85bb1542968ddd312dae8fee04ce65"><div class="ttname"><a href="classlbann_1_1metrics_1_1metric.html#a5f85bb1542968ddd312dae8fee04ce65">lbann::metrics::metric::m_data_layout</a></div><div class="ttdeci">data_layout m_data_layout</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00148">lbann_metric.hpp:148</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a4dd38e947e85a788e331d7d2405bd274"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a4dd38e947e85a788e331d7d2405bd274">lbann::metrics::categorical_accuracy::YsColMax</a></div><div class="ttdeci">AbsDistMat * YsColMax</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00057">lbann_metric_categorical_accuracy.hpp:57</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638"><div class="ttname"><a href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1metric_html_abc54e22801ebf70fef5210294a833a9b"><div class="ttname"><a href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">lbann::metrics::metric::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00144">lbann_metric.hpp:144</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a877dd91e36f9f345d704c25d20501d7e"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a877dd91e36f9f345d704c25d20501d7e">lbann::metrics::categorical_accuracy::m_reduced_max_indices_v</a></div><div class="ttdeci">Mat m_reduced_max_indices_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00066">lbann_metric_categorical_accuracy.hpp:66</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0"><div class="ttname"><a href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0">data_layout::MODEL_PARALLEL</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a496f920cb794d0423b2ec977c738f505"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a496f920cb794d0423b2ec977c738f505">lbann::metrics::categorical_accuracy::YsColMaxStar</a></div><div class="ttdeci">StarMat YsColMaxStar</div><div class="ttdoc">Note that the column max matrix has the number of mini-batches on the rows instead of columns...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00058">lbann_metric_categorical_accuracy.hpp:58</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_adbfed96e84884d2ac2f2fa5229a88e48"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#adbfed96e84884d2ac2f2fa5229a88e48">lbann::metrics::categorical_accuracy::YsColMaxStar_v</a></div><div class="ttdeci">StarMat YsColMaxStar_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00064">lbann_metric_categorical_accuracy.hpp:64</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a8e774b79084797a8f87918d8f66b6802"><div class="ttname"><a href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::MC, El::MR &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00044">lbann_base.hpp:44</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_ab2bc3d526045ba1b5fedcd442b58a8f9"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#ab2bc3d526045ba1b5fedcd442b58a8f9">lbann::lbann_comm::model_allreduce</a></div><div class="ttdeci">T model_allreduce(T send, mpi::Op op=mpi::SUM)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00218">lbann_comm.hpp:218</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00037">lbann_base.hpp:37</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_af18fb0b9aefaa767522c4af4860b1a46"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#af18fb0b9aefaa767522c4af4860b1a46">lbann::metrics::categorical_accuracy::m_max_mini_batch_size</a></div><div class="ttdeci">int64_t m_max_mini_batch_size</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00067">lbann_metric_categorical_accuracy.hpp:67</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_ae4ad56bd1105d2aaf432897b08982407"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#ae4ad56bd1105d2aaf432897b08982407">lbann::metrics::categorical_accuracy::m_reduced_max_indices</a></div><div class="ttdeci">Mat m_reduced_max_indices</div><div class="ttdoc">Local array to hold max indicies. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00058">lbann_metric_categorical_accuracy.hpp:58</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_af18fb0b9aefaa767522c4af4860b1a46"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#af18fb0b9aefaa767522c4af4860b1a46">lbann::metrics::categorical_accuracy::m_max_mini_batch_size</a></div><div class="ttdeci">int64_t m_max_mini_batch_size</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00069">lbann_metric_categorical_accuracy.hpp:69</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_ae4ad56bd1105d2aaf432897b08982407"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#ae4ad56bd1105d2aaf432897b08982407">lbann::metrics::categorical_accuracy::m_reduced_max_indices</a></div><div class="ttdeci">Mat m_reduced_max_indices</div><div class="ttdoc">Local array to hold max indicies. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00060">lbann_metric_categorical_accuracy.hpp:60</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a2ea5e8901a69d1ea68208c313773f47e"><div class="ttname"><a href="lbann__base_8hpp.html#a2ea5e8901a69d1ea68208c313773f47e">ColSumStarVCMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::VC, El::STAR &gt; ColSumStarVCMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00051">lbann_base.hpp:51</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a763b3164342a5d73db851e85c76d385a"><div class="ttname"><a href="lbann__base_8hpp.html#a763b3164342a5d73db851e85c76d385a">StarVCMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::STAR, El::VC &gt; StarVCMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00049">lbann_base.hpp:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -398,24 +448,98 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1metrics_1_1metric.html#a073c6c2c2861c1bd53d2a0d32e3251fe">lbann::metrics::metric</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html#l00067">67</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html">lbann_metric_categorical_accuracy.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                                                                         {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="comment">// Set the view based on the size of the current mini-batch</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="comment">// Note that these matrices are transposed (column max matrices) and thus the mini-batch size effects the number of rows, not columns</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  View(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a3bd065ef13773745a5e0cccb12198c99">YsColMax_v</a>, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a464ca031dce11f2d46ded261c263bc23">YsColMax</a>, IR(0, cur_mini_batch_size), IR(0, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a464ca031dce11f2d46ded261c263bc23">YsColMax</a>.Width()));</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  View(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#adbfed96e84884d2ac2f2fa5229a88e48">YsColMaxStar_v</a>, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a496f920cb794d0423b2ec977c738f505">YsColMaxStar</a>, IR(0, cur_mini_batch_size), IR(0, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a496f920cb794d0423b2ec977c738f505">YsColMaxStar</a>.Width()));</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  View(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a3f9bdcd78bd9ce8cf8450fb3d0588132">m_max_index_v</a>, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1f25c3cb498ab7fd452bc077fc4441f1">m_max_index</a>, IR(0, cur_mini_batch_size), IR(0, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1f25c3cb498ab7fd452bc077fc4441f1">m_max_index</a>.Width()));</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  View(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a877dd91e36f9f345d704c25d20501d7e">m_reduced_max_indices_v</a>, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ae4ad56bd1105d2aaf432897b08982407">m_reduced_max_indices</a>, IR(0, cur_mini_batch_size), IR(0, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ae4ad56bd1105d2aaf432897b08982407">m_reduced_max_indices</a>.Width()));</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a3f9bdcd78bd9ce8cf8450fb3d0588132"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a3f9bdcd78bd9ce8cf8450fb3d0588132">lbann::metrics::categorical_accuracy::m_max_index_v</a></div><div class="ttdeci">Mat m_max_index_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00063">lbann_metric_categorical_accuracy.hpp:63</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a1f25c3cb498ab7fd452bc077fc4441f1"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1f25c3cb498ab7fd452bc077fc4441f1">lbann::metrics::categorical_accuracy::m_max_index</a></div><div class="ttdeci">Mat m_max_index</div><div class="ttdoc">Fully replicated set of the column max matrix. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00057">lbann_metric_categorical_accuracy.hpp:57</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a3bd065ef13773745a5e0cccb12198c99"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a3bd065ef13773745a5e0cccb12198c99">lbann::metrics::categorical_accuracy::YsColMax_v</a></div><div class="ttdeci">ColSumMat YsColMax_v</div><div class="ttdoc">Local array to build global view of maximum indicies. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00061">lbann_metric_categorical_accuracy.hpp:61</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a877dd91e36f9f345d704c25d20501d7e"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a877dd91e36f9f345d704c25d20501d7e">lbann::metrics::categorical_accuracy::m_reduced_max_indices_v</a></div><div class="ttdeci">Mat m_reduced_max_indices_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00064">lbann_metric_categorical_accuracy.hpp:64</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a496f920cb794d0423b2ec977c738f505"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a496f920cb794d0423b2ec977c738f505">lbann::metrics::categorical_accuracy::YsColMaxStar</a></div><div class="ttdeci">StarMat YsColMaxStar</div><div class="ttdoc">Note that the column max matrix has the number of mini-batches on the rows instead of columns...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00056">lbann_metric_categorical_accuracy.hpp:56</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a464ca031dce11f2d46ded261c263bc23"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a464ca031dce11f2d46ded261c263bc23">lbann::metrics::categorical_accuracy::YsColMax</a></div><div class="ttdeci">ColSumMat YsColMax</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00055">lbann_metric_categorical_accuracy.hpp:55</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_adbfed96e84884d2ac2f2fa5229a88e48"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#adbfed96e84884d2ac2f2fa5229a88e48">lbann::metrics::categorical_accuracy::YsColMaxStar_v</a></div><div class="ttdeci">StarMat YsColMaxStar_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00062">lbann_metric_categorical_accuracy.hpp:62</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_ae4ad56bd1105d2aaf432897b08982407"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#ae4ad56bd1105d2aaf432897b08982407">lbann::metrics::categorical_accuracy::m_reduced_max_indices</a></div><div class="ttdeci">Mat m_reduced_max_indices</div><div class="ttdoc">Local array to hold max indicies. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00058">lbann_metric_categorical_accuracy.hpp:58</a></div></div>
+<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html#l00082">82</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html">lbann_metric_categorical_accuracy.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                                                                         {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="comment">// Set the view based on the size of the current mini-batch</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="comment">// Note that these matrices are transposed (column max matrices) and thus the mini-batch size effects the number of rows, not columns</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  View(*<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ab0f46ce61471c2301b3c80ef8bd64fd8">YsColMax_v</a>, *<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a4dd38e947e85a788e331d7d2405bd274">YsColMax</a>, IR(0, cur_mini_batch_size), IR(0, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a4dd38e947e85a788e331d7d2405bd274">YsColMax</a>-&gt;Width()));</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  View(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#adbfed96e84884d2ac2f2fa5229a88e48">YsColMaxStar_v</a>, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a496f920cb794d0423b2ec977c738f505">YsColMaxStar</a>, IR(0, cur_mini_batch_size), IR(0, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a496f920cb794d0423b2ec977c738f505">YsColMaxStar</a>.Width()));</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  View(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a3f9bdcd78bd9ce8cf8450fb3d0588132">m_max_index_v</a>, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1f25c3cb498ab7fd452bc077fc4441f1">m_max_index</a>, IR(0, cur_mini_batch_size), IR(0, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1f25c3cb498ab7fd452bc077fc4441f1">m_max_index</a>.Width()));</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  View(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a877dd91e36f9f345d704c25d20501d7e">m_reduced_max_indices_v</a>, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ae4ad56bd1105d2aaf432897b08982407">m_reduced_max_indices</a>, IR(0, cur_mini_batch_size), IR(0, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ae4ad56bd1105d2aaf432897b08982407">m_reduced_max_indices</a>.Width()));</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a3f9bdcd78bd9ce8cf8450fb3d0588132"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a3f9bdcd78bd9ce8cf8450fb3d0588132">lbann::metrics::categorical_accuracy::m_max_index_v</a></div><div class="ttdeci">Mat m_max_index_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00065">lbann_metric_categorical_accuracy.hpp:65</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a1f25c3cb498ab7fd452bc077fc4441f1"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1f25c3cb498ab7fd452bc077fc4441f1">lbann::metrics::categorical_accuracy::m_max_index</a></div><div class="ttdeci">Mat m_max_index</div><div class="ttdoc">Fully replicated set of the column max matrix. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00059">lbann_metric_categorical_accuracy.hpp:59</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_ab0f46ce61471c2301b3c80ef8bd64fd8"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#ab0f46ce61471c2301b3c80ef8bd64fd8">lbann::metrics::categorical_accuracy::YsColMax_v</a></div><div class="ttdeci">AbsDistMat * YsColMax_v</div><div class="ttdoc">Local array to build global view of maximum indicies. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00063">lbann_metric_categorical_accuracy.hpp:63</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a4dd38e947e85a788e331d7d2405bd274"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a4dd38e947e85a788e331d7d2405bd274">lbann::metrics::categorical_accuracy::YsColMax</a></div><div class="ttdeci">AbsDistMat * YsColMax</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00057">lbann_metric_categorical_accuracy.hpp:57</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a877dd91e36f9f345d704c25d20501d7e"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a877dd91e36f9f345d704c25d20501d7e">lbann::metrics::categorical_accuracy::m_reduced_max_indices_v</a></div><div class="ttdeci">Mat m_reduced_max_indices_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00066">lbann_metric_categorical_accuracy.hpp:66</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a496f920cb794d0423b2ec977c738f505"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a496f920cb794d0423b2ec977c738f505">lbann::metrics::categorical_accuracy::YsColMaxStar</a></div><div class="ttdeci">StarMat YsColMaxStar</div><div class="ttdoc">Note that the column max matrix has the number of mini-batches on the rows instead of columns...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00058">lbann_metric_categorical_accuracy.hpp:58</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_adbfed96e84884d2ac2f2fa5229a88e48"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#adbfed96e84884d2ac2f2fa5229a88e48">lbann::metrics::categorical_accuracy::YsColMaxStar_v</a></div><div class="ttdeci">StarMat YsColMaxStar_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00064">lbann_metric_categorical_accuracy.hpp:64</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_ae4ad56bd1105d2aaf432897b08982407"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#ae4ad56bd1105d2aaf432897b08982407">lbann::metrics::categorical_accuracy::m_reduced_max_indices</a></div><div class="ttdeci">Mat m_reduced_max_indices</div><div class="ttdoc">Local array to hold max indicies. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00060">lbann_metric_categorical_accuracy.hpp:60</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a82bdc1ff60485c03421192b060d2d3a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lbann::metrics::categorical_accuracy::initialize_data_parallel_distribution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Workspace matrices should be in VC,Star distributions. </p>
+
+<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html#l00067">67</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html">lbann_metric_categorical_accuracy.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                                                             {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a4dd38e947e85a788e331d7d2405bd274">YsColMax</a> = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a2ea5e8901a69d1ea68208c313773f47e">ColSumStarVCMat</a>(<a class="code" href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>());</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ab0f46ce61471c2301b3c80ef8bd64fd8">YsColMax_v</a> = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a2ea5e8901a69d1ea68208c313773f47e">ColSumStarVCMat</a>(<a class="code" href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>());</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_ab0f46ce61471c2301b3c80ef8bd64fd8"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#ab0f46ce61471c2301b3c80ef8bd64fd8">lbann::metrics::categorical_accuracy::YsColMax_v</a></div><div class="ttdeci">AbsDistMat * YsColMax_v</div><div class="ttdoc">Local array to build global view of maximum indicies. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00063">lbann_metric_categorical_accuracy.hpp:63</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a4dd38e947e85a788e331d7d2405bd274"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a4dd38e947e85a788e331d7d2405bd274">lbann::metrics::categorical_accuracy::YsColMax</a></div><div class="ttdeci">AbsDistMat * YsColMax</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00057">lbann_metric_categorical_accuracy.hpp:57</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1metric_html_abc54e22801ebf70fef5210294a833a9b"><div class="ttname"><a href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">lbann::metrics::metric::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00144">lbann_metric.hpp:144</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_a483bf8a72d44a0e83da45f3d47bd20d4"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">lbann::lbann_comm::get_model_grid</a></div><div class="ttdeci">Grid &amp; get_model_grid()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00084">lbann_comm.hpp:84</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a2ea5e8901a69d1ea68208c313773f47e"><div class="ttname"><a href="lbann__base_8hpp.html#a2ea5e8901a69d1ea68208c313773f47e">ColSumStarVCMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::VC, El::STAR &gt; ColSumStarVCMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00051">lbann_base.hpp:51</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1metrics_1_1categorical__accuracy_a82bdc1ff60485c03421192b060d2d3a9_icgraph.png" border="0" usemap="#classlbann_1_1metrics_1_1categorical__accuracy_a82bdc1ff60485c03421192b060d2d3a9_icgraph" alt=""/></div>
+<map name="classlbann_1_1metrics_1_1categorical__accuracy_a82bdc1ff60485c03421192b060d2d3a9_icgraph" id="classlbann_1_1metrics_1_1categorical__accuracy_a82bdc1ff60485c03421192b060d2d3a9_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1metrics_1_1categorical__accuracy.html#afa4e32440e5edf1f010d07399cecbabd" title="Constructor. " alt="" coords="229,11,443,53"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c3bf712c930338a6f93112a1e62858b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lbann::metrics::categorical_accuracy::initialize_model_parallel_distribution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Workspace matrices should be in MR,Star distributions. </p>
+
+<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html#l00061">61</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html">lbann_metric_categorical_accuracy.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                                              {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a4dd38e947e85a788e331d7d2405bd274">YsColMax</a> = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a6034e0823933305d0bd7b5ef860f5c50">ColSumMat</a>(<a class="code" href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>());</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ab0f46ce61471c2301b3c80ef8bd64fd8">YsColMax_v</a> = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a6034e0823933305d0bd7b5ef860f5c50">ColSumMat</a>(<a class="code" href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>());</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
+<div class="ttc" id="lbann__base_8hpp_html_a6034e0823933305d0bd7b5ef860f5c50"><div class="ttname"><a href="lbann__base_8hpp.html#a6034e0823933305d0bd7b5ef860f5c50">ColSumMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::MR, El::STAR &gt; ColSumMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00047">lbann_base.hpp:47</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_ab0f46ce61471c2301b3c80ef8bd64fd8"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#ab0f46ce61471c2301b3c80ef8bd64fd8">lbann::metrics::categorical_accuracy::YsColMax_v</a></div><div class="ttdeci">AbsDistMat * YsColMax_v</div><div class="ttdoc">Local array to build global view of maximum indicies. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00063">lbann_metric_categorical_accuracy.hpp:63</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a4dd38e947e85a788e331d7d2405bd274"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a4dd38e947e85a788e331d7d2405bd274">lbann::metrics::categorical_accuracy::YsColMax</a></div><div class="ttdeci">AbsDistMat * YsColMax</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00057">lbann_metric_categorical_accuracy.hpp:57</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1metric_html_abc54e22801ebf70fef5210294a833a9b"><div class="ttname"><a href="classlbann_1_1metrics_1_1metric.html#abc54e22801ebf70fef5210294a833a9b">lbann::metrics::metric::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00144">lbann_metric.hpp:144</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_a483bf8a72d44a0e83da45f3d47bd20d4"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">lbann::lbann_comm::get_model_grid</a></div><div class="ttdeci">Grid &amp; get_model_grid()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00084">lbann_comm.hpp:84</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1metrics_1_1categorical__accuracy_a5c3bf712c930338a6f93112a1e62858b_icgraph.png" border="0" usemap="#classlbann_1_1metrics_1_1categorical__accuracy_a5c3bf712c930338a6f93112a1e62858b_icgraph" alt=""/></div>
+<map name="classlbann_1_1metrics_1_1categorical__accuracy_a5c3bf712c930338a6f93112a1e62858b_icgraph" id="classlbann_1_1metrics_1_1categorical__accuracy_a5c3bf712c930338a6f93112a1e62858b_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1metrics_1_1categorical__accuracy.html#afa4e32440e5edf1f010d07399cecbabd" title="Constructor. " alt="" coords="232,11,445,53"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a5ea9c31c2ca6aae3538d4e3646a60f30"></a>
@@ -442,18 +566,18 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1metrics_1_1metric.html#a82698045b1aabad5cce1a0c89b56cee2">lbann::metrics::metric</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html#l00146">146</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html">lbann_metric_categorical_accuracy.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                                                                                   {</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  statistics *stats = <a class="code" href="classlbann_1_1metrics_1_1metric.html#ac061126c26394ba06314e0924c214299">get_statistics</a>(mode);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordtype">double</span> total_error = stats-&gt;m_total_error;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordtype">long</span> total_num_samples = stats-&gt;m_total_num_samples;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keywordtype">double</span> accuracy = (double)(total_num_samples - total_error) / total_num_samples * 100;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordtype">string</span> score = std::to_string(accuracy);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="comment">// std::cout &lt;&lt; _to_string(type) &lt;&lt; &quot; reporting a metric with &quot; &lt;&lt; total_error &lt;&lt; &quot; errors and &quot; &lt;&lt; total_num_samples &lt;&lt; &quot; samples, a accuracty of &quot; &lt;&lt; accuracy &lt;&lt; &quot; and a score of &quot; &lt;&lt; score &lt;&lt; endl;</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordflow">return</span> accuracy;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html#l00173">173</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html">lbann_metric_categorical_accuracy.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                                                                                   {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  statistics *stats = <a class="code" href="classlbann_1_1metrics_1_1metric.html#ac061126c26394ba06314e0924c214299">get_statistics</a>(mode);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <span class="keywordtype">double</span> total_error = stats-&gt;m_total_error;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordtype">long</span> total_num_samples = stats-&gt;m_total_num_samples;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordtype">double</span> accuracy = (double)(total_num_samples - total_error) / total_num_samples * 100;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordtype">string</span> score = std::to_string(accuracy);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="comment">// std::cout &lt;&lt; _to_string(type) &lt;&lt; &quot; reporting a metric with &quot; &lt;&lt; total_error &lt;&lt; &quot; errors and &quot; &lt;&lt; total_num_samples &lt;&lt; &quot; samples, a accuracty of &quot; &lt;&lt; accuracy &lt;&lt; &quot; and a score of &quot; &lt;&lt; score &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordflow">return</span> accuracy;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1metrics_1_1metric_html_ac061126c26394ba06314e0924c214299"><div class="ttname"><a href="classlbann_1_1metrics_1_1metric.html#ac061126c26394ba06314e0924c214299">lbann::metrics::metric::get_statistics</a></div><div class="ttdeci">statistics * get_statistics(execution_mode mode)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8cpp_source.html#l00032">lbann_metric.cpp:32</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -482,18 +606,18 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1metrics_1_1metric.html#a98acba8f5dbcce2d3b639fbcc97a56fe">lbann::metrics::metric</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html#l00134">134</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html">lbann_metric_categorical_accuracy.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                                                                          {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  statistics *stats = <a class="code" href="classlbann_1_1metrics_1_1metric.html#ac061126c26394ba06314e0924c214299">get_statistics</a>(mode);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">double</span> errors_per_epoch = stats-&gt;m_error_per_epoch;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordtype">long</span> samples_per_epoch = stats-&gt;m_samples_per_epoch;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordtype">double</span> accuracy = (double)(samples_per_epoch - errors_per_epoch) / samples_per_epoch * 100;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keywordtype">string</span> score = std::to_string(accuracy);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="comment">// std::cout &lt;&lt; _to_string(type) &lt;&lt; &quot; reporting a metric with &quot; &lt;&lt; errors_per_epoch &lt;&lt; &quot; errors and &quot; &lt;&lt; samples_per_epoch &lt;&lt; &quot; samples, a accuracty of &quot; &lt;&lt; accuracy &lt;&lt; &quot; and a score of &quot; &lt;&lt; score &lt;&lt; endl;</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordflow">return</span> accuracy;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html#l00161">161</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html">lbann_metric_categorical_accuracy.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                                                                          {</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  statistics *stats = <a class="code" href="classlbann_1_1metrics_1_1metric.html#ac061126c26394ba06314e0924c214299">get_statistics</a>(mode);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordtype">double</span> errors_per_epoch = stats-&gt;m_error_per_epoch;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordtype">long</span> samples_per_epoch = stats-&gt;m_samples_per_epoch;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keywordtype">double</span> accuracy = (double)(samples_per_epoch - errors_per_epoch) / samples_per_epoch * 100;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordtype">string</span> score = std::to_string(accuracy);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="comment">// std::cout &lt;&lt; _to_string(type) &lt;&lt; &quot; reporting a metric with &quot; &lt;&lt; errors_per_epoch &lt;&lt; &quot; errors and &quot; &lt;&lt; samples_per_epoch &lt;&lt; &quot; samples, a accuracty of &quot; &lt;&lt; accuracy &lt;&lt; &quot; and a score of &quot; &lt;&lt; score &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordflow">return</span> accuracy;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1metrics_1_1metric_html_ac061126c26394ba06314e0924c214299"><div class="ttname"><a href="classlbann_1_1metrics_1_1metric.html#ac061126c26394ba06314e0924c214299">lbann::metrics::metric::get_statistics</a></div><div class="ttdeci">statistics * get_statistics(execution_mode mode)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8cpp_source.html#l00032">lbann_metric.cpp:32</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -532,22 +656,22 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1metrics_1_1metric.html#ad87909c3c9793a05c88420ab8473dbd2">lbann::metrics::metric</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html#l00057">57</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html">lbann_metric_categorical_accuracy.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                                                                 {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="classlbann_1_1metrics_1_1metric.html#ad87909c3c9793a05c88420ab8473dbd2">metric::setup</a>(num_neurons, mini_batch_size);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="comment">// Clear the contents of the intermediate matrices</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  Zeros(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a464ca031dce11f2d46ded261c263bc23">YsColMax</a>, mini_batch_size, 1);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  Zeros(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a496f920cb794d0423b2ec977c738f505">YsColMaxStar</a>, mini_batch_size, 1);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  Zeros(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1f25c3cb498ab7fd452bc077fc4441f1">m_max_index</a>, mini_batch_size, 1); <span class="comment">// Clear the entire matrix</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  Zeros(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ae4ad56bd1105d2aaf432897b08982407">m_reduced_max_indices</a>, mini_batch_size, 1); <span class="comment">// Clear the entire matrix</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#af18fb0b9aefaa767522c4af4860b1a46">m_max_mini_batch_size</a> = mini_batch_size;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a1f25c3cb498ab7fd452bc077fc4441f1"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1f25c3cb498ab7fd452bc077fc4441f1">lbann::metrics::categorical_accuracy::m_max_index</a></div><div class="ttdeci">Mat m_max_index</div><div class="ttdoc">Fully replicated set of the column max matrix. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00057">lbann_metric_categorical_accuracy.hpp:57</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a496f920cb794d0423b2ec977c738f505"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a496f920cb794d0423b2ec977c738f505">lbann::metrics::categorical_accuracy::YsColMaxStar</a></div><div class="ttdeci">StarMat YsColMaxStar</div><div class="ttdoc">Note that the column max matrix has the number of mini-batches on the rows instead of columns...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00056">lbann_metric_categorical_accuracy.hpp:56</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a464ca031dce11f2d46ded261c263bc23"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a464ca031dce11f2d46ded261c263bc23">lbann::metrics::categorical_accuracy::YsColMax</a></div><div class="ttdeci">ColSumMat YsColMax</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00055">lbann_metric_categorical_accuracy.hpp:55</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_af18fb0b9aefaa767522c4af4860b1a46"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#af18fb0b9aefaa767522c4af4860b1a46">lbann::metrics::categorical_accuracy::m_max_mini_batch_size</a></div><div class="ttdeci">int64_t m_max_mini_batch_size</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00067">lbann_metric_categorical_accuracy.hpp:67</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_ae4ad56bd1105d2aaf432897b08982407"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#ae4ad56bd1105d2aaf432897b08982407">lbann::metrics::categorical_accuracy::m_reduced_max_indices</a></div><div class="ttdeci">Mat m_reduced_max_indices</div><div class="ttdoc">Local array to hold max indicies. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00058">lbann_metric_categorical_accuracy.hpp:58</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1metric_html_ad87909c3c9793a05c88420ab8473dbd2"><div class="ttname"><a href="classlbann_1_1metrics_1_1metric.html#ad87909c3c9793a05c88420ab8473dbd2">lbann::metrics::metric::setup</a></div><div class="ttdeci">virtual void setup(int num_neurons, int mini_batch_size)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00126">lbann_metric.hpp:126</a></div></div>
+<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html#l00072">72</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8cpp_source.html">lbann_metric_categorical_accuracy.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                                                 {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="classlbann_1_1metrics_1_1metric.html#ad87909c3c9793a05c88420ab8473dbd2">metric::setup</a>(num_neurons, mini_batch_size);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="comment">// Clear the contents of the intermediate matrices</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  Zeros(*<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a4dd38e947e85a788e331d7d2405bd274">YsColMax</a>, mini_batch_size, 1);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  Zeros(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a496f920cb794d0423b2ec977c738f505">YsColMaxStar</a>, mini_batch_size, 1);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  Zeros(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1f25c3cb498ab7fd452bc077fc4441f1">m_max_index</a>, mini_batch_size, 1); <span class="comment">// Clear the entire matrix</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  Zeros(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ae4ad56bd1105d2aaf432897b08982407">m_reduced_max_indices</a>, mini_batch_size, 1); <span class="comment">// Clear the entire matrix</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#af18fb0b9aefaa767522c4af4860b1a46">m_max_mini_batch_size</a> = mini_batch_size;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a1f25c3cb498ab7fd452bc077fc4441f1"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1f25c3cb498ab7fd452bc077fc4441f1">lbann::metrics::categorical_accuracy::m_max_index</a></div><div class="ttdeci">Mat m_max_index</div><div class="ttdoc">Fully replicated set of the column max matrix. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00059">lbann_metric_categorical_accuracy.hpp:59</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a4dd38e947e85a788e331d7d2405bd274"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a4dd38e947e85a788e331d7d2405bd274">lbann::metrics::categorical_accuracy::YsColMax</a></div><div class="ttdeci">AbsDistMat * YsColMax</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00057">lbann_metric_categorical_accuracy.hpp:57</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_a496f920cb794d0423b2ec977c738f505"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#a496f920cb794d0423b2ec977c738f505">lbann::metrics::categorical_accuracy::YsColMaxStar</a></div><div class="ttdeci">StarMat YsColMaxStar</div><div class="ttdoc">Note that the column max matrix has the number of mini-batches on the rows instead of columns...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00058">lbann_metric_categorical_accuracy.hpp:58</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_af18fb0b9aefaa767522c4af4860b1a46"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#af18fb0b9aefaa767522c4af4860b1a46">lbann::metrics::categorical_accuracy::m_max_mini_batch_size</a></div><div class="ttdeci">int64_t m_max_mini_batch_size</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00069">lbann_metric_categorical_accuracy.hpp:69</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1categorical__accuracy_html_ae4ad56bd1105d2aaf432897b08982407"><div class="ttname"><a href="classlbann_1_1metrics_1_1categorical__accuracy.html#ae4ad56bd1105d2aaf432897b08982407">lbann::metrics::categorical_accuracy::m_reduced_max_indices</a></div><div class="ttdeci">Mat m_reduced_max_indices</div><div class="ttdoc">Local array to hold max indicies. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__categorical__accuracy_8hpp_source.html#l00060">lbann_metric_categorical_accuracy.hpp:60</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1metric_html_ad87909c3c9793a05c88420ab8473dbd2"><div class="ttname"><a href="classlbann_1_1metrics_1_1metric.html#ad87909c3c9793a05c88420ab8473dbd2">lbann::metrics::metric::setup</a></div><div class="ttdeci">virtual void setup(int num_neurons, int mini_batch_size)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00128">lbann_metric.hpp:128</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -581,7 +705,7 @@ Here is the call graph for this function:</div>
 
 <p>Fully replicated set of the column max matrix. </p>
 
-<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html#l00057">57</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html">lbann_metric_categorical_accuracy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html#l00059">59</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html">lbann_metric_categorical_accuracy.hpp</a>.</p>
 
 </div>
 </div>
@@ -603,7 +727,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html#l00063">63</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html">lbann_metric_categorical_accuracy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html#l00065">65</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html">lbann_metric_categorical_accuracy.hpp</a>.</p>
 
 </div>
 </div>
@@ -625,7 +749,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html#l00067">67</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html">lbann_metric_categorical_accuracy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html#l00069">69</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html">lbann_metric_categorical_accuracy.hpp</a>.</p>
 
 </div>
 </div>
@@ -649,7 +773,7 @@ Here is the call graph for this function:</div>
 
 <p>Local array to hold max indicies. </p>
 
-<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html#l00058">58</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html">lbann_metric_categorical_accuracy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html#l00060">60</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html">lbann_metric_categorical_accuracy.hpp</a>.</p>
 
 </div>
 </div>
@@ -671,11 +795,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html#l00064">64</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html">lbann_metric_categorical_accuracy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html#l00066">66</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html">lbann_metric_categorical_accuracy.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a464ca031dce11f2d46ded261c263bc23"></a>
+<a class="anchor" id="a4dd38e947e85a788e331d7d2405bd274"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -683,7 +807,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="lbann__base_8hpp.html#a6034e0823933305d0bd7b5ef860f5c50">ColSumMat</a> lbann::metrics::categorical_accuracy::YsColMax</td>
+          <td class="memname"><a class="el" href="lbann__base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>* lbann::metrics::categorical_accuracy::YsColMax</td>
         </tr>
       </table>
   </td>
@@ -693,11 +817,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html#l00055">55</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html">lbann_metric_categorical_accuracy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html#l00057">57</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html">lbann_metric_categorical_accuracy.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a3bd065ef13773745a5e0cccb12198c99"></a>
+<a class="anchor" id="ab0f46ce61471c2301b3c80ef8bd64fd8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -705,7 +829,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="lbann__base_8hpp.html#a6034e0823933305d0bd7b5ef860f5c50">ColSumMat</a> lbann::metrics::categorical_accuracy::YsColMax_v</td>
+          <td class="memname"><a class="el" href="lbann__base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>* lbann::metrics::categorical_accuracy::YsColMax_v</td>
         </tr>
       </table>
   </td>
@@ -717,7 +841,7 @@ Here is the call graph for this function:</div>
 
 <p>Local array to build global view of maximum indicies. </p>
 
-<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html#l00061">61</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html">lbann_metric_categorical_accuracy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html#l00063">63</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html">lbann_metric_categorical_accuracy.hpp</a>.</p>
 
 </div>
 </div>
@@ -741,7 +865,7 @@ Here is the call graph for this function:</div>
 
 <p>Note that the column max matrix has the number of mini-batches on the rows instead of columns. </p>
 
-<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html#l00056">56</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html">lbann_metric_categorical_accuracy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html#l00058">58</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html">lbann_metric_categorical_accuracy.hpp</a>.</p>
 
 </div>
 </div>
@@ -763,7 +887,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html#l00062">62</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html">lbann_metric_categorical_accuracy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html#l00064">64</a> of file <a class="el" href="lbann__metric__categorical__accuracy_8hpp_source.html">lbann_metric_categorical_accuracy.hpp</a>.</p>
 
 </div>
 </div>
@@ -777,7 +901,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="namespacelbann_1_1metrics.html">metrics</a></li><li class="navelem"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html">categorical_accuracy</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 02:20:45 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 05:14:15 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -6,5 +6,6 @@ var searchData=
   ['input_5flayer',['input_layer',['../classlbann_1_1input__layer.html',1,'lbann']]],
   ['input_5flayer_5fdistributed_5fminibatch',['input_layer_distributed_minibatch',['../classlbann_1_1input__layer__distributed__minibatch.html',1,'lbann']]],
   ['input_5flayer_5fdistributed_5fminibatch_5fparallel_5fio',['input_layer_distributed_minibatch_parallel_io',['../classlbann_1_1input__layer__distributed__minibatch__parallel__io.html',1,'lbann']]],
+  ['input_5flayer_5fpartitioned_5fminibatch_5fparallel_5fio',['input_layer_partitioned_minibatch_parallel_io',['../classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html',1,'lbann']]],
   ['io_5flayer',['io_layer',['../classlbann_1_1io__layer.html',1,'lbann']]]
 ];

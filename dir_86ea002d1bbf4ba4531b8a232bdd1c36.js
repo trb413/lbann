@@ -21,6 +21,9 @@ var dir_86ea002d1bbf4ba4531b8a232bdd1c36 =
     [ "lbann_callback_dump_gradients.hpp", "lbann__callback__dump__gradients_8hpp.html", [
       [ "lbann_callback_dump_gradients", "classlbann_1_1lbann__callback__dump__gradients.html", "classlbann_1_1lbann__callback__dump__gradients" ]
     ] ],
+    [ "lbann_callback_dump_minibatch_sample_indices.hpp", "lbann__callback__dump__minibatch__sample__indices_8hpp.html", [
+      [ "lbann_callback_dump_minibatch_sample_indices", "classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html", "classlbann_1_1lbann__callback__dump__minibatch__sample__indices" ]
+    ] ],
     [ "lbann_callback_dump_weights.hpp", "lbann__callback__dump__weights_8hpp.html", [
       [ "lbann_callback_dump_weights", "classlbann_1_1lbann__callback__dump__weights.html", "classlbann_1_1lbann__callback__dump__weights" ]
     ] ],

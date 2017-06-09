@@ -1,11 +1,15 @@
 var lbann__base_8hpp =
 [
     [ "CUtility", "classlbann_1_1CUtility.html", "classlbann_1_1CUtility" ],
+    [ "DEBUG", "lbann__base_8hpp.html#ad72dbcf6d0153db1b8d8a58001feed83", null ],
     [ "DISPLAY_MATRIX", "lbann__base_8hpp.html#abdda65d57f990d20b0c11c6f64390c57", null ],
+    [ "log_msg", "lbann__base_8hpp.html#a156fd6dffd62306e07b5b77739680688", null ],
+    [ "log_simple_msg", "lbann__base_8hpp.html#a1d689d1e903c28393b0c0d9bb1ad398a", null ],
     [ "AbsDistMat", "lbann__base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a", null ],
     [ "BlockMat", "lbann__base_8hpp.html#ae115877b16af7ee9d8624f738f1ccaa5", null ],
     [ "CircMat", "lbann__base_8hpp.html#aaf89a79f1476644edba844c4937abbcc", null ],
     [ "ColSumMat", "lbann__base_8hpp.html#a6034e0823933305d0bd7b5ef860f5c50", null ],
+    [ "ColSumStarVCMat", "lbann__base_8hpp.html#a2ea5e8901a69d1ea68208c313773f47e", null ],
     [ "DataType", "lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa", null ],
     [ "DistMat", "lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802", null ],
     [ "EGrid", "lbann__base_8hpp.html#adf6f42d50105132b4b5bd74906d61abd", null ],

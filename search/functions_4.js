@@ -15,7 +15,7 @@ var searchData=
   ['dataset',['dataset',['../classlbann_1_1dataset.html#a1390264fd7c176b4dda8f2f33bcae7ba',1,'lbann::dataset']]],
   ['deep_5fneural_5fnetwork',['deep_neural_network',['../classlbann_1_1deep__neural__network.html#a8baefc992f7f2fc2a466425440641b23',1,'lbann::deep_neural_network']]],
   ['disable_5faugmentation',['disable_augmentation',['../classlbann_1_1lbann__image__preprocessor.html#a871cb543ee6c132a76e16045a1a2a9f3',1,'lbann::lbann_image_preprocessor']]],
-  ['distribute_5ffrom_5flocal_5fmatrix',['distribute_from_local_matrix',['../classlbann_1_1distributed__minibatch__parallel__io.html#ac5d6b3b6740f91ef083eeac3cc52c10a',1,'lbann::distributed_minibatch_parallel_io']]],
+  ['distribute_5ffrom_5flocal_5fmatrix',['distribute_from_local_matrix',['../classlbann_1_1distributed__minibatch__parallel__io.html#ac5d6b3b6740f91ef083eeac3cc52c10a',1,'lbann::distributed_minibatch_parallel_io::distribute_from_local_matrix()'],['../classlbann_1_1partitioned__minibatch__parallel__io.html#a2e0cc109d99d9be6f615fd7b27d691ec',1,'lbann::partitioned_minibatch_parallel_io::distribute_from_local_matrix()']]],
   ['distributed_5fminibatch_5fparallel_5fio',['distributed_minibatch_parallel_io',['../classlbann_1_1distributed__minibatch__parallel__io.html#aa35307f86d664e0fd3cc98a645f1589d',1,'lbann::distributed_minibatch_parallel_io']]],
   ['do_5fbatch_5fbegin_5fcbs',['do_batch_begin_cbs',['../classlbann_1_1model.html#a717aa5b84ad1f779403a052848a8eb37',1,'lbann::model']]],
   ['do_5fbatch_5fend_5fcbs',['do_batch_end_cbs',['../classlbann_1_1model.html#a1b925c322faaba8c9d9f78c224a31e89',1,'lbann::model']]],
@@ -46,5 +46,6 @@ var searchData=
   ['dot_5ffloat2',['DOT_FLOAT2',['../datatype_8hpp.html#ab8ef086bcdcdf09c15e9a5800cd8f4cc',1,'datatype.hpp']]],
   ['dot_5ffloat3',['DOT_FLOAT3',['../datatype_8hpp.html#a567610ce79c815c48c5d861ca38f1929',1,'datatype.hpp']]],
   ['dot_5ffloat4',['DOT_FLOAT4',['../datatype_8hpp.html#adb94f7fd9846690b4b1c257e93fe2e49',1,'datatype.hpp']]],
-  ['dropout',['dropout',['../classlbann_1_1dropout.html#a475a5f62e79fddc530dcf9982ace918a',1,'lbann::dropout']]]
+  ['dropout',['dropout',['../classlbann_1_1dropout.html#a475a5f62e79fddc530dcf9982ace918a',1,'lbann::dropout']]],
+  ['dump_5fto_5ffile',['dump_to_file',['../classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html#a34d4564309168b3ab0b2e3092e2f9355',1,'lbann::lbann_callback_dump_minibatch_sample_indices']]]
 ];

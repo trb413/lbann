@@ -20,6 +20,7 @@ var classlbann_1_1Layer =
     [ "get_index", "classlbann_1_1Layer.html#ab178f73070d2764151a7e6be2614acda", null ],
     [ "get_minibatch_size", "classlbann_1_1Layer.html#ad0c18464cd5ea40f5f0c1f33e82fb803", null ],
     [ "get_optimizer", "classlbann_1_1Layer.html#a3d59d2a12813c584efcc63bc5bcbbf14", null ],
+    [ "get_sample_indices_per_mb", "classlbann_1_1Layer.html#a0f49ac236beffb65f2e361c1a1d9e387", null ],
     [ "get_weights_biases", "classlbann_1_1Layer.html#a190982036d52d288d3528a16e30418e0", null ],
     [ "get_weights_biases_gradient", "classlbann_1_1Layer.html#a4b2b92aa11d932d62456c21ed929b263", null ],
     [ "initialize_data_parallel_distribution", "classlbann_1_1Layer.html#aa9937720c6ac7039cb70d4defc22e1fa", null ],

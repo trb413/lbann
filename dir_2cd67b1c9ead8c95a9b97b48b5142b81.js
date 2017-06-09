@@ -6,6 +6,7 @@ var dir_2cd67b1c9ead8c95a9b97b48b5142b81 =
     [ "lbann_callback_debug.cpp", "lbann__callback__debug_8cpp.html", null ],
     [ "lbann_callback_dump_activations.cpp", "lbann__callback__dump__activations_8cpp.html", null ],
     [ "lbann_callback_dump_gradients.cpp", "lbann__callback__dump__gradients_8cpp.html", null ],
+    [ "lbann_callback_dump_minibatch_sample_indices.cpp", "lbann__callback__dump__minibatch__sample__indices_8cpp.html", null ],
     [ "lbann_callback_dump_weights.cpp", "lbann__callback__dump__weights_8cpp.html", null ],
     [ "lbann_callback_early_stopping.cpp", "lbann__callback__early__stopping_8cpp.html", null ],
     [ "lbann_callback_imcomm.cpp", "lbann__callback__imcomm_8cpp.html", null ],

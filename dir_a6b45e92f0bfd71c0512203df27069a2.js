@@ -9,6 +9,9 @@ var dir_a6b45e92f0bfd71c0512203df27069a2 =
     [ "lbann_input_layer_distributed_minibatch_parallel_io.hpp", "lbann__input__layer__distributed__minibatch__parallel__io_8hpp.html", [
       [ "input_layer_distributed_minibatch_parallel_io", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html", "classlbann_1_1input__layer__distributed__minibatch__parallel__io" ]
     ] ],
+    [ "lbann_input_layer_partitioned_minibatch_parallel_io.hpp", "lbann__input__layer__partitioned__minibatch__parallel__io_8hpp.html", [
+      [ "input_layer_partitioned_minibatch_parallel_io", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io" ]
+    ] ],
     [ "lbann_io_layer.hpp", "lbann__io__layer_8hpp.html", [
       [ "io_layer", "classlbann_1_1io__layer.html", "classlbann_1_1io__layer" ]
     ] ],
@@ -43,6 +46,9 @@ var dir_a6b45e92f0bfd71c0512203df27069a2 =
     ] ],
     [ "lbann_target_layer_distributed_minibatch_parallel_io.hpp", "lbann__target__layer__distributed__minibatch__parallel__io_8hpp.html", [
       [ "target_layer_distributed_minibatch_parallel_io", "classlbann_1_1target__layer__distributed__minibatch__parallel__io.html", "classlbann_1_1target__layer__distributed__minibatch__parallel__io" ]
+    ] ],
+    [ "lbann_target_layer_partitioned_minibatch_parallel_io.hpp", "lbann__target__layer__partitioned__minibatch__parallel__io_8hpp.html", [
+      [ "target_layer_partitioned_minibatch_parallel_io", "classlbann_1_1target__layer__partitioned__minibatch__parallel__io.html", "classlbann_1_1target__layer__partitioned__minibatch__parallel__io" ]
     ] ],
     [ "lbann_target_layer_unsupervised.hpp", "lbann__target__layer__unsupervised_8hpp.html", [
       [ "target_layer_unsupervised", "classlbann_1_1target__layer__unsupervised.html", "classlbann_1_1target__layer__unsupervised" ]

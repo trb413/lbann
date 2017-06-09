@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">88df806-ci241036721</span>
+   &#160;<span id="projectnumber">v0.92-ci241062038</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -404,10 +404,10 @@ Additional Inherited Members</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  : <a class="code" href="classlbann_1_1model.html#aa5c16a70390f56c1279ff22df7511802">model</a>(<a class="code" href="classlbann_1_1model.html#ae5a400e2f0a044c33383975298719cc2">comm</a>, <a class="code" href="classlbann_1_1model.html#a92e0ae701d5f786e324ddcaa7db0ead8">obj_fn</a>, optimizer_fac),</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classlbann_1_1sequential__model.html#ad4f27748b8cdf0da723f39b3aba9ef2d">m_mini_batch_size</a>(mini_batch_size),</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classlbann_1_1sequential__model.html#a539722d26abf5a9b6cd748da8e9fa930">layer_fac</a>(_layer_fac) {}</div>
-<div class="ttc" id="classlbann_1_1model_html_a92e0ae701d5f786e324ddcaa7db0ead8"><div class="ttname"><a href="classlbann_1_1model.html#a92e0ae701d5f786e324ddcaa7db0ead8">lbann::model::obj_fn</a></div><div class="ttdeci">objective_functions::objective_fn * obj_fn</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00120">lbann_model.hpp:120</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_a92e0ae701d5f786e324ddcaa7db0ead8"><div class="ttname"><a href="classlbann_1_1model.html#a92e0ae701d5f786e324ddcaa7db0ead8">lbann::model::obj_fn</a></div><div class="ttdeci">objective_functions::objective_fn * obj_fn</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00141">lbann_model.hpp:141</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_aa5c16a70390f56c1279ff22df7511802"><div class="ttname"><a href="classlbann_1_1model.html#aa5c16a70390f56c1279ff22df7511802">lbann::model::model</a></div><div class="ttdeci">model(lbann_comm *comm, objective_functions::objective_fn *obj_fn, optimizer_factory *optimizer_fac)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8cpp_source.html#l00040">lbann_model.cpp:40</a></div></div>
 <div class="ttc" id="classlbann_1_1sequential__model_html_a539722d26abf5a9b6cd748da8e9fa930"><div class="ttname"><a href="classlbann_1_1sequential__model.html#a539722d26abf5a9b6cd748da8e9fa930">lbann::sequential_model::layer_fac</a></div><div class="ttdeci">layer_factory * layer_fac</div><div class="ttdoc">Layer factory. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8hpp_source.html#l00151">lbann_model_sequential.hpp:151</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_ae5a400e2f0a044c33383975298719cc2"><div class="ttname"><a href="classlbann_1_1model.html#ae5a400e2f0a044c33383975298719cc2">lbann::model::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00166">lbann_model.hpp:166</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_ae5a400e2f0a044c33383975298719cc2"><div class="ttname"><a href="classlbann_1_1model.html#ae5a400e2f0a044c33383975298719cc2">lbann::model::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00187">lbann_model.hpp:187</a></div></div>
 <div class="ttc" id="classlbann_1_1sequential__model_html_ad4f27748b8cdf0da723f39b3aba9ef2d"><div class="ttname"><a href="classlbann_1_1sequential__model.html#ad4f27748b8cdf0da723f39b3aba9ef2d">lbann::sequential_model::m_mini_batch_size</a></div><div class="ttdeci">const int m_mini_batch_size</div><div class="ttdoc">Mini-batch size (no ckpt, so user can override on restart) </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8hpp_source.html#l00147">lbann_model_sequential.hpp:147</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -551,9 +551,9 @@ Additional Inherited Members</h2></td></tr>
 <div class="ttc" id="classlbann_1_1sequential__model_html_a33d0763e07a97def5a6b9b57a6db4c9a"><div class="ttname"><a href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">lbann::sequential_model::m_layers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; m_layers</div><div class="ttdoc">List of layers. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8hpp_source.html#l00149">lbann_model_sequential.hpp:149</a></div></div>
 <div class="ttc" id="classlbann_1_1sequential__model_html_a539722d26abf5a9b6cd748da8e9fa930"><div class="ttname"><a href="classlbann_1_1sequential__model.html#a539722d26abf5a9b6cd748da8e9fa930">lbann::sequential_model::layer_fac</a></div><div class="ttdeci">layer_factory * layer_fac</div><div class="ttdoc">Layer factory. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8hpp_source.html#l00151">lbann_model_sequential.hpp:151</a></div></div>
 <div class="ttc" id="classlbann_1_1layer__factory_html_a0c85062bb96f8c54d95dad9dd0ef3494"><div class="ttname"><a href="classlbann_1_1layer__factory.html#a0c85062bb96f8c54d95dad9dd0ef3494">lbann::layer_factory::create_layer</a></div><div class="ttdeci">Layer * create_layer(string layer_label, data_layout data_dist, int layer_index, Args &amp;&amp;...args)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__factory_8hpp_source.html#l00064">lbann_layer_factory.hpp:64</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_afa7829863a71eb47a3d023413dbe464d"><div class="ttname"><a href="classlbann_1_1model.html#afa7829863a71eb47a3d023413dbe464d">lbann::model::create_optimizer</a></div><div class="ttdeci">optimizer * create_optimizer()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00111">lbann_model.hpp:111</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_afa7829863a71eb47a3d023413dbe464d"><div class="ttname"><a href="classlbann_1_1model.html#afa7829863a71eb47a3d023413dbe464d">lbann::model::create_optimizer</a></div><div class="ttdeci">optimizer * create_optimizer()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00132">lbann_model.hpp:132</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a06a31f9df1860358ef0ef68d9e165cac"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac">lbann::lbann_comm::am_model_master</a></div><div class="ttdeci">bool am_model_master() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00076">lbann_comm.hpp:76</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_ae5a400e2f0a044c33383975298719cc2"><div class="ttname"><a href="classlbann_1_1model.html#ae5a400e2f0a044c33383975298719cc2">lbann::model::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00166">lbann_model.hpp:166</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_ae5a400e2f0a044c33383975298719cc2"><div class="ttname"><a href="classlbann_1_1model.html#ae5a400e2f0a044c33383975298719cc2">lbann::model::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00187">lbann_model.hpp:187</a></div></div>
 <div class="ttc" id="classlbann_1_1sequential__model_html_ad4f27748b8cdf0da723f39b3aba9ef2d"><div class="ttname"><a href="classlbann_1_1sequential__model.html#ad4f27748b8cdf0da723f39b3aba9ef2d">lbann::sequential_model::m_mini_batch_size</a></div><div class="ttdeci">const int m_mini_batch_size</div><div class="ttdoc">Mini-batch size (no ckpt, so user can override on restart) </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8hpp_source.html#l00147">lbann_model_sequential.hpp:147</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -590,7 +590,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Add layer to sequential model. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000025">Todo:</a></b></dt><dd>Consider removing this function. The destructor deallocates all layers, so we might run into problems if a layer is deallocated externally. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000033">Todo:</a></b></dt><dd>Consider removing this function. The destructor deallocates all layers, so we might run into problems if a layer is deallocated externally. </dd></dl>
 
 <p>Definition at line <a class="el" href="lbann__model__sequential_8cpp_source.html#l00444">444</a> of file <a class="el" href="lbann__model__sequential_8cpp_source.html">lbann_model_sequential.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;{</div>
@@ -636,7 +636,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;  <span class="keywordtype">bool</span> flag = input-&gt;<a class="code" href="classlbann_1_1io__layer.html#a4f0e3bbd6bc638432723179efc2998ab">at_new_epoch</a>();</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;  <span class="keywordflow">return</span> flag;</div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1io__layer_html_a4f0e3bbd6bc638432723179efc2998ab"><div class="ttname"><a href="classlbann_1_1io__layer.html#a4f0e3bbd6bc638432723179efc2998ab">lbann::io_layer::at_new_epoch</a></div><div class="ttdeci">bool at_new_epoch()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__io__layer_8hpp_source.html#l00057">lbann_io_layer.hpp:57</a></div></div>
+<div class="ttc" id="classlbann_1_1io__layer_html_a4f0e3bbd6bc638432723179efc2998ab"><div class="ttname"><a href="classlbann_1_1io__layer.html#a4f0e3bbd6bc638432723179efc2998ab">lbann::io_layer::at_new_epoch</a></div><div class="ttdeci">bool at_new_epoch()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__io__layer_8hpp_source.html#l00059">lbann_io_layer.hpp:59</a></div></div>
 <div class="ttc" id="classlbann_1_1sequential__model_html_a33d0763e07a97def5a6b9b57a6db4c9a"><div class="ttname"><a href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">lbann::sequential_model::m_layers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; m_layers</div><div class="ttdoc">List of layers. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8hpp_source.html#l00149">lbann_model_sequential.hpp:149</a></div></div>
 <div class="ttc" id="classlbann_1_1io__layer_html"><div class="ttname"><a href="classlbann_1_1io__layer.html">lbann::io_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__io__layer_8hpp_source.html#l00040">lbann_io_layer.hpp:40</a></div></div>
 </div><!-- fragment -->
@@ -808,7 +808,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Insert layer in sequential model. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000027">Todo:</a></b></dt><dd><p class="startdd">This will mess up layer indices. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000035">Todo:</a></b></dt><dd><p class="startdd">This will mess up layer indices. </p>
 <p class="enddd">Consider removing this function. The destructor deallocates all layers, so we might run into problems if a layer is deallocated externally. </p>
 </dd></dl>
 
@@ -851,7 +851,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Load model from checkpoint. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000024">Todo:</a></b></dt><dd>This is old and likely broken </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000032">Todo:</a></b></dt><dd>This is old and likely broken </dd></dl>
 
 <p>Definition at line <a class="el" href="lbann__model__sequential_8cpp_source.html#l00290">290</a> of file <a class="el" href="lbann__model__sequential_8cpp_source.html">lbann_model_sequential.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;{</div>
@@ -982,7 +982,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Load model from file. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000022">Todo:</a></b></dt><dd>This is old and likely broken </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000030">Todo:</a></b></dt><dd>This is old and likely broken </dd></dl>
 
 <p>Definition at line <a class="el" href="lbann__model__sequential_8cpp_source.html#l00175">175</a> of file <a class="el" href="lbann__model__sequential_8cpp_source.html">lbann_model_sequential.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;{</div>
@@ -1078,8 +1078,8 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1sequential__model_html_a33d0763e07a97def5a6b9b57a6db4c9a"><div class="ttname"><a href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">lbann::sequential_model::m_layers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; m_layers</div><div class="ttdoc">List of layers. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8hpp_source.html#l00149">lbann_model_sequential.hpp:149</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_a3b7bfb0045ef4ee8d4691aa41ff78465"><div class="ttname"><a href="classlbann_1_1model.html#a3b7bfb0045ef4ee8d4691aa41ff78465">lbann::model::m_ranks</a></div><div class="ttdeci">int m_ranks</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00170">lbann_model.hpp:170</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_ac460ba72f8c4edbff8c871c433b03b22"><div class="ttname"><a href="classlbann_1_1model.html#ac460ba72f8c4edbff8c871c433b03b22">lbann::model::m_rank</a></div><div class="ttdeci">int m_rank</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00168">lbann_model.hpp:168</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_a3b7bfb0045ef4ee8d4691aa41ff78465"><div class="ttname"><a href="classlbann_1_1model.html#a3b7bfb0045ef4ee8d4691aa41ff78465">lbann::model::m_ranks</a></div><div class="ttdeci">int m_ranks</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00191">lbann_model.hpp:191</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_ac460ba72f8c4edbff8c871c433b03b22"><div class="ttname"><a href="classlbann_1_1model.html#ac460ba72f8c4edbff8c871c433b03b22">lbann::model::m_rank</a></div><div class="ttdeci">int m_rank</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00189">lbann_model.hpp:189</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1132,7 +1132,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Remove layer from sequential model. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000026">Todo:</a></b></dt><dd>This will mess up layer indices </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000034">Todo:</a></b></dt><dd>This will mess up layer indices </dd></dl>
 
 <p>Definition at line <a class="el" href="lbann__model__sequential_8cpp_source.html#l00453">453</a> of file <a class="el" href="lbann__model__sequential_8cpp_source.html">lbann_model_sequential.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;{</div>
@@ -1174,7 +1174,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Save model to checkpoint. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000023">Todo:</a></b></dt><dd>This is old and likely broken </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000031">Todo:</a></b></dt><dd>This is old and likely broken </dd></dl>
 
 <p>Definition at line <a class="el" href="lbann__model__sequential_8cpp_source.html#l00269">269</a> of file <a class="el" href="lbann__model__sequential_8cpp_source.html">lbann_model_sequential.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;{</div>
@@ -1292,7 +1292,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Save model to file. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000021">Todo:</a></b></dt><dd>This is old and likely broken </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000029">Todo:</a></b></dt><dd>This is old and likely broken </dd></dl>
 
 <p>Definition at line <a class="el" href="lbann__model__sequential_8cpp_source.html#l00068">68</a> of file <a class="el" href="lbann__model__sequential_8cpp_source.html">lbann_model_sequential.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
@@ -1401,8 +1401,8 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1sequential__model_html_a33d0763e07a97def5a6b9b57a6db4c9a"><div class="ttname"><a href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">lbann::sequential_model::m_layers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; m_layers</div><div class="ttdoc">List of layers. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8hpp_source.html#l00149">lbann_model_sequential.hpp:149</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_a3b7bfb0045ef4ee8d4691aa41ff78465"><div class="ttname"><a href="classlbann_1_1model.html#a3b7bfb0045ef4ee8d4691aa41ff78465">lbann::model::m_ranks</a></div><div class="ttdeci">int m_ranks</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00170">lbann_model.hpp:170</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_ac460ba72f8c4edbff8c871c433b03b22"><div class="ttname"><a href="classlbann_1_1model.html#ac460ba72f8c4edbff8c871c433b03b22">lbann::model::m_rank</a></div><div class="ttdeci">int m_rank</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00168">lbann_model.hpp:168</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_a3b7bfb0045ef4ee8d4691aa41ff78465"><div class="ttname"><a href="classlbann_1_1model.html#a3b7bfb0045ef4ee8d4691aa41ff78465">lbann::model::m_ranks</a></div><div class="ttdeci">int m_ranks</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00191">lbann_model.hpp:191</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_ac460ba72f8c4edbff8c871c433b03b22"><div class="ttname"><a href="classlbann_1_1model.html#ac460ba72f8c4edbff8c871c433b03b22">lbann::model::m_rank</a></div><div class="ttdeci">int m_rank</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00189">lbann_model.hpp:189</a></div></div>
 <div class="ttc" id="namespacelbann_html_a8830dea8eef0ab5b93d68e2358ceeb1a"><div class="ttname"><a href="namespacelbann.html#a8830dea8eef0ab5b93d68e2358ceeb1a">lbann::makedir</a></div><div class="ttdeci">int makedir(const char *dirname)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00052">lbann_file_io.cpp:52</a></div></div>
 <div class="ttc" id="structlbann__model__sequential__header_html_a048e5c0b369cdafbbc97edb9f34bae35"><div class="ttname"><a href="structlbann__model__sequential__header.html#a048e5c0b369cdafbbc97edb9f34bae35">lbann_model_sequential_header::layers</a></div><div class="ttdeci">uint32_t layers</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8cpp_source.html#l00317">lbann_model_sequential.cpp:317</a></div></div>
 </div><!-- fragment -->
@@ -1614,9 +1614,9 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="classlbann_1_1sequential__model_html_a89b2328126f795397d0d7c1f82eae623"><div class="ttname"><a href="classlbann_1_1sequential__model.html#a89b2328126f795397d0d7c1f82eae623">lbann::sequential_model::set_bp_input</a></div><div class="ttdeci">virtual void set_bp_input(size_t start_index, size_t end_index)</div><div class="ttdoc">Establish model layers&#39; backward pass input pointers. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8cpp_source.html#l00484">lbann_model_sequential.cpp:484</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_af61c38d8d5ce7dad5a74dcf459758dea"><div class="ttname"><a href="classlbann_1_1model.html#af61c38d8d5ce7dad5a74dcf459758dea">lbann::model::setup_callbacks</a></div><div class="ttdeci">void setup_callbacks()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8cpp_source.html#l00065">lbann_model.cpp:65</a></div></div>
 <div class="ttc" id="classlbann_1_1sequential__model_html_a33d0763e07a97def5a6b9b57a6db4c9a"><div class="ttname"><a href="classlbann_1_1sequential__model.html#a33d0763e07a97def5a6b9b57a6db4c9a">lbann::sequential_model::m_layers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; m_layers</div><div class="ttdoc">List of layers. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8hpp_source.html#l00149">lbann_model_sequential.hpp:149</a></div></div>
-<div class="ttc" id="namespacelbann_html_a65056cb9ae34866d6252f18da0697c58"><div class="ttname"><a href="namespacelbann.html#a65056cb9ae34866d6252f18da0697c58">lbann::_layer_type_to_string</a></div><div class="ttdeci">static const char * _layer_type_to_string(layer_type l)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00062">lbann_layer.hpp:62</a></div></div>
+<div class="ttc" id="namespacelbann_html_a65056cb9ae34866d6252f18da0697c58"><div class="ttname"><a href="namespacelbann.html#a65056cb9ae34866d6252f18da0697c58">lbann::_layer_type_to_string</a></div><div class="ttdeci">static const char * _layer_type_to_string(layer_type l)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00066">lbann_layer.hpp:66</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a06a31f9df1860358ef0ef68d9e165cac"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac">lbann::lbann_comm::am_model_master</a></div><div class="ttdeci">bool am_model_master() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00076">lbann_comm.hpp:76</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_ae5a400e2f0a044c33383975298719cc2"><div class="ttname"><a href="classlbann_1_1model.html#ae5a400e2f0a044c33383975298719cc2">lbann::model::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00166">lbann_model.hpp:166</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_ae5a400e2f0a044c33383975298719cc2"><div class="ttname"><a href="classlbann_1_1model.html#ae5a400e2f0a044c33383975298719cc2">lbann::model::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00187">lbann_model.hpp:187</a></div></div>
 <div class="ttc" id="classlbann_1_1sequential__model_html_ae4fa1fd95dae51edf2b0db11258dca51"><div class="ttname"><a href="classlbann_1_1sequential__model.html#ae4fa1fd95dae51edf2b0db11258dca51">lbann::sequential_model::set_fp_input</a></div><div class="ttdeci">virtual void set_fp_input(size_t start_index, size_t end_index)</div><div class="ttdoc">Establish model layers&#39; forward pass input pointers. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8cpp_source.html#l00470">lbann_model_sequential.cpp:470</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -1829,7 +1829,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1sequential__model.html">sequential_model</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 02:20:45 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 05:14:15 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

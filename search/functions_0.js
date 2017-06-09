@@ -11,6 +11,7 @@ var searchData=
   ['_5f_5fuincgamma',['__uincgamma',['../datatype_8hpp.html#ac182250ba70e0934329cf26d00244873',1,'datatype.hpp']]],
   ['_5fdisp_5funit',['_disp_unit',['../namespacelbann_1_1metrics.html#aaa0e50becab147be6623e1e0feb27b81',1,'lbann::metrics']]],
   ['_5fdisplay_5fmatrix',['_display_matrix',['../lbann__base_8hpp.html#aa5a078e4333b551f498feb743c5d3fc9',1,'lbann_base.hpp']]],
+  ['_5flayer_5ftype_5fto_5fcategory',['_layer_type_to_category',['../namespacelbann.html#a67506cd6a355d5abb840262f990b2582',1,'lbann']]],
   ['_5flayer_5ftype_5fto_5fstring',['_layer_type_to_string',['../namespacelbann.html#a65056cb9ae34866d6252f18da0697c58',1,'lbann']]],
   ['_5fsq',['_sq',['../lbann__layer__fully__connected_8cpp.html#a199b2df97e18b083eb9ee655fec2dfc7',1,'_sq(DataType x):&#160;lbann_layer_fully_connected.cpp'],['../lbann__layer__softmax_8cpp.html#a199b2df97e18b083eb9ee655fec2dfc7',1,'_sq(DataType x):&#160;lbann_layer_softmax.cpp']]],
   ['_5fsqrt',['_sqrt',['../lbann__layer__fully__connected_8cpp.html#afc141da3841a084e603a2e8db5b4a839',1,'_sqrt(DataType x):&#160;lbann_layer_fully_connected.cpp'],['../lbann__layer__softmax_8cpp.html#afc141da3841a084e603a2e8db5b4a839',1,'_sqrt(DataType x):&#160;lbann_layer_softmax.cpp']]],
