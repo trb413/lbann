@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-1-g8977da5-ci241246606</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2-gc3cfcde-ci241273174</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -243,9 +243,9 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="lbann__callback__dump__activations_8hpp_source.html#l00050">50</a> of file <a class="el" href="lbann__callback__dump__activations_8hpp_source.html">lbann_callback_dump_activations.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                                                               :</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classlbann_1_1lbann__callback.html#af4c9e2cf1c87cbf741bb0316f6f5fab2">lbann_callback</a>(_batch_interval), <a class="code" href="classlbann_1_1lbann__callback__dump__activations.html#aa671216de198f71d84f179b3fdfb8adc">basename</a>(<a class="code" href="classlbann_1_1lbann__callback__dump__activations.html#aa671216de198f71d84f179b3fdfb8adc">basename</a>) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <a class="code" href="classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c">set_name</a>(<span class="stringliteral">&quot;dump_activations&quot;</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="ttc" id="classlbann_1_1lbann__callback_html_ae8c3014d503a9ae1b0a16f6cc0cb5b4c"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c">lbann::lbann_callback::set_name</a></div><div class="ttdeci">void set_name(std::string name)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00112">lbann_callback.hpp:112</a></div></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c">set_name</a>(<span class="stringliteral">&quot;dump_activations&quot;</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1lbann__callback_html_ae8c3014d503a9ae1b0a16f6cc0cb5b4c"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c">lbann::lbann_callback::set_name</a></div><div class="ttdeci">void set_name(std::string name)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00114">lbann_callback.hpp:114</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__dump__activations_html_aa671216de198f71d84f179b3fdfb8adc"><div class="ttname"><a href="classlbann_1_1lbann__callback__dump__activations.html#aa671216de198f71d84f179b3fdfb8adc">lbann::lbann_callback_dump_activations::basename</a></div><div class="ttdeci">std::string basename</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__dump__activations_8hpp_source.html#l00057">lbann_callback_dump_activations.hpp:57</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback_html_af4c9e2cf1c87cbf741bb0316f6f5fab2"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#af4c9e2cf1c87cbf741bb0316f6f5fab2">lbann::lbann_callback::lbann_callback</a></div><div class="ttdeci">lbann_callback(int _batch_interval=1, lbann_summary *_summarizer=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00049">lbann_callback.hpp:49</a></div></div>
 </div><!-- fragment -->
@@ -299,9 +299,9 @@ Here is the call graph for this function:</div>
 <p>Definition at line <a class="el" href="lbann__callback__dump__activations_8cpp_source.html#l00034">34</a> of file <a class="el" href="lbann__callback__dump__activations_8cpp_source.html">lbann_callback_dump_activations.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                                                            {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">const</span> std::string prefix = <a class="code" href="classlbann_1_1lbann__callback__dump__activations.html#aa671216de198f71d84f179b3fdfb8adc">basename</a> + <span class="stringliteral">&quot;model&quot;</span> +</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    std::to_string(m-&gt;get_comm()-&gt;get_model_rank()) +</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="stringliteral">&quot;-epoch&quot;</span> + std::to_string(m-&gt;get_cur_epoch()) + <span class="stringliteral">&quot;-step&quot;</span> +</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    std::to_string(m-&gt;get_cur_step()) + <span class="stringliteral">&quot;-layer&quot;</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                             std::to_string(m-&gt;get_comm()-&gt;get_model_rank()) +</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                             <span class="stringliteral">&quot;-epoch&quot;</span> + std::to_string(m-&gt;get_cur_epoch()) + <span class="stringliteral">&quot;-step&quot;</span> +</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                             std::to_string(m-&gt;get_cur_step()) + <span class="stringliteral">&quot;-layer&quot;</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="comment">// Skip the output layer.</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">if</span> (l-&gt;get_index() == m-&gt;get_layers().size() - 1) {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span>;</div>
@@ -318,7 +318,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1lbann__callback__dump__activations_a5de46093614d9372daef3716e75c5265_cgraph.png" border="0" usemap="#classlbann_1_1lbann__callback__dump__activations_a5de46093614d9372daef3716e75c5265_cgraph" alt=""/></div>
 <map name="classlbann_1_1lbann__callback__dump__activations_a5de46093614d9372daef3716e75c5265_cgraph" id="classlbann_1_1lbann__callback__dump__activations_a5de46093614d9372daef3716e75c5265_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca" title="lbann::model::get_comm" alt="" coords="220,5,385,32"/><area shape="rect" id="node3" href="classlbann_1_1lbann__comm.html#a6c201108eb6b5a1e23021db29cef655b" title="lbann::lbann_comm::\lget_model_rank" alt="" coords="231,57,374,98"/><area shape="rect" id="node4" href="classlbann_1_1model.html#a3f6f0384573e9ca4bea93ce0dbebfd28" title="lbann::model::get_cur\l_epoch" alt="" coords="229,122,376,163"/><area shape="rect" id="node5" href="classlbann_1_1model.html#a6fb1e6b55fe9f7ecb70759a9c50a20c5" title="lbann::model::get_cur_step" alt="" coords="213,188,392,215"/><area shape="rect" id="node6" href="classlbann_1_1Layer.html#ab178f73070d2764151a7e6be2614acda" title="lbann::Layer::get_index" alt="" coords="224,239,381,265"/><area shape="rect" id="node7" href="classlbann_1_1model.html#a45e75790d328ac2a85aac59faf35094a" title="lbann::model::get_layers" alt="" coords="221,289,385,316"/><area shape="rect" id="node8" href="classlbann_1_1Layer.html#a6ae06b86f19fbfacdc7b4ec171a793d3" title="lbann::Layer::get_activations" alt="" coords="208,340,397,367"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca" title="lbann::model::get_comm" alt="" coords="220,5,385,32"/><area shape="rect" id="node3" href="classlbann_1_1lbann__comm.html#a6c201108eb6b5a1e23021db29cef655b" title="lbann::lbann_comm::\lget_model_rank" alt="" coords="231,57,374,98"/><area shape="rect" id="node4" href="classlbann_1_1model.html#a3f6f0384573e9ca4bea93ce0dbebfd28" title="lbann::model::get_cur\l_epoch" alt="" coords="229,122,376,163"/><area shape="rect" id="node5" href="classlbann_1_1model.html#a6fb1e6b55fe9f7ecb70759a9c50a20c5" title="lbann::model::get_cur_step" alt="" coords="213,188,392,215"/><area shape="rect" id="node6" href="classlbann_1_1Layer.html#ab178f73070d2764151a7e6be2614acda" title="lbann::Layer::get_index" alt="" coords="224,239,381,265"/><area shape="rect" id="node7" href="classlbann_1_1model.html#ab6f53860dab77f0ce1d941d07360ef5a" title="lbann::model::get_layers" alt="" coords="221,289,385,316"/><area shape="rect" id="node8" href="classlbann_1_1Layer.html#a6ae06b86f19fbfacdc7b4ec171a793d3" title="lbann::Layer::get_activations" alt="" coords="208,340,397,367"/></map>
 </div>
 </p>
 
@@ -358,7 +358,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__callback__dump__activations.html">lbann_callback_dump_activations</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 15:43:59 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 18:19:23 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

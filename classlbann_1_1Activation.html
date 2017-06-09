@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-1-g8977da5-ci241246606</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2-gc3cfcde-ci241273174</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -238,37 +238,37 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__layer__activations_8cpp_source.html#l00071">71</a> of file <a class="el" href="lbann__layer__activations_8cpp_source.html">lbann_layer_activations.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                              {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordflow">switch</span>(<span class="keywordtype">id</span>) {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ab299f45b5de2a8f7c45192590290742b">activation_type::SIGMOID</a>:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;sigmoid&quot;</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a143c8c6f51b9bb893ce71e38702e3cc1">activation_type::TANH</a>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;tanh&quot;</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ad346bb4679d29be241279f15d7795c1c">activation_type::RELU</a>:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;relu&quot;</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ab718adec73e04ce3ec720dd11a06a308">activation_type::ID</a>:</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;id&quot;</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ac7e80a3de04936f4e423e1b564fdca10">activation_type::LEAKY_RELU</a>:</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;leaky_relu&quot;</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a350cd38d0a0443f60c8fffa3fba3a45d">activation_type::SOFTPLUS</a>:</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;softplus&quot;</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a03fd8eb91a5c2091541dd9815a011f63">activation_type::SMOOTH_RELU</a>:</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;smooth_relu&quot;</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a5b44c930bf0ddeef48b50ef11e5ddd58">activation_type::ELU</a>:</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;elu&quot;</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">default</span>: </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(<span class="stringliteral">&quot;unknown activation_type&quot;</span>);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__layer__activations_8cpp_source.html#l00075">75</a> of file <a class="el" href="lbann__layer__activations_8cpp_source.html">lbann_layer_activations.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                              {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">switch</span>(<span class="keywordtype">id</span>) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ab299f45b5de2a8f7c45192590290742b">activation_type::SIGMOID</a>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;sigmoid&quot;</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a143c8c6f51b9bb893ce71e38702e3cc1">activation_type::TANH</a>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;tanh&quot;</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ad346bb4679d29be241279f15d7795c1c">activation_type::RELU</a>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;relu&quot;</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ab718adec73e04ce3ec720dd11a06a308">activation_type::ID</a>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;id&quot;</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ac7e80a3de04936f4e423e1b564fdca10">activation_type::LEAKY_RELU</a>:</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;leaky_relu&quot;</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a350cd38d0a0443f60c8fffa3fba3a45d">activation_type::SOFTPLUS</a>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;softplus&quot;</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a03fd8eb91a5c2091541dd9815a011f63">activation_type::SMOOTH_RELU</a>:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;smooth_relu&quot;</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a5b44c930bf0ddeef48b50ef11e5ddd58">activation_type::ELU</a>:</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;elu&quot;</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(<span class="stringliteral">&quot;unknown activation_type&quot;</span>);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
 <div class="ttc" id="namespacelbann_html_ab00e153fabca7ab166e4d79d47c05c76a143c8c6f51b9bb893ce71e38702e3cc1"><div class="ttname"><a href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76a143c8c6f51b9bb893ce71e38702e3cc1">lbann::activation_type::TANH</a></div></div>
 <div class="ttc" id="namespacelbann_html_ab00e153fabca7ab166e4d79d47c05c76ab299f45b5de2a8f7c45192590290742b"><div class="ttname"><a href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ab299f45b5de2a8f7c45192590290742b">lbann::activation_type::SIGMOID</a></div></div>
 <div class="ttc" id="namespacelbann_html_ab00e153fabca7ab166e4d79d47c05c76ad346bb4679d29be241279f15d7795c1c"><div class="ttname"><a href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ad346bb4679d29be241279f15d7795c1c">lbann::activation_type::RELU</a></div></div>
@@ -305,11 +305,13 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1id__layer.html#aa7d9cade77244bde172aa071a9ca029f">lbann::id_layer</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__layer__activations_8cpp_source.html#l00041">41</a> of file <a class="el" href="lbann__layer__activations_8cpp_source.html">lbann_layer_activations.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                      {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  EntrywiseMap(m, std::function&lt;<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp;)&gt;(</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                 [<span class="keyword">this</span>] (<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp; z) { <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1Activation.html#a32afd50758faa927a8cb599a025dd044">act_prime</a>(z); }));</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__layer__activations_8cpp_source.html#l00043">43</a> of file <a class="el" href="lbann__layer__activations_8cpp_source.html">lbann_layer_activations.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                      {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  EntrywiseMap(m, std::function&lt;<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp;)&gt;(</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  [<span class="keyword">this</span>] (<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp; z) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1Activation.html#a32afd50758faa927a8cb599a025dd044">act_prime</a>(z);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }));</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1Activation_html_a32afd50758faa927a8cb599a025dd044"><div class="ttname"><a href="classlbann_1_1Activation.html#a32afd50758faa927a8cb599a025dd044">lbann::Activation::act_prime</a></div><div class="ttdeci">virtual DataType act_prime(const DataType &amp;z)=0</div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00037">lbann_base.hpp:37</a></div></div>
 </div><!-- fragment -->
@@ -350,31 +352,31 @@ Protected Member Functions</h2></td></tr>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1id__layer.html#ae6327122f60cff1b3b3ade35f87e1afc">lbann::id_layer</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__layer__activations_8cpp_source.html#l00046">46</a> of file <a class="el" href="lbann__layer__activations_8cpp_source.html">lbann_layer_activations.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                                                           {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">const</span> Int <a class="code" href="structlayer__header.html#ad986e4b92e5b455e066fd349725c6bd9">height</a> = m.LocalHeight();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">const</span> Int <a class="code" href="structlayer__header.html#af1f45c9c74db048ea424114418f22d50">width</a> = m.LocalWidth();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">const</span> Int m_LDim = m.LDim();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>* m_buf = m.LockedBuffer();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">const</span> Int p_LDim = prev_error_signal.LDim();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>* p_buf = prev_error_signal.Buffer();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">if</span> (height == m_LDim &amp;&amp; height == p_LDim) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// Contiguous memory.</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#pragma omp parallel for</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">for</span> (Int i = 0; i &lt; height * <a class="code" href="structlayer__header.html#af1f45c9c74db048ea424114418f22d50">width</a>; ++i) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      p_buf[i] = <a class="code" href="classlbann_1_1Activation.html#a32afd50758faa927a8cb599a025dd044">act_prime</a>(m_buf[i]) * p_buf[i];</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// Non-contiguous.</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#pragma omp parallel for collapse(2)</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">for</span> (Int j = 0; j &lt; <a class="code" href="structlayer__header.html#af1f45c9c74db048ea424114418f22d50">width</a>; ++j) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keywordflow">for</span> (Int i = 0; i &lt; <a class="code" href="structlayer__header.html#ad986e4b92e5b455e066fd349725c6bd9">height</a>; ++i) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        p_buf[i+j*p_LDim] = <a class="code" href="classlbann_1_1Activation.html#a32afd50758faa927a8cb599a025dd044">act_prime</a>(m_buf[i+j*m_LDim]) * p_buf[i+j*p_LDim];</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__layer__activations_8cpp_source.html#l00050">50</a> of file <a class="el" href="lbann__layer__activations_8cpp_source.html">lbann_layer_activations.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                                                           {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">const</span> Int <a class="code" href="structlayer__header.html#ad986e4b92e5b455e066fd349725c6bd9">height</a> = m.LocalHeight();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">const</span> Int <a class="code" href="structlayer__header.html#af1f45c9c74db048ea424114418f22d50">width</a> = m.LocalWidth();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">const</span> Int m_LDim = m.LDim();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> *m_buf = m.LockedBuffer();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">const</span> Int p_LDim = prev_error_signal.LDim();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> *p_buf = prev_error_signal.Buffer();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">if</span> (height == m_LDim &amp;&amp; height == p_LDim) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// Contiguous memory.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">    #pragma omp parallel for</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">for</span> (Int i = 0; i &lt; height * <a class="code" href="structlayer__header.html#af1f45c9c74db048ea424114418f22d50">width</a>; ++i) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      p_buf[i] = <a class="code" href="classlbann_1_1Activation.html#a32afd50758faa927a8cb599a025dd044">act_prime</a>(m_buf[i]) * p_buf[i];</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// Non-contiguous.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">    #pragma omp parallel for collapse(2)</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">for</span> (Int j = 0; j &lt; <a class="code" href="structlayer__header.html#af1f45c9c74db048ea424114418f22d50">width</a>; ++j) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">for</span> (Int i = 0; i &lt; <a class="code" href="structlayer__header.html#ad986e4b92e5b455e066fd349725c6bd9">height</a>; ++i) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        p_buf[i+j*p_LDim] = <a class="code" href="classlbann_1_1Activation.html#a32afd50758faa927a8cb599a025dd044">act_prime</a>(m_buf[i+j*m_LDim]) * p_buf[i+j*p_LDim];</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
 <div class="ttc" id="structlayer__header_html_ad986e4b92e5b455e066fd349725c6bd9"><div class="ttname"><a href="structlayer__header.html#ad986e4b92e5b455e066fd349725c6bd9">layer_header::height</a></div><div class="ttdeci">uint64_t height</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8cpp_source.html#l00061">lbann_persist.cpp:61</a></div></div>
 <div class="ttc" id="structlayer__header_html_af1f45c9c74db048ea424114418f22d50"><div class="ttname"><a href="structlayer__header.html#af1f45c9c74db048ea424114418f22d50">layer_header::width</a></div><div class="ttdeci">uint64_t width</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8cpp_source.html#l00060">lbann_persist.cpp:60</a></div></div>
 <div class="ttc" id="classlbann_1_1Activation_html_a32afd50758faa927a8cb599a025dd044"><div class="ttname"><a href="classlbann_1_1Activation.html#a32afd50758faa927a8cb599a025dd044">lbann::Activation::act_prime</a></div><div class="ttdeci">virtual DataType act_prime(const DataType &amp;z)=0</div></div>
@@ -410,8 +412,10 @@ Protected Member Functions</h2></td></tr>
 <p>Definition at line <a class="el" href="lbann__layer__activations_8cpp_source.html#l00036">36</a> of file <a class="el" href="lbann__layer__activations_8cpp_source.html">lbann_layer_activations.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                     {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  EntrywiseMap(m, std::function&lt;<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp;)&gt;(</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                 [<span class="keyword">this</span>] (<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp; z) { <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1Activation.html#a3843eb7539e4f77678ea3c6ed73acb9b">act</a>(z); }));</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  [<span class="keyword">this</span>] (<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp; z) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1Activation.html#a3843eb7539e4f77678ea3c6ed73acb9b">act</a>(z);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }));</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1Activation_html_a3843eb7539e4f77678ea3c6ed73acb9b"><div class="ttname"><a href="classlbann_1_1Activation.html#a3843eb7539e4f77678ea3c6ed73acb9b">lbann::Activation::act</a></div><div class="ttdeci">virtual DataType act(const DataType &amp;z)=0</div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00037">lbann_base.hpp:37</a></div></div>
 </div><!-- fragment -->
@@ -427,7 +431,7 @@ Protected Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1Activation.html">Activation</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 15:44:00 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 18:19:24 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

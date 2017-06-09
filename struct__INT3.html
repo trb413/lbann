@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-1-g8977da5-ci241246606</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2-gc3cfcde-ci241273174</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -115,7 +115,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="datatype_8hpp_source.html#l00099">99</a> of file <a class="el" href="datatype_8hpp_source.html">datatype.hpp</a>.</p>
+<p>Definition at line <a class="el" href="datatype_8hpp_source.html#l00148">148</a> of file <a class="el" href="datatype_8hpp_source.html">datatype.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ae176143b9d0ccc19ef89b9de5c21cc0f"></a>
 <div class="memitem">
@@ -139,15 +139,17 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="datatype_8hpp_source.html#l00100">100</a> of file <a class="el" href="datatype_8hpp_source.html">datatype.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">if</span> (this-&gt;<a class="code" href="struct__INT3.html#a8174e89311956de4ab6a9458c4359c29">z</a> == other.<a class="code" href="struct__INT3.html#a8174e89311956de4ab6a9458c4359c29">z</a>)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordflow">return</span> (this-&gt;<a class="code" href="struct__INT3.html#adfdd79e81f0ccc4232d48624fe123775">y</a> == other.<a class="code" href="struct__INT3.html#adfdd79e81f0ccc4232d48624fe123775">y</a>) ? (this-&gt;<a class="code" href="struct__INT3.html#abf9b0540c26ae8c3d24f8ba2e0ec6432">x</a> &lt; other.<a class="code" href="struct__INT3.html#abf9b0540c26ae8c3d24f8ba2e0ec6432">x</a>) : (this-&gt;<a class="code" href="struct__INT3.html#adfdd79e81f0ccc4232d48624fe123775">y</a> &lt; other.<a class="code" href="struct__INT3.html#adfdd79e81f0ccc4232d48624fe123775">y</a>);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">return</span> (this-&gt;<a class="code" href="struct__INT3.html#a8174e89311956de4ab6a9458c4359c29">z</a> &lt; other.<a class="code" href="struct__INT3.html#a8174e89311956de4ab6a9458c4359c29">z</a>);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
-<div class="ttc" id="struct__INT3_html_a8174e89311956de4ab6a9458c4359c29"><div class="ttname"><a href="struct__INT3.html#a8174e89311956de4ab6a9458c4359c29">_INT3::z</a></div><div class="ttdeci">int z</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00099">datatype.hpp:99</a></div></div>
-<div class="ttc" id="struct__INT3_html_abf9b0540c26ae8c3d24f8ba2e0ec6432"><div class="ttname"><a href="struct__INT3.html#abf9b0540c26ae8c3d24f8ba2e0ec6432">_INT3::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00099">datatype.hpp:99</a></div></div>
-<div class="ttc" id="struct__INT3_html_adfdd79e81f0ccc4232d48624fe123775"><div class="ttname"><a href="struct__INT3.html#adfdd79e81f0ccc4232d48624fe123775">_INT3::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00099">datatype.hpp:99</a></div></div>
+<p>Definition at line <a class="el" href="datatype_8hpp_source.html#l00152">152</a> of file <a class="el" href="datatype_8hpp_source.html">datatype.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                                              {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">if</span> (this-&gt;<a class="code" href="struct__INT3.html#a8174e89311956de4ab6a9458c4359c29">z</a> == other.<a class="code" href="struct__INT3.html#a8174e89311956de4ab6a9458c4359c29">z</a>) {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      <span class="keywordflow">return</span> (this-&gt;<a class="code" href="struct__INT3.html#adfdd79e81f0ccc4232d48624fe123775">y</a> == other.<a class="code" href="struct__INT3.html#adfdd79e81f0ccc4232d48624fe123775">y</a>) ? (this-&gt;<a class="code" href="struct__INT3.html#abf9b0540c26ae8c3d24f8ba2e0ec6432">x</a> &lt; other.<a class="code" href="struct__INT3.html#abf9b0540c26ae8c3d24f8ba2e0ec6432">x</a>) : (this-&gt;<a class="code" href="struct__INT3.html#adfdd79e81f0ccc4232d48624fe123775">y</a> &lt; other.<a class="code" href="struct__INT3.html#adfdd79e81f0ccc4232d48624fe123775">y</a>);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      <span class="keywordflow">return</span> (this-&gt;<a class="code" href="struct__INT3.html#a8174e89311956de4ab6a9458c4359c29">z</a> &lt; other.<a class="code" href="struct__INT3.html#a8174e89311956de4ab6a9458c4359c29">z</a>);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  }</div>
+<div class="ttc" id="struct__INT3_html_a8174e89311956de4ab6a9458c4359c29"><div class="ttname"><a href="struct__INT3.html#a8174e89311956de4ab6a9458c4359c29">_INT3::z</a></div><div class="ttdeci">int z</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00151">datatype.hpp:151</a></div></div>
+<div class="ttc" id="struct__INT3_html_abf9b0540c26ae8c3d24f8ba2e0ec6432"><div class="ttname"><a href="struct__INT3.html#abf9b0540c26ae8c3d24f8ba2e0ec6432">_INT3::x</a></div><div class="ttdeci">int x</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00149">datatype.hpp:149</a></div></div>
+<div class="ttc" id="struct__INT3_html_adfdd79e81f0ccc4232d48624fe123775"><div class="ttname"><a href="struct__INT3.html#adfdd79e81f0ccc4232d48624fe123775">_INT3::y</a></div><div class="ttdeci">int y</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00150">datatype.hpp:150</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -162,7 +164,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="datatype_8hpp_source.html#l00099">99</a> of file <a class="el" href="datatype_8hpp_source.html">datatype.hpp</a>.</p>
+<p>Definition at line <a class="el" href="datatype_8hpp_source.html#l00149">149</a> of file <a class="el" href="datatype_8hpp_source.html">datatype.hpp</a>.</p>
 
 </div>
 </div>
@@ -176,7 +178,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="datatype_8hpp_source.html#l00099">99</a> of file <a class="el" href="datatype_8hpp_source.html">datatype.hpp</a>.</p>
+<p>Definition at line <a class="el" href="datatype_8hpp_source.html#l00150">150</a> of file <a class="el" href="datatype_8hpp_source.html">datatype.hpp</a>.</p>
 
 </div>
 </div>
@@ -190,7 +192,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="datatype_8hpp_source.html#l00099">99</a> of file <a class="el" href="datatype_8hpp_source.html">datatype.hpp</a>.</p>
+<p>Definition at line <a class="el" href="datatype_8hpp_source.html#l00151">151</a> of file <a class="el" href="datatype_8hpp_source.html">datatype.hpp</a>.</p>
 
 </div>
 </div>
@@ -203,7 +205,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct__INT3.html">_INT3</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 15:43:59 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 18:19:23 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

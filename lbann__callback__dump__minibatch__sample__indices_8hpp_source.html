@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-1-g8977da5-ci241246606</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2-gc3cfcde-ci241273174</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -92,8 +92,8 @@ $(document).ready(function(){initNavTree('lbann__callback__dump__minibatch__samp
 <div class="title">lbann_callback_dump_minibatch_sample_indices.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="lbann__callback__dump__minibatch__sample__indices_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (c) 2014-2016, Lawrence Livermore National Security, LLC. </span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Produced at the Lawrence Livermore National Laboratory. </span></div>
+<a href="lbann__callback__dump__minibatch__sample__indices_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (c) 2014-2016, Lawrence Livermore National Security, LLC.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Produced at the Lawrence Livermore National Laboratory.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Written by the LBANN Research Team (B. Van Essen, et al.) listed in</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// the CONTRIBUTORS file. &lt;lbann-dev@llnl.gov&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//</span></div>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('lbann__callback__dump__minibatch__samp
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// This file is part of LBANN: Livermore Big Artificial Neural Network</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// Toolkit. For details, see http://software.llnl.gov/LBANN or</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// https://github.com/LLNL/LBANN. </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// https://github.com/LLNL/LBANN.</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;Licensee&quot;); you</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// may not use this file except in compliance with the License.  You may</span></div>
@@ -127,17 +127,17 @@ $(document).ready(function(){initNavTree('lbann__callback__dump__minibatch__samp
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>lbann {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html">lbann_callback_dump_minibatch_sample_indices</a> : <span class="keyword">public</span> <a class="code" href="classlbann_1_1lbann__callback.html">lbann_callback</a> {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html#afec70f0e72e4d27bd46fb3fbabb4f7f3">   49</a></span>&#160;  <a class="code" href="classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html#afec70f0e72e4d27bd46fb3fbabb4f7f3">lbann_callback_dump_minibatch_sample_indices</a>(std::string <a class="code" href="classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html#a0afb37be4e79ce43505a4135780a1bf0">basename</a>, <span class="keywordtype">int</span> _batch_interval = 1) :</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classlbann_1_1lbann__callback.html">lbann_callback</a>(_batch_interval), basename(basename) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <a class="code" href="classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c">set_name</a>(<span class="stringliteral">&quot;dump_minibatch_sample_indices&quot;</span>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html#a302cdf7f6ee240b241f735ef13c6f850">on_forward_prop_end</a>(<a class="code" href="classlbann_1_1model.html">model</a>* m, <a class="code" href="classlbann_1_1Layer.html">Layer</a>* l);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html#ac699f8b22eb59ac5926ace40a94273f2">on_evaluate_forward_prop_end</a>(<a class="code" href="classlbann_1_1model.html">model</a>* m, <a class="code" href="classlbann_1_1Layer.html">Layer</a>* l);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c">set_name</a>(<span class="stringliteral">&quot;dump_minibatch_sample_indices&quot;</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html#a302cdf7f6ee240b241f735ef13c6f850">on_forward_prop_end</a>(<a class="code" href="classlbann_1_1model.html">model</a> *m, <a class="code" href="classlbann_1_1Layer.html">Layer</a> *l);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html#ac699f8b22eb59ac5926ace40a94273f2">on_evaluate_forward_prop_end</a>(<a class="code" href="classlbann_1_1model.html">model</a> *m, <a class="code" href="classlbann_1_1Layer.html">Layer</a> *l);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html#a34d4564309168b3ab0b2e3092e2f9355">dump_to_file</a>(<a class="code" href="classlbann_1_1model.html">model</a>* m, <a class="code" href="classlbann_1_1Layer.html">Layer</a>* l, int64_t step);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html#a34d4564309168b3ab0b2e3092e2f9355">dump_to_file</a>(<a class="code" href="classlbann_1_1model.html">model</a> *m, <a class="code" href="classlbann_1_1Layer.html">Layer</a> *l, int64_t step);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html#a0afb37be4e79ce43505a4135780a1bf0">   60</a></span>&#160;  std::string <a class="code" href="classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html#a0afb37be4e79ce43505a4135780a1bf0">basename</a>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
@@ -145,7 +145,7 @@ $(document).ready(function(){initNavTree('lbann__callback__dump__minibatch__samp
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif  // LBANN_CALLBACKS_CALLBACK_DUMP_MINIBATCH_SAMPLE_INDICES_HPP_INCLUDED</span></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__dump__minibatch__sample__indices_html_ac699f8b22eb59ac5926ace40a94273f2"><div class="ttname"><a href="classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html#ac699f8b22eb59ac5926ace40a94273f2">lbann::lbann_callback_dump_minibatch_sample_indices::on_evaluate_forward_prop_end</a></div><div class="ttdeci">void on_evaluate_forward_prop_end(model *m, Layer *l)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__dump__minibatch__sample__indices_8cpp_source.html#l00072">lbann_callback_dump_minibatch_sample_indices.cpp:72</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__callback_html_ae8c3014d503a9ae1b0a16f6cc0cb5b4c"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c">lbann::lbann_callback::set_name</a></div><div class="ttdeci">void set_name(std::string name)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00112">lbann_callback.hpp:112</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__callback_html_ae8c3014d503a9ae1b0a16f6cc0cb5b4c"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c">lbann::lbann_callback::set_name</a></div><div class="ttdeci">void set_name(std::string name)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00114">lbann_callback.hpp:114</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html"><div class="ttname"><a href="classlbann_1_1Layer.html">lbann::Layer</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00126">lbann_layer.hpp:126</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__dump__minibatch__sample__indices_html_a302cdf7f6ee240b241f735ef13c6f850"><div class="ttname"><a href="classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html#a302cdf7f6ee240b241f735ef13c6f850">lbann::lbann_callback_dump_minibatch_sample_indices::on_forward_prop_end</a></div><div class="ttdeci">void on_forward_prop_end(model *m, Layer *l)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__dump__minibatch__sample__indices_8cpp_source.html#l00068">lbann_callback_dump_minibatch_sample_indices.cpp:68</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html"><div class="ttname"><a href="classlbann_1_1model.html">lbann::model</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00055">lbann_model.hpp:55</a></div></div>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('lbann__callback__dump__minibatch__samp
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_eb8329679e609af11719ceffa3ff5139.html">include</a></li><li class="navelem"><a class="el" href="dir_ae19bb3c4b74b705a5918893bf9adbdd.html">lbann</a></li><li class="navelem"><a class="el" href="dir_86ea002d1bbf4ba4531b8a232bdd1c36.html">callbacks</a></li><li class="navelem"><a class="el" href="lbann__callback__dump__minibatch__sample__indices_8hpp.html">lbann_callback_dump_minibatch_sample_indices.hpp</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 15:43:57 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 18:19:22 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

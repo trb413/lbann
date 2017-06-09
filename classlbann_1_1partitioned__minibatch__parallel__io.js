@@ -14,7 +14,7 @@ var classlbann_1_1partitioned__minibatch__parallel__io =
     [ "update_data_reader", "classlbann_1_1partitioned__minibatch__parallel__io.html#a8d2655e360ad105ef24e84b28a900136", null ],
     [ "comm", "classlbann_1_1partitioned__minibatch__parallel__io.html#afbd6174e81834884a9fa1278b6bf22f3", null ],
     [ "m_cur_step_in_epoch", "classlbann_1_1partitioned__minibatch__parallel__io.html#a2c66393dbeba238892b8380e47c48256", null ],
-    [ "m_data_readers", "classlbann_1_1partitioned__minibatch__parallel__io.html#adb5e0c639a17bfba65f4f8faeaf20f0d", null ],
+    [ "m_data_readers", "classlbann_1_1partitioned__minibatch__parallel__io.html#a16fe32b39ea95df1056e60a85ae314c0", null ],
     [ "m_local_data_valid", "classlbann_1_1partitioned__minibatch__parallel__io.html#a76ee5dccb1f392731415e9c43ded0352", null ],
     [ "m_local_reader_done", "classlbann_1_1partitioned__minibatch__parallel__io.html#a08e53e9c8d5f0eee4b2d66addf5b7179", null ],
     [ "m_max_mini_batch_size", "classlbann_1_1partitioned__minibatch__parallel__io.html#a9842e1da3765079986696009903f3a1a", null ],

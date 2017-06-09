@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-1-g8977da5-ci241246606</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2-gc3cfcde-ci241273174</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -130,7 +130,7 @@ class lbann::base_factory&lt; Method &gt;</h3>
 
 <p>lbann_base_factory.h - base factory from which different methods (for layers, optimizer) could be registered. This class is to be inherrited by appropriate classes e.g., <a class="el" href="classlbann_1_1layer__factory.html">layer_factory</a>, <a class="el" href="classlbann_1_1optimizer__factory.html" title="Optimizer factory base class. ">optimizer_factory</a>. Derived classes holds a list of available methods of their types e.g., full connected layer, convultional layer for <a class="el" href="classlbann_1_1Layer.html">Layer</a> class </p>
 
-<p>Definition at line <a class="el" href="lbann__base__factory_8hpp_source.html#l00046">46</a> of file <a class="el" href="lbann__base__factory_8hpp_source.html">lbann_base_factory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__base__factory_8hpp_source.html#l00045">45</a> of file <a class="el" href="lbann__base__factory_8hpp_source.html">lbann_base_factory.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="ae702d92ee617aa48b762defbba2c958e"></a>
 <div class="memitem">
@@ -144,7 +144,7 @@ template&lt;typename Method&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__base__factory_8hpp_source.html#l00050">50</a> of file <a class="el" href="lbann__base__factory_8hpp_source.html">lbann_base_factory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__base__factory_8hpp_source.html#l00048">48</a> of file <a class="el" href="lbann__base__factory_8hpp_source.html">lbann_base_factory.hpp</a>.</p>
 
 </div>
 </div>
@@ -160,7 +160,7 @@ template&lt;typename Method&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__base__factory_8hpp_source.html#l00049">49</a> of file <a class="el" href="lbann__base__factory_8hpp_source.html">lbann_base_factory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__base__factory_8hpp_source.html#l00047">47</a> of file <a class="el" href="lbann__base__factory_8hpp_source.html">lbann_base_factory.hpp</a>.</p>
 
 </div>
 </div>
@@ -188,8 +188,8 @@ template&lt;typename Method&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__base__factory_8hpp_source.html#l00051">51</a> of file <a class="el" href="lbann__base__factory_8hpp_source.html">lbann_base_factory.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__base__factory_8hpp_source.html#l00049">49</a> of file <a class="el" href="lbann__base__factory_8hpp_source.html">lbann_base_factory.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -216,8 +216,8 @@ template&lt;typename Method&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__base__factory_8hpp_source.html#l00052">52</a> of file <a class="el" href="lbann__base__factory_8hpp_source.html">lbann_base_factory.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__base__factory_8hpp_source.html#l00050">50</a> of file <a class="el" href="lbann__base__factory_8hpp_source.html">lbann_base_factory.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -262,16 +262,17 @@ template&lt;typename Method&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__base__factory_8hpp_source.html#l00055">55</a> of file <a class="el" href="lbann__base__factory_8hpp_source.html">lbann_base_factory.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    std::pair&lt;string,int&gt; name(sname,index);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1base__factory.html#af073d31a0c9cb8452cd4a0e0bbaa8317">methods</a>.find(name) != <a class="code" href="classlbann_1_1base__factory.html#af073d31a0c9cb8452cd4a0e0bbaa8317">methods</a>.end())</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                        cerr &lt;&lt; <span class="stringliteral">&quot;\n LBANN Warning, method list already has a method pointer associated with \&quot;&quot;</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            &lt;&lt; name.first &lt;&lt; <span class="stringliteral">&quot; at index &quot;</span> &lt;&lt; name.second &lt;&lt; <span class="stringliteral">&quot;\&quot;, not added to method list\n&quot;</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                        <a class="code" href="classlbann_1_1base__factory.html#af073d31a0c9cb8452cd4a0e0bbaa8317">methods</a>[name] = m;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
-<div class="ttc" id="classlbann_1_1base__factory_html_af073d31a0c9cb8452cd4a0e0bbaa8317"><div class="ttname"><a href="classlbann_1_1base__factory.html#af073d31a0c9cb8452cd4a0e0bbaa8317">lbann::base_factory::methods</a></div><div class="ttdeci">method_container methods</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base__factory_8hpp_source.html#l00075">lbann_base_factory.hpp:75</a></div></div>
+<p>Definition at line <a class="el" href="lbann__base__factory_8hpp_source.html#l00053">53</a> of file <a class="el" href="lbann__base__factory_8hpp_source.html">lbann_base_factory.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                                     {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    std::pair&lt;string,int&gt; name(sname,index);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1base__factory.html#af073d31a0c9cb8452cd4a0e0bbaa8317">methods</a>.find(name) != <a class="code" href="classlbann_1_1base__factory.html#af073d31a0c9cb8452cd4a0e0bbaa8317">methods</a>.end())</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      cerr &lt;&lt; <span class="stringliteral">&quot;\n LBANN Warning, method list already has a method pointer associated with \&quot;&quot;</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;           &lt;&lt; name.first &lt;&lt; <span class="stringliteral">&quot; at index &quot;</span> &lt;&lt; name.second &lt;&lt; <span class="stringliteral">&quot;\&quot;, not added to method list\n&quot;</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <a class="code" href="classlbann_1_1base__factory.html#af073d31a0c9cb8452cd4a0e0bbaa8317">methods</a>[name] = m;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1base__factory_html_af073d31a0c9cb8452cd4a0e0bbaa8317"><div class="ttname"><a href="classlbann_1_1base__factory.html#af073d31a0c9cb8452cd4a0e0bbaa8317">lbann::base_factory::methods</a></div><div class="ttdeci">method_container methods</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base__factory_8hpp_source.html#l00072">lbann_base_factory.hpp:72</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -309,12 +310,12 @@ template&lt;typename Method&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__base__factory_8hpp_source.html#l00067">67</a> of file <a class="el" href="lbann__base__factory_8hpp_source.html">lbann_base_factory.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    std::pair&lt;string,int&gt; name(sname,index);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1base__factory.html#af073d31a0c9cb8452cd4a0e0bbaa8317">methods</a>[name];</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
-<div class="ttc" id="classlbann_1_1base__factory_html_af073d31a0c9cb8452cd4a0e0bbaa8317"><div class="ttname"><a href="classlbann_1_1base__factory.html#af073d31a0c9cb8452cd4a0e0bbaa8317">lbann::base_factory::methods</a></div><div class="ttdeci">method_container methods</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base__factory_8hpp_source.html#l00075">lbann_base_factory.hpp:75</a></div></div>
+<p>Definition at line <a class="el" href="lbann__base__factory_8hpp_source.html#l00065">65</a> of file <a class="el" href="lbann__base__factory_8hpp_source.html">lbann_base_factory.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                             {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::pair&lt;string,int&gt; name(sname,index);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1base__factory.html#af073d31a0c9cb8452cd4a0e0bbaa8317">methods</a>[name];</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1base__factory_html_af073d31a0c9cb8452cd4a0e0bbaa8317"><div class="ttname"><a href="classlbann_1_1base__factory.html#af073d31a0c9cb8452cd4a0e0bbaa8317">lbann::base_factory::methods</a></div><div class="ttdeci">method_container methods</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base__factory_8hpp_source.html#l00072">lbann_base_factory.hpp:72</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -339,7 +340,7 @@ template&lt;typename Method&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__base__factory_8hpp_source.html#l00075">75</a> of file <a class="el" href="lbann__base__factory_8hpp_source.html">lbann_base_factory.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__base__factory_8hpp_source.html#l00072">72</a> of file <a class="el" href="lbann__base__factory_8hpp_source.html">lbann_base_factory.hpp</a>.</p>
 
 </div>
 </div>
@@ -352,7 +353,7 @@ template&lt;typename Method&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1base__factory.html">base_factory</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 15:44:00 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 18:19:24 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

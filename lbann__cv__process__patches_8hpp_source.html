@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-1-g8977da5-ci241246606</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2-gc3cfcde-ci241273174</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -92,8 +92,8 @@ $(document).ready(function(){initNavTree('lbann__cv__process__patches_8hpp_sourc
 <div class="title">lbann_cv_process_patches.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="lbann__cv__process__patches_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (c) 2014-2016, Lawrence Livermore National Security, LLC. </span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Produced at the Lawrence Livermore National Laboratory. </span></div>
+<a href="lbann__cv__process__patches_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (c) 2014-2016, Lawrence Livermore National Security, LLC.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Produced at the Lawrence Livermore National Laboratory.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Written by the LBANN Research Team (B. Van Essen, et al.) listed in</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// the CONTRIBUTORS file. &lt;lbann-dev@llnl.gov&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//</span></div>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('lbann__cv__process__patches_8hpp_sourc
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// This file is part of LBANN: Livermore Big Artificial Neural Network</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// Toolkit. For details, see http://software.llnl.gov/LBANN or</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// https://github.com/LLNL/LBANN. </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// https://github.com/LLNL/LBANN.</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;Licensee&quot;); you</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// may not use this file except in compliance with the License.  You may</span></div>
@@ -126,32 +126,37 @@ $(document).ready(function(){initNavTree('lbann__cv__process__patches_8hpp_sourc
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="patchworks__patch__descriptor_8hpp.html">patchworks/patchworks_patch_descriptor.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#ifdef __LIB_OPENCV</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span><span class="keyword">namespace </span>lbann</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">class </span>cv_process_patches : <span class="keyword">public</span> cv_process {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  patchworks::patch_descriptor m_pd;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  cv_process_patches(<span class="keywordtype">void</span>) : cv_process() {}</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  cv_process_patches(<span class="keyword">const</span> cv_process_patches&amp; rhs);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  cv_process_patches&amp; operator=(<span class="keyword">const</span> cv_process_patches&amp; rhs);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  cv_process_patches(<span class="keyword">const</span> cv_transform::cv_flipping flip_code, <span class="keyword">const</span> <span class="keywordtype">bool</span> tosplit)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  : cv_process(flip_code, tosplit) {}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> set_patch_descriptor(<span class="keyword">const</span> patchworks::patch_descriptor&amp; pd) { m_pd = pd; }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  patchworks::patch_descriptor&amp; patch_descriptor(<span class="keywordtype">void</span>) { <span class="keywordflow">return</span> m_pd; }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">const</span> patchworks::patch_descriptor&amp; patch_descriptor(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_pd; }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">bool</span> preprocess(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&amp; image, std::vector&lt;cv::Mat&gt;&amp; patches);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;} <span class="comment">// end of namespace lbann</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif // __LIB_OPENCV</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif // LBANN_CV_PROCESS_PATCHES_HPP</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span><span class="keyword">namespace </span>lbann {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">class </span>cv_process_patches : <span class="keyword">public</span> cv_process {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  patchworks::patch_descriptor m_pd;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  cv_process_patches(<span class="keywordtype">void</span>) : cv_process() {}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  cv_process_patches(<span class="keyword">const</span> cv_process_patches&amp; rhs);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  cv_process_patches&amp; operator=(<span class="keyword">const</span> cv_process_patches&amp; rhs);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  cv_process_patches(<span class="keyword">const</span> cv_transform::cv_flipping flip_code, <span class="keyword">const</span> <span class="keywordtype">bool</span> tosplit)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    : cv_process(flip_code, tosplit) {}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> set_patch_descriptor(<span class="keyword">const</span> patchworks::patch_descriptor&amp; pd) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    m_pd = pd;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  patchworks::patch_descriptor&amp; patch_descriptor(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> m_pd;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">const</span> patchworks::patch_descriptor&amp; patch_descriptor(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> m_pd;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">bool</span> preprocess(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&amp; image, std::vector&lt;cv::Mat&gt;&amp; patches);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;} <span class="comment">// end of namespace lbann</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif // __LIB_OPENCV</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif // LBANN_CV_PROCESS_PATCHES_HPP</span></div>
 <div class="ttc" id="patchworks__patch__descriptor_8hpp_html"><div class="ttname"><a href="patchworks__patch__descriptor_8hpp.html">patchworks_patch_descriptor.hpp</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00042">lbann_base.hpp:42</a></div></div>
 <div class="ttc" id="lbann__cv__process_8hpp_html"><div class="ttname"><a href="lbann__cv__process_8hpp.html">lbann_cv_process.hpp</a></div></div>
@@ -161,7 +166,7 @@ $(document).ready(function(){initNavTree('lbann__cv__process__patches_8hpp_sourc
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_eb8329679e609af11719ceffa3ff5139.html">include</a></li><li class="navelem"><a class="el" href="dir_ae19bb3c4b74b705a5918893bf9adbdd.html">lbann</a></li><li class="navelem"><a class="el" href="dir_0b16036c62e9063447de1e5debde0af9.html">data_readers</a></li><li class="navelem"><a class="el" href="lbann__cv__process__patches_8hpp.html">lbann_cv_process_patches.hpp</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 15:43:57 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 18:19:22 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -40,7 +40,7 @@ var classlbann_1_1model =
     [ "get_current_mini_batch_size", "classlbann_1_1model.html#a7889df80a48db23b1b7a1c276e2d53e4", null ],
     [ "get_current_phase", "classlbann_1_1model.html#aaac76906df59991f6adcf354b4b1b570", null ],
     [ "get_execution_mode", "classlbann_1_1model.html#a66c5ac5cb51cdc7dea79a475147bcd5b", null ],
-    [ "get_layers", "classlbann_1_1model.html#a45e75790d328ac2a85aac59faf35094a", null ],
+    [ "get_layers", "classlbann_1_1model.html#ab6f53860dab77f0ce1d941d07360ef5a", null ],
     [ "get_terminate_training", "classlbann_1_1model.html#a881a892be143090ad80f6d839fcf457b", null ],
     [ "load_from_checkpoint_shared", "classlbann_1_1model.html#a2e02dda11636e015ea0c892ffa541881", null ],
     [ "need_checkpoint", "classlbann_1_1model.html#a94fccb9e764f50f437689ef6292e7ff1", null ],
@@ -56,7 +56,7 @@ var classlbann_1_1model =
     [ "setup", "classlbann_1_1model.html#a0d278ffa94dd6749e017c2af5c78178d", null ],
     [ "setup_callbacks", "classlbann_1_1model.html#af61c38d8d5ce7dad5a74dcf459758dea", null ],
     [ "summarize", "classlbann_1_1model.html#ac272c2206d588b299058347ea0be26ba", null ],
-    [ "callbacks", "classlbann_1_1model.html#a4a9fe726740e2351e4280d1de57624cb", null ],
+    [ "callbacks", "classlbann_1_1model.html#aeb879b39af5e71c322616d72980e1334", null ],
     [ "comm", "classlbann_1_1model.html#ae5a400e2f0a044c33383975298719cc2", null ],
     [ "m_checkpoint_dir", "classlbann_1_1model.html#a20635686b9d16b16a864cbbbda1a6b42", null ],
     [ "m_checkpoint_epochs", "classlbann_1_1model.html#ac4113ec2a170014dcc5155322610310d", null ],
@@ -74,6 +74,6 @@ var classlbann_1_1model =
     [ "m_rank", "classlbann_1_1model.html#ac460ba72f8c4edbff8c871c433b03b22", null ],
     [ "m_ranks", "classlbann_1_1model.html#a3b7bfb0045ef4ee8d4691aa41ff78465", null ],
     [ "m_terminate_training", "classlbann_1_1model.html#a639f9c3fcb81b905085f8b1932f8920f", null ],
-    [ "metrics", "classlbann_1_1model.html#ac9f71f855106019f5c949568d259f175", null ],
+    [ "metrics", "classlbann_1_1model.html#aebbdbc0b8c868cbf2413971de2832c26", null ],
     [ "obj_fn", "classlbann_1_1model.html#a92e0ae701d5f786e324ddcaa7db0ead8", null ]
 ];

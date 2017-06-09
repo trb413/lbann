@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-1-g8977da5-ci241246606</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2-gc3cfcde-ci241273174</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -92,8 +92,8 @@ $(document).ready(function(){initNavTree('lbann__metric_8cpp_source.html','');})
 <div class="title">lbann_metric.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="lbann__metric_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (c) 2014-2016, Lawrence Livermore National Security, LLC. </span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Produced at the Lawrence Livermore National Laboratory. </span></div>
+<a href="lbann__metric_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (c) 2014-2016, Lawrence Livermore National Security, LLC.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Produced at the Lawrence Livermore National Laboratory.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Written by the LBANN Research Team (B. Van Essen, et al.) listed in</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// the CONTRIBUTORS file. &lt;lbann-dev@llnl.gov&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//</span></div>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('lbann__metric_8cpp_source.html','');})
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// This file is part of LBANN: Livermore Big Artificial Neural Network</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// Toolkit. For details, see http://software.llnl.gov/LBANN or</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// https://github.com/LLNL/LBANN. </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// https://github.com/LLNL/LBANN.</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;Licensee&quot;); you</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// may not use this file except in compliance with the License.  You may</span></div>
@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('lbann__metric_8cpp_source.html','');})
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classlbann_1_1metrics_1_1metric.html#ac061126c26394ba06314e0924c214299">   32</a></span>&#160;<a class="code" href="classlbann_1_1metrics_1_1statistics.html">lbann::metrics::statistics</a>* <a class="code" href="classlbann_1_1metrics_1_1metric.html#ac061126c26394ba06314e0924c214299">lbann::metrics::metric::get_statistics</a>(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a> mode) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classlbann_1_1metrics_1_1metric.html#ac061126c26394ba06314e0924c214299">   32</a></span>&#160;<a class="code" href="classlbann_1_1metrics_1_1statistics.html">lbann::metrics::statistics</a> *<a class="code" href="classlbann_1_1metrics_1_1metric.html#ac061126c26394ba06314e0924c214299">lbann::metrics::metric::get_statistics</a>(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a> mode) {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <a class="code" href="classlbann_1_1metrics_1_1statistics.html">statistics</a> *stats;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordflow">switch</span>(mode) {</div>
@@ -343,7 +343,7 @@ $(document).ready(function(){initNavTree('lbann__metric_8cpp_source.html','');})
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="comment">//     &#39;&#39;&#39;</span></div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="comment">//   if beta &lt; 0:</span></div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="comment">//             raise ValueError(&#39;The lowest choosable beta is zero (only precision).&#39;)</span></div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;<span class="comment">// # If there are no true positives, fix the F score at 0 like sklearn.</span></div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="comment">//               if K.sum(K.round(K.clip(y_true, 0, 1))) == 0:</span></div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="comment">//         return 0</span></div>
@@ -375,26 +375,26 @@ $(document).ready(function(){initNavTree('lbann__metric_8cpp_source.html','');})
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;<span class="comment">// #endif</span></div>
 <div class="ttc" id="classlbann_1_1metrics_1_1metric_html_ac061126c26394ba06314e0924c214299"><div class="ttname"><a href="classlbann_1_1metrics_1_1metric.html#ac061126c26394ba06314e0924c214299">lbann::metrics::metric::get_statistics</a></div><div class="ttdeci">statistics * get_statistics(execution_mode mode)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8cpp_source.html#l00032">lbann_metric.cpp:32</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1statistics_html_acc7848c0873042bcb797a850afd3d96a"><div class="ttname"><a href="classlbann_1_1metrics_1_1statistics.html#acc7848c0873042bcb797a850afd3d96a">lbann::metrics::statistics::reset_stats</a></div><div class="ttdeci">void reset_stats()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00094">lbann_metric.hpp:94</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1statistics_html_acc7848c0873042bcb797a850afd3d96a"><div class="ttname"><a href="classlbann_1_1metrics_1_1statistics.html#acc7848c0873042bcb797a850afd3d96a">lbann::metrics::statistics::reset_stats</a></div><div class="ttdeci">void reset_stats()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00092">lbann_metric.hpp:92</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0"><div class="ttname"><a href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0">execution_mode::validation</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a2781a159088df64ed7d47cc91c4dc0a8aae2b1fca515949e5d54fb22b8ed95575"><div class="ttname"><a href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aae2b1fca515949e5d54fb22b8ed95575">execution_mode::testing</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1statistics_html_aeb7738af85340d8346f14378d80f2625"><div class="ttname"><a href="classlbann_1_1metrics_1_1statistics.html#aeb7738af85340d8346f14378d80f2625">lbann::metrics::statistics::m_samples_per_epoch</a></div><div class="ttdeci">long m_samples_per_epoch</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00104">lbann_metric.hpp:104</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1statistics_html_aeb7738af85340d8346f14378d80f2625"><div class="ttname"><a href="classlbann_1_1metrics_1_1statistics.html#aeb7738af85340d8346f14378d80f2625">lbann::metrics::statistics::m_samples_per_epoch</a></div><div class="ttdeci">long m_samples_per_epoch</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00102">lbann_metric.hpp:102</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214"><div class="ttname"><a href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a2781a159088df64ed7d47cc91c4dc0a8"><div class="ttname"><a href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a></div><div class="ttdeci">execution_mode</div><div class="ttdoc">Neural network execution mode. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00077">lbann_base.hpp:77</a></div></div>
 <div class="ttc" id="lbann__model_8hpp_html"><div class="ttname"><a href="lbann__model_8hpp.html">lbann_model.hpp</a></div></div>
 <div class="ttc" id="lbann__metric_8hpp_html"><div class="ttname"><a href="lbann__metric_8hpp.html">lbann_metric.hpp</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1statistics_html"><div class="ttname"><a href="classlbann_1_1metrics_1_1statistics.html">lbann::metrics::statistics</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00080">lbann_metric.hpp:80</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__exception_8hpp_source.html#l00041">lbann_exception.hpp:41</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1statistics_html"><div class="ttname"><a href="classlbann_1_1metrics_1_1statistics.html">lbann::metrics::statistics</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00079">lbann_metric.hpp:79</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__exception_8hpp_source.html#l00040">lbann_exception.hpp:40</a></div></div>
 <div class="ttc" id="classlbann_1_1metrics_1_1metric_html_a5cc1d6d2f40977a2b19c77961564a37d"><div class="ttname"><a href="classlbann_1_1metrics_1_1metric.html#a5cc1d6d2f40977a2b19c77961564a37d">lbann::metrics::metric::reset_metric</a></div><div class="ttdeci">void reset_metric()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8cpp_source.html#l00059">lbann_metric.cpp:59</a></div></div>
 <div class="ttc" id="classlbann_1_1metrics_1_1metric_html_a0962c210248b591fafb5aa158f2287f6"><div class="ttname"><a href="classlbann_1_1metrics_1_1metric.html#a0962c210248b591fafb5aa158f2287f6">lbann::metrics::metric::record_error</a></div><div class="ttdeci">void record_error(double error, long num_samples)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8cpp_source.html#l00052">lbann_metric.cpp:52</a></div></div>
-<div class="ttc" id="classlbann_1_1metrics_1_1statistics_html_a62ceedd5aae27a9223e6591c5ee37b2b"><div class="ttname"><a href="classlbann_1_1metrics_1_1statistics.html#a62ceedd5aae27a9223e6591c5ee37b2b">lbann::metrics::statistics::m_error_per_epoch</a></div><div class="ttdeci">double m_error_per_epoch</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00103">lbann_metric.hpp:103</a></div></div>
+<div class="ttc" id="classlbann_1_1metrics_1_1statistics_html_a62ceedd5aae27a9223e6591c5ee37b2b"><div class="ttname"><a href="classlbann_1_1metrics_1_1statistics.html#a62ceedd5aae27a9223e6591c5ee37b2b">lbann::metrics::statistics::m_error_per_epoch</a></div><div class="ttdeci">double m_error_per_epoch</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric_8hpp_source.html#l00101">lbann_metric.hpp:101</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_060b188870e6c9f21f070cc0d16ef707.html">metrics</a></li><li class="navelem"><a class="el" href="lbann__metric_8cpp.html">lbann_metric.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 15:43:58 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 18:19:22 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

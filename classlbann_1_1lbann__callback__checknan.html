@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-1-g8977da5-ci241246606</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2-gc3cfcde-ci241273174</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -224,8 +224,10 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="lbann__callback__checknan_8hpp_source.html#l00042">42</a> of file <a class="el" href="lbann__callback__checknan_8hpp_source.html">lbann_callback_checknan.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;: <a class="code" href="classlbann_1_1lbann__callback.html#af4c9e2cf1c87cbf741bb0316f6f5fab2">lbann_callback</a>() { <a class="code" href="classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c">set_name</a>(<span class="stringliteral">&quot;checknan&quot;</span>); }</div>
-<div class="ttc" id="classlbann_1_1lbann__callback_html_ae8c3014d503a9ae1b0a16f6cc0cb5b4c"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c">lbann::lbann_callback::set_name</a></div><div class="ttdeci">void set_name(std::string name)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00112">lbann_callback.hpp:112</a></div></div>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                            : <a class="code" href="classlbann_1_1lbann__callback.html#af4c9e2cf1c87cbf741bb0316f6f5fab2">lbann_callback</a>() {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c">set_name</a>(<span class="stringliteral">&quot;checknan&quot;</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1lbann__callback_html_ae8c3014d503a9ae1b0a16f6cc0cb5b4c"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c">lbann::lbann_callback::set_name</a></div><div class="ttdeci">void set_name(std::string name)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00114">lbann_callback.hpp:114</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback_html_af4c9e2cf1c87cbf741bb0316f6f5fab2"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#af4c9e2cf1c87cbf741bb0316f6f5fab2">lbann::lbann_callback::lbann_callback</a></div><div class="ttdeci">lbann_callback(int _batch_interval=1, lbann_summary *_summarizer=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00049">lbann_callback.hpp:49</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -341,10 +343,10 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>&amp; grad = (<a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>&amp;) l-&gt;get_weights_biases_gradient();</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e">is_good</a>(grad)) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    lbann_comm* <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a> = m-&gt;get_comm();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    lbann_comm *<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a> = m-&gt;get_comm();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; comm-&gt;get_rank_in_world() &lt;&lt; <span class="stringliteral">&quot;]: error in layer &quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      l-&gt;get_index() &lt;&lt; <span class="stringliteral">&quot; gradients (step=&quot;</span> &lt;&lt; m-&gt;get_cur_step() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      std::endl;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;              l-&gt;get_index() &lt;&lt; <span class="stringliteral">&quot; gradients (step=&quot;</span> &lt;&lt; m-&gt;get_cur_step() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;              std::endl;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(<span class="stringliteral">&quot;checknan: error in gradients&quot;</span>);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
@@ -357,7 +359,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1lbann__callback__checknan_a1514fb88dcc39cb6d4ec533f99030650_cgraph.png" border="0" usemap="#classlbann_1_1lbann__callback__checknan_a1514fb88dcc39cb6d4ec533f99030650_cgraph" alt=""/></div>
 <map name="classlbann_1_1lbann__callback__checknan_a1514fb88dcc39cb6d4ec533f99030650_cgraph" id="classlbann_1_1lbann__callback__checknan_a1514fb88dcc39cb6d4ec533f99030650_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1Layer.html#ab178f73070d2764151a7e6be2614acda" title="lbann::Layer::get_index" alt="" coords="235,5,392,32"/><area shape="rect" id="node3" href="classlbann_1_1model.html#a45e75790d328ac2a85aac59faf35094a" title="lbann::model::get_layers" alt="" coords="231,56,395,83"/><area shape="rect" id="node4" href="classlbann_1_1Layer.html#a4b2b92aa11d932d62456c21ed929b263" title="lbann::Layer::get_weights\l_biases_gradient" alt="" coords="228,107,399,149"/><area shape="rect" id="node5" href="classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e" title="lbann::lbann_callback\l_checknan::is_good" alt="" coords="240,173,387,214"/><area shape="rect" id="node6" href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca" title="lbann::model::get_comm" alt="" coords="231,239,396,265"/><area shape="rect" id="node7" href="classlbann_1_1lbann__comm.html#a615265cd20ffb4863089bb94e4c82fe7" title="lbann::lbann_comm::\lget_rank_in_world" alt="" coords="242,290,385,331"/><area shape="rect" id="node8" href="classlbann_1_1model.html#a6fb1e6b55fe9f7ecb70759a9c50a20c5" title="lbann::model::get_cur_step" alt="" coords="224,356,403,383"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1Layer.html#ab178f73070d2764151a7e6be2614acda" title="lbann::Layer::get_index" alt="" coords="235,5,392,32"/><area shape="rect" id="node3" href="classlbann_1_1model.html#ab6f53860dab77f0ce1d941d07360ef5a" title="lbann::model::get_layers" alt="" coords="231,56,395,83"/><area shape="rect" id="node4" href="classlbann_1_1Layer.html#a4b2b92aa11d932d62456c21ed929b263" title="lbann::Layer::get_weights\l_biases_gradient" alt="" coords="228,107,399,149"/><area shape="rect" id="node5" href="classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e" title="lbann::lbann_callback\l_checknan::is_good" alt="" coords="240,173,387,214"/><area shape="rect" id="node6" href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca" title="lbann::model::get_comm" alt="" coords="231,239,396,265"/><area shape="rect" id="node7" href="classlbann_1_1lbann__comm.html#a615265cd20ffb4863089bb94e4c82fe7" title="lbann::lbann_comm::\lget_rank_in_world" alt="" coords="242,290,385,331"/><area shape="rect" id="node8" href="classlbann_1_1model.html#a6fb1e6b55fe9f7ecb70759a9c50a20c5" title="lbann::model::get_cur_step" alt="" coords="224,356,403,383"/></map>
 </div>
 </p>
 
@@ -390,16 +392,16 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="lbann__callback__checknan_8cpp_source.html#l00064">64</a> of file <a class="el" href="lbann__callback__checknan_8cpp_source.html">lbann_callback_checknan.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                                   {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  std::vector&lt;Layer*&gt;&amp; layers = m-&gt;get_layers();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  std::vector&lt;Layer *&gt;&amp; layers = m-&gt;get_layers();</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="comment">// Skip input/output layers-- they don&#39;t have weights.</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; layers.size() - 1; ++i) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    Layer* l = layers[i];</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    Layer *l = layers[i];</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>&amp; weights = (<a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>&amp;) l-&gt;get_weights_biases();</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e">is_good</a>(weights)) {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      lbann_comm* <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a> = m-&gt;get_comm();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      lbann_comm *<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a> = m-&gt;get_comm();</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; comm-&gt;get_rank_in_world() &lt;&lt; <span class="stringliteral">&quot;]: error in layer &quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        l-&gt;get_index() &lt;&lt; <span class="stringliteral">&quot; weights (step=&quot;</span> &lt;&lt; m-&gt;get_cur_step() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        std::endl;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                l-&gt;get_index() &lt;&lt; <span class="stringliteral">&quot; weights (step=&quot;</span> &lt;&lt; m-&gt;get_cur_step() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                std::endl;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordflow">throw</span> lbann_exception(<span class="stringliteral">&quot;checknan: error in weights&quot;</span>);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
@@ -413,7 +415,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1lbann__callback__checknan_a13ad397133ac3c2f16733df00032c691_cgraph.png" border="0" usemap="#classlbann_1_1lbann__callback__checknan_a13ad397133ac3c2f16733df00032c691_cgraph" alt=""/></div>
 <map name="classlbann_1_1lbann__callback__checknan_a13ad397133ac3c2f16733df00032c691_cgraph" id="classlbann_1_1lbann__callback__checknan_a13ad397133ac3c2f16733df00032c691_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1model.html#a45e75790d328ac2a85aac59faf35094a" title="lbann::model::get_layers" alt="" coords="237,5,401,32"/><area shape="rect" id="node3" href="classlbann_1_1Layer.html#a190982036d52d288d3528a16e30418e0" title="lbann::Layer::get_weights\l_biases" alt="" coords="233,57,404,98"/><area shape="rect" id="node4" href="classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e" title="lbann::lbann_callback\l_checknan::is_good" alt="" coords="245,122,392,163"/><area shape="rect" id="node5" href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca" title="lbann::model::get_comm" alt="" coords="236,188,401,215"/><area shape="rect" id="node6" href="classlbann_1_1lbann__comm.html#a615265cd20ffb4863089bb94e4c82fe7" title="lbann::lbann_comm::\lget_rank_in_world" alt="" coords="247,239,390,281"/><area shape="rect" id="node7" href="classlbann_1_1Layer.html#ab178f73070d2764151a7e6be2614acda" title="lbann::Layer::get_index" alt="" coords="240,305,397,332"/><area shape="rect" id="node8" href="classlbann_1_1model.html#a6fb1e6b55fe9f7ecb70759a9c50a20c5" title="lbann::model::get_cur_step" alt="" coords="229,356,408,383"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1model.html#ab6f53860dab77f0ce1d941d07360ef5a" title="lbann::model::get_layers" alt="" coords="237,5,401,32"/><area shape="rect" id="node3" href="classlbann_1_1Layer.html#a190982036d52d288d3528a16e30418e0" title="lbann::Layer::get_weights\l_biases" alt="" coords="233,57,404,98"/><area shape="rect" id="node4" href="classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e" title="lbann::lbann_callback\l_checknan::is_good" alt="" coords="245,122,392,163"/><area shape="rect" id="node5" href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca" title="lbann::model::get_comm" alt="" coords="236,188,401,215"/><area shape="rect" id="node6" href="classlbann_1_1lbann__comm.html#a615265cd20ffb4863089bb94e4c82fe7" title="lbann::lbann_comm::\lget_rank_in_world" alt="" coords="247,239,390,281"/><area shape="rect" id="node7" href="classlbann_1_1Layer.html#ab178f73070d2764151a7e6be2614acda" title="lbann::Layer::get_index" alt="" coords="240,305,397,332"/><area shape="rect" id="node8" href="classlbann_1_1model.html#a6fb1e6b55fe9f7ecb70759a9c50a20c5" title="lbann::model::get_cur_step" alt="" coords="229,356,408,383"/></map>
 </div>
 </p>
 
@@ -462,10 +464,10 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>&amp; acts = (<a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>&amp;) l-&gt;get_activations();</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e">is_good</a>(acts)) {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    lbann_comm* <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a> = m-&gt;get_comm();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    lbann_comm *<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a> = m-&gt;get_comm();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; comm-&gt;get_rank_in_world() &lt;&lt; <span class="stringliteral">&quot;]: error in layer &quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      l-&gt;get_index() &lt;&lt; <span class="stringliteral">&quot; activations (step=&quot;</span> &lt;&lt; m-&gt;get_cur_step() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      std::endl;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;              l-&gt;get_index() &lt;&lt; <span class="stringliteral">&quot; activations (step=&quot;</span> &lt;&lt; m-&gt;get_cur_step() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;              std::endl;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(<span class="stringliteral">&quot;checknan: error in activations&quot;</span>);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
@@ -478,7 +480,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1lbann__callback__checknan_ab46f91a3180038c2c046f913ce7aec1c_cgraph.png" border="0" usemap="#classlbann_1_1lbann__callback__checknan_ab46f91a3180038c2c046f913ce7aec1c_cgraph" alt=""/></div>
 <map name="classlbann_1_1lbann__callback__checknan_ab46f91a3180038c2c046f913ce7aec1c_cgraph" id="classlbann_1_1lbann__callback__checknan_ab46f91a3180038c2c046f913ce7aec1c_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1Layer.html#ab178f73070d2764151a7e6be2614acda" title="lbann::Layer::get_index" alt="" coords="227,5,384,32"/><area shape="rect" id="node3" href="classlbann_1_1model.html#a45e75790d328ac2a85aac59faf35094a" title="lbann::model::get_layers" alt="" coords="223,56,387,83"/><area shape="rect" id="node4" href="classlbann_1_1Layer.html#a6ae06b86f19fbfacdc7b4ec171a793d3" title="lbann::Layer::get_activations" alt="" coords="211,107,400,133"/><area shape="rect" id="node5" href="classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e" title="lbann::lbann_callback\l_checknan::is_good" alt="" coords="232,158,379,199"/><area shape="rect" id="node6" href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca" title="lbann::model::get_comm" alt="" coords="223,224,388,251"/><area shape="rect" id="node7" href="classlbann_1_1lbann__comm.html#a615265cd20ffb4863089bb94e4c82fe7" title="lbann::lbann_comm::\lget_rank_in_world" alt="" coords="234,275,377,317"/><area shape="rect" id="node8" href="classlbann_1_1model.html#a6fb1e6b55fe9f7ecb70759a9c50a20c5" title="lbann::model::get_cur_step" alt="" coords="216,341,395,368"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1Layer.html#ab178f73070d2764151a7e6be2614acda" title="lbann::Layer::get_index" alt="" coords="227,5,384,32"/><area shape="rect" id="node3" href="classlbann_1_1model.html#ab6f53860dab77f0ce1d941d07360ef5a" title="lbann::model::get_layers" alt="" coords="223,56,387,83"/><area shape="rect" id="node4" href="classlbann_1_1Layer.html#a6ae06b86f19fbfacdc7b4ec171a793d3" title="lbann::Layer::get_activations" alt="" coords="211,107,400,133"/><area shape="rect" id="node5" href="classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e" title="lbann::lbann_callback\l_checknan::is_good" alt="" coords="232,158,379,199"/><area shape="rect" id="node6" href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca" title="lbann::model::get_comm" alt="" coords="223,224,388,251"/><area shape="rect" id="node7" href="classlbann_1_1lbann__comm.html#a615265cd20ffb4863089bb94e4c82fe7" title="lbann::lbann_comm::\lget_rank_in_world" alt="" coords="234,275,377,317"/><area shape="rect" id="node8" href="classlbann_1_1model.html#a6fb1e6b55fe9f7ecb70759a9c50a20c5" title="lbann::model::get_cur_step" alt="" coords="216,341,395,368"/></map>
 </div>
 </p>
 
@@ -494,7 +496,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__callback__checknan.html">lbann_callback_checknan</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 15:43:59 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 18:19:23 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

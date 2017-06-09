@@ -18,5 +18,5 @@ var classlbann_1_1greedy__layerwise__autoencoder =
     [ "m_have_mirror", "classlbann_1_1greedy__layerwise__autoencoder.html#a4848353f20ff957a9e0bd7c8d374644e", null ],
     [ "m_name", "classlbann_1_1greedy__layerwise__autoencoder.html#aad242bdb4b9859f7d804ac1f56ed43f0", null ],
     [ "m_phase_end", "classlbann_1_1greedy__layerwise__autoencoder.html#a962398da3f5738ec92a1680b0814219b", null ],
-    [ "m_reconstruction_layers", "classlbann_1_1greedy__layerwise__autoencoder.html#af414ca1108311003edbdb65f6ad50fb6", null ]
+    [ "m_reconstruction_layers", "classlbann_1_1greedy__layerwise__autoencoder.html#aa91a4cf3c342021aee73d7bcedbf7ef6", null ]
 ];

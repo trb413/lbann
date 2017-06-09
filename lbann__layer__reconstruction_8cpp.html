@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-1-g8977da5-ci241246606</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2-gc3cfcde-ci241273174</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -163,31 +163,31 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="lbann__layer__reconstruction_8cpp_source.html#l00043">43</a> of file <a class="el" href="lbann__layer__reconstruction_8cpp_source.html">lbann_layer_reconstruction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  m_type = layer_type::reconstruction;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  Index = index;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  NumNeurons = original_layer-&gt;NumNeurons;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  this-&gt;m_optimizer = opt; <span class="comment">// Manually assign the optimizer since target layers normally set this to NULL</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  aggregate_cost = 0.0;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  num_forwardprop_steps = 0;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="comment">// Initialize activation function</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  m_activation_fn = <a class="code" href="namespacelbann.html#a6bc1a6b4f98b412f48a2f29b02e48a77">new_activation</a>(activation);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="comment">// Done in base layer constructor</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">/*switch(data_dist) {</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">    case data_layout::MODEL_PARALLEL:</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">      initialize_model_parallel_distribution();  base layer</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">      break;</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">    case data_layout::DATA_PARALLEL:</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">      initialize_data_parallel_distribution();</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">      break;</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">    default:</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">      throw lbann_exception(std::string{} + __FILE__ + &quot; &quot; +</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">                            std::to_string(__LINE__) +</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">                            &quot;Invalid data layout selected&quot;);</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">  }*/</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="ttc" id="namespacelbann_html_a6bc1a6b4f98b412f48a2f29b02e48a77"><div class="ttname"><a href="namespacelbann.html#a6bc1a6b4f98b412f48a2f29b02e48a77">lbann::new_activation</a></div><div class="ttdeci">Activation * new_activation(activation_type act_fn, Args...params)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__activations_8hpp_source.html#l00208">lbann_layer_activations.hpp:208</a></div></div>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                              {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  m_type = layer_type::reconstruction;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  Index = index;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  NumNeurons = original_layer-&gt;NumNeurons;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  this-&gt;m_optimizer = opt; <span class="comment">// Manually assign the optimizer since target layers normally set this to NULL</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  aggregate_cost = 0.0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  num_forwardprop_steps = 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="comment">// Initialize activation function</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  m_activation_fn = <a class="code" href="namespacelbann.html#a6bc1a6b4f98b412f48a2f29b02e48a77">new_activation</a>(activation);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="comment">// Done in base layer constructor</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="comment">/*switch(data_dist) {</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">    case data_layout::MODEL_PARALLEL:</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">      initialize_model_parallel_distribution();  base layer</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">      break;</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">    case data_layout::DATA_PARALLEL:</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">      initialize_data_parallel_distribution();</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">      break;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">    default:</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">      throw lbann_exception(std::string{} + __FILE__ + &quot; &quot; +</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">                            std::to_string(__LINE__) +</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">                            &quot;Invalid data layout selected&quot;);</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">  }*/</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="ttc" id="namespacelbann_html_a6bc1a6b4f98b412f48a2f29b02e48a77"><div class="ttname"><a href="namespacelbann.html#a6bc1a6b4f98b412f48a2f29b02e48a77">lbann::new_activation</a></div><div class="ttdeci">Activation * new_activation(activation_type act_fn, Args...params)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__activations_8hpp_source.html#l00212">lbann_layer_activations.hpp:212</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -230,7 +230,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_faacdbae24c4b7c4a8fbaf54f29a6b8e.html">layers</a></li><li class="navelem"><a class="el" href="lbann__layer__reconstruction_8cpp.html">lbann_layer_reconstruction.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 15:43:58 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 18:19:23 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

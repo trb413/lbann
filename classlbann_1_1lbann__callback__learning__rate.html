@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-1-g8977da5-ci241246606</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2-gc3cfcde-ci241273174</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -332,20 +332,20 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="lbann__callback__learning__rate_8cpp_source.html#l00054">54</a> of file <a class="el" href="lbann__callback__learning__rate_8cpp_source.html">lbann_callback_learning_rate.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                        {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  std::vector&lt;Layer*&gt;&amp; layers = m-&gt;get_layers();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  std::vector&lt;Layer *&gt;&amp; layers = m-&gt;get_layers();</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> l = 0; l &lt; layers.size(); ++l) {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    Layer* layer = layers[l];</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    Layer *layer = layers[l];</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> idx = layer-&gt;get_index();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1lbann__callback__learning__rate.html#a325df5c4cce337f03357c86fe2ef8f2b">old_lrs</a>.find(idx) != <a class="code" href="classlbann_1_1lbann__callback__learning__rate.html#a325df5c4cce337f03357c86fe2ef8f2b">old_lrs</a>.end()) {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keywordtype">float</span> new_lr = <a class="code" href="classlbann_1_1lbann__callback__learning__rate.html#a60a4147b916b6e72846f90ca83c533c9">schedule</a>(m, layer);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">if</span> (new_lr != <a class="code" href="classlbann_1_1lbann__callback__learning__rate.html#a325df5c4cce337f03357c86fe2ef8f2b">old_lrs</a>[idx]) {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="classlbann_1_1lbann__callback__learning__rate.html#a325df5c4cce337f03357c86fe2ef8f2b">old_lrs</a>[idx] = new_lr;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        layer-&gt;get_optimizer()-&gt;set_learning_rate(new_lr);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        lbann_comm* <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a> = m-&gt;get_comm();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        lbann_comm *<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a> = m-&gt;get_comm();</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">if</span> (comm-&gt;am_model_master()) {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;          std::cout &lt;&lt; <span class="stringliteral">&quot;Model &quot;</span> &lt;&lt; comm-&gt;get_model_rank() &lt;&lt;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="stringliteral">&quot;: changing layer &quot;</span> &lt;&lt; idx &lt;&lt; <span class="stringliteral">&quot; learning rate to &quot;</span> &lt;&lt; new_lr &lt;&lt;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="stringliteral">&quot; at epoch &quot;</span> &lt;&lt; m-&gt;get_cur_epoch() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                    <span class="stringliteral">&quot;: changing layer &quot;</span> &lt;&lt; idx &lt;&lt; <span class="stringliteral">&quot; learning rate to &quot;</span> &lt;&lt; new_lr &lt;&lt;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                    <span class="stringliteral">&quot; at epoch &quot;</span> &lt;&lt; m-&gt;get_cur_epoch() &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
@@ -361,7 +361,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1lbann__callback__learning__rate_ab4ef80742344cca2ea63489498942b0f_cgraph.png" border="0" usemap="#classlbann_1_1lbann__callback__learning__rate_ab4ef80742344cca2ea63489498942b0f_cgraph" alt=""/></div>
 <map name="classlbann_1_1lbann__callback__learning__rate_ab4ef80742344cca2ea63489498942b0f_cgraph" id="classlbann_1_1lbann__callback__learning__rate_ab4ef80742344cca2ea63489498942b0f_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1model.html#a45e75790d328ac2a85aac59faf35094a" title="lbann::model::get_layers" alt="" coords="255,5,419,32"/><area shape="rect" id="node3" href="classlbann_1_1Layer.html#ab178f73070d2764151a7e6be2614acda" title="lbann::Layer::get_index" alt="" coords="259,56,416,83"/><area shape="rect" id="node4" href="classlbann_1_1lbann__callback__learning__rate.html#a60a4147b916b6e72846f90ca83c533c9" title="lbann::lbann_callback\l_learning_rate::schedule" alt="" coords="256,107,419,149"/><area shape="rect" id="node5" href="classlbann_1_1Layer.html#a3d59d2a12813c584efcc63bc5bcbbf14" title="lbann::Layer::get_optimizer" alt="" coords="248,173,427,200"/><area shape="rect" id="node6" href="classlbann_1_1optimizer.html#a54ba552b1691daeacdbb2d11f8f705af" title="Set learning rate. " alt="" coords="267,225,407,266"/><area shape="rect" id="node7" href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca" title="lbann::model::get_comm" alt="" coords="255,291,420,317"/><area shape="rect" id="node8" href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac" title="lbann::lbann_comm::\lam_model_master" alt="" coords="266,342,409,383"/><area shape="rect" id="node9" href="classlbann_1_1lbann__comm.html#a6c201108eb6b5a1e23021db29cef655b" title="lbann::lbann_comm::\lget_model_rank" alt="" coords="266,407,409,449"/><area shape="rect" id="node10" href="classlbann_1_1model.html#a3f6f0384573e9ca4bea93ce0dbebfd28" title="lbann::model::get_cur\l_epoch" alt="" coords="264,473,411,514"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1model.html#ab6f53860dab77f0ce1d941d07360ef5a" title="lbann::model::get_layers" alt="" coords="255,5,419,32"/><area shape="rect" id="node3" href="classlbann_1_1Layer.html#ab178f73070d2764151a7e6be2614acda" title="lbann::Layer::get_index" alt="" coords="259,56,416,83"/><area shape="rect" id="node4" href="classlbann_1_1lbann__callback__learning__rate.html#a60a4147b916b6e72846f90ca83c533c9" title="lbann::lbann_callback\l_learning_rate::schedule" alt="" coords="256,107,419,149"/><area shape="rect" id="node5" href="classlbann_1_1Layer.html#a3d59d2a12813c584efcc63bc5bcbbf14" title="lbann::Layer::get_optimizer" alt="" coords="248,173,427,200"/><area shape="rect" id="node6" href="classlbann_1_1optimizer.html#a54ba552b1691daeacdbb2d11f8f705af" title="Set learning rate. " alt="" coords="267,225,407,266"/><area shape="rect" id="node7" href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca" title="lbann::model::get_comm" alt="" coords="255,291,420,317"/><area shape="rect" id="node8" href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac" title="lbann::lbann_comm::\lam_model_master" alt="" coords="266,342,409,383"/><area shape="rect" id="node9" href="classlbann_1_1lbann__comm.html#a6c201108eb6b5a1e23021db29cef655b" title="lbann::lbann_comm::\lget_model_rank" alt="" coords="266,407,409,449"/><area shape="rect" id="node10" href="classlbann_1_1model.html#a3f6f0384573e9ca4bea93ce0dbebfd28" title="lbann::model::get_cur\l_epoch" alt="" coords="264,473,411,514"/></map>
 </div>
 </p>
 
@@ -448,9 +448,9 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="lbann__callback__learning__rate_8cpp_source.html#l00039">39</a> of file <a class="el" href="lbann__callback__learning__rate_8cpp_source.html">lbann_callback_learning_rate.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                 {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  std::vector&lt;Layer*&gt;&amp; layers = m-&gt;get_layers();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  std::vector&lt;Layer *&gt;&amp; layers = m-&gt;get_layers();</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> l = 0; l &lt; layers.size(); ++l) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    Layer* layer = layers[l];</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    Layer *layer = layers[l];</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> idx = layer-&gt;get_index();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1lbann__callback__learning__rate.html#a02a16a81db83df4222f4c4117fbb1e4b">layer_indices</a>.size() == 0 ||</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="classlbann_1_1lbann__callback__learning__rate.html#a02a16a81db83df4222f4c4117fbb1e4b">layer_indices</a>.find(idx) != <a class="code" href="classlbann_1_1lbann__callback__learning__rate.html#a02a16a81db83df4222f4c4117fbb1e4b">layer_indices</a>.end()) {</div>
@@ -472,7 +472,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1lbann__callback__learning__rate_a3814efdf7b26e6162a66ab5d982a9abf_cgraph.png" border="0" usemap="#classlbann_1_1lbann__callback__learning__rate_a3814efdf7b26e6162a66ab5d982a9abf_cgraph" alt=""/></div>
 <map name="classlbann_1_1lbann__callback__learning__rate_a3814efdf7b26e6162a66ab5d982a9abf_cgraph" id="classlbann_1_1lbann__callback__learning__rate_a3814efdf7b26e6162a66ab5d982a9abf_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1model.html#a45e75790d328ac2a85aac59faf35094a" title="lbann::model::get_layers" alt="" coords="207,5,371,32"/><area shape="rect" id="node3" href="classlbann_1_1Layer.html#ab178f73070d2764151a7e6be2614acda" title="lbann::Layer::get_index" alt="" coords="211,56,368,83"/><area shape="rect" id="node4" href="classlbann_1_1Layer.html#a3d59d2a12813c584efcc63bc5bcbbf14" title="lbann::Layer::get_optimizer" alt="" coords="200,107,379,133"/><area shape="rect" id="node5" href="classlbann_1_1optimizer.html#a3c7b27ab74e32965cbe812906729386b" title="Get learning rate. " alt="" coords="219,158,359,199"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1model.html#ab6f53860dab77f0ce1d941d07360ef5a" title="lbann::model::get_layers" alt="" coords="207,5,371,32"/><area shape="rect" id="node3" href="classlbann_1_1Layer.html#ab178f73070d2764151a7e6be2614acda" title="lbann::Layer::get_index" alt="" coords="211,56,368,83"/><area shape="rect" id="node4" href="classlbann_1_1Layer.html#a3d59d2a12813c584efcc63bc5bcbbf14" title="lbann::Layer::get_optimizer" alt="" coords="200,107,379,133"/><area shape="rect" id="node5" href="classlbann_1_1optimizer.html#a3c7b27ab74e32965cbe812906729386b" title="Get learning rate. " alt="" coords="219,158,359,199"/></map>
 </div>
 </p>
 
@@ -558,7 +558,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__callback__learning__rate.html">lbann_callback_learning_rate</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 15:43:59 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 18:19:23 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

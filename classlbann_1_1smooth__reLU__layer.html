@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-1-g8977da5-ci241246606</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2-gc3cfcde-ci241273174</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -137,7 +137,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Smooth Rectified linear unit activation function. This is an approximation to the softplus. </p>
 
-<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00165">165</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00169">169</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a696330d60fe2e8b368932ec8ab4404fd"></a>
 <div class="memitem">
@@ -164,10 +164,10 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classlbann_1_1Activation.html#a3843eb7539e4f77678ea3c6ed73acb9b">lbann::Activation</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00167">167</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                                  {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> z / (<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1) + std::exp(-z));</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00171">171</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                                  {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">return</span> z / (<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1) + std::exp(-z));</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  }</div>
 <div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00037">lbann_base.hpp:37</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -197,11 +197,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classlbann_1_1Activation.html#a32afd50758faa927a8cb599a025dd044">lbann::Activation</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00170">170</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                                        {</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> sigz = <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1) / (<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1) + std::exp(-z));</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">return</span> sigz + z*sigz - z*sigz*sigz;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="lbann__layer__activations_8hpp_source.html#l00174">174</a> of file <a class="el" href="lbann__layer__activations_8hpp_source.html">lbann_layer_activations.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                                        {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> sigz = <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1) / (<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1) + std::exp(-z));</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">return</span> sigz + z*sigz - z*sigz*sigz;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  }</div>
 <div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00037">lbann_base.hpp:37</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -215,7 +215,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1smooth__reLU__layer.html">smooth_reLU_layer</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 15:44:00 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 18:19:24 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

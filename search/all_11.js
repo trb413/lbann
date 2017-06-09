@@ -35,7 +35,7 @@ var searchData=
   ['reduce_5fscalar',['reduce_scalar',['../classlbann_1_1lbann__summary.html#aacd54e77d45bd1bd56df3a4d71c01ce8',1,'lbann::lbann_summary']]],
   ['reduce_5fstdev',['reduce_stdev',['../classlbann_1_1lbann__summary.html#ac388826d8854491b3df706a91cb4a689',1,'lbann::lbann_summary']]],
   ['regularizer',['regularizer',['../classlbann_1_1regularizer.html',1,'lbann']]],
-  ['regularizers',['regularizers',['../classlbann_1_1Layer.html#a9989c75430678d69efc2794ed40693b3',1,'lbann::Layer']]],
+  ['regularizers',['regularizers',['../classlbann_1_1Layer.html#a1f24c75d43b918020dbfb3056f70694d',1,'lbann::Layer']]],
   ['relu',['RELU',['../namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ad346bb4679d29be241279f15d7795c1c',1,'lbann']]],
   ['relu_5flayer',['reLU_layer',['../classlbann_1_1reLU__layer.html',1,'lbann']]],
   ['remove',['remove',['../classlbann_1_1sequential__model.html#a65505f140bd9ffa43af0ead3b911ae52',1,'lbann::sequential_model']]],

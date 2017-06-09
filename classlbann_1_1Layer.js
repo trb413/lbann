@@ -83,6 +83,6 @@ var classlbann_1_1Layer =
     [ "m_weights_gradient", "classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7", null ],
     [ "neural_network_model", "classlbann_1_1Layer.html#a9699f8d327ed26f98a52c750f38f8312", null ],
     [ "NumNeurons", "classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44", null ],
-    [ "regularizers", "classlbann_1_1Layer.html#a9989c75430678d69efc2794ed40693b3", null ],
+    [ "regularizers", "classlbann_1_1Layer.html#a1f24c75d43b918020dbfb3056f70694d", null ],
     [ "update_time", "classlbann_1_1Layer.html#abd6c1fa01659749b22de59baf8259b84", null ]
 ];

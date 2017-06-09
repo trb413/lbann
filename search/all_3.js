@@ -1,7 +1,7 @@
 var searchData=
 [
   ['calculate_5fnum_5fiterations_5fper_5fepoch',['calculate_num_iterations_per_epoch',['../classlbann_1_1distributed__minibatch__parallel__io.html#a4165f9b98de5946458f28dbd07462543',1,'lbann::distributed_minibatch_parallel_io::calculate_num_iterations_per_epoch()'],['../classlbann_1_1partitioned__minibatch__parallel__io.html#a0eed48bbbe3846be70af6e27b3402060',1,'lbann::partitioned_minibatch_parallel_io::calculate_num_iterations_per_epoch()']]],
-  ['callbacks',['callbacks',['../classlbann_1_1model.html#a4a9fe726740e2351e4280d1de57624cb',1,'lbann::model']]],
+  ['callbacks',['callbacks',['../classlbann_1_1model.html#aeb879b39af5e71c322616d72980e1334',1,'lbann::model']]],
   ['categorical_5faccuracy',['categorical_accuracy',['../classlbann_1_1metrics_1_1categorical__accuracy.html',1,'lbann::metrics']]],
   ['categorical_5faccuracy',['categorical_accuracy',['../classlbann_1_1metrics_1_1categorical__accuracy.html#afa4e32440e5edf1f010d07399cecbabd',1,'lbann::metrics::categorical_accuracy::categorical_accuracy()'],['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a576ea1a64c846beca09a6346ba791d6c',1,'lbann::metrics::categorical_accuracy()']]],
   ['categorical_5fcross_5fentropy',['categorical_cross_entropy',['../classlbann_1_1objective__functions_1_1categorical__cross__entropy.html',1,'lbann::objective_functions']]],
@@ -31,7 +31,7 @@ var searchData=
   ['col2im_5f2d',['col2im_2d',['../namespacelbann.html#a1953674a43b284f0abb5c5e4db94b2b9',1,'lbann']]],
   ['col_5fpixels',['col_pixels',['../classlbann_1_1lbann__image__preprocessor.html#a3e99be32b95a415fd8d616cb85075df1',1,'lbann::lbann_image_preprocessor']]],
   ['col_5freconstruction',['col_reconstruction',['../classlbann_1_1lbann__quantizer.html#aa58689369b5b3898b75b7b31ca574b38',1,'lbann::lbann_quantizer']]],
-  ['collective_5fbufs',['collective_bufs',['../classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec',1,'lbann::lbann_comm']]],
+  ['collective_5fbufs',['collective_bufs',['../classlbann_1_1lbann__comm.html#af055ddfb71382a411f4dca07f3e8bef3',1,'lbann::lbann_comm']]],
   ['colsummat',['ColSumMat',['../lbann__base_8hpp.html#a6034e0823933305d0bd7b5ef860f5c50',1,'lbann_base.hpp']]],
   ['colsumstarvcmat',['ColSumStarVCMat',['../lbann__base_8hpp.html#a2ea5e8901a69d1ea68208c313773f47e',1,'lbann_base.hpp']]],
   ['columnsum',['ColumnSum',['../namespaceEl.html#a09d5c471681b2b48fbe4c5e6bfd0b3d3',1,'El::ColumnSum(const Matrix&lt; F &gt; &amp;X, Matrix&lt; F &gt; &amp;sums)'],['../namespaceEl.html#a76d4388650bbfd78adaf57d150423020',1,'El::ColumnSum(const DistMatrix&lt; F, U, V, W &gt; &amp;A, DistMatrix&lt; F, V, STAR, W &gt; &amp;sums)']]],
@@ -65,7 +65,7 @@ var searchData=
   ['current_5fphase',['current_phase',['../structlbann__model__header.html#abc0a59c9871095d2a6dec05a82fafc1e',1,'lbann_model_header']]],
   ['current_5fstep',['current_step',['../structlbann__model__header.html#a35c523d94beb5593af480ae8ec3996bb',1,'lbann_model_header']]],
   ['currentpos',['CurrentPos',['../classlbann_1_1DataReader.html#a50648e62f6eafb634aa1faae9e3c8cac',1,'lbann::DataReader']]],
-  ['custom_5fschedule',['custom_schedule',['../classlbann_1_1lbann__callback__custom__learning__rate.html#ac6b8d106a3b4c77bf50ae28ddfb53a31',1,'lbann::lbann_callback_custom_learning_rate']]],
+  ['custom_5fschedule',['custom_schedule',['../classlbann_1_1lbann__callback__custom__learning__rate.html#a491d5d215477d46ec69450d10c5e46d3',1,'lbann::lbann_callback_custom_learning_rate']]],
   ['cutility',['CUtility',['../classlbann_1_1CUtility.html',1,'lbann']]],
   ['cv_5fpixels',['cv_pixels',['../classlbann_1_1lbann__image__preprocessor.html#a7dc609e33febdc7fc29bdc9270594bea',1,'lbann::lbann_image_preprocessor']]]
 ];

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-1-g8977da5-ci241246606</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2-gc3cfcde-ci241273174</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -92,8 +92,8 @@ $(document).ready(function(){initNavTree('lbann__callback__print_8hpp_source.htm
 <div class="title">lbann_callback_print.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="lbann__callback__print_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (c) 2014-2016, Lawrence Livermore National Security, LLC. </span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Produced at the Lawrence Livermore National Laboratory. </span></div>
+<a href="lbann__callback__print_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (c) 2014-2016, Lawrence Livermore National Security, LLC.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Produced at the Lawrence Livermore National Laboratory.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Written by the LBANN Research Team (B. Van Essen, et al.) listed in</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// the CONTRIBUTORS file. &lt;lbann-dev@llnl.gov&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//</span></div>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('lbann__callback__print_8hpp_source.htm
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// This file is part of LBANN: Livermore Big Artificial Neural Network</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// Toolkit. For details, see http://software.llnl.gov/LBANN or</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// https://github.com/LLNL/LBANN. </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// https://github.com/LLNL/LBANN.</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;Licensee&quot;); you</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// may not use this file except in compliance with the License.  You may</span></div>
@@ -126,20 +126,20 @@ $(document).ready(function(){initNavTree('lbann__callback__print_8hpp_source.htm
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span>lbann {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classlbann_1_1lbann__callback__print.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlbann_1_1lbann__callback__print.html">lbann_callback_print</a> : <span class="keyword">public</span> <a class="code" href="classlbann_1_1lbann__callback.html">lbann_callback</a> {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classlbann_1_1lbann__callback__print.html#ac9238836c6fdd163cf0a1b7dc68b94b4">   41</a></span>&#160;  <a class="code" href="classlbann_1_1lbann__callback__print.html#ac9238836c6fdd163cf0a1b7dc68b94b4">lbann_callback_print</a>(<span class="keywordtype">int</span> _batch_interval = 1) : <a class="code" href="classlbann_1_1lbann__callback.html">lbann_callback</a>(_batch_interval) {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c">set_name</a>(<span class="stringliteral">&quot;print&quot;</span>);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__callback__print.html#a20f47078a52afa81039c68d12fe29dc1">setup</a>(<a class="code" href="classlbann_1_1model.html">model</a>* m);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__callback__print.html#ac0425adca2bb81a02cd1f3d67cadbae0">on_epoch_begin</a>(<a class="code" href="classlbann_1_1model.html">model</a>* m);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__callback__print.html#a8476b787abe4b035570b2ccc577a5062">on_epoch_end</a>(<a class="code" href="classlbann_1_1model.html">model</a>* m);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__callback__print.html#a16c68b70cb9a24d8268a055d96c7bdad">on_test_end</a>(<a class="code" href="classlbann_1_1model.html">model</a>* m);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__callback__print.html#a20f47078a52afa81039c68d12fe29dc1">setup</a>(<a class="code" href="classlbann_1_1model.html">model</a> *m);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__callback__print.html#ac0425adca2bb81a02cd1f3d67cadbae0">on_epoch_begin</a>(<a class="code" href="classlbann_1_1model.html">model</a> *m);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__callback__print.html#a8476b787abe4b035570b2ccc577a5062">on_epoch_end</a>(<a class="code" href="classlbann_1_1model.html">model</a> *m);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__callback__print.html#a16c68b70cb9a24d8268a055d96c7bdad">on_test_end</a>(<a class="code" href="classlbann_1_1model.html">model</a> *m);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}  <span class="comment">// namespace lbann</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif  // LBANN_CALLBACKS_CALLBACK_PRINT_HPP_INCLUDED</span></div>
-<div class="ttc" id="classlbann_1_1lbann__callback_html_ae8c3014d503a9ae1b0a16f6cc0cb5b4c"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c">lbann::lbann_callback::set_name</a></div><div class="ttdeci">void set_name(std::string name)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00112">lbann_callback.hpp:112</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__callback_html_ae8c3014d503a9ae1b0a16f6cc0cb5b4c"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c">lbann::lbann_callback::set_name</a></div><div class="ttdeci">void set_name(std::string name)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00114">lbann_callback.hpp:114</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__print_html"><div class="ttname"><a href="classlbann_1_1lbann__callback__print.html">lbann::lbann_callback_print</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__print_8hpp_source.html#l00039">lbann_callback_print.hpp:39</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__print_html_a20f47078a52afa81039c68d12fe29dc1"><div class="ttname"><a href="classlbann_1_1lbann__callback__print.html#a20f47078a52afa81039c68d12fe29dc1">lbann::lbann_callback_print::setup</a></div><div class="ttdeci">void setup(model *m)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__print_8cpp_source.html#l00034">lbann_callback_print.cpp:34</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__print_html_a8476b787abe4b035570b2ccc577a5062"><div class="ttname"><a href="classlbann_1_1lbann__callback__print.html#a8476b787abe4b035570b2ccc577a5062">lbann::lbann_callback_print::on_epoch_end</a></div><div class="ttdeci">void on_epoch_end(model *m)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__print_8cpp_source.html#l00052">lbann_callback_print.cpp:52</a></div></div>
@@ -155,7 +155,7 @@ $(document).ready(function(){initNavTree('lbann__callback__print_8hpp_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_eb8329679e609af11719ceffa3ff5139.html">include</a></li><li class="navelem"><a class="el" href="dir_ae19bb3c4b74b705a5918893bf9adbdd.html">lbann</a></li><li class="navelem"><a class="el" href="dir_86ea002d1bbf4ba4531b8a232bdd1c36.html">callbacks</a></li><li class="navelem"><a class="el" href="lbann__callback__print_8hpp.html">lbann_callback_print.hpp</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 15:43:57 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 18:19:22 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-1-g8977da5-ci241246606</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2-gc3cfcde-ci241273174</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -394,7 +394,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html#l00037">37</a> of file <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html">lbann_data_reader_synthetic.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html#l00036">36</a> of file <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html">lbann_data_reader_synthetic.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a1fb97f1bb06bb13153576228a22f90b3"></a>
 <div class="memitem">
@@ -433,14 +433,13 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html#l00038">38</a> of file <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html">lbann_data_reader_synthetic.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  : <a class="code" href="classlbann_1_1DataReader.html#a69ca77afdbe79e8a53c6440e31a854f9">DataReader</a>(batch_size, shuffle)</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">m_num_samples</a> = num_samples;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">m_num_features</a> = num_features;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1DataReader_html_a69ca77afdbe79e8a53c6440e31a854f9"><div class="ttname"><a href="classlbann_1_1DataReader.html#a69ca77afdbe79e8a53c6440e31a854f9">lbann::DataReader::DataReader</a></div><div class="ttdeci">DataReader(int batchSize, bool shuffle=true)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00060">lbann_data_reader.hpp:60</a></div></div>
-<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_a18f0ba6014a0f1edec24c7c3c109c520"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">lbann::data_reader_synthetic::m_num_features</a></div><div class="ttdeci">int m_num_features</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00058">lbann_data_reader_synthetic.hpp:58</a></div></div>
-<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_aa71d4bc62be7cf93eb6e85abf82d6b1f"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">lbann::data_reader_synthetic::m_num_samples</a></div><div class="ttdeci">int m_num_samples</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00057">lbann_data_reader_synthetic.hpp:57</a></div></div>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  : <a class="code" href="classlbann_1_1DataReader.html#a69ca77afdbe79e8a53c6440e31a854f9">DataReader</a>(batch_size, shuffle) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">m_num_samples</a> = num_samples;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">m_num_features</a> = num_features;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1DataReader_html_a69ca77afdbe79e8a53c6440e31a854f9"><div class="ttname"><a href="classlbann_1_1DataReader.html#a69ca77afdbe79e8a53c6440e31a854f9">lbann::DataReader::DataReader</a></div><div class="ttdeci">DataReader(int batchSize, bool shuffle=true)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00058">lbann_data_reader.hpp:58</a></div></div>
+<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_a18f0ba6014a0f1edec24c7c3c109c520"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">lbann::data_reader_synthetic::m_num_features</a></div><div class="ttdeci">int m_num_features</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00062">lbann_data_reader_synthetic.hpp:62</a></div></div>
+<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_aa71d4bc62be7cf93eb6e85abf82d6b1f"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">lbann::data_reader_synthetic::m_num_samples</a></div><div class="ttdeci">int m_num_samples</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00061">lbann_data_reader_synthetic.hpp:61</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -474,8 +473,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html#l00045">45</a> of file <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html">lbann_data_reader_synthetic.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  : <a class="code" href="classlbann_1_1data__reader__synthetic.html#a1fb97f1bb06bb13153576228a22f90b3">data_reader_synthetic</a>(batch_size, num_samples, num_features, <span class="keyword">true</span>) {}</div>
+<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html#l00044">44</a> of file <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html">lbann_data_reader_synthetic.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  : <a class="code" href="classlbann_1_1data__reader__synthetic.html#a1fb97f1bb06bb13153576228a22f90b3">data_reader_synthetic</a>(batch_size, num_samples, num_features, <span class="keyword">true</span>) {}</div>
 <div class="ttc" id="classlbann_1_1data__reader__synthetic_html_a1fb97f1bb06bb13153576228a22f90b3"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#a1fb97f1bb06bb13153576228a22f90b3">lbann::data_reader_synthetic::data_reader_synthetic</a></div><div class="ttdeci">data_reader_synthetic(int batchSize, int num_samples, int num_features, bool shuffle)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8cpp_source.html#l00038">lbann_data_reader_synthetic.cpp:38</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -494,13 +493,13 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html#l00049">49</a> of file <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html">lbann_data_reader_synthetic.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  : <a class="code" href="classlbann_1_1DataReader.html#a69ca77afdbe79e8a53c6440e31a854f9">DataReader</a>((<span class="keyword">const</span> <a class="code" href="classlbann_1_1DataReader.html#a69ca77afdbe79e8a53c6440e31a854f9">DataReader</a>&amp;) source),</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;   <a class="code" href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">m_num_samples</a>(source.m_num_samples), <a class="code" href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">m_num_features</a>(source.m_num_features)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  { }</div>
-<div class="ttc" id="classlbann_1_1DataReader_html_a69ca77afdbe79e8a53c6440e31a854f9"><div class="ttname"><a href="classlbann_1_1DataReader.html#a69ca77afdbe79e8a53c6440e31a854f9">lbann::DataReader::DataReader</a></div><div class="ttdeci">DataReader(int batchSize, bool shuffle=true)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00060">lbann_data_reader.hpp:60</a></div></div>
-<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_a18f0ba6014a0f1edec24c7c3c109c520"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">lbann::data_reader_synthetic::m_num_features</a></div><div class="ttdeci">int m_num_features</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00058">lbann_data_reader_synthetic.hpp:58</a></div></div>
-<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_aa71d4bc62be7cf93eb6e85abf82d6b1f"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">lbann::data_reader_synthetic::m_num_samples</a></div><div class="ttdeci">int m_num_samples</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00057">lbann_data_reader_synthetic.hpp:57</a></div></div>
+<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html#l00048">48</a> of file <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html">lbann_data_reader_synthetic.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  : <a class="code" href="classlbann_1_1DataReader.html#a69ca77afdbe79e8a53c6440e31a854f9">DataReader</a>((<span class="keyword">const</span> <a class="code" href="classlbann_1_1DataReader.html#a69ca77afdbe79e8a53c6440e31a854f9">DataReader</a>&amp;) source),</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">m_num_samples</a>(source.m_num_samples), <a class="code" href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">m_num_features</a>(source.m_num_features)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{ }</div>
+<div class="ttc" id="classlbann_1_1DataReader_html_a69ca77afdbe79e8a53c6440e31a854f9"><div class="ttname"><a href="classlbann_1_1DataReader.html#a69ca77afdbe79e8a53c6440e31a854f9">lbann::DataReader::DataReader</a></div><div class="ttdeci">DataReader(int batchSize, bool shuffle=true)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00058">lbann_data_reader.hpp:58</a></div></div>
+<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_a18f0ba6014a0f1edec24c7c3c109c520"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">lbann::data_reader_synthetic::m_num_features</a></div><div class="ttdeci">int m_num_features</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00062">lbann_data_reader_synthetic.hpp:62</a></div></div>
+<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_aa71d4bc62be7cf93eb6e85abf82d6b1f"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">lbann::data_reader_synthetic::m_num_samples</a></div><div class="ttdeci">int m_num_samples</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00061">lbann_data_reader_synthetic.hpp:61</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -517,10 +516,10 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html#l00054">54</a> of file <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html">lbann_data_reader_synthetic.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html#l00053">53</a> of file <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html">lbann_data_reader_synthetic.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                   {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -549,21 +548,21 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1DataReader.html#a36d3c8f5f9e61b3e79261f3b32686191">lbann::DataReader</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html#l00062">62</a> of file <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html">lbann_data_reader_synthetic.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1DataReader.html#a0cb7850655f78075dec9875c9ef40a31">DataReader::position_valid</a>()) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">int</span> current_batch_size = <a class="code" href="classlbann_1_1DataReader.html#a1efcfbbdca579fc0b356e49ef181d416">getBatchSize</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="comment">//@todo: generalize to take different data distribution/generator</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  El::Gaussian(X, <a class="code" href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">m_num_features</a>, current_batch_size, <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0), <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1));</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordflow">return</span> current_batch_size;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html#l00060">60</a> of file <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html">lbann_data_reader_synthetic.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                                 {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1DataReader.html#a0cb7850655f78075dec9875c9ef40a31">DataReader::position_valid</a>()) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">int</span> current_batch_size = <a class="code" href="classlbann_1_1DataReader.html#a1efcfbbdca579fc0b356e49ef181d416">getBatchSize</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="comment">//@todo: generalize to take different data distribution/generator</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  El::Gaussian(X, <a class="code" href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">m_num_features</a>, current_batch_size, <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0), <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1));</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">return</span> current_batch_size;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1DataReader_html_a1efcfbbdca579fc0b356e49ef181d416"><div class="ttname"><a href="classlbann_1_1DataReader.html#a1efcfbbdca579fc0b356e49ef181d416">lbann::DataReader::getBatchSize</a></div><div class="ttdeci">int getBatchSize()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8cpp_source.html#l00098">lbann_data_reader.cpp:98</a></div></div>
-<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_a18f0ba6014a0f1edec24c7c3c109c520"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">lbann::data_reader_synthetic::m_num_features</a></div><div class="ttdeci">int m_num_features</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00058">lbann_data_reader_synthetic.hpp:58</a></div></div>
-<div class="ttc" id="classlbann_1_1DataReader_html_a0cb7850655f78075dec9875c9ef40a31"><div class="ttname"><a href="classlbann_1_1DataReader.html#a0cb7850655f78075dec9875c9ef40a31">lbann::DataReader::position_valid</a></div><div class="ttdeci">bool position_valid()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00246">lbann_data_reader.hpp:246</a></div></div>
+<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_a18f0ba6014a0f1edec24c7c3c109c520"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">lbann::data_reader_synthetic::m_num_features</a></div><div class="ttdeci">int m_num_features</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00062">lbann_data_reader_synthetic.hpp:62</a></div></div>
+<div class="ttc" id="classlbann_1_1DataReader_html_a0cb7850655f78075dec9875c9ef40a31"><div class="ttname"><a href="classlbann_1_1DataReader.html#a0cb7850655f78075dec9875c9ef40a31">lbann::DataReader::position_valid</a></div><div class="ttdeci">bool position_valid()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00258">lbann_data_reader.hpp:258</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00037">lbann_base.hpp:37</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -600,9 +599,11 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1DataReader.html#a4324d4deedbb92f5306b3289c4812f9f">lbann::DataReader</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html#l00054">54</a> of file <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html">lbann_data_reader_synthetic.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">m_num_features</a>; }</div>
-<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_a18f0ba6014a0f1edec24c7c3c109c520"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">lbann::data_reader_synthetic::m_num_features</a></div><div class="ttdeci">int m_num_features</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00058">lbann_data_reader_synthetic.hpp:58</a></div></div>
+<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html#l00056">56</a> of file <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html">lbann_data_reader_synthetic.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                 {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">m_num_features</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_a18f0ba6014a0f1edec24c7c3c109c520"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">lbann::data_reader_synthetic::m_num_features</a></div><div class="ttdeci">int m_num_features</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00062">lbann_data_reader_synthetic.hpp:62</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -628,8 +629,10 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html#l00052">52</a> of file <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html">lbann_data_reader_synthetic.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">m_num_features</a>;}</div>
-<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_a18f0ba6014a0f1edec24c7c3c109c520"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">lbann::data_reader_synthetic::m_num_features</a></div><div class="ttdeci">int m_num_features</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00058">lbann_data_reader_synthetic.hpp:58</a></div></div>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                         {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">m_num_features</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_a18f0ba6014a0f1edec24c7c3c109c520"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">lbann::data_reader_synthetic::m_num_features</a></div><div class="ttdeci">int m_num_features</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00062">lbann_data_reader_synthetic.hpp:62</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -654,9 +657,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html#l00051">51</a> of file <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html">lbann_data_reader_synthetic.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">m_num_samples</a>;}</div>
-<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_aa71d4bc62be7cf93eb6e85abf82d6b1f"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">lbann::data_reader_synthetic::m_num_samples</a></div><div class="ttdeci">int m_num_samples</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00057">lbann_data_reader_synthetic.hpp:57</a></div></div>
+<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html#l00049">49</a> of file <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html">lbann_data_reader_synthetic.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                        {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">m_num_samples</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_aa71d4bc62be7cf93eb6e85abf82d6b1f"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">lbann::data_reader_synthetic::m_num_samples</a></div><div class="ttdeci">int m_num_samples</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00061">lbann_data_reader_synthetic.hpp:61</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -684,17 +689,17 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classlbann_1_1DataReader.html#a1272f197576d48b53168ce8e260de370">lbann::DataReader</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html#l00077">77</a> of file <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html">lbann_data_reader_synthetic.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="comment">//set indices/ number of features</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="classlbann_1_1DataReader.html#a17405e51da149192baadc64a601fd352">ShuffledIndices</a>.clear();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="classlbann_1_1DataReader.html#a17405e51da149192baadc64a601fd352">ShuffledIndices</a>.resize(<a class="code" href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">m_num_samples</a>);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="classlbann_1_1DataReader.html#ac8a62e0656e6279040b7edc26d6fb996">select_subset_of_data</a>();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html#l00074">74</a> of file <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html">lbann_data_reader_synthetic.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                      {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="comment">//set indices/ number of features</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="classlbann_1_1DataReader.html#a17405e51da149192baadc64a601fd352">ShuffledIndices</a>.clear();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="classlbann_1_1DataReader.html#a17405e51da149192baadc64a601fd352">ShuffledIndices</a>.resize(<a class="code" href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">m_num_samples</a>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="classlbann_1_1DataReader.html#ac8a62e0656e6279040b7edc26d6fb996">select_subset_of_data</a>();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1DataReader_html_ac8a62e0656e6279040b7edc26d6fb996"><div class="ttname"><a href="classlbann_1_1DataReader.html#ac8a62e0656e6279040b7edc26d6fb996">lbann::DataReader::select_subset_of_data</a></div><div class="ttdeci">void select_subset_of_data()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8cpp_source.html#l00117">lbann_data_reader.cpp:117</a></div></div>
-<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_aa71d4bc62be7cf93eb6e85abf82d6b1f"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">lbann::data_reader_synthetic::m_num_samples</a></div><div class="ttdeci">int m_num_samples</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00057">lbann_data_reader_synthetic.hpp:57</a></div></div>
-<div class="ttc" id="classlbann_1_1DataReader_html_a17405e51da149192baadc64a601fd352"><div class="ttname"><a href="classlbann_1_1DataReader.html#a17405e51da149192baadc64a601fd352">lbann::DataReader::ShuffledIndices</a></div><div class="ttdeci">std::vector&lt; int &gt; ShuffledIndices</div><div class="ttdoc">How many iterations all readers will execute. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00316">lbann_data_reader.hpp:316</a></div></div>
+<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_aa71d4bc62be7cf93eb6e85abf82d6b1f"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">lbann::data_reader_synthetic::m_num_samples</a></div><div class="ttdeci">int m_num_samples</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00061">lbann_data_reader_synthetic.hpp:61</a></div></div>
+<div class="ttc" id="classlbann_1_1DataReader_html_a17405e51da149192baadc64a601fd352"><div class="ttname"><a href="classlbann_1_1DataReader.html#a17405e51da149192baadc64a601fd352">lbann::DataReader::ShuffledIndices</a></div><div class="ttdeci">std::vector&lt; int &gt; ShuffledIndices</div><div class="ttdoc">How many iterations all readers will execute. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00354">lbann_data_reader.hpp:354</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -712,25 +717,26 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html#l00086">86</a> of file <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html">lbann_data_reader_synthetic.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
+<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html#l00082">82</a> of file <a class="el" href="lbann__data__reader__synthetic_8cpp_source.html">lbann_data_reader_synthetic.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                                                                                     {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="comment">// check for self-assignment</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">this</span> == &amp;source) {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="comment">// check for self-assignment</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">this</span> == &amp;source)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="comment">// Call the parent operator= function</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="classlbann_1_1DataReader.html#a497d6b1c3ac47e14e9795ff771888905">DataReader::operator=</a>(source);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="comment">// Call the parent operator= function</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="classlbann_1_1DataReader.html#a497d6b1c3ac47e14e9795ff771888905">DataReader::operator=</a>(source);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  this-&gt;<a class="code" href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">m_num_samples</a> = source.m_num_samples;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  this-&gt;<a class="code" href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">m_num_features</a> = source.m_num_features;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  this-&gt;<a class="code" href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">m_num_samples</a> = source.m_num_samples;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  this-&gt;<a class="code" href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">m_num_features</a> = source.m_num_features;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_a18f0ba6014a0f1edec24c7c3c109c520"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">lbann::data_reader_synthetic::m_num_features</a></div><div class="ttdeci">int m_num_features</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00058">lbann_data_reader_synthetic.hpp:58</a></div></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_a18f0ba6014a0f1edec24c7c3c109c520"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#a18f0ba6014a0f1edec24c7c3c109c520">lbann::data_reader_synthetic::m_num_features</a></div><div class="ttdeci">int m_num_features</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00062">lbann_data_reader_synthetic.hpp:62</a></div></div>
 <div class="ttc" id="classlbann_1_1DataReader_html_a497d6b1c3ac47e14e9795ff771888905"><div class="ttname"><a href="classlbann_1_1DataReader.html#a497d6b1c3ac47e14e9795ff771888905">lbann::DataReader::operator=</a></div><div class="ttdeci">DataReader &amp; operator=(const DataReader &amp;source)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8cpp_source.html#l00161">lbann_data_reader.cpp:161</a></div></div>
-<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_aa71d4bc62be7cf93eb6e85abf82d6b1f"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">lbann::data_reader_synthetic::m_num_samples</a></div><div class="ttdeci">int m_num_samples</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00057">lbann_data_reader_synthetic.hpp:57</a></div></div>
+<div class="ttc" id="classlbann_1_1data__reader__synthetic_html_aa71d4bc62be7cf93eb6e85abf82d6b1f"><div class="ttname"><a href="classlbann_1_1data__reader__synthetic.html#aa71d4bc62be7cf93eb6e85abf82d6b1f">lbann::data_reader_synthetic::m_num_samples</a></div><div class="ttdeci">int m_num_samples</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__synthetic_8hpp_source.html#l00061">lbann_data_reader_synthetic.hpp:61</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -762,7 +768,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html#l00058">58</a> of file <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html">lbann_data_reader_synthetic.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html#l00062">62</a> of file <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html">lbann_data_reader_synthetic.hpp</a>.</p>
 
 </div>
 </div>
@@ -784,7 +790,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html#l00057">57</a> of file <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html">lbann_data_reader_synthetic.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html#l00061">61</a> of file <a class="el" href="lbann__data__reader__synthetic_8hpp_source.html">lbann_data_reader_synthetic.hpp</a>.</p>
 
 </div>
 </div>
@@ -798,7 +804,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1data__reader__synthetic.html">data_reader_synthetic</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 15:43:59 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 18:19:23 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

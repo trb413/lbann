@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-1-g8977da5-ci241246606</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2-gc3cfcde-ci241273174</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -166,7 +166,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Factory for Adam optimizer. </p>
 
-<p>Definition at line <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00085">85</a> of file <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html">lbann_optimizer_hypergradient_adam.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00083">83</a> of file <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html">lbann_optimizer_hypergradient_adam.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a7591af4b3fa9dea8b496aae2551d3c4c"></a>
 <div class="memitem">
@@ -227,12 +227,12 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <a class="code" href="classlbann_1_1hypergradient__adam__factory.html#ab43fa26e4c8e2df24e1298102de54f69">m_beta2</a>(beta2),</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <a class="code" href="classlbann_1_1hypergradient__adam__factory.html#ad2ec7b07d9a0860462f7234c174e3ad0">m_eps</a>(eps) {}</div>
 <div class="ttc" id="classlbann_1_1optimizer__factory_html_a6180e1301ee5cd1a4fd77cc6ba9a4ef5"><div class="ttname"><a href="classlbann_1_1optimizer__factory.html#a6180e1301ee5cd1a4fd77cc6ba9a4ef5">lbann::optimizer_factory::optimizer_factory</a></div><div class="ttdeci">optimizer_factory(lbann_comm *comm, const std::string name)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8cpp_source.html#l00061">lbann_optimizer.cpp:61</a></div></div>
-<div class="ttc" id="classlbann_1_1hypergradient__adam__factory_html_ad2ec7b07d9a0860462f7234c174e3ad0"><div class="ttname"><a href="classlbann_1_1hypergradient__adam__factory.html#ad2ec7b07d9a0860462f7234c174e3ad0">lbann::hypergradient_adam_factory::m_eps</a></div><div class="ttdeci">DataType m_eps</div><div class="ttdoc">Small factor to avoid division by zero. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00110">lbann_optimizer_hypergradient_adam.hpp:110</a></div></div>
-<div class="ttc" id="classlbann_1_1hypergradient__adam__factory_html_ab43fa26e4c8e2df24e1298102de54f69"><div class="ttname"><a href="classlbann_1_1hypergradient__adam__factory.html#ab43fa26e4c8e2df24e1298102de54f69">lbann::hypergradient_adam_factory::m_beta2</a></div><div class="ttdeci">DataType m_beta2</div><div class="ttdoc">Update factor for second moment estimate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00108">lbann_optimizer_hypergradient_adam.hpp:108</a></div></div>
-<div class="ttc" id="classlbann_1_1hypergradient__adam__factory_html_acad4be5abb4870afe10ef1332c7ab50b"><div class="ttname"><a href="classlbann_1_1hypergradient__adam__factory.html#acad4be5abb4870afe10ef1332c7ab50b">lbann::hypergradient_adam_factory::m_beta1</a></div><div class="ttdeci">DataType m_beta1</div><div class="ttdoc">Update factor for first moment estimate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00106">lbann_optimizer_hypergradient_adam.hpp:106</a></div></div>
-<div class="ttc" id="classlbann_1_1hypergradient__adam__factory_html_a71b635606b60c528a8cff7537d463560"><div class="ttname"><a href="classlbann_1_1hypergradient__adam__factory.html#a71b635606b60c528a8cff7537d463560">lbann::hypergradient_adam_factory::m_hyper_learning_rate</a></div><div class="ttdeci">DataType m_hyper_learning_rate</div><div class="ttdoc">Hypergradient learning rate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00104">lbann_optimizer_hypergradient_adam.hpp:104</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer__factory_html_aa86663b945c9ff77bfa334a10dc978e1"><div class="ttname"><a href="classlbann_1_1optimizer__factory.html#aa86663b945c9ff77bfa334a10dc978e1">lbann::optimizer_factory::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdoc">LBANN communicator. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00120">lbann_optimizer.hpp:120</a></div></div>
-<div class="ttc" id="classlbann_1_1hypergradient__adam__factory_html_a6ac2796cc9540aa335e3e81c2d6c9b35"><div class="ttname"><a href="classlbann_1_1hypergradient__adam__factory.html#a6ac2796cc9540aa335e3e81c2d6c9b35">lbann::hypergradient_adam_factory::m_learning_rate</a></div><div class="ttdeci">DataType m_learning_rate</div><div class="ttdoc">Initial learning rate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00102">lbann_optimizer_hypergradient_adam.hpp:102</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam__factory_html_ad2ec7b07d9a0860462f7234c174e3ad0"><div class="ttname"><a href="classlbann_1_1hypergradient__adam__factory.html#ad2ec7b07d9a0860462f7234c174e3ad0">lbann::hypergradient_adam_factory::m_eps</a></div><div class="ttdeci">DataType m_eps</div><div class="ttdoc">Small factor to avoid division by zero. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00107">lbann_optimizer_hypergradient_adam.hpp:107</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam__factory_html_ab43fa26e4c8e2df24e1298102de54f69"><div class="ttname"><a href="classlbann_1_1hypergradient__adam__factory.html#ab43fa26e4c8e2df24e1298102de54f69">lbann::hypergradient_adam_factory::m_beta2</a></div><div class="ttdeci">DataType m_beta2</div><div class="ttdoc">Update factor for second moment estimate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00105">lbann_optimizer_hypergradient_adam.hpp:105</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam__factory_html_acad4be5abb4870afe10ef1332c7ab50b"><div class="ttname"><a href="classlbann_1_1hypergradient__adam__factory.html#acad4be5abb4870afe10ef1332c7ab50b">lbann::hypergradient_adam_factory::m_beta1</a></div><div class="ttdeci">DataType m_beta1</div><div class="ttdoc">Update factor for first moment estimate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00103">lbann_optimizer_hypergradient_adam.hpp:103</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam__factory_html_a71b635606b60c528a8cff7537d463560"><div class="ttname"><a href="classlbann_1_1hypergradient__adam__factory.html#a71b635606b60c528a8cff7537d463560">lbann::hypergradient_adam_factory::m_hyper_learning_rate</a></div><div class="ttdeci">DataType m_hyper_learning_rate</div><div class="ttdoc">Hypergradient learning rate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00101">lbann_optimizer_hypergradient_adam.hpp:101</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer__factory_html_aa86663b945c9ff77bfa334a10dc978e1"><div class="ttname"><a href="classlbann_1_1optimizer__factory.html#aa86663b945c9ff77bfa334a10dc978e1">lbann::optimizer_factory::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdoc">LBANN communicator. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00129">lbann_optimizer.hpp:129</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam__factory_html_a6ac2796cc9540aa335e3e81c2d6c9b35"><div class="ttname"><a href="classlbann_1_1hypergradient__adam__factory.html#a6ac2796cc9540aa335e3e81c2d6c9b35">lbann::hypergradient_adam_factory::m_learning_rate</a></div><div class="ttdeci">DataType m_learning_rate</div><div class="ttdoc">Initial learning rate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00099">lbann_optimizer_hypergradient_adam.hpp:99</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -295,12 +295,12 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">new</span> hypergradient_adam(<a class="code" href="classlbann_1_1optimizer__factory.html#aa86663b945c9ff77bfa334a10dc978e1">comm</a>, <a class="code" href="classlbann_1_1hypergradient__adam__factory.html#a6ac2796cc9540aa335e3e81c2d6c9b35">m_learning_rate</a>, <a class="code" href="classlbann_1_1hypergradient__adam__factory.html#a71b635606b60c528a8cff7537d463560">m_hyper_learning_rate</a>,</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                                <a class="code" href="classlbann_1_1hypergradient__adam__factory.html#acad4be5abb4870afe10ef1332c7ab50b">m_beta1</a>, <a class="code" href="classlbann_1_1hypergradient__adam__factory.html#ab43fa26e4c8e2df24e1298102de54f69">m_beta2</a>, <a class="code" href="classlbann_1_1hypergradient__adam__factory.html#ad2ec7b07d9a0860462f7234c174e3ad0">m_eps</a>);</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1hypergradient__adam__factory_html_ad2ec7b07d9a0860462f7234c174e3ad0"><div class="ttname"><a href="classlbann_1_1hypergradient__adam__factory.html#ad2ec7b07d9a0860462f7234c174e3ad0">lbann::hypergradient_adam_factory::m_eps</a></div><div class="ttdeci">DataType m_eps</div><div class="ttdoc">Small factor to avoid division by zero. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00110">lbann_optimizer_hypergradient_adam.hpp:110</a></div></div>
-<div class="ttc" id="classlbann_1_1hypergradient__adam__factory_html_ab43fa26e4c8e2df24e1298102de54f69"><div class="ttname"><a href="classlbann_1_1hypergradient__adam__factory.html#ab43fa26e4c8e2df24e1298102de54f69">lbann::hypergradient_adam_factory::m_beta2</a></div><div class="ttdeci">DataType m_beta2</div><div class="ttdoc">Update factor for second moment estimate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00108">lbann_optimizer_hypergradient_adam.hpp:108</a></div></div>
-<div class="ttc" id="classlbann_1_1hypergradient__adam__factory_html_acad4be5abb4870afe10ef1332c7ab50b"><div class="ttname"><a href="classlbann_1_1hypergradient__adam__factory.html#acad4be5abb4870afe10ef1332c7ab50b">lbann::hypergradient_adam_factory::m_beta1</a></div><div class="ttdeci">DataType m_beta1</div><div class="ttdoc">Update factor for first moment estimate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00106">lbann_optimizer_hypergradient_adam.hpp:106</a></div></div>
-<div class="ttc" id="classlbann_1_1hypergradient__adam__factory_html_a71b635606b60c528a8cff7537d463560"><div class="ttname"><a href="classlbann_1_1hypergradient__adam__factory.html#a71b635606b60c528a8cff7537d463560">lbann::hypergradient_adam_factory::m_hyper_learning_rate</a></div><div class="ttdeci">DataType m_hyper_learning_rate</div><div class="ttdoc">Hypergradient learning rate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00104">lbann_optimizer_hypergradient_adam.hpp:104</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer__factory_html_aa86663b945c9ff77bfa334a10dc978e1"><div class="ttname"><a href="classlbann_1_1optimizer__factory.html#aa86663b945c9ff77bfa334a10dc978e1">lbann::optimizer_factory::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdoc">LBANN communicator. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00120">lbann_optimizer.hpp:120</a></div></div>
-<div class="ttc" id="classlbann_1_1hypergradient__adam__factory_html_a6ac2796cc9540aa335e3e81c2d6c9b35"><div class="ttname"><a href="classlbann_1_1hypergradient__adam__factory.html#a6ac2796cc9540aa335e3e81c2d6c9b35">lbann::hypergradient_adam_factory::m_learning_rate</a></div><div class="ttdeci">DataType m_learning_rate</div><div class="ttdoc">Initial learning rate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00102">lbann_optimizer_hypergradient_adam.hpp:102</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam__factory_html_ad2ec7b07d9a0860462f7234c174e3ad0"><div class="ttname"><a href="classlbann_1_1hypergradient__adam__factory.html#ad2ec7b07d9a0860462f7234c174e3ad0">lbann::hypergradient_adam_factory::m_eps</a></div><div class="ttdeci">DataType m_eps</div><div class="ttdoc">Small factor to avoid division by zero. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00107">lbann_optimizer_hypergradient_adam.hpp:107</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam__factory_html_ab43fa26e4c8e2df24e1298102de54f69"><div class="ttname"><a href="classlbann_1_1hypergradient__adam__factory.html#ab43fa26e4c8e2df24e1298102de54f69">lbann::hypergradient_adam_factory::m_beta2</a></div><div class="ttdeci">DataType m_beta2</div><div class="ttdoc">Update factor for second moment estimate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00105">lbann_optimizer_hypergradient_adam.hpp:105</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam__factory_html_acad4be5abb4870afe10ef1332c7ab50b"><div class="ttname"><a href="classlbann_1_1hypergradient__adam__factory.html#acad4be5abb4870afe10ef1332c7ab50b">lbann::hypergradient_adam_factory::m_beta1</a></div><div class="ttdeci">DataType m_beta1</div><div class="ttdoc">Update factor for first moment estimate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00103">lbann_optimizer_hypergradient_adam.hpp:103</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam__factory_html_a71b635606b60c528a8cff7537d463560"><div class="ttname"><a href="classlbann_1_1hypergradient__adam__factory.html#a71b635606b60c528a8cff7537d463560">lbann::hypergradient_adam_factory::m_hyper_learning_rate</a></div><div class="ttdeci">DataType m_hyper_learning_rate</div><div class="ttdoc">Hypergradient learning rate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00101">lbann_optimizer_hypergradient_adam.hpp:101</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer__factory_html_aa86663b945c9ff77bfa334a10dc978e1"><div class="ttname"><a href="classlbann_1_1optimizer__factory.html#aa86663b945c9ff77bfa334a10dc978e1">lbann::optimizer_factory::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdoc">LBANN communicator. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00129">lbann_optimizer.hpp:129</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam__factory_html_a6ac2796cc9540aa335e3e81c2d6c9b35"><div class="ttname"><a href="classlbann_1_1hypergradient__adam__factory.html#a6ac2796cc9540aa335e3e81c2d6c9b35">lbann::hypergradient_adam_factory::m_learning_rate</a></div><div class="ttdeci">DataType m_learning_rate</div><div class="ttdoc">Initial learning rate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00099">lbann_optimizer_hypergradient_adam.hpp:99</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -325,7 +325,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Update factor for first moment estimate. </p>
 
-<p>Definition at line <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00106">106</a> of file <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html">lbann_optimizer_hypergradient_adam.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00103">103</a> of file <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html">lbann_optimizer_hypergradient_adam.hpp</a>.</p>
 
 </div>
 </div>
@@ -349,7 +349,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Update factor for second moment estimate. </p>
 
-<p>Definition at line <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00108">108</a> of file <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html">lbann_optimizer_hypergradient_adam.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00105">105</a> of file <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html">lbann_optimizer_hypergradient_adam.hpp</a>.</p>
 
 </div>
 </div>
@@ -373,7 +373,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Small factor to avoid division by zero. </p>
 
-<p>Definition at line <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00110">110</a> of file <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html">lbann_optimizer_hypergradient_adam.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00107">107</a> of file <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html">lbann_optimizer_hypergradient_adam.hpp</a>.</p>
 
 </div>
 </div>
@@ -397,7 +397,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Hypergradient learning rate. </p>
 
-<p>Definition at line <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00104">104</a> of file <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html">lbann_optimizer_hypergradient_adam.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00101">101</a> of file <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html">lbann_optimizer_hypergradient_adam.hpp</a>.</p>
 
 </div>
 </div>
@@ -421,7 +421,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Initial learning rate. </p>
 
-<p>Definition at line <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00102">102</a> of file <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html">lbann_optimizer_hypergradient_adam.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html#l00099">99</a> of file <a class="el" href="lbann__optimizer__hypergradient__adam_8hpp_source.html">lbann_optimizer_hypergradient_adam.hpp</a>.</p>
 
 </div>
 </div>
@@ -435,7 +435,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1hypergradient__adam__factory.html">hypergradient_adam_factory</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 15:44:01 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 18:19:24 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

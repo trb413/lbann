@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-1-g8977da5-ci241246606</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2-gc3cfcde-ci241273174</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -232,8 +232,8 @@ Protected Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00049">49</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                                       :</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classlbann_1_1lbann__callback.html#a3cc7709835db75ef3c27ce6ec1df34de">batch_interval</a>(_batch_interval), <a class="code" href="classlbann_1_1lbann__callback.html#ad48ff47a64f2dff3a12d8bd282f554cb">summarizer</a>(_summarizer) {}</div>
-<div class="ttc" id="classlbann_1_1lbann__callback_html_ad48ff47a64f2dff3a12d8bd282f554cb"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#ad48ff47a64f2dff3a12d8bd282f554cb">lbann::lbann_callback::summarizer</a></div><div class="ttdeci">lbann_summary * summarizer</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00118">lbann_callback.hpp:118</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__callback_html_a3cc7709835db75ef3c27ce6ec1df34de"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#a3cc7709835db75ef3c27ce6ec1df34de">lbann::lbann_callback::batch_interval</a></div><div class="ttdeci">const int batch_interval</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00109">lbann_callback.hpp:109</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__callback_html_ad48ff47a64f2dff3a12d8bd282f554cb"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#ad48ff47a64f2dff3a12d8bd282f554cb">lbann::lbann_callback::summarizer</a></div><div class="ttdeci">lbann_summary * summarizer</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00124">lbann_callback.hpp:124</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__callback_html_a3cc7709835db75ef3c27ce6ec1df34de"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#a3cc7709835db75ef3c27ce6ec1df34de">lbann::lbann_callback::batch_interval</a></div><div class="ttdeci">const int batch_interval</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00111">lbann_callback.hpp:111</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -286,9 +286,11 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the callback's name </p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00115">115</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1lbann__callback.html#a023264b245b2ceb384abe17eab202552">m_name</a>; }</div>
-<div class="ttc" id="classlbann_1_1lbann__callback_html_a023264b245b2ceb384abe17eab202552"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#a023264b245b2ceb384abe17eab202552">lbann::lbann_callback::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00120">lbann_callback.hpp:120</a></div></div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00119">119</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                          {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1lbann__callback.html#a023264b245b2ceb384abe17eab202552">m_name</a>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1lbann__callback_html_a023264b245b2ceb384abe17eab202552"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#a023264b245b2ceb384abe17eab202552">lbann::lbann_callback::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00126">lbann_callback.hpp:126</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -324,8 +326,8 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Called when a model begins backward propagation. </p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00087">87</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00089">89</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -364,8 +366,8 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1lbann__callback__debug.html#a801aebd4474b816b43834a65aa6f296c">lbann::lbann_callback_debug</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00089">89</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00091">91</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -394,8 +396,8 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1lbann__callback__imcomm.html#ace11211398e94728880476981f25fdc2">lbann::lbann_callback_imcomm</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00091">91</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00093">93</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -434,8 +436,8 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1lbann__callback__debug.html#ae72d078b5d95ce973b98b800193c671c">lbann::lbann_callback_debug</a>, <a class="el" href="classlbann_1_1lbann__callback__dump__gradients.html#a781f771d7ebfc80310d316869bd74f71">lbann::lbann_callback_dump_gradients</a>, <a class="el" href="classlbann_1_1lbann__callback__checksmall.html#a28ccebaabaec140b9402ad057690640e">lbann::lbann_callback_checksmall</a>, and <a class="el" href="classlbann_1_1lbann__callback__checknan.html#a1514fb88dcc39cb6d4ec533f99030650">lbann::lbann_callback_checknan</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00093">93</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00095">95</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -464,8 +466,8 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1lbann__callback__debug.html#a21e75a6756ecd7e09079a72595126300">lbann::lbann_callback_debug</a>, and <a class="el" href="classlbann_1_1lbann__callback__timer.html#acca590eabe9c9b15394ef29c5aae2060">lbann::lbann_callback_timer</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00067">67</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00069">69</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -494,8 +496,8 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1lbann__callback__ltfb.html#a9988fd86e8e03811d1c79b30d4771d8d">lbann::lbann_callback_ltfb</a>, <a class="el" href="classlbann_1_1lbann__callback__debug.html#acedd35c5f1ca7d5a7200f79c99a34104">lbann::lbann_callback_debug</a>, <a class="el" href="classlbann_1_1lbann__callback__timer.html#a3d31c98e48bd085209aeec7f6f53bf36">lbann::lbann_callback_timer</a>, <a class="el" href="classlbann_1_1lbann__callback__checksmall.html#ab1d2f6b04ee08aa099e1b9b279fc9206">lbann::lbann_callback_checksmall</a>, <a class="el" href="classlbann_1_1lbann__callback__checknan.html#a13ad397133ac3c2f16733df00032c691">lbann::lbann_callback_checknan</a>, and <a class="el" href="classlbann_1_1lbann__callback__summary.html#abd8de0a455010c0fddede580263c9b91">lbann::lbann_callback_summary</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00069">69</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00071">71</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -524,8 +526,8 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1lbann__callback__debug.html#a6e6a59d03698ccfffb8528bb7b4087ad">lbann::lbann_callback_debug</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00096">96</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00098">98</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -554,8 +556,8 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1lbann__callback__debug.html#adbc71c2af2c97d14dda2120b8ba6191e">lbann::lbann_callback_debug</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00098">98</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00100">100</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -584,8 +586,8 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1lbann__callback__debug.html#a27fcfae6aab653ccee6533b3e905e593">lbann::lbann_callback_debug</a>, <a class="el" href="classlbann_1_1lbann__callback__timer.html#a64dbb8d51137ddd1e60a21bdd8849f5c">lbann::lbann_callback_timer</a>, and <a class="el" href="classlbann_1_1lbann__callback__print.html#ac0425adca2bb81a02cd1f3d67cadbae0">lbann::lbann_callback_print</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00063">63</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00065">65</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -614,8 +616,8 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1lbann__callback__imcomm.html#a9e409109c25b6173bc57108281e7aeb5">lbann::lbann_callback_imcomm</a>, <a class="el" href="classlbann_1_1lbann__callback__io.html#ae6e0e8850a2c7fb1a49f955d08e1680f">lbann::lbann_callback_io</a>, <a class="el" href="classlbann_1_1lbann__callback__debug.html#adc1698bccf6d3e831485afc0e824801c">lbann::lbann_callback_debug</a>, <a class="el" href="classlbann_1_1lbann__callback__dump__weights.html#a214d46826f6b64b321b34321451e9ab4">lbann::lbann_callback_dump_weights</a>, <a class="el" href="classlbann_1_1lbann__callback__learning__rate.html#ab4ef80742344cca2ea63489498942b0f">lbann::lbann_callback_learning_rate</a>, <a class="el" href="classlbann_1_1lbann__callback__timer.html#ac37653fa834c01c98ebb05cd03e08e3b">lbann::lbann_callback_timer</a>, <a class="el" href="classlbann_1_1lbann__callback__print.html#a8476b787abe4b035570b2ccc577a5062">lbann::lbann_callback_print</a>, and <a class="el" href="classlbann_1_1lbann__callback__summary.html#a718ae9cdda1c130bbe224f41d7b61bd5">lbann::lbann_callback_summary</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00065">65</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00067">67</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -642,8 +644,8 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Called when a model begins forward propagation for evaluation (validation / testing). </p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00100">100</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00102">102</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -682,8 +684,8 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1lbann__callback__debug.html#aa72952524fb4b559b334ecd7c9906cac">lbann::lbann_callback_debug</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00102">102</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00104">104</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -710,8 +712,8 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Called when a model ends forward propagation for evaluation (validation / testing). </p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00104">104</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00106">106</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -750,8 +752,8 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1lbann__callback__debug.html#a4edca180930053d7a24708022d134149">lbann::lbann_callback_debug</a>, and <a class="el" href="classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html#ac699f8b22eb59ac5926ace40a94273f2">lbann::lbann_callback_dump_minibatch_sample_indices</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00106">106</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00108">108</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -778,8 +780,8 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Called when a model begins forward propagation. </p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00079">79</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00081">81</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -818,8 +820,8 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1lbann__callback__debug.html#a713b963c090ce555e6dd09145aba3b54">lbann::lbann_callback_debug</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00081">81</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00083">83</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -846,8 +848,8 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Called when a model ends forward propagation. </p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00083">83</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00085">85</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -886,8 +888,8 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1lbann__callback__debug.html#ad15678b19d7bfd25a3bae6fb240655b6">lbann::lbann_callback_debug</a>, <a class="el" href="classlbann_1_1lbann__callback__dump__activations.html#a5de46093614d9372daef3716e75c5265">lbann::lbann_callback_dump_activations</a>, <a class="el" href="classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html#a302cdf7f6ee240b241f735ef13c6f850">lbann::lbann_callback_dump_minibatch_sample_indices</a>, <a class="el" href="classlbann_1_1lbann__callback__checksmall.html#aea760389b97c3bb25f093dec5bcdbf90">lbann::lbann_callback_checksmall</a>, and <a class="el" href="classlbann_1_1lbann__callback__checknan.html#ab46f91a3180038c2c046f913ce7aec1c">lbann::lbann_callback_checknan</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00085">85</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00087">87</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -916,8 +918,8 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1lbann__callback__save__images.html#a53218aeb5da183b483311b1c37cf3e1a">lbann::lbann_callback_save_images</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00061">61</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00063">63</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -944,8 +946,8 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Called at the beginning of testing. </p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00071">71</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00073">73</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -974,8 +976,8 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1lbann__callback__io.html#a94c8f73dcab680c4e30005bd8ec043cc">lbann::lbann_callback_io</a>, <a class="el" href="classlbann_1_1lbann__callback__print.html#a16c68b70cb9a24d8268a055d96c7bdad">lbann::lbann_callback_print</a>, and <a class="el" href="classlbann_1_1lbann__callback__summary.html#a01d3686f2c566ee2e508573726b439de">lbann::lbann_callback_summary</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00073">73</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00075">75</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1004,8 +1006,8 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1lbann__callback__check__init.html#a8f8b7735591e353a1385b4119ba472d0">lbann::lbann_callback_check_init</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00057">57</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00059">59</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1032,8 +1034,8 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Called at the end of training. </p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00059">59</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00061">61</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1060,8 +1062,8 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Called at the beginning of validation. </p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00075">75</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00077">77</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1090,8 +1092,8 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1lbann__callback__early__stopping.html#ab1e8e8674750ff71cc9bcb4ac7102eaa">lbann::lbann_callback_early_stopping</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00077">77</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00079">79</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1118,10 +1120,12 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>sets the callback's name </p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00112">112</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{ <a class="code" href="classlbann_1_1lbann__callback.html#a023264b245b2ceb384abe17eab202552">m_name</a> = <a class="code" href="classlbann_1_1lbann__callback.html#a1a14e9228f1606d3492b6011d56937f5">name</a>; }</div>
-<div class="ttc" id="classlbann_1_1lbann__callback_html_a1a14e9228f1606d3492b6011d56937f5"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#a1a14e9228f1606d3492b6011d56937f5">lbann::lbann_callback::name</a></div><div class="ttdeci">const std::string &amp; name()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00115">lbann_callback.hpp:115</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__callback_html_a023264b245b2ceb384abe17eab202552"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#a023264b245b2ceb384abe17eab202552">lbann::lbann_callback::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00120">lbann_callback.hpp:120</a></div></div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00114">114</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="classlbann_1_1lbann__callback.html#a023264b245b2ceb384abe17eab202552">m_name</a> = <a class="code" href="classlbann_1_1lbann__callback.html#a1a14e9228f1606d3492b6011d56937f5">name</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1lbann__callback_html_a1a14e9228f1606d3492b6011d56937f5"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#a1a14e9228f1606d3492b6011d56937f5">lbann::lbann_callback::name</a></div><div class="ttdeci">const std::string &amp; name()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00119">lbann_callback.hpp:119</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__callback_html_a023264b245b2ceb384abe17eab202552"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#a023264b245b2ceb384abe17eab202552">lbann::lbann_callback::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00126">lbann_callback.hpp:126</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1166,8 +1170,10 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00053">53</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{ <a class="code" href="classlbann_1_1lbann__callback.html#ad48ff47a64f2dff3a12d8bd282f554cb">summarizer</a> = _summarizer; }</div>
-<div class="ttc" id="classlbann_1_1lbann__callback_html_ad48ff47a64f2dff3a12d8bd282f554cb"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#ad48ff47a64f2dff3a12d8bd282f554cb">lbann::lbann_callback::summarizer</a></div><div class="ttdeci">lbann_summary * summarizer</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00118">lbann_callback.hpp:118</a></div></div>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                  {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classlbann_1_1lbann__callback.html#ad48ff47a64f2dff3a12d8bd282f554cb">summarizer</a> = _summarizer;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1lbann__callback_html_ad48ff47a64f2dff3a12d8bd282f554cb"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#ad48ff47a64f2dff3a12d8bd282f554cb">lbann::lbann_callback::summarizer</a></div><div class="ttdeci">lbann_summary * summarizer</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00124">lbann_callback.hpp:124</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1196,8 +1202,8 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1lbann__callback__imcomm.html#a1cc160d368f1dd5bd30f1504c0df8003">lbann::lbann_callback_imcomm</a>, <a class="el" href="classlbann_1_1lbann__callback__ltfb.html#a8f6fe8d0240fa1aca46665114f3eee0a">lbann::lbann_callback_ltfb</a>, <a class="el" href="classlbann_1_1lbann__callback__learning__rate.html#a3814efdf7b26e6162a66ab5d982a9abf">lbann::lbann_callback_learning_rate</a>, and <a class="el" href="classlbann_1_1lbann__callback__print.html#a20f47078a52afa81039c68d12fe29dc1">lbann::lbann_callback_print</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00055">55</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{};</div>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00057">57</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1213,7 +1219,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Batch methods should once every this many steps. </p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00109">109</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00111">111</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
 
 </div>
 </div>
@@ -1236,7 +1242,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>string representation of the callback, for use with protocol buffers </p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00120">120</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00126">126</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
 
 </div>
 </div>
@@ -1259,7 +1265,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Optional summarizer for the callbacks to use. </p>
 
-<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00118">118</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__callback_8hpp_source.html#l00124">124</a> of file <a class="el" href="lbann__callback_8hpp_source.html">lbann_callback.hpp</a>.</p>
 
 </div>
 </div>
@@ -1272,7 +1278,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__callback.html">lbann_callback</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 15:43:59 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 18:19:23 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

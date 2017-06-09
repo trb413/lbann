@@ -145,7 +145,7 @@ var classlbann_1_1lbann__comm =
     [ "ar_time", "classlbann_1_1lbann__comm.html#aa57d2fbeef85fd8a3c9f2a37ca7687c8", null ],
     [ "bytes_received", "classlbann_1_1lbann__comm.html#afb99f57f7eafc0695bf28e6c26a8120f", null ],
     [ "bytes_sent", "classlbann_1_1lbann__comm.html#ad1f146ae7337ece6266fd307944928e0", null ],
-    [ "collective_bufs", "classlbann_1_1lbann__comm.html#a79fa8f1cc5a6a57cc0640cd81ce7f3ec", null ],
+    [ "collective_bufs", "classlbann_1_1lbann__comm.html#af055ddfb71382a411f4dca07f3e8bef3", null ],
     [ "default_allreduce_algo", "classlbann_1_1lbann__comm.html#ac7731d6bcdb6775009467cf4138d4bab", null ],
     [ "grid", "classlbann_1_1lbann__comm.html#a29fb31be115db3225b145f250a7778d9", null ],
     [ "intermodel_comm", "classlbann_1_1lbann__comm.html#a4797dcdf39d18c4c8335dc012186a8b1", null ],

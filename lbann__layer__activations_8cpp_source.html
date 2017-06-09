@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-1-g8977da5-ci241246606</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2-gc3cfcde-ci241273174</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -92,8 +92,8 @@ $(document).ready(function(){initNavTree('lbann__layer__activations_8cpp_source.
 <div class="title">lbann_layer_activations.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="lbann__layer__activations_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (c) 2014-2016, Lawrence Livermore National Security, LLC. </span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Produced at the Lawrence Livermore National Laboratory. </span></div>
+<a href="lbann__layer__activations_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (c) 2014-2016, Lawrence Livermore National Security, LLC.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Produced at the Lawrence Livermore National Laboratory.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Written by the LBANN Research Team (B. Van Essen, et al.) listed in</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// the CONTRIBUTORS file. &lt;lbann-dev@llnl.gov&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//</span></div>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('lbann__layer__activations_8cpp_source.
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// This file is part of LBANN: Livermore Big Artificial Neural Network</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// Toolkit. For details, see http://software.llnl.gov/LBANN or</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// https://github.com/LLNL/LBANN. </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// https://github.com/LLNL/LBANN.</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;Licensee&quot;); you</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// may not use this file except in compliance with the License.  You may</span></div>
@@ -127,73 +127,77 @@ $(document).ready(function(){initNavTree('lbann__layer__activations_8cpp_source.
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classlbann_1_1Activation.html#a027767c99c9b728601e6efcc58d0f3f2">   36</a></span>&#160;<span class="keywordtype">void</span> Activation::forwardProp(<a class="code" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a>&amp; m) {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  EntrywiseMap(m, std::function&lt;<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp;)&gt;(</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                 [<span class="keyword">this</span>] (<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp; z) { <span class="keywordflow">return</span> act(z); }));</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classlbann_1_1Activation.html#aa3a4bc5761dbeab6d5e649ea9d1e2fb8">   41</a></span>&#160;<span class="keywordtype">void</span> Activation::backwardProp(<a class="code" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a>&amp; m) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  EntrywiseMap(m, std::function&lt;<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp;)&gt;(</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                 [<span class="keyword">this</span>] (<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp; z) { <span class="keywordflow">return</span> act_prime(z); }));</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classlbann_1_1Activation.html#a9e6e14d78d344289794dd72c4a336910">   46</a></span>&#160;<span class="keywordtype">void</span> Activation::backwardPropError(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a>&amp; m, <a class="code" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a>&amp; prev_error_signal) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">const</span> Int height = m.LocalHeight();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">const</span> Int width = m.LocalWidth();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">const</span> Int m_LDim = m.LDim();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>* m_buf = m.LockedBuffer();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">const</span> Int p_LDim = prev_error_signal.LDim();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>* p_buf = prev_error_signal.Buffer();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">if</span> (height == m_LDim &amp;&amp; height == p_LDim) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// Contiguous memory.</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#pragma omp parallel for</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">for</span> (Int i = 0; i &lt; height * width; ++i) {</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      p_buf[i] = act_prime(m_buf[i]) * p_buf[i];</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// Non-contiguous.</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#pragma omp parallel for collapse(2)</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">for</span> (Int j = 0; j &lt; width; ++j) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keywordflow">for</span> (Int i = 0; i &lt; height; ++i) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        p_buf[i+j*p_LDim] = act_prime(m_buf[i+j*m_LDim]) * p_buf[i+j*p_LDim];</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classlbann_1_1Activation.html#a8b5e4d5c75488511c80a7ee39ff1cd46">   71</a></span>&#160;<span class="keyword">const</span> std::string Activation::activation_name(<a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76">activation_type</a> <span class="keywordtype">id</span>) {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordflow">switch</span>(<span class="keywordtype">id</span>) {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">case</span> activation_type::SIGMOID:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;sigmoid&quot;</span>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">case</span> activation_type::TANH:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;tanh&quot;</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">case</span> activation_type::RELU:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;relu&quot;</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordflow">case</span> activation_type::ID:</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;id&quot;</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">case</span> activation_type::LEAKY_RELU:</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;leaky_relu&quot;</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">case</span> activation_type::SOFTPLUS:</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;softplus&quot;</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">case</span> activation_type::SMOOTH_RELU:</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;smooth_relu&quot;</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordflow">case</span> activation_type::ELU:</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;elu&quot;</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">default</span>: </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(<span class="stringliteral">&quot;unknown activation_type&quot;</span>);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}  <span class="comment">// namespace lbann</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  [<span class="keyword">this</span>] (<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp; z) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> act(z);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  }));</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classlbann_1_1Activation.html#aa3a4bc5761dbeab6d5e649ea9d1e2fb8">   43</a></span>&#160;<span class="keywordtype">void</span> Activation::backwardProp(<a class="code" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a>&amp; m) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  EntrywiseMap(m, std::function&lt;<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp;)&gt;(</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  [<span class="keyword">this</span>] (<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp; z) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">return</span> act_prime(z);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }));</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classlbann_1_1Activation.html#a9e6e14d78d344289794dd72c4a336910">   50</a></span>&#160;<span class="keywordtype">void</span> Activation::backwardPropError(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a>&amp; m, <a class="code" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a>&amp; prev_error_signal) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">const</span> Int height = m.LocalHeight();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">const</span> Int width = m.LocalWidth();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">const</span> Int m_LDim = m.LDim();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> *m_buf = m.LockedBuffer();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">const</span> Int p_LDim = prev_error_signal.LDim();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> *p_buf = prev_error_signal.Buffer();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">if</span> (height == m_LDim &amp;&amp; height == p_LDim) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// Contiguous memory.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">    #pragma omp parallel for</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">for</span> (Int i = 0; i &lt; height * width; ++i) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      p_buf[i] = act_prime(m_buf[i]) * p_buf[i];</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// Non-contiguous.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">    #pragma omp parallel for collapse(2)</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">for</span> (Int j = 0; j &lt; width; ++j) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <span class="keywordflow">for</span> (Int i = 0; i &lt; height; ++i) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        p_buf[i+j*p_LDim] = act_prime(m_buf[i+j*m_LDim]) * p_buf[i+j*p_LDim];</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classlbann_1_1Activation.html#a8b5e4d5c75488511c80a7ee39ff1cd46">   75</a></span>&#160;<span class="keyword">const</span> std::string Activation::activation_name(<a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76">activation_type</a> <span class="keywordtype">id</span>) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">switch</span>(<span class="keywordtype">id</span>) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordflow">case</span> activation_type::SIGMOID:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;sigmoid&quot;</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordflow">case</span> activation_type::TANH:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;tanh&quot;</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">case</span> activation_type::RELU:</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;relu&quot;</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordflow">case</span> activation_type::ID:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;id&quot;</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordflow">case</span> activation_type::LEAKY_RELU:</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;leaky_relu&quot;</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">case</span> activation_type::SOFTPLUS:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;softplus&quot;</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">case</span> activation_type::SMOOTH_RELU:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;smooth_relu&quot;</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordflow">case</span> activation_type::ELU:</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;elu&quot;</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(<span class="stringliteral">&quot;unknown activation_type&quot;</span>);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}  <span class="comment">// namespace lbann</span></div>
 <div class="ttc" id="lbann__base_8hpp_html_afad88fb587c304caea8a36ee5a5c1df8"><div class="ttname"><a href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a></div><div class="ttdeci">El::ElementalMatrix&lt; DataType &gt; ElMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00053">lbann_base.hpp:53</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__exception_8hpp_source.html#l00041">lbann_exception.hpp:41</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__exception_8hpp_source.html#l00040">lbann_exception.hpp:40</a></div></div>
 <div class="ttc" id="lbann__layer__activations_8hpp_html"><div class="ttname"><a href="lbann__layer__activations_8hpp.html">lbann_layer_activations.hpp</a></div></div>
 <div class="ttc" id="lbann__exception_8hpp_html"><div class="ttname"><a href="lbann__exception_8hpp.html">lbann_exception.hpp</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00037">lbann_base.hpp:37</a></div></div>
@@ -204,7 +208,7 @@ $(document).ready(function(){initNavTree('lbann__layer__activations_8cpp_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_faacdbae24c4b7c4a8fbaf54f29a6b8e.html">layers</a></li><li class="navelem"><a class="el" href="lbann__layer__activations_8cpp.html">lbann_layer_activations.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 15:43:58 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 18:19:22 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

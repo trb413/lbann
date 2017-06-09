@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-1-g8977da5-ci241246606</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2-gc3cfcde-ci241273174</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -92,8 +92,8 @@ $(document).ready(function(){initNavTree('lbann__random_8cpp_source.html','');})
 <div class="title">lbann_random.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="lbann__random_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (c) 2014-2016, Lawrence Livermore National Security, LLC. </span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Produced at the Lawrence Livermore National Laboratory. </span></div>
+<a href="lbann__random_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (c) 2014-2016, Lawrence Livermore National Security, LLC.</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Produced at the Lawrence Livermore National Laboratory.</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Written by the LBANN Research Team (B. Van Essen, et al.) listed in</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// the CONTRIBUTORS file. &lt;lbann-dev@llnl.gov&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//</span></div>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('lbann__random_8cpp_source.html','');})
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// This file is part of LBANN: Livermore Big Artificial Neural Network</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// Toolkit. For details, see http://software.llnl.gov/LBANN or</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// https://github.com/LLNL/LBANN. </span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// https://github.com/LLNL/LBANN.</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;Licensee&quot;); you</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// may not use this file except in compliance with the License.  You may</span></div>
@@ -161,7 +161,7 @@ $(document).ready(function(){initNavTree('lbann__random_8cpp_source.html','');})
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="namespaceanonymous__namespace_02lbann__random_8cpp_03.html#a36d1b52a12cd2346076af0b35f49efed">return ::data_seq_generator</a>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="namespacelbann.html#acef152f20e422b3aea1a3c1691a533ac">   72</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann.html#acef152f20e422b3aea1a3c1691a533ac">init_random</a>(<span class="keywordtype">int</span> seed, <a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="namespacelbann.html#acef152f20e422b3aea1a3c1691a533ac">   72</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann.html#acef152f20e422b3aea1a3c1691a533ac">init_random</a>(<span class="keywordtype">int</span> seed, <a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>) {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">if</span> (seed != -1) {</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// Seed every OpenMP thread, if present.</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// Note: Threadprivate OMP variables don&#39;t work with dynamic threads.</span></div>
@@ -212,7 +212,7 @@ $(document).ready(function(){initNavTree('lbann__random_8cpp_source.html','');})
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="comment">// Seed every OpenMP thread, if present.</span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="comment">// Note: Threadprivate OMP variables don&#39;t work with dynamic threads.</span></div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#pragma omp parallel</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #pragma omp parallel</span></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor"></span>  {</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="namespacelbann.html#aba9d11cb3a739cd84e7234ceeb32d098">get_data_seq_generator</a>().seed(seed);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  }</div>
@@ -239,7 +239,7 @@ $(document).ready(function(){initNavTree('lbann__random_8cpp_source.html','');})
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
 <div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="namespacelbann.html#acd76b03f2b7ee00ad7c8ba83a20d1866">  149</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann.html#acd76b03f2b7ee00ad7c8ba83a20d1866">uniform_fill</a>(<a class="code" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a>&amp; mat, El::Int m, El::Int n, <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> center,</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                   <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> radius) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                  <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> radius) {</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#ifdef LBANN_PARALLEL_RANDOM_MATRICES</span></div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor"></span>  El::Uniform(mat, m, n, center, radius);</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#else</span></div>
@@ -285,7 +285,7 @@ $(document).ready(function(){initNavTree('lbann__random_8cpp_source.html','');})
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    mat.Reserve(n * m);</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keyword">auto</span>&amp; gen = <a class="code" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764">get_generator</a>();</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    std::uniform_real_distribution&lt;DataType&gt; dist(center - radius,</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                                                  center + radius);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        center + radius);</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">for</span> (El::Int col = 0; col &lt; n; ++col) {</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      <span class="keywordflow">for</span> (El::Int row = 0; row &lt; m; ++row) {</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        mat.QueueUpdate(row, col, dist(gen));</div>
@@ -350,7 +350,7 @@ $(document).ready(function(){initNavTree('lbann__random_8cpp_source.html','');})
 <div class="ttc" id="namespaceanonymous__namespace_02lbann__random_8cpp_03_html_a6381148d83b28d7418e6736b1b8c0280"><div class="ttname"><a href="namespaceanonymous__namespace_02lbann__random_8cpp_03.html#a6381148d83b28d7418e6736b1b8c0280">anonymous_namespace{lbann_random.cpp}::generator</a></div><div class="ttdeci">lbann::rng_gen generator</div><div class="ttdef"><b>Definition:</b> <a href="lbann__random_8cpp_source.html#l00046">lbann_random.cpp:46</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a7ab6aada4b2438de8ca3dd783775c2f5a2d34dae1a4044190dc7572a3c8e072d8"><div class="ttname"><a href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a2d34dae1a4044190dc7572a3c8e072d8">weight_initialization::he_normal</a></div></div>
 <div class="ttc" id="namespacelbann_html_ae6ce9c2fdec6f81803f6b1a6555c31c5"><div class="ttname"><a href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5">lbann::get_fast_generator</a></div><div class="ttdeci">fast_rng_gen &amp; get_fast_generator()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__random_8cpp_source.html#l00064">lbann_random.cpp:64</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html"><div class="ttname"><a href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00049">lbann_comm.hpp:49</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html"><div class="ttname"><a href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00048">lbann_comm.hpp:48</a></div></div>
 <div class="ttc" id="namespaceanonymous__namespace_02lbann__random_8cpp_03_html_a36d1b52a12cd2346076af0b35f49efed"><div class="ttname"><a href="namespaceanonymous__namespace_02lbann__random_8cpp_03.html#a36d1b52a12cd2346076af0b35f49efed">anonymous_namespace{lbann_random.cpp}::data_seq_generator</a></div><div class="ttdeci">lbann::rng_gen data_seq_generator</div><div class="ttdef"><b>Definition:</b> <a href="lbann__random_8cpp_source.html#l00054">lbann_random.cpp:54</a></div></div>
 <div class="ttc" id="namespacelbann_html_afda802d107be9203db432ae5f6c276fd"><div class="ttname"><a href="namespacelbann.html#afda802d107be9203db432ae5f6c276fd">lbann::initialize_matrix</a></div><div class="ttdeci">void initialize_matrix(ElMat &amp;matrix_v, weight_initialization initialization, Int fan_in, Int fan_out)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__random_8cpp_source.html#l00207">lbann_random.cpp:207</a></div></div>
 <div class="ttc" id="namespacelbann_html_a4fab058e5091cf12e918d879c340f125"><div class="ttname"><a href="namespacelbann.html#a4fab058e5091cf12e918d879c340f125">lbann::gaussian_fill_procdet</a></div><div class="ttdeci">void gaussian_fill_procdet(ElMat &amp;mat, El::Int m, El::Int n, DataType mean, DataType stddev)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__random_8cpp_source.html#l00158">lbann_random.cpp:158</a></div></div>
@@ -376,7 +376,7 @@ $(document).ready(function(){initNavTree('lbann__random_8cpp_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_e3a975d7a6e3e1ec3d3053fd7df1ad72.html">utils</a></li><li class="navelem"><a class="el" href="lbann__random_8cpp.html">lbann_random.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 15:43:58 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 18:19:23 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

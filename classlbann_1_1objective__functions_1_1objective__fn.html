@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-1-g8977da5-ci241246606</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2-gc3cfcde-ci241273174</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -164,7 +164,7 @@ Private Attributes</h2></td></tr>
 <div class="textblock"><p>Objective functions / loss functions are computed and averaged on a batch by batch basis. Additionally, the average loss per batch is averaged over the epoch.</p>
 <p>eturns A <code>History</code> object. Its <code>History.history</code> attribute is a record of training loss values and metrics values at successive epochs, as well as validation loss values and validation metrics values (if applicable). </p>
 
-<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00093">93</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00090">90</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="adb4df9dd448d19dacb490167cbfda251"></a>
 <div class="memitem">
@@ -187,18 +187,18 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00095">95</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                     {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#a5bddb72c10182c47d086abb02b583abb">m_training_stats</a>.<a class="code" href="classlbann_1_1objective__functions_1_1statistics.html#a94dd3bde6bb9548d2a7ddf5ba836f6d7">init_stats</a>();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#afed83dea78d6b545160b142df8d5e71b">m_validation_stats</a>.<a class="code" href="classlbann_1_1objective__functions_1_1statistics.html#a94dd3bde6bb9548d2a7ddf5ba836f6d7">init_stats</a>();</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#a1354e160612690c96da099628850a8db">m_testing_stats</a>.<a class="code" href="classlbann_1_1objective__functions_1_1statistics.html#a94dd3bde6bb9548d2a7ddf5ba836f6d7">init_stats</a>();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        this-&gt;<a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#a960a2e2ea129fb64bc4112c989766584">type</a> = <a class="code" href="namespacelbann_1_1objective__functions.html#a84a6b5226a98ba2d0c65c3a2a9afb43caccc0377a8afbf50e7094f5c23a8af223">obj_fn_type::INVALID</a>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      }</div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_a960a2e2ea129fb64bc4112c989766584"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#a960a2e2ea129fb64bc4112c989766584">lbann::objective_functions::objective_fn::type</a></div><div class="ttdeci">obj_fn_type type</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00125">lbann_objective_fn.hpp:125</a></div></div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_a5bddb72c10182c47d086abb02b583abb"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#a5bddb72c10182c47d086abb02b583abb">lbann::objective_functions::objective_fn::m_training_stats</a></div><div class="ttdeci">statistics m_training_stats</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00121">lbann_objective_fn.hpp:121</a></div></div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_afed83dea78d6b545160b142df8d5e71b"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#afed83dea78d6b545160b142df8d5e71b">lbann::objective_functions::objective_fn::m_validation_stats</a></div><div class="ttdeci">statistics m_validation_stats</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00122">lbann_objective_fn.hpp:122</a></div></div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1statistics_html_a94dd3bde6bb9548d2a7ddf5ba836f6d7"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1statistics.html#a94dd3bde6bb9548d2a7ddf5ba836f6d7">lbann::objective_functions::statistics::init_stats</a></div><div class="ttdeci">void init_stats()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00062">lbann_objective_fn.hpp:62</a></div></div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_a1354e160612690c96da099628850a8db"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#a1354e160612690c96da099628850a8db">lbann::objective_functions::objective_fn::m_testing_stats</a></div><div class="ttdeci">statistics m_testing_stats</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00123">lbann_objective_fn.hpp:123</a></div></div>
+<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00092">92</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                 {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#a5bddb72c10182c47d086abb02b583abb">m_training_stats</a>.<a class="code" href="classlbann_1_1objective__functions_1_1statistics.html#a94dd3bde6bb9548d2a7ddf5ba836f6d7">init_stats</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#afed83dea78d6b545160b142df8d5e71b">m_validation_stats</a>.<a class="code" href="classlbann_1_1objective__functions_1_1statistics.html#a94dd3bde6bb9548d2a7ddf5ba836f6d7">init_stats</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#a1354e160612690c96da099628850a8db">m_testing_stats</a>.<a class="code" href="classlbann_1_1objective__functions_1_1statistics.html#a94dd3bde6bb9548d2a7ddf5ba836f6d7">init_stats</a>();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    this-&gt;<a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#a960a2e2ea129fb64bc4112c989766584">type</a> = <a class="code" href="namespacelbann_1_1objective__functions.html#a84a6b5226a98ba2d0c65c3a2a9afb43caccc0377a8afbf50e7094f5c23a8af223">obj_fn_type::INVALID</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_a960a2e2ea129fb64bc4112c989766584"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#a960a2e2ea129fb64bc4112c989766584">lbann::objective_functions::objective_fn::type</a></div><div class="ttdeci">obj_fn_type type</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00126">lbann_objective_fn.hpp:126</a></div></div>
+<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_a5bddb72c10182c47d086abb02b583abb"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#a5bddb72c10182c47d086abb02b583abb">lbann::objective_functions::objective_fn::m_training_stats</a></div><div class="ttdeci">statistics m_training_stats</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00122">lbann_objective_fn.hpp:122</a></div></div>
+<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_afed83dea78d6b545160b142df8d5e71b"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#afed83dea78d6b545160b142df8d5e71b">lbann::objective_functions::objective_fn::m_validation_stats</a></div><div class="ttdeci">statistics m_validation_stats</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00123">lbann_objective_fn.hpp:123</a></div></div>
+<div class="ttc" id="classlbann_1_1objective__functions_1_1statistics_html_a94dd3bde6bb9548d2a7ddf5ba836f6d7"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1statistics.html#a94dd3bde6bb9548d2a7ddf5ba836f6d7">lbann::objective_functions::statistics::init_stats</a></div><div class="ttdeci">void init_stats()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00059">lbann_objective_fn.hpp:59</a></div></div>
+<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_a1354e160612690c96da099628850a8db"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#a1354e160612690c96da099628850a8db">lbann::objective_functions::objective_fn::m_testing_stats</a></div><div class="ttdeci">statistics m_testing_stats</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00124">lbann_objective_fn.hpp:124</a></div></div>
 <div class="ttc" id="namespacelbann_1_1objective__functions_html_a84a6b5226a98ba2d0c65c3a2a9afb43caccc0377a8afbf50e7094f5c23a8af223"><div class="ttname"><a href="namespacelbann_1_1objective__functions.html#a84a6b5226a98ba2d0c65c3a2a9afb43caccc0377a8afbf50e7094f5c23a8af223">lbann::objective_functions::obj_fn_type::INVALID</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -243,13 +243,13 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00101">101</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                  : <a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#a49cea5efb7d5cb9a5e2bb3bcacfab62f">m_name</a>(<a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#a6716e3f67c539f6d3e6a7121fb0e610f">name</a>) {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#adb4df9dd448d19dacb490167cbfda251">objective_fn</a>();</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      }</div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_a49cea5efb7d5cb9a5e2bb3bcacfab62f"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#a49cea5efb7d5cb9a5e2bb3bcacfab62f">lbann::objective_functions::objective_fn::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00128">lbann_objective_fn.hpp:128</a></div></div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_a6716e3f67c539f6d3e6a7121fb0e610f"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#a6716e3f67c539f6d3e6a7121fb0e610f">lbann::objective_functions::objective_fn::name</a></div><div class="ttdeci">const std::string &amp; name()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00119">lbann_objective_fn.hpp:119</a></div></div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_adb4df9dd448d19dacb490167cbfda251"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#adb4df9dd448d19dacb490167cbfda251">lbann::objective_functions::objective_fn::objective_fn</a></div><div class="ttdeci">objective_fn()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00095">lbann_objective_fn.hpp:95</a></div></div>
+<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00098">98</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                              : <a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#a49cea5efb7d5cb9a5e2bb3bcacfab62f">m_name</a>(<a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#a6716e3f67c539f6d3e6a7121fb0e610f">name</a>) {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#adb4df9dd448d19dacb490167cbfda251">objective_fn</a>();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_a49cea5efb7d5cb9a5e2bb3bcacfab62f"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#a49cea5efb7d5cb9a5e2bb3bcacfab62f">lbann::objective_functions::objective_fn::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00129">lbann_objective_fn.hpp:129</a></div></div>
+<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_a6716e3f67c539f6d3e6a7121fb0e610f"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#a6716e3f67c539f6d3e6a7121fb0e610f">lbann::objective_functions::objective_fn::name</a></div><div class="ttdeci">const std::string &amp; name()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00118">lbann_objective_fn.hpp:118</a></div></div>
+<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_adb4df9dd448d19dacb490167cbfda251"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#adb4df9dd448d19dacb490167cbfda251">lbann::objective_functions::objective_fn::objective_fn</a></div><div class="ttdeci">objective_fn()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00092">lbann_objective_fn.hpp:92</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -283,8 +283,8 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00104">104</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00101">101</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -325,8 +325,10 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1objective__functions_1_1categorical__cross__entropy.html#a2dbf475778aeee15e92d1a89d0230dae">lbann::objective_functions::categorical_cross_entropy</a>, and <a class="el" href="classlbann_1_1objective__functions_1_1mean__squared__error.html#a1a25c05e72b1b82ecbb22cd290feff77">lbann::objective_functions::mean_squared_error</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00108">108</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{<span class="keywordflow">return</span> 0.0;}</div>
+<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00105">105</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                                                                            {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">return</span> 0.0;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -376,8 +378,8 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1objective__functions_1_1categorical__cross__entropy.html#a92feb11bce937be491f837384d625323">lbann::objective_functions::categorical_cross_entropy</a>, and <a class="el" href="classlbann_1_1objective__functions_1_1mean__squared__error.html#aedd9585447557339a1753dfe7d520a19">lbann::objective_functions::mean_squared_error</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00109">109</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                                                                    {}</div>
+<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00108">108</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                                                                {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -405,8 +407,8 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1objective__functions_1_1categorical__cross__entropy.html#aa0f8dbd4ae6310690cedb281b19eaa6f">lbann::objective_functions::categorical_cross_entropy</a>, and <a class="el" href="classlbann_1_1objective__functions_1_1mean__squared__error.html#a862570ae6234c97b3f3bea66b1929890">lbann::objective_functions::mean_squared_error</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00106">106</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00103">103</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -445,10 +447,10 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 <div class="ttc" id="lbann__base_8hpp_html_a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0"><div class="ttname"><a href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0">execution_mode::validation</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a2781a159088df64ed7d47cc91c4dc0a8aae2b1fca515949e5d54fb22b8ed95575"><div class="ttname"><a href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aae2b1fca515949e5d54fb22b8ed95575">execution_mode::testing</a></div></div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_a5bddb72c10182c47d086abb02b583abb"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#a5bddb72c10182c47d086abb02b583abb">lbann::objective_functions::objective_fn::m_training_stats</a></div><div class="ttdeci">statistics m_training_stats</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00121">lbann_objective_fn.hpp:121</a></div></div>
+<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_a5bddb72c10182c47d086abb02b583abb"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#a5bddb72c10182c47d086abb02b583abb">lbann::objective_functions::objective_fn::m_training_stats</a></div><div class="ttdeci">statistics m_training_stats</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00122">lbann_objective_fn.hpp:122</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214"><div class="ttname"><a href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a></div></div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_afed83dea78d6b545160b142df8d5e71b"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#afed83dea78d6b545160b142df8d5e71b">lbann::objective_functions::objective_fn::m_validation_stats</a></div><div class="ttdeci">statistics m_validation_stats</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00122">lbann_objective_fn.hpp:122</a></div></div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_a1354e160612690c96da099628850a8db"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#a1354e160612690c96da099628850a8db">lbann::objective_functions::objective_fn::m_testing_stats</a></div><div class="ttdeci">statistics m_testing_stats</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00123">lbann_objective_fn.hpp:123</a></div></div>
+<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_afed83dea78d6b545160b142df8d5e71b"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#afed83dea78d6b545160b142df8d5e71b">lbann::objective_functions::objective_fn::m_validation_stats</a></div><div class="ttdeci">statistics m_validation_stats</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00123">lbann_objective_fn.hpp:123</a></div></div>
+<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_a1354e160612690c96da099628850a8db"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#a1354e160612690c96da099628850a8db">lbann::objective_functions::objective_fn::m_testing_stats</a></div><div class="ttdeci">statistics m_testing_stats</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00124">lbann_objective_fn.hpp:124</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -473,9 +475,11 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00119">119</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#a49cea5efb7d5cb9a5e2bb3bcacfab62f">m_name</a>; }</div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_a49cea5efb7d5cb9a5e2bb3bcacfab62f"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#a49cea5efb7d5cb9a5e2bb3bcacfab62f">lbann::objective_functions::objective_fn::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00128">lbann_objective_fn.hpp:128</a></div></div>
+<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00118">118</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                          {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#a49cea5efb7d5cb9a5e2bb3bcacfab62f">m_name</a>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_a49cea5efb7d5cb9a5e2bb3bcacfab62f"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#a49cea5efb7d5cb9a5e2bb3bcacfab62f">lbann::objective_functions::objective_fn::m_name</a></div><div class="ttdeci">std::string m_name</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00129">lbann_objective_fn.hpp:129</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -539,7 +543,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="comment">//  std::cout &lt;&lt; _to_string(type) &lt;&lt; &quot; is reporting aggregate obj fn results for mode &quot; &lt;&lt; _to_string(mode) &lt;&lt; &quot; with &quot; &lt;&lt; stats-&gt;m_num_mini_batch_per_epoch &lt;&lt; &quot; and cost &quot; &lt;&lt; stats-&gt;m_aggregate_avg_cost_per_epoch &lt;&lt; std::endl;</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">if</span>(stats-&gt;m_num_mini_batch_per_epoch == 0) {</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> std::numeric_limits&lt;double&gt;::max();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }<span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> (stats-&gt;m_aggregate_avg_cost_per_epoch / stats-&gt;m_num_mini_batch_per_epoch);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
@@ -599,10 +603,10 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#afed83dea78d6b545160b142df8d5e71b">m_validation_stats</a>.<a class="code" href="classlbann_1_1objective__functions_1_1statistics.html#a58c4b04be5a52957cd08d5fe0b4e7d4e">reset_stats</a>();</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#a1354e160612690c96da099628850a8db">m_testing_stats</a>.<a class="code" href="classlbann_1_1objective__functions_1_1statistics.html#a58c4b04be5a52957cd08d5fe0b4e7d4e">reset_stats</a>();</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_a5bddb72c10182c47d086abb02b583abb"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#a5bddb72c10182c47d086abb02b583abb">lbann::objective_functions::objective_fn::m_training_stats</a></div><div class="ttdeci">statistics m_training_stats</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00121">lbann_objective_fn.hpp:121</a></div></div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1statistics_html_a58c4b04be5a52957cd08d5fe0b4e7d4e"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1statistics.html#a58c4b04be5a52957cd08d5fe0b4e7d4e">lbann::objective_functions::statistics::reset_stats</a></div><div class="ttdeci">void reset_stats()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00068">lbann_objective_fn.hpp:68</a></div></div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_afed83dea78d6b545160b142df8d5e71b"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#afed83dea78d6b545160b142df8d5e71b">lbann::objective_functions::objective_fn::m_validation_stats</a></div><div class="ttdeci">statistics m_validation_stats</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00122">lbann_objective_fn.hpp:122</a></div></div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_a1354e160612690c96da099628850a8db"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#a1354e160612690c96da099628850a8db">lbann::objective_functions::objective_fn::m_testing_stats</a></div><div class="ttdeci">statistics m_testing_stats</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00123">lbann_objective_fn.hpp:123</a></div></div>
+<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_a5bddb72c10182c47d086abb02b583abb"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#a5bddb72c10182c47d086abb02b583abb">lbann::objective_functions::objective_fn::m_training_stats</a></div><div class="ttdeci">statistics m_training_stats</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00122">lbann_objective_fn.hpp:122</a></div></div>
+<div class="ttc" id="classlbann_1_1objective__functions_1_1statistics_html_a58c4b04be5a52957cd08d5fe0b4e7d4e"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1statistics.html#a58c4b04be5a52957cd08d5fe0b4e7d4e">lbann::objective_functions::statistics::reset_stats</a></div><div class="ttdeci">void reset_stats()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00065">lbann_objective_fn.hpp:65</a></div></div>
+<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_afed83dea78d6b545160b142df8d5e71b"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#afed83dea78d6b545160b142df8d5e71b">lbann::objective_functions::objective_fn::m_validation_stats</a></div><div class="ttdeci">statistics m_validation_stats</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00123">lbann_objective_fn.hpp:123</a></div></div>
+<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_a1354e160612690c96da099628850a8db"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#a1354e160612690c96da099628850a8db">lbann::objective_functions::objective_fn::m_testing_stats</a></div><div class="ttdeci">statistics m_testing_stats</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00124">lbann_objective_fn.hpp:124</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -640,8 +644,8 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classlbann_1_1objective__functions_1_1categorical__cross__entropy.html#ae5cc5924d03d9a20cfed4de7b1ff9a7d">lbann::objective_functions::categorical_cross_entropy</a>, and <a class="el" href="classlbann_1_1objective__functions_1_1mean__squared__error.html#a046d61530dd2b63e3e6810770e9d669a">lbann::objective_functions::mean_squared_error</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00105">105</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00102">102</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -664,7 +668,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00128">128</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00129">129</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
 
 </div>
 </div>
@@ -678,7 +682,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00123">123</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00124">124</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
 
 </div>
 </div>
@@ -692,7 +696,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00121">121</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00122">122</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
 
 </div>
 </div>
@@ -706,7 +710,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00122">122</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00123">123</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
 
 </div>
 </div>
@@ -720,7 +724,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00125">125</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__objective__fn_8hpp_source.html#l00126">126</a> of file <a class="el" href="lbann__objective__fn_8hpp_source.html">lbann_objective_fn.hpp</a>.</p>
 
 </div>
 </div>
@@ -734,7 +738,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="namespacelbann_1_1objective__functions.html">objective_functions</a></li><li class="navelem"><a class="el" href="classlbann_1_1objective__functions_1_1objective__fn.html">objective_fn</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 15:44:01 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 18:19:25 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

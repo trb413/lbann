@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-1-g8977da5-ci241246606</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2-gc3cfcde-ci241273174</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -126,184 +126,179 @@ $(document).ready(function(){initNavTree('lbann__data__reader__imagenet__cv_8cpp
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">using namespace </span>El;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classlbann_1_1DataReader__ImageNet__cv.html#a7e9bcdc7919c7e5a35c25bd8e04984ec">   36</a></span>&#160;<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#a7e9bcdc7919c7e5a35c25bd8e04984ec">lbann::DataReader_ImageNet_cv::DataReader_ImageNet_cv</a>(<span class="keywordtype">int</span> batchSize, std::shared_ptr&lt;cv_process&gt;&amp; pp, <span class="keywordtype">bool</span> shuffle)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  : <a class="code" href="classlbann_1_1DataReader.html">DataReader</a>(batchSize, shuffle), m_pp(pp)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#ab9d519976054c2f6666a25c869949880">m_image_width</a> = 256;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#ab691c5981e259e0cf58de71c4e9d324a">m_image_height</a> = 256;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#ac788b08a2183aab4b32d9f540377dc40">m_image_num_channels</a> = 3;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#a71ae94234be3102f4b02620477f6fb4a">m_num_labels</a> = 1000;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#a2ab181bbee2d9bce0c56455afec8a22f">m_pp</a>) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    stringstream err;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    err &lt;&lt; __FILE__&lt;&lt;<span class="stringliteral">&quot; &quot;</span>&lt;&lt;__LINE__&lt;&lt; <span class="stringliteral">&quot; :: Imagenet data reader construction error: invalid image processor&quot;</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classlbann_1_1DataReader__ImageNet__cv.html#a00fa1e22910b45a832e26b85047b642c">   51</a></span>&#160;<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#a7e9bcdc7919c7e5a35c25bd8e04984ec">lbann::DataReader_ImageNet_cv::DataReader_ImageNet_cv</a>(<span class="keyword">const</span> <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html">DataReader_ImageNet_cv</a>&amp; source)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  : <a class="code" href="classlbann_1_1DataReader.html">DataReader</a>((const <a class="code" href="classlbann_1_1DataReader.html">DataReader</a>&amp;) source),</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    m_image_dir(source.m_image_dir),</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    ImageList(source.ImageList),</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    m_image_width(source.m_image_width),</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    m_image_height(source.m_image_height),</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    m_image_num_channels(source.m_image_num_channels),</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    m_num_labels(source.m_num_labels),</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    m_pp(source.m_pp)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classlbann_1_1DataReader__ImageNet__cv.html#a17da5391e37847279d5c3be7045db5b5">   63</a></span>&#160;<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#a17da5391e37847279d5c3be7045db5b5">lbann::DataReader_ImageNet_cv::~DataReader_ImageNet_cv</a>()</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classlbann_1_1DataReader__ImageNet__cv.html#a5b9a0104f0e360dd006099719350084b">   67</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#a5b9a0104f0e360dd006099719350084b">lbann::DataReader_ImageNet_cv::fetch_data</a>(<a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; X)</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1DataReader.html#a0cb7850655f78075dec9875c9ef40a31">DataReader::position_valid</a>()) {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    stringstream err;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    err &lt;&lt; __FILE__&lt;&lt;<span class="stringliteral">&quot; &quot;</span>&lt;&lt;__LINE__&lt;&lt; <span class="stringliteral">&quot; :: Imagenet data reader load error: !position_valid&quot;</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  : <a class="code" href="classlbann_1_1DataReader.html">DataReader</a>(batchSize, shuffle), m_pp(pp) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#ab9d519976054c2f6666a25c869949880">m_image_width</a> = 256;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#ab691c5981e259e0cf58de71c4e9d324a">m_image_height</a> = 256;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#ac788b08a2183aab4b32d9f540377dc40">m_image_num_channels</a> = 3;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#a71ae94234be3102f4b02620477f6fb4a">m_num_labels</a> = 1000;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#a2ab181bbee2d9bce0c56455afec8a22f">m_pp</a>) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    stringstream err;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    err &lt;&lt; __FILE__&lt;&lt;<span class="stringliteral">&quot; &quot;</span>&lt;&lt;__LINE__&lt;&lt; <span class="stringliteral">&quot; :: Imagenet data reader construction error: invalid image processor&quot;</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classlbann_1_1DataReader__ImageNet__cv.html#a00fa1e22910b45a832e26b85047b642c">   50</a></span>&#160;<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#a7e9bcdc7919c7e5a35c25bd8e04984ec">lbann::DataReader_ImageNet_cv::DataReader_ImageNet_cv</a>(<span class="keyword">const</span> <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html">DataReader_ImageNet_cv</a>&amp; source)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  : <a class="code" href="classlbann_1_1DataReader.html">DataReader</a>((const <a class="code" href="classlbann_1_1DataReader.html">DataReader</a>&amp;) source),</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    m_image_dir(source.m_image_dir),</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    ImageList(source.ImageList),</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    m_image_width(source.m_image_width),</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    m_image_height(source.m_image_height),</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    m_image_num_channels(source.m_image_num_channels),</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    m_num_labels(source.m_num_labels),</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    m_pp(source.m_pp) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classlbann_1_1DataReader__ImageNet__cv.html#a17da5391e37847279d5c3be7045db5b5">   61</a></span>&#160;<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#a17da5391e37847279d5c3be7045db5b5">lbann::DataReader_ImageNet_cv::~DataReader_ImageNet_cv</a>() {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classlbann_1_1DataReader__ImageNet__cv.html#a5b9a0104f0e360dd006099719350084b">   64</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#a5b9a0104f0e360dd006099719350084b">lbann::DataReader_ImageNet_cv::fetch_data</a>(<a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; X) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1DataReader.html#a0cb7850655f78075dec9875c9ef40a31">DataReader::position_valid</a>()) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    stringstream err;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    err &lt;&lt; __FILE__&lt;&lt;<span class="stringliteral">&quot; &quot;</span>&lt;&lt;__LINE__&lt;&lt; <span class="stringliteral">&quot; :: Imagenet data reader load error: !position_valid&quot;</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> num_channel_values = m_image_width * m_image_height * m_image_num_channels;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> current_batch_size = getBatchSize();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> end_pos = Min(CurrentPos+current_batch_size, ShuffledIndices.size());</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> num_channel_values = m_image_width * m_image_height * m_image_num_channels;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> current_batch_size = getBatchSize();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> end_pos = Min(CurrentPos+current_batch_size, ShuffledIndices.size());</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#pragma omp parallel for</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = CurrentPos; n &lt; end_pos; ++n) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">  #pragma omp parallel for</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = CurrentPos; n &lt; end_pos; ++n) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">int</span> k = n - CurrentPos;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">int</span> index = ShuffledIndices[n];</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">string</span> imagepath = m_image_dir + ImageList[index].first;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">int</span> k = n - CurrentPos;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">int</span> index = ShuffledIndices[n];</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">string</span> imagepath = m_image_dir + ImageList[index].first;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">int</span> width=0, height=0, img_type=0;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">::Mat</a> X_v;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    View(X_v, X, IR(0, X.Height()), IR(k, k + 1));</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    cv_process pp(*m_pp);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">bool</span> ret = <a class="code" href="classlbann_1_1image__utils.html#ac324a04f877601387cfb10750f1f6b8d">lbann::image_utils::load_image</a>(imagepath, width, height, img_type, pp, X_v);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span>(!ret) {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(<span class="stringliteral">&quot;ImageNet: image_utils::loadJPG failed to load&quot;</span>);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="lbann__mild__exception_8hpp.html#a2383d19fc8bacf3fdc0b50f419f65cba">_BUILTIN_FALSE</a>((width * height * CV_MAT_CN(img_type)) != num_channel_values)) {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(<span class="stringliteral">&quot;ImageNet: mismatch data size -- either width or height&quot;</span>);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordflow">return</span> end_pos - CurrentPos;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classlbann_1_1DataReader__ImageNet__cv.html#af80a598d9c551a9a9e342d39da3e62ab">  102</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#af80a598d9c551a9a9e342d39da3e62ab">lbann::DataReader_ImageNet_cv::fetch_label</a>(<a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; Y)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordflow">if</span>(!position_valid()) {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    stringstream err;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    err &lt;&lt; __FILE__&lt;&lt;<span class="stringliteral">&quot; &quot;</span>&lt;&lt;__LINE__&lt;&lt; <span class="stringliteral">&quot; :: Imagenet data reader error: !position_valid&quot;</span>;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordtype">int</span> current_batch_size = getBatchSize();</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">int</span> n = 0;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordflow">for</span> (n = CurrentPos; n &lt; CurrentPos + current_batch_size; n++) {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">if</span> (n &gt;= (<span class="keywordtype">int</span>)ShuffledIndices.size())</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">int</span> width=0, height=0, img_type=0;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">::Mat</a> X_v;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    View(X_v, X, IR(0, X.Height()), IR(k, k + 1));</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    cv_process pp(*m_pp);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">bool</span> ret = <a class="code" href="classlbann_1_1image__utils.html#ac324a04f877601387cfb10750f1f6b8d">lbann::image_utils::load_image</a>(imagepath, width, height, img_type, pp, X_v);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">if</span>(!ret) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(<span class="stringliteral">&quot;ImageNet: image_utils::loadJPG failed to load&quot;</span>);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="lbann__mild__exception_8hpp.html#a2383d19fc8bacf3fdc0b50f419f65cba">_BUILTIN_FALSE</a>((width * height * CV_MAT_CN(img_type)) != num_channel_values)) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(<span class="stringliteral">&quot;ImageNet: mismatch data size -- either width or height&quot;</span>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">return</span> end_pos - CurrentPos;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classlbann_1_1DataReader__ImageNet__cv.html#af80a598d9c551a9a9e342d39da3e62ab">   98</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#af80a598d9c551a9a9e342d39da3e62ab">lbann::DataReader_ImageNet_cv::fetch_label</a>(<a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; Y) {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordflow">if</span>(!position_valid()) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    stringstream err;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    err &lt;&lt; __FILE__&lt;&lt;<span class="stringliteral">&quot; &quot;</span>&lt;&lt;__LINE__&lt;&lt; <span class="stringliteral">&quot; :: Imagenet data reader error: !position_valid&quot;</span>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">int</span> current_batch_size = getBatchSize();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordtype">int</span> n = 0;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordflow">for</span> (n = CurrentPos; n &lt; CurrentPos + current_batch_size; n++) {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">if</span> (n &gt;= (<span class="keywordtype">int</span>)ShuffledIndices.size()) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">int</span> k = n - CurrentPos;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">int</span> index = ShuffledIndices[n];</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">int</span> label = ImageList[index].second;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">int</span> k = n - CurrentPos;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">int</span> index = ShuffledIndices[n];</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">int</span> label = ImageList[index].second;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    Y.Set(label, k, 1);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordflow">return</span> (n - CurrentPos);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    Y.Set(label, k, 1);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordflow">return</span> (n - CurrentPos);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classlbann_1_1DataReader__ImageNet__cv.html#aad13f1f7da844c39debea0b019d8d10b">  121</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#aad13f1f7da844c39debea0b019d8d10b">lbann::DataReader_ImageNet_cv::load</a>() {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordtype">string</span> imageDir = get_file_dir();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordtype">string</span> imageListFile = get_data_filename();</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classlbann_1_1DataReader__ImageNet__cv.html#aad13f1f7da844c39debea0b019d8d10b">  125</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#aad13f1f7da844c39debea0b019d8d10b">lbann::DataReader_ImageNet_cv::load</a>()</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordtype">string</span> imageDir = get_file_dir();</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordtype">string</span> imageListFile = get_data_filename();</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  m_image_dir = imageDir; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  ImageList.clear();</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="comment">// load image list</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  FILE* fplist = fopen(imageListFile.c_str(), <span class="stringliteral">&quot;rt&quot;</span>);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordflow">if</span> (!fplist) {</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    stringstream err;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot;failed to open: &quot;</span> &lt;&lt; imageListFile &lt;&lt; endl;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  }</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordflow">while</span> (!feof(fplist)) {</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">char</span> imagepath[512];</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">int</span> imagelabel;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">if</span> (fscanf(fplist, <span class="stringliteral">&quot;%s%d&quot;</span>, imagepath, &amp;imagelabel) &lt;= 1)</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    ImageList.push_back(make_pair(imagepath, imagelabel));</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  }</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  fclose(fplist);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="comment">// reset indices</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  ShuffledIndices.clear();</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  ShuffledIndices.resize(ImageList.size());</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> n = 0; n &lt; ImageList.size(); n++) {</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    ShuffledIndices[n] = n;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  }</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  select_subset_of_data();</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="classlbann_1_1DataReader__ImageNet__cv.html#ad06f9b73e654bc20074b9fbfbb89fcd9">  160</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#ad06f9b73e654bc20074b9fbfbb89fcd9">lbann::DataReader_ImageNet_cv::free</a>()</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;{</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment">// Assignment operator</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="classlbann_1_1DataReader__ImageNet__cv.html#a4c50bcc26c5ed88e634917a0cafbd96f">  165</a></span>&#160;<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html">lbann::DataReader_ImageNet_cv</a>&amp; <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#a4c50bcc26c5ed88e634917a0cafbd96f">lbann::DataReader_ImageNet_cv::operator=</a>(<span class="keyword">const</span> <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html">DataReader_ImageNet_cv</a>&amp; source)</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;{</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="comment">// check for self-assignment</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">this</span> == &amp;source)</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="comment">// Call the parent operator= function</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <a class="code" href="classlbann_1_1DataReader.html#a497d6b1c3ac47e14e9795ff771888905">DataReader::operator=</a>(source);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  this-&gt;m_image_dir = source.<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#a7d1fc4fdc59a7d778f7eb319d886ceb6">m_image_dir</a>;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  this-&gt;ImageList = source.<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#a06529c2c6127c56d95c111d7859db5a0">ImageList</a>;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  this-&gt;m_image_width = source.<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#ab9d519976054c2f6666a25c869949880">m_image_width</a>;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  this-&gt;m_image_height = source.<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#ab691c5981e259e0cf58de71c4e9d324a">m_image_height</a>;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  this-&gt;m_image_num_channels = source.<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#ac788b08a2183aab4b32d9f540377dc40">m_image_num_channels</a>;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  this-&gt;m_num_labels = source.<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#a71ae94234be3102f4b02620477f6fb4a">m_num_labels</a>;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  this-&gt;m_pp = source.<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#a2ab181bbee2d9bce0c56455afec8a22f">m_pp</a>;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_ac788b08a2183aab4b32d9f540377dc40"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#ac788b08a2183aab4b32d9f540377dc40">lbann::DataReader_ImageNet_cv::m_image_num_channels</a></div><div class="ttdeci">int m_image_num_channels</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8hpp_source.html#l00072">lbann_data_reader_imagenet_cv.hpp:72</a></div></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  m_image_dir = imageDir; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  ImageList.clear();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="comment">// load image list</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  FILE *fplist = fopen(imageListFile.c_str(), <span class="stringliteral">&quot;rt&quot;</span>);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordflow">if</span> (!fplist) {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    stringstream err;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot;failed to open: &quot;</span> &lt;&lt; imageListFile &lt;&lt; endl;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordflow">while</span> (!feof(fplist)) {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordtype">char</span> imagepath[512];</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">int</span> imagelabel;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">if</span> (fscanf(fplist, <span class="stringliteral">&quot;%s%d&quot;</span>, imagepath, &amp;imagelabel) &lt;= 1) {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;      <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    ImageList.push_back(make_pair(imagepath, imagelabel));</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  fclose(fplist);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="comment">// reset indices</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  ShuffledIndices.clear();</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  ShuffledIndices.resize(ImageList.size());</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> n = 0; n &lt; ImageList.size(); n++) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    ShuffledIndices[n] = n;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  select_subset_of_data();</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="classlbann_1_1DataReader__ImageNet__cv.html#ad06f9b73e654bc20074b9fbfbb89fcd9">  156</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#ad06f9b73e654bc20074b9fbfbb89fcd9">lbann::DataReader_ImageNet_cv::free</a>() {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;}</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">// Assignment operator</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="classlbann_1_1DataReader__ImageNet__cv.html#a4c50bcc26c5ed88e634917a0cafbd96f">  160</a></span>&#160;<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html">lbann::DataReader_ImageNet_cv</a>&amp; <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#a4c50bcc26c5ed88e634917a0cafbd96f">lbann::DataReader_ImageNet_cv::operator=</a>(<span class="keyword">const</span> <a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html">DataReader_ImageNet_cv</a>&amp; source) {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="comment">// check for self-assignment</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">this</span> == &amp;source) {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="comment">// Call the parent operator= function</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <a class="code" href="classlbann_1_1DataReader.html#a497d6b1c3ac47e14e9795ff771888905">DataReader::operator=</a>(source);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  this-&gt;m_image_dir = source.<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#a7d1fc4fdc59a7d778f7eb319d886ceb6">m_image_dir</a>;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  this-&gt;ImageList = source.<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#a06529c2c6127c56d95c111d7859db5a0">ImageList</a>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  this-&gt;m_image_width = source.<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#ab9d519976054c2f6666a25c869949880">m_image_width</a>;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  this-&gt;m_image_height = source.<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#ab691c5981e259e0cf58de71c4e9d324a">m_image_height</a>;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  this-&gt;m_image_num_channels = source.<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#ac788b08a2183aab4b32d9f540377dc40">m_image_num_channels</a>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  this-&gt;m_num_labels = source.<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#a71ae94234be3102f4b02620477f6fb4a">m_num_labels</a>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  this-&gt;m_pp = source.<a class="code" href="classlbann_1_1DataReader__ImageNet__cv.html#a2ab181bbee2d9bce0c56455afec8a22f">m_pp</a>;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_ac788b08a2183aab4b32d9f540377dc40"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#ac788b08a2183aab4b32d9f540377dc40">lbann::DataReader_ImageNet_cv::m_image_num_channels</a></div><div class="ttdeci">int m_image_num_channels</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8hpp_source.html#l00082">lbann_data_reader_imagenet_cv.hpp:82</a></div></div>
 <div class="ttc" id="lbann__mild__exception_8hpp_html_a2383d19fc8bacf3fdc0b50f419f65cba"><div class="ttname"><a href="lbann__mild__exception_8hpp.html#a2383d19fc8bacf3fdc0b50f419f65cba">_BUILTIN_FALSE</a></div><div class="ttdeci">#define _BUILTIN_FALSE(_COND_)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__mild__exception_8hpp_source.html#l00034">lbann_mild_exception.hpp:34</a></div></div>
-<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_a71ae94234be3102f4b02620477f6fb4a"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#a71ae94234be3102f4b02620477f6fb4a">lbann::DataReader_ImageNet_cv::m_num_labels</a></div><div class="ttdeci">int m_num_labels</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8hpp_source.html#l00073">lbann_data_reader_imagenet_cv.hpp:73</a></div></div>
-<div class="ttc" id="classlbann_1_1image__utils_html_ac324a04f877601387cfb10750f1f6b8d"><div class="ttname"><a href="classlbann_1_1image__utils.html#ac324a04f877601387cfb10750f1f6b8d">lbann::image_utils::load_image</a></div><div class="ttdeci">static bool load_image(const std::string &amp;filename, int &amp;Width, int &amp;Height, int &amp;Type, cv_process &amp;pp, std::vector&lt; uint8_t &gt; &amp;buf)</div><div class="ttdoc">Load an image from a file and put it into a serialized buffer. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__image__utils_8cpp_source.html#l00335">lbann_image_utils.cpp:335</a></div></div>
-<div class="ttc" id="classlbann_1_1DataReader_html"><div class="ttname"><a href="classlbann_1_1DataReader.html">lbann::DataReader</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00057">lbann_data_reader.hpp:57</a></div></div>
-<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html">lbann::DataReader_ImageNet_cv</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8hpp_source.html#l00038">lbann_data_reader_imagenet_cv.hpp:38</a></div></div>
-<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_ad06f9b73e654bc20074b9fbfbb89fcd9"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#ad06f9b73e654bc20074b9fbfbb89fcd9">lbann::DataReader_ImageNet_cv::free</a></div><div class="ttdeci">void free()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8cpp_source.html#l00160">lbann_data_reader_imagenet_cv.cpp:160</a></div></div>
-<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_a4c50bcc26c5ed88e634917a0cafbd96f"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#a4c50bcc26c5ed88e634917a0cafbd96f">lbann::DataReader_ImageNet_cv::operator=</a></div><div class="ttdeci">DataReader_ImageNet_cv &amp; operator=(const DataReader_ImageNet_cv &amp;source)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8cpp_source.html#l00165">lbann_data_reader_imagenet_cv.cpp:165</a></div></div>
+<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_a71ae94234be3102f4b02620477f6fb4a"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#a71ae94234be3102f4b02620477f6fb4a">lbann::DataReader_ImageNet_cv::m_num_labels</a></div><div class="ttdeci">int m_num_labels</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8hpp_source.html#l00083">lbann_data_reader_imagenet_cv.hpp:83</a></div></div>
+<div class="ttc" id="classlbann_1_1image__utils_html_ac324a04f877601387cfb10750f1f6b8d"><div class="ttname"><a href="classlbann_1_1image__utils.html#ac324a04f877601387cfb10750f1f6b8d">lbann::image_utils::load_image</a></div><div class="ttdeci">static bool load_image(const std::string &amp;filename, int &amp;Width, int &amp;Height, int &amp;Type, cv_process &amp;pp, std::vector&lt; uint8_t &gt; &amp;buf)</div><div class="ttdoc">Load an image from a file and put it into a serialized buffer. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__image__utils_8cpp_source.html#l00326">lbann_image_utils.cpp:326</a></div></div>
+<div class="ttc" id="classlbann_1_1DataReader_html"><div class="ttname"><a href="classlbann_1_1DataReader.html">lbann::DataReader</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00056">lbann_data_reader.hpp:56</a></div></div>
+<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html">lbann::DataReader_ImageNet_cv</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8hpp_source.html#l00037">lbann_data_reader_imagenet_cv.hpp:37</a></div></div>
+<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_ad06f9b73e654bc20074b9fbfbb89fcd9"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#ad06f9b73e654bc20074b9fbfbb89fcd9">lbann::DataReader_ImageNet_cv::free</a></div><div class="ttdeci">void free()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8cpp_source.html#l00156">lbann_data_reader_imagenet_cv.cpp:156</a></div></div>
+<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_a4c50bcc26c5ed88e634917a0cafbd96f"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#a4c50bcc26c5ed88e634917a0cafbd96f">lbann::DataReader_ImageNet_cv::operator=</a></div><div class="ttdeci">DataReader_ImageNet_cv &amp; operator=(const DataReader_ImageNet_cv &amp;source)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8cpp_source.html#l00160">lbann_data_reader_imagenet_cv.cpp:160</a></div></div>
 <div class="ttc" id="classlbann_1_1DataReader_html_a497d6b1c3ac47e14e9795ff771888905"><div class="ttname"><a href="classlbann_1_1DataReader.html#a497d6b1c3ac47e14e9795ff771888905">lbann::DataReader::operator=</a></div><div class="ttdeci">DataReader &amp; operator=(const DataReader &amp;source)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8cpp_source.html#l00161">lbann_data_reader.cpp:161</a></div></div>
 <div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_a7e9bcdc7919c7e5a35c25bd8e04984ec"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#a7e9bcdc7919c7e5a35c25bd8e04984ec">lbann::DataReader_ImageNet_cv::DataReader_ImageNet_cv</a></div><div class="ttdeci">DataReader_ImageNet_cv(int batchSize, std::shared_ptr&lt; cv_process &gt; &amp;pp, bool shuffle=true)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8cpp_source.html#l00036">lbann_data_reader_imagenet_cv.cpp:36</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__exception_8hpp_source.html#l00041">lbann_exception.hpp:41</a></div></div>
-<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_af80a598d9c551a9a9e342d39da3e62ab"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#af80a598d9c551a9a9e342d39da3e62ab">lbann::DataReader_ImageNet_cv::fetch_label</a></div><div class="ttdeci">virtual int fetch_label(Mat &amp;Y)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8cpp_source.html#l00102">lbann_data_reader_imagenet_cv.cpp:102</a></div></div>
-<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_a5b9a0104f0e360dd006099719350084b"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#a5b9a0104f0e360dd006099719350084b">lbann::DataReader_ImageNet_cv::fetch_data</a></div><div class="ttdeci">virtual int fetch_data(Mat &amp;X)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8cpp_source.html#l00067">lbann_data_reader_imagenet_cv.cpp:67</a></div></div>
-<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_a7d1fc4fdc59a7d778f7eb319d886ceb6"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#a7d1fc4fdc59a7d778f7eb319d886ceb6">lbann::DataReader_ImageNet_cv::m_image_dir</a></div><div class="ttdeci">std::string m_image_dir</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8hpp_source.html#l00068">lbann_data_reader_imagenet_cv.hpp:68</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__exception_8hpp_source.html#l00040">lbann_exception.hpp:40</a></div></div>
+<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_af80a598d9c551a9a9e342d39da3e62ab"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#af80a598d9c551a9a9e342d39da3e62ab">lbann::DataReader_ImageNet_cv::fetch_label</a></div><div class="ttdeci">virtual int fetch_label(Mat &amp;Y)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8cpp_source.html#l00098">lbann_data_reader_imagenet_cv.cpp:98</a></div></div>
+<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_a5b9a0104f0e360dd006099719350084b"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#a5b9a0104f0e360dd006099719350084b">lbann::DataReader_ImageNet_cv::fetch_data</a></div><div class="ttdeci">virtual int fetch_data(Mat &amp;X)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8cpp_source.html#l00064">lbann_data_reader_imagenet_cv.cpp:64</a></div></div>
+<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_a7d1fc4fdc59a7d778f7eb319d886ceb6"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#a7d1fc4fdc59a7d778f7eb319d886ceb6">lbann::DataReader_ImageNet_cv::m_image_dir</a></div><div class="ttdeci">std::string m_image_dir</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8hpp_source.html#l00078">lbann_data_reader_imagenet_cv.hpp:78</a></div></div>
 <div class="ttc" id="lbann__data__reader__imagenet__cv_8hpp_html"><div class="ttname"><a href="lbann__data__reader__imagenet__cv_8hpp.html">lbann_data_reader_imagenet_cv.hpp</a></div></div>
 <div class="ttc" id="lbann__image__utils_8hpp_html"><div class="ttname"><a href="lbann__image__utils_8hpp.html">lbann_image_utils.hpp</a></div></div>
-<div class="ttc" id="classlbann_1_1DataReader_html_a0cb7850655f78075dec9875c9ef40a31"><div class="ttname"><a href="classlbann_1_1DataReader.html#a0cb7850655f78075dec9875c9ef40a31">lbann::DataReader::position_valid</a></div><div class="ttdeci">bool position_valid()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00246">lbann_data_reader.hpp:246</a></div></div>
-<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_a2ab181bbee2d9bce0c56455afec8a22f"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#a2ab181bbee2d9bce0c56455afec8a22f">lbann::DataReader_ImageNet_cv::m_pp</a></div><div class="ttdeci">std::shared_ptr&lt; cv_process &gt; m_pp</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8hpp_source.html#l00075">lbann_data_reader_imagenet_cv.hpp:75</a></div></div>
+<div class="ttc" id="classlbann_1_1DataReader_html_a0cb7850655f78075dec9875c9ef40a31"><div class="ttname"><a href="classlbann_1_1DataReader.html#a0cb7850655f78075dec9875c9ef40a31">lbann::DataReader::position_valid</a></div><div class="ttdeci">bool position_valid()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00258">lbann_data_reader.hpp:258</a></div></div>
+<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_a2ab181bbee2d9bce0c56455afec8a22f"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#a2ab181bbee2d9bce0c56455afec8a22f">lbann::DataReader_ImageNet_cv::m_pp</a></div><div class="ttdeci">std::shared_ptr&lt; cv_process &gt; m_pp</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8hpp_source.html#l00085">lbann_data_reader_imagenet_cv.hpp:85</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00042">lbann_base.hpp:42</a></div></div>
-<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_ab9d519976054c2f6666a25c869949880"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#ab9d519976054c2f6666a25c869949880">lbann::DataReader_ImageNet_cv::m_image_width</a></div><div class="ttdeci">int m_image_width</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8hpp_source.html#l00070">lbann_data_reader_imagenet_cv.hpp:70</a></div></div>
-<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_ab691c5981e259e0cf58de71c4e9d324a"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#ab691c5981e259e0cf58de71c4e9d324a">lbann::DataReader_ImageNet_cv::m_image_height</a></div><div class="ttdeci">int m_image_height</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8hpp_source.html#l00071">lbann_data_reader_imagenet_cv.hpp:71</a></div></div>
-<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_a17da5391e37847279d5c3be7045db5b5"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#a17da5391e37847279d5c3be7045db5b5">lbann::DataReader_ImageNet_cv::~DataReader_ImageNet_cv</a></div><div class="ttdeci">~DataReader_ImageNet_cv()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8cpp_source.html#l00063">lbann_data_reader_imagenet_cv.cpp:63</a></div></div>
-<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_aad13f1f7da844c39debea0b019d8d10b"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#aad13f1f7da844c39debea0b019d8d10b">lbann::DataReader_ImageNet_cv::load</a></div><div class="ttdeci">virtual void load()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8cpp_source.html#l00125">lbann_data_reader_imagenet_cv.cpp:125</a></div></div>
-<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_a06529c2c6127c56d95c111d7859db5a0"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#a06529c2c6127c56d95c111d7859db5a0">lbann::DataReader_ImageNet_cv::ImageList</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; std::string, int &gt; &gt; ImageList</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8hpp_source.html#l00069">lbann_data_reader_imagenet_cv.hpp:69</a></div></div>
+<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_ab9d519976054c2f6666a25c869949880"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#ab9d519976054c2f6666a25c869949880">lbann::DataReader_ImageNet_cv::m_image_width</a></div><div class="ttdeci">int m_image_width</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8hpp_source.html#l00080">lbann_data_reader_imagenet_cv.hpp:80</a></div></div>
+<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_ab691c5981e259e0cf58de71c4e9d324a"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#ab691c5981e259e0cf58de71c4e9d324a">lbann::DataReader_ImageNet_cv::m_image_height</a></div><div class="ttdeci">int m_image_height</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8hpp_source.html#l00081">lbann_data_reader_imagenet_cv.hpp:81</a></div></div>
+<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_a17da5391e37847279d5c3be7045db5b5"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#a17da5391e37847279d5c3be7045db5b5">lbann::DataReader_ImageNet_cv::~DataReader_ImageNet_cv</a></div><div class="ttdeci">~DataReader_ImageNet_cv()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8cpp_source.html#l00061">lbann_data_reader_imagenet_cv.cpp:61</a></div></div>
+<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_aad13f1f7da844c39debea0b019d8d10b"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#aad13f1f7da844c39debea0b019d8d10b">lbann::DataReader_ImageNet_cv::load</a></div><div class="ttdeci">virtual void load()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8cpp_source.html#l00121">lbann_data_reader_imagenet_cv.cpp:121</a></div></div>
+<div class="ttc" id="classlbann_1_1DataReader__ImageNet__cv_html_a06529c2c6127c56d95c111d7859db5a0"><div class="ttname"><a href="classlbann_1_1DataReader__ImageNet__cv.html#a06529c2c6127c56d95c111d7859db5a0">lbann::DataReader_ImageNet_cv::ImageList</a></div><div class="ttdeci">std::vector&lt; std::pair&lt; std::string, int &gt; &gt; ImageList</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__cv_8hpp_source.html#l00079">lbann_data_reader_imagenet_cv.hpp:79</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_4fd9b0f9a8d3454cc4920413ede2913f.html">data_readers</a></li><li class="navelem"><a class="el" href="lbann__data__reader__imagenet__cv_8cpp.html">lbann_data_reader_imagenet_cv.cpp</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 15:43:58 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 18:19:22 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

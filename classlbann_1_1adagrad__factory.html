@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-1-g8977da5-ci241246606</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2-gc3cfcde-ci241273174</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -157,7 +157,7 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Factory for AdaGrad optimizer. </p>
 
-<p>Definition at line <a class="el" href="lbann__optimizer__adagrad_8hpp_source.html#l00060">60</a> of file <a class="el" href="lbann__optimizer__adagrad_8hpp_source.html">lbann_optimizer_adagrad.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__optimizer__adagrad_8hpp_source.html#l00058">58</a> of file <a class="el" href="lbann__optimizer__adagrad_8hpp_source.html">lbann_optimizer_adagrad.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ae16b10f82068610c876f9f2f4513a1fe"></a>
 <div class="memitem">
@@ -191,15 +191,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Constructor. </p>
 
-<p>Definition at line <a class="el" href="lbann__optimizer__adagrad_8cpp_source.html#l00157">157</a> of file <a class="el" href="lbann__optimizer__adagrad_8cpp_source.html">lbann_optimizer_adagrad.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  : <a class="code" href="classlbann_1_1optimizer__factory.html#a6180e1301ee5cd1a4fd77cc6ba9a4ef5">optimizer_factory</a>(<a class="code" href="classlbann_1_1optimizer__factory.html#aa86663b945c9ff77bfa334a10dc978e1">comm</a>, <span class="stringliteral">&quot;adagrad&quot;</span>),</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="classlbann_1_1adagrad__factory.html#ad9c0898c37a19fc2f9e2796672fd31c4">m_eps</a>(eps),</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <a class="code" href="classlbann_1_1adagrad__factory.html#aecdda4b57fb3f5b00de3c15aea54ad90">m_learning_rate</a>(learning_rate)</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__optimizer__adagrad_8cpp_source.html#l00158">158</a> of file <a class="el" href="lbann__optimizer__adagrad_8cpp_source.html">lbann_optimizer_adagrad.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  : <a class="code" href="classlbann_1_1optimizer__factory.html#a6180e1301ee5cd1a4fd77cc6ba9a4ef5">optimizer_factory</a>(<a class="code" href="classlbann_1_1optimizer__factory.html#aa86663b945c9ff77bfa334a10dc978e1">comm</a>, <span class="stringliteral">&quot;adagrad&quot;</span>),</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <a class="code" href="classlbann_1_1adagrad__factory.html#ad9c0898c37a19fc2f9e2796672fd31c4">m_eps</a>(eps),</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <a class="code" href="classlbann_1_1adagrad__factory.html#aecdda4b57fb3f5b00de3c15aea54ad90">m_learning_rate</a>(learning_rate)</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;{}</div>
 <div class="ttc" id="classlbann_1_1optimizer__factory_html_a6180e1301ee5cd1a4fd77cc6ba9a4ef5"><div class="ttname"><a href="classlbann_1_1optimizer__factory.html#a6180e1301ee5cd1a4fd77cc6ba9a4ef5">lbann::optimizer_factory::optimizer_factory</a></div><div class="ttdeci">optimizer_factory(lbann_comm *comm, const std::string name)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8cpp_source.html#l00061">lbann_optimizer.cpp:61</a></div></div>
-<div class="ttc" id="classlbann_1_1adagrad__factory_html_ad9c0898c37a19fc2f9e2796672fd31c4"><div class="ttname"><a href="classlbann_1_1adagrad__factory.html#ad9c0898c37a19fc2f9e2796672fd31c4">lbann::adagrad_factory::m_eps</a></div><div class="ttdeci">DataType m_eps</div><div class="ttdoc">Small factor to avoid division by zero. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__adagrad_8hpp_source.html#l00074">lbann_optimizer_adagrad.hpp:74</a></div></div>
-<div class="ttc" id="classlbann_1_1adagrad__factory_html_aecdda4b57fb3f5b00de3c15aea54ad90"><div class="ttname"><a href="classlbann_1_1adagrad__factory.html#aecdda4b57fb3f5b00de3c15aea54ad90">lbann::adagrad_factory::m_learning_rate</a></div><div class="ttdeci">DataType m_learning_rate</div><div class="ttdoc">Learning rate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__adagrad_8hpp_source.html#l00076">lbann_optimizer_adagrad.hpp:76</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer__factory_html_aa86663b945c9ff77bfa334a10dc978e1"><div class="ttname"><a href="classlbann_1_1optimizer__factory.html#aa86663b945c9ff77bfa334a10dc978e1">lbann::optimizer_factory::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdoc">LBANN communicator. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00120">lbann_optimizer.hpp:120</a></div></div>
+<div class="ttc" id="classlbann_1_1adagrad__factory_html_ad9c0898c37a19fc2f9e2796672fd31c4"><div class="ttname"><a href="classlbann_1_1adagrad__factory.html#ad9c0898c37a19fc2f9e2796672fd31c4">lbann::adagrad_factory::m_eps</a></div><div class="ttdeci">DataType m_eps</div><div class="ttdoc">Small factor to avoid division by zero. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__adagrad_8hpp_source.html#l00071">lbann_optimizer_adagrad.hpp:71</a></div></div>
+<div class="ttc" id="classlbann_1_1adagrad__factory_html_aecdda4b57fb3f5b00de3c15aea54ad90"><div class="ttname"><a href="classlbann_1_1adagrad__factory.html#aecdda4b57fb3f5b00de3c15aea54ad90">lbann::adagrad_factory::m_learning_rate</a></div><div class="ttdeci">DataType m_learning_rate</div><div class="ttdoc">Learning rate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__adagrad_8hpp_source.html#l00073">lbann_optimizer_adagrad.hpp:73</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer__factory_html_aa86663b945c9ff77bfa334a10dc978e1"><div class="ttname"><a href="classlbann_1_1optimizer__factory.html#aa86663b945c9ff77bfa334a10dc978e1">lbann::optimizer_factory::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdoc">LBANN communicator. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00129">lbann_optimizer.hpp:129</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -226,8 +226,8 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Destructor. </p>
 
-<p>Definition at line <a class="el" href="lbann__optimizer__adagrad_8cpp_source.html#l00165">165</a> of file <a class="el" href="lbann__optimizer__adagrad_8cpp_source.html">lbann_optimizer_adagrad.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="lbann__optimizer__adagrad_8cpp_source.html#l00166">166</a> of file <a class="el" href="lbann__optimizer__adagrad_8cpp_source.html">lbann_optimizer_adagrad.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -257,13 +257,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="classlbann_1_1optimizer__factory.html#a773122b079f0f1dc6e13f690aa294766">lbann::optimizer_factory</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__optimizer__adagrad_8cpp_source.html#l00167">167</a> of file <a class="el" href="lbann__optimizer__adagrad_8cpp_source.html">lbann_optimizer_adagrad.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;{</div>
+<p>Definition at line <a class="el" href="lbann__optimizer__adagrad_8cpp_source.html#l00168">168</a> of file <a class="el" href="lbann__optimizer__adagrad_8cpp_source.html">lbann_optimizer_adagrad.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                                       {</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">new</span> adagrad(<a class="code" href="classlbann_1_1optimizer__factory.html#aa86663b945c9ff77bfa334a10dc978e1">comm</a>, <a class="code" href="classlbann_1_1adagrad__factory.html#aecdda4b57fb3f5b00de3c15aea54ad90">m_learning_rate</a>, <a class="code" href="classlbann_1_1adagrad__factory.html#ad9c0898c37a19fc2f9e2796672fd31c4">m_eps</a>);</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1adagrad__factory_html_ad9c0898c37a19fc2f9e2796672fd31c4"><div class="ttname"><a href="classlbann_1_1adagrad__factory.html#ad9c0898c37a19fc2f9e2796672fd31c4">lbann::adagrad_factory::m_eps</a></div><div class="ttdeci">DataType m_eps</div><div class="ttdoc">Small factor to avoid division by zero. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__adagrad_8hpp_source.html#l00074">lbann_optimizer_adagrad.hpp:74</a></div></div>
-<div class="ttc" id="classlbann_1_1adagrad__factory_html_aecdda4b57fb3f5b00de3c15aea54ad90"><div class="ttname"><a href="classlbann_1_1adagrad__factory.html#aecdda4b57fb3f5b00de3c15aea54ad90">lbann::adagrad_factory::m_learning_rate</a></div><div class="ttdeci">DataType m_learning_rate</div><div class="ttdoc">Learning rate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__adagrad_8hpp_source.html#l00076">lbann_optimizer_adagrad.hpp:76</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer__factory_html_aa86663b945c9ff77bfa334a10dc978e1"><div class="ttname"><a href="classlbann_1_1optimizer__factory.html#aa86663b945c9ff77bfa334a10dc978e1">lbann::optimizer_factory::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdoc">LBANN communicator. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00120">lbann_optimizer.hpp:120</a></div></div>
+<div class="ttc" id="classlbann_1_1adagrad__factory_html_ad9c0898c37a19fc2f9e2796672fd31c4"><div class="ttname"><a href="classlbann_1_1adagrad__factory.html#ad9c0898c37a19fc2f9e2796672fd31c4">lbann::adagrad_factory::m_eps</a></div><div class="ttdeci">DataType m_eps</div><div class="ttdoc">Small factor to avoid division by zero. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__adagrad_8hpp_source.html#l00071">lbann_optimizer_adagrad.hpp:71</a></div></div>
+<div class="ttc" id="classlbann_1_1adagrad__factory_html_aecdda4b57fb3f5b00de3c15aea54ad90"><div class="ttname"><a href="classlbann_1_1adagrad__factory.html#aecdda4b57fb3f5b00de3c15aea54ad90">lbann::adagrad_factory::m_learning_rate</a></div><div class="ttdeci">DataType m_learning_rate</div><div class="ttdoc">Learning rate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer__adagrad_8hpp_source.html#l00073">lbann_optimizer_adagrad.hpp:73</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer__factory_html_aa86663b945c9ff77bfa334a10dc978e1"><div class="ttname"><a href="classlbann_1_1optimizer__factory.html#aa86663b945c9ff77bfa334a10dc978e1">lbann::optimizer_factory::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdoc">LBANN communicator. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00129">lbann_optimizer.hpp:129</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -288,7 +288,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Small factor to avoid division by zero. </p>
 
-<p>Definition at line <a class="el" href="lbann__optimizer__adagrad_8hpp_source.html#l00074">74</a> of file <a class="el" href="lbann__optimizer__adagrad_8hpp_source.html">lbann_optimizer_adagrad.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__optimizer__adagrad_8hpp_source.html#l00071">71</a> of file <a class="el" href="lbann__optimizer__adagrad_8hpp_source.html">lbann_optimizer_adagrad.hpp</a>.</p>
 
 </div>
 </div>
@@ -312,7 +312,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Learning rate. </p>
 
-<p>Definition at line <a class="el" href="lbann__optimizer__adagrad_8hpp_source.html#l00076">76</a> of file <a class="el" href="lbann__optimizer__adagrad_8hpp_source.html">lbann_optimizer_adagrad.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__optimizer__adagrad_8hpp_source.html#l00073">73</a> of file <a class="el" href="lbann__optimizer__adagrad_8hpp_source.html">lbann_optimizer_adagrad.hpp</a>.</p>
 
 </div>
 </div>
@@ -326,7 +326,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1adagrad__factory.html">adagrad_factory</a></li>
-    <li class="footer">Generated on Fri Jun 9 2017 15:44:01 for LBANN by
+    <li class="footer">Generated on Fri Jun 9 2017 18:19:24 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
