@@ -12,9 +12,9 @@ var classlbann_1_1metrics_1_1metric =
     [ "setup", "classlbann_1_1metrics_1_1metric.html#ad87909c3c9793a05c88420ab8473dbd2", null ],
     [ "m_comm", "classlbann_1_1metrics_1_1metric.html#a13a38b9b0c81442d7e5c8c378cad8117", null ],
     [ "m_data_layout", "classlbann_1_1metrics_1_1metric.html#a5f85bb1542968ddd312dae8fee04ce65", null ],
+    [ "m_neural_network_model", "classlbann_1_1metrics_1_1metric.html#ab8214235f2bfbc05d28c13beeb1f8bb4", null ],
     [ "m_testing_stats", "classlbann_1_1metrics_1_1metric.html#a52dcd2cbed8053d9a00462dd326cebd6", null ],
     [ "m_training_stats", "classlbann_1_1metrics_1_1metric.html#a33b3527a28a6e8d8eaf719d9327fe303", null ],
     [ "m_validation_stats", "classlbann_1_1metrics_1_1metric.html#a28589fea20a9ed6bcc043e0f17ad5453", null ],
-    [ "neural_network_model", "classlbann_1_1metrics_1_1metric.html#aa2923a8982c083c63d3414bd3a6670a1", null ],
     [ "type", "classlbann_1_1metrics_1_1metric.html#ab4118ce33325ab57e57ad21c7dde8fa0", null ]
 ];

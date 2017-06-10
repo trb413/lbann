@@ -1,7 +1,7 @@
 var searchData=
 [
   ['wait',['wait',['../classlbann_1_1lbann__comm.html#a44faf6c010f45067e2951350e9e52d37',1,'lbann::lbann_comm']]],
-  ['wbl2norm',['WBL2norm',['../classlbann_1_1FullyConnectedLayer.html#a89c7f0ae4c8fa750da34673ab20d1f6b',1,'lbann::FullyConnectedLayer::WBL2norm()'],['../classlbann_1_1SoftmaxLayer.html#a82834a7c72d8ed4e1a810563c9442a05',1,'lbann::SoftmaxLayer::WBL2norm()']]],
+  ['wbl2norm',['WBL2norm',['../classlbann_1_1FullyConnectedLayer.html#a20c67dd9ebcf0040da8168cac9581880',1,'lbann::FullyConnectedLayer::WBL2norm()'],['../classlbann_1_1SoftmaxLayer.html#a8e7a11ef643986014749dddcfe50eb7e',1,'lbann::SoftmaxLayer::WBL2norm()']]],
   ['weight_5finitialization_5fname',['weight_initialization_name',['../classlbann_1_1Layer.html#a7a55c61403cf1ecadc465d7d8663be07',1,'lbann::Layer']]],
   ['what',['what',['../classlbann_1_1lbann__exception.html#aad345f2f724f8bbc00ef455ae2707414',1,'lbann::lbann_exception']]],
   ['write_5fbytes',['write_bytes',['../classlbann_1_1persist.html#aa965a57769d140849ca61e0a159ca04f',1,'lbann::persist::write_bytes()'],['../namespacelbann.html#af0c8fc38d05bfc6aaf4bc78d06e6710a',1,'lbann::write_bytes()']]],

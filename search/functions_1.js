@@ -28,7 +28,7 @@ var searchData=
   ['am_5fmodel_5fmaster',['am_model_master',['../classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac',1,'lbann::lbann_comm']]],
   ['am_5fworld_5fmaster',['am_world_master',['../classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5',1,'lbann::lbann_comm']]],
   ['at_5fepoch_5fstart',['at_epoch_start',['../classlbann_1_1model.html#a606cc1d218b1f609b5a02b07e7f4bcee',1,'lbann::model::at_epoch_start()'],['../classlbann_1_1sequential__model.html#acc7bcdbc4ade874d6e2fd4e1e5e54f0c',1,'lbann::sequential_model::at_epoch_start()']]],
-  ['at_5fnew_5fepoch',['at_new_epoch',['../classlbann_1_1generic__data__reader.html#abafaed65a3f75d7bb6e4797605dd0476',1,'lbann::generic_data_reader::at_new_epoch()'],['../classlbann_1_1io__layer.html#a4f0e3bbd6bc638432723179efc2998ab',1,'lbann::io_layer::at_new_epoch()']]],
+  ['at_5fnew_5fepoch',['at_new_epoch',['../classlbann_1_1generic__data__reader.html#abafaed65a3f75d7bb6e4797605dd0476',1,'lbann::generic_data_reader::at_new_epoch()'],['../classlbann_1_1io__layer.html#a956983ae0318c8e77ded59f47b20d536',1,'lbann::io_layer::at_new_epoch()']]],
   ['augment',['augment',['../classlbann_1_1lbann__image__preprocessor.html#a27cb5182c4f764cbfa4edecbb78ef29d',1,'lbann::lbann_image_preprocessor']]],
-  ['average_5fcost',['average_cost',['../classlbann_1_1reconstruction__layer.html#ad08970ab8f7874eee20fce4afe98c2d5',1,'lbann::reconstruction_layer::average_cost()'],['../classlbann_1_1target__layer__unsupervised.html#ae7701c23a1783a943b92ea7c11478fbc',1,'lbann::target_layer_unsupervised::average_cost()']]]
+  ['average_5fcost',['average_cost',['../classlbann_1_1reconstruction__layer.html#a11c8753ed10f003afcfca67843573112',1,'lbann::reconstruction_layer::average_cost()'],['../classlbann_1_1target__layer__unsupervised.html#a6574c70302eb3ef8e7ca8b940a6813e8',1,'lbann::target_layer_unsupervised::average_cost()']]]
 ];

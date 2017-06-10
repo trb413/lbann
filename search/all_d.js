@@ -10,7 +10,6 @@ var searchData=
   ['networkparams',['NetworkParams',['../classlbann_1_1NetworkParams.html',1,'lbann']]],
   ['networkparams',['NetworkParams',['../classlbann_1_1NetworkParams.html#a4215c353913bbe4ba1137d1525487446',1,'lbann::NetworkParams']]],
   ['networkstr',['NetworkStr',['../classlbann_1_1NetworkParams.html#a8b503690c7475582b5a843f0959c3f2a',1,'lbann::NetworkParams']]],
-  ['neural_5fnetwork_5fmodel',['neural_network_model',['../classlbann_1_1Layer.html#a9699f8d327ed26f98a52c750f38f8312',1,'lbann::Layer::neural_network_model()'],['../classlbann_1_1metrics_1_1metric.html#aa2923a8982c083c63d3414bd3a6670a1',1,'lbann::metrics::metric::neural_network_model()']]],
   ['new_5factivation',['new_activation',['../namespacelbann.html#a6bc1a6b4f98b412f48a2f29b02e48a77',1,'lbann']]],
   ['no_5flocal_5ftrans',['no_local_trans',['../structlbann_1_1lbann__comm_1_1allreduce__options.html#ad9890ae127412ee65a98cbdb02a4b143',1,'lbann::lbann_comm::allreduce_options']]],
   ['node_5fcomm',['node_comm',['../classlbann_1_1lbann__comm.html#a9f1f65663ca1d441f98f003b612eeb8c',1,'lbann::lbann_comm']]],

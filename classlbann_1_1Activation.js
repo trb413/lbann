@@ -1,6 +1,6 @@
 var classlbann_1_1Activation =
 [
-    [ "~Activation", "classlbann_1_1Activation.html#a93f28dac9ec750472f9fc3058fffc705", null ],
+    [ "~Activation", "classlbann_1_1Activation.html#a93e6f5324a75e0755dd543b88cb54e04", null ],
     [ "act", "classlbann_1_1Activation.html#a3843eb7539e4f77678ea3c6ed73acb9b", null ],
     [ "act_prime", "classlbann_1_1Activation.html#a32afd50758faa927a8cb599a025dd044", null ],
     [ "activation_name", "classlbann_1_1Activation.html#a8b5e4d5c75488511c80a7ee39ff1cd46", null ],

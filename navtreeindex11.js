@@ -1,5 +1,7 @@
 var NAVTREEINDEX11 =
 {
+"struct__BOX3__FLOAT.html#ae170039fc06972bd0e8c5cc0652f1706":[3,0,17,2],
+"struct__BOX3__FLOAT.html#af809b76f3ee8705914c0253a00fa6be2":[3,0,17,0],
 "struct__BOX3__INT.html":[3,0,18],
 "struct__BOX3__INT.html#a067759e7bf2dd65f15aef19b1ea00a2a":[3,0,18,0],
 "struct__BOX3__INT.html#a1031b258579b04852665a7743062d945":[3,0,18,3],

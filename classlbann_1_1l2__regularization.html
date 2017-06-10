@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-48-g37ce27c-ci241442121</span>
+   &#160;<span id="projectnumber">v0.93-rc0-49-gbb623dc-ci241451533</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -110,7 +110,7 @@ Collaboration diagram for lbann::l2_regularization:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1l2__regularization__coll__graph.png" border="0" usemap="#lbann_1_1l2__regularization_coll__map" alt="Collaboration graph"/></div>
 <map name="lbann_1_1l2__regularization_coll__map" id="lbann_1_1l2__regularization_coll__map">
-<area shape="rect" id="node2" href="classlbann_1_1regularizer.html" title="lbann::regularizer" alt="" coords="1206,111,1327,137"/><area shape="rect" id="node3" href="classlbann_1_1Layer.html" title="lbann::Layer" alt="" coords="1013,111,1107,137"/><area shape="rect" id="node4" href="classcudnn_1_1cudnn__manager.html" title="cudnn::cudnn_manager" alt="" coords="672,8,829,35"/><area shape="rect" id="node5" href="classlbann_1_1lbann__comm.html" title="lbann::lbann_comm" alt="" coords="25,136,159,163"/><area shape="rect" id="node6" href="classlbann_1_1optimizer.html" title="Optimizer base class. " alt="" coords="533,109,648,136"/><area shape="rect" id="node7" href="classlbann_1_1model.html" title="lbann::model" alt="" coords="703,172,799,199"/><area shape="rect" id="node8" href="classlbann_1_1optimizer__factory.html" title="Optimizer factory base class. " alt="" coords="342,223,503,249"/><area shape="rect" id="node9" href="classlbann_1_1objective__functions_1_1objective__fn.html" title="lbann::objective_functions\l::objective_fn" alt="" coords="336,274,509,315"/><area shape="rect" id="node10" href="classlbann_1_1objective__functions_1_1statistics.html" title="lbann::objective_functions\l::statistics" alt="" coords="5,274,179,315"/><area shape="rect" id="node11" href="classlbann_1_1Activation.html" title="lbann::Activation" alt="" coords="691,223,810,249"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1regularizer.html" title="lbann::regularizer" alt="" coords="1225,112,1346,139"/><area shape="rect" id="node3" href="classlbann_1_1Layer.html" title="lbann::Layer" alt="" coords="1032,112,1125,139"/><area shape="rect" id="node4" href="classcudnn_1_1cudnn__manager.html" title="cudnn::cudnn_manager" alt="" coords="672,9,829,36"/><area shape="rect" id="node5" href="classlbann_1_1optimizer.html" title="Optimizer base class. " alt="" coords="533,111,648,137"/><area shape="rect" id="node6" href="classlbann_1_1lbann__comm.html" title="lbann::lbann_comm" alt="" coords="25,137,159,164"/><area shape="rect" id="node7" href="classlbann_1_1model.html" title="lbann::model" alt="" coords="703,173,799,200"/><area shape="rect" id="node8" href="classlbann_1_1optimizer__factory.html" title="Optimizer factory base class. " alt="" coords="342,224,503,251"/><area shape="rect" id="node9" href="classlbann_1_1objective__functions_1_1objective__fn.html" title="lbann::objective_functions\l::objective_fn" alt="" coords="336,275,509,317"/><area shape="rect" id="node10" href="classlbann_1_1objective__functions_1_1statistics.html" title="lbann::objective_functions\l::statistics" alt="" coords="5,275,179,317"/><area shape="rect" id="node11" href="classlbann_1_1Activation.html" title="lbann::Activation" alt="" coords="691,224,810,251"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -220,13 +220,23 @@ Protected Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lbann__l2__regularization_8cpp_source.html#l00041">41</a> of file <a class="el" href="lbann__l2__regularization_8cpp_source.html">lbann_l2_regularization.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                         {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  Axpy(<a class="code" href="classlbann_1_1l2__regularization.html#a8327feb42579f52cf9dfa1a4c1a6c52b">m_lambda</a>, *(<a class="code" href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">m_layer</a>-&gt;<a class="code" href="classlbann_1_1Layer.html#a6611d258f3d6c4c8610e219dfc037f67">m_weights</a>), *(<a class="code" href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">m_layer</a>-&gt;<a class="code" href="classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7">m_weights_gradient</a>));</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="comment">//Axpy(m_lambda, *(m_layer-&gt;m_weights), *(m_layer-&gt;m_weights_gradient));</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  Axpy(<a class="code" href="classlbann_1_1l2__regularization.html#a8327feb42579f52cf9dfa1a4c1a6c52b">m_lambda</a>, <a class="code" href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">m_layer</a>-&gt;<a class="code" href="classlbann_1_1Layer.html#a3330e87349cb1457d927de108ae50256">get_weights_biases</a>(), <a class="code" href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">m_layer</a>-&gt;<a class="code" href="classlbann_1_1Layer.html#a4e9280487819ebe33b189bdc73ba7644">get_weights_biases_gradient</a>());</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1Layer_html_a4e9280487819ebe33b189bdc73ba7644"><div class="ttname"><a href="classlbann_1_1Layer.html#a4e9280487819ebe33b189bdc73ba7644">lbann::Layer::get_weights_biases_gradient</a></div><div class="ttdeci">virtual ElMat &amp; get_weights_biases_gradient(void)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00196">lbann_layer.hpp:196</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a3330e87349cb1457d927de108ae50256"><div class="ttname"><a href="classlbann_1_1Layer.html#a3330e87349cb1457d927de108ae50256">lbann::Layer::get_weights_biases</a></div><div class="ttdeci">virtual ElMat &amp; get_weights_biases(void)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00192">lbann_layer.hpp:192</a></div></div>
 <div class="ttc" id="classlbann_1_1regularizer_html_a6d0d44f4f9a3c8c24d0acdda8cf7d4b5"><div class="ttname"><a href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">lbann::regularizer::m_layer</a></div><div class="ttdeci">Layer * m_layer</div><div class="ttdef"><b>Definition:</b> <a href="lbann__regularizer_8hpp_source.html#l00082">lbann_regularizer.hpp:82</a></div></div>
 <div class="ttc" id="classlbann_1_1l2__regularization_html_a8327feb42579f52cf9dfa1a4c1a6c52b"><div class="ttname"><a href="classlbann_1_1l2__regularization.html#a8327feb42579f52cf9dfa1a4c1a6c52b">lbann::l2_regularization::m_lambda</a></div><div class="ttdeci">DataType m_lambda</div><div class="ttdef"><b>Definition:</b> <a href="lbann__l2__regularization_8hpp_source.html#l00046">lbann_l2_regularization.hpp:46</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_a744ab42fb33c5d94d43abb5aae0e7ad7"><div class="ttname"><a href="classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7">lbann::Layer::m_weights_gradient</a></div><div class="ttdeci">ElMat * m_weights_gradient</div><div class="ttdoc">Gradient w.r.t. weight matrix ((# neurons) x (# previous layer&#39;s neurons)) </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00282">lbann_layer.hpp:282</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_a6611d258f3d6c4c8610e219dfc037f67"><div class="ttname"><a href="classlbann_1_1Layer.html#a6611d258f3d6c4c8610e219dfc037f67">lbann::Layer::m_weights</a></div><div class="ttdeci">ElMat * m_weights</div><div class="ttdoc">Weight matrix (computes weight sum of inputs ((# neurons) x (# previous layer&#39;s neurons)) ...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00281">lbann_layer.hpp:281</a></div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1l2__regularization_a785095535853c74b60410011d8e5bc47_cgraph.png" border="0" usemap="#classlbann_1_1l2__regularization_a785095535853c74b60410011d8e5bc47_cgraph" alt=""/></div>
+<map name="classlbann_1_1l2__regularization_a785095535853c74b60410011d8e5bc47_cgraph" id="classlbann_1_1l2__regularization_a785095535853c74b60410011d8e5bc47_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1Layer.html#a3330e87349cb1457d927de108ae50256" title="lbann::Layer::get_weights\l_biases" alt="" coords="208,5,379,46"/><area shape="rect" id="node3" href="classlbann_1_1Layer.html#a4e9280487819ebe33b189bdc73ba7644" title="lbann::Layer::get_weights\l_biases_gradient" alt="" coords="208,70,379,111"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -263,7 +273,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1l2__regularization.html">l2_regularization</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 06:15:40 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 07:20:07 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

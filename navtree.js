@@ -46,17 +46,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classlbann_1_1adam__factory.html#a2973ff24764ca5e7aa04cc7f36a90ff5",
-"classlbann_1_1generic__data__reader.html#a72a464475f641c638f1da750207ef1f7",
-"classlbann_1_1l2__regularization.html#a785095535853c74b60410011d8e5bc47",
-"classlbann_1_1lbann__comm.html#a4e3d35520a8f567579f9235e9808ba1c",
-"classlbann_1_1metrics_1_1metric.html",
-"classlbann_1_1pooling__layer.html#a45c53f7dae2f37d68291ccbd4a614517",
-"datatype_8hpp.html#a2b18a2eb77c298c218217a23ea9bdf38",
-"globals_vars.html",
-"lbann__exception_8hpp.html#a06fd1f9a7d05d355fa9936c46347a77f",
-"lbann__params_8hpp_source.html",
-"struct__BOX3__INT.html"
+"classlbann_1_1adam__factory.html#a1a0b3d3055e6787cce934094e262dff6",
+"classlbann_1_1generic__data__reader.html#a68e39047a6c2e092b8c8971e91b93719",
+"classlbann_1_1io__layer.html#ae59b49fad28d273f72035f227fa846af",
+"classlbann_1_1lbann__comm.html#a4c9323938961c3524dc67f4b7b47e3ae",
+"classlbann_1_1metrics_1_1mean__squared__error.html#af5933462864483cd96415baafa595c4e",
+"classlbann_1_1pooling__layer.html#a17cecb60c04947b2b4fd097b460c8130",
+"datatype_8hpp.html#a29e0e034d029b23270815c2fb9d4358e",
+"globals_u.html",
+"lbann__dropout_8hpp_source.html",
+"lbann__params_8cpp_source.html",
+"struct__BOX3__FLOAT.html#ae170039fc06972bd0e8c5cc0652f1706"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
