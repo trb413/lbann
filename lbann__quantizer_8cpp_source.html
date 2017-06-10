@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-51-ge26903b-ci241552259</span>
+   &#160;<span id="projectnumber">v0.93-rc0-52-gd4ce068-ci241617613</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -308,9 +308,9 @@ $(document).ready(function(){initNavTree('lbann__quantizer_8cpp_source.html','')
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  }</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  std::vector&lt;QuantizedMatrix&gt; qmats(4);</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keyword">auto</span> send_transform =</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    [&amp;qerror, &amp;qmats, <span class="keyword">this</span>] (<a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; mat, IR h, IR w, <span class="keywordtype">int</span>&amp; count, <span class="keywordtype">bool</span> const_data,</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keywordtype">int</span> call_idx) {</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keyword">auto</span> to_send = mat(h, w);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    [&amp;qerror, &amp;qmats, <span class="keyword">this</span>] (<a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; to_trans, IR h, IR w, <span class="keywordtype">int</span>&amp; count,</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                             <span class="keywordtype">bool</span> const_data, <span class="keywordtype">int</span> call_idx) {</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keyword">auto</span> to_send = to_trans(h, w);</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keyword">auto</span> to_send_qerr = qerror(h, w);</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <a class="code" href="classlbann_1_1lbann__quantizer.html#a2f0b1c91b994c91dfa506869e3329db6">QuantizedMatrix</a>&amp; qmat = qmats[call_idx];</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <a class="code" href="classlbann_1_1lbann__quantizer.html#a4dd4696cbbfd93c73e5fb3c40fcb16c3">onebit_quantize</a>(to_send, qmat, to_send_qerr);</div>
@@ -822,7 +822,7 @@ $(document).ready(function(){initNavTree('lbann__quantizer_8cpp_source.html','')
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_e3a975d7a6e3e1ec3d3053fd7df1ad72.html">utils</a></li><li class="navelem"><a class="el" href="lbann__quantizer_8cpp.html">lbann_quantizer.cpp</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 17:03:00 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 23:11:21 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
