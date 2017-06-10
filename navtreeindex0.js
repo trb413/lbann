@@ -52,7 +52,7 @@ var NAVTREEINDEX0 =
 "classlbann_1_1Layer.html#a07f230d516c76f22ff42addb542424af":[3,0,3,44,2],
 "classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21":[3,0,3,44,58],
 "classlbann_1_1Layer.html#a0a0f8e32e2b17953f87652f855ccfbf9":[3,0,3,44,28],
-"classlbann_1_1Layer.html#a0f49ac236beffb65f2e361c1a1d9e387":[3,0,3,44,20],
+"classlbann_1_1Layer.html#a0ac13af6f5ee8316d64c550bef919ee0":[3,0,3,44,20],
 "classlbann_1_1Layer.html#a12706025928f5e3d3ec3d9407c66c96b":[3,0,3,44,9],
 "classlbann_1_1Layer.html#a1483cd7103a5f739c4f8bac4a0d005dc":[3,0,3,44,0],
 "classlbann_1_1Layer.html#a165d07794df1b67b6034e80ce003f714":[3,0,3,44,7],

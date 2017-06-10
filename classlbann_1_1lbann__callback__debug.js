@@ -1,6 +1,6 @@
 var classlbann_1_1lbann__callback__debug =
 [
-    [ "lbann_callback_debug", "classlbann_1_1lbann__callback__debug.html#a0be3eb5c78a128e816956a346f5c51bf", null ],
+    [ "lbann_callback_debug", "classlbann_1_1lbann__callback__debug.html#a775f2f407573526795a9b7ffc7bd3ded", null ],
     [ "on_backward_prop_begin", "classlbann_1_1lbann__callback__debug.html#a801aebd4474b816b43834a65aa6f296c", null ],
     [ "on_backward_prop_end", "classlbann_1_1lbann__callback__debug.html#ae72d078b5d95ce973b98b800193c671c", null ],
     [ "on_batch_begin", "classlbann_1_1lbann__callback__debug.html#a21e75a6756ecd7e09079a72595126300", null ],

@@ -11,7 +11,7 @@ var searchData=
   ['_5f_5fuincgamma',['__uincgamma',['../datatype_8hpp.html#ac182250ba70e0934329cf26d00244873',1,'datatype.hpp']]],
   ['_5fdisp_5funit',['_disp_unit',['../namespacelbann_1_1metrics.html#aaa0e50becab147be6623e1e0feb27b81',1,'lbann::metrics']]],
   ['_5fdisplay_5fmatrix',['_display_matrix',['../lbann__base_8hpp.html#aa5a078e4333b551f498feb743c5d3fc9',1,'lbann_base.hpp']]],
-  ['_5flayer_5ftype_5fto_5fcategory',['_layer_type_to_category',['../namespacelbann.html#a67506cd6a355d5abb840262f990b2582',1,'lbann']]],
+  ['_5flayer_5ftype_5fto_5fcategory',['_layer_type_to_category',['../namespacelbann.html#a0297abe7948acbc5a0222b9cf5281a50',1,'lbann']]],
   ['_5flayer_5ftype_5fto_5fstring',['_layer_type_to_string',['../namespacelbann.html#a65056cb9ae34866d6252f18da0697c58',1,'lbann']]],
   ['_5fsq',['_sq',['../classlbann_1_1FullyConnectedLayer.html#a42c423e0473ceff06d4393e317961429',1,'lbann::FullyConnectedLayer::_sq()'],['../classlbann_1_1SoftmaxLayer.html#af79848e30fb2cca654be02877e99961b',1,'lbann::SoftmaxLayer::_sq()']]],
   ['_5fsqrt',['_sqrt',['../classlbann_1_1FullyConnectedLayer.html#aaade6da0b088681f4cc1aa747c955f02',1,'lbann::FullyConnectedLayer::_sqrt()'],['../classlbann_1_1SoftmaxLayer.html#abb7f7e6deaa3e500088f7b37716a90a7',1,'lbann::SoftmaxLayer::_sqrt()']]],

@@ -48,7 +48,7 @@ var NAVTREEINDEX =
 "annotated.html",
 "classlbann_1_1base__factory.html#ac0dee9f19694499c748f35dc16f09a11",
 "classlbann_1_1generic__data__reader.html#a84649454a5e4420b127b4c2c060aef8a",
-"classlbann_1_1lbann__callback.html#a044174864e4981a1dac093d58e8c4d6c",
+"classlbann_1_1lbann__callback.html#a02d924df2f8ca851578dc76d9015e48d",
 "classlbann_1_1lbann__comm.html#a593144edfb5094bb9dbfd302d0f6e21b",
 "classlbann_1_1metrics_1_1metric.html#a52dcd2cbed8053d9a00462dd326cebd6",
 "classlbann_1_1pooling__layer.html#a6008216dc35d06f01b0156c44d70cd39",

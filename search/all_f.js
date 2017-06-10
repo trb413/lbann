@@ -1,7 +1,6 @@
 var searchData=
 [
   ['pairwise_5fexchange_5fring',['PAIRWISE_EXCHANGE_RING',['../classlbann_1_1lbann__comm.html#a02a03227cc27e3516f0d9f9812f32019ae97d669b6498b36d1ce07b3d2c544fee',1,'lbann::lbann_comm']]],
-  ['param_5fchoices',['param_choices',['../classlbann_1_1lbann__callback__imcomm.html#a1c55e41ca7028c8405afdd6b951da5a3',1,'lbann::lbann_callback_imcomm']]],
   ['parameterdir',['ParameterDir',['../classlbann_1_1TrainingParams.html#af2f1784c984713b57b637f2c674a5fb7',1,'lbann::TrainingParams']]],
   ['parse_5fnetwork_5fstring',['parse_network_string',['../classlbann_1_1NetworkParams.html#adea4a4400b03bdfd8c8a9a27561eb43c',1,'lbann::NetworkParams']]],
   ['parse_5fparams',['parse_params',['../classlbann_1_1TrainingParams.html#a245c0674a2132cb15f1198b1f4dd2bf8',1,'lbann::TrainingParams::parse_params()'],['../classlbann_1_1PerformanceParams.html#abde9f8ab7421f863f11542721c93768f',1,'lbann::PerformanceParams::parse_params()'],['../classlbann_1_1NetworkParams.html#a40db1f34f89a65763c9634fd71ebbc07',1,'lbann::NetworkParams::parse_params()'],['../classlbann_1_1SystemParams.html#a87e7db31ab92668900a6b2bb5b449d66',1,'lbann::SystemParams::parse_params()']]],
@@ -17,7 +16,6 @@ var searchData=
   ['patchworks_5froi_2ehpp',['patchworks_ROI.hpp',['../patchworks__ROI_8hpp.html',1,'']]],
   ['patchworks_5fstats_2ecpp',['patchworks_stats.cpp',['../patchworks__stats_8cpp.html',1,'']]],
   ['patchworks_5fstats_2ehpp',['patchworks_stats.hpp',['../patchworks__stats_8hpp.html',1,'']]],
-  ['patience',['patience',['../classlbann_1_1lbann__callback__adaptive__learning__rate.html#ac645c3cdf945f8439cef3d891e752db6',1,'lbann::lbann_callback_adaptive_learning_rate']]],
   ['pe_5fring_5fallreduce',['pe_ring_allreduce',['../classlbann_1_1lbann__comm.html#adf4305f7f3cb3d7d7c2e16c4e5863c70',1,'lbann::lbann_comm']]],
   ['percentagetestingsamples',['PercentageTestingSamples',['../classlbann_1_1TrainingParams.html#acd5f8e76266a47f83518a694ff89e303',1,'lbann::TrainingParams']]],
   ['percentagetrainingsamples',['PercentageTrainingSamples',['../classlbann_1_1TrainingParams.html#a3763014b64c2e0396173221796a2bbfa',1,'lbann::TrainingParams']]],

@@ -61,7 +61,7 @@ var searchData=
   ['_5fint2',['_INT2',['../struct__INT2.html',1,'']]],
   ['_5fint3',['_INT3',['../struct__INT3.html',1,'']]],
   ['_5fint4',['_INT4',['../struct__INT4.html',1,'']]],
-  ['_5flayer_5ftype_5fto_5fcategory',['_layer_type_to_category',['../namespacelbann.html#a67506cd6a355d5abb840262f990b2582',1,'lbann']]],
+  ['_5flayer_5ftype_5fto_5fcategory',['_layer_type_to_category',['../namespacelbann.html#a0297abe7948acbc5a0222b9cf5281a50',1,'lbann']]],
   ['_5flayer_5ftype_5fto_5fstring',['_layer_type_to_string',['../namespacelbann.html#a65056cb9ae34866d6252f18da0697c58',1,'lbann']]],
   ['_5flbann_5fcritical_5fexception',['_LBANN_CRITICAL_EXCEPTION',['../lbann__mild__exception_8hpp.html#a2a543bf15443091137425765aa002d4d',1,'lbann_mild_exception.hpp']]],
   ['_5flbann_5fdebug_5fmsg',['_LBANN_DEBUG_MSG',['../lbann__mild__exception_8hpp.html#ad18453c3df8ca2dd844e5cf1d284579a',1,'lbann_mild_exception.hpp']]],

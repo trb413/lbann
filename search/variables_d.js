@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['param_5fchoices',['param_choices',['../classlbann_1_1lbann__callback__imcomm.html#a1c55e41ca7028c8405afdd6b951da5a3',1,'lbann::lbann_callback_imcomm']]],
   ['parameterdir',['ParameterDir',['../classlbann_1_1TrainingParams.html#af2f1784c984713b57b637f2c674a5fb7',1,'lbann::TrainingParams']]],
-  ['patience',['patience',['../classlbann_1_1lbann__callback__adaptive__learning__rate.html#ac645c3cdf945f8439cef3d891e752db6',1,'lbann::lbann_callback_adaptive_learning_rate']]],
   ['percentagetestingsamples',['PercentageTestingSamples',['../classlbann_1_1TrainingParams.html#acd5f8e76266a47f83518a694ff89e303',1,'lbann::TrainingParams']]],
   ['percentagetrainingsamples',['PercentageTrainingSamples',['../classlbann_1_1TrainingParams.html#a3763014b64c2e0396173221796a2bbfa',1,'lbann::TrainingParams']]],
   ['percentagevalidationsamples',['PercentageValidationSamples',['../classlbann_1_1TrainingParams.html#a0dcb312e1714bfeec89a8119167d115f',1,'lbann::TrainingParams']]],

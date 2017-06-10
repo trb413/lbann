@@ -22,6 +22,6 @@ var lbann__layer_8hpp =
       [ "reconstruction", "lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743ae75ffd9ae04f68e5ef32915baeebe761", null ],
       [ "INVALID", "lbann__layer_8hpp.html#a33be342c4bdc4c00e9f91ff3a2f20743accc0377a8afbf50e7094f5c23a8af223", null ]
     ] ],
-    [ "_layer_type_to_category", "lbann__layer_8hpp.html#a67506cd6a355d5abb840262f990b2582", null ],
+    [ "_layer_type_to_category", "lbann__layer_8hpp.html#a0297abe7948acbc5a0222b9cf5281a50", null ],
     [ "_layer_type_to_string", "lbann__layer_8hpp.html#a65056cb9ae34866d6252f18da0697c58", null ]
 ];

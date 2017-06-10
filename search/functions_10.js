@@ -48,7 +48,7 @@ var searchData=
   ['set_5fprev_5flayer_5fusing_5fgpus',['set_prev_layer_using_gpus',['../classlbann_1_1Layer.html#a677833ec998be158873f880c7bd08179',1,'lbann::Layer']]],
   ['set_5frank',['set_rank',['../classlbann_1_1generic__data__reader.html#ace243cbf6edfc6d5e34734523114de39',1,'lbann::generic_data_reader']]],
   ['set_5frole',['set_role',['../classlbann_1_1generic__data__reader.html#a47aba0f39423e8e1d2f42952e343ef10',1,'lbann::generic_data_reader']]],
-  ['set_5fsummarizer',['set_summarizer',['../classlbann_1_1lbann__callback.html#a95a4372d04e804fd2318a464ca20aa1c',1,'lbann::lbann_callback']]],
+  ['set_5fsummarizer',['set_summarizer',['../classlbann_1_1lbann__callback.html#a02d924df2f8ca851578dc76d9015e48d',1,'lbann::lbann_callback']]],
   ['set_5fterminate_5ftraining',['set_terminate_training',['../classlbann_1_1model.html#a5bafc4e84671490c6118959becb22e16',1,'lbann::model']]],
   ['set_5ftesting_5fdata_5freader',['set_testing_data_reader',['../classlbann_1_1io__layer.html#a1767e85b5f8165f85b1d186d632054c8',1,'lbann::io_layer::set_testing_data_reader()'],['../classlbann_1_1target__layer.html#a2206f02cd6e2ec1962d8257342a953cc',1,'lbann::target_layer::set_testing_data_reader()']]],
   ['set_5ftraining_5fdata_5freader',['set_training_data_reader',['../classlbann_1_1io__layer.html#a1dcdb596d37db4827cf286001f703653',1,'lbann::io_layer::set_training_data_reader()'],['../classlbann_1_1target__layer.html#a89f078ea72aaf991dd505e3a9672603a',1,'lbann::target_layer::set_training_data_reader()']]],

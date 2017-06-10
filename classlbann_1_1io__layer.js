@@ -7,7 +7,7 @@ var classlbann_1_1io__layer =
     [ "get_linearized_response_size", "classlbann_1_1io__layer.html#a3701d9af118b40341b6bb46cb3462094", null ],
     [ "get_num_samples_tested", "classlbann_1_1io__layer.html#a7a7a678d96785ef6d0b11a04677307a5", null ],
     [ "get_num_samples_trained", "classlbann_1_1io__layer.html#a1292e85a308160a1ce1ca0be83a962b6", null ],
-    [ "get_sample_indices_per_mb", "classlbann_1_1io__layer.html#ada52988df58f92cec31c673d87bb77a2", null ],
+    [ "get_sample_indices_per_mb", "classlbann_1_1io__layer.html#a7341aeab3e2d7beeb1f955acee7a4ccd", null ],
     [ "get_total_num_testing_samples", "classlbann_1_1io__layer.html#a877f6511133c2705b38522e8157a59d4", null ],
     [ "get_total_num_training_samples", "classlbann_1_1io__layer.html#aaf6c801c13a6488f0715b2f851f4a35f", null ],
     [ "is_for_regression", "classlbann_1_1io__layer.html#a84f62786812c100923e7553f704a5edc", null ],

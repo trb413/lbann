@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['basename',['basename',['../classlbann_1_1lbann__callback__dump__activations.html#aa671216de198f71d84f179b3fdfb8adc',1,'lbann::lbann_callback_dump_activations::basename()'],['../classlbann_1_1lbann__callback__dump__gradients.html#ac7515aa8900813cf1f71248ae4e34fa6',1,'lbann::lbann_callback_dump_gradients::basename()'],['../classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html#a0afb37be4e79ce43505a4135780a1bf0',1,'lbann::lbann_callback_dump_minibatch_sample_indices::basename()'],['../classlbann_1_1lbann__callback__dump__weights.html#ad4796dfdd53b37344b60f7ba54c6fea2',1,'lbann::lbann_callback_dump_weights::basename()']]],
-  ['batch_5finterval',['batch_interval',['../classlbann_1_1lbann__callback.html#a3cc7709835db75ef3c27ce6ec1df34de',1,'lbann::lbann_callback']]],
-  ['batch_5fstart',['batch_start',['../classlbann_1_1lbann__callback__timer.html#ae2c5d7f3b707eb3bbcfe1a212c426008',1,'lbann::lbann_callback_timer']]],
-  ['batch_5ftimes',['batch_times',['../classlbann_1_1lbann__callback__timer.html#afbf8768331b3b4ce8b68e8c26ddae5a8',1,'lbann::lbann_callback_timer']]],
   ['bfoffbits',['bfOffBits',['../struct____BMP__FILEHEADER.html#a81b96134066c15b97ce5abd27f45a300',1,'__BMP_FILEHEADER']]],
   ['bfreserved1',['bfReserved1',['../struct____BMP__FILEHEADER.html#abe885353027167dd6f99c2f152788d81',1,'__BMP_FILEHEADER']]],
   ['bfreserved2',['bfReserved2',['../struct____BMP__FILEHEADER.html#abdb44f0e8901e7e1cc3ca94a864be527',1,'__BMP_FILEHEADER']]],

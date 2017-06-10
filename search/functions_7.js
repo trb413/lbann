@@ -98,7 +98,7 @@ var searchData=
   ['get_5frank_5fin_5fnode',['get_rank_in_node',['../classlbann_1_1lbann__comm.html#a339bc17f07a2e40663df8b5d8cf80bf6',1,'lbann::lbann_comm']]],
   ['get_5frank_5fin_5fworld',['get_rank_in_world',['../classlbann_1_1lbann__comm.html#a615265cd20ffb4863089bb94e4c82fe7',1,'lbann::lbann_comm']]],
   ['get_5frole',['get_role',['../classlbann_1_1generic__data__reader.html#a91bd71b9bbfbe1e839dff6dcacef2b5b',1,'lbann::generic_data_reader']]],
-  ['get_5fsample_5findices_5fper_5fmb',['get_sample_indices_per_mb',['../classlbann_1_1io__layer.html#ada52988df58f92cec31c673d87bb77a2',1,'lbann::io_layer::get_sample_indices_per_mb()'],['../classlbann_1_1Layer.html#a0f49ac236beffb65f2e361c1a1d9e387',1,'lbann::Layer::get_sample_indices_per_mb()']]],
+  ['get_5fsample_5findices_5fper_5fmb',['get_sample_indices_per_mb',['../classlbann_1_1io__layer.html#a7341aeab3e2d7beeb1f955acee7a4ccd',1,'lbann::io_layer::get_sample_indices_per_mb()'],['../classlbann_1_1Layer.html#a0ac13af6f5ee8316d64c550bef919ee0',1,'lbann::Layer::get_sample_indices_per_mb()']]],
   ['get_5fstatistics',['get_statistics',['../classlbann_1_1metrics_1_1metric.html#ac061126c26394ba06314e0924c214299',1,'lbann::metrics::metric::get_statistics()'],['../classlbann_1_1objective__functions_1_1objective__fn.html#a5692b2dbe1b5f95d9a51b9805f8eea08',1,'lbann::objective_functions::objective_fn::get_statistics()']]],
   ['get_5fterminate_5ftraining',['get_terminate_training',['../classlbann_1_1model.html#a881a892be143090ad80f6d839fcf457b',1,'lbann::model']]],
   ['get_5ftime',['get_time',['../namespacelbann.html#a478d36031ff0659893c4322cd856157f',1,'lbann']]],

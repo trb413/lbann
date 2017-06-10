@@ -5,5 +5,5 @@ var classlbann_1_1lbann__callback__checksmall =
     [ "on_backward_prop_end", "classlbann_1_1lbann__callback__checksmall.html#a28ccebaabaec140b9402ad057690640e", null ],
     [ "on_batch_end", "classlbann_1_1lbann__callback__checksmall.html#ab1d2f6b04ee08aa099e1b9b279fc9206", null ],
     [ "on_forward_prop_end", "classlbann_1_1lbann__callback__checksmall.html#aea760389b97c3bb25f093dec5bcdbf90", null ],
-    [ "threshold", "classlbann_1_1lbann__callback__checksmall.html#aacce4b5c8d53755b13beea20d45bf228", null ]
+    [ "m_threshold", "classlbann_1_1lbann__callback__checksmall.html#a2c37cd93bca10f6fb42348c2e6b0016e", null ]
 ];
