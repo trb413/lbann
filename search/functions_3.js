@@ -4,7 +4,7 @@ var searchData=
   ['categorical_5faccuracy',['categorical_accuracy',['../classlbann_1_1metrics_1_1categorical__accuracy.html#afa4e32440e5edf1f010d07399cecbabd',1,'lbann::metrics::categorical_accuracy']]],
   ['categorical_5fcross_5fentropy',['categorical_cross_entropy',['../classlbann_1_1objective__functions_1_1categorical__cross__entropy.html#adb4271938e0bce0f188b2786d1742def',1,'lbann::objective_functions::categorical_cross_entropy']]],
   ['check_5fequal',['check_equal',['../classlbann_1_1lbann__callback__check__init.html#a7c178c15fd32be7ad4e00b1f6f54f7aa',1,'lbann::lbann_callback_check_init']]],
-  ['check_5fsetup',['check_setup',['../classlbann_1_1Layer.html#aeec1c710c3d53b5e43a4d4f67b0a21b2',1,'lbann::Layer']]],
+  ['check_5fsetup',['check_setup',['../classlbann_1_1Layer.html#a6b1ba1ca26997d088e0e3b4606c2ef40',1,'lbann::Layer']]],
   ['checkgradient',['checkGradient',['../classlbann_1_1FullyConnectedLayer.html#a0485e66492659527d724c6ab2f95df23',1,'lbann::FullyConnectedLayer::checkGradient()'],['../classlbann_1_1SoftmaxLayer.html#a46fe6302ff594606a0bdad34b357c10d',1,'lbann::SoftmaxLayer::checkGradient()']]],
   ['checkgradientmb',['checkGradientMB',['../classlbann_1_1Layer.html#a165d07794df1b67b6034e80ce003f714',1,'lbann::Layer']]],
   ['checkpointshared',['checkpointShared',['../classlbann_1_1model.html#a731757adee63f97593e7ddbfa3c97ce1',1,'lbann::model']]],

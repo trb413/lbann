@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['backprop',['backProp',['../classlbann_1_1Layer.html#a07f230d516c76f22ff42addb542424af',1,'lbann::Layer::backProp()'],['../classlbann_1_1convolutional__layer.html#a30fcab5aa5564533f65692e2d925ede3',1,'lbann::convolutional_layer::backProp()'],['../classlbann_1_1pooling__layer.html#ad62a576a6f2d0b67cde2c9ff05031275',1,'lbann::pooling_layer::backProp()']]],
+  ['backprop',['backProp',['../classlbann_1_1Layer.html#a08e70b7f506ba8bca1fd8b29cd59dadb',1,'lbann::Layer::backProp()'],['../classlbann_1_1convolutional__layer.html#a30fcab5aa5564533f65692e2d925ede3',1,'lbann::convolutional_layer::backProp()'],['../classlbann_1_1pooling__layer.html#ad62a576a6f2d0b67cde2c9ff05031275',1,'lbann::pooling_layer::backProp()']]],
   ['backwardprop',['backwardProp',['../classlbann_1_1Activation.html#aa3a4bc5761dbeab6d5e649ea9d1e2fb8',1,'lbann::Activation::backwardProp()'],['../classlbann_1_1id__layer.html#aa7d9cade77244bde172aa071a9ca029f',1,'lbann::id_layer::backwardProp()']]],
   ['backwardproperror',['backwardPropError',['../classlbann_1_1Activation.html#a9e6e14d78d344289794dd72c4a336910',1,'lbann::Activation::backwardPropError()'],['../classlbann_1_1id__layer.html#ae6327122f60cff1b3b3ade35f87e1afc',1,'lbann::id_layer::backwardPropError()']]],
   ['base_5ffactory',['base_factory',['../classlbann_1_1base__factory.html#ac4ddf2abe3bf3b6ae24e2200e2022742',1,'lbann::base_factory']]],

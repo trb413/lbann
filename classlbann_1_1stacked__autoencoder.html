@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-45-g3bbf29a-ci241424643</span>
+   &#160;<span id="projectnumber">v0.93-rc0-46-gc17255e-ci241436641</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -506,8 +506,8 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">int</span> cur_size = <a class="code" href="classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b">m_layers</a>.size();</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordtype">int</span> mid = cur_size / 2;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  Layer *mid_layer = <a class="code" href="classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b">m_layers</a>[mid];</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="comment">//int mid_num_neurons = mid_layer-&gt;NumNeurons;</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">int</span> prev_layer_dim = mid_layer-&gt;NumNeurons;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="comment">//int mid_num_neurons = mid_layer-&gt;get_num_neurons();</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordtype">int</span> prev_layer_dim = mid_layer-&gt;get_num_neurons();</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">if</span> (cur_size == 1) {</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// create first hidden layer</span></div>
@@ -551,7 +551,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="comment">// re-number layer index</span></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> n = 0; n &lt; <a class="code" href="classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b">m_layers</a>.size(); n++) {</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      Layer *layer = <a class="code" href="classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b">m_layers</a>[n];</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      layer-&gt;Index = n;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      layer-&gt;set_index(n);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  }</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
@@ -560,11 +560,11 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">//cout &lt;&lt; &quot;#Layers &quot; &lt;&lt; m_layers.size() &lt;&lt; endl;</span></div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">//cout &lt;&lt; &quot;Layer Index and Layer Dim: &quot; &lt;&lt; endl;</span></div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; layer:<a class="code" href="classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b">m_layers</a>) {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      cout &lt;&lt; <span class="stringliteral">&quot;[ &quot;</span> &lt;&lt; layer-&gt;Index &lt;&lt; <span class="stringliteral">&quot;]&quot;</span> &lt;&lt; layer-&gt;NumNeurons &lt;&lt; endl;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      cout &lt;&lt; <span class="stringliteral">&quot;[ &quot;</span> &lt;&lt; layer-&gt;get_index() &lt;&lt; <span class="stringliteral">&quot;]&quot;</span> &lt;&lt; layer-&gt;get_num_neurons() &lt;&lt; endl;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  }</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <a class="code" href="classlbann_1_1stacked__autoencoder.html#ad03569f0b42c97a5654fc13840be7cb0">m_num_layers</a> = <a class="code" href="classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b">m_layers</a>.size();</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <a class="code" href="classlbann_1_1stacked__autoencoder.html#ad03569f0b42c97a5654fc13840be7cb0">m_num_layers</a> = m_layers.size();</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1model_html_afa7829863a71eb47a3d023413dbe464d"><div class="ttname"><a href="classlbann_1_1model.html#afa7829863a71eb47a3d023413dbe464d">lbann::model::create_optimizer</a></div><div class="ttdeci">optimizer * create_optimizer()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00134">lbann_model.hpp:134</a></div></div>
 <div class="ttc" id="classlbann_1_1stacked__autoencoder_html_ad03569f0b42c97a5654fc13840be7cb0"><div class="ttname"><a href="classlbann_1_1stacked__autoencoder.html#ad03569f0b42c97a5654fc13840be7cb0">lbann::stacked_autoencoder::m_num_layers</a></div><div class="ttdeci">size_t m_num_layers</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__stacked__autoencoder_8hpp_source.html#l00089">lbann_model_stacked_autoencoder.hpp:89</a></div></div>
@@ -572,6 +572,15 @@ Additional Inherited Members</h2></td></tr>
 <div class="ttc" id="classlbann_1_1sequential__model_html_afb83e5bb6daf8c72eb899966bf540c3b"><div class="ttname"><a href="classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b">lbann::sequential_model::m_layers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; m_layers</div><div class="ttdoc">List of layers. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8hpp_source.html#l00139">lbann_model_sequential.hpp:139</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_adb87fdc17095efd8e4dcb343357a6ba5"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5">lbann::lbann_comm::am_world_master</a></div><div class="ttdeci">bool am_world_master() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00090">lbann_comm.hpp:90</a></div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1stacked__autoencoder_a398f7debe464f5db4371202b6dfa657c_cgraph.png" border="0" usemap="#classlbann_1_1stacked__autoencoder_a398f7debe464f5db4371202b6dfa657c_cgraph" alt=""/></div>
+<map name="classlbann_1_1stacked__autoencoder_a398f7debe464f5db4371202b6dfa657c_cgraph" id="classlbann_1_1stacked__autoencoder_a398f7debe464f5db4371202b6dfa657c_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1Layer.html#ad883b1c1f662775645074aa52b624006" title="lbann::Layer::get_num\l_neurons" alt="" coords="243,5,394,46"/><area shape="rect" id="node3" href="classlbann_1_1Layer.html#a9f9b57a391aaa13609760a71fe6cfa78" title="lbann::Layer::set_index" alt="" coords="240,71,397,97"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="abb5828c330bbb69c34e64ecae45d33ec"></a>
@@ -826,7 +835,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">  //m_target_layer-&gt;m_execution_mode = m_execution_mode;</span></div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment">  add(m_target_layer);</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">  m_target_layer-&gt;setup(m_layers[0]-&gt;NumNeurons);*/</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">  m_target_layer-&gt;setup(m_layers[0]-&gt;get_num_neurons());*/</span></div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="comment">//replace with this</span></div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment">//target_layer_unsupervised mirror_layer(phase_index+2, comm, optimizer, m_mini_batch_size,sibling_layer);</span></div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
@@ -1048,7 +1057,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1stacked__autoencoder.html">stacked_autoencoder</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 03:43:25 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 05:23:25 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

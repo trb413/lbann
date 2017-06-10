@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-45-g3bbf29a-ci241424643</span>
+   &#160;<span id="projectnumber">v0.93-rc0-46-gc17255e-ci241436641</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -134,8 +134,8 @@ $(document).ready(function(){initNavTree('lbann__target__layer__unsupervised_8cp
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="lbann__target__layer__unsupervised_8cpp.html#acf6a2677c9dc565b7f3379c1544d709e">   42</a></span>&#160;<a class="code" href="lbann__target__layer__unsupervised_8cpp.html#acf6a2677c9dc565b7f3379c1544d709e">m_weight_initialization</a>(init) {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  m_type = layer_type::target_unsupervised;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  Index = index;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  NumNeurons = original_layer-&gt;NumNeurons;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  m_index = index;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  m_num_neurons = original_layer-&gt;m_num_neurons;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  this-&gt;m_optimizer = opt; <span class="comment">// Manually assign the optimizer since target layers normally set this to NULL</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  aggregate_cost = 0.0;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  num_forwardprop_steps = 0;</div>
@@ -145,11 +145,11 @@ $(document).ready(function(){initNavTree('lbann__target__layer__unsupervised_8cp
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  target_layer::setup(num_prev_neurons);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  Layer::setup(num_prev_neurons);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// Initialize weight-bias matrix</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  Zeros(*m_weights, NumNeurons, num_prev_neurons);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  Zeros(*m_weights, m_num_neurons, num_prev_neurons);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="comment">// Initialize weights</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a> weights;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  View(weights, *m_weights, IR(0,NumNeurons), IR(0,num_prev_neurons));</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  View(weights, *m_weights, IR(0,m_num_neurons), IR(0,num_prev_neurons));</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">switch</span>(<a class="code" href="lbann__target__layer__unsupervised_8cpp.html#acf6a2677c9dc565b7f3379c1544d709e">m_weight_initialization</a>) {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5aa489ffed938ef1b9e86889bc413501ee">weight_initialization::uniform</a>:</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="namespacelbann.html#acd76b03f2b7ee00ad7c8ba83a20d1866">uniform_fill</a>(weights, weights.Height(), weights.Width(),</div>
@@ -160,13 +160,13 @@ $(document).ready(function(){initNavTree('lbann__target__layer__unsupervised_8cp
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                  <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0), <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1));</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ab507cf76b5f5f5bf34a68f6376bf0238">weight_initialization::glorot_normal</a>: {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> var = 2.0 / (num_prev_neurons + NumNeurons);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> var = 2.0 / (num_prev_neurons + m_num_neurons);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="namespacelbann.html#a057b6c1efb3f6fcbe8ebe08f8506fee1">gaussian_fill</a>(weights, weights.Height(), weights.Width(),</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                  <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0), sqrt(var));</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a4b78361151cbfcca33e1d560fbaedd59">weight_initialization::glorot_uniform</a>: {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> var = 2.0 / (num_prev_neurons + NumNeurons);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> var = 2.0 / (num_prev_neurons + m_num_neurons);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="namespacelbann.html#acd76b03f2b7ee00ad7c8ba83a20d1866">uniform_fill</a>(weights, weights.Height(), weights.Width(),</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                 <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0), sqrt(3*var));</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">break</span>;</div>
@@ -191,9 +191,9 @@ $(document).ready(function(){initNavTree('lbann__target__layer__unsupervised_8cp
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="comment">// Initialize other matrices</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  Zeros(*m_error_signal, num_prev_neurons, m_mini_batch_size); <span class="comment">// m_error_signal holds the product of m_weights^T * m_prev_error_signal</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  Zeros(*m_activations, NumNeurons, m_mini_batch_size); <span class="comment">//clear up m_activations before copying fp_input to it</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  Zeros(*m_weights_gradient, NumNeurons,num_prev_neurons); <span class="comment">//clear up before filling with new results</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  Zeros(*m_prev_error_signal, NumNeurons, m_mini_batch_size); <span class="comment">//clear up before filling with new results</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  Zeros(*m_activations, m_num_neurons, m_mini_batch_size); <span class="comment">//clear up m_activations before copying fp_input to it</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  Zeros(*m_weights_gradient, m_num_neurons,num_prev_neurons); <span class="comment">//clear up before filling with new results</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  Zeros(*m_prev_error_signal, m_num_neurons, m_mini_batch_size); <span class="comment">//clear up before filling with new results</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  Zeros(*m_prev_activations, num_prev_neurons, m_mini_batch_size);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="comment">// Initialize optimizer</span></div>
@@ -258,7 +258,7 @@ $(document).ready(function(){initNavTree('lbann__target__layer__unsupervised_8cp
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
 <div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="classlbann_1_1target__layer__unsupervised.html#ae70c550225e5c2ca81093c8147d4a610">  168</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1target__layer__unsupervised.html#ae70c550225e5c2ca81093c8147d4a610">lbann::target_layer_unsupervised::summarize</a>(<a class="code" href="classlbann_1_1lbann__summary.html">lbann_summary</a>&amp; summarizer, int64_t step) {</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  Layer::summarize(summarizer, step);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  std::string tag = <span class="stringliteral">&quot;layer&quot;</span> + std::to_string(static_cast&lt;long long&gt;(Index))</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  std::string tag = <span class="stringliteral">&quot;layer&quot;</span> + std::to_string(static_cast&lt;long long&gt;(m_index))</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                    + <span class="stringliteral">&quot;/ReconstructionCost&quot;</span>;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  summarizer.<a class="code" href="classlbann_1_1lbann__summary.html#aacd54e77d45bd1bd56df3a4d71c01ce8">reduce_scalar</a>(tag, average_cost(), step);</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
@@ -335,7 +335,7 @@ $(document).ready(function(){initNavTree('lbann__target__layer__unsupervised_8cp
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_faacdbae24c4b7c4a8fbaf54f29a6b8e.html">layers</a></li><li class="navelem"><a class="el" href="lbann__target__layer__unsupervised_8cpp.html">lbann_target_layer_unsupervised.cpp</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 03:43:22 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 05:23:22 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

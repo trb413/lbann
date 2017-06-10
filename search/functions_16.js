@@ -27,7 +27,7 @@ var searchData=
   ['_7eimagenet_5freadersingle',['~imagenet_readerSingle',['../classlbann_1_1imagenet__readerSingle.html#ad38e2a0f67dced0c531ef32af3511353',1,'lbann::imagenet_readerSingle']]],
   ['_7eimagenet_5freadersingle_5fcv',['~imagenet_readerSingle_cv',['../classlbann_1_1imagenet__readerSingle__cv.html#adaca321042934c60e0159baf36e87d57',1,'lbann::imagenet_readerSingle_cv']]],
   ['_7el2_5fregularization',['~l2_regularization',['../classlbann_1_1l2__regularization.html#afb4e53382c8bdc219c4a586494245543',1,'lbann::l2_regularization']]],
-  ['_7elayer',['~Layer',['../classlbann_1_1Layer.html#a68c3f57587956da938406812f13ecb78',1,'lbann::Layer']]],
+  ['_7elayer',['~Layer',['../classlbann_1_1Layer.html#a6b5e5217e413831ce9a5d0de9a84c676',1,'lbann::Layer']]],
   ['_7elbann_5fcallback',['~lbann_callback',['../classlbann_1_1lbann__callback.html#ac91abaec389f8d2547512c45ae587304',1,'lbann::lbann_callback']]],
   ['_7elbann_5fcallback_5fltfb',['~lbann_callback_ltfb',['../classlbann_1_1lbann__callback__ltfb.html#a57f9532b436d8b5ef2bb9a21a9aa6de8',1,'lbann::lbann_callback_ltfb']]],
   ['_7elbann_5fcomm',['~lbann_comm',['../classlbann_1_1lbann__comm.html#af17b1093313c5e4223f9036798f9e12f',1,'lbann::lbann_comm']]],

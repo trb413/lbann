@@ -11,7 +11,7 @@ var searchData=
   ['char3',['CHAR3',['../datatype_8hpp.html#adc250172d0544930d4aada3c7b31ac23',1,'datatype.hpp']]],
   ['char4',['CHAR4',['../datatype_8hpp.html#a5ec86e89a6e3e7e5956b32a55a5b573d',1,'datatype.hpp']]],
   ['check_5fequal',['check_equal',['../classlbann_1_1lbann__callback__check__init.html#a7c178c15fd32be7ad4e00b1f6f54f7aa',1,'lbann::lbann_callback_check_init']]],
-  ['check_5fsetup',['check_setup',['../classlbann_1_1Layer.html#aeec1c710c3d53b5e43a4d4f67b0a21b2',1,'lbann::Layer']]],
+  ['check_5fsetup',['check_setup',['../classlbann_1_1Layer.html#a6b1ba1ca26997d088e0e3b4606c2ef40',1,'lbann::Layer']]],
   ['checkgradient',['checkGradient',['../classlbann_1_1FullyConnectedLayer.html#a0485e66492659527d724c6ab2f95df23',1,'lbann::FullyConnectedLayer::checkGradient()'],['../classlbann_1_1SoftmaxLayer.html#a46fe6302ff594606a0bdad34b357c10d',1,'lbann::SoftmaxLayer::checkGradient()']]],
   ['checkgradientmb',['checkGradientMB',['../classlbann_1_1Layer.html#a165d07794df1b67b6034e80ce003f714',1,'lbann::Layer']]],
   ['checkmpi',['checkMPI',['../lbann__comm_8cpp.html#a7a92ceb4ddf57dc156d3a1b39f3ab962',1,'lbann_comm.cpp']]],

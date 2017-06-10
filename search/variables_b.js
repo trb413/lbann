@@ -19,6 +19,5 @@ var searchData=
   ['num_5fsamples_5fprocessed',['num_samples_processed',['../classlbann_1_1dataset.html#a4632b42298795de712a32da162bedad5',1,'lbann::dataset']]],
   ['num_5fthreshold_5fsamples',['NUM_THRESHOLD_SAMPLES',['../classlbann_1_1lbann__quantizer.html#ada4c3ff82169a90e0c59db80f0768711',1,'lbann::lbann_quantizer']]],
   ['numcores',['NumCores',['../classlbann_1_1SystemParams.html#aa4f76625da59edc74b6d9208cb60a3db',1,'lbann::SystemParams']]],
-  ['numneurons',['NumNeurons',['../classlbann_1_1Layer.html#a9d4a379d5c9e1102e63b48c53dd8ed44',1,'lbann::Layer']]],
   ['numnodes',['NumNodes',['../classlbann_1_1SystemParams.html#ad63e9fea31313d45d13298e35b47982a',1,'lbann::SystemParams']]]
 ];
