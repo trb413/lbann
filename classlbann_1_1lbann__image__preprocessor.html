@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-49-gbb623dc-ci241451533</span>
+   &#160;<span id="projectnumber">v0.93-rc0-50-g183e212-ci241460196</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -141,8 +141,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a27cb5182c4f764cbfa4edecbb78ef29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae370cdc9f776ce8cce94a45cacf47425"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#ae370cdc9f776ce8cce94a45cacf47425">normalize</a> (<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, unsigned num_channels)</td></tr>
 <tr class="separator:ae370cdc9f776ce8cce94a45cacf47425"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab46384375c66b01d8e50142478e0cc73"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#ab46384375c66b01d8e50142478e0cc73">save_image</a> (<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, const std::string filename, bool <a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a977b2fdd417acb1eb37dbea0cfdd4b60">scale</a>=true)</td></tr>
-<tr class="separator:ab46384375c66b01d8e50142478e0cc73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67b11150501a829125e9c6999781bc67"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a67b11150501a829125e9c6999781bc67">save_image</a> (<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, const std::string filename, bool do_scale=true)</td></tr>
+<tr class="separator:a67b11150501a829125e9c6999781bc67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -162,8 +162,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a12d9f7056a5e68185ea0e85e14c17bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb9e017aeac52a9b5d392f17188d1057"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#adb9e017aeac52a9b5d392f17188d1057">affine_trans</a> (<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> &amp;sqpixels, const <a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;trans)</td></tr>
 <tr class="separator:adb9e017aeac52a9b5d392f17188d1057"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1d71de3b2f635eb9b2a9a0e41da6e8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#ad1d71de3b2f635eb9b2a9a0e41da6e8c">internal_save_image</a> (<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, const std::string filename, unsigned imheight, unsigned imwidth, unsigned num_channels, bool <a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a977b2fdd417acb1eb37dbea0cfdd4b60">scale</a>)</td></tr>
-<tr class="separator:ad1d71de3b2f635eb9b2a9a0e41da6e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c4f4cc5c90233696566a35a62a1708c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a3c4f4cc5c90233696566a35a62a1708c">internal_save_image</a> (<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, const std::string filename, unsigned imheight, unsigned imwidth, unsigned num_channels, bool do_scale)</td></tr>
+<tr class="separator:a3c4f4cc5c90233696566a35a62a1708c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -675,7 +675,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1lbann__image__preprocessor_a7dc609e33febdc7fc29bdc9270594bea_icgraph.png" border="0" usemap="#classlbann_1_1lbann__image__preprocessor_a7dc609e33febdc7fc29bdc9270594bea_icgraph" alt=""/></div>
 <map name="classlbann_1_1lbann__image__preprocessor_a7dc609e33febdc7fc29bdc9270594bea_icgraph" id="classlbann_1_1lbann__image__preprocessor_a7dc609e33febdc7fc29bdc9270594bea_icgraph">
-<area shape="rect" id="node2" href="classlbann_1_1lbann__image__preprocessor.html#a27cb5182c4f764cbfa4edecbb78ef29d" title="lbann::lbann_image\l_preprocessor::augment" alt="" coords="221,5,384,46"/><area shape="rect" id="node3" href="classlbann_1_1lbann__image__preprocessor.html#ad1d71de3b2f635eb9b2a9a0e41da6e8c" title="lbann::lbann_image\l_preprocessor::internal\l_save_image" alt="" coords="225,69,380,125"/><area shape="rect" id="node4" href="classlbann_1_1imagenet__reader.html#abc12c5696d85850861eaae472a5c0490" title="lbann::imagenet_reader\l::save_image" alt="" coords="432,11,589,53"/><area shape="rect" id="node5" href="classlbann_1_1imagenet__reader__cv.html#ab3eea9d1c07456cd4bc97fa116ada924" title="lbann::imagenet_reader\l_cv::save_image" alt="" coords="432,77,589,118"/><area shape="rect" id="node6" href="classlbann_1_1mnist__reader.html#a9ad1df2aaaa122957ffb66d4bbea2fe4" title="lbann::mnist_reader\l::save_image" alt="" coords="443,142,579,183"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1lbann__image__preprocessor.html#a27cb5182c4f764cbfa4edecbb78ef29d" title="lbann::lbann_image\l_preprocessor::augment" alt="" coords="221,5,384,46"/><area shape="rect" id="node3" href="classlbann_1_1lbann__image__preprocessor.html#a3c4f4cc5c90233696566a35a62a1708c" title="lbann::lbann_image\l_preprocessor::internal\l_save_image" alt="" coords="225,69,380,125"/><area shape="rect" id="node4" href="classlbann_1_1imagenet__reader.html#a04c2634d249ebcad986ad855a9fb3402" title="lbann::imagenet_reader\l::save_image" alt="" coords="432,11,589,53"/><area shape="rect" id="node5" href="classlbann_1_1imagenet__reader__cv.html#a9b63a8920afb215ca42becf93500ae91" title="lbann::imagenet_reader\l_cv::save_image" alt="" coords="432,77,589,118"/><area shape="rect" id="node6" href="classlbann_1_1mnist__reader.html#aeee3c078174a4978471aca43c358aaae" title="lbann::mnist_reader\l::save_image" alt="" coords="443,142,579,183"/></map>
 </div>
 </p>
 
@@ -877,7 +877,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ad1d71de3b2f635eb9b2a9a0e41da6e8c"></a>
+<a class="anchor" id="a3c4f4cc5c90233696566a35a62a1708c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -918,7 +918,7 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>scale</em>&#160;</td>
+          <td class="paramname"><em>do_scale</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -935,7 +935,7 @@ Here is the caller graph for this function:</div>
 <p>Save pixels to filename. </p>
 
 <p>Definition at line <a class="el" href="lbann__image__preprocessor_8cpp_source.html#l00316">316</a> of file <a class="el" href="lbann__image__preprocessor_8cpp_source.html">lbann_image_preprocessor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                                     {</div>
+<div class="fragment"><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                                        {</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> sqpixels = <a class="code" href="classlbann_1_1lbann__image__preprocessor.html#a7dc609e33febdc7fc29bdc9270594bea">cv_pixels</a>(pixels, imheight, imwidth, num_channels);</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> converted_pixels;</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  <span class="keywordtype">int</span> dst_type = 0;</div>
@@ -944,18 +944,17 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (num_channels == 3) {</div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    dst_type = CV_8UC3;</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  }  <span class="comment">// cv_pixels ensures no other case happens.</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  sqpixels.convertTo(converted_pixels, dst_type, <a class="code" href="classlbann_1_1lbann__image__preprocessor.html#a977b2fdd417acb1eb37dbea0cfdd4b60">scale</a> ? 255.0f : 1.0f);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  sqpixels.convertTo(converted_pixels, dst_type, do_scale ? 255.0f : 1.0f);</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  cv::imwrite(filename, converted_pixels);</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1lbann__image__preprocessor_html_a7dc609e33febdc7fc29bdc9270594bea"><div class="ttname"><a href="classlbann_1_1lbann__image__preprocessor.html#a7dc609e33febdc7fc29bdc9270594bea">lbann::lbann_image_preprocessor::cv_pixels</a></div><div class="ttdeci">cv::Mat cv_pixels(const Mat &amp;pixels, unsigned imheight, unsigned imwidth, unsigned num_channels)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__image__preprocessor_8cpp_source.html#l00236">lbann_image_preprocessor.cpp:236</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00040">lbann_base.hpp:40</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__image__preprocessor_html_a977b2fdd417acb1eb37dbea0cfdd4b60"><div class="ttname"><a href="classlbann_1_1lbann__image__preprocessor.html#a977b2fdd417acb1eb37dbea0cfdd4b60">lbann::lbann_image_preprocessor::scale</a></div><div class="ttdeci">void scale(bool b)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__image__preprocessor_8hpp_source.html#l00092">lbann_image_preprocessor.hpp:92</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1lbann__image__preprocessor_ad1d71de3b2f635eb9b2a9a0e41da6e8c_cgraph.png" border="0" usemap="#classlbann_1_1lbann__image__preprocessor_ad1d71de3b2f635eb9b2a9a0e41da6e8c_cgraph" alt=""/></div>
-<map name="classlbann_1_1lbann__image__preprocessor_ad1d71de3b2f635eb9b2a9a0e41da6e8c_cgraph" id="classlbann_1_1lbann__image__preprocessor_ad1d71de3b2f635eb9b2a9a0e41da6e8c_cgraph">
+<div class="center"><img src="classlbann_1_1lbann__image__preprocessor_a3c4f4cc5c90233696566a35a62a1708c_cgraph.png" border="0" usemap="#classlbann_1_1lbann__image__preprocessor_a3c4f4cc5c90233696566a35a62a1708c_cgraph" alt=""/></div>
+<map name="classlbann_1_1lbann__image__preprocessor_a3c4f4cc5c90233696566a35a62a1708c_cgraph" id="classlbann_1_1lbann__image__preprocessor_a3c4f4cc5c90233696566a35a62a1708c_cgraph">
 <area shape="rect" id="node2" href="classlbann_1_1lbann__image__preprocessor.html#a7dc609e33febdc7fc29bdc9270594bea" title="lbann::lbann_image\l_preprocessor::cv_pixels" alt="" coords="209,11,375,53"/></map>
 </div>
 </p>
@@ -963,9 +962,9 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1lbann__image__preprocessor_ad1d71de3b2f635eb9b2a9a0e41da6e8c_icgraph.png" border="0" usemap="#classlbann_1_1lbann__image__preprocessor_ad1d71de3b2f635eb9b2a9a0e41da6e8c_icgraph" alt=""/></div>
-<map name="classlbann_1_1lbann__image__preprocessor_ad1d71de3b2f635eb9b2a9a0e41da6e8c_icgraph" id="classlbann_1_1lbann__image__preprocessor_ad1d71de3b2f635eb9b2a9a0e41da6e8c_icgraph">
-<area shape="rect" id="node2" href="classlbann_1_1imagenet__reader.html#abc12c5696d85850861eaae472a5c0490" title="lbann::imagenet_reader\l::save_image" alt="" coords="208,5,365,46"/><area shape="rect" id="node3" href="classlbann_1_1imagenet__reader__cv.html#ab3eea9d1c07456cd4bc97fa116ada924" title="lbann::imagenet_reader\l_cv::save_image" alt="" coords="208,70,365,111"/><area shape="rect" id="node4" href="classlbann_1_1mnist__reader.html#a9ad1df2aaaa122957ffb66d4bbea2fe4" title="lbann::mnist_reader\l::save_image" alt="" coords="219,135,355,177"/></map>
+<div class="center"><img src="classlbann_1_1lbann__image__preprocessor_a3c4f4cc5c90233696566a35a62a1708c_icgraph.png" border="0" usemap="#classlbann_1_1lbann__image__preprocessor_a3c4f4cc5c90233696566a35a62a1708c_icgraph" alt=""/></div>
+<map name="classlbann_1_1lbann__image__preprocessor_a3c4f4cc5c90233696566a35a62a1708c_icgraph" id="classlbann_1_1lbann__image__preprocessor_a3c4f4cc5c90233696566a35a62a1708c_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1imagenet__reader.html#a04c2634d249ebcad986ad855a9fb3402" title="lbann::imagenet_reader\l::save_image" alt="" coords="208,5,365,46"/><area shape="rect" id="node3" href="classlbann_1_1imagenet__reader__cv.html#a9b63a8920afb215ca42becf93500ae91" title="lbann::imagenet_reader\l_cv::save_image" alt="" coords="208,70,365,111"/><area shape="rect" id="node4" href="classlbann_1_1mnist__reader.html#aeee3c078174a4978471aca43c358aaae" title="lbann::mnist_reader\l::save_image" alt="" coords="219,135,355,177"/></map>
 </div>
 </p>
 
@@ -1153,7 +1152,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ab46384375c66b01d8e50142478e0cc73"></a>
+<a class="anchor" id="a67b11150501a829125e9c6999781bc67"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1176,7 +1175,7 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>scale</em> = <code>true</code>&#160;</td>
+          <td class="paramname"><em>do_scale</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1200,10 +1199,10 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="classlbann_1_1generic__data__reader.html#a613a8e32a604cfc1c2b837a7d6b662df">lbann::generic_data_reader</a>, <a class="el" href="classlbann_1_1imagenet__reader__cv.html#ab3eea9d1c07456cd4bc97fa116ada924">lbann::imagenet_reader_cv</a>, <a class="el" href="classlbann_1_1imagenet__reader.html#abc12c5696d85850861eaae472a5c0490">lbann::imagenet_reader</a>, and <a class="el" href="classlbann_1_1mnist__reader.html#a9ad1df2aaaa122957ffb66d4bbea2fe4">lbann::mnist_reader</a>.</p>
+<p>Reimplemented in <a class="el" href="classlbann_1_1generic__data__reader.html#a030e7521ba0c120f9519495efcf0cf3c">lbann::generic_data_reader</a>, <a class="el" href="classlbann_1_1imagenet__reader__cv.html#a9b63a8920afb215ca42becf93500ae91">lbann::imagenet_reader_cv</a>, <a class="el" href="classlbann_1_1imagenet__reader.html#a04c2634d249ebcad986ad855a9fb3402">lbann::imagenet_reader</a>, and <a class="el" href="classlbann_1_1mnist__reader.html#aeee3c078174a4978471aca43c358aaae">lbann::mnist_reader</a>.</p>
 
 <p>Definition at line <a class="el" href="lbann__image__preprocessor_8hpp_source.html#l00136">136</a> of file <a class="el" href="lbann__image__preprocessor_8hpp_source.html">lbann_image_preprocessor.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                                             {}</div>
+<div class="fragment"><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                                                {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1241,7 +1240,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1lbann__image__preprocessor_a977b2fdd417acb1eb37dbea0cfdd4b60_icgraph.png" border="0" usemap="#classlbann_1_1lbann__image__preprocessor_a977b2fdd417acb1eb37dbea0cfdd4b60_icgraph" alt=""/></div>
 <map name="classlbann_1_1lbann__image__preprocessor_a977b2fdd417acb1eb37dbea0cfdd4b60_icgraph" id="classlbann_1_1lbann__image__preprocessor_a977b2fdd417acb1eb37dbea0cfdd4b60_icgraph">
-<area shape="rect" id="node2" href="classlbann_1_1imagenet__reader.html#abc12c5696d85850861eaae472a5c0490" title="lbann::imagenet_reader\l::save_image" alt="" coords="197,5,355,46"/><area shape="rect" id="node3" href="classlbann_1_1imagenet__reader__cv.html#ab3eea9d1c07456cd4bc97fa116ada924" title="lbann::imagenet_reader\l_cv::save_image" alt="" coords="197,70,355,111"/><area shape="rect" id="node4" href="classlbann_1_1mnist__reader.html#a9ad1df2aaaa122957ffb66d4bbea2fe4" title="lbann::mnist_reader\l::save_image" alt="" coords="208,135,344,177"/><area shape="rect" id="node5" href="lbann__proto__common_8hpp.html#a954150c50e90b511638c4b402791483a" title="init_data_readers" alt="" coords="215,201,337,228"/></map>
+<area shape="rect" id="node2" href="lbann__proto__common_8hpp.html#a954150c50e90b511638c4b402791483a" title="init_data_readers" alt="" coords="198,12,319,39"/></map>
 </div>
 </p>
 
@@ -1950,7 +1949,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html">lbann_image_preprocessor</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 07:20:05 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 08:19:27 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

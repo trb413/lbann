@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-49-gbb623dc-ci241451533</span>
+   &#160;<span id="projectnumber">v0.93-rc0-50-g183e212-ci241460196</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -983,7 +983,7 @@ Here is the caller graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                                                       {</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="comment">// rank 0 reads the file</span></div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <a class="code" href="structdataset__header.html">dataset_header</a> header;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  <span class="keywordflow">if</span> (p.m_rank == 0) {</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  <span class="keywordflow">if</span> (p.get_rank() == 0) {</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    p.read_uint64(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;reader_train_processed&quot;</span>,    &amp;header.<a class="code" href="structdataset__header.html#a7dd6822b650cb55d647f33fea50f1a20">train_proc</a>);</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    p.read_uint64(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;reader_train_total&quot;</span>,        &amp;header.<a class="code" href="structdataset__header.html#ac687bb1bff59eeede917e9e9f6c968f3">train_total</a>);</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    p.read_uint64(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;reader_test_processed&quot;</span>,     &amp;header.<a class="code" href="structdataset__header.html#a9560ba3a2e84cdb1eff33c6f5d36026f">test_proc</a>);</div>
@@ -1025,7 +1025,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1io__layer_a2c62c0b4e30f80c3edaf39e6530ccb49_cgraph.png" border="0" usemap="#classlbann_1_1io__layer_a2c62c0b4e30f80c3edaf39e6530ccb49_cgraph" alt=""/></div>
 <map name="classlbann_1_1io__layer_a2c62c0b4e30f80c3edaf39e6530ccb49_cgraph" id="classlbann_1_1io__layer_a2c62c0b4e30f80c3edaf39e6530ccb49_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1persist.html#aa6d996db3714a7ae055adac0d8e8ac63" title="lbann::persist::read\l_uint64" alt="" coords="221,5,355,46"/><area shape="rect" id="node3" href="namespacelbann.html#a85385e2a9e058b6720300b4cbdd2b1d0" title="lbann::read_bytes" alt="" coords="403,12,528,39"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1persist.html#a2ddad2673e2ab25ece11b7d30a7e5b83" title="lbann::persist::get_rank" alt="" coords="222,5,381,32"/><area shape="rect" id="node3" href="classlbann_1_1persist.html#aa6d996db3714a7ae055adac0d8e8ac63" title="lbann::persist::read\l_uint64" alt="" coords="235,57,368,98"/><area shape="rect" id="node4" href="namespacelbann.html#a85385e2a9e058b6720300b4cbdd2b1d0" title="lbann::read_bytes" alt="" coords="429,64,555,91"/></map>
 </div>
 </p>
 
@@ -1069,7 +1069,7 @@ Here is the caller graph for this function:</div>
 <p>Definition at line <a class="el" href="lbann__io__layer_8cpp_source.html#l00234">234</a> of file <a class="el" href="lbann__io__layer_8cpp_source.html">lbann_io_layer.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                                                     {</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="comment">// rank 0 writes the file</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="keywordflow">if</span> (p.m_rank == 0) {</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="keywordflow">if</span> (p.get_rank() == 0) {</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    p.write_uint64(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;reader_train_processed&quot;</span>,</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                   (uint64_t) <a class="code" href="classlbann_1_1io__layer.html#a9897b608f618635635736872c8f1ca21">m_training_dataset</a>.<a class="code" href="classlbann_1_1dataset.html#a4632b42298795de712a32da162bedad5">num_samples_processed</a>);</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    p.write_uint64(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;reader_train_total&quot;</span>,</div>
@@ -1100,7 +1100,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1io__layer_ae59b49fad28d273f72035f227fa846af_cgraph.png" border="0" usemap="#classlbann_1_1io__layer_ae59b49fad28d273f72035f227fa846af_cgraph" alt=""/></div>
 <map name="classlbann_1_1io__layer_ae59b49fad28d273f72035f227fa846af_cgraph" id="classlbann_1_1io__layer_ae59b49fad28d273f72035f227fa846af_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1persist.html#aced95e3bc711276b072af97b65ef9fc1" title="lbann::persist::write\l_uint64" alt="" coords="277,5,413,46"/><area shape="rect" id="node3" href="namespacelbann.html#af0c8fc38d05bfc6aaf4bc78d06e6710a" title="lbann::write_bytes" alt="" coords="461,12,589,39"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1persist.html#a2ddad2673e2ab25ece11b7d30a7e5b83" title="lbann::persist::get_rank" alt="" coords="278,5,437,32"/><area shape="rect" id="node3" href="classlbann_1_1persist.html#aced95e3bc711276b072af97b65ef9fc1" title="lbann::persist::write\l_uint64" alt="" coords="289,57,425,98"/><area shape="rect" id="node4" href="namespacelbann.html#af0c8fc38d05bfc6aaf4bc78d06e6710a" title="lbann::write_bytes" alt="" coords="485,64,613,91"/></map>
 </div>
 </p>
 
@@ -1610,7 +1610,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1io__layer.html">io_layer</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 07:20:06 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 08:19:27 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -36,7 +36,7 @@ var classlbann_1_1generic__data__reader =
     [ "loadFromCheckpointShared", "classlbann_1_1generic__data__reader.html#a4b128336a2cfae4c08ef4fb596957c7e", null ],
     [ "operator=", "classlbann_1_1generic__data__reader.html#a72a464475f641c638f1da750207ef1f7", null ],
     [ "position_valid", "classlbann_1_1generic__data__reader.html#a5577ae1e5ffaa078103fce15b5c5e8ee", null ],
-    [ "save_image", "classlbann_1_1generic__data__reader.html#a613a8e32a604cfc1c2b837a7d6b662df", null ],
+    [ "save_image", "classlbann_1_1generic__data__reader.html#a030e7521ba0c120f9519495efcf0cf3c", null ],
     [ "saveToCheckpointShared", "classlbann_1_1generic__data__reader.html#a07bd58356e359987a2eb4c08e7bf9117", null ],
     [ "select_subset_of_data", "classlbann_1_1generic__data__reader.html#aa28fdeeb6af492540f507e49adff5d6c", null ],
     [ "set_data_filename", "classlbann_1_1generic__data__reader.html#a74b7ef4fe0dc7d3a96868ca3b5fbf897", null ],

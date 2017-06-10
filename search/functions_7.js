@@ -95,7 +95,7 @@ var searchData=
   ['get_5fprocs_5fper_5fnode',['get_procs_per_node',['../classlbann_1_1lbann__comm.html#a845c62c2a55ef3eb4416deb3e8c5cd1a',1,'lbann::lbann_comm']]],
   ['get_5fproportion_5ftime',['get_proportion_time',['../classlbann_1_1lbann__quantizer.html#a5b9d72b9133517e0212f73908a576c7e',1,'lbann::lbann_quantizer']]],
   ['get_5fquantized_5fcount',['get_quantized_count',['../classlbann_1_1lbann__quantizer.html#a0d9f7cc689b44935a347ff0b7e3d1820',1,'lbann::lbann_quantizer']]],
-  ['get_5frank',['get_rank',['../classlbann_1_1generic__data__reader.html#afe04924078979e3c10d32eeedb4c34a0',1,'lbann::generic_data_reader']]],
+  ['get_5frank',['get_rank',['../classlbann_1_1generic__data__reader.html#afe04924078979e3c10d32eeedb4c34a0',1,'lbann::generic_data_reader::get_rank()'],['../classlbann_1_1persist.html#a2ddad2673e2ab25ece11b7d30a7e5b83',1,'lbann::persist::get_rank()']]],
   ['get_5frank_5fin_5fmodel',['get_rank_in_model',['../classlbann_1_1lbann__comm.html#a206bafe522a0962c450f4fc69d030656',1,'lbann::lbann_comm']]],
   ['get_5frank_5fin_5fnode',['get_rank_in_node',['../classlbann_1_1lbann__comm.html#a339bc17f07a2e40663df8b5d8cf80bf6',1,'lbann::lbann_comm']]],
   ['get_5frank_5fin_5fworld',['get_rank_in_world',['../classlbann_1_1lbann__comm.html#a615265cd20ffb4863089bb94e4c82fe7',1,'lbann::lbann_comm']]],

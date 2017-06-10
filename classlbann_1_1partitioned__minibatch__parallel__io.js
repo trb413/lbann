@@ -12,7 +12,7 @@ var classlbann_1_1partitioned__minibatch__parallel__io =
     [ "is_data_set_processed", "classlbann_1_1partitioned__minibatch__parallel__io.html#ab0ad48e802c2171c4a5e77046955c292", null ],
     [ "preprocess_data_samples", "classlbann_1_1partitioned__minibatch__parallel__io.html#a05a5e437b33d5fdb0f450af3cde02dc8", null ],
     [ "update_data_reader", "classlbann_1_1partitioned__minibatch__parallel__io.html#a8d2655e360ad105ef24e84b28a900136", null ],
-    [ "comm", "classlbann_1_1partitioned__minibatch__parallel__io.html#afbd6174e81834884a9fa1278b6bf22f3", null ],
+    [ "m_comm", "classlbann_1_1partitioned__minibatch__parallel__io.html#a3fa1ce2ec617fab3819089f52a7a1c84", null ],
     [ "m_cur_step_in_epoch", "classlbann_1_1partitioned__minibatch__parallel__io.html#a2c66393dbeba238892b8380e47c48256", null ],
     [ "m_data_readers", "classlbann_1_1partitioned__minibatch__parallel__io.html#a0b26cc745ac37e1c3f23fe854ef09871", null ],
     [ "m_local_data_valid", "classlbann_1_1partitioned__minibatch__parallel__io.html#a76ee5dccb1f392731415e9c43ded0352", null ],

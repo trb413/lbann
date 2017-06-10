@@ -11,7 +11,7 @@ var classlbann_1_1mnist__reader =
     [ "get_linearized_label_size", "classlbann_1_1mnist__reader.html#acdb00608f751d16f64dbf412c8b9829b", null ],
     [ "get_num_labels", "classlbann_1_1mnist__reader.html#af38634aa19a361b882cbe4727120ef49", null ],
     [ "load", "classlbann_1_1mnist__reader.html#a329b3461569ddee700e681a34192a230", null ],
-    [ "save_image", "classlbann_1_1mnist__reader.html#a9ad1df2aaaa122957ffb66d4bbea2fe4", null ],
+    [ "save_image", "classlbann_1_1mnist__reader.html#aeee3c078174a4978471aca43c358aaae", null ],
     [ "m_image_data", "classlbann_1_1mnist__reader.html#a566ec18b29037abafe472b371f86aaca", null ],
     [ "m_image_height", "classlbann_1_1mnist__reader.html#afab9e8a04503a956fecc9be48e2d7145", null ],
     [ "m_image_width", "classlbann_1_1mnist__reader.html#acf6f38f62c34e2e0348b8e6d3cfca489", null ],

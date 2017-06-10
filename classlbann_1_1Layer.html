@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-49-gbb623dc-ci241451533</span>
+   &#160;<span id="projectnumber">v0.93-rc0-50-g183e212-ci241460196</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -1195,7 +1195,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;<span class="comment"></span>  <span class="keywordflow">if</span>(cur_mini_batch_size != <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a> || 1) {</div>
 <div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    <span class="comment">// When the current mini-batch is partial, check with the other</span></div>
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    <span class="comment">// models to figure out the entire size of the complete mini-batch</span></div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    Int total_mini_batch_size = <a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a01f1a49d07b57bb36de71171d4d59b49">intermodel_allreduce</a>((Int) cur_mini_batch_size);</div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    Int total_mini_batch_size = <a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a800c7da4430191f9cb0b15e80a2c3cab">intermodel_allreduce</a>((Int) cur_mini_batch_size);</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a764387b1c6c66436120bbbff79649e70">set_effective_minibatch_size</a>(total_mini_batch_size);</div>
 <div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;  } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a764387b1c6c66436120bbbff79649e70">set_effective_minibatch_size</a>(cur_mini_batch_size * <a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637">get_num_models</a>());</div>
@@ -1204,7 +1204,7 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="classlbann_1_1Layer_html_a871b103aedbd95b5205c24b66ef74dfa"><div class="ttname"><a href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">lbann::Layer::m_activations_v</a></div><div class="ttdeci">ElMat * m_activations_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00301">lbann_layer.hpp:301</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a06ff15d046be0425b409062ef984f4d5"><div class="ttname"><a href="classlbann_1_1Layer.html#a06ff15d046be0425b409062ef984f4d5">lbann::Layer::m_weighted_sum</a></div><div class="ttdeci">ElMat * m_weighted_sum</div><div class="ttdoc">Weighted sum - Output of forward pass linear transformation ((# neurons) x mini-batch size) ...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00291">lbann_layer.hpp:291</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a7a28e5b795fcd852dea62e57d7a6f97e"><div class="ttname"><a href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">lbann::Layer::m_activations</a></div><div class="ttdeci">ElMat * m_activations</div><div class="ttdoc">Activations - non-linearity applied to weighted sum ((# neurons) x mini-batch size) ...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00296">lbann_layer.hpp:296</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_a01f1a49d07b57bb36de71171d4d59b49"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a01f1a49d07b57bb36de71171d4d59b49">lbann::lbann_comm::intermodel_allreduce</a></div><div class="ttdeci">T intermodel_allreduce(T send, mpi::Op op=mpi::SUM)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00196">lbann_comm.hpp:196</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_a800c7da4430191f9cb0b15e80a2c3cab"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a800c7da4430191f9cb0b15e80a2c3cab">lbann::lbann_comm::intermodel_allreduce</a></div><div class="ttdeci">T intermodel_allreduce(T snd, mpi::Op op=mpi::SUM)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00196">lbann_comm.hpp:196</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a764387b1c6c66436120bbbff79649e70"><div class="ttname"><a href="classlbann_1_1Layer.html#a764387b1c6c66436120bbbff79649e70">lbann::Layer::set_effective_minibatch_size</a></div><div class="ttdeci">virtual void set_effective_minibatch_size(uint size)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00232">lbann_layer.hpp:232</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a3f1ab0c18e78cd82af4cf24b73ec96bc"><div class="ttname"><a href="classlbann_1_1Layer.html#a3f1ab0c18e78cd82af4cf24b73ec96bc">lbann::Layer::m_prev_error_signal_v</a></div><div class="ttdeci">ElMat * m_prev_error_signal_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00300">lbann_layer.hpp:300</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_a7889df80a48db23b1b7a1c276e2d53e4"><div class="ttname"><a href="classlbann_1_1model.html#a7889df80a48db23b1b7a1c276e2d53e4">lbann::model::get_current_mini_batch_size</a></div><div class="ttdeci">int64_t get_current_mini_batch_size()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00110">lbann_model.hpp:110</a></div></div>
@@ -3698,7 +3698,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1Layer.html">Layer</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 07:20:06 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 08:19:27 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

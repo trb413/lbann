@@ -1,7 +1,7 @@
 var classlbann_1_1objective__functions_1_1objective__fn =
 [
     [ "objective_fn", "classlbann_1_1objective__functions_1_1objective__fn.html#adb4df9dd448d19dacb490167cbfda251", null ],
-    [ "objective_fn", "classlbann_1_1objective__functions_1_1objective__fn.html#ae75d8293502591a40e6bba1a15f6f56d", null ],
+    [ "objective_fn", "classlbann_1_1objective__functions_1_1objective__fn.html#ad641b3364823fcc0dbd214035d860d60", null ],
     [ "~objective_fn", "classlbann_1_1objective__functions_1_1objective__fn.html#ab9a7ffcdede86db2d68eea3178af803a", null ],
     [ "compute_obj_fn", "classlbann_1_1objective__functions_1_1objective__fn.html#a031268be60cba917d94d876aaa36c7f7", null ],
     [ "compute_obj_fn_derivative", "classlbann_1_1objective__functions_1_1objective__fn.html#ab86c1d273d80104764fb5fb72f5d6875", null ],

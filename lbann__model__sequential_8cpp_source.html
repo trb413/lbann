@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-49-gbb623dc-ci241451533</span>
+   &#160;<span id="projectnumber">v0.93-rc0-50-g183e212-ci241460196</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -282,7 +282,7 @@ $(document).ready(function(){initNavTree('lbann__model__sequential_8cpp_source.h
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="comment">// write a single header describing layers and sizes?</span></div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="comment">// have rank 0 write the network file</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="keywordflow">if</span> (p.<a class="code" href="classlbann_1_1persist.html#aa99b1b0079bb10471472bf6f1d966deb">m_rank</a> == 0) {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="keywordflow">if</span> (p.<a class="code" href="classlbann_1_1persist.html#a2ddad2673e2ab25ece11b7d30a7e5b83">get_rank</a>() == 0) {</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    uint32_t layers = m_layers.size();</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    p.<a class="code" href="classlbann_1_1persist.html#a742334568de0aca958dbaf7bbabd3cba">write_uint32</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c">persist_type::model</a>, <span class="stringliteral">&quot;layers&quot;</span>, (uint32_t) layers);</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;</div>
@@ -305,7 +305,7 @@ $(document).ready(function(){initNavTree('lbann__model__sequential_8cpp_source.h
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="comment">// have rank 0 read the network file</span></div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  <span class="keyword">struct </span><a class="code" href="structlbann__model__sequential__header.html">lbann_model_sequential_header</a> header;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keywordflow">if</span> (p.<a class="code" href="classlbann_1_1persist.html#aa99b1b0079bb10471472bf6f1d966deb">m_rank</a> == 0) {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keywordflow">if</span> (p.<a class="code" href="classlbann_1_1persist.html#a2ddad2673e2ab25ece11b7d30a7e5b83">get_rank</a>() == 0) {</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    p.<a class="code" href="classlbann_1_1persist.html#ace1ebb58e2570693cdce0ebd2817113b">read_uint32</a>(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c">persist_type::model</a>, <span class="stringliteral">&quot;layers&quot;</span>, &amp;header.<a class="code" href="structlbann__model__sequential__header.html#a048e5c0b369cdafbbc97edb9f34bae35">layers</a>);</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="comment">// TODO: read back each layer type and size</span></div>
@@ -441,6 +441,7 @@ $(document).ready(function(){initNavTree('lbann__model__sequential_8cpp_source.h
 <div class="ttc" id="classlbann_1_1Layer_html_a9f9b57a391aaa13609760a71fe6cfa78"><div class="ttname"><a href="classlbann_1_1Layer.html#a9f9b57a391aaa13609760a71fe6cfa78">lbann::Layer::set_index</a></div><div class="ttdeci">void set_index(const uint i)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00172">lbann_layer.hpp:172</a></div></div>
 <div class="ttc" id="namespacelbann_html_a65056cb9ae34866d6252f18da0697c58"><div class="ttname"><a href="namespacelbann.html#a65056cb9ae34866d6252f18da0697c58">lbann::_layer_type_to_string</a></div><div class="ttdeci">static const char * _layer_type_to_string(layer_type l)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00066">lbann_layer.hpp:66</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_a0d278ffa94dd6749e017c2af5c78178d"><div class="ttname"><a href="classlbann_1_1model.html#a0d278ffa94dd6749e017c2af5c78178d">lbann::model::setup</a></div><div class="ttdeci">virtual void setup()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00062">lbann_model.hpp:62</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a2ddad2673e2ab25ece11b7d30a7e5b83"><div class="ttname"><a href="classlbann_1_1persist.html#a2ddad2673e2ab25ece11b7d30a7e5b83">lbann::persist::get_rank</a></div><div class="ttdeci">int get_rank(void)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00058">lbann_persist.hpp:58</a></div></div>
 <div class="ttc" id="classlbann_1_1sequential__model_html_ae992c83737819d406e1311ebe24e07f0"><div class="ttname"><a href="classlbann_1_1sequential__model.html#ae992c83737819d406e1311ebe24e07f0">lbann::sequential_model::insert</a></div><div class="ttdeci">virtual void insert(int index, Layer *new_layer)</div><div class="ttdoc">Insert layer in sequential model. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8cpp_source.html#l00264">lbann_model_sequential.cpp:264</a></div></div>
 <div class="ttc" id="lbann__layer__convolutional_8hpp_html"><div class="ttname"><a href="lbann__layer__convolutional_8hpp.html">lbann_layer_convolutional.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html"><div class="ttname"><a href="classlbann_1_1model.html">lbann::model</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00055">lbann_model.hpp:55</a></div></div>
@@ -454,7 +455,6 @@ $(document).ready(function(){initNavTree('lbann__model__sequential_8cpp_source.h
 <div class="ttc" id="namespacelbann_html_a8830dea8eef0ab5b93d68e2358ceeb1a"><div class="ttname"><a href="namespacelbann.html#a8830dea8eef0ab5b93d68e2358ceeb1a">lbann::makedir</a></div><div class="ttdeci">int makedir(const char *dirname)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00049">lbann_file_io.cpp:49</a></div></div>
 <div class="ttc" id="classlbann_1_1sequential__model_html_aa249267bd3e129b480c4615f51bfaed5"><div class="ttname"><a href="classlbann_1_1sequential__model.html#aa249267bd3e129b480c4615f51bfaed5">lbann::sequential_model::save_to_checkpoint</a></div><div class="ttdeci">bool save_to_checkpoint(int fd, const char *filename, uint64_t *bytes)</div><div class="ttdoc">Save model to checkpoint. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8cpp_source.html#l00136">lbann_model_sequential.cpp:136</a></div></div>
 <div class="ttc" id="lbann__optimizer__adagrad_8hpp_html"><div class="ttname"><a href="lbann__optimizer__adagrad_8hpp.html">lbann_optimizer_adagrad.hpp</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_aa99b1b0079bb10471472bf6f1d966deb"><div class="ttname"><a href="classlbann_1_1persist.html#aa99b1b0079bb10471472bf6f1d966deb">lbann::persist::m_rank</a></div><div class="ttdeci">int m_rank</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00046">lbann_persist.hpp:46</a></div></div>
 <div class="ttc" id="classlbann_1_1optimizer__factory_html"><div class="ttname"><a href="classlbann_1_1optimizer__factory.html">lbann::optimizer_factory</a></div><div class="ttdoc">Optimizer factory base class. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00099">lbann_optimizer.hpp:99</a></div></div>
 <div class="ttc" id="lbann__optimizer_8hpp_html"><div class="ttname"><a href="lbann__optimizer_8hpp.html">lbann_optimizer.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1sequential__model_html_ae4fa1fd95dae51edf2b0db11258dca51"><div class="ttname"><a href="classlbann_1_1sequential__model.html#ae4fa1fd95dae51edf2b0db11258dca51">lbann::sequential_model::set_fp_input</a></div><div class="ttdeci">virtual void set_fp_input(size_t start_index, size_t end_index)</div><div class="ttdoc">Establish model layers&#39; forward pass input pointers. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__sequential_8cpp_source.html#l00274">lbann_model_sequential.cpp:274</a></div></div>
@@ -478,7 +478,7 @@ $(document).ready(function(){initNavTree('lbann__model__sequential_8cpp_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_e8e3d10a664feac46c9de523d11ac34a.html">models</a></li><li class="navelem"><a class="el" href="lbann__model__sequential_8cpp.html">lbann_model_sequential.cpp</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 07:20:03 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 08:19:25 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,5 +1,6 @@
 var NAVTREEINDEX8 =
 {
+"globals_type.html":[4,1,3],
 "globals_u.html":[4,1,0,17],
 "globals_v.html":[4,1,0,18],
 "globals_vars.html":[4,1,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX8 =
 "lbann__distributed__minibatch__parallel__io_8hpp.html":[4,0,0,0,0,0,0,0,0,2,0],
 "lbann__distributed__minibatch__parallel__io_8hpp_source.html":[4,0,0,0,0,0,0,0,0,2,0],
 "lbann__dropout_8cpp.html":[4,0,0,0,0,0,0,1,9,1],
-"lbann__dropout_8cpp_source.html":[4,0,0,0,0,0,0,1,9,1],
-"lbann__dropout_8hpp.html":[4,0,0,0,0,0,0,0,0,9,1]
+"lbann__dropout_8cpp_source.html":[4,0,0,0,0,0,0,1,9,1]
 };

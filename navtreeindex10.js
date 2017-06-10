@@ -1,5 +1,6 @@
 var NAVTREEINDEX10 =
 {
+"lbann__params_8cpp.html":[4,0,0,0,0,0,0,1,14],
 "lbann__params_8cpp_source.html":[4,0,0,0,0,0,0,1,14],
 "lbann__params_8hpp.html":[4,0,0,0,0,0,0,0,0,17],
 "lbann__params_8hpp_source.html":[4,0,0,0,0,0,0,0,0,17],
@@ -248,6 +249,5 @@ var NAVTREEINDEX10 =
 "struct__BOX3__FLOAT.html":[3,0,17],
 "struct__BOX3__FLOAT.html#a1fddc58e7ad0cf69387d2ce33afe4502":[3,0,17,3],
 "struct__BOX3__FLOAT.html#a2b6691a869442f618ca92d97639ecb86":[3,0,17,4],
-"struct__BOX3__FLOAT.html#a7cd84616e6269e15117b00b07d922b24":[3,0,17,1],
-"struct__BOX3__FLOAT.html#a89964da449dd2e77021af616ec1dd017":[3,0,17,5]
+"struct__BOX3__FLOAT.html#a7cd84616e6269e15117b00b07d922b24":[3,0,17,1]
 };

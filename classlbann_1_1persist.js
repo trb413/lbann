@@ -6,6 +6,7 @@ var classlbann_1_1persist =
     [ "close_restart", "classlbann_1_1persist.html#a0edeadcf97c65980931511ca61e03465", null ],
     [ "get_bytes", "classlbann_1_1persist.html#a701c3fd5d5e383c9213499bd71b9cd22", null ],
     [ "get_fd", "classlbann_1_1persist.html#aaff6bf3f0afd070498b6117e51a56eb3", null ],
+    [ "get_rank", "classlbann_1_1persist.html#a2ddad2673e2ab25ece11b7d30a7e5b83", null ],
     [ "open_checkpoint", "classlbann_1_1persist.html#a5bb3c2effb859cf3ca2c5f297acc3195", null ],
     [ "open_restart", "classlbann_1_1persist.html#a8b1d8388246d8b959a7e85940439a0e6", null ],
     [ "read_bytes", "classlbann_1_1persist.html#af24f635f634c8cf30cf53a0e90ec641b", null ],

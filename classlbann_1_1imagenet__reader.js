@@ -14,7 +14,7 @@ var classlbann_1_1imagenet__reader =
     [ "get_num_labels", "classlbann_1_1imagenet__reader.html#af5e7227b2c267c82f606ec8aac387fd3", null ],
     [ "load", "classlbann_1_1imagenet__reader.html#a14031f6653ffba49a22e4773ee02fcad", null ],
     [ "operator=", "classlbann_1_1imagenet__reader.html#ad3d6a02a9869e86a8cedb84e414d1519", null ],
-    [ "save_image", "classlbann_1_1imagenet__reader.html#abc12c5696d85850861eaae472a5c0490", null ],
+    [ "save_image", "classlbann_1_1imagenet__reader.html#a04c2634d249ebcad986ad855a9fb3402", null ],
     [ "image_list", "classlbann_1_1imagenet__reader.html#ac85ca44c549dd783af48edc3120464cb", null ],
     [ "m_image_dir", "classlbann_1_1imagenet__reader.html#ad4eb4d1ac8df22122f0df8ca3f11f009", null ],
     [ "m_image_height", "classlbann_1_1imagenet__reader.html#a334925ee38807545a92c4d053dbf6456", null ],
