@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-37-g1f1a0a0-ci241401990</span>
+   &#160;<span id="projectnumber">v0.93-rc0-39-g7b8ce91-ci241413836</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -299,7 +299,11 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Given that each model has to have at least one reader, what is the minimum stride </p>
+<p>Given that each model has to have at least one reader, what is the minimum stride</p>
+<p>By default the last mini-batch is a full one</p>
+<p>Note that comm-&gt;get_model_rank() + comm-&gt;get_rank_in_model() is not equivalent to comm-&gt;get_world_rank() from a parallel I/O perspective Given the data readers model rank, how many models have a higher rank</p>
+<p>By default the last stride of each reader is part of a regular (full) round</p>
+<p>The last mini-batch may be partial and thus may have a smaller stride </p>
 
 <p>Definition at line <a class="el" href="lbann__partitioned__minibatch__parallel__io_8cpp_source.html#l00185">185</a> of file <a class="el" href="lbann__partitioned__minibatch__parallel__io_8cpp_source.html">lbann_partitioned_minibatch_parallel_io.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                                                                                                                {</div>
@@ -307,12 +311,68 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <span class="keywordtype">int</span> num_parallel_readers_per_model = <a class="code" href="lbann__base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39a2ffe4e77325d9a7152f7086ea7aa5114">max</a>(1, (data_reader-&gt;m_batch_stride / <a class="code" href="classlbann_1_1partitioned__minibatch__parallel__io.html#afbd6174e81834884a9fa1278b6bf22f3">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637">get_num_models</a>()) / max_mini_batch_size);</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordtype">int</span> min_stride_across_models = max_mini_batch_size * <a class="code" href="classlbann_1_1partitioned__minibatch__parallel__io.html#afbd6174e81834884a9fa1278b6bf22f3">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637">get_num_models</a>();  </div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;}</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  data_reader-&gt;m_last_mini_batch_size = max_mini_batch_size; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="keywordtype">int</span> num_whole_mini_batches_per_model = floor(data_reader-&gt;getNumData() / min_stride_across_models);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="keywordtype">int</span> num_whole_mini_batches_per_reader = floor(num_whole_mini_batches_per_model / num_parallel_readers_per_model);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="comment">//  int parallel_readers_with_extra_mini_batch = num_whole_mini_batches_per_model % num_parallel_readers_per_model;</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordtype">int</span> per_model_partial_mini_batch_size = (data_reader-&gt;getNumData() - (num_whole_mini_batches_per_model * min_stride_across_models))/(<a class="code" href="classlbann_1_1partitioned__minibatch__parallel__io.html#afbd6174e81834884a9fa1278b6bf22f3">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637">get_num_models</a>());</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordtype">int</span> world_master_remainder_data = 0;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  <span class="comment">// Compute how many full &quot;parallel&quot; mini-batches are available</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  data_reader-&gt;m_last_mini_batch_threshold = num_whole_mini_batches_per_model * min_stride_across_models;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  data_reader-&gt;m_num_mini_batches_per_reader = num_whole_mini_batches_per_reader;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordtype">int</span> world_master_remainder_adjustment = data_reader-&gt;getNumData()</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                                          - (num_whole_mini_batches_per_model * min_stride_across_models)</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                                          - (per_model_partial_mini_batch_size * <a class="code" href="classlbann_1_1partitioned__minibatch__parallel__io.html#afbd6174e81834884a9fa1278b6bf22f3">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637">get_num_models</a>());</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1partitioned__minibatch__parallel__io.html#afbd6174e81834884a9fa1278b6bf22f3">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5">am_world_master</a>()) {</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    world_master_remainder_data = world_master_remainder_adjustment;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    world_master_remainder_adjustment = 0;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  per_model_partial_mini_batch_size += world_master_remainder_data;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="keywordflow">if</span>(per_model_partial_mini_batch_size &gt; 0 || world_master_remainder_adjustment &gt; 0) {</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    data_reader-&gt;m_num_mini_batches_per_reader++;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    data_reader-&gt;m_last_mini_batch_size = per_model_partial_mini_batch_size;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  data_reader-&gt;m_num_iterations_per_epoch = data_reader-&gt;m_num_mini_batches_per_reader;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keywordflow">if</span>(data_reader-&gt;m_last_mini_batch_size &gt; max_mini_batch_size) {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordflow">throw</span> <span class="keyword">new</span> lbann_exception(<span class="stringliteral">&quot;Error in calculating the partial mini-batch size, exceeds the max mini-batch size&quot;</span>);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  }</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  data_reader-&gt;m_last_mini_batch_stride = data_reader-&gt;m_batch_stride;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keywordtype">int</span> last_mini_batch_offset = <a class="code" href="lbann__base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39a2ffe4e77325d9a7152f7086ea7aa5114">max</a>(0, num_whole_mini_batches_per_reader - 1) * data_reader-&gt;m_batch_stride;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keywordflow">if</span>(<span class="comment">/*comm-&gt;get_rank_in_model() == parallel_readers_with_extra_mini_batch &amp;&amp; */</span>per_model_partial_mini_batch_size &gt; 0 || world_master_remainder_adjustment &gt; 0) {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    data_reader-&gt;m_last_mini_batch_stride = (data_reader-&gt;m_last_mini_batch_threshold - data_reader-&gt;m_base_offset - data_reader-&gt;m_model_offset - last_mini_batch_offset) + <a class="code" href="classlbann_1_1partitioned__minibatch__parallel__io.html#afbd6174e81834884a9fa1278b6bf22f3">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a206bafe522a0962c450f4fc69d030656">get_rank_in_model</a>();</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  }</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  cout &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; <a class="code" href="classlbann_1_1partitioned__minibatch__parallel__io.html#afbd6174e81834884a9fa1278b6bf22f3">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a615265cd20ffb4863089bb94e4c82fe7">get_rank_in_world</a>() &lt;&lt; <span class="stringliteral">&quot;] &quot;</span> &lt;&lt; <a class="code" href="classlbann_1_1partitioned__minibatch__parallel__io.html#afbd6174e81834884a9fa1278b6bf22f3">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a6c201108eb6b5a1e23021db29cef655b">get_model_rank</a>() &lt;&lt; <span class="stringliteral">&quot; model rank, &quot;</span>&lt;&lt; <a class="code" href="classlbann_1_1partitioned__minibatch__parallel__io.html#afbd6174e81834884a9fa1278b6bf22f3">comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a206bafe522a0962c450f4fc69d030656">get_rank_in_model</a>() &lt;&lt; <span class="stringliteral">&quot; rank in model, num_whole_mini_batches_per_model &quot;</span> &lt;&lt; num_whole_mini_batches_per_model &lt;&lt; <span class="stringliteral">&quot; num_whole_mini_batches_per_reader &quot;</span> &lt;&lt; num_whole_mini_batches_per_reader &lt;&lt; <span class="stringliteral">&quot;(m_num_mini_batches_per_reader=&quot;</span> &lt;&lt; data_reader-&gt;m_num_mini_batches_per_reader &lt;&lt; <span class="stringliteral">&quot;) parallel_readers_with_extra_mini_batch &quot;</span> &lt;&lt; <span class="comment">/*parallel_readers_with_extra_mini_batch &lt;&lt;*/</span> <span class="stringliteral">&quot; partial_mini_batch_size=&quot;</span> &lt;&lt; per_model_partial_mini_batch_size &lt;&lt; <span class="stringliteral">&quot; last mini bath size=&quot;</span> &lt;&lt; data_reader-&gt;m_last_mini_batch_size &lt;&lt; <span class="stringliteral">&quot; world_master_remainder_data=&quot;</span> &lt;&lt; world_master_remainder_data &lt;&lt; <span class="stringliteral">&quot; threshold &quot;</span> &lt;&lt; data_reader-&gt;m_last_mini_batch_threshold &lt;&lt; <span class="stringliteral">&quot; with a last stride of &quot;</span> &lt;&lt; data_reader-&gt;m_last_mini_batch_stride &lt;&lt; <span class="stringliteral">&quot; and stride of &quot;</span> &lt;&lt; data_reader-&gt;m_batch_stride &lt;&lt; <span class="stringliteral">&quot; and there are &quot;</span> &lt;&lt; num_parallel_readers_per_model &lt;&lt; <span class="stringliteral">&quot; parallel readers per model&quot;</span> &lt;&lt; <span class="stringliteral">&quot; last mini batch offset = &quot;</span> &lt;&lt; last_mini_batch_offset &lt;&lt;  <span class="stringliteral">&quot; parallel reader with extra minibatch = &quot;</span> &lt;&lt; <span class="comment">/*parallel_readers_with_extra_mini_batch &lt;&lt; */</span><span class="stringliteral">&quot; model bracket = &quot;</span> &lt;&lt; (<span class="comment">/*parallel_readers_with_extra_mini_batch **/</span> max_mini_batch_size + per_model_partial_mini_batch_size + world_master_remainder_data) &lt;&lt;<span class="stringliteral">&quot; base ofset &quot;</span>&lt;&lt; data_reader-&gt;m_base_offset &lt;&lt; <span class="stringliteral">&quot; model offset &quot;</span> &lt;&lt; data_reader-&gt;m_model_offset &lt;&lt;endl;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_a206bafe522a0962c450f4fc69d030656"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a206bafe522a0962c450f4fc69d030656">lbann::lbann_comm::get_rank_in_model</a></div><div class="ttdeci">int get_rank_in_model() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00062">lbann_comm.hpp:62</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_a615265cd20ffb4863089bb94e4c82fe7"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a615265cd20ffb4863089bb94e4c82fe7">lbann::lbann_comm::get_rank_in_world</a></div><div class="ttdeci">int get_rank_in_world() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00066">lbann_comm.hpp:66</a></div></div>
 <div class="ttc" id="classlbann_1_1partitioned__minibatch__parallel__io_html_afbd6174e81834884a9fa1278b6bf22f3"><div class="ttname"><a href="classlbann_1_1partitioned__minibatch__parallel__io.html#afbd6174e81834884a9fa1278b6bf22f3">lbann::partitioned_minibatch_parallel_io::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__partitioned__minibatch__parallel__io_8hpp_source.html#l00069">lbann_partitioned_minibatch_parallel_io.hpp:69</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_ac47a6ee5278a53898222a48639a2bf39a2ffe4e77325d9a7152f7086ea7aa5114"><div class="ttname"><a href="lbann__base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39a2ffe4e77325d9a7152f7086ea7aa5114">pool_mode::max</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a54842b679a3756cf79b43baf46caf637"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637">lbann::lbann_comm::get_num_models</a></div><div class="ttdeci">int get_num_models() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00098">lbann_comm.hpp:98</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_a6c201108eb6b5a1e23021db29cef655b"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a6c201108eb6b5a1e23021db29cef655b">lbann::lbann_comm::get_model_rank</a></div><div class="ttdeci">int get_model_rank() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00058">lbann_comm.hpp:58</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_adb87fdc17095efd8e4dcb343357a6ba5"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5">lbann::lbann_comm::am_world_master</a></div><div class="ttdeci">bool am_world_master() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00090">lbann_comm.hpp:90</a></div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1partitioned__minibatch__parallel__io_a138ce5d3d35dbb07236fef78e26d5dfb_cgraph.png" border="0" usemap="#classlbann_1_1partitioned__minibatch__parallel__io_a138ce5d3d35dbb07236fef78e26d5dfb_cgraph" alt=""/></div>
+<map name="classlbann_1_1partitioned__minibatch__parallel__io_a138ce5d3d35dbb07236fef78e26d5dfb_cgraph" id="classlbann_1_1partitioned__minibatch__parallel__io_a138ce5d3d35dbb07236fef78e26d5dfb_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1generic__data__reader.html#aeeee5f93f349a05fc509523eb95ab811" title="lbann::generic_data\l_reader::getNumData" alt="" coords="245,19,392,61"/></map>
+</div>
+</p>
+
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -954,7 +1014,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1partitioned__minibatch__parallel__io.html">partitioned_minibatch_parallel_io</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 00:34:49 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 02:22:09 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
