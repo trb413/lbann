@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-39-g7b8ce91-ci241413836</span>
+   &#160;<span id="projectnumber">v0.93-rc0-41-g658b287-ci241415332</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('classlbann_1_1partitioned__minibatch__
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classlbann_1_1partitioned__minibatch__parallel__io-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">lbann::partitioned_minibatch_parallel_io Class Reference</div>  </div>
@@ -141,8 +141,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a7cc8859cd898f7918bb145e05c936c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this rank the current root node for the Elemental Distribution.  <a href="#a7cc8859cd898f7918bb145e05c936c22">More...</a><br/></td></tr>
 <tr class="separator:a7cc8859cd898f7918bb145e05c936c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
 <tr class="memitem:afbd6174e81834884a9fa1278b6bf22f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1partitioned__minibatch__parallel__io.html#afbd6174e81834884a9fa1278b6bf22f3">comm</a></td></tr>
 <tr class="separator:afbd6174e81834884a9fa1278b6bf22f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54206ae3957bec4bd6b3b8daffb8afa9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1partitioned__minibatch__parallel__io.html#a54206ae3957bec4bd6b3b8daffb8afa9">m_root</a></td></tr>
@@ -818,11 +818,19 @@ Here is the caller graph for this function:</div>
 <a class="anchor" id="afbd6174e81834884a9fa1278b6bf22f3"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* lbann::partitioned_minibatch_parallel_io::comm</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="lbann__partitioned__minibatch__parallel__io_8hpp_source.html#l00069">69</a> of file <a class="el" href="lbann__partitioned__minibatch__parallel__io_8hpp_source.html">lbann_partitioned_minibatch_parallel_io.hpp</a>.</p>
@@ -832,11 +840,19 @@ Here is the caller graph for this function:</div>
 <a class="anchor" id="a2c66393dbeba238892b8380e47c48256"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int lbann::partitioned_minibatch_parallel_io::m_cur_step_in_epoch</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="lbann__partitioned__minibatch__parallel__io_8hpp_source.html#l00088">88</a> of file <a class="el" href="lbann__partitioned__minibatch__parallel__io_8hpp_source.html">lbann_partitioned_minibatch_parallel_io.hpp</a>.</p>
@@ -846,11 +862,19 @@ Here is the caller graph for this function:</div>
 <a class="anchor" id="a0b26cc745ac37e1c3f23fe854ef09871"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">std::map&lt;<a class="el" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a>, <a class="el" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a> *&gt; lbann::partitioned_minibatch_parallel_io::m_data_readers</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="lbann__partitioned__minibatch__parallel__io_8hpp_source.html#l00086">86</a> of file <a class="el" href="lbann__partitioned__minibatch__parallel__io_8hpp_source.html">lbann_partitioned_minibatch_parallel_io.hpp</a>.</p>
@@ -860,11 +884,19 @@ Here is the caller graph for this function:</div>
 <a class="anchor" id="a76ee5dccb1f392731415e9c43ded0352"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool lbann::partitioned_minibatch_parallel_io::m_local_data_valid</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Has the layer copied valid data into the local matrix </p>
 
@@ -875,11 +907,19 @@ Here is the caller graph for this function:</div>
 <a class="anchor" id="a08e53e9c8d5f0eee4b2d66addf5b7179"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int lbann::partitioned_minibatch_parallel_io::m_local_reader_done</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="lbann__partitioned__minibatch__parallel__io_8hpp_source.html#l00078">78</a> of file <a class="el" href="lbann__partitioned__minibatch__parallel__io_8hpp_source.html">lbann_partitioned_minibatch_parallel_io.hpp</a>.</p>
@@ -889,11 +929,19 @@ Here is the caller graph for this function:</div>
 <a class="anchor" id="a9842e1da3765079986696009903f3a1a"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> lbann::partitioned_minibatch_parallel_io::m_max_mini_batch_size</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Maximum size of the mini-batch </p>
 
@@ -904,11 +952,19 @@ Here is the caller graph for this function:</div>
 <a class="anchor" id="aeeddcd7dc39405c3c8850c54f3ee8a1c"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">long lbann::partitioned_minibatch_parallel_io::m_num_data_per_epoch</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="lbann__partitioned__minibatch__parallel__io_8hpp_source.html#l00090">90</a> of file <a class="el" href="lbann__partitioned__minibatch__parallel__io_8hpp_source.html">lbann_partitioned_minibatch_parallel_io.hpp</a>.</p>
@@ -918,11 +974,19 @@ Here is the caller graph for this function:</div>
 <a class="anchor" id="a49f8e5938ee378a541d24bcfbbeb139f"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int lbann::partitioned_minibatch_parallel_io::m_num_parallel_readers_testing</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Number of parallel readers (I/O streams) for testing data </p>
 
@@ -933,11 +997,19 @@ Here is the caller graph for this function:</div>
 <a class="anchor" id="ad95c9831abfbed8d9a464c0f2c1bfd1a"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int lbann::partitioned_minibatch_parallel_io::m_num_parallel_readers_training</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Number of parallel readers (I/O streams) for training data </p>
 
@@ -948,11 +1020,19 @@ Here is the caller graph for this function:</div>
 <a class="anchor" id="a8ace11825375446a48d9f4570f0a04f3"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int lbann::partitioned_minibatch_parallel_io::m_num_parallel_readers_validating</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Number of parallel readers (I/O streams) for validation data </p>
 
@@ -963,11 +1043,19 @@ Here is the caller graph for this function:</div>
 <a class="anchor" id="a9006a75a250f543ab3f8aa1288eda196"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> lbann::partitioned_minibatch_parallel_io::m_num_samples_in_batch</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Number of samples in the current mini-batch </p>
 
@@ -978,11 +1066,19 @@ Here is the caller graph for this function:</div>
 <a class="anchor" id="aabc3bf239d6b2bcea39db34ff284b668"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int lbann::partitioned_minibatch_parallel_io::m_num_valid_readers</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="lbann__partitioned__minibatch__parallel__io_8hpp_source.html#l00091">91</a> of file <a class="el" href="lbann__partitioned__minibatch__parallel__io_8hpp_source.html">lbann_partitioned_minibatch_parallel_io.hpp</a>.</p>
@@ -992,11 +1088,19 @@ Here is the caller graph for this function:</div>
 <a class="anchor" id="a54206ae3957bec4bd6b3b8daffb8afa9"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int lbann::partitioned_minibatch_parallel_io::m_root</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Which rank is the root of the CircMat </p>
 
@@ -1014,7 +1118,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1partitioned__minibatch__parallel__io.html">partitioned_minibatch_parallel_io</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 02:22:09 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 02:27:13 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

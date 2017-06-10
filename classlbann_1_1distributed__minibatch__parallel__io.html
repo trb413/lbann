@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-39-g7b8ce91-ci241413836</span>
+   &#160;<span id="projectnumber">v0.93-rc0-41-g658b287-ci241415332</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('classlbann_1_1distributed__minibatch__
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classlbann_1_1distributed__minibatch__parallel__io-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">lbann::distributed_minibatch_parallel_io Class Reference</div>  </div>
@@ -141,8 +141,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1a1c8e6038e112145fa6eaf37e6cb3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this rank the current root node for the Elemental Distribution.  <a href="#a1a1c8e6038e112145fa6eaf37e6cb3d4">More...</a><br/></td></tr>
 <tr class="separator:a1a1c8e6038e112145fa6eaf37e6cb3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
 <tr class="memitem:a651f8eab68ea1ca97a9689b372d93293"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1distributed__minibatch__parallel__io.html#a651f8eab68ea1ca97a9689b372d93293">comm</a></td></tr>
 <tr class="separator:a651f8eab68ea1ca97a9689b372d93293"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ccc275f90122c59f3eb966402f521fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1distributed__minibatch__parallel__io.html#a3ccc275f90122c59f3eb966402f521fc">m_root</a></td></tr>
@@ -836,11 +836,19 @@ Here is the call graph for this function:</div>
 <a class="anchor" id="a651f8eab68ea1ca97a9689b372d93293"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* lbann::distributed_minibatch_parallel_io::comm</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="lbann__distributed__minibatch__parallel__io_8hpp_source.html#l00066">66</a> of file <a class="el" href="lbann__distributed__minibatch__parallel__io_8hpp_source.html">lbann_distributed_minibatch_parallel_io.hpp</a>.</p>
@@ -850,11 +858,19 @@ Here is the call graph for this function:</div>
 <a class="anchor" id="a39cc10542de6a808b578460b2a76475c"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool lbann::distributed_minibatch_parallel_io::m_local_data_valid</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Has the layer copied valid data into the local matrix </p>
 
@@ -865,11 +881,19 @@ Here is the call graph for this function:</div>
 <a class="anchor" id="a6be7e7aad366708899a949813dc2554f"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int lbann::distributed_minibatch_parallel_io::m_local_reader_done</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="lbann__distributed__minibatch__parallel__io_8hpp_source.html#l00075">75</a> of file <a class="el" href="lbann__distributed__minibatch__parallel__io_8hpp_source.html">lbann_distributed_minibatch_parallel_io.hpp</a>.</p>
@@ -879,11 +903,19 @@ Here is the call graph for this function:</div>
 <a class="anchor" id="a9b29d7ba9e5c4981d911d04fdff64547"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> lbann::distributed_minibatch_parallel_io::m_max_mini_batch_size</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Maximum size of the mini-batch </p>
 
@@ -894,11 +926,19 @@ Here is the call graph for this function:</div>
 <a class="anchor" id="aa595846c85d451799e44d58b8203192d"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">long lbann::distributed_minibatch_parallel_io::m_num_data_per_epoch</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="lbann__distributed__minibatch__parallel__io_8hpp_source.html#l00083">83</a> of file <a class="el" href="lbann__distributed__minibatch__parallel__io_8hpp_source.html">lbann_distributed_minibatch_parallel_io.hpp</a>.</p>
@@ -908,11 +948,19 @@ Here is the call graph for this function:</div>
 <a class="anchor" id="aa27d55e192717c28ce6785411585e60a"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int lbann::distributed_minibatch_parallel_io::m_num_parallel_readers_testing</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Number of parallel readers (I/O streams) for testing data </p>
 
@@ -923,11 +971,19 @@ Here is the call graph for this function:</div>
 <a class="anchor" id="afd4635e8e81acf72e9164d91fb3209ef"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int lbann::distributed_minibatch_parallel_io::m_num_parallel_readers_training</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Number of parallel readers (I/O streams) for training data </p>
 
@@ -938,11 +994,19 @@ Here is the call graph for this function:</div>
 <a class="anchor" id="ad0a41b1f44f6a79a5ec07bd895d6bcf6"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int lbann::distributed_minibatch_parallel_io::m_num_parallel_readers_validating</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Number of parallel readers (I/O streams) for validation data </p>
 
@@ -953,11 +1017,19 @@ Here is the call graph for this function:</div>
 <a class="anchor" id="a6317ad7cb24eb412983458c79ec94def"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> lbann::distributed_minibatch_parallel_io::m_num_samples_in_batch</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Number of samples in the current mini-batch </p>
 
@@ -968,11 +1040,19 @@ Here is the call graph for this function:</div>
 <a class="anchor" id="abd82e203a6580d2f249931817902142e"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int lbann::distributed_minibatch_parallel_io::m_num_valid_readers</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="lbann__distributed__minibatch__parallel__io_8hpp_source.html#l00084">84</a> of file <a class="el" href="lbann__distributed__minibatch__parallel__io_8hpp_source.html">lbann_distributed_minibatch_parallel_io.hpp</a>.</p>
@@ -982,11 +1062,19 @@ Here is the call graph for this function:</div>
 <a class="anchor" id="a3ccc275f90122c59f3eb966402f521fc"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int lbann::distributed_minibatch_parallel_io::m_root</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Which rank is the root of the CircMat </p>
 
@@ -1004,7 +1092,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1distributed__minibatch__parallel__io.html">distributed_minibatch_parallel_io</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 02:22:09 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 02:27:13 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

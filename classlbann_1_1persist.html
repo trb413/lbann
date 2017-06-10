@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-39-g7b8ce91-ci241413836</span>
+   &#160;<span id="projectnumber">v0.93-rc0-41-g658b287-ci241415332</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -91,6 +91,7 @@ $(document).ready(function(){initNavTree('classlbann_1_1persist.html','');});
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classlbann_1_1persist-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -149,14 +150,17 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:aa99b1b0079bb10471472bf6f1d966deb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1persist.html#aa99b1b0079bb10471472bf6f1d966deb">m_rank</a></td></tr>
 <tr class="separator:aa99b1b0079bb10471472bf6f1d966deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17c2b08ec1815aba6d3eae6502397bb1"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1persist.html#a17c2b08ec1815aba6d3eae6502397bb1">m_checkpoint_dir</a> [1024]</td></tr>
+<tr class="separator:a17c2b08ec1815aba6d3eae6502397bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
 <tr class="memitem:a0bd4fd42d9858a5210c8034dfbb666d4"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1persist.html#a0bd4fd42d9858a5210c8034dfbb666d4">m_bytes</a></td></tr>
 <tr class="separator:a0bd4fd42d9858a5210c8034dfbb666d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1adc7102c1b4bc91534ca156decbd965"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1persist.html#a1adc7102c1b4bc91534ca156decbd965">m_model_fd</a></td></tr>
 <tr class="separator:a1adc7102c1b4bc91534ca156decbd965"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a817671390811dde04670c47139402f51"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1persist.html#a817671390811dde04670c47139402f51">m_train_fd</a></td></tr>
 <tr class="separator:a817671390811dde04670c47139402f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17c2b08ec1815aba6d3eae6502397bb1"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1persist.html#a17c2b08ec1815aba6d3eae6502397bb1">m_checkpoint_dir</a> [1024]</td></tr>
-<tr class="separator:a17c2b08ec1815aba6d3eae6502397bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac01cd3c8fe0f97c1312ca1a595f2f690"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1persist.html#ac01cd3c8fe0f97c1312ca1a595f2f690">m_model_filename</a> [1024]</td></tr>
 <tr class="separator:ac01cd3c8fe0f97c1312ca1a595f2f690"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a417a443c894fd07472504936f5b02b62"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1persist.html#a417a443c894fd07472504936f5b02b62">m_train_filename</a> [1024]</td></tr>
@@ -196,10 +200,10 @@ Private Member Functions</h2></td></tr>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;  <a class="code" href="classlbann_1_1persist.html#a1adc7102c1b4bc91534ca156decbd965">m_model_fd</a> = -1;</div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  <a class="code" href="classlbann_1_1persist.html#a817671390811dde04670c47139402f51">m_train_fd</a> = -1;</div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1persist_html_a1adc7102c1b4bc91534ca156decbd965"><div class="ttname"><a href="classlbann_1_1persist.html#a1adc7102c1b4bc91534ca156decbd965">lbann::persist::m_model_fd</a></div><div class="ttdeci">int m_model_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00048">lbann_persist.hpp:48</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_a817671390811dde04670c47139402f51"><div class="ttname"><a href="classlbann_1_1persist.html#a817671390811dde04670c47139402f51">lbann::persist::m_train_fd</a></div><div class="ttdeci">int m_train_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00049">lbann_persist.hpp:49</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a1adc7102c1b4bc91534ca156decbd965"><div class="ttname"><a href="classlbann_1_1persist.html#a1adc7102c1b4bc91534ca156decbd965">lbann::persist::m_model_fd</a></div><div class="ttdeci">int m_model_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00050">lbann_persist.hpp:50</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a817671390811dde04670c47139402f51"><div class="ttname"><a href="classlbann_1_1persist.html#a817671390811dde04670c47139402f51">lbann::persist::m_train_fd</a></div><div class="ttdeci">int m_train_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00051">lbann_persist.hpp:51</a></div></div>
 <div class="ttc" id="classlbann_1_1persist_html_aa99b1b0079bb10471472bf6f1d966deb"><div class="ttname"><a href="classlbann_1_1persist.html#aa99b1b0079bb10471472bf6f1d966deb">lbann::persist::m_rank</a></div><div class="ttdeci">int m_rank</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00046">lbann_persist.hpp:46</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_a0bd4fd42d9858a5210c8034dfbb666d4"><div class="ttname"><a href="classlbann_1_1persist.html#a0bd4fd42d9858a5210c8034dfbb666d4">lbann::persist::m_bytes</a></div><div class="ttdeci">uint64_t m_bytes</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00047">lbann_persist.hpp:47</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a0bd4fd42d9858a5210c8034dfbb666d4"><div class="ttname"><a href="classlbann_1_1persist.html#a0bd4fd42d9858a5210c8034dfbb666d4">lbann::persist::m_bytes</a></div><div class="ttdeci">uint64_t m_bytes</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00049">lbann_persist.hpp:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -224,8 +228,8 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__persist_8hpp_source.html#l00056">56</a> of file <a class="el" href="lbann__persist_8hpp_source.html">lbann_persist.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{};</div>
+<p>Definition at line <a class="el" href="lbann__persist_8hpp_source.html#l00060">60</a> of file <a class="el" href="lbann__persist_8hpp_source.html">lbann_persist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -259,10 +263,10 @@ Private Member Functions</h2></td></tr>
 <div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;  }</div>
 <div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;}</div>
 <div class="ttc" id="namespacelbann_html_aceeccedbbafccfa071b21ee99be794a5"><div class="ttname"><a href="namespacelbann.html#aceeccedbbafccfa071b21ee99be794a5">lbann::closewrite</a></div><div class="ttdeci">int closewrite(int fd, const char *filename)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00134">lbann_file_io.cpp:134</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_a417a443c894fd07472504936f5b02b62"><div class="ttname"><a href="classlbann_1_1persist.html#a417a443c894fd07472504936f5b02b62">lbann::persist::m_train_filename</a></div><div class="ttdeci">char m_train_filename[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00052">lbann_persist.hpp:52</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_a1adc7102c1b4bc91534ca156decbd965"><div class="ttname"><a href="classlbann_1_1persist.html#a1adc7102c1b4bc91534ca156decbd965">lbann::persist::m_model_fd</a></div><div class="ttdeci">int m_model_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00048">lbann_persist.hpp:48</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_a817671390811dde04670c47139402f51"><div class="ttname"><a href="classlbann_1_1persist.html#a817671390811dde04670c47139402f51">lbann::persist::m_train_fd</a></div><div class="ttdeci">int m_train_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00049">lbann_persist.hpp:49</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_ac01cd3c8fe0f97c1312ca1a595f2f690"><div class="ttname"><a href="classlbann_1_1persist.html#ac01cd3c8fe0f97c1312ca1a595f2f690">lbann::persist::m_model_filename</a></div><div class="ttdeci">char m_model_filename[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00051">lbann_persist.hpp:51</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a417a443c894fd07472504936f5b02b62"><div class="ttname"><a href="classlbann_1_1persist.html#a417a443c894fd07472504936f5b02b62">lbann::persist::m_train_filename</a></div><div class="ttdeci">char m_train_filename[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00053">lbann_persist.hpp:53</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a1adc7102c1b4bc91534ca156decbd965"><div class="ttname"><a href="classlbann_1_1persist.html#a1adc7102c1b4bc91534ca156decbd965">lbann::persist::m_model_fd</a></div><div class="ttdeci">int m_model_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00050">lbann_persist.hpp:50</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a817671390811dde04670c47139402f51"><div class="ttname"><a href="classlbann_1_1persist.html#a817671390811dde04670c47139402f51">lbann::persist::m_train_fd</a></div><div class="ttdeci">int m_train_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00051">lbann_persist.hpp:51</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_ac01cd3c8fe0f97c1312ca1a595f2f690"><div class="ttname"><a href="classlbann_1_1persist.html#ac01cd3c8fe0f97c1312ca1a595f2f690">lbann::persist::m_model_filename</a></div><div class="ttdeci">char m_model_filename[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00052">lbann_persist.hpp:52</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -312,10 +316,10 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;    <a class="code" href="classlbann_1_1persist.html#a817671390811dde04670c47139402f51">m_train_fd</a> = -1;</div>
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;  }</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1persist_html_a417a443c894fd07472504936f5b02b62"><div class="ttname"><a href="classlbann_1_1persist.html#a417a443c894fd07472504936f5b02b62">lbann::persist::m_train_filename</a></div><div class="ttdeci">char m_train_filename[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00052">lbann_persist.hpp:52</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_a1adc7102c1b4bc91534ca156decbd965"><div class="ttname"><a href="classlbann_1_1persist.html#a1adc7102c1b4bc91534ca156decbd965">lbann::persist::m_model_fd</a></div><div class="ttdeci">int m_model_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00048">lbann_persist.hpp:48</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_a817671390811dde04670c47139402f51"><div class="ttname"><a href="classlbann_1_1persist.html#a817671390811dde04670c47139402f51">lbann::persist::m_train_fd</a></div><div class="ttdeci">int m_train_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00049">lbann_persist.hpp:49</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_ac01cd3c8fe0f97c1312ca1a595f2f690"><div class="ttname"><a href="classlbann_1_1persist.html#ac01cd3c8fe0f97c1312ca1a595f2f690">lbann::persist::m_model_filename</a></div><div class="ttdeci">char m_model_filename[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00051">lbann_persist.hpp:51</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a417a443c894fd07472504936f5b02b62"><div class="ttname"><a href="classlbann_1_1persist.html#a417a443c894fd07472504936f5b02b62">lbann::persist::m_train_filename</a></div><div class="ttdeci">char m_train_filename[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00053">lbann_persist.hpp:53</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a1adc7102c1b4bc91534ca156decbd965"><div class="ttname"><a href="classlbann_1_1persist.html#a1adc7102c1b4bc91534ca156decbd965">lbann::persist::m_model_fd</a></div><div class="ttdeci">int m_model_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00050">lbann_persist.hpp:50</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a817671390811dde04670c47139402f51"><div class="ttname"><a href="classlbann_1_1persist.html#a817671390811dde04670c47139402f51">lbann::persist::m_train_fd</a></div><div class="ttdeci">int m_train_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00051">lbann_persist.hpp:51</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_ac01cd3c8fe0f97c1312ca1a595f2f690"><div class="ttname"><a href="classlbann_1_1persist.html#ac01cd3c8fe0f97c1312ca1a595f2f690">lbann::persist::m_model_filename</a></div><div class="ttdeci">char m_model_filename[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00052">lbann_persist.hpp:52</a></div></div>
 <div class="ttc" id="namespacelbann_html_a38dd30b2ae8214f6595708264369ddb8"><div class="ttname"><a href="namespacelbann.html#a38dd30b2ae8214f6595708264369ddb8">lbann::closeread</a></div><div class="ttdeci">int closeread(int fd, const char *filename)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00106">lbann_file_io.cpp:106</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -359,11 +363,11 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__persist_8hpp_source.html#l00064">64</a> of file <a class="el" href="lbann__persist_8hpp_source.html">lbann_persist.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                       {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1persist.html#a0bd4fd42d9858a5210c8034dfbb666d4">m_bytes</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div>
-<div class="ttc" id="classlbann_1_1persist_html_a0bd4fd42d9858a5210c8034dfbb666d4"><div class="ttname"><a href="classlbann_1_1persist.html#a0bd4fd42d9858a5210c8034dfbb666d4">lbann::persist::m_bytes</a></div><div class="ttdeci">uint64_t m_bytes</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00047">lbann_persist.hpp:47</a></div></div>
+<p>Definition at line <a class="el" href="lbann__persist_8hpp_source.html#l00068">68</a> of file <a class="el" href="lbann__persist_8hpp_source.html">lbann_persist.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                       {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1persist.html#a0bd4fd42d9858a5210c8034dfbb666d4">m_bytes</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1persist_html_a0bd4fd42d9858a5210c8034dfbb666d4"><div class="ttname"><a href="classlbann_1_1persist.html#a0bd4fd42d9858a5210c8034dfbb666d4">lbann::persist::m_bytes</a></div><div class="ttdeci">uint64_t m_bytes</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00049">lbann_persist.hpp:49</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -408,9 +412,9 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;  }</div>
 <div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;  <span class="keywordflow">return</span> fd;</div>
 <div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1persist_html_a1adc7102c1b4bc91534ca156decbd965"><div class="ttname"><a href="classlbann_1_1persist.html#a1adc7102c1b4bc91534ca156decbd965">lbann::persist::m_model_fd</a></div><div class="ttdeci">int m_model_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00048">lbann_persist.hpp:48</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a1adc7102c1b4bc91534ca156decbd965"><div class="ttname"><a href="classlbann_1_1persist.html#a1adc7102c1b4bc91534ca156decbd965">lbann::persist::m_model_fd</a></div><div class="ttdeci">int m_model_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00050">lbann_persist.hpp:50</a></div></div>
 <div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c">lbann::persist_type::model</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_a817671390811dde04670c47139402f51"><div class="ttname"><a href="classlbann_1_1persist.html#a817671390811dde04670c47139402f51">lbann::persist::m_train_fd</a></div><div class="ttdeci">int m_train_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00049">lbann_persist.hpp:49</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a817671390811dde04670c47139402f51"><div class="ttname"><a href="classlbann_1_1persist.html#a817671390811dde04670c47139402f51">lbann::persist::m_train_fd</a></div><div class="ttdeci">int m_train_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00051">lbann_persist.hpp:51</a></div></div>
 <div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">lbann::persist_type::train</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -457,14 +461,14 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    }</div>
 <div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;  }</div>
 <div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1persist_html_a417a443c894fd07472504936f5b02b62"><div class="ttname"><a href="classlbann_1_1persist.html#a417a443c894fd07472504936f5b02b62">lbann::persist::m_train_filename</a></div><div class="ttdeci">char m_train_filename[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00052">lbann_persist.hpp:52</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_a1adc7102c1b4bc91534ca156decbd965"><div class="ttname"><a href="classlbann_1_1persist.html#a1adc7102c1b4bc91534ca156decbd965">lbann::persist::m_model_fd</a></div><div class="ttdeci">int m_model_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00048">lbann_persist.hpp:48</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_a817671390811dde04670c47139402f51"><div class="ttname"><a href="classlbann_1_1persist.html#a817671390811dde04670c47139402f51">lbann::persist::m_train_fd</a></div><div class="ttdeci">int m_train_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00049">lbann_persist.hpp:49</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a417a443c894fd07472504936f5b02b62"><div class="ttname"><a href="classlbann_1_1persist.html#a417a443c894fd07472504936f5b02b62">lbann::persist::m_train_filename</a></div><div class="ttdeci">char m_train_filename[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00053">lbann_persist.hpp:53</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a1adc7102c1b4bc91534ca156decbd965"><div class="ttname"><a href="classlbann_1_1persist.html#a1adc7102c1b4bc91534ca156decbd965">lbann::persist::m_model_fd</a></div><div class="ttdeci">int m_model_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00050">lbann_persist.hpp:50</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a817671390811dde04670c47139402f51"><div class="ttname"><a href="classlbann_1_1persist.html#a817671390811dde04670c47139402f51">lbann::persist::m_train_fd</a></div><div class="ttdeci">int m_train_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00051">lbann_persist.hpp:51</a></div></div>
 <div class="ttc" id="namespacelbann_html_a8830dea8eef0ab5b93d68e2358ceeb1a"><div class="ttname"><a href="namespacelbann.html#a8830dea8eef0ab5b93d68e2358ceeb1a">lbann::makedir</a></div><div class="ttdeci">int makedir(const char *dirname)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00049">lbann_file_io.cpp:49</a></div></div>
 <div class="ttc" id="namespacelbann_html_af596e6d2be603e9cf808c98f5412490a"><div class="ttname"><a href="namespacelbann.html#af596e6d2be603e9cf808c98f5412490a">lbann::openwrite</a></div><div class="ttdeci">int openwrite(const char *filename)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00119">lbann_file_io.cpp:119</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_ac01cd3c8fe0f97c1312ca1a595f2f690"><div class="ttname"><a href="classlbann_1_1persist.html#ac01cd3c8fe0f97c1312ca1a595f2f690">lbann::persist::m_model_filename</a></div><div class="ttdeci">char m_model_filename[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00051">lbann_persist.hpp:51</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_ac01cd3c8fe0f97c1312ca1a595f2f690"><div class="ttname"><a href="classlbann_1_1persist.html#ac01cd3c8fe0f97c1312ca1a595f2f690">lbann::persist::m_model_filename</a></div><div class="ttdeci">char m_model_filename[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00052">lbann_persist.hpp:52</a></div></div>
 <div class="ttc" id="classlbann_1_1persist_html_aa99b1b0079bb10471472bf6f1d966deb"><div class="ttname"><a href="classlbann_1_1persist.html#aa99b1b0079bb10471472bf6f1d966deb">lbann::persist::m_rank</a></div><div class="ttdeci">int m_rank</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00046">lbann_persist.hpp:46</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_a17c2b08ec1815aba6d3eae6502397bb1"><div class="ttname"><a href="classlbann_1_1persist.html#a17c2b08ec1815aba6d3eae6502397bb1">lbann::persist::m_checkpoint_dir</a></div><div class="ttdeci">char m_checkpoint_dir[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00050">lbann_persist.hpp:50</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a17c2b08ec1815aba6d3eae6502397bb1"><div class="ttname"><a href="classlbann_1_1persist.html#a17c2b08ec1815aba6d3eae6502397bb1">lbann::persist::m_checkpoint_dir</a></div><div class="ttdeci">char m_checkpoint_dir[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00056">lbann_persist.hpp:56</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -527,13 +531,13 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;    }</div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;  }</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1persist_html_a417a443c894fd07472504936f5b02b62"><div class="ttname"><a href="classlbann_1_1persist.html#a417a443c894fd07472504936f5b02b62">lbann::persist::m_train_filename</a></div><div class="ttdeci">char m_train_filename[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00052">lbann_persist.hpp:52</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_a1adc7102c1b4bc91534ca156decbd965"><div class="ttname"><a href="classlbann_1_1persist.html#a1adc7102c1b4bc91534ca156decbd965">lbann::persist::m_model_fd</a></div><div class="ttdeci">int m_model_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00048">lbann_persist.hpp:48</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a417a443c894fd07472504936f5b02b62"><div class="ttname"><a href="classlbann_1_1persist.html#a417a443c894fd07472504936f5b02b62">lbann::persist::m_train_filename</a></div><div class="ttdeci">char m_train_filename[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00053">lbann_persist.hpp:53</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a1adc7102c1b4bc91534ca156decbd965"><div class="ttname"><a href="classlbann_1_1persist.html#a1adc7102c1b4bc91534ca156decbd965">lbann::persist::m_model_fd</a></div><div class="ttdeci">int m_model_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00050">lbann_persist.hpp:50</a></div></div>
 <div class="ttc" id="namespacelbann_html_a6084b9319eea1997f8446fa3e6879532"><div class="ttname"><a href="namespacelbann.html#a6084b9319eea1997f8446fa3e6879532">lbann::openread</a></div><div class="ttdeci">int openread(const char *filename)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00098">lbann_file_io.cpp:98</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_a817671390811dde04670c47139402f51"><div class="ttname"><a href="classlbann_1_1persist.html#a817671390811dde04670c47139402f51">lbann::persist::m_train_fd</a></div><div class="ttdeci">int m_train_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00049">lbann_persist.hpp:49</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_ac01cd3c8fe0f97c1312ca1a595f2f690"><div class="ttname"><a href="classlbann_1_1persist.html#ac01cd3c8fe0f97c1312ca1a595f2f690">lbann::persist::m_model_filename</a></div><div class="ttdeci">char m_model_filename[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00051">lbann_persist.hpp:51</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a817671390811dde04670c47139402f51"><div class="ttname"><a href="classlbann_1_1persist.html#a817671390811dde04670c47139402f51">lbann::persist::m_train_fd</a></div><div class="ttdeci">int m_train_fd</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00051">lbann_persist.hpp:51</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_ac01cd3c8fe0f97c1312ca1a595f2f690"><div class="ttname"><a href="classlbann_1_1persist.html#ac01cd3c8fe0f97c1312ca1a595f2f690">lbann::persist::m_model_filename</a></div><div class="ttdeci">char m_model_filename[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00052">lbann_persist.hpp:52</a></div></div>
 <div class="ttc" id="classlbann_1_1persist_html_aa99b1b0079bb10471472bf6f1d966deb"><div class="ttname"><a href="classlbann_1_1persist.html#aa99b1b0079bb10471472bf6f1d966deb">lbann::persist::m_rank</a></div><div class="ttdeci">int m_rank</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00046">lbann_persist.hpp:46</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_a17c2b08ec1815aba6d3eae6502397bb1"><div class="ttname"><a href="classlbann_1_1persist.html#a17c2b08ec1815aba6d3eae6502397bb1">lbann::persist::m_checkpoint_dir</a></div><div class="ttdeci">char m_checkpoint_dir[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00050">lbann_persist.hpp:50</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a17c2b08ec1815aba6d3eae6502397bb1"><div class="ttname"><a href="classlbann_1_1persist.html#a17c2b08ec1815aba6d3eae6502397bb1">lbann::persist::m_checkpoint_dir</a></div><div class="ttdeci">char m_checkpoint_dir[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00056">lbann_persist.hpp:56</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -605,7 +609,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1persist_html_aaff6bf3f0afd070498b6117e51a56eb3"><div class="ttname"><a href="classlbann_1_1persist.html#aaff6bf3f0afd070498b6117e51a56eb3">lbann::persist::get_fd</a></div><div class="ttdeci">int get_fd(persist_type type)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8cpp_source.html#l00635">lbann_persist.cpp:635</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_a0bd4fd42d9858a5210c8034dfbb666d4"><div class="ttname"><a href="classlbann_1_1persist.html#a0bd4fd42d9858a5210c8034dfbb666d4">lbann::persist::m_bytes</a></div><div class="ttdeci">uint64_t m_bytes</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00047">lbann_persist.hpp:47</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a0bd4fd42d9858a5210c8034dfbb666d4"><div class="ttname"><a href="classlbann_1_1persist.html#a0bd4fd42d9858a5210c8034dfbb666d4">lbann::persist::m_bytes</a></div><div class="ttdeci">uint64_t m_bytes</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00049">lbann_persist.hpp:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -665,11 +669,11 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;}</div>
 <div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c">lbann::persist_type::model</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_a0bd4fd42d9858a5210c8034dfbb666d4"><div class="ttname"><a href="classlbann_1_1persist.html#a0bd4fd42d9858a5210c8034dfbb666d4">lbann::persist::m_bytes</a></div><div class="ttdeci">uint64_t m_bytes</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00047">lbann_persist.hpp:47</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a0bd4fd42d9858a5210c8034dfbb666d4"><div class="ttname"><a href="classlbann_1_1persist.html#a0bd4fd42d9858a5210c8034dfbb666d4">lbann::persist::m_bytes</a></div><div class="ttdeci">uint64_t m_bytes</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00049">lbann_persist.hpp:49</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00036">lbann_base.hpp:36</a></div></div>
 <div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">lbann::persist_type::train</a></div></div>
 <div class="ttc" id="namespacelbann_html_aefae2a9fc9d742ece0fa8ca7ed9ee137"><div class="ttname"><a href="namespacelbann.html#aefae2a9fc9d742ece0fa8ca7ed9ee137">lbann::exists</a></div><div class="ttdeci">int exists(const char *filename)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00079">lbann_file_io.cpp:79</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_a17c2b08ec1815aba6d3eae6502397bb1"><div class="ttname"><a href="classlbann_1_1persist.html#a17c2b08ec1815aba6d3eae6502397bb1">lbann::persist::m_checkpoint_dir</a></div><div class="ttdeci">char m_checkpoint_dir[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00050">lbann_persist.hpp:50</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a17c2b08ec1815aba6d3eae6502397bb1"><div class="ttname"><a href="classlbann_1_1persist.html#a17c2b08ec1815aba6d3eae6502397bb1">lbann::persist::m_checkpoint_dir</a></div><div class="ttdeci">char m_checkpoint_dir[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00056">lbann_persist.hpp:56</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1010,7 +1014,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1persist_html_aaff6bf3f0afd070498b6117e51a56eb3"><div class="ttname"><a href="classlbann_1_1persist.html#aaff6bf3f0afd070498b6117e51a56eb3">lbann::persist::get_fd</a></div><div class="ttdeci">int get_fd(persist_type type)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8cpp_source.html#l00635">lbann_persist.cpp:635</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_a0bd4fd42d9858a5210c8034dfbb666d4"><div class="ttname"><a href="classlbann_1_1persist.html#a0bd4fd42d9858a5210c8034dfbb666d4">lbann::persist::m_bytes</a></div><div class="ttdeci">uint64_t m_bytes</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00047">lbann_persist.hpp:47</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a0bd4fd42d9858a5210c8034dfbb666d4"><div class="ttname"><a href="classlbann_1_1persist.html#a0bd4fd42d9858a5210c8034dfbb666d4">lbann::persist::m_bytes</a></div><div class="ttdeci">uint64_t m_bytes</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00049">lbann_persist.hpp:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1063,10 +1067,10 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;}</div>
 <div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c">lbann::persist_type::model</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_a0bd4fd42d9858a5210c8034dfbb666d4"><div class="ttname"><a href="classlbann_1_1persist.html#a0bd4fd42d9858a5210c8034dfbb666d4">lbann::persist::m_bytes</a></div><div class="ttdeci">uint64_t m_bytes</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00047">lbann_persist.hpp:47</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a0bd4fd42d9858a5210c8034dfbb666d4"><div class="ttname"><a href="classlbann_1_1persist.html#a0bd4fd42d9858a5210c8034dfbb666d4">lbann::persist::m_bytes</a></div><div class="ttdeci">uint64_t m_bytes</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00049">lbann_persist.hpp:49</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00036">lbann_base.hpp:36</a></div></div>
 <div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">lbann::persist_type::train</a></div></div>
-<div class="ttc" id="classlbann_1_1persist_html_a17c2b08ec1815aba6d3eae6502397bb1"><div class="ttname"><a href="classlbann_1_1persist.html#a17c2b08ec1815aba6d3eae6502397bb1">lbann::persist::m_checkpoint_dir</a></div><div class="ttdeci">char m_checkpoint_dir[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00050">lbann_persist.hpp:50</a></div></div>
+<div class="ttc" id="classlbann_1_1persist_html_a17c2b08ec1815aba6d3eae6502397bb1"><div class="ttname"><a href="classlbann_1_1persist.html#a17c2b08ec1815aba6d3eae6502397bb1">lbann::persist::m_checkpoint_dir</a></div><div class="ttdeci">char m_checkpoint_dir[1024]</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00056">lbann_persist.hpp:56</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1352,14 +1356,22 @@ Here is the caller graph for this function:</div>
 <a class="anchor" id="a0bd4fd42d9858a5210c8034dfbb666d4"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">uint64_t lbann::persist::m_bytes</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__persist_8hpp_source.html#l00047">47</a> of file <a class="el" href="lbann__persist_8hpp_source.html">lbann_persist.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__persist_8hpp_source.html#l00049">49</a> of file <a class="el" href="lbann__persist_8hpp_source.html">lbann_persist.hpp</a>.</p>
 
 </div>
 </div>
@@ -1373,35 +1385,51 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__persist_8hpp_source.html#l00050">50</a> of file <a class="el" href="lbann__persist_8hpp_source.html">lbann_persist.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__persist_8hpp_source.html#l00056">56</a> of file <a class="el" href="lbann__persist_8hpp_source.html">lbann_persist.hpp</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="a1adc7102c1b4bc91534ca156decbd965"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int lbann::persist::m_model_fd</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__persist_8hpp_source.html#l00048">48</a> of file <a class="el" href="lbann__persist_8hpp_source.html">lbann_persist.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__persist_8hpp_source.html#l00050">50</a> of file <a class="el" href="lbann__persist_8hpp_source.html">lbann_persist.hpp</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="ac01cd3c8fe0f97c1312ca1a595f2f690"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">char lbann::persist::m_model_filename[1024]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__persist_8hpp_source.html#l00051">51</a> of file <a class="el" href="lbann__persist_8hpp_source.html">lbann_persist.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__persist_8hpp_source.html#l00052">52</a> of file <a class="el" href="lbann__persist_8hpp_source.html">lbann_persist.hpp</a>.</p>
 
 </div>
 </div>
@@ -1422,28 +1450,44 @@ Here is the caller graph for this function:</div>
 <a class="anchor" id="a817671390811dde04670c47139402f51"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int lbann::persist::m_train_fd</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__persist_8hpp_source.html#l00049">49</a> of file <a class="el" href="lbann__persist_8hpp_source.html">lbann_persist.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__persist_8hpp_source.html#l00051">51</a> of file <a class="el" href="lbann__persist_8hpp_source.html">lbann_persist.hpp</a>.</p>
 
 </div>
 </div>
 <a class="anchor" id="a417a443c894fd07472504936f5b02b62"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">char lbann::persist::m_train_filename[1024]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__persist_8hpp_source.html#l00052">52</a> of file <a class="el" href="lbann__persist_8hpp_source.html">lbann_persist.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__persist_8hpp_source.html#l00053">53</a> of file <a class="el" href="lbann__persist_8hpp_source.html">lbann_persist.hpp</a>.</p>
 
 </div>
 </div>
@@ -1457,7 +1501,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1persist.html">persist</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 02:22:09 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 02:27:13 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
