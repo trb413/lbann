@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-50-g183e212-ci241460196</span>
+   &#160;<span id="projectnumber">v0.93-rc0-51-ge26903b-ci241552259</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('lbann__callback__summary_8cpp_source.h
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classlbann_1_1lbann__callback__summary.html#a302e65fadee4ce466a6e8bf460e11b03">   33</a></span>&#160;<a class="code" href="classlbann_1_1lbann__callback__summary.html#a302e65fadee4ce466a6e8bf460e11b03">lbann_callback_summary::lbann_callback_summary</a>(<a class="code" href="classlbann_1_1lbann__summary.html">lbann_summary</a> *summarizer,</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span> batch_interval) :</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <a class="code" href="classlbann_1_1lbann__callback.html">lbann_callback</a>(batch_interval, summarizer) {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c">set_name</a>(<span class="stringliteral">&quot;summary&quot;</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="classlbann_1_1lbann__callback.html#a3bb130342a44e3919c5e5d482283b599">set_name</a>(<span class="stringliteral">&quot;summary&quot;</span>);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classlbann_1_1lbann__callback__summary.html#abd8de0a455010c0fddede580263c9b91">   39</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__callback__summary.html#abd8de0a455010c0fddede580263c9b91">lbann_callback_summary::on_batch_end</a>(<a class="code" href="classlbann_1_1model.html">model</a> *m) {</div>
@@ -183,7 +183,6 @@ $(document).ready(function(){initNavTree('lbann__callback__summary_8cpp_source.h
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}  <span class="comment">// namespace lbann</span></div>
-<div class="ttc" id="classlbann_1_1lbann__callback_html_ae8c3014d503a9ae1b0a16f6cc0cb5b4c"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c">lbann::lbann_callback::set_name</a></div><div class="ttdeci">void set_name(std::string name)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00114">lbann_callback.hpp:114</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__summary_html_a718ae9cdda1c130bbe224f41d7b61bd5"><div class="ttname"><a href="classlbann_1_1lbann__callback__summary.html#a718ae9cdda1c130bbe224f41d7b61bd5">lbann::lbann_callback_summary::on_epoch_end</a></div><div class="ttdeci">void on_epoch_end(model *m)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__summary_8cpp_source.html#l00063">lbann_callback_summary.cpp:63</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_aebbdbc0b8c868cbf2413971de2832c26"><div class="ttname"><a href="classlbann_1_1model.html#aebbdbc0b8c868cbf2413971de2832c26">lbann::model::metrics</a></div><div class="ttdeci">std::vector&lt; metrics::metric * &gt; metrics</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00149">lbann_model.hpp:149</a></div></div>
 <div class="ttc" id="lbann__callback__summary_8hpp_html"><div class="ttname"><a href="lbann__callback__summary_8hpp.html">lbann_callback_summary.hpp</a></div></div>
@@ -210,6 +209,7 @@ $(document).ready(function(){initNavTree('lbann__callback__summary_8cpp_source.h
 <div class="ttc" id="classlbann_1_1lbann__summary_html_ae2bc76a919429754581368422163f5ac"><div class="ttname"><a href="classlbann_1_1lbann__summary.html#ae2bc76a919429754581368422163f5ac">lbann::lbann_summary::sum_reduce_scalar</a></div><div class="ttdeci">void sum_reduce_scalar(const std::string tag, DataType s, int64_t step)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__summary_8hpp_source.html#l00197">lbann_summary.hpp:197</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__summary_html"><div class="ttname"><a href="classlbann_1_1lbann__summary.html">lbann::lbann_summary</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__summary_8hpp_source.html#l00188">lbann_summary.hpp:188</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__summary_html_a01d3686f2c566ee2e508573726b439de"><div class="ttname"><a href="classlbann_1_1lbann__callback__summary.html#a01d3686f2c566ee2e508573726b439de">lbann::lbann_callback_summary::on_test_end</a></div><div class="ttdeci">void on_test_end(model *m)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__summary_8cpp_source.html#l00078">lbann_callback_summary.cpp:78</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__callback_html_a3bb130342a44e3919c5e5d482283b599"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#a3bb130342a44e3919c5e5d482283b599">lbann::lbann_callback::set_name</a></div><div class="ttdeci">void set_name(std::string nm)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00114">lbann_callback.hpp:114</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__summary_html_abd8de0a455010c0fddede580263c9b91"><div class="ttname"><a href="classlbann_1_1lbann__callback__summary.html#abd8de0a455010c0fddede580263c9b91">lbann::lbann_callback_summary::on_batch_end</a></div><div class="ttdeci">void on_batch_end(model *m)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__summary_8cpp_source.html#l00039">lbann_callback_summary.cpp:39</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_adb9afab1b8af03276e6e6347f8021ef5"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#adb9afab1b8af03276e6e6347f8021ef5">lbann::lbann_comm::reset_stats_counters</a></div><div class="ttdeci">void reset_stats_counters()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00470">lbann_comm.hpp:470</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_ad2ece549c49a0569ac8fd9b56632fdd2"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#ad2ece549c49a0569ac8fd9b56632fdd2">lbann::lbann_comm::get_num_model_barriers</a></div><div class="ttdeci">size_t get_num_model_barriers() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00379">lbann_comm.hpp:379</a></div></div>
@@ -219,7 +219,7 @@ $(document).ready(function(){initNavTree('lbann__callback__summary_8cpp_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_2cd67b1c9ead8c95a9b97b48b5142b81.html">callbacks</a></li><li class="navelem"><a class="el" href="lbann__callback__summary_8cpp.html">lbann_callback_summary.cpp</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 08:19:25 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 17:02:59 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

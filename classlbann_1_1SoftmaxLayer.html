@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-50-g183e212-ci241460196</span>
+   &#160;<span id="projectnumber">v0.93-rc0-51-ge26903b-ci241552259</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -713,7 +713,7 @@ template&lt;data_layout DATA_DIST&gt; </div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; activations_local = <a class="code" href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">m_activations_v</a>-&gt;LockedMatrix();</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; workspace_local = <a class="code" href="classlbann_1_1SoftmaxLayer.html#a1ee91a17110f1626a86339c72f7b202d">m_workspace_v</a>-&gt;Matrix();</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; prev_error_signal_local = <a class="code" href="classlbann_1_1Layer.html#a3f1ab0c18e78cd82af4cf24b73ec96bc">m_prev_error_signal_v</a>-&gt;Matrix();</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keyword">const</span> Int local_height = activations_local.Height();</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="comment">//const Int local_height = activations_local.Height();</span></div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keyword">const</span> Int local_width = activations_local.Width();</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="comment">// Compute dot products</span></div>
@@ -1587,7 +1587,7 @@ template&lt;data_layout DATA_DIST&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1SoftmaxLayer.html">SoftmaxLayer</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 08:19:28 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 17:03:02 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

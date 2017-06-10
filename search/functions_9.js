@@ -43,7 +43,7 @@ var searchData=
   ['is_5ffor_5fregression',['is_for_regression',['../classlbann_1_1io__layer.html#a84f62786812c100923e7553f704a5edc',1,'lbann::io_layer']]],
   ['is_5fgood',['is_good',['../classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e',1,'lbann::lbann_callback_checknan::is_good()'],['../classlbann_1_1lbann__callback__checksmall.html#ac32525e09231fe0bfb051e4a9b4dce9b',1,'lbann::lbann_callback_checksmall::is_good()']]],
   ['is_5flast_5flayer',['is_last_layer',['../classlbann_1_1lbann__callback__learning__rate.html#ae7a704c0b5d1d09c35981cfe96dd64e2',1,'lbann::lbann_callback_learning_rate']]],
-  ['is_5fmaster',['is_master',['../classlbann_1_1generic__data__reader.html#ab6071eee5dda4df9c673d2fff76c064c',1,'lbann::generic_data_reader']]],
+  ['is_5fmaster',['is_master',['../classlbann_1_1generic__data__reader.html#a3b0a907887191f4b0b3d2dd05b44eeca',1,'lbann::generic_data_reader']]],
   ['is_5frank_5fnode_5flocal',['is_rank_node_local',['../classlbann_1_1lbann__comm.html#afbe095ac6cb11393a3e8173feb03f255',1,'lbann::lbann_comm']]],
   ['is_5fsendable',['is_sendable',['../classlbann_1_1lbann__comm.html#a4ba1b9a6b4eb986a348d85c2d80ca3eb',1,'lbann::lbann_comm::is_sendable(const Mat &amp;mat)'],['../classlbann_1_1lbann__comm.html#a96bcc0bc8910272f4553cf0439a6e2f9',1,'lbann::lbann_comm::is_sendable(const ElMat &amp;dist_mat)']]],
   ['is_5fworld_5frank_5fon_5fnode',['is_world_rank_on_node',['../classlbann_1_1lbann__comm.html#aed7962a6affe4e72ffba35d9b0613fd9',1,'lbann::lbann_comm']]]

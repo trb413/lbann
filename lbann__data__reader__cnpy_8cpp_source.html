@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-50-g183e212-ci241460196</span>
+   &#160;<span id="projectnumber">v0.93-rc0-51-ge26903b-ci241552259</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -131,13 +131,13 @@ $(document).ready(function(){initNavTree('lbann__data__reader__cnpy_8cpp_source.
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  : <a class="code" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a>(batchSize, shuffle), m_num_features(0), m_num_samples(0) {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classlbann_1_1cnpy__reader.html#ae0d3346e39eb47d9ce08b78c52e1c247">   42</a></span>&#160;<a class="code" href="classlbann_1_1cnpy__reader.html#ae0d3346e39eb47d9ce08b78c52e1c247">lbann::cnpy_reader::~cnpy_reader</a>() {</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classlbann_1_1cnpy__reader.html#aa5d00e7a3a1c5a6d7804d44b1509dc03">   42</a></span>&#160;<a class="code" href="classlbann_1_1cnpy__reader.html#aa5d00e7a3a1c5a6d7804d44b1509dc03">lbann::cnpy_reader::~cnpy_reader</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  m_data.destruct();</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classlbann_1_1cnpy__reader.html#af00a96df5c6a11e81d1d8a83d689f886">   47</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classlbann_1_1cnpy__reader.html#af00a96df5c6a11e81d1d8a83d689f886">lbann::cnpy_reader::fetch_data</a>(<a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; X) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1generic__data__reader.html#a5577ae1e5ffaa078103fce15b5c5e8ee">generic_data_reader::position_valid</a>()) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1generic__data__reader.html#a498ed4ce0304dcc983a8a6b47b3ab02e">generic_data_reader::position_valid</a>()) {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">int</span> current_batch_size = getm_batch_size();</div>
@@ -174,7 +174,7 @@ $(document).ready(function(){initNavTree('lbann__data__reader__cnpy_8cpp_source.
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordflow">return</span> (n - m_current_pos);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classlbann_1_1cnpy__reader.html#a0942d6f6601216d5ba4d881b500b40d8">   85</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1cnpy__reader.html#a0942d6f6601216d5ba4d881b500b40d8">lbann::cnpy_reader::load</a>() {</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="classlbann_1_1cnpy__reader.html#a08ec47930404211fa54ebf5191aaabba">   85</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1cnpy__reader.html#a08ec47930404211fa54ebf5191aaabba">lbann::cnpy_reader::load</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">string</span> infile = get_data_filename();</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  ifstream ifs(infile.c_str());</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">if</span> (!ifs) {</div>
@@ -228,10 +228,9 @@ $(document).ready(function(){initNavTree('lbann__data__reader__cnpy_8cpp_source.
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1generic__data__reader_html_a72a464475f641c638f1da750207ef1f7"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#a72a464475f641c638f1da750207ef1f7">lbann::generic_data_reader::operator=</a></div><div class="ttdeci">generic_data_reader &amp; operator=(const generic_data_reader &amp;source)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8cpp_source.html#l00161">lbann_data_reader.cpp:161</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_a5577ae1e5ffaa078103fce15b5c5e8ee"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#a5577ae1e5ffaa078103fce15b5c5e8ee">lbann::generic_data_reader::position_valid</a></div><div class="ttdeci">bool position_valid()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00258">lbann_data_reader.hpp:258</a></div></div>
-<div class="ttc" id="classlbann_1_1cnpy__reader_html_a0942d6f6601216d5ba4d881b500b40d8"><div class="ttname"><a href="classlbann_1_1cnpy__reader.html#a0942d6f6601216d5ba4d881b500b40d8">lbann::cnpy_reader::load</a></div><div class="ttdeci">void load()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cnpy_8cpp_source.html#l00085">lbann_data_reader_cnpy.cpp:85</a></div></div>
-<div class="ttc" id="classlbann_1_1cnpy__reader_html_ae0d3346e39eb47d9ce08b78c52e1c247"><div class="ttname"><a href="classlbann_1_1cnpy__reader.html#ae0d3346e39eb47d9ce08b78c52e1c247">lbann::cnpy_reader::~cnpy_reader</a></div><div class="ttdeci">~cnpy_reader()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cnpy_8cpp_source.html#l00042">lbann_data_reader_cnpy.cpp:42</a></div></div>
+<div class="ttc" id="classlbann_1_1cnpy__reader_html_a08ec47930404211fa54ebf5191aaabba"><div class="ttname"><a href="classlbann_1_1cnpy__reader.html#a08ec47930404211fa54ebf5191aaabba">lbann::cnpy_reader::load</a></div><div class="ttdeci">void load(void)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cnpy_8cpp_source.html#l00085">lbann_data_reader_cnpy.cpp:85</a></div></div>
 <div class="ttc" id="classlbann_1_1cnpy__reader_html_ae6db87c086c1d0326568a61c9ae04126"><div class="ttname"><a href="classlbann_1_1cnpy__reader.html#ae6db87c086c1d0326568a61c9ae04126">lbann::cnpy_reader::m_num_features</a></div><div class="ttdeci">int m_num_features</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cnpy_8hpp_source.html#l00053">lbann_data_reader_cnpy.hpp:53</a></div></div>
+<div class="ttc" id="classlbann_1_1cnpy__reader_html_aa5d00e7a3a1c5a6d7804d44b1509dc03"><div class="ttname"><a href="classlbann_1_1cnpy__reader.html#aa5d00e7a3a1c5a6d7804d44b1509dc03">lbann::cnpy_reader::~cnpy_reader</a></div><div class="ttdeci">~cnpy_reader(void)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cnpy_8cpp_source.html#l00042">lbann_data_reader_cnpy.cpp:42</a></div></div>
 <div class="ttc" id="classlbann_1_1cnpy__reader_html_a2f6c249ee07bc87c7a95970426ab1c61"><div class="ttname"><a href="classlbann_1_1cnpy__reader.html#a2f6c249ee07bc87c7a95970426ab1c61">lbann::cnpy_reader::cnpy_reader</a></div><div class="ttdeci">cnpy_reader(int batchSize, bool shuffle=true)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cnpy_8cpp_source.html#l00038">lbann_data_reader_cnpy.cpp:38</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__exception_8hpp_source.html#l00040">lbann_exception.hpp:40</a></div></div>
 <div class="ttc" id="classlbann_1_1cnpy__reader_html_ab8617fd447c8d895e81fa209802f55c2"><div class="ttname"><a href="classlbann_1_1cnpy__reader.html#ab8617fd447c8d895e81fa209802f55c2">lbann::cnpy_reader::m_data</a></div><div class="ttdeci">cnpy::NpyArray m_data</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cnpy_8hpp_source.html#l00055">lbann_data_reader_cnpy.hpp:55</a></div></div>
@@ -241,6 +240,7 @@ $(document).ready(function(){initNavTree('lbann__data__reader__cnpy_8cpp_source.
 <div class="ttc" id="classlbann_1_1generic__data__reader_html"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html">lbann::generic_data_reader</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00056">lbann_data_reader.hpp:56</a></div></div>
 <div class="ttc" id="classlbann_1_1cnpy__reader_html_af00a96df5c6a11e81d1d8a83d689f886"><div class="ttname"><a href="classlbann_1_1cnpy__reader.html#af00a96df5c6a11e81d1d8a83d689f886">lbann::cnpy_reader::fetch_data</a></div><div class="ttdeci">int fetch_data(Mat &amp;X)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cnpy_8cpp_source.html#l00047">lbann_data_reader_cnpy.cpp:47</a></div></div>
 <div class="ttc" id="classlbann_1_1cnpy__reader_html_ac5fab6a082a835251fe754ff8c54a996"><div class="ttname"><a href="classlbann_1_1cnpy__reader.html#ac5fab6a082a835251fe754ff8c54a996">lbann::cnpy_reader::m_num_samples</a></div><div class="ttdeci">int m_num_samples</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cnpy_8hpp_source.html#l00054">lbann_data_reader_cnpy.hpp:54</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_a498ed4ce0304dcc983a8a6b47b3ab02e"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#a498ed4ce0304dcc983a8a6b47b3ab02e">lbann::generic_data_reader::position_valid</a></div><div class="ttdeci">bool position_valid(void) const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00258">lbann_data_reader.hpp:258</a></div></div>
 <div class="ttc" id="lbann__data__reader__cnpy_8hpp_html"><div class="ttname"><a href="lbann__data__reader__cnpy_8hpp.html">lbann_data_reader_cnpy.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -248,7 +248,7 @@ $(document).ready(function(){initNavTree('lbann__data__reader__cnpy_8cpp_source.
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_4fd9b0f9a8d3454cc4920413ede2913f.html">data_readers</a></li><li class="navelem"><a class="el" href="lbann__data__reader__cnpy_8cpp.html">lbann_data_reader_cnpy.cpp</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 08:19:25 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 17:02:59 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

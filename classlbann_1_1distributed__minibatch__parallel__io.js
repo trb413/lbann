@@ -1,6 +1,7 @@
 var classlbann_1_1distributed__minibatch__parallel__io =
 [
     [ "distributed_minibatch_parallel_io", "classlbann_1_1distributed__minibatch__parallel__io.html#a25dd36db7846ff978a1f79e01fca7473", null ],
+    [ "~distributed_minibatch_parallel_io", "classlbann_1_1distributed__minibatch__parallel__io.html#ae2b06292c03eaefd02f51c46b48f07c3", null ],
     [ "calculate_num_iterations_per_epoch", "classlbann_1_1distributed__minibatch__parallel__io.html#aab0bb911e329a56d13a791849dca8ccc", null ],
     [ "compute_max_num_parallel_readers", "classlbann_1_1distributed__minibatch__parallel__io.html#a2de7c1d22d12df28ecdd0d5a54a38282", null ],
     [ "distribute_from_local_matrix", "classlbann_1_1distributed__minibatch__parallel__io.html#ac5d6b3b6740f91ef083eeac3cc52c10a", null ],

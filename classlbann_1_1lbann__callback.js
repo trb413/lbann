@@ -28,7 +28,7 @@ var classlbann_1_1lbann__callback =
     [ "on_train_end", "classlbann_1_1lbann__callback.html#af28078b0ddaef45124465bef01eefedf", null ],
     [ "on_validation_begin", "classlbann_1_1lbann__callback.html#a2bde303671110519388d9962bc3e5583", null ],
     [ "on_validation_end", "classlbann_1_1lbann__callback.html#adc16e42e5064dc2dc8d84dfbfc1325eb", null ],
-    [ "set_name", "classlbann_1_1lbann__callback.html#ae8c3014d503a9ae1b0a16f6cc0cb5b4c", null ],
+    [ "set_name", "classlbann_1_1lbann__callback.html#a3bb130342a44e3919c5e5d482283b599", null ],
     [ "set_summarizer", "classlbann_1_1lbann__callback.html#a02d924df2f8ca851578dc76d9015e48d", null ],
     [ "setup", "classlbann_1_1lbann__callback.html#aab5086e27d9bb0a7c7ee8ffc1bc58671", null ],
     [ "m_batch_interval", "classlbann_1_1lbann__callback.html#a64279821602cebeceb183bca94cad8f9", null ],

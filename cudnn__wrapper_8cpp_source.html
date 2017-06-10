@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-50-g183e212-ci241460196</span>
+   &#160;<span id="projectnumber">v0.93-rc0-51-ge26903b-ci241552259</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('cudnn__wrapper_8cpp_source.html','');}
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;cudnn_manager::~cudnn_manager() {</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="comment">// Free work spaces</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordflow">for</span>(Int i=0; i&lt;m_gpus.size(); ++i) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0u; i&lt;m_gpus.size(); ++i) {</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    checkCUDA(cudaSetDevice(m_gpus[i]));</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">if</span>(m_work_space_sizes[i]) {</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      checkCUDA(m_gpu_memory-&gt;DeviceFree(m_gpus[i], m_work_spaces[i]));</div>
@@ -207,7 +207,7 @@ $(document).ready(function(){initNavTree('cudnn__wrapper_8cpp_source.html','');}
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keyword">delete</span> m_gpu_memory;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="comment">// Destroy cuDNN handles</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordflow">for</span>(Int i=0; i&lt;m_gpus.size(); ++i) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0u; i&lt;m_gpus.size(); ++i) {</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    checkCUDA(cudaSetDevice(m_gpus[i]));</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">if</span>(m_streams[i]) {</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      checkCUDA(cudaStreamDestroy(m_streams[i]));</div>
@@ -657,7 +657,7 @@ $(document).ready(function(){initNavTree('cudnn__wrapper_8cpp_source.html','');}
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;  <span class="keywordflow">return</span> m_work_space_sizes;</div>
 <div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;};</div>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;</div>
-<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;<span class="keyword">const</span> <span class="keywordtype">size_t</span> cudnn_manager::get_work_space_size(Int i)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;<span class="keywordtype">size_t</span> cudnn_manager::get_work_space_size(Int i)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;  <span class="keywordflow">return</span> m_work_space_sizes[i];</div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;}</div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;</div>
@@ -687,7 +687,7 @@ $(document).ready(function(){initNavTree('cudnn__wrapper_8cpp_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_e3a975d7a6e3e1ec3d3053fd7df1ad72.html">utils</a></li><li class="navelem"><a class="el" href="cudnn__wrapper_8cpp.html">cudnn_wrapper.cpp</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 08:19:26 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 17:03:00 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

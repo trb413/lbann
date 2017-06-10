@@ -63,7 +63,7 @@ var searchData=
   ['double3',['DOUBLE3',['../datatype_8hpp.html#a4bd4f6ffa2ec9bae8144e35efb356520',1,'datatype.hpp']]],
   ['double4',['DOUBLE4',['../datatype_8hpp.html#acf56babf3d50b65f791d78b753f990ec',1,'datatype.hpp']]],
   ['doxygen',['Doxygen',['../doxygen.html',1,'getting_started']]],
-  ['dropout',['DropOut',['../classlbann_1_1TrainingParams.html#a682b2fe0b572a0df36a7d5f35d6edc41',1,'lbann::TrainingParams::DropOut()'],['../classlbann_1_1dropout.html#a475a5f62e79fddc530dcf9982ace918a',1,'lbann::dropout::dropout()']]],
+  ['dropout',['dropout',['../classlbann_1_1dropout.html#a475a5f62e79fddc530dcf9982ace918a',1,'lbann::dropout::dropout()'],['../classlbann_1_1TrainingParams.html#a682b2fe0b572a0df36a7d5f35d6edc41',1,'lbann::TrainingParams::DropOut()']]],
   ['dropout',['dropout',['../classlbann_1_1dropout.html',1,'lbann']]],
   ['dump_5fto_5ffile',['dump_to_file',['../classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html#a34d4564309168b3ab0b2e3092e2f9355',1,'lbann::lbann_callback_dump_minibatch_sample_indices']]],
   ['dumpactivations',['DumpActivations',['../classlbann_1_1TrainingParams.html#a4707689cbc2dd7cd45d05bf18026f2f4',1,'lbann::TrainingParams']]],

@@ -28,7 +28,7 @@ var searchData=
   ['onebit_5funquantize',['onebit_unquantize',['../classlbann_1_1lbann__quantizer.html#ad5592daa122b40c275cce3dc93bba41e',1,'lbann::lbann_quantizer::onebit_unquantize(const QuantizedMatrix &amp;qmat, Mat &amp;mat)'],['../classlbann_1_1lbann__quantizer.html#afc7a47fb5a5e87a09f2913a46a2bacf7',1,'lbann::lbann_quantizer::onebit_unquantize(const QuantizedMatrix &amp;qmat, DistMat &amp;mat)']]],
   ['onebit_5funquantize_5fadd',['onebit_unquantize_add',['../classlbann_1_1lbann__quantizer.html#a879cea8464408b8265be9e55edd83b2c',1,'lbann::lbann_quantizer']]],
   ['open_5fcheckpoint',['open_checkpoint',['../classlbann_1_1persist.html#a5bb3c2effb859cf3ca2c5f297acc3195',1,'lbann::persist']]],
-  ['open_5fdata_5fstream',['open_data_stream',['../classlbann_1_1imagenet__readerSingle.html#a1884b113ccdeca408577ca2e0f8806d4',1,'lbann::imagenet_readerSingle::open_data_stream()'],['../classlbann_1_1imagenet__readerSingle__cv.html#a9ff30fc3507434ed358d34df2e153405',1,'lbann::imagenet_readerSingle_cv::open_data_stream()']]],
+  ['open_5fdata_5fstream',['open_data_stream',['../classlbann_1_1imagenet__readerSingle.html#a556502b4c841d9f88448580550e685f6',1,'lbann::imagenet_readerSingle::open_data_stream()'],['../classlbann_1_1imagenet__readerSingle__cv.html#ab1f553cb6f2f5b64465213d34ceadcda',1,'lbann::imagenet_readerSingle_cv::open_data_stream()']]],
   ['open_5frestart',['open_restart',['../classlbann_1_1persist.html#a8b1d8388246d8b959a7e85940439a0e6',1,'lbann::persist']]],
   ['opencv',['OpenCV',['../opencv.html',1,'getting_started']]],
   ['openread',['openread',['../namespacelbann.html#a6084b9319eea1997f8446fa3e6879532',1,'lbann']]],

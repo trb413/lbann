@@ -69,7 +69,7 @@ var searchData=
   ['is_5ffor_5fregression',['is_for_regression',['../classlbann_1_1io__layer.html#a84f62786812c100923e7553f704a5edc',1,'lbann::io_layer']]],
   ['is_5fgood',['is_good',['../classlbann_1_1lbann__callback__checknan.html#a198fba8645c2d61452182294f62b965e',1,'lbann::lbann_callback_checknan::is_good()'],['../classlbann_1_1lbann__callback__checksmall.html#ac32525e09231fe0bfb051e4a9b4dce9b',1,'lbann::lbann_callback_checksmall::is_good()']]],
   ['is_5flast_5flayer',['is_last_layer',['../classlbann_1_1lbann__callback__learning__rate.html#ae7a704c0b5d1d09c35981cfe96dd64e2',1,'lbann::lbann_callback_learning_rate']]],
-  ['is_5fmaster',['is_master',['../classlbann_1_1generic__data__reader.html#ab6071eee5dda4df9c673d2fff76c064c',1,'lbann::generic_data_reader']]],
+  ['is_5fmaster',['is_master',['../classlbann_1_1generic__data__reader.html#a3b0a907887191f4b0b3d2dd05b44eeca',1,'lbann::generic_data_reader']]],
   ['is_5fpinned_5fbwd',['is_pinned_bwd',['../classlbann_1_1convolutional__layer.html#aa02f0f56a82c6ad829a6320c915471ff',1,'lbann::convolutional_layer::is_pinned_bwd()'],['../classlbann_1_1pooling__layer.html#a81828d086aa30474b79b1f497116128f',1,'lbann::pooling_layer::is_pinned_bwd()']]],
   ['is_5fpinned_5ffwd',['is_pinned_fwd',['../classlbann_1_1convolutional__layer.html#a008c0e8a55bc9e334e46fbb483fe77e8',1,'lbann::convolutional_layer::is_pinned_fwd()'],['../classlbann_1_1pooling__layer.html#a98319c79cadad2c50ec20a019e48f20a',1,'lbann::pooling_layer::is_pinned_fwd()']]],
   ['is_5frank_5fnode_5flocal',['is_rank_node_local',['../classlbann_1_1lbann__comm.html#afbe095ac6cb11393a3e8173feb03f255',1,'lbann::lbann_comm']]],
