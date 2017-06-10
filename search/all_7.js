@@ -42,7 +42,7 @@ var searchData=
   ['get_5fcurrent_5fmini_5fbatch_5fsize',['get_current_mini_batch_size',['../classlbann_1_1model.html#a7889df80a48db23b1b7a1c276e2d53e4',1,'lbann::model']]],
   ['get_5fcurrent_5fphase',['get_current_phase',['../classlbann_1_1model.html#aaac76906df59991f6adcf354b4b1b570',1,'lbann::model']]],
   ['get_5fdata_5ffilename',['get_data_filename',['../classlbann_1_1generic__data__reader.html#ad57f24fc9b6a5e4b7f60b1f7180911a0',1,'lbann::generic_data_reader']]],
-  ['get_5fdata_5flayout',['get_data_layout',['../lbann__proto__common_8cpp.html#acf81b14e87938b50bb380a34773fa135',1,'lbann_proto_common.cpp']]],
+  ['get_5fdata_5flayout',['get_data_layout',['../classlbann_1_1Layer.html#af6642fbe3827a224ad08a265b159cdf2',1,'lbann::Layer::get_data_layout()'],['../lbann__proto__common_8cpp.html#acf81b14e87938b50bb380a34773fa135',1,'get_data_layout():&#160;lbann_proto_common.cpp']]],
   ['get_5fdata_5fseq_5fgenerator',['get_data_seq_generator',['../namespacelbann.html#aba9d11cb3a739cd84e7234ceeb32d098',1,'lbann']]],
   ['get_5fdefault_5fallreduce_5falgorithm',['get_default_allreduce_algorithm',['../classlbann_1_1lbann__comm.html#a593144edfb5094bb9dbfd302d0f6e21b',1,'lbann::lbann_comm']]],
   ['get_5fdist_5fmat',['get_dist_mat',['../classlbann_1_1input__layer__distributed__minibatch.html#accc27f5067841f5430a45dc09a617758',1,'lbann::input_layer_distributed_minibatch::get_dist_mat()'],['../classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a72de912cb132a30996ae35caa7c3e339',1,'lbann::input_layer_distributed_minibatch_parallel_io::get_dist_mat()']]],
@@ -126,7 +126,7 @@ var searchData=
   ['global_5fbarrier',['global_barrier',['../classlbann_1_1lbann__comm.html#ae12af95f4826571efa03fb8520260daa',1,'lbann::lbann_comm']]],
   ['glorot_5fnormal',['glorot_normal',['../lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ab507cf76b5f5f5bf34a68f6376bf0238',1,'lbann_base.hpp']]],
   ['glorot_5funiform',['glorot_uniform',['../lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a4b78361151cbfcca33e1d560fbaedd59',1,'lbann_base.hpp']]],
-  ['greedy_5flayerwise_5fautoencoder',['greedy_layerwise_autoencoder',['../classlbann_1_1greedy__layerwise__autoencoder.html',1,'lbann']]],
   ['greedy_5flayerwise_5fautoencoder',['greedy_layerwise_autoencoder',['../classlbann_1_1greedy__layerwise__autoencoder.html#ae0fceac4061eea17753eedd397f4988f',1,'lbann::greedy_layerwise_autoencoder']]],
+  ['greedy_5flayerwise_5fautoencoder',['greedy_layerwise_autoencoder',['../classlbann_1_1greedy__layerwise__autoencoder.html',1,'lbann']]],
   ['grid',['grid',['../classlbann_1_1lbann__comm.html#a29fb31be115db3225b145f250a7778d9',1,'lbann::lbann_comm::grid()'],['../lbann__base_8hpp.html#a4c600bf682fbf8018385607476e4bd13',1,'Grid():&#160;lbann_base.hpp']]]
 ];

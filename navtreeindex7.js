@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"datatype_8hpp.html#a2b18a2eb77c298c218217a23ea9bdf38":[4,0,0,0,0,0,0,0,0,11,98],
 "datatype_8hpp.html#a2d42a0f1f7c1cb2463696a6a81d18216":[4,0,0,0,0,0,0,0,0,11,69],
 "datatype_8hpp.html#a308c0c96bd8f3088f8391e4600d3d1b4":[4,0,0,0,0,0,0,0,0,11,120],
 "datatype_8hpp.html#a360fa44a0dc333f5014d13e58af69046":[4,0,0,0,0,0,0,0,0,11,121],
@@ -139,8 +140,8 @@ var NAVTREEINDEX7 =
 "elemental.html#elemental_install":[0,3,6,1],
 "elemental.html#elemental_issues":[0,3,6,2],
 "files.html":[4,0],
-"functions.html":[3,3,0,0],
 "functions.html":[3,3,0],
+"functions.html":[3,3,0,0],
 "functions_a.html":[3,3,0,1],
 "functions_b.html":[3,3,0,2],
 "functions_c.html":[3,3,0,3],
@@ -189,8 +190,8 @@ var NAVTREEINDEX7 =
 "functions_type.html":[3,3,3],
 "functions_u.html":[3,3,0,19],
 "functions_v.html":[3,3,0,20],
-"functions_vars.html":[3,3,2,0],
 "functions_vars.html":[3,3,2],
+"functions_vars.html":[3,3,2,0],
 "functions_vars_b.html":[3,3,2,1],
 "functions_vars_c.html":[3,3,2,2],
 "functions_vars_d.html":[3,3,2,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "globals_t.html":[4,1,0,16],
 "globals_type.html":[4,1,3],
 "globals_u.html":[4,1,0,17],
-"globals_v.html":[4,1,0,18],
-"globals_vars.html":[4,1,2]
+"globals_v.html":[4,1,0,18]
 };

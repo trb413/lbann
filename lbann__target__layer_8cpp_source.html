@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-47-g74ca147-ci241438438</span>
+   &#160;<span id="projectnumber">v0.93-rc0-48-g37ce27c-ci241442121</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -183,15 +183,15 @@ $(document).ready(function(){initNavTree('lbann__target__layer_8cpp_source.html'
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
 <div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classlbann_1_1target__layer.html#ab36a7f84eb5a59b3723399ffe92a446c">   95</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1target__layer.html#ab36a7f84eb5a59b3723399ffe92a446c">lbann::target_layer::epoch_print</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">double</span> obj_cost = neural_network_model-&gt;obj_fn-&gt;report_aggregate_avg_obj_fn(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;am_world_master()) {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    std::vector&lt;double&gt; avg_obj_fn_costs(<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_num_models());</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;intermodel_gather(obj_cost, avg_obj_fn_costs);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">if</span> (m_comm-&gt;am_world_master()) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    std::vector&lt;double&gt; avg_obj_fn_costs(m_comm-&gt;get_num_models());</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    m_comm-&gt;intermodel_gather(obj_cost, avg_obj_fn_costs);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; avg_obj_fn_costs.size(); ++i) {</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;Model &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; average &quot;</span> &lt;&lt; <a class="code" href="lbann__base_8hpp.html#adeeaddd10bd31df0cae7cb0fcae45d5c">_to_string</a>(neural_network_model-&gt;obj_fn-&gt;type) &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; avg_obj_fn_costs[i] &lt;&lt;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                std::endl;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;intermodel_gather(obj_cost, <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_world_master());</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    m_comm-&gt;intermodel_gather(obj_cost, m_comm-&gt;get_world_master());</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  }</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
@@ -247,7 +247,7 @@ $(document).ready(function(){initNavTree('lbann__target__layer_8cpp_source.html'
 <div class="ttc" id="classlbann_1_1Layer_html_a935881e25a98b4ffad1985dc04c19572"><div class="ttname"><a href="classlbann_1_1Layer.html#a935881e25a98b4ffad1985dc04c19572">lbann::Layer::fp_set_std_matrix_view</a></div><div class="ttdeci">virtual void fp_set_std_matrix_view()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00466">lbann_layer.cpp:466</a></div></div>
 <div class="ttc" id="classlbann_1_1target__layer_html_a89f078ea72aaf991dd505e3a9672603a"><div class="ttname"><a href="classlbann_1_1target__layer.html#a89f078ea72aaf991dd505e3a9672603a">lbann::target_layer::set_training_data_reader</a></div><div class="ttdeci">generic_data_reader * set_training_data_reader(generic_data_reader *data_reader, bool shared_data_reader)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__target__layer_8cpp_source.html#l00069">lbann_target_layer.cpp:69</a></div></div>
 <div class="ttc" id="classlbann_1_1io__layer_html_a3701d9af118b40341b6bb46cb3462094"><div class="ttname"><a href="classlbann_1_1io__layer.html#a3701d9af118b40341b6bb46cb3462094">lbann::io_layer::get_linearized_response_size</a></div><div class="ttdeci">long get_linearized_response_size(void) const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__io__layer_8hpp_source.html#l00072">lbann_io_layer.hpp:72</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_a7425d82c79f0c7072870d553be07a66c"><div class="ttname"><a href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">lbann::Layer::m_num_neurons</a></div><div class="ttdeci">uint m_num_neurons</div><div class="ttdoc">Number of neurons. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00266">lbann_layer.hpp:266</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a7425d82c79f0c7072870d553be07a66c"><div class="ttname"><a href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">lbann::Layer::m_num_neurons</a></div><div class="ttdeci">uint m_num_neurons</div><div class="ttdoc">Number of neurons. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00270">lbann_layer.hpp:270</a></div></div>
 <div class="ttc" id="classlbann_1_1target__layer_html_a18a25cbfe594cc6ee0c4e433435852d7"><div class="ttname"><a href="classlbann_1_1target__layer.html#a18a25cbfe594cc6ee0c4e433435852d7">lbann::target_layer::saveToCheckpointShared</a></div><div class="ttdeci">bool saveToCheckpointShared(persist &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__target__layer_8cpp_source.html#l00128">lbann_target_layer.cpp:128</a></div></div>
 <div class="ttc" id="classlbann_1_1target__layer_html_a34a2da13b32938e52f7bfd8b3e500589"><div class="ttname"><a href="classlbann_1_1target__layer.html#a34a2da13b32938e52f7bfd8b3e500589">lbann::target_layer::saveToCheckpoint</a></div><div class="ttdeci">bool saveToCheckpoint(int fd, const char *filename, uint64_t *bytes)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__target__layer_8cpp_source.html#l00118">lbann_target_layer.cpp:118</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html"><div class="ttname"><a href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00048">lbann_comm.hpp:48</a></div></div>
@@ -293,7 +293,7 @@ $(document).ready(function(){initNavTree('lbann__target__layer_8cpp_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_faacdbae24c4b7c4a8fbaf54f29a6b8e.html">layers</a></li><li class="navelem"><a class="el" href="lbann__target__layer_8cpp.html">lbann_target_layer.cpp</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 05:43:48 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 06:15:38 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -46,17 +46,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classlbann_1_1adam__factory.html#a4248f090cce8b9603fb4875a10c37c68",
-"classlbann_1_1generic__data__reader.html#a74b7ef4fe0dc7d3a96868ca3b5fbf897",
-"classlbann_1_1l2__regularization.html#a8327feb42579f52cf9dfa1a4c1a6c52b",
-"classlbann_1_1lbann__comm.html#a4ec66621507e9422f8157158d6718b56",
-"classlbann_1_1metrics_1_1metric.html#a073c6c2c2861c1bd53d2a0d32e3251fe",
-"classlbann_1_1pooling__layer.html#a47eeadb345c58870bb28461f93250632",
-"datatype_8hpp.html#a2d42a0f1f7c1cb2463696a6a81d18216",
-"globals_w.html",
-"lbann__exception_8hpp_source.html",
-"lbann__partitioned__minibatch__parallel__io_8cpp.html",
-"struct__BOX3__INT.html#a067759e7bf2dd65f15aef19b1ea00a2a"
+"classlbann_1_1adam__factory.html#a2973ff24764ca5e7aa04cc7f36a90ff5",
+"classlbann_1_1generic__data__reader.html#a72a464475f641c638f1da750207ef1f7",
+"classlbann_1_1l2__regularization.html#a785095535853c74b60410011d8e5bc47",
+"classlbann_1_1lbann__comm.html#a4e3d35520a8f567579f9235e9808ba1c",
+"classlbann_1_1metrics_1_1metric.html",
+"classlbann_1_1pooling__layer.html#a45c53f7dae2f37d68291ccbd4a614517",
+"datatype_8hpp.html#a2b18a2eb77c298c218217a23ea9bdf38",
+"globals_vars.html",
+"lbann__exception_8hpp.html#a06fd1f9a7d05d355fa9936c46347a77f",
+"lbann__params_8hpp_source.html",
+"struct__BOX3__INT.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
