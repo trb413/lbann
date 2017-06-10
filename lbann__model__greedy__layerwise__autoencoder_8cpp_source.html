@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-46-gc17255e-ci241436641</span>
+   &#160;<span id="projectnumber">v0.93-rc0-47-g74ca147-ci241438438</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -308,7 +308,7 @@ $(document).ready(function(){initNavTree('lbann__model__greedy__layerwise__autoe
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    m_execution_mode = <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>;</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> l =0; l &lt; m_layers.size(); l++) {</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;      m_layers[l]-&gt;m_execution_mode = <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;      m_layers[l]-&gt;set_execution_mode(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>);</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    }</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="comment">// Train on mini-batches until data set is traversed</span></div>
@@ -356,7 +356,7 @@ $(document).ready(function(){initNavTree('lbann__model__greedy__layerwise__autoe
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="comment">// Reset execution mode back to training</span></div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    m_execution_mode = <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>;</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="classlbann_1_1Layer.html">Layer</a> *layer : m_layers) {</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      layer-&gt;m_execution_mode = <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;      layer-&gt;set_execution_mode(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>);</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    }</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="comment">// save checkpoint after epoch</span></div>
@@ -407,7 +407,7 @@ $(document).ready(function(){initNavTree('lbann__model__greedy__layerwise__autoe
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  <span class="comment">// Set the execution mode</span></div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  m_execution_mode = mode;</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> l = 0; l &lt; m_layers.size(); ++l) {</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    m_layers[l]-&gt;m_execution_mode = mode;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    m_layers[l]-&gt;set_execution_mode(mode);</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  }</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  <span class="comment">// Evaluate on mini-batches until data set is traversed</span></div>
@@ -492,7 +492,7 @@ $(document).ready(function(){initNavTree('lbann__model__greedy__layerwise__autoe
 <div class="ttc" id="classlbann_1_1lbann__comm_html"><div class="ttname"><a href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00048">lbann_comm.hpp:48</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html"><div class="ttname"><a href="classlbann_1_1Layer.html">lbann::Layer</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00126">lbann_layer.hpp:126</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214"><div class="ttname"><a href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_a1c60dfaa889c4ba0c840ebe44f8bd6f1"><div class="ttname"><a href="classlbann_1_1Layer.html#a1c60dfaa889c4ba0c840ebe44f8bd6f1">lbann::Layer::m_data_layout</a></div><div class="ttdeci">data_layout m_data_layout</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00263">lbann_layer.hpp:263</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a1c60dfaa889c4ba0c840ebe44f8bd6f1"><div class="ttname"><a href="classlbann_1_1Layer.html#a1c60dfaa889c4ba0c840ebe44f8bd6f1">lbann::Layer::m_data_layout</a></div><div class="ttdeci">data_layout m_data_layout</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00272">lbann_layer.hpp:272</a></div></div>
 <div class="ttc" id="classlbann_1_1greedy__layerwise__autoencoder_html_ae0fceac4061eea17753eedd397f4988f"><div class="ttname"><a href="classlbann_1_1greedy__layerwise__autoencoder.html#ae0fceac4061eea17753eedd397f4988f">lbann::greedy_layerwise_autoencoder::greedy_layerwise_autoencoder</a></div><div class="ttdeci">greedy_layerwise_autoencoder(uint mini_batch_size, lbann_comm *comm, objective_functions::objective_fn *obj_fn, optimizer_factory *_optimizer_fac)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__greedy__layerwise__autoencoder_8cpp_source.html#l00037">lbann_model_greedy_layerwise_autoencoder.cpp:37</a></div></div>
 <div class="ttc" id="classlbann_1_1greedy__layerwise__autoencoder_html_aa600aaacda4275602021b612e1a36e9f"><div class="ttname"><a href="classlbann_1_1greedy__layerwise__autoencoder.html#aa600aaacda4275602021b612e1a36e9f">lbann::greedy_layerwise_autoencoder::train</a></div><div class="ttdeci">void train(int num_epochs, int evaluation_frequency=0)</div><div class="ttdoc">Train neural network. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__greedy__layerwise__autoencoder_8cpp_source.html#l00152">lbann_model_greedy_layerwise_autoencoder.cpp:152</a></div></div>
 <div class="ttc" id="structlbann__model__greedy__layerwise__autoencoder__header_html_a88d03a8be5647df01c3fbbe7f7d5789a"><div class="ttname"><a href="structlbann__model__greedy__layerwise__autoencoder__header.html#a88d03a8be5647df01c3fbbe7f7d5789a">lbann_model_greedy_layerwise_autoencoder_header::phase_index</a></div><div class="ttdeci">uint32_t phase_index</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model__greedy__layerwise__autoencoder_8cpp_source.html#l00047">lbann_model_greedy_layerwise_autoencoder.cpp:47</a></div></div>
@@ -525,7 +525,7 @@ $(document).ready(function(){initNavTree('lbann__model__greedy__layerwise__autoe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_e8e3d10a664feac46c9de523d11ac34a.html">models</a></li><li class="navelem"><a class="el" href="lbann__model__greedy__layerwise__autoencoder_8cpp.html">lbann_model_greedy_layerwise_autoencoder.cpp</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 05:23:22 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 05:43:48 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-46-gc17255e-ci241436641</span>
+   &#160;<span id="projectnumber">v0.93-rc0-47-g74ca147-ci241438438</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -477,7 +477,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="comment">// Set the execution mode</span></div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  <a class="code" href="classlbann_1_1model.html#a2166e2aad256a335ace3bdcae5da2614">m_execution_mode</a> = mode;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> l = 0; l &lt; <a class="code" href="classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b">m_layers</a>.size(); ++l) {</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <a class="code" href="classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b">m_layers</a>[l]-&gt;m_execution_mode = mode;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <a class="code" href="classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b">m_layers</a>[l]-&gt;set_execution_mode(mode);</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  }</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="comment">// Evaluate on mini-batches until data set is traversed</span></div>
@@ -733,7 +733,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="classlbann_1_1model.html#a2166e2aad256a335ace3bdcae5da2614">m_execution_mode</a> = <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> l = 0; l &lt; <a class="code" href="classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b">m_layers</a>.size(); ++l) {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <a class="code" href="classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b">m_layers</a>[l]-&gt;m_execution_mode = <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <a class="code" href="classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b">m_layers</a>[l]-&gt;set_execution_mode(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// Train on mini-batches until data set is traversed</span></div>
@@ -761,7 +761,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      <span class="comment">// Set execution mode back to training</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      <a class="code" href="classlbann_1_1model.html#a2166e2aad256a335ace3bdcae5da2614">m_execution_mode</a> = <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> l = 0; l &lt; <a class="code" href="classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b">m_layers</a>.size(); l++) {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <a class="code" href="classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b">m_layers</a>[l]-&gt;m_execution_mode = <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <a class="code" href="classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b">m_layers</a>[l]-&gt;set_execution_mode(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>);</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      }</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
@@ -907,7 +907,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1deep__neural__network.html">deep_neural_network</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 05:23:25 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 05:43:52 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

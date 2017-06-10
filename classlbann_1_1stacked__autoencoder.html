@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-46-gc17255e-ci241436641</span>
+   &#160;<span id="projectnumber">v0.93-rc0-47-g74ca147-ci241438438</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -833,7 +833,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="comment">//Supervised target to compute reconstruction cost</span></div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="comment">/*m_target_layer-&gt;set_input_layer((input_layer_distributed_minibatch_parallel_io*)m_layers[0]);</span></div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">  //m_target_layer-&gt;m_execution_mode = m_execution_mode;</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">  //m_target_layer-&gt;set_execution_mode(m_execution_mode);</span></div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment">  add(m_target_layer);</span></div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">  m_target_layer-&gt;setup(m_layers[0]-&gt;get_num_neurons());*/</span></div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="comment">//replace with this</span></div>
@@ -854,7 +854,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> l = 0; l &lt; <a class="code" href="classlbann_1_1stacked__autoencoder.html#ad03569f0b42c97a5654fc13840be7cb0">m_num_layers</a>; ++l) {</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      <span class="comment">//for (size_t l = 0; l &lt;= m_num_layers / 2; ++l) {</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      <a class="code" href="classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b">m_layers</a>[l]-&gt;m_execution_mode = <a class="code" href="classlbann_1_1model.html#a2166e2aad256a335ace3bdcae5da2614">m_execution_mode</a>;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      <a class="code" href="classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b">m_layers</a>[l]-&gt;set_execution_mode(<a class="code" href="classlbann_1_1model.html#a2166e2aad256a335ace3bdcae5da2614">m_execution_mode</a>);</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    }</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="comment">// Train on mini-batches until data set is traversed</span></div>
@@ -1057,7 +1057,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1stacked__autoencoder.html">stacked_autoencoder</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 05:23:25 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 05:43:52 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

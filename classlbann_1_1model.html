@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-46-gc17255e-ci241436641</span>
+   &#160;<span id="projectnumber">v0.93-rc0-47-g74ca147-ci241438438</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -1759,6 +1759,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname"><a class="el" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a> lbann::model::get_execution_mode </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
@@ -2405,7 +2406,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="classlbann_1_1model.html#a2166e2aad256a335ace3bdcae5da2614">m_execution_mode</a> = mode;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    std::vector&lt;Layer *&gt;&amp; layers = <a class="code" href="classlbann_1_1model.html#ab6f53860dab77f0ce1d941d07360ef5a">get_layers</a>();</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; l : layers) {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      l-&gt;m_execution_mode = mode;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      l-&gt;set_execution_mode(mode);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  }</div>
 <div class="ttc" id="classlbann_1_1model_html_ab6f53860dab77f0ce1d941d07360ef5a"><div class="ttname"><a href="classlbann_1_1model.html#ab6f53860dab77f0ce1d941d07360ef5a">lbann::model::get_layers</a></div><div class="ttdeci">virtual std::vector&lt; Layer * &gt; &amp; get_layers()=0</div></div>
@@ -3021,7 +3022,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1model.html">model</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 05:23:25 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 05:43:52 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

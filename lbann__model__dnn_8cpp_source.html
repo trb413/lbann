@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-46-gc17255e-ci241436641</span>
+   &#160;<span id="projectnumber">v0.93-rc0-47-g74ca147-ci241438438</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('lbann__model__dnn_8cpp_source.html',''
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    m_execution_mode = <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> l = 0; l &lt; m_layers.size(); ++l) {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      m_layers[l]-&gt;m_execution_mode = <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      m_layers[l]-&gt;set_execution_mode(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// Train on mini-batches until data set is traversed</span></div>
@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('lbann__model__dnn_8cpp_source.html',''
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      <span class="comment">// Set execution mode back to training</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      m_execution_mode = <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> l = 0; l &lt; m_layers.size(); l++) {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        m_layers[l]-&gt;m_execution_mode = <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        m_layers[l]-&gt;set_execution_mode(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>);</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      }</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
@@ -274,7 +274,7 @@ $(document).ready(function(){initNavTree('lbann__model__dnn_8cpp_source.html',''
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;  <span class="comment">// Set the execution mode</span></div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  m_execution_mode = mode;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> l = 0; l &lt; m_layers.size(); ++l) {</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    m_layers[l]-&gt;m_execution_mode = mode;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    m_layers[l]-&gt;set_execution_mode(mode);</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  }</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  <span class="comment">// Evaluate on mini-batches until data set is traversed</span></div>
@@ -371,7 +371,7 @@ $(document).ready(function(){initNavTree('lbann__model__dnn_8cpp_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_e8e3d10a664feac46c9de523d11ac34a.html">models</a></li><li class="navelem"><a class="el" href="lbann__model__dnn_8cpp.html">lbann_model_dnn.cpp</a></li>
-    <li class="footer">Generated on Sat Jun 10 2017 05:23:22 for LBANN by
+    <li class="footer">Generated on Sat Jun 10 2017 05:43:48 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -31,7 +31,7 @@ var searchData=
   ['set_5fdata_5ffilename',['set_data_filename',['../classlbann_1_1generic__data__reader.html#a74b7ef4fe0dc7d3a96868ca3b5fbf897',1,'lbann::generic_data_reader']]],
   ['set_5fdefault_5fallreduce_5falgorithm',['set_default_allreduce_algorithm',['../classlbann_1_1lbann__comm.html#aaae50e4643ca06671e7cb7872d455708',1,'lbann::lbann_comm']]],
   ['set_5feffective_5fminibatch_5fsize',['set_effective_minibatch_size',['../classlbann_1_1Layer.html#a764387b1c6c66436120bbbff79649e70',1,'lbann::Layer']]],
-  ['set_5fexecution_5fmode',['set_execution_mode',['../classlbann_1_1model.html#a375372b5b864ffbc4eaa0963f6939f65',1,'lbann::model']]],
+  ['set_5fexecution_5fmode',['set_execution_mode',['../classlbann_1_1Layer.html#a377186a07b1db4bd48e810f98fc57064',1,'lbann::Layer::set_execution_mode()'],['../classlbann_1_1model.html#a375372b5b864ffbc4eaa0963f6939f65',1,'lbann::model::set_execution_mode()']]],
   ['set_5ffile_5fdir',['set_file_dir',['../classlbann_1_1generic__data__reader.html#a94a6db0b62d4c98202ef309eb76b220c',1,'lbann::generic_data_reader']]],
   ['set_5ffirstn',['set_firstN',['../classlbann_1_1generic__data__reader.html#a073d248ab1927aa2c19e1d02b8acda32',1,'lbann::generic_data_reader']]],
   ['set_5ffp_5finput',['set_fp_input',['../classlbann_1_1sequential__model.html#ae4fa1fd95dae51edf2b0db11258dca51',1,'lbann::sequential_model']]],

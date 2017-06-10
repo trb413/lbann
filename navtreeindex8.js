@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"globals_w.html":[4,1,0,19],
+"globals_z.html":[4,1,0,20],
 "hierarchy.html":[3,2],
 "index.html":[],
 "index.html":[0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "lbann__dropout_8hpp.html":[4,0,0,0,0,0,0,0,0,9,1],
 "lbann__dropout_8hpp_source.html":[4,0,0,0,0,0,0,0,0,9,1],
 "lbann__exception_8hpp.html":[4,0,0,0,0,0,0,0,0,10,2],
-"lbann__exception_8hpp.html#a06fd1f9a7d05d355fa9936c46347a77f":[4,0,0,0,0,0,0,0,0,10,2,1],
-"lbann__exception_8hpp_source.html":[4,0,0,0,0,0,0,0,0,10,2],
-"lbann__file__io_8cpp.html":[4,0,0,0,0,0,0,1,2,1]
+"lbann__exception_8hpp.html#a06fd1f9a7d05d355fa9936c46347a77f":[4,0,0,0,0,0,0,0,0,10,2,1]
 };
