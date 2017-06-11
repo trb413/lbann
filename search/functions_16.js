@@ -52,7 +52,7 @@ var searchData=
   ['_7esequential_5fmodel',['~sequential_model',['../classlbann_1_1sequential__model.html#a05ec812bf7db0dc1b29b61aeb197c587',1,'lbann::sequential_model']]],
   ['_7esgd',['~sgd',['../classlbann_1_1sgd.html#a4b83e3170b5a159325cfc7a299a1b96a',1,'lbann::sgd']]],
   ['_7esgd_5ffactory',['~sgd_factory',['../classlbann_1_1sgd__factory.html#a5a79275dcfb03e29d5080c0ff035e8f2',1,'lbann::sgd_factory']]],
-  ['_7esoftmaxlayer',['~SoftmaxLayer',['../classlbann_1_1SoftmaxLayer.html#aea36dd0d3f736de49aed4e1f315ad603',1,'lbann::SoftmaxLayer']]],
+  ['_7esoftmax_5flayer',['~softmax_layer',['../classlbann_1_1softmax__layer.html#a229622dead722e2e52a5c76875dbec3d',1,'lbann::softmax_layer']]],
   ['_7estacked_5fautoencoder',['~stacked_autoencoder',['../classlbann_1_1stacked__autoencoder.html#a69a11143ad8fdb00004b38768b33add7',1,'lbann::stacked_autoencoder']]],
   ['_7estatistics',['~statistics',['../classlbann_1_1metrics_1_1statistics.html#a686c92cfc8b3e52972a65143619f0bfd',1,'lbann::metrics::statistics::~statistics()'],['../classlbann_1_1objective__functions_1_1statistics.html#ac663664827ecd9e9fc700c5bed2feea4',1,'lbann::objective_functions::statistics::~statistics()']]]
 ];

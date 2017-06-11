@@ -79,7 +79,7 @@ var hierarchy =
       ] ],
       [ "lbann::local_response_normalization_layer", "classlbann_1_1local__response__normalization__layer.html", null ],
       [ "lbann::pooling_layer", "classlbann_1_1pooling__layer.html", null ],
-      [ "lbann::SoftmaxLayer< DATA_DIST >", "classlbann_1_1SoftmaxLayer.html", null ]
+      [ "lbann::softmax_layer< T_layout >", "classlbann_1_1softmax__layer.html", null ]
     ] ],
     [ "lbann::lbann_callback", "classlbann_1_1lbann__callback.html", [
       [ "lbann::lbann_callback_check_init", "classlbann_1_1lbann__callback__check__init.html", null ],

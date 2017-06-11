@@ -33,7 +33,7 @@ var dir_a6b45e92f0bfd71c0512203df27069a2 =
       [ "reconstruction_layer", "classlbann_1_1reconstruction__layer.html", "classlbann_1_1reconstruction__layer" ]
     ] ],
     [ "lbann_layer_softmax.hpp", "lbann__layer__softmax_8hpp.html", [
-      [ "SoftmaxLayer", "classlbann_1_1SoftmaxLayer.html", "classlbann_1_1SoftmaxLayer" ]
+      [ "softmax_layer", "classlbann_1_1softmax__layer.html", "classlbann_1_1softmax__layer" ]
     ] ],
     [ "lbann_target_layer.hpp", "lbann__target__layer_8hpp.html", [
       [ "target_layer", "classlbann_1_1target__layer.html", "classlbann_1_1target__layer" ]

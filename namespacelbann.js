@@ -59,7 +59,7 @@ var namespacelbann =
     [ "local_response_normalization_layer", "classlbann_1_1local__response__normalization__layer.html", "classlbann_1_1local__response__normalization__layer" ],
     [ "pooling_layer", "classlbann_1_1pooling__layer.html", "classlbann_1_1pooling__layer" ],
     [ "reconstruction_layer", "classlbann_1_1reconstruction__layer.html", "classlbann_1_1reconstruction__layer" ],
-    [ "SoftmaxLayer", "classlbann_1_1SoftmaxLayer.html", "classlbann_1_1SoftmaxLayer" ],
+    [ "softmax_layer", "classlbann_1_1softmax__layer.html", "classlbann_1_1softmax__layer" ],
     [ "target_layer", "classlbann_1_1target__layer.html", "classlbann_1_1target__layer" ],
     [ "target_layer_distributed_minibatch", "classlbann_1_1target__layer__distributed__minibatch.html", "classlbann_1_1target__layer__distributed__minibatch" ],
     [ "target_layer_distributed_minibatch_parallel_io", "classlbann_1_1target__layer__distributed__minibatch__parallel__io.html", "classlbann_1_1target__layer__distributed__minibatch__parallel__io" ],
