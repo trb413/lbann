@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-59-g5b5510f-ci241767763</span>
+   &#160;<span id="projectnumber">v0.93-rc0-60-gfb43710-ci241780821</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -119,7 +119,7 @@ Collaboration diagram for lbann::optimizer:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a42150ad8b3dc9cfdedf2ca63d26aa20a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1optimizer.html#a42150ad8b3dc9cfdedf2ca63d26aa20a">optimizer</a> (<a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="classlbann_1_1optimizer.html#a5ab3dd1ebbfbbed8e461742f80aa32e0">comm</a>, const std::string <a class="el" href="classlbann_1_1optimizer.html#a07f6a342defa633674bef68b91bac877">name</a>, <a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> learning_rate=<a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0))</td></tr>
+<tr class="memitem:a42150ad8b3dc9cfdedf2ca63d26aa20a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1optimizer.html#a42150ad8b3dc9cfdedf2ca63d26aa20a">optimizer</a> (<a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, const std::string <a class="el" href="classlbann_1_1optimizer.html#a07f6a342defa633674bef68b91bac877">name</a>, <a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> learning_rate=<a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0))</td></tr>
 <tr class="memdesc:a42150ad8b3dc9cfdedf2ca63d26aa20a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a42150ad8b3dc9cfdedf2ca63d26aa20a">More...</a><br/></td></tr>
 <tr class="separator:a42150ad8b3dc9cfdedf2ca63d26aa20a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbee0e2cb021f835b669d9ba0da5145a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1optimizer.html#abbee0e2cb021f835b669d9ba0da5145a">~optimizer</a> ()</td></tr>
@@ -146,9 +146,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a5ab3dd1ebbfbbed8e461742f80aa32e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1optimizer.html#a5ab3dd1ebbfbbed8e461742f80aa32e0">comm</a></td></tr>
-<tr class="memdesc:a5ab3dd1ebbfbbed8e461742f80aa32e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">LBANN communicator.  <a href="#a5ab3dd1ebbfbbed8e461742f80aa32e0">More...</a><br/></td></tr>
-<tr class="separator:a5ab3dd1ebbfbbed8e461742f80aa32e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c2569a8fcf0ee969517067b81896c44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1optimizer.html#a8c2569a8fcf0ee969517067b81896c44">m_comm</a></td></tr>
+<tr class="memdesc:a8c2569a8fcf0ee969517067b81896c44"><td class="mdescLeft">&#160;</td><td class="mdescRight">LBANN communicator.  <a href="#a8c2569a8fcf0ee969517067b81896c44">More...</a><br/></td></tr>
+<tr class="separator:a8c2569a8fcf0ee969517067b81896c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32e8063fd84d0754e7546a016e65e093"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1optimizer.html#a32e8063fd84d0754e7546a016e65e093">m_parameters</a></td></tr>
 <tr class="memdesc:a32e8063fd84d0754e7546a016e65e093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameters to optimize.  <a href="#a32e8063fd84d0754e7546a016e65e093">More...</a><br/></td></tr>
 <tr class="separator:a32e8063fd84d0754e7546a016e65e093"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,10 +209,11 @@ Private Attributes</h2></td></tr>
 <p>Constructor. </p>
 
 <p>Definition at line <a class="el" href="lbann__optimizer_8cpp_source.html#l00035">35</a> of file <a class="el" href="lbann__optimizer_8cpp_source.html">lbann_optimizer.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  : <a class="code" href="classlbann_1_1optimizer.html#a5ab3dd1ebbfbbed8e461742f80aa32e0">comm</a>(<a class="code" href="classlbann_1_1optimizer.html#a5ab3dd1ebbfbbed8e461742f80aa32e0">comm</a>), <a class="code" href="classlbann_1_1optimizer.html#ad393dcdcb82b44510c586ed5ec46d4dd">m_learning_rate</a>(learning_rate), <a class="code" href="classlbann_1_1optimizer.html#a3e32c0a85307f54f8a6845082cbc14b7">m_name</a>(<a class="code" href="classlbann_1_1optimizer.html#a07f6a342defa633674bef68b91bac877">name</a>) {}</div>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  : <a class="code" href="classlbann_1_1optimizer.html#a8c2569a8fcf0ee969517067b81896c44">m_comm</a>(<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>), <a class="code" href="classlbann_1_1optimizer.html#ad393dcdcb82b44510c586ed5ec46d4dd">m_learning_rate</a>(learning_rate), <a class="code" href="classlbann_1_1optimizer.html#a3e32c0a85307f54f8a6845082cbc14b7">m_name</a>(<a class="code" href="classlbann_1_1optimizer.html#a07f6a342defa633674bef68b91bac877">name</a>) {}</div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a8c2569a8fcf0ee969517067b81896c44"><div class="ttname"><a href="classlbann_1_1optimizer.html#a8c2569a8fcf0ee969517067b81896c44">lbann::optimizer::m_comm</a></div><div class="ttdeci">lbann_comm * m_comm</div><div class="ttdoc">LBANN communicator. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00080">lbann_optimizer.hpp:80</a></div></div>
 <div class="ttc" id="classlbann_1_1optimizer_html_a07f6a342defa633674bef68b91bac877"><div class="ttname"><a href="classlbann_1_1optimizer.html#a07f6a342defa633674bef68b91bac877">lbann::optimizer::name</a></div><div class="ttdeci">const string name() const </div><div class="ttdoc">Get optimizer name. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00074">lbann_optimizer.hpp:74</a></div></div>
+<div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
 <div class="ttc" id="classlbann_1_1optimizer_html_ad393dcdcb82b44510c586ed5ec46d4dd"><div class="ttname"><a href="classlbann_1_1optimizer.html#ad393dcdcb82b44510c586ed5ec46d4dd">lbann::optimizer::m_learning_rate</a></div><div class="ttdeci">DataType m_learning_rate</div><div class="ttdoc">Learning rate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00090">lbann_optimizer.hpp:90</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer_html_a5ab3dd1ebbfbbed8e461742f80aa32e0"><div class="ttname"><a href="classlbann_1_1optimizer.html#a5ab3dd1ebbfbbed8e461742f80aa32e0">lbann::optimizer::comm</a></div><div class="ttdeci">lbann_comm * comm</div><div class="ttdoc">LBANN communicator. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00080">lbann_optimizer.hpp:80</a></div></div>
 <div class="ttc" id="classlbann_1_1optimizer_html_a3e32c0a85307f54f8a6845082cbc14b7"><div class="ttname"><a href="classlbann_1_1optimizer.html#a3e32c0a85307f54f8a6845082cbc14b7">lbann::optimizer::m_name</a></div><div class="ttdeci">const std::string m_name</div><div class="ttdoc">Optimizer name. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00094">lbann_optimizer.hpp:94</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -504,7 +505,7 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a5ab3dd1ebbfbbed8e461742f80aa32e0"></a>
+<a class="anchor" id="a8c2569a8fcf0ee969517067b81896c44"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -512,7 +513,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* lbann::optimizer::comm</td>
+          <td class="memname"><a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* lbann::optimizer::m_comm</td>
         </tr>
       </table>
   </td>
@@ -682,7 +683,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1optimizer.html">optimizer</a></li>
-    <li class="footer">Generated on Sun Jun 11 2017 16:46:47 for LBANN by
+    <li class="footer">Generated on Sun Jun 11 2017 17:59:15 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

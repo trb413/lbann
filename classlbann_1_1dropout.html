@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-59-g5b5510f-ci241767763</span>
+   &#160;<span id="projectnumber">v0.93-rc0-60-gfb43710-ci241780821</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -349,10 +349,10 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *acts = <a class="code" href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">m_layer</a>-&gt;<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">const</span> Int local_height = acts-&gt;LocalHeight();</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">const</span> Int local_width = acts-&gt;LocalWidth();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">const</span> Int global_height = acts-&gt;Height();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#ifdef LBANN_PROCDET_DROPOUT</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor"></span>  <a class="code" href="namespacelbann.html#a6add4d3337110d567e7b398a262fd010">bernoulli_fill_procdet</a>(*<a class="code" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a>, acts-&gt;Height(), acts-&gt;Width(),</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#ifdef LBANN_PROCDET_DROPOUT</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor"></span>  <span class="keyword">const</span> Int global_height = acts-&gt;Height();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="namespacelbann.html#a6add4d3337110d567e7b398a262fd010">bernoulli_fill_procdet</a>(*<a class="code" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a>, acts-&gt;Height(), acts-&gt;Width(),</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                         <a class="code" href="classlbann_1_1dropout.html#a2b4540ea622609b518d691d68e6db92c">m_keep_prob</a>);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  *<a class="code" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a> *= 1.0 / <a class="code" href="classlbann_1_1dropout.html#a2b4540ea622609b518d691d68e6db92c">m_keep_prob</a>;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">if</span> (acts-&gt;GlobalRow(local_height - 1) == global_height - 1) {</div>
@@ -580,7 +580,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1dropout.html">dropout</a></li>
-    <li class="footer">Generated on Sun Jun 11 2017 16:46:47 for LBANN by
+    <li class="footer">Generated on Sun Jun 11 2017 17:59:15 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

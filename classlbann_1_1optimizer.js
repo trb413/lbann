@@ -8,7 +8,7 @@ var classlbann_1_1optimizer =
     [ "set_learning_rate", "classlbann_1_1optimizer.html#a54ba552b1691daeacdbb2d11f8f705af", null ],
     [ "setup", "classlbann_1_1optimizer.html#a6eb6169ed46ad602339c7b0bc2633c37", null ],
     [ "update", "classlbann_1_1optimizer.html#a15f0487c474d261086723422a8bad921", null ],
-    [ "comm", "classlbann_1_1optimizer.html#a5ab3dd1ebbfbbed8e461742f80aa32e0", null ],
+    [ "m_comm", "classlbann_1_1optimizer.html#a8c2569a8fcf0ee969517067b81896c44", null ],
     [ "m_height", "classlbann_1_1optimizer.html#ac98dc3c120b84fd48ef84105a6e1ca6c", null ],
     [ "m_learning_rate", "classlbann_1_1optimizer.html#ad393dcdcb82b44510c586ed5ec46d4dd", null ],
     [ "m_matrix_format", "classlbann_1_1optimizer.html#a55f17cd98721e80b6a1999b5a71adf4d", null ],

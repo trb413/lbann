@@ -8,7 +8,7 @@ var searchData=
   ['activation_5ftype',['activation_type',['../namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76',1,'lbann']]],
   ['activationtype',['ActivationType',['../classlbann_1_1TrainingParams.html#a843d078db900a23792944c0b4842bfa8',1,'lbann::TrainingParams']]],
   ['adagrad',['adagrad',['../classlbann_1_1adagrad.html',1,'lbann']]],
-  ['adagrad',['adagrad',['../classlbann_1_1adagrad.html#a5fd780af1ac4394dd82a1fa885fc935b',1,'lbann::adagrad']]],
+  ['adagrad',['adagrad',['../classlbann_1_1adagrad.html#a26d826ba89053481a26573a592ff2f8a',1,'lbann::adagrad']]],
   ['adagrad_5ffactory',['adagrad_factory',['../classlbann_1_1adagrad__factory.html',1,'lbann']]],
   ['adagrad_5ffactory',['adagrad_factory',['../classlbann_1_1adagrad__factory.html#ae16b10f82068610c876f9f2f4513a1fe',1,'lbann::adagrad_factory']]],
   ['adam',['adam',['../classlbann_1_1adam.html',1,'lbann']]],
