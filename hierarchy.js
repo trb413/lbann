@@ -62,7 +62,7 @@ var hierarchy =
     [ "lbann::image_utils", "classlbann_1_1image__utils.html", null ],
     [ "lbann::Layer", "classlbann_1_1Layer.html", [
       [ "lbann::convolutional_layer", "classlbann_1_1convolutional__layer.html", null ],
-      [ "lbann::FullyConnectedLayer< DATA_DIST >", "classlbann_1_1FullyConnectedLayer.html", null ],
+      [ "lbann::fully_connected_layer< DATA_DIST >", "classlbann_1_1fully__connected__layer.html", null ],
       [ "lbann::io_layer", "classlbann_1_1io__layer.html", [
         [ "lbann::input_layer", "classlbann_1_1input__layer.html", [
           [ "lbann::input_layer_distributed_minibatch", "classlbann_1_1input__layer__distributed__minibatch.html", null ],

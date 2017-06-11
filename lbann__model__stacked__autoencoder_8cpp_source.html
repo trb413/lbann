@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-55-g0921732-ci241730931</span>
+   &#160;<span id="projectnumber">v0.93-rc0-56-gf64849a-ci241731164</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('lbann__model__stacked__autoencoder_8cp
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">if</span>(layer_name == <span class="stringliteral">&quot;FullyConnected&quot;</span>) {</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <a class="code" href="classlbann_1_1optimizer.html">optimizer</a> *new_optimizer = create_optimizer();</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="comment">/*Layer *new_layer</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">        = layer_fac-&gt;create_layer&lt;FullyConnectedLayer&lt;data_layout::MODEL_PARALLEL&gt;&gt;(&quot;FullyConnected&quot;,data_dist,cur_size,</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">        = layer_fac-&gt;create_layer&lt;fully_connected_layer&lt;data_layout::MODEL_PARALLEL&gt;&gt;(&quot;FullyConnected&quot;,data_dist,cur_size,</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">            prev_layer_dim,layer_dim,</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">            m_mini_batch_size, activation, init,</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">            comm,new_optimizer, regularizers);</span></div>
@@ -184,7 +184,7 @@ $(document).ready(function(){initNavTree('lbann__model__stacked__autoencoder_8cp
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="comment">// create output/mirror layer</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <a class="code" href="classlbann_1_1optimizer.html">optimizer</a> *mirror_optimizer = create_optimizer();</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <span class="comment">/*Layer *mirror_layer</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">        = layer_fac-&gt;create_layer&lt;FullyConnectedLayer&lt;data_layout::MODEL_PARALLEL&gt;&gt;(&quot;FullyConnected&quot;,data_dist,cur_size+1,</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">        = layer_fac-&gt;create_layer&lt;fully_connected_layer&lt;data_layout::MODEL_PARALLEL&gt;&gt;(&quot;FullyConnected&quot;,data_dist,cur_size+1,</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">            layer_dim,prev_layer_dim,</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">            m_mini_batch_size,activation, init,</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">            comm,mirror_optimizer,regularizers);</span></div>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('lbann__model__stacked__autoencoder_8cp
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">if</span>(layer_name == <span class="stringliteral">&quot;FullyConnected&quot;</span>) {</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <a class="code" href="classlbann_1_1optimizer.html">optimizer</a> *hidden_optimizer = create_optimizer();</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <span class="comment">/*Layer *hidden_layer</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">        = layer_fac-&gt;create_layer&lt;FullyConnectedLayer&lt;data_layout::MODEL_PARALLEL&gt;&gt;(&quot;FullyConnected&quot;,data_dist,cur_size,</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">        = layer_fac-&gt;create_layer&lt;fully_connected_layer&lt;data_layout::MODEL_PARALLEL&gt;&gt;(&quot;FullyConnected&quot;,data_dist,cur_size,</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">            prev_layer_dim,layer_dim,</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">            m_mini_batch_size, activation, init,</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">            comm,hidden_optimizer, regularizers);</span></div>
@@ -203,7 +203,7 @@ $(document).ready(function(){initNavTree('lbann__model__stacked__autoencoder_8cp
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <span class="comment">// create mirror layer</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <a class="code" href="classlbann_1_1optimizer.html">optimizer</a> *mirror_hidden_optimizer = create_optimizer();</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="comment">/*Layer *mirror_hidden_layer</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">        = layer_fac-&gt;create_layer&lt;FullyConnectedLayer&lt;data_layout::MODEL_PARALLEL&gt;&gt;(&quot;FullyConnected&quot;,data_dist,cur_size+1,</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">        = layer_fac-&gt;create_layer&lt;fully_connected_layer&lt;data_layout::MODEL_PARALLEL&gt;&gt;(&quot;FullyConnected&quot;,data_dist,cur_size+1,</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">            layer_dim,prev_layer_dim,</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">            m_mini_batch_size,activation, init,</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">            comm,mirror_hidden_optimizer,regularizers);</span></div>
@@ -401,7 +401,7 @@ $(document).ready(function(){initNavTree('lbann__model__stacked__autoencoder_8cp
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_e8e3d10a664feac46c9de523d11ac34a.html">models</a></li><li class="navelem"><a class="el" href="lbann__model__stacked__autoencoder_8cpp.html">lbann_model_stacked_autoencoder.cpp</a></li>
-    <li class="footer">Generated on Sun Jun 11 2017 13:44:33 for LBANN by
+    <li class="footer">Generated on Sun Jun 11 2017 14:03:16 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

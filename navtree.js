@@ -46,7 +46,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classlbann_1_1batch__normalization.html#a73ed285344613b713a29e97a9bc18d69",
+"classlbann_1_1cifar10__reader.html#aafc4c8b7520300773178d6afdf3eac25",
 "classlbann_1_1generic__data__reader.html#a8fb938464248f99f2b306218fa671d5a",
 "classlbann_1_1lbann__callback.html#a1a14e9228f1606d3492b6011d56937f5",
 "classlbann_1_1lbann__comm.html#a61e8479f25d209be238f1b61115f7a0d",

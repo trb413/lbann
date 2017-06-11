@@ -55,7 +55,7 @@ var namespacelbann =
     [ "smooth_reLU_layer", "classlbann_1_1smooth__reLU__layer.html", "classlbann_1_1smooth__reLU__layer" ],
     [ "ELU_layer", "classlbann_1_1ELU__layer.html", "classlbann_1_1ELU__layer" ],
     [ "convolutional_layer", "classlbann_1_1convolutional__layer.html", "classlbann_1_1convolutional__layer" ],
-    [ "FullyConnectedLayer", "classlbann_1_1FullyConnectedLayer.html", "classlbann_1_1FullyConnectedLayer" ],
+    [ "fully_connected_layer", "classlbann_1_1fully__connected__layer.html", "classlbann_1_1fully__connected__layer" ],
     [ "local_response_normalization_layer", "classlbann_1_1local__response__normalization__layer.html", "classlbann_1_1local__response__normalization__layer" ],
     [ "pooling_layer", "classlbann_1_1pooling__layer.html", "classlbann_1_1pooling__layer" ],
     [ "reconstruction_layer", "classlbann_1_1reconstruction__layer.html", "classlbann_1_1reconstruction__layer" ],

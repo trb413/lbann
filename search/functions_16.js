@@ -18,7 +18,7 @@ var searchData=
   ['_7edeep_5fneural_5fnetwork',['~deep_neural_network',['../classlbann_1_1deep__neural__network.html#a4183ad0bac95d0e36f3e137c82530775',1,'lbann::deep_neural_network']]],
   ['_7edistributed_5fminibatch_5fparallel_5fio',['~distributed_minibatch_parallel_io',['../classlbann_1_1distributed__minibatch__parallel__io.html#ae2b06292c03eaefd02f51c46b48f07c3',1,'lbann::distributed_minibatch_parallel_io']]],
   ['_7edropout',['~dropout',['../classlbann_1_1dropout.html#abcec1bc033a38501bb60797ac1b97dbf',1,'lbann::dropout']]],
-  ['_7efullyconnectedlayer',['~FullyConnectedLayer',['../classlbann_1_1FullyConnectedLayer.html#a594bcf750971c167fe6046df44ba382c',1,'lbann::FullyConnectedLayer']]],
+  ['_7efully_5fconnected_5flayer',['~fully_connected_layer',['../classlbann_1_1fully__connected__layer.html#a934a5c58c8fa1f6e1f82872a7ee39710',1,'lbann::fully_connected_layer']]],
   ['_7egeneric_5fdata_5freader',['~generic_data_reader',['../classlbann_1_1generic__data__reader.html#ad213a3d84ebcf8779a26e37bceb0b2a8',1,'lbann::generic_data_reader']]],
   ['_7egreedy_5flayerwise_5fautoencoder',['~greedy_layerwise_autoencoder',['../classlbann_1_1greedy__layerwise__autoencoder.html#a6adbff4f4d116927a4b6613fcac66d41',1,'lbann::greedy_layerwise_autoencoder']]],
   ['_7ehypergradient_5fadam',['~hypergradient_adam',['../classlbann_1_1hypergradient__adam.html#af88b1143c16ac3fb640844112d9a67ad',1,'lbann::hypergradient_adam']]],
