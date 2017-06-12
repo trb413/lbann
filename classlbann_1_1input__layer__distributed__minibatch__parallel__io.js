@@ -1,15 +1,15 @@
 var classlbann_1_1input__layer__distributed__minibatch__parallel__io =
 [
-    [ "input_layer_distributed_minibatch_parallel_io", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#adc78a66116a38bf3f6e1354bf36f6cab", null ],
-    [ "fetch_from_data_reader", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a63ac1e19f5ef461c23496a5169eaa3f4", null ],
-    [ "fp_linearity", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#ac420d779a0f496b55039437076c46ffa", null ],
-    [ "get_dist_mat", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a5a7e02acef892a8c5b6ec952668c3a48", null ],
-    [ "get_execution_mode", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a1385cf8dbe46c3acda036b9c006c3520", null ],
-    [ "get_local_mat", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a539e8fff8d2d4a93f3a3d8509260b591", null ],
-    [ "preprocess_data_samples", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#ad6fee7878bdf7b3f3f0c43ff4e0e0b20", null ],
-    [ "setup", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a9d6dd762450b834f5c10d1abfdb54bff", null ],
-    [ "update", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a13e1d7596b4bd8c1f166f74b5d55d99f", null ],
-    [ "update_data_reader", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a0dbc4b7e701821729d729463ef331679", null ],
-    [ "X_local", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#aa48304dcf7c0bf048a5339b3bcdc9c4e", null ],
-    [ "Xs", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a289dc5b3e5bd626264bed3e155f60c6a", null ]
+    [ "input_layer_distributed_minibatch_parallel_io", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a62f850caffbf6b8f03d9099cfbf810f4", null ],
+    [ "fetch_from_data_reader", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a42be9702e1d17f43451555380a4adda2", null ],
+    [ "fp_linearity", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a5d88b43ddfc439ce0697249ef9383d8e", null ],
+    [ "get_dist_mat", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a48fecbb8db3ccba0bbffa7ce308ddf7e", null ],
+    [ "get_execution_mode", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#acceb803219ec5b4c6f075742b36fbe22", null ],
+    [ "get_local_mat", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a3da59f7cc784af14b0a3ba2a156abc6a", null ],
+    [ "preprocess_data_samples", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#ab467c1e15535916dc52937acc9edc4d5", null ],
+    [ "setup", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a3b9032ba9f1fbea552af0c1ebb267d67", null ],
+    [ "update", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#acf451a2ff80cc92ba7c9a4e4c95f3cdc", null ],
+    [ "update_data_reader", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a040093e6e76a94d045ab7141ea0c2250", null ],
+    [ "X_local", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a7958ef804d42c3732362092c5b60d9c0", null ],
+    [ "Xs", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#aaf3e071aff0805f7692fba859b3baa55", null ]
 ];
