@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-70-gd320e5a-ci242115943</span>
+   &#160;<span id="projectnumber">v0.93-rc0-72-g3cf7214-ci242139205</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -314,7 +314,7 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                                {</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  lbann_comm *<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a> = m-&gt;get_comm();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">if</span> (comm-&gt;am_model_master()) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; metric : m-&gt;metrics) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; metric : m-&gt;m_metrics) {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordtype">double</span> train_score = metric-&gt;report_metric(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      <span class="keywordtype">double</span> validate_score = metric-&gt;report_metric(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0">execution_mode::validation</a>);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">if</span> (comm-&gt;am_world_master()) {</div>
@@ -326,8 +326,8 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; train_scores.size(); ++i) {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;          std::cout &lt;&lt; <span class="stringliteral">&quot;Model &quot;</span> &lt;&lt; i;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;          std::cout &lt;&lt; <span class="stringliteral">&quot; @&quot;</span> &lt;&lt; m-&gt;get_cur_step() &lt;&lt; <span class="stringliteral">&quot; steps&quot;</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;          std::cout &lt;&lt; <span class="stringliteral">&quot; Training &quot;</span> &lt;&lt; <a class="code" href="lbann__base_8hpp.html#adeeaddd10bd31df0cae7cb0fcae45d5c">_to_string</a>(metric-&gt;type) &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; train_scores[i] &lt;&lt; <a class="code" href="namespacelbann_1_1metrics.html#aaa0e50becab147be6623e1e0feb27b81">_disp_unit</a>(metric-&gt;type);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;          std::cout &lt;&lt; <span class="stringliteral">&quot; @&quot;</span> &lt;&lt; m-&gt;get_cur_validation_step() &lt;&lt; <span class="stringliteral">&quot; validation steps Validation &quot;</span> &lt;&lt; <a class="code" href="lbann__base_8hpp.html#adeeaddd10bd31df0cae7cb0fcae45d5c">_to_string</a>(metric-&gt;type) &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; validate_scores[i] &lt;&lt; <a class="code" href="namespacelbann_1_1metrics.html#aaa0e50becab147be6623e1e0feb27b81">_disp_unit</a>(metric-&gt;type);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;          std::cout &lt;&lt; <span class="stringliteral">&quot; Training &quot;</span> &lt;&lt; <a class="code" href="lbann__base_8hpp.html#adeeaddd10bd31df0cae7cb0fcae45d5c">_to_string</a>(metric-&gt;type) &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; train_scores[i] &lt;&lt; <a class="code" href="namespacelbann_1_1metrics.html#aaa0e50becab147be6623e1e0feb27b81">metrics::_disp_unit</a>(metric-&gt;type);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;          std::cout &lt;&lt; <span class="stringliteral">&quot; @&quot;</span> &lt;&lt; m-&gt;get_cur_validation_step() &lt;&lt; <span class="stringliteral">&quot; validation steps Validation &quot;</span> &lt;&lt; <a class="code" href="lbann__base_8hpp.html#adeeaddd10bd31df0cae7cb0fcae45d5c">_to_string</a>(metric-&gt;type) &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; validate_scores[i] &lt;&lt; <a class="code" href="namespacelbann_1_1metrics.html#aaa0e50becab147be6623e1e0feb27b81">metrics::_disp_unit</a>(metric-&gt;type);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;          std::cout &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      } <span class="keywordflow">else</span> {</div>
@@ -387,14 +387,14 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                               {</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  lbann_comm *<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a> = m-&gt;get_comm();</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">if</span> (comm-&gt;am_model_master()) {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; metric : m-&gt;metrics) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; metric : m-&gt;m_metrics) {</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keywordtype">double</span> test_score = metric-&gt;report_metric(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aae2b1fca515949e5d54fb22b8ed95575">execution_mode::testing</a>);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      <span class="keywordflow">if</span> (comm-&gt;am_world_master()) {</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        std::vector&lt;double&gt; test_scores(comm-&gt;get_num_models());</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        comm-&gt;intermodel_gather(test_score, test_scores);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; test_scores.size(); ++i) {</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;          std::cout &lt;&lt; <span class="stringliteral">&quot;Model &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; @&quot;</span> &lt;&lt; m-&gt;get_cur_testing_step() &lt;&lt; <span class="stringliteral">&quot; testing steps external validation &quot;</span> &lt;&lt; <a class="code" href="lbann__base_8hpp.html#adeeaddd10bd31df0cae7cb0fcae45d5c">_to_string</a>(metric-&gt;type) &lt;&lt; <span class="stringliteral">&quot;: &quot;</span>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;          std::cout &lt;&lt; test_scores[i] &lt;&lt; <a class="code" href="namespacelbann_1_1metrics.html#aaa0e50becab147be6623e1e0feb27b81">_disp_unit</a>(metric-&gt;type) &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;          std::cout &lt;&lt; test_scores[i] &lt;&lt; <a class="code" href="namespacelbann_1_1metrics.html#aaa0e50becab147be6623e1e0feb27b81">metrics::_disp_unit</a>(metric-&gt;type) &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        comm-&gt;intermodel_gather(test_score, comm-&gt;get_intermodel_master());</div>
@@ -475,7 +475,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__callback__print.html">lbann_callback_print</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 18:24:14 for LBANN by
+    <li class="footer">Generated on Mon Jun 12 2017 19:27:29 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-70-gd320e5a-ci242115943</span>
+   &#160;<span id="projectnumber">v0.93-rc0-72-g3cf7214-ci242139205</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -164,13 +164,13 @@ $(document).ready(function(){initNavTree('lbann__callback__ltfb_8cpp_source.html
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="comment">// Assume there is a categorical accuracy metric.</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">double</span> local_acc = 0;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">double</span> remote_acc = 0;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; metric : m-&gt;<a class="code" href="classlbann_1_1model.html#aebbdbc0b8c868cbf2413971de2832c26">metrics</a>) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; metric : m-&gt;<a class="code" href="classlbann_1_1model.html#a2fd35b39d7018ca4f0f8e180b18a2b63">m_metrics</a>) {</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> (metric-&gt;type == <a class="code" href="namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a576ea1a64c846beca09a6346ba791d6c">metrics::metric_type::categorical_accuracy</a>) {</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      local_acc = metric-&gt;report_metric(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0">execution_mode::validation</a>);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; metric : <a class="code" href="classlbann_1_1lbann__callback__ltfb.html#a6f4e831f8b62bd2638cf0b2f665f0f62">m_remote_model</a>-&gt;<a class="code" href="classlbann_1_1model.html#aebbdbc0b8c868cbf2413971de2832c26">metrics</a>) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; metric : <a class="code" href="classlbann_1_1lbann__callback__ltfb.html#a6f4e831f8b62bd2638cf0b2f665f0f62">m_remote_model</a>-&gt;<a class="code" href="classlbann_1_1model.html#a2fd35b39d7018ca4f0f8e180b18a2b63">m_metrics</a>) {</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">if</span> (metric-&gt;type == <a class="code" href="namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a576ea1a64c846beca09a6346ba791d6c">metrics::metric_type::categorical_accuracy</a>) {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      remote_acc = metric-&gt;report_metric(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0">execution_mode::validation</a>);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">break</span>;</div>
@@ -254,7 +254,6 @@ $(document).ready(function(){initNavTree('lbann__callback__ltfb_8cpp_source.html
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}  <span class="comment">// namespace lbann</span></div>
-<div class="ttc" id="classlbann_1_1model_html_aebbdbc0b8c868cbf2413971de2832c26"><div class="ttname"><a href="classlbann_1_1model.html#aebbdbc0b8c868cbf2413971de2832c26">lbann::model::metrics</a></div><div class="ttdeci">std::vector&lt; metrics::metric * &gt; metrics</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00149">lbann_model.hpp:149</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__ltfb_html_a8f6fe8d0240fa1aca46665114f3eee0a"><div class="ttname"><a href="classlbann_1_1lbann__callback__ltfb.html#a8f6fe8d0240fa1aca46665114f3eee0a">lbann::lbann_callback_ltfb::setup</a></div><div class="ttdeci">void setup(model *m)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__ltfb_8cpp_source.html#l00044">lbann_callback_ltfb.cpp:44</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0"><div class="ttname"><a href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0">execution_mode::validation</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_afad88fb587c304caea8a36ee5a5c1df8"><div class="ttname"><a href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a></div><div class="ttdeci">El::ElementalMatrix&lt; DataType &gt; ElMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00051">lbann_base.hpp:51</a></div></div>
@@ -280,6 +279,7 @@ $(document).ready(function(){initNavTree('lbann__callback__ltfb_8cpp_source.html
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a06a31f9df1860358ef0ef68d9e165cac"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac">lbann::lbann_comm::am_model_master</a></div><div class="ttdeci">bool am_model_master() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00086">lbann_comm.hpp:86</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_ad67668baa49b8713f3c74816d1aeb175"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#ad67668baa49b8713f3c74816d1aeb175">lbann::lbann_comm::get_procs_per_model</a></div><div class="ttdeci">int get_procs_per_model() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00102">lbann_comm.hpp:102</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__ltfb_html_a6849f605ca2750c2dad4af7c77eaf1f9"><div class="ttname"><a href="classlbann_1_1lbann__callback__ltfb.html#a6849f605ca2750c2dad4af7c77eaf1f9">lbann::lbann_callback_ltfb::replace_with_remote</a></div><div class="ttdeci">void replace_with_remote(model *m)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__ltfb_8cpp_source.html#l00151">lbann_callback_ltfb.cpp:151</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_a2fd35b39d7018ca4f0f8e180b18a2b63"><div class="ttname"><a href="classlbann_1_1model.html#a2fd35b39d7018ca4f0f8e180b18a2b63">lbann::model::m_metrics</a></div><div class="ttdeci">std::vector&lt; metrics::metric * &gt; m_metrics</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00149">lbann_model.hpp:149</a></div></div>
 <div class="ttc" id="datatype_8hpp_html_a91ad9478d81a7aaf2593e8d9c3d06a14"><div class="ttname"><a href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00074">datatype.hpp:74</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback_html"><div class="ttname"><a href="classlbann_1_1lbann__callback.html">lbann::lbann_callback</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback_8hpp_source.html#l00046">lbann_callback.hpp:46</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__summary_html"><div class="ttname"><a href="classlbann_1_1lbann__summary.html">lbann::lbann_summary</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__summary_8hpp_source.html#l00188">lbann_summary.hpp:188</a></div></div>
@@ -296,7 +296,7 @@ $(document).ready(function(){initNavTree('lbann__callback__ltfb_8cpp_source.html
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_2cd67b1c9ead8c95a9b97b48b5142b81.html">callbacks</a></li><li class="navelem"><a class="el" href="lbann__callback__ltfb_8cpp.html">lbann_callback_ltfb.cpp</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 18:24:13 for LBANN by
+    <li class="footer">Generated on Mon Jun 12 2017 19:27:27 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

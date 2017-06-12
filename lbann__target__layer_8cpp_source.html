@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-70-gd320e5a-ci242115943</span>
+   &#160;<span id="projectnumber">v0.93-rc0-72-g3cf7214-ci242139205</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -139,11 +139,11 @@ $(document).ready(function(){initNavTree('lbann__target__layer_8cpp_source.html'
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classlbann_1_1target__layer.html#a1c872b29d3d81ed04e34dcaf557beb2b">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1target__layer.html#a1c872b29d3d81ed04e34dcaf557beb2b">lbann::target_layer::setup</a>(<span class="keywordtype">int</span> num_prev_neurons) {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordflow">if</span>(m_neural_network_model-&gt;obj_fn == <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordflow">if</span>(m_neural_network_model-&gt;m_obj_fn == <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(<span class="stringliteral">&quot;target layer has invalid objective function pointer&quot;</span>);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  m_neural_network_model-&gt;obj_fn-&gt;setup(m_num_neurons, m_mini_batch_size);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; m : m_neural_network_model-&gt;metrics) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  m_neural_network_model-&gt;m_obj_fn-&gt;setup(m_num_neurons, m_mini_batch_size);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; m : m_neural_network_model-&gt;m_metrics) {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    m-&gt;setup(m_num_neurons, m_mini_batch_size);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    m-&gt;m_neural_network_model = m_neural_network_model;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
@@ -168,8 +168,8 @@ $(document).ready(function(){initNavTree('lbann__target__layer_8cpp_source.html'
 <div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classlbann_1_1target__layer.html#a73e528855aae48f2346add3003b3c1a0">   79</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1target__layer.html#a73e528855aae48f2346add3003b3c1a0">lbann::target_layer::fp_set_std_matrix_view</a>() {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  int64_t cur_mini_batch_size = m_neural_network_model-&gt;get_current_mini_batch_size();</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#a76d3d6130f2518257debaec5ea921171">Layer::fp_set_std_matrix_view</a>();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  m_neural_network_model-&gt;obj_fn-&gt;fp_set_std_matrix_view(cur_mini_batch_size);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; m : m_neural_network_model-&gt;metrics) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  m_neural_network_model-&gt;m_obj_fn-&gt;fp_set_std_matrix_view(cur_mini_batch_size);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; m : m_neural_network_model-&gt;m_metrics) {</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    m-&gt;fp_set_std_matrix_view(cur_mini_batch_size);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
@@ -178,16 +178,16 @@ $(document).ready(function(){initNavTree('lbann__target__layer_8cpp_source.html'
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#aff82d98a534f0dfc3b0cb200a9aff90a">Layer::summarize</a>(summarizer, step);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  std::string tag = <span class="stringliteral">&quot;layer&quot;</span> + std::to_string(static_cast&lt;long long&gt;(m_index))</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                    + <span class="stringliteral">&quot;/CrossEntropyCost&quot;</span>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  summarizer.<a class="code" href="classlbann_1_1lbann__summary.html#aacd54e77d45bd1bd56df3a4d71c01ce8">reduce_scalar</a>(tag, m_neural_network_model-&gt;obj_fn-&gt;report_aggregate_avg_obj_fn(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>), step);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  summarizer.<a class="code" href="classlbann_1_1lbann__summary.html#aacd54e77d45bd1bd56df3a4d71c01ce8">reduce_scalar</a>(tag, m_neural_network_model-&gt;m_obj_fn-&gt;report_aggregate_avg_obj_fn(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>), step);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
 <div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classlbann_1_1target__layer.html#a28a16fe1bf23e12bf2348538d47d08d6">   95</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1target__layer.html#a28a16fe1bf23e12bf2348538d47d08d6">lbann::target_layer::epoch_print</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">double</span> obj_cost = m_neural_network_model-&gt;obj_fn-&gt;report_aggregate_avg_obj_fn(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">double</span> obj_cost = m_neural_network_model-&gt;m_obj_fn-&gt;report_aggregate_avg_obj_fn(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">if</span> (m_comm-&gt;am_world_master()) {</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    std::vector&lt;double&gt; avg_obj_fn_costs(m_comm-&gt;get_num_models());</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    m_comm-&gt;intermodel_gather(obj_cost, avg_obj_fn_costs);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; avg_obj_fn_costs.size(); ++i) {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;Model &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; average &quot;</span> &lt;&lt; <a class="code" href="lbann__base_8hpp.html#adeeaddd10bd31df0cae7cb0fcae45d5c">_to_string</a>(m_neural_network_model-&gt;obj_fn-&gt;type) &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; avg_obj_fn_costs[i] &lt;&lt;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;Model &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; average &quot;</span> &lt;&lt; <a class="code" href="lbann__base_8hpp.html#adeeaddd10bd31df0cae7cb0fcae45d5c">_to_string</a>(m_neural_network_model-&gt;m_obj_fn-&gt;type) &lt;&lt; <span class="stringliteral">&quot;: &quot;</span> &lt;&lt; avg_obj_fn_costs[i] &lt;&lt;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                std::endl;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  } <span class="keywordflow">else</span> {</div>
@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('lbann__target__layer_8cpp_source.html'
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
 <div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classlbann_1_1target__layer.html#afbd049308fbea4fd23a105633586317c">  114</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1target__layer.html#afbd049308fbea4fd23a105633586317c">lbann::target_layer::resetCost</a>() {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  m_neural_network_model-&gt;obj_fn-&gt;reset_obj_fn();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  m_neural_network_model-&gt;m_obj_fn-&gt;reset_obj_fn();</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
 <div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classlbann_1_1target__layer.html#a34a2da13b32938e52f7bfd8b3e500589">  118</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classlbann_1_1target__layer.html#a34a2da13b32938e52f7bfd8b3e500589">lbann::target_layer::saveToCheckpoint</a>(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keywordtype">char</span> *filename, uint64_t *bytes) {</div>
@@ -293,7 +293,7 @@ $(document).ready(function(){initNavTree('lbann__target__layer_8cpp_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_faacdbae24c4b7c4a8fbaf54f29a6b8e.html">layers</a></li><li class="navelem"><a class="el" href="lbann__target__layer_8cpp.html">lbann_target_layer.cpp</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 18:24:13 for LBANN by
+    <li class="footer">Generated on Mon Jun 12 2017 19:27:28 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

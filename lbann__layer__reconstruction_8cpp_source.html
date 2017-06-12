@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-70-gd320e5a-ci242115943</span>
+   &#160;<span id="projectnumber">v0.93-rc0-72-g3cf7214-ci242139205</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -191,7 +191,7 @@ $(document).ready(function(){initNavTree('lbann__layer__reconstruction_8cpp_sour
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  View(original_layer_act_v,*(<a class="code" href="lbann__layer__reconstruction_8cpp.html#a10ab2a6119489f64f9e5f489981bd64f">m_original_layer</a>-&gt;m_activations),IR(0,<a class="code" href="lbann__layer__reconstruction_8cpp.html#a10ab2a6119489f64f9e5f489981bd64f">m_original_layer</a>-&gt;m_activations-&gt;Height()),IR(0,curr_mini_batch_size));</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="comment">// Compute cost will be sum of squared error of fp_input (linearly transformed to m_activations)</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="comment">// and original layer fp_input/original input</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> avg_error = m_neural_network_model-&gt;obj_fn-&gt;compute_obj_fn(*m_activations_v, original_layer_act_v);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> avg_error = m_neural_network_model-&gt;m_obj_fn-&gt;compute_obj_fn(*m_activations_v, original_layer_act_v);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  aggregate_cost += avg_error;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  num_forwardprop_steps++;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('lbann__layer__reconstruction_8cpp_sour
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  View(original_layer_act_v,*(<a class="code" href="lbann__layer__reconstruction_8cpp.html#a10ab2a6119489f64f9e5f489981bd64f">m_original_layer</a>-&gt;m_activations),IR(0,<a class="code" href="lbann__layer__reconstruction_8cpp.html#a10ab2a6119489f64f9e5f489981bd64f">m_original_layer</a>-&gt;m_activations-&gt;Height()),IR(0,curr_mini_batch_size));</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="comment">// Compute error signal</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  m_neural_network_model-&gt;obj_fn-&gt;compute_obj_fn_derivative(m_prev_layer_type, *m_activations_v, original_layer_act_v,*m_prev_error_signal_v);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  m_neural_network_model-&gt;m_obj_fn-&gt;compute_obj_fn_derivative(m_prev_layer_type, *m_activations_v, original_layer_act_v,*m_prev_error_signal_v);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="comment">//m_prev_error_signal_v is the error computed by objective function</span></div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="comment">//is really not previous, but computed in this layer</span></div>
@@ -326,7 +326,7 @@ $(document).ready(function(){initNavTree('lbann__layer__reconstruction_8cpp_sour
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_faacdbae24c4b7c4a8fbaf54f29a6b8e.html">layers</a></li><li class="navelem"><a class="el" href="lbann__layer__reconstruction_8cpp.html">lbann_layer_reconstruction.cpp</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 18:24:13 for LBANN by
+    <li class="footer">Generated on Mon Jun 12 2017 19:27:28 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

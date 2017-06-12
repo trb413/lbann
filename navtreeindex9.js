@@ -1,6 +1,5 @@
 var NAVTREEINDEX9 =
 {
-"lbann__data__reader__nci__regression_8hpp.html":[4,0,0,0,0,0,0,0,0,1,17],
 "lbann__data__reader__nci__regression_8hpp_source.html":[4,0,0,0,0,0,0,0,0,1,17],
 "lbann__data__reader__synthetic_8cpp.html":[4,0,0,0,0,0,0,1,1,17],
 "lbann__data__reader__synthetic_8cpp_source.html":[4,0,0,0,0,0,0,1,1,17],
@@ -249,5 +248,6 @@ var NAVTREEINDEX9 =
 "lbann__optimizer__rmsprop_8cpp.html":[4,0,0,0,0,0,0,1,7,4],
 "lbann__optimizer__rmsprop_8cpp_source.html":[4,0,0,0,0,0,0,1,7,4],
 "lbann__optimizer__rmsprop_8hpp.html":[4,0,0,0,0,0,0,0,0,7,4],
-"lbann__optimizer__rmsprop_8hpp_source.html":[4,0,0,0,0,0,0,0,0,7,4]
+"lbann__optimizer__rmsprop_8hpp_source.html":[4,0,0,0,0,0,0,0,0,7,4],
+"lbann__optimizer__sgd_8cpp.html":[4,0,0,0,0,0,0,1,7,5]
 };

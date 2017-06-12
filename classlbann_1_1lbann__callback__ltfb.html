@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-70-gd320e5a-ci242115943</span>
+   &#160;<span id="projectnumber">v0.93-rc0-72-g3cf7214-ci242139205</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -424,13 +424,13 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="comment">// Assume there is a categorical accuracy metric.</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">double</span> local_acc = 0;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">double</span> remote_acc = 0;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; metric : m-&gt;metrics) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; metric : m-&gt;m_metrics) {</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> (metric-&gt;type == <a class="code" href="namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a576ea1a64c846beca09a6346ba791d6c">metrics::metric_type::categorical_accuracy</a>) {</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      local_acc = metric-&gt;report_metric(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0">execution_mode::validation</a>);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; metric : <a class="code" href="classlbann_1_1lbann__callback__ltfb.html#a6f4e831f8b62bd2638cf0b2f665f0f62">m_remote_model</a>-&gt;<a class="code" href="classlbann_1_1model.html#aebbdbc0b8c868cbf2413971de2832c26">metrics</a>) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; metric : <a class="code" href="classlbann_1_1lbann__callback__ltfb.html#a6f4e831f8b62bd2638cf0b2f665f0f62">m_remote_model</a>-&gt;<a class="code" href="classlbann_1_1model.html#a2fd35b39d7018ca4f0f8e180b18a2b63">m_metrics</a>) {</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">if</span> (metric-&gt;type == <a class="code" href="namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a576ea1a64c846beca09a6346ba791d6c">metrics::metric_type::categorical_accuracy</a>) {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      remote_acc = metric-&gt;report_metric(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0">execution_mode::validation</a>);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">break</span>;</div>
@@ -445,7 +445,6 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="classlbann_1_1lbann__callback__ltfb.html#a6849f605ca2750c2dad4af7c77eaf1f9">replace_with_remote</a>(m);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1model_html_aebbdbc0b8c868cbf2413971de2832c26"><div class="ttname"><a href="classlbann_1_1model.html#aebbdbc0b8c868cbf2413971de2832c26">lbann::model::metrics</a></div><div class="ttdeci">std::vector&lt; metrics::metric * &gt; metrics</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00149">lbann_model.hpp:149</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0"><div class="ttname"><a href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0">execution_mode::validation</a></div></div>
 <div class="ttc" id="namespacelbann_1_1metrics_html_a5bb88e5c5dd16c8fce1d3c8abb00aeb1a576ea1a64c846beca09a6346ba791d6c"><div class="ttname"><a href="namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a576ea1a64c846beca09a6346ba791d6c">lbann::metrics::metric_type::categorical_accuracy</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214"><div class="ttname"><a href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a></div></div>
@@ -455,6 +454,7 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a6c201108eb6b5a1e23021db29cef655b"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a6c201108eb6b5a1e23021db29cef655b">lbann::lbann_comm::get_model_rank</a></div><div class="ttdeci">int get_model_rank() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00058">lbann_comm.hpp:58</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a06a31f9df1860358ef0ef68d9e165cac"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac">lbann::lbann_comm::am_model_master</a></div><div class="ttdeci">bool am_model_master() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00086">lbann_comm.hpp:86</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__ltfb_html_a6849f605ca2750c2dad4af7c77eaf1f9"><div class="ttname"><a href="classlbann_1_1lbann__callback__ltfb.html#a6849f605ca2750c2dad4af7c77eaf1f9">lbann::lbann_callback_ltfb::replace_with_remote</a></div><div class="ttdeci">void replace_with_remote(model *m)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__ltfb_8cpp_source.html#l00151">lbann_callback_ltfb.cpp:151</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_a2fd35b39d7018ca4f0f8e180b18a2b63"><div class="ttname"><a href="classlbann_1_1model.html#a2fd35b39d7018ca4f0f8e180b18a2b63">lbann::model::m_metrics</a></div><div class="ttdeci">std::vector&lt; metrics::metric * &gt; m_metrics</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00149">lbann_model.hpp:149</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__ltfb_html_a2b6d87cf89e3d65ce5730aa8a052eee8"><div class="ttname"><a href="classlbann_1_1lbann__callback__ltfb.html#a2b6d87cf89e3d65ce5730aa8a052eee8">lbann::lbann_callback_ltfb::exchange</a></div><div class="ttdeci">void exchange(model *m, int partner)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__ltfb_8cpp_source.html#l00130">lbann_callback_ltfb.cpp:130</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__ltfb_html_a6adc1934308bfec9625db664141c721d"><div class="ttname"><a href="classlbann_1_1lbann__callback__ltfb.html#a6adc1934308bfec9625db664141c721d">lbann::lbann_callback_ltfb::select_partner</a></div><div class="ttdeci">int select_partner()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__ltfb_8cpp_source.html#l00097">lbann_callback_ltfb.cpp:97</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__ltfb_html_ac1e35a1dff662d128b3d949dab5f5bd8"><div class="ttname"><a href="classlbann_1_1lbann__callback__ltfb.html#ac1e35a1dff662d128b3d949dab5f5bd8">lbann::lbann_callback_ltfb::m_round_size</a></div><div class="ttdeci">uint m_round_size</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__ltfb_8hpp_source.html#l00069">lbann_callback_ltfb.hpp:69</a></div></div>
@@ -734,7 +734,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__callback__ltfb.html">lbann_callback_ltfb</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 18:24:14 for LBANN by
+    <li class="footer">Generated on Mon Jun 12 2017 19:27:29 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

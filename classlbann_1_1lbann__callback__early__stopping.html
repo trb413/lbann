@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-70-gd320e5a-ci242115943</span>
+   &#160;<span id="projectnumber">v0.93-rc0-72-g3cf7214-ci242139205</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -258,7 +258,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lbann__callback__early__stopping_8cpp_source.html#l00038">38</a> of file <a class="el" href="lbann__callback__early__stopping_8cpp_source.html">lbann_callback_early_stopping.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                                              {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">double</span> score = m-&gt;obj_fn-&gt;report_aggregate_avg_obj_fn(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0">execution_mode::validation</a>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">double</span> score = m-&gt;m_obj_fn-&gt;report_aggregate_avg_obj_fn(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0">execution_mode::validation</a>);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">if</span> (score &lt; <a class="code" href="classlbann_1_1lbann__callback__early__stopping.html#a32c1515e20cf78a3d0ae6fdbf319163f">m_last_score</a>) {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> (m-&gt;get_comm()-&gt;am_model_master()) {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;Model &quot;</span> &lt;&lt; m-&gt;get_comm()-&gt;get_model_rank() &lt;&lt;</div>
@@ -376,7 +376,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__callback__early__stopping.html">lbann_callback_early_stopping</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 18:24:14 for LBANN by
+    <li class="footer">Generated on Mon Jun 12 2017 19:27:29 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

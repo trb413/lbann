@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-70-gd320e5a-ci242115943</span>
+   &#160;<span id="projectnumber">v0.93-rc0-72-g3cf7214-ci242139205</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -335,7 +335,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="lbann__callback__learning__rate_8cpp_source.html#l00103">103</a> of file <a class="el" href="lbann__callback__learning__rate_8cpp_source.html">lbann_callback_learning_rate.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                                                        {</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">float</span> cur_lr = l-&gt;get_optimizer()-&gt;get_learning_rate();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">double</span> score = m-&gt;obj_fn-&gt;report_aggregate_avg_obj_fn(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0">execution_mode::validation</a>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordtype">double</span> score = m-&gt;m_obj_fn-&gt;report_aggregate_avg_obj_fn(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aa617908b172c473cb8e8cda059e55bf0">execution_mode::validation</a>);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordflow">if</span> (score &lt; <a class="code" href="classlbann_1_1lbann__callback__adaptive__learning__rate.html#a842a5ced30a457836c4bc0022b6ac636">m_last_score</a>) {</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="classlbann_1_1lbann__callback__adaptive__learning__rate.html#a842a5ced30a457836c4bc0022b6ac636">m_last_score</a> = score;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="classlbann_1_1lbann__callback__adaptive__learning__rate.html#aecfb70e4a366762305a2dbd8248471de">m_wait</a> = 0;</div>
@@ -475,7 +475,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__callback__adaptive__learning__rate.html">lbann_callback_adaptive_learning_rate</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 18:24:14 for LBANN by
+    <li class="footer">Generated on Mon Jun 12 2017 19:27:29 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

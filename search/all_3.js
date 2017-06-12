@@ -1,7 +1,6 @@
 var searchData=
 [
   ['calculate_5fnum_5fiterations_5fper_5fepoch',['calculate_num_iterations_per_epoch',['../classlbann_1_1distributed__minibatch__parallel__io.html#aab0bb911e329a56d13a791849dca8ccc',1,'lbann::distributed_minibatch_parallel_io::calculate_num_iterations_per_epoch()'],['../classlbann_1_1partitioned__minibatch__parallel__io.html#a138ce5d3d35dbb07236fef78e26d5dfb',1,'lbann::partitioned_minibatch_parallel_io::calculate_num_iterations_per_epoch()']]],
-  ['callbacks',['callbacks',['../classlbann_1_1model.html#aeb879b39af5e71c322616d72980e1334',1,'lbann::model']]],
   ['categorical_5faccuracy',['categorical_accuracy',['../classlbann_1_1metrics_1_1categorical__accuracy.html',1,'lbann::metrics']]],
   ['categorical_5faccuracy',['categorical_accuracy',['../classlbann_1_1metrics_1_1categorical__accuracy.html#afa4e32440e5edf1f010d07399cecbabd',1,'lbann::metrics::categorical_accuracy::categorical_accuracy()'],['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a576ea1a64c846beca09a6346ba791d6c',1,'lbann::metrics::categorical_accuracy()']]],
   ['categorical_5fcross_5fentropy',['categorical_cross_entropy',['../classlbann_1_1objective__functions_1_1categorical__cross__entropy.html',1,'lbann::objective_functions']]],
@@ -39,7 +38,7 @@ var searchData=
   ['colsumstarvcmat',['ColSumStarVCMat',['../lbann__base_8hpp.html#a2ea5e8901a69d1ea68208c313773f47e',1,'lbann_base.hpp']]],
   ['columnsum',['ColumnSum',['../namespaceEl.html#a09d5c471681b2b48fbe4c5e6bfd0b3d3',1,'El::ColumnSum(const Matrix&lt; F &gt; &amp;X, Matrix&lt; F &gt; &amp;sums)'],['../namespaceEl.html#a76d4388650bbfd78adaf57d150423020',1,'El::ColumnSum(const DistMatrix&lt; F, U, V, W &gt; &amp;A, DistMatrix&lt; F, V, STAR, W &gt; &amp;sums)']]],
   ['columnwise_5fmean_5fand_5fstdev',['columnwise_mean_and_stdev',['../namespacelbann.html#a213d429a27c3e8676a3ebec40c24005c',1,'lbann::columnwise_mean_and_stdev(const Mat &amp;data, Mat &amp;means, Mat &amp;stdevs)'],['../namespacelbann.html#a085b697db535c10a6fd6689cc4445bd4',1,'lbann::columnwise_mean_and_stdev(const AbsDistMat &amp;data, AbsDistMat &amp;means, AbsDistMat &amp;stdevs)']]],
-  ['comm',['comm',['../classlbann_1_1model.html#ae5a400e2f0a044c33383975298719cc2',1,'lbann::model::comm()'],['../lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe',1,'comm():&#160;lbann_file_io.cpp']]],
+  ['comm',['comm',['../lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe',1,'lbann_file_io.cpp']]],
   ['comm_5ftype',['comm_type',['../classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6a',1,'lbann::lbann_callback_imcomm']]],
   ['compute',['compute',['../namespacelbann.html#aedf7ea3c07affe9278486158f759cc26a77e73f3a185e16d1f08ca5e057710b9d',1,'lbann']]],
   ['compute_5fcategorical_5fcross_5fentropy',['compute_categorical_cross_entropy',['../classlbann_1_1objective__functions_1_1categorical__cross__entropy.html#a1a273530da068197f10f6ac867d369f9',1,'lbann::objective_functions::categorical_cross_entropy']]],

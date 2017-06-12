@@ -1,6 +1,5 @@
 var NAVTREEINDEX8 =
 {
-"globals_enum.html":[4,1,4],
 "globals_eval.html":[4,1,5],
 "globals_f.html":[4,1,0,6],
 "globals_func.html":[4,1,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX8 =
 "lbann__data__reader__nci_8hpp.html":[4,0,0,0,0,0,0,0,0,1,16],
 "lbann__data__reader__nci_8hpp_source.html":[4,0,0,0,0,0,0,0,0,1,16],
 "lbann__data__reader__nci__regression_8cpp.html":[4,0,0,0,0,0,0,1,1,16],
-"lbann__data__reader__nci__regression_8cpp_source.html":[4,0,0,0,0,0,0,1,1,16]
+"lbann__data__reader__nci__regression_8cpp_source.html":[4,0,0,0,0,0,0,1,1,16],
+"lbann__data__reader__nci__regression_8hpp.html":[4,0,0,0,0,0,0,0,0,1,17]
 };

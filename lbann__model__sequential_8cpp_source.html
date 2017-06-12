@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-70-gd320e5a-ci242115943</span>
+   &#160;<span id="projectnumber">v0.93-rc0-72-g3cf7214-ci242139205</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -401,7 +401,7 @@ $(document).ready(function(){initNavTree('lbann__model__sequential_8cpp_source.h
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  <span class="comment">// Setup each layer</span></div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  <span class="keywordtype">int</span> prev_layer_dim = start_index &gt; 0 ? m_layers[start_index-1]-&gt;get_num_neurons() : -1;</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;  <span class="keywordflow">for</span> (Int l=start_index; l&lt;end_index; ++l) {</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;am_model_master()) {</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordflow">if</span> (m_comm-&gt;am_model_master()) {</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      cout &lt;&lt; l &lt;&lt; <span class="stringliteral">&quot;:[&quot;</span> &lt;&lt; <a class="code" href="namespacelbann.html#a65056cb9ae34866d6252f18da0697c58">_layer_type_to_string</a>(m_layers[l]-&gt;get_type()) &lt;&lt;  <span class="stringliteral">&quot;] Setting up a layer with input &quot;</span> &lt;&lt; prev_layer_dim &lt;&lt; <span class="stringliteral">&quot; and &quot;</span> &lt;&lt; m_layers[l]-&gt;get_num_neurons() &lt;&lt; <span class="stringliteral">&quot; neurons.&quot;</span>  &lt;&lt; endl;</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    }</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    m_layers[l]-&gt;set_neural_network_model(<span class="keyword">this</span>); </div>
@@ -478,7 +478,7 @@ $(document).ready(function(){initNavTree('lbann__model__sequential_8cpp_source.h
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_e8e3d10a664feac46c9de523d11ac34a.html">models</a></li><li class="navelem"><a class="el" href="lbann__model__sequential_8cpp.html">lbann_model_sequential.cpp</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 18:24:13 for LBANN by
+    <li class="footer">Generated on Mon Jun 12 2017 19:27:28 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
