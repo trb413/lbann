@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-72-g3cf7214-ci242139205</span>
+   &#160;<span id="projectnumber">v0.93-rc0-77-ge7024a3-ci242144718</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -661,7 +661,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="comment">// build mirror layer</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  Layer *original_layer = <a class="code" href="classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b">m_layers</a>[layer_index];</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  optimizer *opt = <a class="code" href="classlbann_1_1model.html#afa7829863a71eb47a3d023413dbe464d">create_optimizer</a>();</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  reconstruction_layer *mirror_layer = <span class="keyword">new</span> reconstruction_layer(original_layer-&gt;get_data_layout(), mirror_index, <a class="code" href="classlbann_1_1model.html#a0eabaf2b2f829fd5db3dfd26df420df0">m_comm</a>, opt, <a class="code" href="classlbann_1_1sequential__model.html#ad4f27748b8cdf0da723f39b3aba9ef2d">m_mini_batch_size</a>, original_layer);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  reconstruction_layer&lt;data_layout&gt; *mirror_layer = <span class="keyword">new</span> reconstruction_layer&lt;data_layout&gt;(original_layer-&gt;get_data_layout(), mirror_index, <a class="code" href="classlbann_1_1model.html#a0eabaf2b2f829fd5db3dfd26df420df0">m_comm</a>, opt, <a class="code" href="classlbann_1_1sequential__model.html#ad4f27748b8cdf0da723f39b3aba9ef2d">m_mini_batch_size</a>, original_layer);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="comment">// insert mirror layer into model</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <a class="code" href="classlbann_1_1sequential__model.html#ae992c83737819d406e1311ebe24e07f0">insert</a>(mirror_index, mirror_layer);</div>
@@ -1026,7 +1026,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="code" href="classlbann_1_1greedy__layerwise__autoencoder.html#a962398da3f5738ec92a1680b0814219b">m_phase_end</a> = <a class="code" href="classlbann_1_1model.html#ab018cbcf5052fab3b5dc6a065d709c16">m_current_phase</a>+2;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    Layer *original_layer = <a class="code" href="classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b">m_layers</a>[<a class="code" href="classlbann_1_1model.html#ab018cbcf5052fab3b5dc6a065d709c16">m_current_phase</a>];</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    optimizer *opt = <a class="code" href="classlbann_1_1model.html#afa7829863a71eb47a3d023413dbe464d">create_optimizer</a>();</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    reconstruction_layer  *mirror_layer = <span class="keyword">new</span> reconstruction_layer(original_layer-&gt;get_data_layout(), <a class="code" href="classlbann_1_1greedy__layerwise__autoencoder.html#a962398da3f5738ec92a1680b0814219b">m_phase_end</a>, <a class="code" href="classlbann_1_1model.html#a0eabaf2b2f829fd5db3dfd26df420df0">m_comm</a>, opt, <a class="code" href="classlbann_1_1sequential__model.html#ad4f27748b8cdf0da723f39b3aba9ef2d">m_mini_batch_size</a>,original_layer);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    reconstruction_layer&lt;data_layout&gt;  *mirror_layer = <span class="keyword">new</span> reconstruction_layer&lt;data_layout&gt;(original_layer-&gt;get_data_layout(), <a class="code" href="classlbann_1_1greedy__layerwise__autoencoder.html#a962398da3f5738ec92a1680b0814219b">m_phase_end</a>, <a class="code" href="classlbann_1_1model.html#a0eabaf2b2f829fd5db3dfd26df420df0">m_comm</a>, opt, <a class="code" href="classlbann_1_1sequential__model.html#ad4f27748b8cdf0da723f39b3aba9ef2d">m_mini_batch_size</a>,original_layer);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    Layer *tmp;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="comment">//if not at the last layer/phase, swap otherwise insert new</span></div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1model.html#ab018cbcf5052fab3b5dc6a065d709c16">m_current_phase</a> &lt; num_phases-1) {</div>
@@ -1403,7 +1403,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1greedy__layerwise__autoencoder.html">greedy_layerwise_autoencoder</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 19:27:31 for LBANN by
+    <li class="footer">Generated on Mon Jun 12 2017 19:46:46 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -36,7 +36,7 @@ var searchData=
   ['add_5fmethod',['add_method',['../classlbann_1_1base__factory.html#ac0dee9f19694499c748f35dc16f09a11',1,'lbann::base_factory']]],
   ['add_5fmetric',['add_metric',['../classlbann_1_1model.html#adbb03deb321b99e8dbdbe65d7e1a423e',1,'lbann::model']]],
   ['affine_5ftrans',['affine_trans',['../classlbann_1_1lbann__image__preprocessor.html#adb9e017aeac52a9b5d392f17188d1057',1,'lbann::lbann_image_preprocessor']]],
-  ['aggregate_5fcost',['aggregate_cost',['../classlbann_1_1reconstruction__layer.html#a6941459598d08242eee5395f9e25d1e0',1,'lbann::reconstruction_layer::aggregate_cost()'],['../classlbann_1_1target__layer__unsupervised.html#af41d733b8678685c0adff8f4c45d9cde',1,'lbann::target_layer_unsupervised::aggregate_cost()']]],
+  ['aggregate_5fcost',['aggregate_cost',['../classlbann_1_1reconstruction__layer.html#a288a122cc09b5ec9f92d679607aaaeaf',1,'lbann::reconstruction_layer::aggregate_cost()'],['../classlbann_1_1target__layer__unsupervised.html#af41d733b8678685c0adff8f4c45d9cde',1,'lbann::target_layer_unsupervised::aggregate_cost()']]],
   ['algo',['algo',['../structlbann_1_1lbann__comm_1_1allreduce__options.html#a8cb30eb49f6556debf08291056d036e9',1,'lbann::lbann_comm::allreduce_options']]],
   ['allreduce_5falgorithm',['allreduce_algorithm',['../classlbann_1_1lbann__comm.html#a02a03227cc27e3516f0d9f9812f32019',1,'lbann::lbann_comm']]],
   ['allreduce_5foptions',['allreduce_options',['../structlbann_1_1lbann__comm_1_1allreduce__options.html',1,'lbann::lbann_comm']]],
@@ -65,6 +65,6 @@ var searchData=
   ['at_5fnew_5fepoch',['at_new_epoch',['../classlbann_1_1generic__data__reader.html#a0a72ddf68fb1dc38b6bf40ce18f13e2d',1,'lbann::generic_data_reader::at_new_epoch()'],['../classlbann_1_1io__layer.html#a956983ae0318c8e77ded59f47b20d536',1,'lbann::io_layer::at_new_epoch()']]],
   ['augment',['augment',['../classlbann_1_1lbann__image__preprocessor.html#a27cb5182c4f764cbfa4edecbb78ef29d',1,'lbann::lbann_image_preprocessor']]],
   ['average',['average',['../lbann__base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39a6927a3a7218a3195858411433ec20a21',1,'lbann_base.hpp']]],
-  ['average_5fcost',['average_cost',['../classlbann_1_1reconstruction__layer.html#a11c8753ed10f003afcfca67843573112',1,'lbann::reconstruction_layer::average_cost()'],['../classlbann_1_1target__layer__unsupervised.html#a6574c70302eb3ef8e7ca8b940a6813e8',1,'lbann::target_layer_unsupervised::average_cost()']]],
+  ['average_5fcost',['average_cost',['../classlbann_1_1reconstruction__layer.html#a7ff16b30c6321ac044efeadf85302ce4',1,'lbann::reconstruction_layer::average_cost()'],['../classlbann_1_1target__layer__unsupervised.html#a6574c70302eb3ef8e7ca8b940a6813e8',1,'lbann::target_layer_unsupervised::average_cost()']]],
   ['average_5fno_5fpad',['average_no_pad',['../lbann__base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39ad91c68878ae16f6dfcd4e1551c33cdd1',1,'lbann_base.hpp']]]
 ];

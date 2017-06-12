@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-72-g3cf7214-ci242139205</span>
+   &#160;<span id="projectnumber">v0.93-rc0-77-ge7024a3-ci242144718</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('lbann__model_8cpp_source.html','');});
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                    <a class="code" href="classlbann_1_1optimizer__factory.html">optimizer_factory</a> *optimizer_fac) :</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  m_obj_fn(obj_fn),</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  m_execution_mode(<a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a>::<a class="code" href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dafedb2d84cafe20862cb4399751a8a7e3">invalid</a>),</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  m_terminate_training(<a class="code" href="lbann__layer__reconstruction_8cpp.html#ae6c865df784842196d411c1466b01686">false</a>),</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  m_terminate_training(<a class="code" href="lbann__target__layer__unsupervised_8cpp.html#ae6c865df784842196d411c1466b01686">false</a>),</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  m_current_epoch(0), m_current_step(0),</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  m_current_validation_step(0), m_current_testing_step(0),</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  m_current_mini_batch_size(0),m_current_phase(0),</div>
@@ -664,7 +664,6 @@ $(document).ready(function(){initNavTree('lbann__model_8cpp_source.html','');});
 <div class="ttc" id="classlbann_1_1model_html_a3b7bfb0045ef4ee8d4691aa41ff78465"><div class="ttname"><a href="classlbann_1_1model.html#a3b7bfb0045ef4ee8d4691aa41ff78465">lbann::model::m_ranks</a></div><div class="ttdeci">int m_ranks</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00201">lbann_model.hpp:201</a></div></div>
 <div class="ttc" id="classlbann_1_1persist_html_a2ddad2673e2ab25ece11b7d30a7e5b83"><div class="ttname"><a href="classlbann_1_1persist.html#a2ddad2673e2ab25ece11b7d30a7e5b83">lbann::persist::get_rank</a></div><div class="ttdeci">int get_rank(void)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8hpp_source.html#l00058">lbann_persist.hpp:58</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_a93e43a6c5aaf8ad890ef50ff97dfa176"><div class="ttname"><a href="classlbann_1_1model.html#a93e43a6c5aaf8ad890ef50ff97dfa176">lbann::model::do_epoch_end_cbs</a></div><div class="ttdeci">void do_epoch_end_cbs()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8cpp_source.html#l00098">lbann_model.cpp:98</a></div></div>
-<div class="ttc" id="lbann__layer__reconstruction_8cpp_html_ae6c865df784842196d411c1466b01686"><div class="ttname"><a href="lbann__layer__reconstruction_8cpp.html#ae6c865df784842196d411c1466b01686">false</a></div><div class="ttdeci">false</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8cpp_source.html#l00042">lbann_layer_reconstruction.cpp:42</a></div></div>
 <div class="ttc" id="lbann__model_8hpp_html"><div class="ttname"><a href="lbann__model_8hpp.html">lbann_model.hpp</a></div></div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0dafedb2d84cafe20862cb4399751a8a7e3"><div class="ttname"><a href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dafedb2d84cafe20862cb4399751a8a7e3">matrix_format::invalid</a></div></div>
@@ -680,6 +679,7 @@ $(document).ready(function(){initNavTree('lbann__model_8cpp_source.html','');});
 <div class="ttc" id="lbann__model_8cpp_html_aa7e119633e5c00265844774013ffc4f0"><div class="ttname"><a href="lbann__model_8cpp.html#aa7e119633e5c00265844774013ffc4f0">read_latest</a></div><div class="ttdeci">static bool read_latest(const char *dir, const char *name, int *epochLast, int *trainLast)</div><div class="ttdoc">Reads the &quot;latest&quot; file and returns the epoch number and sample offset for most recent checkpoint...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8cpp_source.html#l00322">lbann_model.cpp:322</a></div></div>
 <div class="ttc" id="namespacelbann_html_af596e6d2be603e9cf808c98f5412490a"><div class="ttname"><a href="namespacelbann.html#af596e6d2be603e9cf808c98f5412490a">lbann::openwrite</a></div><div class="ttdeci">int openwrite(const char *filename)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00119">lbann_file_io.cpp:119</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_a49f85b10f117ac69e3b88fafc422fd61"><div class="ttname"><a href="classlbann_1_1model.html#a49f85b10f117ac69e3b88fafc422fd61">lbann::model::do_validation_begin_cbs</a></div><div class="ttdeci">void do_validation_begin_cbs()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8cpp_source.html#l00132">lbann_model.cpp:132</a></div></div>
+<div class="ttc" id="lbann__target__layer__unsupervised_8cpp_html_ae6c865df784842196d411c1466b01686"><div class="ttname"><a href="lbann__target__layer__unsupervised_8cpp.html#ae6c865df784842196d411c1466b01686">false</a></div><div class="ttdeci">false</div><div class="ttdef"><b>Definition:</b> <a href="lbann__target__layer__unsupervised_8cpp_source.html#l00041">lbann_target_layer_unsupervised.cpp:41</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_aeb2d57a2d2f081f182cf8a3fd8fad9e1"><div class="ttname"><a href="classlbann_1_1model.html#aeb2d57a2d2f081f182cf8a3fd8fad9e1">lbann::model::do_test_end_cbs</a></div><div class="ttdeci">void do_test_end_cbs()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8cpp_source.html#l00126">lbann_model.cpp:126</a></div></div>
 <div class="ttc" id="namespacelbann_html_aedcde4d93c4feb5090c927de1c45b90d"><div class="ttname"><a href="namespacelbann.html#aedcde4d93c4feb5090c927de1c45b90d">lbann::read_uint32</a></div><div class="ttdeci">bool read_uint32(int fd, const char *name, uint32_t *val)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8cpp_source.html#l00702">lbann_persist.cpp:702</a></div></div>
 <div class="ttc" id="classlbann_1_1persist_html_a5bb3c2effb859cf3ca2c5f297acc3195"><div class="ttname"><a href="classlbann_1_1persist.html#a5bb3c2effb859cf3ca2c5f297acc3195">lbann::persist::open_checkpoint</a></div><div class="ttdeci">void open_checkpoint(const char *dir)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__persist_8cpp_source.html#l00441">lbann_persist.cpp:441</a></div></div>
@@ -711,7 +711,7 @@ $(document).ready(function(){initNavTree('lbann__model_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_e8e3d10a664feac46c9de523d11ac34a.html">models</a></li><li class="navelem"><a class="el" href="lbann__model_8cpp.html">lbann_model.cpp</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 19:27:28 for LBANN by
+    <li class="footer">Generated on Mon Jun 12 2017 19:46:44 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-72-g3cf7214-ci242139205</span>
+   &#160;<span id="projectnumber">v0.93-rc0-77-ge7024a3-ci242144718</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -339,7 +339,7 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        pool_strides.push_back(i);</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      }</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      <a class="code" href="classlbann_1_1pooling__layer.html">pooling_layer</a> *new_layer = <span class="keyword">new</span> <a class="code" href="classlbann_1_1pooling__layer.html">pooling_layer</a>(</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      <a class="code" href="classlbann_1_1pooling__layer.html">pooling_layer&lt;data_layout&gt;</a> *new_layer = <span class="keyword">new</span> <a class="code" href="classlbann_1_1pooling__layer.html">pooling_layer&lt;data_layout&gt;</a>(</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        layer_id,</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        ell.num_dims(),</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        ell.num_channels(),</div>
@@ -395,7 +395,7 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;      vector&lt;regularizer *&gt; regs;</div>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;      init_regularizers(regs, comm, ell.regularizer());</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      <a class="code" href="classlbann_1_1convolutional__layer.html">convolutional_layer</a> *new_layer = <span class="keyword">new</span> <a class="code" href="classlbann_1_1convolutional__layer.html">convolutional_layer</a>(</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      <a class="code" href="classlbann_1_1convolutional__layer.html">convolutional_layer&lt;data_layout&gt;</a> *new_layer = <span class="keyword">new</span> <a class="code" href="classlbann_1_1convolutional__layer.html">convolutional_layer&lt;data_layout&gt;</a>(</div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        layer_id,</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        num_dims,</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        num_input_channels,</div>
@@ -863,7 +863,7 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div class="ttc" id="classlbann_1_1model_html_a8f45cdca82dbc0cc1f519898474cc6ec"><div class="ttname"><a href="classlbann_1_1model.html#a8f45cdca82dbc0cc1f519898474cc6ec">lbann::model::add_callback</a></div><div class="ttdeci">virtual void add_callback(lbann_callback *cb)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8cpp_source.html#l00060">lbann_model.cpp:60</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_ac47a6ee5278a53898222a48639a2bf39"><div class="ttname"><a href="lbann__base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39">pool_mode</a></div><div class="ttdeci">pool_mode</div><div class="ttdoc">Pooling layer mode. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00101">lbann_base.hpp:101</a></div></div>
 <div class="ttc" id="lbann__comm_8hpp_html"><div class="ttname"><a href="lbann__comm_8hpp.html">lbann_comm.hpp</a></div></div>
-<div class="ttc" id="classlbann_1_1pooling__layer_html"><div class="ttname"><a href="classlbann_1_1pooling__layer.html">lbann::pooling_layer</a></div><div class="ttdoc">Pooling layer. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__pooling_8hpp_source.html#l00040">lbann_layer_pooling.hpp:40</a></div></div>
+<div class="ttc" id="classlbann_1_1pooling__layer_html"><div class="ttname"><a href="classlbann_1_1pooling__layer.html">lbann::pooling_layer</a></div><div class="ttdoc">Pooling layer. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__pooling_8hpp_source.html#l00059">lbann_layer_pooling.hpp:59</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a7ab6aada4b2438de8ca3dd783775c2f5afea087517c26fadd409bd4b9dc642555"><div class="ttname"><a href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5afea087517c26fadd409bd4b9dc642555">weight_initialization::normal</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_aa837a468e77991314053a93441d111ca"><div class="ttname"><a href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca">lbann::model::get_comm</a></div><div class="ttdeci">lbann_comm * get_comm() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00074">lbann_model.hpp:74</a></div></div>
 <div class="ttc" id="classlbann_1_1generic__data__reader_html_a74b7ef4fe0dc7d3a96868ca3b5fbf897"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#a74b7ef4fe0dc7d3a96868ca3b5fbf897">lbann::generic_data_reader::set_data_filename</a></div><div class="ttdeci">void set_data_filename(std::string s)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8cpp_source.html#l00270">lbann_data_reader.cpp:270</a></div></div>
@@ -936,7 +936,7 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div class="ttc" id="classlbann_1_1generic__data__reader_html"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html">lbann::generic_data_reader</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00056">lbann_data_reader.hpp:56</a></div></div>
 <div class="ttc" id="classlbann_1_1generic__data__reader_html_af45f301cc9adc2f8184b81d8d2600b8f"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#af45f301cc9adc2f8184b81d8d2600b8f">lbann::generic_data_reader::set_label_filename</a></div><div class="ttdeci">void set_label_filename(std::string s)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8cpp_source.html#l00284">lbann_data_reader.cpp:284</a></div></div>
 <div class="ttc" id="lbann__data__reader__nci__regression_8hpp_html"><div class="ttname"><a href="lbann__data__reader__nci__regression_8hpp.html">lbann_data_reader_nci_regression.hpp</a></div></div>
-<div class="ttc" id="classlbann_1_1convolutional__layer_html"><div class="ttname"><a href="classlbann_1_1convolutional__layer.html">lbann::convolutional_layer</a></div><div class="ttdoc">Convolutional layer. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__convolutional_8hpp_source.html#l00044">lbann_layer_convolutional.hpp:44</a></div></div>
+<div class="ttc" id="classlbann_1_1convolutional__layer_html"><div class="ttname"><a href="classlbann_1_1convolutional__layer.html">lbann::convolutional_layer</a></div><div class="ttdoc">Convolutional layer. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__convolutional_8hpp_source.html#l00066">lbann_layer_convolutional.hpp:66</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_adbb03deb321b99e8dbdbe65d7e1a423e"><div class="ttname"><a href="classlbann_1_1model.html#adbb03deb321b99e8dbdbe65d7e1a423e">lbann::model::add_metric</a></div><div class="ttdeci">virtual void add_metric(metrics::metric *m)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8cpp_source.html#l00070">lbann_model.cpp:70</a></div></div>
 <div class="ttc" id="classlbann_1_1optimizer__factory_html"><div class="ttname"><a href="classlbann_1_1optimizer__factory.html">lbann::optimizer_factory</a></div><div class="ttdoc">Optimizer factory base class. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00099">lbann_optimizer.hpp:99</a></div></div>
 <div class="ttc" id="classlbann_1_1generic__data__reader_html_ae00d18ddde712afd2e8938e843994ba8"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#ae00d18ddde712afd2e8938e843994ba8">lbann::generic_data_reader::getNumData</a></div><div class="ttdeci">int getNumData(void) const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00320">lbann_data_reader.hpp:320</a></div></div>
@@ -983,7 +983,7 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_a6f8d8b19bd1411ec381c5cd89d82b32.html">proto</a></li><li class="navelem"><a class="el" href="lbann__proto__common_8cpp.html">lbann_proto_common.cpp</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 19:27:28 for LBANN by
+    <li class="footer">Generated on Mon Jun 12 2017 19:46:44 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

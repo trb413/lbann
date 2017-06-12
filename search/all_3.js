@@ -50,7 +50,7 @@ var searchData=
   ['computecost',['computeCost',['../classlbann_1_1fully__connected__layer.html#a90c5f414b1dbce6e8880a56a26f53042',1,'lbann::fully_connected_layer']]],
   ['convolution',['convolution',['../namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743aa9595c1c24c33b16056d2ad07e71682d',1,'lbann']]],
   ['convolutional_5flayer',['convolutional_layer',['../classlbann_1_1convolutional__layer.html',1,'lbann']]],
-  ['convolutional_5flayer',['convolutional_layer',['../classlbann_1_1convolutional__layer.html#a209510f0137b788c7364df0039627bf2',1,'lbann::convolutional_layer']]],
+  ['convolutional_5flayer',['convolutional_layer',['../classlbann_1_1convolutional__layer.html#a438c691fb20dbab0c35198900ef9fb07',1,'lbann::convolutional_layer']]],
   ['convolvemat',['convolveMat',['../classlbann_1_1CUtility.html#a70867a001ddcc7c71ab62a334ff89eca',1,'lbann::CUtility']]],
   ['cosine_5fproximity',['cosine_proximity',['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1ad552dc3282907ae4a391e1c228225410',1,'lbann::metrics']]],
   ['create_5fgroup',['create_group',['../classlbann_1_1lbann__comm.html#a07a25a3b0c46f15354fe6a69bcd292cb',1,'lbann::lbann_comm']]],

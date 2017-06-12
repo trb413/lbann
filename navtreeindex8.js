@@ -1,5 +1,8 @@
 var NAVTREEINDEX8 =
 {
+"globals_defs.html":[4,1,6],
+"globals_e.html":[4,1,0,5],
+"globals_enum.html":[4,1,4],
 "globals_eval.html":[4,1,5],
 "globals_f.html":[4,1,0,6],
 "globals_func.html":[4,1,1],
@@ -20,8 +23,8 @@ var NAVTREEINDEX8 =
 "globals_w.html":[4,1,0,19],
 "globals_z.html":[4,1,0,20],
 "hierarchy.html":[3,2],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "index.html#license":[0,2],
 "index.html#overview":[0,0],
 "index.html#team":[0,1],
@@ -246,8 +249,5 @@ var NAVTREEINDEX8 =
 "lbann__data__reader__nci_8cpp.html":[4,0,0,0,0,0,0,1,1,15],
 "lbann__data__reader__nci_8cpp_source.html":[4,0,0,0,0,0,0,1,1,15],
 "lbann__data__reader__nci_8hpp.html":[4,0,0,0,0,0,0,0,0,1,16],
-"lbann__data__reader__nci_8hpp_source.html":[4,0,0,0,0,0,0,0,0,1,16],
-"lbann__data__reader__nci__regression_8cpp.html":[4,0,0,0,0,0,0,1,1,16],
-"lbann__data__reader__nci__regression_8cpp_source.html":[4,0,0,0,0,0,0,1,1,16],
-"lbann__data__reader__nci__regression_8hpp.html":[4,0,0,0,0,0,0,0,0,1,17]
+"lbann__data__reader__nci_8hpp_source.html":[4,0,0,0,0,0,0,0,0,1,16]
 };

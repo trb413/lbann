@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-72-g3cf7214-ci242139205</span>
+   &#160;<span id="projectnumber">v0.93-rc0-77-ge7024a3-ci242144718</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -601,7 +601,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> *reshaped = &amp;local_gradients;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">if</span> (params.reshape_height &gt; 0 &amp;&amp; <a class="code" href="classlbann_1_1lbann__callback__imcomm.html#a4f38fa45a0f7a8b290f6d2b701d20622">ct_does_quantization</a>(params.ct)) {</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      <span class="keywordflow">if</span> (layers[layer]-&gt;get_type() == <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743aa9595c1c24c33b16056d2ad07e71682d">layer_type::convolution</a>) {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        convolutional_layer *conv_layer = (convolutional_layer *) layers[layer];</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        convolutional_layer&lt;data_layout&gt; *conv_layer = (convolutional_layer&lt;data_layout&gt; *) layers[layer];</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="comment">// Currently ignores the bias.</span></div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> grad_view = local_gradients(IR(0, conv_layer-&gt;m_filter_size), ALL);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <a class="code" href="classlbann_1_1lbann__callback__imcomm.html#ab263486c1b9943be2a7b7e9d35d13602">reshape_mat</a>(grad_view, *reshaped, params.reshape_height,</div>
@@ -959,7 +959,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="comment">// Check if reshaping is needed.</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="comment">// Currently only automatically reshapes conv layers. (But ignores bias.)</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keywordflow">if</span> (layers[layer]-&gt;get_type() == <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743aa9595c1c24c33b16056d2ad07e71682d">layer_type::convolution</a>) {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        convolutional_layer *conv_layer = (convolutional_layer *) layers[layer];</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        convolutional_layer&lt;data_layout&gt; *conv_layer = (convolutional_layer&lt;data_layout&gt; *) layers[layer];</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        params.reshape_height = conv_layer-&gt;m_num_input_channels *</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                std::accumulate(conv_layer-&gt;m_filter_dims.begin(),</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                                conv_layer-&gt;m_filter_dims.end(),</div>
@@ -1099,7 +1099,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__callback__imcomm.html">lbann_callback_imcomm</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 19:27:29 for LBANN by
+    <li class="footer">Generated on Mon Jun 12 2017 19:46:45 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>LBANN: lbann::reconstruction_layer Class Reference</title>
+<title>LBANN: lbann::reconstruction_layer&lt; T_layout &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-72-g3cf7214-ci242139205</span>
+   &#160;<span id="projectnumber">v0.93-rc0-77-ge7024a3-ci242144718</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -90,52 +90,55 @@ $(document).ready(function(){initNavTree('classlbann_1_1reconstruction__layer.ht
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classlbann_1_1reconstruction__layer-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">lbann::reconstruction_layer Class Reference</div>  </div>
+<div class="title">lbann::reconstruction_layer&lt; T_layout &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for lbann::reconstruction_layer:</div>
+Inheritance diagram for lbann::reconstruction_layer&lt; T_layout &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1reconstruction__layer__inherit__graph.png" border="0" usemap="#lbann_1_1reconstruction__layer_inherit__map" alt="Inheritance graph"/></div>
-<map name="lbann_1_1reconstruction__layer_inherit__map" id="lbann_1_1reconstruction__layer_inherit__map">
+<div class="center"><img src="classlbann_1_1reconstruction__layer__inherit__graph.png" border="0" usemap="#lbann_1_1reconstruction__layer_3_01T__layout_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="lbann_1_1reconstruction__layer_3_01T__layout_01_4_inherit__map" id="lbann_1_1reconstruction__layer_3_01T__layout_01_4_inherit__map">
 <area shape="rect" id="node2" href="classlbann_1_1target__layer.html" title="lbann::target_layer" alt="" coords="11,155,140,181"/><area shape="rect" id="node3" href="classlbann_1_1io__layer.html" title="lbann::io_layer" alt="" coords="23,80,129,107"/><area shape="rect" id="node4" href="classlbann_1_1Layer.html" title="lbann::Layer" alt="" coords="29,5,123,32"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for lbann::reconstruction_layer:</div>
+Collaboration diagram for lbann::reconstruction_layer&lt; T_layout &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1reconstruction__layer__coll__graph.png" border="0" usemap="#lbann_1_1reconstruction__layer_coll__map" alt="Collaboration graph"/></div>
-<map name="lbann_1_1reconstruction__layer_coll__map" id="lbann_1_1reconstruction__layer_coll__map">
+<div class="center"><img src="classlbann_1_1reconstruction__layer__coll__graph.png" border="0" usemap="#lbann_1_1reconstruction__layer_3_01T__layout_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="lbann_1_1reconstruction__layer_3_01T__layout_01_4_coll__map" id="lbann_1_1reconstruction__layer_3_01T__layout_01_4_coll__map">
 <area shape="rect" id="node2" href="classlbann_1_1target__layer.html" title="lbann::target_layer" alt="" coords="1563,217,1693,244"/><area shape="rect" id="node3" href="classlbann_1_1io__layer.html" title="lbann::io_layer" alt="" coords="1309,217,1416,244"/><area shape="rect" id="node4" href="classlbann_1_1Layer.html" title="lbann::Layer" alt="" coords="1037,167,1131,193"/><area shape="rect" id="node5" href="classcudnn_1_1cudnn__manager.html" title="cudnn::cudnn_manager" alt="" coords="672,13,829,40"/><area shape="rect" id="node6" href="classlbann_1_1optimizer.html" title="Optimizer base class. " alt="" coords="533,115,648,141"/><area shape="rect" id="node7" href="classlbann_1_1lbann__comm.html" title="lbann::lbann_comm" alt="" coords="25,141,159,168"/><area shape="rect" id="node8" href="classlbann_1_1model.html" title="lbann::model" alt="" coords="703,177,799,204"/><area shape="rect" id="node9" href="classlbann_1_1optimizer__factory.html" title="Optimizer factory base class. " alt="" coords="342,228,503,255"/><area shape="rect" id="node10" href="classlbann_1_1objective__functions_1_1objective__fn.html" title="lbann::objective_functions\l::objective_fn" alt="" coords="336,279,509,321"/><area shape="rect" id="node11" href="classlbann_1_1objective__functions_1_1statistics.html" title="lbann::objective_functions\l::statistics" alt="" coords="5,279,179,321"/><area shape="rect" id="node12" href="classlbann_1_1Activation.html" title="lbann::Activation" alt="" coords="691,228,810,255"/><area shape="rect" id="node13" href="classlbann_1_1dataset.html" title="lbann::dataset" alt="" coords="1032,292,1136,319"/><area shape="rect" id="node14" href="classlbann_1_1generic__data__reader.html" title="lbann::generic_data\l_reader" alt="" coords="683,311,818,353"/><area shape="rect" id="node15" href="classlbann_1_1lbann__image__preprocessor.html" title="lbann::lbann_image\l_preprocessor" alt="" coords="355,345,490,386"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6cb31a012017a6b8b0419b80aa54b4ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a6cb31a012017a6b8b0419b80aa54b4ce">reconstruction_layer</a> (<a class="el" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a> data_dist, size_t index, <a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, <a class="el" href="classlbann_1_1optimizer.html">optimizer</a> *<a class="el" href="classlbann_1_1optimizer.html">optimizer</a>, const <a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> minim_batch_size, <a class="el" href="classlbann_1_1Layer.html">Layer</a> *original_layer, <a class="el" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76">activation_type</a> activation=<a class="el" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ad346bb4679d29be241279f15d7795c1c">activation_type::RELU</a>, <a class="el" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5">weight_initialization</a> init=<a class="el" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a4b78361151cbfcca33e1d560fbaedd59">weight_initialization::glorot_uniform</a>)</td></tr>
-<tr class="separator:a6cb31a012017a6b8b0419b80aa54b4ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68da4fcc68089695fc5e072342d4d982"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a68da4fcc68089695fc5e072342d4d982">setup</a> (int num_prev_neurons)</td></tr>
-<tr class="separator:a68da4fcc68089695fc5e072342d4d982"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a564e4b087ee14f4472cb1a805186a693"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a564e4b087ee14f4472cb1a805186a693">update</a> (void)</td></tr>
-<tr class="separator:a564e4b087ee14f4472cb1a805186a693"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c7101e5e52ce6a8af532bffc0b6ae36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a5c7101e5e52ce6a8af532bffc0b6ae36">summarize</a> (<a class="el" href="classlbann_1_1lbann__summary.html">lbann_summary</a> &amp;summarizer, int64_t step)</td></tr>
-<tr class="separator:a5c7101e5e52ce6a8af532bffc0b6ae36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeff0c56ba72091f5c30c16f2ff15c476"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#aeff0c56ba72091f5c30c16f2ff15c476">epoch_print</a> (void) const </td></tr>
-<tr class="separator:aeff0c56ba72091f5c30c16f2ff15c476"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9064b79f66738d382947e92b60be4c51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a9064b79f66738d382947e92b60be4c51">epoch_reset</a> (void)</td></tr>
-<tr class="separator:a9064b79f66738d382947e92b60be4c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fe8c0eb03179be666520b330f849a60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a1fe8c0eb03179be666520b330f849a60">get_execution_mode</a> (void)</td></tr>
-<tr class="separator:a1fe8c0eb03179be666520b330f849a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4298b354ebaacae02dd6f9799648837"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#af4298b354ebaacae02dd6f9799648837">reconstruction_cost</a> (const <a class="el" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a> &amp;Y)</td></tr>
-<tr class="separator:af4298b354ebaacae02dd6f9799648837"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a207eb2cacf7520183af439b663103fef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a207eb2cacf7520183af439b663103fef">reset_cost</a> (void)</td></tr>
-<tr class="separator:a207eb2cacf7520183af439b663103fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11c8753ed10f003afcfca67843573112"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a11c8753ed10f003afcfca67843573112">average_cost</a> (void) const </td></tr>
-<tr class="separator:a11c8753ed10f003afcfca67843573112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab10ae90120435ec6a02090e68199bfce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#ab10ae90120435ec6a02090e68199bfce">reconstruction_layer</a> (T_layout data_dist, size_t index, <a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, <a class="el" href="classlbann_1_1optimizer.html">optimizer</a> *opt, const <a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> minim_batch_size, <a class="el" href="classlbann_1_1Layer.html">Layer</a> *original_layer, <a class="el" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76">activation_type</a> activation=<a class="el" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ad346bb4679d29be241279f15d7795c1c">activation_type::RELU</a>, const <a class="el" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5">weight_initialization</a> init=<a class="el" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a4b78361151cbfcca33e1d560fbaedd59">weight_initialization::glorot_uniform</a>)</td></tr>
+<tr class="separator:ab10ae90120435ec6a02090e68199bfce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9ffcdc1a745d3db0e28a122e6a1ac87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#ac9ffcdc1a745d3db0e28a122e6a1ac87">m_original_layer</a> (original_layer)</td></tr>
+<tr class="separator:ac9ffcdc1a745d3db0e28a122e6a1ac87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8960f8f3f2cb9bcfa6bc7cba8615738"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#ab8960f8f3f2cb9bcfa6bc7cba8615738">m_weight_initialization</a> (init)</td></tr>
+<tr class="separator:ab8960f8f3f2cb9bcfa6bc7cba8615738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f1da7a30ed3b3405290c8e71fcb94dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a7f1da7a30ed3b3405290c8e71fcb94dc">setup</a> (int num_prev_neurons)</td></tr>
+<tr class="separator:a7f1da7a30ed3b3405290c8e71fcb94dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a500ff9288778c6523620c6318ca018"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a8a500ff9288778c6523620c6318ca018">get_execution_mode</a> ()</td></tr>
+<tr class="separator:a8a500ff9288778c6523620c6318ca018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef4be6ea2e9f55affcd715c493f0d802"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#aef4be6ea2e9f55affcd715c493f0d802">update</a> ()</td></tr>
+<tr class="separator:aef4be6ea2e9f55affcd715c493f0d802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ecd7a7b2cb9ea36962297b7bf237bf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a0ecd7a7b2cb9ea36962297b7bf237bf9">summarize</a> (<a class="el" href="classlbann_1_1lbann__summary.html">lbann_summary</a> &amp;summarizer, int64_t step)</td></tr>
+<tr class="separator:a0ecd7a7b2cb9ea36962297b7bf237bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e7084309c8d2049241946369c01ddc3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a5e7084309c8d2049241946369c01ddc3">epoch_print</a> () const </td></tr>
+<tr class="separator:a5e7084309c8d2049241946369c01ddc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6405e1323d6872ae3711397f12751ffc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a6405e1323d6872ae3711397f12751ffc">epoch_reset</a> ()</td></tr>
+<tr class="separator:a6405e1323d6872ae3711397f12751ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ff7fe7ae196c50266bab94ccad1725c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a8ff7fe7ae196c50266bab94ccad1725c">reset_cost</a> ()</td></tr>
+<tr class="separator:a8ff7fe7ae196c50266bab94ccad1725c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ff16b30c6321ac044efeadf85302ce4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a7ff16b30c6321ac044efeadf85302ce4">average_cost</a> () const </td></tr>
+<tr class="separator:a7ff16b30c6321ac044efeadf85302ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classlbann_1_1target__layer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classlbann_1_1target__layer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classlbann_1_1target__layer.html">lbann::target_layer</a></td></tr>
 <tr class="memitem:a58b78c8e0f71cbef4ebe2256e382ba11 inherit pub_methods_classlbann_1_1target__layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1target__layer.html#a58b78c8e0f71cbef4ebe2256e382ba11">target_layer</a> (<a class="el" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a> dist_data, <a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, <a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> mini_batch_size, std::map&lt; <a class="el" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a>, <a class="el" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a> * &gt; data_readers, bool shared_data_reader, bool for_regression=<a class="el" href="lbann__target__layer__unsupervised_8cpp.html#ae6c865df784842196d411c1466b01686">false</a>)</td></tr>
 <tr class="separator:a58b78c8e0f71cbef4ebe2256e382ba11 inherit pub_methods_classlbann_1_1target__layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -282,33 +285,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a29f7d292db0394489f1302b2aae81dc4 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a29f7d292db0394489f1302b2aae81dc4">loadFromFile</a> (int fd, const char *filename)</td></tr>
 <tr class="separator:a29f7d292db0394489f1302b2aae81dc4 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a4a360d62800d5ba48b42f2a8cd4c4412"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a4a360d62800d5ba48b42f2a8cd4c4412">fp_linearity</a> (void)</td></tr>
-<tr class="separator:a4a360d62800d5ba48b42f2a8cd4c4412"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15f32a50e74c6c35afcbd950204a64b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a15f32a50e74c6c35afcbd950204a64b9">bp_linearity</a> (void)</td></tr>
-<tr class="separator:a15f32a50e74c6c35afcbd950204a64b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2a8bd67bccd457fb3fba89d4eea731c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#aa2a8bd67bccd457fb3fba89d4eea731c">fp_nonlinearity</a> (void)</td></tr>
-<tr class="separator:aa2a8bd67bccd457fb3fba89d4eea731c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65f8513a0b628f2d119701a18018f5a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a65f8513a0b628f2d119701a18018f5a2">bp_nonlinearity</a> (void)</td></tr>
-<tr class="separator:a65f8513a0b628f2d119701a18018f5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ac1cd1e57341d1f58180c446b7b0cb28f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1Layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#ac1cd1e57341d1f58180c446b7b0cb28f">m_original_layer</a></td></tr>
-<tr class="separator:ac1cd1e57341d1f58180c446b7b0cb28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6941459598d08242eee5395f9e25d1e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a6941459598d08242eee5395f9e25d1e0">aggregate_cost</a></td></tr>
-<tr class="separator:a6941459598d08242eee5395f9e25d1e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea756a99f5848fb6dbc8d3f77e50374e"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#aea756a99f5848fb6dbc8d3f77e50374e">num_forwardprop_steps</a></td></tr>
-<tr class="separator:aea756a99f5848fb6dbc8d3f77e50374e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48141bb2e0b31ca9e916d0c41054bc9b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5">weight_initialization</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a48141bb2e0b31ca9e916d0c41054bc9b">m_weight_initialization</a></td></tr>
-<tr class="separator:a48141bb2e0b31ca9e916d0c41054bc9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_methods_classlbann_1_1Layer"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classlbann_1_1Layer')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td></tr>
-<tr class="memitem:a7a55c61403cf1ecadc465d7d8663be07 inherit pub_static_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a7a55c61403cf1ecadc465d7d8663be07">weight_initialization_name</a> (<a class="el" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5">weight_initialization</a> id)</td></tr>
-<tr class="separator:a7a55c61403cf1ecadc465d7d8663be07 inherit pub_static_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a75bf74f178728627c815d9b3eeb3e177"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a75bf74f178728627c815d9b3eeb3e177">false</a></td></tr>
+<tr class="separator:a75bf74f178728627c815d9b3eeb3e177"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classlbann_1_1Layer"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classlbann_1_1Layer')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td></tr>
 <tr class="memitem:a81d6e3e65adcfee83e953b63ff5e9121 inherit pub_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a81d6e3e65adcfee83e953b63ff5e9121">m_prev_error_signal</a></td></tr>
 <tr class="memdesc:a81d6e3e65adcfee83e953b63ff5e9121 inherit pub_attribs_classlbann_1_1Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local copy of the error signal from "previous" layer ((# neurons) x mini-batch size)  <a href="#a81d6e3e65adcfee83e953b63ff5e9121">More...</a><br/></td></tr>
@@ -331,6 +311,34 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ab8ec7fc7bd902123d7b7788b6284ca62 inherit pub_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f5e339cda98356c68063ea3845a94d2 inherit pub_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1model.html">model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a8f5e339cda98356c68063ea3845a94d2">m_neural_network_model</a></td></tr>
 <tr class="separator:a8f5e339cda98356c68063ea3845a94d2 inherit pub_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a0afb2c2252edddb4f443b95e565e768e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a0afb2c2252edddb4f443b95e565e768e">fp_linearity</a> ()</td></tr>
+<tr class="separator:a0afb2c2252edddb4f443b95e565e768e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f92354acef99d0f1e9e1aa4576de17e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a9f92354acef99d0f1e9e1aa4576de17e">bp_linearity</a> ()</td></tr>
+<tr class="separator:a9f92354acef99d0f1e9e1aa4576de17e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac26d8e4ce9ee5d0abd897311da8f7654"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#ac26d8e4ce9ee5d0abd897311da8f7654">fp_nonlinearity</a> ()</td></tr>
+<tr class="separator:ac26d8e4ce9ee5d0abd897311da8f7654"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abea4cae658c2ecb4e178235757779337"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#abea4cae658c2ecb4e178235757779337">bp_nonlinearity</a> ()</td></tr>
+<tr class="separator:abea4cae658c2ecb4e178235757779337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a077a29792de2a39015da8b18120a00e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1Layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a077a29792de2a39015da8b18120a00e3">m_original_layer</a></td></tr>
+<tr class="separator:a077a29792de2a39015da8b18120a00e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a288a122cc09b5ec9f92d679607aaaeaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a288a122cc09b5ec9f92d679607aaaeaf">aggregate_cost</a></td></tr>
+<tr class="separator:a288a122cc09b5ec9f92d679607aaaeaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a905f4f0aab749724c0bd898324e26884"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a905f4f0aab749724c0bd898324e26884">num_forwardprop_steps</a></td></tr>
+<tr class="separator:a905f4f0aab749724c0bd898324e26884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cc3dbf1a28b94f1900f1096964735b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5">weight_initialization</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1reconstruction__layer.html#a5cc3dbf1a28b94f1900f1096964735b9">m_weight_initialization</a></td></tr>
+<tr class="separator:a5cc3dbf1a28b94f1900f1096964735b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classlbann_1_1Layer"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classlbann_1_1Layer')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td></tr>
+<tr class="memitem:a7a55c61403cf1ecadc465d7d8663be07 inherit pub_static_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a7a55c61403cf1ecadc465d7d8663be07">weight_initialization_name</a> (<a class="el" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5">weight_initialization</a> id)</td></tr>
+<tr class="separator:a7a55c61403cf1ecadc465d7d8663be07 inherit pub_static_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classlbann_1_1target__layer"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classlbann_1_1target__layer')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classlbann_1_1target__layer.html">lbann::target_layer</a></td></tr>
 <tr class="memitem:a576266beaf97c614d8f5f3a3ae005b0d inherit pro_attribs_classlbann_1_1target__layer"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1target__layer.html#a576266beaf97c614d8f5f3a3ae005b0d">m_shared_data_reader</a></td></tr>
 <tr class="separator:a576266beaf97c614d8f5f3a3ae005b0d inherit pro_attribs_classlbann_1_1target__layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -424,17 +432,25 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:abd6c1fa01659749b22de59baf8259b84 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00034">34</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
+<div class="textblock"><h3>template&lt;class T_layout&gt;<br/>
+class lbann::reconstruction_layer&lt; T_layout &gt;</h3>
+
+
+<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00039">39</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a6cb31a012017a6b8b0419b80aa54b4ce"></a>
+<a class="anchor" id="ab10ae90120435ec6a02090e68199bfce"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">lbann::reconstruction_layer::reconstruction_layer </td>
+          <td class="memname"><a class="el" href="classlbann_1_1reconstruction__layer.html">lbann::reconstruction_layer</a>&lt; T_layout &gt;::<a class="el" href="classlbann_1_1reconstruction__layer.html">reconstruction_layer</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a>&#160;</td>
+          <td class="paramtype">T_layout&#160;</td>
           <td class="paramname"><em>data_dist</em>, </td>
         </tr>
         <tr>
@@ -453,7 +469,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classlbann_1_1optimizer.html">optimizer</a> *&#160;</td>
-          <td class="paramname"><em>optimizer</em>, </td>
+          <td class="paramname"><em>opt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -476,7 +492,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5">weight_initialization</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5">weight_initialization</a>&#160;</td>
           <td class="paramname"><em>init</em> = <code><a class="el" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5a4b78361151cbfcca33e1d560fbaedd59">weight_initialization::glorot_uniform</a></code>&#160;</td>
         </tr>
         <tr>
@@ -485,49 +501,74 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8cpp_source.html#l00036">36</a> of file <a class="el" href="lbann__layer__reconstruction_8cpp_source.html">lbann_layer_reconstruction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  :  <a class="code" href="classlbann_1_1target__layer.html#a58b78c8e0f71cbef4ebe2256e382ba11">target_layer</a>(data_dist, <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, minim_batch_size, {}, <span class="keyword">false</span>), <a class="code" href="classlbann_1_1reconstruction__layer.html#ac1cd1e57341d1f58180c446b7b0cb28f">m_original_layer</a>(original_layer),</div>
+<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00047">47</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    :  <a class="code" href="classlbann_1_1target__layer.html#a58b78c8e0f71cbef4ebe2256e382ba11">target_layer</a>(data_dist, <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, minim_batch_size, {}, <span class="keyword">false</span>), <a class="code" href="classlbann_1_1reconstruction__layer.html#a077a29792de2a39015da8b18120a00e3">m_original_layer</a>(original_layer),</div>
+<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a077a29792de2a39015da8b18120a00e3"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a077a29792de2a39015da8b18120a00e3">lbann::reconstruction_layer::m_original_layer</a></div><div class="ttdeci">Layer * m_original_layer</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00041">lbann_layer_reconstruction.hpp:41</a></div></div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
 <div class="ttc" id="classlbann_1_1target__layer_html_a58b78c8e0f71cbef4ebe2256e382ba11"><div class="ttname"><a href="classlbann_1_1target__layer.html#a58b78c8e0f71cbef4ebe2256e382ba11">lbann::target_layer::target_layer</a></div><div class="ttdeci">target_layer(data_layout dist_data, lbann_comm *comm, uint mini_batch_size, std::map&lt; execution_mode, generic_data_reader * &gt; data_readers, bool shared_data_reader, bool for_regression=false)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__target__layer_8cpp_source.html#l00039">lbann_target_layer.cpp:39</a></div></div>
-<div class="ttc" id="classlbann_1_1reconstruction__layer_html_ac1cd1e57341d1f58180c446b7b0cb28f"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#ac1cd1e57341d1f58180c446b7b0cb28f">lbann::reconstruction_layer::m_original_layer</a></div><div class="ttdeci">Layer * m_original_layer</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00061">lbann_layer_reconstruction.hpp:61</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a11c8753ed10f003afcfca67843573112"></a>
+<a class="anchor" id="a7ff16b30c6321ac044efeadf85302ce4"></a>
 <div class="memitem">
 <div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> lbann::reconstruction_layer::average_cost </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8cpp_source.html#l00178">178</a> of file <a class="el" href="lbann__layer__reconstruction_8cpp_source.html">lbann_layer_reconstruction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                                                       {</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1reconstruction__layer.html#a6941459598d08242eee5395f9e25d1e0">aggregate_cost</a> / <a class="code" href="classlbann_1_1reconstruction__layer.html#aea756a99f5848fb6dbc8d3f77e50374e">num_forwardprop_steps</a>;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1reconstruction__layer_html_aea756a99f5848fb6dbc8d3f77e50374e"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#aea756a99f5848fb6dbc8d3f77e50374e">lbann::reconstruction_layer::num_forwardprop_steps</a></div><div class="ttdeci">long num_forwardprop_steps</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00063">lbann_layer_reconstruction.hpp:63</a></div></div>
-<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a6941459598d08242eee5395f9e25d1e0"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a6941459598d08242eee5395f9e25d1e0">lbann::reconstruction_layer::aggregate_cost</a></div><div class="ttdeci">DataType aggregate_cost</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00062">lbann_layer_reconstruction.hpp:62</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a15f32a50e74c6c35afcbd950204a64b9"></a>
-<div class="memitem">
-<div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void lbann::reconstruction_layer::bp_linearity </td>
+          <td class="memname"><a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> <a class="el" href="classlbann_1_1reconstruction__layer.html">lbann::reconstruction_layer</a>&lt; T_layout &gt;::average_cost </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00190">190</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                                {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1reconstruction__layer.html#a288a122cc09b5ec9f92d679607aaaeaf">aggregate_cost</a> / <a class="code" href="classlbann_1_1reconstruction__layer.html#a905f4f0aab749724c0bd898324e26884">num_forwardprop_steps</a>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a905f4f0aab749724c0bd898324e26884"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a905f4f0aab749724c0bd898324e26884">lbann::reconstruction_layer::num_forwardprop_steps</a></div><div class="ttdeci">long num_forwardprop_steps</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00043">lbann_layer_reconstruction.hpp:43</a></div></div>
+<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a288a122cc09b5ec9f92d679607aaaeaf"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a288a122cc09b5ec9f92d679607aaaeaf">lbann::reconstruction_layer::aggregate_cost</a></div><div class="ttdeci">DataType aggregate_cost</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00042">lbann_layer_reconstruction.hpp:42</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1reconstruction__layer_a7ff16b30c6321ac044efeadf85302ce4_icgraph.png" border="0" usemap="#classlbann_1_1reconstruction__layer_a7ff16b30c6321ac044efeadf85302ce4_icgraph" alt=""/></div>
+<map name="classlbann_1_1reconstruction__layer_a7ff16b30c6321ac044efeadf85302ce4_icgraph" id="classlbann_1_1reconstruction__layer_a7ff16b30c6321ac044efeadf85302ce4_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1reconstruction__layer.html#a0ecd7a7b2cb9ea36962297b7bf237bf9" title="lbann::reconstruction\l_layer::summarize" alt="" coords="198,5,341,46"/><area shape="rect" id="node3" href="classlbann_1_1reconstruction__layer.html#a5e7084309c8d2049241946369c01ddc3" title="lbann::reconstruction\l_layer::epoch_print" alt="" coords="198,70,341,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f92354acef99d0f1e9e1aa4576de17e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlbann_1_1reconstruction__layer.html">lbann::reconstruction_layer</a>&lt; T_layout &gt;::bp_linearity </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -536,7 +577,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -544,33 +585,34 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1Layer.html#a02a4d7cbe0458860cf66d131a7bea6f0">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8cpp_source.html#l00107">107</a> of file <a class="el" href="lbann__layer__reconstruction_8cpp_source.html">lbann_layer_reconstruction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                             {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="comment">// delta = (activation - y)</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="comment">// delta_w = delta * activation_prev^T</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  int64_t curr_mini_batch_size = <a class="code" href="classlbann_1_1Layer.html#a8f5e339cda98356c68063ea3845a94d2">m_neural_network_model</a>-&gt;<a class="code" href="classlbann_1_1model.html#a7889df80a48db23b1b7a1c276e2d53e4">get_current_mini_batch_size</a>();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a> original_layer_act_v;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="comment">//view of original layer</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  View(original_layer_act_v,*(<a class="code" href="classlbann_1_1reconstruction__layer.html#ac1cd1e57341d1f58180c446b7b0cb28f">m_original_layer</a>-&gt;<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>),IR(0,<a class="code" href="classlbann_1_1reconstruction__layer.html#ac1cd1e57341d1f58180c446b7b0cb28f">m_original_layer</a>-&gt;<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>-&gt;Height()),IR(0,curr_mini_batch_size));</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="comment">// Compute error signal</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#a8f5e339cda98356c68063ea3845a94d2">m_neural_network_model</a>-&gt;<a class="code" href="classlbann_1_1model.html#a3b1f510697713e477a0249276096d84c">m_obj_fn</a>-&gt;<a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#ab86c1d273d80104764fb5fb72f5d6875">compute_obj_fn_derivative</a>(<a class="code" href="classlbann_1_1Layer.html#a44254c29e29a8e8b4ccb1aaaea46ff48">m_prev_layer_type</a>, *<a class="code" href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">m_activations_v</a>, original_layer_act_v,*<a class="code" href="classlbann_1_1Layer.html#a3f1ab0c18e78cd82af4cf24b73ec96bc">m_prev_error_signal_v</a>);</div>
+<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00119">119</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                      {</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="comment">//m_prev_error_signal_v is the error computed by objective function</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="comment">//is really not previous, but computed in this layer</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="comment">//@todo: rename as obj_error_signal</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="comment">// Compute the partial delta update for the next lower layer</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  Gemm(TRANSPOSE, NORMAL, <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1), *<a class="code" href="classlbann_1_1Layer.html#a6611d258f3d6c4c8610e219dfc037f67">m_weights</a>, *<a class="code" href="classlbann_1_1Layer.html#a3f1ab0c18e78cd82af4cf24b73ec96bc">m_prev_error_signal_v</a>, <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0), *<a class="code" href="classlbann_1_1Layer.html#a2fccbe7596578869ee0317c3d2542f35">m_error_signal_v</a>);</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="comment">// Compute update for activation weights</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  Gemm(NORMAL, TRANSPOSE, <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1)/<a class="code" href="classlbann_1_1Layer.html#a3568e34780f13d641b39c14fe87b5e38">get_effective_minibatch_size</a>(), *<a class="code" href="classlbann_1_1Layer.html#a3f1ab0c18e78cd82af4cf24b73ec96bc">m_prev_error_signal_v</a>,</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;       *<a class="code" href="classlbann_1_1Layer.html#ac590e0f3831d1c7b204275c89375ee14">m_prev_activations_v</a>,<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0), *<a class="code" href="classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7">m_weights_gradient</a>);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">// delta = (activation - y)</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">// delta_w = delta * activation_prev^T</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    int64_t curr_mini_batch_size = <a class="code" href="classlbann_1_1Layer.html#a8f5e339cda98356c68063ea3845a94d2">m_neural_network_model</a>-&gt;<a class="code" href="classlbann_1_1model.html#a7889df80a48db23b1b7a1c276e2d53e4">get_current_mini_batch_size</a>();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a> original_layer_act_v;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">//view of original layer</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    View(original_layer_act_v,*(<a class="code" href="classlbann_1_1reconstruction__layer.html#a077a29792de2a39015da8b18120a00e3">m_original_layer</a>-&gt;<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>),IR(0,<a class="code" href="classlbann_1_1reconstruction__layer.html#a077a29792de2a39015da8b18120a00e3">m_original_layer</a>-&gt;<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>-&gt;Height()),IR(0,curr_mini_batch_size));</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">// Compute error signal</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a8f5e339cda98356c68063ea3845a94d2">m_neural_network_model</a>-&gt;<a class="code" href="classlbann_1_1model.html#a3b1f510697713e477a0249276096d84c">m_obj_fn</a>-&gt;<a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#ab86c1d273d80104764fb5fb72f5d6875">compute_obj_fn_derivative</a>(<a class="code" href="classlbann_1_1Layer.html#a44254c29e29a8e8b4ccb1aaaea46ff48">m_prev_layer_type</a>, *<a class="code" href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">m_activations_v</a>, original_layer_act_v,*<a class="code" href="classlbann_1_1Layer.html#a3f1ab0c18e78cd82af4cf24b73ec96bc">m_prev_error_signal_v</a>);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">//m_prev_error_signal_v is the error computed by objective function</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">//is really not previous, but computed in this layer</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="comment">//@todo: rename as obj_error_signal</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="comment">// Compute the partial delta update for the next lower layer</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    Gemm(TRANSPOSE, NORMAL, <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1), *<a class="code" href="classlbann_1_1Layer.html#a6611d258f3d6c4c8610e219dfc037f67">m_weights</a>, *<a class="code" href="classlbann_1_1Layer.html#a3f1ab0c18e78cd82af4cf24b73ec96bc">m_prev_error_signal_v</a>, <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0), *<a class="code" href="classlbann_1_1Layer.html#a2fccbe7596578869ee0317c3d2542f35">m_error_signal_v</a>);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="comment">// Compute update for activation weights</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    Gemm(NORMAL, TRANSPOSE, <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1)/<a class="code" href="classlbann_1_1Layer.html#a3568e34780f13d641b39c14fe87b5e38">get_effective_minibatch_size</a>(), *<a class="code" href="classlbann_1_1Layer.html#a3f1ab0c18e78cd82af4cf24b73ec96bc">m_prev_error_signal_v</a>,</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;         *<a class="code" href="classlbann_1_1Layer.html#ac590e0f3831d1c7b204275c89375ee14">m_prev_activations_v</a>,<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0), *<a class="code" href="classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7">m_weights_gradient</a>);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  }</div>
 <div class="ttc" id="classlbann_1_1Layer_html_a871b103aedbd95b5205c24b66ef74dfa"><div class="ttname"><a href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">lbann::Layer::m_activations_v</a></div><div class="ttdeci">ElMat * m_activations_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00301">lbann_layer.hpp:301</a></div></div>
+<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a077a29792de2a39015da8b18120a00e3"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a077a29792de2a39015da8b18120a00e3">lbann::reconstruction_layer::m_original_layer</a></div><div class="ttdeci">Layer * m_original_layer</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00041">lbann_layer_reconstruction.hpp:41</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a3568e34780f13d641b39c14fe87b5e38"><div class="ttname"><a href="classlbann_1_1Layer.html#a3568e34780f13d641b39c14fe87b5e38">lbann::Layer::get_effective_minibatch_size</a></div><div class="ttdeci">virtual uint get_effective_minibatch_size(void) const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00228">lbann_layer.hpp:228</a></div></div>
 <div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_ab86c1d273d80104764fb5fb72f5d6875"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#ab86c1d273d80104764fb5fb72f5d6875">lbann::objective_functions::objective_fn::compute_obj_fn_derivative</a></div><div class="ttdeci">virtual void compute_obj_fn_derivative(layer_type prev_layer_type, ElMat &amp;predictions_v, ElMat &amp;groundtruth_v, ElMat &amp;error_signal_v)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00108">lbann_objective_fn.hpp:108</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a7a28e5b795fcd852dea62e57d7a6f97e"><div class="ttname"><a href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">lbann::Layer::m_activations</a></div><div class="ttdeci">ElMat * m_activations</div><div class="ttdoc">Activations - non-linearity applied to weighted sum ((# neurons) x mini-batch size) ...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00296">lbann_layer.hpp:296</a></div></div>
@@ -585,28 +627,29 @@ Additional Inherited Members</h2></td></tr>
 <div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00036">lbann_base.hpp:36</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a2fccbe7596578869ee0317c3d2542f35"><div class="ttname"><a href="classlbann_1_1Layer.html#a2fccbe7596578869ee0317c3d2542f35">lbann::Layer::m_error_signal_v</a></div><div class="ttdeci">ElMat * m_error_signal_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00313">lbann_layer.hpp:313</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a6611d258f3d6c4c8610e219dfc037f67"><div class="ttname"><a href="classlbann_1_1Layer.html#a6611d258f3d6c4c8610e219dfc037f67">lbann::Layer::m_weights</a></div><div class="ttdeci">ElMat * m_weights</div><div class="ttdoc">Weight matrix (computes weight sum of inputs ((# neurons) x (# previous layer&#39;s neurons)) ...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00289">lbann_layer.hpp:289</a></div></div>
-<div class="ttc" id="classlbann_1_1reconstruction__layer_html_ac1cd1e57341d1f58180c446b7b0cb28f"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#ac1cd1e57341d1f58180c446b7b0cb28f">lbann::reconstruction_layer::m_original_layer</a></div><div class="ttdeci">Layer * m_original_layer</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00061">lbann_layer_reconstruction.hpp:61</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1reconstruction__layer_a15f32a50e74c6c35afcbd950204a64b9_cgraph.png" border="0" usemap="#classlbann_1_1reconstruction__layer_a15f32a50e74c6c35afcbd950204a64b9_cgraph" alt=""/></div>
-<map name="classlbann_1_1reconstruction__layer_a15f32a50e74c6c35afcbd950204a64b9_cgraph" id="classlbann_1_1reconstruction__layer_a15f32a50e74c6c35afcbd950204a64b9_cgraph">
-<area shape="rect" id="node2" href="lbann__layer__reconstruction_8cpp.html#a10ab2a6119489f64f9e5f489981bd64f" title="m_original_layer" alt="" coords="198,12,314,39"/></map>
+<div class="center"><img src="classlbann_1_1reconstruction__layer_a9f92354acef99d0f1e9e1aa4576de17e_cgraph.png" border="0" usemap="#classlbann_1_1reconstruction__layer_a9f92354acef99d0f1e9e1aa4576de17e_cgraph" alt=""/></div>
+<map name="classlbann_1_1reconstruction__layer_a9f92354acef99d0f1e9e1aa4576de17e_cgraph" id="classlbann_1_1reconstruction__layer_a9f92354acef99d0f1e9e1aa4576de17e_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1model.html#a7889df80a48db23b1b7a1c276e2d53e4" title="lbann::model::get_current\l_mini_batch_size" alt="" coords="201,5,370,46"/><area shape="rect" id="node3" href="classlbann_1_1objective__functions_1_1objective__fn.html#ab86c1d273d80104764fb5fb72f5d6875" title="lbann::objective_functions\l::objective_fn::compute\l_obj_fn_derivative" alt="" coords="199,69,372,125"/><area shape="rect" id="node4" href="classlbann_1_1Layer.html#a3568e34780f13d641b39c14fe87b5e38" title="lbann::Layer::get_effective\l_minibatch_size" alt="" coords="197,149,373,190"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a65f8513a0b628f2d119701a18018f5a2"></a>
+<a class="anchor" id="abea4cae658c2ecb4e178235757779337"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void lbann::reconstruction_layer::bp_nonlinearity </td>
+          <td class="memname">void <a class="el" href="classlbann_1_1reconstruction__layer.html">lbann::reconstruction_layer</a>&lt; T_layout &gt;::bp_nonlinearity </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -615,7 +658,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -623,14 +666,14 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1Layer.html#a042b0b6376e635579b3c946b8c1dc811">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8cpp_source.html#l00187">187</a> of file <a class="el" href="lbann__layer__reconstruction_8cpp_source.html">lbann_layer_reconstruction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                                                {</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  <span class="comment">// Backward propagation</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#adc0a8d274f10860b3b1f1d8e4388a503">m_activation_fn</a>-&gt;<a class="code" href="classlbann_1_1Activation.html#aa3a4bc5761dbeab6d5e649ea9d1e2fb8">backwardProp</a>(*<a class="code" href="classlbann_1_1Layer.html#aefa1214f0220d47344b60436b2e52b53">m_weighted_sum_v</a>);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1Layer.html#a7fb36ea1c2256cf0e330d1f9fabe83ba">m_activation_type</a> != <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ab718adec73e04ce3ec720dd11a06a308">activation_type::ID</a>) {</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    Hadamard(*<a class="code" href="classlbann_1_1Layer.html#a3f1ab0c18e78cd82af4cf24b73ec96bc">m_prev_error_signal_v</a>, *<a class="code" href="classlbann_1_1Layer.html#aefa1214f0220d47344b60436b2e52b53">m_weighted_sum_v</a>, *<a class="code" href="classlbann_1_1Layer.html#a3f1ab0c18e78cd82af4cf24b73ec96bc">m_prev_error_signal_v</a>);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  }</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00200">200</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                         {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="comment">// Backward propagation</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#adc0a8d274f10860b3b1f1d8e4388a503">m_activation_fn</a>-&gt;<a class="code" href="classlbann_1_1Activation.html#aa3a4bc5761dbeab6d5e649ea9d1e2fb8">backwardProp</a>(*<a class="code" href="classlbann_1_1Layer.html#aefa1214f0220d47344b60436b2e52b53">m_weighted_sum_v</a>);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1Layer.html#a7fb36ea1c2256cf0e330d1f9fabe83ba">m_activation_type</a> != <a class="code" href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ab718adec73e04ce3ec720dd11a06a308">activation_type::ID</a>) {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      Hadamard(*<a class="code" href="classlbann_1_1Layer.html#a3f1ab0c18e78cd82af4cf24b73ec96bc">m_prev_error_signal_v</a>, *<a class="code" href="classlbann_1_1Layer.html#aefa1214f0220d47344b60436b2e52b53">m_weighted_sum_v</a>, *<a class="code" href="classlbann_1_1Layer.html#a3f1ab0c18e78cd82af4cf24b73ec96bc">m_prev_error_signal_v</a>);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    }</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  }</div>
 <div class="ttc" id="classlbann_1_1Layer_html_a7fb36ea1c2256cf0e330d1f9fabe83ba"><div class="ttname"><a href="classlbann_1_1Layer.html#a7fb36ea1c2256cf0e330d1f9fabe83ba">lbann::Layer::m_activation_type</a></div><div class="ttdeci">activation_type m_activation_type</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00287">lbann_layer.hpp:287</a></div></div>
 <div class="ttc" id="classlbann_1_1Activation_html_aa3a4bc5761dbeab6d5e649ea9d1e2fb8"><div class="ttname"><a href="classlbann_1_1Activation.html#aa3a4bc5761dbeab6d5e649ea9d1e2fb8">lbann::Activation::backwardProp</a></div><div class="ttdeci">virtual void backwardProp(ElMat &amp;m)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__activations_8cpp_source.html#l00043">lbann_layer_activations.cpp:43</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a3f1ab0c18e78cd82af4cf24b73ec96bc"><div class="ttname"><a href="classlbann_1_1Layer.html#a3f1ab0c18e78cd82af4cf24b73ec96bc">lbann::Layer::m_prev_error_signal_v</a></div><div class="ttdeci">ElMat * m_prev_error_signal_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00300">lbann_layer.hpp:300</a></div></div>
@@ -638,17 +681,28 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="classlbann_1_1Layer_html_aefa1214f0220d47344b60436b2e52b53"><div class="ttname"><a href="classlbann_1_1Layer.html#aefa1214f0220d47344b60436b2e52b53">lbann::Layer::m_weighted_sum_v</a></div><div class="ttdeci">ElMat * m_weighted_sum_v</div><div class="ttdoc">Create a view of each matrix so that it can accomodate partial mini-batches. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00299">lbann_layer.hpp:299</a></div></div>
 <div class="ttc" id="namespacelbann_html_ab00e153fabca7ab166e4d79d47c05c76ab718adec73e04ce3ec720dd11a06a308"><div class="ttname"><a href="namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ab718adec73e04ce3ec720dd11a06a308">lbann::activation_type::ID</a></div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1reconstruction__layer_abea4cae658c2ecb4e178235757779337_cgraph.png" border="0" usemap="#classlbann_1_1reconstruction__layer_abea4cae658c2ecb4e178235757779337_cgraph" alt=""/></div>
+<map name="classlbann_1_1reconstruction__layer_abea4cae658c2ecb4e178235757779337_cgraph" id="classlbann_1_1reconstruction__layer_abea4cae658c2ecb4e178235757779337_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1Activation.html#aa3a4bc5761dbeab6d5e649ea9d1e2fb8" title="lbann::Activation::\lbackwardProp" alt="" coords="206,5,333,46"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="aeff0c56ba72091f5c30c16f2ff15c476"></a>
+<a class="anchor" id="a5e7084309c8d2049241946369c01ddc3"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void lbann::reconstruction_layer::epoch_print </td>
+          <td class="memname">void <a class="el" href="classlbann_1_1reconstruction__layer.html">lbann::reconstruction_layer</a>&lt; T_layout &gt;::epoch_print </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -657,7 +711,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -665,37 +719,48 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1Layer.html#ac6e0d11c76af92dd042e2bdca4d75e58">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8cpp_source.html#l00155">155</a> of file <a class="el" href="lbann__layer__reconstruction_8cpp_source.html">lbann_layer_reconstruction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                                                  {</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordtype">double</span> avg_cost = <a class="code" href="classlbann_1_1reconstruction__layer.html#a11c8753ed10f003afcfca67843573112">average_cost</a>();</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5">am_world_master</a>()) {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    std::vector&lt;double&gt; avg_costs(<a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637">get_num_models</a>());</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a142c396a4d4a2c16ee234b813e7e45a6">intermodel_gather</a>(avg_cost, avg_costs);</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; avg_costs.size(); ++i) {</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;model &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; average reconstruction cost: &quot;</span> &lt;&lt; avg_costs[i] &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a142c396a4d4a2c16ee234b813e7e45a6">intermodel_gather</a>(avg_cost, <a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#ac1bcd6a5e38ad3a7e86171435642bc9f">get_world_master</a>());</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  }</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00167">167</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                           {</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordtype">double</span> avg_cost = <a class="code" href="classlbann_1_1reconstruction__layer.html#a7ff16b30c6321ac044efeadf85302ce4">average_cost</a>();</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5">am_world_master</a>()) {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      std::vector&lt;double&gt; avg_costs(<a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637">get_num_models</a>());</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      <a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a142c396a4d4a2c16ee234b813e7e45a6">intermodel_gather</a>(avg_cost, avg_costs);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; avg_costs.size(); ++i) {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;model &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; average reconstruction cost: &quot;</span> &lt;&lt; avg_costs[i] &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      <a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a142c396a4d4a2c16ee234b813e7e45a6">intermodel_gather</a>(avg_cost, <a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#ac1bcd6a5e38ad3a7e86171435642bc9f">get_world_master</a>());</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    }</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  }</div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a142c396a4d4a2c16ee234b813e7e45a6"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a142c396a4d4a2c16ee234b813e7e45a6">lbann::lbann_comm::intermodel_gather</a></div><div class="ttdeci">void intermodel_gather(T snd, int root)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00156">lbann_comm.hpp:156</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_ac1bcd6a5e38ad3a7e86171435642bc9f"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#ac1bcd6a5e38ad3a7e86171435642bc9f">lbann::lbann_comm::get_world_master</a></div><div class="ttdeci">int get_world_master() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00082">lbann_comm.hpp:82</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a54842b679a3756cf79b43baf46caf637"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637">lbann::lbann_comm::get_num_models</a></div><div class="ttdeci">int get_num_models() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00098">lbann_comm.hpp:98</a></div></div>
-<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a11c8753ed10f003afcfca67843573112"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a11c8753ed10f003afcfca67843573112">lbann::reconstruction_layer::average_cost</a></div><div class="ttdeci">DataType average_cost(void) const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8cpp_source.html#l00178">lbann_layer_reconstruction.cpp:178</a></div></div>
+<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a7ff16b30c6321ac044efeadf85302ce4"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a7ff16b30c6321ac044efeadf85302ce4">lbann::reconstruction_layer::average_cost</a></div><div class="ttdeci">DataType average_cost() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00190">lbann_layer_reconstruction.hpp:190</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a5de05c52f22e0bbd7c703bec3ad4dbf2"><div class="ttname"><a href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">lbann::Layer::m_comm</a></div><div class="ttdeci">lbann_comm * m_comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00276">lbann_layer.hpp:276</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_adb87fdc17095efd8e4dcb343357a6ba5"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5">lbann::lbann_comm::am_world_master</a></div><div class="ttdeci">bool am_world_master() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00090">lbann_comm.hpp:90</a></div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1reconstruction__layer_a5e7084309c8d2049241946369c01ddc3_cgraph.png" border="0" usemap="#classlbann_1_1reconstruction__layer_a5e7084309c8d2049241946369c01ddc3_cgraph" alt=""/></div>
+<map name="classlbann_1_1reconstruction__layer_a5e7084309c8d2049241946369c01ddc3_cgraph" id="classlbann_1_1reconstruction__layer_a5e7084309c8d2049241946369c01ddc3_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1reconstruction__layer.html#a7ff16b30c6321ac044efeadf85302ce4" title="lbann::reconstruction\l_layer::average_cost" alt="" coords="198,5,341,46"/><area shape="rect" id="node3" href="classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5" title="lbann::lbann_comm::\lam_world_master" alt="" coords="198,70,341,111"/><area shape="rect" id="node4" href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637" title="lbann::lbann_comm::\lget_num_models" alt="" coords="198,135,341,177"/><area shape="rect" id="node5" href="classlbann_1_1lbann__comm.html#a142c396a4d4a2c16ee234b813e7e45a6" title="lbann::lbann_comm::\lintermodel_gather" alt="" coords="198,201,341,242"/><area shape="rect" id="node6" href="classlbann_1_1lbann__comm.html#ac1bcd6a5e38ad3a7e86171435642bc9f" title="lbann::lbann_comm::\lget_world_master" alt="" coords="198,266,341,307"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="a9064b79f66738d382947e92b60be4c51"></a>
+<a class="anchor" id="a6405e1323d6872ae3711397f12751ffc"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void lbann::reconstruction_layer::epoch_reset </td>
+          <td class="memname">void <a class="el" href="classlbann_1_1reconstruction__layer.html">lbann::reconstruction_layer</a>&lt; T_layout &gt;::epoch_reset </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -704,7 +769,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -712,25 +777,36 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1Layer.html#a3e24e6fc7c3d974dd256c650460ad570">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8cpp_source.html#l00168">168</a> of file <a class="el" href="lbann__layer__reconstruction_8cpp_source.html">lbann_layer_reconstruction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                            {</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#a3e24e6fc7c3d974dd256c650460ad570">Layer::epoch_reset</a>();</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <a class="code" href="classlbann_1_1reconstruction__layer.html#a207eb2cacf7520183af439b663103fef">reset_cost</a>();</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00180">180</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                     {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a3e24e6fc7c3d974dd256c650460ad570">Layer::epoch_reset</a>();</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <a class="code" href="classlbann_1_1reconstruction__layer.html#a8ff7fe7ae196c50266bab94ccad1725c">reset_cost</a>();</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  }</div>
 <div class="ttc" id="classlbann_1_1Layer_html_a3e24e6fc7c3d974dd256c650460ad570"><div class="ttname"><a href="classlbann_1_1Layer.html#a3e24e6fc7c3d974dd256c650460ad570">lbann::Layer::epoch_reset</a></div><div class="ttdeci">virtual void epoch_reset(void)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00153">lbann_layer.hpp:153</a></div></div>
-<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a207eb2cacf7520183af439b663103fef"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a207eb2cacf7520183af439b663103fef">lbann::reconstruction_layer::reset_cost</a></div><div class="ttdeci">void reset_cost(void)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8cpp_source.html#l00173">lbann_layer_reconstruction.cpp:173</a></div></div>
+<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a8ff7fe7ae196c50266bab94ccad1725c"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a8ff7fe7ae196c50266bab94ccad1725c">lbann::reconstruction_layer::reset_cost</a></div><div class="ttdeci">void reset_cost()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00185">lbann_layer_reconstruction.hpp:185</a></div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1reconstruction__layer_a6405e1323d6872ae3711397f12751ffc_cgraph.png" border="0" usemap="#classlbann_1_1reconstruction__layer_a6405e1323d6872ae3711397f12751ffc_cgraph" alt=""/></div>
+<map name="classlbann_1_1reconstruction__layer_a6405e1323d6872ae3711397f12751ffc_cgraph" id="classlbann_1_1reconstruction__layer_a6405e1323d6872ae3711397f12751ffc_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1Layer.html#a3e24e6fc7c3d974dd256c650460ad570" title="lbann::Layer::epoch\l_reset" alt="" coords="201,5,337,46"/><area shape="rect" id="node3" href="classlbann_1_1reconstruction__layer.html#a8ff7fe7ae196c50266bab94ccad1725c" title="lbann::reconstruction\l_layer::reset_cost" alt="" coords="198,70,341,111"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="a4a360d62800d5ba48b42f2a8cd4c4412"></a>
+<a class="anchor" id="a0afb2c2252edddb4f443b95e565e768e"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void lbann::reconstruction_layer::fp_linearity </td>
+          <td class="memname">void <a class="el" href="classlbann_1_1reconstruction__layer.html">lbann::reconstruction_layer</a>&lt; T_layout &gt;::fp_linearity </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -739,7 +815,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -747,55 +823,57 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1Layer.html#ab2d9a4518ea7026a37e31257a820d59a">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8cpp_source.html#l00092">92</a> of file <a class="el" href="lbann__layer__reconstruction_8cpp_source.html">lbann_layer_reconstruction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                             {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="comment">//m_activations is linear transformation of m_weights * m_prev_activations^T</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  Gemm(NORMAL, NORMAL, (<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) 1., *<a class="code" href="classlbann_1_1Layer.html#a6611d258f3d6c4c8610e219dfc037f67">m_weights</a>, *<a class="code" href="classlbann_1_1Layer.html#ac590e0f3831d1c7b204275c89375ee14">m_prev_activations_v</a>, (<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) 0.0, *<a class="code" href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">m_activations_v</a>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  int64_t curr_mini_batch_size = <a class="code" href="classlbann_1_1Layer.html#a8f5e339cda98356c68063ea3845a94d2">m_neural_network_model</a>-&gt;<a class="code" href="classlbann_1_1model.html#a7889df80a48db23b1b7a1c276e2d53e4">get_current_mini_batch_size</a>();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a> original_layer_act_v;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="comment">//view of original layer</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  View(original_layer_act_v,*(<a class="code" href="classlbann_1_1reconstruction__layer.html#ac1cd1e57341d1f58180c446b7b0cb28f">m_original_layer</a>-&gt;<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>),IR(0,<a class="code" href="classlbann_1_1reconstruction__layer.html#ac1cd1e57341d1f58180c446b7b0cb28f">m_original_layer</a>-&gt;<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>-&gt;Height()),IR(0,curr_mini_batch_size));</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="comment">// Compute cost will be sum of squared error of fp_input (linearly transformed to m_activations)</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="comment">// and original layer fp_input/original input</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> avg_error = <a class="code" href="classlbann_1_1Layer.html#a8f5e339cda98356c68063ea3845a94d2">m_neural_network_model</a>-&gt;<a class="code" href="classlbann_1_1model.html#a3b1f510697713e477a0249276096d84c">m_obj_fn</a>-&gt;<a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#a031268be60cba917d94d876aaa36c7f7">compute_obj_fn</a>(*<a class="code" href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">m_activations_v</a>, original_layer_act_v);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="classlbann_1_1reconstruction__layer.html#a6941459598d08242eee5395f9e25d1e0">aggregate_cost</a> += avg_error;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <a class="code" href="classlbann_1_1reconstruction__layer.html#aea756a99f5848fb6dbc8d3f77e50374e">num_forwardprop_steps</a>++;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00104">104</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                      {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">//m_activations is linear transformation of m_weights * m_prev_activations^T</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    Gemm(NORMAL, NORMAL, (<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) 1., *<a class="code" href="classlbann_1_1Layer.html#a6611d258f3d6c4c8610e219dfc037f67">m_weights</a>, *<a class="code" href="classlbann_1_1Layer.html#ac590e0f3831d1c7b204275c89375ee14">m_prev_activations_v</a>, (<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) 0.0, *<a class="code" href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">m_activations_v</a>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    int64_t curr_mini_batch_size = <a class="code" href="classlbann_1_1Layer.html#a8f5e339cda98356c68063ea3845a94d2">m_neural_network_model</a>-&gt;<a class="code" href="classlbann_1_1model.html#a7889df80a48db23b1b7a1c276e2d53e4">get_current_mini_batch_size</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a> original_layer_act_v;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">//view of original layer</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    View(original_layer_act_v,*(<a class="code" href="classlbann_1_1reconstruction__layer.html#a077a29792de2a39015da8b18120a00e3">m_original_layer</a>-&gt;<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>),IR(0,<a class="code" href="classlbann_1_1reconstruction__layer.html#a077a29792de2a39015da8b18120a00e3">m_original_layer</a>-&gt;<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>-&gt;Height()),IR(0,curr_mini_batch_size));</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// Compute cost will be sum of squared error of fp_input (linearly transformed to m_activations)</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">// and original layer fp_input/original input</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> avg_error = <a class="code" href="classlbann_1_1Layer.html#a8f5e339cda98356c68063ea3845a94d2">m_neural_network_model</a>-&gt;<a class="code" href="classlbann_1_1model.html#a3b1f510697713e477a0249276096d84c">m_obj_fn</a>-&gt;<a class="code" href="classlbann_1_1objective__functions_1_1objective__fn.html#a031268be60cba917d94d876aaa36c7f7">compute_obj_fn</a>(*<a class="code" href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">m_activations_v</a>, original_layer_act_v);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="classlbann_1_1reconstruction__layer.html#a288a122cc09b5ec9f92d679607aaaeaf">aggregate_cost</a> += avg_error;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="classlbann_1_1reconstruction__layer.html#a905f4f0aab749724c0bd898324e26884">num_forwardprop_steps</a>++;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  }</div>
 <div class="ttc" id="classlbann_1_1Layer_html_a871b103aedbd95b5205c24b66ef74dfa"><div class="ttname"><a href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">lbann::Layer::m_activations_v</a></div><div class="ttdeci">ElMat * m_activations_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00301">lbann_layer.hpp:301</a></div></div>
+<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a077a29792de2a39015da8b18120a00e3"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a077a29792de2a39015da8b18120a00e3">lbann::reconstruction_layer::m_original_layer</a></div><div class="ttdeci">Layer * m_original_layer</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00041">lbann_layer_reconstruction.hpp:41</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a7a28e5b795fcd852dea62e57d7a6f97e"><div class="ttname"><a href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">lbann::Layer::m_activations</a></div><div class="ttdeci">ElMat * m_activations</div><div class="ttdoc">Activations - non-linearity applied to weighted sum ((# neurons) x mini-batch size) ...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00296">lbann_layer.hpp:296</a></div></div>
+<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a905f4f0aab749724c0bd898324e26884"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a905f4f0aab749724c0bd898324e26884">lbann::reconstruction_layer::num_forwardprop_steps</a></div><div class="ttdeci">long num_forwardprop_steps</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00043">lbann_layer_reconstruction.hpp:43</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_a7889df80a48db23b1b7a1c276e2d53e4"><div class="ttname"><a href="classlbann_1_1model.html#a7889df80a48db23b1b7a1c276e2d53e4">lbann::model::get_current_mini_batch_size</a></div><div class="ttdeci">int64_t get_current_mini_batch_size()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00110">lbann_model.hpp:110</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_a3b1f510697713e477a0249276096d84c"><div class="ttname"><a href="classlbann_1_1model.html#a3b1f510697713e477a0249276096d84c">lbann::model::m_obj_fn</a></div><div class="ttdeci">objective_functions::objective_fn * m_obj_fn</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00143">lbann_model.hpp:143</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a8f5e339cda98356c68063ea3845a94d2"><div class="ttname"><a href="classlbann_1_1Layer.html#a8f5e339cda98356c68063ea3845a94d2">lbann::Layer::m_neural_network_model</a></div><div class="ttdeci">model * m_neural_network_model</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00306">lbann_layer.hpp:306</a></div></div>
-<div class="ttc" id="classlbann_1_1reconstruction__layer_html_aea756a99f5848fb6dbc8d3f77e50374e"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#aea756a99f5848fb6dbc8d3f77e50374e">lbann::reconstruction_layer::num_forwardprop_steps</a></div><div class="ttdeci">long num_forwardprop_steps</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00063">lbann_layer_reconstruction.hpp:63</a></div></div>
 <div class="ttc" id="classlbann_1_1objective__functions_1_1objective__fn_html_a031268be60cba917d94d876aaa36c7f7"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__fn.html#a031268be60cba917d94d876aaa36c7f7">lbann::objective_functions::objective_fn::compute_obj_fn</a></div><div class="ttdeci">virtual double compute_obj_fn(ElMat &amp;predictions_v, ElMat &amp;groundtruth_v)</div><div class="ttdoc">Compute the object function – Note that it is averaged across a mini-batch. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn_8hpp_source.html#l00105">lbann_objective_fn.hpp:105</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_ac590e0f3831d1c7b204275c89375ee14"><div class="ttname"><a href="classlbann_1_1Layer.html#ac590e0f3831d1c7b204275c89375ee14">lbann::Layer::m_prev_activations_v</a></div><div class="ttdeci">ElMat * m_prev_activations_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00314">lbann_layer.hpp:314</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a8e774b79084797a8f87918d8f66b6802"><div class="ttname"><a href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::MC, El::MR &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00042">lbann_base.hpp:42</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00036">lbann_base.hpp:36</a></div></div>
+<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a288a122cc09b5ec9f92d679607aaaeaf"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a288a122cc09b5ec9f92d679607aaaeaf">lbann::reconstruction_layer::aggregate_cost</a></div><div class="ttdeci">DataType aggregate_cost</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00042">lbann_layer_reconstruction.hpp:42</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a6611d258f3d6c4c8610e219dfc037f67"><div class="ttname"><a href="classlbann_1_1Layer.html#a6611d258f3d6c4c8610e219dfc037f67">lbann::Layer::m_weights</a></div><div class="ttdeci">ElMat * m_weights</div><div class="ttdoc">Weight matrix (computes weight sum of inputs ((# neurons) x (# previous layer&#39;s neurons)) ...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00289">lbann_layer.hpp:289</a></div></div>
-<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a6941459598d08242eee5395f9e25d1e0"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a6941459598d08242eee5395f9e25d1e0">lbann::reconstruction_layer::aggregate_cost</a></div><div class="ttdeci">DataType aggregate_cost</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00062">lbann_layer_reconstruction.hpp:62</a></div></div>
-<div class="ttc" id="classlbann_1_1reconstruction__layer_html_ac1cd1e57341d1f58180c446b7b0cb28f"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#ac1cd1e57341d1f58180c446b7b0cb28f">lbann::reconstruction_layer::m_original_layer</a></div><div class="ttdeci">Layer * m_original_layer</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00061">lbann_layer_reconstruction.hpp:61</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1reconstruction__layer_a4a360d62800d5ba48b42f2a8cd4c4412_cgraph.png" border="0" usemap="#classlbann_1_1reconstruction__layer_a4a360d62800d5ba48b42f2a8cd4c4412_cgraph" alt=""/></div>
-<map name="classlbann_1_1reconstruction__layer_a4a360d62800d5ba48b42f2a8cd4c4412_cgraph" id="classlbann_1_1reconstruction__layer_a4a360d62800d5ba48b42f2a8cd4c4412_cgraph">
-<area shape="rect" id="node2" href="lbann__layer__reconstruction_8cpp.html#a10ab2a6119489f64f9e5f489981bd64f" title="m_original_layer" alt="" coords="198,12,314,39"/></map>
+<div class="center"><img src="classlbann_1_1reconstruction__layer_a0afb2c2252edddb4f443b95e565e768e_cgraph.png" border="0" usemap="#classlbann_1_1reconstruction__layer_a0afb2c2252edddb4f443b95e565e768e_cgraph" alt=""/></div>
+<map name="classlbann_1_1reconstruction__layer_a0afb2c2252edddb4f443b95e565e768e_cgraph" id="classlbann_1_1reconstruction__layer_a0afb2c2252edddb4f443b95e565e768e_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1model.html#a7889df80a48db23b1b7a1c276e2d53e4" title="lbann::model::get_current\l_mini_batch_size" alt="" coords="213,5,382,46"/><area shape="rect" id="node3" href="classlbann_1_1objective__functions_1_1objective__fn.html#a031268be60cba917d94d876aaa36c7f7" title="Compute the object function – Note that it is averaged across a mini&#45;batch. " alt="" coords="197,70,397,111"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aa2a8bd67bccd457fb3fba89d4eea731c"></a>
+<a class="anchor" id="ac26d8e4ce9ee5d0abd897311da8f7654"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void lbann::reconstruction_layer::fp_nonlinearity </td>
+          <td class="memname">void <a class="el" href="classlbann_1_1reconstruction__layer.html">lbann::reconstruction_layer</a>&lt; T_layout &gt;::fp_nonlinearity </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -804,7 +882,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -812,88 +890,199 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1Layer.html#ac942027d92e6bb32e34b62a50cea1ba4">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8cpp_source.html#l00182">182</a> of file <a class="el" href="lbann__layer__reconstruction_8cpp_source.html">lbann_layer_reconstruction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                                                {</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="comment">// Forward propagation</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#adc0a8d274f10860b3b1f1d8e4388a503">m_activation_fn</a>-&gt;<a class="code" href="classlbann_1_1Activation.html#a027767c99c9b728601e6efcc58d0f3f2">forwardProp</a>(*<a class="code" href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">m_activations_v</a>);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00195">195</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                         {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="comment">// Forward propagation</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#adc0a8d274f10860b3b1f1d8e4388a503">m_activation_fn</a>-&gt;<a class="code" href="classlbann_1_1Activation.html#a027767c99c9b728601e6efcc58d0f3f2">forwardProp</a>(*<a class="code" href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">m_activations_v</a>);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  }</div>
 <div class="ttc" id="classlbann_1_1Layer_html_a871b103aedbd95b5205c24b66ef74dfa"><div class="ttname"><a href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">lbann::Layer::m_activations_v</a></div><div class="ttdeci">ElMat * m_activations_v</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00301">lbann_layer.hpp:301</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_adc0a8d274f10860b3b1f1d8e4388a503"><div class="ttname"><a href="classlbann_1_1Layer.html#adc0a8d274f10860b3b1f1d8e4388a503">lbann::Layer::m_activation_fn</a></div><div class="ttdeci">Activation * m_activation_fn</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00367">lbann_layer.hpp:367</a></div></div>
 <div class="ttc" id="classlbann_1_1Activation_html_a027767c99c9b728601e6efcc58d0f3f2"><div class="ttname"><a href="classlbann_1_1Activation.html#a027767c99c9b728601e6efcc58d0f3f2">lbann::Activation::forwardProp</a></div><div class="ttdeci">virtual void forwardProp(ElMat &amp;m)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__activations_8cpp_source.html#l00036">lbann_layer_activations.cpp:36</a></div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1reconstruction__layer_ac26d8e4ce9ee5d0abd897311da8f7654_cgraph.png" border="0" usemap="#classlbann_1_1reconstruction__layer_ac26d8e4ce9ee5d0abd897311da8f7654_cgraph" alt=""/></div>
+<map name="classlbann_1_1reconstruction__layer_ac26d8e4ce9ee5d0abd897311da8f7654_cgraph" id="classlbann_1_1reconstruction__layer_ac26d8e4ce9ee5d0abd897311da8f7654_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1Activation.html#a027767c99c9b728601e6efcc58d0f3f2" title="lbann::Activation::\lforwardProp" alt="" coords="203,5,330,46"/></map>
 </div>
-</div>
-<a class="anchor" id="a1fe8c0eb03179be666520b330f849a60"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a> lbann::reconstruction_layer::get_execution_mode </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8cpp_source.html#l00134">134</a> of file <a class="el" href="lbann__layer__reconstruction_8cpp_source.html">lbann_layer_reconstruction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                                                             {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1Layer.html#af8b115cb89d6e8081de3f148a8ad2ef7">m_execution_mode</a>;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1Layer_html_af8b115cb89d6e8081de3f148a8ad2ef7"><div class="ttname"><a href="classlbann_1_1Layer.html#af8b115cb89d6e8081de3f148a8ad2ef7">lbann::Layer::m_execution_mode</a></div><div class="ttdeci">execution_mode m_execution_mode</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00286">lbann_layer.hpp:286</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="af4298b354ebaacae02dd6f9799648837"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> lbann::reconstruction_layer::reconstruction_cost </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a> &amp;&#160;</td>
-          <td class="paramname"><em>Y</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+</p>
 
 </div>
 </div>
-<a class="anchor" id="a207eb2cacf7520183af439b663103fef"></a>
+<a class="anchor" id="a8a500ff9288778c6523620c6318ca018"></a>
 <div class="memitem">
 <div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void lbann::reconstruction_layer::reset_cost </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8cpp_source.html#l00173">173</a> of file <a class="el" href="lbann__layer__reconstruction_8cpp_source.html">lbann_layer_reconstruction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                                           {</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  <a class="code" href="classlbann_1_1reconstruction__layer.html#a6941459598d08242eee5395f9e25d1e0">aggregate_cost</a> = 0.0;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  <a class="code" href="classlbann_1_1reconstruction__layer.html#aea756a99f5848fb6dbc8d3f77e50374e">num_forwardprop_steps</a> = 0;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1reconstruction__layer_html_aea756a99f5848fb6dbc8d3f77e50374e"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#aea756a99f5848fb6dbc8d3f77e50374e">lbann::reconstruction_layer::num_forwardprop_steps</a></div><div class="ttdeci">long num_forwardprop_steps</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00063">lbann_layer_reconstruction.hpp:63</a></div></div>
-<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a6941459598d08242eee5395f9e25d1e0"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a6941459598d08242eee5395f9e25d1e0">lbann::reconstruction_layer::aggregate_cost</a></div><div class="ttdeci">DataType aggregate_cost</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00062">lbann_layer_reconstruction.hpp:62</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a68da4fcc68089695fc5e072342d4d982"></a>
-<div class="memitem">
-<div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void lbann::reconstruction_layer::setup </td>
+          <td class="memname"><a class="el" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a> <a class="el" href="classlbann_1_1reconstruction__layer.html">lbann::reconstruction_layer</a>&lt; T_layout &gt;::get_execution_mode </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00146">146</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                                      {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1Layer.html#af8b115cb89d6e8081de3f148a8ad2ef7">m_execution_mode</a>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1Layer_html_af8b115cb89d6e8081de3f148a8ad2ef7"><div class="ttname"><a href="classlbann_1_1Layer.html#af8b115cb89d6e8081de3f148a8ad2ef7">lbann::Layer::m_execution_mode</a></div><div class="ttdeci">execution_mode m_execution_mode</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00286">lbann_layer.hpp:286</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac9ffcdc1a745d3db0e28a122e6a1ac87"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlbann_1_1reconstruction__layer.html">lbann::reconstruction_layer</a>&lt; T_layout &gt;::m_original_layer </td>
+          <td>(</td>
+          <td class="paramtype">original_layer&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab8960f8f3f2cb9bcfa6bc7cba8615738"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlbann_1_1reconstruction__layer.html">lbann::reconstruction_layer</a>&lt; T_layout &gt;::m_weight_initialization </td>
+          <td>(</td>
+          <td class="paramtype">init&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00054">54</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                     {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a6941c1ec005f88a7af80eaebf652e16f">m_type</a> = <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743ae75ffd9ae04f68e5ef32915baeebe761">layer_type::reconstruction</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a0c3f1427701caffe13b816b102a04983">m_index</a> = index;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">m_num_neurons</a> = original_layer-&gt;get_num_neurons();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    this-&gt;<a class="code" href="classlbann_1_1Layer.html#a54d5ada095360c0933ff8692e14bd253">m_optimizer</a> = opt; <span class="comment">// Manually assign the optimizer since target layers normally set this to NULL</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classlbann_1_1reconstruction__layer.html#a288a122cc09b5ec9f92d679607aaaeaf">aggregate_cost</a> = 0.0;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classlbann_1_1reconstruction__layer.html#a905f4f0aab749724c0bd898324e26884">num_forwardprop_steps</a> = 0;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// Initialize activation function</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#adc0a8d274f10860b3b1f1d8e4388a503">m_activation_fn</a> = <a class="code" href="namespacelbann.html#a6bc1a6b4f98b412f48a2f29b02e48a77">new_activation</a>(activation);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// Done in base layer constructor</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">/*switch(data_dist) {</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">      case data_layout::MODEL_PARALLEL:</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">      initialize_model_parallel_distribution();  base layer</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">      break;</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">      case data_layout::DATA_PARALLEL:</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">      initialize_data_parallel_distribution();</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">      break;</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">      default:</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">      throw lbann_exception(std::string{} + __FILE__ + &quot; &quot; +</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">      std::to_string(__LINE__) +</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">      &quot;Invalid data layout selected&quot;);</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">      }*/</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
+<div class="ttc" id="namespacelbann_html_a33be342c4bdc4c00e9f91ff3a2f20743ae75ffd9ae04f68e5ef32915baeebe761"><div class="ttname"><a href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743ae75ffd9ae04f68e5ef32915baeebe761">lbann::layer_type::reconstruction</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a7425d82c79f0c7072870d553be07a66c"><div class="ttname"><a href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">lbann::Layer::m_num_neurons</a></div><div class="ttdeci">uint m_num_neurons</div><div class="ttdoc">Number of neurons. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00283">lbann_layer.hpp:283</a></div></div>
+<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a905f4f0aab749724c0bd898324e26884"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a905f4f0aab749724c0bd898324e26884">lbann::reconstruction_layer::num_forwardprop_steps</a></div><div class="ttdeci">long num_forwardprop_steps</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00043">lbann_layer_reconstruction.hpp:43</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a54d5ada095360c0933ff8692e14bd253"><div class="ttname"><a href="classlbann_1_1Layer.html#a54d5ada095360c0933ff8692e14bd253">lbann::Layer::m_optimizer</a></div><div class="ttdeci">optimizer * m_optimizer</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00277">lbann_layer.hpp:277</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_adc0a8d274f10860b3b1f1d8e4388a503"><div class="ttname"><a href="classlbann_1_1Layer.html#adc0a8d274f10860b3b1f1d8e4388a503">lbann::Layer::m_activation_fn</a></div><div class="ttdeci">Activation * m_activation_fn</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00367">lbann_layer.hpp:367</a></div></div>
+<div class="ttc" id="namespacelbann_html_a6bc1a6b4f98b412f48a2f29b02e48a77"><div class="ttname"><a href="namespacelbann.html#a6bc1a6b4f98b412f48a2f29b02e48a77">lbann::new_activation</a></div><div class="ttdeci">Activation * new_activation(activation_type act_fn, Args...params)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__activations_8hpp_source.html#l00212">lbann_layer_activations.hpp:212</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a6941c1ec005f88a7af80eaebf652e16f"><div class="ttname"><a href="classlbann_1_1Layer.html#a6941c1ec005f88a7af80eaebf652e16f">lbann::Layer::m_type</a></div><div class="ttdeci">layer_type m_type</div><div class="ttdoc">Type of this layer. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00279">lbann_layer.hpp:279</a></div></div>
+<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a288a122cc09b5ec9f92d679607aaaeaf"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a288a122cc09b5ec9f92d679607aaaeaf">lbann::reconstruction_layer::aggregate_cost</a></div><div class="ttdeci">DataType aggregate_cost</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00042">lbann_layer_reconstruction.hpp:42</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a0c3f1427701caffe13b816b102a04983"><div class="ttname"><a href="classlbann_1_1Layer.html#a0c3f1427701caffe13b816b102a04983">lbann::Layer::m_index</a></div><div class="ttdeci">uint m_index</div><div class="ttdoc">Layer index (start with 0) </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00274">lbann_layer.hpp:274</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1reconstruction__layer_ab8960f8f3f2cb9bcfa6bc7cba8615738_cgraph.png" border="0" usemap="#classlbann_1_1reconstruction__layer_ab8960f8f3f2cb9bcfa6bc7cba8615738_cgraph" alt=""/></div>
+<map name="classlbann_1_1reconstruction__layer_ab8960f8f3f2cb9bcfa6bc7cba8615738_cgraph" id="classlbann_1_1reconstruction__layer_ab8960f8f3f2cb9bcfa6bc7cba8615738_cgraph">
+<area shape="rect" id="node2" href="namespacelbann.html#a6bc1a6b4f98b412f48a2f29b02e48a77" title="lbann::new_activation" alt="" coords="251,12,399,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ff7fe7ae196c50266bab94ccad1725c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlbann_1_1reconstruction__layer.html">lbann::reconstruction_layer</a>&lt; T_layout &gt;::reset_cost </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00185">185</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                    {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <a class="code" href="classlbann_1_1reconstruction__layer.html#a288a122cc09b5ec9f92d679607aaaeaf">aggregate_cost</a> = 0.0;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="code" href="classlbann_1_1reconstruction__layer.html#a905f4f0aab749724c0bd898324e26884">num_forwardprop_steps</a> = 0;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a905f4f0aab749724c0bd898324e26884"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a905f4f0aab749724c0bd898324e26884">lbann::reconstruction_layer::num_forwardprop_steps</a></div><div class="ttdeci">long num_forwardprop_steps</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00043">lbann_layer_reconstruction.hpp:43</a></div></div>
+<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a288a122cc09b5ec9f92d679607aaaeaf"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a288a122cc09b5ec9f92d679607aaaeaf">lbann::reconstruction_layer::aggregate_cost</a></div><div class="ttdeci">DataType aggregate_cost</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00042">lbann_layer_reconstruction.hpp:42</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1reconstruction__layer_a8ff7fe7ae196c50266bab94ccad1725c_icgraph.png" border="0" usemap="#classlbann_1_1reconstruction__layer_a8ff7fe7ae196c50266bab94ccad1725c_icgraph" alt=""/></div>
+<map name="classlbann_1_1reconstruction__layer_a8ff7fe7ae196c50266bab94ccad1725c_icgraph" id="classlbann_1_1reconstruction__layer_a8ff7fe7ae196c50266bab94ccad1725c_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1reconstruction__layer.html#a6405e1323d6872ae3711397f12751ffc" title="lbann::reconstruction\l_layer::epoch_reset" alt="" coords="198,5,341,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7f1da7a30ed3b3405290c8e71fcb94dc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlbann_1_1reconstruction__layer.html">lbann::reconstruction_layer</a>&lt; T_layout &gt;::setup </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>num_prev_neurons</em></td><td>)</td>
@@ -902,39 +1091,40 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1Layer.html#a20442464265da1cb2aeb1cf82640702f">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8cpp_source.html#l00068">68</a> of file <a class="el" href="lbann__layer__reconstruction_8cpp_source.html">lbann_layer_reconstruction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                                          {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="classlbann_1_1target__layer.html#a1c872b29d3d81ed04e34dcaf557beb2b">target_layer::setup</a>(num_prev_neurons);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#a20442464265da1cb2aeb1cf82640702f">Layer::setup</a>(num_prev_neurons);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="comment">// Initialize weight-bias matrix</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  Zeros(*<a class="code" href="classlbann_1_1Layer.html#a6611d258f3d6c4c8610e219dfc037f67">m_weights</a>, <a class="code" href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">m_num_neurons</a>, num_prev_neurons);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="comment">// Initialize weights</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="namespacelbann.html#afda802d107be9203db432ae5f6c276fd">initialize_matrix</a>(*<a class="code" href="classlbann_1_1Layer.html#a6611d258f3d6c4c8610e219dfc037f67">m_weights</a>, <a class="code" href="classlbann_1_1reconstruction__layer.html#a48141bb2e0b31ca9e916d0c41054bc9b">m_weight_initialization</a>, num_prev_neurons, <a class="code" href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">m_num_neurons</a>);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="comment">// Initialize other matrices</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  Zeros(*<a class="code" href="classlbann_1_1Layer.html#a43ae6cca8efd036e6f496d3b4f5c1bf9">m_error_signal</a>, num_prev_neurons, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>); <span class="comment">// m_error_signal holds the product of m_weights^T * m_prev_error_signal</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  Zeros(*<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>, <a class="code" href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">m_num_neurons</a>, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>); <span class="comment">//clear up m_activations before copying fp_input to it</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  Zeros(*<a class="code" href="classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7">m_weights_gradient</a>, <a class="code" href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">m_num_neurons</a>,num_prev_neurons); <span class="comment">//clear up before filling with new results</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  Zeros(*<a class="code" href="classlbann_1_1Layer.html#a81d6e3e65adcfee83e953b63ff5e9121">m_prev_error_signal</a>, <a class="code" href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">m_num_neurons</a>, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>); <span class="comment">//clear up before filling with new results</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  Zeros(*<a class="code" href="classlbann_1_1Layer.html#acbf8aa63927a205c28f971e91c24c89f">m_prev_activations</a>, num_prev_neurons, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="comment">// Initialize optimizer</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1Layer.html#a54d5ada095360c0933ff8692e14bd253">m_optimizer</a> != <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a54d5ada095360c0933ff8692e14bd253">m_optimizer</a>-&gt;<a class="code" href="classlbann_1_1optimizer.html#a6eb6169ed46ad602339c7b0bc2633c37">setup</a>(<a class="code" href="classlbann_1_1Layer.html#a6611d258f3d6c4c8610e219dfc037f67">m_weights</a>);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00079">79</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                   {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="classlbann_1_1target__layer.html#a1c872b29d3d81ed04e34dcaf557beb2b">target_layer::setup</a>(num_prev_neurons);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a20442464265da1cb2aeb1cf82640702f">Layer::setup</a>(num_prev_neurons);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// Initialize weight-bias matrix</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    Zeros(*<a class="code" href="classlbann_1_1Layer.html#a6611d258f3d6c4c8610e219dfc037f67">m_weights</a>, <a class="code" href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">m_num_neurons</a>, num_prev_neurons);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">// Initialize weights</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="namespacelbann.html#afda802d107be9203db432ae5f6c276fd">initialize_matrix</a>(*<a class="code" href="classlbann_1_1Layer.html#a6611d258f3d6c4c8610e219dfc037f67">m_weights</a>, <a class="code" href="classlbann_1_1reconstruction__layer.html#a5cc3dbf1a28b94f1900f1096964735b9">m_weight_initialization</a>, num_prev_neurons, <a class="code" href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">m_num_neurons</a>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// Initialize other matrices</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    Zeros(*<a class="code" href="classlbann_1_1Layer.html#a43ae6cca8efd036e6f496d3b4f5c1bf9">m_error_signal</a>, num_prev_neurons, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>); <span class="comment">// m_error_signal holds the product of m_weights^T * m_prev_error_signal</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    Zeros(*<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>, <a class="code" href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">m_num_neurons</a>, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>); <span class="comment">//clear up m_activations before copying fp_input to it</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    Zeros(*<a class="code" href="classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7">m_weights_gradient</a>, <a class="code" href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">m_num_neurons</a>,num_prev_neurons); <span class="comment">//clear up before filling with new results</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    Zeros(*<a class="code" href="classlbann_1_1Layer.html#a81d6e3e65adcfee83e953b63ff5e9121">m_prev_error_signal</a>, <a class="code" href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">m_num_neurons</a>, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>); <span class="comment">//clear up before filling with new results</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    Zeros(*<a class="code" href="classlbann_1_1Layer.html#acbf8aa63927a205c28f971e91c24c89f">m_prev_activations</a>, num_prev_neurons, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// Initialize optimizer</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1Layer.html#a54d5ada095360c0933ff8692e14bd253">m_optimizer</a> != <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <a class="code" href="classlbann_1_1Layer.html#a54d5ada095360c0933ff8692e14bd253">m_optimizer</a>-&gt;<a class="code" href="classlbann_1_1optimizer.html#a6eb6169ed46ad602339c7b0bc2633c37">setup</a>(<a class="code" href="classlbann_1_1Layer.html#a6611d258f3d6c4c8610e219dfc037f67">m_weights</a>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
 <div class="ttc" id="classlbann_1_1Layer_html_a7a28e5b795fcd852dea62e57d7a6f97e"><div class="ttname"><a href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">lbann::Layer::m_activations</a></div><div class="ttdeci">ElMat * m_activations</div><div class="ttdoc">Activations - non-linearity applied to weighted sum ((# neurons) x mini-batch size) ...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00296">lbann_layer.hpp:296</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a7425d82c79f0c7072870d553be07a66c"><div class="ttname"><a href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">lbann::Layer::m_num_neurons</a></div><div class="ttdeci">uint m_num_neurons</div><div class="ttdoc">Number of neurons. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00283">lbann_layer.hpp:283</a></div></div>
+<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a5cc3dbf1a28b94f1900f1096964735b9"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a5cc3dbf1a28b94f1900f1096964735b9">lbann::reconstruction_layer::m_weight_initialization</a></div><div class="ttdeci">weight_initialization m_weight_initialization</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00044">lbann_layer_reconstruction.hpp:44</a></div></div>
 <div class="ttc" id="namespacelbann_html_afda802d107be9203db432ae5f6c276fd"><div class="ttname"><a href="namespacelbann.html#afda802d107be9203db432ae5f6c276fd">lbann::initialize_matrix</a></div><div class="ttdeci">void initialize_matrix(ElMat &amp;matrix_v, weight_initialization initialization, Int fan_in, Int fan_out)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__random_8cpp_source.html#l00207">lbann_random.cpp:207</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_acbf8aa63927a205c28f971e91c24c89f"><div class="ttname"><a href="classlbann_1_1Layer.html#acbf8aa63927a205c28f971e91c24c89f">lbann::Layer::m_prev_activations</a></div><div class="ttdeci">ElMat * m_prev_activations</div><div class="ttdoc">Local copy of the activations from the &quot;previous&quot; layer ((# previous layer&#39;s neurons) x mini-batch ...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00311">lbann_layer.hpp:311</a></div></div>
 <div class="ttc" id="classlbann_1_1optimizer_html_a6eb6169ed46ad602339c7b0bc2633c37"><div class="ttname"><a href="classlbann_1_1optimizer.html#a6eb6169ed46ad602339c7b0bc2633c37">lbann::optimizer::setup</a></div><div class="ttdeci">virtual void setup(AbsDistMat *parameters)</div><div class="ttdoc">Set parameters to optimize and initialize optimizer. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8cpp_source.html#l00040">lbann_optimizer.cpp:40</a></div></div>
@@ -947,28 +1137,29 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="classlbann_1_1Layer_html_a744ab42fb33c5d94d43abb5aae0e7ad7"><div class="ttname"><a href="classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7">lbann::Layer::m_weights_gradient</a></div><div class="ttdeci">ElMat * m_weights_gradient</div><div class="ttdoc">Gradient w.r.t. weight matrix ((# neurons) x (# previous layer&#39;s neurons)) </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00290">lbann_layer.hpp:290</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a81d6e3e65adcfee83e953b63ff5e9121"><div class="ttname"><a href="classlbann_1_1Layer.html#a81d6e3e65adcfee83e953b63ff5e9121">lbann::Layer::m_prev_error_signal</a></div><div class="ttdeci">ElMat * m_prev_error_signal</div><div class="ttdoc">Local copy of the error signal from &quot;previous&quot; layer ((# neurons) x mini-batch size) ...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00294">lbann_layer.hpp:294</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a6611d258f3d6c4c8610e219dfc037f67"><div class="ttname"><a href="classlbann_1_1Layer.html#a6611d258f3d6c4c8610e219dfc037f67">lbann::Layer::m_weights</a></div><div class="ttdeci">ElMat * m_weights</div><div class="ttdoc">Weight matrix (computes weight sum of inputs ((# neurons) x (# previous layer&#39;s neurons)) ...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00289">lbann_layer.hpp:289</a></div></div>
-<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a48141bb2e0b31ca9e916d0c41054bc9b"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a48141bb2e0b31ca9e916d0c41054bc9b">lbann::reconstruction_layer::m_weight_initialization</a></div><div class="ttdeci">weight_initialization m_weight_initialization</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00064">lbann_layer_reconstruction.hpp:64</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1reconstruction__layer_a68da4fcc68089695fc5e072342d4d982_cgraph.png" border="0" usemap="#classlbann_1_1reconstruction__layer_a68da4fcc68089695fc5e072342d4d982_cgraph" alt=""/></div>
-<map name="classlbann_1_1reconstruction__layer_a68da4fcc68089695fc5e072342d4d982_cgraph" id="classlbann_1_1reconstruction__layer_a68da4fcc68089695fc5e072342d4d982_cgraph">
-<area shape="rect" id="node2" href="namespacelbann.html#afda802d107be9203db432ae5f6c276fd" title="lbann::initialize_matrix" alt="" coords="199,73,350,100"/><area shape="rect" id="node8" href="lbann__layer__reconstruction_8cpp.html#acf6a2677c9dc565b7f3379c1544d709e" title="m_weight_initialization" alt="" coords="198,124,351,151"/><area shape="rect" id="node3" href="namespacelbann.html#acd76b03f2b7ee00ad7c8ba83a20d1866" title="lbann::uniform_fill" alt="" coords="413,16,537,43"/><area shape="rect" id="node6" href="namespacelbann.html#a057b6c1efb3f6fcbe8ebe08f8506fee1" title="lbann::gaussian_fill" alt="" coords="408,73,541,100"/><area shape="rect" id="node4" href="namespacelbann.html#a5cd1cf097449bfd5bed0246819cddd13" title="lbann::uniform_fill\l_procdet" alt="" coords="602,5,726,46"/><area shape="rect" id="node5" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764" title="lbann::get_generator" alt="" coords="779,45,919,72"/><area shape="rect" id="node7" href="namespacelbann.html#a4fab058e5091cf12e918d879c340f125" title="lbann::gaussian_fill\l_procdet" alt="" coords="597,70,731,111"/><area shape="rect" id="node9" href="namespacelbann.html#a6bc1a6b4f98b412f48a2f29b02e48a77" title="lbann::new_activation" alt="" coords="401,124,549,151"/></map>
+<div class="center"><img src="classlbann_1_1reconstruction__layer_a7f1da7a30ed3b3405290c8e71fcb94dc_cgraph.png" border="0" usemap="#classlbann_1_1reconstruction__layer_a7f1da7a30ed3b3405290c8e71fcb94dc_cgraph" alt=""/></div>
+<map name="classlbann_1_1reconstruction__layer_a7f1da7a30ed3b3405290c8e71fcb94dc_cgraph" id="classlbann_1_1reconstruction__layer_a7f1da7a30ed3b3405290c8e71fcb94dc_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1target__layer.html#a1c872b29d3d81ed04e34dcaf557beb2b" title="lbann::target_layer\l::setup" alt="" coords="210,5,339,46"/><area shape="rect" id="node3" href="classlbann_1_1Layer.html#a20442464265da1cb2aeb1cf82640702f" title="lbann::Layer::setup" alt="" coords="208,71,341,97"/><area shape="rect" id="node4" href="namespacelbann.html#afda802d107be9203db432ae5f6c276fd" title="lbann::initialize_matrix" alt="" coords="199,121,350,148"/><area shape="rect" id="node10" href="classlbann_1_1optimizer.html#a6eb6169ed46ad602339c7b0bc2633c37" title="Set parameters to optimize and initialize optimizer. " alt="" coords="197,172,352,199"/><area shape="rect" id="node5" href="namespacelbann.html#acd76b03f2b7ee00ad7c8ba83a20d1866" title="lbann::uniform_fill" alt="" coords="405,95,529,121"/><area shape="rect" id="node8" href="namespacelbann.html#a057b6c1efb3f6fcbe8ebe08f8506fee1" title="lbann::gaussian_fill" alt="" coords="400,149,533,176"/><area shape="rect" id="node6" href="namespacelbann.html#a5cd1cf097449bfd5bed0246819cddd13" title="lbann::uniform_fill\l_procdet" alt="" coords="586,83,710,125"/><area shape="rect" id="node7" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764" title="lbann::get_generator" alt="" coords="763,124,903,151"/><area shape="rect" id="node9" href="namespacelbann.html#a4fab058e5091cf12e918d879c340f125" title="lbann::gaussian_fill\l_procdet" alt="" coords="581,149,715,190"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a5c7101e5e52ce6a8af532bffc0b6ae36"></a>
+<a class="anchor" id="a0ecd7a7b2cb9ea36962297b7bf237bf9"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void lbann::reconstruction_layer::summarize </td>
+          <td class="memname">void <a class="el" href="classlbann_1_1reconstruction__layer.html">lbann::reconstruction_layer</a>&lt; T_layout &gt;::summarize </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classlbann_1_1lbann__summary.html">lbann_summary</a> &amp;&#160;</td>
           <td class="paramname"><em>summarizer</em>, </td>
@@ -987,44 +1178,46 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1Layer.html#aff82d98a534f0dfc3b0cb200a9aff90a">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8cpp_source.html#l00148">148</a> of file <a class="el" href="lbann__layer__reconstruction_8cpp_source.html">lbann_layer_reconstruction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                                                                                 {</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#aff82d98a534f0dfc3b0cb200a9aff90a">Layer::summarize</a>(summarizer, step);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  std::string tag = <span class="stringliteral">&quot;layer&quot;</span> + std::to_string(static_cast&lt;long long&gt;(<a class="code" href="classlbann_1_1Layer.html#a0c3f1427701caffe13b816b102a04983">m_index</a>))</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                    + <span class="stringliteral">&quot;/ReconstructionCost&quot;</span>;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  summarizer.reduce_scalar(tag, <a class="code" href="classlbann_1_1reconstruction__layer.html#a11c8753ed10f003afcfca67843573112">average_cost</a>(), step);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a11c8753ed10f003afcfca67843573112"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a11c8753ed10f003afcfca67843573112">lbann::reconstruction_layer::average_cost</a></div><div class="ttdeci">DataType average_cost(void) const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8cpp_source.html#l00178">lbann_layer_reconstruction.cpp:178</a></div></div>
+<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00160">160</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                                                          {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#aff82d98a534f0dfc3b0cb200a9aff90a">Layer::summarize</a>(summarizer, step);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    std::string tag = <span class="stringliteral">&quot;layer&quot;</span> + std::to_string(static_cast&lt;long long&gt;(<a class="code" href="classlbann_1_1Layer.html#a0c3f1427701caffe13b816b102a04983">m_index</a>))</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      + <span class="stringliteral">&quot;/ReconstructionCost&quot;</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    summarizer.reduce_scalar(tag, <a class="code" href="classlbann_1_1reconstruction__layer.html#a7ff16b30c6321ac044efeadf85302ce4">average_cost</a>(), step);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1reconstruction__layer_html_a7ff16b30c6321ac044efeadf85302ce4"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html#a7ff16b30c6321ac044efeadf85302ce4">lbann::reconstruction_layer::average_cost</a></div><div class="ttdeci">DataType average_cost() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer__reconstruction_8hpp_source.html#l00190">lbann_layer_reconstruction.hpp:190</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_aff82d98a534f0dfc3b0cb200a9aff90a"><div class="ttname"><a href="classlbann_1_1Layer.html#aff82d98a534f0dfc3b0cb200a9aff90a">lbann::Layer::summarize</a></div><div class="ttdeci">virtual void summarize(lbann_summary &amp;summarizer, int64_t step)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00294">lbann_layer.cpp:294</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a0c3f1427701caffe13b816b102a04983"><div class="ttname"><a href="classlbann_1_1Layer.html#a0c3f1427701caffe13b816b102a04983">lbann::Layer::m_index</a></div><div class="ttdeci">uint m_index</div><div class="ttdoc">Layer index (start with 0) </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00274">lbann_layer.hpp:274</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1reconstruction__layer_a5c7101e5e52ce6a8af532bffc0b6ae36_cgraph.png" border="0" usemap="#classlbann_1_1reconstruction__layer_a5c7101e5e52ce6a8af532bffc0b6ae36_cgraph" alt=""/></div>
-<map name="classlbann_1_1reconstruction__layer_a5c7101e5e52ce6a8af532bffc0b6ae36_cgraph" id="classlbann_1_1reconstruction__layer_a5c7101e5e52ce6a8af532bffc0b6ae36_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1lbann__summary.html#aacd54e77d45bd1bd56df3a4d71c01ce8" title="lbann::lbann_summary\l::reduce_scalar" alt="" coords="198,5,351,46"/></map>
+<div class="center"><img src="classlbann_1_1reconstruction__layer_a0ecd7a7b2cb9ea36962297b7bf237bf9_cgraph.png" border="0" usemap="#classlbann_1_1reconstruction__layer_a0ecd7a7b2cb9ea36962297b7bf237bf9_cgraph" alt=""/></div>
+<map name="classlbann_1_1reconstruction__layer_a0ecd7a7b2cb9ea36962297b7bf237bf9_cgraph" id="classlbann_1_1reconstruction__layer_a0ecd7a7b2cb9ea36962297b7bf237bf9_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1Layer.html#aff82d98a534f0dfc3b0cb200a9aff90a" title="lbann::Layer::summarize" alt="" coords="197,176,363,203"/><area shape="rect" id="node7" href="classlbann_1_1lbann__summary.html#aacd54e77d45bd1bd56df3a4d71c01ce8" title="lbann::lbann_summary\l::reduce_scalar" alt="" coords="411,266,565,307"/><area shape="rect" id="node8" href="classlbann_1_1reconstruction__layer.html#a7ff16b30c6321ac044efeadf85302ce4" title="lbann::reconstruction\l_layer::average_cost" alt="" coords="209,285,351,326"/><area shape="rect" id="node3" href="classlbann_1_1lbann__summary.html#a92a483db3f0232bf31c851a172c0964d" title="lbann::lbann_summary\l::reduce_mean" alt="" coords="411,5,565,46"/><area shape="rect" id="node4" href="classlbann_1_1lbann__summary.html#ac12b58821be8d438d2715b3f80bfe566" title="lbann::lbann_summary\l::reduce_min" alt="" coords="411,70,565,111"/><area shape="rect" id="node5" href="classlbann_1_1lbann__summary.html#a1f15efb9235faddb685265503c903782" title="lbann::lbann_summary\l::reduce_max" alt="" coords="411,135,565,177"/><area shape="rect" id="node6" href="classlbann_1_1lbann__summary.html#ac388826d8854491b3df706a91cb4a689" title="lbann::lbann_summary\l::reduce_stdev" alt="" coords="411,201,565,242"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a564e4b087ee14f4472cb1a805186a693"></a>
+<a class="anchor" id="aef4be6ea2e9f55affcd715c493f0d802"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool lbann::reconstruction_layer::update </td>
+          <td class="memname">bool <a class="el" href="classlbann_1_1reconstruction__layer.html">lbann::reconstruction_layer</a>&lt; T_layout &gt;::update </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -1033,23 +1226,23 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1Layer.html#a5594cd9afb62c9bd5ab9d879ee5a9127">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8cpp_source.html#l00138">138</a> of file <a class="el" href="lbann__layer__reconstruction_8cpp_source.html">lbann_layer_reconstruction.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                                       {</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordtype">double</span> start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#a5594cd9afb62c9bd5ab9d879ee5a9127">Layer::update</a>();</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1Layer.html#af8b115cb89d6e8081de3f148a8ad2ef7">m_execution_mode</a> == <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>) {</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a54d5ada095360c0933ff8692e14bd253">m_optimizer</a>-&gt;<a class="code" href="classlbann_1_1optimizer.html#a15f0487c474d261086723422a8bad921">update</a>(<a class="code" href="classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7">m_weights_gradient</a>);</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  }</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#abd6c1fa01659749b22de59baf8259b84">update_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - start;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00150">150</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">double</span> start = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a5594cd9afb62c9bd5ab9d879ee5a9127">Layer::update</a>();</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1Layer.html#af8b115cb89d6e8081de3f148a8ad2ef7">m_execution_mode</a> == <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>) {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      <a class="code" href="classlbann_1_1Layer.html#a54d5ada095360c0933ff8692e14bd253">m_optimizer</a>-&gt;<a class="code" href="classlbann_1_1optimizer.html#a15f0487c474d261086723422a8bad921">update</a>(<a class="code" href="classlbann_1_1Layer.html#a744ab42fb33c5d94d43abb5aae0e7ad7">m_weights_gradient</a>);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#abd6c1fa01659749b22de59baf8259b84">update_time</a> += <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>() - start;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;  }</div>
 <div class="ttc" id="classlbann_1_1Layer_html_a5594cd9afb62c9bd5ab9d879ee5a9127"><div class="ttname"><a href="classlbann_1_1Layer.html#a5594cd9afb62c9bd5ab9d879ee5a9127">lbann::Layer::update</a></div><div class="ttdeci">virtual bool update(void)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00284">lbann_layer.cpp:284</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_abd6c1fa01659749b22de59baf8259b84"><div class="ttname"><a href="classlbann_1_1Layer.html#abd6c1fa01659749b22de59baf8259b84">lbann::Layer::update_time</a></div><div class="ttdeci">double update_time</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00388">lbann_layer.hpp:388</a></div></div>
 <div class="ttc" id="classlbann_1_1optimizer_html_a15f0487c474d261086723422a8bad921"><div class="ttname"><a href="classlbann_1_1optimizer.html#a15f0487c474d261086723422a8bad921">lbann::optimizer::update</a></div><div class="ttdeci">virtual void update(const AbsDistMat *gradient)=0</div><div class="ttdoc">Update parameters using objective function gradient. </div></div>
@@ -1062,24 +1255,26 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1reconstruction__layer_a564e4b087ee14f4472cb1a805186a693_cgraph.png" border="0" usemap="#classlbann_1_1reconstruction__layer_a564e4b087ee14f4472cb1a805186a693_cgraph" alt=""/></div>
-<map name="classlbann_1_1reconstruction__layer_a564e4b087ee14f4472cb1a805186a693_cgraph" id="classlbann_1_1reconstruction__layer_a564e4b087ee14f4472cb1a805186a693_cgraph">
-<area shape="rect" id="node2" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f" title="lbann::get_time" alt="" coords="198,12,309,39"/></map>
+<div class="center"><img src="classlbann_1_1reconstruction__layer_aef4be6ea2e9f55affcd715c493f0d802_cgraph.png" border="0" usemap="#classlbann_1_1reconstruction__layer_aef4be6ea2e9f55affcd715c493f0d802_cgraph" alt=""/></div>
+<map name="classlbann_1_1reconstruction__layer_aef4be6ea2e9f55affcd715c493f0d802_cgraph" id="classlbann_1_1reconstruction__layer_aef4be6ea2e9f55affcd715c493f0d802_cgraph">
+<area shape="rect" id="node2" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f" title="lbann::get_time" alt="" coords="223,5,334,32"/><area shape="rect" id="node3" href="classlbann_1_1Layer.html#a5594cd9afb62c9bd5ab9d879ee5a9127" title="lbann::Layer::update" alt="" coords="209,56,349,83"/><area shape="rect" id="node4" href="classlbann_1_1optimizer.html#a15f0487c474d261086723422a8bad921" title="Update parameters using objective function gradient. " alt="" coords="198,107,359,133"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a6941459598d08242eee5395f9e25d1e0"></a>
+<a class="anchor" id="a288a122cc09b5ec9f92d679607aaaeaf"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> lbann::reconstruction_layer::aggregate_cost</td>
+          <td class="memname"><a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> <a class="el" href="classlbann_1_1reconstruction__layer.html">lbann::reconstruction_layer</a>&lt; T_layout &gt;::aggregate_cost</td>
         </tr>
       </table>
   </td>
@@ -1089,19 +1284,37 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00062">62</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00042">42</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac1cd1e57341d1f58180c446b7b0cb28f"></a>
+<a class="anchor" id="a75bf74f178728627c815d9b3eeb3e177"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlbann_1_1reconstruction__layer.html">lbann::reconstruction_layer</a>&lt; T_layout &gt;::false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00053">53</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a077a29792de2a39015da8b18120a00e3"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classlbann_1_1Layer.html">Layer</a>* lbann::reconstruction_layer::m_original_layer</td>
+          <td class="memname"><a class="el" href="classlbann_1_1Layer.html">Layer</a>* <a class="el" href="classlbann_1_1reconstruction__layer.html">lbann::reconstruction_layer</a>&lt; T_layout &gt;::m_original_layer</td>
         </tr>
       </table>
   </td>
@@ -1111,19 +1324,21 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00061">61</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00041">41</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a48141bb2e0b31ca9e916d0c41054bc9b"></a>
+<a class="anchor" id="a5cc3dbf1a28b94f1900f1096964735b9"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5">weight_initialization</a> lbann::reconstruction_layer::m_weight_initialization</td>
+          <td class="memname"><a class="el" href="lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5">weight_initialization</a> <a class="el" href="classlbann_1_1reconstruction__layer.html">lbann::reconstruction_layer</a>&lt; T_layout &gt;::m_weight_initialization</td>
         </tr>
       </table>
   </td>
@@ -1133,19 +1348,21 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00064">64</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00044">44</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="aea756a99f5848fb6dbc8d3f77e50374e"></a>
+<a class="anchor" id="a905f4f0aab749724c0bd898324e26884"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">long lbann::reconstruction_layer::num_forwardprop_steps</td>
+          <td class="memname">long <a class="el" href="classlbann_1_1reconstruction__layer.html">lbann::reconstruction_layer</a>&lt; T_layout &gt;::num_forwardprop_steps</td>
         </tr>
       </table>
   </td>
@@ -1155,13 +1372,12 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00063">63</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__layer__reconstruction_8hpp_source.html#l00043">43</a> of file <a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/travis/build/LLNL/lbann/include/lbann/layers/<a class="el" href="lbann__layer__reconstruction_8hpp_source.html">lbann_layer_reconstruction.hpp</a></li>
-<li>/home/travis/build/LLNL/lbann/src/layers/<a class="el" href="lbann__layer__reconstruction_8cpp_source.html">lbann_layer_reconstruction.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -1169,7 +1385,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1reconstruction__layer.html">reconstruction_layer</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 19:27:31 for LBANN by
+    <li class="footer">Generated on Mon Jun 12 2017 19:46:46 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
