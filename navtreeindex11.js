@@ -1,18 +1,5 @@
 var NAVTREEINDEX11 =
 {
-"struct__BOX3__FLOAT.html#af809b76f3ee8705914c0253a00fa6be2":[3,0,17,0],
-"struct__BOX3__INT.html":[3,0,18],
-"struct__BOX3__INT.html#a067759e7bf2dd65f15aef19b1ea00a2a":[3,0,18,0],
-"struct__BOX3__INT.html#a1031b258579b04852665a7743062d945":[3,0,18,3],
-"struct__BOX3__INT.html#a196d4aa5972e411c1d543214ea380878":[3,0,18,2],
-"struct__BOX3__INT.html#a5fe2b841e423df0b852ec9dbfa6f847b":[3,0,18,5],
-"struct__BOX3__INT.html#a60aa088b2f09a42ecfbd5af4f6f81632":[3,0,18,1],
-"struct__BOX3__INT.html#a91a72dd3841d7a3fc88458466d081ff1":[3,0,18,4],
-"struct__BOX3__SHORT.html":[3,0,19],
-"struct__BOX3__SHORT.html#a0579d5c9cd4c274bd897c39275dc2552":[3,0,19,2],
-"struct__BOX3__SHORT.html#a1a1654ca09e5e0ca7143e302b64a865c":[3,0,19,5],
-"struct__BOX3__SHORT.html#a2e8ff44bf22dc7ede9057b38b26181bc":[3,0,19,1],
-"struct__BOX3__SHORT.html#a492dd8de59787a0e29dc0aefcccada1b":[3,0,19,0],
 "struct__BOX3__SHORT.html#ab3289c53028f75cd25aba6ec84b493de":[3,0,19,4],
 "struct__BOX3__SHORT.html#abfcafcbf16e1f9ca4ed1ed0e3e961ca6":[3,0,19,3],
 "struct__BOX3__UCHAR.html":[3,0,20],

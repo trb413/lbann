@@ -32,7 +32,7 @@ var searchData=
   ['add_5fint2',['ADD_INT2',['../datatype_8hpp.html#aea0fb5e04d178f32ed1d817281fcffc4',1,'datatype.hpp']]],
   ['add_5fint3',['ADD_INT3',['../datatype_8hpp.html#a831c3c107e8208d2d4795d85f33c90d8',1,'datatype.hpp']]],
   ['add_5fint4',['ADD_INT4',['../datatype_8hpp.html#a29e0e034d029b23270815c2fb9d4358e',1,'datatype.hpp']]],
-  ['add_5flayers',['add_layers',['../lbann__proto__common_8cpp.html#a4c565d11edd6d674104566b50fa4fccc',1,'add_layers(lbann::sequential_model *model, std::map&lt; execution_mode, generic_data_reader * &gt; &amp;data_readers, cudnn::cudnn_manager *cudnn, const lbann_data::LbannPB &amp;p):&#160;lbann_proto_common.cpp'],['../lbann__proto__common_8hpp.html#a21fc2ef867ec0bb5de52d3308675a65a',1,'add_layers(lbann::sequential_model *model, std::map&lt; execution_mode, lbann::generic_data_reader * &gt; &amp;data_readers, cudnn::cudnn_manager *cudnn, const lbann_data::LbannPB &amp;p):&#160;lbann_proto_common.cpp']]],
+  ['add_5flayers',['add_layers',['../lbann__proto__common_8hpp.html#a21fc2ef867ec0bb5de52d3308675a65a',1,'lbann_proto_common.hpp']]],
   ['add_5fmethod',['add_method',['../classlbann_1_1base__factory.html#ac0dee9f19694499c748f35dc16f09a11',1,'lbann::base_factory']]],
   ['add_5fmetric',['add_metric',['../classlbann_1_1model.html#adbb03deb321b99e8dbdbe65d7e1a423e',1,'lbann::model']]],
   ['affine_5ftrans',['affine_trans',['../classlbann_1_1lbann__image__preprocessor.html#adb9e017aeac52a9b5d392f17188d1057',1,'lbann::lbann_image_preprocessor']]],
