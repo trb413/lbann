@@ -57,7 +57,7 @@ var hierarchy =
     [ "lbann::dataset", "classlbann_1_1dataset.html", null ],
     [ "lbann::distributed_minibatch_parallel_io", "classlbann_1_1distributed__minibatch__parallel__io.html", [
       [ "lbann::input_layer_distributed_minibatch_parallel_io< T_layout >", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html", null ],
-      [ "lbann::target_layer_distributed_minibatch_parallel_io", "classlbann_1_1target__layer__distributed__minibatch__parallel__io.html", null ]
+      [ "lbann::target_layer_distributed_minibatch_parallel_io< T_layout >", "classlbann_1_1target__layer__distributed__minibatch__parallel__io.html", null ]
     ] ],
     [ "lbann::image_utils", "classlbann_1_1image__utils.html", null ],
     [ "lbann::Layer", "classlbann_1_1Layer.html", [
@@ -65,14 +65,14 @@ var hierarchy =
       [ "lbann::fully_connected_layer< T_layout >", "classlbann_1_1fully__connected__layer.html", null ],
       [ "lbann::io_layer", "classlbann_1_1io__layer.html", [
         [ "lbann::input_layer", "classlbann_1_1input__layer.html", [
-          [ "lbann::input_layer_distributed_minibatch", "classlbann_1_1input__layer__distributed__minibatch.html", null ],
+          [ "lbann::input_layer_distributed_minibatch< T_layout >", "classlbann_1_1input__layer__distributed__minibatch.html", null ],
           [ "lbann::input_layer_distributed_minibatch_parallel_io< T_layout >", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html", null ],
           [ "lbann::input_layer_partitioned_minibatch_parallel_io< DATA_DIST >", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html", null ]
         ] ],
         [ "lbann::target_layer", "classlbann_1_1target__layer.html", [
           [ "lbann::reconstruction_layer", "classlbann_1_1reconstruction__layer.html", null ],
-          [ "lbann::target_layer_distributed_minibatch", "classlbann_1_1target__layer__distributed__minibatch.html", null ],
-          [ "lbann::target_layer_distributed_minibatch_parallel_io", "classlbann_1_1target__layer__distributed__minibatch__parallel__io.html", null ],
+          [ "lbann::target_layer_distributed_minibatch< T_layout >", "classlbann_1_1target__layer__distributed__minibatch.html", null ],
+          [ "lbann::target_layer_distributed_minibatch_parallel_io< T_layout >", "classlbann_1_1target__layer__distributed__minibatch__parallel__io.html", null ],
           [ "lbann::target_layer_partitioned_minibatch_parallel_io< DATA_DIST >", "classlbann_1_1target__layer__partitioned__minibatch__parallel__io.html", null ],
           [ "lbann::target_layer_unsupervised", "classlbann_1_1target__layer__unsupervised.html", null ]
         ] ]

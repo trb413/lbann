@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>LBANN: lbann::input_layer_distributed_minibatch Class Reference</title>
+<title>LBANN: lbann::input_layer_distributed_minibatch&lt; T_layout &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-62-g5fc60ae-ci242061704</span>
+   &#160;<span id="projectnumber">v0.93-rc0-65-g200d90b-ci242066774</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -94,38 +94,38 @@ $(document).ready(function(){initNavTree('classlbann_1_1input__layer__distribute
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classlbann_1_1input__layer__distributed__minibatch-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">lbann::input_layer_distributed_minibatch Class Reference</div>  </div>
+<div class="title">lbann::input_layer_distributed_minibatch&lt; T_layout &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html">lbann_input_layer_distributed_minibatch.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for lbann::input_layer_distributed_minibatch:</div>
+Inheritance diagram for lbann::input_layer_distributed_minibatch&lt; T_layout &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1input__layer__distributed__minibatch__inherit__graph.png" border="0" usemap="#lbann_1_1input__layer__distributed__minibatch_inherit__map" alt="Inheritance graph"/></div>
-<map name="lbann_1_1input__layer__distributed__minibatch_inherit__map" id="lbann_1_1input__layer__distributed__minibatch_inherit__map">
+<div class="center"><img src="classlbann_1_1input__layer__distributed__minibatch__inherit__graph.png" border="0" usemap="#lbann_1_1input__layer__distributed__minibatch_3_01T__layout_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="lbann_1_1input__layer__distributed__minibatch_3_01T__layout_01_4_inherit__map" id="lbann_1_1input__layer__distributed__minibatch_3_01T__layout_01_4_inherit__map">
 <area shape="rect" id="node2" href="classlbann_1_1input__layer.html" title="lbann::input_layer" alt="" coords="19,155,143,181"/><area shape="rect" id="node3" href="classlbann_1_1io__layer.html" title="lbann::io_layer" alt="" coords="28,80,135,107"/><area shape="rect" id="node4" href="classlbann_1_1Layer.html" title="lbann::Layer" alt="" coords="35,5,128,32"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for lbann::input_layer_distributed_minibatch:</div>
+Collaboration diagram for lbann::input_layer_distributed_minibatch&lt; T_layout &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1input__layer__distributed__minibatch__coll__graph.png" border="0" usemap="#lbann_1_1input__layer__distributed__minibatch_coll__map" alt="Collaboration graph"/></div>
-<map name="lbann_1_1input__layer__distributed__minibatch_coll__map" id="lbann_1_1input__layer__distributed__minibatch_coll__map">
+<div class="center"><img src="classlbann_1_1input__layer__distributed__minibatch__coll__graph.png" border="0" usemap="#lbann_1_1input__layer__distributed__minibatch_3_01T__layout_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="lbann_1_1input__layer__distributed__minibatch_3_01T__layout_01_4_coll__map" id="lbann_1_1input__layer__distributed__minibatch_3_01T__layout_01_4_coll__map">
 <area shape="rect" id="node2" href="classlbann_1_1input__layer.html" title="lbann::input_layer" alt="" coords="1467,211,1591,237"/><area shape="rect" id="node3" href="classlbann_1_1io__layer.html" title="lbann::io_layer" alt="" coords="1309,211,1416,237"/><area shape="rect" id="node4" href="classlbann_1_1Layer.html" title="lbann::Layer" alt="" coords="1037,137,1131,164"/><area shape="rect" id="node5" href="classcudnn_1_1cudnn__manager.html" title="cudnn::cudnn_manager" alt="" coords="672,11,829,37"/><area shape="rect" id="node6" href="classlbann_1_1optimizer.html" title="Optimizer base class. " alt="" coords="533,112,648,139"/><area shape="rect" id="node7" href="classlbann_1_1lbann__comm.html" title="lbann::lbann_comm" alt="" coords="25,139,159,165"/><area shape="rect" id="node8" href="classlbann_1_1model.html" title="lbann::model" alt="" coords="703,175,799,201"/><area shape="rect" id="node9" href="classlbann_1_1optimizer__factory.html" title="Optimizer factory base class. " alt="" coords="342,225,503,252"/><area shape="rect" id="node10" href="classlbann_1_1objective__functions_1_1objective__fn.html" title="lbann::objective_functions\l::objective_fn" alt="" coords="336,277,509,318"/><area shape="rect" id="node11" href="classlbann_1_1objective__functions_1_1statistics.html" title="lbann::objective_functions\l::statistics" alt="" coords="5,277,179,318"/><area shape="rect" id="node12" href="classlbann_1_1Activation.html" title="lbann::Activation" alt="" coords="691,225,810,252"/><area shape="rect" id="node13" href="classlbann_1_1dataset.html" title="lbann::dataset" alt="" coords="1032,279,1136,305"/><area shape="rect" id="node14" href="classlbann_1_1generic__data__reader.html" title="lbann::generic_data\l_reader" alt="" coords="683,309,818,350"/><area shape="rect" id="node15" href="classlbann_1_1lbann__image__preprocessor.html" title="lbann::lbann_image\l_preprocessor" alt="" coords="355,342,490,383"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a04e6fe04b3a1edd92bbed56026807e08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#a04e6fe04b3a1edd92bbed56026807e08">input_layer_distributed_minibatch</a> (<a class="el" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a> data_dist, <a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, <a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> mini_batch_size, std::map&lt; <a class="el" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a>, <a class="el" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a> * &gt; data_readers, std::vector&lt; <a class="el" href="classlbann_1_1regularizer.html">regularizer</a> * &gt; regs={})</td></tr>
-<tr class="separator:a04e6fe04b3a1edd92bbed56026807e08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37c8afb968e8b5e5dc0b76e86dcea699"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#a37c8afb968e8b5e5dc0b76e86dcea699">setup</a> (int num_prev_neurons)</td></tr>
-<tr class="separator:a37c8afb968e8b5e5dc0b76e86dcea699"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a2316a127efb12f6b701d3ae6a6cabd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#a4a2316a127efb12f6b701d3ae6a6cabd">update</a> (void)</td></tr>
-<tr class="separator:a4a2316a127efb12f6b701d3ae6a6cabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf40d75b5d1379bce329d622ee2c143f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#abf40d75b5d1379bce329d622ee2c143f">get_local_mat</a> (void)</td></tr>
-<tr class="separator:abf40d75b5d1379bce329d622ee2c143f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4034f653692cf718f62089de089e2050"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#aaf89a79f1476644edba844c4937abbcc">CircMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#a4034f653692cf718f62089de089e2050">get_dist_mat</a> (void)</td></tr>
-<tr class="separator:a4034f653692cf718f62089de089e2050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f5785a9a6042168a2cf1a8f29dbfea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#ae5f5785a9a6042168a2cf1a8f29dbfea">input_layer_distributed_minibatch</a> (T_layout data_dist, <a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, <a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> mini_batch_size, std::map&lt; <a class="el" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a>, <a class="el" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a> * &gt; data_readers, std::vector&lt; <a class="el" href="classlbann_1_1regularizer.html">regularizer</a> * &gt; regs={})</td></tr>
+<tr class="separator:ae5f5785a9a6042168a2cf1a8f29dbfea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc6fcf320dc3d48464bcb0381434201"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#a0cc6fcf320dc3d48464bcb0381434201">setup</a> (int num_prev_neurons)</td></tr>
+<tr class="separator:a0cc6fcf320dc3d48464bcb0381434201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7cf63fbb903b099681ce657050c98c5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#af7cf63fbb903b099681ce657050c98c5">update</a> ()</td></tr>
+<tr class="separator:af7cf63fbb903b099681ce657050c98c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe8f9979bdf51ac0e01691ae264bcb44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#afe8f9979bdf51ac0e01691ae264bcb44">get_local_mat</a> (void)</td></tr>
+<tr class="separator:afe8f9979bdf51ac0e01691ae264bcb44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71dfa97569cea9d9e3f289334a1e6bee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#aaf89a79f1476644edba844c4937abbcc">CircMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#a71dfa97569cea9d9e3f289334a1e6bee">get_dist_mat</a> (void)</td></tr>
+<tr class="separator:a71dfa97569cea9d9e3f289334a1e6bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classlbann_1_1input__layer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classlbann_1_1input__layer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classlbann_1_1input__layer.html">lbann::input_layer</a></td></tr>
 <tr class="memitem:ae30b658b9b07b1aff3b6bdb219cb2e79 inherit pub_methods_classlbann_1_1input__layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1input__layer.html#ae30b658b9b07b1aff3b6bdb219cb2e79">input_layer</a> (<a class="el" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a> dist_data, <a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, <a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> mini_batch_size, std::map&lt; <a class="el" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a>, <a class="el" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a> * &gt; data_readers, std::vector&lt; <a class="el" href="classlbann_1_1regularizer.html">regularizer</a> * &gt; regs={})</td></tr>
 <tr class="separator:ae30b658b9b07b1aff3b6bdb219cb2e79 inherit pub_methods_classlbann_1_1input__layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,14 +270,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a19cea9fdb35020de8828964a8f7a493b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#a19cea9fdb35020de8828964a8f7a493b">m_root</a></td></tr>
-<tr class="separator:a19cea9fdb35020de8828964a8f7a493b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81be4047ae50279c9061b706ee88e51e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#a81be4047ae50279c9061b706ee88e51e">X_local</a></td></tr>
-<tr class="separator:a81be4047ae50279c9061b706ee88e51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40b6174a2db865b1029a409a5c4270ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#aaf89a79f1476644edba844c4937abbcc">CircMat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#a40b6174a2db865b1029a409a5c4270ba">Xs</a></td></tr>
-<tr class="separator:a40b6174a2db865b1029a409a5c4270ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa14c874083dedf8a273c84fb08ed6dd"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#aaa14c874083dedf8a273c84fb08ed6dd">m_num_data_per_epoch</a></td></tr>
-<tr class="separator:aaa14c874083dedf8a273c84fb08ed6dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ff70131a842f5ab1cb3e64640b4e68b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#a9ff70131a842f5ab1cb3e64640b4e68b">m_root</a></td></tr>
+<tr class="separator:a9ff70131a842f5ab1cb3e64640b4e68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a909ef7ac6e3ce2a2a1130603ba415921"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#a909ef7ac6e3ce2a2a1130603ba415921">X_local</a></td></tr>
+<tr class="separator:a909ef7ac6e3ce2a2a1130603ba415921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca18b7ea4f98a2aa3139f3fbb604c5b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#aaf89a79f1476644edba844c4937abbcc">CircMat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#aca18b7ea4f98a2aa3139f3fbb604c5b5">Xs</a></td></tr>
+<tr class="separator:aca18b7ea4f98a2aa3139f3fbb604c5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5f284557851ad2dc5089714699886f8"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#aa5f284557851ad2dc5089714699886f8">m_num_data_per_epoch</a></td></tr>
+<tr class="separator:aa5f284557851ad2dc5089714699886f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classlbann_1_1Layer"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classlbann_1_1Layer')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td></tr>
 <tr class="memitem:a81d6e3e65adcfee83e953b63ff5e9121 inherit pub_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a81d6e3e65adcfee83e953b63ff5e9121">m_prev_error_signal</a></td></tr>
 <tr class="memdesc:a81d6e3e65adcfee83e953b63ff5e9121 inherit pub_attribs_classlbann_1_1Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local copy of the error signal from "previous" layer ((# neurons) x mini-batch size)  <a href="#a81d6e3e65adcfee83e953b63ff5e9121">More...</a><br/></td></tr>
@@ -303,8 +303,8 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a0bd9854826eb6e4d9d32c3bfeacccf97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#a0bd9854826eb6e4d9d32c3bfeacccf97">fp_linearity</a> (void)</td></tr>
-<tr class="separator:a0bd9854826eb6e4d9d32c3bfeacccf97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c743be49365654fe7fdd192d0d3075a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#a0c743be49365654fe7fdd192d0d3075a">fp_linearity</a> ()</td></tr>
+<tr class="separator:a0c743be49365654fe7fdd192d0d3075a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classlbann_1_1Layer"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classlbann_1_1Layer')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td></tr>
 <tr class="memitem:a02a4d7cbe0458860cf66d131a7bea6f0 inherit pro_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a02a4d7cbe0458860cf66d131a7bea6f0">bp_linearity</a> (void)</td></tr>
 <tr class="separator:a02a4d7cbe0458860cf66d131a7bea6f0 inherit pro_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -404,17 +404,25 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:abd6c1fa01659749b22de59baf8259b84 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00033">33</a> of file <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html">lbann_input_layer_distributed_minibatch.hpp</a>.</p>
+<div class="textblock"><h3>template&lt;class T_layout&gt;<br/>
+class lbann::input_layer_distributed_minibatch&lt; T_layout &gt;</h3>
+
+
+<p>Definition at line <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00039">39</a> of file <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html">lbann_input_layer_distributed_minibatch.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a04e6fe04b3a1edd92bbed56026807e08"></a>
+<a class="anchor" id="ae5f5785a9a6042168a2cf1a8f29dbfea"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">lbann::input_layer_distributed_minibatch::input_layer_distributed_minibatch </td>
+          <td class="memname"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html">lbann::input_layer_distributed_minibatch</a>&lt; T_layout &gt;::<a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html">input_layer_distributed_minibatch</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a>&#160;</td>
+          <td class="paramtype">T_layout&#160;</td>
           <td class="paramname"><em>data_dist</em>, </td>
         </tr>
         <tr>
@@ -447,40 +455,48 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__input__layer__distributed__minibatch_8cpp_source.html#l00038">38</a> of file <a class="el" href="lbann__input__layer__distributed__minibatch_8cpp_source.html">lbann_input_layer_distributed_minibatch.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  : <a class="code" href="classlbann_1_1input__layer.html#ae30b658b9b07b1aff3b6bdb219cb2e79">input_layer</a>(data_dist, <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, mini_batch_size, data_readers, regs), <a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a40b6174a2db865b1029a409a5c4270ba">Xs</a>(<a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>()) {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#a6941c1ec005f88a7af80eaebf652e16f">m_type</a> = <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743ad109efb5d48783a82b85444cfe2e99e6">layer_type::input_distributed_minibatch</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="comment">//  m_index = index;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a19cea9fdb35020de8828964a8f7a493b">m_root</a> = 0;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#aaa14c874083dedf8a273c84fb08ed6dd">m_num_data_per_epoch</a> = 0;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1input__layer__distributed__minibatch_html_a19cea9fdb35020de8828964a8f7a493b"><div class="ttname"><a href="classlbann_1_1input__layer__distributed__minibatch.html#a19cea9fdb35020de8828964a8f7a493b">lbann::input_layer_distributed_minibatch::m_root</a></div><div class="ttdeci">int m_root</div><div class="ttdef"><b>Definition:</b> <a href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00044">lbann_input_layer_distributed_minibatch.hpp:44</a></div></div>
+<p>Definition at line <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00047">47</a> of file <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html">lbann_input_layer_distributed_minibatch.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                                                                                                                                                            {})</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    : <a class="code" href="classlbann_1_1input__layer.html#ae30b658b9b07b1aff3b6bdb219cb2e79">input_layer</a>(data_dist, <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, mini_batch_size, data_readers, regs), <a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#aca18b7ea4f98a2aa3139f3fbb604c5b5">Xs</a>(<a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>()) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a6941c1ec005f88a7af80eaebf652e16f">m_type</a> = <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743ad109efb5d48783a82b85444cfe2e99e6">layer_type::input_distributed_minibatch</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//  m_index = index;</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a9ff70131a842f5ab1cb3e64640b4e68b">m_root</a> = 0;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#aa5f284557851ad2dc5089714699886f8">m_num_data_per_epoch</a> = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
 <div class="ttc" id="classlbann_1_1input__layer_html_ae30b658b9b07b1aff3b6bdb219cb2e79"><div class="ttname"><a href="classlbann_1_1input__layer.html#ae30b658b9b07b1aff3b6bdb219cb2e79">lbann::input_layer::input_layer</a></div><div class="ttdeci">input_layer(data_layout dist_data, lbann_comm *comm, uint mini_batch_size, std::map&lt; execution_mode, generic_data_reader * &gt; data_readers, std::vector&lt; regularizer * &gt; regs={})</div><div class="ttdef"><b>Definition:</b> <a href="lbann__input__layer_8cpp_source.html#l00037">lbann_input_layer.cpp:37</a></div></div>
-<div class="ttc" id="classlbann_1_1input__layer__distributed__minibatch_html_aaa14c874083dedf8a273c84fb08ed6dd"><div class="ttname"><a href="classlbann_1_1input__layer__distributed__minibatch.html#aaa14c874083dedf8a273c84fb08ed6dd">lbann::input_layer_distributed_minibatch::m_num_data_per_epoch</a></div><div class="ttdeci">long m_num_data_per_epoch</div><div class="ttdef"><b>Definition:</b> <a href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00050">lbann_input_layer_distributed_minibatch.hpp:50</a></div></div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
 <div class="ttc" id="namespacelbann_html_a33be342c4bdc4c00e9f91ff3a2f20743ad109efb5d48783a82b85444cfe2e99e6"><div class="ttname"><a href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743ad109efb5d48783a82b85444cfe2e99e6">lbann::layer_type::input_distributed_minibatch</a></div></div>
+<div class="ttc" id="classlbann_1_1input__layer__distributed__minibatch_html_aca18b7ea4f98a2aa3139f3fbb604c5b5"><div class="ttname"><a href="classlbann_1_1input__layer__distributed__minibatch.html#aca18b7ea4f98a2aa3139f3fbb604c5b5">lbann::input_layer_distributed_minibatch::Xs</a></div><div class="ttdeci">CircMat Xs</div><div class="ttdef"><b>Definition:</b> <a href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00043">lbann_input_layer_distributed_minibatch.hpp:43</a></div></div>
+<div class="ttc" id="classlbann_1_1input__layer__distributed__minibatch_html_aa5f284557851ad2dc5089714699886f8"><div class="ttname"><a href="classlbann_1_1input__layer__distributed__minibatch.html#aa5f284557851ad2dc5089714699886f8">lbann::input_layer_distributed_minibatch::m_num_data_per_epoch</a></div><div class="ttdeci">long m_num_data_per_epoch</div><div class="ttdef"><b>Definition:</b> <a href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00044">lbann_input_layer_distributed_minibatch.hpp:44</a></div></div>
+<div class="ttc" id="classlbann_1_1input__layer__distributed__minibatch_html_a9ff70131a842f5ab1cb3e64640b4e68b"><div class="ttname"><a href="classlbann_1_1input__layer__distributed__minibatch.html#a9ff70131a842f5ab1cb3e64640b4e68b">lbann::input_layer_distributed_minibatch::m_root</a></div><div class="ttdeci">int m_root</div><div class="ttdef"><b>Definition:</b> <a href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00041">lbann_input_layer_distributed_minibatch.hpp:41</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a6941c1ec005f88a7af80eaebf652e16f"><div class="ttname"><a href="classlbann_1_1Layer.html#a6941c1ec005f88a7af80eaebf652e16f">lbann::Layer::m_type</a></div><div class="ttdeci">layer_type m_type</div><div class="ttdoc">Type of this layer. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00279">lbann_layer.hpp:279</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a483bf8a72d44a0e83da45f3d47bd20d4"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">lbann::lbann_comm::get_model_grid</a></div><div class="ttdeci">Grid &amp; get_model_grid()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00094">lbann_comm.hpp:94</a></div></div>
-<div class="ttc" id="classlbann_1_1input__layer__distributed__minibatch_html_a40b6174a2db865b1029a409a5c4270ba"><div class="ttname"><a href="classlbann_1_1input__layer__distributed__minibatch.html#a40b6174a2db865b1029a409a5c4270ba">lbann::input_layer_distributed_minibatch::Xs</a></div><div class="ttdeci">CircMat Xs</div><div class="ttdef"><b>Definition:</b> <a href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00049">lbann_input_layer_distributed_minibatch.hpp:49</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a5de05c52f22e0bbd7c703bec3ad4dbf2"><div class="ttname"><a href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">lbann::Layer::m_comm</a></div><div class="ttdeci">lbann_comm * m_comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00276">lbann_layer.hpp:276</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a0bd9854826eb6e4d9d32c3bfeacccf97"></a>
+<a class="anchor" id="a0c743be49365654fe7fdd192d0d3075a"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void lbann::input_layer_distributed_minibatch::fp_linearity </td>
+          <td class="memname">void <a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html">lbann::input_layer_distributed_minibatch</a>&lt; T_layout &gt;::fp_linearity </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -489,7 +505,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -498,64 +514,66 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1Layer.html#ab2d9a4518ea7026a37e31257a820d59a">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__input__layer__distributed__minibatch_8cpp_source.html#l00063">63</a> of file <a class="el" href="lbann__input__layer__distributed__minibatch_8cpp_source.html">lbann_input_layer_distributed_minibatch.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                                          {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  generic_data_reader *data_reader = <a class="code" href="classlbann_1_1io__layer.html#a57877d875714a25e67916dd60537c06d">input_layer::select_data_reader</a>();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">int</span> num_samples_in_batch = 0;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a206bafe522a0962c450f4fc69d030656">get_rank_in_model</a>() == <a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a19cea9fdb35020de8828964a8f7a493b">m_root</a>) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    Zero(<a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a81be4047ae50279c9061b706ee88e51e">X_local</a>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    num_samples_in_batch = data_reader-&gt;fetch_data(<a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a81be4047ae50279c9061b706ee88e51e">X_local</a>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">bool</span> data_valid = (num_samples_in_batch &gt; 0);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">if</span>(data_valid) {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#aaa14c874083dedf8a273c84fb08ed6dd">m_num_data_per_epoch</a>+=num_samples_in_batch;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#a8f5e339cda98356c68063ea3845a94d2">m_neural_network_model</a>-&gt;<a class="code" href="classlbann_1_1model.html#abc88f1013abefa3b9e4c0bbc902a05d0">set_current_mini_batch_size</a>(<a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">Layer::m_comm</a>-&gt;model_broadcast(<a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a19cea9fdb35020de8828964a8f7a493b">m_root</a>, num_samples_in_batch));</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a206bafe522a0962c450f4fc69d030656">get_rank_in_model</a>() == <a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a19cea9fdb35020de8828964a8f7a493b">m_root</a>) {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    CopyFromRoot(<a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a81be4047ae50279c9061b706ee88e51e">X_local</a>, <a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a40b6174a2db865b1029a409a5c4270ba">Xs</a>);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    CopyFromNonRoot(<a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a40b6174a2db865b1029a409a5c4270ba">Xs</a>);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a6086ced12c3eefeea6e2a78eff286983">model_barrier</a>();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  Copy(<a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a40b6174a2db865b1029a409a5c4270ba">Xs</a>, *<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00074">74</a> of file <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html">lbann_input_layer_distributed_minibatch.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                      {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    generic_data_reader *data_reader = <a class="code" href="classlbann_1_1io__layer.html#a57877d875714a25e67916dd60537c06d">input_layer::select_data_reader</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">int</span> num_samples_in_batch = 0;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a206bafe522a0962c450f4fc69d030656">get_rank_in_model</a>() == <a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a9ff70131a842f5ab1cb3e64640b4e68b">m_root</a>) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      Zero(<a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a909ef7ac6e3ce2a2a1130603ba415921">X_local</a>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      num_samples_in_batch = data_reader-&gt;fetch_data(<a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a909ef7ac6e3ce2a2a1130603ba415921">X_local</a>);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordtype">bool</span> data_valid = (num_samples_in_batch &gt; 0);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="keywordflow">if</span>(data_valid) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#aa5f284557851ad2dc5089714699886f8">m_num_data_per_epoch</a>+=num_samples_in_batch;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a8f5e339cda98356c68063ea3845a94d2">m_neural_network_model</a>-&gt;<a class="code" href="classlbann_1_1model.html#abc88f1013abefa3b9e4c0bbc902a05d0">set_current_mini_batch_size</a>(<a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">Layer::m_comm</a>-&gt;model_broadcast(<a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a9ff70131a842f5ab1cb3e64640b4e68b">m_root</a>, num_samples_in_batch));</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a206bafe522a0962c450f4fc69d030656">get_rank_in_model</a>() == <a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a9ff70131a842f5ab1cb3e64640b4e68b">m_root</a>) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      CopyFromRoot(<a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a909ef7ac6e3ce2a2a1130603ba415921">X_local</a>, <a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#aca18b7ea4f98a2aa3139f3fbb604c5b5">Xs</a>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      CopyFromNonRoot(<a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#aca18b7ea4f98a2aa3139f3fbb604c5b5">Xs</a>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a6086ced12c3eefeea6e2a78eff286983">model_barrier</a>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    Copy(<a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#aca18b7ea4f98a2aa3139f3fbb604c5b5">Xs</a>, *<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a206bafe522a0962c450f4fc69d030656"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a206bafe522a0962c450f4fc69d030656">lbann::lbann_comm::get_rank_in_model</a></div><div class="ttdeci">int get_rank_in_model() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00062">lbann_comm.hpp:62</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a7a28e5b795fcd852dea62e57d7a6f97e"><div class="ttname"><a href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">lbann::Layer::m_activations</a></div><div class="ttdeci">ElMat * m_activations</div><div class="ttdoc">Activations - non-linearity applied to weighted sum ((# neurons) x mini-batch size) ...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00296">lbann_layer.hpp:296</a></div></div>
-<div class="ttc" id="classlbann_1_1input__layer__distributed__minibatch_html_a19cea9fdb35020de8828964a8f7a493b"><div class="ttname"><a href="classlbann_1_1input__layer__distributed__minibatch.html#a19cea9fdb35020de8828964a8f7a493b">lbann::input_layer_distributed_minibatch::m_root</a></div><div class="ttdeci">int m_root</div><div class="ttdef"><b>Definition:</b> <a href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00044">lbann_input_layer_distributed_minibatch.hpp:44</a></div></div>
 <div class="ttc" id="classlbann_1_1io__layer_html_a57877d875714a25e67916dd60537c06d"><div class="ttname"><a href="classlbann_1_1io__layer.html#a57877d875714a25e67916dd60537c06d">lbann::io_layer::select_data_reader</a></div><div class="ttdeci">generic_data_reader * select_data_reader(void)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__io__layer_8cpp_source.html#l00093">lbann_io_layer.cpp:93</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_abc88f1013abefa3b9e4c0bbc902a05d0"><div class="ttname"><a href="classlbann_1_1model.html#abc88f1013abefa3b9e4c0bbc902a05d0">lbann::model::set_current_mini_batch_size</a></div><div class="ttdeci">int64_t set_current_mini_batch_size(int64_t mini_batch_size)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00106">lbann_model.hpp:106</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a8f5e339cda98356c68063ea3845a94d2"><div class="ttname"><a href="classlbann_1_1Layer.html#a8f5e339cda98356c68063ea3845a94d2">lbann::Layer::m_neural_network_model</a></div><div class="ttdeci">model * m_neural_network_model</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00306">lbann_layer.hpp:306</a></div></div>
-<div class="ttc" id="classlbann_1_1input__layer__distributed__minibatch_html_aaa14c874083dedf8a273c84fb08ed6dd"><div class="ttname"><a href="classlbann_1_1input__layer__distributed__minibatch.html#aaa14c874083dedf8a273c84fb08ed6dd">lbann::input_layer_distributed_minibatch::m_num_data_per_epoch</a></div><div class="ttdeci">long m_num_data_per_epoch</div><div class="ttdef"><b>Definition:</b> <a href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00050">lbann_input_layer_distributed_minibatch.hpp:50</a></div></div>
-<div class="ttc" id="classlbann_1_1input__layer__distributed__minibatch_html_a81be4047ae50279c9061b706ee88e51e"><div class="ttname"><a href="classlbann_1_1input__layer__distributed__minibatch.html#a81be4047ae50279c9061b706ee88e51e">lbann::input_layer_distributed_minibatch::X_local</a></div><div class="ttdeci">Mat X_local</div><div class="ttdef"><b>Definition:</b> <a href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00048">lbann_input_layer_distributed_minibatch.hpp:48</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_a6086ced12c3eefeea6e2a78eff286983"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a6086ced12c3eefeea6e2a78eff286983">lbann::lbann_comm::model_barrier</a></div><div class="ttdeci">void model_barrier()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8cpp_source.html#l00136">lbann_comm.cpp:136</a></div></div>
-<div class="ttc" id="classlbann_1_1input__layer__distributed__minibatch_html_a40b6174a2db865b1029a409a5c4270ba"><div class="ttname"><a href="classlbann_1_1input__layer__distributed__minibatch.html#a40b6174a2db865b1029a409a5c4270ba">lbann::input_layer_distributed_minibatch::Xs</a></div><div class="ttdeci">CircMat Xs</div><div class="ttdef"><b>Definition:</b> <a href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00049">lbann_input_layer_distributed_minibatch.hpp:49</a></div></div>
+<div class="ttc" id="classlbann_1_1input__layer__distributed__minibatch_html_aca18b7ea4f98a2aa3139f3fbb604c5b5"><div class="ttname"><a href="classlbann_1_1input__layer__distributed__minibatch.html#aca18b7ea4f98a2aa3139f3fbb604c5b5">lbann::input_layer_distributed_minibatch::Xs</a></div><div class="ttdeci">CircMat Xs</div><div class="ttdef"><b>Definition:</b> <a href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00043">lbann_input_layer_distributed_minibatch.hpp:43</a></div></div>
+<div class="ttc" id="classlbann_1_1input__layer__distributed__minibatch_html_aa5f284557851ad2dc5089714699886f8"><div class="ttname"><a href="classlbann_1_1input__layer__distributed__minibatch.html#aa5f284557851ad2dc5089714699886f8">lbann::input_layer_distributed_minibatch::m_num_data_per_epoch</a></div><div class="ttdeci">long m_num_data_per_epoch</div><div class="ttdef"><b>Definition:</b> <a href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00044">lbann_input_layer_distributed_minibatch.hpp:44</a></div></div>
+<div class="ttc" id="classlbann_1_1input__layer__distributed__minibatch_html_a9ff70131a842f5ab1cb3e64640b4e68b"><div class="ttname"><a href="classlbann_1_1input__layer__distributed__minibatch.html#a9ff70131a842f5ab1cb3e64640b4e68b">lbann::input_layer_distributed_minibatch::m_root</a></div><div class="ttdeci">int m_root</div><div class="ttdef"><b>Definition:</b> <a href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00041">lbann_input_layer_distributed_minibatch.hpp:41</a></div></div>
+<div class="ttc" id="classlbann_1_1input__layer__distributed__minibatch_html_a909ef7ac6e3ce2a2a1130603ba415921"><div class="ttname"><a href="classlbann_1_1input__layer__distributed__minibatch.html#a909ef7ac6e3ce2a2a1130603ba415921">lbann::input_layer_distributed_minibatch::X_local</a></div><div class="ttdeci">Mat X_local</div><div class="ttdef"><b>Definition:</b> <a href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00042">lbann_input_layer_distributed_minibatch.hpp:42</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a5de05c52f22e0bbd7c703bec3ad4dbf2"><div class="ttname"><a href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">lbann::Layer::m_comm</a></div><div class="ttdeci">lbann_comm * m_comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00276">lbann_layer.hpp:276</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1input__layer__distributed__minibatch_a0bd9854826eb6e4d9d32c3bfeacccf97_cgraph.png" border="0" usemap="#classlbann_1_1input__layer__distributed__minibatch_a0bd9854826eb6e4d9d32c3bfeacccf97_cgraph" alt=""/></div>
-<map name="classlbann_1_1input__layer__distributed__minibatch_a0bd9854826eb6e4d9d32c3bfeacccf97_cgraph" id="classlbann_1_1input__layer__distributed__minibatch_a0bd9854826eb6e4d9d32c3bfeacccf97_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1io__layer.html#a57877d875714a25e67916dd60537c06d" title="lbann::io_layer::select\l_data_reader" alt="" coords="205,5,355,46"/><area shape="rect" id="node3" href="classlbann_1_1generic__data__reader.html#a04aca44de55b65a34540b9cffcc3605f" title="lbann::generic_data\l_reader::fetch_data" alt="" coords="213,70,347,111"/></map>
+<div class="center"><img src="classlbann_1_1input__layer__distributed__minibatch_a0c743be49365654fe7fdd192d0d3075a_cgraph.png" border="0" usemap="#classlbann_1_1input__layer__distributed__minibatch_a0c743be49365654fe7fdd192d0d3075a_cgraph" alt=""/></div>
+<map name="classlbann_1_1input__layer__distributed__minibatch_a0c743be49365654fe7fdd192d0d3075a_cgraph" id="classlbann_1_1input__layer__distributed__minibatch_a0c743be49365654fe7fdd192d0d3075a_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1io__layer.html#a57877d875714a25e67916dd60537c06d" title="lbann::io_layer::select\l_data_reader" alt="" coords="216,5,365,46"/><area shape="rect" id="node3" href="classlbann_1_1lbann__comm.html#a206bafe522a0962c450f4fc69d030656" title="lbann::lbann_comm::\lget_rank_in_model" alt="" coords="219,70,362,111"/><area shape="rect" id="node4" href="classlbann_1_1generic__data__reader.html#a04aca44de55b65a34540b9cffcc3605f" title="lbann::generic_data\l_reader::fetch_data" alt="" coords="223,135,358,177"/><area shape="rect" id="node5" href="classlbann_1_1model.html#abc88f1013abefa3b9e4c0bbc902a05d0" title="lbann::model::set_current\l_mini_batch_size" alt="" coords="206,201,375,242"/><area shape="rect" id="node6" href="classlbann_1_1lbann__comm.html#a6086ced12c3eefeea6e2a78eff286983" title="lbann::lbann_comm::\lmodel_barrier" alt="" coords="219,266,362,307"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a4034f653692cf718f62089de089e2050"></a>
+<a class="anchor" id="a71dfa97569cea9d9e3f289334a1e6bee"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="lbann__base_8hpp.html#aaf89a79f1476644edba844c4937abbcc">CircMat</a>* lbann::input_layer_distributed_minibatch::get_dist_mat </td>
+          <td class="memname"><a class="el" href="lbann__base_8hpp.html#aaf89a79f1476644edba844c4937abbcc">CircMat</a>* <a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html">lbann::input_layer_distributed_minibatch</a>&lt; T_layout &gt;::get_dist_mat </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -569,23 +587,25 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00042">42</a> of file <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html">lbann_input_layer_distributed_minibatch.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                              {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> &amp;<a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a40b6174a2db865b1029a409a5c4270ba">Xs</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  };</div>
-<div class="ttc" id="classlbann_1_1input__layer__distributed__minibatch_html_a40b6174a2db865b1029a409a5c4270ba"><div class="ttname"><a href="classlbann_1_1input__layer__distributed__minibatch.html#a40b6174a2db865b1029a409a5c4270ba">lbann::input_layer_distributed_minibatch::Xs</a></div><div class="ttdeci">CircMat Xs</div><div class="ttdef"><b>Definition:</b> <a href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00049">lbann_input_layer_distributed_minibatch.hpp:49</a></div></div>
+<p>Definition at line <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00114">114</a> of file <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html">lbann_input_layer_distributed_minibatch.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                              {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span> &amp;<a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#aca18b7ea4f98a2aa3139f3fbb604c5b5">Xs</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  };</div>
+<div class="ttc" id="classlbann_1_1input__layer__distributed__minibatch_html_aca18b7ea4f98a2aa3139f3fbb604c5b5"><div class="ttname"><a href="classlbann_1_1input__layer__distributed__minibatch.html#aca18b7ea4f98a2aa3139f3fbb604c5b5">lbann::input_layer_distributed_minibatch::Xs</a></div><div class="ttdeci">CircMat Xs</div><div class="ttdef"><b>Definition:</b> <a href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00043">lbann_input_layer_distributed_minibatch.hpp:43</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="abf40d75b5d1379bce329d622ee2c143f"></a>
+<a class="anchor" id="afe8f9979bdf51ac0e01691ae264bcb44"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>* lbann::input_layer_distributed_minibatch::get_local_mat </td>
+          <td class="memname"><a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>* <a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html">lbann::input_layer_distributed_minibatch</a>&lt; T_layout &gt;::get_local_mat </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -599,23 +619,25 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00039">39</a> of file <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html">lbann_input_layer_distributed_minibatch.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                           {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> &amp;<a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a81be4047ae50279c9061b706ee88e51e">X_local</a>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  };</div>
-<div class="ttc" id="classlbann_1_1input__layer__distributed__minibatch_html_a81be4047ae50279c9061b706ee88e51e"><div class="ttname"><a href="classlbann_1_1input__layer__distributed__minibatch.html#a81be4047ae50279c9061b706ee88e51e">lbann::input_layer_distributed_minibatch::X_local</a></div><div class="ttdeci">Mat X_local</div><div class="ttdef"><b>Definition:</b> <a href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00048">lbann_input_layer_distributed_minibatch.hpp:48</a></div></div>
+<p>Definition at line <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00111">111</a> of file <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html">lbann_input_layer_distributed_minibatch.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                           {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">return</span> &amp;<a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a909ef7ac6e3ce2a2a1130603ba415921">X_local</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  };</div>
+<div class="ttc" id="classlbann_1_1input__layer__distributed__minibatch_html_a909ef7ac6e3ce2a2a1130603ba415921"><div class="ttname"><a href="classlbann_1_1input__layer__distributed__minibatch.html#a909ef7ac6e3ce2a2a1130603ba415921">lbann::input_layer_distributed_minibatch::X_local</a></div><div class="ttdeci">Mat X_local</div><div class="ttdef"><b>Definition:</b> <a href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00042">lbann_input_layer_distributed_minibatch.hpp:42</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a37c8afb968e8b5e5dc0b76e86dcea699"></a>
+<a class="anchor" id="a0cc6fcf320dc3d48464bcb0381434201"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void lbann::input_layer_distributed_minibatch::setup </td>
+          <td class="memname">void <a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html">lbann::input_layer_distributed_minibatch</a>&lt; T_layout &gt;::setup </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>num_prev_neurons</em></td><td>)</td>
@@ -624,56 +646,58 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1Layer.html#a20442464265da1cb2aeb1cf82640702f">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__input__layer__distributed__minibatch_8cpp_source.html#l00049">49</a> of file <a class="el" href="lbann__input__layer__distributed__minibatch_8cpp_source.html">lbann_input_layer_distributed_minibatch.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                                                       {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1io__layer.html#a8ce9b172521bbcf55c1040a3c28719b1">io_layer::m_data_sets_span_models</a>) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classlbann_1_1io__layer.html#ad2dd20955a1ab72a83a9adad85992554">io_layer::setup_data_readers_for_training</a>(0, <a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">Layer::m_comm</a>-&gt;get_num_models() * <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">Layer::m_mini_batch_size</a>,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">Layer::m_comm</a>-&gt;get_model_rank() * <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">Layer::m_mini_batch_size</a>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classlbann_1_1io__layer.html#a16a5c386d44d12a6332c01c80cf380c2">io_layer::setup_data_readers_for_evaluation</a>(0, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classlbann_1_1io__layer.html#ad2dd20955a1ab72a83a9adad85992554">io_layer::setup_data_readers_for_training</a>(0, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classlbann_1_1io__layer.html#a16a5c386d44d12a6332c01c80cf380c2">io_layer::setup_data_readers_for_evaluation</a>(0, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  Zeros(*<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>, <a class="code" href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">m_num_neurons</a>, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  Zeros(<a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a81be4047ae50279c9061b706ee88e51e">X_local</a>, <a class="code" href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">m_num_neurons</a>, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00058">58</a> of file <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html">lbann_input_layer_distributed_minibatch.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                   {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1io__layer.html#a8ce9b172521bbcf55c1040a3c28719b1">io_layer::m_data_sets_span_models</a>) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <a class="code" href="classlbann_1_1io__layer.html#ad2dd20955a1ab72a83a9adad85992554">io_layer::setup_data_readers_for_training</a>(0, <a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">Layer::m_comm</a>-&gt;get_num_models() * <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">Layer::m_mini_batch_size</a>,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                <a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">Layer::m_comm</a>-&gt;get_model_rank() * <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">Layer::m_mini_batch_size</a>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <a class="code" href="classlbann_1_1io__layer.html#a16a5c386d44d12a6332c01c80cf380c2">io_layer::setup_data_readers_for_evaluation</a>(0, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <a class="code" href="classlbann_1_1io__layer.html#ad2dd20955a1ab72a83a9adad85992554">io_layer::setup_data_readers_for_training</a>(0, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <a class="code" href="classlbann_1_1io__layer.html#a16a5c386d44d12a6332c01c80cf380c2">io_layer::setup_data_readers_for_evaluation</a>(0, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    Zeros(*<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>, <a class="code" href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">m_num_neurons</a>, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    Zeros(<a class="code" href="classlbann_1_1input__layer__distributed__minibatch.html#a909ef7ac6e3ce2a2a1130603ba415921">X_local</a>, <a class="code" href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">m_num_neurons</a>, <a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
 <div class="ttc" id="classlbann_1_1Layer_html_a7a28e5b795fcd852dea62e57d7a6f97e"><div class="ttname"><a href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">lbann::Layer::m_activations</a></div><div class="ttdeci">ElMat * m_activations</div><div class="ttdoc">Activations - non-linearity applied to weighted sum ((# neurons) x mini-batch size) ...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00296">lbann_layer.hpp:296</a></div></div>
 <div class="ttc" id="classlbann_1_1io__layer_html_a16a5c386d44d12a6332c01c80cf380c2"><div class="ttname"><a href="classlbann_1_1io__layer.html#a16a5c386d44d12a6332c01c80cf380c2">lbann::io_layer::setup_data_readers_for_evaluation</a></div><div class="ttdeci">void setup_data_readers_for_evaluation(int base_offset, int batch_stride, int sample_stride=1, int model_offset=0)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__io__layer_8cpp_source.html#l00223">lbann_io_layer.cpp:223</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a7425d82c79f0c7072870d553be07a66c"><div class="ttname"><a href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">lbann::Layer::m_num_neurons</a></div><div class="ttdeci">uint m_num_neurons</div><div class="ttdoc">Number of neurons. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00283">lbann_layer.hpp:283</a></div></div>
 <div class="ttc" id="classlbann_1_1io__layer_html_ad2dd20955a1ab72a83a9adad85992554"><div class="ttname"><a href="classlbann_1_1io__layer.html#ad2dd20955a1ab72a83a9adad85992554">lbann::io_layer::setup_data_readers_for_training</a></div><div class="ttdeci">void setup_data_readers_for_training(int base_offset, int batch_stride, int sample_stride=1, int model_offset=0)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__io__layer_8cpp_source.html#l00214">lbann_io_layer.cpp:214</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a30aaa195765788f649ce70e855a74081"><div class="ttname"><a href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">lbann::Layer::m_mini_batch_size</a></div><div class="ttdeci">uint m_mini_batch_size</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00371">lbann_layer.hpp:371</a></div></div>
 <div class="ttc" id="classlbann_1_1io__layer_html_a8ce9b172521bbcf55c1040a3c28719b1"><div class="ttname"><a href="classlbann_1_1io__layer.html#a8ce9b172521bbcf55c1040a3c28719b1">lbann::io_layer::m_data_sets_span_models</a></div><div class="ttdeci">bool m_data_sets_span_models</div><div class="ttdef"><b>Definition:</b> <a href="lbann__io__layer_8hpp_source.html#l00084">lbann_io_layer.hpp:84</a></div></div>
-<div class="ttc" id="classlbann_1_1input__layer__distributed__minibatch_html_a81be4047ae50279c9061b706ee88e51e"><div class="ttname"><a href="classlbann_1_1input__layer__distributed__minibatch.html#a81be4047ae50279c9061b706ee88e51e">lbann::input_layer_distributed_minibatch::X_local</a></div><div class="ttdeci">Mat X_local</div><div class="ttdef"><b>Definition:</b> <a href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00048">lbann_input_layer_distributed_minibatch.hpp:48</a></div></div>
+<div class="ttc" id="classlbann_1_1input__layer__distributed__minibatch_html_a909ef7ac6e3ce2a2a1130603ba415921"><div class="ttname"><a href="classlbann_1_1input__layer__distributed__minibatch.html#a909ef7ac6e3ce2a2a1130603ba415921">lbann::input_layer_distributed_minibatch::X_local</a></div><div class="ttdeci">Mat X_local</div><div class="ttdef"><b>Definition:</b> <a href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00042">lbann_input_layer_distributed_minibatch.hpp:42</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html_a5de05c52f22e0bbd7c703bec3ad4dbf2"><div class="ttname"><a href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">lbann::Layer::m_comm</a></div><div class="ttdeci">lbann_comm * m_comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00276">lbann_layer.hpp:276</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1input__layer__distributed__minibatch_a37c8afb968e8b5e5dc0b76e86dcea699_cgraph.png" border="0" usemap="#classlbann_1_1input__layer__distributed__minibatch_a37c8afb968e8b5e5dc0b76e86dcea699_cgraph" alt=""/></div>
-<map name="classlbann_1_1input__layer__distributed__minibatch_a37c8afb968e8b5e5dc0b76e86dcea699_cgraph" id="classlbann_1_1input__layer__distributed__minibatch_a37c8afb968e8b5e5dc0b76e86dcea699_cgraph">
+<div class="center"><img src="classlbann_1_1input__layer__distributed__minibatch_a0cc6fcf320dc3d48464bcb0381434201_cgraph.png" border="0" usemap="#classlbann_1_1input__layer__distributed__minibatch_a0cc6fcf320dc3d48464bcb0381434201_cgraph" alt=""/></div>
+<map name="classlbann_1_1input__layer__distributed__minibatch_a0cc6fcf320dc3d48464bcb0381434201_cgraph" id="classlbann_1_1input__layer__distributed__minibatch_a0cc6fcf320dc3d48464bcb0381434201_cgraph">
 <area shape="rect" id="node2" href="classlbann_1_1io__layer.html#ad2dd20955a1ab72a83a9adad85992554" title="lbann::io_layer::setup\l_data_readers_for_training" alt="" coords="214,5,389,46"/><area shape="rect" id="node3" href="classlbann_1_1io__layer.html#a16a5c386d44d12a6332c01c80cf380c2" title="lbann::io_layer::setup\l_data_readers_for_evaluation" alt="" coords="205,70,397,111"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a4a2316a127efb12f6b701d3ae6a6cabd"></a>
+<a class="anchor" id="af7cf63fbb903b099681ce657050c98c5"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool lbann::input_layer_distributed_minibatch::update </td>
+          <td class="memname">bool <a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html">lbann::input_layer_distributed_minibatch</a>&lt; T_layout &gt;::update </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -682,7 +706,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -690,18 +714,18 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1Layer.html#a5594cd9afb62c9bd5ab9d879ee5a9127">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__input__layer__distributed__minibatch_8cpp_source.html#l00094">94</a> of file <a class="el" href="lbann__input__layer__distributed__minibatch_8cpp_source.html">lbann_input_layer_distributed_minibatch.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                                    {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  generic_data_reader *data_reader = <a class="code" href="classlbann_1_1io__layer.html#a57877d875714a25e67916dd60537c06d">input_layer::select_data_reader</a>();</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordflow">return</span> !data_reader-&gt;update();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<p>Definition at line <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00106">106</a> of file <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html">lbann_input_layer_distributed_minibatch.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    generic_data_reader *data_reader = <a class="code" href="classlbann_1_1io__layer.html#a57877d875714a25e67916dd60537c06d">input_layer::select_data_reader</a>();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> !data_reader-&gt;update();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div>
 <div class="ttc" id="classlbann_1_1io__layer_html_a57877d875714a25e67916dd60537c06d"><div class="ttname"><a href="classlbann_1_1io__layer.html#a57877d875714a25e67916dd60537c06d">lbann::io_layer::select_data_reader</a></div><div class="ttdeci">generic_data_reader * select_data_reader(void)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__io__layer_8cpp_source.html#l00093">lbann_io_layer.cpp:93</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1input__layer__distributed__minibatch_a4a2316a127efb12f6b701d3ae6a6cabd_cgraph.png" border="0" usemap="#classlbann_1_1input__layer__distributed__minibatch_a4a2316a127efb12f6b701d3ae6a6cabd_cgraph" alt=""/></div>
-<map name="classlbann_1_1input__layer__distributed__minibatch_a4a2316a127efb12f6b701d3ae6a6cabd_cgraph" id="classlbann_1_1input__layer__distributed__minibatch_a4a2316a127efb12f6b701d3ae6a6cabd_cgraph">
+<div class="center"><img src="classlbann_1_1input__layer__distributed__minibatch_af7cf63fbb903b099681ce657050c98c5_cgraph.png" border="0" usemap="#classlbann_1_1input__layer__distributed__minibatch_af7cf63fbb903b099681ce657050c98c5_cgraph" alt=""/></div>
+<map name="classlbann_1_1input__layer__distributed__minibatch_af7cf63fbb903b099681ce657050c98c5_cgraph" id="classlbann_1_1input__layer__distributed__minibatch_af7cf63fbb903b099681ce657050c98c5_cgraph">
 <area shape="rect" id="node2" href="classlbann_1_1io__layer.html#a57877d875714a25e67916dd60537c06d" title="lbann::io_layer::select\l_data_reader" alt="" coords="205,5,355,46"/><area shape="rect" id="node3" href="classlbann_1_1generic__data__reader.html#a3cf22014646963c39a804a5baee40133" title="lbann::generic_data\l_reader::update" alt="" coords="213,70,347,111"/><area shape="rect" id="node4" href="namespacelbann.html#aba9d11cb3a739cd84e7234ceeb32d098" title="lbann::get_data_seq\l_generator" alt="" coords="403,70,541,111"/></map>
 </div>
 </p>
@@ -709,26 +733,14 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="aaa14c874083dedf8a273c84fb08ed6dd"></a>
+<a class="anchor" id="aa5f284557851ad2dc5089714699886f8"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">long lbann::input_layer_distributed_minibatch::m_num_data_per_epoch</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00050">50</a> of file <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html">lbann_input_layer_distributed_minibatch.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a19cea9fdb35020de8828964a8f7a493b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int lbann::input_layer_distributed_minibatch::m_root</td>
+          <td class="memname">long <a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html">lbann::input_layer_distributed_minibatch</a>&lt; T_layout &gt;::m_num_data_per_epoch</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -737,37 +749,56 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a81be4047ae50279c9061b706ee88e51e"></a>
+<a class="anchor" id="a9ff70131a842f5ab1cb3e64640b4e68b"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> lbann::input_layer_distributed_minibatch::X_local</td>
+          <td class="memname">int <a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html">lbann::input_layer_distributed_minibatch</a>&lt; T_layout &gt;::m_root</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00048">48</a> of file <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html">lbann_input_layer_distributed_minibatch.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00041">41</a> of file <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html">lbann_input_layer_distributed_minibatch.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a40b6174a2db865b1029a409a5c4270ba"></a>
+<a class="anchor" id="a909ef7ac6e3ce2a2a1130603ba415921"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="lbann__base_8hpp.html#aaf89a79f1476644edba844c4937abbcc">CircMat</a> lbann::input_layer_distributed_minibatch::Xs</td>
+          <td class="memname"><a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> <a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html">lbann::input_layer_distributed_minibatch</a>&lt; T_layout &gt;::X_local</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00049">49</a> of file <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html">lbann_input_layer_distributed_minibatch.hpp</a>.</p>
+<p>Definition at line <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00042">42</a> of file <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html">lbann_input_layer_distributed_minibatch.hpp</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<a class="anchor" id="aca18b7ea4f98a2aa3139f3fbb604c5b5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T_layout &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="lbann__base_8hpp.html#aaf89a79f1476644edba844c4937abbcc">CircMat</a> <a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html">lbann::input_layer_distributed_minibatch</a>&lt; T_layout &gt;::Xs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html#l00043">43</a> of file <a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html">lbann_input_layer_distributed_minibatch.hpp</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/travis/build/LLNL/lbann/include/lbann/layers/<a class="el" href="lbann__input__layer__distributed__minibatch_8hpp_source.html">lbann_input_layer_distributed_minibatch.hpp</a></li>
-<li>/home/travis/build/LLNL/lbann/src/layers/<a class="el" href="lbann__input__layer__distributed__minibatch_8cpp_source.html">lbann_input_layer_distributed_minibatch.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -775,7 +806,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html">input_layer_distributed_minibatch</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 15:39:27 for LBANN by
+    <li class="footer">Generated on Mon Jun 12 2017 15:42:16 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

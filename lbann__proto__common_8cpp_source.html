@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-62-g5fc60ae-ci242061704</span>
+   &#160;<span id="projectnumber">v0.93-rc0-65-g200d90b-ci242066774</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -434,7 +434,7 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="comment">// LAYER: target_distributed_minibatch_parallel_io</span></div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="comment"></span>    <span class="keywordflow">if</span> (layer.has_target_distributed_minibatch_parallel_io()) {</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;      <span class="keyword">const</span> lbann_data::TargetDistributedMinibatchParallelIO&amp; ell = layer.target_distributed_minibatch_parallel_io();</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;      <a class="code" href="classlbann_1_1target__layer.html">target_layer</a> *t = <span class="keyword">new</span>  <a class="code" href="classlbann_1_1target__layer__distributed__minibatch__parallel__io.html">target_layer_distributed_minibatch_parallel_io</a>(</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;      <a class="code" href="classlbann_1_1target__layer.html">target_layer</a> *t = <span class="keyword">new</span>  <a class="code" href="classlbann_1_1target__layer__distributed__minibatch__parallel__io.html">target_layer_distributed_minibatch_parallel_io&lt;data_layout&gt;</a>(</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <a class="code" href="lbann__proto__common_8cpp.html#acf81b14e87938b50bb380a34773fa135">get_data_layout</a>(ell.data_layout(), __FILE__, __LINE__),</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        comm,</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        m.num_parallel_readers(),</div>
@@ -973,7 +973,7 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div class="ttc" id="classlbann_1_1mnist__reader_html"><div class="ttname"><a href="classlbann_1_1mnist__reader.html">lbann::mnist_reader</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__mnist_8hpp_source.html#l00036">lbann_data_reader_mnist.hpp:36</a></div></div>
 <div class="ttc" id="lbann__proto__common_8hpp_html"><div class="ttname"><a href="lbann__proto__common_8hpp.html">lbann_proto_common.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__image__preprocessor_html_ae62596b4af5d1940aa0499cde2bdd005"><div class="ttname"><a href="classlbann_1_1lbann__image__preprocessor.html#ae62596b4af5d1940aa0499cde2bdd005">lbann::lbann_image_preprocessor::horizontal_shift</a></div><div class="ttdeci">void horizontal_shift(float range)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__image__preprocessor_8hpp_source.html#l00072">lbann_image_preprocessor.hpp:72</a></div></div>
-<div class="ttc" id="classlbann_1_1target__layer__distributed__minibatch__parallel__io_html"><div class="ttname"><a href="classlbann_1_1target__layer__distributed__minibatch__parallel__io.html">lbann::target_layer_distributed_minibatch_parallel_io</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__target__layer__distributed__minibatch__parallel__io_8hpp_source.html#l00034">lbann_target_layer_distributed_minibatch_parallel_io.hpp:34</a></div></div>
+<div class="ttc" id="classlbann_1_1target__layer__distributed__minibatch__parallel__io_html"><div class="ttname"><a href="classlbann_1_1target__layer__distributed__minibatch__parallel__io.html">lbann::target_layer_distributed_minibatch_parallel_io</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__target__layer__distributed__minibatch__parallel__io_8hpp_source.html#l00042">lbann_target_layer_distributed_minibatch_parallel_io.hpp:42</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html_adb87fdc17095efd8e4dcb343357a6ba5"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5">lbann::lbann_comm::am_world_master</a></div><div class="ttdeci">bool am_world_master() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00090">lbann_comm.hpp:90</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_ac47a6ee5278a53898222a48639a2bf39a6927a3a7218a3195858411433ec20a21"><div class="ttname"><a href="lbann__base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39a6927a3a7218a3195858411433ec20a21">pool_mode::average</a></div></div>
 <div class="ttc" id="lbann__proto__common_8cpp_html_ad7e0b249b3481b7555c2991a4a04b41a"><div class="ttname"><a href="lbann__proto__common_8cpp.html#ad7e0b249b3481b7555c2991a4a04b41a">get_prev_neurons_and_index</a></div><div class="ttdeci">void get_prev_neurons_and_index(lbann::sequential_model *model, int &amp;prev_num_neurons, int &amp;cur_index)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__proto__common_8cpp_source.html#l00056">lbann_proto_common.cpp:56</a></div></div>
@@ -987,7 +987,7 @@ $(document).ready(function(){initNavTree('lbann__proto__common_8cpp_source.html'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_a6f8d8b19bd1411ec381c5cd89d82b32.html">proto</a></li><li class="navelem"><a class="el" href="lbann__proto__common_8cpp.html">lbann_proto_common.cpp</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 15:39:25 for LBANN by
+    <li class="footer">Generated on Mon Jun 12 2017 15:42:15 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,13 +1,13 @@
 var classlbann_1_1input__layer__distributed__minibatch =
 [
-    [ "input_layer_distributed_minibatch", "classlbann_1_1input__layer__distributed__minibatch.html#a04e6fe04b3a1edd92bbed56026807e08", null ],
-    [ "fp_linearity", "classlbann_1_1input__layer__distributed__minibatch.html#a0bd9854826eb6e4d9d32c3bfeacccf97", null ],
-    [ "get_dist_mat", "classlbann_1_1input__layer__distributed__minibatch.html#a4034f653692cf718f62089de089e2050", null ],
-    [ "get_local_mat", "classlbann_1_1input__layer__distributed__minibatch.html#abf40d75b5d1379bce329d622ee2c143f", null ],
-    [ "setup", "classlbann_1_1input__layer__distributed__minibatch.html#a37c8afb968e8b5e5dc0b76e86dcea699", null ],
-    [ "update", "classlbann_1_1input__layer__distributed__minibatch.html#a4a2316a127efb12f6b701d3ae6a6cabd", null ],
-    [ "m_num_data_per_epoch", "classlbann_1_1input__layer__distributed__minibatch.html#aaa14c874083dedf8a273c84fb08ed6dd", null ],
-    [ "m_root", "classlbann_1_1input__layer__distributed__minibatch.html#a19cea9fdb35020de8828964a8f7a493b", null ],
-    [ "X_local", "classlbann_1_1input__layer__distributed__minibatch.html#a81be4047ae50279c9061b706ee88e51e", null ],
-    [ "Xs", "classlbann_1_1input__layer__distributed__minibatch.html#a40b6174a2db865b1029a409a5c4270ba", null ]
+    [ "input_layer_distributed_minibatch", "classlbann_1_1input__layer__distributed__minibatch.html#ae5f5785a9a6042168a2cf1a8f29dbfea", null ],
+    [ "fp_linearity", "classlbann_1_1input__layer__distributed__minibatch.html#a0c743be49365654fe7fdd192d0d3075a", null ],
+    [ "get_dist_mat", "classlbann_1_1input__layer__distributed__minibatch.html#a71dfa97569cea9d9e3f289334a1e6bee", null ],
+    [ "get_local_mat", "classlbann_1_1input__layer__distributed__minibatch.html#afe8f9979bdf51ac0e01691ae264bcb44", null ],
+    [ "setup", "classlbann_1_1input__layer__distributed__minibatch.html#a0cc6fcf320dc3d48464bcb0381434201", null ],
+    [ "update", "classlbann_1_1input__layer__distributed__minibatch.html#af7cf63fbb903b099681ce657050c98c5", null ],
+    [ "m_num_data_per_epoch", "classlbann_1_1input__layer__distributed__minibatch.html#aa5f284557851ad2dc5089714699886f8", null ],
+    [ "m_root", "classlbann_1_1input__layer__distributed__minibatch.html#a9ff70131a842f5ab1cb3e64640b4e68b", null ],
+    [ "X_local", "classlbann_1_1input__layer__distributed__minibatch.html#a909ef7ac6e3ce2a2a1130603ba415921", null ],
+    [ "Xs", "classlbann_1_1input__layer__distributed__minibatch.html#aca18b7ea4f98a2aa3139f3fbb604c5b5", null ]
 ];
