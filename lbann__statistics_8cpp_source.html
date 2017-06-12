@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-67-g693157e-ci242069985</span>
+   &#160;<span id="projectnumber">v0.93-rc0-68-g5ef04b4-ci242075079</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -323,60 +323,59 @@ $(document).ready(function(){initNavTree('lbann__statistics_8cpp_source.html',''
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <span class="comment">// Matrix dimensions</span></div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keyword">const</span> Int height = data.Height();</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="keyword">const</span> Int width = data.Width();</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keyword">const</span> Int local_height = data.LocalHeight();</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="keyword">const</span> Int local_width = data.LocalWidth();</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="comment">// Initialize outputs</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  means.Resize(height, 1);</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  stdevs.Resize(height, 1);</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="comment">// Local matrices</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; local_data = data.LockedMatrix();</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; local_means = means.Matrix();</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; local_stdevs = stdevs.Matrix();</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="comment">// Iterate through row blocks</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="keyword">const</span> Int block_size = 16;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor">  #pragma omp parallel for</span></div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span>(Int row_start = 0; row_start &lt; local_height; row_start += block_size) {</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keyword">const</span> Int row_end = Min(row_start + block_size, local_height);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="comment">// Iterate through blocks in row block</span></div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">for</span>(Int col_start = 0; col_start &lt; local_width; col_start += block_size) {</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      <span class="keyword">const</span> Int col_end = Min(col_start + block_size, local_width);</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      <span class="comment">// Compute sums by iterating through block entries</span></div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;      <span class="keywordflow">for</span>(Int col = col_start; col &lt; col_end; ++col) {</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">for</span>(Int row = row_start; row &lt; row_end; ++row) {</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;          <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> val = local_data(row, col);</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;          local_means(row, 0) += val;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;          local_stdevs(row, 0) += val * val;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        }</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;      }</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    }</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  }</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="comment">// Allreduce sums and sums of squares</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  AllReduce(means, means.RedundantComm(), mpi::SUM);</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  AllReduce(stdevs, stdevs.RedundantComm(), mpi::SUM);</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  <span class="comment">// Compute mean and standard deviation of each matrix row</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor">  #pragma omp parallel for</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span>(Int row = 0; row &lt; local_height; ++row) {</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> mean = local_means(row, 0) / height;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> sqmean = local_stdevs(row, 0) / height;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> var = Max(sqmean - mean * mean, 0);</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> stdev = Sqrt(var);</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    local_means(row, 0) = mean;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    local_stdevs(row, 0) = stdev;</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  }</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;}</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;}</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="keyword">const</span> Int local_height = data.LocalHeight();</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keyword">const</span> Int local_width = data.LocalWidth();</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <span class="comment">// Initialize outputs</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  means.Resize(height, 1);</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  stdevs.Resize(height, 1);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="comment">// Local matrices</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; local_data = data.LockedMatrix();</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; local_means = means.Matrix();</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; local_stdevs = stdevs.Matrix();</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="comment">// Iterate through row blocks</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keyword">const</span> Int block_size = 16;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="preprocessor">  #pragma omp parallel for</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span>(Int row_start = 0; row_start &lt; local_height; row_start += block_size) {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keyword">const</span> Int row_end = Min(row_start + block_size, local_height);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="comment">// Iterate through blocks in row block</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordflow">for</span>(Int col_start = 0; col_start &lt; local_width; col_start += block_size) {</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;      <span class="keyword">const</span> Int col_end = Min(col_start + block_size, local_width);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;      <span class="comment">// Compute sums by iterating through block entries</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      <span class="keywordflow">for</span>(Int col = col_start; col &lt; col_end; ++col) {</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordflow">for</span>(Int row = row_start; row &lt; row_end; ++row) {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;          <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> val = local_data(row, col);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;          local_means(row, 0) += val;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;          local_stdevs(row, 0) += val * val;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    }</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <span class="comment">// Allreduce sums and sums of squares</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  AllReduce(means, means.RedundantComm(), mpi::SUM);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  AllReduce(stdevs, stdevs.RedundantComm(), mpi::SUM);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="comment">// Compute mean and standard deviation of each matrix row</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor">  #pragma omp parallel for</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span>(Int row = 0; row &lt; local_height; ++row) {</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> mean = local_means(row, 0) / height;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> sqmean = local_stdevs(row, 0) / height;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> var = Max(sqmean - mean * mean, 0);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> stdev = Sqrt(var);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    local_means(row, 0) = mean;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    local_stdevs(row, 0) = stdev;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  }</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;}</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;}</div>
 <div class="ttc" id="namespacelbann_html_a085b697db535c10a6fd6689cc4445bd4"><div class="ttname"><a href="namespacelbann.html#a085b697db535c10a6fd6689cc4445bd4">lbann::columnwise_mean_and_stdev</a></div><div class="ttdeci">void columnwise_mean_and_stdev(const AbsDistMat &amp;data, AbsDistMat &amp;means, AbsDistMat &amp;stdevs)</div><div class="ttdoc">Compute column-wise means and standard deviations. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__statistics_8cpp_source.html#l00099">lbann_statistics.cpp:99</a></div></div>
 <div class="ttc" id="namespacelbann_html_aed55242cd2815936e081336908876cca"><div class="ttname"><a href="namespacelbann.html#aed55242cd2815936e081336908876cca">lbann::mean_and_stdev</a></div><div class="ttdeci">void mean_and_stdev(const Mat &amp;data, DataType &amp;mean, DataType &amp;stdev)</div><div class="ttdoc">Compute mean and standard deviation over matrix entries. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__statistics_8cpp_source.html#l00034">lbann_statistics.cpp:34</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__exception_8hpp_source.html#l00040">lbann_exception.hpp:40</a></div></div>
@@ -392,7 +391,7 @@ $(document).ready(function(){initNavTree('lbann__statistics_8cpp_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_e3a975d7a6e3e1ec3d3053fd7df1ad72.html">utils</a></li><li class="navelem"><a class="el" href="lbann__statistics_8cpp.html">lbann_statistics.cpp</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 15:45:01 for LBANN by
+    <li class="footer">Generated on Mon Jun 12 2017 15:53:44 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
