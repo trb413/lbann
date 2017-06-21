@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-79-g3f8fc3c-ci242150286</span>
+   &#160;<span id="projectnumber">v0.93-ci245156193</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -130,28 +130,34 @@ $(document).ready(function(){initNavTree('lbann__callback__dump__weights_8cpp_so
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                             <span class="stringliteral">&quot;-epoch&quot;</span> + std::to_string(m-&gt;<a class="code" href="classlbann_1_1model.html#a3f6f0384573e9ca4bea93ce0dbebfd28">get_cur_epoch</a>()) + <span class="stringliteral">&quot;-layer&quot;</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="comment">// Skip the input/output layers.</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 1; i &lt; layers.size() - 1; ++i) {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    El::Write(layers[i]-&gt;get_weights_biases(),</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;              prefix + std::to_string(i) + <span class="stringliteral">&quot;-WeightsBiases&quot;</span>,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;              El::ASCII);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}  <span class="comment">// namespace lbann</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classlbann_1_1learning.html">learning</a> *learning_layer = (<a class="code" href="classlbann_1_1learning.html">learning</a> *) dynamic_cast&lt;learning *&gt; (layers[i]);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span>(learning_layer != <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      El::Write(learning_layer-&gt;<a class="code" href="classlbann_1_1learning.html#a8166d1269eb32931e43656435518ee7a">get_weights_biases</a>(),</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                prefix + std::to_string(i) + <span class="stringliteral">&quot;-WeightsBiases&quot;</span>,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                El::ASCII);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}  <span class="comment">// namespace lbann</span></div>
 <div class="ttc" id="lbann__callback__dump__weights_8hpp_html"><div class="ttname"><a href="lbann__callback__dump__weights_8hpp.html">lbann_callback_dump_weights.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__dump__weights_html_a214d46826f6b64b321b34321451e9ab4"><div class="ttname"><a href="classlbann_1_1lbann__callback__dump__weights.html#a214d46826f6b64b321b34321451e9ab4">lbann::lbann_callback_dump_weights::on_epoch_end</a></div><div class="ttdeci">void on_epoch_end(model *m)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__dump__weights_8cpp_source.html#l00034">lbann_callback_dump_weights.cpp:34</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_aa837a468e77991314053a93441d111ca"><div class="ttname"><a href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca">lbann::model::get_comm</a></div><div class="ttdeci">lbann_comm * get_comm() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00074">lbann_model.hpp:74</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_aa837a468e77991314053a93441d111ca"><div class="ttname"><a href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca">lbann::model::get_comm</a></div><div class="ttdeci">lbann_comm * get_comm() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00076">lbann_model.hpp:76</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_ab6f53860dab77f0ce1d941d07360ef5a"><div class="ttname"><a href="classlbann_1_1model.html#ab6f53860dab77f0ce1d941d07360ef5a">lbann::model::get_layers</a></div><div class="ttdeci">virtual std::vector&lt; Layer * &gt; &amp; get_layers()=0</div></div>
+<div class="ttc" id="classlbann_1_1learning_html"><div class="ttname"><a href="classlbann_1_1learning.html">lbann::learning</a></div><div class="ttdef"><b>Definition:</b> <a href="learning_8hpp_source.html#l00038">learning.hpp:38</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__dump__weights_html_a6c73416bd2edd414e7c4094a19ae2d79"><div class="ttname"><a href="classlbann_1_1lbann__callback__dump__weights.html#a6c73416bd2edd414e7c4094a19ae2d79">lbann::lbann_callback_dump_weights::m_basename</a></div><div class="ttdeci">std::string m_basename</div><div class="ttdef"><b>Definition:</b> <a href="lbann__callback__dump__weights_8hpp_source.html#l00055">lbann_callback_dump_weights.hpp:55</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html"><div class="ttname"><a href="classlbann_1_1model.html">lbann::model</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00055">lbann_model.hpp:55</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_a6c201108eb6b5a1e23021db29cef655b"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a6c201108eb6b5a1e23021db29cef655b">lbann::lbann_comm::get_model_rank</a></div><div class="ttdeci">int get_model_rank() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00058">lbann_comm.hpp:58</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_a3f6f0384573e9ca4bea93ce0dbebfd28"><div class="ttname"><a href="classlbann_1_1model.html#a3f6f0384573e9ca4bea93ce0dbebfd28">lbann::model::get_cur_epoch</a></div><div class="ttdeci">int64_t get_cur_epoch() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00078">lbann_model.hpp:78</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_a6c201108eb6b5a1e23021db29cef655b"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a6c201108eb6b5a1e23021db29cef655b">lbann::lbann_comm::get_model_rank</a></div><div class="ttdeci">int get_model_rank() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00065">lbann_comm.hpp:65</a></div></div>
+<div class="ttc" id="datatype_8hpp_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00035">datatype.hpp:35</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_a3f6f0384573e9ca4bea93ce0dbebfd28"><div class="ttname"><a href="classlbann_1_1model.html#a3f6f0384573e9ca4bea93ce0dbebfd28">lbann::model::get_cur_epoch</a></div><div class="ttdeci">int64_t get_cur_epoch() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__model_8hpp_source.html#l00080">lbann_model.hpp:80</a></div></div>
+<div class="ttc" id="classlbann_1_1learning_html_a8166d1269eb32931e43656435518ee7a"><div class="ttname"><a href="classlbann_1_1learning.html#a8166d1269eb32931e43656435518ee7a">lbann::learning::get_weights_biases</a></div><div class="ttdeci">virtual ElMat &amp; get_weights_biases(void)</div><div class="ttdef"><b>Definition:</b> <a href="learning_8hpp_source.html#l00160">learning.hpp:160</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_2cd67b1c9ead8c95a9b97b48b5142b81.html">callbacks</a></li><li class="navelem"><a class="el" href="lbann__callback__dump__weights_8cpp.html">lbann_callback_dump_weights.cpp</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 19:49:38 for LBANN by
+    <li class="footer">Generated on Wed Jun 21 2017 00:32:41 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>LBANN: lbann::dropout Class Reference</title>
+<title>LBANN: lbann::dropout&lt; T_layout &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-79-g3f8fc3c-ci242150286</span>
+   &#160;<span id="projectnumber">v0.93-ci245156193</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -90,96 +90,286 @@ $(document).ready(function(){initNavTree('classlbann_1_1dropout.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classlbann_1_1dropout-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">lbann::dropout Class Reference</div>  </div>
+<div class="title">lbann::dropout&lt; T_layout &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="lbann__dropout_8hpp_source.html">lbann_dropout.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="dropout_8hpp_source.html">dropout.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for lbann::dropout:</div>
+Inheritance diagram for lbann::dropout&lt; T_layout &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1dropout__inherit__graph.png" border="0" usemap="#lbann_1_1dropout_inherit__map" alt="Inheritance graph"/></div>
-<map name="lbann_1_1dropout_inherit__map" id="lbann_1_1dropout_inherit__map">
-<area shape="rect" id="node2" href="classlbann_1_1regularizer.html" title="lbann::regularizer" alt="" coords="5,5,125,32"/></map>
+<div class="center"><img src="classlbann_1_1dropout__inherit__graph.png" border="0" usemap="#lbann_1_1dropout_3_01T__layout_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="lbann_1_1dropout_3_01T__layout_01_4_inherit__map" id="lbann_1_1dropout_3_01T__layout_01_4_inherit__map">
+<area shape="rect" id="node2" href="classlbann_1_1regularizer__layer.html" title="lbann::regularizer\l_layer" alt="" coords="34,81,155,122"/><area shape="rect" id="node3" href="classlbann_1_1Layer.html" title="lbann::Layer" alt="" coords="48,5,141,32"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for lbann::dropout:</div>
+Collaboration diagram for lbann::dropout&lt; T_layout &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1dropout__coll__graph.png" border="0" usemap="#lbann_1_1dropout_coll__map" alt="Collaboration graph"/></div>
-<map name="lbann_1_1dropout_coll__map" id="lbann_1_1dropout_coll__map">
-<area shape="rect" id="node2" href="classlbann_1_1regularizer.html" title="lbann::regularizer" alt="" coords="103,440,224,467"/><area shape="rect" id="node3" href="classlbann_1_1Layer.html" title="lbann::Layer" alt="" coords="284,349,377,376"/><area shape="rect" id="node4" href="classcudnn_1_1cudnn__manager.html" title="cudnn::cudnn_manager" alt="" coords="333,259,491,285"/><area shape="rect" id="node5" href="classlbann_1_1optimizer.html" title="Optimizer base class. " alt="" coords="208,208,323,235"/><area shape="rect" id="node6" href="classlbann_1_1lbann__comm.html" title="lbann::lbann_comm" alt="" coords="461,13,595,40"/><area shape="rect" id="node7" href="classlbann_1_1model.html" title="lbann::model" alt="" coords="677,259,773,285"/><area shape="rect" id="node8" href="classlbann_1_1optimizer__factory.html" title="Optimizer factory base class. " alt="" coords="566,149,727,176"/><area shape="rect" id="node9" href="classlbann_1_1objective__functions_1_1objective__fn.html" title="lbann::objective_functions\l::objective_fn" alt="" coords="859,142,1032,183"/><area shape="rect" id="node10" href="classlbann_1_1objective__functions_1_1statistics.html" title="lbann::objective_functions\l::statistics" alt="" coords="859,6,1032,47"/><area shape="rect" id="node11" href="classlbann_1_1Activation.html" title="lbann::Activation" alt="" coords="190,259,308,285"/></map>
+<div class="center"><img src="classlbann_1_1dropout__coll__graph.png" border="0" usemap="#lbann_1_1dropout_3_01T__layout_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="lbann_1_1dropout_3_01T__layout_01_4_coll__map" id="lbann_1_1dropout_3_01T__layout_01_4_coll__map">
+<area shape="rect" id="node2" href="classlbann_1_1regularizer__layer.html" title="lbann::regularizer\l_layer" alt="" coords="139,417,260,458"/><area shape="rect" id="node3" href="classlbann_1_1Layer.html" title="lbann::Layer" alt="" coords="153,339,247,365"/><area shape="rect" id="node4" href="classcudnn_1_1cudnn__manager.html" title="cudnn::cudnn_manager" alt="" coords="5,248,163,275"/><area shape="rect" id="node5" href="classlbann_1_1lbann__comm.html" title="lbann::lbann_comm" alt="" coords="211,13,345,40"/><area shape="rect" id="node6" href="classlbann_1_1model.html" title="lbann::model" alt="" coords="285,248,381,275"/><area shape="rect" id="node7" href="classlbann_1_1optimizer__factory.html" title="Optimizer factory base class. " alt="" coords="362,149,523,176"/><area shape="rect" id="node8" href="classlbann_1_1objective__functions_1_1objective__fn.html" title="lbann::objective_functions\l::objective_fn" alt="" coords="548,142,721,183"/><area shape="rect" id="node9" href="classlbann_1_1objective__functions_1_1statistics.html" title="lbann::objective_functions\l::statistics" alt="" coords="548,6,721,47"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a475a5f62e79fddc530dcf9982ace918a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1dropout.html#a475a5f62e79fddc530dcf9982ace918a">dropout</a> (<a class="el" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a> data_dist, <a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, float keep_prob=0.5f)</td></tr>
-<tr class="separator:a475a5f62e79fddc530dcf9982ace918a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcec1bc033a38501bb60797ac1b97dbf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1dropout.html#abcec1bc033a38501bb60797ac1b97dbf">~dropout</a> ()</td></tr>
-<tr class="separator:abcec1bc033a38501bb60797ac1b97dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adac8d66b5add45bd1dcea08c109ef68e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1dropout.html#adac8d66b5add45bd1dcea08c109ef68e">initialize_model_parallel_distribution</a> ()</td></tr>
-<tr class="memdesc:adac8d66b5add45bd1dcea08c109ef68e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrices should be in MC,MR distributions.  <a href="#adac8d66b5add45bd1dcea08c109ef68e">More...</a><br/></td></tr>
-<tr class="separator:adac8d66b5add45bd1dcea08c109ef68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d871f6dd815b3883b472c40858e11c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1dropout.html#a9d871f6dd815b3883b472c40858e11c1">initialize_data_parallel_distribution</a> ()</td></tr>
-<tr class="memdesc:a9d871f6dd815b3883b472c40858e11c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weight matrices should be in Star,Star and data matrices Star,VC distributions.  <a href="#a9d871f6dd815b3883b472c40858e11c1">More...</a><br/></td></tr>
-<tr class="separator:a9d871f6dd815b3883b472c40858e11c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c33aee6cc1323496120bb545cd27148"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1dropout.html#a7c33aee6cc1323496120bb545cd27148">fp_activations</a> ()</td></tr>
-<tr class="separator:a7c33aee6cc1323496120bb545cd27148"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b1ecd42b39fb914cfb04fde2278e8ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1dropout.html#a9b1ecd42b39fb914cfb04fde2278e8ed">bp_activations</a> ()</td></tr>
-<tr class="separator:a9b1ecd42b39fb914cfb04fde2278e8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classlbann_1_1regularizer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classlbann_1_1regularizer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classlbann_1_1regularizer.html">lbann::regularizer</a></td></tr>
-<tr class="memitem:aa3a41a0805c11e26758cbbd9f66d662e inherit pub_methods_classlbann_1_1regularizer"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1regularizer.html#aa3a41a0805c11e26758cbbd9f66d662e">~regularizer</a> ()</td></tr>
-<tr class="separator:aa3a41a0805c11e26758cbbd9f66d662e inherit pub_methods_classlbann_1_1regularizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f9e59630b11ca7b6349e0f3f3331e47 inherit pub_methods_classlbann_1_1regularizer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1regularizer.html#a6f9e59630b11ca7b6349e0f3f3331e47">fp_connections</a> ()</td></tr>
-<tr class="separator:a6f9e59630b11ca7b6349e0f3f3331e47 inherit pub_methods_classlbann_1_1regularizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b36f80c1f2d359e263527eb00c75341 inherit pub_methods_classlbann_1_1regularizer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1regularizer.html#a3b36f80c1f2d359e263527eb00c75341">bp_connections</a> ()</td></tr>
-<tr class="separator:a3b36f80c1f2d359e263527eb00c75341 inherit pub_methods_classlbann_1_1regularizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab36e9a970736527ae2e8e73b723a3de4 inherit pub_methods_classlbann_1_1regularizer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1regularizer.html#ab36e9a970736527ae2e8e73b723a3de4">fp_weights</a> ()</td></tr>
-<tr class="separator:ab36e9a970736527ae2e8e73b723a3de4 inherit pub_methods_classlbann_1_1regularizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a399de786010af74ec685bc27b9edba inherit pub_methods_classlbann_1_1regularizer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1regularizer.html#a6a399de786010af74ec685bc27b9edba">bp_weights</a> ()</td></tr>
-<tr class="separator:a6a399de786010af74ec685bc27b9edba inherit pub_methods_classlbann_1_1regularizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af438ba42815eb0ed5ae22a4dae456795 inherit pub_methods_classlbann_1_1regularizer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1regularizer.html#af438ba42815eb0ed5ae22a4dae456795">update_gradients</a> ()</td></tr>
-<tr class="separator:af438ba42815eb0ed5ae22a4dae456795 inherit pub_methods_classlbann_1_1regularizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0fd1a331a6fd12025843c7d84783ea4 inherit pub_methods_classlbann_1_1regularizer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1regularizer.html#ad0fd1a331a6fd12025843c7d84783ea4">update</a> ()</td></tr>
-<tr class="separator:ad0fd1a331a6fd12025843c7d84783ea4 inherit pub_methods_classlbann_1_1regularizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fda5d9230f7fe9f33348dc494245cb3 inherit pub_methods_classlbann_1_1regularizer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1regularizer.html#a8fda5d9230f7fe9f33348dc494245cb3">setup</a> (<a class="el" href="classlbann_1_1Layer.html">Layer</a> *l)</td></tr>
-<tr class="separator:a8fda5d9230f7fe9f33348dc494245cb3 inherit pub_methods_classlbann_1_1regularizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada75d3842d77aade6495d458da72e74e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1dropout.html#ada75d3842d77aade6495d458da72e74e">dropout</a> (const <a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> index, const <a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> num_neurons, <a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, <a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> mini_batch_size, float keep_prob=0.5f)</td></tr>
+<tr class="separator:ada75d3842d77aade6495d458da72e74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a954d77f2ddbbd708f3606c15c5e1eee7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1dropout.html#a954d77f2ddbbd708f3606c15c5e1eee7">~dropout</a> ()</td></tr>
+<tr class="separator:a954d77f2ddbbd708f3606c15c5e1eee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af605d2ea7f99b3e6b655f71a0634d170"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1dropout.html#af605d2ea7f99b3e6b655f71a0634d170">initialize_distributed_matrices</a> ()</td></tr>
+<tr class="separator:af605d2ea7f99b3e6b655f71a0634d170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06a637e099829a8a5c7e142490ede9d7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1dropout.html#a06a637e099829a8a5c7e142490ede9d7">get_data_layout</a> ()</td></tr>
+<tr class="separator:a06a637e099829a8a5c7e142490ede9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a5569f4c5c0055b0f4e041195f275fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1dropout.html#a5a5569f4c5c0055b0f4e041195f275fc">setup</a> (int num_prev_neurons)</td></tr>
+<tr class="separator:a5a5569f4c5c0055b0f4e041195f275fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59277f52c7522f46b043aeb4216c7b50"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a59277f52c7522f46b043aeb4216c7b50"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlbann_1_1dropout.html#a59277f52c7522f46b043aeb4216c7b50">initialize_distributed_matrices</a> ()</td></tr>
+<tr class="separator:a59277f52c7522f46b043aeb4216c7b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37e65b35918040295038204ef1a7b600"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a37e65b35918040295038204ef1a7b600"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlbann_1_1dropout.html#a37e65b35918040295038204ef1a7b600">initialize_distributed_matrices</a> ()</td></tr>
+<tr class="separator:a37e65b35918040295038204ef1a7b600"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classlbann_1_1regularizer__layer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classlbann_1_1regularizer__layer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classlbann_1_1regularizer__layer.html">lbann::regularizer_layer</a></td></tr>
+<tr class="memitem:a67799cfbb16e9612cfcafb2eeec43c2a inherit pub_methods_classlbann_1_1regularizer__layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1regularizer__layer.html#a67799cfbb16e9612cfcafb2eeec43c2a">regularizer_layer</a> (const <a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> index, <a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, const <a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> mini_batch_size)</td></tr>
+<tr class="separator:a67799cfbb16e9612cfcafb2eeec43c2a inherit pub_methods_classlbann_1_1regularizer__layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f6736f0a780f8a485e8f204b15dcda4 inherit pub_methods_classlbann_1_1regularizer__layer"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1regularizer__layer.html#a6f6736f0a780f8a485e8f204b15dcda4">~regularizer_layer</a> ()</td></tr>
+<tr class="separator:a6f6736f0a780f8a485e8f204b15dcda4 inherit pub_methods_classlbann_1_1regularizer__layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad942e97d12c60e09cfd72f5eb739a60a inherit pub_methods_classlbann_1_1regularizer__layer"><td class="memTemplParams" colspan="2">template&lt;data_layout T_layout&gt; </td></tr>
+<tr class="memitem:ad942e97d12c60e09cfd72f5eb739a60a inherit pub_methods_classlbann_1_1regularizer__layer"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlbann_1_1regularizer__layer.html#ad942e97d12c60e09cfd72f5eb739a60a">initialize_distributed_matrices</a> ()</td></tr>
+<tr class="separator:ad942e97d12c60e09cfd72f5eb739a60a inherit pub_methods_classlbann_1_1regularizer__layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classlbann_1_1Layer"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classlbann_1_1Layer')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td></tr>
+<tr class="memitem:a87c4e8e8bdedcbe5988b703d32e8324a inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a87c4e8e8bdedcbe5988b703d32e8324a">Layer</a> (const <a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> index, <a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, <a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> mbsize)</td></tr>
+<tr class="separator:a87c4e8e8bdedcbe5988b703d32e8324a inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b5e5217e413831ce9a5d0de9a84c676 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a6b5e5217e413831ce9a5d0de9a84c676">~Layer</a> (void)</td></tr>
+<tr class="separator:a6b5e5217e413831ce9a5d0de9a84c676 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f08fe144a625a9560c8c6984d256672 inherit pub_methods_classlbann_1_1Layer"><td class="memTemplParams" colspan="2">template&lt;data_layout T_layout&gt; </td></tr>
+<tr class="memitem:a4f08fe144a625a9560c8c6984d256672 inherit pub_methods_classlbann_1_1Layer"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a4f08fe144a625a9560c8c6984d256672">initialize_distributed_matrices</a> ()</td></tr>
+<tr class="separator:a4f08fe144a625a9560c8c6984d256672 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1606d7c00a1c8e717ab763f529b8e33 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#aa1606d7c00a1c8e717ab763f529b8e33">forwardProp</a> (void)</td></tr>
+<tr class="separator:aa1606d7c00a1c8e717ab763f529b8e33 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08e70b7f506ba8bca1fd8b29cd59dadb inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a08e70b7f506ba8bca1fd8b29cd59dadb">backProp</a> (void)</td></tr>
+<tr class="separator:a08e70b7f506ba8bca1fd8b29cd59dadb inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5594cd9afb62c9bd5ab9d879ee5a9127 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a5594cd9afb62c9bd5ab9d879ee5a9127">update</a> (void)</td></tr>
+<tr class="separator:a5594cd9afb62c9bd5ab9d879ee5a9127 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff82d98a534f0dfc3b0cb200a9aff90a inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#aff82d98a534f0dfc3b0cb200a9aff90a">summarize</a> (<a class="el" href="classlbann_1_1lbann__summary.html">lbann_summary</a> &amp;summarizer, int64_t step)</td></tr>
+<tr class="separator:aff82d98a534f0dfc3b0cb200a9aff90a inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6e0d11c76af92dd042e2bdca4d75e58 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#ac6e0d11c76af92dd042e2bdca4d75e58">epoch_print</a> (void) const </td></tr>
+<tr class="separator:ac6e0d11c76af92dd042e2bdca4d75e58 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e24e6fc7c3d974dd256c650460ad570 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a3e24e6fc7c3d974dd256c650460ad570">epoch_reset</a> (void)</td></tr>
+<tr class="separator:a3e24e6fc7c3d974dd256c650460ad570 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a165d07794df1b67b6034e80ce003f714 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a165d07794df1b67b6034e80ce003f714">checkGradientMB</a> (<a class="el" href="classlbann_1_1Layer.html">Layer</a> &amp;PrevLayer, const <a class="el" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> Epsilon=1e-4)</td></tr>
+<tr class="separator:a165d07794df1b67b6034e80ce003f714 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b1ba1ca26997d088e0e3b4606c2ef40 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a6b1ba1ca26997d088e0e3b4606c2ef40">check_setup</a> (void)</td></tr>
+<tr class="separator:a6b1ba1ca26997d088e0e3b4606c2ef40 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1061315bde49ffba380c60e433d7c874 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743">layer_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a1061315bde49ffba380c60e433d7c874">get_type</a> (void) const </td></tr>
+<tr class="separator:a1061315bde49ffba380c60e433d7c874 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eae259f041e79b4a23f439f3dbe800d inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a7eae259f041e79b4a23f439f3dbe800d">get_name</a> () const </td></tr>
+<tr class="separator:a7eae259f041e79b4a23f439f3dbe800d inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1edbe39f1a48826a377ade47578bf7c5 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a1edbe39f1a48826a377ade47578bf7c5">set_name</a> (std::string name)</td></tr>
+<tr class="separator:a1edbe39f1a48826a377ade47578bf7c5 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89e1aa6aec6534b724229fa3b4aad68d inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a89e1aa6aec6534b724229fa3b4aad68d">get_index</a> (void) const </td></tr>
+<tr class="separator:a89e1aa6aec6534b724229fa3b4aad68d inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f9b57a391aaa13609760a71fe6cfa78 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a9f9b57a391aaa13609760a71fe6cfa78">set_index</a> (const <a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> i)</td></tr>
+<tr class="separator:a9f9b57a391aaa13609760a71fe6cfa78 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad883b1c1f662775645074aa52b624006 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#ad883b1c1f662775645074aa52b624006">get_num_neurons</a> (void) const </td></tr>
+<tr class="separator:ad883b1c1f662775645074aa52b624006 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9070ac890759a640f6d4d0ca775081 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#add9070ac890759a640f6d4d0ca775081">get_execution_mode</a> (void) const </td></tr>
+<tr class="separator:add9070ac890759a640f6d4d0ca775081 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a377186a07b1db4bd48e810f98fc57064 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a377186a07b1db4bd48e810f98fc57064">set_execution_mode</a> (const <a class="el" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a> mode)</td></tr>
+<tr class="separator:a377186a07b1db4bd48e810f98fc57064 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec8e97147dbad95cbb59daadfac56535 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#aec8e97147dbad95cbb59daadfac56535">get_activations</a> (void)</td></tr>
+<tr class="separator:aec8e97147dbad95cbb59daadfac56535 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a26b34239bda86ae7ace2dfa6b93c76 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a2a26b34239bda86ae7ace2dfa6b93c76">reset_counters</a> (void)</td></tr>
+<tr class="separator:a2a26b34239bda86ae7ace2dfa6b93c76 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc29790bfd502af0813f0af951796df7 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#abc29790bfd502af0813f0af951796df7">get_minibatch_size</a> (void) const </td></tr>
+<tr class="separator:abc29790bfd502af0813f0af951796df7 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3568e34780f13d641b39c14fe87b5e38 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a3568e34780f13d641b39c14fe87b5e38">get_effective_minibatch_size</a> (void) const </td></tr>
+<tr class="separator:a3568e34780f13d641b39c14fe87b5e38 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a764387b1c6c66436120bbbff79649e70 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a764387b1c6c66436120bbbff79649e70">set_effective_minibatch_size</a> (<a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> size)</td></tr>
+<tr class="separator:a764387b1c6c66436120bbbff79649e70 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cd3afb6dd73ae0f100161677e31f818 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a1cd3afb6dd73ae0f100161677e31f818">fp_output</a> (void)</td></tr>
+<tr class="separator:a1cd3afb6dd73ae0f100161677e31f818 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe0bec9983f9f7bb0f1a27f13e05aa2f inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#abe0bec9983f9f7bb0f1a27f13e05aa2f">bp_output</a> (void)</td></tr>
+<tr class="separator:abe0bec9983f9f7bb0f1a27f13e05aa2f inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a067b9a2e1ab74c5ce93656a91fbbe2bc inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a067b9a2e1ab74c5ce93656a91fbbe2bc">setup_fp_input</a> (<a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *input)</td></tr>
+<tr class="separator:a067b9a2e1ab74c5ce93656a91fbbe2bc inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa95aa43ebfc95946c8ead4a85008538 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#afa95aa43ebfc95946c8ead4a85008538">setup_bp_input</a> (<a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *input)</td></tr>
+<tr class="separator:afa95aa43ebfc95946c8ead4a85008538 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2921c7947587b5d95cf8dff96000a237 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a2921c7947587b5d95cf8dff96000a237">set_prev_layer_type</a> (<a class="el" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743">layer_type</a> type)</td></tr>
+<tr class="separator:a2921c7947587b5d95cf8dff96000a237 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b5e6cb0069ebb71450a43a6d3d52b57 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a9b5e6cb0069ebb71450a43a6d3d52b57">set_next_layer_type</a> (<a class="el" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743">layer_type</a> type)</td></tr>
+<tr class="separator:a9b5e6cb0069ebb71450a43a6d3d52b57 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38c63e0545f1d13e50d4b61cd0a4113d inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a38c63e0545f1d13e50d4b61cd0a4113d">using_gpus</a> (void) const </td></tr>
+<tr class="separator:a38c63e0545f1d13e50d4b61cd0a4113d inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a677833ec998be158873f880c7bd08179 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a677833ec998be158873f880c7bd08179">set_prev_layer_using_gpus</a> (bool <a class="el" href="classlbann_1_1Layer.html#a38c63e0545f1d13e50d4b61cd0a4113d">using_gpus</a>)</td></tr>
+<tr class="separator:a677833ec998be158873f880c7bd08179 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afba864aae1cba1174489e28dd0b5d0ba inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#afba864aae1cba1174489e28dd0b5d0ba">set_next_layer_using_gpus</a> (bool <a class="el" href="classlbann_1_1Layer.html#a38c63e0545f1d13e50d4b61cd0a4113d">using_gpus</a>)</td></tr>
+<tr class="separator:afba864aae1cba1174489e28dd0b5d0ba inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad58cecf6628a122910f82f0d05481222 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1model.html">model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#ad58cecf6628a122910f82f0d05481222">get_neural_network_model</a> (void) const </td></tr>
+<tr class="separator:ad58cecf6628a122910f82f0d05481222 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab10731b838313aa7259fa62d5d229a76 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#ab10731b838313aa7259fa62d5d229a76">set_neural_network_model</a> (<a class="el" href="classlbann_1_1model.html">model</a> *const m)</td></tr>
+<tr class="separator:ab10731b838313aa7259fa62d5d229a76 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf8a3dac2496eee2f227db3ecad9e9ae inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual El::Matrix&lt; El::Int &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#adf8a3dac2496eee2f227db3ecad9e9ae">get_sample_indices_per_mb</a> (void)</td></tr>
+<tr class="separator:adf8a3dac2496eee2f227db3ecad9e9ae inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13eafbc8040160268f0782959014cd94 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a13eafbc8040160268f0782959014cd94">saveToFile</a> (int fd, const char *filename)</td></tr>
+<tr class="separator:a13eafbc8040160268f0782959014cd94 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ae0e6015dd427c63236a07f8cbd3878 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a1ae0e6015dd427c63236a07f8cbd3878">loadFromFile</a> (int fd, const char *filename)</td></tr>
+<tr class="separator:a1ae0e6015dd427c63236a07f8cbd3878 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe469288e72b03dcd5da83b994148f7b inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#abe469288e72b03dcd5da83b994148f7b">saveToCheckpoint</a> (int fd, const char *filename, uint64_t *bytes)</td></tr>
+<tr class="separator:abe469288e72b03dcd5da83b994148f7b inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88c3ac4ca87586ec20558aaddda76691 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a88c3ac4ca87586ec20558aaddda76691">loadFromCheckpoint</a> (int fd, const char *filename, uint64_t *bytes)</td></tr>
+<tr class="separator:a88c3ac4ca87586ec20558aaddda76691 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3821799295d5c30c5f47fd61880b9cf4 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a3821799295d5c30c5f47fd61880b9cf4">saveToCheckpointShared</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p)</td></tr>
+<tr class="separator:a3821799295d5c30c5f47fd61880b9cf4 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd2524835a05a2d88c92e546e15a80a9 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#acd2524835a05a2d88c92e546e15a80a9">loadFromCheckpointShared</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p)</td></tr>
+<tr class="separator:acd2524835a05a2d88c92e546e15a80a9 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ab7fa84c3915f5ceac8eed28a183e4ff1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1dropout.html#ab7fa84c3915f5ceac8eed28a183e4ff1">fp_compute</a> ()</td></tr>
+<tr class="separator:ab7fa84c3915f5ceac8eed28a183e4ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a619e2c4a87db449d5c18c072b24747ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1dropout.html#a619e2c4a87db449d5c18c072b24747ee">bp_compute</a> ()</td></tr>
+<tr class="separator:a619e2c4a87db449d5c18c072b24747ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classlbann_1_1Layer"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classlbann_1_1Layer')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td></tr>
+<tr class="memitem:a935881e25a98b4ffad1985dc04c19572 inherit pro_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a935881e25a98b4ffad1985dc04c19572">fp_set_std_matrix_view</a> ()</td></tr>
+<tr class="separator:a935881e25a98b4ffad1985dc04c19572 inherit pro_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad388ef1cc8ff6f43e531de7dbd62d996 inherit pro_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#ad388ef1cc8ff6f43e531de7dbd62d996">bp_set_std_matrix_view</a> ()</td></tr>
+<tr class="separator:ad388ef1cc8ff6f43e531de7dbd62d996 inherit pro_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70e08fc96a612f67ade6ba3809536d85 inherit pro_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a70e08fc96a612f67ade6ba3809536d85">update_compute</a> ()</td></tr>
+<tr class="separator:a70e08fc96a612f67ade6ba3809536d85 inherit pro_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:af52965eae7232c51e0e3801b02ac7de0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1dropout.html#af52965eae7232c51e0e3801b02ac7de0">m_comm</a></td></tr>
-<tr class="separator:af52965eae7232c51e0e3801b02ac7de0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b4540ea622609b518d691d68e6db92c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1dropout.html#a2b4540ea622609b518d691d68e6db92c">m_keep_prob</a></td></tr>
-<tr class="separator:a2b4540ea622609b518d691d68e6db92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1da084708f189cdc5f53cb59ab5c18d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a></td></tr>
-<tr class="separator:a1da084708f189cdc5f53cb59ab5c18d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_classlbann_1_1regularizer"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classlbann_1_1regularizer')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classlbann_1_1regularizer.html">lbann::regularizer</a></td></tr>
-<tr class="memitem:a6d0d44f4f9a3c8c24d0acdda8cf7d4b5 inherit pro_attribs_classlbann_1_1regularizer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1Layer.html">Layer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">m_layer</a></td></tr>
-<tr class="separator:a6d0d44f4f9a3c8c24d0acdda8cf7d4b5 inherit pro_attribs_classlbann_1_1regularizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac728849f72d7f433ced4448c96e018f7"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1dropout.html#ac728849f72d7f433ced4448c96e018f7">m_keep_prob</a></td></tr>
+<tr class="separator:ac728849f72d7f433ced4448c96e018f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3a78c611fd83ed63be98cb0a0a44430"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1dropout.html#ad3a78c611fd83ed63be98cb0a0a44430">m_cur_mask</a></td></tr>
+<tr class="separator:ad3a78c611fd83ed63be98cb0a0a44430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classlbann_1_1Layer"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classlbann_1_1Layer')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td></tr>
+<tr class="memitem:a0c3f1427701caffe13b816b102a04983 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a0c3f1427701caffe13b816b102a04983">m_index</a></td></tr>
+<tr class="memdesc:a0c3f1427701caffe13b816b102a04983 inherit pro_attribs_classlbann_1_1Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classlbann_1_1Layer.html">Layer</a> index (start with 0)  <a href="#a0c3f1427701caffe13b816b102a04983">More...</a><br/></td></tr>
+<tr class="separator:a0c3f1427701caffe13b816b102a04983 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa47109ad09b399142fa92f9d3702189f inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#aa47109ad09b399142fa92f9d3702189f">m_name</a></td></tr>
+<tr class="separator:aa47109ad09b399142fa92f9d3702189f inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de05c52f22e0bbd7c703bec3ad4dbf2 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a></td></tr>
+<tr class="separator:a5de05c52f22e0bbd7c703bec3ad4dbf2 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6941c1ec005f88a7af80eaebf652e16f inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743">layer_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a6941c1ec005f88a7af80eaebf652e16f">m_type</a></td></tr>
+<tr class="memdesc:a6941c1ec005f88a7af80eaebf652e16f inherit pro_attribs_classlbann_1_1Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of this layer.  <a href="#a6941c1ec005f88a7af80eaebf652e16f">More...</a><br/></td></tr>
+<tr class="separator:a6941c1ec005f88a7af80eaebf652e16f inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44254c29e29a8e8b4ccb1aaaea46ff48 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743">layer_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a44254c29e29a8e8b4ccb1aaaea46ff48">m_prev_layer_type</a></td></tr>
+<tr class="memdesc:a44254c29e29a8e8b4ccb1aaaea46ff48 inherit pro_attribs_classlbann_1_1Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of previous layer.  <a href="#a44254c29e29a8e8b4ccb1aaaea46ff48">More...</a><br/></td></tr>
+<tr class="separator:a44254c29e29a8e8b4ccb1aaaea46ff48 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3694a0b47f2eb1f99d0b3f2dc01c859e inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743">layer_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a3694a0b47f2eb1f99d0b3f2dc01c859e">m_next_layer_type</a></td></tr>
+<tr class="memdesc:a3694a0b47f2eb1f99d0b3f2dc01c859e inherit pro_attribs_classlbann_1_1Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of next layer.  <a href="#a3694a0b47f2eb1f99d0b3f2dc01c859e">More...</a><br/></td></tr>
+<tr class="separator:a3694a0b47f2eb1f99d0b3f2dc01c859e inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7425d82c79f0c7072870d553be07a66c inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">m_num_neurons</a></td></tr>
+<tr class="memdesc:a7425d82c79f0c7072870d553be07a66c inherit pro_attribs_classlbann_1_1Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of neurons.  <a href="#a7425d82c79f0c7072870d553be07a66c">More...</a><br/></td></tr>
+<tr class="separator:a7425d82c79f0c7072870d553be07a66c inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85c02c636fad7ad8136ef9448173d345 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">Int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a85c02c636fad7ad8136ef9448173d345">m_num_prev_neurons</a></td></tr>
+<tr class="memdesc:a85c02c636fad7ad8136ef9448173d345 inherit pro_attribs_classlbann_1_1Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of neurons in previous layer.  <a href="#a85c02c636fad7ad8136ef9448173d345">More...</a><br/></td></tr>
+<tr class="separator:a85c02c636fad7ad8136ef9448173d345 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8b115cb89d6e8081de3f148a8ad2ef7 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#af8b115cb89d6e8081de3f148a8ad2ef7">m_execution_mode</a></td></tr>
+<tr class="separator:af8b115cb89d6e8081de3f148a8ad2ef7 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ae6cca8efd036e6f496d3b4f5c1bf9 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a43ae6cca8efd036e6f496d3b4f5c1bf9">m_error_signal</a></td></tr>
+<tr class="memdesc:a43ae6cca8efd036e6f496d3b4f5c1bf9 inherit pro_attribs_classlbann_1_1Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error signal to "next" layer (i.e. deltas) ((# neurons) x mini-batch size)  <a href="#a43ae6cca8efd036e6f496d3b4f5c1bf9">More...</a><br/></td></tr>
+<tr class="separator:a43ae6cca8efd036e6f496d3b4f5c1bf9 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf8aa63927a205c28f971e91c24c89f inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#acbf8aa63927a205c28f971e91c24c89f">m_prev_activations</a></td></tr>
+<tr class="memdesc:acbf8aa63927a205c28f971e91c24c89f inherit pro_attribs_classlbann_1_1Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local copy of the activations from the "previous" layer ((# previous layer's neurons) x mini-batch size)  <a href="#acbf8aa63927a205c28f971e91c24c89f">More...</a><br/></td></tr>
+<tr class="separator:acbf8aa63927a205c28f971e91c24c89f inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fccbe7596578869ee0317c3d2542f35 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a2fccbe7596578869ee0317c3d2542f35">m_error_signal_v</a></td></tr>
+<tr class="separator:a2fccbe7596578869ee0317c3d2542f35 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac590e0f3831d1c7b204275c89375ee14 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#ac590e0f3831d1c7b204275c89375ee14">m_prev_activations_v</a></td></tr>
+<tr class="separator:ac590e0f3831d1c7b204275c89375ee14 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7881cb5eff5207c15fa835d65462e8f inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#af7881cb5eff5207c15fa835d65462e8f">m_using_gpus</a></td></tr>
+<tr class="separator:af7881cb5eff5207c15fa835d65462e8f inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeefecf61c8a8d5e7a54367fc3806edd inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#adeefecf61c8a8d5e7a54367fc3806edd">m_prev_layer_using_gpus</a></td></tr>
+<tr class="separator:adeefecf61c8a8d5e7a54367fc3806edd inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9121ac562e8627e535880280adf2ce7b inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a9121ac562e8627e535880280adf2ce7b">m_next_layer_using_gpus</a></td></tr>
+<tr class="separator:a9121ac562e8627e535880280adf2ce7b inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08dbb94239e3b8c96329786c57c72e21 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcudnn_1_1cudnn__manager.html">cudnn::cudnn_manager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a></td></tr>
+<tr class="memdesc:a08dbb94239e3b8c96329786c57c72e21 inherit pro_attribs_classlbann_1_1Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">cuDNN manager  <a href="#a08dbb94239e3b8c96329786c57c72e21">More...</a><br/></td></tr>
+<tr class="separator:a08dbb94239e3b8c96329786c57c72e21 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30aaa195765788f649ce70e855a74081 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a></td></tr>
+<tr class="separator:a30aaa195765788f649ce70e855a74081 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b07424032d1b3c4e3a1fae100aff5c5 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a8b07424032d1b3c4e3a1fae100aff5c5">m_effective_mbsize</a></td></tr>
+<tr class="separator:a8b07424032d1b3c4e3a1fae100aff5c5 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ee7bf7544942bc8cf208b565349c66 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a94ee7bf7544942bc8cf208b565349c66">fp_time</a></td></tr>
+<tr class="separator:a94ee7bf7544942bc8cf208b565349c66 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ead6e739e08170ef49c11f84eb638c inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a19ead6e739e08170ef49c11f84eb638c">fp_compute_time</a></td></tr>
+<tr class="separator:a19ead6e739e08170ef49c11f84eb638c inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaa9acb195346090fffcd64013295479 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#abaa9acb195346090fffcd64013295479">bp_time</a></td></tr>
+<tr class="separator:abaa9acb195346090fffcd64013295479 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18f90fa1ec6d7fb2288a40ada0105d11 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a18f90fa1ec6d7fb2288a40ada0105d11">bp_compute_time</a></td></tr>
+<tr class="separator:a18f90fa1ec6d7fb2288a40ada0105d11 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd6c1fa01659749b22de59baf8259b84 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#abd6c1fa01659749b22de59baf8259b84">update_time</a></td></tr>
+<tr class="separator:abd6c1fa01659749b22de59baf8259b84 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_classlbann_1_1Layer"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classlbann_1_1Layer')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td></tr>
+<tr class="memitem:a81d6e3e65adcfee83e953b63ff5e9121 inherit pub_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a81d6e3e65adcfee83e953b63ff5e9121">m_prev_error_signal</a></td></tr>
+<tr class="memdesc:a81d6e3e65adcfee83e953b63ff5e9121 inherit pub_attribs_classlbann_1_1Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local copy of the error signal from "previous" layer ((# neurons) x mini-batch size)  <a href="#a81d6e3e65adcfee83e953b63ff5e9121">More...</a><br/></td></tr>
+<tr class="separator:a81d6e3e65adcfee83e953b63ff5e9121 inherit pub_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a28e5b795fcd852dea62e57d7a6f97e inherit pub_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a></td></tr>
+<tr class="memdesc:a7a28e5b795fcd852dea62e57d7a6f97e inherit pub_attribs_classlbann_1_1Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activations - non-linearity applied to weighted sum ((# neurons) x mini-batch size)  <a href="#a7a28e5b795fcd852dea62e57d7a6f97e">More...</a><br/></td></tr>
+<tr class="separator:a7a28e5b795fcd852dea62e57d7a6f97e inherit pub_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f1ab0c18e78cd82af4cf24b73ec96bc inherit pub_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a3f1ab0c18e78cd82af4cf24b73ec96bc">m_prev_error_signal_v</a></td></tr>
+<tr class="memdesc:a3f1ab0c18e78cd82af4cf24b73ec96bc inherit pub_attribs_classlbann_1_1Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a view of each matrix so that it can accomodate partial mini-batches.  <a href="#a3f1ab0c18e78cd82af4cf24b73ec96bc">More...</a><br/></td></tr>
+<tr class="separator:a3f1ab0c18e78cd82af4cf24b73ec96bc inherit pub_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a871b103aedbd95b5205c24b66ef74dfa inherit pub_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a871b103aedbd95b5205c24b66ef74dfa">m_activations_v</a></td></tr>
+<tr class="separator:a871b103aedbd95b5205c24b66ef74dfa inherit pub_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f7b14ea6448703edc07ae4e43cb20a inherit pub_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#aa4f7b14ea6448703edc07ae4e43cb20a">fp_input</a></td></tr>
+<tr class="memdesc:aa4f7b14ea6448703edc07ae4e43cb20a inherit pub_attribs_classlbann_1_1Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to input for the forward propagation - no local storage.  <a href="#aa4f7b14ea6448703edc07ae4e43cb20a">More...</a><br/></td></tr>
+<tr class="separator:aa4f7b14ea6448703edc07ae4e43cb20a inherit pub_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8ec7fc7bd902123d7b7788b6284ca62 inherit pub_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#ab8ec7fc7bd902123d7b7788b6284ca62">bp_input</a></td></tr>
+<tr class="memdesc:ab8ec7fc7bd902123d7b7788b6284ca62 inherit pub_attribs_classlbann_1_1Layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the input for the backward propagation - no local storage.  <a href="#ab8ec7fc7bd902123d7b7788b6284ca62">More...</a><br/></td></tr>
+<tr class="separator:ab8ec7fc7bd902123d7b7788b6284ca62 inherit pub_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f5e339cda98356c68063ea3845a94d2 inherit pub_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1model.html">model</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a8f5e339cda98356c68063ea3845a94d2">m_neural_network_model</a></td></tr>
+<tr class="separator:a8f5e339cda98356c68063ea3845a94d2 inherit pub_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Dropout: probabilistically drop units from a layer. See this paper for full details: Srivastava, Nitish, et al. "Dropout: a simple way to prevent neural networks
+<div class="textblock"><h3>template&lt;data_layout T_layout&gt;<br/>
+class lbann::dropout&lt; T_layout &gt;</h3>
+
+<p>Dropout: probabilistically drop units from a layer. See this paper for full details: Srivastava, Nitish, et al. "Dropout: a simple way to prevent neural networks
 from overfitting." Journal of Machine Learning Research 15.1 (2014). This implementation uses the approach noted in section 10 of that paper of multiplying weights by 1/(keep probability) at training time and not modifying them at test time. The implementation recommends a keep probability of 0.5 for fully-connected layers and 0.8 for input layers as good starting points. </p>
 
-<p>Definition at line <a class="el" href="lbann__dropout_8hpp_source.html#l00047">47</a> of file <a class="el" href="lbann__dropout_8hpp_source.html">lbann_dropout.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dropout_8hpp_source.html#l00048">48</a> of file <a class="el" href="dropout_8hpp_source.html">dropout.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a475a5f62e79fddc530dcf9982ace918a"></a>
+<a class="anchor" id="ada75d3842d77aade6495d458da72e74e"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;data_layout T_layout&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">lbann::dropout::dropout </td>
+          <td class="memname"><a class="el" href="classlbann_1_1dropout.html">lbann::dropout</a>&lt; T_layout &gt;::<a class="el" href="classlbann_1_1dropout.html">dropout</a> </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a>&#160;</td>
-          <td class="paramname"><em>data_dist</em>, </td>
+          <td class="paramtype">const <a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>num_neurons</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *&#160;</td>
           <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="datatype_8hpp.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>&#160;</td>
+          <td class="paramname"><em>mini_batch_size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -193,76 +383,55 @@ from overfitting." Journal of Machine Learning Research 15.1 (2014). This implem
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Keep units with probabiliy keep_prob. </p>
 
-<p>Definition at line <a class="el" href="lbann__dropout_8cpp_source.html#l00037">37</a> of file <a class="el" href="lbann__dropout_8cpp_source.html">lbann_dropout.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                                                         :</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="classlbann_1_1dropout.html#af52965eae7232c51e0e3801b02ac7de0">m_comm</a>(<a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>), <a class="code" href="classlbann_1_1dropout.html#a2b4540ea622609b518d691d68e6db92c">m_keep_prob</a>(keep_prob) {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="comment">// Setup the data distribution</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">switch</span>(data_dist) {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0">data_layout::MODEL_PARALLEL</a>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classlbann_1_1dropout.html#adac8d66b5add45bd1dcea08c109ef68e">initialize_model_parallel_distribution</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classlbann_1_1dropout.html#a9d871f6dd815b3883b472c40858e11c1">initialize_data_parallel_distribution</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(std::string{} + __FILE__ + <span class="stringliteral">&quot; &quot;</span> +</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                          std::to_string(__LINE__) +</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                          <span class="stringliteral">&quot;Invalid data layout selected&quot;</span>);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1dropout_html_a9d871f6dd815b3883b472c40858e11c1"><div class="ttname"><a href="classlbann_1_1dropout.html#a9d871f6dd815b3883b472c40858e11c1">lbann::dropout::initialize_data_parallel_distribution</a></div><div class="ttdeci">void initialize_data_parallel_distribution()</div><div class="ttdoc">Weight matrices should be in Star,Star and data matrices Star,VC distributions. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__dropout_8cpp_source.html#l00068">lbann_dropout.cpp:68</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638"><div class="ttname"><a href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a></div></div>
-<div class="ttc" id="classlbann_1_1dropout_html_af52965eae7232c51e0e3801b02ac7de0"><div class="ttname"><a href="classlbann_1_1dropout.html#af52965eae7232c51e0e3801b02ac7de0">lbann::dropout::m_comm</a></div><div class="ttdeci">lbann_comm * m_comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__dropout_8hpp_source.html#l00059">lbann_dropout.hpp:59</a></div></div>
-<div class="ttc" id="classlbann_1_1dropout_html_a2b4540ea622609b518d691d68e6db92c"><div class="ttname"><a href="classlbann_1_1dropout.html#a2b4540ea622609b518d691d68e6db92c">lbann::dropout::m_keep_prob</a></div><div class="ttdeci">float m_keep_prob</div><div class="ttdef"><b>Definition:</b> <a href="lbann__dropout_8hpp_source.html#l00061">lbann_dropout.hpp:61</a></div></div>
-<div class="ttc" id="classlbann_1_1dropout_html_adac8d66b5add45bd1dcea08c109ef68e"><div class="ttname"><a href="classlbann_1_1dropout.html#adac8d66b5add45bd1dcea08c109ef68e">lbann::dropout::initialize_model_parallel_distribution</a></div><div class="ttdeci">void initialize_model_parallel_distribution()</div><div class="ttdoc">Matrices should be in MC,MR distributions. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__dropout_8cpp_source.html#l00059">lbann_dropout.cpp:59</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0"><div class="ttname"><a href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0">data_layout::MODEL_PARALLEL</a></div></div>
+<p>Definition at line <a class="el" href="dropout_8hpp_source.html#l00051">51</a> of file <a class="el" href="dropout_8hpp_source.html">dropout.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                                      :</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="classlbann_1_1regularizer__layer.html#a67799cfbb16e9612cfcafb2eeec43c2a">regularizer_layer</a>(index, <a class="code" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, mini_batch_size),</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classlbann_1_1dropout.html#ac728849f72d7f433ced4448c96e018f7">m_keep_prob</a>(keep_prob) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a1edbe39f1a48826a377ade47578bf7c5">set_name</a>(<span class="stringliteral">&quot;dropout&quot;</span>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// Setup the data distribution</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classlbann_1_1dropout.html#af605d2ea7f99b3e6b655f71a0634d170">initialize_distributed_matrices</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    this-&gt;<a class="code" href="classlbann_1_1Layer.html#a6941c1ec005f88a7af80eaebf652e16f">m_type</a> = <a class="code" href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a7e756a3eef32ef713a98a21c3fee14a5">layer_type::dropout</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    this-&gt;<a class="code" href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">m_num_neurons</a> = num_neurons;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1Layer_html_a7425d82c79f0c7072870d553be07a66c"><div class="ttname"><a href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">lbann::Layer::m_num_neurons</a></div><div class="ttdeci">uint m_num_neurons</div><div class="ttdoc">Number of neurons. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00267">lbann_layer.hpp:267</a></div></div>
+<div class="ttc" id="namespacelbann_html_a33be342c4bdc4c00e9f91ff3a2f20743a7e756a3eef32ef713a98a21c3fee14a5"><div class="ttname"><a href="namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a7e756a3eef32ef713a98a21c3fee14a5">lbann::layer_type::dropout</a></div></div>
+<div class="ttc" id="classlbann_1_1regularizer__layer_html_a67799cfbb16e9612cfcafb2eeec43c2a"><div class="ttname"><a href="classlbann_1_1regularizer__layer.html#a67799cfbb16e9612cfcafb2eeec43c2a">lbann::regularizer_layer::regularizer_layer</a></div><div class="ttdeci">regularizer_layer(const uint index, lbann_comm *comm, const uint mini_batch_size)</div><div class="ttdef"><b>Definition:</b> <a href="regularizer_8hpp_source.html#l00040">regularizer.hpp:40</a></div></div>
 <div class="ttc" id="lbann__file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__file__io_8cpp_source.html#l00044">lbann_file_io.cpp:44</a></div></div>
+<div class="ttc" id="classlbann_1_1dropout_html_af605d2ea7f99b3e6b655f71a0634d170"><div class="ttname"><a href="classlbann_1_1dropout.html#af605d2ea7f99b3e6b655f71a0634d170">lbann::dropout::initialize_distributed_matrices</a></div><div class="ttdeci">virtual void initialize_distributed_matrices()</div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a1edbe39f1a48826a377ade47578bf7c5"><div class="ttname"><a href="classlbann_1_1Layer.html#a1edbe39f1a48826a377ade47578bf7c5">lbann::Layer::set_name</a></div><div class="ttdeci">void set_name(std::string name)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00164">lbann_layer.hpp:164</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a6941c1ec005f88a7af80eaebf652e16f"><div class="ttname"><a href="classlbann_1_1Layer.html#a6941c1ec005f88a7af80eaebf652e16f">lbann::Layer::m_type</a></div><div class="ttdeci">layer_type m_type</div><div class="ttdoc">Type of this layer. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00263">lbann_layer.hpp:263</a></div></div>
+<div class="ttc" id="classlbann_1_1dropout_html_ac728849f72d7f433ced4448c96e018f7"><div class="ttname"><a href="classlbann_1_1dropout.html#ac728849f72d7f433ced4448c96e018f7">lbann::dropout::m_keep_prob</a></div><div class="ttdeci">float m_keep_prob</div><div class="ttdef"><b>Definition:</b> <a href="dropout_8hpp_source.html#l00140">dropout.hpp:140</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1dropout_a475a5f62e79fddc530dcf9982ace918a_cgraph.png" border="0" usemap="#classlbann_1_1dropout_a475a5f62e79fddc530dcf9982ace918a_cgraph" alt=""/></div>
-<map name="classlbann_1_1dropout_a475a5f62e79fddc530dcf9982ace918a_cgraph" id="classlbann_1_1dropout_a475a5f62e79fddc530dcf9982ace918a_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1dropout.html#adac8d66b5add45bd1dcea08c109ef68e" title="Matrices should be in MC,MR distributions. " alt="" coords="209,5,391,46"/><area shape="rect" id="node4" href="classlbann_1_1dropout.html#a9d871f6dd815b3883b472c40858e11c1" title="Weight matrices should be in Star,Star and data matrices Star,VC distributions. " alt="" coords="214,70,386,111"/><area shape="rect" id="node3" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4" title="lbann::lbann_comm::\lget_model_grid" alt="" coords="441,38,583,79"/></map>
+<div class="center"><img src="classlbann_1_1dropout_ada75d3842d77aade6495d458da72e74e_cgraph.png" border="0" usemap="#classlbann_1_1dropout_ada75d3842d77aade6495d458da72e74e_cgraph" alt=""/></div>
+<map name="classlbann_1_1dropout_ada75d3842d77aade6495d458da72e74e_cgraph" id="classlbann_1_1dropout_ada75d3842d77aade6495d458da72e74e_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1Layer.html#a1edbe39f1a48826a377ade47578bf7c5" title="lbann::Layer::set_name" alt="" coords="209,5,367,32"/><area shape="rect" id="node3" href="classlbann_1_1dropout.html#af605d2ea7f99b3e6b655f71a0634d170" title="lbann::dropout::initialize\l_distributed_matrices" alt="" coords="209,57,367,98"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="abcec1bc033a38501bb60797ac1b97dbf"></a>
+<a class="anchor" id="a954d77f2ddbbd708f3606c15c5e1eee7"></a>
 <div class="memitem">
 <div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">lbann::dropout::~dropout </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="lbann__dropout_8cpp_source.html#l00054">54</a> of file <a class="el" href="lbann__dropout_8cpp_source.html">lbann_dropout.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                  {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">delete</span> <a class="code" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1dropout_html_a1da084708f189cdc5f53cb59ab5c18d0"><div class="ttname"><a href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">lbann::dropout::m_cur_mask</a></div><div class="ttdeci">Mat * m_cur_mask</div><div class="ttdef"><b>Definition:</b> <a href="lbann__dropout_8hpp_source.html#l00067">lbann_dropout.hpp:67</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a9b1ecd42b39fb914cfb04fde2278e8ed"></a>
-<div class="memitem">
-<div class="memproto">
+<div class="memtemplate">
+template&lt;data_layout T_layout&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void lbann::dropout::bp_activations </td>
+          <td class="memname"><a class="el" href="classlbann_1_1dropout.html">lbann::dropout</a>&lt; T_layout &gt;::~<a class="el" href="classlbann_1_1dropout.html">dropout</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -270,269 +439,387 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="dropout_8hpp_source.html#l00061">61</a> of file <a class="el" href="dropout_8hpp_source.html">dropout.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;             {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">delete</span> <a class="code" href="classlbann_1_1dropout.html#ad3a78c611fd83ed63be98cb0a0a44430">m_cur_mask</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1dropout_html_ad3a78c611fd83ed63be98cb0a0a44430"><div class="ttname"><a href="classlbann_1_1dropout.html#ad3a78c611fd83ed63be98cb0a0a44430">lbann::dropout::m_cur_mask</a></div><div class="ttdeci">Mat * m_cur_mask</div><div class="ttdef"><b>Definition:</b> <a href="dropout_8hpp_source.html#l00146">dropout.hpp:146</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a619e2c4a87db449d5c18c072b24747ee"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;data_layout T_layout&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlbann_1_1dropout.html">lbann::dropout</a>&lt; T_layout &gt;::bp_compute </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <p>Adjust gradients for dropout in backprop. </p>
 
-<p>Reimplemented from <a class="el" href="classlbann_1_1regularizer.html#a520fb6e3ff605f4c5c6de7eda003f0aa">lbann::regularizer</a>.</p>
+<p>Reimplemented from <a class="el" href="classlbann_1_1Layer.html#a050f01cb51412227b1df289587d1d7ba">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__dropout_8cpp_source.html#l00117">117</a> of file <a class="el" href="lbann__dropout_8cpp_source.html">lbann_dropout.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                             {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="comment">// Terminate early if dropout is disabled</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">m_layer</a>-&gt;<a class="code" href="classlbann_1_1Layer.html#add9070ac890759a640f6d4d0ca775081">get_execution_mode</a>() != <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      || <a class="code" href="classlbann_1_1dropout.html#a2b4540ea622609b518d691d68e6db92c">m_keep_prob</a> &lt; 0.0f) {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  }</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="preprocessor">#ifdef LBANN_PROCDET_DROPOUT</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor"></span>  Hadamard(*(<a class="code" href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">m_layer</a>-&gt;<a class="code" href="classlbann_1_1Layer.html#a81d6e3e65adcfee83e953b63ff5e9121">m_prev_error_signal</a>), *<a class="code" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a>, *(<a class="code" href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">m_layer</a>-&gt;<a class="code" href="classlbann_1_1Layer.html#a81d6e3e65adcfee83e953b63ff5e9121">m_prev_error_signal</a>));</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor"></span>  <span class="comment">// Re-weight the incoming loss using dropout mask</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> local_prev_error_signal = <a class="code" href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">m_layer</a>-&gt;<a class="code" href="classlbann_1_1Layer.html#a81d6e3e65adcfee83e953b63ff5e9121">m_prev_error_signal</a>-&gt;Matrix();</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  Hadamard(local_prev_error_signal, *<a class="code" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a>, local_prev_error_signal);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif  // LBANN_PROCDET_DROPOUT</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="ttc" id="classlbann_1_1dropout_html_a1da084708f189cdc5f53cb59ab5c18d0"><div class="ttname"><a href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">lbann::dropout::m_cur_mask</a></div><div class="ttdeci">Mat * m_cur_mask</div><div class="ttdef"><b>Definition:</b> <a href="lbann__dropout_8hpp_source.html#l00067">lbann_dropout.hpp:67</a></div></div>
+<p>Definition at line <a class="el" href="dropout_8hpp_source.html#l00118">118</a> of file <a class="el" href="dropout_8hpp_source.html">dropout.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                    {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// Terminate early when not training.</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classlbann_1_1Layer.html#add9070ac890759a640f6d4d0ca775081">get_execution_mode</a>() != <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a>) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1dropout.html#ac728849f72d7f433ced4448c96e018f7">m_keep_prob</a> &lt; 0.0f) {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      <span class="comment">// Copy error signal through.</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      El::Copy(*(this-&gt;<a class="code" href="classlbann_1_1Layer.html#a81d6e3e65adcfee83e953b63ff5e9121">m_prev_error_signal</a>), *(this-&gt;<a class="code" href="classlbann_1_1Layer.html#a43ae6cca8efd036e6f496d3b4f5c1bf9">m_error_signal</a>));</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#ifdef LBANN_PROCDET_DROPOUT</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor"></span>    El::Hadamard(*(this-&gt;<a class="code" href="classlbann_1_1Layer.html#a81d6e3e65adcfee83e953b63ff5e9121">m_prev_error_signal</a>), *<a class="code" href="classlbann_1_1dropout.html#ad3a78c611fd83ed63be98cb0a0a44430">m_cur_mask</a>, *(this-&gt;<a class="code" href="classlbann_1_1Layer.html#a43ae6cca8efd036e6f496d3b4f5c1bf9">m_error_signal</a>));</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor"></span>    <span class="comment">// Re-weight the incoming loss using dropout mask</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; local_prev_error_signal = this-&gt;<a class="code" href="classlbann_1_1Layer.html#a81d6e3e65adcfee83e953b63ff5e9121">m_prev_error_signal</a>-&gt;Matrix();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; local_error_signal = this-&gt;<a class="code" href="classlbann_1_1Layer.html#a43ae6cca8efd036e6f496d3b4f5c1bf9">m_error_signal</a>-&gt;Matrix();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    El::Hadamard(local_prev_error_signal, *<a class="code" href="classlbann_1_1dropout.html#ad3a78c611fd83ed63be98cb0a0a44430">m_cur_mask</a>, local_error_signal);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif  // LBANN_PROCDET_DROPOUT</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor"></span>  }</div>
+<div class="ttc" id="classlbann_1_1dropout_html_ad3a78c611fd83ed63be98cb0a0a44430"><div class="ttname"><a href="classlbann_1_1dropout.html#ad3a78c611fd83ed63be98cb0a0a44430">lbann::dropout::m_cur_mask</a></div><div class="ttdeci">Mat * m_cur_mask</div><div class="ttdef"><b>Definition:</b> <a href="dropout_8hpp_source.html#l00146">dropout.hpp:146</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214"><div class="ttname"><a href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a></div></div>
-<div class="ttc" id="classlbann_1_1regularizer_html_a6d0d44f4f9a3c8c24d0acdda8cf7d4b5"><div class="ttname"><a href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">lbann::regularizer::m_layer</a></div><div class="ttdeci">Layer * m_layer</div><div class="ttdef"><b>Definition:</b> <a href="lbann__regularizer_8hpp_source.html#l00082">lbann_regularizer.hpp:82</a></div></div>
-<div class="ttc" id="classlbann_1_1dropout_html_a2b4540ea622609b518d691d68e6db92c"><div class="ttname"><a href="classlbann_1_1dropout.html#a2b4540ea622609b518d691d68e6db92c">lbann::dropout::m_keep_prob</a></div><div class="ttdeci">float m_keep_prob</div><div class="ttdef"><b>Definition:</b> <a href="lbann__dropout_8hpp_source.html#l00061">lbann_dropout.hpp:61</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00040">lbann_base.hpp:40</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_a81d6e3e65adcfee83e953b63ff5e9121"><div class="ttname"><a href="classlbann_1_1Layer.html#a81d6e3e65adcfee83e953b63ff5e9121">lbann::Layer::m_prev_error_signal</a></div><div class="ttdeci">ElMat * m_prev_error_signal</div><div class="ttdoc">Local copy of the error signal from &quot;previous&quot; layer ((# neurons) x mini-batch size) ...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00294">lbann_layer.hpp:294</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_add9070ac890759a640f6d4d0ca775081"><div class="ttname"><a href="classlbann_1_1Layer.html#add9070ac890759a640f6d4d0ca775081">lbann::Layer::get_execution_mode</a></div><div class="ttdeci">execution_mode get_execution_mode(void) const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00180">lbann_layer.hpp:180</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a43ae6cca8efd036e6f496d3b4f5c1bf9"><div class="ttname"><a href="classlbann_1_1Layer.html#a43ae6cca8efd036e6f496d3b4f5c1bf9">lbann::Layer::m_error_signal</a></div><div class="ttdeci">ElMat * m_error_signal</div><div class="ttdoc">Error signal to &quot;next&quot; layer (i.e. deltas) ((# neurons) x mini-batch size) </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00288">lbann_layer.hpp:288</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00041">lbann_base.hpp:41</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a81d6e3e65adcfee83e953b63ff5e9121"><div class="ttname"><a href="classlbann_1_1Layer.html#a81d6e3e65adcfee83e953b63ff5e9121">lbann::Layer::m_prev_error_signal</a></div><div class="ttdeci">ElMat * m_prev_error_signal</div><div class="ttdoc">Local copy of the error signal from &quot;previous&quot; layer ((# neurons) x mini-batch size) ...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00273">lbann_layer.hpp:273</a></div></div>
+<div class="ttc" id="classlbann_1_1dropout_html_ac728849f72d7f433ced4448c96e018f7"><div class="ttname"><a href="classlbann_1_1dropout.html#ac728849f72d7f433ced4448c96e018f7">lbann::dropout::m_keep_prob</a></div><div class="ttdeci">float m_keep_prob</div><div class="ttdef"><b>Definition:</b> <a href="dropout_8hpp_source.html#l00140">dropout.hpp:140</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_add9070ac890759a640f6d4d0ca775081"><div class="ttname"><a href="classlbann_1_1Layer.html#add9070ac890759a640f6d4d0ca775081">lbann::Layer::get_execution_mode</a></div><div class="ttdeci">execution_mode get_execution_mode(void) const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00181">lbann_layer.hpp:181</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1dropout_a9b1ecd42b39fb914cfb04fde2278e8ed_cgraph.png" border="0" usemap="#classlbann_1_1dropout_a9b1ecd42b39fb914cfb04fde2278e8ed_cgraph" alt=""/></div>
-<map name="classlbann_1_1dropout_a9b1ecd42b39fb914cfb04fde2278e8ed_cgraph" id="classlbann_1_1dropout_a9b1ecd42b39fb914cfb04fde2278e8ed_cgraph">
+<div class="center"><img src="classlbann_1_1dropout_a619e2c4a87db449d5c18c072b24747ee_cgraph.png" border="0" usemap="#classlbann_1_1dropout_a619e2c4a87db449d5c18c072b24747ee_cgraph" alt=""/></div>
+<map name="classlbann_1_1dropout_a619e2c4a87db449d5c18c072b24747ee_cgraph" id="classlbann_1_1dropout_a619e2c4a87db449d5c18c072b24747ee_cgraph">
 <area shape="rect" id="node2" href="classlbann_1_1Layer.html#add9070ac890759a640f6d4d0ca775081" title="lbann::Layer::get_execution_mode" alt="" coords="181,12,403,39"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a7c33aee6cc1323496120bb545cd27148"></a>
+<a class="anchor" id="ab7fa84c3915f5ceac8eed28a183e4ff1"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;data_layout T_layout&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void lbann::dropout::fp_activations </td>
+          <td class="memname">void <a class="el" href="classlbann_1_1dropout.html">lbann::dropout</a>&lt; T_layout &gt;::fp_compute </td>
           <td>(</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <p>Drop out units in forward propagation. </p>
 
-<p>Reimplemented from <a class="el" href="classlbann_1_1regularizer.html#a8006f575c31fd152d2f048d50994e9f6">lbann::regularizer</a>.</p>
+<p>Reimplemented from <a class="el" href="classlbann_1_1Layer.html#a99a30fcb1b5ab3c47ff5c28a4920967c">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__dropout_8cpp_source.html#l00076">76</a> of file <a class="el" href="lbann__dropout_8cpp_source.html">lbann_dropout.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                             {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="comment">// Terminate early if dropout is disabled</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">m_layer</a>-&gt;<a class="code" href="classlbann_1_1Layer.html#add9070ac890759a640f6d4d0ca775081">get_execution_mode</a>() != <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      || <a class="code" href="classlbann_1_1dropout.html#a2b4540ea622609b518d691d68e6db92c">m_keep_prob</a> &lt; 0.0f) {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="comment">// Get local activations</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *acts = <a class="code" href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">m_layer</a>-&gt;<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">const</span> Int local_height = acts-&gt;LocalHeight();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">const</span> Int local_width = acts-&gt;LocalWidth();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#ifdef LBANN_PROCDET_DROPOUT</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor"></span>  <span class="keyword">const</span> Int global_height = acts-&gt;Height();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="namespacelbann.html#a6add4d3337110d567e7b398a262fd010">bernoulli_fill_procdet</a>(*<a class="code" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a>, acts-&gt;Height(), acts-&gt;Width(),</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                         <a class="code" href="classlbann_1_1dropout.html#a2b4540ea622609b518d691d68e6db92c">m_keep_prob</a>);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  *<a class="code" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a> *= 1.0 / <a class="code" href="classlbann_1_1dropout.html#a2b4540ea622609b518d691d68e6db92c">m_keep_prob</a>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">if</span> (acts-&gt;GlobalRow(local_height - 1) == global_height - 1) {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">for</span> (Int col = 0; col &lt; local_width; ++col) {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      m_cur_mask-&gt;SetLocal(local_height - 1, col, 1.0f);</div>
+<p>Definition at line <a class="el" href="dropout_8hpp_source.html#l00076">76</a> of file <a class="el" href="dropout_8hpp_source.html">dropout.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                    {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classlbann_1_1Layer.html#add9070ac890759a640f6d4d0ca775081">get_execution_mode</a>() != <a class="code" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a> ||</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="classlbann_1_1dropout.html#ac728849f72d7f433ced4448c96e018f7">m_keep_prob</a> &lt; 0.0f) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="comment">// Copy previous activations over.</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      El::Copy(*(this-&gt;<a class="code" href="classlbann_1_1Layer.html#acbf8aa63927a205c28f971e91c24c89f">m_prev_activations</a>), *(this-&gt;<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>));</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> *input_acts = this-&gt;<a class="code" href="classlbann_1_1Layer.html#acbf8aa63927a205c28f971e91c24c89f">m_prev_activations</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">const</span> El::Int local_height = input_acts-&gt;LocalHeight();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">const</span> El::Int local_width = input_acts-&gt;LocalWidth();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#ifdef LBANN_PROCDET_DROPOUT</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor"></span>    <span class="keyword">const</span> El::Int global_height = input_acts-&gt;Height();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="namespacelbann.html#a6add4d3337110d567e7b398a262fd010">bernoulli_fill_procdet</a>(*<a class="code" href="classlbann_1_1dropout.html#ad3a78c611fd83ed63be98cb0a0a44430">m_cur_mask</a>, input_acts-&gt;Height(),</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                           input_acts-&gt;Width(), <a class="code" href="classlbann_1_1dropout.html#ac728849f72d7f433ced4448c96e018f7">m_keep_prob</a>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    *<a class="code" href="classlbann_1_1dropout.html#ad3a78c611fd83ed63be98cb0a0a44430">m_cur_mask</a> *= <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1.0) / <a class="code" href="classlbann_1_1dropout.html#ac728849f72d7f433ced4448c96e018f7">m_keep_prob</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span> (input_acts-&gt;GlobalRow(local_height - 1) == global_height - 1) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keywordflow">for</span> (El::Int col = 0; col &lt; local_width; ++col) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        m_cur_mask-&gt;SetLocal(local_height - 1, col, <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1.0));</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  Hadamard(*acts, *m_cur_mask, *acts);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor"></span>  <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> local_acts = acts-&gt;Matrix();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    El::Hadamard(*input_acts, *m_cur_mask, *(this-&gt;<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>));</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor"></span>    <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; local_input_acts = input_acts-&gt;Matrix();</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; local_output_acts = this-&gt;<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>-&gt;Matrix();</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="comment">// Construct dropout mask</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="comment">// Note: Construct Bernoulli matrix and scale by 1/m_keep_prob.</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  m_cur_mask-&gt;Resize(local_height, local_width);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  EntrywiseMap(*m_cur_mask,</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;               (std::function&lt;<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp;)&gt;)</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  ([<span class="keyword">this</span>](<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp; z)-&gt;<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keyword">auto</span>&amp; gen = <a class="code" href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5">get_fast_generator</a>();</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    std::bernoulli_distribution dist(<a class="code" href="classlbann_1_1dropout.html#a2b4540ea622609b518d691d68e6db92c">m_keep_prob</a>);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">return</span> dist(gen) ? <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1) / <a class="code" href="classlbann_1_1dropout.html#a2b4540ea622609b518d691d68e6db92c">m_keep_prob</a> : <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  }));</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="comment">// Apply dropout mask to local activations</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  Hadamard(local_acts, *m_cur_mask, local_acts);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// Construct dropout mask</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">// Note: Construct Bernoulli matrix and scale by 1/m_keep_prob.</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    m_cur_mask-&gt;Resize(local_height, local_width);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    El::EntrywiseMap(*m_cur_mask,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                     (std::function&lt;<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp;)&gt;)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                     ([<span class="keyword">this</span>](<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp; z)-&gt;<a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                       <span class="keyword">auto</span>&amp; gen = <a class="code" href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5">get_fast_generator</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                       std::bernoulli_distribution dist(<a class="code" href="classlbann_1_1dropout.html#ac728849f72d7f433ced4448c96e018f7">m_keep_prob</a>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                       <span class="keywordflow">return</span> dist(gen) ? <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(1) / <a class="code" href="classlbann_1_1dropout.html#ac728849f72d7f433ced4448c96e018f7">m_keep_prob</a> : <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                     }));</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// Apply dropout mask to local activations</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    El::Hadamard(local_input_acts, *m_cur_mask, local_output_acts);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif  // LBANN_PROCDET_DROPOUT</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="ttc" id="classlbann_1_1Layer_html_a7a28e5b795fcd852dea62e57d7a6f97e"><div class="ttname"><a href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">lbann::Layer::m_activations</a></div><div class="ttdeci">ElMat * m_activations</div><div class="ttdoc">Activations - non-linearity applied to weighted sum ((# neurons) x mini-batch size) ...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00296">lbann_layer.hpp:296</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_afad88fb587c304caea8a36ee5a5c1df8"><div class="ttname"><a href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a></div><div class="ttdeci">El::ElementalMatrix&lt; DataType &gt; ElMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00051">lbann_base.hpp:51</a></div></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor"></span>  }</div>
+<div class="ttc" id="classlbann_1_1Layer_html_a7a28e5b795fcd852dea62e57d7a6f97e"><div class="ttname"><a href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">lbann::Layer::m_activations</a></div><div class="ttdeci">ElMat * m_activations</div><div class="ttdoc">Activations - non-linearity applied to weighted sum ((# neurons) x mini-batch size) ...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00275">lbann_layer.hpp:275</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_afad88fb587c304caea8a36ee5a5c1df8"><div class="ttname"><a href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a></div><div class="ttdeci">El::ElementalMatrix&lt; DataType &gt; ElMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00052">lbann_base.hpp:52</a></div></div>
 <div class="ttc" id="namespacelbann_html_a6add4d3337110d567e7b398a262fd010"><div class="ttname"><a href="namespacelbann.html#a6add4d3337110d567e7b398a262fd010">lbann::bernoulli_fill_procdet</a></div><div class="ttdeci">void bernoulli_fill_procdet(ElMat &amp;mat, El::Int m, El::Int n, double p)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__random_8cpp_source.html#l00174">lbann_random.cpp:174</a></div></div>
-<div class="ttc" id="classlbann_1_1dropout_html_a1da084708f189cdc5f53cb59ab5c18d0"><div class="ttname"><a href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">lbann::dropout::m_cur_mask</a></div><div class="ttdeci">Mat * m_cur_mask</div><div class="ttdef"><b>Definition:</b> <a href="lbann__dropout_8hpp_source.html#l00067">lbann_dropout.hpp:67</a></div></div>
+<div class="ttc" id="classlbann_1_1dropout_html_ad3a78c611fd83ed63be98cb0a0a44430"><div class="ttname"><a href="classlbann_1_1dropout.html#ad3a78c611fd83ed63be98cb0a0a44430">lbann::dropout::m_cur_mask</a></div><div class="ttdeci">Mat * m_cur_mask</div><div class="ttdef"><b>Definition:</b> <a href="dropout_8hpp_source.html#l00146">dropout.hpp:146</a></div></div>
 <div class="ttc" id="namespacelbann_html_ae6ce9c2fdec6f81803f6b1a6555c31c5"><div class="ttname"><a href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5">lbann::get_fast_generator</a></div><div class="ttdeci">fast_rng_gen &amp; get_fast_generator()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__random_8cpp_source.html#l00064">lbann_random.cpp:64</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214"><div class="ttname"><a href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a></div></div>
-<div class="ttc" id="classlbann_1_1regularizer_html_a6d0d44f4f9a3c8c24d0acdda8cf7d4b5"><div class="ttname"><a href="classlbann_1_1regularizer.html#a6d0d44f4f9a3c8c24d0acdda8cf7d4b5">lbann::regularizer::m_layer</a></div><div class="ttdeci">Layer * m_layer</div><div class="ttdef"><b>Definition:</b> <a href="lbann__regularizer_8hpp_source.html#l00082">lbann_regularizer.hpp:82</a></div></div>
-<div class="ttc" id="classlbann_1_1dropout_html_a2b4540ea622609b518d691d68e6db92c"><div class="ttname"><a href="classlbann_1_1dropout.html#a2b4540ea622609b518d691d68e6db92c">lbann::dropout::m_keep_prob</a></div><div class="ttdeci">float m_keep_prob</div><div class="ttdef"><b>Definition:</b> <a href="lbann__dropout_8hpp_source.html#l00061">lbann_dropout.hpp:61</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00040">lbann_base.hpp:40</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00036">lbann_base.hpp:36</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_add9070ac890759a640f6d4d0ca775081"><div class="ttname"><a href="classlbann_1_1Layer.html#add9070ac890759a640f6d4d0ca775081">lbann::Layer::get_execution_mode</a></div><div class="ttdeci">execution_mode get_execution_mode(void) const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00180">lbann_layer.hpp:180</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_acbf8aa63927a205c28f971e91c24c89f"><div class="ttname"><a href="classlbann_1_1Layer.html#acbf8aa63927a205c28f971e91c24c89f">lbann::Layer::m_prev_activations</a></div><div class="ttdeci">ElMat * m_prev_activations</div><div class="ttdoc">Local copy of the activations from the &quot;previous&quot; layer ((# previous layer&#39;s neurons) x mini-batch ...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00289">lbann_layer.hpp:289</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00041">lbann_base.hpp:41</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00037">lbann_base.hpp:37</a></div></div>
+<div class="ttc" id="classlbann_1_1dropout_html_ac728849f72d7f433ced4448c96e018f7"><div class="ttname"><a href="classlbann_1_1dropout.html#ac728849f72d7f433ced4448c96e018f7">lbann::dropout::m_keep_prob</a></div><div class="ttdeci">float m_keep_prob</div><div class="ttdef"><b>Definition:</b> <a href="dropout_8hpp_source.html#l00140">dropout.hpp:140</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_add9070ac890759a640f6d4d0ca775081"><div class="ttname"><a href="classlbann_1_1Layer.html#add9070ac890759a640f6d4d0ca775081">lbann::Layer::get_execution_mode</a></div><div class="ttdeci">execution_mode get_execution_mode(void) const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00181">lbann_layer.hpp:181</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1dropout_a7c33aee6cc1323496120bb545cd27148_cgraph.png" border="0" usemap="#classlbann_1_1dropout_a7c33aee6cc1323496120bb545cd27148_cgraph" alt=""/></div>
-<map name="classlbann_1_1dropout_a7c33aee6cc1323496120bb545cd27148_cgraph" id="classlbann_1_1dropout_a7c33aee6cc1323496120bb545cd27148_cgraph">
+<div class="center"><img src="classlbann_1_1dropout_ab7fa84c3915f5ceac8eed28a183e4ff1_cgraph.png" border="0" usemap="#classlbann_1_1dropout_ab7fa84c3915f5ceac8eed28a183e4ff1_cgraph" alt=""/></div>
+<map name="classlbann_1_1dropout_ab7fa84c3915f5ceac8eed28a183e4ff1_cgraph" id="classlbann_1_1dropout_ab7fa84c3915f5ceac8eed28a183e4ff1_cgraph">
 <area shape="rect" id="node2" href="classlbann_1_1Layer.html#add9070ac890759a640f6d4d0ca775081" title="lbann::Layer::get_execution_mode" alt="" coords="176,5,397,32"/><area shape="rect" id="node3" href="namespacelbann.html#a6add4d3337110d567e7b398a262fd010" title="lbann::bernoulli_fill\l_procdet" alt="" coords="222,57,351,98"/><area shape="rect" id="node5" href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5" title="lbann::get_fast_generator" alt="" coords="202,123,371,149"/><area shape="rect" id="node4" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764" title="lbann::get_generator" alt="" coords="446,64,586,91"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a9d871f6dd815b3883b472c40858e11c1"></a>
+<a class="anchor" id="a06a637e099829a8a5c7e142490ede9d7"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;data_layout T_layout&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void lbann::dropout::initialize_data_parallel_distribution </td>
+          <td class="memname">virtual <a class="el" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08db">data_layout</a> <a class="el" href="classlbann_1_1dropout.html">lbann::dropout</a>&lt; T_layout &gt;::get_data_layout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Return the data layout of the given layer &ndash; Every concrete layer has to overrride this with its T_layout template parameter </p>
+
+<p>Reimplemented from <a class="el" href="classlbann_1_1Layer.html#abc7c88ed716f25e45b6ba00c00aaff48">lbann::Layer</a>.</p>
+
+<p>Definition at line <a class="el" href="dropout_8hpp_source.html#l00066">66</a> of file <a class="el" href="dropout_8hpp_source.html">dropout.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{ <span class="keywordflow">return</span> T_layout; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="af605d2ea7f99b3e6b655f71a0634d170"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;data_layout T_layout&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="classlbann_1_1dropout.html">lbann::dropout</a>&lt; T_layout &gt;::initialize_distributed_matrices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1dropout_af605d2ea7f99b3e6b655f71a0634d170_icgraph.png" border="0" usemap="#classlbann_1_1dropout_af605d2ea7f99b3e6b655f71a0634d170_icgraph" alt=""/></div>
+<map name="classlbann_1_1dropout_af605d2ea7f99b3e6b655f71a0634d170_icgraph" id="classlbann_1_1dropout_af605d2ea7f99b3e6b655f71a0634d170_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1dropout.html#ada75d3842d77aade6495d458da72e74e" title="lbann::dropout::dropout" alt="" coords="213,12,368,39"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a59277f52c7522f46b043aeb4216c7b50"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlbann_1_1dropout.html">lbann::dropout</a>&lt; <a class="el" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0">data_layout::MODEL_PARALLEL</a> &gt;::initialize_distributed_matrices </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Weight matrices should be in Star,Star and data matrices Star,VC distributions. </p>
-
-<p>Definition at line <a class="el" href="lbann__dropout_8cpp_source.html#l00068">68</a> of file <a class="el" href="lbann__dropout_8cpp_source.html">lbann_dropout.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                                    {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#ifdef LBANN_PROCDET_DROPOUT</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor"></span>  <a class="code" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a> = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86">StarMat</a>(<a class="code" href="classlbann_1_1dropout.html#af52965eae7232c51e0e3801b02ac7de0">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>());</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span>  <a class="code" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a> = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="ttc" id="lbann__base_8hpp_html_ac1f107dfdc1d078904b4b666af5b6b86"><div class="ttname"><a href="lbann__base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86">StarMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::STAR, El::STAR &gt; StarMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00044">lbann_base.hpp:44</a></div></div>
-<div class="ttc" id="classlbann_1_1dropout_html_a1da084708f189cdc5f53cb59ab5c18d0"><div class="ttname"><a href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">lbann::dropout::m_cur_mask</a></div><div class="ttdeci">Mat * m_cur_mask</div><div class="ttdef"><b>Definition:</b> <a href="lbann__dropout_8hpp_source.html#l00067">lbann_dropout.hpp:67</a></div></div>
-<div class="ttc" id="classlbann_1_1dropout_html_af52965eae7232c51e0e3801b02ac7de0"><div class="ttname"><a href="classlbann_1_1dropout.html#af52965eae7232c51e0e3801b02ac7de0">lbann::dropout::m_comm</a></div><div class="ttdeci">lbann_comm * m_comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__dropout_8hpp_source.html#l00059">lbann_dropout.hpp:59</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00040">lbann_base.hpp:40</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_a483bf8a72d44a0e83da45f3d47bd20d4"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">lbann::lbann_comm::get_model_grid</a></div><div class="ttdeci">Grid &amp; get_model_grid()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00094">lbann_comm.hpp:94</a></div></div>
+<p>Definition at line <a class="el" href="dropout_8hpp_source.html#l00150">150</a> of file <a class="el" href="dropout_8hpp_source.html">dropout.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                                                                                           {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  regularizer_layer::initialize_distributed_matrices&lt;data_layout::MODEL_PARALLEL&gt;();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">#ifdef LBANN_PROCDET_DROPOUT</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor"></span>  <a class="code" href="classlbann_1_1dropout.html#ad3a78c611fd83ed63be98cb0a0a44430">m_cur_mask</a> = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(<a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>());</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor"></span>  m_cur_mask = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="ttc" id="classlbann_1_1dropout_html_ad3a78c611fd83ed63be98cb0a0a44430"><div class="ttname"><a href="classlbann_1_1dropout.html#ad3a78c611fd83ed63be98cb0a0a44430">lbann::dropout::m_cur_mask</a></div><div class="ttdeci">Mat * m_cur_mask</div><div class="ttdef"><b>Definition:</b> <a href="dropout_8hpp_source.html#l00146">dropout.hpp:146</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00041">lbann_base.hpp:41</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a8e774b79084797a8f87918d8f66b6802"><div class="ttname"><a href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::MC, El::MR &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00043">lbann_base.hpp:43</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_a483bf8a72d44a0e83da45f3d47bd20d4"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">lbann::lbann_comm::get_model_grid</a></div><div class="ttdeci">Grid &amp; get_model_grid()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00101">lbann_comm.hpp:101</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a5de05c52f22e0bbd7c703bec3ad4dbf2"><div class="ttname"><a href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">lbann::Layer::m_comm</a></div><div class="ttdeci">lbann_comm * m_comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00261">lbann_layer.hpp:261</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classlbann_1_1dropout_a9d871f6dd815b3883b472c40858e11c1_cgraph.png" border="0" usemap="#classlbann_1_1dropout_a9d871f6dd815b3883b472c40858e11c1_cgraph" alt=""/></div>
-<map name="classlbann_1_1dropout_a9d871f6dd815b3883b472c40858e11c1_cgraph" id="classlbann_1_1dropout_a9d871f6dd815b3883b472c40858e11c1_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4" title="lbann::lbann_comm::\lget_model_grid" alt="" coords="227,5,370,46"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classlbann_1_1dropout_a9d871f6dd815b3883b472c40858e11c1_icgraph.png" border="0" usemap="#classlbann_1_1dropout_a9d871f6dd815b3883b472c40858e11c1_icgraph" alt=""/></div>
-<map name="classlbann_1_1dropout_a9d871f6dd815b3883b472c40858e11c1_icgraph" id="classlbann_1_1dropout_a9d871f6dd815b3883b472c40858e11c1_icgraph">
-<area shape="rect" id="node2" href="classlbann_1_1dropout.html#a475a5f62e79fddc530dcf9982ace918a" title="lbann::dropout::dropout" alt="" coords="227,12,381,39"/></map>
-</div>
-</p>
-
 </div>
 </div>
-<a class="anchor" id="adac8d66b5add45bd1dcea08c109ef68e"></a>
+<a class="anchor" id="a37e65b35918040295038204ef1a7b600"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void lbann::dropout::initialize_model_parallel_distribution </td>
+          <td class="memname">void <a class="el" href="classlbann_1_1dropout.html">lbann::dropout</a>&lt; <a class="el" href="lbann__base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a> &gt;::initialize_distributed_matrices </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Matrices should be in MC,MR distributions. </p>
+<p>Definition at line <a class="el" href="dropout_8hpp_source.html#l00159">159</a> of file <a class="el" href="dropout_8hpp_source.html">dropout.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                                                                                          {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  regularizer_layer::initialize_distributed_matrices&lt;data_layout::DATA_PARALLEL&gt;();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#ifdef LBANN_PROCDET_DROPOUT</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor"></span>  <a class="code" href="classlbann_1_1dropout.html#ad3a78c611fd83ed63be98cb0a0a44430">m_cur_mask</a> = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a763b3164342a5d73db851e85c76d385a">StarVCMat</a>(<a class="code" href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>());</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor"></span>  m_cur_mask = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="ttc" id="classlbann_1_1dropout_html_ad3a78c611fd83ed63be98cb0a0a44430"><div class="ttname"><a href="classlbann_1_1dropout.html#ad3a78c611fd83ed63be98cb0a0a44430">lbann::dropout::m_cur_mask</a></div><div class="ttdeci">Mat * m_cur_mask</div><div class="ttdef"><b>Definition:</b> <a href="dropout_8hpp_source.html#l00146">dropout.hpp:146</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00041">lbann_base.hpp:41</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_a483bf8a72d44a0e83da45f3d47bd20d4"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">lbann::lbann_comm::get_model_grid</a></div><div class="ttdeci">Grid &amp; get_model_grid()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00101">lbann_comm.hpp:101</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a5de05c52f22e0bbd7c703bec3ad4dbf2"><div class="ttname"><a href="classlbann_1_1Layer.html#a5de05c52f22e0bbd7c703bec3ad4dbf2">lbann::Layer::m_comm</a></div><div class="ttdeci">lbann_comm * m_comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00261">lbann_layer.hpp:261</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a763b3164342a5d73db851e85c76d385a"><div class="ttname"><a href="lbann__base_8hpp.html#a763b3164342a5d73db851e85c76d385a">StarVCMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::STAR, El::VC &gt; StarVCMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00048">lbann_base.hpp:48</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5a5569f4c5c0055b0f4e041195f275fc"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;data_layout T_layout&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classlbann_1_1dropout.html">lbann::dropout</a>&lt; T_layout &gt;::setup </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_prev_neurons</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__dropout_8cpp_source.html#l00059">59</a> of file <a class="el" href="lbann__dropout_8cpp_source.html">lbann_dropout.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                                     {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#ifdef LBANN_PROCDET_DROPOUT</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor"></span>  <a class="code" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a> = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(<a class="code" href="classlbann_1_1dropout.html#af52965eae7232c51e0e3801b02ac7de0">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">get_model_grid</a>());</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor"></span>  <a class="code" href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">m_cur_mask</a> = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="ttc" id="classlbann_1_1dropout_html_a1da084708f189cdc5f53cb59ab5c18d0"><div class="ttname"><a href="classlbann_1_1dropout.html#a1da084708f189cdc5f53cb59ab5c18d0">lbann::dropout::m_cur_mask</a></div><div class="ttdeci">Mat * m_cur_mask</div><div class="ttdef"><b>Definition:</b> <a href="lbann__dropout_8hpp_source.html#l00067">lbann_dropout.hpp:67</a></div></div>
-<div class="ttc" id="classlbann_1_1dropout_html_af52965eae7232c51e0e3801b02ac7de0"><div class="ttname"><a href="classlbann_1_1dropout.html#af52965eae7232c51e0e3801b02ac7de0">lbann::dropout::m_comm</a></div><div class="ttdeci">lbann_comm * m_comm</div><div class="ttdef"><b>Definition:</b> <a href="lbann__dropout_8hpp_source.html#l00059">lbann_dropout.hpp:59</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00040">lbann_base.hpp:40</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_a8e774b79084797a8f87918d8f66b6802"><div class="ttname"><a href="lbann__base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::MC, El::MR &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00042">lbann_base.hpp:42</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_a483bf8a72d44a0e83da45f3d47bd20d4"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4">lbann::lbann_comm::get_model_grid</a></div><div class="ttdeci">Grid &amp; get_model_grid()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__comm_8hpp_source.html#l00094">lbann_comm.hpp:94</a></div></div>
+<p>Reimplemented from <a class="el" href="classlbann_1_1Layer.html#a20442464265da1cb2aeb1cf82640702f">lbann::Layer</a>.</p>
+
+<p>Definition at line <a class="el" href="dropout_8hpp_source.html#l00068">68</a> of file <a class="el" href="dropout_8hpp_source.html">dropout.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                   {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a20442464265da1cb2aeb1cf82640702f">regularizer_layer::setup</a>(num_prev_neurons);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    this-&gt;<a class="code" href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">m_num_neurons</a> = num_prev_neurons;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    Zeros(*(this-&gt;<a class="code" href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">m_activations</a>), this-&gt;<a class="code" href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">m_num_neurons</a>, this-&gt;<a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    Zeros(*(this-&gt;<a class="code" href="classlbann_1_1Layer.html#a43ae6cca8efd036e6f496d3b4f5c1bf9">m_error_signal</a>), num_prev_neurons, this-&gt;<a class="code" href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">m_mini_batch_size</a>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1Layer_html_a7a28e5b795fcd852dea62e57d7a6f97e"><div class="ttname"><a href="classlbann_1_1Layer.html#a7a28e5b795fcd852dea62e57d7a6f97e">lbann::Layer::m_activations</a></div><div class="ttdeci">ElMat * m_activations</div><div class="ttdoc">Activations - non-linearity applied to weighted sum ((# neurons) x mini-batch size) ...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00275">lbann_layer.hpp:275</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a7425d82c79f0c7072870d553be07a66c"><div class="ttname"><a href="classlbann_1_1Layer.html#a7425d82c79f0c7072870d553be07a66c">lbann::Layer::m_num_neurons</a></div><div class="ttdeci">uint m_num_neurons</div><div class="ttdoc">Number of neurons. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00267">lbann_layer.hpp:267</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a20442464265da1cb2aeb1cf82640702f"><div class="ttname"><a href="classlbann_1_1Layer.html#a20442464265da1cb2aeb1cf82640702f">lbann::Layer::setup</a></div><div class="ttdeci">virtual void setup(int)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8cpp_source.html#l00288">lbann_layer.cpp:288</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a30aaa195765788f649ce70e855a74081"><div class="ttname"><a href="classlbann_1_1Layer.html#a30aaa195765788f649ce70e855a74081">lbann::Layer::m_mini_batch_size</a></div><div class="ttdeci">uint m_mini_batch_size</div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00348">lbann_layer.hpp:348</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a43ae6cca8efd036e6f496d3b4f5c1bf9"><div class="ttname"><a href="classlbann_1_1Layer.html#a43ae6cca8efd036e6f496d3b4f5c1bf9">lbann::Layer::m_error_signal</a></div><div class="ttdeci">ElMat * m_error_signal</div><div class="ttdoc">Error signal to &quot;next&quot; layer (i.e. deltas) ((# neurons) x mini-batch size) </div><div class="ttdef"><b>Definition:</b> <a href="lbann__layer_8hpp_source.html#l00288">lbann_layer.hpp:288</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1dropout_adac8d66b5add45bd1dcea08c109ef68e_cgraph.png" border="0" usemap="#classlbann_1_1dropout_adac8d66b5add45bd1dcea08c109ef68e_cgraph" alt=""/></div>
-<map name="classlbann_1_1dropout_adac8d66b5add45bd1dcea08c109ef68e_cgraph" id="classlbann_1_1dropout_adac8d66b5add45bd1dcea08c109ef68e_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1lbann__comm.html#a483bf8a72d44a0e83da45f3d47bd20d4" title="lbann::lbann_comm::\lget_model_grid" alt="" coords="238,5,381,46"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classlbann_1_1dropout_adac8d66b5add45bd1dcea08c109ef68e_icgraph.png" border="0" usemap="#classlbann_1_1dropout_adac8d66b5add45bd1dcea08c109ef68e_icgraph" alt=""/></div>
-<map name="classlbann_1_1dropout_adac8d66b5add45bd1dcea08c109ef68e_icgraph" id="classlbann_1_1dropout_adac8d66b5add45bd1dcea08c109ef68e_icgraph">
-<area shape="rect" id="node2" href="classlbann_1_1dropout.html#a475a5f62e79fddc530dcf9982ace918a" title="lbann::dropout::dropout" alt="" coords="237,12,392,39"/></map>
+<div class="center"><img src="classlbann_1_1dropout_a5a5569f4c5c0055b0f4e041195f275fc_cgraph.png" border="0" usemap="#classlbann_1_1dropout_a5a5569f4c5c0055b0f4e041195f275fc_cgraph" alt=""/></div>
+<map name="classlbann_1_1dropout_a5a5569f4c5c0055b0f4e041195f275fc_cgraph" id="classlbann_1_1dropout_a5a5569f4c5c0055b0f4e041195f275fc_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1Layer.html#a20442464265da1cb2aeb1cf82640702f" title="lbann::Layer::setup" alt="" coords="197,5,331,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="af52965eae7232c51e0e3801b02ac7de0"></a>
+<a class="anchor" id="ad3a78c611fd83ed63be98cb0a0a44430"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;data_layout T_layout&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* lbann::dropout::m_comm</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="lbann__dropout_8hpp_source.html#l00059">59</a> of file <a class="el" href="lbann__dropout_8hpp_source.html">lbann_dropout.hpp</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a1da084708f189cdc5f53cb59ab5c18d0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>* lbann::dropout::m_cur_mask</td>
+          <td class="memname"><a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>* <a class="el" href="classlbann_1_1dropout.html">lbann::dropout</a>&lt; T_layout &gt;::m_cur_mask</td>
         </tr>
       </table>
   </td>
@@ -543,19 +830,21 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Current dropout mask (a scaled Bernoulli random matrix). </p>
 
-<p>Definition at line <a class="el" href="lbann__dropout_8hpp_source.html#l00067">67</a> of file <a class="el" href="lbann__dropout_8hpp_source.html">lbann_dropout.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dropout_8hpp_source.html#l00146">146</a> of file <a class="el" href="dropout_8hpp_source.html">dropout.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a2b4540ea622609b518d691d68e6db92c"></a>
+<a class="anchor" id="ac728849f72d7f433ced4448c96e018f7"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;data_layout T_layout&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float lbann::dropout::m_keep_prob</td>
+          <td class="memname">float <a class="el" href="classlbann_1_1dropout.html">lbann::dropout</a>&lt; T_layout &gt;::m_keep_prob</td>
         </tr>
       </table>
   </td>
@@ -566,13 +855,12 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>Probability of keeping each unit. </p>
 
-<p>Definition at line <a class="el" href="lbann__dropout_8hpp_source.html#l00061">61</a> of file <a class="el" href="lbann__dropout_8hpp_source.html">lbann_dropout.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dropout_8hpp_source.html#l00140">140</a> of file <a class="el" href="dropout_8hpp_source.html">dropout.hpp</a>.</p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/travis/build/LLNL/lbann/include/lbann/regularization/<a class="el" href="lbann__dropout_8hpp_source.html">lbann_dropout.hpp</a></li>
-<li>/home/travis/build/LLNL/lbann/src/regularization/<a class="el" href="lbann__dropout_8cpp_source.html">lbann_dropout.cpp</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>/home/travis/build/LLNL/lbann/include/lbann/layers/regularizers/<a class="el" href="dropout_8hpp_source.html">dropout.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -580,7 +868,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1dropout.html">dropout</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 19:49:40 for LBANN by
+    <li class="footer">Generated on Wed Jun 21 2017 00:32:43 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

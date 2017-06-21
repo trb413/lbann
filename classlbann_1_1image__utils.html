@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-79-g3f8fc3c-ci242150286</span>
+   &#160;<span id="projectnumber">v0.93-ci245156193</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -230,7 +230,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;  <span class="keywordtype">bool</span> ok = !image.empty() &amp;&amp; pp.postprocess(image);</div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;</div>
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;  <a class="code" href="lbann__mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a>(!ok, <span class="stringliteral">&quot;Either the image is empty or postprocessing has failed.&quot;</span>, <span class="keyword">false</span>)</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;  <a class="code" href="lbann__mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a>(fileExt.empty(), &quot;Empty file format extension!&quot;, <a class="code" href="lbann__target__layer__unsupervised_8cpp.html#ae6c865df784842196d411c1466b01686">false</a>)</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;  <a class="code" href="lbann__mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a>(fileExt.empty(), &quot;Empty file format extension!&quot;, false)</div>
 <div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;</div>
 <div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;  const std::<span class="keywordtype">string</span> ext = ((fileExt[0] != &#39;.&#39;)? (&quot;.&quot; + fileExt) : fileExt);</div>
 <div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;</div>
@@ -247,8 +247,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;<span class="preprocessor">#endif // __LIB_OPENCV</span></div>
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="ttc" id="lbann__target__layer__unsupervised_8cpp_html_ae6c865df784842196d411c1466b01686"><div class="ttname"><a href="lbann__target__layer__unsupervised_8cpp.html#ae6c865df784842196d411c1466b01686">false</a></div><div class="ttdeci">false</div><div class="ttdef"><b>Definition:</b> <a href="lbann__target__layer__unsupervised_8cpp_source.html#l00041">lbann_target_layer_unsupervised.cpp:41</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00040">lbann_base.hpp:40</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00041">lbann_base.hpp:41</a></div></div>
 <div class="ttc" id="lbann__mild__exception_8hpp_html_a7b8339c566152ab29ce66b63e90c67f9"><div class="ttname"><a href="lbann__mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a></div><div class="ttdeci">#define _LBANN_MILD_EXCEPTION(_COND_, _MSG_, _RETVAL_)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__mild__exception_8hpp_source.html#l00083">lbann_mild_exception.hpp:83</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -340,7 +339,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;<span class="preprocessor">#endif // __LIB_OPENCV</span></div>
 <div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00040">lbann_base.hpp:40</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00041">lbann_base.hpp:41</a></div></div>
 <div class="ttc" id="lbann__mild__exception_8hpp_html_a7b8339c566152ab29ce66b63e90c67f9"><div class="ttname"><a href="lbann__mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a></div><div class="ttdeci">#define _LBANN_MILD_EXCEPTION(_COND_, _MSG_, _RETVAL_)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__mild__exception_8hpp_source.html#l00083">lbann_mild_exception.hpp:83</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -450,7 +449,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;<span class="preprocessor">#endif // __LIB_OPENCV</span></div>
 <div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00040">lbann_base.hpp:40</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00041">lbann_base.hpp:41</a></div></div>
 <div class="ttc" id="lbann__mild__exception_8hpp_html_a7b8339c566152ab29ce66b63e90c67f9"><div class="ttname"><a href="lbann__mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a></div><div class="ttdeci">#define _LBANN_MILD_EXCEPTION(_COND_, _MSG_, _RETVAL_)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__mild__exception_8hpp_source.html#l00083">lbann_mild_exception.hpp:83</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -531,7 +530,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="preprocessor">#endif // __LIB_OPENCV</span></div>
 <div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00040">lbann_base.hpp:40</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00041">lbann_base.hpp:41</a></div></div>
 <div class="ttc" id="lbann__mild__exception_8hpp_html_a7b8339c566152ab29ce66b63e90c67f9"><div class="ttname"><a href="lbann__mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a></div><div class="ttdeci">#define _LBANN_MILD_EXCEPTION(_COND_, _MSG_, _RETVAL_)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__mild__exception_8hpp_source.html#l00083">lbann_mild_exception.hpp:83</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -635,7 +634,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;<span class="preprocessor">#endif // __LIB_OPENCV</span></div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00040">lbann_base.hpp:40</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00041">lbann_base.hpp:41</a></div></div>
 <div class="ttc" id="lbann__mild__exception_8hpp_html_a7b8339c566152ab29ce66b63e90c67f9"><div class="ttname"><a href="lbann__mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a></div><div class="ttdeci">#define _LBANN_MILD_EXCEPTION(_COND_, _MSG_, _RETVAL_)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__mild__exception_8hpp_source.html#l00083">lbann_mild_exception.hpp:83</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -739,7 +738,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;<span class="preprocessor">#endif // __LIB_OPENCV</span></div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00040">lbann_base.hpp:40</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00041">lbann_base.hpp:41</a></div></div>
 <div class="ttc" id="lbann__mild__exception_8hpp_html_a7b8339c566152ab29ce66b63e90c67f9"><div class="ttname"><a href="lbann__mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a></div><div class="ttdeci">#define _LBANN_MILD_EXCEPTION(_COND_, _MSG_, _RETVAL_)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__mild__exception_8hpp_source.html#l00083">lbann_mild_exception.hpp:83</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -946,7 +945,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00040">lbann_base.hpp:40</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00041">lbann_base.hpp:41</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -1035,7 +1034,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00040">lbann_base.hpp:40</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00041">lbann_base.hpp:41</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1208,7 +1207,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00040">lbann_base.hpp:40</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00041">lbann_base.hpp:41</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1283,7 +1282,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;<span class="preprocessor">#endif // __LIB_OPENCV</span></div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00040">lbann_base.hpp:40</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00041">lbann_base.hpp:41</a></div></div>
 <div class="ttc" id="lbann__mild__exception_8hpp_html_a7b8339c566152ab29ce66b63e90c67f9"><div class="ttname"><a href="lbann__mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a></div><div class="ttdeci">#define _LBANN_MILD_EXCEPTION(_COND_, _MSG_, _RETVAL_)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__mild__exception_8hpp_source.html#l00083">lbann_mild_exception.hpp:83</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1370,7 +1369,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;<span class="preprocessor">#endif // __LIB_OPENCV</span></div>
 <div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00040">lbann_base.hpp:40</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00041">lbann_base.hpp:41</a></div></div>
 <div class="ttc" id="lbann__mild__exception_8hpp_html_a7b8339c566152ab29ce66b63e90c67f9"><div class="ttname"><a href="lbann__mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a></div><div class="ttdeci">#define _LBANN_MILD_EXCEPTION(_COND_, _MSG_, _RETVAL_)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__mild__exception_8hpp_source.html#l00083">lbann_mild_exception.hpp:83</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -1516,7 +1515,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00040">lbann_base.hpp:40</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00041">lbann_base.hpp:41</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1678,7 +1677,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00040">lbann_base.hpp:40</a></div></div>
+<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00041">lbann_base.hpp:41</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1692,7 +1691,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1image__utils.html">image_utils</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 19:49:39 for LBANN by
+    <li class="footer">Generated on Wed Jun 21 2017 00:32:42 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

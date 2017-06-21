@@ -1,11 +1,13 @@
 var classlbann_1_1input__layer__partitioned__minibatch__parallel__io =
 [
-    [ "input_layer_partitioned_minibatch_parallel_io", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#a554366abc01d19f1956dd17827a7c9ee", null ],
-    [ "fetch_from_data_reader", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#ab5fd296a82cd3f80cca68b80ca7f60ae", null ],
-    [ "fp_linearity", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#a6a4ceace215ff58e33d9b505c0c03b82", null ],
-    [ "get_execution_mode", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#a54a43d8192940dd6a04fc37b8d0f35d1", null ],
-    [ "preprocess_data_samples", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#a7bb8fb5e9aa6b1c7c34d17db84b9f9e7", null ],
-    [ "setup", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#a01e9943d4fc980653a09e52c9531df60", null ],
-    [ "update", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#ada4459245748bd1336672d038619a648", null ],
-    [ "update_data_reader", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#a76f435698022483e979025a013c82559", null ]
+    [ "input_layer_partitioned_minibatch_parallel_io", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#a94e7b64c19cca9da8830a57184ca3e93", null ],
+    [ "fetch_from_data_reader", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#a0fab0f1587840e7451dc9c8156879336", null ],
+    [ "fp_compute", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#af23c8235fd0b4fa84c294facebac14dd", null ],
+    [ "get_data_layout", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#ac898c0a1853fdec75937d8e81986b63a", null ],
+    [ "get_execution_mode", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#a9af204f53a63aa576372955391ae1c98", null ],
+    [ "initialize_distributed_matrices", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#aabdb82fdf2232e84e9e59c5fe4160025", null ],
+    [ "preprocess_data_samples", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#a7d08405dfd22fd380a7baf9302333ad9", null ],
+    [ "setup", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#a1eb10553e539f63a2c78a1d676518fa5", null ],
+    [ "update_compute", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#ae822ca54cc3e0da2dd62bb95c6acd00f", null ],
+    [ "update_data_reader", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#a38c1439a2922ad38ad6b65deadf2da33", null ]
 ];

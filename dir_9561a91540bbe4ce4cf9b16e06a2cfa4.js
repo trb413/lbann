@@ -9,7 +9,6 @@ var dir_9561a91540bbe4ce4cf9b16e06a2cfa4 =
     [ "objective_functions", "dir_16d45560680495122ce88f3ef84ff411.html", "dir_16d45560680495122ce88f3ef84ff411" ],
     [ "optimizers", "dir_68e74cb6399bafec1ede909ca86fb89b.html", "dir_68e74cb6399bafec1ede909ca86fb89b" ],
     [ "proto", "dir_a6f8d8b19bd1411ec381c5cd89d82b32.html", "dir_a6f8d8b19bd1411ec381c5cd89d82b32" ],
-    [ "regularization", "dir_641edc1f9c3202270a1ac1aafbaaf998.html", "dir_641edc1f9c3202270a1ac1aafbaaf998" ],
     [ "utils", "dir_e3a975d7a6e3e1ec3d3053fd7df1ad72.html", "dir_e3a975d7a6e3e1ec3d3053fd7df1ad72" ],
     [ "lbann_base.cpp", "lbann__base_8cpp.html", "lbann__base_8cpp" ],
     [ "lbann_comm.cpp", "lbann__comm_8cpp.html", "lbann__comm_8cpp" ],

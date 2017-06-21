@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-79-g3f8fc3c-ci242150286</span>
+   &#160;<span id="projectnumber">v0.93-ci245156193</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -216,6 +216,15 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="classlbann_1_1optimizer_html_ad393dcdcb82b44510c586ed5ec46d4dd"><div class="ttname"><a href="classlbann_1_1optimizer.html#ad393dcdcb82b44510c586ed5ec46d4dd">lbann::optimizer::m_learning_rate</a></div><div class="ttdeci">DataType m_learning_rate</div><div class="ttdoc">Learning rate. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00090">lbann_optimizer.hpp:90</a></div></div>
 <div class="ttc" id="classlbann_1_1optimizer_html_a3e32c0a85307f54f8a6845082cbc14b7"><div class="ttname"><a href="classlbann_1_1optimizer.html#a3e32c0a85307f54f8a6845082cbc14b7">lbann::optimizer::m_name</a></div><div class="ttdeci">const std::string m_name</div><div class="ttdoc">Optimizer name. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00094">lbann_optimizer.hpp:94</a></div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1optimizer_a42150ad8b3dc9cfdedf2ca63d26aa20a_icgraph.png" border="0" usemap="#classlbann_1_1optimizer_a42150ad8b3dc9cfdedf2ca63d26aa20a_icgraph" alt=""/></div>
+<map name="classlbann_1_1optimizer_a42150ad8b3dc9cfdedf2ca63d26aa20a_icgraph" id="classlbann_1_1optimizer_a42150ad8b3dc9cfdedf2ca63d26aa20a_icgraph">
+<area shape="rect" id="node2" href="lbann__proto__common_8hpp.html#ae21ca118313260dcd12be3e8e2d540ae" title="returns a optimizer factory that is one of: adagrad, rmsprop, adam, sgd " alt="" coords="229,5,376,32"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="abbee0e2cb021f835b669d9ba0da5145a"></a>
@@ -433,12 +442,12 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(dist.colDist == MC &amp;&amp; dist.rowDist == STAR) {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classlbann_1_1optimizer.html#a55f17cd98721e80b6a1999b5a71adf4d">m_matrix_format</a> = <a class="code" href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0da99fe60b6c6fbf8dd05bf45c7898674bf">matrix_format::MC_STAR</a>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classlbann_1_1optimizer.html#a55f17cd98721e80b6a1999b5a71adf4d">m_matrix_format</a> = <a class="code" href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dafedb2d84cafe20862cb4399751a8a7e3">matrix_format::invalid</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classlbann_1_1optimizer.html#a55f17cd98721e80b6a1999b5a71adf4d">m_matrix_format</a> = <a class="code" href="namespacelbann.html#aedf7ea3c07affe9278486158f759cc26afedb2d84cafe20862cb4399751a8a7e3">matrix_format::invalid</a>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1optimizer_html_a55f17cd98721e80b6a1999b5a71adf4d"><div class="ttname"><a href="classlbann_1_1optimizer.html#a55f17cd98721e80b6a1999b5a71adf4d">lbann::optimizer::m_matrix_format</a></div><div class="ttdeci">matrix_format m_matrix_format</div><div class="ttdoc">Parameter matrix format. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00088">lbann_optimizer.hpp:88</a></div></div>
+<div class="ttc" id="namespacelbann_html_aedf7ea3c07affe9278486158f759cc26afedb2d84cafe20862cb4399751a8a7e3"><div class="ttname"><a href="namespacelbann.html#aedf7ea3c07affe9278486158f759cc26afedb2d84cafe20862cb4399751a8a7e3">lbann::layer_category::invalid</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0dacf33f55c86c56389442455e8e190be2d"><div class="ttname"><a href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dacf33f55c86c56389442455e8e190be2d">matrix_format::MC_MR</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0dafedb2d84cafe20862cb4399751a8a7e3"><div class="ttname"><a href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dafedb2d84cafe20862cb4399751a8a7e3">matrix_format::invalid</a></div></div>
 <div class="ttc" id="classlbann_1_1optimizer_html_ac98dc3c120b84fd48ef84105a6e1ca6c"><div class="ttname"><a href="classlbann_1_1optimizer.html#ac98dc3c120b84fd48ef84105a6e1ca6c">lbann::optimizer::m_height</a></div><div class="ttdeci">Int m_height</div><div class="ttdoc">Parameter matrix height. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00084">lbann_optimizer.hpp:84</a></div></div>
 <div class="ttc" id="lbann__base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0da41478dbc562bc2cdaa328e2fa04558b2"><div class="ttname"><a href="lbann__base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0da41478dbc562bc2cdaa328e2fa04558b2">matrix_format::STAR_STAR</a></div></div>
 <div class="ttc" id="classlbann_1_1optimizer_html_adddaffd5728dc3ac00a1eedea0f4a4c6"><div class="ttname"><a href="classlbann_1_1optimizer.html#adddaffd5728dc3ac00a1eedea0f4a4c6">lbann::optimizer::m_width</a></div><div class="ttdeci">Int m_width</div><div class="ttdoc">Parameter matrix width. </div><div class="ttdef"><b>Definition:</b> <a href="lbann__optimizer_8hpp_source.html#l00086">lbann_optimizer.hpp:86</a></div></div>
@@ -452,7 +461,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1optimizer_a6eb6169ed46ad602339c7b0bc2633c37_icgraph.png" border="0" usemap="#classlbann_1_1optimizer_a6eb6169ed46ad602339c7b0bc2633c37_icgraph" alt=""/></div>
 <map name="classlbann_1_1optimizer_a6eb6169ed46ad602339c7b0bc2633c37_icgraph" id="classlbann_1_1optimizer_a6eb6169ed46ad602339c7b0bc2633c37_icgraph">
-<area shape="rect" id="node2" href="classlbann_1_1convolutional__layer.html#ae16ca9feb05ee29e58b7665dafed105a" title="lbann::convolutional\l_layer::setup" alt="" coords="229,5,366,46"/><area shape="rect" id="node3" href="classlbann_1_1fully__connected__layer.html#a879a3a9cd77640028a1e6e3cc56fe639" title="lbann::fully_connected\l_layer::setup" alt="" coords="221,70,373,111"/><area shape="rect" id="node4" href="classlbann_1_1reconstruction__layer.html#a7f1da7a30ed3b3405290c8e71fcb94dc" title="lbann::reconstruction\l_layer::setup" alt="" coords="226,135,369,177"/><area shape="rect" id="node5" href="classlbann_1_1softmax__layer.html#a4479d0231cc98ae93af3b5dd4498941a" title="lbann::softmax_layer\l::setup" alt="" coords="226,201,369,242"/><area shape="rect" id="node6" href="classlbann_1_1adam.html#a2a87df826b6108f5e77fce45ae73c55f" title="Set parameters to optimize and initialize optimizer. " alt="" coords="231,267,364,293"/><area shape="rect" id="node7" href="classlbann_1_1hypergradient__adam.html#a3848f988d511382aee1ef1d6bce9ebe7" title="Set parameters to optimize and initialize optimizer. " alt="" coords="228,318,367,359"/><area shape="rect" id="node8" href="classlbann_1_1batch__normalization.html#a68cb5fd5879349ff0c4a7b2826869178" title="lbann::batch_normalization\l::setup" alt="" coords="209,383,386,425"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1convolution__layer.html#a1ebe429967f06a1883302ecacc83debd" title="lbann::convolution\l_layer::setup" alt="" coords="234,5,361,46"/><area shape="rect" id="node3" href="classlbann_1_1fully__connected__layer.html#a879a3a9cd77640028a1e6e3cc56fe639" title="lbann::fully_connected\l_layer::setup" alt="" coords="221,70,373,111"/><area shape="rect" id="node4" href="classlbann_1_1batch__normalization.html#a15c8a56764e14748d8d15c58381a02dd" title="lbann::batch_normalization\l::setup" alt="" coords="209,135,386,177"/><area shape="rect" id="node5" href="classlbann_1_1adam.html#a2a87df826b6108f5e77fce45ae73c55f" title="Set parameters to optimize and initialize optimizer. " alt="" coords="231,201,364,228"/><area shape="rect" id="node6" href="classlbann_1_1hypergradient__adam.html#a3848f988d511382aee1ef1d6bce9ebe7" title="Set parameters to optimize and initialize optimizer. " alt="" coords="228,253,367,294"/></map>
 </div>
 </p>
 
@@ -489,7 +498,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1optimizer_a15f0487c474d261086723422a8bad921_icgraph.png" border="0" usemap="#classlbann_1_1optimizer_a15f0487c474d261086723422a8bad921_icgraph" alt=""/></div>
 <map name="classlbann_1_1optimizer_a15f0487c474d261086723422a8bad921_icgraph" id="classlbann_1_1optimizer_a15f0487c474d261086723422a8bad921_icgraph">
-<area shape="rect" id="node2" href="classlbann_1_1convolutional__layer.html#a43dc2823aafa95c6581b6627cb5e2443" title="lbann::convolutional\l_layer::update" alt="" coords="237,5,374,46"/><area shape="rect" id="node3" href="classlbann_1_1fully__connected__layer.html#a3a686696f1486e7b1789c066e022488f" title="lbann::fully_connected\l_layer::update" alt="" coords="229,70,381,111"/><area shape="rect" id="node4" href="classlbann_1_1reconstruction__layer.html#aef4be6ea2e9f55affcd715c493f0d802" title="lbann::reconstruction\l_layer::update" alt="" coords="234,135,377,177"/><area shape="rect" id="node5" href="classlbann_1_1softmax__layer.html#a4766562a4d1aa1a2ea020a5c5fea168f" title="lbann::softmax_layer\l::update" alt="" coords="234,201,377,242"/><area shape="rect" id="node6" href="classlbann_1_1batch__normalization.html#aca4343eb11c300d993c842a4c8643dc9" title="lbann::batch_normalization\l::update" alt="" coords="217,266,394,307"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1convolution__layer.html#a3ebeeabc1f24d3aba169ee69aaad0717" title="Update convolution filters and biases. " alt="" coords="225,5,386,46"/><area shape="rect" id="node3" href="classlbann_1_1fully__connected__layer.html#aa73b2ef2b33d2ac07ce45da33e67a093" title="lbann::fully_connected\l_layer::update_compute" alt="" coords="225,70,386,111"/><area shape="rect" id="node4" href="classlbann_1_1batch__normalization.html#ada966e3ec503f6ef8361c4cd0aa423fb" title="lbann::batch_normalization\l::update_compute" alt="" coords="217,135,394,177"/></map>
 </div>
 </p>
 
@@ -674,7 +683,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1optimizer.html">optimizer</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 19:49:40 for LBANN by
+    <li class="footer">Generated on Wed Jun 21 2017 00:32:43 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,5 +1,8 @@
 var classlbann_1_1sigmoid__layer =
 [
-    [ "act", "classlbann_1_1sigmoid__layer.html#ae222a85427fa57dea2c4aa29eca02c23", null ],
-    [ "act_prime", "classlbann_1_1sigmoid__layer.html#a8c53422367f5b1faa630847c5f8b3d54", null ]
+    [ "sigmoid_layer", "classlbann_1_1sigmoid__layer.html#af52aa693d5936cbb6746790528d75cf8", null ],
+    [ "activation_function", "classlbann_1_1sigmoid__layer.html#aecd69b2f833dec157f2527fc6ef2a059", null ],
+    [ "activation_function_gradient", "classlbann_1_1sigmoid__layer.html#a8f1a5328b78d9a40ebacfdfb7fd60636", null ],
+    [ "get_data_layout", "classlbann_1_1sigmoid__layer.html#acf99d211507ab98bf482a86bce8f6f2c", null ],
+    [ "initialize_distributed_matrices", "classlbann_1_1sigmoid__layer.html#a12675f23c6c47f373adf63e8051b820b", null ]
 ];

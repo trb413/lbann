@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['l2_5fregularization',['l2_regularization',['../classlbann_1_1l2__regularization.html',1,'lbann']]],
   ['layer',['Layer',['../classlbann_1_1Layer.html',1,'lbann']]],
   ['layer_5fheader',['layer_header',['../structlayer__header.html',1,'']]],
   ['lbann_5fcallback',['lbann_callback',['../classlbann_1_1lbann__callback.html',1,'lbann']]],
@@ -33,6 +32,7 @@ var searchData=
   ['lbann_5fmodel_5fsequential_5fheader',['lbann_model_sequential_header',['../structlbann__model__sequential__header.html',1,'']]],
   ['lbann_5fquantizer',['lbann_quantizer',['../classlbann_1_1lbann__quantizer.html',1,'lbann']]],
   ['lbann_5fsummary',['lbann_summary',['../classlbann_1_1lbann__summary.html',1,'lbann']]],
-  ['leaky_5frelu_5flayer',['leaky_reLU_layer',['../classlbann_1_1leaky__reLU__layer.html',1,'lbann']]],
+  ['leaky_5frelu_5flayer',['leaky_relu_layer',['../classlbann_1_1leaky__relu__layer.html',1,'lbann']]],
+  ['learning',['learning',['../classlbann_1_1learning.html',1,'lbann']]],
   ['local_5fresponse_5fnormalization_5flayer',['local_response_normalization_layer',['../classlbann_1_1local__response__normalization__layer.html',1,'lbann']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['using_5ftensorboard_2edox',['using_tensorboard.dox',['../using__tensorboard_8dox.html',1,'']]]
+  ['getting_5fstarted_2edox',['getting_started.dox',['../getting__started_8dox.html',1,'']]]
 ];

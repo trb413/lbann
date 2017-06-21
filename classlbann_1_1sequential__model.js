@@ -7,6 +7,7 @@ var classlbann_1_1sequential__model =
     [ "evaluate", "classlbann_1_1sequential__model.html#a338df577fb4da0c56b532de92b6e3263", null ],
     [ "evaluate_mini_batch", "classlbann_1_1sequential__model.html#a7b021498067b8bfe52d390996395bff6", null ],
     [ "get_layers", "classlbann_1_1sequential__model.html#a49d1fc84ce7686fc1c8d4d72498960a4", null ],
+    [ "get_layers", "classlbann_1_1sequential__model.html#ac617e658dd43208891b32441df1c2eb8", null ],
     [ "get_mini_batch_size", "classlbann_1_1sequential__model.html#a1deb978ea87dd81f042b5189e4255910", null ],
     [ "insert", "classlbann_1_1sequential__model.html#ae992c83737819d406e1311ebe24e07f0", null ],
     [ "load_from_checkpoint", "classlbann_1_1sequential__model.html#a66da0af31609146827c238fca77e194d", null ],

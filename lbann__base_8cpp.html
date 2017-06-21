@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-79-g3f8fc3c-ci242150286</span>
+   &#160;<span id="projectnumber">v0.93-ci245156193</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -100,12 +100,13 @@ $(document).ready(function(){initNavTree('lbann__base_8cpp.html','');});
 <code>#include &lt;hwloc.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="lbann__base_8hpp_source.html">lbann/lbann_base.hpp</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="lbann__comm_8hpp_source.html">lbann/lbann_comm.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="lbann__random_8hpp_source.html">lbann/utils/lbann_random.hpp</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for lbann_base.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="lbann__base_8cpp__incl.png" border="0" usemap="#_2home_2travis_2build_2LLNL_2lbann_2src_2lbann__base_8cpp" alt=""/></div>
 <map name="_2home_2travis_2build_2LLNL_2lbann_2src_2lbann__base_8cpp" id="_2home_2travis_2build_2LLNL_2lbann_2src_2lbann__base_8cpp">
-<area shape="rect" id="node5" href="lbann__base_8hpp.html" title="lbann/lbann_base.hpp" alt="" coords="197,184,344,211"/><area shape="rect" id="node9" href="lbann__comm_8hpp.html" title="lbann/lbann_comm.hpp" alt="" coords="317,109,472,136"/><area shape="rect" id="node6" href="datatype_8hpp.html" title="datatype.hpp" alt="" coords="171,259,268,285"/></map>
+<area shape="rect" id="node5" href="lbann__base_8hpp.html" title="lbann/lbann_base.hpp" alt="" coords="262,259,409,285"/><area shape="rect" id="node10" href="lbann__comm_8hpp.html" title="lbann/lbann_comm.hpp" alt="" coords="463,184,619,211"/><area shape="rect" id="node13" href="lbann__random_8hpp.html" title="lbann/utils/lbann_random.hpp" alt="" coords="313,109,503,136"/><area shape="rect" id="node6" href="datatype_8hpp.html" title="datatype.hpp" alt="" coords="138,341,235,368"/><area shape="rect" id="node9" href="lbann__Elemental__extensions_8hpp.html" title="lbann/lbann_Elemental\l_extensions.hpp" alt="" coords="259,334,412,375"/></map>
 </div>
 </div>
 <p><a href="lbann__base_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -117,10 +118,10 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa7eae9c1a433564435e5464eabd29ea4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#aa7eae9c1a433564435e5464eabd29ea4">lbann::initialize</a> (lbann_comm *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>)</td></tr>
-<tr class="separator:aa7eae9c1a433564435e5464eabd29ea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7729c7ef241072e5db720242b4d49b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#af7729c7ef241072e5db720242b4d49b0">lbann::finalize</a> ()</td></tr>
-<tr class="separator:af7729c7ef241072e5db720242b4d49b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d91b615e42bf5744deeed770879bc8c"><td class="memItemLeft" align="right" valign="top">lbann_comm *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#a3d91b615e42bf5744deeed770879bc8c">lbann::initialize</a> (int &amp;argc, char **&amp;argv, int seed)</td></tr>
+<tr class="separator:a3d91b615e42bf5744deeed770879bc8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99724ee5a6647a1d8bff6764b9aa5fac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#a99724ee5a6647a1d8bff6764b9aa5fac">lbann::finalize</a> (lbann_comm *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>)</td></tr>
+<tr class="separator:a99724ee5a6647a1d8bff6764b9aa5fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -128,7 +129,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="lbann__base_8cpp.html">lbann_base.cpp</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 19:49:39 for LBANN by
+    <li class="footer">Generated on Wed Jun 21 2017 00:32:41 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

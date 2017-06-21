@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['activation',['Activation',['../classlbann_1_1Activation.html',1,'lbann']]],
+  ['activation_5flayer',['activation_layer',['../classlbann_1_1activation__layer.html',1,'lbann']]],
   ['adagrad',['adagrad',['../classlbann_1_1adagrad.html',1,'lbann']]],
   ['adagrad_5ffactory',['adagrad_factory',['../classlbann_1_1adagrad__factory.html',1,'lbann']]],
   ['adam',['adam',['../classlbann_1_1adam.html',1,'lbann']]],

@@ -7,7 +7,7 @@ var searchData=
   ['no_5flocal_5ftrans',['no_local_trans',['../structlbann_1_1lbann__comm_1_1allreduce__options.html#ad9890ae127412ee65a98cbdb02a4b143',1,'lbann::lbann_comm::allreduce_options']]],
   ['node_5fcomm',['node_comm',['../classlbann_1_1lbann__comm.html#a9f1f65663ca1d441f98f003b612eeb8c',1,'lbann::lbann_comm']]],
   ['num_5fbits',['NUM_BITS',['../classlbann_1_1lbann__quantizer.html#a33ea17392f53b90e91aea1ffb7e11d68',1,'lbann::lbann_quantizer']]],
-  ['num_5fforwardprop_5fsteps',['num_forwardprop_steps',['../classlbann_1_1reconstruction__layer.html#a905f4f0aab749724c0bd898324e26884',1,'lbann::reconstruction_layer::num_forwardprop_steps()'],['../classlbann_1_1target__layer__unsupervised.html#afe34159f9aaa70b419c97a21b1f613dc',1,'lbann::target_layer_unsupervised::num_forwardprop_steps()']]],
+  ['num_5fforwardprop_5fsteps',['num_forwardprop_steps',['../classlbann_1_1reconstruction__layer.html#a905f4f0aab749724c0bd898324e26884',1,'lbann::reconstruction_layer']]],
   ['num_5fglobal_5fbarriers',['num_global_barriers',['../classlbann_1_1lbann__comm.html#a4f01e2f2d8220dc34cf39eb4a255cd7d',1,'lbann::lbann_comm']]],
   ['num_5fintermodel_5fbarriers',['num_intermodel_barriers',['../classlbann_1_1lbann__comm.html#a03d946ef5ea5d3b15351e78a2eed10fe',1,'lbann::lbann_comm']]],
   ['num_5fiterations_5fper_5fepoch',['num_iterations_per_epoch',['../classlbann_1_1dataset.html#ac90d82addc9f624b7767d6fff907b1cc',1,'lbann::dataset']]],

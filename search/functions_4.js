@@ -38,6 +38,6 @@ var searchData=
   ['dot_5ffloat2',['DOT_FLOAT2',['../datatype_8hpp.html#ab8ef086bcdcdf09c15e9a5800cd8f4cc',1,'datatype.hpp']]],
   ['dot_5ffloat3',['DOT_FLOAT3',['../datatype_8hpp.html#a567610ce79c815c48c5d861ca38f1929',1,'datatype.hpp']]],
   ['dot_5ffloat4',['DOT_FLOAT4',['../datatype_8hpp.html#adb94f7fd9846690b4b1c257e93fe2e49',1,'datatype.hpp']]],
-  ['dropout',['dropout',['../classlbann_1_1dropout.html#a475a5f62e79fddc530dcf9982ace918a',1,'lbann::dropout']]],
+  ['dropout',['dropout',['../classlbann_1_1dropout.html#ada75d3842d77aade6495d458da72e74e',1,'lbann::dropout']]],
   ['dump_5fto_5ffile',['dump_to_file',['../classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html#a34d4564309168b3ab0b2e3092e2f9355',1,'lbann::lbann_callback_dump_minibatch_sample_indices']]]
 ];

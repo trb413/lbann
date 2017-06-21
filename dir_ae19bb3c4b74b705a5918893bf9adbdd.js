@@ -9,7 +9,6 @@ var dir_ae19bb3c4b74b705a5918893bf9adbdd =
     [ "objective_functions", "dir_a21641b66a36c02418a5501ab2e6062e.html", "dir_a21641b66a36c02418a5501ab2e6062e" ],
     [ "optimizers", "dir_60ff17fb255bbd939ae2c9b44bd446a2.html", "dir_60ff17fb255bbd939ae2c9b44bd446a2" ],
     [ "proto", "dir_4c7b98bbc86e016df9eb563a8634aea6.html", "dir_4c7b98bbc86e016df9eb563a8634aea6" ],
-    [ "regularization", "dir_0ce1c41c712d2af8f00be022ff885ee8.html", "dir_0ce1c41c712d2af8f00be022ff885ee8" ],
     [ "utils", "dir_54599f7ab652be0f2f38b8574c3c4860.html", "dir_54599f7ab652be0f2f38b8574c3c4860" ],
     [ "datatype.hpp", "datatype_8hpp.html", "datatype_8hpp" ],
     [ "lbann.hpp", "lbann_8hpp.html", null ],
@@ -21,7 +20,7 @@ var dir_ae19bb3c4b74b705a5918893bf9adbdd =
       [ "lbann_comm", "classlbann_1_1lbann__comm.html", "classlbann_1_1lbann__comm" ],
       [ "allreduce_options", "structlbann_1_1lbann__comm_1_1allreduce__options.html", "structlbann_1_1lbann__comm_1_1allreduce__options" ]
     ] ],
-    [ "lbann_Elemental_extensions.h", "lbann__Elemental__extensions_8h.html", "lbann__Elemental__extensions_8h" ],
+    [ "lbann_Elemental_extensions.hpp", "lbann__Elemental__extensions_8hpp.html", "lbann__Elemental__extensions_8hpp" ],
     [ "lbann_params.hpp", "lbann__params_8hpp.html", [
       [ "TrainingParams", "classlbann_1_1TrainingParams.html", "classlbann_1_1TrainingParams" ],
       [ "PerformanceParams", "classlbann_1_1PerformanceParams.html", "classlbann_1_1PerformanceParams" ],

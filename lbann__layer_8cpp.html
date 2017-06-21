@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-79-g3f8fc3c-ci242150286</span>
+   &#160;<span id="projectnumber">v0.93-ci245156193</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -88,12 +88,14 @@ $(document).ready(function(){initNavTree('lbann__layer_8cpp.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">lbann_layer.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="lbann__layer_8hpp_source.html">lbann/layers/lbann_layer.hpp</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="lbann__regularizer_8hpp_source.html">lbann/regularization/lbann_regularizer.hpp</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="lbann__timer_8hpp_source.html">lbann/utils/lbann_timer.hpp</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="lbann__model_8hpp_source.html">lbann/models/lbann_model.hpp</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="lbann__file__io_8hpp_source.html">lbann/io/lbann_file_io.hpp</a>&quot;</code><br/>
@@ -107,17 +109,34 @@ Include dependency graph for lbann_layer.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="lbann__layer_8cpp__incl.png" border="0" usemap="#_2home_2travis_2build_2LLNL_2lbann_2src_2layers_2lbann__layer_8cpp" alt=""/></div>
 <map name="_2home_2travis_2build_2LLNL_2lbann_2src_2layers_2lbann__layer_8cpp" id="_2home_2travis_2build_2LLNL_2lbann_2src_2layers_2lbann__layer_8cpp">
-<area shape="rect" id="node2" href="lbann__layer_8hpp.html" title="lbann/layers/lbann\l_layer.hpp" alt="" coords="1133,291,1259,333"/><area shape="rect" id="node23" href="lbann__timer_8hpp.html" title="lbann/utils/lbann_timer.hpp" alt="" coords="2115,389,2292,416"/><area shape="rect" id="node25" href="lbann__persist_8hpp.html" title="lbann/io/lbann_persist.hpp" alt="" coords="5,389,179,416"/><area shape="rect" id="node26" href="lbann__regularizer_8hpp.html" title="lbann/regularization\l/lbann_regularizer.hpp" alt="" coords="161,201,309,242"/><area shape="rect" id="node27" href="lbann__model_8hpp.html" title="lbann/models/lbann\l_model.hpp" alt="" coords="1671,110,1805,151"/><area shape="rect" id="node28" href="lbann__file__io_8hpp.html" title="lbann/io/lbann_file\l_io.hpp" alt="" coords="2399,201,2525,242"/><area shape="rect" id="node3" href="lbann__base_8hpp.html" title="lbann/lbann_base.hpp" alt="" coords="426,712,573,739"/><area shape="rect" id="node7" href="lbann__comm_8hpp.html" title="lbann/lbann_comm.hpp" alt="" coords="991,637,1147,664"/><area shape="rect" id="node10" href="lbann__layer__activations_8hpp.html" title="lbann/layers/lbann\l_layer_activations.hpp" alt="" coords="401,473,553,514"/><area shape="rect" id="node11" href="lbann__exception_8hpp.html" title="lbann/utils/lbann_exception.hpp" alt="" coords="559,563,763,589"/><area shape="rect" id="node14" href="lbann__summary_8hpp.html" title="lbann/utils/lbann_summary.hpp" alt="" coords="1397,480,1600,507"/><area shape="rect" id="node16" href="lbann__optimizer_8hpp.html" title="lbann/optimizers/lbann\l_optimizer.hpp" alt="" coords="1171,473,1323,514"/><area shape="rect" id="node17" href="lbann__optimizer__sgd_8hpp.html" title="lbann/optimizers/lbann\l_optimizer_sgd.hpp" alt="" coords="1448,382,1600,423"/><area shape="rect" id="node18" href="lbann__optimizer__adagrad_8hpp.html" title="lbann/optimizers/lbann\l_optimizer_adagrad.hpp" alt="" coords="1264,382,1423,423"/><area shape="rect" id="node19" href="lbann__optimizer__rmsprop_8hpp.html" title="lbann/optimizers/lbann\l_optimizer_rmsprop.hpp" alt="" coords="1827,382,1988,423"/><area shape="rect" id="node21" href="lbann__optimizer__adam_8hpp.html" title="lbann/optimizers/lbann\l_optimizer_adam.hpp" alt="" coords="987,382,1139,423"/><area shape="rect" id="node22" href="cudnn__wrapper_8hpp.html" title="lbann/utils/cudnn_wrapper.hpp" alt="" coords="562,389,760,416"/><area shape="rect" id="node4" href="datatype_8hpp.html" title="datatype.hpp" alt="" coords="451,787,548,813"/><area shape="rect" id="node31" href="lbann__objective__fn_8hpp.html" title="lbann/objective_functions\l/lbann_objective_fn.hpp" alt="" coords="1234,201,1403,242"/><area shape="rect" id="node32" href="lbann__metric_8hpp.html" title="lbann/metrics/lbann\l_metric.hpp" alt="" coords="730,473,864,514"/></map>
+<area shape="rect" id="node2" href="lbann__layer_8hpp.html" title="lbann/layers/lbann\l_layer.hpp" alt="" coords="1241,291,1367,333"/><area shape="rect" id="node23" href="lbann__timer_8hpp.html" title="lbann/utils/lbann_timer.hpp" alt="" coords="2105,389,2281,416"/><area shape="rect" id="node25" href="lbann__persist_8hpp.html" title="lbann/io/lbann_persist.hpp" alt="" coords="43,389,216,416"/><area shape="rect" id="node26" href="lbann__model_8hpp.html" title="lbann/models/lbann\l_model.hpp" alt="" coords="897,110,1031,151"/><area shape="rect" id="node27" href="lbann__file__io_8hpp.html" title="lbann/io/lbann_file\l_io.hpp" alt="" coords="2127,201,2253,242"/><area shape="rect" id="node3" href="lbann__base_8hpp.html" title="lbann/lbann_base.hpp" alt="" coords="830,637,977,664"/><area shape="rect" id="node8" href="lbann__comm_8hpp.html" title="lbann/lbann_comm.hpp" alt="" coords="750,563,905,589"/><area shape="rect" id="node11" href="lbann__summary_8hpp.html" title="lbann/utils/lbann_summary.hpp" alt="" coords="1664,480,1867,507"/><area shape="rect" id="node13" href="lbann__optimizer_8hpp.html" title="lbann/optimizers/lbann\l_optimizer.hpp" alt="" coords="1117,473,1269,514"/><area shape="rect" id="node14" href="lbann__optimizer__sgd_8hpp.html" title="lbann/optimizers/lbann\l_optimizer_sgd.hpp" alt="" coords="888,382,1040,423"/><area shape="rect" id="node15" href="lbann__optimizer__adagrad_8hpp.html" title="lbann/optimizers/lbann\l_optimizer_adagrad.hpp" alt="" coords="653,382,812,423"/><area shape="rect" id="node16" href="lbann__optimizer__rmsprop_8hpp.html" title="lbann/optimizers/lbann\l_optimizer_rmsprop.hpp" alt="" coords="1766,382,1927,423"/><area shape="rect" id="node18" href="lbann__optimizer__adam_8hpp.html" title="lbann/optimizers/lbann\l_optimizer_adam.hpp" alt="" coords="1115,382,1267,423"/><area shape="rect" id="node19" href="lbann__exception_8hpp.html" title="lbann/utils/lbann_exception.hpp" alt="" coords="889,480,1092,507"/><area shape="rect" id="node22" href="cudnn__wrapper_8hpp.html" title="lbann/utils/cudnn_wrapper.hpp" alt="" coords="1341,389,1539,416"/><area shape="rect" id="node4" href="datatype_8hpp.html" title="datatype.hpp" alt="" coords="930,720,1027,747"/><area shape="rect" id="node7" href="lbann__Elemental__extensions_8hpp.html" title="lbann/lbann_Elemental\l_extensions.hpp" alt="" coords="753,713,905,754"/><area shape="rect" id="node30" href="lbann__objective__fn_8hpp.html" title="lbann/objective_functions\l/lbann_objective_fn.hpp" alt="" coords="438,201,607,242"/><area shape="rect" id="node31" href="lbann__metric_8hpp.html" title="lbann/metrics/lbann\l_metric.hpp" alt="" coords="342,382,476,423"/></map>
 </div>
 </div>
 <p><a href="lbann__layer_8cpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacelbann"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html">lbann</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a64a8c629fb29a62ebf9bd1fca82fa6a8"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a64a8c629fb29a62ebf9bd1fca82fa6a8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelbann.html#a64a8c629fb29a62ebf9bd1fca82fa6a8">lbann::Layer::initialize_distributed_matrices&lt; data_layout::MODEL_PARALLEL &gt;</a> ()</td></tr>
+<tr class="memdesc:a64a8c629fb29a62ebf9bd1fca82fa6a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrices should be in MC,MR distributions.  <a href="#a64a8c629fb29a62ebf9bd1fca82fa6a8">More...</a><br/></td></tr>
+<tr class="separator:a64a8c629fb29a62ebf9bd1fca82fa6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17067c5463ff72d7acfe1e7df1c79781"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
+<tr class="memitem:a17067c5463ff72d7acfe1e7df1c79781"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelbann.html#a17067c5463ff72d7acfe1e7df1c79781">lbann::Layer::initialize_distributed_matrices&lt; data_layout::DATA_PARALLEL &gt;</a> ()</td></tr>
+<tr class="memdesc:a17067c5463ff72d7acfe1e7df1c79781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weight matrices should be in Star,Star and data matrices Star,VC distributions.  <a href="#a17067c5463ff72d7acfe1e7df1c79781">More...</a><br/></td></tr>
+<tr class="separator:a17067c5463ff72d7acfe1e7df1c79781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_faacdbae24c4b7c4a8fbaf54f29a6b8e.html">layers</a></li><li class="navelem"><a class="el" href="lbann__layer_8cpp.html">lbann_layer.cpp</a></li>
-    <li class="footer">Generated on Mon Jun 12 2017 19:49:39 for LBANN by
+    <li class="footer">Generated on Wed Jun 21 2017 00:32:41 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

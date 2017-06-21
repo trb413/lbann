@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-79-g3f8fc3c-ci242150286</span>
+   &#160;<span id="projectnumber">v0.93-ci245156193</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -110,10 +110,10 @@ $(document).ready(function(){initNavTree('functions_f.html','');});
 <li>fetch_from_data_reader()
 : <a class="el" href="classlbann_1_1distributed__minibatch__parallel__io.html#aa62a8e46c053771fe20831f81aeb0a25">lbann::distributed_minibatch_parallel_io</a>
 , <a class="el" href="classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a42be9702e1d17f43451555380a4adda2">lbann::input_layer_distributed_minibatch_parallel_io&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#ab5fd296a82cd3f80cca68b80ca7f60ae">lbann::input_layer_partitioned_minibatch_parallel_io&lt; DATA_DIST &gt;</a>
+, <a class="el" href="classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#a0fab0f1587840e7451dc9c8156879336">lbann::input_layer_partitioned_minibatch_parallel_io&lt; T_layout &gt;</a>
 , <a class="el" href="classlbann_1_1partitioned__minibatch__parallel__io.html#abbe25ec14effe57a3128313429103e15">lbann::partitioned_minibatch_parallel_io</a>
 , <a class="el" href="classlbann_1_1target__layer__distributed__minibatch__parallel__io.html#abe45ed4fd9daeaf304fe3865c7b51a66">lbann::target_layer_distributed_minibatch_parallel_io&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1target__layer__partitioned__minibatch__parallel__io.html#ac40ea2c4b55f6c527f12823d2c553840">lbann::target_layer_partitioned_minibatch_parallel_io&lt; DATA_DIST &gt;</a>
+, <a class="el" href="classlbann_1_1target__layer__partitioned__minibatch__parallel__io.html#a4deaa209bf2e090ec1343e5bdcefc380">lbann::target_layer_partitioned_minibatch_parallel_io&lt; T_layout &gt;</a>
 </li>
 <li>fetch_label()
 : <a class="el" href="classlbann_1_1cifar10__reader.html#aafc4c8b7520300773178d6afdf3eac25">lbann::cifar10_reader</a>
@@ -140,104 +140,83 @@ $(document).ready(function(){initNavTree('functions_f.html','');});
 : <a class="el" href="classlbann_1_1lbann__summary.html#afca72ec49f3e813b6563285a2153a5be">lbann::lbann_summary</a>
 </li>
 <li>forwardProp()
-: <a class="el" href="classlbann_1_1Activation.html#a027767c99c9b728601e6efcc58d0f3f2">lbann::Activation</a>
-, <a class="el" href="classlbann_1_1convolutional__layer.html#a7d23206f8f40aaf5574862abd9f2fb10">lbann::convolutional_layer&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1id__layer.html#a5cdba1b63398db433fb18ead0845a1b9">lbann::id_layer</a>
-, <a class="el" href="classlbann_1_1Layer.html#aa1606d7c00a1c8e717ab763f529b8e33">lbann::Layer</a>
-, <a class="el" href="classlbann_1_1pooling__layer.html#a285a70c6c3831bc3ad1f31102d3240a4">lbann::pooling_layer&lt; T_layout &gt;</a>
+: <a class="el" href="classlbann_1_1Layer.html#aa1606d7c00a1c8e717ab763f529b8e33">lbann::Layer</a>
 </li>
-<li>fp_activations()
-: <a class="el" href="classlbann_1_1dropout.html#a7c33aee6cc1323496120bb545cd27148">lbann::dropout</a>
-, <a class="el" href="classlbann_1_1regularizer.html#a8006f575c31fd152d2f048d50994e9f6">lbann::regularizer</a>
+<li>fp_compute()
+: <a class="el" href="classlbann_1_1batch__normalization.html#af900dea1f07987cd56471a441c5f2f71">lbann::batch_normalization&lt; T_layout &gt;</a>
+, <a class="el" href="classlbann_1_1convolution__layer.html#ad3a25a050b7af8113a88e3775da184f7">lbann::convolution_layer&lt; T_layout &gt;</a>
+, <a class="el" href="classlbann_1_1dropout.html#ab7fa84c3915f5ceac8eed28a183e4ff1">lbann::dropout&lt; T_layout &gt;</a>
+, <a class="el" href="classlbann_1_1entrywise__activation__layer.html#a390703bb2a9d214f1211a1f7da97ab0f">lbann::entrywise_activation_layer</a>
+, <a class="el" href="classlbann_1_1fully__connected__layer.html#a6a5fb7ab71c174beab2447a1c84f097c">lbann::fully_connected_layer&lt; T_layout &gt;</a>
+, <a class="el" href="classlbann_1_1id__layer.html#a5d90f46f8014dca1386299eb1a5b4d40">lbann::id_layer&lt; T_layout &gt;</a>
+, <a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#a7efee9601a8571d8c0d644baaedd19b9">lbann::input_layer_distributed_minibatch&lt; T_layout &gt;</a>
+, <a class="el" href="classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#aa61299375d43d752aa667055195ae674">lbann::input_layer_distributed_minibatch_parallel_io&lt; T_layout &gt;</a>
+, <a class="el" href="classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#af23c8235fd0b4fa84c294facebac14dd">lbann::input_layer_partitioned_minibatch_parallel_io&lt; T_layout &gt;</a>
+, <a class="el" href="classlbann_1_1Layer.html#a99a30fcb1b5ab3c47ff5c28a4920967c">lbann::Layer</a>
+, <a class="el" href="classlbann_1_1local__response__normalization__layer.html#a737bbe37391ce96e33a67e9d501df411">lbann::local_response_normalization_layer&lt; T_layout &gt;</a>
+, <a class="el" href="classlbann_1_1pooling__layer.html#a78d353b565c49b66d741db2fa8882795">lbann::pooling_layer&lt; T_layout &gt;</a>
+, <a class="el" href="classlbann_1_1reconstruction__layer.html#a5fd2bc9fcf77b19ab20a8334324d917a">lbann::reconstruction_layer&lt; T_layout &gt;</a>
+, <a class="el" href="classlbann_1_1softmax__layer.html#ae4a4515dbecdffddaa2fbec78b5c1be3">lbann::softmax_layer&lt; T_layout &gt;</a>
+, <a class="el" href="classlbann_1_1target__layer__distributed__minibatch.html#a6932c43b5996b9f90e4ebbc08b0ed316">lbann::target_layer_distributed_minibatch&lt; T_layout &gt;</a>
+, <a class="el" href="classlbann_1_1target__layer__distributed__minibatch__parallel__io.html#a5b45c427154e90edabace4f98402374d">lbann::target_layer_distributed_minibatch_parallel_io&lt; T_layout &gt;</a>
+, <a class="el" href="classlbann_1_1target__layer__partitioned__minibatch__parallel__io.html#af34056963311f7d3ba1e5c913b93b189">lbann::target_layer_partitioned_minibatch_parallel_io&lt; T_layout &gt;</a>
 </li>
-<li>fp_connections()
-: <a class="el" href="classlbann_1_1regularizer.html#a6f9e59630b11ca7b6349e0f3f3331e47">lbann::regularizer</a>
+<li>fp_compute_cpu()
+: <a class="el" href="classlbann_1_1entrywise__activation__layer.html#a8d4b0376b9783414c1cb7812351122ce">lbann::entrywise_activation_layer</a>
+, <a class="el" href="classlbann_1_1local__response__normalization__layer.html#a79c72491b5b74b64d2b10ac2636cddce">lbann::local_response_normalization_layer&lt; T_layout &gt;</a>
+</li>
+<li>fp_compute_cudnn()
+: <a class="el" href="classlbann_1_1convolution__layer.html#ae43725a33c0a4ad1daf63c115a436941">lbann::convolution_layer&lt; T_layout &gt;</a>
+, <a class="el" href="classlbann_1_1local__response__normalization__layer.html#a715b08cfc4bfed730a066f6d9cedef86">lbann::local_response_normalization_layer&lt; T_layout &gt;</a>
+, <a class="el" href="classlbann_1_1pooling__layer.html#a022eb4448992f654288b6b1ca95fcb6c">lbann::pooling_layer&lt; T_layout &gt;</a>
+</li>
+<li>fp_compute_direct()
+: <a class="el" href="classlbann_1_1convolution__layer.html#a60d4ab30b6f0dccea8bf09c8645f548e">lbann::convolution_layer&lt; T_layout &gt;</a>
+</li>
+<li>fp_compute_direct_2d()
+: <a class="el" href="classlbann_1_1convolution__layer.html#a6c4f75745f78d3fe8e5f66f929d97484">lbann::convolution_layer&lt; T_layout &gt;</a>
+</li>
+<li>fp_compute_gpu()
+: <a class="el" href="classlbann_1_1entrywise__activation__layer.html#aeb270dda0c2ec95dd34c35e1e8300f11">lbann::entrywise_activation_layer</a>
+, <a class="el" href="classlbann_1_1relu__layer.html#ad8bc4eaed3c2ce82d292f947d61233b2">lbann::relu_layer&lt; T_layout &gt;</a>
+</li>
+<li>fp_compute_im2col()
+: <a class="el" href="classlbann_1_1convolution__layer.html#aee7af14f0e5f4fb4afa490de959a49d1">lbann::convolution_layer&lt; T_layout &gt;</a>
+, <a class="el" href="classlbann_1_1pooling__layer.html#a76ce07a190fbe85685ea2ab4e53be7f9">lbann::pooling_layer&lt; T_layout &gt;</a>
+</li>
+<li>fp_compute_time
+: <a class="el" href="classlbann_1_1Layer.html#a19ead6e739e08170ef49c11f84eb638c">lbann::Layer</a>
 </li>
 <li>fp_input
 : <a class="el" href="classlbann_1_1Layer.html#aa4f7b14ea6448703edc07ae4e43cb20a">lbann::Layer</a>
 </li>
-<li>fp_linearity()
-: <a class="el" href="classlbann_1_1convolutional__layer.html#a0ddbb0108e70810c3e926f8d23b388f6">lbann::convolutional_layer&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1fully__connected__layer.html#aac903e653abf1d08dba6905ab015532f">lbann::fully_connected_layer&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1input__layer__distributed__minibatch.html#a0c743be49365654fe7fdd192d0d3075a">lbann::input_layer_distributed_minibatch&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1input__layer__distributed__minibatch__parallel__io.html#a5d88b43ddfc439ce0697249ef9383d8e">lbann::input_layer_distributed_minibatch_parallel_io&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#a6a4ceace215ff58e33d9b505c0c03b82">lbann::input_layer_partitioned_minibatch_parallel_io&lt; DATA_DIST &gt;</a>
-, <a class="el" href="classlbann_1_1Layer.html#ab2d9a4518ea7026a37e31257a820d59a">lbann::Layer</a>
-, <a class="el" href="classlbann_1_1local__response__normalization__layer.html#acb9706800ecb446d55eedea69321bf45">lbann::local_response_normalization_layer</a>
-, <a class="el" href="classlbann_1_1pooling__layer.html#aa693bbcbd1147d4b9bf3ae4ff72939de">lbann::pooling_layer&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1reconstruction__layer.html#a0afb2c2252edddb4f443b95e565e768e">lbann::reconstruction_layer&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1softmax__layer.html#af78b8d447ebed0af72512439f38a7b68">lbann::softmax_layer&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1target__layer__distributed__minibatch.html#a442d9035d22654c7f0edd36aaea07ddd">lbann::target_layer_distributed_minibatch&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1target__layer__distributed__minibatch__parallel__io.html#aca1138f118f22d252005e42755593594">lbann::target_layer_distributed_minibatch_parallel_io&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1target__layer__partitioned__minibatch__parallel__io.html#a2cab112541e7d393a28988d303eb6c29">lbann::target_layer_partitioned_minibatch_parallel_io&lt; DATA_DIST &gt;</a>
-, <a class="el" href="classlbann_1_1target__layer__unsupervised.html#ad2f8a03f2de4a7ee33813d26268a2cef">lbann::target_layer_unsupervised</a>
-</li>
-<li>fp_linearity_cpu()
-: <a class="el" href="classlbann_1_1local__response__normalization__layer.html#a972771aee25854d44e4f605fadce66fb">lbann::local_response_normalization_layer</a>
-, <a class="el" href="classlbann_1_1pooling__layer.html#a7c42ac1fd45ce1c27f0992f8d66ad87d">lbann::pooling_layer&lt; T_layout &gt;</a>
-</li>
-<li>fp_linearity_cpu_direct()
-: <a class="el" href="classlbann_1_1convolutional__layer.html#a2c76044d44db8c9a07347b4a48e42b1c">lbann::convolutional_layer&lt; T_layout &gt;</a>
-</li>
-<li>fp_linearity_cpu_direct_2d()
-: <a class="el" href="classlbann_1_1convolutional__layer.html#ace7a35a68e990128b376f65159907a2b">lbann::convolutional_layer&lt; T_layout &gt;</a>
-</li>
-<li>fp_linearity_cpu_gemm()
-: <a class="el" href="classlbann_1_1convolutional__layer.html#a145fd7c35de2f553c4cda0a3cbc92733">lbann::convolutional_layer&lt; T_layout &gt;</a>
-</li>
-<li>fp_linearity_gpu()
-: <a class="el" href="classlbann_1_1convolutional__layer.html#a6e554122bd60e07a4a69f82cf0c39822">lbann::convolutional_layer&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1local__response__normalization__layer.html#a0f3ee69375352b25e0d0deb99731ff1a">lbann::local_response_normalization_layer</a>
-, <a class="el" href="classlbann_1_1pooling__layer.html#add5068f182cf5936cd00141f0466becc">lbann::pooling_layer&lt; T_layout &gt;</a>
-</li>
-<li>fp_linearity_time
-: <a class="el" href="classlbann_1_1Layer.html#ace021f94a7463ab505202713c640f7bd">lbann::Layer</a>
-</li>
-<li>fp_nonlinearity()
-: <a class="el" href="classlbann_1_1convolutional__layer.html#a65869ee2073b77b1e68cce5b3b6e268f">lbann::convolutional_layer&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1input__layer.html#a24d4d4d54fa15b1f855db656401c9727">lbann::input_layer</a>
-, <a class="el" href="classlbann_1_1Layer.html#ac942027d92e6bb32e34b62a50cea1ba4">lbann::Layer</a>
-, <a class="el" href="classlbann_1_1reconstruction__layer.html#ac26d8e4ce9ee5d0abd897311da8f7654">lbann::reconstruction_layer&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1softmax__layer.html#ab5901585ae8f7efc69a86efdc9fc4eac">lbann::softmax_layer&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1target__layer.html#ac6eff15a94d26e16101734ec7ce4ccdb">lbann::target_layer</a>
-, <a class="el" href="classlbann_1_1target__layer__unsupervised.html#ad1e2d0488448d06660d67506754e1c06">lbann::target_layer_unsupervised</a>
-</li>
-<li>fp_nonlinearity_gpu()
-: <a class="el" href="classlbann_1_1convolutional__layer.html#ae189fedbf7b7d503a0bdd92c05115563">lbann::convolutional_layer&lt; T_layout &gt;</a>
-</li>
-<li>fp_nonlinearity_time
-: <a class="el" href="classlbann_1_1Layer.html#a2ce4be0bd88c2441b963be1ed47e4385">lbann::Layer</a>
-</li>
 <li>fp_output()
 : <a class="el" href="classlbann_1_1Layer.html#a1cd3afb6dd73ae0f100161677e31f818">lbann::Layer</a>
-, <a class="el" href="classlbann_1_1target__layer.html#adb5af257c4ba5f46b93ba1644558d6f0">lbann::target_layer</a>
+, <a class="el" href="classlbann_1_1target__layer.html#aff9a9803ce8067e87dcf3592431aa85b">lbann::target_layer</a>
 </li>
 <li>fp_set_std_matrix_view()
-: <a class="el" href="classlbann_1_1fully__connected__layer.html#a0ea9db3a499252cdfcde0cdd6727de84">lbann::fully_connected_layer&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1input__layer.html#a6dfd35515f45ec36d2dbdc00b696a8c3">lbann::input_layer</a>
-, <a class="el" href="classlbann_1_1Layer.html#a76d3d6130f2518257debaec5ea921171">lbann::Layer</a>
+: <a class="el" href="classlbann_1_1input__layer.html#a6dfd35515f45ec36d2dbdc00b696a8c3">lbann::input_layer</a>
+, <a class="el" href="classlbann_1_1Layer.html#a935881e25a98b4ffad1985dc04c19572">lbann::Layer</a>
+, <a class="el" href="classlbann_1_1learning.html#aac81e61ae43904bec7dd62f50388bb14">lbann::learning</a>
 , <a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a27db52797078e300d7e4bb18f34cd0bc">lbann::metrics::categorical_accuracy</a>
 , <a class="el" href="classlbann_1_1metrics_1_1mean__squared__error.html#a0c42a4f81e75949dad72813acbc4a86d">lbann::metrics::mean_squared_error</a>
 , <a class="el" href="classlbann_1_1metrics_1_1metric.html#a073c6c2c2861c1bd53d2a0d32e3251fe">lbann::metrics::metric</a>
 , <a class="el" href="classlbann_1_1objective__functions_1_1categorical__cross__entropy.html#aa0f8dbd4ae6310690cedb281b19eaa6f">lbann::objective_functions::categorical_cross_entropy</a>
 , <a class="el" href="classlbann_1_1objective__functions_1_1mean__squared__error.html#a862570ae6234c97b3f3bea66b1929890">lbann::objective_functions::mean_squared_error</a>
 , <a class="el" href="classlbann_1_1objective__functions_1_1objective__fn.html#ae6bda5e522698f3c9f7e994465a5f181">lbann::objective_functions::objective_fn</a>
+, <a class="el" href="classlbann_1_1reconstruction__layer.html#a70059f3bbc6453bf37518e7081e18a57">lbann::reconstruction_layer&lt; T_layout &gt;</a>
 , <a class="el" href="classlbann_1_1softmax__layer.html#a9088a2e3b9bfc3e79d0f14518b176fac">lbann::softmax_layer&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1target__layer.html#a73e528855aae48f2346add3003b3c1a0">lbann::target_layer</a>
+, <a class="el" href="classlbann_1_1target__layer.html#a0de2e0aaa3763c82f67f24cc26e32711">lbann::target_layer</a>
 </li>
 <li>fp_time
 : <a class="el" href="classlbann_1_1Layer.html#a94ee7bf7544942bc8cf208b565349c66">lbann::Layer</a>
-</li>
-<li>fp_weights()
-: <a class="el" href="classlbann_1_1batch__normalization.html#a0f4d0e84b153d00449d21e5d84bbbc58">lbann::batch_normalization</a>
-, <a class="el" href="classlbann_1_1regularizer.html#ab36e9a970736527ae2e8e73b723a3de4">lbann::regularizer</a>
 </li>
 <li>free()
 : <a class="el" href="classlbann_1_1imagenet__reader.html#a4b8e1486b1217be72a99061ee8d41f32">lbann::imagenet_reader</a>
 , <a class="el" href="classlbann_1_1imagenet__reader__cv.html#ad2660529276f44817e4c8fa36ff37e44">lbann::imagenet_reader_cv</a>
 </li>
 <li>fully_connected_layer()
-: <a class="el" href="classlbann_1_1fully__connected__layer.html#a5fd9359c5ce94ec9c71e2f6d8ed9217f">lbann::fully_connected_layer&lt; T_layout &gt;</a>
+: <a class="el" href="classlbann_1_1fully__connected__layer.html#a2075b88f6db9252d517a77bc3a95c266">lbann::fully_connected_layer&lt; T_layout &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->
@@ -245,7 +224,7 @@ $(document).ready(function(){initNavTree('functions_f.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 12 2017 19:49:41 for LBANN by
+    <li class="footer">Generated on Wed Jun 21 2017 00:32:44 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

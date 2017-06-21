@@ -41,6 +41,7 @@ var classlbann_1_1model =
     [ "get_current_phase", "classlbann_1_1model.html#aaac76906df59991f6adcf354b4b1b570", null ],
     [ "get_execution_mode", "classlbann_1_1model.html#a66c5ac5cb51cdc7dea79a475147bcd5b", null ],
     [ "get_layers", "classlbann_1_1model.html#ab6f53860dab77f0ce1d941d07360ef5a", null ],
+    [ "get_layers", "classlbann_1_1model.html#a31775d7f418cbc9e1cdc44c96c1f9fa8", null ],
     [ "get_terminate_training", "classlbann_1_1model.html#a881a892be143090ad80f6d839fcf457b", null ],
     [ "load_from_checkpoint_shared", "classlbann_1_1model.html#a2e02dda11636e015ea0c892ffa541881", null ],
     [ "need_checkpoint", "classlbann_1_1model.html#a94fccb9e764f50f437689ef6292e7ff1", null ],

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-79-g3f8fc3c-ci242150286</span>
+   &#160;<span id="projectnumber">v0.93-ci245156193</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -91,8 +91,8 @@ $(document).ready(function(){initNavTree('functions_~.html','');});
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a class="anchor" id="index_~"></a>- ~ -</h3><ul>
-<li>~Activation()
-: <a class="el" href="classlbann_1_1Activation.html#a93e6f5324a75e0755dd543b88cb54e04">lbann::Activation</a>
+<li>~activation_layer()
+: <a class="el" href="classlbann_1_1activation__layer.html#a9708068da6ed9d54fe872c26ff315b78">lbann::activation_layer</a>
 </li>
 <li>~adagrad()
 : <a class="el" href="classlbann_1_1adagrad.html#ab07bd55d159448c0d546735ed54e0e72">lbann::adagrad</a>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('functions_~.html','');});
 : <a class="el" href="classlbann_1_1base__factory.html#a183127f3eb9a8f2dbf81970cd301fd4a">lbann::base_factory&lt; Method &gt;</a>
 </li>
 <li>~batch_normalization()
-: <a class="el" href="classlbann_1_1batch__normalization.html#a27476b2494a861e413ecbb7febfc0098">lbann::batch_normalization</a>
+: <a class="el" href="classlbann_1_1batch__normalization.html#a8ce6201cc142c5ca598f230132c5270b">lbann::batch_normalization&lt; T_layout &gt;</a>
 </li>
 <li>~categorical_accuracy()
 : <a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ae49f33ab5a68ffccb390f0eb089fc69e">lbann::metrics::categorical_accuracy</a>
@@ -124,8 +124,8 @@ $(document).ready(function(){initNavTree('functions_~.html','');});
 <li>~cnpy_reader()
 : <a class="el" href="classlbann_1_1cnpy__reader.html#aa5d00e7a3a1c5a6d7804d44b1509dc03">lbann::cnpy_reader</a>
 </li>
-<li>~convolutional_layer()
-: <a class="el" href="classlbann_1_1convolutional__layer.html#a959dea8fb629380af9e90d15306445cf">lbann::convolutional_layer&lt; T_layout &gt;</a>
+<li>~convolution_layer()
+: <a class="el" href="classlbann_1_1convolution__layer.html#a355bacf090143655c3f8715695de76b7">lbann::convolution_layer&lt; T_layout &gt;</a>
 </li>
 <li>~data_reader_nci()
 : <a class="el" href="classlbann_1_1data__reader__nci.html#af4cd1fd4ad0e9f6f07c8a4158f1bb4ca">lbann::data_reader_nci</a>
@@ -143,7 +143,10 @@ $(document).ready(function(){initNavTree('functions_~.html','');});
 : <a class="el" href="classlbann_1_1distributed__minibatch__parallel__io.html#ae2b06292c03eaefd02f51c46b48f07c3">lbann::distributed_minibatch_parallel_io</a>
 </li>
 <li>~dropout()
-: <a class="el" href="classlbann_1_1dropout.html#abcec1bc033a38501bb60797ac1b97dbf">lbann::dropout</a>
+: <a class="el" href="classlbann_1_1dropout.html#a954d77f2ddbbd708f3606c15c5e1eee7">lbann::dropout&lt; T_layout &gt;</a>
+</li>
+<li>~entrywise_activation_layer()
+: <a class="el" href="classlbann_1_1entrywise__activation__layer.html#afae6dc7a893e2d1ed2d4745861747873">lbann::entrywise_activation_layer</a>
 </li>
 <li>~fully_connected_layer()
 : <a class="el" href="classlbann_1_1fully__connected__layer.html#a689d468852f4592ecb52aaa76caaf774">lbann::fully_connected_layer&lt; T_layout &gt;</a>
@@ -172,9 +175,6 @@ $(document).ready(function(){initNavTree('functions_~.html','');});
 <li>~imagenet_readerSingle_cv()
 : <a class="el" href="classlbann_1_1imagenet__readerSingle__cv.html#aec8e58646234af9fdd5ece0c8ce9f7cf">lbann::imagenet_readerSingle_cv</a>
 </li>
-<li>~l2_regularization()
-: <a class="el" href="classlbann_1_1l2__regularization.html#afb4e53382c8bdc219c4a586494245543">lbann::l2_regularization</a>
-</li>
 <li>~Layer()
 : <a class="el" href="classlbann_1_1Layer.html#a6b5e5217e413831ce9a5d0de9a84c676">lbann::Layer</a>
 </li>
@@ -196,8 +196,11 @@ $(document).ready(function(){initNavTree('functions_~.html','');});
 <li>~lbann_quantizer()
 : <a class="el" href="classlbann_1_1lbann__quantizer.html#ac0cc07008ff963949c2cb7b91786c61c">lbann::lbann_quantizer</a>
 </li>
+<li>~learning()
+: <a class="el" href="classlbann_1_1learning.html#a008982736273f0c60a49ea52bdfd6cc0">lbann::learning</a>
+</li>
 <li>~local_response_normalization_layer()
-: <a class="el" href="classlbann_1_1local__response__normalization__layer.html#a3670dccc07ecf0aba7baab6b2baf9e1e">lbann::local_response_normalization_layer</a>
+: <a class="el" href="classlbann_1_1local__response__normalization__layer.html#a54265891c1eedd2b1732583f76eeb552">lbann::local_response_normalization_layer&lt; T_layout &gt;</a>
 </li>
 <li>~mean_squared_error()
 : <a class="el" href="classlbann_1_1metrics_1_1mean__squared__error.html#ac83d4649d2816d02f94d90924cfa06fa">lbann::metrics::mean_squared_error</a>
@@ -230,8 +233,11 @@ $(document).ready(function(){initNavTree('functions_~.html','');});
 <li>~pooling_layer()
 : <a class="el" href="classlbann_1_1pooling__layer.html#a253572045352b6cb662c4660fac12742">lbann::pooling_layer&lt; T_layout &gt;</a>
 </li>
-<li>~regularizer()
-: <a class="el" href="classlbann_1_1regularizer.html#aa3a41a0805c11e26758cbbd9f66d662e">lbann::regularizer</a>
+<li>~regularizer_layer()
+: <a class="el" href="classlbann_1_1regularizer__layer.html#a6f6736f0a780f8a485e8f204b15dcda4">lbann::regularizer_layer</a>
+</li>
+<li>~relu_layer()
+: <a class="el" href="classlbann_1_1relu__layer.html#a21e89a3816ace80efd03285bd652f1b0">lbann::relu_layer&lt; T_layout &gt;</a>
 </li>
 <li>~rmsprop()
 : <a class="el" href="classlbann_1_1rmsprop.html#a1ad75c751b92efe0e3e00072baa233ad">lbann::rmsprop</a>
@@ -258,13 +264,16 @@ $(document).ready(function(){initNavTree('functions_~.html','');});
 : <a class="el" href="classlbann_1_1metrics_1_1statistics.html#a686c92cfc8b3e52972a65143619f0bfd">lbann::metrics::statistics</a>
 , <a class="el" href="classlbann_1_1objective__functions_1_1statistics.html#ac663664827ecd9e9fc700c5bed2feea4">lbann::objective_functions::statistics</a>
 </li>
+<li>~transform()
+: <a class="el" href="classlbann_1_1transform.html#a80eb34ed68987c15ede4231deea6cd7e">lbann::transform</a>
+</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Jun 12 2017 19:49:41 for LBANN by
+    <li class="footer">Generated on Wed Jun 21 2017 00:32:44 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
