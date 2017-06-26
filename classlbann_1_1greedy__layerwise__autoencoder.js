@@ -1,6 +1,6 @@
 var classlbann_1_1greedy__layerwise__autoencoder =
 [
-    [ "greedy_layerwise_autoencoder", "classlbann_1_1greedy__layerwise__autoencoder.html#ae0fceac4061eea17753eedd397f4988f", null ],
+    [ "greedy_layerwise_autoencoder", "classlbann_1_1greedy__layerwise__autoencoder.html#a031129bc2c615a765b870dc652d5d5e0", null ],
     [ "~greedy_layerwise_autoencoder", "classlbann_1_1greedy__layerwise__autoencoder.html#a6adbff4f4d116927a4b6613fcac66d41", null ],
     [ "evaluate", "classlbann_1_1greedy__layerwise__autoencoder.html#a32e9d83f1a9353dda974ce61823b65bb", null ],
     [ "evaluate_mini_batch", "classlbann_1_1greedy__layerwise__autoencoder.html#a74f80fe1f5473ea853bf55dfebd12416", null ],

@@ -1,6 +1,6 @@
 var classlbann_1_1target__layer__distributed__minibatch__parallel__io =
 [
-    [ "target_layer_distributed_minibatch_parallel_io", "classlbann_1_1target__layer__distributed__minibatch__parallel__io.html#a2e5c36ed47317670ce5ad3ad03fa9e1f", null ],
+    [ "target_layer_distributed_minibatch_parallel_io", "classlbann_1_1target__layer__distributed__minibatch__parallel__io.html#a83533e7cfe822c9c16c507f6551e74c4", null ],
     [ "bp_compute", "classlbann_1_1target__layer__distributed__minibatch__parallel__io.html#acfa2045477ceaf72fa3426e4d0698e8d", null ],
     [ "fetch_from_data_reader", "classlbann_1_1target__layer__distributed__minibatch__parallel__io.html#abe45ed4fd9daeaf304fe3865c7b51a66", null ],
     [ "fp_compute", "classlbann_1_1target__layer__distributed__minibatch__parallel__io.html#a5b45c427154e90edabace4f98402374d", null ],

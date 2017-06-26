@@ -1,6 +1,6 @@
 var classlbann_1_1fully__connected__layer =
 [
-    [ "fully_connected_layer", "classlbann_1_1fully__connected__layer.html#a2075b88f6db9252d517a77bc3a95c266", null ],
+    [ "fully_connected_layer", "classlbann_1_1fully__connected__layer.html#a19073fa42c3d3f7e4657325b2c33bdf9", null ],
     [ "~fully_connected_layer", "classlbann_1_1fully__connected__layer.html#a689d468852f4592ecb52aaa76caaf774", null ],
     [ "_sq", "classlbann_1_1fully__connected__layer.html#a2e2a93343953b8b2025a6e0b6db78b0f", null ],
     [ "_sqrt", "classlbann_1_1fully__connected__layer.html#a41f30bfc0a998ad22ea764d66e3625a0", null ],

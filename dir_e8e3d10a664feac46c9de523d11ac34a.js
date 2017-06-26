@@ -7,6 +7,5 @@ var dir_e8e3d10a664feac46c9de523d11ac34a =
     ] ],
     [ "lbann_model_sequential.cpp", "lbann__model__sequential_8cpp.html", [
       [ "lbann_model_sequential_header", "structlbann__model__sequential__header.html", "structlbann__model__sequential__header" ]
-    ] ],
-    [ "lbann_model_stacked_autoencoder.cpp", "lbann__model__stacked__autoencoder_8cpp.html", null ]
+    ] ]
 ];

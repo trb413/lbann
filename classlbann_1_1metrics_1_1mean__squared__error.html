@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-ci245156193</span>
+   &#160;<span id="projectnumber">v0.93-rc0-91-gf4b1db2-ci247266028</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -123,8 +123,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac83d4649d2816d02f94d90924cfa06fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c5f6bbad8d24092eeeccb2c9e669e5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1mean__squared__error.html#a9c5f6bbad8d24092eeeccb2c9e669e5d">setup</a> (int num_neurons, int mini_batch_size)</td></tr>
 <tr class="separator:a9c5f6bbad8d24092eeeccb2c9e669e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c42a4f81e75949dad72813acbc4a86d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1mean__squared__error.html#a0c42a4f81e75949dad72813acbc4a86d">fp_set_std_matrix_view</a> (int64_t cur_mini_batch_size)</td></tr>
-<tr class="separator:a0c42a4f81e75949dad72813acbc4a86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c38de9ba33e21a6731f23267a8bcc50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1mean__squared__error.html#a1c38de9ba33e21a6731f23267a8bcc50">fp_set_std_matrix_view</a> (int cur_mini_batch_size)</td></tr>
+<tr class="separator:a1c38de9ba33e21a6731f23267a8bcc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa59b94dac61ae853bf09929d0153c68"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1mean__squared__error.html#afa59b94dac61ae853bf09929d0153c68">compute_metric</a> (<a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;predictions_v, <a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;groundtruth_v)</td></tr>
 <tr class="separator:afa59b94dac61ae853bf09929d0153c68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5933462864483cd96415baafa595c4e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1mean__squared__error.html#af5933462864483cd96415baafa595c4e">report_metric</a> (<a class="el" href="lbann__base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a> mode)</td></tr>
@@ -277,7 +277,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a0c42a4f81e75949dad72813acbc4a86d"></a>
+<a class="anchor" id="a1c38de9ba33e21a6731f23267a8bcc50"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -287,7 +287,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void lbann::metrics::mean_squared_error::fp_set_std_matrix_view </td>
           <td>(</td>
-          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>cur_mini_batch_size</em></td><td>)</td>
           <td></td>
         </tr>
@@ -299,14 +299,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classlbann_1_1metrics_1_1metric.html#a073c6c2c2861c1bd53d2a0d32e3251fe">lbann::metrics::metric</a>.</p>
+<p>Reimplemented from <a class="el" href="classlbann_1_1metrics_1_1metric.html#af5ba86dc073e7e41863c9a6b03274613">lbann::metrics::metric</a>.</p>
 
 <p>Definition at line <a class="el" href="lbann__metric__mean__squared__error_8cpp_source.html#l00047">47</a> of file <a class="el" href="lbann__metric__mean__squared__error_8cpp_source.html">lbann_metric_mean_squared_error.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                                                       {</div>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                                                   {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="comment">// Set the view based on the size of the current mini-batch</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="classlbann_1_1metrics_1_1mean__squared__error.html#a281a1f5f15d6acd1973beaf17fb129f1">internal_obj_fn</a>.<a class="code" href="classlbann_1_1objective__functions_1_1mean__squared__error.html#a862570ae6234c97b3f3bea66b1929890">fp_set_std_matrix_view</a>(cur_mini_batch_size);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="classlbann_1_1metrics_1_1mean__squared__error.html#a281a1f5f15d6acd1973beaf17fb129f1">internal_obj_fn</a>.<a class="code" href="classlbann_1_1objective__functions_1_1mean__squared__error.html#a394d23dbb9f1a84a9313c317de31244a">fp_set_std_matrix_view</a>(cur_mini_batch_size);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1mean__squared__error_html_a862570ae6234c97b3f3bea66b1929890"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1mean__squared__error.html#a862570ae6234c97b3f3bea66b1929890">lbann::objective_functions::mean_squared_error::fp_set_std_matrix_view</a></div><div class="ttdeci">void fp_set_std_matrix_view(int64_t cur_mini_batch_size)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn__mean__squared__error_8cpp_source.html#l00047">lbann_objective_fn_mean_squared_error.cpp:47</a></div></div>
+<div class="ttc" id="classlbann_1_1objective__functions_1_1mean__squared__error_html_a394d23dbb9f1a84a9313c317de31244a"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1mean__squared__error.html#a394d23dbb9f1a84a9313c317de31244a">lbann::objective_functions::mean_squared_error::fp_set_std_matrix_view</a></div><div class="ttdeci">void fp_set_std_matrix_view(int cur_mini_batch_size)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__objective__fn__mean__squared__error_8cpp_source.html#l00047">lbann_objective_fn_mean_squared_error.cpp:47</a></div></div>
 <div class="ttc" id="classlbann_1_1metrics_1_1mean__squared__error_html_a281a1f5f15d6acd1973beaf17fb129f1"><div class="ttname"><a href="classlbann_1_1metrics_1_1mean__squared__error.html#a281a1f5f15d6acd1973beaf17fb129f1">lbann::metrics::mean_squared_error::internal_obj_fn</a></div><div class="ttdeci">lbann::objective_functions::mean_squared_error internal_obj_fn</div><div class="ttdef"><b>Definition:</b> <a href="lbann__metric__mean__squared__error_8hpp_source.html#l00051">lbann_metric_mean_squared_error.hpp:51</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -477,7 +477,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="namespacelbann_1_1metrics.html">metrics</a></li><li class="navelem"><a class="el" href="classlbann_1_1metrics_1_1mean__squared__error.html">mean_squared_error</a></li>
-    <li class="footer">Generated on Wed Jun 21 2017 00:32:43 for LBANN by
+    <li class="footer">Generated on Mon Jun 26 2017 22:26:04 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

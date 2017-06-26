@@ -11,8 +11,5 @@ var dir_344799d9324fc636ddbbacc95bee068e =
     ] ],
     [ "lbann_model_sequential.hpp", "lbann__model__sequential_8hpp.html", [
       [ "sequential_model", "classlbann_1_1sequential__model.html", "classlbann_1_1sequential__model" ]
-    ] ],
-    [ "lbann_model_stacked_autoencoder.hpp", "lbann__model__stacked__autoencoder_8hpp.html", [
-      [ "stacked_autoencoder", "classlbann_1_1stacked__autoencoder.html", "classlbann_1_1stacked__autoencoder" ]
     ] ]
 ];

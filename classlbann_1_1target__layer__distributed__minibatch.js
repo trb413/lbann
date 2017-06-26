@@ -1,6 +1,6 @@
 var classlbann_1_1target__layer__distributed__minibatch =
 [
-    [ "target_layer_distributed_minibatch", "classlbann_1_1target__layer__distributed__minibatch.html#a15d7f23b2ec513da00b6f478d3001580", null ],
+    [ "target_layer_distributed_minibatch", "classlbann_1_1target__layer__distributed__minibatch.html#aad20649bcec5937a386390fed1d7bd51", null ],
     [ "bp_compute", "classlbann_1_1target__layer__distributed__minibatch.html#a704693b1c76dd7405497d3face8db2be", null ],
     [ "fp_compute", "classlbann_1_1target__layer__distributed__minibatch.html#a6932c43b5996b9f90e4ebbc08b0ed316", null ],
     [ "get_data_layout", "classlbann_1_1target__layer__distributed__minibatch.html#afede54e2676a4a27e83596192530c49c", null ],

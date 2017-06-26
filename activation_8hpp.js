@@ -10,6 +10,8 @@ var activation_8hpp =
       [ "LEAKY_RELU", "activation_8hpp.html#ab00e153fabca7ab166e4d79d47c05c76ac7e80a3de04936f4e423e1b564fdca10", null ],
       [ "SOFTPLUS", "activation_8hpp.html#ab00e153fabca7ab166e4d79d47c05c76a350cd38d0a0443f60c8fffa3fba3a45d", null ],
       [ "SMOOTH_RELU", "activation_8hpp.html#ab00e153fabca7ab166e4d79d47c05c76a03fd8eb91a5c2091541dd9815a011f63", null ],
-      [ "ELU", "activation_8hpp.html#ab00e153fabca7ab166e4d79d47c05c76a5b44c930bf0ddeef48b50ef11e5ddd58", null ]
+      [ "ELU", "activation_8hpp.html#ab00e153fabca7ab166e4d79d47c05c76a5b44c930bf0ddeef48b50ef11e5ddd58", null ],
+      [ "SOFTMAX", "activation_8hpp.html#ab00e153fabca7ab166e4d79d47c05c76a1d993169621e0855bad00d71c005cf1b", null ],
+      [ "SELU", "activation_8hpp.html#ab00e153fabca7ab166e4d79d47c05c76ada342915af4bafd4601f086d38b94cac", null ]
     ] ]
 ];

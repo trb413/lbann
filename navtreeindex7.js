@@ -1,10 +1,12 @@
 var NAVTREEINDEX7 =
 {
-"classlbann_1_1target__layer__partitioned__minibatch__parallel__io.html#afae34ecbba5a5cb1d19039ec1c909075":[3,0,3,58,4],
-"classlbann_1_1transform.html":[3,0,3,69],
-"classlbann_1_1transform.html#a80eb34ed68987c15ede4231deea6cd7e":[3,0,3,69,1],
-"classlbann_1_1transform.html#ad6da6937776fadf352c5edca1ea43d74":[3,0,3,69,0],
-"classlbann_1_1transform.html#af64bdb8384c33357cd0209f6d46e5afc":[3,0,3,69,2],
+"classlbann_1_1target__layer__partitioned__minibatch__parallel__io.html#ad1dc9e8f05ca07f6e35e25d7f59cd316":[3,0,3,59,6],
+"classlbann_1_1target__layer__partitioned__minibatch__parallel__io.html#af34056963311f7d3ba1e5c913b93b189":[3,0,3,59,3],
+"classlbann_1_1target__layer__partitioned__minibatch__parallel__io.html#afae34ecbba5a5cb1d19039ec1c909075":[3,0,3,59,4],
+"classlbann_1_1transform.html":[3,0,3,71],
+"classlbann_1_1transform.html#a80eb34ed68987c15ede4231deea6cd7e":[3,0,3,71,1],
+"classlbann_1_1transform.html#a9652291c702a35557d76f9464087d8bd":[3,0,3,71,0],
+"classlbann_1_1transform.html#af64bdb8384c33357cd0209f6d46e5afc":[3,0,3,71,2],
 "cmake.html":[0,3,4],
 "cmake.html#cmake_install_linux":[0,3,4,0],
 "cmake.html#cmake_install_osx":[0,3,4,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX7 =
 "functions_vars_l.html":[3,3,2,9],
 "functions_vars_m.html":[3,3,2,10],
 "functions_vars_n.html":[3,3,2,11],
-"functions_vars_o.html":[3,3,2,12],
-"functions_vars_p.html":[3,3,2,13],
-"functions_vars_q.html":[3,3,2,14]
+"functions_vars_o.html":[3,3,2,12]
 };

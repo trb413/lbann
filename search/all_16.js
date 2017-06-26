@@ -17,6 +17,5 @@ var searchData=
   ['write_5flatest',['write_latest',['../lbann__model_8cpp.html#afd4a8737c86299d582f89707eec8869a',1,'lbann_model.cpp']]],
   ['write_5fuint32',['write_uint32',['../classlbann_1_1persist.html#a742334568de0aca958dbaf7bbabd3cba',1,'lbann::persist::write_uint32()'],['../namespacelbann.html#a3a801c9f48655f81b886af4bff083f27',1,'lbann::write_uint32()']]],
   ['write_5fuint64',['write_uint64',['../classlbann_1_1persist.html#aced95e3bc711276b072af97b65ef9fc1',1,'lbann::persist::write_uint64()'],['../namespacelbann.html#a234f8c7b9bbc2d9310d3e40314eb497c',1,'lbann::write_uint64()']]],
-  ['writedist',['writeDist',['../namespacelbann.html#af640a9302803636e0b5deb110c1aee57',1,'lbann']]],
-  ['writeprototextfile',['writePrototextFile',['../lbann__proto__common_8cpp.html#a88ace24fdc2491da9c6fd95126799a80',1,'writePrototextFile(const char *fn, lbann_data::LbannPB &amp;pb):&#160;lbann_proto_common.cpp'],['../lbann__proto__common_8hpp.html#a41f19f7ed592fab1e876640a635ae52e',1,'writePrototextFile(string fn, lbann_data::LbannPB &amp;pb):&#160;lbann_proto_common.hpp']]]
+  ['writedist',['writeDist',['../namespacelbann.html#af640a9302803636e0b5deb110c1aee57',1,'lbann']]]
 ];

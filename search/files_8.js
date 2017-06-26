@@ -112,8 +112,6 @@ var searchData=
   ['lbann_5fmodel_5fgreedy_5flayerwise_5fautoencoder_2ehpp',['lbann_model_greedy_layerwise_autoencoder.hpp',['../lbann__model__greedy__layerwise__autoencoder_8hpp.html',1,'']]],
   ['lbann_5fmodel_5fsequential_2ecpp',['lbann_model_sequential.cpp',['../lbann__model__sequential_8cpp.html',1,'']]],
   ['lbann_5fmodel_5fsequential_2ehpp',['lbann_model_sequential.hpp',['../lbann__model__sequential_8hpp.html',1,'']]],
-  ['lbann_5fmodel_5fstacked_5fautoencoder_2ecpp',['lbann_model_stacked_autoencoder.cpp',['../lbann__model__stacked__autoencoder_8cpp.html',1,'']]],
-  ['lbann_5fmodel_5fstacked_5fautoencoder_2ehpp',['lbann_model_stacked_autoencoder.hpp',['../lbann__model__stacked__autoencoder_8hpp.html',1,'']]],
   ['lbann_5fobjective_5ffn_2ecpp',['lbann_objective_fn.cpp',['../lbann__objective__fn_8cpp.html',1,'']]],
   ['lbann_5fobjective_5ffn_2ehpp',['lbann_objective_fn.hpp',['../lbann__objective__fn_8hpp.html',1,'']]],
   ['lbann_5fobjective_5ffn_5fcategorical_5fcross_5fentropy_2ecpp',['lbann_objective_fn_categorical_cross_entropy.cpp',['../lbann__objective__fn__categorical__cross__entropy_8cpp.html',1,'']]],

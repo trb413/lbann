@@ -1,6 +1,6 @@
 var classlbann_1_1input__layer__partitioned__minibatch__parallel__io =
 [
-    [ "input_layer_partitioned_minibatch_parallel_io", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#a94e7b64c19cca9da8830a57184ca3e93", null ],
+    [ "input_layer_partitioned_minibatch_parallel_io", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#af942a5c95ba9443d7c60d90914224c75", null ],
     [ "fetch_from_data_reader", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#a0fab0f1587840e7451dc9c8156879336", null ],
     [ "fp_compute", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#af23c8235fd0b4fa84c294facebac14dd", null ],
     [ "get_data_layout", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html#ac898c0a1853fdec75937d8e81986b63a", null ],

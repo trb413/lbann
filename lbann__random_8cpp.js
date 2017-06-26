@@ -9,7 +9,7 @@ var lbann__random_8cpp =
     [ "get_generator", "lbann__random_8cpp.html#a4fea7ba21017b49d1e34394b4c20c764", null ],
     [ "init_data_seq_random", "lbann__random_8cpp.html#a8987701a637ff0e678114aa77e9c4d40", null ],
     [ "init_random", "lbann__random_8cpp.html#acef152f20e422b3aea1a3c1691a533ac", null ],
-    [ "initialize_matrix", "lbann__random_8cpp.html#afda802d107be9203db432ae5f6c276fd", null ],
+    [ "initialize_matrix", "lbann__random_8cpp.html#af014ac60b7c65609cc2347eb586bbee4", null ],
     [ "uniform_fill", "lbann__random_8cpp.html#acd76b03f2b7ee00ad7c8ba83a20d1866", null ],
     [ "uniform_fill_procdet", "lbann__random_8cpp.html#a5cd1cf097449bfd5bed0246819cddd13", null ],
     [ "data_seq_generator", "lbann__random_8cpp.html#a36d1b52a12cd2346076af0b35f49efed", null ],

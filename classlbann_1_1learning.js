@@ -1,6 +1,6 @@
 var classlbann_1_1learning =
 [
-    [ "learning", "classlbann_1_1learning.html#a43a459c19c11d4f8462bbd65c29dfe8d", null ],
+    [ "learning", "classlbann_1_1learning.html#ac9bd8e6fe30125b2fa511e11a0cb3478", null ],
     [ "~learning", "classlbann_1_1learning.html#a008982736273f0c60a49ea52bdfd6cc0", null ],
     [ "check_setup", "classlbann_1_1learning.html#a43412ff0de7514a8b29309e660777ef5", null ],
     [ "fp_set_std_matrix_view", "classlbann_1_1learning.html#aac81e61ae43904bec7dd62f50388bb14", null ],
@@ -17,7 +17,7 @@ var classlbann_1_1learning =
     [ "saveToFile", "classlbann_1_1learning.html#ad249dd5cddf5155ae12bd138b4bc0366", null ],
     [ "set_l2_regularization_factor", "classlbann_1_1learning.html#a9dce0c0e635228395de1e1864b297f5f", null ],
     [ "setup", "classlbann_1_1learning.html#a47f8df75ba6ff66c9758a37a2b4c9088", null ],
-    [ "summarize", "classlbann_1_1learning.html#a982782762131ac6c5c93560464734793", null ],
+    [ "summarize", "classlbann_1_1learning.html#ace2119c3a62668ba87cc97b86f600f4f", null ],
     [ "weight_initialization_name", "classlbann_1_1learning.html#a4f4110a232030c1e1382bfd68ebbe08b", null ],
     [ "m_l2_regularization_factor", "classlbann_1_1learning.html#a9d464e24476678f9b11b3d992c60ec30", null ],
     [ "m_optimizer", "classlbann_1_1learning.html#a82d93dc3b859e0558082bdd535b6ecde", null ],

@@ -54,14 +54,15 @@ var hierarchy =
       [ "lbann::activation_layer", "classlbann_1_1activation__layer.html", [
         [ "lbann::entrywise_activation_layer", "classlbann_1_1entrywise__activation__layer.html", [
           [ "lbann::elu_layer< T_layout >", "classlbann_1_1elu__layer.html", null ],
+          [ "lbann::id_layer< T_layout >", "classlbann_1_1id__layer.html", null ],
           [ "lbann::leaky_relu_layer< T_layout >", "classlbann_1_1leaky__relu__layer.html", null ],
           [ "lbann::relu_layer< T_layout >", "classlbann_1_1relu__layer.html", null ],
+          [ "lbann::selu_layer< T_layout >", "classlbann_1_1selu__layer.html", null ],
           [ "lbann::sigmoid_layer< T_layout >", "classlbann_1_1sigmoid__layer.html", null ],
           [ "lbann::smooth_relu_layer< T_layout >", "classlbann_1_1smooth__relu__layer.html", null ],
           [ "lbann::softplus_layer< T_layout >", "classlbann_1_1softplus__layer.html", null ],
           [ "lbann::tanh_layer< T_layout >", "classlbann_1_1tanh__layer.html", null ]
         ] ],
-        [ "lbann::id_layer< T_layout >", "classlbann_1_1id__layer.html", null ],
         [ "lbann::softmax_layer< T_layout >", "classlbann_1_1softmax__layer.html", null ]
       ] ],
       [ "lbann::io_layer", "classlbann_1_1io__layer.html", [
@@ -84,7 +85,8 @@ var hierarchy =
       [ "lbann::regularizer_layer", "classlbann_1_1regularizer__layer.html", [
         [ "lbann::batch_normalization< T_layout >", "classlbann_1_1batch__normalization.html", null ],
         [ "lbann::dropout< T_layout >", "classlbann_1_1dropout.html", null ],
-        [ "lbann::local_response_normalization_layer< T_layout >", "classlbann_1_1local__response__normalization__layer.html", null ]
+        [ "lbann::local_response_normalization_layer< T_layout >", "classlbann_1_1local__response__normalization__layer.html", null ],
+        [ "lbann::selu_dropout< T_layout >", "classlbann_1_1selu__dropout.html", null ]
       ] ],
       [ "lbann::transform", "classlbann_1_1transform.html", [
         [ "lbann::pooling_layer< T_layout >", "classlbann_1_1pooling__layer.html", null ]
@@ -143,8 +145,7 @@ var hierarchy =
     [ "lbann::model", "classlbann_1_1model.html", [
       [ "lbann::sequential_model", "classlbann_1_1sequential__model.html", [
         [ "lbann::deep_neural_network", "classlbann_1_1deep__neural__network.html", null ],
-        [ "lbann::greedy_layerwise_autoencoder", "classlbann_1_1greedy__layerwise__autoencoder.html", null ],
-        [ "lbann::stacked_autoencoder", "classlbann_1_1stacked__autoencoder.html", null ]
+        [ "lbann::greedy_layerwise_autoencoder", "classlbann_1_1greedy__layerwise__autoencoder.html", null ]
       ] ]
     ] ],
     [ "lbann::NetworkParams", "classlbann_1_1NetworkParams.html", null ],

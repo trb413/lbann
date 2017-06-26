@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-ci245156193</span>
+   &#160;<span id="projectnumber">v0.93-rc0-91-gf4b1db2-ci247266028</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -132,16 +132,16 @@ $(document).ready(function(){initNavTree('lbann__statistics_8cpp_source.html',''
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">// the loop.</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="comment">// Matrix dimensions</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">const</span> Int height = data.Height();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">const</span> Int width = data.Width();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">const</span> Int size = height * width;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">const</span> El::Int height = data.Height();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">const</span> El::Int width = data.Width();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">const</span> El::Int size = height * width;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="comment">// Compute sums over matrix entries</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> shift = data(0, 0);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> shifted_sum = 0;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> shifted_sqsum = 0;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordflow">for</span>(Int col = 0; col &lt; width; ++col) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">for</span>(Int row = 0; row &lt; height; ++row) {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordflow">for</span>(El::Int col = 0; col &lt; width; ++col) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">for</span>(El::Int row = 0; row &lt; height; ++row) {</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> shifted_val = data(row, col) - shift;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      shifted_sum += shifted_val;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      shifted_sqsum += shifted_val * shifted_val;</div>
@@ -163,8 +163,8 @@ $(document).ready(function(){initNavTree('lbann__statistics_8cpp_source.html',''
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                               <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; stdevs) {</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="comment">// Matrix dimensions</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">const</span> Int height = data.Height();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">const</span> Int width = data.Width();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">const</span> El::Int height = data.Height();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">const</span> El::Int width = data.Width();</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="comment">// Initialize outputs</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  means.Resize(1, width);</div>
@@ -172,11 +172,11 @@ $(document).ready(function(){initNavTree('lbann__statistics_8cpp_source.html',''
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="comment">// Compute mean and standard deviation of each matrix column</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">  #pragma omp parallel for</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span>(Int col = 0; col &lt; width; ++col) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span>(El::Int col = 0; col &lt; width; ++col) {</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> shift = data(0, col);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> shifted_sum = 0;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> shifted_sqsum = 0;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">for</span>(Int row = 0; row &lt; height; ++row) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">for</span>(El::Int row = 0; row &lt; height; ++row) {</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> shifted_val = data(row, col) - shift;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      shifted_sum += shifted_val;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      shifted_sqsum += shifted_val * shifted_val;</div>
@@ -208,10 +208,10 @@ $(document).ready(function(){initNavTree('lbann__statistics_8cpp_source.html',''
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif // #ifdef LBANN_DEBUG</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="comment">// Matrix dimensions</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keyword">const</span> Int height = data.Height();</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keyword">const</span> Int width = data.Width();</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keyword">const</span> Int local_height = data.LocalHeight();</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keyword">const</span> Int local_width = data.LocalWidth();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keyword">const</span> El::Int height = data.Height();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keyword">const</span> El::Int width = data.Width();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keyword">const</span> El::Int local_height = data.LocalHeight();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keyword">const</span> El::Int local_width = data.LocalWidth();</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="comment">// Initialize outputs</span></div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  means.Resize(1, width);</div>
@@ -224,10 +224,10 @@ $(document).ready(function(){initNavTree('lbann__statistics_8cpp_source.html',''
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="comment">// Compute sum and sum of squares of each matrix column</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">  #pragma omp parallel for</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span>(Int col = 0; col &lt; local_width; ++col) {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span>(El::Int col = 0; col &lt; local_width; ++col) {</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> sum = 0;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> sqsum = 0;</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">for</span>(Int row = 0; row &lt; local_height; ++row) {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">for</span>(El::Int row = 0; row &lt; local_height; ++row) {</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;      <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> val = local_data(row, col);</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;      sum += val;</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;      sqsum += val * val;</div>
@@ -242,7 +242,7 @@ $(document).ready(function(){initNavTree('lbann__statistics_8cpp_source.html',''
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="comment">// Compute mean and standard deviation of each matrix column</span></div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">  #pragma omp parallel for</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span>(Int col = 0; col &lt; local_width; ++col) {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span>(El::Int col = 0; col &lt; local_width; ++col) {</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> mean = local_means(0, col) / height;</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> sqmean = local_stdevs(0, col) / height;</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> var = Max(sqmean - mean * mean, <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0));</div>
@@ -258,34 +258,34 @@ $(document).ready(function(){initNavTree('lbann__statistics_8cpp_source.html',''
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                            <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; stdevs) {</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="comment">// Matrix dimensions</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keyword">const</span> Int height = data.Height();</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keyword">const</span> Int width = data.Width();</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keyword">const</span> El::Int height = data.Height();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keyword">const</span> El::Int width = data.Width();</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  <span class="comment">// Initialize outputs</span></div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  means.Resize(height, 1);</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  stdevs.Resize(height, 1);</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="comment">// Iterate through row blocks</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keyword">const</span> Int block_size = 16;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keyword">const</span> El::Int block_size = 16;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor">  #pragma omp parallel for</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span>(Int row_start = 0; row_start &lt; height; row_start += block_size) {</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keyword">const</span> Int row_end = Min(row_start + block_size, height);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span>(El::Int row_start = 0; row_start &lt; height; row_start += block_size) {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keyword">const</span> El::Int row_end = Min(row_start + block_size, height);</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="comment">// Initialize shift and sums for each row</span></div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> *shifts = <span class="keyword">new</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>[block_size];</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">for</span>(Int row = row_start; row &lt; row_end; ++row) {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">for</span>(El::Int row = row_start; row &lt; row_end; ++row) {</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      means(row, 0) = 0;</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      stdevs(row, 0) = 0;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      shifts[row-row_start] = data(row, 0);</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    }</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="comment">// Iterate through blocks in row block</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordflow">for</span>(Int col_start = 0; col_start &lt; width; col_start += block_size) {</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      <span class="keyword">const</span> Int col_end = Min(col_start + block_size, width);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordflow">for</span>(El::Int col_start = 0; col_start &lt; width; col_start += block_size) {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      <span class="keyword">const</span> El::Int col_end = Min(col_start + block_size, width);</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      <span class="comment">// Compute sums by iterating through block entries</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      <span class="keywordflow">for</span>(Int col = col_start; col &lt; col_end; ++col) {</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">for</span>(Int row = row_start; row &lt; row_end; ++row) {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      <span class="keywordflow">for</span>(El::Int col = col_start; col &lt; col_end; ++col) {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">for</span>(El::Int row = row_start; row &lt; row_end; ++row) {</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;          <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> shift = shifts[row - row_start];</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;          <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> shifted_val = data(row, col) - shift;</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;          means(row, 0) += shifted_val;</div>
@@ -296,7 +296,7 @@ $(document).ready(function(){initNavTree('lbann__statistics_8cpp_source.html',''
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    }</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="comment">// Compute mean and standard deviation of each row</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">for</span>(Int row = row_start; row &lt; row_end; ++row) {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">for</span>(El::Int row = row_start; row &lt; row_end; ++row) {</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> shifted_mean = means(row, 0) / width;</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;      <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> shifted_sqmean = stdevs(row, 0) / width;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> mean = shifted_mean + shifts[row - row_start];</div>
@@ -399,7 +399,7 @@ $(document).ready(function(){initNavTree('lbann__statistics_8cpp_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_e3a975d7a6e3e1ec3d3053fd7df1ad72.html">utils</a></li><li class="navelem"><a class="el" href="lbann__statistics_8cpp.html">lbann_statistics.cpp</a></li>
-    <li class="footer">Generated on Wed Jun 21 2017 00:32:41 for LBANN by
+    <li class="footer">Generated on Mon Jun 26 2017 22:26:02 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

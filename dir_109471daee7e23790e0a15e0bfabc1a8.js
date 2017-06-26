@@ -11,5 +11,8 @@ var dir_109471daee7e23790e0a15e0bfabc1a8 =
     ] ],
     [ "regularizer.hpp", "regularizer_8hpp.html", [
       [ "regularizer_layer", "classlbann_1_1regularizer__layer.html", "classlbann_1_1regularizer__layer" ]
+    ] ],
+    [ "selu_dropout.hpp", "selu__dropout_8hpp.html", [
+      [ "selu_dropout", "classlbann_1_1selu__dropout.html", "classlbann_1_1selu__dropout" ]
     ] ]
 ];

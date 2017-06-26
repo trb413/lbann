@@ -13,6 +13,9 @@ var dir_61cbfb8ae8686438cc792fc79dfea6c2 =
     [ "relu.hpp", "relu_8hpp.html", [
       [ "relu_layer", "classlbann_1_1relu__layer.html", "classlbann_1_1relu__layer" ]
     ] ],
+    [ "selu.hpp", "selu_8hpp.html", [
+      [ "selu_layer", "classlbann_1_1selu__layer.html", "classlbann_1_1selu__layer" ]
+    ] ],
     [ "sigmoid.hpp", "sigmoid_8hpp.html", [
       [ "sigmoid_layer", "classlbann_1_1sigmoid__layer.html", "classlbann_1_1sigmoid__layer" ]
     ] ],

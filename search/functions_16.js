@@ -20,7 +20,7 @@ var searchData=
   ['_7edropout',['~dropout',['../classlbann_1_1dropout.html#a954d77f2ddbbd708f3606c15c5e1eee7',1,'lbann::dropout']]],
   ['_7eentrywise_5factivation_5flayer',['~entrywise_activation_layer',['../classlbann_1_1entrywise__activation__layer.html#afae6dc7a893e2d1ed2d4745861747873',1,'lbann::entrywise_activation_layer']]],
   ['_7efully_5fconnected_5flayer',['~fully_connected_layer',['../classlbann_1_1fully__connected__layer.html#a689d468852f4592ecb52aaa76caaf774',1,'lbann::fully_connected_layer']]],
-  ['_7egeneric_5fdata_5freader',['~generic_data_reader',['../classlbann_1_1generic__data__reader.html#ad213a3d84ebcf8779a26e37bceb0b2a8',1,'lbann::generic_data_reader']]],
+  ['_7egeneric_5fdata_5freader',['~generic_data_reader',['../classlbann_1_1generic__data__reader.html#a6f6b141273d9636b211fba346f9db911',1,'lbann::generic_data_reader']]],
   ['_7egreedy_5flayerwise_5fautoencoder',['~greedy_layerwise_autoencoder',['../classlbann_1_1greedy__layerwise__autoencoder.html#a6adbff4f4d116927a4b6613fcac66d41',1,'lbann::greedy_layerwise_autoencoder']]],
   ['_7ehypergradient_5fadam',['~hypergradient_adam',['../classlbann_1_1hypergradient__adam.html#af88b1143c16ac3fb640844112d9a67ad',1,'lbann::hypergradient_adam']]],
   ['_7ehypergradient_5fadam_5ffactory',['~hypergradient_adam_factory',['../classlbann_1_1hypergradient__adam__factory.html#a467156177e6a88ca24112728a24f25a6',1,'lbann::hypergradient_adam_factory']]],
@@ -51,11 +51,11 @@ var searchData=
   ['_7erelu_5flayer',['~relu_layer',['../classlbann_1_1relu__layer.html#a21e89a3816ace80efd03285bd652f1b0',1,'lbann::relu_layer']]],
   ['_7ermsprop',['~rmsprop',['../classlbann_1_1rmsprop.html#a1ad75c751b92efe0e3e00072baa233ad',1,'lbann::rmsprop']]],
   ['_7ermsprop_5ffactory',['~rmsprop_factory',['../classlbann_1_1rmsprop__factory.html#a64d80f3ef799a4ba0c1acc7295bfbed0',1,'lbann::rmsprop_factory']]],
+  ['_7eselu_5fdropout',['~selu_dropout',['../classlbann_1_1selu__dropout.html#a9c97c032e573f7a907ca6b0025228567',1,'lbann::selu_dropout']]],
   ['_7esequential_5fmodel',['~sequential_model',['../classlbann_1_1sequential__model.html#a05ec812bf7db0dc1b29b61aeb197c587',1,'lbann::sequential_model']]],
   ['_7esgd',['~sgd',['../classlbann_1_1sgd.html#a4b83e3170b5a159325cfc7a299a1b96a',1,'lbann::sgd']]],
   ['_7esgd_5ffactory',['~sgd_factory',['../classlbann_1_1sgd__factory.html#a5a79275dcfb03e29d5080c0ff035e8f2',1,'lbann::sgd_factory']]],
   ['_7esoftmax_5flayer',['~softmax_layer',['../classlbann_1_1softmax__layer.html#a229622dead722e2e52a5c76875dbec3d',1,'lbann::softmax_layer']]],
-  ['_7estacked_5fautoencoder',['~stacked_autoencoder',['../classlbann_1_1stacked__autoencoder.html#a69a11143ad8fdb00004b38768b33add7',1,'lbann::stacked_autoencoder']]],
   ['_7estatistics',['~statistics',['../classlbann_1_1metrics_1_1statistics.html#a686c92cfc8b3e52972a65143619f0bfd',1,'lbann::metrics::statistics::~statistics()'],['../classlbann_1_1objective__functions_1_1statistics.html#ac663664827ecd9e9fc700c5bed2feea4',1,'lbann::objective_functions::statistics::~statistics()']]],
   ['_7etransform',['~transform',['../classlbann_1_1transform.html#a80eb34ed68987c15ede4231deea6cd7e',1,'lbann::transform']]]
 ];

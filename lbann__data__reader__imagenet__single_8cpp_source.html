@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-ci245156193</span>
+   &#160;<span id="projectnumber">v0.93-rc0-91-gf4b1db2-ci247266028</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -225,7 +225,7 @@ $(document).ready(function(){initNavTree('lbann__data__reader__imagenet__single_
 <div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classlbann_1_1imagenet__readerSingle.html#a0d3f11cc3b076666e13942ad2cc3da46">  133</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classlbann_1_1imagenet__readerSingle.html#a0d3f11cc3b076666e13942ad2cc3da46">lbann::imagenet_readerSingle::fetch_data</a>(<a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; X) {</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  stringstream err;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1generic__data__reader.html#a498ed4ce0304dcc983a8a6b47b3ab02e">generic_data_reader::position_valid</a>()) {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1generic__data__reader.html#ada0192f94415b67c1ef5843f5a2ba9b3">generic_data_reader::position_valid</a>()) {</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot; :: lbann::imagenet_reader::fetch_data() - !generic_data_reader::position_valid()&quot;</span>;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  }</div>
@@ -336,9 +336,9 @@ $(document).ready(function(){initNavTree('lbann__data__reader__imagenet__single_
 <div class="ttc" id="classlbann_1_1imagenet__readerSingle_html"><div class="ttname"><a href="classlbann_1_1imagenet__readerSingle.html">lbann::imagenet_readerSingle</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__single_8hpp_source.html#l00036">lbann_data_reader_imagenet_single.hpp:36</a></div></div>
 <div class="ttc" id="lbann__data__reader__imagenet__single_8hpp_html"><div class="ttname"><a href="lbann__data__reader__imagenet__single_8hpp.html">lbann_data_reader_imagenet_single.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1imagenet__reader_html_ad3d6a02a9869e86a8cedb84e414d1519"><div class="ttname"><a href="classlbann_1_1imagenet__reader.html#ad3d6a02a9869e86a8cedb84e414d1519">lbann::imagenet_reader::operator=</a></div><div class="ttdeci">imagenet_reader &amp; operator=(const imagenet_reader &amp;source)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet_8cpp_source.html#l00169">lbann_data_reader_imagenet.cpp:169</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_a498ed4ce0304dcc983a8a6b47b3ab02e"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#a498ed4ce0304dcc983a8a6b47b3ab02e">lbann::generic_data_reader::position_valid</a></div><div class="ttdeci">bool position_valid(void) const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00258">lbann_data_reader.hpp:258</a></div></div>
 <div class="ttc" id="classlbann_1_1imagenet__reader_html_a0c4957990e34a13dbb845e73ee996896"><div class="ttname"><a href="classlbann_1_1imagenet__reader.html#a0c4957990e34a13dbb845e73ee996896">lbann::imagenet_reader::m_image_width</a></div><div class="ttdeci">int m_image_width</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet_8hpp_source.html#l00079">lbann_data_reader_imagenet.hpp:79</a></div></div>
 <div class="ttc" id="classlbann_1_1imagenet__readerSingle_html_a028418333dc3df1b87c4acd99b7c2a66"><div class="ttname"><a href="classlbann_1_1imagenet__readerSingle.html#a028418333dc3df1b87c4acd99b7c2a66">lbann::imagenet_readerSingle::operator=</a></div><div class="ttdeci">imagenet_readerSingle &amp; operator=(const imagenet_readerSingle &amp;source)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__single_8cpp_source.html#l00196">lbann_data_reader_imagenet_single.cpp:196</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_ada0192f94415b67c1ef5843f5a2ba9b3"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#ada0192f94415b67c1ef5843f5a2ba9b3">lbann::generic_data_reader::position_valid</a></div><div class="ttdeci">bool position_valid() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00248">lbann_data_reader.hpp:248</a></div></div>
 <div class="ttc" id="classlbann_1_1imagenet__readerSingle_html_a0d3f11cc3b076666e13942ad2cc3da46"><div class="ttname"><a href="classlbann_1_1imagenet__readerSingle.html#a0d3f11cc3b076666e13942ad2cc3da46">lbann::imagenet_readerSingle::fetch_data</a></div><div class="ttdeci">int fetch_data(Mat &amp;X)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__single_8cpp_source.html#l00133">lbann_data_reader_imagenet_single.cpp:133</a></div></div>
 <div class="ttc" id="classlbann_1_1imagenet__readerSingle_html_ae0c6dc050a78a6891dfeffb5d2e5644b"><div class="ttname"><a href="classlbann_1_1imagenet__readerSingle.html#ae0c6dc050a78a6891dfeffb5d2e5644b">lbann::imagenet_readerSingle::~imagenet_readerSingle</a></div><div class="ttdeci">~imagenet_readerSingle(void)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__imagenet__single_8cpp_source.html#l00050">lbann_data_reader_imagenet_single.cpp:50</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -347,7 +347,7 @@ $(document).ready(function(){initNavTree('lbann__data__reader__imagenet__single_
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_4fd9b0f9a8d3454cc4920413ede2913f.html">data_readers</a></li><li class="navelem"><a class="el" href="lbann__data__reader__imagenet__single_8cpp.html">lbann_data_reader_imagenet_single.cpp</a></li>
-    <li class="footer">Generated on Wed Jun 21 2017 00:32:41 for LBANN by
+    <li class="footer">Generated on Mon Jun 26 2017 22:26:02 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

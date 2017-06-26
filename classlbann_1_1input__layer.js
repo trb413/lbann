@@ -1,6 +1,6 @@
 var classlbann_1_1input__layer =
 [
-    [ "input_layer", "classlbann_1_1input__layer.html#a4553e462cdc0894f8da1aa6b72198fab", null ],
+    [ "input_layer", "classlbann_1_1input__layer.html#a3faaed74d624850627cda5992908cc7d", null ],
     [ "bp_output", "classlbann_1_1input__layer.html#ae706b724681d1a27746abe8cb54a7b17", null ],
     [ "bp_set_std_matrix_view", "classlbann_1_1input__layer.html#a16d08fac94fb1b3189ce0efc6b2b1d0b", null ],
     [ "fp_set_std_matrix_view", "classlbann_1_1input__layer.html#a6dfd35515f45ec36d2dbdc00b696a8c3", null ],

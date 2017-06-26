@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-ci245156193</span>
+   &#160;<span id="projectnumber">v0.93-rc0-91-gf4b1db2-ci247266028</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -120,8 +120,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6c25231a65dec17fab0733971ed1c243"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5cc5924d03d9a20cfed4de7b1ff9a7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1objective__functions_1_1categorical__cross__entropy.html#ae5cc5924d03d9a20cfed4de7b1ff9a7d">setup</a> (int num_neurons, int mini_batch_size)</td></tr>
 <tr class="separator:ae5cc5924d03d9a20cfed4de7b1ff9a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0f8dbd4ae6310690cedb281b19eaa6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1objective__functions_1_1categorical__cross__entropy.html#aa0f8dbd4ae6310690cedb281b19eaa6f">fp_set_std_matrix_view</a> (int64_t cur_mini_batch_size)</td></tr>
-<tr class="separator:aa0f8dbd4ae6310690cedb281b19eaa6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97bd7cc4f25a14c459d43b17e1d09bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1objective__functions_1_1categorical__cross__entropy.html#ae97bd7cc4f25a14c459d43b17e1d09bc">fp_set_std_matrix_view</a> (int cur_mini_batch_size)</td></tr>
+<tr class="separator:ae97bd7cc4f25a14c459d43b17e1d09bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a273530da068197f10f6ac867d369f9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1objective__functions_1_1categorical__cross__entropy.html#a1a273530da068197f10f6ac867d369f9">compute_categorical_cross_entropy</a> (<a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;predictions_v, <a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;groundtruth_v)</td></tr>
 <tr class="separator:a1a273530da068197f10f6ac867d369f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dbf475778aeee15e92d1a89d0230dae"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1objective__functions_1_1categorical__cross__entropy.html#a2dbf475778aeee15e92d1a89d0230dae">compute_obj_fn</a> (<a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;predictions_v, <a class="el" href="lbann__base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;groundtruth_v)</td></tr>
@@ -235,12 +235,12 @@ Additional Inherited Members</h2></td></tr>
 <p>Compute the cross-entropy cost function - comparing the activations from the previous layer and the ground truth (activations of this layer) cost=-1/m*(sum(sum(groundTruth.*log(a)))) predictions_v - a.k.a. coding_dist - coding distribution (e.g. prev_activations) groundtruth_v - a.k.a. true_dist - true distribution (e.g. activations) </p>
 
 <p>Definition at line <a class="el" href="lbann__objective__fn__categorical__cross__entropy_8cpp_source.html#l00049">49</a> of file <a class="el" href="lbann__objective__fn__categorical__cross__entropy_8cpp_source.html">lbann_objective_fn_categorical_cross_entropy.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                          {</div>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                                                                                                      {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="comment">// Compute categorical cross entropy on current process</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">double</span> total_error = 0;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">for</span>(Int c = 0; c &lt; groundtruth_v.LocalWidth(); c++) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">for</span>(Int r = 0; r &lt; groundtruth_v.LocalHeight(); r++) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> c = 0; c &lt; groundtruth_v.LocalWidth(); c++) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> r = 0; r &lt; groundtruth_v.LocalHeight(); r++) {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> true_val = groundtruth_v.GetLocal(r,c);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordflow">if</span>(true_val != <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0)) {</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">double</span> pred_val = predictions_v.GetLocal(r,c);</div>
@@ -300,7 +300,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="lbann__objective__fn__categorical__cross__entropy_8cpp_source.html#l00075">75</a> of file <a class="el" href="lbann__objective__fn__categorical__cross__entropy_8cpp_source.html">lbann_objective_fn_categorical_cross_entropy.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                                                                                   {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  Int cur_mini_batch_size = groundtruth_v.Width();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">int</span> cur_mini_batch_size = groundtruth_v.Width();</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordtype">double</span> total_error = <a class="code" href="classlbann_1_1objective__functions_1_1categorical__cross__entropy.html#a1a273530da068197f10f6ac867d369f9">compute_categorical_cross_entropy</a>(predictions_v, groundtruth_v);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
@@ -372,7 +372,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="comment">// Note: error_signal = - groundtruth ./ predictions</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    IndexDependentFill(error_signal_v.Matrix(),</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                       (std::function&lt;DataType(Int,Int)&gt;)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                       (std::function&lt;DataType(El::Int,El::Int)&gt;)</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    ([&amp;predictions_v, &amp;groundtruth_v](Int r, Int c)-&gt;DataType {</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> true_val = groundtruth_v.GetLocal(r,c);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="keywordflow">if</span>(true_val != <a class="code" href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0))</div>
@@ -389,7 +389,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="aa0f8dbd4ae6310690cedb281b19eaa6f"></a>
+<a class="anchor" id="ae97bd7cc4f25a14c459d43b17e1d09bc"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -399,7 +399,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void lbann::objective_functions::categorical_cross_entropy::fp_set_std_matrix_view </td>
           <td>(</td>
-          <td class="paramtype">int64_t&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>cur_mini_batch_size</em></td><td>)</td>
           <td></td>
         </tr>
@@ -411,7 +411,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classlbann_1_1objective__functions_1_1objective__fn.html#ae6bda5e522698f3c9f7e994465a5f181">lbann::objective_functions::objective_fn</a>.</p>
+<p>Reimplemented from <a class="el" href="classlbann_1_1objective__functions_1_1objective__fn.html#a714dd4289604964aff62a9902fec951c">lbann::objective_functions::objective_fn</a>.</p>
 
 <p>Definition at line <a class="el" href="lbann__objective__fn__categorical__cross__entropy_8cpp_source.html#l00043">43</a> of file <a class="el" href="lbann__objective__fn__categorical__cross__entropy_8cpp_source.html">lbann_objective_fn_categorical_cross_entropy.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{}</div>
@@ -467,7 +467,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="namespacelbann_1_1objective__functions.html">objective_functions</a></li><li class="navelem"><a class="el" href="classlbann_1_1objective__functions_1_1categorical__cross__entropy.html">categorical_cross_entropy</a></li>
-    <li class="footer">Generated on Wed Jun 21 2017 00:32:43 for LBANN by
+    <li class="footer">Generated on Mon Jun 26 2017 22:26:04 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

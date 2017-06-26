@@ -31,7 +31,7 @@ var NAVTREE =
     [ "Files", null, [
       [ "File List", "files.html", "files" ],
       [ "File Members", "globals.html", [
-        [ "All", "globals.html", "globals_dup" ],
+        [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
@@ -46,17 +46,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "activation_8hpp.html",
-"classlbann_1_1cnpy__reader.html#a2f6c249ee07bc87c7a95970426ab1c61",
-"classlbann_1_1generic__data__reader.html#a95da13c5cda1ec5616e20f639badab23",
-"classlbann_1_1lbann__callback.html#a1fc71110e7f754bf73c9e0f344a448a5",
-"classlbann_1_1lbann__comm.html#a6314e3b07b21b8fb0cd2ebe1e49dddb9",
-"classlbann_1_1metrics_1_1categorical__accuracy.html#ab0f46ce61471c2301b3c80ef8bd64fd8",
-"classlbann_1_1persist.html#aa965a57769d140849ca61e0a159ca04f",
-"classlbann_1_1target__layer__partitioned__minibatch__parallel__io.html#afae34ecbba5a5cb1d19039ec1c909075",
-"functions_vars_r.html",
-"lbann__data__reader__imagenet_8hpp_source.html",
-"lbann__persist_8hpp.html#acd0595f8c31773a3a46f477a83e4c0f3",
-"struct__BOX3__UCHAR.html#aaa3ef23ef9e994288b07be14835e65bc"
+"classlbann_1_1cifar10__reader.html#aafc4c8b7520300773178d6afdf3eac25",
+"classlbann_1_1generic__data__reader.html#aa10a345ebd8be9c69499500d43ca329c",
+"classlbann_1_1lbann__callback.html#a1a14e9228f1606d3492b6011d56937f5",
+"classlbann_1_1lbann__comm.html#a61e8479f25d209be238f1b61115f7a0d",
+"classlbann_1_1metrics_1_1categorical__accuracy.html#ac56f380cbcfecc6596c65bb1284e571a",
+"classlbann_1_1persist.html#aa99b1b0079bb10471472bf6f1d966deb",
+"classlbann_1_1target__layer__partitioned__minibatch__parallel__io.html#ad1dc9e8f05ca07f6e35e25d7f59cd316",
+"functions_vars_p.html",
+"lbann__data__reader__nci_8cpp_source.html",
+"lbann__random_8cpp.html#a4fab058e5091cf12e918d879c340f125",
+"struct__FLOAT3.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -5,7 +5,7 @@ var classlbann_1_1objective__functions_1_1objective__fn =
     [ "~objective_fn", "classlbann_1_1objective__functions_1_1objective__fn.html#ab9a7ffcdede86db2d68eea3178af803a", null ],
     [ "compute_obj_fn", "classlbann_1_1objective__functions_1_1objective__fn.html#a031268be60cba917d94d876aaa36c7f7", null ],
     [ "compute_obj_fn_derivative", "classlbann_1_1objective__functions_1_1objective__fn.html#ab86c1d273d80104764fb5fb72f5d6875", null ],
-    [ "fp_set_std_matrix_view", "classlbann_1_1objective__functions_1_1objective__fn.html#ae6bda5e522698f3c9f7e994465a5f181", null ],
+    [ "fp_set_std_matrix_view", "classlbann_1_1objective__functions_1_1objective__fn.html#a714dd4289604964aff62a9902fec951c", null ],
     [ "get_statistics", "classlbann_1_1objective__functions_1_1objective__fn.html#a5692b2dbe1b5f95d9a51b9805f8eea08", null ],
     [ "name", "classlbann_1_1objective__functions_1_1objective__fn.html#a6716e3f67c539f6d3e6a7121fb0e610f", null ],
     [ "record_obj_fn", "classlbann_1_1objective__functions_1_1objective__fn.html#a4c3581c1a8dd01ad5a7e5be824584396", null ],

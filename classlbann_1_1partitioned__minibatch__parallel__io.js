@@ -1,6 +1,6 @@
 var classlbann_1_1partitioned__minibatch__parallel__io =
 [
-    [ "partitioned_minibatch_parallel_io", "classlbann_1_1partitioned__minibatch__parallel__io.html#a2c997d378c7cd9bd5d38da9e73f461da", null ],
+    [ "partitioned_minibatch_parallel_io", "classlbann_1_1partitioned__minibatch__parallel__io.html#ad73337c0ce2c7b00c52c2e6482ce392b", null ],
     [ "~partitioned_minibatch_parallel_io", "classlbann_1_1partitioned__minibatch__parallel__io.html#a35ae755550450e8d3115c00eba47ffd2", null ],
     [ "calculate_num_iterations_per_epoch", "classlbann_1_1partitioned__minibatch__parallel__io.html#a138ce5d3d35dbb07236fef78e26d5dfb", null ],
     [ "distribute_from_local_matrix", "classlbann_1_1partitioned__minibatch__parallel__io.html#a2e0cc109d99d9be6f615fd7b27d691ec", null ],
@@ -18,12 +18,12 @@ var classlbann_1_1partitioned__minibatch__parallel__io =
     [ "m_data_readers", "classlbann_1_1partitioned__minibatch__parallel__io.html#a0b26cc745ac37e1c3f23fe854ef09871", null ],
     [ "m_local_data_valid", "classlbann_1_1partitioned__minibatch__parallel__io.html#a76ee5dccb1f392731415e9c43ded0352", null ],
     [ "m_local_reader_done", "classlbann_1_1partitioned__minibatch__parallel__io.html#a08e53e9c8d5f0eee4b2d66addf5b7179", null ],
-    [ "m_max_mini_batch_size", "classlbann_1_1partitioned__minibatch__parallel__io.html#a9842e1da3765079986696009903f3a1a", null ],
-    [ "m_num_data_per_epoch", "classlbann_1_1partitioned__minibatch__parallel__io.html#aeeddcd7dc39405c3c8850c54f3ee8a1c", null ],
+    [ "m_max_mini_batch_size", "classlbann_1_1partitioned__minibatch__parallel__io.html#a02de08952403075771d4557f88160c1f", null ],
+    [ "m_num_data_per_epoch", "classlbann_1_1partitioned__minibatch__parallel__io.html#a68fbc4963572a72f5f0975d6594333e8", null ],
     [ "m_num_parallel_readers_testing", "classlbann_1_1partitioned__minibatch__parallel__io.html#a49f8e5938ee378a541d24bcfbbeb139f", null ],
     [ "m_num_parallel_readers_training", "classlbann_1_1partitioned__minibatch__parallel__io.html#ad95c9831abfbed8d9a464c0f2c1bfd1a", null ],
     [ "m_num_parallel_readers_validating", "classlbann_1_1partitioned__minibatch__parallel__io.html#a8ace11825375446a48d9f4570f0a04f3", null ],
-    [ "m_num_samples_in_batch", "classlbann_1_1partitioned__minibatch__parallel__io.html#a9006a75a250f543ab3f8aa1288eda196", null ],
+    [ "m_num_samples_in_batch", "classlbann_1_1partitioned__minibatch__parallel__io.html#ac003150541a1289966ca75f3ce7733b3", null ],
     [ "m_num_valid_readers", "classlbann_1_1partitioned__minibatch__parallel__io.html#aabc3bf239d6b2bcea39db34ff284b668", null ],
     [ "m_root", "classlbann_1_1partitioned__minibatch__parallel__io.html#a54206ae3957bec4bd6b3b8daffb8afa9", null ]
 ];

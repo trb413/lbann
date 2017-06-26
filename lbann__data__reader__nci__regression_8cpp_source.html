@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-ci245156193</span>
+   &#160;<span id="projectnumber">v0.93-rc0-91-gf4b1db2-ci247266028</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('lbann__data__reader__nci__regression_8
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classlbann_1_1data__reader__nci__regression.html#af30f0151957bcd17ff72e96581139eb1">   62</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classlbann_1_1data__reader__nci__regression.html#af30f0151957bcd17ff72e96581139eb1">lbann::data_reader_nci_regression::fetch_data</a>(<a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; X) {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1generic__data__reader.html#a498ed4ce0304dcc983a8a6b47b3ab02e">generic_data_reader::position_valid</a>()) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1generic__data__reader.html#ada0192f94415b67c1ef5843f5a2ba9b3">generic_data_reader::position_valid</a>()) {</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('lbann__data__reader__nci__regression_8
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
 <div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classlbann_1_1data__reader__nci__regression.html#a28b98ee7d8d0a05f851ad38091593ed6">  111</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classlbann_1_1data__reader__nci__regression.html#a28b98ee7d8d0a05f851ad38091593ed6">lbann::data_reader_nci_regression::fetch_response</a>(<a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; Y) {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1generic__data__reader.html#a498ed4ce0304dcc983a8a6b47b3ab02e">generic_data_reader::position_valid</a>()) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1generic__data__reader.html#ada0192f94415b67c1ef5843f5a2ba9b3">generic_data_reader::position_valid</a>()) {</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  }</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordtype">int</span> current_batch_size = getm_batch_size();</div>
@@ -325,16 +325,16 @@ $(document).ready(function(){initNavTree('lbann__data__reader__nci__regression_8
 <div class="ttc" id="lbann__base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="lbann__base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00037">lbann_base.hpp:37</a></div></div>
 <div class="ttc" id="classlbann_1_1data__reader__nci__regression_html_a273f9ae2bed8e754163a5ef595d325ba"><div class="ttname"><a href="classlbann_1_1data__reader__nci__regression.html#a273f9ae2bed8e754163a5ef595d325ba">lbann::data_reader_nci_regression::m_num_samples</a></div><div class="ttdeci">size_t m_num_samples</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__nci__regression_8hpp_source.html#l00042">lbann_data_reader_nci_regression.hpp:42</a></div></div>
 <div class="ttc" id="classlbann_1_1data__reader__nci__regression_html_a1720aa708fcb1cb4fec75ea73f8b84fb"><div class="ttname"><a href="classlbann_1_1data__reader__nci__regression.html#a1720aa708fcb1cb4fec75ea73f8b84fb">lbann::data_reader_nci_regression::m_index_map</a></div><div class="ttdeci">std::vector&lt; std::streampos &gt; m_index_map</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__nci__regression_8hpp_source.html#l00045">lbann_data_reader_nci_regression.hpp:45</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_a498ed4ce0304dcc983a8a6b47b3ab02e"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#a498ed4ce0304dcc983a8a6b47b3ab02e">lbann::generic_data_reader::position_valid</a></div><div class="ttdeci">bool position_valid(void) const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00258">lbann_data_reader.hpp:258</a></div></div>
 <div class="ttc" id="classlbann_1_1data__reader__nci__regression_html"><div class="ttname"><a href="classlbann_1_1data__reader__nci__regression.html">lbann::data_reader_nci_regression</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__nci__regression_8hpp_source.html#l00038">lbann_data_reader_nci_regression.hpp:38</a></div></div>
 <div class="ttc" id="classlbann_1_1data__reader__nci__regression_html_a62fb90bf0a05b0963762abe3b081c28a"><div class="ttname"><a href="classlbann_1_1data__reader__nci__regression.html#a62fb90bf0a05b0963762abe3b081c28a">lbann::data_reader_nci_regression::data_reader_nci_regression</a></div><div class="ttdeci">data_reader_nci_regression(int batchSize, bool shuffle=true)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__nci__regression_8cpp_source.html#l00038">lbann_data_reader_nci_regression.cpp:38</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_ada0192f94415b67c1ef5843f5a2ba9b3"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#ada0192f94415b67c1ef5843f5a2ba9b3">lbann::generic_data_reader::position_valid</a></div><div class="ttdeci">bool position_valid() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00248">lbann_data_reader.hpp:248</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_4fd9b0f9a8d3454cc4920413ede2913f.html">data_readers</a></li><li class="navelem"><a class="el" href="lbann__data__reader__nci__regression_8cpp.html">lbann_data_reader_nci_regression.cpp</a></li>
-    <li class="footer">Generated on Wed Jun 21 2017 00:32:41 for LBANN by
+    <li class="footer">Generated on Mon Jun 26 2017 22:26:02 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,6 +1,6 @@
 var classlbann_1_1entrywise__activation__layer =
 [
-    [ "entrywise_activation_layer", "classlbann_1_1entrywise__activation__layer.html#aad08ae1c893febcdf491c1f5997661f0", null ],
+    [ "entrywise_activation_layer", "classlbann_1_1entrywise__activation__layer.html#abda649a1d5fe3b7459d3c50c773bb2be", null ],
     [ "~entrywise_activation_layer", "classlbann_1_1entrywise__activation__layer.html#afae6dc7a893e2d1ed2d4745861747873", null ],
     [ "activation_function", "classlbann_1_1entrywise__activation__layer.html#a1b77b8b459417f7f62b92fb71545beeb", null ],
     [ "activation_function_gradient", "classlbann_1_1entrywise__activation__layer.html#a087797bb675808db710496201ca14e28", null ],

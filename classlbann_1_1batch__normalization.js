@@ -1,6 +1,6 @@
 var classlbann_1_1batch__normalization =
 [
-    [ "batch_normalization", "classlbann_1_1batch__normalization.html#a5499c501d7b30edf4f96a50aec0901ac", null ],
+    [ "batch_normalization", "classlbann_1_1batch__normalization.html#adda0b7bbb2b3553d26ec05ff54ffeff6", null ],
     [ "~batch_normalization", "classlbann_1_1batch__normalization.html#a8ce6201cc142c5ca598f230132c5270b", null ],
     [ "bp_compute", "classlbann_1_1batch__normalization.html#a121ba408814e3c2537b2cf015a35ea4a", null ],
     [ "fp_compute", "classlbann_1_1batch__normalization.html#af900dea1f07987cd56471a441c5f2f71", null ],
