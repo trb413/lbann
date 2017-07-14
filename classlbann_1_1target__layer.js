@@ -3,7 +3,6 @@ var classlbann_1_1target__layer =
     [ "target_layer", "classlbann_1_1target__layer.html#ae215b1be1b148a88950b4b7c513a8717", null ],
     [ "epoch_print", "classlbann_1_1target__layer.html#ab36a7f84eb5a59b3723399ffe92a446c", null ],
     [ "epoch_reset", "classlbann_1_1target__layer.html#af1edacbfc44d1a9df1df3b26fe2ea22b", null ],
-    [ "fp_output", "classlbann_1_1target__layer.html#aff9a9803ce8067e87dcf3592431aa85b", null ],
     [ "fp_set_std_matrix_view", "classlbann_1_1target__layer.html#a0de2e0aaa3763c82f67f24cc26e32711", null ],
     [ "initialize_distributed_matrices", "classlbann_1_1target__layer.html#a76f992a6283741faa2db0e8db5b517f3", null ],
     [ "loadFromCheckpoint", "classlbann_1_1target__layer.html#a141ad37ff20ce7d40057a9ff75f42707", null ],
@@ -13,7 +12,8 @@ var classlbann_1_1target__layer =
     [ "saveToCheckpointShared", "classlbann_1_1target__layer.html#a18a25cbfe594cc6ee0c4e433435852d7", null ],
     [ "set_testing_data_reader", "classlbann_1_1target__layer.html#a48e185324f2cd2d96faa2a69408a3bfa", null ],
     [ "set_training_data_reader", "classlbann_1_1target__layer.html#a0ae72f8b7c4592e4ff6604da900e586e", null ],
-    [ "setup", "classlbann_1_1target__layer.html#a1c872b29d3d81ed04e34dcaf557beb2b", null ],
-    [ "summarize", "classlbann_1_1target__layer.html#a094df35ce166d218a1b2d78c2f5c6414", null ],
+    [ "setup_data", "classlbann_1_1target__layer.html#a97731e2d01ad10b3b37d57d40e99e034", null ],
+    [ "setup_dims", "classlbann_1_1target__layer.html#adf6ad69a74e097cfbd02d0a75ee1d5c1", null ],
+    [ "summarize_stats", "classlbann_1_1target__layer.html#ab7390ac945aad671b0765772434bd06b", null ],
     [ "m_shared_data_reader", "classlbann_1_1target__layer.html#a576266beaf97c614d8f5f3a3ae005b0d", null ]
 ];

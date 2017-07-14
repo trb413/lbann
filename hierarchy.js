@@ -4,49 +4,19 @@ var hierarchy =
     [ "__BMP_INFO", "struct____BMP__INFO.html", null ],
     [ "__BMP_INFOHEADER", "struct____BMP__INFOHEADER.html", null ],
     [ "__BMP_RGBQUAD", "struct____BMP__RGBQUAD.html", null ],
-    [ "_BOX2_CHAR", "struct__BOX2__CHAR.html", null ],
-    [ "_BOX2_DOUBLE", "struct__BOX2__DOUBLE.html", null ],
-    [ "_BOX2_FLOAT", "struct__BOX2__FLOAT.html", null ],
-    [ "_BOX2_INT", "struct__BOX2__INT.html", null ],
-    [ "_BOX2_SHORT", "struct__BOX2__SHORT.html", null ],
-    [ "_BOX2_UCHAR", "struct__BOX2__UCHAR.html", null ],
-    [ "_BOX2_USHORT", "struct__BOX2__USHORT.html", null ],
-    [ "_BOX3_CHAR", "struct__BOX3__CHAR.html", null ],
-    [ "_BOX3_DOUBLE", "struct__BOX3__DOUBLE.html", null ],
-    [ "_BOX3_FLOAT", "struct__BOX3__FLOAT.html", null ],
-    [ "_BOX3_INT", "struct__BOX3__INT.html", null ],
-    [ "_BOX3_SHORT", "struct__BOX3__SHORT.html", null ],
-    [ "_BOX3_UCHAR", "struct__BOX3__UCHAR.html", null ],
-    [ "_BOX3_USHORT", "struct__BOX3__USHORT.html", null ],
-    [ "_CHAR2", "struct__CHAR2.html", null ],
-    [ "_CHAR3", "struct__CHAR3.html", null ],
-    [ "_CHAR4", "struct__CHAR4.html", null ],
-    [ "_DOUBLE2", "struct__DOUBLE2.html", null ],
-    [ "_DOUBLE3", "struct__DOUBLE3.html", null ],
-    [ "_DOUBLE4", "struct__DOUBLE4.html", null ],
-    [ "_FLOAT2", "struct__FLOAT2.html", null ],
-    [ "_FLOAT3", "struct__FLOAT3.html", null ],
-    [ "_FLOAT4", "struct__FLOAT4.html", null ],
-    [ "_INT2", "struct__INT2.html", null ],
-    [ "_INT3", "struct__INT3.html", null ],
-    [ "_INT4", "struct__INT4.html", null ],
-    [ "_SHORT2", "struct__SHORT2.html", null ],
-    [ "_SHORT3", "struct__SHORT3.html", null ],
-    [ "_SHORT4", "struct__SHORT4.html", null ],
-    [ "_UCHAR2", "struct__UCHAR2.html", null ],
-    [ "_UCHAR3", "struct__UCHAR3.html", null ],
-    [ "_UCHAR4", "struct__UCHAR4.html", null ],
-    [ "_USHORT2", "struct__USHORT2.html", null ],
-    [ "_USHORT3", "struct__USHORT3.html", null ],
-    [ "_USHORT4", "struct__USHORT4.html", null ],
     [ "cudnn::cudnn_manager", "classcudnn_1_1cudnn__manager.html", null ],
     [ "layer_header", "structlayer__header.html", null ],
-    [ "lbann::base_factory< Method >", "classlbann_1_1base__factory.html", null ],
     [ "lbann::CUtility", "classlbann_1_1CUtility.html", null ],
     [ "lbann::dataset", "classlbann_1_1dataset.html", null ],
-    [ "lbann::distributed_minibatch_parallel_io", "classlbann_1_1distributed__minibatch__parallel__io.html", [
-      [ "lbann::input_layer_distributed_minibatch_parallel_io< T_layout >", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html", null ],
-      [ "lbann::target_layer_distributed_minibatch_parallel_io< T_layout >", "classlbann_1_1target__layer__distributed__minibatch__parallel__io.html", null ]
+    [ "lbann::generic_data_distribution", "classlbann_1_1generic__data__distribution.html", [
+      [ "lbann::distributed_minibatch", "classlbann_1_1distributed__minibatch.html", [
+        [ "lbann::input_layer_distributed_minibatch< T_layout >", "classlbann_1_1input__layer__distributed__minibatch.html", null ],
+        [ "lbann::target_layer_distributed_minibatch< T_layout >", "classlbann_1_1target__layer__distributed__minibatch.html", null ]
+      ] ],
+      [ "lbann::partitioned_minibatch", "classlbann_1_1partitioned__minibatch.html", [
+        [ "lbann::input_layer_partitioned_minibatch< T_layout >", "classlbann_1_1input__layer__partitioned__minibatch.html", null ],
+        [ "lbann::target_layer_partitioned_minibatch< T_layout >", "classlbann_1_1target__layer__partitioned__minibatch.html", null ]
+      ] ]
     ] ],
     [ "lbann::image_utils", "classlbann_1_1image__utils.html", null ],
     [ "lbann::io_layer::dataset_header", "structlbann_1_1io__layer_1_1dataset__header.html", null ],
@@ -68,14 +38,12 @@ var hierarchy =
       [ "lbann::io_layer", "classlbann_1_1io__layer.html", [
         [ "lbann::input_layer", "classlbann_1_1input__layer.html", [
           [ "lbann::input_layer_distributed_minibatch< T_layout >", "classlbann_1_1input__layer__distributed__minibatch.html", null ],
-          [ "lbann::input_layer_distributed_minibatch_parallel_io< T_layout >", "classlbann_1_1input__layer__distributed__minibatch__parallel__io.html", null ],
-          [ "lbann::input_layer_partitioned_minibatch_parallel_io< T_layout >", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html", null ]
+          [ "lbann::input_layer_partitioned_minibatch< T_layout >", "classlbann_1_1input__layer__partitioned__minibatch.html", null ]
         ] ],
         [ "lbann::target_layer", "classlbann_1_1target__layer.html", [
           [ "lbann::reconstruction_layer< T_layout >", "classlbann_1_1reconstruction__layer.html", null ],
           [ "lbann::target_layer_distributed_minibatch< T_layout >", "classlbann_1_1target__layer__distributed__minibatch.html", null ],
-          [ "lbann::target_layer_distributed_minibatch_parallel_io< T_layout >", "classlbann_1_1target__layer__distributed__minibatch__parallel__io.html", null ],
-          [ "lbann::target_layer_partitioned_minibatch_parallel_io< T_layout >", "classlbann_1_1target__layer__partitioned__minibatch__parallel__io.html", null ]
+          [ "lbann::target_layer_partitioned_minibatch< T_layout >", "classlbann_1_1target__layer__partitioned__minibatch.html", null ]
         ] ]
       ] ],
       [ "lbann::learning", "classlbann_1_1learning.html", [
@@ -89,7 +57,9 @@ var hierarchy =
         [ "lbann::selu_dropout< T_layout >", "classlbann_1_1selu__dropout.html", null ]
       ] ],
       [ "lbann::transform", "classlbann_1_1transform.html", [
-        [ "lbann::pooling_layer< T_layout >", "classlbann_1_1pooling__layer.html", null ]
+        [ "lbann::branch_layer< T_layout >", "classlbann_1_1branch__layer.html", null ],
+        [ "lbann::pooling_layer< T_layout >", "classlbann_1_1pooling__layer.html", null ],
+        [ "lbann::sum_layer< T_layout >", "classlbann_1_1sum__layer.html", null ]
       ] ]
     ] ],
     [ "lbann::lbann_callback", "classlbann_1_1lbann__callback.html", [
@@ -111,11 +81,13 @@ var hierarchy =
       ] ],
       [ "lbann::lbann_callback_ltfb", "classlbann_1_1lbann__callback__ltfb.html", null ],
       [ "lbann::lbann_callback_print", "classlbann_1_1lbann__callback__print.html", null ],
+      [ "lbann::lbann_callback_profiler", "classlbann_1_1lbann__callback__profiler.html", null ],
       [ "lbann::lbann_callback_save_images", "classlbann_1_1lbann__callback__save__images.html", null ],
       [ "lbann::lbann_callback_summary", "classlbann_1_1lbann__callback__summary.html", null ],
       [ "lbann::lbann_callback_timer", "classlbann_1_1lbann__callback__timer.html", null ]
     ] ],
     [ "lbann::lbann_callback_imcomm::imcomm_params", "structlbann_1_1lbann__callback__imcomm_1_1imcomm__params.html", null ],
+    [ "lbann::lbann_checkpoint", "structlbann_1_1lbann__checkpoint.html", null ],
     [ "lbann::lbann_comm", "classlbann_1_1lbann__comm.html", null ],
     [ "lbann::lbann_comm::allreduce_options", "structlbann_1_1lbann__comm_1_1allreduce__options.html", null ],
     [ "lbann::lbann_image_preprocessor", "classlbann_1_1lbann__image__preprocessor.html", [
@@ -123,23 +95,26 @@ var hierarchy =
         [ "lbann::cifar10_reader", "classlbann_1_1cifar10__reader.html", null ],
         [ "lbann::cnpy_reader", "classlbann_1_1cnpy__reader.html", null ],
         [ "lbann::data_reader_nci", "classlbann_1_1data__reader__nci.html", null ],
-        [ "lbann::data_reader_nci_regression", "classlbann_1_1data__reader__nci__regression.html", null ],
         [ "lbann::data_reader_synthetic", "classlbann_1_1data__reader__synthetic.html", null ],
         [ "lbann::imagenet_reader", "classlbann_1_1imagenet__reader.html", [
           [ "lbann::imagenet_readerSingle", "classlbann_1_1imagenet__readerSingle.html", null ],
           [ "lbann::imagenet_readerSingle_cv", "classlbann_1_1imagenet__readerSingle__cv.html", null ]
         ] ],
-        [ "lbann::imagenet_reader_cv", "classlbann_1_1imagenet__reader__cv.html", null ],
+        [ "lbann::imagenet_reader", "classlbann_1_1imagenet__reader.html", null ],
         [ "lbann::mnist_reader", "classlbann_1_1mnist__reader.html", null ]
       ] ]
     ] ],
+    [ "lbann::lbann_model_greedy_layerwise_autoencoder_header", "structlbann_1_1lbann__model__greedy__layerwise__autoencoder__header.html", null ],
+    [ "lbann::lbann_model_header", "structlbann_1_1lbann__model__header.html", null ],
+    [ "lbann::lbann_model_sequential_header", "structlbann_1_1lbann__model__sequential__header.html", null ],
     [ "lbann::lbann_quantizer", "classlbann_1_1lbann__quantizer.html", null ],
     [ "lbann::lbann_quantizer::adaptive_reconstructions", "structlbann_1_1lbann__quantizer_1_1adaptive__reconstructions.html", null ],
     [ "lbann::lbann_quantizer::adaptive_thresholds", "structlbann_1_1lbann__quantizer_1_1adaptive__thresholds.html", null ],
     [ "lbann::lbann_summary", "classlbann_1_1lbann__summary.html", null ],
     [ "lbann::metrics::metric", "classlbann_1_1metrics_1_1metric.html", [
-      [ "lbann::metrics::categorical_accuracy", "classlbann_1_1metrics_1_1categorical__accuracy.html", null ],
-      [ "lbann::metrics::mean_squared_error", "classlbann_1_1metrics_1_1mean__squared__error.html", null ]
+      [ "lbann::metrics::categorical_accuracy< T_layout >", "classlbann_1_1metrics_1_1categorical__accuracy.html", null ],
+      [ "lbann::metrics::mean_squared_error< T_layout >", "classlbann_1_1metrics_1_1mean__squared__error.html", null ],
+      [ "lbann::metrics::top_k_categorical_accuracy< T_layout >", "classlbann_1_1metrics_1_1top__k__categorical__accuracy.html", null ]
     ] ],
     [ "lbann::metrics::statistics", "classlbann_1_1metrics_1_1statistics.html", null ],
     [ "lbann::model", "classlbann_1_1model.html", [
@@ -168,19 +143,12 @@ var hierarchy =
       [ "lbann::rmsprop_factory", "classlbann_1_1rmsprop__factory.html", null ],
       [ "lbann::sgd_factory", "classlbann_1_1sgd__factory.html", null ]
     ] ],
-    [ "lbann::partitioned_minibatch_parallel_io", "classlbann_1_1partitioned__minibatch__parallel__io.html", [
-      [ "lbann::input_layer_partitioned_minibatch_parallel_io< T_layout >", "classlbann_1_1input__layer__partitioned__minibatch__parallel__io.html", null ],
-      [ "lbann::target_layer_partitioned_minibatch_parallel_io< T_layout >", "classlbann_1_1target__layer__partitioned__minibatch__parallel__io.html", null ]
-    ] ],
     [ "lbann::PerformanceParams", "classlbann_1_1PerformanceParams.html", null ],
     [ "lbann::persist", "classlbann_1_1persist.html", null ],
     [ "lbann::rng< DistType, DType >", "classlbann_1_1rng.html", null ],
     [ "lbann::SystemParams", "classlbann_1_1SystemParams.html", null ],
     [ "lbann::TrainingParams", "classlbann_1_1TrainingParams.html", null ],
-    [ "lbann_checkpoint", "structlbann__checkpoint.html", null ],
-    [ "lbann_model_greedy_layerwise_autoencoder_header", "structlbann__model__greedy__layerwise__autoencoder__header.html", null ],
-    [ "lbann_model_header", "structlbann__model__header.html", null ],
-    [ "lbann_model_sequential_header", "structlbann__model__sequential__header.html", null ],
+    [ "options", "classoptions.html", null ],
     [ "exception", null, [
       [ "lbann::lbann_exception", "classlbann_1_1lbann__exception.html", null ]
     ] ]

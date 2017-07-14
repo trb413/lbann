@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-91-gf4b1db2-ci247266028</span>
+   &#160;<span id="projectnumber">810fe68-ci253400887</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('classlbann_1_1cifar10__reader.html',''
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="lbann__data__reader__cifar10_8hpp_source.html">lbann_data_reader_cifar10.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="data__reader__cifar10_8hpp_source.html">data_reader_cifar10.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for lbann::cifar10_reader:</div>
 <div class="dyncontent">
@@ -115,44 +115,52 @@ Collaboration diagram for lbann::cifar10_reader:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ada9cd4fc45639b319e399b1b40107064"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#ada9cd4fc45639b319e399b1b40107064">cifar10_reader</a> (int batchSize, bool shuffle=true)</td></tr>
-<tr class="memdesc:ada9cd4fc45639b319e399b1b40107064"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor  <a href="#ada9cd4fc45639b319e399b1b40107064">More...</a><br/></td></tr>
-<tr class="separator:ada9cd4fc45639b319e399b1b40107064"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbd9830c126cb874408c522fcf42d93f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#acbd9830c126cb874408c522fcf42d93f">cifar10_reader</a> (const <a class="el" href="classlbann_1_1cifar10__reader.html">cifar10_reader</a> &amp;source)</td></tr>
-<tr class="memdesc:acbd9830c126cb874408c522fcf42d93f"><td class="mdescLeft">&#160;</td><td class="mdescRight">copy constructor  <a href="#acbd9830c126cb874408c522fcf42d93f">More...</a><br/></td></tr>
-<tr class="separator:acbd9830c126cb874408c522fcf42d93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61a9bd4d4f6c77102ca983dae4d46663"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#a61a9bd4d4f6c77102ca983dae4d46663">~cifar10_reader</a> (void)</td></tr>
-<tr class="memdesc:a61a9bd4d4f6c77102ca983dae4d46663"><td class="mdescLeft">&#160;</td><td class="mdescRight">destructor  <a href="#a61a9bd4d4f6c77102ca983dae4d46663">More...</a><br/></td></tr>
-<tr class="separator:a61a9bd4d4f6c77102ca983dae4d46663"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16e855493dd36ac2b1374d1748899f06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1cifar10__reader.html">cifar10_reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#a16e855493dd36ac2b1374d1748899f06">operator=</a> (const <a class="el" href="classlbann_1_1cifar10__reader.html">cifar10_reader</a> &amp;source)</td></tr>
-<tr class="memdesc:a16e855493dd36ac2b1374d1748899f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">assignment operator  <a href="#a16e855493dd36ac2b1374d1748899f06">More...</a><br/></td></tr>
-<tr class="separator:a16e855493dd36ac2b1374d1748899f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0aae71599b03d2f07e39bcf43085f8fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#a0aae71599b03d2f07e39bcf43085f8fc">fetch_data</a> (<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;X)</td></tr>
-<tr class="separator:a0aae71599b03d2f07e39bcf43085f8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafc4c8b7520300773178d6afdf3eac25"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#aafc4c8b7520300773178d6afdf3eac25">fetch_label</a> (<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;Y)</td></tr>
-<tr class="separator:aafc4c8b7520300773178d6afdf3eac25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68d88ef3ebd7b3fa8923a33350964b10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#a68d88ef3ebd7b3fa8923a33350964b10">load</a> ()</td></tr>
-<tr class="separator:a68d88ef3ebd7b3fa8923a33350964b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13efc504e4bcc5626ecebc7fd1d3e6b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#a13efc504e4bcc5626ecebc7fd1d3e6b9">get_image_width</a> (void) const </td></tr>
-<tr class="memdesc:a13efc504e4bcc5626ecebc7fd1d3e6b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns image width (which should be 32)  <a href="#a13efc504e4bcc5626ecebc7fd1d3e6b9">More...</a><br/></td></tr>
-<tr class="separator:a13efc504e4bcc5626ecebc7fd1d3e6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c609fed252562705e20ddd46c3c8fc8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#a6c609fed252562705e20ddd46c3c8fc8">get_image_height</a> (void) const </td></tr>
-<tr class="memdesc:a6c609fed252562705e20ddd46c3c8fc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns image height (which should be 32)  <a href="#a6c609fed252562705e20ddd46c3c8fc8">More...</a><br/></td></tr>
-<tr class="separator:a6c609fed252562705e20ddd46c3c8fc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad05ced5553ad7f48acaa9b007df40495"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#ad05ced5553ad7f48acaa9b007df40495">get_num_labels</a> (void) const </td></tr>
-<tr class="separator:ad05ced5553ad7f48acaa9b007df40495"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab59cb014260eda81003603537ca14d1d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#ab59cb014260eda81003603537ca14d1d">get_image_num_channels</a> (void) const </td></tr>
-<tr class="memdesc:ab59cb014260eda81003603537ca14d1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns image depth (which should be 3)  <a href="#ab59cb014260eda81003603537ca14d1d">More...</a><br/></td></tr>
-<tr class="separator:ab59cb014260eda81003603537ca14d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0237823c16c40344c58e6b69f2b9674"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#aa0237823c16c40344c58e6b69f2b9674">get_linearized_data_size</a> (void) const </td></tr>
-<tr class="memdesc:aa0237823c16c40344c58e6b69f2b9674"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the number of pixels in the image (should be 3072)  <a href="#aa0237823c16c40344c58e6b69f2b9674">More...</a><br/></td></tr>
-<tr class="separator:aa0237823c16c40344c58e6b69f2b9674"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3946572d8360278f4c1f41c06a4dd405"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#a3946572d8360278f4c1f41c06a4dd405">get_linearized_label_size</a> (void) const </td></tr>
-<tr class="memdesc:a3946572d8360278f4c1f41c06a4dd405"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns  <a href="#a3946572d8360278f4c1f41c06a4dd405">More...</a><br/></td></tr>
-<tr class="separator:a3946572d8360278f4c1f41c06a4dd405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eaed8dab77d330b8bd20047d4d5fde5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#a4eaed8dab77d330b8bd20047d4d5fde5">cifar10_reader</a> (int batchSize, bool shuffle=true)</td></tr>
+<tr class="memdesc:a4eaed8dab77d330b8bd20047d4d5fde5"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor  <a href="#a4eaed8dab77d330b8bd20047d4d5fde5">More...</a><br/></td></tr>
+<tr class="separator:a4eaed8dab77d330b8bd20047d4d5fde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b4c310dc2bd5e78b197e334fc2b93d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#a1b4c310dc2bd5e78b197e334fc2b93d5">cifar10_reader</a> (const <a class="el" href="classlbann_1_1cifar10__reader.html">cifar10_reader</a> &amp;)=default</td></tr>
+<tr class="separator:a1b4c310dc2bd5e78b197e334fc2b93d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97e6d18d0ac3bb42da58c11d5d2ca17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1cifar10__reader.html">cifar10_reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#aa97e6d18d0ac3bb42da58c11d5d2ca17">operator=</a> (const <a class="el" href="classlbann_1_1cifar10__reader.html">cifar10_reader</a> &amp;)=default</td></tr>
+<tr class="separator:aa97e6d18d0ac3bb42da58c11d5d2ca17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f06dfb25e390a132e6350810004796c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#a7f06dfb25e390a132e6350810004796c">~cifar10_reader</a> ()</td></tr>
+<tr class="memdesc:a7f06dfb25e390a132e6350810004796c"><td class="mdescLeft">&#160;</td><td class="mdescRight">destructor  <a href="#a7f06dfb25e390a132e6350810004796c">More...</a><br/></td></tr>
+<tr class="separator:a7f06dfb25e390a132e6350810004796c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bc408a15862ec3f9e3752c1cc6eef8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1cifar10__reader.html">cifar10_reader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#a0bc408a15862ec3f9e3752c1cc6eef8b">copy</a> () const </td></tr>
+<tr class="separator:a0bc408a15862ec3f9e3752c1cc6eef8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7019b4b1794062756db402c3c3d3d1e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#ae7019b4b1794062756db402c3c3d3d1e">fetch_datum</a> (<a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;X, int data_id, int mb_idx, int tid)</td></tr>
+<tr class="separator:ae7019b4b1794062756db402c3c3d3d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab586cf9a6cb36d2fc24fd11e41e98721"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#ab586cf9a6cb36d2fc24fd11e41e98721">fetch_label</a> (<a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;Y, int data_id, int mb_idx, int tid)</td></tr>
+<tr class="separator:ab586cf9a6cb36d2fc24fd11e41e98721"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eecd862aafe627079e5beadbdcb00a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#a7eecd862aafe627079e5beadbdcb00a1">load</a> ()</td></tr>
+<tr class="separator:a7eecd862aafe627079e5beadbdcb00a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3539d039a25b28a9ebfd8ef00e60cdd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#af3539d039a25b28a9ebfd8ef00e60cdd">get_image_width</a> () const </td></tr>
+<tr class="memdesc:af3539d039a25b28a9ebfd8ef00e60cdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns image width (which should be 32)  <a href="#af3539d039a25b28a9ebfd8ef00e60cdd">More...</a><br/></td></tr>
+<tr class="separator:af3539d039a25b28a9ebfd8ef00e60cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33600f3fc77085dc780d4589aab273b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#a33600f3fc77085dc780d4589aab273b0">get_image_height</a> () const </td></tr>
+<tr class="memdesc:a33600f3fc77085dc780d4589aab273b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns image height (which should be 32)  <a href="#a33600f3fc77085dc780d4589aab273b0">More...</a><br/></td></tr>
+<tr class="separator:a33600f3fc77085dc780d4589aab273b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a203157a4ccefc3c60a7c71ec4c8ab362"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#a203157a4ccefc3c60a7c71ec4c8ab362">get_num_labels</a> () const </td></tr>
+<tr class="separator:a203157a4ccefc3c60a7c71ec4c8ab362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab75d229a34209d8172f5341856c85540"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#ab75d229a34209d8172f5341856c85540">get_image_num_channels</a> () const </td></tr>
+<tr class="memdesc:ab75d229a34209d8172f5341856c85540"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns image depth (which should be 3)  <a href="#ab75d229a34209d8172f5341856c85540">More...</a><br/></td></tr>
+<tr class="separator:ab75d229a34209d8172f5341856c85540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb9f02ca8233b00563cd26e5487716a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#adb9f02ca8233b00563cd26e5487716a7">get_linearized_data_size</a> () const </td></tr>
+<tr class="memdesc:adb9f02ca8233b00563cd26e5487716a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the number of pixels in the image (should be 3072)  <a href="#adb9f02ca8233b00563cd26e5487716a7">More...</a><br/></td></tr>
+<tr class="separator:adb9f02ca8233b00563cd26e5487716a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab54dbea70b26074b4cdc5848f149d152"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#ab54dbea70b26074b4cdc5848f149d152">get_linearized_label_size</a> () const </td></tr>
+<tr class="memdesc:ab54dbea70b26074b4cdc5848f149d152"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns  <a href="#ab54dbea70b26074b4cdc5848f149d152">More...</a><br/></td></tr>
+<tr class="separator:ab54dbea70b26074b4cdc5848f149d152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d6dabfb1af4edf9f0921ce992c2dd2"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#a38d6dabfb1af4edf9f0921ce992c2dd2">get_data_dims</a> () const </td></tr>
+<tr class="separator:a38d6dabfb1af4edf9f0921ce992c2dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31b7bb67819272106133477e6dbf0eb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1cifar10__reader.html#a31b7bb67819272106133477e6dbf0eb4">save_image</a> (<a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, const std::string filename, bool do_scale=true)</td></tr>
+<tr class="separator:a31b7bb67819272106133477e6dbf0eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classlbann_1_1generic__data__reader"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classlbann_1_1generic__data__reader')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classlbann_1_1generic__data__reader.html">lbann::generic_data_reader</a></td></tr>
 <tr class="memitem:aef061ec40c13ea699f4920ec81b23961 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#aef061ec40c13ea699f4920ec81b23961">generic_data_reader</a> (int batchSize, bool shuffle=true)</td></tr>
 <tr class="separator:aef061ec40c13ea699f4920ec81b23961 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d0ca539a613182898ff7693206fb40 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a95d0ca539a613182898ff7693206fb40">generic_data_reader</a> (const <a class="el" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a> &amp;)=default</td></tr>
+<tr class="separator:a95d0ca539a613182898ff7693206fb40 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec7e626e6efa2a4bf23f931e2ef8f607 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#aec7e626e6efa2a4bf23f931e2ef8f607">operator=</a> (const <a class="el" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a> &amp;)=default</td></tr>
+<tr class="separator:aec7e626e6efa2a4bf23f931e2ef8f607 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f6b141273d9636b211fba346f9db911 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a6f6b141273d9636b211fba346f9db911">~generic_data_reader</a> ()</td></tr>
 <tr class="separator:a6f6b141273d9636b211fba346f9db911 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94a6db0b62d4c98202ef309eb76b220c inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a94a6db0b62d4c98202ef309eb76b220c">set_file_dir</a> (std::string s)</td></tr>
@@ -193,14 +201,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a47aba0f39423e8e1d2f42952e343ef10 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3936554bdefc2a2069a815554a072bc0 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a3936554bdefc2a2069a815554a072bc0">get_role</a> () const </td></tr>
 <tr class="separator:a3936554bdefc2a2069a815554a072bc0 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a474e31f6f68cb2ed837796638d89a644 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a474e31f6f68cb2ed837796638d89a644">setup</a> (int base_offset, int batch_stride, int sample_stride=1, int model_offset=0, <a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="lbann__file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>=<a class="el" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</td></tr>
+<tr class="memitem:a474e31f6f68cb2ed837796638d89a644 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a474e31f6f68cb2ed837796638d89a644">setup</a> (int base_offset, int batch_stride, int sample_stride=1, int model_offset=0, <a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>=NULL)</td></tr>
 <tr class="separator:a474e31f6f68cb2ed837796638d89a644 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a879bb7dcb57a0aa1ef9c5039f5b0efda inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a879bb7dcb57a0aa1ef9c5039f5b0efda">setup</a> ()</td></tr>
 <tr class="separator:a879bb7dcb57a0aa1ef9c5039f5b0efda inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab567ee349665cdfe3674d27973866e8d inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#ab567ee349665cdfe3674d27973866e8d">fetch_response</a> (<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;Y)</td></tr>
-<tr class="separator:ab567ee349665cdfe3674d27973866e8d inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a030e7521ba0c120f9519495efcf0cf3c inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a030e7521ba0c120f9519495efcf0cf3c">save_image</a> (<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, const std::string filename, bool do_scale=true)</td></tr>
-<tr class="separator:a030e7521ba0c120f9519495efcf0cf3c inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46b658ba4f6b746632b683568ab76f77 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a46b658ba4f6b746632b683568ab76f77">fetch_data</a> (<a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;X)</td></tr>
+<tr class="separator:a46b658ba4f6b746632b683568ab76f77 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e624f92e38b0ee4224a6afaaf2acbdb inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a7e624f92e38b0ee4224a6afaaf2acbdb">fetch_labels</a> (<a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;Y)</td></tr>
+<tr class="separator:a7e624f92e38b0ee4224a6afaaf2acbdb inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaa97d3683add33d1c6d69a769dd6a20 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#aeaa97d3683add33d1c6d69a769dd6a20">fetch_responses</a> (<a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;Y)</td></tr>
+<tr class="separator:aeaa97d3683add33d1c6d69a769dd6a20 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa10a345ebd8be9c69499500d43ca329c inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#aa10a345ebd8be9c69499500d43ca329c">update</a> ()</td></tr>
 <tr class="separator:aa10a345ebd8be9c69499500d43ca329c inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a234c80c59852aef9dff6dee055a2ffe8 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a234c80c59852aef9dff6dee055a2ffe8">getNumResponses</a> () const </td></tr>
@@ -282,8 +292,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afa621af16f1a582b5a22405b79dbe052 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#afa621af16f1a582b5a22405b79dbe052">use_unused_index_set</a> ()</td></tr>
 <tr class="memdesc:afa621af16f1a582b5a22405b79dbe052 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace the shuffled index set with the unused index set The unused index set is emptied.  <a href="#afa621af16f1a582b5a22405b79dbe052">More...</a><br/></td></tr>
 <tr class="separator:afa621af16f1a582b5a22405b79dbe052 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72a464475f641c638f1da750207ef1f7 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a72a464475f641c638f1da750207ef1f7">operator=</a> (const <a class="el" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a> &amp;source)</td></tr>
-<tr class="separator:a72a464475f641c638f1da750207ef1f7 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07bd58356e359987a2eb4c08e7bf9117 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a07bd58356e359987a2eb4c08e7bf9117">saveToCheckpointShared</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p, const char *name)</td></tr>
 <tr class="memdesc:a07bd58356e359987a2eb4c08e7bf9117 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given directory to store checkpoint files, write state to file and add to number of bytes written.  <a href="#a07bd58356e359987a2eb4c08e7bf9117">More...</a><br/></td></tr>
 <tr class="separator:a07bd58356e359987a2eb4c08e7bf9117 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -293,8 +301,10 @@ Public Member Functions</h2></td></tr>
 <tr class="inherit_header pub_methods_classlbann_1_1lbann__image__preprocessor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classlbann_1_1lbann__image__preprocessor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classlbann_1_1lbann__image__preprocessor.html">lbann::lbann_image_preprocessor</a></td></tr>
 <tr class="memitem:a6a0f92194d42e87d73b57ba0929e2b2d inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a6a0f92194d42e87d73b57ba0929e2b2d">lbann_image_preprocessor</a> ()</td></tr>
 <tr class="separator:a6a0f92194d42e87d73b57ba0929e2b2d inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abba1ec3cf0b9041d9652ed68e941565b inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#abba1ec3cf0b9041d9652ed68e941565b">lbann_image_preprocessor</a> (const <a class="el" href="classlbann_1_1lbann__image__preprocessor.html">lbann_image_preprocessor</a> &amp;source)</td></tr>
-<tr class="separator:abba1ec3cf0b9041d9652ed68e941565b inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeca5696dbfde9ccb1112cbd8524940b inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#aeeca5696dbfde9ccb1112cbd8524940b">lbann_image_preprocessor</a> (const <a class="el" href="classlbann_1_1lbann__image__preprocessor.html">lbann_image_preprocessor</a> &amp;)=default</td></tr>
+<tr class="separator:aeeca5696dbfde9ccb1112cbd8524940b inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af652494123a62e653cd7dc2d7c340219 inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html">lbann_image_preprocessor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#af652494123a62e653cd7dc2d7c340219">operator=</a> (const <a class="el" href="classlbann_1_1lbann__image__preprocessor.html">lbann_image_preprocessor</a> &amp;)=default</td></tr>
+<tr class="separator:af652494123a62e653cd7dc2d7c340219 inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaabfad8d6923680cf4943f6f5290c682 inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#aaabfad8d6923680cf4943f6f5290c682">~lbann_image_preprocessor</a> ()</td></tr>
 <tr class="separator:aaabfad8d6923680cf4943f6f5290c682 inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ba2de0a781dfa0a2652ad4d777a241f inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a4ba2de0a781dfa0a2652ad4d777a241f">horizontal_flip</a> (bool b)</td></tr>
@@ -319,9 +329,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a02cfd4d8c26a317540b587eb52cef0d5 inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a871cb543ee6c132a76e16045a1a2a9f3 inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a871cb543ee6c132a76e16045a1a2a9f3">disable_augmentation</a> ()</td></tr>
 <tr class="separator:a871cb543ee6c132a76e16045a1a2a9f3 inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27cb5182c4f764cbfa4edecbb78ef29d inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a27cb5182c4f764cbfa4edecbb78ef29d">augment</a> (<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, unsigned imheight, unsigned imwidth, unsigned num_channels)</td></tr>
+<tr class="memitem:a27cb5182c4f764cbfa4edecbb78ef29d inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a27cb5182c4f764cbfa4edecbb78ef29d">augment</a> (<a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, unsigned imheight, unsigned imwidth, unsigned num_channels)</td></tr>
 <tr class="separator:a27cb5182c4f764cbfa4edecbb78ef29d inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae370cdc9f776ce8cce94a45cacf47425 inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#ae370cdc9f776ce8cce94a45cacf47425">normalize</a> (<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, unsigned num_channels)</td></tr>
+<tr class="memitem:ae370cdc9f776ce8cce94a45cacf47425 inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#ae370cdc9f776ce8cce94a45cacf47425">normalize</a> (<a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, unsigned num_channels)</td></tr>
 <tr class="separator:ae370cdc9f776ce8cce94a45cacf47425 inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -342,24 +352,31 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a4ee1a159c74561c15a5e0c267ad3cc6a inherit pub_attribs_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">El::Matrix&lt; El::Int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a4ee1a159c74561c15a5e0c267ad3cc6a">m_indices_fetched_per_mb</a></td></tr>
 <tr class="memdesc:a4ee1a159c74561c15a5e0c267ad3cc6a inherit pub_attribs_classlbann_1_1generic__data__reader"><td class="mdescLeft">&#160;</td><td class="mdescRight">1-D Matrix of which indices were fetched in this mini-batch  <a href="#a4ee1a159c74561c15a5e0c267ad3cc6a">More...</a><br/></td></tr>
 <tr class="separator:a4ee1a159c74561c15a5e0c267ad3cc6a inherit pub_attribs_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classlbann_1_1generic__data__reader"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classlbann_1_1generic__data__reader')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classlbann_1_1generic__data__reader.html">lbann::generic_data_reader</a></td></tr>
+<tr class="memitem:abe544ea807eed477f3636010d199b574 inherit pro_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#abe544ea807eed477f3636010d199b574">fetch_response</a> (<a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;Y, int data_id, int mb_idx, int tid)</td></tr>
+<tr class="separator:abe544ea807eed477f3636010d199b574 inherit pro_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad613f95666b973d8da77773fb34c9b66 inherit pro_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#ad613f95666b973d8da77773fb34c9b66">preprocess_data_source</a> (int tid)</td></tr>
+<tr class="separator:ad613f95666b973d8da77773fb34c9b66 inherit pro_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbf74725a96235dc1cd20ff440a69bd inherit pro_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a7bbf74725a96235dc1cd20ff440a69bd">postprocess_data_source</a> (int tid)</td></tr>
+<tr class="separator:a7bbf74725a96235dc1cd20ff440a69bd inherit pro_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classlbann_1_1lbann__image__preprocessor"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classlbann_1_1lbann__image__preprocessor')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classlbann_1_1lbann__image__preprocessor.html">lbann::lbann_image_preprocessor</a></td></tr>
-<tr class="memitem:ab499dd9f11d98998b5902d639f70fa8e inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#ab499dd9f11d98998b5902d639f70fa8e">mean_subtraction</a> (<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, unsigned num_channels)</td></tr>
+<tr class="memitem:ab499dd9f11d98998b5902d639f70fa8e inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#ab499dd9f11d98998b5902d639f70fa8e">mean_subtraction</a> (<a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, unsigned num_channels)</td></tr>
 <tr class="separator:ab499dd9f11d98998b5902d639f70fa8e inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9fcb483843230008a53d60c12975f61 inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#af9fcb483843230008a53d60c12975f61">unit_variance</a> (<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, unsigned num_channels)</td></tr>
+<tr class="memitem:af9fcb483843230008a53d60c12975f61 inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#af9fcb483843230008a53d60c12975f61">unit_variance</a> (<a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, unsigned num_channels)</td></tr>
 <tr class="separator:af9fcb483843230008a53d60c12975f61 inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7a8926d0544100f7d3caa9289d94826 inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#aa7a8926d0544100f7d3caa9289d94826">unit_scale</a> (<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, unsigned num_channels)</td></tr>
+<tr class="memitem:aa7a8926d0544100f7d3caa9289d94826 inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#aa7a8926d0544100f7d3caa9289d94826">unit_scale</a> (<a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, unsigned num_channels)</td></tr>
 <tr class="separator:aa7a8926d0544100f7d3caa9289d94826 inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec67fb0dc7a1f5d718d5bb2e226f9b7a inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#aec67fb0dc7a1f5d718d5bb2e226f9b7a">z_score</a> (<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, unsigned num_channels)</td></tr>
+<tr class="memitem:aec67fb0dc7a1f5d718d5bb2e226f9b7a inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#aec67fb0dc7a1f5d718d5bb2e226f9b7a">z_score</a> (<a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, unsigned num_channels)</td></tr>
 <tr class="separator:aec67fb0dc7a1f5d718d5bb2e226f9b7a inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dc609e33febdc7fc29bdc9270594bea inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a7dc609e33febdc7fc29bdc9270594bea">cv_pixels</a> (const <a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, unsigned imheight, unsigned imwidth, unsigned num_channels)</td></tr>
+<tr class="memitem:a7dc609e33febdc7fc29bdc9270594bea inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a7dc609e33febdc7fc29bdc9270594bea">cv_pixels</a> (const <a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, unsigned imheight, unsigned imwidth, unsigned num_channels)</td></tr>
 <tr class="separator:a7dc609e33febdc7fc29bdc9270594bea inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e99be32b95a415fd8d616cb85075df1 inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a3e99be32b95a415fd8d616cb85075df1">col_pixels</a> (const <a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> &amp;sqpixels, <a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, unsigned num_channels)</td></tr>
+<tr class="memitem:a3e99be32b95a415fd8d616cb85075df1 inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a3e99be32b95a415fd8d616cb85075df1">col_pixels</a> (const <a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> &amp;sqpixels, <a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, unsigned num_channels)</td></tr>
 <tr class="separator:a3e99be32b95a415fd8d616cb85075df1 inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12d9f7056a5e68185ea0e85e14c17bcf inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a12d9f7056a5e68185ea0e85e14c17bcf">flip</a> (<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> &amp;sqpixels, int flip_flag)</td></tr>
+<tr class="memitem:a12d9f7056a5e68185ea0e85e14c17bcf inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a12d9f7056a5e68185ea0e85e14c17bcf">flip</a> (<a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> &amp;sqpixels, int flip_flag)</td></tr>
 <tr class="separator:a12d9f7056a5e68185ea0e85e14c17bcf inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb9e017aeac52a9b5d392f17188d1057 inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#adb9e017aeac52a9b5d392f17188d1057">affine_trans</a> (<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> &amp;sqpixels, const <a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;trans)</td></tr>
+<tr class="memitem:adb9e017aeac52a9b5d392f17188d1057 inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#adb9e017aeac52a9b5d392f17188d1057">affine_trans</a> (<a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a> &amp;sqpixels, const <a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;trans)</td></tr>
 <tr class="separator:adb9e017aeac52a9b5d392f17188d1057 inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c4f4cc5c90233696566a35a62a1708c inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a3c4f4cc5c90233696566a35a62a1708c">internal_save_image</a> (<a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, const std::string filename, unsigned imheight, unsigned imwidth, unsigned num_channels, bool do_scale)</td></tr>
+<tr class="memitem:a3c4f4cc5c90233696566a35a62a1708c inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a3c4f4cc5c90233696566a35a62a1708c">internal_save_image</a> (<a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;pixels, const std::string filename, unsigned imheight, unsigned imwidth, unsigned num_channels, bool do_scale)</td></tr>
 <tr class="separator:a3c4f4cc5c90233696566a35a62a1708c inherit pro_methods_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classlbann_1_1generic__data__reader"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classlbann_1_1generic__data__reader')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classlbann_1_1generic__data__reader.html">lbann::generic_data_reader</a></td></tr>
 <tr class="memitem:a68e39047a6c2e092b8c8971e91b93719 inherit pro_attribs_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a68e39047a6c2e092b8c8971e91b93719">m_batch_size</a></td></tr>
@@ -440,19 +457,17 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ae00af83d438ab27d6a7b996775fba3b3 inherit pro_attribs_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6abe54ada0cacf23e8ac8b6d113bd26b inherit pro_attribs_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a6abe54ada0cacf23e8ac8b6d113bd26b">m_z_score</a></td></tr>
 <tr class="separator:a6abe54ada0cacf23e8ac8b6d113bd26b inherit pro_attribs_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5faf7259822ae5ae84ed9a6e0f24e3bb inherit pro_attribs_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">const float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a5faf7259822ae5ae84ed9a6e0f24e3bb">pi</a> = std::acos(-1)</td></tr>
-<tr class="separator:a5faf7259822ae5ae84ed9a6e0f24e3bb inherit pro_attribs_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html#l00037">37</a> of file <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html">lbann_data_reader_cifar10.hpp</a>.</p>
+<p>Definition at line <a class="el" href="data__reader__cifar10_8hpp_source.html#l00036">36</a> of file <a class="el" href="data__reader__cifar10_8hpp_source.html">data_reader_cifar10.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ada9cd4fc45639b319e399b1b40107064"></a>
+<a class="anchor" id="a4eaed8dab77d330b8bd20047d4d5fde5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">cifar10_reader::cifar10_reader </td>
+          <td class="memname">lbann::cifar10_reader::cifar10_reader </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>batchSize</em>, </td>
@@ -473,57 +488,57 @@ Additional Inherited Members</h2></td></tr>
 
 <p>constructor </p>
 
-<p>Definition at line <a class="el" href="lbann__data__reader__cifar10_8cpp_source.html#l00036">36</a> of file <a class="el" href="lbann__data__reader__cifar10_8cpp_source.html">lbann_data_reader_cifar10.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  : <a class="code" href="classlbann_1_1generic__data__reader.html#aef061ec40c13ea699f4920ec81b23961">generic_data_reader</a>(batchSize, shuffle),</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">m_image_width</a>(32), <a class="code" href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">m_image_height</a>(32), <a class="code" href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">m_image_num_channels</a>(3) {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_aef061ec40c13ea699f4920ec81b23961"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#aef061ec40c13ea699f4920ec81b23961">lbann::generic_data_reader::generic_data_reader</a></div><div class="ttdeci">generic_data_reader(int batchSize, bool shuffle=true)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00058">lbann_data_reader.hpp:58</a></div></div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_ab66454a0c35289c7c31720611a3411cb"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">lbann::cifar10_reader::m_image_width</a></div><div class="ttdeci">int m_image_width</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00086">lbann_data_reader_cifar10.hpp:86</a></div></div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_a5dae93f777add6b092a5e80bada5ce9f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">lbann::cifar10_reader::m_image_height</a></div><div class="ttdeci">int m_image_height</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00087">lbann_data_reader_cifar10.hpp:87</a></div></div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_a88baf5a9820e25059b71ac5c2b62f69f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">lbann::cifar10_reader::m_image_num_channels</a></div><div class="ttdeci">int m_image_num_channels</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00088">lbann_data_reader_cifar10.hpp:88</a></div></div>
+<p>Definition at line <a class="el" href="data__reader__cifar10_8cpp_source.html#l00033">33</a> of file <a class="el" href="data__reader__cifar10_8cpp_source.html">data_reader_cifar10.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  : <a class="code" href="classlbann_1_1generic__data__reader.html#aef061ec40c13ea699f4920ec81b23961">generic_data_reader</a>(batchSize, shuffle),</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">m_image_width</a>(32), <a class="code" href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">m_image_height</a>(32), <a class="code" href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">m_image_num_channels</a>(3) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_aef061ec40c13ea699f4920ec81b23961"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#aef061ec40c13ea699f4920ec81b23961">lbann::generic_data_reader::generic_data_reader</a></div><div class="ttdeci">generic_data_reader(int batchSize, bool shuffle=true)</div><div class="ttdef"><b>Definition:</b> <a href="data__reader_8hpp_source.html#l00058">data_reader.hpp:58</a></div></div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_ab66454a0c35289c7c31720611a3411cb"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">lbann::cifar10_reader::m_image_width</a></div><div class="ttdeci">int m_image_width</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00092">data_reader_cifar10.hpp:92</a></div></div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_a5dae93f777add6b092a5e80bada5ce9f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">lbann::cifar10_reader::m_image_height</a></div><div class="ttdeci">int m_image_height</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00093">data_reader_cifar10.hpp:93</a></div></div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_a88baf5a9820e25059b71ac5c2b62f69f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">lbann::cifar10_reader::m_image_num_channels</a></div><div class="ttdeci">int m_image_num_channels</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00094">data_reader_cifar10.hpp:94</a></div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1cifar10__reader_a4eaed8dab77d330b8bd20047d4d5fde5_icgraph.png" border="0" usemap="#classlbann_1_1cifar10__reader_a4eaed8dab77d330b8bd20047d4d5fde5_icgraph" alt=""/></div>
+<map name="classlbann_1_1cifar10__reader_a4eaed8dab77d330b8bd20047d4d5fde5_icgraph" id="classlbann_1_1cifar10__reader_a4eaed8dab77d330b8bd20047d4d5fde5_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1cifar10__reader.html#a0bc408a15862ec3f9e3752c1cc6eef8b" title="lbann::cifar10_reader\l::copy" alt="" coords="198,5,341,46"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="acbd9830c126cb874408c522fcf42d93f"></a>
+<a class="anchor" id="a1b4c310dc2bd5e78b197e334fc2b93d5"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">cifar10_reader::cifar10_reader </td>
+          <td class="memname">lbann::cifar10_reader::cifar10_reader </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classlbann_1_1cifar10__reader.html">cifar10_reader</a> &amp;&#160;</td>
-          <td class="paramname"><em>source</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>copy constructor </p>
-
-<p>Definition at line <a class="el" href="lbann__data__reader__cifar10_8cpp_source.html#l00041">41</a> of file <a class="el" href="lbann__data__reader__cifar10_8cpp_source.html">lbann_data_reader_cifar10.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  : <a class="code" href="classlbann_1_1generic__data__reader.html#aef061ec40c13ea699f4920ec81b23961">generic_data_reader</a>((<span class="keyword">const</span> <a class="code" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a>&amp;) source),</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>(source.<a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>),</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">m_image_width</a>(source.<a class="code" href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">m_image_width</a>),</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">m_image_height</a>(source.<a class="code" href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">m_image_height</a>),</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">m_image_num_channels</a>(source.<a class="code" href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">m_image_num_channels</a>) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_a9b47dab5c16987441ec5276d91a5aab5"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">lbann::cifar10_reader::m_data</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; unsigned char &gt; &gt; m_data</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00085">lbann_data_reader_cifar10.hpp:85</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_aef061ec40c13ea699f4920ec81b23961"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#aef061ec40c13ea699f4920ec81b23961">lbann::generic_data_reader::generic_data_reader</a></div><div class="ttdeci">generic_data_reader(int batchSize, bool shuffle=true)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00058">lbann_data_reader.hpp:58</a></div></div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_ab66454a0c35289c7c31720611a3411cb"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">lbann::cifar10_reader::m_image_width</a></div><div class="ttdeci">int m_image_width</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00086">lbann_data_reader_cifar10.hpp:86</a></div></div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_a5dae93f777add6b092a5e80bada5ce9f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">lbann::cifar10_reader::m_image_height</a></div><div class="ttdeci">int m_image_height</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00087">lbann_data_reader_cifar10.hpp:87</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html">lbann::generic_data_reader</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00056">lbann_data_reader.hpp:56</a></div></div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_a88baf5a9820e25059b71ac5c2b62f69f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">lbann::cifar10_reader::m_image_num_channels</a></div><div class="ttdeci">int m_image_num_channels</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00088">lbann_data_reader_cifar10.hpp:88</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a61a9bd4d4f6c77102ca983dae4d46663"></a>
+<a class="anchor" id="a7f06dfb25e390a132e6350810004796c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">cifar10_reader::~cifar10_reader </td>
+          <td class="memname">lbann::cifar10_reader::~cifar10_reader </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
@@ -532,13 +547,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>destructor </p>
 
-<p>Definition at line <a class="el" href="lbann__data__reader__cifar10_8cpp_source.html#l00064">64</a> of file <a class="el" href="lbann__data__reader__cifar10_8cpp_source.html">lbann_data_reader_cifar10.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{ }</div>
+<p>Definition at line <a class="el" href="data__reader__cifar10_8cpp_source.html#l00038">38</a> of file <a class="el" href="data__reader__cifar10_8cpp_source.html">data_reader_cifar10.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{ }</div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a0aae71599b03d2f07e39bcf43085f8fc"></a>
+<a class="anchor" id="a0bc408a15862ec3f9e3752c1cc6eef8b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -546,71 +561,37 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int lbann::cifar10_reader::fetch_data </td>
+          <td class="memname"><a class="el" href="classlbann_1_1cifar10__reader.html">cifar10_reader</a>* lbann::cifar10_reader::copy </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;&#160;</td>
-          <td class="paramname"><em>X</em></td><td>)</td>
-          <td></td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classlbann_1_1generic__data__reader.html#a04aca44de55b65a34540b9cffcc3605f">lbann::generic_data_reader</a>.</p>
+<p>Implements <a class="el" href="classlbann_1_1generic__data__reader.html#a208ba1223e7aaa75e94b728501f12f86">lbann::generic_data_reader</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__data__reader__cifar10_8cpp_source.html#l00118">118</a> of file <a class="el" href="lbann__data__reader__cifar10_8cpp_source.html">lbann_data_reader_cifar10.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                                          {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  stringstream err;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1generic__data__reader.html#ada0192f94415b67c1ef5843f5a2ba9b3">generic_data_reader::position_valid</a>()) {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot; :: lbann::imagenet_reader::fetch_data() - !generic_data_reader::position_valid()&quot;</span>;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  }</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordtype">int</span> current_batch_size = <a class="code" href="classlbann_1_1generic__data__reader.html#ad54da4eb6160c90c061d894ebdff6215">getm_batch_size</a>();</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> end_pos = Min(<a class="code" href="classlbann_1_1generic__data__reader.html#a2facf4e410099ac8c1fa586e797ec2e0">m_current_pos</a>+current_batch_size, <a class="code" href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">m_shuffled_indices</a>.size());</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> n = <a class="code" href="classlbann_1_1generic__data__reader.html#a2facf4e410099ac8c1fa586e797ec2e0">m_current_pos</a>; n &lt; end_pos; ++n) {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">int</span> k = n - <a class="code" href="classlbann_1_1generic__data__reader.html#a2facf4e410099ac8c1fa586e797ec2e0">m_current_pos</a>;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">int</span> idx = <a class="code" href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">m_shuffled_indices</a>[n];</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> p = 1; p&lt;<a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>[idx].size(); p++) {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      X.Set(p-1, k, <a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>[idx][p]);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">auto</span> pixel_col = X(IR(0, X.Height()), IR(k, k + 1));</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <a class="code" href="classlbann_1_1lbann__image__preprocessor.html#a27cb5182c4f764cbfa4edecbb78ef29d">augment</a>(pixel_col, <a class="code" href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">m_image_height</a>, <a class="code" href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">m_image_width</a>, <a class="code" href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">m_image_num_channels</a>);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="code" href="classlbann_1_1lbann__image__preprocessor.html#ae370cdc9f776ce8cce94a45cacf47425">normalize</a>(pixel_col, <a class="code" href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">m_image_num_channels</a>);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  }</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keywordflow">return</span> end_pos - <a class="code" href="classlbann_1_1generic__data__reader.html#a2facf4e410099ac8c1fa586e797ec2e0">m_current_pos</a>;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1lbann__image__preprocessor_html_a27cb5182c4f764cbfa4edecbb78ef29d"><div class="ttname"><a href="classlbann_1_1lbann__image__preprocessor.html#a27cb5182c4f764cbfa4edecbb78ef29d">lbann::lbann_image_preprocessor::augment</a></div><div class="ttdeci">void augment(Mat &amp;pixels, unsigned imheight, unsigned imwidth, unsigned num_channels)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__image__preprocessor_8cpp_source.html#l00063">lbann_image_preprocessor.cpp:63</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_a2facf4e410099ac8c1fa586e797ec2e0"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#a2facf4e410099ac8c1fa586e797ec2e0">lbann::generic_data_reader::m_current_pos</a></div><div class="ttdeci">int m_current_pos</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00367">lbann_data_reader.hpp:367</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__image__preprocessor_html_ae370cdc9f776ce8cce94a45cacf47425"><div class="ttname"><a href="classlbann_1_1lbann__image__preprocessor.html#ae370cdc9f776ce8cce94a45cacf47425">lbann::lbann_image_preprocessor::normalize</a></div><div class="ttdeci">void normalize(Mat &amp;pixels, unsigned num_channels)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__image__preprocessor_8cpp_source.html#l00141">lbann_image_preprocessor.cpp:141</a></div></div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_a9b47dab5c16987441ec5276d91a5aab5"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">lbann::cifar10_reader::m_data</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; unsigned char &gt; &gt; m_data</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00085">lbann_data_reader_cifar10.hpp:85</a></div></div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_ab66454a0c35289c7c31720611a3411cb"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">lbann::cifar10_reader::m_image_width</a></div><div class="ttdeci">int m_image_width</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00086">lbann_data_reader_cifar10.hpp:86</a></div></div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_a5dae93f777add6b092a5e80bada5ce9f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">lbann::cifar10_reader::m_image_height</a></div><div class="ttdeci">int m_image_height</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00087">lbann_data_reader_cifar10.hpp:87</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_aaab6aeff67ffff1c689336851fec2c57"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">lbann::generic_data_reader::m_shuffled_indices</a></div><div class="ttdeci">std::vector&lt; int &gt; m_shuffled_indices</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00383">lbann_data_reader.hpp:383</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_ad54da4eb6160c90c061d894ebdff6215"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#ad54da4eb6160c90c061d894ebdff6215">lbann::generic_data_reader::getm_batch_size</a></div><div class="ttdeci">int getm_batch_size() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8cpp_source.html#l00096">lbann_data_reader.cpp:96</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__exception_8hpp_source.html#l00040">lbann_exception.hpp:40</a></div></div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_a88baf5a9820e25059b71ac5c2b62f69f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">lbann::cifar10_reader::m_image_num_channels</a></div><div class="ttdeci">int m_image_num_channels</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00088">lbann_data_reader_cifar10.hpp:88</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_ada0192f94415b67c1ef5843f5a2ba9b3"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#ada0192f94415b67c1ef5843f5a2ba9b3">lbann::generic_data_reader::position_valid</a></div><div class="ttdeci">bool position_valid() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00248">lbann_data_reader.hpp:248</a></div></div>
+<p>Definition at line <a class="el" href="data__reader__cifar10_8hpp_source.html#l00046">46</a> of file <a class="el" href="data__reader__cifar10_8hpp_source.html">data_reader_cifar10.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1cifar10__reader.html#a4eaed8dab77d330b8bd20047d4d5fde5">cifar10_reader</a>(*<span class="keyword">this</span>); }</div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_a4eaed8dab77d330b8bd20047d4d5fde5"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a4eaed8dab77d330b8bd20047d4d5fde5">lbann::cifar10_reader::cifar10_reader</a></div><div class="ttdeci">cifar10_reader(int batchSize, bool shuffle=true)</div><div class="ttdoc">constructor </div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8cpp_source.html#l00033">data_reader_cifar10.cpp:33</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1cifar10__reader_a0aae71599b03d2f07e39bcf43085f8fc_cgraph.png" border="0" usemap="#classlbann_1_1cifar10__reader_a0aae71599b03d2f07e39bcf43085f8fc_cgraph" alt=""/></div>
-<map name="classlbann_1_1cifar10__reader_a0aae71599b03d2f07e39bcf43085f8fc_cgraph" id="classlbann_1_1cifar10__reader_a0aae71599b03d2f07e39bcf43085f8fc_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1generic__data__reader.html#ada0192f94415b67c1ef5843f5a2ba9b3" title="lbann::generic_data\l_reader::position_valid" alt="" coords="197,5,349,46"/></map>
+<div class="center"><img src="classlbann_1_1cifar10__reader_a0bc408a15862ec3f9e3752c1cc6eef8b_cgraph.png" border="0" usemap="#classlbann_1_1cifar10__reader_a0bc408a15862ec3f9e3752c1cc6eef8b_cgraph" alt=""/></div>
+<map name="classlbann_1_1cifar10__reader_a0bc408a15862ec3f9e3752c1cc6eef8b_cgraph" id="classlbann_1_1cifar10__reader_a0bc408a15862ec3f9e3752c1cc6eef8b_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1cifar10__reader.html#a4eaed8dab77d330b8bd20047d4d5fde5" title="constructor " alt="" coords="198,5,341,46"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aafc4c8b7520300773178d6afdf3eac25"></a>
+<a class="anchor" id="ae7019b4b1794062756db402c3c3d3d1e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -618,11 +599,33 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int lbann::cifar10_reader::fetch_label </td>
+          <td class="memname">bool lbann::cifar10_reader::fetch_datum </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;&#160;</td>
-          <td class="paramname"><em>Y</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>data_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mb_idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -632,39 +635,127 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classlbann_1_1generic__data__reader.html#adba334a774bef66339841e6bd20cb796">lbann::generic_data_reader</a>.</p>
+<p>Reimplemented from <a class="el" href="classlbann_1_1generic__data__reader.html#a0a3cd87ed4a7057df185e0087f2d21c1">lbann::generic_data_reader</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__data__reader__cifar10_8cpp_source.html#l00143">143</a> of file <a class="el" href="lbann__data__reader__cifar10_8cpp_source.html">lbann_data_reader_cifar10.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                                           {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordflow">if</span>(!<a class="code" href="classlbann_1_1generic__data__reader.html#ada0192f94415b67c1ef5843f5a2ba9b3">position_valid</a>()) {</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    stringstream err;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    err &lt;&lt; __FILE__&lt;&lt;<span class="stringliteral">&quot; &quot;</span>&lt;&lt;__LINE__&lt;&lt; <span class="stringliteral">&quot; :: Imagenet data reader error: !position_valid&quot;</span>;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  }</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keywordtype">int</span> current_batch_size = <a class="code" href="classlbann_1_1generic__data__reader.html#ad54da4eb6160c90c061d894ebdff6215">getm_batch_size</a>();</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keywordtype">int</span> n = 0;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordflow">for</span> (n = <a class="code" href="classlbann_1_1generic__data__reader.html#a2facf4e410099ac8c1fa586e797ec2e0">m_current_pos</a>; n &lt; <a class="code" href="classlbann_1_1generic__data__reader.html#a2facf4e410099ac8c1fa586e797ec2e0">m_current_pos</a> + current_batch_size; n++) {</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">if</span> (n &gt;= (<span class="keywordtype">int</span>)<a class="code" href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">m_shuffled_indices</a>.size()) {</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      <span class="keywordflow">break</span>;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">int</span> k = n - <a class="code" href="classlbann_1_1generic__data__reader.html#a2facf4e410099ac8c1fa586e797ec2e0">m_current_pos</a>;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">int</span> index = <a class="code" href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">m_shuffled_indices</a>[n];</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordtype">int</span> label = (int)<a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>[index][0];</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    Y.Set(label, k, 1);</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  }</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keywordflow">return</span> (n - m_current_pos);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_a2facf4e410099ac8c1fa586e797ec2e0"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#a2facf4e410099ac8c1fa586e797ec2e0">lbann::generic_data_reader::m_current_pos</a></div><div class="ttdeci">int m_current_pos</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00367">lbann_data_reader.hpp:367</a></div></div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_a9b47dab5c16987441ec5276d91a5aab5"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">lbann::cifar10_reader::m_data</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; unsigned char &gt; &gt; m_data</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00085">lbann_data_reader_cifar10.hpp:85</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_aaab6aeff67ffff1c689336851fec2c57"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">lbann::generic_data_reader::m_shuffled_indices</a></div><div class="ttdeci">std::vector&lt; int &gt; m_shuffled_indices</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00383">lbann_data_reader.hpp:383</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_ad54da4eb6160c90c061d894ebdff6215"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#ad54da4eb6160c90c061d894ebdff6215">lbann::generic_data_reader::getm_batch_size</a></div><div class="ttdeci">int getm_batch_size() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8cpp_source.html#l00096">lbann_data_reader.cpp:96</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__exception_8hpp_source.html#l00040">lbann_exception.hpp:40</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_ada0192f94415b67c1ef5843f5a2ba9b3"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#ada0192f94415b67c1ef5843f5a2ba9b3">lbann::generic_data_reader::position_valid</a></div><div class="ttdeci">bool position_valid() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00248">lbann_data_reader.hpp:248</a></div></div>
+<p>Definition at line <a class="el" href="data__reader__cifar10_8cpp_source.html#l00086">86</a> of file <a class="el" href="data__reader__cifar10_8cpp_source.html">data_reader_cifar10.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                                         {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> p = 1; p&lt;<a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>[data_id].size(); p++) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    X.Set(p-1, mb_idx, <a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>[data_id][p]);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keyword">auto</span> pixel_col = X(El::IR(0, X.Height()), El::IR(mb_idx, mb_idx + 1));</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="classlbann_1_1lbann__image__preprocessor.html#a27cb5182c4f764cbfa4edecbb78ef29d">augment</a>(pixel_col, <a class="code" href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">m_image_height</a>, <a class="code" href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">m_image_width</a>, <a class="code" href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">m_image_num_channels</a>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="classlbann_1_1lbann__image__preprocessor.html#ae370cdc9f776ce8cce94a45cacf47425">normalize</a>(pixel_col, <a class="code" href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">m_image_num_channels</a>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1lbann__image__preprocessor_html_a27cb5182c4f764cbfa4edecbb78ef29d"><div class="ttname"><a href="classlbann_1_1lbann__image__preprocessor.html#a27cb5182c4f764cbfa4edecbb78ef29d">lbann::lbann_image_preprocessor::augment</a></div><div class="ttdeci">void augment(Mat &amp;pixels, unsigned imheight, unsigned imwidth, unsigned num_channels)</div><div class="ttdef"><b>Definition:</b> <a href="image__preprocessor_8cpp_source.html#l00055">image_preprocessor.cpp:55</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__image__preprocessor_html_ae370cdc9f776ce8cce94a45cacf47425"><div class="ttname"><a href="classlbann_1_1lbann__image__preprocessor.html#ae370cdc9f776ce8cce94a45cacf47425">lbann::lbann_image_preprocessor::normalize</a></div><div class="ttdeci">void normalize(Mat &amp;pixels, unsigned num_channels)</div><div class="ttdef"><b>Definition:</b> <a href="image__preprocessor_8cpp_source.html#l00133">image_preprocessor.cpp:133</a></div></div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_a9b47dab5c16987441ec5276d91a5aab5"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">lbann::cifar10_reader::m_data</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; unsigned char &gt; &gt; m_data</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00091">data_reader_cifar10.hpp:91</a></div></div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_ab66454a0c35289c7c31720611a3411cb"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">lbann::cifar10_reader::m_image_width</a></div><div class="ttdeci">int m_image_width</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00092">data_reader_cifar10.hpp:92</a></div></div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_a5dae93f777add6b092a5e80bada5ce9f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">lbann::cifar10_reader::m_image_height</a></div><div class="ttdeci">int m_image_height</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00093">data_reader_cifar10.hpp:93</a></div></div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_a88baf5a9820e25059b71ac5c2b62f69f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">lbann::cifar10_reader::m_image_num_channels</a></div><div class="ttdeci">int m_image_num_channels</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00094">data_reader_cifar10.hpp:94</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1cifar10__reader_ae7019b4b1794062756db402c3c3d3d1e_cgraph.png" border="0" usemap="#classlbann_1_1cifar10__reader_ae7019b4b1794062756db402c3c3d3d1e_cgraph" alt=""/></div>
+<map name="classlbann_1_1cifar10__reader_ae7019b4b1794062756db402c3c3d3d1e_cgraph" id="classlbann_1_1cifar10__reader_ae7019b4b1794062756db402c3c3d3d1e_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1lbann__image__preprocessor.html#a27cb5182c4f764cbfa4edecbb78ef29d" title="lbann::lbann_image\l_preprocessor::augment" alt="" coords="200,155,363,197"/><area shape="rect" id="node8" href="classlbann_1_1lbann__image__preprocessor.html#ae370cdc9f776ce8cce94a45cacf47425" title="lbann::lbann_image\l_preprocessor::normalize" alt="" coords="197,383,365,425"/><area shape="rect" id="node3" href="classlbann_1_1lbann__image__preprocessor.html#a7dc609e33febdc7fc29bdc9270594bea" title="lbann::lbann_image\l_preprocessor::cv_pixels" alt="" coords="421,5,587,46"/><area shape="rect" id="node4" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764" title="lbann::get_generator" alt="" coords="434,71,574,97"/><area shape="rect" id="node5" href="classlbann_1_1lbann__image__preprocessor.html#a12d9f7056a5e68185ea0e85e14c17bcf" title="lbann::lbann_image\l_preprocessor::flip" alt="" coords="437,122,571,163"/><area shape="rect" id="node6" href="classlbann_1_1lbann__image__preprocessor.html#adb9e017aeac52a9b5d392f17188d1057" title="lbann::lbann_image\l_preprocessor::affine_trans" alt="" coords="414,187,594,229"/><area shape="rect" id="node7" href="classlbann_1_1lbann__image__preprocessor.html#a3e99be32b95a415fd8d616cb85075df1" title="lbann::lbann_image\l_preprocessor::col_pixels" alt="" coords="419,253,589,294"/><area shape="rect" id="node9" href="classlbann_1_1lbann__image__preprocessor.html#a02cfd4d8c26a317540b587eb52cef0d5" title="lbann::lbann_image\l_preprocessor::z_score" alt="" coords="425,318,583,359"/><area shape="rect" id="node10" href="classlbann_1_1lbann__image__preprocessor.html#aa7a8926d0544100f7d3caa9289d94826" title="lbann::lbann_image\l_preprocessor::unit_scale" alt="" coords="419,383,589,425"/><area shape="rect" id="node11" href="classlbann_1_1lbann__image__preprocessor.html#ab499dd9f11d98998b5902d639f70fa8e" title="lbann::lbann_image\l_preprocessor::mean\l_subtraction" alt="" coords="432,448,576,504"/><area shape="rect" id="node13" href="classlbann_1_1lbann__image__preprocessor.html#a05c4cb5cb842df5d46eebe15c6ea9de3" title="lbann::lbann_image\l_preprocessor::unit\l_variance" alt="" coords="437,528,571,584"/><area shape="rect" id="node12" href="namespacelbann.html#a604ae9da0173b8be2bfb6877997d6d5c" title="Compute mean and standard deviation over matrix entries. " alt="" coords="643,455,799,497"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab586cf9a6cb36d2fc24fd11e41e98721"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lbann::cifar10_reader::fetch_label </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;&#160;</td>
+          <td class="paramname"><em>Y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>data_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mb_idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classlbann_1_1generic__data__reader.html#a03627408c1d1aa28691d31232fe1dce5">lbann::generic_data_reader</a>.</p>
+
+<p>Definition at line <a class="el" href="data__reader__cifar10_8cpp_source.html#l00097">97</a> of file <a class="el" href="data__reader__cifar10_8cpp_source.html">data_reader_cifar10.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                                                         {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">int</span> label = (int)<a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>[data_id][0];</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  Y.Set(label, mb_idx, 1);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_a9b47dab5c16987441ec5276d91a5aab5"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">lbann::cifar10_reader::m_data</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; unsigned char &gt; &gt; m_data</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00091">data_reader_cifar10.hpp:91</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a6c609fed252562705e20ddd46c3c8fc8"></a>
+<a class="anchor" id="a38d6dabfb1af4edf9f0921ce992c2dd2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;int&gt; lbann::cifar10_reader::get_data_dims </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classlbann_1_1generic__data__reader.html#a67a39151ff0aeddb94725613ef17504f">lbann::generic_data_reader</a>.</p>
+
+<p>Definition at line <a class="el" href="data__reader__cifar10_8hpp_source.html#l00081">81</a> of file <a class="el" href="data__reader__cifar10_8hpp_source.html">data_reader_cifar10.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                             {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> {<a class="code" href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">m_image_num_channels</a>, <a class="code" href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">m_image_height</a>, <a class="code" href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">m_image_width</a>};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_ab66454a0c35289c7c31720611a3411cb"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">lbann::cifar10_reader::m_image_width</a></div><div class="ttdeci">int m_image_width</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00092">data_reader_cifar10.hpp:92</a></div></div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_a5dae93f777add6b092a5e80bada5ce9f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">lbann::cifar10_reader::m_image_height</a></div><div class="ttdeci">int m_image_height</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00093">data_reader_cifar10.hpp:93</a></div></div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_a88baf5a9820e25059b71ac5c2b62f69f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">lbann::cifar10_reader::m_image_num_channels</a></div><div class="ttdeci">int m_image_num_channels</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00094">data_reader_cifar10.hpp:94</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a33600f3fc77085dc780d4589aab273b0"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -674,7 +765,6 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">int lbann::cifar10_reader::get_image_height </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
@@ -688,15 +778,15 @@ Here is the call graph for this function:</div>
 
 <p>returns image height (which should be 32) </p>
 
-<p>Definition at line <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html#l00061">61</a> of file <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html">lbann_data_reader_cifar10.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                   {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">m_image_height</a>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_a5dae93f777add6b092a5e80bada5ce9f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">lbann::cifar10_reader::m_image_height</a></div><div class="ttdeci">int m_image_height</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00087">lbann_data_reader_cifar10.hpp:87</a></div></div>
+<p>Definition at line <a class="el" href="data__reader__cifar10_8hpp_source.html#l00058">58</a> of file <a class="el" href="data__reader__cifar10_8hpp_source.html">data_reader_cifar10.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                               {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">m_image_height</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_a5dae93f777add6b092a5e80bada5ce9f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">lbann::cifar10_reader::m_image_height</a></div><div class="ttdeci">int m_image_height</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00093">data_reader_cifar10.hpp:93</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="ab59cb014260eda81003603537ca14d1d"></a>
+<a class="anchor" id="ab75d229a34209d8172f5341856c85540"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -706,7 +796,6 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">int lbann::cifar10_reader::get_image_num_channels </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
@@ -720,15 +809,15 @@ Here is the call graph for this function:</div>
 
 <p>returns image depth (which should be 3) </p>
 
-<p>Definition at line <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html#l00070">70</a> of file <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html">lbann_data_reader_cifar10.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                         {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">m_image_num_channels</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_a88baf5a9820e25059b71ac5c2b62f69f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">lbann::cifar10_reader::m_image_num_channels</a></div><div class="ttdeci">int m_image_num_channels</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00088">lbann_data_reader_cifar10.hpp:88</a></div></div>
+<p>Definition at line <a class="el" href="data__reader__cifar10_8hpp_source.html#l00067">67</a> of file <a class="el" href="data__reader__cifar10_8hpp_source.html">data_reader_cifar10.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                     {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">m_image_num_channels</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_a88baf5a9820e25059b71ac5c2b62f69f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">lbann::cifar10_reader::m_image_num_channels</a></div><div class="ttdeci">int m_image_num_channels</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00094">data_reader_cifar10.hpp:94</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a13efc504e4bcc5626ecebc7fd1d3e6b9"></a>
+<a class="anchor" id="af3539d039a25b28a9ebfd8ef00e60cdd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -738,7 +827,6 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">int lbann::cifar10_reader::get_image_width </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
@@ -752,15 +840,15 @@ Here is the call graph for this function:</div>
 
 <p>returns image width (which should be 32) </p>
 
-<p>Definition at line <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html#l00056">56</a> of file <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html">lbann_data_reader_cifar10.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                  {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">m_image_width</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_ab66454a0c35289c7c31720611a3411cb"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">lbann::cifar10_reader::m_image_width</a></div><div class="ttdeci">int m_image_width</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00086">lbann_data_reader_cifar10.hpp:86</a></div></div>
+<p>Definition at line <a class="el" href="data__reader__cifar10_8hpp_source.html#l00053">53</a> of file <a class="el" href="data__reader__cifar10_8hpp_source.html">data_reader_cifar10.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                              {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">m_image_width</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_ab66454a0c35289c7c31720611a3411cb"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">lbann::cifar10_reader::m_image_width</a></div><div class="ttdeci">int m_image_width</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00092">data_reader_cifar10.hpp:92</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="aa0237823c16c40344c58e6b69f2b9674"></a>
+<a class="anchor" id="adb9f02ca8233b00563cd26e5487716a7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -770,7 +858,6 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">int lbann::cifar10_reader::get_linearized_data_size </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
@@ -786,26 +873,26 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1generic__data__reader.html#a8a8ccf191d2adcf0a1b00ce12e06d16b">lbann::generic_data_reader</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html#l00075">75</a> of file <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html">lbann_data_reader_cifar10.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                           {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">m_image_width</a> * <a class="code" href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">m_image_height</a> * <a class="code" href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">m_image_num_channels</a>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_ab66454a0c35289c7c31720611a3411cb"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">lbann::cifar10_reader::m_image_width</a></div><div class="ttdeci">int m_image_width</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00086">lbann_data_reader_cifar10.hpp:86</a></div></div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_a5dae93f777add6b092a5e80bada5ce9f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">lbann::cifar10_reader::m_image_height</a></div><div class="ttdeci">int m_image_height</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00087">lbann_data_reader_cifar10.hpp:87</a></div></div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_a88baf5a9820e25059b71ac5c2b62f69f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">lbann::cifar10_reader::m_image_num_channels</a></div><div class="ttdeci">int m_image_num_channels</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00088">lbann_data_reader_cifar10.hpp:88</a></div></div>
+<p>Definition at line <a class="el" href="data__reader__cifar10_8hpp_source.html#l00072">72</a> of file <a class="el" href="data__reader__cifar10_8hpp_source.html">data_reader_cifar10.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                       {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">m_image_width</a> * <a class="code" href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">m_image_height</a> * <a class="code" href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">m_image_num_channels</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_ab66454a0c35289c7c31720611a3411cb"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">lbann::cifar10_reader::m_image_width</a></div><div class="ttdeci">int m_image_width</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00092">data_reader_cifar10.hpp:92</a></div></div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_a5dae93f777add6b092a5e80bada5ce9f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">lbann::cifar10_reader::m_image_height</a></div><div class="ttdeci">int m_image_height</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00093">data_reader_cifar10.hpp:93</a></div></div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_a88baf5a9820e25059b71ac5c2b62f69f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">lbann::cifar10_reader::m_image_num_channels</a></div><div class="ttdeci">int m_image_num_channels</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00094">data_reader_cifar10.hpp:94</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1cifar10__reader_aa0237823c16c40344c58e6b69f2b9674_icgraph.png" border="0" usemap="#classlbann_1_1cifar10__reader_aa0237823c16c40344c58e6b69f2b9674_icgraph" alt=""/></div>
-<map name="classlbann_1_1cifar10__reader_aa0237823c16c40344c58e6b69f2b9674_icgraph" id="classlbann_1_1cifar10__reader_aa0237823c16c40344c58e6b69f2b9674_icgraph">
-<area shape="rect" id="node2" href="classlbann_1_1cifar10__reader.html#a68d88ef3ebd7b3fa8923a33350964b10" title="lbann::cifar10_reader\l::load" alt="" coords="227,5,370,46"/></map>
+<div class="center"><img src="classlbann_1_1cifar10__reader_adb9f02ca8233b00563cd26e5487716a7_icgraph.png" border="0" usemap="#classlbann_1_1cifar10__reader_adb9f02ca8233b00563cd26e5487716a7_icgraph" alt=""/></div>
+<map name="classlbann_1_1cifar10__reader_adb9f02ca8233b00563cd26e5487716a7_icgraph" id="classlbann_1_1cifar10__reader_adb9f02ca8233b00563cd26e5487716a7_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1cifar10__reader.html#a7eecd862aafe627079e5beadbdcb00a1" title="lbann::cifar10_reader\l::load" alt="" coords="227,5,370,46"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a3946572d8360278f4c1f41c06a4dd405"></a>
+<a class="anchor" id="ab54dbea70b26074b4cdc5848f149d152"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -815,7 +902,6 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">int lbann::cifar10_reader::get_linearized_label_size </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
@@ -831,14 +917,14 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1generic__data__reader.html#a6ce8d1c4a4e814a89e9f252a8d78de8f">lbann::generic_data_reader</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html#l00080">80</a> of file <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html">lbann_data_reader_cifar10.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                            {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> 10;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="data__reader__cifar10_8hpp_source.html#l00077">77</a> of file <a class="el" href="data__reader__cifar10_8hpp_source.html">data_reader_cifar10.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                        {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> 10;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="ad05ced5553ad7f48acaa9b007df40495"></a>
+<a class="anchor" id="a203157a4ccefc3c60a7c71ec4c8ab362"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -848,7 +934,6 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">int lbann::cifar10_reader::get_num_labels </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
@@ -862,14 +947,14 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1generic__data__reader.html#a274b995b6074d77a743b7e6a684c2b20">lbann::generic_data_reader</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html#l00065">65</a> of file <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html">lbann_data_reader_cifar10.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                 {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> 10;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
+<p>Definition at line <a class="el" href="data__reader__cifar10_8hpp_source.html#l00062">62</a> of file <a class="el" href="data__reader__cifar10_8hpp_source.html">data_reader_cifar10.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                             {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> 10;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a68d88ef3ebd7b3fa8923a33350964b10"></a>
+<a class="anchor" id="a7eecd862aafe627079e5beadbdcb00a1"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -877,7 +962,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void cifar10_reader::load </td>
+          <td class="memname">void lbann::cifar10_reader::load </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -893,120 +978,159 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classlbann_1_1generic__data__reader.html#afeb47703d988a230a59859cbfc178215">lbann::generic_data_reader</a>.</p>
 
-<p>Definition at line <a class="el" href="lbann__data__reader__cifar10_8cpp_source.html#l00066">66</a> of file <a class="el" href="lbann__data__reader__cifar10_8cpp_source.html">lbann_data_reader_cifar10.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                              {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  stringstream err;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="comment">//open data file</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordtype">string</span> image_dir = <a class="code" href="classlbann_1_1generic__data__reader.html#a92fc5dc9b5d4c10bbbf7546353403445">get_file_dir</a>();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">string</span> filename = <a class="code" href="classlbann_1_1generic__data__reader.html#a0e216aa3f8c40e44c5fb14a587fa49d4">get_data_filename</a>();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  stringstream b;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  b &lt;&lt; image_dir &lt;&lt; <span class="stringliteral">&quot;/&quot;</span> &lt;&lt; filename;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1generic__data__reader.html#af144e7313b86f12a190ca260528279b7">is_master</a>()) {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;opening: &quot;</span> &lt;&lt; b.str() &lt;&lt; endl;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  ifstream in(b.str().c_str(), ios::binary);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keywordflow">if</span> (not in.good()) {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; ::  failed to open &quot;</span> &lt;&lt; b.str() &lt;&lt; <span class="stringliteral">&quot; for reading&quot;</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="comment">//get number of images, with error checking</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordtype">int</span> len = <a class="code" href="classlbann_1_1cifar10__reader.html#aa0237823c16c40344c58e6b69f2b9674">get_linearized_data_size</a>() + 1;  <span class="comment">//should be 3073</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  in.seekg(0, in.end);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  streampos fs = in.tellg();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  in.seekg(0, in.beg);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordflow">if</span> (fs % len != 0) {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        &lt;&lt; <span class="stringliteral">&quot; ::  fs % len != 0; fs: &quot;</span> &lt;&lt; fs &lt;&lt; <span class="stringliteral">&quot; len: &quot;</span> &lt;&lt; len;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="comment">//reserve space for string images</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">int</span> num_images = fs / len;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>.resize(num_images);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> h=0; h&lt;<a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>.size(); h++) {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>[h].resize(len);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="comment">//read in the images; each image is 1 byte, which is the</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="comment">//label (0-9), and 2072 pixels</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> h=0; h&lt;<a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>.size(); h++) {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    in.read((<span class="keywordtype">char</span> *)&amp;(<a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>[h][0]), len);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  in.close();</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <a class="code" href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">m_shuffled_indices</a>.resize(<a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>.size());</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> n = 0; n &lt; <a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>.size(); n++) {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">m_shuffled_indices</a>[n] = n;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  }</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <a class="code" href="classlbann_1_1generic__data__reader.html#aa28fdeeb6af492540f507e49adff5d6c">select_subset_of_data</a>();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_a9b47dab5c16987441ec5276d91a5aab5"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">lbann::cifar10_reader::m_data</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; unsigned char &gt; &gt; m_data</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00085">lbann_data_reader_cifar10.hpp:85</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_a92fc5dc9b5d4c10bbbf7546353403445"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#a92fc5dc9b5d4c10bbbf7546353403445">lbann::generic_data_reader::get_file_dir</a></div><div class="ttdeci">std::string get_file_dir() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8cpp_source.html#l00264">lbann_data_reader.cpp:264</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_aaab6aeff67ffff1c689336851fec2c57"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">lbann::generic_data_reader::m_shuffled_indices</a></div><div class="ttdeci">std::vector&lt; int &gt; m_shuffled_indices</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00383">lbann_data_reader.hpp:383</a></div></div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_aa0237823c16c40344c58e6b69f2b9674"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#aa0237823c16c40344c58e6b69f2b9674">lbann::cifar10_reader::get_linearized_data_size</a></div><div class="ttdeci">int get_linearized_data_size(void) const </div><div class="ttdoc">returns the number of pixels in the image (should be 3072) </div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00075">lbann_data_reader_cifar10.hpp:75</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_aa28fdeeb6af492540f507e49adff5d6c"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#aa28fdeeb6af492540f507e49adff5d6c">lbann::generic_data_reader::select_subset_of_data</a></div><div class="ttdeci">void select_subset_of_data()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8cpp_source.html#l00115">lbann_data_reader.cpp:115</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__exception_8hpp_source.html#l00040">lbann_exception.hpp:40</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_a0e216aa3f8c40e44c5fb14a587fa49d4"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#a0e216aa3f8c40e44c5fb14a587fa49d4">lbann::generic_data_reader::get_data_filename</a></div><div class="ttdeci">std::string get_data_filename() const </div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8cpp_source.html#l00272">lbann_data_reader.cpp:272</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_af144e7313b86f12a190ca260528279b7"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#af144e7313b86f12a190ca260528279b7">lbann::generic_data_reader::is_master</a></div><div class="ttdeci">bool is_master() const </div><div class="ttdoc">only the master may write to cerr or cout; primarily for use in debugging during development ...</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8hpp_source.html#l00332">lbann_data_reader.hpp:332</a></div></div>
+<p>Definition at line <a class="el" href="data__reader__cifar10_8cpp_source.html#l00040">40</a> of file <a class="el" href="data__reader__cifar10_8cpp_source.html">data_reader_cifar10.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                          {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="comment">//open data file</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  std::string image_dir = <a class="code" href="classlbann_1_1generic__data__reader.html#a92fc5dc9b5d4c10bbbf7546353403445">get_file_dir</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  std::string filename = <a class="code" href="classlbann_1_1generic__data__reader.html#a0e216aa3f8c40e44c5fb14a587fa49d4">get_data_filename</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  std::string path = image_dir + <span class="stringliteral">&quot;/&quot;</span> + filename;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  std::ifstream in(path, std::ios::binary);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">if</span> (not in.good()) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      std::string{} + __FILE__ + <span class="stringliteral">&quot; &quot;</span> + std::to_string(__LINE__) +</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="stringliteral">&quot; :: failed to open &quot;</span> + path + <span class="stringliteral">&quot; for reading&quot;</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="comment">//get number of images, with error checking</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">int</span> len = <a class="code" href="classlbann_1_1cifar10__reader.html#adb9f02ca8233b00563cd26e5487716a7">get_linearized_data_size</a>() + 1;  <span class="comment">//should be 3073</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  in.seekg(0, in.end);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  std::streampos fs = in.tellg();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  in.seekg(0, in.beg);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">if</span> (fs % len != 0) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      std::string{} + __FILE__ + <span class="stringliteral">&quot; &quot;</span> + std::to_string(__LINE__) +</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="stringliteral">&quot; ::  fs % len != 0; fs: &quot;</span> + std::to_string(fs) + <span class="stringliteral">&quot; len: &quot;</span> +</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      std::to_string(len));</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="comment">//reserve space for string images</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">int</span> num_images = fs / len;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>.resize(num_images);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> h=0; h&lt;<a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>.size(); h++) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>[h].resize(len);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="comment">//read in the images; each image is 1 byte, which is the</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="comment">//label (0-9), and 2072 pixels</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> h=0; h&lt;<a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>.size(); h++) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    in.read((<span class="keywordtype">char</span> *)&amp;(<a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>[h][0]), len);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  in.close();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">m_shuffled_indices</a>.resize(<a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>.size());</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> n = 0; n &lt; <a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>.size(); n++) {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">m_shuffled_indices</a>[n] = n;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="classlbann_1_1generic__data__reader.html#aa28fdeeb6af492540f507e49adff5d6c">select_subset_of_data</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_a9b47dab5c16987441ec5276d91a5aab5"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">lbann::cifar10_reader::m_data</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; unsigned char &gt; &gt; m_data</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00091">data_reader_cifar10.hpp:91</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_a92fc5dc9b5d4c10bbbf7546353403445"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#a92fc5dc9b5d4c10bbbf7546353403445">lbann::generic_data_reader::get_file_dir</a></div><div class="ttdeci">std::string get_file_dir() const </div><div class="ttdef"><b>Definition:</b> <a href="data__reader_8cpp_source.html#l00398">data_reader.cpp:398</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_aaab6aeff67ffff1c689336851fec2c57"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">lbann::generic_data_reader::m_shuffled_indices</a></div><div class="ttdeci">std::vector&lt; int &gt; m_shuffled_indices</div><div class="ttdef"><b>Definition:</b> <a href="data__reader_8hpp_source.html#l00397">data_reader.hpp:397</a></div></div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_adb9f02ca8233b00563cd26e5487716a7"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#adb9f02ca8233b00563cd26e5487716a7">lbann::cifar10_reader::get_linearized_data_size</a></div><div class="ttdeci">int get_linearized_data_size() const </div><div class="ttdoc">returns the number of pixels in the image (should be 3072) </div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00072">data_reader_cifar10.hpp:72</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_aa28fdeeb6af492540f507e49adff5d6c"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#aa28fdeeb6af492540f507e49adff5d6c">lbann::generic_data_reader::select_subset_of_data</a></div><div class="ttdeci">void select_subset_of_data()</div><div class="ttdef"><b>Definition:</b> <a href="data__reader_8cpp_source.html#l00268">data_reader.cpp:268</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_a0e216aa3f8c40e44c5fb14a587fa49d4"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#a0e216aa3f8c40e44c5fb14a587fa49d4">lbann::generic_data_reader::get_data_filename</a></div><div class="ttdeci">std::string get_data_filename() const </div><div class="ttdef"><b>Definition:</b> <a href="data__reader_8cpp_source.html#l00406">data_reader.cpp:406</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1cifar10__reader_a68d88ef3ebd7b3fa8923a33350964b10_cgraph.png" border="0" usemap="#classlbann_1_1cifar10__reader_a68d88ef3ebd7b3fa8923a33350964b10_cgraph" alt=""/></div>
-<map name="classlbann_1_1cifar10__reader_a68d88ef3ebd7b3fa8923a33350964b10_cgraph" id="classlbann_1_1cifar10__reader_a68d88ef3ebd7b3fa8923a33350964b10_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1generic__data__reader.html#a92fc5dc9b5d4c10bbbf7546353403445" title="lbann::generic_data\l_reader::get_file_dir" alt="" coords="219,5,355,46"/><area shape="rect" id="node3" href="classlbann_1_1generic__data__reader.html#a0e216aa3f8c40e44c5fb14a587fa49d4" title="lbann::generic_data\l_reader::get_data_filename" alt="" coords="197,70,376,111"/><area shape="rect" id="node4" href="classlbann_1_1generic__data__reader.html#af144e7313b86f12a190ca260528279b7" title="only the master may write to cerr or cout; primarily for use in debugging during development ..." alt="" coords="219,135,354,177"/><area shape="rect" id="node5" href="classlbann_1_1cifar10__reader.html#aa0237823c16c40344c58e6b69f2b9674" title="returns the number of pixels in the image (should be 3072) " alt="" coords="200,201,373,242"/><area shape="rect" id="node6" href="classlbann_1_1generic__data__reader.html#aa28fdeeb6af492540f507e49adff5d6c" title="lbann::generic_data\l_reader::select_subset\l_of_data" alt="" coords="209,265,364,321"/><area shape="rect" id="node7" href="namespacelbann.html#aba9d11cb3a739cd84e7234ceeb32d098" title="lbann::get_data_seq\l_generator" alt="" coords="424,273,563,314"/></map>
+<div class="center"><img src="classlbann_1_1cifar10__reader_a7eecd862aafe627079e5beadbdcb00a1_cgraph.png" border="0" usemap="#classlbann_1_1cifar10__reader_a7eecd862aafe627079e5beadbdcb00a1_cgraph" alt=""/></div>
+<map name="classlbann_1_1cifar10__reader_a7eecd862aafe627079e5beadbdcb00a1_cgraph" id="classlbann_1_1cifar10__reader_a7eecd862aafe627079e5beadbdcb00a1_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1generic__data__reader.html#a92fc5dc9b5d4c10bbbf7546353403445" title="lbann::generic_data\l_reader::get_file_dir" alt="" coords="219,57,355,98"/><area shape="rect" id="node3" href="classlbann_1_1generic__data__reader.html#a0e216aa3f8c40e44c5fb14a587fa49d4" title="lbann::generic_data\l_reader::get_data_filename" alt="" coords="197,122,376,163"/><area shape="rect" id="node4" href="classlbann_1_1cifar10__reader.html#adb9f02ca8233b00563cd26e5487716a7" title="returns the number of pixels in the image (should be 3072) " alt="" coords="200,187,373,229"/><area shape="rect" id="node5" href="classlbann_1_1generic__data__reader.html#aa28fdeeb6af492540f507e49adff5d6c" title="lbann::generic_data\l_reader::select_subset\l_of_data" alt="" coords="209,252,364,308"/><area shape="rect" id="node6" href="classlbann_1_1generic__data__reader.html#ae18398f6dec673bc078a12a1c0176af6" title="lbann::generic_data\l_reader::get_firstN" alt="" coords="465,5,599,46"/><area shape="rect" id="node7" href="namespacelbann.html#aba9d11cb3a739cd84e7234ceeb32d098" title="lbann::get_data_seq\l_generator" alt="" coords="463,70,601,111"/><area shape="rect" id="node8" href="classlbann_1_1generic__data__reader.html#a37c23bf6e3bceef56d12a8436d48f2f2" title="lbann::generic_data\l_reader::has_max_sample_count" alt="" coords="425,135,639,177"/><area shape="rect" id="node9" href="classlbann_1_1generic__data__reader.html#a088000791b12213efc43b31b4bade2f6" title="lbann::generic_data\l_reader::has_use_percent" alt="" coords="689,329,861,370"/><area shape="rect" id="node10" href="classlbann_1_1generic__data__reader.html#a3d77d15b6e36f4185e9209a03922078e" title="lbann::generic_data\l_reader::has_validation\l_percent" alt="" coords="454,252,610,308"/><area shape="rect" id="node11" href="classlbann_1_1generic__data__reader.html#a71e4de2bd2c3f5223c1a81a52a25247c" title="lbann::generic_data\l_reader::get_max_sample_count" alt="" coords="427,331,637,373"/><area shape="rect" id="node12" href="classlbann_1_1generic__data__reader.html#a331dae0b9f00fe21d2fbbeade4047bc8" title="lbann::generic_data\l_reader::getNumData" alt="" coords="459,397,605,438"/><area shape="rect" id="node13" href="classlbann_1_1generic__data__reader.html#ac9cc7be0cea189043aaf243e2b2df8aa" title="lbann::generic_data\l_reader::get_use_percent" alt="" coords="447,462,617,503"/><area shape="rect" id="node14" href="classlbann_1_1generic__data__reader.html#a5fc1d7315f6044d4896c303f10c2c2e4" title="lbann::generic_data\l_reader::get_validation\l_percent" alt="" coords="455,527,609,583"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a16e855493dd36ac2b1374d1748899f06"></a>
+<a class="anchor" id="aa97e6d18d0ac3bb42da58c11d5d2ca17"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classlbann_1_1cifar10__reader.html">cifar10_reader</a> &amp; cifar10_reader::operator= </td>
+          <td class="memname"><a class="el" href="classlbann_1_1cifar10__reader.html">cifar10_reader</a>&amp; lbann::cifar10_reader::operator= </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classlbann_1_1cifar10__reader.html">cifar10_reader</a> &amp;&#160;</td>
-          <td class="paramname"><em>source</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>assignment operator </p>
+</div>
+</div>
+<a class="anchor" id="a31b7bb67819272106133477e6dbf0eb4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lbann::cifar10_reader::save_image </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> &amp;&#160;</td>
+          <td class="paramname"><em>pixels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>do_scale</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>External interface to saving an image. Classes that want to support this should use it to interface with internal_save_image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pixels</td><td>The image to save (as a column vector). </td></tr>
+    <tr><td class="paramname">filename</td><td>The image filename (type inferred from extension). </td></tr>
+    <tr><td class="paramname">scale</td><td>Whether pixels has been scaled (default true). </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Definition at line <a class="el" href="lbann__data__reader__cifar10_8cpp_source.html#l00049">49</a> of file <a class="el" href="lbann__data__reader__cifar10_8cpp_source.html">lbann_data_reader_cifar10.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                                                      {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="comment">// check for self-assignment</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">this</span> == &amp;source) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="classlbann_1_1generic__data__reader.html#a72a464475f641c638f1da750207ef1f7">generic_data_reader::operator=</a>(source);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">m_image_width</a> = source.<a class="code" href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">m_image_width</a>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">m_image_height</a> = source.<a class="code" href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">m_image_height</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">m_image_num_channels</a> = source.<a class="code" href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">m_image_num_channels</a>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a> = source.<a class="code" href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">m_data</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">return</span> (*<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_a72a464475f641c638f1da750207ef1f7"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#a72a464475f641c638f1da750207ef1f7">lbann::generic_data_reader::operator=</a></div><div class="ttdeci">generic_data_reader &amp; operator=(const generic_data_reader &amp;source)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader_8cpp_source.html#l00159">lbann_data_reader.cpp:159</a></div></div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_a9b47dab5c16987441ec5276d91a5aab5"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a9b47dab5c16987441ec5276d91a5aab5">lbann::cifar10_reader::m_data</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; unsigned char &gt; &gt; m_data</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00085">lbann_data_reader_cifar10.hpp:85</a></div></div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_ab66454a0c35289c7c31720611a3411cb"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">lbann::cifar10_reader::m_image_width</a></div><div class="ttdeci">int m_image_width</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00086">lbann_data_reader_cifar10.hpp:86</a></div></div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_a5dae93f777add6b092a5e80bada5ce9f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">lbann::cifar10_reader::m_image_height</a></div><div class="ttdeci">int m_image_height</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00087">lbann_data_reader_cifar10.hpp:87</a></div></div>
-<div class="ttc" id="classlbann_1_1cifar10__reader_html_a88baf5a9820e25059b71ac5c2b62f69f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">lbann::cifar10_reader::m_image_num_channels</a></div><div class="ttdeci">int m_image_num_channels</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__reader__cifar10_8hpp_source.html#l00088">lbann_data_reader_cifar10.hpp:88</a></div></div>
+<p>Reimplemented from <a class="el" href="classlbann_1_1generic__data__reader.html#a030e7521ba0c120f9519495efcf0cf3c">lbann::generic_data_reader</a>.</p>
+
+<p>Definition at line <a class="el" href="data__reader__cifar10_8hpp_source.html#l00085">85</a> of file <a class="el" href="data__reader__cifar10_8hpp_source.html">data_reader_cifar10.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                                                               {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="classlbann_1_1lbann__image__preprocessor.html#a3c4f4cc5c90233696566a35a62a1708c">internal_save_image</a>(pixels, filename, <a class="code" href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">m_image_height</a>, <a class="code" href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">m_image_width</a>,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                        <a class="code" href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">m_image_num_channels</a>, do_scale);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_ab66454a0c35289c7c31720611a3411cb"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#ab66454a0c35289c7c31720611a3411cb">lbann::cifar10_reader::m_image_width</a></div><div class="ttdeci">int m_image_width</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00092">data_reader_cifar10.hpp:92</a></div></div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_a5dae93f777add6b092a5e80bada5ce9f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a5dae93f777add6b092a5e80bada5ce9f">lbann::cifar10_reader::m_image_height</a></div><div class="ttdeci">int m_image_height</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00093">data_reader_cifar10.hpp:93</a></div></div>
+<div class="ttc" id="classlbann_1_1cifar10__reader_html_a88baf5a9820e25059b71ac5c2b62f69f"><div class="ttname"><a href="classlbann_1_1cifar10__reader.html#a88baf5a9820e25059b71ac5c2b62f69f">lbann::cifar10_reader::m_image_num_channels</a></div><div class="ttdeci">int m_image_num_channels</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__cifar10_8hpp_source.html#l00094">data_reader_cifar10.hpp:94</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__image__preprocessor_html_a3c4f4cc5c90233696566a35a62a1708c"><div class="ttname"><a href="classlbann_1_1lbann__image__preprocessor.html#a3c4f4cc5c90233696566a35a62a1708c">lbann::lbann_image_preprocessor::internal_save_image</a></div><div class="ttdeci">void internal_save_image(Mat &amp;pixels, const std::string filename, unsigned imheight, unsigned imwidth, unsigned num_channels, bool do_scale)</div><div class="ttdef"><b>Definition:</b> <a href="image__preprocessor_8cpp_source.html#l00305">image_preprocessor.cpp:305</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1cifar10__reader_a16e855493dd36ac2b1374d1748899f06_cgraph.png" border="0" usemap="#classlbann_1_1cifar10__reader_a16e855493dd36ac2b1374d1748899f06_cgraph" alt=""/></div>
-<map name="classlbann_1_1cifar10__reader_a16e855493dd36ac2b1374d1748899f06_cgraph" id="classlbann_1_1cifar10__reader_a16e855493dd36ac2b1374d1748899f06_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1generic__data__reader.html#a72a464475f641c638f1da750207ef1f7" title="lbann::generic_data\l_reader::operator=" alt="" coords="198,5,333,46"/></map>
+<div class="center"><img src="classlbann_1_1cifar10__reader_a31b7bb67819272106133477e6dbf0eb4_cgraph.png" border="0" usemap="#classlbann_1_1cifar10__reader_a31b7bb67819272106133477e6dbf0eb4_cgraph" alt=""/></div>
+<map name="classlbann_1_1cifar10__reader_a31b7bb67819272106133477e6dbf0eb4_cgraph" id="classlbann_1_1cifar10__reader_a31b7bb67819272106133477e6dbf0eb4_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1lbann__image__preprocessor.html#a3c4f4cc5c90233696566a35a62a1708c" title="lbann::lbann_image\l_preprocessor::internal\l_save_image" alt="" coords="197,4,352,60"/><area shape="rect" id="node3" href="classlbann_1_1lbann__image__preprocessor.html#a7dc609e33febdc7fc29bdc9270594bea" title="lbann::lbann_image\l_preprocessor::cv_pixels" alt="" coords="401,11,567,53"/></map>
 </div>
 </p>
 
@@ -1031,7 +1155,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html#l00085">85</a> of file <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html">lbann_data_reader_cifar10.hpp</a>.</p>
+<p>Definition at line <a class="el" href="data__reader__cifar10_8hpp_source.html#l00091">91</a> of file <a class="el" href="data__reader__cifar10_8hpp_source.html">data_reader_cifar10.hpp</a>.</p>
 
 </div>
 </div>
@@ -1053,7 +1177,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html#l00087">87</a> of file <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html">lbann_data_reader_cifar10.hpp</a>.</p>
+<p>Definition at line <a class="el" href="data__reader__cifar10_8hpp_source.html#l00093">93</a> of file <a class="el" href="data__reader__cifar10_8hpp_source.html">data_reader_cifar10.hpp</a>.</p>
 
 </div>
 </div>
@@ -1075,7 +1199,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html#l00088">88</a> of file <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html">lbann_data_reader_cifar10.hpp</a>.</p>
+<p>Definition at line <a class="el" href="data__reader__cifar10_8hpp_source.html#l00094">94</a> of file <a class="el" href="data__reader__cifar10_8hpp_source.html">data_reader_cifar10.hpp</a>.</p>
 
 </div>
 </div>
@@ -1097,13 +1221,13 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html#l00086">86</a> of file <a class="el" href="lbann__data__reader__cifar10_8hpp_source.html">lbann_data_reader_cifar10.hpp</a>.</p>
+<p>Definition at line <a class="el" href="data__reader__cifar10_8hpp_source.html#l00092">92</a> of file <a class="el" href="data__reader__cifar10_8hpp_source.html">data_reader_cifar10.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/travis/build/LLNL/lbann/include/lbann/data_readers/<a class="el" href="lbann__data__reader__cifar10_8hpp_source.html">lbann_data_reader_cifar10.hpp</a></li>
-<li>/home/travis/build/LLNL/lbann/src/data_readers/<a class="el" href="lbann__data__reader__cifar10_8cpp_source.html">lbann_data_reader_cifar10.cpp</a></li>
+<li>/home/travis/build/LLNL/lbann/include/lbann/data_readers/<a class="el" href="data__reader__cifar10_8hpp_source.html">data_reader_cifar10.hpp</a></li>
+<li>/home/travis/build/LLNL/lbann/src/data_readers/<a class="el" href="data__reader__cifar10_8cpp_source.html">data_reader_cifar10.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -1111,7 +1235,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1cifar10__reader.html">cifar10_reader</a></li>
-    <li class="footer">Generated on Mon Jun 26 2017 22:26:02 for LBANN by
+    <li class="footer">Generated on Fri Jul 14 2017 04:37:54 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

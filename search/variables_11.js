@@ -1,7 +1,7 @@
 var searchData=
 [
   ['taskspernode',['TasksPerNode',['../classlbann_1_1SystemParams.html#a93758103d73bcd95146f99464203aa86',1,'lbann::SystemParams']]],
-  ['terminate_5ftraining',['terminate_training',['../structlbann__model__header.html#a1fece5153abf60dba8fc1324f80c903a',1,'lbann_model_header']]],
+  ['terminate_5ftraining',['terminate_training',['../structlbann_1_1lbann__model__header.html#af2f1bf6aa2757a032ae57e45f6ed1492',1,'lbann::lbann_model_header']]],
   ['test_5fproc',['test_proc',['../structlbann_1_1io__layer_1_1dataset__header.html#abf652c9723fde920147c6c461a5b8803',1,'lbann::io_layer::dataset_header']]],
   ['test_5ftotal',['test_total',['../structlbann_1_1io__layer_1_1dataset__header.html#affce06a3483a5f7fcf8d159b322fdd0b',1,'lbann::io_layer::dataset_header']]],
   ['testfile',['TestFile',['../classlbann_1_1TrainingParams.html#a99502fc87d50df2055a992266fdeee05',1,'lbann::TrainingParams']]],
@@ -11,6 +11,5 @@ var searchData=
   ['train_5fproc',['train_proc',['../structlbann_1_1io__layer_1_1dataset__header.html#a7467be132f47bf869f25ec6f846bfcf5',1,'lbann::io_layer::dataset_header']]],
   ['train_5ftotal',['train_total',['../structlbann_1_1io__layer_1_1dataset__header.html#a73d6951c6ec5284d99e667208319e56c',1,'lbann::io_layer::dataset_header']]],
   ['trainfile',['TrainFile',['../classlbann_1_1TrainingParams.html#a4ac278410cb0a24c9dc1f6edf014d003',1,'lbann::TrainingParams']]],
-  ['trainingsamples',['TrainingSamples',['../classlbann_1_1TrainingParams.html#adf012a044d64191b7d0de8b0278c7060',1,'lbann::TrainingParams']]],
-  ['type',['type',['../classlbann_1_1metrics_1_1metric.html#ab4118ce33325ab57e57ad21c7dde8fa0',1,'lbann::metrics::metric::type()'],['../classlbann_1_1objective__functions_1_1objective__fn.html#a960a2e2ea129fb64bc4112c989766584',1,'lbann::objective_functions::objective_fn::type()']]]
+  ['trainingsamples',['TrainingSamples',['../classlbann_1_1TrainingParams.html#adf012a044d64191b7d0de8b0278c7060',1,'lbann::TrainingParams']]]
 ];

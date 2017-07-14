@@ -1,8 +1,8 @@
 var classlbann_1_1TrainingParams =
 [
-    [ "TrainingParams", "classlbann_1_1TrainingParams.html#a0530f1ed33dd848017f392c4245b415a", null ],
+    [ "TrainingParams", "classlbann_1_1TrainingParams.html#a4ca5149e14ab1aed5f5a9c0e612ce62d", null ],
     [ "parse_params", "classlbann_1_1TrainingParams.html#a245c0674a2132cb15f1198b1f4dd2bf8", null ],
-    [ "ActivationType", "classlbann_1_1TrainingParams.html#a843d078db900a23792944c0b4842bfa8", null ],
+    [ "ActivationType", "classlbann_1_1TrainingParams.html#a2b190763ecc3e2bb9b9058bc0ff40845", null ],
     [ "CkptEpochs", "classlbann_1_1TrainingParams.html#ad113dc144a2c77609091fd36fc5816bf", null ],
     [ "CkptSecs", "classlbann_1_1TrainingParams.html#ac23d388e43cb227aa72196c8b8102b92", null ],
     [ "CkptSteps", "classlbann_1_1TrainingParams.html#a3b1ec8d02290b369572c99b39b7d8637", null ],

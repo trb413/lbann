@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['rng_5fgen',['rng_gen',['../namespacelbann.html#aa54070c91e931f303a89f162e91de8cc',1,'lbann']]],
-  ['rowsummat',['RowSumMat',['../lbann__base_8hpp.html#a6c236b0664425bd2551cb530f77a2372',1,'lbann_base.hpp']]]
+  ['starmat',['StarMat',['../base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86',1,'base.hpp']]],
+  ['starmrmat',['StarMRMat',['../base_8hpp.html#a99cdf61e316c00f3e39aeaa1509197c1',1,'base.hpp']]],
+  ['starvcmat',['StarVCMat',['../base_8hpp.html#a763b3164342a5d73db851e85c76d385a',1,'base.hpp']]]
 ];

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-91-gf4b1db2-ci247266028</span>
+   &#160;<span id="projectnumber">810fe68-ci253400887</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('classlbann_1_1dataset.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="lbann__dataset_8hpp_source.html">lbann_dataset.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="dataset_8hpp_source.html">dataset.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for lbann::dataset:</div>
 <div class="dyncontent">
@@ -110,6 +110,10 @@ Collaboration diagram for lbann::dataset:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a41834453907dfea600e48595ac200c73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1dataset.html#a41834453907dfea600e48595ac200c73">dataset</a> (<a class="el" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a> *d_reader)</td></tr>
 <tr class="separator:a41834453907dfea600e48595ac200c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47e250846a4cd472d4c9e5831810c6c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1dataset.html#a47e250846a4cd472d4c9e5831810c6c7">dataset</a> (const <a class="el" href="classlbann_1_1dataset.html">dataset</a> &amp;other)</td></tr>
+<tr class="separator:a47e250846a4cd472d4c9e5831810c6c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac007eda40bacff2749a9b634436bb299"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1dataset.html">dataset</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1dataset.html#ac007eda40bacff2749a9b634436bb299">operator=</a> (const <a class="el" href="classlbann_1_1dataset.html">dataset</a> &amp;other)</td></tr>
+<tr class="separator:ac007eda40bacff2749a9b634436bb299"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -124,7 +128,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="lbann__dataset_8hpp_source.html#l00033">33</a> of file <a class="el" href="lbann__dataset_8hpp_source.html">lbann_dataset.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dataset_8hpp_source.html#l00034">34</a> of file <a class="el" href="dataset_8hpp_source.html">dataset.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a41834453907dfea600e48595ac200c73"></a>
 <div class="memitem">
@@ -148,12 +152,109 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__dataset_8hpp_source.html#l00035">35</a> of file <a class="el" href="lbann__dataset_8hpp_source.html">lbann_dataset.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;: <a class="code" href="classlbann_1_1dataset.html#a409bc6bc6c0d86e8e8e4afc90e84ad53">data_reader</a>(d_reader), <a class="code" href="classlbann_1_1dataset.html#a4632b42298795de712a32da162bedad5">num_samples_processed</a>(0), <a class="code" href="classlbann_1_1dataset.html#a95e9d0ceefc527e22318149778597727">total_samples</a>(0) {};</div>
-<div class="ttc" id="classlbann_1_1dataset_html_a95e9d0ceefc527e22318149778597727"><div class="ttname"><a href="classlbann_1_1dataset.html#a95e9d0ceefc527e22318149778597727">lbann::dataset::total_samples</a></div><div class="ttdeci">long total_samples</div><div class="ttdef"><b>Definition:</b> <a href="lbann__dataset_8hpp_source.html#l00040">lbann_dataset.hpp:40</a></div></div>
-<div class="ttc" id="classlbann_1_1dataset_html_a4632b42298795de712a32da162bedad5"><div class="ttname"><a href="classlbann_1_1dataset.html#a4632b42298795de712a32da162bedad5">lbann::dataset::num_samples_processed</a></div><div class="ttdeci">long num_samples_processed</div><div class="ttdef"><b>Definition:</b> <a href="lbann__dataset_8hpp_source.html#l00039">lbann_dataset.hpp:39</a></div></div>
-<div class="ttc" id="classlbann_1_1dataset_html_a409bc6bc6c0d86e8e8e4afc90e84ad53"><div class="ttname"><a href="classlbann_1_1dataset.html#a409bc6bc6c0d86e8e8e4afc90e84ad53">lbann::dataset::data_reader</a></div><div class="ttdeci">generic_data_reader * data_reader</div><div class="ttdef"><b>Definition:</b> <a href="lbann__dataset_8hpp_source.html#l00035">lbann_dataset.hpp:35</a></div></div>
+<p>Definition at line <a class="el" href="dataset_8hpp_source.html#l00036">36</a> of file <a class="el" href="dataset_8hpp_source.html">dataset.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;: <a class="code" href="classlbann_1_1dataset.html#a409bc6bc6c0d86e8e8e4afc90e84ad53">data_reader</a>(d_reader), <a class="code" href="classlbann_1_1dataset.html#a4632b42298795de712a32da162bedad5">num_samples_processed</a>(0), <a class="code" href="classlbann_1_1dataset.html#a95e9d0ceefc527e22318149778597727">total_samples</a>(0) {};</div>
+<div class="ttc" id="classlbann_1_1dataset_html_a95e9d0ceefc527e22318149778597727"><div class="ttname"><a href="classlbann_1_1dataset.html#a95e9d0ceefc527e22318149778597727">lbann::dataset::total_samples</a></div><div class="ttdeci">long total_samples</div><div class="ttdef"><b>Definition:</b> <a href="dataset_8hpp_source.html#l00057">dataset.hpp:57</a></div></div>
+<div class="ttc" id="classlbann_1_1dataset_html_a4632b42298795de712a32da162bedad5"><div class="ttname"><a href="classlbann_1_1dataset.html#a4632b42298795de712a32da162bedad5">lbann::dataset::num_samples_processed</a></div><div class="ttdeci">long num_samples_processed</div><div class="ttdef"><b>Definition:</b> <a href="dataset_8hpp_source.html#l00056">dataset.hpp:56</a></div></div>
+<div class="ttc" id="classlbann_1_1dataset_html_a409bc6bc6c0d86e8e8e4afc90e84ad53"><div class="ttname"><a href="classlbann_1_1dataset.html#a409bc6bc6c0d86e8e8e4afc90e84ad53">lbann::dataset::data_reader</a></div><div class="ttdeci">generic_data_reader * data_reader</div><div class="ttdef"><b>Definition:</b> <a href="dataset_8hpp_source.html#l00055">dataset.hpp:55</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a47e250846a4cd472d4c9e5831810c6c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">lbann::dataset::dataset </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlbann_1_1dataset.html">dataset</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="dataset_8hpp_source.html#l00037">37</a> of file <a class="el" href="dataset_8hpp_source.html">dataset.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                :</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classlbann_1_1dataset.html#a4632b42298795de712a32da162bedad5">num_samples_processed</a>(other.num_samples_processed),</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="classlbann_1_1dataset.html#a95e9d0ceefc527e22318149778597727">total_samples</a>(other.total_samples),</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classlbann_1_1dataset.html#ac90d82addc9f624b7767d6fff907b1cc">num_iterations_per_epoch</a>(other.num_iterations_per_epoch) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classlbann_1_1dataset.html#a409bc6bc6c0d86e8e8e4afc90e84ad53">data_reader</a> = other.data_reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#a208ba1223e7aaa75e94b728501f12f86">copy</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1dataset_html_a95e9d0ceefc527e22318149778597727"><div class="ttname"><a href="classlbann_1_1dataset.html#a95e9d0ceefc527e22318149778597727">lbann::dataset::total_samples</a></div><div class="ttdeci">long total_samples</div><div class="ttdef"><b>Definition:</b> <a href="dataset_8hpp_source.html#l00057">dataset.hpp:57</a></div></div>
+<div class="ttc" id="classlbann_1_1dataset_html_a4632b42298795de712a32da162bedad5"><div class="ttname"><a href="classlbann_1_1dataset.html#a4632b42298795de712a32da162bedad5">lbann::dataset::num_samples_processed</a></div><div class="ttdeci">long num_samples_processed</div><div class="ttdef"><b>Definition:</b> <a href="dataset_8hpp_source.html#l00056">dataset.hpp:56</a></div></div>
+<div class="ttc" id="classlbann_1_1dataset_html_ac90d82addc9f624b7767d6fff907b1cc"><div class="ttname"><a href="classlbann_1_1dataset.html#ac90d82addc9f624b7767d6fff907b1cc">lbann::dataset::num_iterations_per_epoch</a></div><div class="ttdeci">long num_iterations_per_epoch</div><div class="ttdef"><b>Definition:</b> <a href="dataset_8hpp_source.html#l00058">dataset.hpp:58</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_a208ba1223e7aaa75e94b728501f12f86"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#a208ba1223e7aaa75e94b728501f12f86">lbann::generic_data_reader::copy</a></div><div class="ttdeci">virtual generic_data_reader * copy() const =0</div></div>
+<div class="ttc" id="classlbann_1_1dataset_html_a409bc6bc6c0d86e8e8e4afc90e84ad53"><div class="ttname"><a href="classlbann_1_1dataset.html#a409bc6bc6c0d86e8e8e4afc90e84ad53">lbann::dataset::data_reader</a></div><div class="ttdeci">generic_data_reader * data_reader</div><div class="ttdef"><b>Definition:</b> <a href="dataset_8hpp_source.html#l00055">dataset.hpp:55</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1dataset_a47e250846a4cd472d4c9e5831810c6c7_cgraph.png" border="0" usemap="#classlbann_1_1dataset_a47e250846a4cd472d4c9e5831810c6c7_cgraph" alt=""/></div>
+<map name="classlbann_1_1dataset_a47e250846a4cd472d4c9e5831810c6c7_cgraph" id="classlbann_1_1dataset_a47e250846a4cd472d4c9e5831810c6c7_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1generic__data__reader.html#a208ba1223e7aaa75e94b728501f12f86" title="lbann::generic_data\l_reader::copy" alt="" coords="209,5,343,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac007eda40bacff2749a9b634436bb299"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classlbann_1_1dataset.html">dataset</a>&amp; lbann::dataset::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classlbann_1_1dataset.html">dataset</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="dataset_8hpp_source.html#l00043">43</a> of file <a class="el" href="dataset_8hpp_source.html">dataset.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                           {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classlbann_1_1dataset.html#a4632b42298795de712a32da162bedad5">num_samples_processed</a> = other.num_samples_processed;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classlbann_1_1dataset.html#a95e9d0ceefc527e22318149778597727">total_samples</a> = other.total_samples;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classlbann_1_1dataset.html#ac90d82addc9f624b7767d6fff907b1cc">num_iterations_per_epoch</a> = other.num_iterations_per_epoch;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1dataset.html#a409bc6bc6c0d86e8e8e4afc90e84ad53">data_reader</a>) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keyword">delete</span> <a class="code" href="classlbann_1_1dataset.html#a409bc6bc6c0d86e8e8e4afc90e84ad53">data_reader</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classlbann_1_1dataset.html#a409bc6bc6c0d86e8e8e4afc90e84ad53">data_reader</a> = other.data_reader-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#a208ba1223e7aaa75e94b728501f12f86">copy</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1dataset_html_a95e9d0ceefc527e22318149778597727"><div class="ttname"><a href="classlbann_1_1dataset.html#a95e9d0ceefc527e22318149778597727">lbann::dataset::total_samples</a></div><div class="ttdeci">long total_samples</div><div class="ttdef"><b>Definition:</b> <a href="dataset_8hpp_source.html#l00057">dataset.hpp:57</a></div></div>
+<div class="ttc" id="classlbann_1_1dataset_html_a4632b42298795de712a32da162bedad5"><div class="ttname"><a href="classlbann_1_1dataset.html#a4632b42298795de712a32da162bedad5">lbann::dataset::num_samples_processed</a></div><div class="ttdeci">long num_samples_processed</div><div class="ttdef"><b>Definition:</b> <a href="dataset_8hpp_source.html#l00056">dataset.hpp:56</a></div></div>
+<div class="ttc" id="classlbann_1_1dataset_html_ac90d82addc9f624b7767d6fff907b1cc"><div class="ttname"><a href="classlbann_1_1dataset.html#ac90d82addc9f624b7767d6fff907b1cc">lbann::dataset::num_iterations_per_epoch</a></div><div class="ttdeci">long num_iterations_per_epoch</div><div class="ttdef"><b>Definition:</b> <a href="dataset_8hpp_source.html#l00058">dataset.hpp:58</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_a208ba1223e7aaa75e94b728501f12f86"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#a208ba1223e7aaa75e94b728501f12f86">lbann::generic_data_reader::copy</a></div><div class="ttdeci">virtual generic_data_reader * copy() const =0</div></div>
+<div class="ttc" id="classlbann_1_1dataset_html_a409bc6bc6c0d86e8e8e4afc90e84ad53"><div class="ttname"><a href="classlbann_1_1dataset.html#a409bc6bc6c0d86e8e8e4afc90e84ad53">lbann::dataset::data_reader</a></div><div class="ttdeci">generic_data_reader * data_reader</div><div class="ttdef"><b>Definition:</b> <a href="dataset_8hpp_source.html#l00055">dataset.hpp:55</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1dataset_ac007eda40bacff2749a9b634436bb299_cgraph.png" border="0" usemap="#classlbann_1_1dataset_ac007eda40bacff2749a9b634436bb299_cgraph" alt=""/></div>
+<map name="classlbann_1_1dataset_ac007eda40bacff2749a9b634436bb299_cgraph" id="classlbann_1_1dataset_ac007eda40bacff2749a9b634436bb299_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1generic__data__reader.html#a208ba1223e7aaa75e94b728501f12f86" title="lbann::generic_data\l_reader::copy" alt="" coords="222,5,357,46"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -167,7 +268,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__dataset_8hpp_source.html#l00035">35</a> of file <a class="el" href="lbann__dataset_8hpp_source.html">lbann_dataset.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dataset_8hpp_source.html#l00055">55</a> of file <a class="el" href="dataset_8hpp_source.html">dataset.hpp</a>.</p>
 
 </div>
 </div>
@@ -181,7 +282,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__dataset_8hpp_source.html#l00041">41</a> of file <a class="el" href="lbann__dataset_8hpp_source.html">lbann_dataset.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dataset_8hpp_source.html#l00058">58</a> of file <a class="el" href="dataset_8hpp_source.html">dataset.hpp</a>.</p>
 
 </div>
 </div>
@@ -195,7 +296,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__dataset_8hpp_source.html#l00039">39</a> of file <a class="el" href="lbann__dataset_8hpp_source.html">lbann_dataset.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dataset_8hpp_source.html#l00056">56</a> of file <a class="el" href="dataset_8hpp_source.html">dataset.hpp</a>.</p>
 
 </div>
 </div>
@@ -209,12 +310,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="lbann__dataset_8hpp_source.html#l00040">40</a> of file <a class="el" href="lbann__dataset_8hpp_source.html">lbann_dataset.hpp</a>.</p>
+<p>Definition at line <a class="el" href="dataset_8hpp_source.html#l00057">57</a> of file <a class="el" href="dataset_8hpp_source.html">dataset.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/travis/build/LLNL/lbann/include/lbann/utils/<a class="el" href="lbann__dataset_8hpp_source.html">lbann_dataset.hpp</a></li>
+<li>/home/travis/build/LLNL/lbann/include/lbann/utils/<a class="el" href="dataset_8hpp_source.html">dataset.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -222,7 +323,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1dataset.html">dataset</a></li>
-    <li class="footer">Generated on Mon Jun 26 2017 22:26:04 for LBANN by
+    <li class="footer">Generated on Fri Jul 14 2017 04:37:55 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['short2',['SHORT2',['../datatype_8hpp.html#a11df0709fb5c69d10c61a6d898355c7b',1,'datatype.hpp']]],
-  ['short3',['SHORT3',['../datatype_8hpp.html#a5b0511121f6b8a5f3e8af964ee079688',1,'datatype.hpp']]],
-  ['short4',['SHORT4',['../datatype_8hpp.html#a69b72b8841a0c2e7420dd4ddaefd7318',1,'datatype.hpp']]],
-  ['starmat',['StarMat',['../lbann__base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86',1,'lbann_base.hpp']]],
-  ['starmrmat',['StarMRMat',['../lbann__base_8hpp.html#a99cdf61e316c00f3e39aeaa1509197c1',1,'lbann_base.hpp']]],
-  ['starvcmat',['StarVCMat',['../lbann__base_8hpp.html#a763b3164342a5d73db851e85c76d385a',1,'lbann_base.hpp']]]
+  ['threshquantized',['ThreshQuantized',['../classlbann_1_1lbann__quantizer.html#a84c968d0f772235faa39f6ad91e7eadb',1,'lbann::lbann_quantizer']]],
+  ['threshquantized32',['ThreshQuantized32',['../classlbann_1_1lbann__quantizer.html#a9a8cdad444da3fa7230416d163ebdda1',1,'lbann::lbann_quantizer']]],
+  ['threshquantized64',['ThreshQuantized64',['../classlbann_1_1lbann__quantizer.html#a1b8d3075d732a292bc24fa113cc3a0a0',1,'lbann::lbann_quantizer']]]
 ];

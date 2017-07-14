@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['activationtype',['ActivationType',['../classlbann_1_1TrainingParams.html#a843d078db900a23792944c0b4842bfa8',1,'lbann::TrainingParams']]],
+  ['activationtype',['ActivationType',['../classlbann_1_1TrainingParams.html#a2b190763ecc3e2bb9b9058bc0ff40845',1,'lbann::TrainingParams']]],
   ['aggregate_5fcost',['aggregate_cost',['../classlbann_1_1reconstruction__layer.html#a288a122cc09b5ec9f92d679607aaaeaf',1,'lbann::reconstruction_layer']]],
   ['algo',['algo',['../structlbann_1_1lbann__comm_1_1allreduce__options.html#a8cb30eb49f6556debf08291056d036e9',1,'lbann::lbann_comm::allreduce_options']]],
   ['ar_5fag_5fbytes_5freceived',['ar_ag_bytes_received',['../classlbann_1_1lbann__comm.html#afded6f478dc5021d1edec306dc6c528c',1,'lbann::lbann_comm']]],

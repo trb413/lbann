@@ -1,10 +1,4 @@
 var searchData=
 [
-  ['rabenseifner',['RABENSEIFNER',['../classlbann_1_1lbann__comm.html#a02a03227cc27e3516f0d9f9812f32019aecfb3869b05d9c2103f98c386a9e8a41',1,'lbann::lbann_comm']]],
-  ['recall',['recall',['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1aa05550b785fe9281c54161b4de3a9889',1,'lbann::metrics']]],
-  ['reconstruction',['reconstruction',['../namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743ae75ffd9ae04f68e5ef32915baeebe761',1,'lbann']]],
-  ['recursive_5fdoubling',['RECURSIVE_DOUBLING',['../classlbann_1_1lbann__comm.html#a02a03227cc27e3516f0d9f9812f32019a5a99a7b378e450d9e91b10b1f0085274',1,'lbann::lbann_comm']]],
-  ['regularizer',['regularizer',['../namespacelbann.html#aedf7ea3c07affe9278486158f759cc26a3fbfbec7f4e8dca298df578674290029',1,'lbann']]],
-  ['relu',['RELU',['../namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ad346bb4679d29be241279f15d7795c1c',1,'lbann']]],
-  ['ring',['RING',['../classlbann_1_1lbann__comm.html#a02a03227cc27e3516f0d9f9812f32019ae69b8a2544417fb71e2767e95d7ac8f3',1,'lbann::lbann_comm']]]
+  ['zero',['zero',['../base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5ad02c4c4cde7ae76252540d116a40f23a',1,'base.hpp']]]
 ];

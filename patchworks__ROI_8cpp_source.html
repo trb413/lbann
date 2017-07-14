@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-rc0-91-gf4b1db2-ci247266028</span>
+   &#160;<span id="projectnumber">810fe68-ci253400887</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -127,14 +127,14 @@ $(document).ready(function(){initNavTree('patchworks__ROI_8cpp_source.html','');
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> ROI::undefined_coordinate = -1;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> ROI::init(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> ROI::init() {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  m_left = undefined_coordinate;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  m_top = undefined_coordinate;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  m_right = undefined_coordinate;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  m_bottom = undefined_coordinate;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">bool</span> ROI::is_undefined(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">bool</span> ROI::is_undefined()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">return</span> ((m_left == undefined_coordinate)  ||</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;          (m_top == undefined_coordinate)   ||</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          (m_right == undefined_coordinate) ||</div>
@@ -142,12 +142,12 @@ $(document).ready(function(){initNavTree('patchworks__ROI_8cpp_source.html','');
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">bool</span> ROI::is_valid(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">bool</span> ROI::is_valid()<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">return</span> (!is_undefined() &amp;&amp; (m_left &lt; m_right) &amp;&amp; (m_top &lt; m_bottom));</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">bool</span> ROI::set_overlapping_region(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&amp; img) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">if</span> (!is_valid() || (img.data == <a class="code" href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keywordtype">bool</span> ROI::set_overlapping_region(<span class="keyword">const</span> <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&amp; img) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">if</span> (!is_valid() || (img.data == NULL)) {</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordflow">if</span> (m_left &lt; 0) {</div>
@@ -172,7 +172,7 @@ $(document).ready(function(){initNavTree('patchworks__ROI_8cpp_source.html','');
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">bool</span> ROI::is_whole_image(<span class="keyword">const</span> <a class="code" href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&amp; img) {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">bool</span> ROI::is_whole_image(<span class="keyword">const</span> <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">cv::Mat</a>&amp; img) {</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">bool</span> ok = set_overlapping_region(img);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordflow">return</span> ok &amp;&amp;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;         ((m_left == 0) &amp;&amp;</div>
@@ -230,8 +230,7 @@ $(document).ready(function(){initNavTree('patchworks__ROI_8cpp_source.html','');
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;} <span class="comment">// end of namespace patchworks</span></div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;} <span class="comment">// end of namespace lbann</span></div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">#endif // __LIB_OPENCV</span></div>
-<div class="ttc" id="datatype_8hpp_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="datatype_8hpp.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> <a href="datatype_8hpp_source.html#l00035">datatype.hpp:35</a></div></div>
-<div class="ttc" id="lbann__base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="lbann__base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="lbann__base_8hpp_source.html#l00041">lbann_base.hpp:41</a></div></div>
+<div class="ttc" id="base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00040">base.hpp:40</a></div></div>
 <div class="ttc" id="patchworks__ROI_8hpp_html"><div class="ttname"><a href="patchworks__ROI_8hpp.html">patchworks_ROI.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -239,7 +238,7 @@ $(document).ready(function(){initNavTree('patchworks__ROI_8cpp_source.html','');
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_4fd9b0f9a8d3454cc4920413ede2913f.html">data_readers</a></li><li class="navelem"><a class="el" href="dir_9304cbe20bcd7bb4253987a19ee1c289.html">patchworks</a></li><li class="navelem"><a class="el" href="patchworks__ROI_8cpp.html">patchworks_ROI.cpp</a></li>
-    <li class="footer">Generated on Mon Jun 26 2017 22:26:02 for LBANN by
+    <li class="footer">Generated on Fri Jul 14 2017 04:37:53 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

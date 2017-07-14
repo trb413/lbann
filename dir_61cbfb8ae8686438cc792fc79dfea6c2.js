@@ -1,6 +1,9 @@
 var dir_61cbfb8ae8686438cc792fc79dfea6c2 =
 [
-    [ "activation.hpp", "activation_8hpp.html", "activation_8hpp" ],
+    [ "activation.hpp", "activation_8hpp.html", [
+      [ "activation_layer", "classlbann_1_1activation__layer.html", "classlbann_1_1activation__layer" ],
+      [ "entrywise_activation_layer", "classlbann_1_1entrywise__activation__layer.html", "classlbann_1_1entrywise__activation__layer" ]
+    ] ],
     [ "elu.hpp", "elu_8hpp.html", [
       [ "elu_layer", "classlbann_1_1elu__layer.html", "classlbann_1_1elu__layer" ]
     ] ],

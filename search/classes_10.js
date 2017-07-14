@@ -11,5 +11,6 @@ var searchData=
   ['softplus_5flayer',['softplus_layer',['../classlbann_1_1softplus__layer.html',1,'lbann']]],
   ['statistics',['statistics',['../classlbann_1_1objective__functions_1_1statistics.html',1,'lbann::objective_functions']]],
   ['statistics',['statistics',['../classlbann_1_1metrics_1_1statistics.html',1,'lbann::metrics']]],
+  ['sum_5flayer',['sum_layer',['../classlbann_1_1sum__layer.html',1,'lbann']]],
   ['systemparams',['SystemParams',['../classlbann_1_1SystemParams.html',1,'lbann']]]
 ];

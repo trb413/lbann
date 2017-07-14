@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['none',['NONE',['../classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aafa59156bc4d5bcbf6bd80918d062da03',1,'lbann::lbann_callback_imcomm']]],
-  ['normal',['NORMAL',['../classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aa5f19efb5bef79cea24be992a2137962e',1,'lbann::lbann_callback_imcomm::NORMAL()'],['../lbann__base_8hpp.html#a7ab6aada4b2438de8ca3dd783775c2f5afea087517c26fadd409bd4b9dc642555',1,'normal():&#160;lbann_base.hpp']]]
+  ['testing',['testing',['../base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8aae2b1fca515949e5d54fb22b8ed95575',1,'base.hpp']]],
+  ['thresh_5fquantization',['THRESH_QUANTIZATION',['../classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aa76420a96a3df1d5b60140bab6bc32dc4',1,'lbann::lbann_callback_imcomm']]],
+  ['train',['train',['../namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64',1,'lbann']]],
+  ['training',['training',['../base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214',1,'base.hpp']]]
 ];

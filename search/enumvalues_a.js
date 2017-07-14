@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['leaky_5frelu',['LEAKY_RELU',['../namespacelbann.html#ab00e153fabca7ab166e4d79d47c05c76ac7e80a3de04936f4e423e1b564fdca10',1,'lbann']]],
-  ['learning',['learning',['../namespacelbann.html#aedf7ea3c07affe9278486158f759cc26a25a9ac406aceb47a0c6cade972bc26fa',1,'lbann']]],
-  ['local_5fresponse_5fnormalization',['local_response_normalization',['../namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a0d5ea8f7814c623a6835706757368095',1,'lbann']]]
+  ['rabenseifner',['RABENSEIFNER',['../classlbann_1_1lbann__comm.html#a02a03227cc27e3516f0d9f9812f32019aecfb3869b05d9c2103f98c386a9e8a41',1,'lbann::lbann_comm']]],
+  ['recursive_5fdoubling',['RECURSIVE_DOUBLING',['../classlbann_1_1lbann__comm.html#a02a03227cc27e3516f0d9f9812f32019a5a99a7b378e450d9e91b10b1f0085274',1,'lbann::lbann_comm']]],
+  ['ring',['RING',['../classlbann_1_1lbann__comm.html#a02a03227cc27e3516f0d9f9812f32019ae69b8a2544417fb71e2767e95d7ac8f3',1,'lbann::lbann_comm']]]
 ];

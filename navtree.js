@@ -45,18 +45,18 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"activation_8hpp.html",
-"classlbann_1_1cifar10__reader.html#aafc4c8b7520300773178d6afdf3eac25",
-"classlbann_1_1generic__data__reader.html#aa10a345ebd8be9c69499500d43ca329c",
-"classlbann_1_1lbann__callback.html#a1a14e9228f1606d3492b6011d56937f5",
-"classlbann_1_1lbann__comm.html#a61e8479f25d209be238f1b61115f7a0d",
-"classlbann_1_1metrics_1_1categorical__accuracy.html#ac56f380cbcfecc6596c65bb1284e571a",
-"classlbann_1_1persist.html#aa99b1b0079bb10471472bf6f1d966deb",
-"classlbann_1_1target__layer__partitioned__minibatch__parallel__io.html#ad1dc9e8f05ca07f6e35e25d7f59cd316",
-"functions_vars_p.html",
-"lbann__data__reader__nci_8cpp_source.html",
-"lbann__random_8cpp.html#a4fab058e5091cf12e918d879c340f125",
-"struct__FLOAT3.html"
+"Elemental__extensions_8cpp.html",
+"classlbann_1_1NetworkParams.html#a9b6f7e0330547330238085f3fd0e3702",
+"classlbann_1_1data__reader__synthetic.html#ad8b37f06ffd386c1838a4b102512243d",
+"classlbann_1_1greedy__layerwise__autoencoder.html#a90afd0c31448bb8f9f6e1e9f39f416a3",
+"classlbann_1_1lbann__callback__adaptive__learning__rate.html#ab9c76371184664ccd8e240e3b16a9736",
+"classlbann_1_1lbann__comm.html#a02a03227cc27e3516f0d9f9812f32019a5b39c8b553c821e7cddc6da64b5bd2ee",
+"classlbann_1_1lbann__summary.html#a2891f67b732e92cc88e2c9849f911f57",
+"classlbann_1_1objective__functions_1_1categorical__cross__entropy.html#a0ee0826ae4c5d71bc17628f7d017de83",
+"classlbann_1_1sequential__model.html#a7b021498067b8bfe52d390996395bff6",
+"data__reader__imagenet_8cpp_source.html",
+"local__response__normalization_8hpp_source.html",
+"random_8hpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

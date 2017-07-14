@@ -20,7 +20,6 @@ var searchData=
   ['bmicolors',['bmiColors',['../struct____BMP__INFO.html#ab22adeb5354bd36394a1acc0fabc15d0',1,'__BMP_INFO']]],
   ['bmiheader',['bmiHeader',['../struct____BMP__INFO.html#a39ee279a5f9640a07ef27297a4b123de',1,'__BMP_INFO']]],
   ['bp_5fcompute_5ftime',['bp_compute_time',['../classlbann_1_1Layer.html#a18f90fa1ec6d7fb2288a40ada0105d11',1,'lbann::Layer']]],
-  ['bp_5finput',['bp_input',['../classlbann_1_1Layer.html#ab8ec7fc7bd902123d7b7788b6284ca62',1,'lbann::Layer']]],
   ['bp_5ftime',['bp_time',['../classlbann_1_1Layer.html#abaa9acb195346090fffcd64013295479',1,'lbann::Layer']]],
   ['bytes_5freceived',['bytes_received',['../classlbann_1_1lbann__comm.html#afb99f57f7eafc0695bf28e6c26a8120f',1,'lbann::lbann_comm']]],
   ['bytes_5fsent',['bytes_sent',['../classlbann_1_1lbann__comm.html#ad1f146ae7337ece6266fd307944928e0',1,'lbann::lbann_comm']]]

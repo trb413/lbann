@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['fbeta_5fscore',['fbeta_score',['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a7d85e6e0d2909dbaadc6300004550d0b',1,'lbann::metrics']]],
-  ['fmeasure',['fmeasure',['../namespacelbann_1_1metrics.html#a5bb88e5c5dd16c8fce1d3c8abb00aeb1a7f0f9953c22b34d50a59ac970c71b584',1,'lbann::metrics']]],
-  ['fully_5fconnected',['fully_connected',['../namespacelbann.html#a33be342c4bdc4c00e9f91ff3a2f20743a156e322bc71c040cbb092c46ed11c5cb',1,'lbann']]]
+  ['invalid',['INVALID',['../classlbann_1_1lbann__comm.html#a02a03227cc27e3516f0d9f9812f32019accc0377a8afbf50e7094f5c23a8af223',1,'lbann::lbann_comm::INVALID()'],['../base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dafedb2d84cafe20862cb4399751a8a7e3',1,'invalid():&#160;base.hpp'],['../base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8afedb2d84cafe20862cb4399751a8a7e3',1,'invalid():&#160;base.hpp']]]
 ];
