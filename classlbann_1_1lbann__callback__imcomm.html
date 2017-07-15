@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">91da419-ci253682023</span>
+   &#160;<span id="projectnumber">f7890a5-ci253799457</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -1125,8 +1125,8 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                              + <span class="stringliteral">&quot; without gradients&quot;</span>);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      }</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      <span class="comment">// Update the effective mini-batch size so averaging is done properly.</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      layers[layer]-&gt;set_effective_minibatch_size(</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        layers[layer]-&gt;get_minibatch_size() * m-&gt;get_comm()-&gt;get_num_models());</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      m-&gt;set_effective_mini_batch_size(</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        m-&gt;get_current_mini_batch_size() * m-&gt;get_comm()-&gt;get_num_models());</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1lbann__callback__imcomm.html#a7cfeece659ac4d1664a46b4e6119588b">ct_needs_reshape</a>(params.ct)) {</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="comment">// Currently, no layers need reshaping.</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="comment">//const std::type_info&amp; layer_type = typeid(*(layers[layer]));</span></div>
@@ -1155,7 +1155,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1lbann__callback__imcomm_a1cc160d368f1dd5bd30f1504c0df8003_cgraph.png" border="0" usemap="#classlbann_1_1lbann__callback__imcomm_a1cc160d368f1dd5bd30f1504c0df8003_cgraph" alt=""/></div>
 <map name="classlbann_1_1lbann__callback__imcomm_a1cc160d368f1dd5bd30f1504c0df8003_cgraph" id="classlbann_1_1lbann__callback__imcomm_a1cc160d368f1dd5bd30f1504c0df8003_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1model.html#ab6f53860dab77f0ce1d941d07360ef5a" title="lbann::model::get_layers" alt="" coords="215,5,379,32"/><area shape="rect" id="node3" href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca" title="lbann::model::get_comm" alt="" coords="215,56,380,83"/><area shape="rect" id="node4" href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637" title="lbann::lbann_comm::\lget_num_models" alt="" coords="226,107,369,149"/><area shape="rect" id="node5" href="classlbann_1_1lbann__callback__imcomm.html#a7cfeece659ac4d1664a46b4e6119588b" title="lbann::lbann_callback\l_imcomm::ct_needs_reshape" alt="" coords="201,173,394,214"/><area shape="rect" id="node6" href="classlbann_1_1lbann__callback__imcomm.html#a4f38fa45a0f7a8b290f6d2b701d20622" title="lbann::lbann_callback\l_imcomm::ct_does_quantization" alt="" coords="443,202,653,243"/><area shape="rect" id="node7" href="classlbann_1_1learning.html#a61bfaebb32af9ba8e284fa96137f9883" title="lbann::learning::get\l_weights_gradient" alt="" coords="231,290,363,331"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1model.html#ab6f53860dab77f0ce1d941d07360ef5a" title="lbann::model::get_layers" alt="" coords="215,5,379,32"/><area shape="rect" id="node3" href="classlbann_1_1model.html#aa64829cba8a84928a396893172a1d116" title="lbann::model::set_effective\l_mini_batch_size" alt="" coords="208,57,387,98"/><area shape="rect" id="node4" href="classlbann_1_1model.html#a7ac8e9b04bf236c6ad16c486b49d393f" title="lbann::model::get_current\l_mini_batch_size" alt="" coords="213,122,382,163"/><area shape="rect" id="node5" href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca" title="lbann::model::get_comm" alt="" coords="215,188,380,215"/><area shape="rect" id="node6" href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637" title="lbann::lbann_comm::\lget_num_models" alt="" coords="226,239,369,281"/><area shape="rect" id="node7" href="classlbann_1_1lbann__callback__imcomm.html#a7cfeece659ac4d1664a46b4e6119588b" title="lbann::lbann_callback\l_imcomm::ct_needs_reshape" alt="" coords="201,305,394,346"/><area shape="rect" id="node8" href="classlbann_1_1lbann__callback__imcomm.html#a4f38fa45a0f7a8b290f6d2b701d20622" title="lbann::lbann_callback\l_imcomm::ct_does_quantization" alt="" coords="443,334,653,375"/><area shape="rect" id="node9" href="classlbann_1_1learning.html#a61bfaebb32af9ba8e284fa96137f9883" title="lbann::learning::get\l_weights_gradient" alt="" coords="231,422,363,463"/></map>
 </div>
 </p>
 
@@ -1264,7 +1264,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__callback__imcomm.html">lbann_callback_imcomm</a></li>
-    <li class="footer">Generated on Fri Jul 14 2017 21:44:16 for LBANN by
+    <li class="footer">Generated on Sat Jul 15 2017 05:36:07 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

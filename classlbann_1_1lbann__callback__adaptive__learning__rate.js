@@ -6,7 +6,7 @@ var classlbann_1_1lbann__callback__adaptive__learning__rate =
     [ "copy", "classlbann_1_1lbann__callback__adaptive__learning__rate.html#a2b75810099fc883395900b8390cf7d00", null ],
     [ "name", "classlbann_1_1lbann__callback__adaptive__learning__rate.html#ac69fe75705be8656e457191e54b96660", null ],
     [ "operator=", "classlbann_1_1lbann__callback__adaptive__learning__rate.html#a7959faa8ba665cdf1132a5c7b518b3b9", null ],
-    [ "schedule", "classlbann_1_1lbann__callback__adaptive__learning__rate.html#a19596ebb10690c61068b18b786ab5716", null ],
+    [ "schedule", "classlbann_1_1lbann__callback__adaptive__learning__rate.html#a91fb5630bb686605a900337e556f58c5", null ],
     [ "m_amt", "classlbann_1_1lbann__callback__adaptive__learning__rate.html#ab9c76371184664ccd8e240e3b16a9736", null ],
     [ "m_last_score", "classlbann_1_1lbann__callback__adaptive__learning__rate.html#a842a5ced30a457836c4bc0022b6ac636", null ],
     [ "m_patience", "classlbann_1_1lbann__callback__adaptive__learning__rate.html#ac3ac3c4d34d62608c54dfa3a41691217", null ],

@@ -6,7 +6,7 @@ var classlbann_1_1lbann__callback__learning__rate =
     [ "is_last_layer", "classlbann_1_1lbann__callback__learning__rate.html#ae7a704c0b5d1d09c35981cfe96dd64e2", null ],
     [ "on_epoch_end", "classlbann_1_1lbann__callback__learning__rate.html#ab4ef80742344cca2ea63489498942b0f", null ],
     [ "operator=", "classlbann_1_1lbann__callback__learning__rate.html#a80b82eebf8e38cbe0a484aea43644705", null ],
-    [ "schedule", "classlbann_1_1lbann__callback__learning__rate.html#a60a4147b916b6e72846f90ca83c533c9", null ],
+    [ "schedule", "classlbann_1_1lbann__callback__learning__rate.html#a9dac3033ef7df0b1d60acfd7f47e2d53", null ],
     [ "setup", "classlbann_1_1lbann__callback__learning__rate.html#a3814efdf7b26e6162a66ab5d982a9abf", null ],
     [ "m_last_idx", "classlbann_1_1lbann__callback__learning__rate.html#ae3b25b77e55c9b66b976c24e735925aa", null ],
     [ "m_layer_indices", "classlbann_1_1lbann__callback__learning__rate.html#af1766e6b8c237440fedb18ae494fd442", null ],

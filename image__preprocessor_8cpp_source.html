@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">91da419-ci253682023</span>
+   &#160;<span id="projectnumber">f7890a5-ci253799457</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -213,9 +213,9 @@ $(document).ready(function(){initNavTree('image__preprocessor_8cpp_source.html',
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">// Compute the final transformation.</span></div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> affine_mat_tmp(3, 3);</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> affine_mat(3, 3);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    El::Gemm(NORMAL, NORMAL, (<a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) 1.0, trans_mat, shear_mat,</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="namespacelbann_1_1cublas.html#a3f2c0cc2635ddf07072a5b90e858c619">El::Gemm</a>(NORMAL, NORMAL, (<a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) 1.0, trans_mat, shear_mat,</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;             (<a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) 0.0, affine_mat_tmp);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    El::Gemm(NORMAL, NORMAL, (<a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) 1.0, affine_mat_tmp, rot_mat,</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="namespacelbann_1_1cublas.html#a3f2c0cc2635ddf07072a5b90e858c619">El::Gemm</a>(NORMAL, NORMAL, (<a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) 1.0, affine_mat_tmp, rot_mat,</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;             (<a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>) 0.0, affine_mat);</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="classlbann_1_1lbann__image__preprocessor.html#adb9e017aeac52a9b5d392f17188d1057">affine_trans</a>(sqpixels, affine_mat);</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="code" href="classlbann_1_1lbann__image__preprocessor.html#a3e99be32b95a415fd8d616cb85075df1">col_pixels</a>(sqpixels, pixels, num_channels);</div>
@@ -429,6 +429,7 @@ $(document).ready(function(){initNavTree('image__preprocessor_8cpp_source.html',
 <div class="ttc" id="image__utils_8hpp_html"><div class="ttname"><a href="image__utils_8hpp.html">image_utils.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__image__preprocessor_html_a06158637d634a4d123ee5501ddd0c7cb"><div class="ttname"><a href="classlbann_1_1lbann__image__preprocessor.html#a06158637d634a4d123ee5501ddd0c7cb">lbann::lbann_image_preprocessor::m_vertical_shift</a></div><div class="ttdeci">float m_vertical_shift</div><div class="ttdef"><b>Definition:</b> <a href="image__preprocessor_8hpp_source.html#l00151">image_preprocessor.hpp:151</a></div></div>
 <div class="ttc" id="namespacelbann_html_a604ae9da0173b8be2bfb6877997d6d5c"><div class="ttname"><a href="namespacelbann.html#a604ae9da0173b8be2bfb6877997d6d5c">lbann::entrywise_mean_and_stdev</a></div><div class="ttdeci">void entrywise_mean_and_stdev(const Mat &amp;data, DataType &amp;mean, DataType &amp;stdev)</div><div class="ttdoc">Compute mean and standard deviation over matrix entries. </div><div class="ttdef"><b>Definition:</b> <a href="statistics_8cpp_source.html#l00034">statistics.cpp:34</a></div></div>
+<div class="ttc" id="namespacelbann_1_1cublas_html_a3f2c0cc2635ddf07072a5b90e858c619"><div class="ttname"><a href="namespacelbann_1_1cublas.html#a3f2c0cc2635ddf07072a5b90e858c619">lbann::cublas::Gemm</a></div><div class="ttdeci">cublasStatus_t Gemm(const cublasHandle_t &amp;handle, cublasOperation_t transa, cublasOperation_t transb, int m, int n, int k, const ElmType alpha, const ElmType *A, int lda, const ElmType *B, int ldb, const ElmType beta, ElmType *C, int ldc)</div></div>
 <div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="exception_8hpp_source.html#l00040">exception.hpp:40</a></div></div>
 <div class="ttc" id="statistics_8hpp_html"><div class="ttname"><a href="statistics_8hpp.html">statistics.hpp</a></div></div>
 <div class="ttc" id="image__preprocessor_8hpp_html"><div class="ttname"><a href="image__preprocessor_8hpp.html">image_preprocessor.hpp</a></div></div>
@@ -451,7 +452,7 @@ $(document).ready(function(){initNavTree('image__preprocessor_8cpp_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_4fd9b0f9a8d3454cc4920413ede2913f.html">data_readers</a></li><li class="navelem"><a class="el" href="image__preprocessor_8cpp.html">image_preprocessor.cpp</a></li>
-    <li class="footer">Generated on Fri Jul 14 2017 21:44:15 for LBANN by
+    <li class="footer">Generated on Sat Jul 15 2017 05:36:06 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

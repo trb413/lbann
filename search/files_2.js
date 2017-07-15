@@ -38,6 +38,7 @@ var searchData=
   ['comm_2ecpp',['comm.cpp',['../comm_8cpp.html',1,'']]],
   ['comm_2ehpp',['comm.hpp',['../comm_8hpp.html',1,'']]],
   ['convolution_2ehpp',['convolution.hpp',['../convolution_8hpp.html',1,'']]],
+  ['cublas_5fwrapper_2ehpp',['cublas_wrapper.hpp',['../cublas__wrapper_8hpp.html',1,'']]],
   ['cudnn_5fwrapper_2ecpp',['cudnn_wrapper.cpp',['../cudnn__wrapper_8cpp.html',1,'']]],
   ['cudnn_5fwrapper_2ehpp',['cudnn_wrapper.hpp',['../cudnn__wrapper_8hpp.html',1,'']]],
   ['cv_5faugmenter_2ecpp',['cv_augmenter.cpp',['../cv__augmenter_8cpp.html',1,'']]],

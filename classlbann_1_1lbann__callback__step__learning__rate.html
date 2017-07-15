@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">91da419-ci253682023</span>
+   &#160;<span id="projectnumber">f7890a5-ci253799457</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -205,8 +205,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a4ce3dda1b50487c96d9d593efacb0dae"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__callback__step__learning__rate.html#a4ce3dda1b50487c96d9d593efacb0dae">schedule</a> (<a class="el" href="classlbann_1_1model.html">model</a> *m, <a class="el" href="classlbann_1_1Layer.html">Layer</a> *l)</td></tr>
-<tr class="separator:a4ce3dda1b50487c96d9d593efacb0dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefae27df4d0239eb132acbd16d821292"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__callback__step__learning__rate.html#aefae27df4d0239eb132acbd16d821292">schedule</a> (<a class="el" href="classlbann_1_1model.html">model</a> *m, <a class="el" href="classlbann_1_1learning.html">learning</a> *l)</td></tr>
+<tr class="separator:aefae27df4d0239eb132acbd16d821292"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classlbann_1_1lbann__callback__learning__rate"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classlbann_1_1lbann__callback__learning__rate')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classlbann_1_1lbann__callback__learning__rate.html">lbann::lbann_callback_learning_rate</a></td></tr>
 <tr class="memitem:ae7a704c0b5d1d09c35981cfe96dd64e2 inherit pro_methods_classlbann_1_1lbann__callback__learning__rate"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__callback__learning__rate.html#ae7a704c0b5d1d09c35981cfe96dd64e2">is_last_layer</a> (const <a class="el" href="classlbann_1_1Layer.html">Layer</a> *l) const </td></tr>
 <tr class="separator:ae7a704c0b5d1d09c35981cfe96dd64e2 inherit pro_methods_classlbann_1_1lbann__callback__learning__rate"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -431,7 +431,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a4ce3dda1b50487c96d9d593efacb0dae"></a>
+<a class="anchor" id="aefae27df4d0239eb132acbd16d821292"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -447,7 +447,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classlbann_1_1Layer.html">Layer</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classlbann_1_1learning.html">learning</a> *&#160;</td>
           <td class="paramname"><em>l</em>&#160;</td>
         </tr>
         <tr>
@@ -472,30 +472,25 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new learning rate. </dd></dl>
 
-<p>Implements <a class="el" href="classlbann_1_1lbann__callback__learning__rate.html#a60a4147b916b6e72846f90ca83c533c9">lbann::lbann_callback_learning_rate</a>.</p>
+<p>Implements <a class="el" href="classlbann_1_1lbann__callback__learning__rate.html#a9dac3033ef7df0b1d60acfd7f47e2d53">lbann::lbann_callback_learning_rate</a>.</p>
 
 <p>Definition at line <a class="el" href="callback__learning__rate_8cpp_source.html#l00093">93</a> of file <a class="el" href="callback__learning__rate_8cpp_source.html">callback_learning_rate.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                                                    {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="comment">// Skip non-learning layers.</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  learning *learning_layer = (learning *) dynamic_cast&lt;learning *&gt; (l);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordflow">if</span>(learning_layer == NULL) {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">float</span> cur_lr = learning_layer-&gt;get_optimizer()-&gt;get_learning_rate();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordflow">if</span> (m-&gt;get_cur_epoch() % <a class="code" href="classlbann_1_1lbann__callback__step__learning__rate.html#a804bffdc6bcc1e1f43dc068db852b993">m_step</a> == 0) {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> cur_lr * <a class="code" href="classlbann_1_1lbann__callback__step__learning__rate.html#ab6f5430cf862ec67392dc0f69ced81e6">m_amt</a>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">return</span> cur_lr;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                                                       {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">float</span> cur_lr = l-&gt;get_optimizer()-&gt;get_learning_rate();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">if</span> (m-&gt;get_cur_epoch() % <a class="code" href="classlbann_1_1lbann__callback__step__learning__rate.html#a804bffdc6bcc1e1f43dc068db852b993">m_step</a> == 0) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">return</span> cur_lr * <a class="code" href="classlbann_1_1lbann__callback__step__learning__rate.html#ab6f5430cf862ec67392dc0f69ced81e6">m_amt</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">return</span> cur_lr;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1lbann__callback__step__learning__rate_html_a804bffdc6bcc1e1f43dc068db852b993"><div class="ttname"><a href="classlbann_1_1lbann__callback__step__learning__rate.html#a804bffdc6bcc1e1f43dc068db852b993">lbann::lbann_callback_step_learning_rate::m_step</a></div><div class="ttdeci">int m_step</div><div class="ttdef"><b>Definition:</b> <a href="callback__learning__rate_8hpp_source.html#l00098">callback_learning_rate.hpp:98</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__step__learning__rate_html_ab6f5430cf862ec67392dc0f69ced81e6"><div class="ttname"><a href="classlbann_1_1lbann__callback__step__learning__rate.html#ab6f5430cf862ec67392dc0f69ced81e6">lbann::lbann_callback_step_learning_rate::m_amt</a></div><div class="ttdeci">float m_amt</div><div class="ttdef"><b>Definition:</b> <a href="callback__learning__rate_8hpp_source.html#l00100">callback_learning_rate.hpp:100</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1lbann__callback__step__learning__rate_a4ce3dda1b50487c96d9d593efacb0dae_cgraph.png" border="0" usemap="#classlbann_1_1lbann__callback__step__learning__rate_a4ce3dda1b50487c96d9d593efacb0dae_cgraph" alt=""/></div>
-<map name="classlbann_1_1lbann__callback__step__learning__rate_a4ce3dda1b50487c96d9d593efacb0dae_cgraph" id="classlbann_1_1lbann__callback__step__learning__rate_a4ce3dda1b50487c96d9d593efacb0dae_cgraph">
+<div class="center"><img src="classlbann_1_1lbann__callback__step__learning__rate_aefae27df4d0239eb132acbd16d821292_cgraph.png" border="0" usemap="#classlbann_1_1lbann__callback__step__learning__rate_aefae27df4d0239eb132acbd16d821292_cgraph" alt=""/></div>
+<map name="classlbann_1_1lbann__callback__step__learning__rate_aefae27df4d0239eb132acbd16d821292_cgraph" id="classlbann_1_1lbann__callback__step__learning__rate_aefae27df4d0239eb132acbd16d821292_cgraph">
 <area shape="rect" id="node2" href="classlbann_1_1learning.html#a28323efe8e2c019056fffa3b93cc3165" title="lbann::learning::get\l_optimizer" alt="" coords="207,5,339,46"/><area shape="rect" id="node3" href="classlbann_1_1optimizer.html#a3c7b27ab74e32965cbe812906729386b" title="Get learning rate. " alt="" coords="203,70,343,111"/><area shape="rect" id="node4" href="classlbann_1_1model.html#a675b1c6cb1a0eabca80d6a6de1fbbb08" title="lbann::model::get_cur\l_epoch" alt="" coords="200,135,347,177"/></map>
 </div>
 </p>
@@ -559,7 +554,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__callback__step__learning__rate.html">lbann_callback_step_learning_rate</a></li>
-    <li class="footer">Generated on Fri Jul 14 2017 21:44:16 for LBANN by
+    <li class="footer">Generated on Sat Jul 15 2017 05:36:07 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

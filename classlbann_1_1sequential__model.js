@@ -8,7 +8,6 @@ var classlbann_1_1sequential__model =
     [ "evaluate", "classlbann_1_1sequential__model.html#a338df577fb4da0c56b532de92b6e3263", null ],
     [ "evaluate_mini_batch", "classlbann_1_1sequential__model.html#a7b021498067b8bfe52d390996395bff6", null ],
     [ "get_layers", "classlbann_1_1sequential__model.html#a49d1fc84ce7686fc1c8d4d72498960a4", null ],
-    [ "get_mini_batch_size", "classlbann_1_1sequential__model.html#a1deb978ea87dd81f042b5189e4255910", null ],
     [ "insert", "classlbann_1_1sequential__model.html#ae992c83737819d406e1311ebe24e07f0", null ],
     [ "load_from_checkpoint", "classlbann_1_1sequential__model.html#aa405c653dae867e862475e13b9df1db0", null ],
     [ "load_from_checkpoint_shared", "classlbann_1_1sequential__model.html#afacd6b4f8ae045e6bc9ed2b8a2e1afa6", null ],
@@ -24,6 +23,5 @@ var classlbann_1_1sequential__model =
     [ "swap", "classlbann_1_1sequential__model.html#a911a0d9ba0bb685bcc13c66cdb064ab0", null ],
     [ "train", "classlbann_1_1sequential__model.html#afa3b9ca110b10aac19b7f1748f6c6291", null ],
     [ "train_mini_batch", "classlbann_1_1sequential__model.html#a13f177924130ae2748d6b457d0778ed8", null ],
-    [ "m_layers", "classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b", null ],
-    [ "m_mini_batch_size", "classlbann_1_1sequential__model.html#aa06a0e845fcaa73f47327bfb87a0a3f9", null ]
+    [ "m_layers", "classlbann_1_1sequential__model.html#afb83e5bb6daf8c72eb899966bf540c3b", null ]
 ];

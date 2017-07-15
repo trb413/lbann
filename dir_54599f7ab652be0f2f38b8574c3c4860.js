@@ -1,5 +1,6 @@
 var dir_54599f7ab652be0f2f38b8574c3c4860 =
 [
+    [ "cublas_wrapper.hpp", "cublas__wrapper_8hpp.html", "cublas__wrapper_8hpp" ],
     [ "cudnn_wrapper.hpp", "cudnn__wrapper_8hpp.html", [
       [ "cudnn_manager", "classcudnn_1_1cudnn__manager.html", null ]
     ] ],

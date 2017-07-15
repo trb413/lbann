@@ -1,5 +1,6 @@
 var namespacelbann =
 [
+    [ "cublas", "namespacelbann_1_1cublas.html", null ],
     [ "metrics", "namespacelbann_1_1metrics.html", "namespacelbann_1_1metrics" ],
     [ "objective_functions", "namespacelbann_1_1objective__functions.html", "namespacelbann_1_1objective__functions" ],
     [ "lbann_checkpoint", "structlbann_1_1lbann__checkpoint.html", "structlbann_1_1lbann__checkpoint" ],
