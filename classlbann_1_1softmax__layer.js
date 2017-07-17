@@ -1,6 +1,6 @@
 var classlbann_1_1softmax__layer =
 [
-    [ "softmax_layer", "classlbann_1_1softmax__layer.html#aaee9c047842597328fa04f0b7ccc1610", null ],
+    [ "softmax_layer", "classlbann_1_1softmax__layer.html#a17017c4749f0d10fed60e816e4dc744a", null ],
     [ "softmax_layer", "classlbann_1_1softmax__layer.html#ad17b123fdc1c1d5fc57a1abe601de2b6", null ],
     [ "~softmax_layer", "classlbann_1_1softmax__layer.html#a279f9a58406c1e08ac57be3137d0cf45", null ],
     [ "bp_compute", "classlbann_1_1softmax__layer.html#a36b0d971e493300b64c9689a41bf3cb2", null ],

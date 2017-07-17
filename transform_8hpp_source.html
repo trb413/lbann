@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">f7890a5-ci253799457</span>
+   &#160;<span id="projectnumber">aa9951f-ci254515062</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -131,36 +131,35 @@ $(document).ready(function(){initNavTree('transform_8hpp_source.html','');});
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classlbann_1_1transform.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlbann_1_1transform.html">transform</a> : <span class="keyword">public</span> <a class="code" href="classlbann_1_1Layer.html">Layer</a> {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classlbann_1_1transform.html#a9652291c702a35557d76f9464087d8bd">   42</a></span>&#160;  <a class="code" href="classlbann_1_1transform.html#a9652291c702a35557d76f9464087d8bd">transform</a>(<span class="keywordtype">int</span> index, </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classlbann_1_1transform.html#a83aa700a961a2388807ad3453c158f37">   42</a></span>&#160;  <a class="code" href="classlbann_1_1transform.html#a83aa700a961a2388807ad3453c158f37">transform</a>(<span class="keywordtype">int</span> index, </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="comment">// int numPrevNeurons,</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="comment">// int numNeurons,</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;           <a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;           <span class="keywordtype">int</span> mini_batch_size)</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    : <a class="code" href="classlbann_1_1Layer.html">Layer</a>(index, comm, mini_batch_size) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="classlbann_1_1transform.html#a9652291c702a35557d76f9464087d8bd">transform</a>(<span class="keyword">const</span> <a class="code" href="classlbann_1_1transform.html">transform</a>&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="classlbann_1_1transform.html">transform</a>&amp; <a class="code" href="classlbann_1_1transform.html#a7f031b823f5c2d0fb9af067c7bb52c89">operator=</a>(<span class="keyword">const</span> <a class="code" href="classlbann_1_1transform.html">transform</a>&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classlbann_1_1transform.html#a80eb34ed68987c15ede4231deea6cd7e">   54</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlbann_1_1transform.html#a80eb34ed68987c15ede4231deea6cd7e">~transform</a>() {}</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classlbann_1_1transform.html#af64bdb8384c33357cd0209f6d46e5afc">   56</a></span>&#160;  <span class="keyword">template</span>&lt;data_layout T_layout&gt; <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classlbann_1_1transform.html#af64bdb8384c33357cd0209f6d46e5afc">initialize_distributed_matrices</a>() {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    Layer::initialize_distributed_matrices&lt;T_layout&gt;();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}  <span class="comment">// namespace lbann</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif  // LBANN_LAYER_TRANSFORM_HPP_INCLUDED</span></div>
-<div class="ttc" id="classlbann_1_1transform_html_af64bdb8384c33357cd0209f6d46e5afc"><div class="ttname"><a href="classlbann_1_1transform.html#af64bdb8384c33357cd0209f6d46e5afc">lbann::transform::initialize_distributed_matrices</a></div><div class="ttdeci">void initialize_distributed_matrices()</div><div class="ttdef"><b>Definition:</b> <a href="transform_8hpp_source.html#l00056">transform.hpp:56</a></div></div>
-<div class="ttc" id="classlbann_1_1transform_html_a80eb34ed68987c15ede4231deea6cd7e"><div class="ttname"><a href="classlbann_1_1transform.html#a80eb34ed68987c15ede4231deea6cd7e">lbann::transform::~transform</a></div><div class="ttdeci">virtual ~transform()</div><div class="ttdef"><b>Definition:</b> <a href="transform_8hpp_source.html#l00054">transform.hpp:54</a></div></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;           <a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    : <a class="code" href="classlbann_1_1Layer.html">Layer</a>(index, comm) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="classlbann_1_1transform.html#a83aa700a961a2388807ad3453c158f37">transform</a>(<span class="keyword">const</span> <a class="code" href="classlbann_1_1transform.html">transform</a>&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="classlbann_1_1transform.html">transform</a>&amp; <a class="code" href="classlbann_1_1transform.html#a7f031b823f5c2d0fb9af067c7bb52c89">operator=</a>(<span class="keyword">const</span> <a class="code" href="classlbann_1_1transform.html">transform</a>&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classlbann_1_1transform.html#a80eb34ed68987c15ede4231deea6cd7e">   53</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classlbann_1_1transform.html#a80eb34ed68987c15ede4231deea6cd7e">~transform</a>() {}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classlbann_1_1transform.html#af64bdb8384c33357cd0209f6d46e5afc">   55</a></span>&#160;  <span class="keyword">template</span>&lt;data_layout T_layout&gt; <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="classlbann_1_1transform.html#af64bdb8384c33357cd0209f6d46e5afc">initialize_distributed_matrices</a>() {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    Layer::initialize_distributed_matrices&lt;T_layout&gt;();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}  <span class="comment">// namespace lbann</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif  // LBANN_LAYER_TRANSFORM_HPP_INCLUDED</span></div>
+<div class="ttc" id="classlbann_1_1transform_html_af64bdb8384c33357cd0209f6d46e5afc"><div class="ttname"><a href="classlbann_1_1transform.html#af64bdb8384c33357cd0209f6d46e5afc">lbann::transform::initialize_distributed_matrices</a></div><div class="ttdeci">void initialize_distributed_matrices()</div><div class="ttdef"><b>Definition:</b> <a href="transform_8hpp_source.html#l00055">transform.hpp:55</a></div></div>
+<div class="ttc" id="classlbann_1_1transform_html_a80eb34ed68987c15ede4231deea6cd7e"><div class="ttname"><a href="classlbann_1_1transform.html#a80eb34ed68987c15ede4231deea6cd7e">lbann::transform::~transform</a></div><div class="ttdeci">virtual ~transform()</div><div class="ttdef"><b>Definition:</b> <a href="transform_8hpp_source.html#l00053">transform.hpp:53</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__comm_html"><div class="ttname"><a href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a></div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00047">comm.hpp:47</a></div></div>
 <div class="ttc" id="classlbann_1_1Layer_html"><div class="ttname"><a href="classlbann_1_1Layer.html">lbann::Layer</a></div><div class="ttdef"><b>Definition:</b> <a href="layer_8hpp_source.html#l00052">layer.hpp:52</a></div></div>
 <div class="ttc" id="classlbann_1_1transform_html"><div class="ttname"><a href="classlbann_1_1transform.html">lbann::transform</a></div><div class="ttdef"><b>Definition:</b> <a href="transform_8hpp_source.html#l00039">transform.hpp:39</a></div></div>
 <div class="ttc" id="file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00044">file_io.cpp:44</a></div></div>
+<div class="ttc" id="classlbann_1_1transform_html_a83aa700a961a2388807ad3453c158f37"><div class="ttname"><a href="classlbann_1_1transform.html#a83aa700a961a2388807ad3453c158f37">lbann::transform::transform</a></div><div class="ttdeci">transform(int index, lbann_comm *comm)</div><div class="ttdef"><b>Definition:</b> <a href="transform_8hpp_source.html#l00042">transform.hpp:42</a></div></div>
 <div class="ttc" id="layer_8hpp_html"><div class="ttname"><a href="layer_8hpp.html">layer.hpp</a></div></div>
-<div class="ttc" id="classlbann_1_1transform_html_a9652291c702a35557d76f9464087d8bd"><div class="ttname"><a href="classlbann_1_1transform.html#a9652291c702a35557d76f9464087d8bd">lbann::transform::transform</a></div><div class="ttdeci">transform(int index, lbann_comm *comm, int mini_batch_size)</div><div class="ttdef"><b>Definition:</b> <a href="transform_8hpp_source.html#l00042">transform.hpp:42</a></div></div>
 <div class="ttc" id="classlbann_1_1transform_html_a7f031b823f5c2d0fb9af067c7bb52c89"><div class="ttname"><a href="classlbann_1_1transform.html#a7f031b823f5c2d0fb9af067c7bb52c89">lbann::transform::operator=</a></div><div class="ttdeci">transform &amp; operator=(const transform &amp;)=default</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -168,7 +167,7 @@ $(document).ready(function(){initNavTree('transform_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_eb8329679e609af11719ceffa3ff5139.html">include</a></li><li class="navelem"><a class="el" href="dir_ae19bb3c4b74b705a5918893bf9adbdd.html">lbann</a></li><li class="navelem"><a class="el" href="dir_a6b45e92f0bfd71c0512203df27069a2.html">layers</a></li><li class="navelem"><a class="el" href="dir_2a07eb309d0d4c1db480e24ee00a1de6.html">transform</a></li><li class="navelem"><a class="el" href="transform_8hpp.html">transform.hpp</a></li>
-    <li class="footer">Generated on Sat Jul 15 2017 05:36:06 for LBANN by
+    <li class="footer">Generated on Mon Jul 17 2017 18:17:24 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

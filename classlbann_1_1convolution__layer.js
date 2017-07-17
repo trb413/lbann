@@ -1,6 +1,6 @@
 var classlbann_1_1convolution__layer =
 [
-    [ "convolution_layer", "classlbann_1_1convolution__layer.html#a5c41a5f1b97be9c1e00fac325b7779fd", null ],
+    [ "convolution_layer", "classlbann_1_1convolution__layer.html#af870eeff405bdb252a7c02415b2cd26e", null ],
     [ "convolution_layer", "classlbann_1_1convolution__layer.html#aaa407129cf1df628908abbc5fdb6cbfc", null ],
     [ "~convolution_layer", "classlbann_1_1convolution__layer.html#a355bacf090143655c3f8715695de76b7", null ],
     [ "bp_compute", "classlbann_1_1convolution__layer.html#ac223a97714153369c52db5b348f0dc15", null ],

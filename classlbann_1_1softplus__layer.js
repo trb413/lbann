@@ -1,6 +1,6 @@
 var classlbann_1_1softplus__layer =
 [
-    [ "softplus_layer", "classlbann_1_1softplus__layer.html#afac8184b465394ae26b10efdbaa9f1b0", null ],
+    [ "softplus_layer", "classlbann_1_1softplus__layer.html#a5e3c97a91cd7e491ae748d6d6b942450", null ],
     [ "activation_function", "classlbann_1_1softplus__layer.html#accded690645b4ce69a2a0854575a4ff6", null ],
     [ "activation_function_gradient", "classlbann_1_1softplus__layer.html#aa149f7bfc33204bea156a5ad3f304da8", null ],
     [ "copy", "classlbann_1_1softplus__layer.html#ac158b28135a3412acbdcffe6fc564660", null ],

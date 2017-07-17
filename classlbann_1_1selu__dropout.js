@@ -1,6 +1,6 @@
 var classlbann_1_1selu__dropout =
 [
-    [ "selu_dropout", "classlbann_1_1selu__dropout.html#abb0be15aebf83bad0d0a8bf42fa9ffcf", null ],
+    [ "selu_dropout", "classlbann_1_1selu__dropout.html#ad4dce1105031606f60b8d7dd6a00685d", null ],
     [ "selu_dropout", "classlbann_1_1selu__dropout.html#ae8e81800cf4c75bcf449e192988832b5", null ],
     [ "~selu_dropout", "classlbann_1_1selu__dropout.html#a9c97c032e573f7a907ca6b0025228567", null ],
     [ "bp_compute", "classlbann_1_1selu__dropout.html#a616165378e62f80cb83527b52328293b", null ],

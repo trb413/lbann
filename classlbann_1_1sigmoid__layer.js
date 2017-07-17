@@ -1,6 +1,6 @@
 var classlbann_1_1sigmoid__layer =
 [
-    [ "sigmoid_layer", "classlbann_1_1sigmoid__layer.html#a43e06725a1585497a99adecbaff2111b", null ],
+    [ "sigmoid_layer", "classlbann_1_1sigmoid__layer.html#a796120c7ea1d2e33050a7a35dcb6c434", null ],
     [ "activation_function", "classlbann_1_1sigmoid__layer.html#aecd69b2f833dec157f2527fc6ef2a059", null ],
     [ "activation_function_gradient", "classlbann_1_1sigmoid__layer.html#a8f1a5328b78d9a40ebacfdfb7fd60636", null ],
     [ "copy", "classlbann_1_1sigmoid__layer.html#a34f60e7e12c7963be9c482db57125576", null ],

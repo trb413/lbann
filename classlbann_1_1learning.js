@@ -1,6 +1,6 @@
 var classlbann_1_1learning =
 [
-    [ "learning", "classlbann_1_1learning.html#a0c095969527274452bfccbfddc4b8b55", null ],
+    [ "learning", "classlbann_1_1learning.html#a5ca12d85e57b3fb9c880f78454c15b3b", null ],
     [ "learning", "classlbann_1_1learning.html#a5e6cb1233ee7dbd62353b00a3b911fb1", null ],
     [ "~learning", "classlbann_1_1learning.html#ac72ee98b695d3d292fce5e3eb0bb7fda", null ],
     [ "check_setup", "classlbann_1_1learning.html#a43412ff0de7514a8b29309e660777ef5", null ],

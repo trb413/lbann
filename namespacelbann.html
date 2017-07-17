@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">f7890a5-ci253799457</span>
+   &#160;<span id="projectnumber">aa9951f-ci254515062</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -2742,12 +2742,12 @@ template&lt;&gt; </div>
 
 <p>Weight matrices should be in Star,Star and data matrices Star,VC distributions. </p>
 
-<p>Definition at line <a class="el" href="learning_8hpp_source.html#l00252">252</a> of file <a class="el" href="learning_8hpp_source.html">learning.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                                                                                           {</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  Layer::initialize_distributed_matrices&lt;data_layout::DATA_PARALLEL&gt;();</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  m_weights             = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86">StarMat</a>(m_comm-&gt;get_model_grid());</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  m_weights_gradient    = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86">StarMat</a>(m_comm-&gt;get_model_grid());</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;}</div>
+<p>Definition at line <a class="el" href="learning_8hpp_source.html#l00251">251</a> of file <a class="el" href="learning_8hpp_source.html">learning.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                                                                                           {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  Layer::initialize_distributed_matrices&lt;data_layout::DATA_PARALLEL&gt;();</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  m_weights             = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86">StarMat</a>(m_comm-&gt;get_model_grid());</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  m_weights_gradient    = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86">StarMat</a>(m_comm-&gt;get_model_grid());</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;}</div>
 <div class="ttc" id="base_8hpp_html_ac1f107dfdc1d078904b4b666af5b6b86"><div class="ttname"><a href="base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86">StarMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::STAR, El::STAR &gt; StarMat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00044">base.hpp:44</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -2777,12 +2777,12 @@ template&lt;&gt; </div>
 
 <p>Matrices should be in MC,MR distributions. </p>
 
-<p>Definition at line <a class="el" href="learning_8hpp_source.html#l00245">245</a> of file <a class="el" href="learning_8hpp_source.html">learning.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                                                                                            {</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  Layer::initialize_distributed_matrices&lt;data_layout::MODEL_PARALLEL&gt;();</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  m_weights             = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(m_comm-&gt;get_model_grid());</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  m_weights_gradient    = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(m_comm-&gt;get_model_grid());</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;}</div>
+<p>Definition at line <a class="el" href="learning_8hpp_source.html#l00244">244</a> of file <a class="el" href="learning_8hpp_source.html">learning.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                                                                                            {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  Layer::initialize_distributed_matrices&lt;data_layout::MODEL_PARALLEL&gt;();</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  m_weights             = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(m_comm-&gt;get_model_grid());</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  m_weights_gradient    = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(m_comm-&gt;get_model_grid());</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;}</div>
 <div class="ttc" id="base_8hpp_html_a8e774b79084797a8f87918d8f66b6802"><div class="ttname"><a href="base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::MC, El::MR &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00042">base.hpp:42</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -4514,7 +4514,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li>
-    <li class="footer">Generated on Sat Jul 15 2017 05:36:07 for LBANN by
+    <li class="footer">Generated on Mon Jul 17 2017 18:17:25 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

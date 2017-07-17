@@ -1,6 +1,6 @@
 var classlbann_1_1local__response__normalization__layer =
 [
-    [ "local_response_normalization_layer", "classlbann_1_1local__response__normalization__layer.html#a95a61bf6513971c2c50e61fdeef75c7e", null ],
+    [ "local_response_normalization_layer", "classlbann_1_1local__response__normalization__layer.html#a007090a35bf021d10dac546ab7d3684d", null ],
     [ "local_response_normalization_layer", "classlbann_1_1local__response__normalization__layer.html#a63d30aacae988417293c75f0bd8ef96e", null ],
     [ "~local_response_normalization_layer", "classlbann_1_1local__response__normalization__layer.html#a54265891c1eedd2b1732583f76eeb552", null ],
     [ "bp_compute", "classlbann_1_1local__response__normalization__layer.html#a1c0938d5e56c15a6ea8a05aa90846fa4", null ],

@@ -1,6 +1,6 @@
 var classlbann_1_1elu__layer =
 [
-    [ "elu_layer", "classlbann_1_1elu__layer.html#a83aee08610ed107b9efb595d31278ec3", null ],
+    [ "elu_layer", "classlbann_1_1elu__layer.html#a757a24333c9d6b9f1fdd4ee6e6b69a3c", null ],
     [ "activation_function", "classlbann_1_1elu__layer.html#abeede1a33064c4b1270e302b115ac1ee", null ],
     [ "activation_function_gradient", "classlbann_1_1elu__layer.html#aeab6eb14b3352535d9230bb32ef87d59", null ],
     [ "copy", "classlbann_1_1elu__layer.html#a3eef6b42c8b870d6fc60f8e4928cdf4a", null ],

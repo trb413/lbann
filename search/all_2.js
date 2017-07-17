@@ -4,7 +4,7 @@ var searchData=
   ['base_2ecpp',['base.cpp',['../base_8cpp.html',1,'']]],
   ['base_2ehpp',['base.hpp',['../base_8hpp.html',1,'']]],
   ['basic_20usage',['Basic Usage',['../basic_usage.html',1,'index']]],
-  ['batch_5fnormalization',['batch_normalization',['../classlbann_1_1batch__normalization.html#a7288614e45e349ccec5ca8197d71d605',1,'lbann::batch_normalization::batch_normalization(int index, lbann_comm *comm, int mini_batch_size, DataType decay=0.9, DataType gamma=1.0, DataType beta=0.0)'],['../classlbann_1_1batch__normalization.html#a62e642fc7c064a49826e5d4a10a87e5c',1,'lbann::batch_normalization::batch_normalization(const batch_normalization &amp;other)']]],
+  ['batch_5fnormalization',['batch_normalization',['../classlbann_1_1batch__normalization.html#afa3ea9823fc6b5621ab6a1596763f83c',1,'lbann::batch_normalization::batch_normalization(int index, lbann_comm *comm, DataType decay=0.9, DataType gamma=1.0, DataType beta=0.0)'],['../classlbann_1_1batch__normalization.html#a62e642fc7c064a49826e5d4a10a87e5c',1,'lbann::batch_normalization::batch_normalization(const batch_normalization &amp;other)']]],
   ['batch_5fnormalization',['batch_normalization',['../classlbann_1_1batch__normalization.html',1,'lbann']]],
   ['batch_5fnormalization_2ehpp',['batch_normalization.hpp',['../batch__normalization_8hpp.html',1,'']]],
   ['bernoulli_5ffill',['bernoulli_fill',['../namespacelbann.html#a1a7ffde5dcab1f39986adff100020262',1,'lbann']]],
@@ -46,7 +46,7 @@ var searchData=
   ['bp_5fset_5fstd_5fmatrix_5fview',['bp_set_std_matrix_view',['../classlbann_1_1input__layer.html#a40b4f8647dceb9cd3277fd19c8e1399c',1,'lbann::input_layer::bp_set_std_matrix_view()'],['../classlbann_1_1Layer.html#ad388ef1cc8ff6f43e531de7dbd62d996',1,'lbann::Layer::bp_set_std_matrix_view()']]],
   ['bp_5ftime',['bp_time',['../classlbann_1_1Layer.html#abaa9acb195346090fffcd64013295479',1,'lbann::Layer']]],
   ['branch_2ehpp',['branch.hpp',['../branch_8hpp.html',1,'']]],
-  ['branch_5flayer',['branch_layer',['../classlbann_1_1branch__layer.html#a7179eaf4ff3d5a4ecf448280d5664ee6',1,'lbann::branch_layer::branch_layer(int index, lbann_comm *comm, int mini_batch_size, std::vector&lt; const Layer * &gt; children, cudnn::cudnn_manager *cudnn=NULL)'],['../classlbann_1_1branch__layer.html#a3dcade23ac5721c39e48364b5f4c771c',1,'lbann::branch_layer::branch_layer(const branch_layer &amp;)=default']]],
+  ['branch_5flayer',['branch_layer',['../classlbann_1_1branch__layer.html#ae726956239e61232842e711fa07461ec',1,'lbann::branch_layer::branch_layer(int index, lbann_comm *comm, std::vector&lt; const Layer * &gt; children, cudnn::cudnn_manager *cudnn=NULL)'],['../classlbann_1_1branch__layer.html#a3dcade23ac5721c39e48364b5f4c771c',1,'lbann::branch_layer::branch_layer(const branch_layer &amp;)=default']]],
   ['branch_5flayer',['branch_layer',['../classlbann_1_1branch__layer.html',1,'lbann']]],
   ['bytes_5freceived',['bytes_received',['../classlbann_1_1lbann__comm.html#afb99f57f7eafc0695bf28e6c26a8120f',1,'lbann::lbann_comm']]],
   ['bytes_5fsent',['bytes_sent',['../classlbann_1_1lbann__comm.html#ad1f146ae7337ece6266fd307944928e0',1,'lbann::lbann_comm']]]

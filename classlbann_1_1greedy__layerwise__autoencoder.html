@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">f7890a5-ci253799457</span>
+   &#160;<span id="projectnumber">aa9951f-ci254515062</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -776,10 +776,10 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  Layer *mirror_layer = NULL;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordflow">switch</span>(original_layer-&gt;get_data_layout()){</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0">data_layout::MODEL_PARALLEL</a>:</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    mirror_layer = <span class="keyword">new</span> reconstruction_layer&lt;data_layout::MODEL_PARALLEL&gt;(mirror_index, <a class="code" href="classlbann_1_1model.html#a0eabaf2b2f829fd5db3dfd26df420df0">m_comm</a>, <a class="code" href="classlbann_1_1model.html#acc496503e7cf8d635e5a31ba09b3c81a">m_max_mini_batch_size</a>, original_layer);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    mirror_layer = <span class="keyword">new</span> reconstruction_layer&lt;data_layout::MODEL_PARALLEL&gt;(mirror_index, <a class="code" href="classlbann_1_1model.html#a0eabaf2b2f829fd5db3dfd26df420df0">m_comm</a>, original_layer);</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordflow">case</span> <a class="code" href="base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>:</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    mirror_layer = <span class="keyword">new</span> reconstruction_layer&lt;data_layout::DATA_PARALLEL&gt;(mirror_index, <a class="code" href="classlbann_1_1model.html#a0eabaf2b2f829fd5db3dfd26df420df0">m_comm</a>, <a class="code" href="classlbann_1_1model.html#acc496503e7cf8d635e5a31ba09b3c81a">m_max_mini_batch_size</a>, original_layer);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    mirror_layer = <span class="keyword">new</span> reconstruction_layer&lt;data_layout::DATA_PARALLEL&gt;(mirror_index, <a class="code" href="classlbann_1_1model.html#a0eabaf2b2f829fd5db3dfd26df420df0">m_comm</a>, original_layer);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordflow">default</span>:</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">break</span>;</div>
@@ -797,7 +797,6 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;}</div>
 <div class="ttc" id="base_8hpp_html_a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0"><div class="ttname"><a href="base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0">data_layout::MODEL_PARALLEL</a></div></div>
 <div class="ttc" id="base_8hpp_html_a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638"><div class="ttname"><a href="base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_acc496503e7cf8d635e5a31ba09b3c81a"><div class="ttname"><a href="classlbann_1_1model.html#acc496503e7cf8d635e5a31ba09b3c81a">lbann::model::m_max_mini_batch_size</a></div><div class="ttdeci">int m_max_mini_batch_size</div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00222">model.hpp:222</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_a0eabaf2b2f829fd5db3dfd26df420df0"><div class="ttname"><a href="classlbann_1_1model.html#a0eabaf2b2f829fd5db3dfd26df420df0">lbann::model::m_comm</a></div><div class="ttdeci">lbann_comm * m_comm</div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00234">model.hpp:234</a></div></div>
 <div class="ttc" id="classlbann_1_1greedy__layerwise__autoencoder_html_a4848353f20ff957a9e0bd7c8d374644e"><div class="ttname"><a href="classlbann_1_1greedy__layerwise__autoencoder.html#a4848353f20ff957a9e0bd7c8d374644e">lbann::greedy_layerwise_autoencoder::m_have_mirror</a></div><div class="ttdeci">uint32_t m_have_mirror</div><div class="ttdoc">Flag recording whether we have a mirror layer inserted in model for training. </div><div class="ttdef"><b>Definition:</b> <a href="model__greedy__layerwise__autoencoder_8hpp_source.html#l00103">model_greedy_layerwise_autoencoder.hpp:103</a></div></div>
 <div class="ttc" id="classlbann_1_1model_html_a0d278ffa94dd6749e017c2af5c78178d"><div class="ttname"><a href="classlbann_1_1model.html#a0d278ffa94dd6749e017c2af5c78178d">lbann::model::setup</a></div><div class="ttdeci">virtual void setup()</div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00067">model.hpp:67</a></div></div>
@@ -1701,7 +1700,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1greedy__layerwise__autoencoder.html">greedy_layerwise_autoencoder</a></li>
-    <li class="footer">Generated on Sat Jul 15 2017 05:36:08 for LBANN by
+    <li class="footer">Generated on Mon Jul 17 2017 18:17:27 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

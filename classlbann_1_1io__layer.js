@@ -1,7 +1,7 @@
 var classlbann_1_1io__layer =
 [
     [ "dataset_header", "structlbann_1_1io__layer_1_1dataset__header.html", "structlbann_1_1io__layer_1_1dataset__header" ],
-    [ "io_layer", "classlbann_1_1io__layer.html#a05569c6e7d898c8408b7fa602e7c7d7d", null ],
+    [ "io_layer", "classlbann_1_1io__layer.html#ae106b21f2973f2da7772cc81f471949b", null ],
     [ "at_new_epoch", "classlbann_1_1io__layer.html#a4f0e3bbd6bc638432723179efc2998ab", null ],
     [ "get_data_dims", "classlbann_1_1io__layer.html#ac8b68cb0ce51bfb245b121b05a70c781", null ],
     [ "get_linearized_data_size", "classlbann_1_1io__layer.html#abe71d3ff37e3a3ddbb470347458a07ec", null ],

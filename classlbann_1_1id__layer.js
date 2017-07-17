@@ -1,6 +1,6 @@
 var classlbann_1_1id__layer =
 [
-    [ "id_layer", "classlbann_1_1id__layer.html#a487871968c4fe32c895edc815f874039", null ],
+    [ "id_layer", "classlbann_1_1id__layer.html#a21e31c3419a86aa98eecf2e8aa232a29", null ],
     [ "activation_function", "classlbann_1_1id__layer.html#ae0dd585cae7d352f9c1a1d20204ca214", null ],
     [ "activation_function_gradient", "classlbann_1_1id__layer.html#afa06db1f85d3ffc6daa1b0dd319fc4c9", null ],
     [ "bp_compute", "classlbann_1_1id__layer.html#aca051c1798cc5138bd48a2d22f24c1cc", null ],

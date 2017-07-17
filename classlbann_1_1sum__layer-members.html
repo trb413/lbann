@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">f7890a5-ci253799457</span>
+   &#160;<span id="projectnumber">aa9951f-ci254515062</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('classlbann_1_1sum__layer.html','');});
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1Layer.html#ad9dbf2d54061cdd56782f0c61398da8d">get_prev_neuron_dims</a>() const </td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classlbann_1_1Layer.html#a0ac13af6f5ee8316d64c550bef919ee0">get_sample_indices_per_mb</a>()</td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1sum__layer.html#a9e5a5807d8aaea52340c7c79ebd65b96">initialize_distributed_matrices</a>()</td><td class="entry"><a class="el" href="classlbann_1_1sum__layer.html">lbann::sum_layer&lt; T_layout &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classlbann_1_1Layer.html#a852a2187015f25204a358aafaf561dc8">Layer</a>(const int index, lbann_comm *comm, int mbsize)</td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classlbann_1_1Layer.html#a4c903cfe85edfc57ab305e2bdf3e3345">Layer</a>(const int index, lbann_comm *comm)</td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1Layer.html#a247cc68c730284f10a2cb42985fe5f3a">Layer</a>(const Layer &amp;other)</td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classlbann_1_1Layer.html#a7ac9335d75d817fc2d5cf171da9b7e22">loadFromCheckpoint</a>(int fd, const char *filename, size_t *bytes)</td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1Layer.html#acd2524835a05a2d88c92e546e15a80a9">loadFromCheckpointShared</a>(persist &amp;p)</td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
@@ -175,11 +175,11 @@ $(document).ready(function(){initNavTree('classlbann_1_1sum__layer.html','');});
   <tr><td class="entry"><a class="el" href="classlbann_1_1Layer.html#a36aa22ef90ce4de65abe729d38490863">setup_gpu</a>()</td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1sum__layer.html#a5756117eba89ca1d23c89af623997443">setup_pointers</a>(const Layer *prev_layer, const Layer *next_layer)</td><td class="entry"><a class="el" href="classlbann_1_1sum__layer.html">lbann::sum_layer&lt; T_layout &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classlbann_1_1Layer.html#a705cdeb600e57a076a24f6be1c31f5a5">setup_views</a>()</td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1sum__layer.html#aea5780520521ab18cd8faeb7720ad2fb">sum_layer</a>(int index, lbann_comm *comm, int mini_batch_size, std::vector&lt; const Layer * &gt; parents, cudnn::cudnn_manager *cudnn=NULL)</td><td class="entry"><a class="el" href="classlbann_1_1sum__layer.html">lbann::sum_layer&lt; T_layout &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1sum__layer.html#a6cbb8f6936cd4657269ce93a03de921d">sum_layer</a>(int index, lbann_comm *comm, std::vector&lt; const Layer * &gt; parents, cudnn::cudnn_manager *cudnn=NULL)</td><td class="entry"><a class="el" href="classlbann_1_1sum__layer.html">lbann::sum_layer&lt; T_layout &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classlbann_1_1sum__layer.html#a8e9989500088d4748b51537954dfd026">sum_layer</a>(const sum_layer &amp;)=default</td><td class="entry"><a class="el" href="classlbann_1_1sum__layer.html">lbann::sum_layer&lt; T_layout &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1Layer.html#af7e50932bb60d4cab3b21ab3fb0707ea">summarize_matrices</a>(lbann_summary &amp;summarizer, int step)</td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classlbann_1_1Layer.html#a7f3f26e2ae0497f9a00fd6bc56b50543">summarize_stats</a>(lbann_summary &amp;summarizer, int step)</td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1transform.html#a9652291c702a35557d76f9464087d8bd">transform</a>(int index, lbann_comm *comm, int mini_batch_size)</td><td class="entry"><a class="el" href="classlbann_1_1transform.html">lbann::transform</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1transform.html#a83aa700a961a2388807ad3453c158f37">transform</a>(int index, lbann_comm *comm)</td><td class="entry"><a class="el" href="classlbann_1_1transform.html">lbann::transform</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classlbann_1_1transform.html#ac85eb14f3fb2238a484ca218a55c72ce">transform</a>(const transform &amp;)=default</td><td class="entry"><a class="el" href="classlbann_1_1transform.html">lbann::transform</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1Layer.html#ae4a050e51e3a9bec431cf8b7a5660f2c">update</a>()</td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classlbann_1_1Layer.html#a70e08fc96a612f67ade6ba3809536d85">update_compute</a>()</td><td class="entry"><a class="el" href="classlbann_1_1Layer.html">lbann::Layer</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
@@ -193,7 +193,7 @@ $(document).ready(function(){initNavTree('classlbann_1_1sum__layer.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Jul 15 2017 05:36:08 for LBANN by
+    <li class="footer">Generated on Mon Jul 17 2017 18:17:26 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

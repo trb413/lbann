@@ -1,6 +1,6 @@
 var classlbann_1_1reconstruction__layer =
 [
-    [ "reconstruction_layer", "classlbann_1_1reconstruction__layer.html#aabb39b85abf2094ce403b44df64750b2", null ],
+    [ "reconstruction_layer", "classlbann_1_1reconstruction__layer.html#a2ffc9b658ab8ce9287aba9ad01a96871", null ],
     [ "average_cost", "classlbann_1_1reconstruction__layer.html#a7ff16b30c6321ac044efeadf85302ce4", null ],
     [ "bp_compute", "classlbann_1_1reconstruction__layer.html#ae3cb406251469426ea08276e69f559ec", null ],
     [ "copy", "classlbann_1_1reconstruction__layer.html#a6346415f96d58e6353fc01fc859606ef", null ],

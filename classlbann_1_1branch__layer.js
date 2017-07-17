@@ -1,6 +1,6 @@
 var classlbann_1_1branch__layer =
 [
-    [ "branch_layer", "classlbann_1_1branch__layer.html#a7179eaf4ff3d5a4ecf448280d5664ee6", null ],
+    [ "branch_layer", "classlbann_1_1branch__layer.html#ae726956239e61232842e711fa07461ec", null ],
     [ "branch_layer", "classlbann_1_1branch__layer.html#a3dcade23ac5721c39e48364b5f4c771c", null ],
     [ "~branch_layer", "classlbann_1_1branch__layer.html#a4bd6e4fe937d5dbf15aedc33ad1d92e0", null ],
     [ "add_child", "classlbann_1_1branch__layer.html#a992a11870de5c4e31702db0f7abba29b", null ],

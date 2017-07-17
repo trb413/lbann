@@ -1,6 +1,6 @@
 var classlbann_1_1tanh__layer =
 [
-    [ "tanh_layer", "classlbann_1_1tanh__layer.html#a8075634d43f8839354c8b03b3320a954", null ],
+    [ "tanh_layer", "classlbann_1_1tanh__layer.html#a0e166b8530cef892544b1642a647a34c", null ],
     [ "activation_function", "classlbann_1_1tanh__layer.html#a946e072bc9c735f3dd0a22803d7a8421", null ],
     [ "activation_function_gradient", "classlbann_1_1tanh__layer.html#a85a846c556aa3da9b845695149f2bf4e", null ],
     [ "copy", "classlbann_1_1tanh__layer.html#a1fdb9514e43749de0f63390a5e1e1c3c", null ],

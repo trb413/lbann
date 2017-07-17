@@ -1,6 +1,6 @@
 var classlbann_1_1leaky__relu__layer =
 [
-    [ "leaky_relu_layer", "classlbann_1_1leaky__relu__layer.html#a93c7f334fa09a376bc274300930096e9", null ],
+    [ "leaky_relu_layer", "classlbann_1_1leaky__relu__layer.html#ab09109a84db09628b3d497e2c21b1f91", null ],
     [ "activation_function", "classlbann_1_1leaky__relu__layer.html#a6e1c1888627289ae1a9335a80a82c7eb", null ],
     [ "activation_function_gradient", "classlbann_1_1leaky__relu__layer.html#a9a53a211ec8d1630337aaec041ac3283", null ],
     [ "copy", "classlbann_1_1leaky__relu__layer.html#abcdfe38f01e46446f08764ccf86524b4", null ],

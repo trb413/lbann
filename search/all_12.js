@@ -2,9 +2,9 @@ var searchData=
 [
   ['tanh_2ehpp',['tanh.hpp',['../tanh_8hpp.html',1,'']]],
   ['tanh_5flayer',['tanh_layer',['../classlbann_1_1tanh__layer.html',1,'lbann']]],
-  ['tanh_5flayer',['tanh_layer',['../classlbann_1_1tanh__layer.html#a8075634d43f8839354c8b03b3320a954',1,'lbann::tanh_layer']]],
+  ['tanh_5flayer',['tanh_layer',['../classlbann_1_1tanh__layer.html#a0e166b8530cef892544b1642a647a34c',1,'lbann::tanh_layer']]],
   ['target_5flayer',['target_layer',['../classlbann_1_1target__layer.html',1,'lbann']]],
-  ['target_5flayer',['target_layer',['../classlbann_1_1target__layer.html#ae215b1be1b148a88950b4b7c513a8717',1,'lbann::target_layer']]],
+  ['target_5flayer',['target_layer',['../classlbann_1_1target__layer.html#a40606991a568d87016c925853bb1d806',1,'lbann::target_layer']]],
   ['target_5flayer_2ehpp',['target_layer.hpp',['../target__layer_8hpp.html',1,'']]],
   ['target_5flayer_5fdistributed_5fminibatch',['target_layer_distributed_minibatch',['../classlbann_1_1target__layer__distributed__minibatch.html#a3250bd5d6a2f439267869bd1e7379f83',1,'lbann::target_layer_distributed_minibatch::target_layer_distributed_minibatch(lbann_comm *comm, int mini_batch_size, int num_parallel_readers, std::map&lt; execution_mode, generic_data_reader * &gt; data_readers, bool shared_data_reader, bool for_regression=false)'],['../classlbann_1_1target__layer__distributed__minibatch.html#a15ff5f77c8f40f950c88355c194f259f',1,'lbann::target_layer_distributed_minibatch::target_layer_distributed_minibatch(const target_layer_distributed_minibatch &amp;)=default']]],
   ['target_5flayer_5fdistributed_5fminibatch',['target_layer_distributed_minibatch',['../classlbann_1_1target__layer__distributed__minibatch.html',1,'lbann']]],
@@ -44,6 +44,6 @@ var searchData=
   ['trainingparams',['TrainingParams',['../classlbann_1_1TrainingParams.html#a4ca5149e14ab1aed5f5a9c0e612ce62d',1,'lbann::TrainingParams']]],
   ['trainingsamples',['TrainingSamples',['../classlbann_1_1TrainingParams.html#adf012a044d64191b7d0de8b0278c7060',1,'lbann::TrainingParams']]],
   ['transform',['transform',['../classlbann_1_1transform.html',1,'lbann']]],
-  ['transform',['transform',['../classlbann_1_1transform.html#a9652291c702a35557d76f9464087d8bd',1,'lbann::transform::transform(int index, lbann_comm *comm, int mini_batch_size)'],['../classlbann_1_1transform.html#ac85eb14f3fb2238a484ca218a55c72ce',1,'lbann::transform::transform(const transform &amp;)=default']]],
+  ['transform',['transform',['../classlbann_1_1transform.html#a83aa700a961a2388807ad3453c158f37',1,'lbann::transform::transform(int index, lbann_comm *comm)'],['../classlbann_1_1transform.html#ac85eb14f3fb2238a484ca218a55c72ce',1,'lbann::transform::transform(const transform &amp;)=default']]],
   ['transform_2ehpp',['transform.hpp',['../transform_8hpp.html',1,'']]]
 ];

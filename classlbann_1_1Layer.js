@@ -1,6 +1,6 @@
 var classlbann_1_1Layer =
 [
-    [ "Layer", "classlbann_1_1Layer.html#a852a2187015f25204a358aafaf561dc8", null ],
+    [ "Layer", "classlbann_1_1Layer.html#a4c903cfe85edfc57ab305e2bdf3e3345", null ],
     [ "Layer", "classlbann_1_1Layer.html#a247cc68c730284f10a2cb42985fe5f3a", null ],
     [ "~Layer", "classlbann_1_1Layer.html#a68c3f57587956da938406812f13ecb78", null ],
     [ "back_prop", "classlbann_1_1Layer.html#a0a502d9218d7dbbfd10ebebb6f917033", null ],
