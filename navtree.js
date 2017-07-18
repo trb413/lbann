@@ -49,14 +49,14 @@ var NAVTREEINDEX =
 "classlbann_1_1PerformanceParams.html#abde9f8ab7421f863f11542721c93768f",
 "classlbann_1_1dataset.html#a41834453907dfea600e48595ac200c73",
 "classlbann_1_1greedy__layerwise__autoencoder.html#aa91a4cf3c342021aee73d7bcedbf7ef6",
-"classlbann_1_1lbann__callback__check__init.html#a1378d95f56106f6983378aed464c5747",
-"classlbann_1_1lbann__comm.html#a02c37177a9a38fd9323efda73491ae62",
-"classlbann_1_1lbann__summary.html#aa458036662d4b32d71aaeb8f825ed084",
-"classlbann_1_1objective__functions_1_1categorical__cross__entropy.html#a0ee0826ae4c5d71bc17628f7d017de83",
-"classlbann_1_1sequential__model.html#a7b841c06d54724caecbd2eee309af1c3",
-"data__reader__cnpy_8hpp.html",
-"learning_8hpp.html#ac64033c608ff97dbbb46e9e748d5d4b8",
-"random_8hpp.html#aba9d11cb3a739cd84e7234ceeb32d098"
+"classlbann_1_1lbann__callback__adaptive__learning__rate.html#a9fa0b96fb9c57fb075d58f1381f5d1e5",
+"classlbann_1_1lbann__comm.html#a02a03227cc27e3516f0d9f9812f32019a5a99a7b378e450d9e91b10b1f0085274",
+"classlbann_1_1lbann__summary.html",
+"classlbann_1_1model.html#af31a76afc53061747d2170a65e98f692",
+"classlbann_1_1sequential__model.html#a53a5c755d5ec4cc58f7fcbbf47a030c3",
+"data__reader__cifar10_8cpp.html",
+"lbann_8hpp.html",
+"random_8hpp.html#a557aaed6267e7aaf583a75149e9c670c"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

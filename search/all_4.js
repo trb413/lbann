@@ -31,7 +31,7 @@ var searchData=
   ['data_5freader_5fsynthetic_2ecpp',['data_reader_synthetic.cpp',['../data__reader__synthetic_8cpp.html',1,'']]],
   ['data_5freader_5fsynthetic_2ehpp',['data_reader_synthetic.hpp',['../data__reader__synthetic_8hpp.html',1,'']]],
   ['data_5fseq_5fgenerator',['data_seq_generator',['../namespaceanonymous__namespace_02random_8cpp_03.html#ac1d3d0259f3e9c9b75e9701ae727d16e',1,'anonymous_namespace{random.cpp}']]],
-  ['dataset',['dataset',['../classlbann_1_1dataset.html#a41834453907dfea600e48595ac200c73',1,'lbann::dataset::dataset(generic_data_reader *d_reader)'],['../classlbann_1_1dataset.html#a47e250846a4cd472d4c9e5831810c6c7',1,'lbann::dataset::dataset(const dataset &amp;other)']]],
+  ['dataset',['dataset',['../classlbann_1_1dataset.html#a41834453907dfea600e48595ac200c73',1,'lbann::dataset::dataset(generic_data_reader *d_reader)'],['../classlbann_1_1dataset.html#a505f3c75563db4728949ff6cdd328723',1,'lbann::dataset::dataset(const dataset &amp;other)=default']]],
   ['dataset',['dataset',['../classlbann_1_1dataset.html',1,'lbann']]],
   ['dataset_2ehpp',['dataset.hpp',['../dataset_8hpp.html',1,'']]],
   ['dataset_5fheader',['dataset_header',['../structlbann_1_1io__layer_1_1dataset__header.html',1,'lbann::io_layer']]],

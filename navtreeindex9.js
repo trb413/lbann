@@ -1,5 +1,11 @@
 var NAVTREEINDEX9 =
 {
+"data__reader__cifar10_8cpp.html":[4,0,0,0,0,0,0,1,2,9],
+"data__reader__cifar10_8cpp_source.html":[4,0,0,0,0,0,0,1,2,9],
+"data__reader__cifar10_8hpp.html":[4,0,0,0,0,0,0,0,0,2,10],
+"data__reader__cifar10_8hpp_source.html":[4,0,0,0,0,0,0,0,0,2,10],
+"data__reader__cnpy_8cpp.html":[4,0,0,0,0,0,0,1,2,10],
+"data__reader__cnpy_8cpp_source.html":[4,0,0,0,0,0,0,1,2,10],
 "data__reader__cnpy_8hpp.html":[4,0,0,0,0,0,0,0,0,2,11],
 "data__reader__cnpy_8hpp_source.html":[4,0,0,0,0,0,0,0,0,2,11],
 "data__reader__imagenet_8cpp.html":[4,0,0,0,0,0,0,1,2,11],
@@ -116,8 +122,8 @@ var NAVTREEINDEX9 =
 "functions_enum.html":[3,3,4],
 "functions_eval.html":[3,3,5],
 "functions_f.html":[3,3,0,5],
-"functions_func.html":[3,3,1,0],
 "functions_func.html":[3,3,1],
+"functions_func.html":[3,3,1,0],
 "functions_func_b.html":[3,3,1,1],
 "functions_func_c.html":[3,3,1,2],
 "functions_func_d.html":[3,3,1,3],
@@ -243,11 +249,5 @@ var NAVTREEINDEX9 =
 "layer_8cpp.html#a64a8c629fb29a62ebf9bd1fca82fa6a8":[4,0,0,0,0,0,0,1,4,0,1],
 "layer_8cpp_source.html":[4,0,0,0,0,0,0,1,4,0],
 "layer_8hpp.html":[4,0,0,0,0,0,0,0,0,4,5],
-"layer_8hpp_source.html":[4,0,0,0,0,0,0,0,0,4,5],
-"lbann_8hpp.html":[4,0,0,0,0,0,0,0,0,14],
-"lbann_8hpp_source.html":[4,0,0,0,0,0,0,0,0,14],
-"leaky__relu_8hpp.html":[4,0,0,0,0,0,0,0,0,4,0,3],
-"leaky__relu_8hpp_source.html":[4,0,0,0,0,0,0,0,0,4,0,3],
-"learning_8hpp.html":[4,0,0,0,0,0,0,0,0,4,2,2],
-"learning_8hpp.html#a99609f95b944cbbd92f927d018058543":[4,0,0,0,0,0,0,0,0,4,2,2,2]
+"layer_8hpp_source.html":[4,0,0,0,0,0,0,0,0,4,5]
 };

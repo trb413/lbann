@@ -2,9 +2,9 @@ var NAVTREEINDEX2 =
 {
 "classlbann_1_1dataset.html#a41834453907dfea600e48595ac200c73":[3,0,5,99,0],
 "classlbann_1_1dataset.html#a4632b42298795de712a32da162bedad5":[3,0,5,99,5],
-"classlbann_1_1dataset.html#a47e250846a4cd472d4c9e5831810c6c7":[3,0,5,99,1],
+"classlbann_1_1dataset.html#a505f3c75563db4728949ff6cdd328723":[3,0,5,99,1],
+"classlbann_1_1dataset.html#a8806c93d49b1171a98f61f67de964f2b":[3,0,5,99,2],
 "classlbann_1_1dataset.html#a95e9d0ceefc527e22318149778597727":[3,0,5,99,6],
-"classlbann_1_1dataset.html#ac007eda40bacff2749a9b634436bb299":[3,0,5,99,2],
 "classlbann_1_1dataset.html#ac90d82addc9f624b7767d6fff907b1cc":[3,0,5,99,4],
 "classlbann_1_1deep__neural__network.html":[3,0,5,80],
 "classlbann_1_1deep__neural__network.html#a0ba2258003a505b0d537809b2b6191dc":[3,0,5,80,6],
