@@ -56,7 +56,8 @@ bool imagenet_reader::fetch_datum(Mat& X, int data_id, int mb_idx, int tid) {
   int width = 224;
   int height = 224;
   unsigned char *pixels = m_pixel_bufs[tid].data();
-  bool ret = lbann::image_utils::loadJPG(imagepath.c_str(), width, height, false, pixels);
+  bool flip = std::bernoulli_distribution()(get_fast_generator());
+  bool ret = lbann::image_utils::loadJPG(imagepath.c_str(), width, height, flip, pixels);
   if(!ret) {
     throw lbann_exception(std::string{} + __FILE__ + " " + std::to_string(__LINE__)
                           + "ImageNet: image_utils::loadJPG failed to load - " 
