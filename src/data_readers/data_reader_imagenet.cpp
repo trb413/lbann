@@ -36,8 +36,8 @@ namespace lbann {
 
 imagenet_reader::imagenet_reader(int batchSize, bool shuffle)
   : generic_data_reader(batchSize, shuffle) {
-  m_image_width = 256;
-  m_image_height = 256;
+  m_image_width = 224;
+  m_image_height = 224;
   m_image_num_channels = 3;
   m_num_labels = 1000;
 
@@ -53,7 +53,8 @@ bool imagenet_reader::fetch_datum(Mat& X, int data_id, int mb_idx, int tid) {
   int num_channel_values = m_image_width * m_image_height * m_image_num_channels;
   std::string imagepath = get_file_dir() + image_list[data_id].first;
 
-  int width, height;
+  int width = 224;
+  int height = 224;
   unsigned char *pixels = m_pixel_bufs[tid].data();
   bool ret = lbann::image_utils::loadJPG(imagepath.c_str(), width, height, false, pixels);
   if(!ret) {

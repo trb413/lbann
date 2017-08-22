@@ -251,13 +251,20 @@ bool lbann::image_utils::savePNG(const char *Imagefile, int Width, int Height, b
 bool lbann::image_utils::loadJPG(const char *Imagefile, int& Width, int& Height, bool Flip, unsigned char *&Pixels) {
 
 #ifdef __LIB_OPENCV
-  cv::Mat image = cv::imread(Imagefile, _LBANN_CV_COLOR_);
-  if (image.empty()) {
+
+  // Load image from file
+  cv::Mat raw_image = cv::imread(Imagefile, _LBANN_CV_COLOR_);
+  if (raw_image.empty()) {
     return false;
   }
-
-  Width = image.cols;
-  Height = image.rows;
+  int raw_width = raw_image.cols;
+  int raw_height = raw_image.rows;
+  
+  // Get random crop of image
+  int crop_x_start = fast_rand_int(get_fast_generator(), raw_width - Width + 1);
+  int crop_y_start = fast_rand_int(get_fast_generator(), raw_height - Height + 1);
+  cv::Rect crop(crop_x_start, crop_y_start, Width, Height);
+  cv::Mat image(raw_image, crop);
 
   for (int y = 0; y < Height; y++) {
     for (int x = 0; x < Width; x++) {
