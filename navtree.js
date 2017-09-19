@@ -1,7 +1,87 @@
 var NAVTREE =
 [
   [ "LBANN", "index.html", [
-    [ "LBANN Documentation", "index.html", "index" ],
+    [ "Overview", "index.html", [
+      [ "LBANN Development Team", "index.html#team", null ],
+      [ "License", "index.html#license", null ]
+    ] ],
+    [ "Getting Started", "getting_started.html", [
+      [ "Download", "getting_started.html#getting_started_download", null ],
+      [ "Building LBANN", "getting_started.html#getting_started_building", [
+        [ "Livermore Computing Build", "getting_started.html#lc", null ],
+        [ "Spack Build", "getting_started.html#spack", null ],
+        [ "OSX Build", "getting_started.html#osx", null ],
+        [ "Dependency List", "getting_started.html#dependencies", null ]
+      ] ],
+      [ "Basic Usage", "getting_started.html#getting_started_basicusage", [
+        [ "Verification", "getting_started.html#verification", null ]
+      ] ]
+    ] ],
+    [ "Callbacks", "callbacks.html", [
+      [ "Check Initialization", "callbacks.html#checkinit", null ],
+      [ "Check Reconstruction", "callbacks.html#checkreconstruction", null ],
+      [ "Check NAN", "callbacks.html#checknan", null ],
+      [ "Check Small", "callbacks.html#checksmall", null ],
+      [ "Dump Activations", "callbacks.html#dump_acts", null ],
+      [ "Dump Gradients", "callbacks.html#dump_grads", null ],
+      [ "Dump Minibatch Sample Indices", "callbacks.html#dump_mb_sample_indices", null ],
+      [ "Dump Weights", "callbacks.html#dump_wei", null ],
+      [ "Inter-model Communication", "callbacks.html#im_comm", null ],
+      [ "IO", "callbacks.html#io", null ],
+      [ "Learning Rate", "callbacks.html#learningrate", null ],
+      [ "Manage LTFB", "callbacks.html#LTFB", null ],
+      [ "Print Accuracy", "callbacks.html#print_acc", null ],
+      [ "Save Images", "callbacks.html#save_images", [
+        [ "Sum", "callbacks.html#sum", null ]
+      ] ],
+      [ "Timer", "callbacks.html#timer", null ],
+      [ "Debug", "callbacks.html#dbg", null ]
+    ] ],
+    [ "Layers", "layers.html", [
+      [ "Learning", "layers.html#learning", null ],
+      [ "Regularizer", "layers.html#regularizer", [
+        [ "Batch Normalization", "layers.html#batchNorm", null ],
+        [ "Dropout", "layers.html#dropout", null ],
+        [ "Selu Dropout", "layers.html#selu_dropout", null ],
+        [ "Local Response Norm Layer", "layers.html#local_response_norm_layer", null ]
+      ] ],
+      [ "Transform", "layers.html#transform", [
+        [ "Concatenation", "layers.html#concatenation", null ],
+        [ "Pooling", "layers.html#pooling", null ],
+        [ "Slice", "layers.html#slice", null ],
+        [ "Split", "layers.html#split", null ],
+        [ "Sum", "layers.html#sum", null ]
+      ] ],
+      [ "Activation", "layers.html#activation", [
+        [ "Identity", "layers.html#idlayer", null ],
+        [ "Rectified Linear Unit", "layers.html#reluLayer", null ],
+        [ "Leaky Relu", "layers.html#leakyrelu", null ],
+        [ "Smooth Relu", "layers.html#smoothrelu", null ],
+        [ "Exponential Linear Unit", "layers.html#expLinUn", null ],
+        [ "Scaled Elu", "layers.html#seluLayer", null ],
+        [ "Sigmoid", "layers.html#sigLayer", null ],
+        [ "Softplus", "layers.html#softplus", null ],
+        [ "Softmax", "layers.html#softmax", null ],
+        [ "Tanh", "layers.html#tanh", null ]
+      ] ],
+      [ "IO", "layers.html#io", null ]
+    ] ],
+    [ "Metrics", "metrics.html", [
+      [ "Categorical Accuracy", "metrics.html#cate_accuracy", null ],
+      [ "Mean Squared Error", "metrics.html#mse", null ],
+      [ "Top K Categorical Accuracy", "metrics.html#top_k", null ]
+    ] ],
+    [ "Objective Functions", "obj_fn.html", [
+      [ "Categorical Cross Entropy", "obj_fn.html#cate_cross_entropy", null ],
+      [ "Objective Mean Squared Error", "obj_fn.html#Omse", null ]
+    ] ],
+    [ "Optimizers", "optimizers.html", [
+      [ "Adagrad", "optimizers.html#Adagrad", null ],
+      [ "Adam", "optimizers.html#Adam", null ],
+      [ "Hypergradient Adam", "optimizers.html#hadam", null ],
+      [ "RMSprop", "optimizers.html#rmsp", null ],
+      [ "SGD", "optimizers.html#SGD", null ]
+    ] ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ],
@@ -46,17 +126,19 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Elemental__extensions_8cpp.html",
-"classlbann_1_1PerformanceParams.html#abde9f8ab7421f863f11542721c93768f",
-"classlbann_1_1dataset.html#a41834453907dfea600e48595ac200c73",
-"classlbann_1_1greedy__layerwise__autoencoder.html#aa91a4cf3c342021aee73d7bcedbf7ef6",
-"classlbann_1_1lbann__callback__adaptive__learning__rate.html#a9fa0b96fb9c57fb075d58f1381f5d1e5",
-"classlbann_1_1lbann__comm.html#a02a03227cc27e3516f0d9f9812f32019a5a99a7b378e450d9e91b10b1f0085274",
-"classlbann_1_1lbann__summary.html",
-"classlbann_1_1model.html#af31a76afc53061747d2170a65e98f692",
-"classlbann_1_1sequential__model.html#a53a5c755d5ec4cc58f7fcbbf47a030c3",
-"data__reader__cifar10_8cpp.html",
+"classlbann_1_1Layer.html#a70e08fc96a612f67ade6ba3809536d85",
+"classlbann_1_1concatenation__layer.html#a0498925fcb0a42f1bc8fd1913b9090fc",
+"classlbann_1_1fully__connected__layer.html#a521aa4a5b88ef00f554fe21a850f6596",
+"classlbann_1_1image__utils.html",
+"classlbann_1_1lbann__callback__check__reconstruction__error.html",
+"classlbann_1_1lbann__callback__profiler.html#af78237a67eaacf2508f31ad72b8ff8a7",
+"classlbann_1_1lbann__image__preprocessor.html#a3e99be32b95a415fd8d616cb85075df1",
+"classlbann_1_1mnist__reader.html#acf6f38f62c34e2e0348b8e6d3cfca489",
+"classlbann_1_1pooling__layer.html#a9b6a01bfb20b63c564e2c4d84e2e751e",
+"classlbann_1_1split__layer.html#af9b6d44718c0fe6930c93d9bbb05476b",
+"data__reader__synthetic_8hpp.html",
 "lbann_8hpp.html",
-"random_8hpp.html#a557aaed6267e7aaf583a75149e9c670c"
+"random_8cpp.html#a83826c4b587d1825f13b833be6fe047f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
@@ -169,7 +251,7 @@ function createIndent(o,domNode,node,level)
     span.style.display = 'inline-block';
     span.style.width   = 16*(level+1)+'px';
     span.style.height  = '22px';
-    span.innerHTML = '&#160;';
+    span.innerHTML = '&nbsp;';
     domNode.appendChild(span);
   } 
 }

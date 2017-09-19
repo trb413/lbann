@@ -6,15 +6,15 @@ var classlbann_1_1image__utils =
     [ "load_image", "classlbann_1_1image__utils.html#ac324a04f877601387cfb10750f1f6b8d", null ],
     [ "load_image", "classlbann_1_1image__utils.html#aae26f1ab054267e66d23f34c2f3bb170", null ],
     [ "load_image", "classlbann_1_1image__utils.html#a45ce40d5989cfe65f4d9081335a1e10f", null ],
-    [ "loadBMP", "classlbann_1_1image__utils.html#aa1b42ae8de26099d13cc300a7faea3e0", null ],
+    [ "loadBMP", "classlbann_1_1image__utils.html#a47a817523ed1bba5b77fef8785dcc58b", null ],
     [ "loadJPG", "classlbann_1_1image__utils.html#ac6194e29215ffefccfcc058e6390af8f", null ],
-    [ "loadJPG", "classlbann_1_1image__utils.html#abefdf10cea3cdaf7dfdf758752ecbd6b", null ],
-    [ "loadPGM", "classlbann_1_1image__utils.html#a76d25c0798c6ea147345521633279a9b", null ],
-    [ "loadPNG", "classlbann_1_1image__utils.html#aabe8724b1066c59b2d5b85b183b7f99a", null ],
+    [ "loadJPG", "classlbann_1_1image__utils.html#a87d4f44592c8c209b4426f7c09fc045c", null ],
+    [ "loadPGM", "classlbann_1_1image__utils.html#aacd08e9275b56ae4ee9eceecba312d60", null ],
+    [ "loadPNG", "classlbann_1_1image__utils.html#a71e4ede14ec4c3ca27eac30e8d257d1a", null ],
     [ "save_image", "classlbann_1_1image__utils.html#a203c94bf2f0d1180af1be27da33a0ad6", null ],
     [ "save_image", "classlbann_1_1image__utils.html#a86e65a4c267319e77ae9e8c65033ac15", null ],
-    [ "saveBMP", "classlbann_1_1image__utils.html#a29b07947ccdb99ff3acba88829a7588f", null ],
-    [ "saveJPG", "classlbann_1_1image__utils.html#a0329da4e04c72f6f09d59f7ad10f00a0", null ],
-    [ "savePGM", "classlbann_1_1image__utils.html#a627f2e2d430616eb4e029fb7a3c8d7e5", null ],
-    [ "savePNG", "classlbann_1_1image__utils.html#ae72e084345ad5b62847f6bd9675438d8", null ]
+    [ "saveBMP", "classlbann_1_1image__utils.html#a9adacc57abe14a1582575c7b9a9e669e", null ],
+    [ "saveJPG", "classlbann_1_1image__utils.html#ab373d52fd3ef88b504e1d7cf54c4e871", null ],
+    [ "savePGM", "classlbann_1_1image__utils.html#a6afb5a448093ac0f2e2e2e420b652c48", null ],
+    [ "savePNG", "classlbann_1_1image__utils.html#adb1bb33944b745c34c9952d43484f395", null ]
 ];

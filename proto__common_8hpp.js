@@ -5,7 +5,7 @@ var proto__common_8hpp =
     [ "init_callbacks", "proto__common_8hpp.html#a53122c9319ac756e0b16937b11e30f8f", null ],
     [ "init_data_readers", "proto__common_8hpp.html#a954150c50e90b511638c4b402791483a", null ],
     [ "init_model", "proto__common_8hpp.html#a6e47c1bc98abae53a8c67b9ebf80fab3", null ],
-    [ "init_optimizer_factory", "proto__common_8hpp.html#ae21ca118313260dcd12be3e8e2d540ae", null ],
+    [ "init_optimizer_factory", "proto__common_8hpp.html#a3d4b7bfe71827ec1cee62cefc8ca531c", null ],
     [ "print_help", "proto__common_8hpp.html#a403b98ced142a0afa3b939e7af1095b0", null ],
     [ "print_parameters", "proto__common_8hpp.html#adf83ffea572cec61b853b61aa68bea27", null ],
     [ "read_prototext_file", "proto__common_8hpp.html#a3ae48d942d3a626c3ecf4a254fbc147f", null ],

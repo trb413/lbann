@@ -57,5 +57,7 @@ var base_8hpp =
     [ "_to_string", "base_8hpp.html#adeeaddd10bd31df0cae7cb0fcae45d5c", null ],
     [ "data_layout_to_matrix_format", "base_8hpp.html#a4fbdf9191dcd272075cef33d9c75d46e", null ],
     [ "finalize", "base_8hpp.html#a99724ee5a6647a1d8bff6764b9aa5fac", null ],
+    [ "get_pool_mode_name", "base_8hpp.html#af3cdcb8265717e1115135deb3618e5dd", null ],
+    [ "get_weight_initialization_name", "base_8hpp.html#afc4edb30bc9d1cae4b4ebb380aacce39", null ],
     [ "initialize", "base_8hpp.html#a3d91b615e42bf5744deeed770879bc8c", null ]
 ];

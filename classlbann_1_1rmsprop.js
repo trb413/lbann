@@ -4,6 +4,8 @@ var classlbann_1_1rmsprop =
     [ "rmsprop", "classlbann_1_1rmsprop.html#af70a9a2c9ff67d0d39f14c6e283abd95", null ],
     [ "~rmsprop", "classlbann_1_1rmsprop.html#a1ad75c751b92efe0e3e00072baa233ad", null ],
     [ "copy", "classlbann_1_1rmsprop.html#a5256da49f75172ee49baf259f09a713a", null ],
+    [ "get_description", "classlbann_1_1rmsprop.html#a13c6da601f4ab51202629a8278bcf280", null ],
+    [ "get_name", "classlbann_1_1rmsprop.html#acaa25767379a993333f37883b64978a1", null ],
     [ "name", "classlbann_1_1rmsprop.html#a94c8ecfb75b47248109211936d093d02", null ],
     [ "operator=", "classlbann_1_1rmsprop.html#a3c7eb1fb105c7be762b97e4f947a2b94", null ],
     [ "setup", "classlbann_1_1rmsprop.html#a0a62ec54e0d435ffb4d77f2ac9b70322", null ],

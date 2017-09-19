@@ -5,6 +5,9 @@ var hierarchy =
     [ "__BMP_INFOHEADER", "struct____BMP__INFOHEADER.html", null ],
     [ "__BMP_RGBQUAD", "struct____BMP__RGBQUAD.html", null ],
     [ "cudnn::cudnn_manager", "classcudnn_1_1cudnn__manager.html", null ],
+    [ "DataReader", null, [
+      [ "lbann::DataGenerator", "classlbann_1_1DataGenerator.html", null ]
+    ] ],
     [ "layer_header", "structlayer__header.html", null ],
     [ "lbann::CUtility", "classlbann_1_1CUtility.html", null ],
     [ "lbann::dataset", "classlbann_1_1dataset.html", null ],
@@ -12,6 +15,10 @@ var hierarchy =
       [ "lbann::distributed_minibatch", "classlbann_1_1distributed__minibatch.html", [
         [ "lbann::input_layer_distributed_minibatch< T_layout >", "classlbann_1_1input__layer__distributed__minibatch.html", null ],
         [ "lbann::target_layer_distributed_minibatch< T_layout >", "classlbann_1_1target__layer__distributed__minibatch.html", null ]
+      ] ],
+      [ "lbann::input_layer", "classlbann_1_1input__layer.html", [
+        [ "lbann::input_layer_distributed_minibatch< T_layout >", "classlbann_1_1input__layer__distributed__minibatch.html", null ],
+        [ "lbann::input_layer_partitioned_minibatch< T_layout >", "classlbann_1_1input__layer__partitioned__minibatch.html", null ]
       ] ],
       [ "lbann::partitioned_minibatch", "classlbann_1_1partitioned__minibatch.html", [
         [ "lbann::input_layer_partitioned_minibatch< T_layout >", "classlbann_1_1input__layer__partitioned__minibatch.html", null ],
@@ -36,10 +43,7 @@ var hierarchy =
         [ "lbann::softmax_layer< T_layout >", "classlbann_1_1softmax__layer.html", null ]
       ] ],
       [ "lbann::io_layer", "classlbann_1_1io__layer.html", [
-        [ "lbann::input_layer", "classlbann_1_1input__layer.html", [
-          [ "lbann::input_layer_distributed_minibatch< T_layout >", "classlbann_1_1input__layer__distributed__minibatch.html", null ],
-          [ "lbann::input_layer_partitioned_minibatch< T_layout >", "classlbann_1_1input__layer__partitioned__minibatch.html", null ]
-        ] ],
+        [ "lbann::input_layer", "classlbann_1_1input__layer.html", null ],
         [ "lbann::target_layer", "classlbann_1_1target__layer.html", [
           [ "lbann::reconstruction_layer< T_layout >", "classlbann_1_1reconstruction__layer.html", null ],
           [ "lbann::target_layer_distributed_minibatch< T_layout >", "classlbann_1_1target__layer__distributed__minibatch.html", null ],
@@ -47,36 +51,51 @@ var hierarchy =
         ] ]
       ] ],
       [ "lbann::learning", "classlbann_1_1learning.html", [
-        [ "lbann::convolution_layer< T_layout >", "classlbann_1_1convolution__layer.html", null ],
+        [ "lbann::base_convolution_layer", "classlbann_1_1base__convolution__layer.html", [
+          [ "lbann::convolution_layer< T_layout >", "classlbann_1_1convolution__layer.html", null ],
+          [ "lbann::deconvolution_layer< T_layout >", "classlbann_1_1deconvolution__layer.html", null ]
+        ] ],
         [ "lbann::fully_connected_layer< T_layout >", "classlbann_1_1fully__connected__layer.html", null ]
       ] ],
       [ "lbann::regularizer_layer", "classlbann_1_1regularizer__layer.html", [
-        [ "lbann::batch_normalization< T_layout >", "classlbann_1_1batch__normalization.html", null ],
         [ "lbann::dropout< T_layout >", "classlbann_1_1dropout.html", null ],
+        [ "lbann::learning_regularizer", "classlbann_1_1learning__regularizer.html", [
+          [ "lbann::batch_normalization< T_layout >", "classlbann_1_1batch__normalization.html", null ]
+        ] ],
         [ "lbann::local_response_normalization_layer< T_layout >", "classlbann_1_1local__response__normalization__layer.html", null ],
         [ "lbann::selu_dropout< T_layout >", "classlbann_1_1selu__dropout.html", null ]
       ] ],
       [ "lbann::transform", "classlbann_1_1transform.html", [
-        [ "lbann::branch_layer< T_layout >", "classlbann_1_1branch__layer.html", null ],
+        [ "lbann::concatenation_layer< T_layout >", "classlbann_1_1concatenation__layer.html", null ],
         [ "lbann::pooling_layer< T_layout >", "classlbann_1_1pooling__layer.html", null ],
-        [ "lbann::sum_layer< T_layout >", "classlbann_1_1sum__layer.html", null ]
+        [ "lbann::slice_layer< T_layout >", "classlbann_1_1slice__layer.html", null ],
+        [ "lbann::split_layer< T_layout >", "classlbann_1_1split__layer.html", null ],
+        [ "lbann::sum_layer< T_layout >", "classlbann_1_1sum__layer.html", null ],
+        [ "lbann::unpooling_layer< T_layout >", "classlbann_1_1unpooling__layer.html", null ]
       ] ]
     ] ],
     [ "lbann::lbann_callback", "classlbann_1_1lbann__callback.html", [
+      [ "lbann::lbann_callback_check_dataset", "classlbann_1_1lbann__callback__check__dataset.html", null ],
       [ "lbann::lbann_callback_check_init", "classlbann_1_1lbann__callback__check__init.html", null ],
+      [ "lbann::lbann_callback_check_reconstruction_error", "classlbann_1_1lbann__callback__check__reconstruction__error.html", null ],
       [ "lbann::lbann_callback_checknan", "classlbann_1_1lbann__callback__checknan.html", null ],
       [ "lbann::lbann_callback_checksmall", "classlbann_1_1lbann__callback__checksmall.html", null ],
+      [ "lbann::lbann_callback_debug", "classlbann_1_1lbann__callback__debug.html", null ],
       [ "lbann::lbann_callback_debug", "classlbann_1_1lbann__callback__debug.html", null ],
       [ "lbann::lbann_callback_dump_activations", "classlbann_1_1lbann__callback__dump__activations.html", null ],
       [ "lbann::lbann_callback_dump_gradients", "classlbann_1_1lbann__callback__dump__gradients.html", null ],
       [ "lbann::lbann_callback_dump_minibatch_sample_indices", "classlbann_1_1lbann__callback__dump__minibatch__sample__indices.html", null ],
       [ "lbann::lbann_callback_dump_weights", "classlbann_1_1lbann__callback__dump__weights.html", null ],
       [ "lbann::lbann_callback_early_stopping", "classlbann_1_1lbann__callback__early__stopping.html", null ],
+      [ "lbann::lbann_callback_gradient_check", "classlbann_1_1lbann__callback__gradient__check.html", null ],
+      [ "lbann::lbann_callback_hang", "classlbann_1_1lbann__callback__hang.html", null ],
       [ "lbann::lbann_callback_imcomm", "classlbann_1_1lbann__callback__imcomm.html", null ],
       [ "lbann::lbann_callback_io", "classlbann_1_1lbann__callback__io.html", null ],
       [ "lbann::lbann_callback_learning_rate", "classlbann_1_1lbann__callback__learning__rate.html", [
         [ "lbann::lbann_callback_adaptive_learning_rate", "classlbann_1_1lbann__callback__adaptive__learning__rate.html", null ],
         [ "lbann::lbann_callback_custom_learning_rate", "classlbann_1_1lbann__callback__custom__learning__rate.html", null ],
+        [ "lbann::lbann_callback_drop_fixed_learning_rate", "classlbann_1_1lbann__callback__drop__fixed__learning__rate.html", null ],
+        [ "lbann::lbann_callback_linear_growth_learning_rate", "classlbann_1_1lbann__callback__linear__growth__learning__rate.html", null ],
         [ "lbann::lbann_callback_step_learning_rate", "classlbann_1_1lbann__callback__step__learning__rate.html", null ]
       ] ],
       [ "lbann::lbann_callback_ltfb", "classlbann_1_1lbann__callback__ltfb.html", null ],
@@ -84,7 +103,10 @@ var hierarchy =
       [ "lbann::lbann_callback_profiler", "classlbann_1_1lbann__callback__profiler.html", null ],
       [ "lbann::lbann_callback_save_images", "classlbann_1_1lbann__callback__save__images.html", null ],
       [ "lbann::lbann_callback_summary", "classlbann_1_1lbann__callback__summary.html", null ],
-      [ "lbann::lbann_callback_timer", "classlbann_1_1lbann__callback__timer.html", null ]
+      [ "lbann::lbann_callback_timer", "classlbann_1_1lbann__callback__timer.html", null ],
+      [ "lbann::lbann_callback_variable_minibatch", "classlbann_1_1lbann__callback__variable__minibatch.html", [
+        [ "lbann::lbann_callback_step_minibatch", "classlbann_1_1lbann__callback__step__minibatch.html", null ]
+      ] ]
     ] ],
     [ "lbann::lbann_callback_imcomm::imcomm_params", "structlbann_1_1lbann__callback__imcomm_1_1imcomm__params.html", null ],
     [ "lbann::lbann_checkpoint", "structlbann_1_1lbann__checkpoint.html", null ],
@@ -93,15 +115,20 @@ var hierarchy =
     [ "lbann::lbann_image_preprocessor", "classlbann_1_1lbann__image__preprocessor.html", [
       [ "lbann::generic_data_reader", "classlbann_1_1generic__data__reader.html", [
         [ "lbann::cifar10_reader", "classlbann_1_1cifar10__reader.html", null ],
-        [ "lbann::cnpy_reader", "classlbann_1_1cnpy__reader.html", null ],
-        [ "lbann::data_reader_nci", "classlbann_1_1data__reader__nci.html", null ],
+        [ "lbann::csv_reader", "classlbann_1_1csv__reader.html", [
+          [ "lbann::data_reader_nci", "classlbann_1_1data__reader__nci.html", null ]
+        ] ],
+        [ "lbann::data_reader_merge_features", "classlbann_1_1data__reader__merge__features.html", null ],
+        [ "lbann::data_reader_merge_samples", "classlbann_1_1data__reader__merge__samples.html", null ],
         [ "lbann::data_reader_synthetic", "classlbann_1_1data__reader__synthetic.html", null ],
         [ "lbann::imagenet_reader", "classlbann_1_1imagenet__reader.html", [
-          [ "lbann::imagenet_readerSingle", "classlbann_1_1imagenet__readerSingle.html", null ],
+          [ "lbann::imagenet_readerSingle", "classlbann_1_1imagenet__readerSingle.html", null ]
+        ] ],
+        [ "lbann::imagenet_reader_cv", "classlbann_1_1imagenet__reader__cv.html", [
           [ "lbann::imagenet_readerSingle_cv", "classlbann_1_1imagenet__readerSingle__cv.html", null ]
         ] ],
-        [ "lbann::imagenet_reader", "classlbann_1_1imagenet__reader.html", null ],
-        [ "lbann::mnist_reader", "classlbann_1_1mnist__reader.html", null ]
+        [ "lbann::mnist_reader", "classlbann_1_1mnist__reader.html", null ],
+        [ "lbann::numpy_reader", "classlbann_1_1numpy__reader.html", null ]
       ] ]
     ] ],
     [ "lbann::lbann_model_greedy_layerwise_autoencoder_header", "structlbann_1_1lbann__model__greedy__layerwise__autoencoder__header.html", null ],
@@ -124,11 +151,14 @@ var hierarchy =
       ] ]
     ] ],
     [ "lbann::NetworkParams", "classlbann_1_1NetworkParams.html", null ],
-    [ "lbann::objective_functions::objective_fn", "classlbann_1_1objective__functions_1_1objective__fn.html", [
-      [ "lbann::objective_functions::categorical_cross_entropy", "classlbann_1_1objective__functions_1_1categorical__cross__entropy.html", null ],
+    [ "lbann::objective_functions::objective_function", "classlbann_1_1objective__functions_1_1objective__function.html", [
+      [ "lbann::objective_functions::cross_entropy", "classlbann_1_1objective__functions_1_1cross__entropy.html", null ],
       [ "lbann::objective_functions::mean_squared_error", "classlbann_1_1objective__functions_1_1mean__squared__error.html", null ]
     ] ],
-    [ "lbann::objective_functions::statistics", "classlbann_1_1objective__functions_1_1statistics.html", null ],
+    [ "lbann::optimizable_layer", "classlbann_1_1optimizable__layer.html", [
+      [ "lbann::learning", "classlbann_1_1learning.html", null ],
+      [ "lbann::learning_regularizer", "classlbann_1_1learning__regularizer.html", null ]
+    ] ],
     [ "lbann::optimizer", "classlbann_1_1optimizer.html", [
       [ "lbann::adagrad", "classlbann_1_1adagrad.html", null ],
       [ "lbann::adam", "classlbann_1_1adam.html", null ],
@@ -151,5 +181,6 @@ var hierarchy =
     [ "options", "classoptions.html", null ],
     [ "exception", null, [
       [ "lbann::lbann_exception", "classlbann_1_1lbann__exception.html", null ]
-    ] ]
+    ] ],
+    [ "transform_layers", "structtransform__layers.html", null ]
 ];

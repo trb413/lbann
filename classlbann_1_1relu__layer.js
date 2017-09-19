@@ -9,6 +9,7 @@ var classlbann_1_1relu__layer =
     [ "copy", "classlbann_1_1relu__layer.html#a384316c4aa782d466b569784f84d2077", null ],
     [ "fp_compute_gpu", "classlbann_1_1relu__layer.html#ad8bc4eaed3c2ce82d292f947d61233b2", null ],
     [ "get_data_layout", "classlbann_1_1relu__layer.html#ab9058569fc95f04d860daf25b1cc530b", null ],
+    [ "get_description", "classlbann_1_1relu__layer.html#ac81516ee89967d4cb660cde6a47a5ede", null ],
     [ "get_name", "classlbann_1_1relu__layer.html#a0e11f8419713f3bc4892bab9a5b8a83b", null ],
     [ "initialize_distributed_matrices", "classlbann_1_1relu__layer.html#ad6e254c84fba7be8d37dff41324b4988", null ],
     [ "operator=", "classlbann_1_1relu__layer.html#a39863b98d502a9dfd0a0c26b538f0f88", null ],

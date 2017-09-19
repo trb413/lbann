@@ -7,7 +7,7 @@ var classlbann_1_1lbann__callback__save__images =
     [ "on_epoch_end", "classlbann_1_1lbann__callback__save__images.html#a47fe7b99267d5d6f6f32ecd74d7b5a25", null ],
     [ "on_phase_end", "classlbann_1_1lbann__callback__save__images.html#a53218aeb5da183b483311b1c37cf3e1a", null ],
     [ "operator=", "classlbann_1_1lbann__callback__save__images.html#a79fcd1489f0a5239303578d892c7a8b9", null ],
-    [ "save_image", "classlbann_1_1lbann__callback__save__images.html#a82367af43521153dd4449ac028bb8393", null ],
+    [ "save_image", "classlbann_1_1lbann__callback__save__images.html#a81c57a89030bf3e01843f77737bdae1f", null ],
     [ "m_extension", "classlbann_1_1lbann__callback__save__images.html#a7b37fa08f49051897ef427b8c810ca3a", null ],
     [ "m_image_dir", "classlbann_1_1lbann__callback__save__images.html#aeb69e2814c78d33a93b9ddc276c4cc57", null ],
     [ "m_reader", "classlbann_1_1lbann__callback__save__images.html#a275e409b2b2f3ebe2baeea636e18c607", null ]

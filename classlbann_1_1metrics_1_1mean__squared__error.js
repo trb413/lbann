@@ -10,6 +10,5 @@ var classlbann_1_1metrics_1_1mean__squared__error =
     [ "operator=", "classlbann_1_1metrics_1_1mean__squared__error.html#a43d0db86f217de7b173da29c2a32aae8", null ],
     [ "report_lifetime_metric", "classlbann_1_1metrics_1_1mean__squared__error.html#aeaa78f8634bad3126391d228f5844f3c", null ],
     [ "report_metric", "classlbann_1_1metrics_1_1mean__squared__error.html#aa72260ea744cfa5a683a67e02b089215", null ],
-    [ "setup", "classlbann_1_1metrics_1_1mean__squared__error.html#ac0c8b15a833603bfbbb32d56ae5a8a47", null ],
-    [ "internal_obj_fn", "classlbann_1_1metrics_1_1mean__squared__error.html#a71e12b83fb10c48df554605365d6c046", null ]
+    [ "setup", "classlbann_1_1metrics_1_1mean__squared__error.html#ac0c8b15a833603bfbbb32d56ae5a8a47", null ]
 ];

@@ -4,6 +4,8 @@ var classlbann_1_1hypergradient__adam =
     [ "hypergradient_adam", "classlbann_1_1hypergradient__adam.html#aadb9841237fca01bbe2187a39e8f3cc5", null ],
     [ "~hypergradient_adam", "classlbann_1_1hypergradient__adam.html#af88b1143c16ac3fb640844112d9a67ad", null ],
     [ "copy", "classlbann_1_1hypergradient__adam.html#a0563bb594ccea9b94f4ec141506a6732", null ],
+    [ "get_description", "classlbann_1_1hypergradient__adam.html#ae4bd59a4539c8178c9a433c2bfcbeea8", null ],
+    [ "get_name", "classlbann_1_1hypergradient__adam.html#a33716c039e309d37d3d6104c60323b77", null ],
     [ "name", "classlbann_1_1hypergradient__adam.html#a547dfa0389d6c727e91fcf4607eaebc5", null ],
     [ "operator=", "classlbann_1_1hypergradient__adam.html#aab8df6bbd256c9731dc1e5b8eac286ec", null ],
     [ "setup", "classlbann_1_1hypergradient__adam.html#a3848f988d511382aee1ef1d6bce9ebe7", null ],

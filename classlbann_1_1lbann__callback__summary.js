@@ -1,6 +1,7 @@
 var classlbann_1_1lbann__callback__summary =
 [
     [ "lbann_callback_summary", "classlbann_1_1lbann__callback__summary.html#aaf405a703a4047cc3c442d0a21a5d208", null ],
+    [ "~lbann_callback_summary", "classlbann_1_1lbann__callback__summary.html#aebe57d153336294afb452722f779ce83", null ],
     [ "lbann_callback_summary", "classlbann_1_1lbann__callback__summary.html#aed7ed143ba18927124e76f6442228810", null ],
     [ "copy", "classlbann_1_1lbann__callback__summary.html#ac4326791891af0e631cf93275e55fdf0", null ],
     [ "name", "classlbann_1_1lbann__callback__summary.html#a22b4a23463894c222f85d3d5954cc74c", null ],

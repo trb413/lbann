@@ -1,8 +1,8 @@
 var classlbann_1_1model =
 [
-    [ "model", "classlbann_1_1model.html#a9694bfc0e75fd68c2c0cac768fab323e", null ],
+    [ "model", "classlbann_1_1model.html#a38ee49c81829e6e34f68adb144c8f526", null ],
     [ "model", "classlbann_1_1model.html#a03fd1dc3edddb414b040bc009cf73371", null ],
-    [ "~model", "classlbann_1_1model.html#a11eeeb534f3fee908e59e9b5fb1abf42", null ],
+    [ "~model", "classlbann_1_1model.html#ae97a8048de182af3ed8a6fbd92212958", null ],
     [ "add_callback", "classlbann_1_1model.html#a8f45cdca82dbc0cc1f519898474cc6ec", null ],
     [ "add_metric", "classlbann_1_1model.html#adbb03deb321b99e8dbdbe65d7e1a423e", null ],
     [ "at_epoch_start", "classlbann_1_1model.html#a606cc1d218b1f609b5a02b07e7f4bcee", null ],
@@ -82,7 +82,7 @@ var classlbann_1_1model =
     [ "m_execution_mode", "classlbann_1_1model.html#a2166e2aad256a335ace3bdcae5da2614", null ],
     [ "m_max_mini_batch_size", "classlbann_1_1model.html#acc496503e7cf8d635e5a31ba09b3c81a", null ],
     [ "m_metrics", "classlbann_1_1model.html#a2fd35b39d7018ca4f0f8e180b18a2b63", null ],
-    [ "m_obj_fn", "classlbann_1_1model.html#a3b1f510697713e477a0249276096d84c", null ],
+    [ "m_obj_fn", "classlbann_1_1model.html#a9868075a7da647971196ad06f144972b", null ],
     [ "m_optimizer_fac", "classlbann_1_1model.html#a7bc38833924198617cf353382884cacf", null ],
     [ "m_terminate_training", "classlbann_1_1model.html#a639f9c3fcb81b905085f8b1932f8920f", null ]
 ];

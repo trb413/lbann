@@ -1,7 +1,9 @@
 var proto__common_8cpp =
 [
+    [ "transform_layers", "structtransform__layers.html", "structtransform__layers" ],
     [ "add_layers", "proto__common_8cpp.html#a031678a7069297ce9a72b8b5f8a6b492", null ],
     [ "copy_file", "proto__common_8cpp.html#aee6432eeb669d7a8571c095d8761bc26", null ],
+    [ "finish_transform_layers", "proto__common_8cpp.html#aa9f9786f4a07fb71310ec1f31c1233bc", null ],
     [ "get_cmdline_overrides", "proto__common_8cpp.html#a46fd41f635ff8f352065adc85eb3d1df", null ],
     [ "get_comm_type", "proto__common_8cpp.html#a025bbe3b6db33a69a8291eba1f3bb47c", null ],
     [ "get_data_layout", "proto__common_8cpp.html#acf81b14e87938b50bb380a34773fa135", null ],
@@ -11,11 +13,13 @@ var proto__common_8cpp =
     [ "init_callbacks", "proto__common_8cpp.html#a307336314086858ae910fd89f7246ae9", null ],
     [ "init_data_readers", "proto__common_8cpp.html#ace09e432d5386a8fa822b70335ab87ca", null ],
     [ "init_model", "proto__common_8cpp.html#a65210505c1def636a8c1d230388d2660", null ],
-    [ "init_optimizer_factory", "proto__common_8cpp.html#a1157a7f2b93a65f5e55e075cacbed91d", null ],
+    [ "init_optimizer_factory", "proto__common_8cpp.html#ac45e64a7cb71b8c07db2bba47278e092", null ],
     [ "print_help", "proto__common_8cpp.html#a403b98ced142a0afa3b939e7af1095b0", null ],
     [ "print_parameters", "proto__common_8cpp.html#adf83ffea572cec61b853b61aa68bea27", null ],
     [ "read_prototext_file", "proto__common_8cpp.html#a3ae48d942d3a626c3ecf4a254fbc147f", null ],
     [ "save_session", "proto__common_8cpp.html#a4f1af470c45e9ed06039685e5f72ea4a", null ],
+    [ "set_data_readers_filenames", "proto__common_8cpp.html#a2b1366b9ab5913e4db6afc8833ca4054", null ],
     [ "set_num_parallel_readers", "proto__common_8cpp.html#ae5ac4c13a36b3222afacd8d7b4786140", null ],
-    [ "write_prototext_file", "proto__common_8cpp.html#a91203c337da08d1c40828157f80cd7c1", null ]
+    [ "write_prototext_file", "proto__common_8cpp.html#a91203c337da08d1c40828157f80cd7c1", null ],
+    [ "the_layers", "proto__common_8cpp.html#a8ba31677855e4188a01caa35a1de760a", null ]
 ];

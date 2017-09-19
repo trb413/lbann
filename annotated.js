@@ -11,5 +11,6 @@ var annotated =
     [ "__BMP_INFOHEADER", "struct____BMP__INFOHEADER.html", "struct____BMP__INFOHEADER" ],
     [ "__BMP_RGBQUAD", "struct____BMP__RGBQUAD.html", "struct____BMP__RGBQUAD" ],
     [ "layer_header", "structlayer__header.html", "structlayer__header" ],
-    [ "options", "classoptions.html", "classoptions" ]
+    [ "options", "classoptions.html", "classoptions" ],
+    [ "transform_layers", "structtransform__layers.html", "structtransform__layers" ]
 ];

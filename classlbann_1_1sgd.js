@@ -4,6 +4,8 @@ var classlbann_1_1sgd =
     [ "sgd", "classlbann_1_1sgd.html#ac0a74200f44b45ced9b44e3b6349581a", null ],
     [ "~sgd", "classlbann_1_1sgd.html#a4b83e3170b5a159325cfc7a299a1b96a", null ],
     [ "copy", "classlbann_1_1sgd.html#aff561e30bc55ed0c65a1d995810147b0", null ],
+    [ "get_description", "classlbann_1_1sgd.html#a383ccc307e6e187f8219877fa0ffc381", null ],
+    [ "get_name", "classlbann_1_1sgd.html#a7fd63fc0f1f144d749351a7d858f7446", null ],
     [ "name", "classlbann_1_1sgd.html#af622308abede15c3ea67448a97884281", null ],
     [ "operator=", "classlbann_1_1sgd.html#ad3949e74505cd25b267dbdd5b510a83f", null ],
     [ "setup", "classlbann_1_1sgd.html#ae8f4798cfd459109ea9ecbc1f000bb65", null ],

@@ -1,6 +1,6 @@
 var classlbann_1_1greedy__layerwise__autoencoder =
 [
-    [ "greedy_layerwise_autoencoder", "classlbann_1_1greedy__layerwise__autoencoder.html#a031129bc2c615a765b870dc652d5d5e0", null ],
+    [ "greedy_layerwise_autoencoder", "classlbann_1_1greedy__layerwise__autoencoder.html#af9456e3c5ad8309d556fdc79dbf2d6ab", null ],
     [ "greedy_layerwise_autoencoder", "classlbann_1_1greedy__layerwise__autoencoder.html#a13bb73c165d12c2145ba9bb43e7904c3", null ],
     [ "~greedy_layerwise_autoencoder", "classlbann_1_1greedy__layerwise__autoencoder.html#a6adbff4f4d116927a4b6613fcac66d41", null ],
     [ "copy", "classlbann_1_1greedy__layerwise__autoencoder.html#aee228cb921a4d03073eec38da839f7fa", null ],
@@ -17,9 +17,9 @@ var classlbann_1_1greedy__layerwise__autoencoder =
     [ "set_end_index", "classlbann_1_1greedy__layerwise__autoencoder.html#a8b1aef3564cf2788aaa17ca62562379b", null ],
     [ "summarize_matrices", "classlbann_1_1greedy__layerwise__autoencoder.html#a706f44c74104af22d8475140b9fb34d0", null ],
     [ "summarize_stats", "classlbann_1_1greedy__layerwise__autoencoder.html#ad658439b4810a7036efe86feb995baf6", null ],
-    [ "train", "classlbann_1_1greedy__layerwise__autoencoder.html#aa600aaacda4275602021b612e1a36e9f", null ],
+    [ "train", "classlbann_1_1greedy__layerwise__autoencoder.html#a800dd7b558b2be3e3520da953f91543d", null ],
     [ "train_mini_batch", "classlbann_1_1greedy__layerwise__autoencoder.html#a1a0daefb6ece648c3c5ca0571ad0fe26", null ],
-    [ "train_phase", "classlbann_1_1greedy__layerwise__autoencoder.html#a9ccd3dbaef125a5cd993307be7d11ba4", null ],
+    [ "train_phase", "classlbann_1_1greedy__layerwise__autoencoder.html#a8ade73bf7c30f93f7b123cba3590bf69", null ],
     [ "m_end_index", "classlbann_1_1greedy__layerwise__autoencoder.html#ac2e723f6d65e8a4105f1e88c6c1095a4", null ],
     [ "m_have_mirror", "classlbann_1_1greedy__layerwise__autoencoder.html#a4848353f20ff957a9e0bd7c8d374644e", null ],
     [ "m_phase_end", "classlbann_1_1greedy__layerwise__autoencoder.html#a962398da3f5738ec92a1680b0814219b", null ],

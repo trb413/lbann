@@ -8,6 +8,7 @@ var classlbann_1_1softmax__layer =
     [ "fp_compute", "classlbann_1_1softmax__layer.html#ae4a4515dbecdffddaa2fbec78b5c1be3", null ],
     [ "fp_set_std_matrix_view", "classlbann_1_1softmax__layer.html#a2f966102d6d3e1231beccfb61967263f", null ],
     [ "get_data_layout", "classlbann_1_1softmax__layer.html#aa56b21c72ef4092d920432da7d634a58", null ],
+    [ "get_description", "classlbann_1_1softmax__layer.html#a1abfb52044e7af669e36f7c690a01aa1", null ],
     [ "get_name", "classlbann_1_1softmax__layer.html#a9117fff2818f08741f02d1a5f2f9c113", null ],
     [ "initialize_distributed_matrices", "classlbann_1_1softmax__layer.html#a2de68fb1095d01621d48c936de83d0cf", null ],
     [ "initialize_distributed_matrices", "classlbann_1_1softmax__layer.html#a3eaf75d1e03c504f0b5bba0d5974f367", null ],
@@ -19,6 +20,7 @@ var classlbann_1_1softmax__layer =
     [ "saveToCheckpointShared", "classlbann_1_1softmax__layer.html#ac09976efcc9bd147e8cfda4ac74d7ac1", null ],
     [ "setup_data", "classlbann_1_1softmax__layer.html#aaf22b479b411fe3fae7cc6e4a667e928", null ],
     [ "update_compute", "classlbann_1_1softmax__layer.html#a0c0c03f57b0339ac49c172f69993d60f", null ],
+    [ "m_min_output", "classlbann_1_1softmax__layer.html#ab3bf2d92f4441923dd0b792c38ec774a", null ],
     [ "m_workspace", "classlbann_1_1softmax__layer.html#a604e614de25758f0072308c7efdd5bdb", null ],
     [ "m_workspace_v", "classlbann_1_1softmax__layer.html#adc1bf420b1975a252cd66dd5facfb77c", null ]
 ];

@@ -7,11 +7,12 @@ var classlbann_1_1dropout =
     [ "copy", "classlbann_1_1dropout.html#a5903df519061289c908c3f36e4551b8a", null ],
     [ "fp_compute", "classlbann_1_1dropout.html#ab7fa84c3915f5ceac8eed28a183e4ff1", null ],
     [ "get_data_layout", "classlbann_1_1dropout.html#a36322cc19a85c563b880b02423010c4c", null ],
+    [ "get_description", "classlbann_1_1dropout.html#a9553ccbe32b276a328cc02f02692bdb8", null ],
     [ "get_name", "classlbann_1_1dropout.html#a0ce799820cfcc108043424046dfbddee", null ],
     [ "initialize_distributed_matrices", "classlbann_1_1dropout.html#af605d2ea7f99b3e6b655f71a0634d170", null ],
     [ "initialize_distributed_matrices", "classlbann_1_1dropout.html#a59277f52c7522f46b043aeb4216c7b50", null ],
     [ "initialize_distributed_matrices", "classlbann_1_1dropout.html#a37e65b35918040295038204ef1a7b600", null ],
     [ "operator=", "classlbann_1_1dropout.html#a0243b0bc3c2a4239a5ba6d64e6566a15", null ],
-    [ "m_cur_mask", "classlbann_1_1dropout.html#ad3a78c611fd83ed63be98cb0a0a44430", null ],
-    [ "m_keep_prob", "classlbann_1_1dropout.html#ac728849f72d7f433ced4448c96e018f7", null ]
+    [ "m_keep_prob", "classlbann_1_1dropout.html#ac728849f72d7f433ced4448c96e018f7", null ],
+    [ "m_mask", "classlbann_1_1dropout.html#ac4fbf18fa546eda43cce09653644b681", null ]
 ];
