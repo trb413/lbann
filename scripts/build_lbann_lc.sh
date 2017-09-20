@@ -12,7 +12,6 @@ ARCH=$(uname -m)
 COMPILER=gnu
 if [ "${ARCH}" == "x86_64" ]; then
     MPI=mvapich2
-    MPI_VERSION=2.1
 elif [ "${ARCH}" == "ppc64le" ]; then
     MPI=spectrum
 fi
@@ -31,6 +30,11 @@ else
 fi
 if [ "${ARCH}" == "x86_64" ]; then
     cuDNN_DIR=/usr/gapps/brain/installs/cudnn/v5
+    if [ "${CLUSTER}" == "quartz" ]; then
+        IPPROOT=/p/lscratchh/brainusr/ippicv_lnx
+    else
+        IPPROOT=/p/lscratchf/brainusr/ippicv_lnx
+    fi
 elif [ "${ARCH}" == "ppc64le" ]; then
     cuDNN_DIR=/usr/gapps/brain/cuda/targets/ppc64le-linux
 fi
@@ -40,6 +44,7 @@ C_FLAGS=
 CXX_FLAGS=-DLBANN_SET_EL_RNG
 Fortran_FLAGS=
 CLEAN_BUILD=0
+DATATYPE=4
 VERBOSE=0
 CMAKE_INSTALL_MESSAGE=LAZY
 MAKE_NUM_PROCESSES=$(($(nproc) + 1))
@@ -56,8 +61,8 @@ WITH_FULLY_CONNECTED_CUDA=OFF
 # by putting it at the beginning of the PATH or use the preinstalled library
 # by enabling LIBJPEG_TURBO_DIR
 WITH_LIBJPEG_TURBO=ON
-#LIBJPEG_TURBO_DIR="/p/lscratche/brainusr/libjpeg-turbo"
-#LIBJPEG_TURBO_DIR="/p/lscratchf/brainusr/libjpeg-turbo"
+#LIBJPEG_TURBO_DIR="/p/lscratchf/brainusr/libjpeg-turbo-1.5.2"
+#LIBJPEG_TURBO_DIR="/p/lscratchh/brainusr/libjpeg-turbo-1.5.2"
 
 function version_gt() { test "$(printf '%s\n' "$@" | sort -V | head -n 1)" != "$1"; }
 
@@ -87,6 +92,7 @@ Options:
   ${C}--help${N}                  Display this help message and exit.
   ${C}--compiler${N} <val>        Specify compiler ('gnu' or 'intel' or 'clang').
   ${C}--mpi${N} <val>             Specify MPI library ('mvapich2' or 'openmpi' or 'spectrum').
+  ${C}--datatype${N} <val>        Datatype size in bytes (4 for float and 8 for double).
   ${C}--verbose${N}               Verbose output.
   ${C}--debug${N}                 Build with debug flag.
   ${C}--tbinf${N}                 Build with Tensorboard interface.
@@ -147,7 +153,16 @@ while :; do
             # Choose mpi library
             if [ -n "${2}" ]; then
                 MPI=${2}
-                MPI_VERSION=
+                shift
+            else
+                echo "\"${1}\" option requires a non-empty option argument" >&2
+                exit 1
+            fi
+            ;;
+        --datatype)
+            # Set datatype size
+            if [ -n "${2}" ]; then
+                DATATYPE=${2}
                 shift
             else
                 echo "\"${1}\" option requires a non-empty option argument" >&2
@@ -272,19 +287,18 @@ if [ ${USE_MODULES} -ne 0 ]; then
     if [ "${COMPILER_}" == "gnu" ]; then
         COMPILER_=gcc
     fi
-    if [ -z "$(module list 2> /dev/stdout | grep ${COMPILER_})" ]; then
+    if [ -z "$(module list 2>&1 | grep ${COMPILER_})" ]; then
         module load ${COMPILER_}
     fi
-    if [ -z "$(module list 2> /dev/stdout | grep ${COMPILER_})" ]; then
+    if [ -z "$(module list 2>&1 | grep ${COMPILER_})" ]; then
         echo "Could not load module (${COMPILER_})"
         exit 1
     fi
-    COMPILER_BASE="$(module show ${COMPILER_} 2> /dev/stdout | grep '\"PATH\"' | cut -d ',' -f 2 | cut -d ')' -f 1 | sed 's/\/bin//' | sed 's/\"//g')"
+    COMPILER_BASE="$(module show ${COMPILER_} 2>&1 | grep '\"PATH\"' | cut -d ',' -f 2 | cut -d ')' -f 1 | sed 's/\/bin//' | sed 's/\"//g')"
 else
     if [ "${COMPILER_}" == "intel" ]; then
         COMPILER_=ic-17.0.174
-    fi
-    if [ "${COMPILER_}" == "gnu" ]; then
+    elif [ "${COMPILER_}" == "gnu" ]; then
         COMPILER_=gcc-4.9.3p
     fi
     if [ -z "$(use | grep ${COMPILER_})" ]; then
@@ -393,30 +407,45 @@ if [ "${MPI}" == "spectrum" ]; then
 fi
 
 if [ ${USE_MODULES} -ne 0 ]; then
-    if [ -z "$(module list 2> /dev/stdout | grep ${MPI})" ]; then
+    if [ -z "$(module list 2>&1 | grep ${MPI})" ]; then
         module load ${MPI}
     fi
-    if [ -z "$(module list 2> /dev/stdout | grep ${MPI})" ]; then
+    if [ -z "$(module list 2>&1 | grep ${MPI})" ]; then
         echo "Could not load module (${MPI})"
         exit 1
     fi
-    MPI_DIR=$(module show ${MPI} 2> /dev/stdout | grep '\"PATH\"' | cut -d ',' -f 2 | cut -d ')' -f 1 | sed 's/\/bin//' | sed 's/\"//g')
+    MPI_DIR=$(module show ${MPI} 2>&1 | grep '\"PATH\"' | cut -d ',' -f 2 | cut -d ')' -f 1 | sed 's/\/bin//' | sed 's/\"//g')
 else
-    MPI_DOTKIT=${MPI}-${COMPILER}
-    if [ "${BUILD_TYPE}" == "Debug" ]; then
-        MPI_DOTKIT=${MPI_DOTKIT}-debug
-    fi
-    if [ -n "${MPI_VERSION}" ]; then
-        MPI_DOTKIT=${MPI_DOTKIT}-${MPI_VERSION}
-    fi
-    if [ -z "$(use | grep ${MPI_DOTKIT})" ]; then
+    # The idea here is to check if the module of the specified mpi type is loaded
+    MPI_DOTKIT=$(use | grep ${MPI} | sed 's/ //g')
+    if [ -z "${MPI_DOTKIT}" ]; then
+        if [ "${COMPILER}" == "gnu" ] || [ "${COMPILER}" == "intel" ] || [ "${COMPILER}" == "pgi" ] ; then
+            MPI_DOTKIT=${MPI}-${COMPILER}
+        elif [ "${COMPILER}" == "clang" ]; then
+            MPI_DOTKIT=${MPI}-gnu
+        fi
         use ${MPI_DOTKIT}
+        if [ -z "$(use | grep ${MPI_DOTKIT})" ]; then
+            echo "Could not load dotkit (${MPI_DOTKIT})"
+            exit 1
+        fi
     fi
-    if [ -z "$(use | grep ${MPI_DOTKIT})" ]; then
-        echo "Could not load dotkit (${MPI_DOTKIT})"
-        exit 1
+    if [ "${BUILD_TYPE}" == "Debug" ] && [ -z "$(echo ${MPI_DOTKIT} | grep debug)" ]; then
+        unuse ${MPI_DOTKIT}
+        #MPI_DOTKIT=$(echo ${MPI_DOTKIT} | awk 'BEGIN{FS="-"}{printf("%s-%s-debug-%s\n",$1,$2,$3)}')
+        MPI_DOTKIT=$(echo ${MPI_DOTKIT} | awk 'BEGIN{FS="-"}{printf("%s-%s-debug\n",$1,$2)}')
+        use ${MPI_DOTKIT}
+        if [ -z "$(use | grep ${MPI_DOTKIT})" ]; then
+            echo "Could not load dotkit (${MPI_DOTKIT})"
+            exit 1
+        fi
     fi
-    MPI_DOTKIT="$(use | grep ${MPI_DOTKIT})"
+    if [ "${COMPILER}" == "gnu" ] || [ "${COMPILER}" == "intel" ] || [ "${COMPILER}" == "pgi" ]; then
+        if [ "`echo ${MPI_DOTKIT} | grep ${COMPILER}`" == "" ] ; then
+            echo "switch to an MPI version that is consistent with (${COMPILER}) compilers"
+            exit 1
+        fi
+    fi
     MPI_DIR=$(use -hv ${MPI_DOTKIT} | grep 'dk_alter PATH' | awk '{print $3}' | sed 's/\/bin//')
 fi
 
@@ -561,6 +590,7 @@ cmake \
 -D cuDNN_DIR=${cuDNN_DIR} \
 -D VTUNE_DIR=${VTUNE_DIR} \
 -D ELEMENTAL_MATH_LIBS=${ELEMENTAL_MATH_LIBS} \
+-D DATATYPE=${DATATYPE} \
 -D VERBOSE=${VERBOSE} \
 -D MAKE_NUM_PROCESSES=${MAKE_NUM_PROCESSES} \
 -D LBANN_HOME=${ROOT_DIR} \
@@ -572,6 +602,7 @@ cmake \
 -D PATCH_OPENBLAS=${PATCH_OPENBLAS} \
 -D ELEMENTAL_USE_CUBLAS=${ELEMENTAL_USE_CUBLAS} \
 -D WITH_FULLY_CONNECTED_CUDA=${WITH_FULLY_CONNECTED_CUDA} \
+-D IPPROOT=${IPPROOT} \
 ${ROOT_DIR}
 EOF
 )

@@ -29,6 +29,7 @@
 #include "lbann/data_readers/data_reader_numpy.hpp"
 #include <stdio.h>
 #include <string>
+#include <unordered_set>
 #include <cnpy.h>
 
 namespace lbann {
@@ -37,35 +38,24 @@ numpy_reader::numpy_reader(int batch_size, bool shuffle)
   : generic_data_reader(batch_size, shuffle), m_num_samples(0),
     m_num_features(0) {}
 
-numpy_reader::numpy_reader(const numpy_reader& source) :
-  generic_data_reader((const generic_data_reader&) source),
-  m_num_samples(source.m_num_samples),
-  m_num_features(source.m_num_features),
-  m_data(source.m_data) {
-  int n = m_num_features * m_num_samples * m_data.word_size;
-  m_data.data = new char[n];
-  memcpy(m_data.data, source.m_data.data, n);
-}
+numpy_reader::numpy_reader(const numpy_reader& other) :
+  generic_data_reader(other),
+  m_num_samples(other.m_num_samples),
+  m_num_features(other.m_num_features),
+  m_num_labels(other.m_num_labels),
+  m_has_labels(other.m_has_labels),
+  m_has_responses(other.m_has_responses),
+  m_data(other.m_data) {}
 
-numpy_reader& numpy_reader::operator=(const numpy_reader& source) {
-  // check for self-assignment
-  if (this == &source) {
-    return *this;
-  }
-
-  generic_data_reader::operator=(source);
-
-  this->m_num_features = source.m_num_features;
-  this->m_num_samples = source.m_num_samples;
-  this->m_data = source.m_data;
-  int n = m_num_features * m_num_samples * m_data.word_size;
-  m_data.data = new char[n];
-  memcpy(m_data.data, source.m_data.data, n);
+numpy_reader& numpy_reader::operator=(const numpy_reader& other) {
+  generic_data_reader::operator=(other);
+  m_num_samples = other.m_num_samples;
+  m_num_features = other.m_num_features;
+  m_num_labels = other.m_num_labels;
+  m_has_labels = other.m_has_labels;
+  m_has_responses = other.m_has_responses;
+  m_data = other.m_data;
   return *this;
-}
-
-numpy_reader::~numpy_reader() {
-  m_data.destruct();
 }
 
 void numpy_reader::load() {
@@ -96,6 +86,42 @@ void numpy_reader::load() {
     throw lbann_exception(
       "numpy_reader: fortran order not supported");
   }
+  // Don't currently support both labels and responses.
+  if (m_has_labels && m_has_responses) {
+    throw lbann_exception(
+      "numpy_reader: labels and responses not supported at same time");
+  }
+
+  if (m_has_labels) {
+    // Shift feature count because the last becomes the label.
+    m_num_features -= 1;
+    // Determine number of label classes.
+    std::unordered_set<int> label_classes;
+    for (int i = 0; i < m_num_samples; ++i) {
+      if (m_data.word_size == 4) {
+        float *data = m_data.data<float>() + i*(m_num_features+1);
+        label_classes.insert((int) data[m_num_features+1]);
+      } else if (m_data.word_size == 8) {
+        double *data = m_data.data<double>() + i*(m_num_features+1);
+        label_classes.insert((int) data[m_num_features+1]);
+      }
+    }
+    // Sanity checks.
+    auto minmax = std::minmax_element(label_classes.begin(), label_classes.end());
+    if (*minmax.first != 0) {
+      throw lbann_exception(
+        "numpy_reader: classes are not indexed from 0");
+    }
+    if (*minmax.second != (int) label_classes.size() - 1) {
+      throw lbann_exception(
+        "numpy_reader: label classes are not contiguous");
+    }
+    m_num_labels = label_classes.size();
+  }
+  if (m_has_responses) {
+    // Last feature becomes the response.
+    m_num_features -= 1;
+  }
 
   // Reset indices.
   m_shuffled_indices.clear();
@@ -105,17 +131,53 @@ void numpy_reader::load() {
 }
 
 bool numpy_reader::fetch_datum(Mat& X, int data_id, int mb_idx, int tid) {
+  int features_size = m_num_features;
+  if (m_has_labels || m_has_responses) {
+    features_size += 1;
+  }
   if (m_data.word_size == 4) {
-    float *data = ((float *) m_data.data) + data_id * m_num_features;
-    for (int j = 0; j < m_num_features; j++) {
+    float *data = m_data.data<float>() + data_id * features_size;
+    for (int j = 0; j < m_num_features; ++j) {
       X(j, mb_idx) = data[j];
     }
   } else if (m_data.word_size == 8) {
-    double *data = ((double *) m_data.data) + data_id * m_num_features;
-    for (int j=0; j<m_num_features; j++) {
+    double *data = m_data.data<double>() + data_id * features_size;
+    for (int j = 0; j < m_num_features; ++j) {
       X(j, mb_idx) = data[j];
     }
   }
+  return true;
+}
+
+bool numpy_reader::fetch_label(Mat& Y, int data_id, int mb_idx, int tid) {
+  if (!m_has_labels) {
+    throw lbann_exception("numpy_reader: do not have labels");
+  }
+  int label = 0;
+  if (m_data.word_size == 4) {
+    float *data = m_data.data<float>() + data_id*(m_num_features+1);
+    label = (int) data[m_num_features+1];
+  } else if (m_data.word_size == 8) {
+    double *data = m_data.data<double>() + data_id*(m_num_features+1);
+    label = (int) data[m_num_features+1];
+  }
+  Y(label, mb_idx) = 1;
+  return true;
+}
+
+bool numpy_reader::fetch_response(Mat& Y, int data_id, int mb_idx, int tid) {
+  if (!m_has_responses) {
+    throw lbann_exception("numpy_reader: do not have responses");
+  }
+  DataType response = DataType(0);
+  if (m_data.word_size == 4) {
+    float *data = m_data.data<float>() + data_id*(m_num_features+1);
+    response = (DataType) data[m_num_features+1];
+  } else if (m_data.word_size == 8) {
+    double *data = m_data.data<double>() + data_id*(m_num_features+1);
+    response = (DataType) data[m_num_features+1];
+  }
+  Y(0, mb_idx) = response;
   return true;
 }
 

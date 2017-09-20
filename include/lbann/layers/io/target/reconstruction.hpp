@@ -40,8 +40,7 @@ class reconstruction_layer : public target_layer {
   Layer *m_original_layer;
   double aggregate_cost;
   long num_forwardprop_steps;
-  //  weight_initialization m_weight_initialization;
-  DistMat original_layer_act_v;
+  AbsDistMat *original_layer_act_v;
 
  public:
   /// @todo note that the reconstruction layer used to use weight_initialization::glorot_uniform
@@ -63,6 +62,7 @@ class reconstruction_layer : public target_layer {
 
   std::string get_name() const { return "reconstruction"; }
 
+  //virtual inline void initialize_distributed_matrices();
   virtual inline void initialize_distributed_matrices() {
     target_layer::initialize_distributed_matrices<T_layout>();
   }
@@ -82,8 +82,9 @@ class reconstruction_layer : public target_layer {
     target_layer::fp_set_std_matrix_view();
 
     //view of original layer
-    ElMat& orig_acts = m_original_layer->get_activations();
-    El::View(original_layer_act_v, orig_acts, El::ALL, El::IR(0, cur_mini_batch_size));
+    AbsDistMat& orig_acts = m_original_layer->get_activations();
+    original_layer_act_v = orig_acts.Construct(orig_acts.Grid(),orig_acts.Root());
+    El::View(*original_layer_act_v, orig_acts, El::ALL, El::IR(0, cur_mini_batch_size));
   }
 
 
@@ -92,15 +93,15 @@ class reconstruction_layer : public target_layer {
     El::Copy(*this->m_prev_activations,*this->m_activations);
     // Compute cost will be sum of squared error of fp_input (linearly transformed to m_activations)
     // and original layer fp_input/original input
-    double avg_error = this->m_neural_network_model->m_obj_fn->compute_obj_fn(*this->m_prev_activations, original_layer_act_v);
-    this->m_neural_network_model->m_obj_fn->record_obj_fn(this->m_execution_mode, avg_error);
-    aggregate_cost += avg_error;
-    num_forwardprop_steps++;
+    this->m_neural_network_model->m_obj_fn->compute_value(*this->m_prev_activations,
+                                                          *original_layer_act_v);
   }
 
   void bp_compute() {
     // Compute error signal
-    this->m_neural_network_model->m_obj_fn->compute_obj_fn_derivative(*m_prev_layer, *this->m_prev_activations, original_layer_act_v,*this->m_error_signal_v);
+    this->m_neural_network_model->m_obj_fn->compute_gradient(*this->m_prev_activations,
+                                                             *original_layer_act_v,
+                                                             *this->m_error_signal_v);
 
     //m_prev_error_signal_v is the error computed by objective function
     //is really not previous, but computed in this layer
@@ -109,7 +110,7 @@ class reconstruction_layer : public target_layer {
 
  public:
   //@todo: call base class
-  execution_mode get_execution_mode() {
+  execution_mode get_execution_mode() const {
     return this->m_execution_mode;
   }
 
@@ -121,16 +122,16 @@ class reconstruction_layer : public target_layer {
     return true;
   }
 
-  void summarize_stats(lbann_summary& summarizer, int64_t step) {
-    std::string tag = "layer" + std::to_string(static_cast<long long>(this->m_index))
+  void summarize_stats(lbann_summary& summarizer, int step) {
+    std::string tag = "layer" + std::to_string(this->m_index)
       + "/ReconstructionCost";
-    summarizer.reduce_scalar(tag, average_cost(), step);
+    summarizer.reduce_scalar(tag, this->m_neural_network_model->m_obj_fn->get_mean_value(), step);
     // Skip target layer (for now).
     io_layer::summarize_stats(summarizer, step);
   }
 
   void epoch_print() const {
-    double avg_cost = average_cost();
+    double avg_cost = this->m_neural_network_model->m_obj_fn->get_mean_value();
     if (this->m_comm->am_world_master()) {
       std::vector<double> avg_costs(this->m_comm->get_num_models());
       this->m_comm->intermodel_gather(avg_cost, avg_costs);
@@ -142,22 +143,8 @@ class reconstruction_layer : public target_layer {
     }
   }
 
-  void epoch_reset() {
-    Layer::epoch_reset();
-    reset_cost();
-  }
-
-  void reset_cost() {
-    aggregate_cost = 0.0;
-    num_forwardprop_steps = 0;
-    this->m_neural_network_model->m_obj_fn->reset_obj_fn();
-  }
-
-  double average_cost() const {
-    return aggregate_cost / num_forwardprop_steps;
-  }
-
 };
+
 }
 
 #endif  // LBANN_LAYERS_RECONSTRUCTION_HPP_INCLUDED

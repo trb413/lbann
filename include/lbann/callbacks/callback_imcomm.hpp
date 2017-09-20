@@ -45,6 +45,8 @@ namespace lbann {
  */
 class lbann_callback_imcomm : public lbann_callback {
  public:
+  using lbann_callback::on_backward_prop_end;
+
   enum comm_type {
     NONE,  /** Do no gradient updates. */
     NORMAL,  /** Simply sum gradient updates. */
@@ -135,6 +137,10 @@ class lbann_callback_imcomm : public lbann_callback {
   /** Summarize relevant statistics. */
   void do_summary(model *m, learning *layer, double im_time);
 };
+
+
+/** returns a string representation of the weight_initialization */
+std::string get_comm_type_name(lbann_callback_imcomm::comm_type m);
 
 }  // namespace lbann
 

@@ -38,40 +38,59 @@ namespace lbann {
  * Data reader for data stored in numpy (.npy) files.
  * This assumes that the zero'th axis is the sample axis and that all subsequent
  * axes can be flattened to form a sample.
- * This does not support fetching labels from the same file; labels must be
- * provided by some other means and composed with this data reader.
+ * This supports fetching labels, but only from the last column. (This can be
+ * relaxed if necessary.) Ditto responses.
  */
 class numpy_reader : public generic_data_reader {
  public:
   numpy_reader(int batch_size, bool shuffle = true);
-  numpy_reader(const numpy_reader& source);
-  numpy_reader& operator=(const numpy_reader& source);
-  ~numpy_reader();
+  // These need to be explicit because of some issue with the cnpy copy
+  // constructor/assignment operator not linking correctly otherwise.
+  numpy_reader(const numpy_reader&);
+  numpy_reader& operator=(const numpy_reader&);
+  ~numpy_reader() {}
 
   numpy_reader* copy() const { return new numpy_reader(*this); }
 
+  /// Set whether to fetch labels.
+  void set_has_labels(bool b) { m_has_labels = b; }
+  /// Set whether to fetch responses.
+  void set_has_responses(bool b) { m_has_responses = b; }
+
   void load();
 
-  int get_num_labels() const {
-    throw lbann_exception("numpy_reader: labels not supported");
-  }
+  int get_num_labels() const { return m_num_labels; }
   int get_linearized_data_size() const { return m_num_features; }
-  int get_linearized_label_size() const {
-    throw lbann_exception("numpy_reader: labels not supported");
-  }
+  int get_linearized_label_size() const { return m_num_labels; }
   const std::vector<int> get_data_dims() const {
-    return std::vector<int>(m_data.shape.begin() + 1,
-                            m_data.shape.end());
+    std::vector<int> dims(m_data.shape.begin() + 1,
+                          m_data.shape.end());
+    if (m_has_labels || m_has_responses) {
+      dims.back() -= 1;
+    }
+    return dims;
   }
 
-// protected:
+ protected:
   bool fetch_datum(Mat& X, int data_id, int mb_idx, int tid);
+  bool fetch_label(Mat& Y, int data_id, int mb_idx, int tid);
+  bool fetch_response(Mat& Y, int data_id, int mb_idx, int tid);
 
   /// Number of samples.
-  int m_num_samples;
+  int m_num_samples = 0;
   /// Number of features in each sample.
-  int m_num_features;
-  /// Underlying numpy data.
+  int m_num_features = 0;
+  /// Number of label classes.
+  int m_num_labels = 0;
+  /// Whether to fetch a label from the last column.
+  bool m_has_labels = true;
+  /// Whether to fetch a response from the last column.
+  bool m_has_responses = false;
+  /**
+   * Underlying numpy data.
+   * Note raw data is managed with shared smart pointer semantics (relevant
+   * for copying).
+   */
   cnpy::NpyArray m_data;
 };
 

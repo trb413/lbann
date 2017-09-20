@@ -38,7 +38,7 @@
 namespace lbann {
 
 model::model(lbann_comm *comm, int mini_batch_size,
-             objective_functions::objective_fn *obj_fn,
+             objective_functions::objective_function *obj_fn,
              optimizer_factory *optimizer_fac) :
   m_obj_fn(obj_fn),
   m_execution_mode(execution_mode::invalid),
@@ -112,6 +112,18 @@ model& model::operator=(const model& other) {
     m_callbacks.push_back(cb->copy());
   }
   return *this;
+}
+
+model::~model() {
+  if (m_obj_fn) delete m_obj_fn;
+  // Free metrics.
+  for (metrics::metric *m : get_metrics()) {
+    if (m) delete m;
+  }
+  // Free callbacks.
+  for (lbann_callback *c : m_callbacks) {
+    if(c) delete c;
+  }
 }
 
 void model::add_callback(lbann_callback *cb) {

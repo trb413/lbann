@@ -31,6 +31,15 @@ message Reader {
   ImagePreprocessor image_preprocessor = 13;
   int64 num_samples = 100; //only for synthetic
   int64 num_features = 101; //only for synthetic
+  //csv attributes
+  string separator = 102;
+  int32 skip_cols = 103;
+  int32 skip_rows = 104;
+  bool has_header = 105;
+  int32 label_col = 106;
+  int32 response_col = 107;
+  bool disable_labels = 108;
+  bool disable_reponses = 109;
 }
 
 message ImagePreprocessor {
@@ -45,6 +54,7 @@ message ImagePreprocessor {
   double vertical_shift = 20;
   double shear_range = 21;
   bool disable_augmentation = 22;
+  float noise_factor = 23;
 }
 
 //========================================================================
@@ -53,7 +63,7 @@ message ImagePreprocessor {
 
 message Model {
   string name = 1; //dnn, greedy_layerwise_autoencoder
-  string objective_function = 2; //categorical_cross_entropy, mean_squared_error
+  string objective_function = 2; // cross_entropy, mean_squared_error
   repeated Metric metric = 5; 
   string data_layout = 6;
 
@@ -176,6 +186,12 @@ message Callback {
    CallbackLinearGrowthLearningRate linear_growth_learning_rate = 20;
    CallbackProfiler profiler = 21;
    CallbackStepMinibatch step_minibatch = 22;
+   CallbackGradientCheck gradient_check = 23;
+   CallbackLTFB ltfb = 24;
+}
+
+message CallbackLTFB {
+  int64 round_size = 1;
 }
 
 message CallbackStepLearningRate {
@@ -207,12 +223,12 @@ message CallbackProfiler {
 }
 
 message CallbackTimer {
-  string dir = 1; //directory for the lbann_summary
 }
 
 message CallbackSummary {
   string dir = 1; //directory for the lbann_summary
-  int64 interval = 2; //default in lbann_callback_summary.hpp is 1
+  int64 batch_interval = 2; //default in lbann_callback_summary.hpp is 1
+  int64 mat_interval = 3; //default in lbann_callback_summary.hpp is 25
 }
 
 message CallbackDumpWeights {
@@ -242,7 +258,6 @@ message CallbackDispIOStats {
 message CallbackImComm {
   string intermodel_comm_method = 1;
   string layers = 2; //e.g: "2 4 5"; use "10000" to apply to all layers
-  string summary_dir = 3;
 }
 
 message CallbackDebug {
@@ -278,6 +293,12 @@ message CallbackLinearGrowthLearningRate {
 message CallbackStepMinibatch {
   int64 starting_mbsize = 1;
   int64 step = 2;
+}
+
+message CallbackGradientCheck {
+  double step_size = 1;
+  bool verbose = 2;
+  bool fail_on_error = 3;
 }
 
 //========================================================================
@@ -384,6 +405,7 @@ message BatchNormalization {
   double scale_init = 2;     //default: 1.0
   double bias_init = 3;      //default: 0.0
   double epsilon = 4;        //default: 1e-5
+  bool global_stats = 5;     //for future use
 }
 
 message SeluDropout {
@@ -437,24 +459,7 @@ message Pooling {
 
 message Unpooling {
   int64 num_dims = 1;
-
-  bool has_vectors = 2;
-
-  //these are used if has_vectors = true
-  string pool_dims = 4; //should be space-separated list, e.g, "2 2 3"
-  string pool_pads = 5; //should be space-separated list, e.g, "2 2 3"
-  string pool_strides = 6; //should be space-separated list, e.g, "2 2 3"
-
-  //these are used if has_vectors = false
-  int64 pool_dims_i = 10;
-  int64 pool_pads_i = 11;
-  int64 pool_strides_i = 12;
-
   int64 pooling_layer = 13; //should be index of pooling layer
-
-  //pool_mode should be one of: max, average, average_no_pad
-  //see: lbann/include/lbann/lbann_base.hpp
-  string pool_mode = 7;
 }
 
 
@@ -481,10 +486,11 @@ message Sum {
 // learning Layers //
 /////////////////////
 message FullyConnected {
-  int64 num_neurons = 2;
-  string weight_initialization = 5;
-  bool has_bias = 6;
-  double l2_regularization_factor = 7;
+  int64 num_neurons = 1;
+  string weight_initialization = 2;
+  bool has_bias = 3;                   //default: true
+  double bias_initial_value = 4;       //default: 0
+  double l2_regularization_factor = 5; //default: 0
 }
 
 message Convolution {
@@ -503,10 +509,10 @@ message Convolution {
   int64 conv_pads_i = 60; 
   int64 conv_strides_i = 70; 
 
-
   string weight_initialization = 9;
-  bool has_bias = 10;
-  double l2_regularization_factor = 11;
+  bool has_bias = 10;                   //default: true
+  double bias_initial_value = 11;       //default: 0
+  double l2_regularization_factor = 12; //default: 0
 }
 
 message Deconvolution {
@@ -525,10 +531,10 @@ message Deconvolution {
   int64 conv_pads_i = 60; 
   int64 conv_strides_i = 70; 
 
-
   string weight_initialization = 9;
-  bool has_bias = 10;
-  double l2_regularization_factor = 11;
+  bool has_bias = 10;                   //default: true
+  double bias_initial_value = 11;       //default: 0
+  double l2_regularization_factor = 12; //default: 0
 }
 
 ///////////////////

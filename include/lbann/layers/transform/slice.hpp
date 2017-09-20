@@ -59,6 +59,7 @@ class slice_layer : public transform {
    */
   AbsDistMat* m_output_slice_v;
 
+
  public:
   /// Constructor
   slice_layer(int index,
@@ -125,6 +126,22 @@ class slice_layer : public transform {
     this->m_activations_d.clear();
   #endif // __LIB_CUDNN
 
+  }
+
+  /** Returns description of ctor params */
+  std::string get_description() const {
+    std::stringstream s;
+    s << " slice; slice_axis: "
+      << m_slice_axis << " children: ";
+    for (size_t h=0; h<this->m_children.size(); h++) {
+      s << this->m_children[h]->get_index() << " " << this->m_children[h]->get_name() << " ";
+    }
+    s << " slice_points: ";
+    for (size_t h=0; h<this->m_slice_points.size(); h++) {
+      s << this->m_slice_points[h] << " ";
+    }
+    s << " dataLayout: " << this->get_data_layout_string(get_data_layout());
+    return s.str();
   }
 
   slice_layer* copy() const { return new slice_layer(*this); }

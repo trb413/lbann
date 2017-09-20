@@ -36,7 +36,8 @@ sgd::sgd(lbann_comm *comm, DataType learning_rate, DataType momentum,
   : optimizer(comm, learning_rate),
     m_momentum(momentum),
     m_decay(decay),
-    m_nesterov(nesterov) {}
+    m_nesterov(nesterov),
+    m_velocity(nullptr) {}
 
 sgd::sgd(const sgd& other) :
   optimizer(other), m_iterations(other.m_iterations),
@@ -129,8 +130,10 @@ void sgd::update(const AbsDistMat *gradient) {
           const DataType g = gradient_buffer[i+j*gradient_ldim];
           DataType& v = velocity_buffer[i+j*velocity_ldim];
           DataType& x = parameters_buffer[i+j*parameters_ldim];
-          v = m_momentum * v - m_learning_rate * g;
-          x += m_nesterov ? m_momentum * v - m_learning_rate * g : v;
+          v = m_momentum * v + g;
+          x -= (m_nesterov ?
+                m_learning_rate * (m_momentum * v + g) :
+                m_learning_rate * v);
         }
       }
     } else {
@@ -141,8 +144,8 @@ void sgd::update(const AbsDistMat *gradient) {
           DataType& x = parameters_buffer[i];
           const DataType g = gradient_buffer[i];
           DataType& v = velocity_buffer[i];
-          v = m_momentum * v - m_learning_rate * g;
-          x += m_momentum * v - m_learning_rate * g;
+          v = m_momentum * v + g;
+          x -= m_learning_rate * (m_momentum * v + g);
         }
       } else {
         // Momentum SGD for contiguous data
@@ -151,8 +154,8 @@ void sgd::update(const AbsDistMat *gradient) {
           DataType& x = parameters_buffer[i];
           const DataType g = gradient_buffer[i];
           DataType& v = velocity_buffer[i];
-          v = m_momentum * v - m_learning_rate * g;
-          x += v;
+          v = m_momentum * v + g;
+          x -= m_learning_rate * v;
         }
       }
     }

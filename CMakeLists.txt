@@ -29,7 +29,10 @@ option(WITH_CNPY  "Include cnpy"                           ON)
 option(WITH_TBINF "Include Tensorboard interface"          ON)
 option(WITH_VTUNE "Link the Intel VTune profiling library" OFF)
 option(WITH_NVPROF "Enable NVTX-based instrumentation for nvprof" OFF)
-option(WITH_FULLY_CONNECTED_CUDA "Enable CUDA-based fully connected layer" OFF)
+option(WITH_FULLY_CONNECTED_CUDA "Enable CUDA-based fully connected layer" ON)
+if(NOT DATATYPE)
+  set(DATATYPE 4)
+endif()
 option(VERBOSE    "Verbose output"                         OFF)
 if(NOT MAKE_NUM_PROCESSES)
   set(MAKE_NUM_PROCESSES 1)
@@ -82,6 +85,8 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
    endif()
 endif()
 
+# Build with double as datatype
+add_definitions(-DLBANN_DATATYPE=${DATATYPE})
 
 # Set verbose output (should be 0 or 1)
 if(VERBOSE)
@@ -230,6 +235,7 @@ endmacro()
 add_subdirectory(src)
 add_subdirectory(model_zoo)
 add_subdirectory(model_zoo/tests)
+add_subdirectory(model_zoo/historical)
 
 # Build LBANN source files
 # Note that CUDA sources are not included as they are not
@@ -299,6 +305,9 @@ endif()
 
 # LBANN also requires HWLOC. This seems sufficient for now.
 target_link_libraries(lbann hwloc)
+
+target_compile_options(src PUBLIC "-Werror")
+target_compile_options(lbann PUBLIC "-Werror")
 
 ################################################################
 # Install LBANN

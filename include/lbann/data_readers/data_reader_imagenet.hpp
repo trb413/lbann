@@ -42,14 +42,12 @@ class imagenet_reader : public generic_data_reader {
 
   imagenet_reader* copy() const { return new imagenet_reader(*this); }
 
-  bool fetch_label(Mat& Y, int data_id, int mb_idx, int tid);
+  // ImageNet specific functions
+  virtual void load();
 
   int get_num_labels() const {
     return m_num_labels;
   }
-
-  // ImageNet specific functions
-  virtual void load();
 
   int get_image_width() const {
     return m_image_width;
@@ -77,10 +75,11 @@ class imagenet_reader : public generic_data_reader {
 
  protected:
   bool fetch_datum(Mat& X, int data_id, int mb_idx, int tid);
+  bool fetch_label(Mat& Y, int data_id, int mb_idx, int tid);
 
  protected:
   std::string m_image_dir; // where images are stored
-  std::vector<std::pair<std::string, int>> image_list; // list of image files and labels
+  std::vector<std::pair<std::string, int>> m_image_list; // list of image files and labels
   int m_image_width; // image width
   int m_image_height; // image height
   int m_image_num_channels; // number of image channels

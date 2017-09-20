@@ -93,7 +93,7 @@ void lbann_callback_imcomm::setup(model *m) {
         //const std::type_info& layer_type = typeid(*(layers[layer]));
       }
       if (ct_does_quantization(params.ct)) {
-        const ElMat& gradients = learning_layer->get_weights_gradient();
+        const AbsDistMat& gradients = learning_layer->get_weights_gradient();
         if (params.reshape_height > 0) {
           El::Zeros(params.error, params.reshape_height, params.reshape_width);
         } else {
@@ -241,6 +241,18 @@ void lbann_callback_imcomm::do_summary(model *m, learning *layer,
     m_quantizer.reset_counters();
     comm->reset_stats_counters();
   }
+}
+
+static std::vector<std::string> comm_type_names  =
+    { "none", "normal", "onebit_quantization", "thresh_quantization", "adaptive_quantization" };
+
+/** returns a string representation of the weight_initialization */
+std::string get_comm_type_name(lbann_callback_imcomm::comm_type m) {
+  if ((int)m < 0 or (int)m >= comm_type_names.size()) {
+    throw(std::string{} + __FILE__ + " " + std::to_string(__LINE__) + " :: "
+           + " Invalid comm_type");
+  }
+  return comm_type_names[(int)m];
 }
 
 }  // namespace lbann

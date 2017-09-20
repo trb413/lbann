@@ -62,19 +62,23 @@ class base_convolution_layer : public learning {
   int m_kernel_size;
   
   /** View into convolutional kernel weights. */
-  ElMat *m_kernel_weights_v;
+  AbsDistMat *m_kernel_weights_v;
   /** View into convolutional kernel weights gradient. */
-  ElMat *m_kernel_weights_gradient_v;
+  AbsDistMat *m_kernel_weights_gradient_v;
   /** View into bias weights. */
-  ElMat *m_bias_weights_v;
+  AbsDistMat *m_bias_weights_v;
   /** View into bias weights gradient. */
-  ElMat *m_bias_weights_gradient_v;
+  AbsDistMat *m_bias_weights_gradient_v;
 
   /** Weight initialization scheme. */
   weight_initialization m_weight_initialization;
 
-  /** Scaling factor for bias term. */
+  /** Scaling factor for bias term.
+   *  If the scaling factor is zero, bias is not applied.
+   */
   DataType m_bias_scaling_factor;
+  /** Initial value for bias. */
+  DataType m_bias_initial_value;
 
 #ifdef __LIB_CUDNN
 
@@ -120,6 +124,7 @@ class base_convolution_layer : public learning {
                          weight_initialization init,
                          optimizer *opt,
                          bool has_bias,
+                         DataType bias_initial_value,
                          cudnn::cudnn_manager *cudnn)
     : learning(index, comm, opt) {
 
@@ -132,8 +137,9 @@ class base_convolution_layer : public learning {
     // Weight initialization scheme
     m_weight_initialization = init;
 
-    // Activate or disable bias
+    // Initialize bias
     m_bias_scaling_factor = has_bias ? DataType(1) : DataType(0);
+    m_bias_initial_value = bias_initial_value;
 
   #ifdef __LIB_CUDNN
 
@@ -237,13 +243,19 @@ class base_convolution_layer : public learning {
 
     /// Instantiate these view objects but do not allocate data for them
     /// @todo model parallel implementation
-    m_kernel_weights_v                = new StarMat(this->m_comm->get_model_grid());
-    m_kernel_weights_gradient_v       = new StarMat(this->m_comm->get_model_grid());
-    m_bias_weights_v                  = new StarMat(this->m_comm->get_model_grid());
-    m_bias_weights_gradient_v         = new StarMat(this->m_comm->get_model_grid());
+    m_kernel_weights_v          = m_weights->Construct(m_weights->Grid(),
+                                                       m_weights->Root());
+    m_bias_weights_v            = m_weights->Construct(m_weights->Grid(),
+                                                       m_weights->Root());
+    m_kernel_weights_gradient_v = m_weights_gradient->Construct(m_weights_gradient->Grid(),
+                                                                m_weights_gradient->Root());
+    m_bias_weights_gradient_v   = m_weights_gradient->Construct(m_weights_gradient->Grid(),
+                                                                m_weights_gradient->Root());
   #ifdef __LIB_CUDNN
-    m_kernel_weights_gradient_per_gpu = new StarMat(this->m_comm->get_model_grid());
-    m_bias_weights_gradient_per_gpu   = new StarMat(this->m_comm->get_model_grid());
+    m_kernel_weights_gradient_per_gpu = m_weights_gradient->Construct(m_weights_gradient->Grid(),
+                                                                      m_weights_gradient->Root());
+    m_bias_weights_gradient_per_gpu   = m_weights_gradient->Construct(m_weights_gradient->Grid(),
+                                                                      m_weights_gradient->Root());
   #endif // #ifdef __LIB_CUDNN
   }
 
@@ -266,6 +278,7 @@ class base_convolution_layer : public learning {
                       this->m_weight_initialization,
                       m_kernel_size / this->m_neuron_dims[0],
                       m_kernel_size / this->m_prev_neuron_dims[0]);
+    El::Fill(*m_bias_weights_v, m_bias_initial_value);
 
     // Initialize optimizer
     if(this->m_optimizer != nullptr) {
@@ -498,6 +511,12 @@ class base_convolution_layer : public learning {
     const DataType one = 1;
     const DataType zero = 0;
 
+    // Clear unused columns in previous error signal matrix
+    this->m_cudnn->clear_unused_columns_on_gpus(this->m_prev_error_signal_d,
+                                                this->m_num_neurons,
+                                                this->m_prev_error_signal->LocalWidth(),
+                                                this->m_mini_batch_size_per_gpu);
+
     // Compute gradients on GPUs
     const int num_gpus = this->m_cudnn->get_num_gpus();
     for(int i=0; i<num_gpus; ++i) {
@@ -557,29 +576,31 @@ class base_convolution_layer : public learning {
                                       bias_weights_width);
     }
     this->m_cudnn->synchronize();
+    Mat& local_kernel_weights_gradient = m_kernel_weights_gradient_v->Matrix();
     for(int i=0; i<num_gpus; ++i) {
+      const Mat kernel_weights_on_current_gpu
+        = El::LockedView(m_kernel_weights_gradient_per_gpu->LockedMatrix(),
+                         El::ALL,
+                         El::IR(i * kernel_weights_width, (i+1) * kernel_weights_width));
       if(i == 0) {
-        El::Copy(m_kernel_weights_gradient_per_gpu->LockedMatrix()
-                 (El::ALL, El::IR(0, kernel_weights_width)),
-                 m_kernel_weights_gradient_v->Matrix());
+        El::Copy(kernel_weights_on_current_gpu, local_kernel_weights_gradient);
       }
       else {
-        m_kernel_weights_gradient_v->Matrix()
-          += (m_kernel_weights_gradient_per_gpu->LockedMatrix()
-              (El::ALL, El::IR(i * kernel_weights_width, (i+1) * kernel_weights_width)));
+        local_kernel_weights_gradient += kernel_weights_on_current_gpu;
       }
     }
     if(m_bias_scaling_factor != DataType(0)) {
+      Mat& local_bias_weights_gradient = m_bias_weights_gradient_v->Matrix();
       for(int i=0; i<num_gpus; ++i) {
+        const Mat bias_weights_on_current_gpu
+          = El::LockedView(m_bias_weights_gradient_per_gpu->LockedMatrix(),
+                           El::ALL,
+                           El::IR(i * bias_weights_width, (i+1) * bias_weights_width));
         if(i == 0) {
-          El::Copy(m_bias_weights_gradient_per_gpu->LockedMatrix()
-                   (El::ALL, El::IR(0, bias_weights_width)),
-                   m_bias_weights_gradient_v->Matrix());
+          El::Copy(bias_weights_on_current_gpu, local_bias_weights_gradient);
         }
         else {
-          m_bias_weights_gradient_v->Matrix()
-            += (m_bias_weights_gradient_per_gpu->LockedMatrix()
-                (El::ALL, El::IR(i * bias_weights_width, (i+1) * bias_weights_width)));
+          local_bias_weights_gradient += bias_weights_on_current_gpu;
         }
       }
     }
@@ -731,11 +752,11 @@ class base_convolution_layer : public learning {
     for(El::Int channel = 0; channel < num_output_channels; ++channel) {
       const El::Int row_start = channel * num_per_output_channel;
       const El::Int row_end = (channel+1) * num_per_output_channel;
-      const DataType update_term
+      const DataType bias_term
         = m_bias_scaling_factor * bias_weights_local(0, channel);
       for(El::Int col = 0; col < width_local; ++col) {
         for(El::Int row = row_start; row < row_end; ++row) {
-          activations_local(row, col) += update_term;
+          activations_local(row, col) += bias_term;
         }
       }
     }
@@ -757,23 +778,27 @@ class base_convolution_layer : public learning {
     const int num_per_output_channel = this->m_num_neurons / num_output_channels;
 
     // Initialize weight gradients to zero
-    Zero(*this->m_weights_gradient);
+    El::Zero(*this->m_weights_gradient);
 
     // Compute bias gradient
+    // Note: Sum is computed with Kahan summation
     if(m_bias_scaling_factor != DataType(0)) {
       #pragma omp parallel for
       for(int channel = 0; channel < num_output_channels; ++channel) {
         const El::Int row_start = channel * num_per_output_channel;
         const El::Int row_end = (channel+1) * num_per_output_channel;
-        DataType& bias_weights_gradient_entry
-          = bias_weights_gradient_local(0, channel);
+        DataType sum = 0;
+        DataType correction = 0;
         for(El::Int col = 0; col < width_local; ++col) {
           for(El::Int row = row_start; row < row_end; ++row) {
-            bias_weights_gradient_entry
-              += prev_error_signal_local(row, col);
+            DataType term = prev_error_signal_local(row, col);
+            term += correction;
+            const DataType next_sum = sum + term;
+            correction = term - (next_sum - sum);
+            sum = next_sum;
           }
         }
-        bias_weights_gradient_entry *= m_bias_scaling_factor;
+        bias_weights_gradient_local(0, channel) = m_bias_scaling_factor * sum;
       }
     }
 
@@ -843,7 +868,6 @@ public:
   /// Update convolution kernel and bias
   bool update_compute() {
     if(this->m_execution_mode == execution_mode::training) {
-      this->l2_regularize();
       this->m_optimizer->update(this->m_weights_gradient);
     }
     return true;

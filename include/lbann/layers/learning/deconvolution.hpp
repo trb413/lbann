@@ -52,6 +52,7 @@ class deconvolution_layer : public base_convolution_layer {
 
   public:
 
+
   deconvolution_layer(int index,
                       lbann_comm *comm,
                       int num_data_dims,
@@ -62,6 +63,7 @@ class deconvolution_layer : public base_convolution_layer {
                       weight_initialization init,
                       optimizer *opt,
                       bool has_bias = true,
+                      DataType bias_initial_value = DataType(0),
                       cudnn::cudnn_manager *cudnn = nullptr)
     : deconvolution_layer(index,
                           comm,
@@ -73,6 +75,7 @@ class deconvolution_layer : public base_convolution_layer {
                           init,
                           opt,
                           has_bias,
+                          bias_initial_value,
                           cudnn) {}
 
   deconvolution_layer(int index,
@@ -85,6 +88,7 @@ class deconvolution_layer : public base_convolution_layer {
                       weight_initialization init,
                       optimizer *opt,
                       bool has_bias = true,
+                      DataType bias_initial_value = DataType(0),
                       cudnn::cudnn_manager *cudnn = nullptr)
     : base_convolution_layer(index,
                              comm,
@@ -96,6 +100,7 @@ class deconvolution_layer : public base_convolution_layer {
                              init,
                              opt,
                              has_bias,
+                             bias_initial_value,
                              cudnn) {
     static_assert(T_layout == data_layout::DATA_PARALLEL,
                   "convolution only supports DATA_PARALLEL");
@@ -108,6 +113,29 @@ class deconvolution_layer : public base_convolution_layer {
       this->m_using_gpus = true;
     }
 
+  }
+
+  /** Returns description of ctor params */
+  std::string get_description() const {
+    std::stringstream s;
+    s << " deconvolution; conv_dims: ";
+    for (size_t h=0; h<this->m_kernel_dims.size(); h++) {
+      s << this->m_kernel_dims[h] << " ";
+    }
+    s << " conv_pads: ";
+    for (size_t h=0; h<this->m_conv_pads.size(); h++) {
+      s << this->m_conv_pads[h] << " ";
+    }
+    s << " conv_strides: ";
+    for (size_t h=0; h<this->m_conv_strides.size(); h++) {
+      s << this->m_conv_strides[h] << " ";
+    }
+    s << " num_output_channels: " << this->m_neuron_dims[0]
+      << " weight_init: " + get_weight_initialization_name(this->m_weight_initialization) 
+      << " has_bias: " << this->m_bias_scaling_factor
+      << " bias_initial_value: " << this->m_bias_initial_value
+      << " dataLayout: " << this->get_data_layout_string(get_data_layout());
+    return s.str();
   }
 
   deconvolution_layer(const deconvolution_layer& other) :
@@ -133,7 +161,7 @@ class deconvolution_layer : public base_convolution_layer {
   void setup_dims() {
 
     // Initialize previous neuron tensor dimensions
-    learning::setup_dims();
+    base_convolution_layer::setup_dims();
 
     // Initialize convolution kernel dimensions
     this->m_kernel_dims.insert(this->m_kernel_dims.begin(),
@@ -141,13 +169,13 @@ class deconvolution_layer : public base_convolution_layer {
 
     // Check if previous neuron tensor dimensions are valid
   #ifdef LBANN_DEBUG
-    if(this->m_num_neuron_dims != this->m_kernel_dims.size()) {
+    if(this->m_num_neuron_dims != (int) this->m_kernel_dims.size() - 1) {
       throw lbann_exception("deconvolution_layer: previous neuron tensor dimensions are unexpected");
     }
   #endif
 
     // Initialize neuron tensor dimensions
-    this->m_neuron_dims[0] = this->m_kernel_dims[0];
+    this->m_neuron_dims[0] = this->m_kernel_dims[1];
     for(int i=0; i<this->m_num_neuron_dims-1; ++i) {
       this->m_neuron_dims[i+1]
         = ((this->m_prev_neuron_dims[i+1]-1) * this->m_conv_strides[i]
@@ -190,22 +218,30 @@ class deconvolution_layer : public base_convolution_layer {
     El::View(*m_kernel_weights_gradient_v, *this->m_weights_gradient,
              El::ALL, El::IR(0,this->m_prev_neuron_dims[0]));
     if(m_bias_scaling_factor != DataType(0)) {
-      m_bias_weights_v->Attach(1,
-                               this->m_neuron_dims[0],
-                               m_bias_weights_v->Grid(),
-                               m_bias_weights_v->ColAlign(),
-                               m_bias_weights_v->RowAlign(),
-                               m_weights->Buffer(0,this->m_prev_neuron_dims[0]),
-                               1,
-                               m_bias_weights_v->Root());
-      m_bias_weights_gradient_v->Attach(1,
-                                        this->m_neuron_dims[0],
-                                        m_bias_weights_gradient_v->Grid(),
-                                        m_bias_weights_gradient_v->ColAlign(),
-                                        m_bias_weights_gradient_v->RowAlign(),
-                                        m_weights_gradient->Buffer(0,this->m_prev_neuron_dims[0]),
-                                        1,
-                                        m_bias_weights_gradient_v->Root());
+      ElMat *bias_weights_v = dynamic_cast<ElMat*>(m_bias_weights_v);
+      ElMat *bias_weights_gradient_v = dynamic_cast<ElMat*>(m_bias_weights_gradient_v);
+      if(bias_weights_v == nullptr) {
+        throw lbann_exception("deconvolution_layer: weights matrix has invalid data distribution");
+      }
+      if(bias_weights_gradient_v == nullptr) {
+        throw lbann_exception("deconvolution_layer: weights gradient matrix has invalid data distribution");
+      }
+      bias_weights_v->Attach(1,
+                             this->m_neuron_dims[0],
+                             m_bias_weights_v->Grid(),
+                             m_bias_weights_v->ColAlign(),
+                             m_bias_weights_v->RowAlign(),
+                             m_weights->Buffer(0,this->m_prev_neuron_dims[0]),
+                             1,
+                             m_bias_weights_v->Root());
+      bias_weights_gradient_v->Attach(1,
+                                      this->m_neuron_dims[0],
+                                      m_bias_weights_gradient_v->Grid(),
+                                      m_bias_weights_gradient_v->ColAlign(),
+                                      m_bias_weights_gradient_v->RowAlign(),
+                                      m_weights_gradient->Buffer(0,this->m_prev_neuron_dims[0]),
+                                      1,
+                                      m_bias_weights_gradient_v->Root());
     }
   }
 
@@ -293,6 +329,7 @@ class deconvolution_layer : public base_convolution_layer {
       apply_transposed_convolution_im2col(true);
       apply_bias_cpu();
     }
+    l2_regularize_objective_function();
   }
 
   void bp_compute() {
@@ -303,6 +340,7 @@ class deconvolution_layer : public base_convolution_layer {
       apply_convolution_im2col(false);
       compute_gradients_im2col(true);
     }
+    l2_regularize_gradient();
   }
 
 };

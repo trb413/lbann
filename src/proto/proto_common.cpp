@@ -9,6 +9,7 @@
 #include <google/protobuf/text_format.h>
 
 #include <unordered_map>
+#include <sys/stat.h>
 
 using namespace lbann;
 
@@ -126,7 +127,7 @@ void finish_transform_layers(lbann_comm *comm, std::vector<transform_layers> &la
         int slice_pt = layers[h].slice_points[k];
         assert(the_layers.find(child_id) != the_layers.end());
         Layer * child = the_layers[child_id];
-        s->push_back_child(child, layers[h].slice_points[k]);
+        s->push_back_child(child, slice_pt);
       }
     } else if (name == "split") {
       for (size_t k = 0; k<layers[h].children.size(); k++) {
@@ -155,6 +156,9 @@ void finish_transform_layers(lbann_comm *comm, std::vector<transform_layers> &la
   }
 }
 
+  //maps: index (wrt prototext) to the Layer
+  std::unordered_map<int, Layer*> the_layers;
+
 void add_layers(
   lbann::sequential_model *model,
   std::map<execution_mode, generic_data_reader *>& data_readers,
@@ -170,8 +174,6 @@ void add_layers(
 
   std::stringstream err;
 
-  //maps: index (wrt prototext) to the Layer
-  std::unordered_map<int, Layer*> the_layers;
 
   //maps: index (wrt model) to the Layer
   std::unordered_map<int, Layer*> model_layers;
@@ -303,6 +305,7 @@ void add_layers(
           get_weight_initialization(ell.weight_initialization()),
           model->create_optimizer(),
           ell.has_bias(),
+          ell.bias_initial_value(),
           cudnn);
       } else {
         d = new fully_connected_layer<data_layout::DATA_PARALLEL>(
@@ -312,6 +315,7 @@ void add_layers(
           get_weight_initialization(ell.weight_initialization()),
           model->create_optimizer(),
           ell.has_bias(),
+          ell.bias_initial_value(),
           cudnn);
       }
       double l2_regularization_factor = ell.l2_regularization_factor();
@@ -354,7 +358,7 @@ void add_layers(
       while (s >> i) {
         parents.push_back(i);
       }
-      d = new split_layer<>(layer_id, comm, {}, cudnn);
+      d = new sum_layer<>(layer_id, comm, {}, cudnn);
       transform_layers record(d, parents);
       t_layers.push_back(record);
     }
@@ -445,67 +449,17 @@ void add_layers(
     //////////////////////////////////////////////////////////////////
     else if (layer.has_unpooling()) {
       const lbann_data::Unpooling& ell = layer.unpooling();
-      bool has_vectors = ell.has_vectors();
       pooling_layer<data_layout::DATA_PARALLEL> *pl = (pooling_layer<data_layout::DATA_PARALLEL>*)the_layers[ell.pooling_layer()];
-
-      if (has_vectors) {
-
-        int i;
-        std::stringstream ss(ell.pool_dims());
-        vector<int> pool_dims;
-        while (ss >> i) {
-          pool_dims.push_back(i);
-        }
-
-        vector<int> pool_pads;
-        ss.clear();
-        ss.str(ell.pool_pads());
-        while (ss >> i) {
-          pool_pads.push_back(i);
-        }
-
-        vector<int> pool_strides;
-        ss.clear();
-        ss.str(ell.pool_strides());
-        while (ss >> i) {
-          pool_strides.push_back(i);
-        }
-        assert(the_layers.find(ell.pooling_layer()) != the_layers.end());
-        if (dl == data_layout::MODEL_PARALLEL) {
-          err << __FILE__ << " " << __LINE__ << " :: local_response_normalization "
-              << "does not support MODEL_PARALLEL layouts";
-          throw lbann_exception(err.str());
-        } else {
-          d = new unpooling_layer<data_layout::DATA_PARALLEL>(
-            layer_id,
-            comm,
-            ell.num_dims(),
-            &pool_dims[0],
-            &pool_pads[0],
-            &pool_strides[0],
-            get_pool_mode(ell.pool_mode()),
-            pl,
-            cudnn
-          );
-        }
+      if (dl == data_layout::MODEL_PARALLEL) {
+        err << __FILE__ << " " << __LINE__ << " :: local_response_normalization "
+            << "does not support MODEL_PARALLEL layouts";
+        throw lbann_exception(err.str());
       } else {
-        if (dl == data_layout::MODEL_PARALLEL) {
-          err << __FILE__ << " " << __LINE__ << " :: local_response_normalization "
-              << "does not support MODEL_PARALLEL layouts";
-          throw lbann_exception(err.str());
-        } else {
-          d = new unpooling_layer<data_layout::DATA_PARALLEL>(
-            layer_id,
-            comm,
-            ell.num_dims(),
-            ell.pool_dims_i(),
-            ell.pool_pads_i(),
-            ell.pool_strides_i(),
-            get_pool_mode(ell.pool_mode()),
-            pl,
-            cudnn
-          );
-        }
+        d = new unpooling_layer<data_layout::DATA_PARALLEL>(
+          layer_id,
+          comm,
+          pl
+        );
       }
     }
 
@@ -555,6 +509,7 @@ void add_layers(
             get_weight_initialization(ell.weight_initialization()),
             model->create_optimizer(),
             ell.has_bias(),
+            ell.bias_initial_value(),
             cudnn
           );
         }
@@ -577,6 +532,7 @@ void add_layers(
             get_weight_initialization(ell.weight_initialization()),
             model->create_optimizer(),
             ell.has_bias(),
+            ell.bias_initial_value(),
             cudnn
           );
         }
@@ -634,6 +590,7 @@ void add_layers(
             get_weight_initialization(ell.weight_initialization()),
             model->create_optimizer(),
             ell.has_bias(),
+            ell.bias_initial_value(),
             cudnn
           );
         }
@@ -656,6 +613,7 @@ void add_layers(
             get_weight_initialization(ell.weight_initialization()),
             model->create_optimizer(),
             ell.has_bias(),
+            ell.bias_initial_value(),
             cudnn
           );
         }
@@ -730,11 +688,13 @@ void add_layers(
         d = new batch_normalization<data_layout::DATA_PARALLEL>(
           layer_id,
           comm,
+          model->create_optimizer(),
           ell.decay(),
           ell.scale_init(),
           ell.bias_init(),
           ell.epsilon(),
-          cudnn);
+          cudnn/*,
+                 ell.global_stats()*/);
       }
     }
 
@@ -947,9 +907,6 @@ void add_layers(
           ell.shared_data_reader(),
           ell.for_regression());
       }
-      the_layers[layer.index()] = d;
-      layer_mapping[layer.index()] = model->get_layers().size();
-      model->add(d);
     }
 
     //////////////////////////////////////////////////////////////////
@@ -971,6 +928,31 @@ void add_layers(
   finish_transform_layers(comm, t_layers, the_layers); 
 }
 
+lbann_summary * construct_summarizer(const lbann_data::Model &m, lbann_comm *comm) {
+  lbann_summary *summary = nullptr;
+  bool master = comm->am_world_master();
+  int size = m.callback_size();
+  for (int j=0; j<size; j++) {
+    const lbann_data::Callback& callback = m.callback(j);
+    if (callback.has_summary()) {
+      const lbann_data::CallbackSummary& c = callback.summary();
+      if (master) {
+        cout << "constructing summarizer with dir: " << c.dir() << endl;
+      }
+
+      //check to see if directory exists
+      struct stat sb;
+      if (! ( stat(c.dir().c_str(), &sb) == 0 && S_ISDIR(sb.st_mode) )) {
+        throw lbann_exception(
+          std::string {} + __FILE__ + " " + std::to_string(__LINE__) + " :: " +
+          "summary directory " + c.dir() + " does not exist");
+      }
+      summary = new lbann_summary(c.dir(), comm);
+    }
+  }
+  return summary;
+}
+
 void init_callbacks(
   lbann_comm *comm,
   lbann::sequential_model *model,
@@ -982,14 +964,27 @@ void init_callbacks(
   bool master = comm->am_world_master();
 
   const lbann_data::Model& m = p.model();
-  lbann_summary *summarizer = nullptr;
-
   if (master) cerr << endl << "starting init_callbacks; size: " << m.callback_size() << endl;
+
+  
+  //the same summarizer is passed to all call backs that take a summarizer;
+  //construct_summarizer returns this summarizer, which may be a nullptr
+  lbann_summary *summarizer = construct_summarizer(m, comm);
+
 
   //loop over the callbacks
   int size = m.callback_size();
   for (int j=0; j<size; j++) {
     const lbann_data::Callback& callback = m.callback(j);
+
+    //////////////////////////////////////////////////////////////////
+    // CALLBACK: ltfb
+    //////////////////////////////////////////////////////////////////
+    if (callback.has_ltfb()) {
+      const lbann_data::CallbackLTFB &c = callback.ltfb();
+      lbann_callback_ltfb *ltfb_cb = new lbann_callback_ltfb(c.round_size(), summarizer);
+      model->add_callback(ltfb_cb);
+    }
 
     //////////////////////////////////////////////////////////////////
     // CALLBACK: save_images
@@ -1021,13 +1016,6 @@ void init_callbacks(
     // CALLBACK: timer
     //////////////////////////////////////////////////////////////////
     if (callback.has_timer()) {
-      const lbann_data::CallbackTimer& c = callback.timer();
-      if (master) {
-        cout << "adding timer callback with dir: " << c.dir() << endl;
-      }
-      if (c.dir() != "none" && !summarizer) {
-        summarizer = new lbann_summary(c.dir(), comm);
-      }
       lbann_callback_timer *timer_cb = new lbann_callback_timer(summarizer);
       model->add_callback(timer_cb);
     }
@@ -1037,18 +1025,7 @@ void init_callbacks(
     //////////////////////////////////////////////////////////////////
     if (callback.has_summary()) {
       const lbann_data::CallbackSummary& c = callback.summary();
-      if (master) {
-        cout << "adding summary callback with dir: " << c.dir() << endl;
-      }
-      if (c.dir() != "none" && !summarizer) {
-        summarizer = new lbann_summary(c.dir(), comm);
-      }
-      if (!summarizer) {
-        throw lbann_exception(
-          std::string {} + __FILE__ + " " + std::to_string(__LINE__) + " :: " +
-          "summary callback requires a valid summarizer directory");
-      }
-      lbann_callback_summary *summary_cb = new lbann_callback_summary(summarizer, c.interval());
+      lbann_callback_summary *summary_cb = new lbann_callback_summary(summarizer, c.batch_interval(), c.mat_interval());
       model->add_callback(summary_cb);
     }
 
@@ -1154,11 +1131,6 @@ void init_callbacks(
       if (master) {
         cout << "adding imcomm callback\n";
       }
-      /*if (c.summary_dir() != "none" && !summarizer) {
-        summarizer = new lbann_summary(c.summary_dir(), comm);
-      }
-      */
-      summarizer = new lbann_summary(".", comm);
       std::stringstream s(c.layers());
       std::unordered_set<uint> which;
       uint a;
@@ -1176,7 +1148,7 @@ void init_callbacks(
           }
           which.insert(layer_mapping.find(a)->second);
           if (master) {
-            cout << "CALLBACK: imcomm: index " << a << " from prototext file maps to model layer " << layer_mapping.find(a)->second << endl;
+            cout << "CALLBACK: imcomm: index " << a << " from prototext file maps to model layer " << layer_mapping.find(a)->second << "; layer name: " << the_layers[a]->get_name() << std::endl;
           }
         }
       }
@@ -1264,11 +1236,11 @@ void init_callbacks(
       }
       lbann_callback_debug *debug_cb = nullptr;
       if(c.phase() == "train") {
-        debug_cb = new lbann_callback_debug(execution_mode::training);
+        debug_cb = new lbann_callback_debug(execution_mode::training, summarizer);
       } else if (c.phase() == "validation") {
-        debug_cb = new lbann_callback_debug(execution_mode::validation);
+        debug_cb = new lbann_callback_debug(execution_mode::validation, summarizer);
       } else if (c.phase() == "test") {
-        debug_cb = new lbann_callback_debug(execution_mode::testing);
+        debug_cb = new lbann_callback_debug(execution_mode::testing, summarizer);
       } else {
         debug_cb = new lbann_callback_debug();
       }
@@ -1382,6 +1354,20 @@ void init_callbacks(
       lbann_callback_step_minibatch(c.starting_mbsize(), c.step());
       model->add_callback(step_mb_cb);
     }
+
+    //////////////////////////////////////////////////////////////////
+    // CALLBACK: gradient_check
+    //////////////////////////////////////////////////////////////////
+    if (callback.has_gradient_check()) {
+      const lbann_data::CallbackGradientCheck& c = callback.gradient_check();
+      if (master) {
+        std::cout << "adding gradient_check callback" << std::endl;
+      }
+      lbann_callback_gradient_check *gradient_check_cb = new
+      lbann_callback_gradient_check(c.step_size(), c.verbose(), c.fail_on_error());
+      model->add_callback(gradient_check_cb);
+    }
+
   }
 
 }
@@ -1395,19 +1381,19 @@ sequential_model *init_model(lbann_comm *comm, optimizer_factory *optimizer_fac,
 
   const lbann_data::Model& m = p.model();
   const string name = m.name();
-  const string objective_function = m.objective_function();
+  const string obj_fn_name = m.objective_function();
   uint mini_batch_size = m.mini_batch_size();
 
   //instantiate the objective function
-  objective_functions::objective_fn *obj;
-  if (objective_function == "categorical_cross_entropy") {
-    obj = new objective_functions::categorical_cross_entropy(comm);
-  } else if (objective_function == "mean_squared_error") {
-    obj = new objective_functions::mean_squared_error(comm);
+  objective_functions::objective_function *obj;
+  if (obj_fn_name == "cross_entropy") {
+    obj = new objective_functions::cross_entropy();
+  } else if (obj_fn_name == "mean_squared_error") {
+    obj = new objective_functions::mean_squared_error();
   } else {
     err << __FILE__ << " " << __LINE__
-        << " :: init_model() - unknown objective function name: " << name << endl
-        << "; should be one of: categorical_cross_entropy, mean_squared_error";
+        << " :: init_model() - unknown objective function name: " << obj_fn_name
+        << std::endl << "; should be one of: cross_entropy, mean_squared_error";
     throw lbann_exception(err.str());
   }
 
@@ -1528,6 +1514,17 @@ void init_data_readers(bool master, const lbann_data::LbannPB& p, std::map<execu
       */
     } else if (name == "nci") {
       reader = new data_reader_nci(mini_batch_size, shuffle);
+    } else if (name == "csv") {
+      csv_reader* reader_csv = new csv_reader(mini_batch_size, shuffle);
+      reader_csv->set_label_col(readme.label_col());
+      reader_csv->set_response_col(readme.response_col());
+      reader_csv->disable_labels(readme.disable_labels()); 
+      reader_csv->enable_responses(readme.disable_reponses());
+      reader_csv->set_separator(readme.separator()[0]);
+      reader_csv->set_skip_cols(readme.skip_cols());
+      reader_csv->set_skip_rows(readme.skip_rows());
+      reader_csv->set_has_header(readme.has_header());
+      reader = reader_csv;
     } else if (name == "numpy") {
       reader = new numpy_reader(mini_batch_size, shuffle);
     } else if (name == "cifar10") {
@@ -1567,6 +1564,7 @@ void init_data_readers(bool master, const lbann_data::LbannPB& p, std::map<execu
     reader->unit_variance( preprocessor.unit_variance() );
     reader->scale( preprocessor.scale() );
     reader->z_score( preprocessor.z_score() );
+    reader->add_noise( preprocessor.noise_factor() );
     if (preprocessor.disable_augmentation()) {
       reader->disable_augmentation();
     }
@@ -1601,6 +1599,9 @@ void init_data_readers(bool master, const lbann_data::LbannPB& p, std::map<execu
       } else if (name == "nci") {
         reader_validation = new data_reader_nci(mini_batch_size, shuffle);
         (*(data_reader_nci *)reader_validation) = (*(data_reader_nci *)reader);
+      } else if (name == "csv") {
+        reader_validation = new csv_reader(mini_batch_size, shuffle);
+        (*(csv_reader *)reader_validation) = (*(csv_reader *)reader);
       } else if (name == "numpy") {
         reader_validation = new numpy_reader(mini_batch_size, shuffle);
         (*(numpy_reader *)reader_validation) = (*(numpy_reader *)reader);
@@ -1625,7 +1626,7 @@ void init_data_readers(bool master, const lbann_data::LbannPB& p, std::map<execu
       reader_validation = new imagenet_reader_single_cv(mini_batch_size, shuffle);
       */
 
-      reader_validation->set_role("validate");
+      reader_validation->swap_role("validate");
       reader_validation->use_unused_index_set();
 
       if (master) {
@@ -1656,6 +1657,8 @@ void read_prototext_file(string fn, lbann_data::LbannPB& pb)
     err <<  __FILE__ << " " << __LINE__ << " :: failed to read or parse prototext file: " << fn << endl;
     throw lbann_exception(err.str());
   }
+  input->Close();
+  delete input;
 }
 
 bool write_prototext_file(const char *fn, lbann_data::LbannPB& pb)

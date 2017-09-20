@@ -155,8 +155,6 @@ int main(int argc, char *argv[]) {
 
     // Construct optimizer
     optimizer_factory *optimizer_fac = init_optimizer_factory(comm, cudnn, pb);
-    
-
 
     // User feedback
     print_parameters(comm, pb);
@@ -192,9 +190,20 @@ int main(int argc, char *argv[]) {
     //@todo
     //model->restartShared();
 
+    if (comm->am_world_master()) {
+      optimizer *o = optimizer_fac->create_optimizer();
+      cout << "\nOptimizer:\n" << o->get_description() << endl << endl;
+      delete o;
+      std::vector<Layer *>& layers = model->get_layers();
+      for (size_t h=0; h<layers.size(); h++) {
+        std::cout << h << " " << layers[h]->get_description() << endl;
+      }
+    }
+
     ///////////////////////////////////////////////////////////////////
     // main loop for training/testing
     ///////////////////////////////////////////////////////////////////
+
 #ifndef LBANN_SEQUENTIAL_CONSISTENCY
     // Under normal conditions, reinitialize the random number generator so
     // that regularization techniques (e.g. dropout) generate unique patterns
@@ -210,14 +219,17 @@ int main(int argc, char *argv[]) {
                 << std::endl;
     }
 #endif
-    while (model->get_cur_epoch() < pb_model->num_epochs()) {
-      model->train(1, true);
-      model->evaluate(execution_mode::testing);
-    }
+
+    // Train model
+    model->train(pb_model->num_epochs());
+
+    // Evaluate model on test set
+    model->evaluate(execution_mode::testing);
 
     // @todo: figure out and implement coherent strategy
     // for freeing dynamically allocated memory
     delete model;
+    delete optimizer_fac;
 
   } catch (lbann_exception& e) {
     lbann_report_exception(e, comm);

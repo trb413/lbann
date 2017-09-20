@@ -30,24 +30,59 @@
 #define LBANN_LAYER_LEARNING_HPP_INCLUDED
 
 #include "lbann/layers/layer.hpp"
+#include "lbann/layers/optimizable_layer.hpp"
 #include <string>
 #include <vector>
 
 namespace lbann {
 
-class learning : public Layer {
+class learning : public Layer, public optimizable_layer {
  protected:
   optimizer  *m_optimizer;
 
-  ElMat *m_weights;             ///< Weight matrix (computes weight sum of inputs ((# neurons) x (# previous layer's neurons))
-  ElMat *m_weights_gradient;    ///< Gradient w.r.t. weight matrix ((# neurons) x (# previous layer's neurons))
+  AbsDistMat *m_weights;             ///< Weight matrix (computes weight sum of inputs ((# neurons) x (# previous layer's neurons))
+  AbsDistMat *m_weights_gradient;    ///< Gradient w.r.t. weight matrix ((# neurons) x (# previous layer's neurons))
 
   /** Factor for L2 regularization; 0 to disable. */
   DataType m_l2_regularization_factor = DataType(0);
 
-  /** Apply L2 regularization to the current gradient. */
-  virtual void l2_regularize() {
-    if (m_l2_regularization_factor > DataType(0)) {
+  /** Add L2 regularization term to objective function. */
+  virtual void l2_regularize_objective_function() {
+    if (m_l2_regularization_factor != DataType(0)) {
+
+      // Get local weight data
+      const DataType *weights_buffer = m_weights->LockedBuffer();
+      const int weights_ldim = m_weights->LDim();
+      const int local_height = m_weights->LocalHeight();
+      const int local_width = m_weights->LocalWidth();
+
+      // Compute sum of squares
+      DataType sum = 0;
+      const int block_size = std::max((int) (64 / sizeof(DataType)), 1);
+      #pragma omp parallel for reduction(+:sum) collapse(2)
+      for(int col = 0; col < local_width; ++col) {
+        for(int block_start = 0; block_start < local_height; block_start += block_size) {
+          double block_sum = 0;
+          const int block_end = std::min(block_start + block_size, local_height);
+          for(int row = block_start; row < block_end; ++row) {
+              const DataType x = weights_buffer[row + col * weights_ldim];
+              block_sum += x * x;
+          }
+          sum += block_sum;
+        }
+      }
+      sum = El::mpi::AllReduce(sum, m_weights->DistComm());
+      
+      // Add regularization term to objective function
+      const DataType regularization_term = m_l2_regularization_factor * sum / 2;
+      this->m_neural_network_model->m_obj_fn->add_to_value(regularization_term);
+
+    }
+  }
+
+  /** Add L2 regularization term to gradient. */
+  virtual void l2_regularize_gradient() {
+    if (m_l2_regularization_factor != DataType(0)) {
       El::Axpy(m_l2_regularization_factor, *m_weights, *m_weights_gradient);
     }
   }
@@ -85,14 +120,15 @@ class learning : public Layer {
   }
 
   virtual ~learning() {
+    delete m_optimizer;
     delete m_weights;
     delete m_weights_gradient;
   }
 
   /** Return the weights associated with this layer. */
-  virtual ElMat& get_weights() const { return *m_weights; }
+  virtual AbsDistMat& get_weights() const { return *m_weights; }
   /** Return the gradients associated with this layer. */
-  virtual ElMat& get_weights_gradient() const { return *m_weights_gradient; }
+  virtual AbsDistMat& get_weights_gradient() const { return *m_weights_gradient; }
 
   template <data_layout T_layout>
   inline void initialize_distributed_matrices();
@@ -133,13 +169,13 @@ class learning : public Layer {
   virtual void summarize_matrices(lbann_summary& summarizer, int step) {
     Layer::summarize_matrices(summarizer, step);
     std::string prefix = "layer" + std::to_string(static_cast<long long>(m_index)) + "/weights/";
-    const ElMat& wb = get_weights();
+    const AbsDistMat& wb = get_weights();
     summarizer.reduce_mean(prefix + "mean", wb, step);
     summarizer.reduce_min(prefix + "min", wb, step);
     summarizer.reduce_max(prefix + "max", wb, step);
     summarizer.reduce_stdev(prefix + "stdev", wb, step);
     prefix = "layer" + std::to_string(static_cast<long long>(m_index)) + "/weights_gradient/";
-    const ElMat& wb_d = get_weights_gradient();
+    const AbsDistMat& wb_d = get_weights_gradient();
     summarizer.reduce_mean(prefix + "mean", wb_d, step);
     summarizer.reduce_min(prefix + "min", wb_d, step);
     summarizer.reduce_max(prefix + "max", wb_d, step);
@@ -159,7 +195,7 @@ class learning : public Layer {
   }
 
   /** Return the layer's optimizer. */
-  virtual optimizer *get_optimizer() const {
+  optimizer *get_optimizer() const override {
     return m_optimizer;
   }
 
@@ -216,33 +252,20 @@ class learning : public Layer {
     return true;
   }
 
-
- protected:
-
-  /** Setup views of the matrices for the layer's forward propagation. */
-  virtual void fp_set_std_matrix_view() {
-    Layer::fp_set_std_matrix_view();
-  }
-
-#if 0
-  /** Setup views of the matrices for the layer's backward propagation. */
-  virtual void bp_set_std_matrix_view();
-#endif
-
 };
 
 /// Matrices should be in MC,MR distributions
 template<> inline void learning::initialize_distributed_matrices<data_layout::MODEL_PARALLEL>() {
   Layer::initialize_distributed_matrices<data_layout::MODEL_PARALLEL>();
-  m_weights             = new DistMat(m_comm->get_model_grid());
-  m_weights_gradient    = new DistMat(m_comm->get_model_grid());
+  m_weights          = new DistMat(m_comm->get_model_grid());
+  m_weights_gradient = new DistMat(m_comm->get_model_grid());
 }
 
 /// Weight matrices should be in Star,Star and data matrices Star,VC distributions
 template<> inline void learning::initialize_distributed_matrices<data_layout::DATA_PARALLEL>() {
   Layer::initialize_distributed_matrices<data_layout::DATA_PARALLEL>();
-  m_weights             = new StarMat(m_comm->get_model_grid());
-  m_weights_gradient    = new StarMat(m_comm->get_model_grid());
+  m_weights          = new StarMat(m_comm->get_model_grid());
+  m_weights_gradient = new StarMat(m_comm->get_model_grid());
 }
 
 }  // namespace lbann

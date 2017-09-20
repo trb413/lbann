@@ -20,4 +20,6 @@ add_sources(data_reader.cpp
             data_reader_numpy.cpp
             data_reader_synthetic.cpp
             data_reader_csv.cpp
+            data_reader_merge_features.cpp
+            data_reader_merge_samples.cpp
 )

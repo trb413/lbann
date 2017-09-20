@@ -73,11 +73,6 @@ class Layer {
    * printing if needed.
    */
   virtual void epoch_print() const {}
-  /**
-   * Called on every layer at the end of each epoch to give it the chance to
-   * reset/clean up.
-   */
-  virtual void epoch_reset() {}
   virtual DataType checkGradientMB(Layer& PrevLayer, DataType Epsilon=1e-4) {
     return 0.0;
   };
@@ -98,6 +93,14 @@ class Layer {
 
   /** Return this layer's name */
   virtual std::string get_name() const = 0;
+  
+  /** Returns a description of the parameters passed to the ctor */
+  virtual std::string get_description() const { 
+    return std::string {} + get_name() + " - DESCRIPTION NOT IMPLEMENTED FOR THIS LAYER";
+  }
+
+  /** Returns a string description of the data_layout */
+  std::string get_data_layout_string(data_layout d) const; 
 
   /** Return the layer index. */
   inline int get_index() const {
@@ -143,7 +146,7 @@ class Layer {
       layer has to overrride this with its T_layout template parameter */
   virtual data_layout get_data_layout() const = 0;
   /** Return (a view of) the activations matrix for this layer. */
-  virtual ElMat& get_activations() {
+  virtual AbsDistMat& get_activations() {
     return *m_activations_v;
   }
   /** Reset layer stat counters. */
@@ -205,20 +208,20 @@ class Layer {
 
   execution_mode  m_execution_mode;
 
-  ElMat *m_prev_error_signal;    ///< Local copy of the error signal from "previous" layer ((# neurons) x mini-batch size)
+  AbsDistMat *m_prev_error_signal;    ///< Local copy of the error signal from "previous" layer ((# neurons) x mini-batch size)
 
-  ElMat *m_activations;          ///< Activations - non-linearity applied to weighted sum ((# neurons) x mini-batch size)
-  ElMat *m_activations_v;        ///< View of active columns in activations matrix
+  AbsDistMat *m_activations;          ///< Activations - non-linearity applied to weighted sum ((# neurons) x mini-batch size)
+  AbsDistMat *m_activations_v;        ///< View of active columns in activations matrix
 
   model *m_neural_network_model;
 
   const Layer *m_prev_layer;  ///< Pointer to previous layer
   const Layer *m_next_layer;  ///< Pointer to next layer
 
-  ElMat *m_error_signal;        ///< Error signal to "next" layer (i.e. deltas) ((# neurons) x mini-batch size)
-  ElMat *m_error_signal_v;      ///< View of active columns in error signal matrix
+  AbsDistMat *m_error_signal;        ///< Error signal to "next" layer (i.e. deltas) ((# neurons) x mini-batch size)
+  AbsDistMat *m_error_signal_v;      ///< View of active columns in error signal matrix
 
-  ElMat *m_prev_activations;    ///< Local view or copy of the activations from the "previous" layer ((# previous layer's neurons) x mini-batch size)
+  AbsDistMat *m_prev_activations;    ///< Local view or copy of the activations from the "previous" layer ((# previous layer's neurons) x mini-batch size)
 
   /** Setup views of the matrices for the layer's forward propagation. */
   virtual void fp_set_std_matrix_view();

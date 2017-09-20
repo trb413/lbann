@@ -43,21 +43,22 @@ imagenet_reader::imagenet_reader(int batchSize, bool shuffle)
 
   // Preallocate buffer space for each thread.
   m_pixel_bufs.resize(omp_get_max_threads());
-  int num_channel_values = m_image_width * m_image_height * m_image_num_channels;
+  const int num_channel_values = m_image_width * m_image_height * m_image_num_channels;
   for (int i = 0; i < omp_get_max_threads(); ++i) {
     m_pixel_bufs[i].resize(num_channel_values * sizeof(unsigned char));
   }
 }
 
 bool imagenet_reader::fetch_datum(Mat& X, int data_id, int mb_idx, int tid) {
-  int num_channel_values = m_image_width * m_image_height * m_image_num_channels;
-  std::string imagepath = get_file_dir() + image_list[data_id].first;
+  const int num_channel_values = m_image_width * m_image_height * m_image_num_channels;
+  const std::string imagepath = get_file_dir() + m_image_list[data_id].first;
 
   int width = 224;
   int height = 224;
   unsigned char *pixels = m_pixel_bufs[tid].data();
-  bool flip = std::bernoulli_distribution()(get_fast_generator());
-  bool ret = lbann::image_utils::loadJPG(imagepath.c_str(), width, height, flip, pixels);
+  bool is_training = m_role == "train";
+  bool flip = is_training && std::bernoulli_distribution()(get_fast_generator());
+  bool ret = lbann::image_utils::loadJPG(imagepath, width, height, flip, pixels, is_training);
   if(!ret) {
     throw lbann_exception(std::string{} + __FILE__ + " " + std::to_string(__LINE__)
                           + "ImageNet: image_utils::loadJPG failed to load - " 
@@ -76,21 +77,22 @@ bool imagenet_reader::fetch_datum(Mat& X, int data_id, int mb_idx, int tid) {
   auto pixel_col = X(El::IR(0, X.Height()), El::IR(mb_idx, mb_idx + 1));
   augment(pixel_col, m_image_height, m_image_width, m_image_num_channels);
   normalize(pixel_col, m_image_num_channels);
+  pixel_noise(pixel_col); //add noise to image, disable by default
 
   return true;
 }
 
 bool imagenet_reader::fetch_label(Mat& Y, int data_id, int mb_idx, int tid) {
-  int label = image_list[data_id].second;
+  int label = m_image_list[data_id].second;
   Y.Set(label, mb_idx, 1);
   return true;
 }
 
 void imagenet_reader::load() {
-  std::string imageDir = get_file_dir();
-  std::string imageListFile = get_data_filename();
+  //const std::string imageDir = get_file_dir();
+  const std::string imageListFile = get_data_filename();
 
-  image_list.clear();
+  m_image_list.clear();
 
   // load image list
   FILE *fplist = fopen(imageListFile.c_str(), "rt");
@@ -106,13 +108,13 @@ void imagenet_reader::load() {
     if (fscanf(fplist, "%s%d", imagepath, &imagelabel) <= 1) {
       break;
     }
-    image_list.push_back(std::make_pair(imagepath, imagelabel));
+    m_image_list.push_back(std::make_pair(imagepath, imagelabel));
   }
   fclose(fplist);
 
   // reset indices
   m_shuffled_indices.clear();
-  m_shuffled_indices.resize(image_list.size());
+  m_shuffled_indices.resize(m_image_list.size());
   std::iota(m_shuffled_indices.begin(), m_shuffled_indices.end(), 0);
 
   select_subset_of_data();
