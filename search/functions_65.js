@@ -10,5 +10,6 @@ var searchData=
   ['evaluate_5fphase',['evaluate_phase',['../classlbann_1_1greedy__layerwise__autoencoder.html#a67182a4d151a780452c14ff487e52089',1,'lbann::greedy_layerwise_autoencoder']]],
   ['exchange',['exchange',['../classlbann_1_1lbann__callback__ltfb.html#a2b6d87cf89e3d65ce5730aa8a052eee8',1,'lbann::lbann_callback_ltfb']]],
   ['exists',['exists',['../namespacelbann.html#aefae2a9fc9d742ece0fa8ca7ed9ee137',1,'lbann']]],
+  ['exponential_5flayer',['exponential_layer',['../classlbann_1_1exponential__layer.html#a01b86b944b834700f9dbf2b0433d1016',1,'lbann::exponential_layer']]],
   ['export_5fimage',['export_image',['../classlbann_1_1image__utils.html#a155896efaea4c03897a3a2a6c82cf7b2',1,'lbann::image_utils']]]
 ];

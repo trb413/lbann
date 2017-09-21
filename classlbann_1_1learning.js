@@ -4,10 +4,11 @@ var classlbann_1_1learning =
     [ "learning", "classlbann_1_1learning.html#a5e6cb1233ee7dbd62353b00a3b911fb1", null ],
     [ "~learning", "classlbann_1_1learning.html#ac72ee98b695d3d292fce5e3eb0bb7fda", null ],
     [ "check_setup", "classlbann_1_1learning.html#a43412ff0de7514a8b29309e660777ef5", null ],
-    [ "fp_set_std_matrix_view", "classlbann_1_1learning.html#a8620f7370a6f13dbf3978b6328e319fb", null ],
     [ "get_optimizer", "classlbann_1_1learning.html#abdfc185393c0aebf5253737c30e74dee", null ],
-    [ "get_weights", "classlbann_1_1learning.html#a5f82c83cc93c88350364d7e7dd2db13d", null ],
-    [ "get_weights_gradient", "classlbann_1_1learning.html#a61bfaebb32af9ba8e284fa96137f9883", null ],
+    [ "get_weights", "classlbann_1_1learning.html#aa13915d8b19f23e2fd0a8c4af5cfed6b", null ],
+    [ "get_weights_gradient", "classlbann_1_1learning.html#a8e4b716c60b2abb53453046ba855726d", null ],
+    [ "group_lasso_regularize_gradient", "classlbann_1_1learning.html#aa40e32648b2e3330a11994b44a289d32", null ],
+    [ "group_lasso_regularize_objective_function", "classlbann_1_1learning.html#a1dff6148487b3ffd0ce87af562ae0c5e", null ],
     [ "initialize_distributed_matrices", "classlbann_1_1learning.html#a83f61d56f6998b972707b97df65a451e", null ],
     [ "l2_regularize_gradient", "classlbann_1_1learning.html#a2ba22cdd7a50a53fd8e4b45290d2b982", null ],
     [ "l2_regularize_objective_function", "classlbann_1_1learning.html#affe6578b1894a229adb57170dd51403e", null ],
@@ -19,8 +20,9 @@ var classlbann_1_1learning =
     [ "set_l2_regularization_factor", "classlbann_1_1learning.html#a9dce0c0e635228395de1e1864b297f5f", null ],
     [ "summarize_matrices", "classlbann_1_1learning.html#ab874a3a28c20aebc87b794e7c6e5e875", null ],
     [ "weight_initialization_name", "classlbann_1_1learning.html#a4f4110a232030c1e1382bfd68ebbe08b", null ],
+    [ "m_group_lasso_regularization_factor", "classlbann_1_1learning.html#aaec5352fbcefa676c50b5d39436724c4", null ],
     [ "m_l2_regularization_factor", "classlbann_1_1learning.html#a9d464e24476678f9b11b3d992c60ec30", null ],
     [ "m_optimizer", "classlbann_1_1learning.html#a82d93dc3b859e0558082bdd535b6ecde", null ],
-    [ "m_weights", "classlbann_1_1learning.html#a356dc0069b12d1007721c2548056d429", null ],
-    [ "m_weights_gradient", "classlbann_1_1learning.html#aa64f62a5d3f49702745d8bad953ba7e6", null ]
+    [ "m_weights", "classlbann_1_1learning.html#ad0fd862a6a637ce894475c600f729b0b", null ],
+    [ "m_weights_gradient", "classlbann_1_1learning.html#ac7b914d69bef467cbb4de80154acae12", null ]
 ];

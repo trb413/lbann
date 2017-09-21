@@ -3,7 +3,7 @@ var classlbann_1_1metrics_1_1top__k__categorical__accuracy =
     [ "top_k_categorical_accuracy", "classlbann_1_1metrics_1_1top__k__categorical__accuracy.html#aa5ba28ea9f2a0daf442fde0a8196db24", null ],
     [ "top_k_categorical_accuracy", "classlbann_1_1metrics_1_1top__k__categorical__accuracy.html#a4e3da555ff9db3fb6c4d8ee6a5e4f462", null ],
     [ "~top_k_categorical_accuracy", "classlbann_1_1metrics_1_1top__k__categorical__accuracy.html#a607fc666f8b7d7efde207636f46b72bd", null ],
-    [ "compute_metric", "classlbann_1_1metrics_1_1top__k__categorical__accuracy.html#a054e7cbe53e9a6c00ac19654f2187b8b", null ],
+    [ "compute_metric", "classlbann_1_1metrics_1_1top__k__categorical__accuracy.html#a381d36a52704373985fb5a9cf939022f", null ],
     [ "copy", "classlbann_1_1metrics_1_1top__k__categorical__accuracy.html#a8d0d7988e93ba1ef5b3bc155f2f6c6e1", null ],
     [ "display_unit", "classlbann_1_1metrics_1_1top__k__categorical__accuracy.html#a7dca989a82a37ea2ee6cb024b78d7c61", null ],
     [ "fp_set_std_matrix_view", "classlbann_1_1metrics_1_1top__k__categorical__accuracy.html#a94d5ea38f17033b9224cccb31780debf", null ],

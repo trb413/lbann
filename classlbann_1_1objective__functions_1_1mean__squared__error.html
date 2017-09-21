@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">9bd98b7-ci269</span>
+   &#160;<span id="projectnumber">1a228ae-ci286</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -290,30 +290,33 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Compute derivative of mean squared error objective function. </p>
-<p>Compute the gradient of the mean squared error objective function. Given a prediction <img class="formulaInl" alt="$y$" src="form_2.png"/> and ground truth <img class="formulaInl" alt="$\hat{y}$" src="form_3.png"/>, the gradient of the mean squared error is </p>
-
+<p>Compute the gradient of the mean squared error objective function. Given a prediction <img class="formulaInl" alt="$y$" src="form_2.png"/> and ground truth <img class="formulaInl" alt="$\hat{y}$" src="form_3.png"/>, the gradient of the mean squared error is</p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ \nabla_y MSE (y,\hat{y}) = \frac{2}{n} (y - \hat{y}) \]" src="form_5.png"/>
+</p>
+ 
 <p>Implements <a class="el" href="classlbann_1_1objective__functions_1_1objective__function.html#ae5f13371d8ae622ea53dc1a43d35a6d1">lbann::objective_functions::objective_function</a>.</p>
 
-<p>Definition at line <a class="el" href="mean__squared__error_8cpp_source.html#l00070">70</a> of file <a class="el" href="mean__squared__error_8cpp_source.html">mean_squared_error.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                                {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="comment">// Get local matrices and matrix parameters</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; predictions_local = predictions.LockedMatrix();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; ground_truth_local = ground_truth.LockedMatrix();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; gradient_local = gradient.Matrix();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> height = predictions.Height();</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="comment">// Compute gradient</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  El::IndexDependentFill(gradient_local,</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                         (std::function&lt;<a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(El::Int,El::Int)&gt;)</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                         ([&amp;predictions_local, &amp;ground_truth_local, height]</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                          (El::Int r, El::Int c) -&gt; <a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                           <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> pred_val = predictions_local(r,c);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                           <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> true_val = ground_truth_local(r,c);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                           <span class="keywordflow">return</span> 2 * (pred_val - true_val) / height;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                         }));</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<p>Definition at line <a class="el" href="mean__squared__error_8cpp_source.html#l00072">72</a> of file <a class="el" href="mean__squared__error_8cpp_source.html">mean_squared_error.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                                {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="comment">// Get local matrices and matrix parameters</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; predictions_local = predictions.LockedMatrix();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; ground_truth_local = ground_truth.LockedMatrix();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; gradient_local = gradient.Matrix();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> height = predictions.Height();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="comment">// Compute gradient</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  El::IndexDependentFill(gradient_local,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                         (std::function&lt;<a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(El::Int,El::Int)&gt;)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                         ([&amp;predictions_local, &amp;ground_truth_local, height]</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                          (El::Int r, El::Int c) -&gt; <a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                           <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> pred_val = predictions_local(r,c);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                           <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> true_val = ground_truth_local(r,c);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                           <span class="keywordflow">return</span> 2 * (pred_val - true_val) / height;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                         }));</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 <div class="ttc" id="base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00040">base.hpp:40</a></div></div>
 <div class="ttc" id="base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00045">base.hpp:45</a></div></div>
 </div><!-- fragment -->
@@ -350,7 +353,11 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Compute the mean squared error objective function. Given a prediction <img class="formulaInl" alt="$y$" src="form_2.png"/> and ground truth <img class="formulaInl" alt="$\hat{y}$" src="form_3.png"/>, the mean squared error is </p>
+<p>Compute the mean squared error objective function. Given a prediction <img class="formulaInl" alt="$y$" src="form_2.png"/> and ground truth <img class="formulaInl" alt="$\hat{y}$" src="form_3.png"/>, the mean squared error is</p>
+<p class="formulaDsp">
+<img class="formulaDsp" alt="\[ MSE(y,\hat{y}) = \frac{1}{n} \lVert y - \hat{y} \rVert^2_2 \]" src="form_4.png"/>
+</p>
+<p> This function updates the objective function value with the mean value of the mean squared error across the mini-batch. </p>
 
 <p>Implements <a class="el" href="classlbann_1_1objective__functions_1_1objective__function.html#a4ae7928b814743c090a51dc99667d38a">lbann::objective_functions::objective_function</a>.</p>
 
@@ -365,30 +372,33 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">const</span> El::Int local_height = predictions_local.Height();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">const</span> El::Int local_width = predictions_local.Width();</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">// Compute sum of squared errors with Kahan summation</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">// Compute sum of squared errors</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">double</span> sum = 0;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">double</span> correction = 0;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">for</span>(El::Int col = 0; col &lt; local_width; ++col) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">for</span>(El::Int row = 0; row &lt; local_height; ++row) {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">double</span> true_val = ground_truth_local(row, col);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">double</span> pred_val = predictions_local(row, col);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">double</span> error = pred_val - true_val;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordtype">double</span> term = error * error;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      term += correction;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">double</span> next_sum = sum + term;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      correction = term - (next_sum - sum);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      sum = next_sum;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="comment">// Compute mean squared error</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">double</span> mse = sum / (height * width);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  mse = El::mpi::AllReduce(mse, predictions.DistComm());</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="comment">// Update objective function value</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="classlbann_1_1objective__functions_1_1objective__function.html#acb4c26e86d98ff3e510fa9c9ca02a332">add_to_value</a>(mse);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">const</span> El::Int block_size = std::max((<span class="keywordtype">int</span>) (64 / <span class="keyword">sizeof</span>(<a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>)), 1);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">  #pragma omp parallel for reduction(+:sum) collapse(2)</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span>(El::Int col = 0; col &lt; local_width; ++col) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">for</span>(El::Int block_start = 0; block_start &lt; local_height; block_start += block_size) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordtype">double</span> block_sum = 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      <span class="keyword">const</span> El::Int block_end = std::min(block_start + block_size, local_height);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <span class="keywordflow">for</span>(El::Int row = block_start; row &lt; block_end; ++row) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> true_val = ground_truth_local(row, col);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> pred_val = predictions_local(row, col);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> error = true_val - pred_val;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        block_sum += error * error;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      sum += block_sum;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="comment">// Compute mean squared error</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keywordtype">double</span> mse = sum / (height * width);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  mse = El::mpi::AllReduce(mse, predictions.DistComm());</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="comment">// Update objective function value</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="classlbann_1_1objective__functions_1_1objective__function.html#acb4c26e86d98ff3e510fa9c9ca02a332">add_to_value</a>(mse);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="ttc" id="base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00040">base.hpp:40</a></div></div>
 <div class="ttc" id="classlbann_1_1objective__functions_1_1objective__function_html_acb4c26e86d98ff3e510fa9c9ca02a332"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__function.html#acb4c26e86d98ff3e510fa9c9ca02a332">lbann::objective_functions::objective_function::add_to_value</a></div><div class="ttdeci">void add_to_value(double value)</div><div class="ttdef"><b>Definition:</b> <a href="objective__function_8cpp_source.html#l00037">objective_function.cpp:37</a></div></div>
 <div class="ttc" id="base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00045">base.hpp:45</a></div></div>
 </div><!-- fragment -->
@@ -506,7 +516,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="namespacelbann_1_1objective__functions.html">objective_functions</a></li><li class="navelem"><a class="el" href="classlbann_1_1objective__functions_1_1mean__squared__error.html">mean_squared_error</a></li>
-    <li class="footer">Generated on Tue Sep 19 2017 17:12:47 for LBANN by
+    <li class="footer">Generated on Thu Sep 21 2017 13:48:16 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

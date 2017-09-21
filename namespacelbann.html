@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">9bd98b7-ci269</span>
+   &#160;<span id="projectnumber">1a228ae-ci286</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -229,6 +229,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1elu__layer.html">elu_layer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1exponential__layer.html">exponential_layer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1id__layer.html">id_layer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1leaky__relu__layer.html">leaky_relu_layer</a></td></tr>
@@ -407,11 +409,9 @@ Functions</h2></td></tr>
 <tr class="separator:ab5665dc52c53faca0caa55b509e2e654"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64a8c629fb29a62ebf9bd1fca82fa6a8"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:a64a8c629fb29a62ebf9bd1fca82fa6a8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelbann.html#a64a8c629fb29a62ebf9bd1fca82fa6a8">Layer::initialize_distributed_matrices&lt; data_layout::MODEL_PARALLEL &gt;</a> ()</td></tr>
-<tr class="memdesc:a64a8c629fb29a62ebf9bd1fca82fa6a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrices should be in MC,MR distributions.  <a href="#a64a8c629fb29a62ebf9bd1fca82fa6a8">More...</a><br/></td></tr>
 <tr class="separator:a64a8c629fb29a62ebf9bd1fca82fa6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17067c5463ff72d7acfe1e7df1c79781"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:a17067c5463ff72d7acfe1e7df1c79781"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelbann.html#a17067c5463ff72d7acfe1e7df1c79781">Layer::initialize_distributed_matrices&lt; data_layout::DATA_PARALLEL &gt;</a> ()</td></tr>
-<tr class="memdesc:a17067c5463ff72d7acfe1e7df1c79781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weight matrices should be in Star,Star and data matrices Star,VC distributions.  <a href="#a17067c5463ff72d7acfe1e7df1c79781">More...</a><br/></td></tr>
 <tr class="separator:a17067c5463ff72d7acfe1e7df1c79781"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35a39e949cfd1d7f8c15f94e4d44ecff"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#a35a39e949cfd1d7f8c15f94e4d44ecff">write_latest</a> (const char *dir, const char *name, int epoch, int train)</td></tr>
 <tr class="memdesc:a35a39e949cfd1d7f8c15f94e4d44ecff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a "latest" file which records epoch number and sample offset for the most recent checkpoint.  <a href="#a35a39e949cfd1d7f8c15f94e4d44ecff">More...</a><br/></td></tr>
@@ -2903,19 +2903,24 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Weight matrices should be in Star,Star and data matrices Star,VC distributions. </p>
-<p>Instantiate these view objects but do not allocate data for them </p>
-
-<p>Definition at line <a class="el" href="layer_8cpp_source.html#l00058">58</a> of file <a class="el" href="layer_8cpp_source.html">layer.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                                                      {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  m_prev_activations    = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a763b3164342a5d73db851e85c76d385a">StarVCMat</a>(m_comm-&gt;get_model_grid());</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  m_activations         = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a763b3164342a5d73db851e85c76d385a">StarVCMat</a>(m_comm-&gt;get_model_grid());</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  m_prev_error_signal   = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a763b3164342a5d73db851e85c76d385a">StarVCMat</a>(m_comm-&gt;get_model_grid());</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  m_error_signal        = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a763b3164342a5d73db851e85c76d385a">StarVCMat</a>(m_comm-&gt;get_model_grid());</div>
+<p>Definition at line <a class="el" href="layer_8cpp_source.html#l00062">62</a> of file <a class="el" href="layer_8cpp_source.html">layer.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                                                      {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  m_activations_v       = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a763b3164342a5d73db851e85c76d385a">StarVCMat</a>(m_comm-&gt;get_model_grid());</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  m_error_signal_v      = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a763b3164342a5d73db851e85c76d385a">StarVCMat</a>(m_comm-&gt;get_model_grid());</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="comment">// Instantiate matrices with STAR,VC distribution</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="base_8hpp.html#a4c600bf682fbf8018385607476e4bd13">El::Grid</a>&amp; grid = m_comm-&gt;get_model_grid();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  m_prev_activations  = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a763b3164342a5d73db851e85c76d385a">StarVCMat</a>(grid);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  m_activations       = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a763b3164342a5d73db851e85c76d385a">StarVCMat</a>(grid);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  m_prev_error_signal = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a763b3164342a5d73db851e85c76d385a">StarVCMat</a>(grid);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  m_error_signal      = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a763b3164342a5d73db851e85c76d385a">StarVCMat</a>(grid);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="comment">// Construct matrix views</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  m_activations_v = m_activations-&gt;Construct(m_activations-&gt;Grid(),</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                             m_activations-&gt;Root());</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  m_error_signal_v = m_error_signal-&gt;Construct(m_error_signal-&gt;Grid(),</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                               m_error_signal-&gt;Root());</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="ttc" id="base_8hpp_html_a4c600bf682fbf8018385607476e4bd13"><div class="ttname"><a href="base_8hpp.html#a4c600bf682fbf8018385607476e4bd13">Grid</a></div><div class="ttdeci">El::Grid Grid</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00044">base.hpp:44</a></div></div>
 <div class="ttc" id="base_8hpp_html_a763b3164342a5d73db851e85c76d385a"><div class="ttname"><a href="base_8hpp.html#a763b3164342a5d73db851e85c76d385a">StarVCMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::STAR, El::VC &gt; StarVCMat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00052">base.hpp:52</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -2935,19 +2940,24 @@ template&lt;&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Matrices should be in MC,MR distributions. </p>
-<p>Instantiate these view objects but do not allocate data for them </p>
-
-<p>Definition at line <a class="el" href="layer_8cpp_source.html#l00045">45</a> of file <a class="el" href="layer_8cpp_source.html">layer.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                                       {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  m_prev_activations    = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(m_comm-&gt;get_model_grid());</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  m_activations         = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(m_comm-&gt;get_model_grid());</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  m_prev_error_signal   = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(m_comm-&gt;get_model_grid());</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  m_error_signal        = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(m_comm-&gt;get_model_grid());</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  m_activations_v       = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(m_comm-&gt;get_model_grid());</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  m_error_signal_v      = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(m_comm-&gt;get_model_grid());</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<p>Definition at line <a class="el" href="layer_8cpp_source.html#l00044">44</a> of file <a class="el" href="layer_8cpp_source.html">layer.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                                       {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="comment">// Instantiate matrices with MC,MR distribution</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="base_8hpp.html#a4c600bf682fbf8018385607476e4bd13">El::Grid</a>&amp; grid = m_comm-&gt;get_model_grid();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  m_prev_activations  = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(grid);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  m_activations       = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(grid);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  m_prev_error_signal = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(grid);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  m_error_signal      = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(grid);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="comment">// Construct matrix views</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  m_activations_v = m_activations-&gt;Construct(m_activations-&gt;Grid(),</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                             m_activations-&gt;Root());</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  m_error_signal_v = m_error_signal-&gt;Construct(m_error_signal-&gt;Grid(),</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                               m_error_signal-&gt;Root());</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="ttc" id="base_8hpp_html_a4c600bf682fbf8018385607476e4bd13"><div class="ttname"><a href="base_8hpp.html#a4c600bf682fbf8018385607476e4bd13">Grid</a></div><div class="ttdeci">El::Grid Grid</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00044">base.hpp:44</a></div></div>
 <div class="ttc" id="base_8hpp_html_a8e774b79084797a8f87918d8f66b6802"><div class="ttname"><a href="base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::MC, El::MR &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00047">base.hpp:47</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -3049,12 +3059,12 @@ template&lt;&gt; </div>
 
 <p>Weight matrices should be in Star,Star and data matrices Star,VC distributions. </p>
 
-<p>Definition at line <a class="el" href="learning_8hpp_source.html#l00275">275</a> of file <a class="el" href="learning_8hpp_source.html">learning.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                                                                                           {</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  Layer::initialize_distributed_matrices&lt;data_layout::DATA_PARALLEL&gt;();</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  m_weights             = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86">StarMat</a>(m_comm-&gt;get_model_grid());</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  m_weights_gradient    = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86">StarMat</a>(m_comm-&gt;get_model_grid());</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;}</div>
+<p>Definition at line <a class="el" href="learning_8hpp_source.html#l00354">354</a> of file <a class="el" href="learning_8hpp_source.html">learning.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                                                                                           {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  Layer::initialize_distributed_matrices&lt;data_layout::DATA_PARALLEL&gt;();</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  m_weights          = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86">StarMat</a>(m_comm-&gt;get_model_grid());</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  m_weights_gradient = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86">StarMat</a>(m_comm-&gt;get_model_grid());</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;}</div>
 <div class="ttc" id="base_8hpp_html_ac1f107dfdc1d078904b4b666af5b6b86"><div class="ttname"><a href="base_8hpp.html#ac1f107dfdc1d078904b4b666af5b6b86">StarMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::STAR, El::STAR &gt; StarMat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00049">base.hpp:49</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -3084,12 +3094,12 @@ template&lt;&gt; </div>
 
 <p>Matrices should be in MC,MR distributions. </p>
 
-<p>Definition at line <a class="el" href="learning_8hpp_source.html#l00268">268</a> of file <a class="el" href="learning_8hpp_source.html">learning.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                                                                                            {</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  Layer::initialize_distributed_matrices&lt;data_layout::MODEL_PARALLEL&gt;();</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  m_weights             = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(m_comm-&gt;get_model_grid());</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  m_weights_gradient    = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(m_comm-&gt;get_model_grid());</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;}</div>
+<p>Definition at line <a class="el" href="learning_8hpp_source.html#l00347">347</a> of file <a class="el" href="learning_8hpp_source.html">learning.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;                                                                                            {</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  Layer::initialize_distributed_matrices&lt;data_layout::MODEL_PARALLEL&gt;();</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  m_weights          = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(m_comm-&gt;get_model_grid());</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  m_weights_gradient = <span class="keyword">new</span> <a class="code" href="base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a>(m_comm-&gt;get_model_grid());</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;}</div>
 <div class="ttc" id="base_8hpp_html_a8e774b79084797a8f87918d8f66b6802"><div class="ttname"><a href="base_8hpp.html#a8e774b79084797a8f87918d8f66b6802">DistMat</a></div><div class="ttdeci">El::DistMatrix&lt; DataType, El::MC, El::MR &gt; DistMat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00047">base.hpp:47</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -3852,7 +3862,7 @@ template&lt;typename DType  = DataType&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Multiply entries of distributed matrix with a multiplier generated according to bernoulli_distribution </p>
-<p>the scale for undropped inputs at training time given as <img class="formulaInl" alt="$ 1 / (1 - p) $" src="form_4.png"/> </p>
+<p>the scale for undropped inputs at training time given as <img class="formulaInl" alt="$ 1 / (1 - p) $" src="form_9.png"/> </p>
 
 <p>Definition at line <a class="el" href="random_8hpp_source.html#l00189">189</a> of file <a class="el" href="random_8hpp_source.html">random.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                                              {</div>
@@ -4837,7 +4847,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li>
-    <li class="footer">Generated on Tue Sep 19 2017 17:12:11 for LBANN by
+    <li class="footer">Generated on Thu Sep 21 2017 13:48:03 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

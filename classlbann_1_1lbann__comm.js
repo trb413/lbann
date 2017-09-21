@@ -73,7 +73,7 @@ var classlbann_1_1lbann__comm =
     [ "intermodel_sum_matrix", "classlbann_1_1lbann__comm.html#a150071cd17a82b56ccdee2bfe0c64d1a", null ],
     [ "is_rank_node_local", "classlbann_1_1lbann__comm.html#ad8f810130cd0cd3afd94700713b763b9", null ],
     [ "is_sendable", "classlbann_1_1lbann__comm.html#a4ba1b9a6b4eb986a348d85c2d80ca3eb", null ],
-    [ "is_sendable", "classlbann_1_1lbann__comm.html#a96bcc0bc8910272f4553cf0439a6e2f9", null ],
+    [ "is_sendable", "classlbann_1_1lbann__comm.html#ac6addefb7577f81fbc90da94d26991e4", null ],
     [ "is_world_rank_on_node", "classlbann_1_1lbann__comm.html#aed7962a6affe4e72ffba35d9b0613fd9", null ],
     [ "model_allreduce", "classlbann_1_1lbann__comm.html#aebb6290d1b618eace302404291c598a5", null ],
     [ "model_allreduce", "classlbann_1_1lbann__comm.html#a6dce8c5dd188633e69e9d5c79e5ef1bd", null ],

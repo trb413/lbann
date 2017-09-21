@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">9bd98b7-ci269</span>
+   &#160;<span id="projectnumber">1a228ae-ci286</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -132,8 +132,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a43c03c77e0f35173ca06e1b98c11a108"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d3b33fdfb196148d00254c7761fb643"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1d3b33fdfb196148d00254c7761fb643">fp_set_std_matrix_view</a> (int cur_mini_batch_size)</td></tr>
 <tr class="separator:a1d3b33fdfb196148d00254c7761fb643"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1eece207df26f503c629325bc7cb24c8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1eece207df26f503c629325bc7cb24c8">compute_metric</a> (<a class="el" href="base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;predictions_v, <a class="el" href="base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;groundtruth_v)</td></tr>
-<tr class="separator:a1eece207df26f503c629325bc7cb24c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15aac417f596540c7f8712a0ca302ab"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#aa15aac417f596540c7f8712a0ca302ab">compute_metric</a> (<a class="el" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a> &amp;predictions_v, <a class="el" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a> &amp;groundtruth_v)</td></tr>
+<tr class="separator:aa15aac417f596540c7f8712a0ca302ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac549e4231d6eb007bab1af2c919b9953"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#ac549e4231d6eb007bab1af2c919b9953">report_metric</a> (<a class="el" href="base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a> mode)</td></tr>
 <tr class="separator:ac549e4231d6eb007bab1af2c919b9953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a041dca53841509369626b5899b9f1267"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a041dca53841509369626b5899b9f1267">report_lifetime_metric</a> (<a class="el" href="base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a> mode)</td></tr>
@@ -348,7 +348,7 @@ template&lt;data_layout T_layout&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a1eece207df26f503c629325bc7cb24c8"></a>
+<a class="anchor" id="aa15aac417f596540c7f8712a0ca302ab"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -360,13 +360,13 @@ template&lt;data_layout T_layout&gt; </div>
         <tr>
           <td class="memname">double <a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html">lbann::metrics::categorical_accuracy</a>&lt; T_layout &gt;::compute_metric </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a> &amp;&#160;</td>
           <td class="paramname"><em>predictions_v</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a> &amp;&#160;</td>
           <td class="paramname"><em>groundtruth_v</em>&#160;</td>
         </tr>
         <tr>
@@ -397,10 +397,10 @@ template&lt;data_layout T_layout&gt; </div>
 <p>If this rank holds the correct category, return the global row index</p>
 <p>Only check against the prediction if this rank holds the groundtruth value </p>
 
-<p>Reimplemented from <a class="el" href="classlbann_1_1metrics_1_1metric.html#affe1a598c434133ea19509beb20383bc">lbann::metrics::metric</a>.</p>
+<p>Reimplemented from <a class="el" href="classlbann_1_1metrics_1_1metric.html#adbe7c84ee1eab681e576fb374ea806fb">lbann::metrics::metric</a>.</p>
 
 <p>Definition at line <a class="el" href="metric__categorical__accuracy_8hpp_source.html#l00088">88</a> of file <a class="el" href="metric__categorical__accuracy_8hpp_source.html">metric_categorical_accuracy.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                                                    {</div>
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                                                              {</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// Clear the contents of the intermediate matrices</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    El::Zeros(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a99d74f01a5e8211cfe5b3a5611cdc880">m_prediction_col_maxes</a>, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a3a9b7cbf806a673a04711f8acd062ebc">m_max_mini_batch_size</a>, 1);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    El::Zeros(<a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a9cb5a1e01b4b905342645a64ccc7a9c6">m_replicated_prediction_col_maxes</a>, <a class="code" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a3a9b7cbf806a673a04711f8acd062ebc">m_max_mini_batch_size</a>, 1);</div>
@@ -469,8 +469,8 @@ template&lt;data_layout T_layout&gt; </div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1metrics_1_1categorical__accuracy_a1eece207df26f503c629325bc7cb24c8_cgraph.png" border="0" usemap="#classlbann_1_1metrics_1_1categorical__accuracy_a1eece207df26f503c629325bc7cb24c8_cgraph" alt=""/></div>
-<map name="classlbann_1_1metrics_1_1categorical__accuracy_a1eece207df26f503c629325bc7cb24c8_cgraph" id="classlbann_1_1metrics_1_1categorical__accuracy_a1eece207df26f503c629325bc7cb24c8_cgraph">
+<div class="center"><img src="classlbann_1_1metrics_1_1categorical__accuracy_aa15aac417f596540c7f8712a0ca302ab_cgraph.png" border="0" usemap="#classlbann_1_1metrics_1_1categorical__accuracy_aa15aac417f596540c7f8712a0ca302ab_cgraph" alt=""/></div>
+<map name="classlbann_1_1metrics_1_1categorical__accuracy_aa15aac417f596540c7f8712a0ca302ab_cgraph" id="classlbann_1_1metrics_1_1categorical__accuracy_aa15aac417f596540c7f8712a0ca302ab_cgraph">
 <area shape="rect" id="node2" href="classlbann_1_1lbann__comm.html#aebb6290d1b618eace302404291c598a5" title="lbann::lbann_comm::\lmodel_allreduce" alt="" coords="238,5,381,46"/><area shape="rect" id="node3" href="classlbann_1_1lbann__comm.html#ad67668baa49b8713f3c74816d1aeb175" title="lbann::lbann_comm::\lget_procs_per_model" alt="" coords="429,5,576,46"/></map>
 </div>
 </p>
@@ -1058,7 +1058,7 @@ template&lt;data_layout T_layout&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="namespacelbann_1_1metrics.html">metrics</a></li><li class="navelem"><a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html">categorical_accuracy</a></li>
-    <li class="footer">Generated on Tue Sep 19 2017 17:12:47 for LBANN by
+    <li class="footer">Generated on Thu Sep 21 2017 13:48:15 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -2,6 +2,7 @@ var proto__common_8cpp =
 [
     [ "transform_layers", "structtransform__layers.html", "structtransform__layers" ],
     [ "add_layers", "proto__common_8cpp.html#a031678a7069297ce9a72b8b5f8a6b492", null ],
+    [ "construct_summarizer", "proto__common_8cpp.html#ada60fd1558bd89338f58bdd0a27c35e6", null ],
     [ "copy_file", "proto__common_8cpp.html#aee6432eeb669d7a8571c095d8761bc26", null ],
     [ "finish_transform_layers", "proto__common_8cpp.html#aa9f9786f4a07fb71310ec1f31c1233bc", null ],
     [ "get_cmdline_overrides", "proto__common_8cpp.html#a46fd41f635ff8f352065adc85eb3d1df", null ],

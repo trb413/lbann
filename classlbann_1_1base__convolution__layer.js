@@ -1,6 +1,6 @@
 var classlbann_1_1base__convolution__layer =
 [
-    [ "base_convolution_layer", "classlbann_1_1base__convolution__layer.html#ae1395283f7fb0baa369a3ea6e5d598b2", null ],
+    [ "base_convolution_layer", "classlbann_1_1base__convolution__layer.html#a39bbdb6bb9c56e98b0847bcad2bc2eb6", null ],
     [ "base_convolution_layer", "classlbann_1_1base__convolution__layer.html#a5ffba3070c459e3fc1dc1a5ecdaf5e0c", null ],
     [ "~base_convolution_layer", "classlbann_1_1base__convolution__layer.html#a257a8d7c6ac34a26476c0b3418f16da2", null ],
     [ "apply_bias_cpu", "classlbann_1_1base__convolution__layer.html#a4f792e1c19d4591f305880b57f63cec3", null ],
@@ -17,14 +17,15 @@ var classlbann_1_1base__convolution__layer =
     [ "setup_gpu", "classlbann_1_1base__convolution__layer.html#a084664fdcb6ce73eb80121ae89383385", null ],
     [ "update_compute", "classlbann_1_1base__convolution__layer.html#ae5f0a5ac9cfba98cf5fb2e8bb8060a20", null ],
     [ "lbann_callback_imcomm", "classlbann_1_1base__convolution__layer.html#a6d54673503b45aeb6526f041224900c6", null ],
+    [ "m_bias_initial_value", "classlbann_1_1base__convolution__layer.html#abe148cee8054752d0284b286a41958c7", null ],
     [ "m_bias_scaling_factor", "classlbann_1_1base__convolution__layer.html#a5abe0bcd128b66a41fa481b28a9c2104", null ],
-    [ "m_bias_weights_gradient_v", "classlbann_1_1base__convolution__layer.html#ab56f4981ede4927303ef4026c7e2bf4f", null ],
-    [ "m_bias_weights_v", "classlbann_1_1base__convolution__layer.html#a6431e5c283de9350cbded57df939f6bd", null ],
+    [ "m_bias_weights_gradient_v", "classlbann_1_1base__convolution__layer.html#acd2b80086970ac0872c35e1cfcd95a39", null ],
+    [ "m_bias_weights_v", "classlbann_1_1base__convolution__layer.html#a97628e02e00185fd2c18935a9d3f6d5b", null ],
     [ "m_conv_pads", "classlbann_1_1base__convolution__layer.html#af138932eab8c0a902fb9dff037066763", null ],
     [ "m_conv_strides", "classlbann_1_1base__convolution__layer.html#a78175a88798a30ed7fc7873adf093a94", null ],
     [ "m_kernel_dims", "classlbann_1_1base__convolution__layer.html#a283edb6a476f975e713d0b4235ac658f", null ],
     [ "m_kernel_size", "classlbann_1_1base__convolution__layer.html#aa9da3e44499643a86bd611b5eb500dd4", null ],
-    [ "m_kernel_weights_gradient_v", "classlbann_1_1base__convolution__layer.html#a4d6b8da9c977216cd0dd8f621733bd36", null ],
-    [ "m_kernel_weights_v", "classlbann_1_1base__convolution__layer.html#abb47b7ca8d94b70413bbeae1f60c3a1b", null ],
+    [ "m_kernel_weights_gradient_v", "classlbann_1_1base__convolution__layer.html#a9e7556a3cf5cf3141bd8cb877c27ab35", null ],
+    [ "m_kernel_weights_v", "classlbann_1_1base__convolution__layer.html#a98d1340db9b5e128744afbd951870ec8", null ],
     [ "m_weight_initialization", "classlbann_1_1base__convolution__layer.html#acba7b2833ea57c44a7bb8fe5a9b39239", null ]
 ];

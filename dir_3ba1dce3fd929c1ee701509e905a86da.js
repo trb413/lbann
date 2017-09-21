@@ -7,6 +7,9 @@ var dir_3ba1dce3fd929c1ee701509e905a86da =
     [ "elu.hpp", "elu_8hpp.html", [
       [ "elu_layer", "classlbann_1_1elu__layer.html", "classlbann_1_1elu__layer" ]
     ] ],
+    [ "exponential.hpp", "exponential_8hpp.html", [
+      [ "exponential_layer", "classlbann_1_1exponential__layer.html", "classlbann_1_1exponential__layer" ]
+    ] ],
     [ "id.hpp", "id_8hpp.html", [
       [ "id_layer", "classlbann_1_1id__layer.html", "classlbann_1_1id__layer" ]
     ] ],

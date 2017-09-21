@@ -16,6 +16,8 @@ var searchData=
   ['patchworks_5fstats_2ehpp',['patchworks_stats.hpp',['../patchworks__stats_8hpp.html',1,'']]],
   ['persist_2ecpp',['persist.cpp',['../persist_8cpp.html',1,'']]],
   ['persist_2ehpp',['persist.hpp',['../persist_8hpp.html',1,'']]],
+  ['poisson_5fnegloglike_2ecpp',['poisson_negloglike.cpp',['../poisson__negloglike_8cpp.html',1,'']]],
+  ['poisson_5fnegloglike_2ehpp',['poisson_negloglike.hpp',['../poisson__negloglike_8hpp.html',1,'']]],
   ['pooling_2ehpp',['pooling.hpp',['../pooling_8hpp.html',1,'']]],
   ['profiler_2ecpp',['profiler.cpp',['../profiler_8cpp.html',1,'']]],
   ['profiler_2ehpp',['profiler.hpp',['../profiler_8hpp.html',1,'']]],

@@ -62,6 +62,7 @@ var namespacelbann =
     [ "activation_layer", "classlbann_1_1activation__layer.html", "classlbann_1_1activation__layer" ],
     [ "entrywise_activation_layer", "classlbann_1_1entrywise__activation__layer.html", "classlbann_1_1entrywise__activation__layer" ],
     [ "elu_layer", "classlbann_1_1elu__layer.html", "classlbann_1_1elu__layer" ],
+    [ "exponential_layer", "classlbann_1_1exponential__layer.html", "classlbann_1_1exponential__layer" ],
     [ "id_layer", "classlbann_1_1id__layer.html", "classlbann_1_1id__layer" ],
     [ "leaky_relu_layer", "classlbann_1_1leaky__relu__layer.html", "classlbann_1_1leaky__relu__layer" ],
     [ "relu_layer", "classlbann_1_1relu__layer.html", "classlbann_1_1relu__layer" ],

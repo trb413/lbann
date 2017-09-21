@@ -6,8 +6,8 @@ var searchData=
   ['elemental_5fextensions_2ehpp',['Elemental_extensions.hpp',['../Elemental__extensions_8hpp.html',1,'']]],
   ['elmat',['ElMat',['../base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8',1,'base.hpp']]],
   ['elu_2ehpp',['elu.hpp',['../elu_8hpp.html',1,'']]],
-  ['elu_5flayer',['elu_layer',['../classlbann_1_1elu__layer.html#a757a24333c9d6b9f1fdd4ee6e6b69a3c',1,'lbann::elu_layer']]],
   ['elu_5flayer',['elu_layer',['../classlbann_1_1elu__layer.html',1,'lbann']]],
+  ['elu_5flayer',['elu_layer',['../classlbann_1_1elu__layer.html#a757a24333c9d6b9f1fdd4ee6e6b69a3c',1,'lbann::elu_layer']]],
   ['enable_5fresponses',['enable_responses',['../classlbann_1_1csv__reader.html#a7f2f980b860939e561d669575da9fb49',1,'lbann::csv_reader']]],
   ['enableprofiling',['EnableProfiling',['../classlbann_1_1TrainingParams.html#a45628c16fa42fb47276e1ebc34759bfa',1,'lbann::TrainingParams']]],
   ['entrywise_5factivation_5flayer',['entrywise_activation_layer',['../classlbann_1_1entrywise__activation__layer.html',1,'lbann']]],
@@ -25,5 +25,8 @@ var searchData=
   ['exchange',['exchange',['../classlbann_1_1lbann__callback__ltfb.html#a2b6d87cf89e3d65ce5730aa8a052eee8',1,'lbann::lbann_callback_ltfb']]],
   ['execution_5fmode',['execution_mode',['../structlbann_1_1lbann__model__header.html#a70b35a6df7370854031470dfbd9bfc9f',1,'lbann::lbann_model_header::execution_mode()'],['../base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8',1,'execution_mode():&#160;base.hpp']]],
   ['exists',['exists',['../namespacelbann.html#aefae2a9fc9d742ece0fa8ca7ed9ee137',1,'lbann']]],
+  ['exponential_2ehpp',['exponential.hpp',['../exponential_8hpp.html',1,'']]],
+  ['exponential_5flayer',['exponential_layer',['../classlbann_1_1exponential__layer.html#a01b86b944b834700f9dbf2b0433d1016',1,'lbann::exponential_layer']]],
+  ['exponential_5flayer',['exponential_layer',['../classlbann_1_1exponential__layer.html',1,'lbann']]],
   ['export_5fimage',['export_image',['../classlbann_1_1image__utils.html#a155896efaea4c03897a3a2a6c82cf7b2',1,'lbann::image_utils']]]
 ];

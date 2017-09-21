@@ -31,6 +31,7 @@ var hierarchy =
       [ "lbann::activation_layer", "classlbann_1_1activation__layer.html", [
         [ "lbann::entrywise_activation_layer", "classlbann_1_1entrywise__activation__layer.html", [
           [ "lbann::elu_layer< T_layout >", "classlbann_1_1elu__layer.html", null ],
+          [ "lbann::exponential_layer< T_layout >", "classlbann_1_1exponential__layer.html", null ],
           [ "lbann::id_layer< T_layout >", "classlbann_1_1id__layer.html", null ],
           [ "lbann::leaky_relu_layer< T_layout >", "classlbann_1_1leaky__relu__layer.html", null ],
           [ "lbann::relu_layer< T_layout >", "classlbann_1_1relu__layer.html", null ],
@@ -152,8 +153,11 @@ var hierarchy =
     ] ],
     [ "lbann::NetworkParams", "classlbann_1_1NetworkParams.html", null ],
     [ "lbann::objective_functions::objective_function", "classlbann_1_1objective__functions_1_1objective__function.html", [
+      [ "lbann::objective_functions::binary_cross_entropy", "classlbann_1_1objective__functions_1_1binary__cross__entropy.html", null ],
       [ "lbann::objective_functions::cross_entropy", "classlbann_1_1objective__functions_1_1cross__entropy.html", null ],
-      [ "lbann::objective_functions::mean_squared_error", "classlbann_1_1objective__functions_1_1mean__squared__error.html", null ]
+      [ "lbann::objective_functions::geom_negloglike", "classlbann_1_1objective__functions_1_1geom__negloglike.html", null ],
+      [ "lbann::objective_functions::mean_squared_error", "classlbann_1_1objective__functions_1_1mean__squared__error.html", null ],
+      [ "lbann::objective_functions::poisson_negloglike", "classlbann_1_1objective__functions_1_1poisson__negloglike.html", null ]
     ] ],
     [ "lbann::optimizable_layer", "classlbann_1_1optimizable__layer.html", [
       [ "lbann::learning", "classlbann_1_1learning.html", null ],

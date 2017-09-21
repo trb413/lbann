@@ -1,6 +1,6 @@
 var classlbann_1_1fully__connected__layer =
 [
-    [ "fully_connected_layer", "classlbann_1_1fully__connected__layer.html#a2af19ac0a17e2abaf13714ad82f12c3f", null ],
+    [ "fully_connected_layer", "classlbann_1_1fully__connected__layer.html#a93b6d2dce14cde2935c78e4d3b9649c9", null ],
     [ "fully_connected_layer", "classlbann_1_1fully__connected__layer.html#a377e44ab7eccb1aec467be5667bef6fe", null ],
     [ "~fully_connected_layer", "classlbann_1_1fully__connected__layer.html#a337604bdd073267912b7ca053deaa834", null ],
     [ "bp_compute", "classlbann_1_1fully__connected__layer.html#aece7db8bde8cb3dfc88726d2c0aae852", null ],
@@ -29,12 +29,13 @@ var classlbann_1_1fully__connected__layer =
     [ "setup_gpu", "classlbann_1_1fully__connected__layer.html#a1bbdffc7cdd12b3916d0b597a5156b70", null ],
     [ "setup_views", "classlbann_1_1fully__connected__layer.html#a9df470c0cd47e4f35b8bc6f831f92fd7", null ],
     [ "update_compute", "classlbann_1_1fully__connected__layer.html#a0e5eebd760f4e3762e15af2f0de2ff92", null ],
-    [ "m_activation_weights_gradient_v", "classlbann_1_1fully__connected__layer.html#adce1687e7b9185c0032f8d946043a9dc", null ],
-    [ "m_activation_weights_v", "classlbann_1_1fully__connected__layer.html#a91376621d9ac2c3d60878cffbb36c061", null ],
+    [ "m_activation_weights_gradient_v", "classlbann_1_1fully__connected__layer.html#a4273f61ce03a376df330ba0051453e03", null ],
+    [ "m_activation_weights_v", "classlbann_1_1fully__connected__layer.html#a519990eac630d013f4f2155fe34b00ec", null ],
+    [ "m_bias_initial_value", "classlbann_1_1fully__connected__layer.html#a3130f1f47ae5e4fdeb6fd4e38d071aa7", null ],
     [ "m_bias_scaling_factor", "classlbann_1_1fully__connected__layer.html#ae02eaffd5528bf572883f8b06d1b40c0", null ],
-    [ "m_bias_weights_gradient_repl", "classlbann_1_1fully__connected__layer.html#a3947f8d9a40586164fd16ca041ea1d34", null ],
-    [ "m_bias_weights_gradient_v", "classlbann_1_1fully__connected__layer.html#a4aed07d61dcb872813c1a2e509ce9559", null ],
-    [ "m_bias_weights_repl", "classlbann_1_1fully__connected__layer.html#a72edf3ab8a9e5ddbd2a48a0f886a62af", null ],
-    [ "m_bias_weights_v", "classlbann_1_1fully__connected__layer.html#a46e5ff0125ec2bd8b7d62912054d1d1d", null ],
+    [ "m_bias_weights_gradient_repl", "classlbann_1_1fully__connected__layer.html#a710314afaba7f86e06643e6afa9b7b28", null ],
+    [ "m_bias_weights_gradient_v", "classlbann_1_1fully__connected__layer.html#a5e3195c815c37c76b3bd2593f9907306", null ],
+    [ "m_bias_weights_repl", "classlbann_1_1fully__connected__layer.html#ac83ea9055893ec9b2be07b0a41c5dd47", null ],
+    [ "m_bias_weights_v", "classlbann_1_1fully__connected__layer.html#a92822022be0460729f4f72848908ee92", null ],
     [ "m_weight_initialization", "classlbann_1_1fully__connected__layer.html#a55d195e9dbbcd31185d834138c69cbce", null ]
 ];

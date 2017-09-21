@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">9bd98b7-ci269</span>
+   &#160;<span id="projectnumber">1a228ae-ci286</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -129,8 +129,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad964bbf0f823d2f7e1d5db824a49bd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94d5ea38f17033b9224cccb31780debf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1top__k__categorical__accuracy.html#a94d5ea38f17033b9224cccb31780debf">fp_set_std_matrix_view</a> (int cur_mini_batch_size)</td></tr>
 <tr class="separator:a94d5ea38f17033b9224cccb31780debf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a054e7cbe53e9a6c00ac19654f2187b8b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1top__k__categorical__accuracy.html#a054e7cbe53e9a6c00ac19654f2187b8b">compute_metric</a> (<a class="el" href="base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;predictions_v, <a class="el" href="base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;ground_truth_v)</td></tr>
-<tr class="separator:a054e7cbe53e9a6c00ac19654f2187b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381d36a52704373985fb5a9cf939022f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1top__k__categorical__accuracy.html#a381d36a52704373985fb5a9cf939022f">compute_metric</a> (<a class="el" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a> &amp;predictions_v, <a class="el" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a> &amp;ground_truth_v)</td></tr>
+<tr class="separator:a381d36a52704373985fb5a9cf939022f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1415145b8c891beca3848cd57a9b7f68"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1top__k__categorical__accuracy.html#a1415145b8c891beca3848cd57a9b7f68">report_metric</a> (<a class="el" href="base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a> mode)</td></tr>
 <tr class="separator:a1415145b8c891beca3848cd57a9b7f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdbdfcda96d67eda4fcfa5c9ea509ffd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1top__k__categorical__accuracy.html#acdbdfcda96d67eda4fcfa5c9ea509ffd">report_lifetime_metric</a> (<a class="el" href="base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a> mode)</td></tr>
@@ -294,7 +294,7 @@ template&lt;data_layout T_layout&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a054e7cbe53e9a6c00ac19654f2187b8b"></a>
+<a class="anchor" id="a381d36a52704373985fb5a9cf939022f"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -306,13 +306,13 @@ template&lt;data_layout T_layout&gt; </div>
         <tr>
           <td class="memname">double <a class="el" href="classlbann_1_1metrics_1_1top__k__categorical__accuracy.html">lbann::metrics::top_k_categorical_accuracy</a>&lt; T_layout &gt;::compute_metric </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a> &amp;&#160;</td>
           <td class="paramname"><em>predictions_v</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a> &amp;&#160;</td>
           <td class="paramname"><em>ground_truth_v</em>&#160;</td>
         </tr>
         <tr>
@@ -328,10 +328,10 @@ template&lt;data_layout T_layout&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented from <a class="el" href="classlbann_1_1metrics_1_1metric.html#affe1a598c434133ea19509beb20383bc">lbann::metrics::metric</a>.</p>
+<p>Reimplemented from <a class="el" href="classlbann_1_1metrics_1_1metric.html#adbe7c84ee1eab681e576fb374ea806fb">lbann::metrics::metric</a>.</p>
 
 <p>Definition at line <a class="el" href="metric__top__k__categorical__accuracy_8hpp_source.html#l00062">62</a> of file <a class="el" href="metric__top__k__categorical__accuracy_8hpp_source.html">metric_top_k_categorical_accuracy.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                                                     {</div>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                                                               {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// This first computes the top k predictions within each column locally,</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// then each column master gathers these, computes the global top k, and</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// determines if an error was made.</span></div>
@@ -418,8 +418,8 @@ template&lt;data_layout T_layout&gt; </div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classlbann_1_1metrics_1_1top__k__categorical__accuracy_a054e7cbe53e9a6c00ac19654f2187b8b_cgraph.png" border="0" usemap="#classlbann_1_1metrics_1_1top__k__categorical__accuracy_a054e7cbe53e9a6c00ac19654f2187b8b_cgraph" alt=""/></div>
-<map name="classlbann_1_1metrics_1_1top__k__categorical__accuracy_a054e7cbe53e9a6c00ac19654f2187b8b_cgraph" id="classlbann_1_1metrics_1_1top__k__categorical__accuracy_a054e7cbe53e9a6c00ac19654f2187b8b_cgraph">
+<div class="center"><img src="classlbann_1_1metrics_1_1top__k__categorical__accuracy_a381d36a52704373985fb5a9cf939022f_cgraph.png" border="0" usemap="#classlbann_1_1metrics_1_1top__k__categorical__accuracy_a381d36a52704373985fb5a9cf939022f_cgraph" alt=""/></div>
+<map name="classlbann_1_1metrics_1_1top__k__categorical__accuracy_a381d36a52704373985fb5a9cf939022f_cgraph" id="classlbann_1_1metrics_1_1top__k__categorical__accuracy_a381d36a52704373985fb5a9cf939022f_cgraph">
 <area shape="rect" id="node2" href="classlbann_1_1lbann__comm.html#aebb6290d1b618eace302404291c598a5" title="lbann::lbann_comm::\lmodel_allreduce" alt="" coords="222,13,365,54"/><area shape="rect" id="node3" href="classlbann_1_1lbann__comm.html#ad67668baa49b8713f3c74816d1aeb175" title="lbann::lbann_comm::\lget_procs_per_model" alt="" coords="413,13,560,54"/></map>
 </div>
 </p>
@@ -804,7 +804,7 @@ template&lt;data_layout T_layout&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="namespacelbann_1_1metrics.html">metrics</a></li><li class="navelem"><a class="el" href="classlbann_1_1metrics_1_1top__k__categorical__accuracy.html">top_k_categorical_accuracy</a></li>
-    <li class="footer">Generated on Tue Sep 19 2017 17:12:47 for LBANN by
+    <li class="footer">Generated on Thu Sep 21 2017 13:48:16 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">9bd98b7-ci269</span>
+   &#160;<span id="projectnumber">1a228ae-ci286</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -90,6 +90,7 @@ $(document).ready(function(){initNavTree('layer_8cpp.html','');});
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">layer.cpp File Reference</div>  </div>
@@ -119,24 +120,63 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacelbann"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html">lbann</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a8c299536d20d7f1d3a905cd2658ee619"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="layer_8cpp.html#a8c299536d20d7f1d3a905cd2658ee619">FREE_AND_COPY_MATRIX</a>(matrix, other_matrix)</td></tr>
+<tr class="separator:a8c299536d20d7f1d3a905cd2658ee619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a64a8c629fb29a62ebf9bd1fca82fa6a8"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:a64a8c629fb29a62ebf9bd1fca82fa6a8"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelbann.html#a64a8c629fb29a62ebf9bd1fca82fa6a8">lbann::Layer::initialize_distributed_matrices&lt; data_layout::MODEL_PARALLEL &gt;</a> ()</td></tr>
-<tr class="memdesc:a64a8c629fb29a62ebf9bd1fca82fa6a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrices should be in MC,MR distributions.  <a href="#a64a8c629fb29a62ebf9bd1fca82fa6a8">More...</a><br/></td></tr>
 <tr class="separator:a64a8c629fb29a62ebf9bd1fca82fa6a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17067c5463ff72d7acfe1e7df1c79781"><td class="memTemplParams" colspan="2">template&lt;&gt; </td></tr>
 <tr class="memitem:a17067c5463ff72d7acfe1e7df1c79781"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacelbann.html#a17067c5463ff72d7acfe1e7df1c79781">lbann::Layer::initialize_distributed_matrices&lt; data_layout::DATA_PARALLEL &gt;</a> ()</td></tr>
-<tr class="memdesc:a17067c5463ff72d7acfe1e7df1c79781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weight matrices should be in Star,Star and data matrices Star,VC distributions.  <a href="#a17067c5463ff72d7acfe1e7df1c79781">More...</a><br/></td></tr>
 <tr class="separator:a17067c5463ff72d7acfe1e7df1c79781"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a8c299536d20d7f1d3a905cd2658ee619"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FREE_AND_COPY_MATRIX</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">matrix, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">other_matrix&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                  \</div>
+<div class="line">    if(matrix != <span class="keyword">nullptr</span>) {                             \</div>
+<div class="line">      delete matrix;                                    \</div>
+<div class="line">      matrix = <span class="keyword">nullptr</span>;                                 \</div>
+<div class="line">    }                                                   \</div>
+<div class="line">    if(other_matrix != <span class="keyword">nullptr</span>) {                       \</div>
+<div class="line">      matrix = other_matrix-&gt;Copy();                    \</div>
+<div class="line">    }                                                   \</div>
+<div class="line">  } <span class="keywordflow">while</span>(<span class="keyword">false</span>)</div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_188189ff0dae47f8a298515598da82cf.html">CT-TES-DG</a></li><li class="navelem"><a class="el" href="dir_4433ec42d88debf12448d92b37b4f585.html">src</a></li><li class="navelem"><a class="el" href="dir_19afee516690fbb58c13279914c88b9e.html">layers</a></li><li class="navelem"><a class="el" href="layer_8cpp.html">layer.cpp</a></li>
-    <li class="footer">Generated on Tue Sep 19 2017 17:12:08 for LBANN by
+    <li class="footer">Generated on Thu Sep 21 2017 13:48:01 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

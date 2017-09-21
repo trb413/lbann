@@ -72,7 +72,10 @@ var NAVTREE =
       [ "Top K Categorical Accuracy", "metrics.html#top_k", null ]
     ] ],
     [ "Objective Functions", "obj_fn.html", [
-      [ "Categorical Cross Entropy", "obj_fn.html#cate_cross_entropy", null ],
+      [ "Cross Entropy", "obj_fn.html#cross_entropy", null ],
+      [ "Binary Cross Entropy", "obj_fn.html#bin_cross_entropy", null ],
+      [ "Geom NegLogLike", "obj_fn.html#geom_neglog", null ],
+      [ "Poisson NegLogLike", "obj_fn.html#pois_neglog", null ],
       [ "Objective Mean Squared Error", "obj_fn.html#Omse", null ]
     ] ],
     [ "Optimizers", "optimizers.html", [
@@ -126,19 +129,19 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Elemental__extensions_8cpp.html",
-"classlbann_1_1Layer.html#a70e08fc96a612f67ade6ba3809536d85",
-"classlbann_1_1concatenation__layer.html#a0498925fcb0a42f1bc8fd1913b9090fc",
-"classlbann_1_1fully__connected__layer.html#a521aa4a5b88ef00f554fe21a850f6596",
-"classlbann_1_1image__utils.html",
-"classlbann_1_1lbann__callback__check__reconstruction__error.html",
-"classlbann_1_1lbann__callback__profiler.html#af78237a67eaacf2508f31ad72b8ff8a7",
-"classlbann_1_1lbann__image__preprocessor.html#a3e99be32b95a415fd8d616cb85075df1",
-"classlbann_1_1mnist__reader.html#acf6f38f62c34e2e0348b8e6d3cfca489",
-"classlbann_1_1pooling__layer.html#a9b6a01bfb20b63c564e2c4d84e2e751e",
-"classlbann_1_1split__layer.html#af9b6d44718c0fe6930c93d9bbb05476b",
-"data__reader__synthetic_8hpp.html",
-"lbann_8hpp.html",
-"random_8cpp.html#a83826c4b587d1825f13b833be6fe047f"
+"classlbann_1_1Layer.html#a6e307f92dcf0f9f1ea7cdb15d107ea9e",
+"classlbann_1_1cifar10__reader.html#ab75d229a34209d8172f5341856c85540",
+"classlbann_1_1fully__connected__layer.html#a1274e1457c96e4e5cab78d59207f3cc8",
+"classlbann_1_1hypergradient__adam__factory.html#aaf2e3e302ed20c0f68002e461b6693d6",
+"classlbann_1_1lbann__callback__check__dataset.html#a80199acc03e52173cc8375fb567828c6",
+"classlbann_1_1lbann__callback__profiler.html#a7943d66b5a5bfe3d07045a008537651b",
+"classlbann_1_1lbann__exception.html#a8698ff209b53c8452b5ca1d0caf7b824",
+"classlbann_1_1metrics_1_1top__k__categorical__accuracy.html#afd8a40463c26a5403b168238cbf0a8cf",
+"classlbann_1_1persist.html#a5bb3c2effb859cf3ca2c5f297acc3195",
+"classlbann_1_1softmax__layer.html#a2de68fb1095d01621d48c936de83d0cf",
+"data__reader__csv_8cpp.html",
+"image__utils_8cpp.html#a3eec4493d501d8ccadc44096f57a6754",
+"poisson__negloglike_8hpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -3,7 +3,7 @@ var classlbann_1_1metrics_1_1metric =
     [ "metric", "classlbann_1_1metrics_1_1metric.html#a88766bc9201d38a3240d89dcb91fcab5", null ],
     [ "metric", "classlbann_1_1metrics_1_1metric.html#aa8dfba2337ce2569793dcc93ad5aa018", null ],
     [ "~metric", "classlbann_1_1metrics_1_1metric.html#a90f80d226b74ee2489559c1e3e49dbb3", null ],
-    [ "compute_metric", "classlbann_1_1metrics_1_1metric.html#affe1a598c434133ea19509beb20383bc", null ],
+    [ "compute_metric", "classlbann_1_1metrics_1_1metric.html#adbe7c84ee1eab681e576fb374ea806fb", null ],
     [ "copy", "classlbann_1_1metrics_1_1metric.html#afed075627534afbd02fff549979f8312", null ],
     [ "display_unit", "classlbann_1_1metrics_1_1metric.html#af0ef8e45a3fe74f869638911480f79e1", null ],
     [ "fp_set_std_matrix_view", "classlbann_1_1metrics_1_1metric.html#af5ba86dc073e7e41863c9a6b03274613", null ],

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">9bd98b7-ci269</span>
+   &#160;<span id="projectnumber">1a228ae-ci286</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -132,8 +132,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad87909c3c9793a05c88420ab8473dbd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5ba86dc073e7e41863c9a6b03274613"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1metric.html#af5ba86dc073e7e41863c9a6b03274613">fp_set_std_matrix_view</a> (int cur_mini_batch_size)</td></tr>
 <tr class="separator:af5ba86dc073e7e41863c9a6b03274613"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affe1a598c434133ea19509beb20383bc"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1metric.html#affe1a598c434133ea19509beb20383bc">compute_metric</a> (<a class="el" href="base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;predictions_v, <a class="el" href="base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;groundtruth_v)</td></tr>
-<tr class="separator:affe1a598c434133ea19509beb20383bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe7c84ee1eab681e576fb374ea806fb"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1metric.html#adbe7c84ee1eab681e576fb374ea806fb">compute_metric</a> (<a class="el" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a> &amp;predictions_v, <a class="el" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a> &amp;groundtruth_v)</td></tr>
+<tr class="separator:adbe7c84ee1eab681e576fb374ea806fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98acba8f5dbcce2d3b639fbcc97a56fe"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1metric.html#a98acba8f5dbcce2d3b639fbcc97a56fe">report_metric</a> (<a class="el" href="base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a> mode)</td></tr>
 <tr class="separator:a98acba8f5dbcce2d3b639fbcc97a56fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82698045b1aabad5cce1a0c89b56cee2"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1metrics_1_1metric.html#a82698045b1aabad5cce1a0c89b56cee2">report_lifetime_metric</a> (<a class="el" href="base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a> mode)</td></tr>
@@ -256,7 +256,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="affe1a598c434133ea19509beb20383bc"></a>
+<a class="anchor" id="adbe7c84ee1eab681e576fb374ea806fb"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -266,13 +266,13 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">virtual double lbann::metrics::metric::compute_metric </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a> &amp;&#160;</td>
           <td class="paramname"><em>predictions_v</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a> &amp;&#160;</td>
           <td class="paramname"><em>groundtruth_v</em>&#160;</td>
         </tr>
         <tr>
@@ -288,10 +288,10 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#a1eece207df26f503c629325bc7cb24c8">lbann::metrics::categorical_accuracy&lt; T_layout &gt;</a>, <a class="el" href="classlbann_1_1metrics_1_1top__k__categorical__accuracy.html#a054e7cbe53e9a6c00ac19654f2187b8b">lbann::metrics::top_k_categorical_accuracy&lt; T_layout &gt;</a>, and <a class="el" href="classlbann_1_1metrics_1_1mean__squared__error.html#aa6e21862438833bfa3b67f5d63651d37">lbann::metrics::mean_squared_error&lt; T_layout &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classlbann_1_1metrics_1_1categorical__accuracy.html#aa15aac417f596540c7f8712a0ca302ab">lbann::metrics::categorical_accuracy&lt; T_layout &gt;</a>, <a class="el" href="classlbann_1_1metrics_1_1top__k__categorical__accuracy.html#a381d36a52704373985fb5a9cf939022f">lbann::metrics::top_k_categorical_accuracy&lt; T_layout &gt;</a>, and <a class="el" href="classlbann_1_1metrics_1_1mean__squared__error.html#a9388d68689e3bc267f3389bb160250f0">lbann::metrics::mean_squared_error&lt; T_layout &gt;</a>.</p>
 
 <p>Definition at line <a class="el" href="metric_8hpp_source.html#l00086">86</a> of file <a class="el" href="metric_8hpp_source.html">metric.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                                            {</div>
+<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                                                      {</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">return</span> 0.0;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  }</div>
 </div><!-- fragment -->
@@ -794,7 +794,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="namespacelbann_1_1metrics.html">metrics</a></li><li class="navelem"><a class="el" href="classlbann_1_1metrics_1_1metric.html">metric</a></li>
-    <li class="footer">Generated on Tue Sep 19 2017 17:12:47 for LBANN by
+    <li class="footer">Generated on Thu Sep 21 2017 13:48:15 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

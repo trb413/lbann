@@ -4,7 +4,7 @@ var classlbann_1_1metrics_1_1categorical__accuracy =
     [ "categorical_accuracy", "classlbann_1_1metrics_1_1categorical__accuracy.html#a1f13b2f05c085e2d799846e516ace635", null ],
     [ "categorical_accuracy", "classlbann_1_1metrics_1_1categorical__accuracy.html#ae3cbfab8c8bc101d8bf0fb73fd026a0e", null ],
     [ "~categorical_accuracy", "classlbann_1_1metrics_1_1categorical__accuracy.html#a98b6c2a099120e3a650cc0821053d303", null ],
-    [ "compute_metric", "classlbann_1_1metrics_1_1categorical__accuracy.html#a1eece207df26f503c629325bc7cb24c8", null ],
+    [ "compute_metric", "classlbann_1_1metrics_1_1categorical__accuracy.html#aa15aac417f596540c7f8712a0ca302ab", null ],
     [ "copy", "classlbann_1_1metrics_1_1categorical__accuracy.html#a183dc18574265d63a385084b3e1da987", null ],
     [ "display_unit", "classlbann_1_1metrics_1_1categorical__accuracy.html#af6b1990185845ee94d12f364e452c838", null ],
     [ "fp_set_std_matrix_view", "classlbann_1_1metrics_1_1categorical__accuracy.html#a1d3b33fdfb196148d00254c7761fb643", null ],

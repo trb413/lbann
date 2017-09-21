@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">9bd98b7-ci269</span>
+   &#160;<span id="projectnumber">1a228ae-ci286</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -142,7 +142,7 @@ $(document).ready(function(){initNavTree('summary_8cpp_source.html','');});
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> lbann_summary::reduce_mean(<span class="keyword">const</span> std::string tag,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                <span class="keyword">const</span> <a class="code" href="base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a>&amp; mat,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>&amp; mat,</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                <span class="keywordtype">int</span> step) {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// Local sum</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> sum = 0.0;</div>
@@ -167,21 +167,21 @@ $(document).ready(function(){initNavTree('summary_8cpp_source.html','');});
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">void</span> lbann_summary::reduce_min(<span class="keyword">const</span> std::string tag,</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                               <span class="keyword">const</span> <a class="code" href="base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a>&amp; mat,</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                               <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>&amp; mat,</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                               <span class="keywordtype">int</span> step) {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> local_min = El::Min(mat.LockedMatrix());</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  m_pending_mins.emplace_back(tag, step, local_min);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">void</span> lbann_summary::reduce_max(<span class="keyword">const</span> std::string tag,</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                               <span class="keyword">const</span> <a class="code" href="base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a>&amp; mat,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                               <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>&amp; mat,</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                               <span class="keywordtype">int</span> step) {</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> local_max = El::Max(mat.LockedMatrix());</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  m_pending_maxes.emplace_back(tag, step, local_max);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">void</span> lbann_summary::reduce_stdev(<span class="keyword">const</span> std::string tag,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                 <span class="keyword">const</span> <a class="code" href="base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a>&amp; mat,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                 <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>&amp; mat,</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                 <span class="keywordtype">int</span> step) {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="comment">// Local sum and squared sum</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> sum = 0.0;</div>
@@ -223,7 +223,7 @@ $(document).ready(function(){initNavTree('summary_8cpp_source.html','');});
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keywordtype">void</span> lbann_summary::reduce_histogram(<span class="keyword">const</span> std::string tag,</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                                     <span class="keyword">const</span> <a class="code" href="base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a>&amp; mat,</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                                     <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>&amp; mat,</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                                     <span class="keywordtype">int</span> step) {</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> local_min = El::Min(mat.LockedMatrix());</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> local_max = El::Max(mat.LockedMatrix());</div>
@@ -582,19 +582,19 @@ $(document).ready(function(){initNavTree('summary_8cpp_source.html','');});
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;}  <span class="comment">// namespace lbann</span></div>
 <div class="ttc" id="base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00040">base.hpp:40</a></div></div>
+<div class="ttc" id="base_8hpp_html_a059664ed36d5eedd5ff4f7838d9c7a5a"><div class="ttname"><a href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a></div><div class="ttdeci">El::AbstractDistMatrix&lt; DataType &gt; AbsDistMat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00046">base.hpp:46</a></div></div>
 <div class="ttc" id="summary_8hpp_html"><div class="ttname"><a href="summary_8hpp.html">summary.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__summary_html_a2891f67b732e92cc88e2c9849f911f57"><div class="ttname"><a href="classlbann_1_1lbann__summary.html#a2891f67b732e92cc88e2c9849f911f57">lbann::lbann_summary::lbann_summary</a></div><div class="ttdeci">lbann_summary(std::string logdir, lbann_comm *comm)</div><div class="ttdef"><b>Definition:</b> <a href="summary_8hpp_source.html#l00190">summary.hpp:190</a></div></div>
 <div class="ttc" id="base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00045">base.hpp:45</a></div></div>
 <div class="ttc" id="file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00044">file_io.cpp:44</a></div></div>
 <div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c">lbann::persist_type::model</a></div></div>
-<div class="ttc" id="base_8hpp_html_afad88fb587c304caea8a36ee5a5c1df8"><div class="ttname"><a href="base_8hpp.html#afad88fb587c304caea8a36ee5a5c1df8">ElMat</a></div><div class="ttdeci">El::ElementalMatrix&lt; DataType &gt; ElMat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00056">base.hpp:56</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_188189ff0dae47f8a298515598da82cf.html">CT-TES-DG</a></li><li class="navelem"><a class="el" href="dir_4433ec42d88debf12448d92b37b4f585.html">src</a></li><li class="navelem"><a class="el" href="dir_0d2a09d726113ab85f8377f3b4b0b870.html">utils</a></li><li class="navelem"><a class="el" href="summary_8cpp.html">summary.cpp</a></li>
-    <li class="footer">Generated on Tue Sep 19 2017 17:12:02 for LBANN by
+    <li class="footer">Generated on Thu Sep 21 2017 13:47:56 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
