@@ -64,15 +64,16 @@ class generic_data_reader : public lbann_image_preprocessor {
    */
   generic_data_reader(int batch_size, bool shuffle = true) :
     m_mini_batch_size(0), m_current_pos(0),
-    m_mini_batch_stride(0), m_base_offset(0), m_model_offset(0),
+    m_stride_to_next_mini_batch(0), m_base_offset(0), m_model_offset(0),
     m_sample_stride(1), m_iteration_stride(1),
     m_last_mini_batch_size(0),
-    m_last_mini_batch_stride(0),
+    m_stride_to_last_mini_batch(0),
     m_reset_mini_batch_index(0),
     m_loaded_mini_batch_idx(0),
     m_current_mini_batch_idx(0),
     m_num_iterations_per_epoch(0), m_global_mini_batch_size(0),
     m_global_last_mini_batch_size(0),
+    m_num_parallel_readers(0), m_model_rank(0),
     m_file_dir(""), m_data_fn(""), m_label_fn(""),
     m_first_n(false), m_max_sample_count(0), m_validation_percent(-1),
     m_max_sample_count_was_set(false), m_use_percent(1.0),
@@ -180,7 +181,7 @@ class generic_data_reader : public lbann_image_preprocessor {
    * Sets the percentage of the dataset to be used for validation.
    * @param s The percentage used, in the range [0, 1].
    */
-  void set_validation_percent(double s);
+  virtual void set_validation_percent(double s);
 
   /**
    * True if set_validation_percent was called.
@@ -196,7 +197,7 @@ class generic_data_reader : public lbann_image_preprocessor {
    * Set an idenifier for the dataset.
    * The role should be one of "train", "test", or "validate".
    */
-  void set_role(std::string role) {
+  virtual void set_role(std::string role) {
     m_role = role;
   }
 
@@ -205,7 +206,7 @@ class generic_data_reader : public lbann_image_preprocessor {
    * with the heldout percentage.
    * Typically this changes from "train" to "validate".
    */
-  void swap_role(std::string role) {
+  virtual void swap_role(std::string role) {
     m_role = role;
     if(m_validation_percent == -1) {
       throw lbann_exception(
@@ -325,12 +326,12 @@ class generic_data_reader : public lbann_image_preprocessor {
     return m_global_mini_batch_size;
   }
   /// Set the mini batch stride
-  void set_mini_batch_stride(const int s) {
-    m_mini_batch_stride = s;
+  void set_stride_to_next_mini_batch(const int s) {
+    m_stride_to_next_mini_batch = s;
   }
   /// Return the mini batch stride.
-  int get_mini_batch_stride() const {
-    return m_mini_batch_stride;
+  int get_stride_to_next_mini_batch() const {
+    return m_stride_to_next_mini_batch;
   }
   /// Set the sample stride
   void set_sample_stride(const int s) {
@@ -381,12 +382,12 @@ class generic_data_reader : public lbann_image_preprocessor {
     return m_global_last_mini_batch_size;
   }
   /// Set the last mini batch stride
-  void set_last_mini_batch_stride(const int s) {
-    m_last_mini_batch_stride = s;
+  void set_stride_to_last_mini_batch(const int s) {
+    m_stride_to_last_mini_batch = s;
   }
   /// Return the last mini batch stride
-  int get_last_mini_batch_stride() const {
-    return m_last_mini_batch_stride;
+  int get_stride_to_last_mini_batch() const {
+    return m_stride_to_last_mini_batch;
   }
   /// Set the number of parallel readers per model
   void set_num_parallel_readers(const int s) {
@@ -454,7 +455,7 @@ class generic_data_reader : public lbann_image_preprocessor {
   }
 
   /// only the master may write to cerr or cout; primarily for use in debugging during development
-  void set_master(bool m) {
+  virtual void set_master(bool m) {
     m_master = m;
   }
 
@@ -463,14 +464,14 @@ class generic_data_reader : public lbann_image_preprocessor {
     return m_master;
   }
 
-  /// for use during development and debugging
-  void set_rank(int rank) {
-    m_rank = rank;
+  /// Allow the reader to know where it is in the model hierarchy
+  virtual void set_rank(int rank) {
+    m_model_rank = rank;
   }
 
-  /// for use during development and debugging
+  /// Allow the reader to know where it is in the model hierarchy
   int get_rank() const {
-    return m_rank;
+    return m_model_rank;
   }
 
   /**
@@ -536,7 +537,7 @@ class generic_data_reader : public lbann_image_preprocessor {
   int m_mini_batch_size;
   int m_current_pos;
   /// Batch Stride is typically batch_size, but may be a multiple of batch size if there are multiple readers
-  int m_mini_batch_stride;
+  int m_stride_to_next_mini_batch;
   /// If there are multiple instances of the reader,
   /// then it may not reset to zero
   int m_base_offset;
@@ -555,7 +556,7 @@ class generic_data_reader : public lbann_image_preprocessor {
   std::vector<int> m_unused_indices;
 
   int m_last_mini_batch_size;
-  int m_last_mini_batch_stride;
+  int m_stride_to_last_mini_batch;
   /// The index at which this data reader starts its epoch
   int m_reset_mini_batch_index;
   /// The index of the current mini-batch that has been loaded
@@ -569,7 +570,7 @@ class generic_data_reader : public lbann_image_preprocessor {
 
   int m_num_parallel_readers; /// How many parallel readers are being used
 
-  int m_rank;
+  int m_model_rank;  /// What is the rank of the data reader within a given model
   std::string m_file_dir;
   std::string m_data_fn;
   std::string m_label_fn;

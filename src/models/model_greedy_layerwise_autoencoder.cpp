@@ -134,7 +134,7 @@ void greedy_layerwise_autoencoder::insert_mirror(uint32_t layer_index) {
 
   //call base model set up at each phase to reindex and set appropriate matrices, fp and bp input
   //assume that necessary layer parameters are set e.g., m_num_neurons when layers were constructed
-  setup(layer_index, mirror_index+1);  //set up  all active layers
+  setup_subset(layer_index, mirror_index+1);  //set up  all active layers
 
   // set flag to indicate that we have a mirror layer inserted
   m_have_mirror = 1;
@@ -316,6 +316,7 @@ bool greedy_layerwise_autoencoder::train_mini_batch() {
 }
 
 void greedy_layerwise_autoencoder::evaluate_phase(execution_mode mode) {
+  if (!is_execution_mode_valid(mode)) { return; }
   // Set the execution mode
   m_execution_mode = mode;
   for (size_t l = 0; l <= m_end_index; ++l) {
@@ -357,6 +358,7 @@ bool greedy_layerwise_autoencoder::evaluate_mini_batch() {
 
 
 void greedy_layerwise_autoencoder::evaluate(execution_mode mode) {
+  if (!is_execution_mode_valid(mode)) { return; }
   //concatenate original layers with reconstruction layers
   //@todo add state (in(active)) to reconstruction layer
   m_layers.insert(std::end(m_layers), std::begin(m_reconstruction_layers)+1,std::end(m_reconstruction_layers));

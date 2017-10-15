@@ -34,8 +34,8 @@ namespace lbann {
 void generic_data_reader::setup() {
   m_base_offset = 0;
   m_sample_stride = 1;
-  m_mini_batch_stride = 0;
-  m_last_mini_batch_stride = 0;
+  m_stride_to_next_mini_batch = 0;
+  m_stride_to_last_mini_batch = 0;
   m_current_mini_batch_idx = 0;
   m_num_iterations_per_epoch = 0;
   m_global_mini_batch_size = 0;
@@ -211,7 +211,7 @@ bool generic_data_reader::update(bool is_active_reader) {
     reader_not_done = false;
   }
   if (m_current_mini_batch_idx == m_num_iterations_per_epoch) {
-    if (m_current_pos < (int)m_shuffled_indices.size()) {
+    if ((get_rank() < m_num_parallel_readers) && (m_current_pos < (int)m_shuffled_indices.size())) {
       throw lbann_exception(
         std::string{} + __FILE__ + " " + std::to_string(__LINE__)
         + " :: generic data reader update error: the epoch is complete,"
@@ -252,12 +252,13 @@ int generic_data_reader::get_current_global_mini_batch_size() const {
 }
 
 int generic_data_reader::get_next_position() const {
-  /// Is the mini-batch being loaded corresponds to the second to last mini-batch
-  /// If so, get the last mini-batch stride
+  /// Is the mini-batch that is finishing corresponds to the second to
+  /// last mini-batch, take the proper (possibly reduced) step to
+  /// setup for the last mini-batch
   if (m_loaded_mini_batch_idx >= (m_num_iterations_per_epoch-2)) {
-    return m_current_pos + m_last_mini_batch_stride;
+    return m_current_pos + m_stride_to_last_mini_batch;
   } else {
-    return m_current_pos + m_mini_batch_stride;
+    return m_current_pos + m_stride_to_next_mini_batch;
   }
 }
 

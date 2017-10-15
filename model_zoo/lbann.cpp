@@ -161,30 +161,10 @@ int main(int argc, char *argv[]) {
 
     // Initalize model
     // @todo: not all callbacks code is in place
-    sequential_model *model = init_model(comm, optimizer_fac, pb);
-    std::unordered_map<uint,uint> layer_mapping;
-    add_layers(model, data_readers, cudnn, pb, layer_mapping);
-    init_callbacks(comm, model, data_readers, pb, layer_mapping);
+    model *model = init_model(comm, optimizer_fac, pb);
+    add_layers(model, data_readers, cudnn, pb);
+    init_callbacks(comm, model, data_readers, pb);
     model->setup();
-
-    // Optionally run ltfb
-    #if 0
-    sequential_model *model_2;
-    std::map<execution_mode, generic_data_reader *> data_readers_2;
-    //under development ...
-    if (ltfb) {
-      if (master) {
-        cerr << endl << "running ltfb\n\n";
-        throw lbann_exception("ltfb is not ready yet; coming soon!");
-      }
-      init_data_readers(master, pb, data_readers_2, pb_model->mini_batch_size());
-      optimizer_factory *optimizer_fac_2 = init_optimizer_factory(comm, pb);
-      model_2 = init_model(comm, optimizer_fac_2, pb);
-      model_2->setup();
-      //lbann_callback_ltfb ltfb(45, model_2);
-      //model->add_callback(&ltfb);
-    }
-    #endif
 
     // restart model from checkpoint if we have one
     //@todo
@@ -200,6 +180,8 @@ int main(int argc, char *argv[]) {
       }
     }
 
+    if (not opts->has_string("exit_after_setup")) {
+
     ///////////////////////////////////////////////////////////////////
     // main loop for training/testing
     ///////////////////////////////////////////////////////////////////
@@ -211,12 +193,10 @@ int main(int argc, char *argv[]) {
     init_random(lbann_random_seed + comm->get_rank_in_world());
 #else
     if(comm->am_world_master()) {
-      std::cout << "--------------------------------------------------------------------------------"
-                << std::endl;
-      std::cout << "ALERT: executing in sequentially consistent mode -- performance will suffer"
-                << std::endl;
-      std::cout << "--------------------------------------------------------------------------------"
-                << std::endl;
+      std::cout << 
+        "--------------------------------------------------------------------------------\n"
+        "ALERT: executing in sequentially consistent mode -- performance will suffer\n"
+        "--------------------------------------------------------------------------------\n";
     }
 #endif
 
@@ -225,6 +205,18 @@ int main(int argc, char *argv[]) {
 
     // Evaluate model on test set
     model->evaluate(execution_mode::testing);
+
+    } 
+
+    else {
+      if (comm->am_world_master()) {
+        std::cout << 
+          "--------------------------------------------------------------------------------\n"
+          "ALERT: model has been setup; we are now exiting due to command\n"
+          "       line option: --exit_after_setup\n"
+          "--------------------------------------------------------------------------------\n";
+      }
+    }
 
     // @todo: figure out and implement coherent strategy
     // for freeing dynamically allocated memory
