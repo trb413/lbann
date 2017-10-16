@@ -53,7 +53,7 @@ class image_utils {
   static bool savePNG(const std::string& Imagefile, int Width, int Height, bool Flip, unsigned char *Pixels);
 
   static bool loadJPG(std::vector<unsigned char>& image_buf, int& Width, int& Height, bool Flip, unsigned char *&Pixels);
-  static bool loadJPG(const std::string& Imagefile, int& Width, int& Height, bool Flip, unsigned char *&Pixels, bool random_crop = false);
+  static bool loadJPG(const std::string& Imagefile, int& Width, int& Height, unsigned char *&Pixels, bool random_crop = false);
   static bool saveJPG(const std::string& Imagefile, int Width, int Height, bool Flip, unsigned char *Pixels);
 
   // load/save an image into/from a temporary buffer

@@ -248,7 +248,7 @@ bool lbann::image_utils::savePNG(const std::string& Imagefile, int Width, int He
 #endif
 }
 
-bool lbann::image_utils::loadJPG(const std::string& Imagefile, int& Width, int& Height, bool Flip, unsigned char *&Pixels, bool random_crop) {
+bool lbann::image_utils::loadJPG(const std::string& Imagefile, int& Width, int& Height, unsigned char *&Pixels, bool random_crop) {
 
 #ifdef __LIB_OPENCV
 
@@ -259,6 +259,24 @@ bool lbann::image_utils::loadJPG(const std::string& Imagefile, int& Width, int& 
   }
   int raw_width = raw_image.cols;
   int raw_height = raw_image.rows;
+
+  // First resize such that the shorter dimension is 256x256, then crop the
+  // central 256x256 pixels.
+  if (raw_width <= raw_height) {
+    double scale = 256.0 / raw_width;
+    cv::Mat scaled_image;
+    cv::resize(raw_image, scaled_image, cv::Size(), scale, scale);
+    cv::Rect crop(0, (scaled_image.rows - 256 + 1) / 2, 256, 256);
+    raw_image = cv::Mat(scaled_image, crop);
+  } else {
+    double scale = 256.0 / raw_height;
+    cv::Mat scaled_image;
+    cv::resize(raw_image, scaled_image, cv::Size(), scale, scale);
+    cv::Rect crop((scaled_image.cols - 256 + 1) / 2, 0, 256, 256);
+    raw_image = cv::Mat(scaled_image, crop);
+  }
+  raw_width = 256;
+  raw_height = 256;
   
   // Get random crop of image
   int crop_x_start, crop_y_start;
@@ -276,7 +294,7 @@ bool lbann::image_utils::loadJPG(const std::string& Imagefile, int& Width, int& 
   for (int y = 0; y < Height; y++) {
     for (int x = 0; x < Width; x++) {
       cv::Vec3b pixel = image.at<cv::Vec3b>(y, x);
-      int offset = (Flip) ? (y * Width + (Width - 1 - x)) : (y * Width + x);
+      int offset = y * Width + x;
       Pixels[offset]                  = pixel[_LBANN_CV_BLUE_];
       Pixels[offset + Height*Width]   = pixel[_LBANN_CV_GREEN_];
       Pixels[offset + 2*Height*Width] = pixel[_LBANN_CV_RED_];

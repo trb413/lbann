@@ -57,8 +57,7 @@ bool imagenet_reader::fetch_datum(Mat& X, int data_id, int mb_idx, int tid) {
   int height = 227;
   unsigned char *pixels = m_pixel_bufs[tid].data();
   bool is_training = m_role == "train";
-  bool flip_horizontal = is_training && std::bernoulli_distribution()(get_fast_generator());
-  bool ret = lbann::image_utils::loadJPG(imagepath, width, height, flip_horizontal, pixels, is_training);
+  bool ret = lbann::image_utils::loadJPG(imagepath, width, height, pixels, is_training);
   if(!ret) {
     throw lbann_exception(std::string{} + __FILE__ + " " + std::to_string(__LINE__)
                           + "ImageNet: image_utils::loadJPG failed to load - " 
