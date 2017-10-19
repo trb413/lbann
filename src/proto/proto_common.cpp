@@ -396,6 +396,14 @@ void add_layers(
     }
 
     //////////////////////////////////////////////////////////////////
+    // LAYER: noise 
+    //////////////////////////////////////////////////////////////////
+    else if (layer.has_noise()) {
+      const lbann_data::Noise& ell = layer.noise();
+      d = new noise_layer<>(layer_id, comm,ell.noise_factor(), cudnn);
+    }
+
+    //////////////////////////////////////////////////////////////////
     // LAYER: split
     //////////////////////////////////////////////////////////////////
     else if (layer.has_split()) {
@@ -945,6 +953,7 @@ void add_layers(
       }
     }
 
+    d->set_name(layer.name());
     model->add(d);
     name_mapping[layer.name()] = d;
     index_mapping[layer_id] = d;
@@ -1176,7 +1185,7 @@ void init_callbacks(
           which.insert(name_to_index.find(a)->second);
           /*
           if (master) {
-            cout << "CALLBACK: imcomm: prototext layer name " << a << " maps to model layer " << name_mapping.find(a)->second << "; layer name: " << the_layers[a]->get_name() << std::endl;
+            cout << "CALLBACK: imcomm: prototext layer name " << a << " maps to model layer " << name_mapping.find(a)->second << "; layer name: " << the_layers[a]->get_type() << std::endl;
           }
           */
         }
@@ -1398,11 +1407,34 @@ void init_callbacks(
     if (callback.has_step_minibatch()) {
       const lbann_data::CallbackStepMinibatch& c = callback.step_minibatch();
       if (master) {
-        std::cout << "adding step_minibatch callback" << std::endl;
+        std::cout << "adding step_minibatch callback, start=" <<
+          c.starting_mbsize() << ", step=" << c.step() << " ramp=" <<
+          c.ramp_time() << std::endl;
       }
       lbann_callback_step_minibatch *step_mb_cb = new
-      lbann_callback_step_minibatch(c.starting_mbsize(), c.step());
+        lbann_callback_step_minibatch(c.starting_mbsize(), c.step(),
+                                      c.ramp_time());
       model->add_callback(step_mb_cb);
+    }
+
+    //////////////////////////////////////////////////////////////////
+    // CALLBACK: minibatch_schedule
+    //////////////////////////////////////////////////////////////////
+    if (callback.has_minibatch_schedule()) {
+      const lbann_data::CallbackMinibatchSchedule& c =
+        callback.minibatch_schedule();
+      if (master) {
+        std::cout << "adding minibatch_schedule callback" << std::endl;
+      }
+      std::vector<lbann_callback_minibatch_schedule::minibatch_step> steps;
+      for (int i = 0; i < c.step_size(); ++i) {
+        const lbann_data::MinibatchScheduleStep& step = c.step(i);
+        steps.emplace_back(step.epoch(), step.mbsize(), step.lr(),
+                           step.ramp_time());
+      }
+      lbann_callback_minibatch_schedule *mb_sched = new
+        lbann_callback_minibatch_schedule(c.starting_mbsize(), steps);
+      model->add_callback(mb_sched);
     }
 
     //////////////////////////////////////////////////////////////////
@@ -1568,20 +1600,16 @@ void init_data_readers(bool master, const lbann_data::LbannPB& p, std::map<execu
       // set up the image preprocessor
       std::shared_ptr<cv_process> pp = std::make_shared<cv_process>();
 
-      // set up the normalizer
-      std::unique_ptr<lbann::cv_normalizer> normalizer(new(lbann::cv_normalizer));
-      normalizer->unit_scale(preprocessor.scale());
-      normalizer->subtract_mean(preprocessor.subtract_mean());
-      normalizer->unit_variance(preprocessor.unit_variance());
-      normalizer->z_score(preprocessor.z_score());
-      pp->set_normalizer(std::move(normalizer));
-      //if (master) cout << "normalizer is set" << endl;
-
-      // set up a custom transform (colorizer)
-      if (!preprocessor.no_colorize()) {
-        std::unique_ptr<lbann::cv_colorizer> colorizer(new(lbann::cv_colorizer));
-        pp->set_custom_transform2(std::move(colorizer));
-        //if (master) cout << "colorizer is set" << endl;
+      // set up cropper as needed
+      if(preprocessor.crop_first()) {
+        std::unique_ptr<lbann::cv_cropper> cropper(new(lbann::cv_cropper));
+        cropper->set(preprocessor.crop_width(),
+                     preprocessor.crop_height(),
+                     preprocessor.crop_randomly(),
+                     std::make_pair<int,int>(preprocessor.crop_roi_width(),
+                                             preprocessor.crop_roi_height()));
+        pp->add_transform(std::move(cropper));
+        //if (master) cout << "cropper is set" << endl;
       }
 
       // set up augmenter if necessary
@@ -1600,9 +1628,25 @@ void init_data_readers(bool master, const lbann_data::LbannPB& p, std::map<execu
                        preprocessor.horizontal_shift(),
                        preprocessor.vertical_shift(),
                        preprocessor.shear_range());
-        pp->set_augmenter(std::move(augmenter));
+        pp->add_transform(std::move(augmenter));
         //if (master) cout << "augmenter is set" << endl;
       }
+
+      // set up a custom transform (colorizer)
+      if (!preprocessor.no_colorize()) {
+        std::unique_ptr<lbann::cv_colorizer> colorizer(new(lbann::cv_colorizer));
+        pp->add_transform(std::move(colorizer));
+        //if (master) cout << "colorizer is set" << endl;
+      }
+
+      // set up the normalizer
+      std::unique_ptr<lbann::cv_normalizer> normalizer(new(lbann::cv_normalizer));
+      normalizer->unit_scale(preprocessor.scale());
+      normalizer->subtract_mean(preprocessor.subtract_mean());
+      normalizer->unit_variance(preprocessor.unit_variance());
+      normalizer->z_score(preprocessor.z_score());
+      pp->add_normalizer(std::move(normalizer));
+      //if (master) cout << "normalizer is set" << endl;
 
       if (name == "imagenet_cv") {
         reader = new imagenet_reader_cv(mini_batch_size, pp, shuffle);
@@ -1888,6 +1932,13 @@ void get_cmdline_overrides(lbann::lbann_comm *comm, lbann_data::LbannPB& p)
   lbann_data::Model *model = p.mutable_model();
 
   if (opts->has_string("dag_model")) {
+    std::string sanity = model->name();
+    if (sanity != "dnn") {
+      err << __FILE__ << " " << __LINE__ << " :: "
+          << " the current network model is: " << model->name()
+          << "; you can only change the model to 'dag_model' if the current model is 'dnn'";
+      throw lbann_exception(err.str());
+    }
     if (master) {
       std::cout << "\nchanging model from " << model->name() << " to: dag\n\n";
     }
@@ -1943,6 +1994,9 @@ void get_cmdline_overrides(lbann::lbann_comm *comm, lbann_data::LbannPB& p)
   }
   if (opts->has_bool("use_cudnn")) {
     model->set_use_cudnn(opts->get_int("use_cudnn"));
+  }
+  if (opts->has_int("random_seed")) {
+    model->set_random_seed(opts->get_int("random_seed"));
   }
 
 
@@ -2025,6 +2079,7 @@ void print_parameters(lbann::lbann_comm *comm, lbann_data::LbannPB& p)
        << "  num_gpus:             " << m.num_gpus()  << endl
        << "  num_parallel_readers: " << m.num_parallel_readers()  << endl
        << "  use_cudnn:            " << m.use_cudnn()  << endl
+       << "  random_seed:          " << m.random_seed() << endl
        << "  objective_function:   " << m.objective_function()  << endl
        << "  data_layout:          " << m.data_layout()  << endl
        << "     (only used for metrics)\n"
@@ -2099,6 +2154,7 @@ void print_help(lbann::lbann_comm *comm)
        "  --num_gpus=<int>\n"
        "  --use_cudnn=<bool>\n"
        "     has no effect unless lbann was compiled with: __LIB_CUDNN\n"
+       "  --random_seed=<int>\n"
        "  --objective_function<string>\n"
        "      <string> must be: categorical_cross_entropy or mean_squared_error\n"
        "  --data_layout<string>\n"
