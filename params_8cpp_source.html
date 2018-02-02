@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/CT-TES-DG/src/params.cpp Source File</title>
+<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/LBANN-MCK-DOX/src/params.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">4b0b39b-ci288</span>
+   &#160;<span id="projectnumber">7a0ed70-ci45</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('params_8cpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -118,133 +118,121 @@ $(document).ready(function(){initNavTree('params_8cpp_source.html','');});
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="params_8hpp.html">lbann/params.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">using namespace </span>El;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classlbann_1_1TrainingParams.html#a4ca5149e14ab1aed5f5a9c0e612ce62d">   32</a></span>&#160;<a class="code" href="classlbann_1_1TrainingParams.html#a4ca5149e14ab1aed5f5a9c0e612ce62d">lbann::TrainingParams::TrainingParams</a>()</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  : EnableProfiling(false), RandomSeed(1), ShuffleTrainingData(1),</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    PercentageTrainingSamples(1.00), PercentageValidationSamples(1.00),</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    PercentageTestingSamples(1.00), TestWithTrainData(0),</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    TrainingSamples(1024), TestingSamples(256),</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    EpochStart(0), EpochCount(2), MBSize(192),</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    LearnRate(0.3), LearnRateMethod(2),</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    LrDecayRate(0.5), LrDecayCycles(5000),</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    ActivationType(1), DropOut(-1), Lambda(0),</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    DatasetRootDir(<span class="stringliteral">&quot;.&quot;</span>), SaveImageDir(<span class="stringliteral">&quot;.&quot;</span>), ParameterDir(<span class="stringliteral">&quot;.&quot;</span>),</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    SaveModel(false), LoadModel(false),</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    CkptEpochs(0), CkptSteps(0), CkptSecs(0.0),</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    TrainFile(<span class="stringliteral">&quot; &quot;</span>), TestFile(<span class="stringliteral">&quot; &quot;</span>), SummaryDir(<span class="stringliteral">&quot;.&quot;</span>), DumpWeights(false), DumpActivations(false),</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    DumpGradients(false), DumpDir(<span class="stringliteral">&quot;.&quot;</span>), IntermodelCommMethod(0),</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    ProcsPerModel(0) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classlbann_1_1TrainingParams.html#a245c0674a2132cb15f1198b1f4dd2bf8">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1TrainingParams.html#a245c0674a2132cb15f1198b1f4dd2bf8">lbann::TrainingParams::parse_params</a>() {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  EnableProfiling = Input(<span class="stringliteral">&quot;--profiling&quot;</span>, <span class="stringliteral">&quot;Enable profiling&quot;</span>, EnableProfiling);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;lbann::TrainingParams::TrainingParams()</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  : EnableProfiling(false), RandomSeed(1), ShuffleTrainingData(1),</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    PercentageTrainingSamples(1.00), PercentageValidationSamples(1.00),</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    PercentageTestingSamples(1.00), TestWithTrainData(0),</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    TrainingSamples(1024), TestingSamples(256),</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    EpochStart(0), EpochCount(2), MBSize(192),</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    LearnRate(0.3), LearnRateMethod(2),</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    LrDecayRate(0.5), LrDecayCycles(5000),</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    ActivationType(1), DropOut(-1), Lambda(0),</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    DatasetRootDir(<span class="stringliteral">&quot;.&quot;</span>), SaveImageDir(<span class="stringliteral">&quot;.&quot;</span>), ParameterDir(<span class="stringliteral">&quot;.&quot;</span>),</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    SaveModel(false), LoadModel(false),</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    CkptEpochs(0), CkptSteps(0), CkptSecs(0.0),</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    TrainFile(<span class="stringliteral">&quot; &quot;</span>), TestFile(<span class="stringliteral">&quot; &quot;</span>), SummaryDir(<span class="stringliteral">&quot;.&quot;</span>), DumpWeights(false), DumpActivations(false),</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    DumpGradients(false), DumpDir(<span class="stringliteral">&quot;.&quot;</span>), IntermodelCommMethod(0),</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    ProcsPerModel(0) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> lbann::TrainingParams::parse_params() {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  EnableProfiling = El::Input(<span class="stringliteral">&quot;--profiling&quot;</span>, <span class="stringliteral">&quot;Enable profiling&quot;</span>, EnableProfiling);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  RandomSeed = El::Input(<span class="stringliteral">&quot;--seed&quot;</span>, <span class="stringliteral">&quot;Random seed&quot;</span>, RandomSeed);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  ShuffleTrainingData = El::Input(<span class="stringliteral">&quot;--random-training-samples&quot;</span>, <span class="stringliteral">&quot;0 - Pick first N training samples, 1 - Select N random training samples&quot;</span>, ShuffleTrainingData);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  RandomSeed = Input(<span class="stringliteral">&quot;--seed&quot;</span>, <span class="stringliteral">&quot;Random seed&quot;</span>, RandomSeed);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  ShuffleTrainingData = Input(<span class="stringliteral">&quot;--random-training-samples&quot;</span>, <span class="stringliteral">&quot;0 - Pick first N training samples, 1 - Select N random training samples&quot;</span>, ShuffleTrainingData);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  PercentageTrainingSamples = Input(<span class="stringliteral">&quot;--percentage-training-samples&quot;</span>, <span class="stringliteral">&quot;Percentage of training set sampled during training [0.00 to 1.00]&quot;</span>, PercentageTrainingSamples);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  PercentageValidationSamples = Input(<span class="stringliteral">&quot;--percentage-validation-samples&quot;</span>, <span class="stringliteral">&quot;Percentage of the unused training set sampled during validation [0.00 to 1.00]&quot;</span>, PercentageValidationSamples);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  PercentageTestingSamples = Input(<span class="stringliteral">&quot;--percentage-testing-samples&quot;</span>, <span class="stringliteral">&quot;Percentage of testing set sampled during testing&quot;</span>, PercentageTestingSamples);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  TestWithTrainData = Input(<span class="stringliteral">&quot;--test-with-train-data&quot;</span>, <span class="stringliteral">&quot;Use the training data for validation&quot;</span>, TestWithTrainData);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  PercentageTrainingSamples = El::Input(<span class="stringliteral">&quot;--percentage-training-samples&quot;</span>, <span class="stringliteral">&quot;Percentage of training set sampled during training [0.00 to 1.00]&quot;</span>, PercentageTrainingSamples);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  PercentageValidationSamples = El::Input(<span class="stringliteral">&quot;--percentage-validation-samples&quot;</span>, <span class="stringliteral">&quot;Percentage of the unused training set sampled during validation [0.00 to 1.00]&quot;</span>, PercentageValidationSamples);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  PercentageTestingSamples = El::Input(<span class="stringliteral">&quot;--percentage-testing-samples&quot;</span>, <span class="stringliteral">&quot;Percentage of testing set sampled during testing&quot;</span>, PercentageTestingSamples);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  TestWithTrainData = El::Input(<span class="stringliteral">&quot;--test-with-train-data&quot;</span>, <span class="stringliteral">&quot;Use the training data for validation&quot;</span>, TestWithTrainData);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  EpochCount = El::Input(<span class="stringliteral">&quot;--num-epochs&quot;</span>, <span class="stringliteral">&quot;# of training epochs&quot;</span>, EpochCount);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  MBSize = El::Input(<span class="stringliteral">&quot;--mb-size&quot;</span>, <span class="stringliteral">&quot;Size of the mini-batch to be trained&quot;</span>, MBSize);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  EpochCount = Input(<span class="stringliteral">&quot;--num-epochs&quot;</span>, <span class="stringliteral">&quot;# of training epochs&quot;</span>, EpochCount);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  MBSize = Input(<span class="stringliteral">&quot;--mb-size&quot;</span>, <span class="stringliteral">&quot;Size of the mini-batch to be trained&quot;</span>, MBSize);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  TrainingSamples = El::Input(<span class="stringliteral">&quot;--training-samples&quot;</span>, <span class="stringliteral">&quot;# of samples to use in training&quot;</span>, TrainingSamples);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  TestingSamples = El::Input(<span class="stringliteral">&quot;--testing-samples&quot;</span>, <span class="stringliteral">&quot;# of samples to use in testing&quot;</span>, TestingSamples);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  TrainingSamples = Input(<span class="stringliteral">&quot;--training-samples&quot;</span>, <span class="stringliteral">&quot;# of samples to use in training&quot;</span>, TrainingSamples);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  TestingSamples = Input(<span class="stringliteral">&quot;--testing-samples&quot;</span>, <span class="stringliteral">&quot;# of samples to use in testing&quot;</span>, TestingSamples);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  LearnRate = Input(<span class="stringliteral">&quot;--learning-rate&quot;</span>, <span class="stringliteral">&quot;How much of the gradient update is applied to the weight matrix&quot;</span>, LearnRate);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  LearnRateMethod = Input(<span class="stringliteral">&quot;--learning-rate-method&quot;</span>, <span class="stringliteral">&quot;1 - Adagrad, 2 - RMSprop, 3 - Adam&quot;</span>, LearnRateMethod);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  LrDecayRate = Input(<span class="stringliteral">&quot;--lr-decay-rate&quot;</span>, <span class="stringliteral">&quot;How much does the learning rate decay when it decays&quot;</span>, LrDecayRate);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  LrDecayCycles = Input(<span class="stringliteral">&quot;--lr-decay-cycle&quot;</span>, <span class="stringliteral">&quot;How often does the learning rate decay&quot;</span>, LrDecayCycles);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  ActivationType = Input(<span class="stringliteral">&quot;--activation-type&quot;</span>, <span class="stringliteral">&quot;1 - Sigmoid, 2 - Tanh, 3 - reLU, 4 - id&quot;</span>, ActivationType);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  DropOut = Input(<span class="stringliteral">&quot;--drop-out&quot;</span>, <span class="stringliteral">&quot;% dropout&quot;</span>, DropOut);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  Lambda = Input(<span class="stringliteral">&quot;--lambda&quot;</span>, <span class="stringliteral">&quot;Lambda for L2 Regularization&quot;</span>, Lambda);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  DatasetRootDir = Input(<span class="stringliteral">&quot;--dataset&quot;</span>, <span class="stringliteral">&quot;Location of train and test data&quot;</span>, DatasetRootDir);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  TrainFile = Input(<span class="stringliteral">&quot;--train-file&quot;</span>, <span class="stringliteral">&quot;Train data file&quot;</span>,TrainFile);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  TestFile = Input(<span class="stringliteral">&quot;--test-file&quot;</span>, <span class="stringliteral">&quot;Test data file&quot;</span>, TestFile);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  SaveImageDir = Input(<span class="stringliteral">&quot;--output&quot;</span>, <span class="stringliteral">&quot;Location to save output images&quot;</span>, SaveImageDir);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  ParameterDir = Input(<span class="stringliteral">&quot;--params&quot;</span>, <span class="stringliteral">&quot;Location to save model parameters&quot;</span>, ParameterDir);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  SaveModel = Input(<span class="stringliteral">&quot;--save-model&quot;</span>, <span class="stringliteral">&quot;Save the current model&quot;</span>, SaveModel);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  LoadModel = Input(<span class="stringliteral">&quot;--load-model&quot;</span>, <span class="stringliteral">&quot;Load a saved model&quot;</span>, LoadModel);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  CkptEpochs = Input(<span class="stringliteral">&quot;--ckpt-epochs&quot;</span>, <span class="stringliteral">&quot;Number of training epochs between checkpoints&quot;</span>, CkptEpochs);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  CkptSteps  = Input(<span class="stringliteral">&quot;--ckpt-steps&quot;</span>, <span class="stringliteral">&quot;Number of training steps between checkpoints&quot;</span>, CkptSteps);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  CkptSecs   = Input(<span class="stringliteral">&quot;--ckpt-secs&quot;</span>, <span class="stringliteral">&quot;Number of seconds between checkpoints&quot;</span>, CkptSecs);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  SummaryDir = Input(<span class="stringliteral">&quot;--summary-dir&quot;</span>, <span class="stringliteral">&quot;Directory to write summary files&quot;</span>, SummaryDir);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  DumpWeights = Input(<span class="stringliteral">&quot;--dump-weights&quot;</span>, <span class="stringliteral">&quot;Whether to dump weights&quot;</span>, DumpWeights);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  DumpActivations = Input(<span class="stringliteral">&quot;--dump-activations&quot;</span>, <span class="stringliteral">&quot;Whether to dump weights&quot;</span>, DumpActivations);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  DumpGradients = Input(<span class="stringliteral">&quot;--dump-gradients&quot;</span>, <span class="stringliteral">&quot;Whether to dump gradients&quot;</span>, DumpGradients);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  DumpDir = Input(<span class="stringliteral">&quot;--dump-dir&quot;</span>, <span class="stringliteral">&quot;Directory to dump matrices&quot;</span>, DumpDir);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  IntermodelCommMethod = Input(<span class="stringliteral">&quot;--imcomm&quot;</span>, <span class="stringliteral">&quot;Type of inter-model communication&quot;</span>,</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                               IntermodelCommMethod);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  ProcsPerModel = Input(<span class="stringliteral">&quot;--procs-per-model&quot;</span>,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                        <span class="stringliteral">&quot;Number of processes per model (0 = one model)&quot;</span>,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                        ProcsPerModel);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classlbann_1_1PerformanceParams.html#a1c8f2276e83effdf28e6be3ac0da91c0">  101</a></span>&#160;<a class="code" href="classlbann_1_1PerformanceParams.html#a1c8f2276e83effdf28e6be3ac0da91c0">lbann::PerformanceParams::PerformanceParams</a>() : BlockSize(256), MaxParIOSize(0) {}</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="classlbann_1_1PerformanceParams.html#abde9f8ab7421f863f11542721c93768f">  103</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1PerformanceParams.html#abde9f8ab7421f863f11542721c93768f">lbann::PerformanceParams::parse_params</a>() {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  BlockSize = Input(<span class="stringliteral">&quot;--block-size&quot;</span>, <span class="stringliteral">&quot;libElemental Block Size&quot;</span>, BlockSize);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  MaxParIOSize = Input(<span class="stringliteral">&quot;--par-IO&quot;</span>, <span class="stringliteral">&quot;Maximum parallel I/O size (0 - unlimited)&quot;</span>, MaxParIOSize);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classlbann_1_1NetworkParams.html#ad915e046e5e001f37a5d0124809dd07b">  108</a></span>&#160;<a class="code" href="classlbann_1_1NetworkParams.html#ad915e046e5e001f37a5d0124809dd07b">lbann::NetworkParams::NetworkParams</a>() : NetworkStr(<span class="stringliteral">&quot;1000&quot;</span>) {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <a class="code" href="classlbann_1_1NetworkParams.html#a14954fcbacb6c9522bd3cf6c28bc93d5">parse_network_string</a>();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="classlbann_1_1NetworkParams.html#a9b6f7e0330547330238085f3fd0e3702">  112</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1NetworkParams.html#a9b6f7e0330547330238085f3fd0e3702">lbann::NetworkParams::parse_params</a>() {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  NetworkStr = Input(<span class="stringliteral">&quot;--network&quot;</span>, <span class="stringliteral">&quot;Specify the hidden layers of the topology&quot;</span>, NetworkStr);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  parse_network_string();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classlbann_1_1NetworkParams.html#a14954fcbacb6c9522bd3cf6c28bc93d5">  117</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1NetworkParams.html#a14954fcbacb6c9522bd3cf6c28bc93d5">lbann::NetworkParams::parse_network_string</a>() {</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  Network.clear();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">const</span> std::string delim = <span class="stringliteral">&quot;,&quot;</span>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordtype">size_t</span> start = 0U;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordtype">size_t</span> end = NetworkStr.find(delim);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordflow">while</span>(end != std::string::npos) {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    Network.push_back(std::stoi(NetworkStr.substr(start, end - start), <span class="keyword">nullptr</span>, 0));</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    start = end + delim.length();</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    end = NetworkStr.find(delim, start);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  Network.push_back(std::stoi(NetworkStr.substr(start, end), <span class="keyword">nullptr</span>, 0));</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  LearnRate = El::Input(<span class="stringliteral">&quot;--learning-rate&quot;</span>, <span class="stringliteral">&quot;How much of the gradient update is applied to the weight matrix&quot;</span>, LearnRate);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  LearnRateMethod = El::Input(<span class="stringliteral">&quot;--learning-rate-method&quot;</span>, <span class="stringliteral">&quot;1 - Adagrad, 2 - RMSprop, 3 - Adam&quot;</span>, LearnRateMethod);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  LrDecayRate = El::Input(<span class="stringliteral">&quot;--lr-decay-rate&quot;</span>, <span class="stringliteral">&quot;How much does the learning rate decay when it decays&quot;</span>, LrDecayRate);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  LrDecayCycles = El::Input(<span class="stringliteral">&quot;--lr-decay-cycle&quot;</span>, <span class="stringliteral">&quot;How often does the learning rate decay&quot;</span>, LrDecayCycles);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  ActivationType = El::Input(<span class="stringliteral">&quot;--activation-type&quot;</span>, <span class="stringliteral">&quot;1 - Sigmoid, 2 - Tanh, 3 - reLU, 4 - id&quot;</span>, ActivationType);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  DropOut = El::Input(<span class="stringliteral">&quot;--drop-out&quot;</span>, <span class="stringliteral">&quot;% dropout&quot;</span>, DropOut);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  Lambda = El::Input(<span class="stringliteral">&quot;--lambda&quot;</span>, <span class="stringliteral">&quot;Lambda for L2 Regularization&quot;</span>, Lambda);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  DatasetRootDir = El::Input(<span class="stringliteral">&quot;--dataset&quot;</span>, <span class="stringliteral">&quot;Location of train and test data&quot;</span>, DatasetRootDir);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  TrainFile = El::Input(<span class="stringliteral">&quot;--train-file&quot;</span>, <span class="stringliteral">&quot;Train data file&quot;</span>,TrainFile);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  TestFile = El::Input(<span class="stringliteral">&quot;--test-file&quot;</span>, <span class="stringliteral">&quot;Test data file&quot;</span>, TestFile);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  SaveImageDir = El::Input(<span class="stringliteral">&quot;--output&quot;</span>, <span class="stringliteral">&quot;Location to save output images&quot;</span>, SaveImageDir);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  ParameterDir = El::Input(<span class="stringliteral">&quot;--params&quot;</span>, <span class="stringliteral">&quot;Location to save model parameters&quot;</span>, ParameterDir);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  SaveModel = El::Input(<span class="stringliteral">&quot;--save-model&quot;</span>, <span class="stringliteral">&quot;Save the current model&quot;</span>, SaveModel);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  LoadModel = El::Input(<span class="stringliteral">&quot;--load-model&quot;</span>, <span class="stringliteral">&quot;Load a saved model&quot;</span>, LoadModel);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  CkptEpochs = El::Input(<span class="stringliteral">&quot;--ckpt-epochs&quot;</span>, <span class="stringliteral">&quot;Number of training epochs between checkpoints&quot;</span>, CkptEpochs);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  CkptSteps  = El::Input(<span class="stringliteral">&quot;--ckpt-steps&quot;</span>, <span class="stringliteral">&quot;Number of training steps between checkpoints&quot;</span>, CkptSteps);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  CkptSecs   = El::Input(<span class="stringliteral">&quot;--ckpt-secs&quot;</span>, <span class="stringliteral">&quot;Number of seconds between checkpoints&quot;</span>, CkptSecs);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  SummaryDir = El::Input(<span class="stringliteral">&quot;--summary-dir&quot;</span>, <span class="stringliteral">&quot;Directory to write summary files&quot;</span>, SummaryDir);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  DumpWeights = El::Input(<span class="stringliteral">&quot;--dump-weights&quot;</span>, <span class="stringliteral">&quot;Whether to dump weights&quot;</span>, DumpWeights);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  DumpActivations = El::Input(<span class="stringliteral">&quot;--dump-activations&quot;</span>, <span class="stringliteral">&quot;Whether to dump weights&quot;</span>, DumpActivations);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  DumpGradients = El::Input(<span class="stringliteral">&quot;--dump-gradients&quot;</span>, <span class="stringliteral">&quot;Whether to dump gradients&quot;</span>, DumpGradients);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  DumpDir = El::Input(<span class="stringliteral">&quot;--dump-dir&quot;</span>, <span class="stringliteral">&quot;Directory to dump matrices&quot;</span>, DumpDir);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  IntermodelCommMethod = El::Input(<span class="stringliteral">&quot;--imcomm&quot;</span>, <span class="stringliteral">&quot;Type of inter-model communication&quot;</span>,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                               IntermodelCommMethod);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  ProcsPerModel = El::Input(<span class="stringliteral">&quot;--procs-per-model&quot;</span>,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                        <span class="stringliteral">&quot;Number of processes per model (0 = one model)&quot;</span>,</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                        ProcsPerModel);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;lbann::PerformanceParams::PerformanceParams() : BlockSize(256), MaxParIOSize(0) {}</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">void</span> lbann::PerformanceParams::parse_params() {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  BlockSize = El::Input(<span class="stringliteral">&quot;--block-size&quot;</span>, <span class="stringliteral">&quot;libElemental Block Size&quot;</span>, BlockSize);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  MaxParIOSize = El::Input(<span class="stringliteral">&quot;--par-IO&quot;</span>, <span class="stringliteral">&quot;Maximum parallel I/O size (0 - unlimited)&quot;</span>, MaxParIOSize);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;lbann::NetworkParams::NetworkParams() : NetworkStr(<span class="stringliteral">&quot;1000&quot;</span>) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  parse_network_string();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keywordtype">void</span> lbann::NetworkParams::parse_params() {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  NetworkStr = El::Input(<span class="stringliteral">&quot;--network&quot;</span>, <span class="stringliteral">&quot;Specify the hidden layers of the topology&quot;</span>, NetworkStr);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  parse_network_string();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keywordtype">void</span> lbann::NetworkParams::parse_network_string() {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  Network.clear();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keyword">const</span> std::string delim = <span class="stringliteral">&quot;,&quot;</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keywordtype">size_t</span> start = 0U;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keywordtype">size_t</span> end = NetworkStr.find(delim);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordflow">while</span>(end != std::string::npos) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    Network.push_back(std::stoi(NetworkStr.substr(start, end - start), <span class="keyword">nullptr</span>, 0));</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    start = end + delim.length();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    end = NetworkStr.find(delim, start);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  Network.push_back(std::stoi(NetworkStr.substr(start, end), <span class="keyword">nullptr</span>, 0));</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;lbann::SystemParams::SystemParams()</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  : HostName(<span class="stringliteral">&quot;Unknwn&quot;</span>), NumNodes(-1), NumCores(-1), TasksPerNode(-1) {}</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="classlbann_1_1SystemParams.html#a74bc72829591193eef9a59d0d53f782f">  130</a></span>&#160;<a class="code" href="classlbann_1_1SystemParams.html#a74bc72829591193eef9a59d0d53f782f">lbann::SystemParams::SystemParams</a>()</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  : HostName(<span class="stringliteral">&quot;Unknwn&quot;</span>), NumNodes(-1), NumCores(-1), TasksPerNode(-1) {}</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
-<div class="line"><a name="l00133"></a><span class="lineno"><a class="line" href="classlbann_1_1SystemParams.html#a730176df36a262f7ef141afda372488d">  133</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1SystemParams.html#a730176df36a262f7ef141afda372488d">lbann::SystemParams::parse_params</a>() {</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  HostName = Input(<span class="stringliteral">&quot;--hostname&quot;</span>, <span class="stringliteral">&quot;HPC hostname&quot;</span>, HostName);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  NumNodes = Input(<span class="stringliteral">&quot;--num-nodes&quot;</span>, <span class="stringliteral">&quot;Total allocation size&quot;</span>, NumNodes);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  NumCores = Input(<span class="stringliteral">&quot;--num-cores&quot;</span>, <span class="stringliteral">&quot;Number of cores per node&quot;</span>, NumCores);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  TasksPerNode = Input(<span class="stringliteral">&quot;--tasks-per-node&quot;</span>, <span class="stringliteral">&quot;MPI Tasks allowed per node&quot;</span>, TasksPerNode);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1SystemParams_html_a74bc72829591193eef9a59d0d53f782f"><div class="ttname"><a href="classlbann_1_1SystemParams.html#a74bc72829591193eef9a59d0d53f782f">lbann::SystemParams::SystemParams</a></div><div class="ttdeci">SystemParams()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="params_8cpp_source.html#l00130">params.cpp:130</a></div></div>
-<div class="ttc" id="classlbann_1_1PerformanceParams_html_abde9f8ab7421f863f11542721c93768f"><div class="ttname"><a href="classlbann_1_1PerformanceParams.html#abde9f8ab7421f863f11542721c93768f">lbann::PerformanceParams::parse_params</a></div><div class="ttdeci">void parse_params()</div><div class="ttdoc">Parse command-line arguments. </div><div class="ttdef"><b>Definition:</b> <a href="params_8cpp_source.html#l00103">params.cpp:103</a></div></div>
-<div class="ttc" id="classlbann_1_1TrainingParams_html_a4ca5149e14ab1aed5f5a9c0e612ce62d"><div class="ttname"><a href="classlbann_1_1TrainingParams.html#a4ca5149e14ab1aed5f5a9c0e612ce62d">lbann::TrainingParams::TrainingParams</a></div><div class="ttdeci">TrainingParams()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="params_8cpp_source.html#l00032">params.cpp:32</a></div></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keywordtype">void</span> lbann::SystemParams::parse_params() {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  HostName = El::Input(<span class="stringliteral">&quot;--hostname&quot;</span>, <span class="stringliteral">&quot;HPC hostname&quot;</span>, HostName);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  NumNodes = El::Input(<span class="stringliteral">&quot;--num-nodes&quot;</span>, <span class="stringliteral">&quot;Total allocation size&quot;</span>, NumNodes);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  NumCores = El::Input(<span class="stringliteral">&quot;--num-cores&quot;</span>, <span class="stringliteral">&quot;Number of cores per node&quot;</span>, NumCores);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  TasksPerNode = El::Input(<span class="stringliteral">&quot;--tasks-per-node&quot;</span>, <span class="stringliteral">&quot;MPI Tasks allowed per node&quot;</span>, TasksPerNode);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
 <div class="ttc" id="params_8hpp_html"><div class="ttname"><a href="params_8hpp.html">params.hpp</a></div></div>
-<div class="ttc" id="classlbann_1_1NetworkParams_html_ad915e046e5e001f37a5d0124809dd07b"><div class="ttname"><a href="classlbann_1_1NetworkParams.html#ad915e046e5e001f37a5d0124809dd07b">lbann::NetworkParams::NetworkParams</a></div><div class="ttdeci">NetworkParams()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="params_8cpp_source.html#l00108">params.cpp:108</a></div></div>
-<div class="ttc" id="classlbann_1_1PerformanceParams_html_a1c8f2276e83effdf28e6be3ac0da91c0"><div class="ttname"><a href="classlbann_1_1PerformanceParams.html#a1c8f2276e83effdf28e6be3ac0da91c0">lbann::PerformanceParams::PerformanceParams</a></div><div class="ttdeci">PerformanceParams()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="params_8cpp_source.html#l00101">params.cpp:101</a></div></div>
-<div class="ttc" id="classlbann_1_1TrainingParams_html_a245c0674a2132cb15f1198b1f4dd2bf8"><div class="ttname"><a href="classlbann_1_1TrainingParams.html#a245c0674a2132cb15f1198b1f4dd2bf8">lbann::TrainingParams::parse_params</a></div><div class="ttdeci">void parse_params()</div><div class="ttdoc">Parse command-line arguments. </div><div class="ttdef"><b>Definition:</b> <a href="params_8cpp_source.html#l00049">params.cpp:49</a></div></div>
-<div class="ttc" id="classlbann_1_1NetworkParams_html_a14954fcbacb6c9522bd3cf6c28bc93d5"><div class="ttname"><a href="classlbann_1_1NetworkParams.html#a14954fcbacb6c9522bd3cf6c28bc93d5">lbann::NetworkParams::parse_network_string</a></div><div class="ttdeci">void parse_network_string()</div><div class="ttdoc">Parse network string. </div><div class="ttdef"><b>Definition:</b> <a href="params_8cpp_source.html#l00117">params.cpp:117</a></div></div>
-<div class="ttc" id="classlbann_1_1SystemParams_html_a730176df36a262f7ef141afda372488d"><div class="ttname"><a href="classlbann_1_1SystemParams.html#a730176df36a262f7ef141afda372488d">lbann::SystemParams::parse_params</a></div><div class="ttdeci">void parse_params()</div><div class="ttdoc">Parse command-line arguments. </div><div class="ttdef"><b>Definition:</b> <a href="params_8cpp_source.html#l00133">params.cpp:133</a></div></div>
-<div class="ttc" id="classlbann_1_1NetworkParams_html_a9b6f7e0330547330238085f3fd0e3702"><div class="ttname"><a href="classlbann_1_1NetworkParams.html#a9b6f7e0330547330238085f3fd0e3702">lbann::NetworkParams::parse_params</a></div><div class="ttdeci">void parse_params()</div><div class="ttdoc">Parse command-line arguments. </div><div class="ttdef"><b>Definition:</b> <a href="params_8cpp_source.html#l00112">params.cpp:112</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_188189ff0dae47f8a298515598da82cf.html">CT-TES-DG</a></li><li class="navelem"><a class="el" href="dir_4433ec42d88debf12448d92b37b4f585.html">src</a></li><li class="navelem"><a class="el" href="params_8cpp.html">params.cpp</a></li>
-    <li class="footer">Generated on Thu Sep 21 2017 15:05:31 for LBANN by
+    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a23cee86a2a91e74a8d900eaa1800f8f.html">LBANN-MCK-DOX</a></li><li class="navelem"><a class="el" href="dir_f58f29776607091bcc1ea72124e029c4.html">src</a></li><li class="navelem"><a class="el" href="params_8cpp.html">params.cpp</a></li>
+    <li class="footer">Generated on Fri Feb 2 2018 11:10:20 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

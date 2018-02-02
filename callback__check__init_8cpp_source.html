@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/CT-TES-DG/src/callbacks/callback_check_init.cpp Source File</title>
+<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/LBANN-MCK-DOX/src/callbacks/callback_check_init.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">4b0b39b-ci288</span>
+   &#160;<span id="projectnumber">7a0ed70-ci45</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('callback__check__init_8cpp_source.html
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -123,100 +123,72 @@ $(document).ready(function(){initNavTree('callback__check__init_8cpp_source.html
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>lbann {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classlbann_1_1lbann__callback__check__init.html#a8f8b7735591e353a1385b4119ba472d0">   34</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__callback__check__init.html#a8f8b7735591e353a1385b4119ba472d0">lbann_callback_check_init::on_train_begin</a>(<a class="code" href="classlbann_1_1model.html">model</a> *m) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> lbann_callback_check_init::on_train_begin(model *m) {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="comment">// Skip after the first epoch.</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordflow">if</span> (m-&gt;<a class="code" href="classlbann_1_1model.html#a675b1c6cb1a0eabca80d6a6de1fbbb08">get_cur_epoch</a>() != 0) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordflow">if</span> (m-&gt;get_cur_epoch() != 0) {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a> = m-&gt;<a class="code" href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca">get_comm</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">if</span> (comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5">am_world_master</a>()) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  lbann_comm *comm = m-&gt;get_comm();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">if</span> (comm-&gt;am_world_master()) {</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Checking all model initial weights match...&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">if</span> (comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637">get_num_models</a>() == 1) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">if</span> (comm-&gt;get_num_models() == 1) {</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  std::vector&lt;Layer *&gt;&amp; layers = m-&gt;<a class="code" href="classlbann_1_1model.html#ab6f53860dab77f0ce1d941d07360ef5a">get_layers</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="comment">// Skip the input/output layers.</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> l = 1; l &lt; layers.size() - 1; ++l) {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span> (comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5">am_world_master</a>()) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;Checking layer &quot;</span> &lt;&lt; l &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// Skip non-learning layers.</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classlbann_1_1learning.html">learning</a> *learning_layer = (<a class="code" href="classlbann_1_1learning.html">learning</a> *) dynamic_cast&lt;learning *&gt; (layers[l]);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span>(learning_layer == NULL) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// Model 0 holds the master copy, it gathers the values from other models</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// and compares them.</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>&amp; weights = learning_layer-&gt;<a class="code" href="classlbann_1_1learning.html#aa13915d8b19f23e2fd0a8c4af5cfed6b">get_weights</a>();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; local_weights = weights.LockedMatrix();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> <a class="code" href="classlbann_1_1model.html">model</a> = 1; <a class="code" href="classlbann_1_1model.html">model</a> &lt; comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637">get_num_models</a>(); ++<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c">model</a>) {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#ae12af95f4826571efa03fb8520260daa">global_barrier</a>();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keywordflow">if</span> (comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a6c201108eb6b5a1e23021db29cef655b">get_model_rank</a>() == 0) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a> remote_weights(local_weights.Height(), local_weights.Width());</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#af8842cd4cea390f76d9146e1c4578de4">recv</a>(remote_weights, <a class="code" href="classlbann_1_1model.html">model</a>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classlbann_1_1lbann__callback__check__init.html#a7c178c15fd32be7ad4e00b1f6f54f7aa">check_equal</a>(local_weights, remote_weights)) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;          <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="stringliteral">&quot;check_init: model &quot;</span> + std::to_string(<a class="code" href="classlbann_1_1model.html">model</a>) + <span class="stringliteral">&quot; rank in model &quot;</span> +</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            std::to_string(comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a206bafe522a0962c450f4fc69d030656">get_rank_in_model</a>()) +</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="stringliteral">&quot; does not match model 0&quot;</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a6c201108eb6b5a1e23021db29cef655b">get_model_rank</a>() == <a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c">model</a>) {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a086078b881e7250df140ac116adb1939">send</a>(local_weights, 0);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classlbann_1_1lbann__callback__check__init.html#a7c178c15fd32be7ad4e00b1f6f54f7aa">   80</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classlbann_1_1lbann__callback__check__init.html#a7c178c15fd32be7ad4e00b1f6f54f7aa">lbann_callback_check_init::check_equal</a>(<span class="keyword">const</span> <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; x, <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; y)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">const</span> Int height = x.Height();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">const</span> Int width = x.Width();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">if</span> (height != y.Height() || width != y.Width() || x.LDim() != y.LDim()) {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> *x_buf = x.LockedBuffer();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> *y_buf = y.LockedBuffer();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">for</span> (Int i = 0; i &lt; height * width; ++i) {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">if</span> (x_buf[i] != y_buf[i]) {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}  <span class="comment">// namespace lbann</span></div>
-<div class="ttc" id="base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00040">base.hpp:40</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_a206bafe522a0962c450f4fc69d030656"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a206bafe522a0962c450f4fc69d030656">lbann::lbann_comm::get_rank_in_model</a></div><div class="ttdeci">int get_rank_in_model() const </div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00072">comm.hpp:72</a></div></div>
-<div class="ttc" id="base_8hpp_html_a059664ed36d5eedd5ff4f7838d9c7a5a"><div class="ttname"><a href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a></div><div class="ttdeci">El::AbstractDistMatrix&lt; DataType &gt; AbsDistMat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00046">base.hpp:46</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__callback__check__init_html_a7c178c15fd32be7ad4e00b1f6f54f7aa"><div class="ttname"><a href="classlbann_1_1lbann__callback__check__init.html#a7c178c15fd32be7ad4e00b1f6f54f7aa">lbann::lbann_callback_check_init::check_equal</a></div><div class="ttdeci">bool check_equal(const Mat &amp;x, const Mat &amp;y) const </div><div class="ttdef"><b>Definition:</b> <a href="callback__check__init_8cpp_source.html#l00080">callback_check_init.cpp:80</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_af8842cd4cea390f76d9146e1c4578de4"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#af8842cd4cea390f76d9146e1c4578de4">lbann::lbann_comm::recv</a></div><div class="ttdeci">void recv(T *data, int count, int model, int rank)</div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00354">comm.hpp:354</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__callback__check__init_html_a8f8b7735591e353a1385b4119ba472d0"><div class="ttname"><a href="classlbann_1_1lbann__callback__check__init.html#a8f8b7735591e353a1385b4119ba472d0">lbann::lbann_callback_check_init::on_train_begin</a></div><div class="ttdeci">void on_train_begin(model *m)</div><div class="ttdef"><b>Definition:</b> <a href="callback__check__init_8cpp_source.html#l00034">callback_check_init.cpp:34</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_aa837a468e77991314053a93441d111ca"><div class="ttname"><a href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca">lbann::model::get_comm</a></div><div class="ttdeci">lbann_comm * get_comm() const </div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00084">model.hpp:84</a></div></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> w : m-&gt;get_weights()) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">if</span> (comm-&gt;am_world_master()) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      std::cout &lt;&lt; <span class="stringliteral">&quot;Checking &quot;</span> &lt;&lt; w-&gt;get_name() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// Model 0 holds the master copy, it gathers the values from other models</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// and compares them.</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">const</span> Mat&amp; local_matrix = w-&gt;get_values().LockedMatrix();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    Mat remote_matrix(local_matrix.Height(), local_matrix.Width());</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> model = 1; model &lt; comm-&gt;get_num_models(); ++model) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      comm-&gt;global_barrier();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keywordflow">if</span> (comm-&gt;get_model_rank() == 0) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        comm-&gt;recv(remote_matrix, model);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">if</span> (!check_equal(local_matrix, remote_matrix)) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;          std::stringstream ss;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;          ss &lt;&lt; <span class="stringliteral">&quot;check_init: &quot;</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;             &lt;&lt; <span class="stringliteral">&quot;model &quot;</span> &lt;&lt; model &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;             &lt;&lt; <span class="stringliteral">&quot;rank in model &quot;</span> &lt;&lt; comm-&gt;get_rank_in_model() &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;             &lt;&lt; <span class="stringliteral">&quot;does not match model 0&quot;</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;          <span class="keywordflow">throw</span> lbann_exception(ss.str());</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (comm-&gt;get_model_rank() == model) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        comm-&gt;send(local_matrix, 0);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">bool</span> lbann_callback_check_init::check_equal(<span class="keyword">const</span> Mat&amp; x, <span class="keyword">const</span> Mat&amp; y)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">const</span> El::Int height = x.Height();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">const</span> El::Int width = x.Width();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordflow">if</span> (height != y.Height() || width != y.Width() || x.LDim() != y.LDim()) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">const</span> DataType *x_buf = x.LockedBuffer();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">const</span> DataType *y_buf = y.LockedBuffer();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordflow">for</span> (El::Int i = 0; i &lt; height * width; ++i) {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span> (x_buf[i] != y_buf[i]) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}  <span class="comment">// namespace lbann</span></div>
 <div class="ttc" id="callback__check__init_8hpp_html"><div class="ttname"><a href="callback__check__init_8hpp.html">callback_check_init.hpp</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html"><div class="ttname"><a href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a></div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00047">comm.hpp:47</a></div></div>
-<div class="ttc" id="classlbann_1_1learning_html_aa13915d8b19f23e2fd0a8c4af5cfed6b"><div class="ttname"><a href="classlbann_1_1learning.html#aa13915d8b19f23e2fd0a8c4af5cfed6b">lbann::learning::get_weights</a></div><div class="ttdeci">virtual AbsDistMat &amp; get_weights() const </div><div class="ttdef"><b>Definition:</b> <a href="learning_8hpp_source.html#l00218">learning.hpp:218</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_ab6f53860dab77f0ce1d941d07360ef5a"><div class="ttname"><a href="classlbann_1_1model.html#ab6f53860dab77f0ce1d941d07360ef5a">lbann::model::get_layers</a></div><div class="ttdeci">virtual std::vector&lt; Layer * &gt; &amp; get_layers()=0</div></div>
-<div class="ttc" id="base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00045">base.hpp:45</a></div></div>
-<div class="ttc" id="classlbann_1_1learning_html"><div class="ttname"><a href="classlbann_1_1learning.html">lbann::learning</a></div><div class="ttdef"><b>Definition:</b> <a href="learning_8hpp_source.html#l00039">learning.hpp:39</a></div></div>
-<div class="ttc" id="file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00044">file_io.cpp:44</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_a54842b679a3756cf79b43baf46caf637"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637">lbann::lbann_comm::get_num_models</a></div><div class="ttdeci">int get_num_models() const </div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00108">comm.hpp:108</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="exception_8hpp_source.html#l00040">exception.hpp:40</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_a086078b881e7250df140ac116adb1939"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a086078b881e7250df140ac116adb1939">lbann::lbann_comm::send</a></div><div class="ttdeci">void send(const T *data, int count, int model, int rank)</div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00315">comm.hpp:315</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html"><div class="ttname"><a href="classlbann_1_1model.html">lbann::model</a></div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00052">model.hpp:52</a></div></div>
-<div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c">lbann::persist_type::model</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_a6c201108eb6b5a1e23021db29cef655b"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a6c201108eb6b5a1e23021db29cef655b">lbann::lbann_comm::get_model_rank</a></div><div class="ttdeci">int get_model_rank() const </div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00068">comm.hpp:68</a></div></div>
 <div class="ttc" id="exception_8hpp_html"><div class="ttname"><a href="exception_8hpp.html">exception.hpp</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_a675b1c6cb1a0eabca80d6a6de1fbbb08"><div class="ttname"><a href="classlbann_1_1model.html#a675b1c6cb1a0eabca80d6a6de1fbbb08">lbann::model::get_cur_epoch</a></div><div class="ttdeci">int get_cur_epoch() const </div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00088">model.hpp:88</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_ae12af95f4826571efa03fb8520260daa"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#ae12af95f4826571efa03fb8520260daa">lbann::lbann_comm::global_barrier</a></div><div class="ttdeci">void global_barrier()</div><div class="ttdef"><b>Definition:</b> <a href="comm_8cpp_source.html#l00148">comm.cpp:148</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_adb87fdc17095efd8e4dcb343357a6ba5"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5">lbann::lbann_comm::am_world_master</a></div><div class="ttdeci">bool am_world_master() const </div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00100">comm.hpp:100</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_188189ff0dae47f8a298515598da82cf.html">CT-TES-DG</a></li><li class="navelem"><a class="el" href="dir_4433ec42d88debf12448d92b37b4f585.html">src</a></li><li class="navelem"><a class="el" href="dir_fc45a394ec64a87da2cbdcc0d8a4efd8.html">callbacks</a></li><li class="navelem"><a class="el" href="callback__check__init_8cpp.html">callback_check_init.cpp</a></li>
-    <li class="footer">Generated on Thu Sep 21 2017 15:05:31 for LBANN by
+    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a23cee86a2a91e74a8d900eaa1800f8f.html">LBANN-MCK-DOX</a></li><li class="navelem"><a class="el" href="dir_f58f29776607091bcc1ea72124e029c4.html">src</a></li><li class="navelem"><a class="el" href="dir_2d5111130ff13d64b10e08a8062c456f.html">callbacks</a></li><li class="navelem"><a class="el" href="callback__check__init_8cpp.html">callback_check_init.cpp</a></li>
+    <li class="footer">Generated on Fri Feb 2 2018 11:10:19 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

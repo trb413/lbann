@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/CT-TES-DG/src/callbacks/callback_timer.cpp Source File</title>
+<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/LBANN-MCK-DOX/src/callbacks/callback_timer.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">4b0b39b-ci288</span>
+   &#160;<span id="projectnumber">7a0ed70-ci45</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('callback__timer_8cpp_source.html','');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -124,98 +124,149 @@ $(document).ready(function(){initNavTree('callback__timer_8cpp_source.html','');
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>lbann {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classlbann_1_1lbann__callback__timer.html#a64dbb8d51137ddd1e60a21bdd8849f5c">   35</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__callback__timer.html#a64dbb8d51137ddd1e60a21bdd8849f5c">lbann_callback_timer::on_epoch_begin</a>(<a class="code" href="classlbann_1_1model.html">model</a> *m) {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="classlbann_1_1lbann__callback__timer.html#ab9cca7e9c2fad1ea04deaf37ecf1347c">m_epoch_start</a> = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> lbann_callback_timer::batch_timing_begin(model *m) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  m_batch_start_time = get_time();</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classlbann_1_1lbann__callback__timer.html#ac37653fa834c01c98ebb05cd03e08e3b">   39</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__callback__timer.html#ac37653fa834c01c98ebb05cd03e08e3b">lbann_callback_timer::on_epoch_end</a>(<a class="code" href="classlbann_1_1model.html">model</a> *m) {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">double</span> end = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">double</span> epoch_time = end - <a class="code" href="classlbann_1_1lbann__callback__timer.html#ab9cca7e9c2fad1ea04deaf37ecf1347c">m_epoch_start</a>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="comment">// Compute minibatch stats.</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">double</span> mean = std::accumulate(<a class="code" href="classlbann_1_1lbann__callback__timer.html#af339724b7dd990ff420e45b4c3eedc2d">m_batch_times</a>.begin(), <a class="code" href="classlbann_1_1lbann__callback__timer.html#af339724b7dd990ff420e45b4c3eedc2d">m_batch_times</a>.end(), 0.0) /</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <a class="code" href="classlbann_1_1lbann__callback__timer.html#af339724b7dd990ff420e45b4c3eedc2d">m_batch_times</a>.size();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">auto</span> minmax = std::minmax_element(<a class="code" href="classlbann_1_1lbann__callback__timer.html#af339724b7dd990ff420e45b4c3eedc2d">m_batch_times</a>.begin(), <a class="code" href="classlbann_1_1lbann__callback__timer.html#af339724b7dd990ff420e45b4c3eedc2d">m_batch_times</a>.end());</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">double</span> stdev = 0.0;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; t : <a class="code" href="classlbann_1_1lbann__callback__timer.html#af339724b7dd990ff420e45b4c3eedc2d">m_batch_times</a>) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    stdev += (t - mean) * (t - mean);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  stdev = sqrt(stdev / (m_batch_times.size() - 1));</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  m_batch_times.clear();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="comment">// Output.</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a> = m-&gt;<a class="code" href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca">get_comm</a>();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">if</span> (comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac">am_model_master</a>()) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">if</span> (comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5">am_world_master</a>()) {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      std::vector&lt;double&gt; epoch_times(comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637">get_num_models</a>());</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      std::vector&lt;double&gt; means(comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637">get_num_models</a>());</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      std::vector&lt;double&gt; mins(comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637">get_num_models</a>());</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      std::vector&lt;double&gt; maxes(comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637">get_num_models</a>());</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      std::vector&lt;double&gt; stdevs(comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637">get_num_models</a>());</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a142c396a4d4a2c16ee234b813e7e45a6">intermodel_gather</a>(epoch_time, epoch_times);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a142c396a4d4a2c16ee234b813e7e45a6">intermodel_gather</a>(mean, means);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a142c396a4d4a2c16ee234b813e7e45a6">intermodel_gather</a>(*(minmax.first), mins);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a142c396a4d4a2c16ee234b813e7e45a6">intermodel_gather</a>(*(minmax.second), maxes);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a142c396a4d4a2c16ee234b813e7e45a6">intermodel_gather</a>(stdev, stdevs);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637">get_num_models</a>(); ++i) {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Model &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; Epoch time: &quot;</span> &lt;&lt; epoch_times[i] &lt;&lt; <span class="stringliteral">&quot;s; &quot;</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Mean minibatch time: &quot;</span> &lt;&lt; means[i] &lt;&lt; <span class="stringliteral">&quot;s; &quot;</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Min: &quot;</span> &lt;&lt; mins[i] &lt;&lt; <span class="stringliteral">&quot;s; &quot;</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Max: &quot;</span> &lt;&lt; maxes[i] &lt;&lt; <span class="stringliteral">&quot;s; &quot;</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Stdev: &quot;</span> &lt;&lt; stdevs[i] &lt;&lt; <span class="stringliteral">&quot;s&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a142c396a4d4a2c16ee234b813e7e45a6">intermodel_gather</a>(epoch_time, comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#aae7d094141d0da3bcacd542605f3e42d">get_intermodel_master</a>());</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a142c396a4d4a2c16ee234b813e7e45a6">intermodel_gather</a>(mean, comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#aae7d094141d0da3bcacd542605f3e42d">get_intermodel_master</a>());</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a142c396a4d4a2c16ee234b813e7e45a6">intermodel_gather</a>(*(minmax.first), comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#aae7d094141d0da3bcacd542605f3e42d">get_intermodel_master</a>());</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a142c396a4d4a2c16ee234b813e7e45a6">intermodel_gather</a>(*(minmax.second), comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#aae7d094141d0da3bcacd542605f3e42d">get_intermodel_master</a>());</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a142c396a4d4a2c16ee234b813e7e45a6">intermodel_gather</a>(stdev, comm-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#aae7d094141d0da3bcacd542605f3e42d">get_intermodel_master</a>());</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> lbann_callback_timer::batch_timing_end(model *m) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">const</span> EvalType mb_time = get_time() - m_batch_start_time;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  m_batch_times.push_back(mb_time);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">if</span> (m_summarizer != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    m_summarizer-&gt;reduce_scalar(<span class="stringliteral">&quot;minibatch_time&quot;</span>, mb_time, m-&gt;get_cur_step()-1);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">void</span> lbann_callback_timer::timing_begin(model *m) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  m_batch_times.clear();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  m_start_time = get_time();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">void</span> lbann_callback_timer::timing_end(model *m) {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  lbann_comm *comm = m-&gt;get_comm();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// Get run time</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">const</span> EvalType run_time = get_time() - m_start_time;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="comment">// Compute minibatch statistics</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> num_batches = m_batch_times.size();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  EvalType batch_time_mean = std::nan(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  EvalType batch_time_min = std::nan(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  EvalType batch_time_max = std::nan(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  EvalType batch_time_stdev = std::nan(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">if</span> (num_batches &gt; 0) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    batch_time_mean = std::accumulate(m_batch_times.begin(),</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                      m_batch_times.end(),</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                      0.0);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    batch_time_mean /= num_batches;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    batch_time_min = *std::min_element(m_batch_times.begin(),</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                       m_batch_times.end());</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    batch_time_max = *std::max_element(m_batch_times.begin(),</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                       m_batch_times.end());</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordflow">if</span> (num_batches &gt; 1) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">const</span> EvalType sqsum = std::inner_product(m_batch_times.begin(),</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                            m_batch_times.end(),</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                            m_batch_times.begin(),</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                            0.0);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    EvalType var = sqsum / num_batches - batch_time_mean * batch_time_mean;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    var = num_batches * var / (num_batches - 1);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    batch_time_stdev = std::sqrt(std::max(var, 0.0));</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classlbann_1_1lbann__callback__timer.html#acca590eabe9c9b15394ef29c5aae2060">   84</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__callback__timer.html#acca590eabe9c9b15394ef29c5aae2060">lbann_callback_timer::on_batch_begin</a>(<a class="code" href="classlbann_1_1model.html">model</a> *m) {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <a class="code" href="classlbann_1_1lbann__callback__timer.html#a22fece4925b879e72069c75189ba7eb4">m_batch_start</a> = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classlbann_1_1lbann__callback__timer.html#a3d31c98e48bd085209aeec7f6f53bf36">   88</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__callback__timer.html#a3d31c98e48bd085209aeec7f6f53bf36">lbann_callback_timer::on_batch_end</a>(<a class="code" href="classlbann_1_1model.html">model</a> *m) {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">double</span> end = <a class="code" href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">get_time</a>();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">double</span> mb_time = end - <a class="code" href="classlbann_1_1lbann__callback__timer.html#a22fece4925b879e72069c75189ba7eb4">m_batch_start</a>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <a class="code" href="classlbann_1_1lbann__callback__timer.html#af339724b7dd990ff420e45b4c3eedc2d">m_batch_times</a>.push_back(mb_time);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1lbann__callback.html#a277d46138184f85f161a8263b8322c76">m_summarizer</a> != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="classlbann_1_1lbann__callback.html#a277d46138184f85f161a8263b8322c76">m_summarizer</a>-&gt;<a class="code" href="classlbann_1_1lbann__summary.html#a3e0b9aae1f80403a195567fd25ea2525">reduce_scalar</a>(<span class="stringliteral">&quot;minibatch_time&quot;</span>, mb_time, m-&gt;<a class="code" href="classlbann_1_1model.html#a3753cfdb1b3dac2eec1db5b7b8f9c4d9">get_cur_step</a>());</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}  <span class="comment">// namespace lbann</span></div>
-<div class="ttc" id="classlbann_1_1lbann__callback__timer_html_ac37653fa834c01c98ebb05cd03e08e3b"><div class="ttname"><a href="classlbann_1_1lbann__callback__timer.html#ac37653fa834c01c98ebb05cd03e08e3b">lbann::lbann_callback_timer::on_epoch_end</a></div><div class="ttdeci">void on_epoch_end(model *m)</div><div class="ttdef"><b>Definition:</b> <a href="callback__timer_8cpp_source.html#l00039">callback_timer.cpp:39</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_a142c396a4d4a2c16ee234b813e7e45a6"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a142c396a4d4a2c16ee234b813e7e45a6">lbann::lbann_comm::intermodel_gather</a></div><div class="ttdeci">void intermodel_gather(T snd, int root)</div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00210">comm.hpp:210</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_aa837a468e77991314053a93441d111ca"><div class="ttname"><a href="classlbann_1_1model.html#aa837a468e77991314053a93441d111ca">lbann::model::get_comm</a></div><div class="ttdeci">lbann_comm * get_comm() const </div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00084">model.hpp:84</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html"><div class="ttname"><a href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a></div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00047">comm.hpp:47</a></div></div>
-<div class="ttc" id="file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00044">file_io.cpp:44</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__callback_html_a277d46138184f85f161a8263b8322c76"><div class="ttname"><a href="classlbann_1_1lbann__callback.html#a277d46138184f85f161a8263b8322c76">lbann::lbann_callback::m_summarizer</a></div><div class="ttdeci">lbann_summary * m_summarizer</div><div class="ttdef"><b>Definition:</b> <a href="callback_8hpp_source.html#l00130">callback.hpp:130</a></div></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="comment">// Get string for execution mode</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  std::string mode_string;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordflow">switch</span>(m-&gt;get_execution_mode()) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">case</span> execution_mode::training:</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    mode_string = <span class="stringliteral">&quot;training epoch &quot;</span> + std::to_string(m-&gt;get_cur_epoch()-1);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordflow">case</span> execution_mode::validation:</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    mode_string = <span class="stringliteral">&quot;validation&quot;</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">case</span> execution_mode::testing:</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    mode_string = <span class="stringliteral">&quot;test&quot;</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    std::stringstream err;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot; :: &quot;</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;invalid execution mode for reporting results&quot;</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(err.str());</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="comment">// Report timing results</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> num_models = comm-&gt;get_num_models();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordflow">if</span> (comm-&gt;am_model_master()) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">// Gather timing results in world master</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    std::vector&lt;EvalType&gt; run_time_list(num_models);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    std::vector&lt;EvalType&gt; mean_list(num_models);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    std::vector&lt;EvalType&gt; min_list(num_models);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    std::vector&lt;EvalType&gt; max_list(num_models);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    std::vector&lt;EvalType&gt; stdev_list(num_models);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">if</span> (comm-&gt;am_world_master()) {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      comm-&gt;intermodel_gather(run_time, run_time_list);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      comm-&gt;intermodel_gather(batch_time_mean, mean_list);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      comm-&gt;intermodel_gather(batch_time_min, min_list);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      comm-&gt;intermodel_gather(batch_time_max, max_list);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      comm-&gt;intermodel_gather(batch_time_stdev, stdev_list);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      comm-&gt;intermodel_gather(run_time, comm-&gt;get_intermodel_master());</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      comm-&gt;intermodel_gather(batch_time_mean, comm-&gt;get_intermodel_master());</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      comm-&gt;intermodel_gather(batch_time_min, comm-&gt;get_intermodel_master());</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      comm-&gt;intermodel_gather(batch_time_max, comm-&gt;get_intermodel_master());</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      comm-&gt;intermodel_gather(batch_time_stdev, comm-&gt;get_intermodel_master());</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">// Print results</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">if</span> (comm-&gt;am_world_master()) {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_models; ++i) {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Model &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; mode_string &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;run time : &quot;</span> &lt;&lt; run_time_list[i] &lt;&lt; <span class="stringliteral">&quot;s&quot;</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                  &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; num_models; ++i) {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Model &quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; mode_string &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;mini-batch time statistics : &quot;</span>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">if</span> (std::isnan(mean_list[i])) {</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;          std::cout &lt;&lt; <span class="stringliteral">&quot;N/A&quot;</span>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;          std::cout &lt;&lt; mean_list[i] &lt;&lt; <span class="stringliteral">&quot;s&quot;</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot; mean, &quot;</span>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordflow">if</span> (std::isnan(max_list[i])) {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;          std::cout &lt;&lt; <span class="stringliteral">&quot;N/A&quot;</span>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;          std::cout &lt;&lt; max_list[i] &lt;&lt; <span class="stringliteral">&quot;s&quot;</span>;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot; max, &quot;</span>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">if</span> (std::isnan(min_list[i])) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;          std::cout &lt;&lt; <span class="stringliteral">&quot;N/A&quot;</span>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;          std::cout &lt;&lt; min_list[i] &lt;&lt; <span class="stringliteral">&quot;s&quot;</span>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot; min, &quot;</span>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <span class="keywordflow">if</span> (std::isnan(stdev_list[i])) {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;          std::cout &lt;&lt; <span class="stringliteral">&quot;N/A&quot;</span>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;          std::cout &lt;&lt; stdev_list[i] &lt;&lt; <span class="stringliteral">&quot;s&quot;</span>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot; stdev&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      }</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;}  <span class="comment">// namespace lbann</span></div>
 <div class="ttc" id="callback__timer_8hpp_html"><div class="ttname"><a href="callback__timer_8hpp.html">callback_timer.hpp</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_a54842b679a3756cf79b43baf46caf637"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a54842b679a3756cf79b43baf46caf637">lbann::lbann_comm::get_num_models</a></div><div class="ttdeci">int get_num_models() const </div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00108">comm.hpp:108</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html"><div class="ttname"><a href="classlbann_1_1model.html">lbann::model</a></div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00052">model.hpp:52</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__callback__timer_html_a3d31c98e48bd085209aeec7f6f53bf36"><div class="ttname"><a href="classlbann_1_1lbann__callback__timer.html#a3d31c98e48bd085209aeec7f6f53bf36">lbann::lbann_callback_timer::on_batch_end</a></div><div class="ttdeci">void on_batch_end(model *m)</div><div class="ttdef"><b>Definition:</b> <a href="callback__timer_8cpp_source.html#l00088">callback_timer.cpp:88</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_a06a31f9df1860358ef0ef68d9e165cac"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac">lbann::lbann_comm::am_model_master</a></div><div class="ttdeci">bool am_model_master() const </div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00096">comm.hpp:96</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__callback__timer_html_ab9cca7e9c2fad1ea04deaf37ecf1347c"><div class="ttname"><a href="classlbann_1_1lbann__callback__timer.html#ab9cca7e9c2fad1ea04deaf37ecf1347c">lbann::lbann_callback_timer::m_epoch_start</a></div><div class="ttdeci">double m_epoch_start</div><div class="ttdef"><b>Definition:</b> <a href="callback__timer_8hpp_source.html#l00063">callback_timer.hpp:63</a></div></div>
 <div class="ttc" id="timer_8hpp_html"><div class="ttname"><a href="timer_8hpp.html">timer.hpp</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__summary_html_a3e0b9aae1f80403a195567fd25ea2525"><div class="ttname"><a href="classlbann_1_1lbann__summary.html#a3e0b9aae1f80403a195567fd25ea2525">lbann::lbann_summary::reduce_scalar</a></div><div class="ttdeci">void reduce_scalar(const std::string tag, DataType s, int step)</div><div class="ttdef"><b>Definition:</b> <a href="summary_8hpp_source.html#l00196">summary.hpp:196</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__callback__timer_html_acca590eabe9c9b15394ef29c5aae2060"><div class="ttname"><a href="classlbann_1_1lbann__callback__timer.html#acca590eabe9c9b15394ef29c5aae2060">lbann::lbann_callback_timer::on_batch_begin</a></div><div class="ttdeci">void on_batch_begin(model *m)</div><div class="ttdef"><b>Definition:</b> <a href="callback__timer_8cpp_source.html#l00084">callback_timer.cpp:84</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__callback__timer_html_a22fece4925b879e72069c75189ba7eb4"><div class="ttname"><a href="classlbann_1_1lbann__callback__timer.html#a22fece4925b879e72069c75189ba7eb4">lbann::lbann_callback_timer::m_batch_start</a></div><div class="ttdeci">double m_batch_start</div><div class="ttdef"><b>Definition:</b> <a href="callback__timer_8hpp_source.html#l00065">callback_timer.hpp:65</a></div></div>
-<div class="ttc" id="namespacelbann_html_a478d36031ff0659893c4322cd856157f"><div class="ttname"><a href="namespacelbann.html#a478d36031ff0659893c4322cd856157f">lbann::get_time</a></div><div class="ttdeci">double get_time()</div><div class="ttdef"><b>Definition:</b> <a href="timer_8hpp_source.html#l00037">timer.hpp:37</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_aae7d094141d0da3bcacd542605f3e42d"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#aae7d094141d0da3bcacd542605f3e42d">lbann::lbann_comm::get_intermodel_master</a></div><div class="ttdeci">int get_intermodel_master() const </div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00088">comm.hpp:88</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__callback__timer_html_af339724b7dd990ff420e45b4c3eedc2d"><div class="ttname"><a href="classlbann_1_1lbann__callback__timer.html#af339724b7dd990ff420e45b4c3eedc2d">lbann::lbann_callback_timer::m_batch_times</a></div><div class="ttdeci">std::vector&lt; double &gt; m_batch_times</div><div class="ttdef"><b>Definition:</b> <a href="callback__timer_8hpp_source.html#l00067">callback_timer.hpp:67</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_a3753cfdb1b3dac2eec1db5b7b8f9c4d9"><div class="ttname"><a href="classlbann_1_1model.html#a3753cfdb1b3dac2eec1db5b7b8f9c4d9">lbann::model::get_cur_step</a></div><div class="ttdeci">int get_cur_step() const </div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00092">model.hpp:92</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_adb87fdc17095efd8e4dcb343357a6ba5"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5">lbann::lbann_comm::am_world_master</a></div><div class="ttdeci">bool am_world_master() const </div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00100">comm.hpp:100</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__callback__timer_html_a64dbb8d51137ddd1e60a21bdd8849f5c"><div class="ttname"><a href="classlbann_1_1lbann__callback__timer.html#a64dbb8d51137ddd1e60a21bdd8849f5c">lbann::lbann_callback_timer::on_epoch_begin</a></div><div class="ttdeci">void on_epoch_begin(model *m)</div><div class="ttdef"><b>Definition:</b> <a href="callback__timer_8cpp_source.html#l00035">callback_timer.cpp:35</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_188189ff0dae47f8a298515598da82cf.html">CT-TES-DG</a></li><li class="navelem"><a class="el" href="dir_4433ec42d88debf12448d92b37b4f585.html">src</a></li><li class="navelem"><a class="el" href="dir_fc45a394ec64a87da2cbdcc0d8a4efd8.html">callbacks</a></li><li class="navelem"><a class="el" href="callback__timer_8cpp.html">callback_timer.cpp</a></li>
-    <li class="footer">Generated on Thu Sep 21 2017 15:05:31 for LBANN by
+    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a23cee86a2a91e74a8d900eaa1800f8f.html">LBANN-MCK-DOX</a></li><li class="navelem"><a class="el" href="dir_f58f29776607091bcc1ea72124e029c4.html">src</a></li><li class="navelem"><a class="el" href="dir_2d5111130ff13d64b10e08a8062c456f.html">callbacks</a></li><li class="navelem"><a class="el" href="callback__timer_8cpp.html">callback_timer.cpp</a></li>
+    <li class="footer">Generated on Fri Feb 2 2018 11:10:19 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

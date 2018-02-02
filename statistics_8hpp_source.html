@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/CT-TES-DG/include/lbann/utils/statistics.hpp Source File</title>
+<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/LBANN-MCK-DOX/include/lbann/utils/statistics.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">4b0b39b-ci288</span>
+   &#160;<span id="projectnumber">7a0ed70-ci45</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('statistics_8hpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -124,43 +124,57 @@ $(document).ready(function(){initNavTree('statistics_8hpp_source.html','');});
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>lbann {</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann.html#a604ae9da0173b8be2bfb6877997d6d5c">entrywise_mean_and_stdev</a>(<span class="keyword">const</span> <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; data, <a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp; mean, <a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>&amp; stdev);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> entrywise_mean_and_stdev(<span class="keyword">const</span> Mat&amp; data, DataType&amp; mean, DataType&amp; stdev);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann.html#a213d429a27c3e8676a3ebec40c24005c">columnwise_mean_and_stdev</a>(<span class="keyword">const</span> <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; data, <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; means, <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; stdevs);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> entrywise_mean_and_stdev(<span class="keyword">const</span> AbsDistMat&amp; data, DataType&amp; mean, DataType&amp; stdev);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann.html#a213d429a27c3e8676a3ebec40c24005c">columnwise_mean_and_stdev</a>(<span class="keyword">const</span> <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; data, <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; means, <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; stdevs);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">void</span> columnwise_mean_and_stdev(<span class="keyword">const</span> Mat&amp; data, Mat&amp; means, Mat&amp; stdevs);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann.html#a213d429a27c3e8676a3ebec40c24005c">columnwise_mean_and_stdev</a>(<span class="keyword">const</span> <a class="code" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>&amp; data,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                               <a class="code" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>&amp; means,</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                               <a class="code" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>&amp; stdevs);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann.html#a0c713b77f8e191addc1e0210037f9e5f">rowwise_mean_and_stdev</a>(<span class="keyword">const</span> <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; data, <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; means, <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; stdevs);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann.html#a0c713b77f8e191addc1e0210037f9e5f">rowwise_mean_and_stdev</a>(<span class="keyword">const</span> <a class="code" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>&amp; data,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                            <a class="code" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>&amp; means,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                            <a class="code" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>&amp; stdevs);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;} <span class="comment">// end namespace</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif // LBANN_UTILS_STATISTICS_HPP</span></div>
-<div class="ttc" id="base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00040">base.hpp:40</a></div></div>
-<div class="ttc" id="base_8hpp_html_a059664ed36d5eedd5ff4f7838d9c7a5a"><div class="ttname"><a href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a></div><div class="ttdeci">El::AbstractDistMatrix&lt; DataType &gt; AbsDistMat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00046">base.hpp:46</a></div></div>
-<div class="ttc" id="base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00045">base.hpp:45</a></div></div>
-<div class="ttc" id="namespacelbann_html_a604ae9da0173b8be2bfb6877997d6d5c"><div class="ttname"><a href="namespacelbann.html#a604ae9da0173b8be2bfb6877997d6d5c">lbann::entrywise_mean_and_stdev</a></div><div class="ttdeci">void entrywise_mean_and_stdev(const Mat &amp;data, DataType &amp;mean, DataType &amp;stdev)</div><div class="ttdoc">Compute mean and standard deviation over matrix entries. </div><div class="ttdef"><b>Definition:</b> <a href="statistics_8cpp_source.html#l00034">statistics.cpp:34</a></div></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span> columnwise_mean_and_stdev(<span class="keyword">const</span> Mat&amp; data, Mat&amp; means, Mat&amp; stdevs);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">//  Wraps around column-wise sum and sqsum</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"></span><span class="keywordtype">void</span> columnwise_mean_and_stdev(<span class="keyword">const</span> AbsDistMat&amp; data,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                               AbsDistMat&amp; means,</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                               AbsDistMat&amp; stdevs);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">void</span> columnwise_sums_and_sqsums(<span class="keyword">const</span> AbsDistMat&amp; data,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                               AbsDistMat&amp; sums,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                               AbsDistMat&amp; sqsums);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">void</span> rowwise_mean_and_stdev(<span class="keyword">const</span> Mat&amp; data, Mat&amp; means, Mat&amp; stdevs);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">void</span> rowwise_sums_and_sqsums(<span class="keyword">const</span> AbsDistMat&amp; data,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                            AbsDistMat&amp; sums,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                            AbsDistMat&amp; sqsums);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">//Wraps around rowwise_sum_and_sqsum</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment"></span><span class="keywordtype">void</span> rowwise_mean_and_stdev(<span class="keyword">const</span> AbsDistMat&amp; data,</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                            AbsDistMat&amp; means,</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                            AbsDistMat&amp; stdevs);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keywordtype">void</span> columnwise_covariance(<span class="keyword">const</span> AbsDistMat&amp; data1,</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                           <span class="keyword">const</span> AbsDistMat&amp; data2,</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                           <span class="keyword">const</span> AbsDistMat&amp; means1,</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                           <span class="keyword">const</span> AbsDistMat&amp; means2,</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                           AbsDistMat&amp; cov);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;} <span class="comment">// end namespace</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif // LBANN_UTILS_STATISTICS_HPP</span></div>
 <div class="ttc" id="base_8hpp_html"><div class="ttname"><a href="base_8hpp.html">base.hpp</a></div></div>
-<div class="ttc" id="namespacelbann_html_a213d429a27c3e8676a3ebec40c24005c"><div class="ttname"><a href="namespacelbann.html#a213d429a27c3e8676a3ebec40c24005c">lbann::columnwise_mean_and_stdev</a></div><div class="ttdeci">void columnwise_mean_and_stdev(const Mat &amp;data, Mat &amp;means, Mat &amp;stdevs)</div><div class="ttdoc">Compute column-wise means and standard deviations. </div><div class="ttdef"><b>Definition:</b> <a href="statistics_8cpp_source.html#l00069">statistics.cpp:69</a></div></div>
-<div class="ttc" id="namespacelbann_html_a0c713b77f8e191addc1e0210037f9e5f"><div class="ttname"><a href="namespacelbann.html#a0c713b77f8e191addc1e0210037f9e5f">lbann::rowwise_mean_and_stdev</a></div><div class="ttdeci">void rowwise_mean_and_stdev(const Mat &amp;data, Mat &amp;means, Mat &amp;stdevs)</div><div class="ttdoc">Compute row-wise means and standard deviations. </div><div class="ttdef"><b>Definition:</b> <a href="statistics_8cpp_source.html#l00165">statistics.cpp:165</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_188189ff0dae47f8a298515598da82cf.html">CT-TES-DG</a></li><li class="navelem"><a class="el" href="dir_f0b237f18ea2d5b81cb2df754c8eac89.html">include</a></li><li class="navelem"><a class="el" href="dir_a9e1292ad8590b1726a41e2510254652.html">lbann</a></li><li class="navelem"><a class="el" href="dir_a4531b0ec524a1088c5c9197136994c8.html">utils</a></li><li class="navelem"><a class="el" href="statistics_8hpp.html">statistics.hpp</a></li>
-    <li class="footer">Generated on Thu Sep 21 2017 15:05:31 for LBANN by
+    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a23cee86a2a91e74a8d900eaa1800f8f.html">LBANN-MCK-DOX</a></li><li class="navelem"><a class="el" href="dir_de30b333c751ee64c994135b5d233c33.html">include</a></li><li class="navelem"><a class="el" href="dir_cce5d40162b40db9850649eab9c230af.html">lbann</a></li><li class="navelem"><a class="el" href="dir_2100c04295ef8498712109e96577d953.html">utils</a></li><li class="navelem"><a class="el" href="statistics_8hpp.html">statistics.hpp</a></li>
+    <li class="footer">Generated on Fri Feb 2 2018 11:10:19 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

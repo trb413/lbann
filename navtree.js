@@ -1,127 +1,8 @@
 var NAVTREE =
 [
   [ "LBANN", "index.html", [
-    [ "Overview", "index.html", [
-      [ "LBANN Development Team", "index.html#team", null ],
-      [ "License", "index.html#license", null ]
-    ] ],
-    [ "Getting Started", "getting_started.html", [
-      [ "Download", "getting_started.html#getting_started_download", null ],
-      [ "Building LBANN", "getting_started.html#getting_started_building", [
-        [ "Livermore Computing Build", "getting_started.html#lc", null ],
-        [ "Spack Build", "getting_started.html#spack", null ],
-        [ "OSX Build", "getting_started.html#osx", null ],
-        [ "Dependency List", "getting_started.html#dependencies", null ]
-      ] ],
-      [ "Basic Usage", "getting_started.html#getting_started_basicusage", [
-        [ "Verification", "getting_started.html#verification", null ]
-      ] ]
-    ] ],
-    [ "Callbacks", "callbacks.html", [
-      [ "Check Initialization", "callbacks.html#checkinit", null ],
-      [ "Check Reconstruction", "callbacks.html#checkreconstruction", null ],
-      [ "Check NAN", "callbacks.html#checknan", null ],
-      [ "Check Small", "callbacks.html#checksmall", null ],
-      [ "Dump Activations", "callbacks.html#dump_acts", null ],
-      [ "Dump Gradients", "callbacks.html#dump_grads", null ],
-      [ "Dump Minibatch Sample Indices", "callbacks.html#dump_mb_sample_indices", null ],
-      [ "Dump Weights", "callbacks.html#dump_wei", null ],
-      [ "Inter-model Communication", "callbacks.html#im_comm", null ],
-      [ "IO", "callbacks.html#io", null ],
-      [ "Learning Rate", "callbacks.html#learningrate", null ],
-      [ "Manage LTFB", "callbacks.html#LTFB", null ],
-      [ "Print Accuracy", "callbacks.html#print_acc", null ],
-      [ "Save Images", "callbacks.html#save_images", [
-        [ "Sum", "callbacks.html#sum", null ]
-      ] ],
-      [ "Timer", "callbacks.html#timer", null ],
-      [ "Debug", "callbacks.html#dbg", null ]
-    ] ],
-    [ "Layers", "layers.html", [
-      [ "Learning", "layers.html#learning", null ],
-      [ "Regularizer", "layers.html#regularizer", [
-        [ "Batch Normalization", "layers.html#batchNorm", null ],
-        [ "Dropout", "layers.html#dropout", null ],
-        [ "Selu Dropout", "layers.html#selu_dropout", null ],
-        [ "Local Response Norm Layer", "layers.html#local_response_norm_layer", null ]
-      ] ],
-      [ "Transform", "layers.html#transform", [
-        [ "Concatenation", "layers.html#concatenation", null ],
-        [ "Pooling", "layers.html#pooling", null ],
-        [ "Slice", "layers.html#slice", null ],
-        [ "Split", "layers.html#split", null ],
-        [ "Sum", "layers.html#sum", null ]
-      ] ],
-      [ "Activation", "layers.html#activation", [
-        [ "Identity", "layers.html#idlayer", null ],
-        [ "Rectified Linear Unit", "layers.html#reluLayer", null ],
-        [ "Leaky Relu", "layers.html#leakyrelu", null ],
-        [ "Smooth Relu", "layers.html#smoothrelu", null ],
-        [ "Exponential Linear Unit", "layers.html#expLinUn", null ],
-        [ "Scaled Elu", "layers.html#seluLayer", null ],
-        [ "Sigmoid", "layers.html#sigLayer", null ],
-        [ "Softplus", "layers.html#softplus", null ],
-        [ "Softmax", "layers.html#softmax", null ],
-        [ "Tanh", "layers.html#tanh", null ]
-      ] ],
-      [ "IO", "layers.html#io", null ]
-    ] ],
-    [ "Metrics", "metrics.html", [
-      [ "Categorical Accuracy", "metrics.html#cate_accuracy", null ],
-      [ "Mean Squared Error", "metrics.html#mse", null ],
-      [ "Top K Categorical Accuracy", "metrics.html#top_k", null ]
-    ] ],
-    [ "Objective Functions", "obj_fn.html", [
-      [ "Cross Entropy", "obj_fn.html#cross_entropy", null ],
-      [ "Binary Cross Entropy", "obj_fn.html#bin_cross_entropy", null ],
-      [ "Geom NegLogLike", "obj_fn.html#geom_neglog", null ],
-      [ "Poisson NegLogLike", "obj_fn.html#pois_neglog", null ],
-      [ "Objective Mean Squared Error", "obj_fn.html#Omse", null ]
-    ] ],
-    [ "Optimizers", "optimizers.html", [
-      [ "Adagrad", "optimizers.html#Adagrad", null ],
-      [ "Adam", "optimizers.html#Adam", null ],
-      [ "Hypergradient Adam", "optimizers.html#hadam", null ],
-      [ "RMSprop", "optimizers.html#rmsp", null ],
-      [ "SGD", "optimizers.html#SGD", null ]
-    ] ],
-    [ "Todo List", "todo.html", null ],
-    [ "Namespaces", null, [
-      [ "Namespace List", "namespaces.html", "namespaces" ],
-      [ "Namespace Members", "namespacemembers.html", [
-        [ "All", "namespacemembers.html", null ],
-        [ "Functions", "namespacemembers_func.html", null ],
-        [ "Variables", "namespacemembers_vars.html", null ],
-        [ "Typedefs", "namespacemembers_type.html", null ],
-        [ "Enumerations", "namespacemembers_enum.html", null ],
-        [ "Enumerator", "namespacemembers_eval.html", null ]
-      ] ]
-    ] ],
-    [ "Classes", null, [
-      [ "Class List", "annotated.html", "annotated" ],
-      [ "Class Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
-      [ "Class Members", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", "functions_vars" ],
-        [ "Typedefs", "functions_type.html", null ],
-        [ "Enumerations", "functions_enum.html", null ],
-        [ "Enumerator", "functions_eval.html", null ],
-        [ "Related Functions", "functions_rela.html", null ]
-      ] ]
-    ] ],
     [ "Files", null, [
-      [ "File List", "files.html", "files" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", null ],
-        [ "Typedefs", "globals_type.html", null ],
-        [ "Enumerations", "globals_enum.html", null ],
-        [ "Enumerator", "globals_eval.html", null ],
-        [ "Macros", "globals_defs.html", null ]
-      ] ]
+      [ "File List", "files.html", "files" ]
     ] ]
   ] ]
 ];
@@ -129,19 +10,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Elemental__extensions_8cpp.html",
-"classlbann_1_1Layer.html#a6e307f92dcf0f9f1ea7cdb15d107ea9e",
-"classlbann_1_1cifar10__reader.html#ab75d229a34209d8172f5341856c85540",
-"classlbann_1_1fully__connected__layer.html#a1274e1457c96e4e5cab78d59207f3cc8",
-"classlbann_1_1hypergradient__adam__factory.html#aaf2e3e302ed20c0f68002e461b6693d6",
-"classlbann_1_1lbann__callback__check__dataset.html#a80199acc03e52173cc8375fb567828c6",
-"classlbann_1_1lbann__callback__profiler.html#a7943d66b5a5bfe3d07045a008537651b",
-"classlbann_1_1lbann__exception.html#a8698ff209b53c8452b5ca1d0caf7b824",
-"classlbann_1_1metrics_1_1top__k__categorical__accuracy.html#afd8a40463c26a5403b168238cbf0a8cf",
-"classlbann_1_1persist.html#a5bb3c2effb859cf3ca2c5f297acc3195",
-"classlbann_1_1softmax__layer.html#a2de68fb1095d01621d48c936de83d0cf",
-"data__reader__csv_8cpp.html",
-"image__utils_8cpp.html#a3eec4493d501d8ccadc44096f57a6754",
-"poisson__negloglike_8hpp_source.html"
+"data__reader__merge__features_8cpp.html",
+"model_8cpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

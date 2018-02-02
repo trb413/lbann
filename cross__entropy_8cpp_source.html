@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/CT-TES-DG/src/objective_functions/cross_entropy.cpp Source File</title>
+<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/LBANN-MCK-DOX/src/objective_functions/loss_functions/cross_entropy.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">4b0b39b-ci288</span>
+   &#160;<span id="projectnumber">7a0ed70-ci45</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('cross__entropy_8cpp_source.html','');}
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -116,133 +116,74 @@ $(document).ready(function(){initNavTree('cross__entropy_8cpp_source.html','');}
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// implied. See the License for the specific language governing</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// permissions and limitations under the license.</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cross__entropy_8hpp.html">lbann/objective_functions/cross_entropy.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="softmax_8hpp.html">lbann/layers/activations/softmax.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;typeinfo&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;typeindex&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;limits&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>lbann {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>objective_functions {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classlbann_1_1objective__functions_1_1cross__entropy.html#a4cf902c3db87c6501b91979d12cc402f">   37</a></span>&#160;<a class="code" href="classlbann_1_1objective__functions_1_1cross__entropy.html#a4cf902c3db87c6501b91979d12cc402f">cross_entropy::cross_entropy</a>(<span class="keywordtype">bool</span> categorical_ground_truth)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  : <a class="code" href="classlbann_1_1objective__functions_1_1objective__function.html">objective_function</a>(),</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    m_categorical_ground_truth(categorical_ground_truth) {}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classlbann_1_1objective__functions_1_1cross__entropy.html#aed163a71bc4c302fff47f29e2467a2b2">   41</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1objective__functions_1_1cross__entropy.html#aed163a71bc4c302fff47f29e2467a2b2">cross_entropy::setup</a>(<span class="keyword">const</span> <a class="code" href="classlbann_1_1Layer.html">Layer</a>&amp; prev_layer) {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cross__entropy_8hpp.html">lbann/objective_functions/loss_functions/cross_entropy.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span>lbann {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;EvalType cross_entropy::evaluate_compute(<span class="keyword">const</span> AbsDistMat&amp; predictions,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                         <span class="keyword">const</span> AbsDistMat&amp; ground_truth) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="comment">// Local matrices</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">const</span> Mat&amp; predictions_local = predictions.LockedMatrix();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">const</span> Mat&amp; ground_truth_local = ground_truth.LockedMatrix();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="comment">// Matrix parameters</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> width = predictions.Width();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> local_height = predictions_local.Height();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> local_width = predictions_local.Width();</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="comment">// Activate softmax-cross-entropy shortcut if possible</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1objective__functions_1_1cross__entropy.html#a9b8e4249fe2e322975cc8bae2dd34505">m_categorical_ground_truth</a>) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">const</span> std::type_info&amp; prev_layer_type = <span class="keyword">typeid</span>(prev_layer);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">const</span> std::type_info&amp; data_parallel_softmax_type</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      = <span class="keyword">typeid</span>(<a class="code" href="classlbann_1_1softmax__layer.html">softmax_layer&lt;data_layout::DATA_PARALLEL&gt;</a>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">const</span> std::type_info&amp; model_parallel_softmax_type</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      = <span class="keyword">typeid</span>(<a class="code" href="classlbann_1_1softmax__layer.html">softmax_layer&lt;data_layout::MODEL_PARALLEL&gt;</a>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span>((std::type_index(prev_layer_type)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        == std::type_index(data_parallel_softmax_type))</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;       || (std::type_index(prev_layer_type)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;           == std::type_index(model_parallel_softmax_type))) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <a class="code" href="classlbann_1_1objective__functions_1_1cross__entropy.html#a0dd96b9f7d8370167d9c015faa1aa89e">m_shortcut_softmax_layer</a> = &amp;prev_layer;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="comment">// Compute sum of cross entropy terms</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  EvalType sum = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">  #pragma omp parallel for reduction(+:sum) collapse(2)</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> col = 0; col &lt; local_width; ++col) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> row = 0; row &lt; local_height; ++row) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      <span class="keyword">const</span> EvalType true_val = ground_truth_local(row, col);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      sum += (true_val != EvalType(0) ?</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;              - true_val * std::log(predictions_local(row, col)) :</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;              EvalType(0));</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="comment">// Compute mean objective function value across mini-batch</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">return</span> get_comm().allreduce(sum / width, predictions.DistComm());</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classlbann_1_1objective__functions_1_1cross__entropy.html#a658d8b04ed51173fc9fd557bc724d928">   60</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1objective__functions_1_1cross__entropy.html#a658d8b04ed51173fc9fd557bc724d928">cross_entropy::compute_value</a>(<span class="keyword">const</span> <a class="code" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>&amp; predictions,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                  <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>&amp; ground_truth) {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="comment">// Get local matrices and matrix parameters</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; predictions_local = predictions.LockedMatrix();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; ground_truth_local = ground_truth.LockedMatrix();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> width = predictions.Width();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> local_height = predictions_local.Height();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> local_width = predictions_local.Width();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="comment">// Compute sum of cross entropy terms</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">double</span> sum = 0;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> block_size = std::max((<span class="keywordtype">int</span>) (64 / <span class="keyword">sizeof</span>(<a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>)), 1);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">  #pragma omp parallel for reduction(+:sum) collapse(2)</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span>(<span class="keywordtype">int</span> col = 0; col &lt; local_width; ++col) {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> block_start = 0; block_start &lt; local_height; block_start += block_size) {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keywordtype">double</span> block_sum = 0;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">int</span> block_end = std::min(block_start + block_size, local_height);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keywordflow">for</span>(<span class="keywordtype">int</span> row = block_start; row &lt; block_end; ++row) {</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> true_val = ground_truth_local(row, col);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> pred_val = predictions_local(row, col);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        block_sum += - true_val * std::log(pred_val);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      sum += block_sum;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="comment">// Compute mean cross entropy across mini-batch</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">double</span> mean_cross_entropy = sum / width;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  mean_cross_entropy = El::mpi::AllReduce(mean_cross_entropy,</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                          predictions.DistComm());</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="comment">// Update objective function value</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="classlbann_1_1objective__functions_1_1objective__function.html#acb4c26e86d98ff3e510fa9c9ca02a332">add_to_value</a>(mean_cross_entropy);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classlbann_1_1objective__functions_1_1cross__entropy.html#a7590499046fe2db6a63b7f34cf77588f">   97</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1objective__functions_1_1cross__entropy.html#a7590499046fe2db6a63b7f34cf77588f">cross_entropy::compute_gradient</a>(<span class="keyword">const</span> <a class="code" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>&amp; predictions,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                     <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>&amp; ground_truth,</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                     <a class="code" href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a>&amp; gradient) {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="comment">// Apply softmax-cross-entropy shortcut if activated</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordflow">if</span>(<a class="code" href="classlbann_1_1objective__functions_1_1cross__entropy.html#a0dd96b9f7d8370167d9c015faa1aa89e">m_shortcut_softmax_layer</a> != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    El::LockedView(gradient, ground_truth);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="comment">// Get local matrices</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; predictions_local = predictions.LockedMatrix();</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; ground_truth_local = ground_truth.LockedMatrix();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <a class="code" href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a>&amp; gradient_local = gradient.Matrix();</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="comment">// Compute gradient</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  El::IndexDependentFill(gradient_local,</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                         (std::function&lt;<a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(El::Int,El::Int)&gt;)</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                         ([&amp;predictions_local, &amp;ground_truth_local]</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                          (El::Int r, El::Int c) -&gt; <a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                           <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> true_val = ground_truth_local(r,c);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                           <span class="keywordflow">if</span>(true_val != <a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0)) {</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                             <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a> pred_val = predictions_local(r,c);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                             <span class="keywordflow">return</span> - true_val / pred_val;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                           }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                           <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                             <span class="keywordflow">return</span> <a class="code" href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a>(0);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;                           }</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                         }));</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}  <span class="comment">// namespace objective_functions</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}  <span class="comment">// namespace lbann</span></div>
-<div class="ttc" id="base_8hpp_html_a279b64f47fb2213ad73e59be937afcfa"><div class="ttname"><a href="base_8hpp.html#a279b64f47fb2213ad73e59be937afcfa">DataType</a></div><div class="ttdeci">float DataType</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00040">base.hpp:40</a></div></div>
-<div class="ttc" id="base_8hpp_html_a059664ed36d5eedd5ff4f7838d9c7a5a"><div class="ttname"><a href="base_8hpp.html#a059664ed36d5eedd5ff4f7838d9c7a5a">AbsDistMat</a></div><div class="ttdeci">El::AbstractDistMatrix&lt; DataType &gt; AbsDistMat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00046">base.hpp:46</a></div></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">void</span> cross_entropy::differentiate_compute(<span class="keyword">const</span> AbsDistMat&amp; predictions,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                          <span class="keyword">const</span> AbsDistMat&amp; ground_truth,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                          AbsDistMat&amp; gradient) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="comment">// Local matrices</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">const</span> Mat&amp; predictions_local = predictions.LockedMatrix();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">const</span> Mat&amp; ground_truth_local = ground_truth.LockedMatrix();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  Mat&amp; gradient_local = gradient.Matrix();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="comment">// Matrix parameters</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">const</span> El::Int local_height = gradient_local.Height();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">const</span> El::Int local_width = gradient_local.Width();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="comment">// Compute gradient</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">  #pragma omp parallel for collapse(2)</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">for</span> (El::Int col = 0; col &lt; local_width; ++col) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">for</span> (El::Int row = 0; row &lt; local_height; ++row) {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keyword">const</span> DataType true_val = ground_truth_local(row, col);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      gradient_local(row, col) = (true_val != DataType(0) ?</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                  - true_val / predictions_local(row, col) :</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                  DataType(0));</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}  <span class="comment">// namespace lbann</span></div>
 <div class="ttc" id="cross__entropy_8hpp_html"><div class="ttname"><a href="cross__entropy_8hpp.html">cross_entropy.hpp</a></div></div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__function_html_acb4c26e86d98ff3e510fa9c9ca02a332"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__function.html#acb4c26e86d98ff3e510fa9c9ca02a332">lbann::objective_functions::objective_function::add_to_value</a></div><div class="ttdeci">void add_to_value(double value)</div><div class="ttdef"><b>Definition:</b> <a href="objective__function_8cpp_source.html#l00037">objective_function.cpp:37</a></div></div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1objective__function_html"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1objective__function.html">lbann::objective_functions::objective_function</a></div><div class="ttdef"><b>Definition:</b> <a href="objective__function_8hpp_source.html#l00038">objective_function.hpp:38</a></div></div>
-<div class="ttc" id="classlbann_1_1softmax__layer_html"><div class="ttname"><a href="classlbann_1_1softmax__layer.html">lbann::softmax_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="softmax_8hpp_source.html#l00046">softmax.hpp:46</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html"><div class="ttname"><a href="classlbann_1_1Layer.html">lbann::Layer</a></div><div class="ttdef"><b>Definition:</b> <a href="layer_8hpp_source.html#l00052">layer.hpp:52</a></div></div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1cross__entropy_html_a4cf902c3db87c6501b91979d12cc402f"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1cross__entropy.html#a4cf902c3db87c6501b91979d12cc402f">lbann::objective_functions::cross_entropy::cross_entropy</a></div><div class="ttdeci">cross_entropy(bool categorical_ground_truth=true)</div><div class="ttdef"><b>Definition:</b> <a href="cross__entropy_8cpp_source.html#l00037">cross_entropy.cpp:37</a></div></div>
-<div class="ttc" id="base_8hpp_html_a483ed30937584c6d3a4d76bff5215a34"><div class="ttname"><a href="base_8hpp.html#a483ed30937584c6d3a4d76bff5215a34">Mat</a></div><div class="ttdeci">El::Matrix&lt; DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00045">base.hpp:45</a></div></div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1cross__entropy_html_a0dd96b9f7d8370167d9c015faa1aa89e"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1cross__entropy.html#a0dd96b9f7d8370167d9c015faa1aa89e">lbann::objective_functions::cross_entropy::m_shortcut_softmax_layer</a></div><div class="ttdeci">const Layer * m_shortcut_softmax_layer</div><div class="ttdef"><b>Definition:</b> <a href="cross__entropy_8hpp_source.html#l00117">cross_entropy.hpp:117</a></div></div>
-<div class="ttc" id="softmax_8hpp_html"><div class="ttname"><a href="softmax_8hpp.html">softmax.hpp</a></div></div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1cross__entropy_html_a7590499046fe2db6a63b7f34cf77588f"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1cross__entropy.html#a7590499046fe2db6a63b7f34cf77588f">lbann::objective_functions::cross_entropy::compute_gradient</a></div><div class="ttdeci">void compute_gradient(const AbsDistMat &amp;predictions, const AbsDistMat &amp;ground_truth, AbsDistMat &amp;gradient)</div><div class="ttdef"><b>Definition:</b> <a href="cross__entropy_8cpp_source.html#l00097">cross_entropy.cpp:97</a></div></div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1cross__entropy_html_a658d8b04ed51173fc9fd557bc724d928"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1cross__entropy.html#a658d8b04ed51173fc9fd557bc724d928">lbann::objective_functions::cross_entropy::compute_value</a></div><div class="ttdeci">void compute_value(const AbsDistMat &amp;predictions, const AbsDistMat &amp;ground_truth)</div><div class="ttdef"><b>Definition:</b> <a href="cross__entropy_8cpp_source.html#l00060">cross_entropy.cpp:60</a></div></div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1cross__entropy_html_a9b8e4249fe2e322975cc8bae2dd34505"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1cross__entropy.html#a9b8e4249fe2e322975cc8bae2dd34505">lbann::objective_functions::cross_entropy::m_categorical_ground_truth</a></div><div class="ttdeci">bool m_categorical_ground_truth</div><div class="ttdef"><b>Definition:</b> <a href="cross__entropy_8hpp_source.html#l00102">cross_entropy.hpp:102</a></div></div>
-<div class="ttc" id="classlbann_1_1objective__functions_1_1cross__entropy_html_aed163a71bc4c302fff47f29e2467a2b2"><div class="ttname"><a href="classlbann_1_1objective__functions_1_1cross__entropy.html#aed163a71bc4c302fff47f29e2467a2b2">lbann::objective_functions::cross_entropy::setup</a></div><div class="ttdeci">void setup(const Layer &amp;prev_layer)</div><div class="ttdef"><b>Definition:</b> <a href="cross__entropy_8cpp_source.html#l00041">cross_entropy.cpp:41</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_188189ff0dae47f8a298515598da82cf.html">CT-TES-DG</a></li><li class="navelem"><a class="el" href="dir_4433ec42d88debf12448d92b37b4f585.html">src</a></li><li class="navelem"><a class="el" href="dir_2d8ea3859a2f8014fa10cb58ed19e955.html">objective_functions</a></li><li class="navelem"><a class="el" href="cross__entropy_8cpp.html">cross_entropy.cpp</a></li>
-    <li class="footer">Generated on Thu Sep 21 2017 15:05:31 for LBANN by
+    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a23cee86a2a91e74a8d900eaa1800f8f.html">LBANN-MCK-DOX</a></li><li class="navelem"><a class="el" href="dir_f58f29776607091bcc1ea72124e029c4.html">src</a></li><li class="navelem"><a class="el" href="dir_e4d33583fda98884f187c23193f88ab9.html">objective_functions</a></li><li class="navelem"><a class="el" href="dir_d25b967de8efe484ebb971af811cf054.html">loss_functions</a></li><li class="navelem"><a class="el" href="cross__entropy_8cpp.html">cross_entropy.cpp</a></li>
+    <li class="footer">Generated on Fri Feb 2 2018 11:10:20 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
