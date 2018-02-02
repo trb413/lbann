@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/LBANN-MCK-DOX/src/data_store/data_store_merge_samples.cpp Source File</title>
+<title>LBANN: /usr/workspace/wsb/lbannusr/bamboo/lbann-catalyst159-1/xml-data/build-dir/LBANN-DG-DD/src/data_store/data_store_merge_samples.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">7a0ed70-ci45</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2179-g231ac24-ci142</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('data__store__merge__samples_8cpp_sourc
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -127,15 +127,15 @@ $(document).ready(function(){initNavTree('data__store__merge__samples_8cpp_sourc
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>lbann {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;data_store_merge_samples::~data_store_merge_samples() {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  MPI_Win_free( &amp;m_win );</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classlbann_1_1data__store__merge__samples.html#a29eb31269a1369f6f28439e90ed8ad49">   38</a></span>&#160;<a class="code" href="classlbann_1_1data__store__merge__samples.html#a29eb31269a1369f6f28439e90ed8ad49">data_store_merge_samples::~data_store_merge_samples</a>() {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  MPI_Win_free( &amp;<a class="code" href="classlbann_1_1data__store__merge__samples.html#a8dafb907c605bb38e89ed3d91823f6f3">m_win</a> );</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> data_store_merge_samples::setup() {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">if</span> (m_rank == 0) std::cerr &lt;&lt; <span class="stringliteral">&quot;STARTING data_store_merge_samples::setup()\n&quot;</span>; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classlbann_1_1data__store__merge__samples.html#a9f7f027eab6bfb65dd8001939769f476">   42</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1data__store__merge__samples.html#a9f7f027eab6bfb65dd8001939769f476">data_store_merge_samples::setup</a>() {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1generic__data__store.html#af5aeccd3fa25c39229072d9edefad383">m_rank</a> == 0) std::cerr &lt;&lt; <span class="stringliteral">&quot;STARTING data_store_merge_samples::setup()\n&quot;</span>; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">//double tm1 = get_time();</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  generic_data_store::setup();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="classlbann_1_1generic__data__store.html#a1cff17def02ee21b6ca0befeb04bb582">generic_data_store::setup</a>();</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">  bool run_tests = false;</span></div>
@@ -144,44 +144,55 @@ $(document).ready(function(){initNavTree('data__store__merge__samples_8cpp_sourc
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">  }</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">  */</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">if</span> (m_rank == 0) {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;starting data_store_merge_samples::setup() for data reader with role: &quot;</span> &lt;&lt; m_reader-&gt;get_role() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1generic__data__store.html#af5aeccd3fa25c39229072d9edefad383">m_rank</a> == 0) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;starting data_store_merge_samples::setup() for data reader with role: &quot;</span> &lt;&lt; <a class="code" href="classlbann_1_1generic__data__store.html#afa49ced0ab64c632371ea52532a91ec2">m_reader</a>-&gt;<a class="code" href="classlbann_1_1generic__data__reader.html#a3936554bdefc2a2069a815554a072bc0">get_role</a>() &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordflow">if</span> (! m_in_memory) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordflow">if</span> (! <a class="code" href="classlbann_1_1generic__data__store.html#a1a9cc7b097cd7dd6ae0d12d52bb43ea1">m_in_memory</a>) {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    std::stringstream err;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot; :: &quot;</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;not yet implemented&quot;</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(err.str());</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    m_buffers.resize( omp_get_max_threads() );</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classlbann_1_1generic__data__store.html#a93f99aa613f761b577dfb5b1c8caf8de">m_buffers</a>.resize( omp_get_max_threads() );</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  } </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//sanity check</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    data_reader_merge_samples *reader = <span class="keyword">dynamic_cast&lt;</span>data_reader_merge_samples*<span class="keyword">&gt;</span>(m_reader);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classlbann_1_1data__reader__merge__samples.html">data_reader_merge_samples</a> *reader = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classlbann_1_1data__reader__merge__samples.html">data_reader_merge_samples</a>*<span class="keyword">&gt;</span>(<a class="code" href="classlbann_1_1generic__data__store.html#afa49ced0ab64c632371ea52532a91ec2">m_reader</a>);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (reader == <span class="keyword">nullptr</span>) {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      std::stringstream err;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot; :: &quot;</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;          &lt;&lt; <span class="stringliteral">&quot;dynamic_cast&lt;merge_samples_reader*&gt;(m_reader) failed&quot;</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keywordflow">throw</span> lbann_exception(err.str());</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}  <span class="comment">// namespace lbann</span></div>
+<div class="ttc" id="classlbann_1_1generic__data__store_html_a93f99aa613f761b577dfb5b1c8caf8de"><div class="ttname"><a href="classlbann_1_1generic__data__store.html#a93f99aa613f761b577dfb5b1c8caf8de">lbann::generic_data_store::m_buffers</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; unsigned char &gt; &gt; m_buffers</div><div class="ttdef"><b>Definition:</b> <a href="generic__data__store_8hpp_source.html#l00124">generic_data_store.hpp:124</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_a3936554bdefc2a2069a815554a072bc0"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#a3936554bdefc2a2069a815554a072bc0">lbann::generic_data_reader::get_role</a></div><div class="ttdeci">std::string get_role() const </div><div class="ttdef"><b>Definition:</b> <a href="data__reader_8hpp_source.html#l00249">data_reader.hpp:249</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__store_html_af5aeccd3fa25c39229072d9edefad383"><div class="ttname"><a href="classlbann_1_1generic__data__store.html#af5aeccd3fa25c39229072d9edefad383">lbann::generic_data_store::m_rank</a></div><div class="ttdeci">size_t m_rank</div><div class="ttdef"><b>Definition:</b> <a href="generic__data__store_8hpp_source.html#l00112">generic_data_store.hpp:112</a></div></div>
+<div class="ttc" id="classlbann_1_1data__store__merge__samples_html_a8dafb907c605bb38e89ed3d91823f6f3"><div class="ttname"><a href="classlbann_1_1data__store__merge__samples.html#a8dafb907c605bb38e89ed3d91823f6f3">lbann::data_store_merge_samples::m_win</a></div><div class="ttdeci">MPI_Win m_win</div><div class="ttdef"><b>Definition:</b> <a href="data__store__merge__samples_8hpp_source.html#l00103">data_store_merge_samples.hpp:103</a></div></div>
+<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html">lbann::data_reader_merge_samples</a></div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8hpp_source.html#l00040">data_reader_merge_samples.hpp:40</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__store_html_a1cff17def02ee21b6ca0befeb04bb582"><div class="ttname"><a href="classlbann_1_1generic__data__store.html#a1cff17def02ee21b6ca0befeb04bb582">lbann::generic_data_store::setup</a></div><div class="ttdeci">virtual void setup()</div><div class="ttdef"><b>Definition:</b> <a href="generic__data__store_8cpp_source.html#l00053">generic_data_store.cpp:53</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__store_html_afa49ced0ab64c632371ea52532a91ec2"><div class="ttname"><a href="classlbann_1_1generic__data__store.html#afa49ced0ab64c632371ea52532a91ec2">lbann::generic_data_store::m_reader</a></div><div class="ttdeci">generic_data_reader * m_reader</div><div class="ttdef"><b>Definition:</b> <a href="generic__data__store_8hpp_source.html#l00120">generic_data_store.hpp:120</a></div></div>
 <div class="ttc" id="data__store__merge__samples_8hpp_html"><div class="ttname"><a href="data__store__merge__samples_8hpp.html">data_store_merge_samples.hpp</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="exception_8hpp_source.html#l00040">exception.hpp:40</a></div></div>
 <div class="ttc" id="data__reader__merge__samples_8hpp_html"><div class="ttname"><a href="data__reader__merge__samples_8hpp.html">data_reader_merge_samples.hpp</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__store_html_a1a9cc7b097cd7dd6ae0d12d52bb43ea1"><div class="ttname"><a href="classlbann_1_1generic__data__store.html#a1a9cc7b097cd7dd6ae0d12d52bb43ea1">lbann::generic_data_store::m_in_memory</a></div><div class="ttdeci">bool m_in_memory</div><div class="ttdef"><b>Definition:</b> <a href="generic__data__store_8hpp_source.html#l00116">generic_data_store.hpp:116</a></div></div>
 <div class="ttc" id="exception_8hpp_html"><div class="ttname"><a href="exception_8hpp.html">exception.hpp</a></div></div>
 <div class="ttc" id="timer_8hpp_html"><div class="ttname"><a href="timer_8hpp.html">timer.hpp</a></div></div>
+<div class="ttc" id="classlbann_1_1data__store__merge__samples_html_a9f7f027eab6bfb65dd8001939769f476"><div class="ttname"><a href="classlbann_1_1data__store__merge__samples.html#a9f7f027eab6bfb65dd8001939769f476">lbann::data_store_merge_samples::setup</a></div><div class="ttdeci">void setup() override</div><div class="ttdef"><b>Definition:</b> <a href="data__store__merge__samples_8cpp_source.html#l00042">data_store_merge_samples.cpp:42</a></div></div>
+<div class="ttc" id="classlbann_1_1data__store__merge__samples_html_a29eb31269a1369f6f28439e90ed8ad49"><div class="ttname"><a href="classlbann_1_1data__store__merge__samples.html#a29eb31269a1369f6f28439e90ed8ad49">lbann::data_store_merge_samples::~data_store_merge_samples</a></div><div class="ttdeci">~data_store_merge_samples() override</div><div class="ttdoc">dtor </div><div class="ttdef"><b>Definition:</b> <a href="data__store__merge__samples_8cpp_source.html#l00038">data_store_merge_samples.cpp:38</a></div></div>
 <div class="ttc" id="options_8hpp_html"><div class="ttname"><a href="options_8hpp.html">options.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a23cee86a2a91e74a8d900eaa1800f8f.html">LBANN-MCK-DOX</a></li><li class="navelem"><a class="el" href="dir_f58f29776607091bcc1ea72124e029c4.html">src</a></li><li class="navelem"><a class="el" href="dir_c46729fc268123117a81a8ee0059d793.html">data_store</a></li><li class="navelem"><a class="el" href="data__store__merge__samples_8cpp.html">data_store_merge_samples.cpp</a></li>
-    <li class="footer">Generated on Fri Feb 2 2018 11:10:20 for LBANN by
+    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_208d7a2ea8c59265ec87bf2e980d9340.html">wsb</a></li><li class="navelem"><a class="el" href="dir_bbd6668b26f763289c3f291aff61b3bb.html">lbannusr</a></li><li class="navelem"><a class="el" href="dir_a8f312ba3f043bd02d049f4e47a85cb6.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_133a4a981f060b5c505349fbb77a59be.html">lbann-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_1cc6d50f976a8e37e2027ade18b1e2d7.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_294e3a20abe6977c38d914c01e9d6ab7.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a31f8fe46a4aa588b6383a428e6464df.html">LBANN-DG-DD</a></li><li class="navelem"><a class="el" href="dir_923d22ad389741cf75d7d5ed6c33331c.html">src</a></li><li class="navelem"><a class="el" href="dir_c8ce47314eaf3d0c92e44a663fc4404d.html">data_store</a></li><li class="navelem"><a class="el" href="data__store__merge__samples_8cpp.html">data_store_merge_samples.cpp</a></li>
+    <li class="footer">Generated on Fri Feb 2 2018 11:16:38 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

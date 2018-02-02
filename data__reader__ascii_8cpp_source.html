@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/LBANN-MCK-DOX/src/data_readers/data_reader_ascii.cpp Source File</title>
+<title>LBANN: /usr/workspace/wsb/lbannusr/bamboo/lbann-catalyst159-1/xml-data/build-dir/LBANN-DG-DD/src/data_readers/data_reader_ascii.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">7a0ed70-ci45</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2179-g231ac24-ci142</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('data__reader__ascii_8cpp_source.html',
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -122,18 +122,18 @@ $(document).ready(function(){initNavTree('data__reader__ascii_8cpp_source.html',
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;cstdio&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>lbann {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;ascii_reader::ascii_reader(<span class="keywordtype">int</span> sequence_length, <span class="keywordtype">bool</span> shuffle)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  : generic_data_reader(shuffle), m_sequence_length(sequence_length) {}</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classlbann_1_1ascii__reader.html#a5a7b563d58c20eeffad4e5e2a96734bb">   33</a></span>&#160;<a class="code" href="classlbann_1_1ascii__reader.html#a5a7b563d58c20eeffad4e5e2a96734bb">ascii_reader::ascii_reader</a>(<span class="keywordtype">int</span> sequence_length, <span class="keywordtype">bool</span> shuffle)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  : <a class="code" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a>(shuffle), m_sequence_length(sequence_length) {}</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">bool</span> ascii_reader::fetch_datum(Mat&amp; X, <span class="keywordtype">int</span> data_id, <span class="keywordtype">int</span> mb_idx, <span class="keywordtype">int</span> tid) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classlbann_1_1ascii__reader.html#a5b56d66d5f2c175d580ef213c901fef0">   36</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classlbann_1_1ascii__reader.html#a5b56d66d5f2c175d580ef213c901fef0">ascii_reader::fetch_datum</a>(<a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a>&amp; X, <span class="keywordtype">int</span> data_id, <span class="keywordtype">int</span> mb_idx, <span class="keywordtype">int</span> tid) {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="comment">// Get text sequence from file</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> pos = data_id - m_sequence_length;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> num_chars = (std::min(pos + m_sequence_length, m_file_size)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> pos = data_id - <a class="code" href="classlbann_1_1ascii__reader.html#a5788fa7418a086de968929d0d4cb4fa4">m_sequence_length</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> num_chars = (std::min(pos + m_sequence_length, <a class="code" href="classlbann_1_1ascii__reader.html#af684694c8c7faef296bf5af2530471f3">m_file_size</a>)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                         - std::max(pos, 0));</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  std::vector&lt;char&gt; sequence(m_sequence_length, 0);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">if</span> (num_chars &gt; 0) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::ifstream fs(get_file_dir() + get_data_filename(),</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::ifstream fs(<a class="code" href="classlbann_1_1generic__data__reader.html#a92fc5dc9b5d4c10bbbf7546353403445">get_file_dir</a>() + <a class="code" href="classlbann_1_1generic__data__reader.html#a0e216aa3f8c40e44c5fb14a587fa49d4">get_data_filename</a>(),</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                     std::fstream::in);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    fs.seekg(std::max(pos, 0));</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    fs.read(&amp;sequence[std::max(-pos, 0)], num_chars);</div>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('data__reader__ascii_8cpp_source.html',
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="comment">// Convert text sequence to binary vector</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; m_sequence_length; ++i) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classlbann_1_1ascii__reader.html#a5788fa7418a086de968929d0d4cb4fa4">m_sequence_length</a>; ++i) {</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">auto</span> current_char = (int) sequence[i];</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (current_char &lt; 0 || current_char &gt;= 128) {</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      current_char = 0;</div>
@@ -152,15 +152,15 @@ $(document).ready(function(){initNavTree('data__reader__ascii_8cpp_source.html',
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">bool</span> ascii_reader::fetch_label(Mat&amp; Y, <span class="keywordtype">int</span> data_id, <span class="keywordtype">int</span> mb_idx, <span class="keywordtype">int</span> tid) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classlbann_1_1ascii__reader.html#a361f883c71236c37dd2bc2dda5f00ef3">   63</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classlbann_1_1ascii__reader.html#a361f883c71236c37dd2bc2dda5f00ef3">ascii_reader::fetch_label</a>(<a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a>&amp; Y, <span class="keywordtype">int</span> data_id, <span class="keywordtype">int</span> mb_idx, <span class="keywordtype">int</span> tid) {</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="comment">// Get text sequence from file</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> pos = data_id - m_sequence_length + 1;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> num_chars = (std::min(pos + m_sequence_length, m_file_size)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> pos = data_id - <a class="code" href="classlbann_1_1ascii__reader.html#a5788fa7418a086de968929d0d4cb4fa4">m_sequence_length</a> + 1;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">int</span> num_chars = (std::min(pos + m_sequence_length, <a class="code" href="classlbann_1_1ascii__reader.html#af684694c8c7faef296bf5af2530471f3">m_file_size</a>)</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                         - std::max(pos, 0));</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  std::vector&lt;char&gt; sequence(m_sequence_length, 0);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">if</span> (num_chars &gt; 0) {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    std::ifstream fs(get_file_dir() + get_data_filename(),</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    std::ifstream fs(<a class="code" href="classlbann_1_1generic__data__reader.html#a92fc5dc9b5d4c10bbbf7546353403445">get_file_dir</a>() + <a class="code" href="classlbann_1_1generic__data__reader.html#a0e216aa3f8c40e44c5fb14a587fa49d4">get_data_filename</a>(),</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                     std::fstream::in);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    fs.seekg(std::max(pos, 0));</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    fs.read(&amp;sequence[std::max(-pos, 0)], num_chars);</div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('data__reader__ascii_8cpp_source.html',
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="comment">// Convert text sequence to binary vector</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; m_sequence_length; ++i) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classlbann_1_1ascii__reader.html#a5788fa7418a086de968929d0d4cb4fa4">m_sequence_length</a>; ++i) {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">auto</span> current_char = (int) sequence[i];</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">if</span> (current_char &lt; 0 || current_char &gt;= 128) {</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      current_char = 0;</div>
@@ -181,39 +181,53 @@ $(document).ready(function(){initNavTree('data__reader__ascii_8cpp_source.html',
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">//===================================================</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">void</span> ascii_reader::load() {</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classlbann_1_1ascii__reader.html#a678254a9d1c90459a1502d63e36a2b61">   92</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1ascii__reader.html#a678254a9d1c90459a1502d63e36a2b61">ascii_reader::load</a>() {</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="comment">// Make sure directory path ends with a slash</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">if</span> (m_file_dir.back() != <span class="charliteral">&#39;/&#39;</span>) {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    m_file_dir.push_back(<span class="charliteral">&#39;/&#39;</span>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1generic__data__reader.html#a252002ec211d67606b80bc481a27e820">m_file_dir</a>.back() != <span class="charliteral">&#39;/&#39;</span>) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="classlbann_1_1generic__data__reader.html#a252002ec211d67606b80bc481a27e820">m_file_dir</a>.push_back(<span class="charliteral">&#39;/&#39;</span>);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  }</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="comment">// Get length of data file</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  std::ifstream fs(get_file_dir() + get_data_filename(),</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  std::ifstream fs(<a class="code" href="classlbann_1_1generic__data__reader.html#a92fc5dc9b5d4c10bbbf7546353403445">get_file_dir</a>() + <a class="code" href="classlbann_1_1generic__data__reader.html#a0e216aa3f8c40e44c5fb14a587fa49d4">get_data_filename</a>(),</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                   std::fstream::in | std::fstream::ate);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  m_file_size = fs.tellg();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <a class="code" href="classlbann_1_1ascii__reader.html#af684694c8c7faef296bf5af2530471f3">m_file_size</a> = fs.tellg();</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  fs.close();</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="comment">// Reset indices</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  m_shuffled_indices.resize(m_file_size + m_sequence_length);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  std::iota(m_shuffled_indices.begin(), m_shuffled_indices.end(), 0);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordflow">if</span> (is_master()) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <a class="code" href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">m_shuffled_indices</a>.resize(<a class="code" href="classlbann_1_1ascii__reader.html#af684694c8c7faef296bf5af2530471f3">m_file_size</a> + <a class="code" href="classlbann_1_1ascii__reader.html#a5788fa7418a086de968929d0d4cb4fa4">m_sequence_length</a>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  std::iota(<a class="code" href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">m_shuffled_indices</a>.begin(), <a class="code" href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">m_shuffled_indices</a>.end(), 0);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1generic__data__reader.html#af144e7313b86f12a190ca260528279b7">is_master</a>()) {</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    std::cerr &lt;&lt; <span class="stringliteral">&quot;calling select_subset_of_data; m_shuffled_indices.size: &quot;</span> &lt;&lt;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      m_shuffled_indices.size() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <a class="code" href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">m_shuffled_indices</a>.size() &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  select_subset_of_data();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <a class="code" href="classlbann_1_1generic__data__reader.html#aa28fdeeb6af492540f507e49adff5d6c">select_subset_of_data</a>();</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}  <span class="comment">// namespace lbann</span></div>
+<div class="ttc" id="classlbann_1_1ascii__reader_html_a5b56d66d5f2c175d580ef213c901fef0"><div class="ttname"><a href="classlbann_1_1ascii__reader.html#a5b56d66d5f2c175d580ef213c901fef0">lbann::ascii_reader::fetch_datum</a></div><div class="ttdeci">bool fetch_datum(Mat &amp;X, int data_id, int mb_idx, int tid) override</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__ascii_8cpp_source.html#l00036">data_reader_ascii.cpp:36</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_a92fc5dc9b5d4c10bbbf7546353403445"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#a92fc5dc9b5d4c10bbbf7546353403445">lbann::generic_data_reader::get_file_dir</a></div><div class="ttdeci">std::string get_file_dir() const </div><div class="ttdef"><b>Definition:</b> <a href="data__reader_8cpp_source.html#l00537">data_reader.cpp:537</a></div></div>
+<div class="ttc" id="base_8hpp_html_a68f11fdc31b62516cb310831bbe54d73"><div class="ttname"><a href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a></div><div class="ttdeci">El::Matrix&lt; lbann::DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00042">base.hpp:42</a></div></div>
+<div class="ttc" id="classlbann_1_1ascii__reader_html_a5a7b563d58c20eeffad4e5e2a96734bb"><div class="ttname"><a href="classlbann_1_1ascii__reader.html#a5a7b563d58c20eeffad4e5e2a96734bb">lbann::ascii_reader::ascii_reader</a></div><div class="ttdeci">ascii_reader(int sequence_length=1, bool shuffle=true)</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__ascii_8cpp_source.html#l00033">data_reader_ascii.cpp:33</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_aaab6aeff67ffff1c689336851fec2c57"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">lbann::generic_data_reader::m_shuffled_indices</a></div><div class="ttdeci">std::vector&lt; int &gt; m_shuffled_indices</div><div class="ttdef"><b>Definition:</b> <a href="data__reader_8hpp_source.html#l00619">data_reader.hpp:619</a></div></div>
+<div class="ttc" id="classlbann_1_1ascii__reader_html_af684694c8c7faef296bf5af2530471f3"><div class="ttname"><a href="classlbann_1_1ascii__reader.html#af684694c8c7faef296bf5af2530471f3">lbann::ascii_reader::m_file_size</a></div><div class="ttdeci">int m_file_size</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__ascii_8hpp_source.html#l00067">data_reader_ascii.hpp:67</a></div></div>
+<div class="ttc" id="classlbann_1_1ascii__reader_html_a5788fa7418a086de968929d0d4cb4fa4"><div class="ttname"><a href="classlbann_1_1ascii__reader.html#a5788fa7418a086de968929d0d4cb4fa4">lbann::ascii_reader::m_sequence_length</a></div><div class="ttdeci">int m_sequence_length</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__ascii_8hpp_source.html#l00065">data_reader_ascii.hpp:65</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_aa28fdeeb6af492540f507e49adff5d6c"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#aa28fdeeb6af492540f507e49adff5d6c">lbann::generic_data_reader::select_subset_of_data</a></div><div class="ttdeci">void select_subset_of_data()</div><div class="ttdef"><b>Definition:</b> <a href="data__reader_8cpp_source.html#l00319">data_reader.cpp:319</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_a252002ec211d67606b80bc481a27e820"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#a252002ec211d67606b80bc481a27e820">lbann::generic_data_reader::m_file_dir</a></div><div class="ttdeci">std::string m_file_dir</div><div class="ttdoc">What is the rank of the data reader within a given model. </div><div class="ttdef"><b>Definition:</b> <a href="data__reader_8hpp_source.html#l00639">data_reader.hpp:639</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html">lbann::generic_data_reader</a></div><div class="ttdef"><b>Definition:</b> <a href="data__reader_8hpp_source.html#l00062">data_reader.hpp:62</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_a0e216aa3f8c40e44c5fb14a587fa49d4"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#a0e216aa3f8c40e44c5fb14a587fa49d4">lbann::generic_data_reader::get_data_filename</a></div><div class="ttdeci">std::string get_data_filename() const </div><div class="ttdef"><b>Definition:</b> <a href="data__reader_8cpp_source.html#l00545">data_reader.cpp:545</a></div></div>
+<div class="ttc" id="classlbann_1_1ascii__reader_html_a361f883c71236c37dd2bc2dda5f00ef3"><div class="ttname"><a href="classlbann_1_1ascii__reader.html#a361f883c71236c37dd2bc2dda5f00ef3">lbann::ascii_reader::fetch_label</a></div><div class="ttdeci">bool fetch_label(Mat &amp;Y, int data_id, int mb_idx, int tid) override</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__ascii_8cpp_source.html#l00063">data_reader_ascii.cpp:63</a></div></div>
+<div class="ttc" id="classlbann_1_1ascii__reader_html_a678254a9d1c90459a1502d63e36a2b61"><div class="ttname"><a href="classlbann_1_1ascii__reader.html#a678254a9d1c90459a1502d63e36a2b61">lbann::ascii_reader::load</a></div><div class="ttdeci">void load() override</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__ascii_8cpp_source.html#l00092">data_reader_ascii.cpp:92</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_af144e7313b86f12a190ca260528279b7"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#af144e7313b86f12a190ca260528279b7">lbann::generic_data_reader::is_master</a></div><div class="ttdeci">bool is_master() const </div><div class="ttdoc">only the master may write to cerr or cout; primarily for use in debugging during development ...</div><div class="ttdef"><b>Definition:</b> <a href="data__reader_8hpp_source.html#l00497">data_reader.hpp:497</a></div></div>
 <div class="ttc" id="data__reader__ascii_8hpp_html"><div class="ttname"><a href="data__reader__ascii_8hpp.html">data_reader_ascii.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a23cee86a2a91e74a8d900eaa1800f8f.html">LBANN-MCK-DOX</a></li><li class="navelem"><a class="el" href="dir_f58f29776607091bcc1ea72124e029c4.html">src</a></li><li class="navelem"><a class="el" href="dir_11bf7e59a4a20c08f6c91c6f3ebf4feb.html">data_readers</a></li><li class="navelem"><a class="el" href="data__reader__ascii_8cpp.html">data_reader_ascii.cpp</a></li>
-    <li class="footer">Generated on Fri Feb 2 2018 11:10:19 for LBANN by
+    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_208d7a2ea8c59265ec87bf2e980d9340.html">wsb</a></li><li class="navelem"><a class="el" href="dir_bbd6668b26f763289c3f291aff61b3bb.html">lbannusr</a></li><li class="navelem"><a class="el" href="dir_a8f312ba3f043bd02d049f4e47a85cb6.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_133a4a981f060b5c505349fbb77a59be.html">lbann-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_1cc6d50f976a8e37e2027ade18b1e2d7.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_294e3a20abe6977c38d914c01e9d6ab7.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a31f8fe46a4aa588b6383a428e6464df.html">LBANN-DG-DD</a></li><li class="navelem"><a class="el" href="dir_923d22ad389741cf75d7d5ed6c33331c.html">src</a></li><li class="navelem"><a class="el" href="dir_ef9b326ddabc1183ea63c83861219e30.html">data_readers</a></li><li class="navelem"><a class="el" href="data__reader__ascii_8cpp.html">data_reader_ascii.cpp</a></li>
+    <li class="footer">Generated on Fri Feb 2 2018 11:16:38 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

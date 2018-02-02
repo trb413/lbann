@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/LBANN-MCK-DOX/src/utils/im2col.cpp Source File</title>
+<title>LBANN: /usr/workspace/wsb/lbannusr/bamboo/lbann-catalyst159-1/xml-data/build-dir/LBANN-DG-DD/src/utils/im2col.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">7a0ed70-ci45</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2179-g231ac24-ci142</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('im2col_8cpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -121,8 +121,8 @@ $(document).ready(function(){initNavTree('im2col_8cpp_source.html','');});
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>lbann {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">void</span> im2col(<span class="keyword">const</span> Mat&amp; im,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            Mat&amp; col,</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="namespacelbann.html#aa3636a1979e40da2af91f30a12b90db9">   32</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann.html#aa3636a1979e40da2af91f30a12b90db9">im2col</a>(<span class="keyword">const</span> <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a>&amp; im,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a>&amp; col,</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> num_channels,</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> im_num_dims,</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> * im_dims,</div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('im2col_8cpp_source.html','');});
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    ss &lt;&lt; <span class="stringliteral">&quot;im2col: im matrix has invalid dimensions &quot;</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;(expected &quot;</span> &lt;&lt; expected_im_size &lt;&lt; <span class="stringliteral">&quot; x &quot;</span> &lt;&lt; 1 &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;found &quot;</span> &lt;&lt; im_size &lt;&lt; <span class="stringliteral">&quot; x &quot;</span> &lt;&lt; im.Width() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(ss.str());</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(ss.str());</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordflow">if</span>(col_height != expected_col_height</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;     || col_width != expected_col_width) {</div>
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('im2col_8cpp_source.html','');});
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    ss &lt;&lt; <span class="stringliteral">&quot;im2col: col matrix has invalid dimensions &quot;</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;(expected &quot;</span> &lt;&lt; expected_col_height &lt;&lt; <span class="stringliteral">&quot; x &quot;</span> &lt;&lt; expected_col_width &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;found &quot;</span> &lt;&lt; col_height &lt;&lt; <span class="stringliteral">&quot; x &quot;</span> &lt;&lt; col_width &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(ss.str());</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(ss.str());</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  }</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">  #endif // LBANN_DEBUG  </span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor"></span></div>
@@ -185,13 +185,13 @@ $(document).ready(function(){initNavTree('im2col_8cpp_source.html','');});
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">if</span>(std::equal(im_pads, im_pads + im_num_dims, zeros.begin())</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;     &amp;&amp; std::equal(window_dims, window_dims + im_num_dims, ones.begin())</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;     &amp;&amp; std::equal(window_strides, window_strides + im_num_dims, ones.begin())) {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    im2col_1x1(im_buffer, col_buffer, num_channels, im_num_dims, im_dims);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="namespacelbann.html#a3d099edd7d1b09889e0d2133bb83d5bf">im2col_1x1</a>(im_buffer, col_buffer, num_channels, im_num_dims, im_dims);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="comment">// Call optimized routine for 2D data</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordflow">if</span>(im_num_dims == 2) {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    im2col_2d(im_buffer, col_buffer,</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="namespacelbann.html#adc05d10657be77ccd9a74b1621c416c3">im2col_2d</a>(im_buffer, col_buffer,</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;              im_dims[1], im_dims[0], im_pads[1], im_pads[0], num_channels,</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;              window_dims[1], window_dims[0],</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;              window_strides[1], window_strides[0]);</div>
@@ -244,8 +244,8 @@ $(document).ready(function(){initNavTree('im2col_8cpp_source.html','');});
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="keywordtype">void</span> col2im(<span class="keyword">const</span> Mat&amp; col,</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            Mat&amp; im,</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="namespacelbann.html#a0e1225f72580ffb5166181392b68b651">  155</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann.html#a0e1225f72580ffb5166181392b68b651">col2im</a>(<span class="keyword">const</span> <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a>&amp; col,</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a>&amp; im,</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> num_channels,</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> im_num_dims,</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> * im_dims,</div>
@@ -291,7 +291,7 @@ $(document).ready(function(){initNavTree('im2col_8cpp_source.html','');});
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    ss &lt;&lt; <span class="stringliteral">&quot;im2col: im matrix has invalid dimensions &quot;</span></div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;(expected &quot;</span> &lt;&lt; expected_im_size &lt;&lt; <span class="stringliteral">&quot; x &quot;</span> &lt;&lt; 1 &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;found &quot;</span> &lt;&lt; im_size &lt;&lt; <span class="stringliteral">&quot; x &quot;</span> &lt;&lt; im.Width() &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(ss.str());</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(ss.str());</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  }</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  <span class="keywordflow">if</span>(col_height != expected_col_height</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;     || col_width != expected_col_width) {</div>
@@ -299,7 +299,7 @@ $(document).ready(function(){initNavTree('im2col_8cpp_source.html','');});
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    ss &lt;&lt; <span class="stringliteral">&quot;im2col: col matrix has invalid dimensions &quot;</span></div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;(expected &quot;</span> &lt;&lt; expected_col_height &lt;&lt; <span class="stringliteral">&quot; x &quot;</span> &lt;&lt; expected_col_width &lt;&lt; <span class="stringliteral">&quot;, &quot;</span></div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;       &lt;&lt; <span class="stringliteral">&quot;found &quot;</span> &lt;&lt; col_height &lt;&lt; <span class="stringliteral">&quot; x &quot;</span> &lt;&lt; col_width &lt;&lt; <span class="stringliteral">&quot;)&quot;</span>;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(ss.str());</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(ss.str());</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  }</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="preprocessor">  #endif // LBANN_DEBUG  </span></div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="preprocessor"></span></div>
@@ -308,13 +308,13 @@ $(document).ready(function(){initNavTree('im2col_8cpp_source.html','');});
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  <span class="keywordflow">if</span>(std::equal(im_pads, im_pads + im_num_dims, zeros.begin())</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;     &amp;&amp; std::equal(window_dims, window_dims + im_num_dims, ones.begin())</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;     &amp;&amp; std::equal(window_strides, window_strides + im_num_dims, ones.begin())) {</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    col2im_1x1(col_buffer, im_buffer, num_channels, im_num_dims, im_dims);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <a class="code" href="namespacelbann.html#ab4fccda3dc4c2c293d643815dfefe22a">col2im_1x1</a>(col_buffer, im_buffer, num_channels, im_num_dims, im_dims);</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  }</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <span class="comment">// Call optimized routine for 2D data</span></div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordflow">if</span>(im_num_dims == 2) {</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    col2im_2d(col_buffer, im_buffer,</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <a class="code" href="namespacelbann.html#a1953674a43b284f0abb5c5e4db94b2b9">col2im_2d</a>(col_buffer, im_buffer,</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;              im_dims[1], im_dims[0], im_pads[1], im_pads[0], num_channels,</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;              window_dims[1], window_dims[0],</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;              window_strides[1], window_strides[0]);</div>
@@ -322,14 +322,14 @@ $(document).ready(function(){initNavTree('im2col_8cpp_source.html','');});
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  }</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="comment">// Default algorithm</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  col2im(col, im, num_channels, im_num_dims,</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <a class="code" href="namespacelbann.html#a0e1225f72580ffb5166181392b68b651">col2im</a>(col, im, num_channels, im_num_dims,</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;         im_dims, im_pads, window_dims, window_strides,</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;         std::plus&lt;DataType&gt;());</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;}</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="keywordtype">void</span> col2im(<span class="keyword">const</span> Mat&amp; col,</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            Mat&amp; im,</div>
+<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="namespacelbann.html#ab36806d08e7c852ad9cf3a0564f29b64">  239</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann.html#a0e1225f72580ffb5166181392b68b651">col2im</a>(<span class="keyword">const</span> <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a>&amp; col,</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a>&amp; im,</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> num_channels,</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> im_num_dims,</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span> * im_dims,</div>
@@ -361,7 +361,7 @@ $(document).ready(function(){initNavTree('im2col_8cpp_source.html','');});
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <span class="keywordflow">if</span>(std::equal(im_pads, im_pads + im_num_dims, zeros.begin())</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;     &amp;&amp; std::equal(window_dims, window_dims + im_num_dims, ones.begin())</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;     &amp;&amp; std::equal(window_strides, window_strides + im_num_dims, ones.begin())) {</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    col2im_1x1(col_buffer, im_buffer, num_channels, im_num_dims, im_dims);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <a class="code" href="namespacelbann.html#ab4fccda3dc4c2c293d643815dfefe22a">col2im_1x1</a>(col_buffer, im_buffer, num_channels, im_num_dims, im_dims);</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  }</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
@@ -439,7 +439,7 @@ $(document).ready(function(){initNavTree('im2col_8cpp_source.html','');});
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;}</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;<span class="keywordtype">void</span> im2col_1x1(<span class="keyword">const</span> DataType * input_buffer,</div>
+<div class="line"><a name="l00350"></a><span class="lineno"><a class="line" href="namespacelbann.html#a3d099edd7d1b09889e0d2133bb83d5bf">  350</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann.html#a3d099edd7d1b09889e0d2133bb83d5bf">im2col_1x1</a>(<span class="keyword">const</span> DataType * input_buffer,</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                DataType * output_buffer,</div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> num_channels,</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> num_input_dims,</div>
@@ -448,12 +448,12 @@ $(document).ready(function(){initNavTree('im2col_8cpp_source.html','');});
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;                                           input_dims + num_input_dims,</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;                                           1,</div>
 <div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;                                           std::multiplies&lt;int&gt;());</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  <span class="keyword">const</span> Mat input_matrix(spatial_size, num_channels, input_buffer, spatial_size);</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  Mat output_matrix(num_channels, spatial_size, output_buffer, num_channels);</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a> input_matrix(spatial_size, num_channels, input_buffer, spatial_size);</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a> output_matrix(num_channels, spatial_size, output_buffer, num_channels);</div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  El::Transpose(input_matrix, output_matrix);</div>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;}</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;<span class="keywordtype">void</span> im2col_2d(<span class="keyword">const</span> DataType *__restrict__ input_buffer,</div>
+<div class="line"><a name="l00364"></a><span class="lineno"><a class="line" href="namespacelbann.html#adc05d10657be77ccd9a74b1621c416c3">  364</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann.html#adc05d10657be77ccd9a74b1621c416c3">im2col_2d</a>(<span class="keyword">const</span> DataType *__restrict__ input_buffer,</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;               DataType *__restrict__ output_buffer,</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;               <span class="keyword">const</span> <span class="keywordtype">int</span> input_dim_x,</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;               <span class="keyword">const</span> <span class="keywordtype">int</span> input_dim_y,</div>
@@ -518,7 +518,7 @@ $(document).ready(function(){initNavTree('im2col_8cpp_source.html','');});
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;</div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;}</div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;<span class="keywordtype">void</span> col2im_1x1(<span class="keyword">const</span> DataType * input_buffer,</div>
+<div class="line"><a name="l00429"></a><span class="lineno"><a class="line" href="namespacelbann.html#ab4fccda3dc4c2c293d643815dfefe22a">  429</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann.html#ab4fccda3dc4c2c293d643815dfefe22a">col2im_1x1</a>(<span class="keyword">const</span> DataType * input_buffer,</div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;                DataType * output_buffer,</div>
 <div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> num_channels,</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;                <span class="keyword">const</span> <span class="keywordtype">int</span> num_output_dims,</div>
@@ -527,12 +527,12 @@ $(document).ready(function(){initNavTree('im2col_8cpp_source.html','');});
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                                           output_dims + num_output_dims,</div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;                                           1,</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;                                           std::multiplies&lt;int&gt;());</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  <span class="keyword">const</span> Mat input_matrix(num_channels, spatial_size, input_buffer, num_channels);</div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  Mat output_matrix(spatial_size, num_channels, output_buffer, spatial_size);</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;  <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a> input_matrix(num_channels, spatial_size, input_buffer, num_channels);</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;  <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a> output_matrix(spatial_size, num_channels, output_buffer, spatial_size);</div>
 <div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;  El::Transpose(input_matrix, output_matrix);</div>
 <div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;}</div>
 <div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;<span class="keywordtype">void</span> col2im_2d(<span class="keyword">const</span> DataType *__restrict__ input_buffer,</div>
+<div class="line"><a name="l00443"></a><span class="lineno"><a class="line" href="namespacelbann.html#a1953674a43b284f0abb5c5e4db94b2b9">  443</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann.html#a1953674a43b284f0abb5c5e4db94b2b9">col2im_2d</a>(<span class="keyword">const</span> DataType *__restrict__ input_buffer,</div>
 <div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;               DataType *__restrict__ output_buffer,</div>
 <div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;               <span class="keyword">const</span> <span class="keywordtype">int</span> output_dim_x,</div>
 <div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;               <span class="keyword">const</span> <span class="keywordtype">int</span> output_dim_y,</div>
@@ -612,15 +612,23 @@ $(document).ready(function(){initNavTree('im2col_8cpp_source.html','');});
 <div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;}</div>
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;}  <span class="comment">// namespace lbann</span></div>
+<div class="ttc" id="base_8hpp_html_a68f11fdc31b62516cb310831bbe54d73"><div class="ttname"><a href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a></div><div class="ttdeci">El::Matrix&lt; lbann::DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00042">base.hpp:42</a></div></div>
+<div class="ttc" id="namespacelbann_html_a1953674a43b284f0abb5c5e4db94b2b9"><div class="ttname"><a href="namespacelbann.html#a1953674a43b284f0abb5c5e4db94b2b9">lbann::col2im_2d</a></div><div class="ttdeci">void col2im_2d(const DataType *__restrict__ input_buffer, DataType *__restrict__ output_buffer, const int output_dim_x, const int output_dim_y, const int output_pad_x, const int output_pad_y, const int num_channels, const int window_dim_x, const int window_dim_y, const int offset_stride_x, const int offset_stride_y)</div><div class="ttdoc">Rearrange matrix columns into 2D image blocks. </div><div class="ttdef"><b>Definition:</b> <a href="im2col_8cpp_source.html#l00443">im2col.cpp:443</a></div></div>
+<div class="ttc" id="namespacelbann_html_aa3636a1979e40da2af91f30a12b90db9"><div class="ttname"><a href="namespacelbann.html#aa3636a1979e40da2af91f30a12b90db9">lbann::im2col</a></div><div class="ttdeci">void im2col(const Mat &amp;im, Mat &amp;col, const int num_channels, const int im_num_dims, const int *im_dims, const int *im_pads, const int *window_dims, const int *window_strides)</div><div class="ttdoc">Rearrange image blocks into matrix columns. </div><div class="ttdef"><b>Definition:</b> <a href="im2col_8cpp_source.html#l00032">im2col.cpp:32</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="exception_8hpp_source.html#l00040">exception.hpp:40</a></div></div>
+<div class="ttc" id="namespacelbann_html_ab4fccda3dc4c2c293d643815dfefe22a"><div class="ttname"><a href="namespacelbann.html#ab4fccda3dc4c2c293d643815dfefe22a">lbann::col2im_1x1</a></div><div class="ttdeci">void col2im_1x1(const DataType *input_buffer, DataType *output_buffer, const int num_channels, const int num_output_dims, const int *output_dims)</div><div class="ttdoc">Rearrange matrix columns into 1x1 image blocks. </div><div class="ttdef"><b>Definition:</b> <a href="im2col_8cpp_source.html#l00429">im2col.cpp:429</a></div></div>
 <div class="ttc" id="exception_8hpp_html"><div class="ttname"><a href="exception_8hpp.html">exception.hpp</a></div></div>
+<div class="ttc" id="namespacelbann_html_a0e1225f72580ffb5166181392b68b651"><div class="ttname"><a href="namespacelbann.html#a0e1225f72580ffb5166181392b68b651">lbann::col2im</a></div><div class="ttdeci">void col2im(const Mat &amp;col, Mat &amp;im, const int num_channels, const int im_num_dims, const int *im_dims, const int *im_pads, const int *window_dims, const int *window_strides)</div><div class="ttdoc">Rearrange matrix columns into image blocks. </div><div class="ttdef"><b>Definition:</b> <a href="im2col_8cpp_source.html#l00155">im2col.cpp:155</a></div></div>
 <div class="ttc" id="im2col_8hpp_html"><div class="ttname"><a href="im2col_8hpp.html">im2col.hpp</a></div></div>
+<div class="ttc" id="namespacelbann_html_adc05d10657be77ccd9a74b1621c416c3"><div class="ttname"><a href="namespacelbann.html#adc05d10657be77ccd9a74b1621c416c3">lbann::im2col_2d</a></div><div class="ttdeci">void im2col_2d(const DataType *__restrict__ input_buffer, DataType *__restrict__ output_buffer, const int input_dim_x, const int input_dim_y, const int input_pad_x, const int input_pad_y, const int num_channels, const int window_dim_x, const int window_dim_y, const int offset_stride_x, const int offset_stride_y)</div><div class="ttdoc">Rearrange 2D image blocks into matrix columns. </div><div class="ttdef"><b>Definition:</b> <a href="im2col_8cpp_source.html#l00364">im2col.cpp:364</a></div></div>
+<div class="ttc" id="namespacelbann_html_a3d099edd7d1b09889e0d2133bb83d5bf"><div class="ttname"><a href="namespacelbann.html#a3d099edd7d1b09889e0d2133bb83d5bf">lbann::im2col_1x1</a></div><div class="ttdeci">void im2col_1x1(const DataType *input_buffer, DataType *output_buffer, const int num_channels, const int num_input_dims, const int *input_dims)</div><div class="ttdoc">Rearrange 1x1 image blocks into matrix columns. </div><div class="ttdef"><b>Definition:</b> <a href="im2col_8cpp_source.html#l00350">im2col.cpp:350</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a23cee86a2a91e74a8d900eaa1800f8f.html">LBANN-MCK-DOX</a></li><li class="navelem"><a class="el" href="dir_f58f29776607091bcc1ea72124e029c4.html">src</a></li><li class="navelem"><a class="el" href="dir_99402af2c1c5380834105c499a2e1623.html">utils</a></li><li class="navelem"><a class="el" href="im2col_8cpp.html">im2col.cpp</a></li>
-    <li class="footer">Generated on Fri Feb 2 2018 11:10:21 for LBANN by
+    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_208d7a2ea8c59265ec87bf2e980d9340.html">wsb</a></li><li class="navelem"><a class="el" href="dir_bbd6668b26f763289c3f291aff61b3bb.html">lbannusr</a></li><li class="navelem"><a class="el" href="dir_a8f312ba3f043bd02d049f4e47a85cb6.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_133a4a981f060b5c505349fbb77a59be.html">lbann-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_1cc6d50f976a8e37e2027ade18b1e2d7.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_294e3a20abe6977c38d914c01e9d6ab7.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a31f8fe46a4aa588b6383a428e6464df.html">LBANN-DG-DD</a></li><li class="navelem"><a class="el" href="dir_923d22ad389741cf75d7d5ed6c33331c.html">src</a></li><li class="navelem"><a class="el" href="dir_a51bfbd72028c1af54cf6311bb8aa1b6.html">utils</a></li><li class="navelem"><a class="el" href="im2col_8cpp.html">im2col.cpp</a></li>
+    <li class="footer">Generated on Fri Feb 2 2018 11:16:39 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

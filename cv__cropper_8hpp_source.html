@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/LBANN-MCK-DOX/include/lbann/data_readers/cv_cropper.hpp Source File</title>
+<title>LBANN: /usr/workspace/wsb/lbannusr/bamboo/lbann-catalyst159-1/xml-data/build-dir/LBANN-DG-DD/include/lbann/data_readers/cv_cropper.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">7a0ed70-ci45</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2179-g231ac24-ci142</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('cv__cropper_8hpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -163,15 +163,15 @@ $(document).ready(function(){initNavTree('cv__cropper_8hpp_source.html','');});
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">void</span> reset() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">bool</span> determine_transform(<span class="keyword">const</span> cv::Mat&amp; image) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">bool</span> determine_transform(<span class="keyword">const</span> <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a>&amp; image) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keywordtype">bool</span> determine_inverse_transform()<span class="keyword"> override </span>{ <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">bool</span> apply(cv::Mat&amp; image) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordtype">bool</span> apply(<a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a>&amp; image) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  std::string get_type()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;cropper&quot;</span>; }</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  std::string get_description() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  std::ostream&amp; print(std::ostream&amp; os) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  std::ostream&amp; <a class="code" href="namespacelbann_1_1graph.html#a956e9f6f1b842a2ffe5bda9015bbb906">print</a>(std::ostream&amp; os) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;};</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;} <span class="comment">// end of namespace lbann</span></div>
@@ -179,13 +179,15 @@ $(document).ready(function(){initNavTree('cv__cropper_8hpp_source.html','');});
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif // LBANN_CV_CROPPER_HPP</span></div>
 <div class="ttc" id="cv__transform_8hpp_html"><div class="ttname"><a href="cv__transform_8hpp.html">cv_transform.hpp</a></div></div>
+<div class="ttc" id="base_8hpp_html_a68f11fdc31b62516cb310831bbe54d73"><div class="ttname"><a href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a></div><div class="ttdeci">El::Matrix&lt; lbann::DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00042">base.hpp:42</a></div></div>
+<div class="ttc" id="namespacelbann_1_1graph_html_a956e9f6f1b842a2ffe5bda9015bbb906"><div class="ttname"><a href="namespacelbann_1_1graph.html#a956e9f6f1b842a2ffe5bda9015bbb906">lbann::graph::print</a></div><div class="ttdeci">void print(const std::set&lt; int &gt; &amp;nodes, const std::map&lt; int, std::set&lt; int &gt;&gt; &amp;edges, std::ostream &amp;os)</div><div class="ttdef"><b>Definition:</b> <a href="graph_8cpp_source.html#l00037">graph.cpp:37</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a23cee86a2a91e74a8d900eaa1800f8f.html">LBANN-MCK-DOX</a></li><li class="navelem"><a class="el" href="dir_de30b333c751ee64c994135b5d233c33.html">include</a></li><li class="navelem"><a class="el" href="dir_cce5d40162b40db9850649eab9c230af.html">lbann</a></li><li class="navelem"><a class="el" href="dir_00ef70b6c1ade4fd1cb3fbde93ef3765.html">data_readers</a></li><li class="navelem"><a class="el" href="cv__cropper_8hpp.html">cv_cropper.hpp</a></li>
-    <li class="footer">Generated on Fri Feb 2 2018 11:10:18 for LBANN by
+    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_208d7a2ea8c59265ec87bf2e980d9340.html">wsb</a></li><li class="navelem"><a class="el" href="dir_bbd6668b26f763289c3f291aff61b3bb.html">lbannusr</a></li><li class="navelem"><a class="el" href="dir_a8f312ba3f043bd02d049f4e47a85cb6.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_133a4a981f060b5c505349fbb77a59be.html">lbann-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_1cc6d50f976a8e37e2027ade18b1e2d7.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_294e3a20abe6977c38d914c01e9d6ab7.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a31f8fe46a4aa588b6383a428e6464df.html">LBANN-DG-DD</a></li><li class="navelem"><a class="el" href="dir_d166d048bb8382a532581a8bdef1f3cb.html">include</a></li><li class="navelem"><a class="el" href="dir_782d4f5c831b713e690bf8a67fa27f73.html">lbann</a></li><li class="navelem"><a class="el" href="dir_fbd98ad6835c554c600d006efc9d422a.html">data_readers</a></li><li class="navelem"><a class="el" href="cv__cropper_8hpp.html">cv_cropper.hpp</a></li>
+    <li class="footer">Generated on Fri Feb 2 2018 11:16:36 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

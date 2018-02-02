@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/LBANN-MCK-DOX/src/metrics/top_k_categorical_accuracy.cpp Source File</title>
+<title>LBANN: /usr/workspace/wsb/lbannusr/bamboo/lbann-catalyst159-1/xml-data/build-dir/LBANN-DG-DD/src/metrics/top_k_categorical_accuracy.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">7a0ed70-ci45</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2179-g231ac24-ci142</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('top__k__categorical__accuracy_8cpp_sou
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -120,12 +120,12 @@ $(document).ready(function(){initNavTree('top__k__categorical__accuracy_8cpp_sou
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span>lbann {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;top_k_categorical_accuracy_metric::top_k_categorical_accuracy_metric(<span class="keywordtype">int</span> top_k,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                                                     lbann_comm *comm) </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  : metric(comm), m_top_k(top_k) {}</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classlbann_1_1top__k__categorical__accuracy__metric.html#a3896f230e2972c01b746fc808c51462e">   31</a></span>&#160;<a class="code" href="classlbann_1_1top__k__categorical__accuracy__metric.html#a3896f230e2972c01b746fc808c51462e">top_k_categorical_accuracy_metric::top_k_categorical_accuracy_metric</a>(<span class="keywordtype">int</span> top_k,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                                                     <a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>) </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  : <a class="code" href="classlbann_1_1metric.html">metric</a>(comm), m_top_k(top_k) {}</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;EvalType top_k_categorical_accuracy_metric::evaluate_compute(<span class="keyword">const</span> AbsDistMat&amp; prediction,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                             <span class="keyword">const</span> AbsDistMat&amp; ground_truth) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classlbann_1_1top__k__categorical__accuracy__metric.html#a3449bdb835e7e5bd7d17cd001fb4ae38">   35</a></span>&#160;<a class="code" href="base_8hpp.html#a3266f5ac18504bbadea983c109566867">EvalType</a> <a class="code" href="classlbann_1_1top__k__categorical__accuracy__metric.html#a3449bdb835e7e5bd7d17cd001fb4ae38">top_k_categorical_accuracy_metric::evaluate_compute</a>(<span class="keyword">const</span> <a class="code" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a>&amp; prediction,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                             <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a>&amp; ground_truth) {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// This first computes the top k predictions within each column locally,</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// then each column master gathers these, computes the global top k, and</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// determines if an error was made.</span></div>
@@ -138,19 +138,19 @@ $(document).ready(function(){initNavTree('top__k__categorical__accuracy_8cpp_sou
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">const</span> El::Int local_width = prediction.LocalWidth();  <span class="comment">// minibatch dim</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> El::Int local_height = prediction.LocalHeight();  <span class="comment">// class dim</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// Pack the top k predictions for each local column together.</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    std::vector&lt;top_k_ele&gt; local_top_k(m_top_k * local_width);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    std::vector&lt;top_k_ele&gt; local_top_k(<a class="code" href="classlbann_1_1top__k__categorical__accuracy__metric.html#a6cc172f6799bffac44de06d0657efdeb">m_top_k</a> * local_width);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// Compute the top k entries locally.</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    std::vector&lt;El::Int&gt; local_indices(local_height);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    std::iota(local_indices.begin(), local_indices.end(), 0);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">for</span> (El::Int mb_idx = 0; mb_idx &lt; local_width; ++mb_idx) {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="comment">// Determine the top k local entries in this column.</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      std::partial_sort(</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        local_indices.begin(), local_indices.begin() + m_top_k,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        local_indices.begin(), local_indices.begin() + <a class="code" href="classlbann_1_1top__k__categorical__accuracy__metric.html#a6cc172f6799bffac44de06d0657efdeb">m_top_k</a>,</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        local_indices.end(),</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        [mb_idx, &amp;prediction] (El::Int a, El::Int b) -&gt; <span class="keywordtype">bool</span> {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;          <span class="keywordflow">return</span> prediction.GetLocal(a, mb_idx) &gt;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            prediction.GetLocal(b, mb_idx); });</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">for</span> (El::Int i = 0; i &lt; m_top_k; ++i) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      <span class="keywordflow">for</span> (El::Int i = 0; i &lt; <a class="code" href="classlbann_1_1top__k__categorical__accuracy__metric.html#a6cc172f6799bffac44de06d0657efdeb">m_top_k</a>; ++i) {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        El::Int idx = mb_idx*m_top_k + i;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        local_top_k[idx].val = prediction.GetLocal(local_indices[i], mb_idx);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        local_top_k[idx].gt = ground_truth.GetLocal(local_indices[i], mb_idx);</div>
@@ -164,30 +164,30 @@ $(document).ready(function(){initNavTree('top__k__categorical__accuracy_8cpp_sou
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="comment">// therefore accessing data for a single mini-batch requires computing the</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="comment">// appropriate strides.</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      std::vector&lt;top_k_ele&gt; global_top_k(</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        m_top_k * local_width * col_comm_size);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      get_comm().gather((DataType*) local_top_k.data(), 2*local_top_k.size(),</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="classlbann_1_1top__k__categorical__accuracy__metric.html#a6cc172f6799bffac44de06d0657efdeb">m_top_k</a> * local_width * col_comm_size);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <a class="code" href="classlbann_1_1metric.html#a464120720df6bfdf91bffe353e562964">get_comm</a>().<a class="code" href="classlbann_1_1lbann__comm.html#aa784298e6ed0f9f01a20b179d5110df9">gather</a>((DataType*) local_top_k.data(), 2*local_top_k.size(),</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                        (DataType*) global_top_k.data(), col_comm);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="comment">// Compute the global top k elements in each column.</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      std::vector&lt;El::Int&gt; global_indices(m_top_k * col_comm_size);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      std::vector&lt;El::Int&gt; global_indices(<a class="code" href="classlbann_1_1top__k__categorical__accuracy__metric.html#a6cc172f6799bffac44de06d0657efdeb">m_top_k</a> * col_comm_size);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      std::iota(global_indices.begin(), global_indices.end(), 0);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">for</span> (El::Int mb_idx = 0; mb_idx &lt; local_width; ++mb_idx) {</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        std::partial_sort(</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;          global_indices.begin(), global_indices.begin() + m_top_k,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;          global_indices.begin(), global_indices.begin() + <a class="code" href="classlbann_1_1top__k__categorical__accuracy__metric.html#a6cc172f6799bffac44de06d0657efdeb">m_top_k</a>,</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;          global_indices.end(),</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;          [mb_idx, col_comm_size, &amp;global_top_k, <span class="keyword">this</span>]</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;          (El::Int a, El::Int b) -&gt; <span class="keywordtype">bool</span> {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            El::Int mb_offset = mb_idx * m_top_k;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            El::Int a_proc_offset = (a/m_top_k) * m_top_k * col_comm_size;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            El::Int a_idx = a_proc_offset + mb_offset + (a%m_top_k);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            El::Int b_proc_offset = (b/m_top_k) * m_top_k * col_comm_size;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            El::Int b_idx = b_proc_offset + mb_offset + (b%m_top_k);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            El::Int mb_offset = mb_idx * <a class="code" href="classlbann_1_1top__k__categorical__accuracy__metric.html#a6cc172f6799bffac44de06d0657efdeb">m_top_k</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            El::Int a_proc_offset = (a/<a class="code" href="classlbann_1_1top__k__categorical__accuracy__metric.html#a6cc172f6799bffac44de06d0657efdeb">m_top_k</a>) * m_top_k * col_comm_size;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            El::Int a_idx = a_proc_offset + mb_offset + (a%<a class="code" href="classlbann_1_1top__k__categorical__accuracy__metric.html#a6cc172f6799bffac44de06d0657efdeb">m_top_k</a>);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            El::Int b_proc_offset = (b/<a class="code" href="classlbann_1_1top__k__categorical__accuracy__metric.html#a6cc172f6799bffac44de06d0657efdeb">m_top_k</a>) * m_top_k * col_comm_size;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            El::Int b_idx = b_proc_offset + mb_offset + (b%<a class="code" href="classlbann_1_1top__k__categorical__accuracy__metric.html#a6cc172f6799bffac44de06d0657efdeb">m_top_k</a>);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">return</span> global_top_k[a_idx].val &gt; global_top_k[b_idx].val;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;          });</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="comment">// Check if there is a 1 ground truth label in the top k.</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">bool</span> found = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">for</span> (El::Int i = 0; i &lt; m_top_k; ++i) {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">for</span> (El::Int i = 0; i &lt; <a class="code" href="classlbann_1_1top__k__categorical__accuracy__metric.html#a6cc172f6799bffac44de06d0657efdeb">m_top_k</a>; ++i) {</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;          El::Int idx = global_indices[i];</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;          idx = mb_idx*m_top_k + (i/m_top_k)*m_top_k*col_comm_size + (i%m_top_k);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;          idx = mb_idx*m_top_k + (i/<a class="code" href="classlbann_1_1top__k__categorical__accuracy__metric.html#a6cc172f6799bffac44de06d0657efdeb">m_top_k</a>)*m_top_k*col_comm_size + (i%m_top_k);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;          <span class="keywordflow">if</span> (global_top_k[idx].gt == DataType(1)) {</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            found = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">break</span>;</div>
@@ -198,23 +198,34 @@ $(document).ready(function(){initNavTree('top__k__categorical__accuracy_8cpp_sou
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      }</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      get_comm().gather((DataType*) local_top_k.data(), 2*local_top_k.size(), 0,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <a class="code" href="classlbann_1_1metric.html#a464120720df6bfdf91bffe353e562964">get_comm</a>().<a class="code" href="classlbann_1_1lbann__comm.html#aa784298e6ed0f9f01a20b179d5110df9">gather</a>((DataType*) local_top_k.data(), 2*local_top_k.size(), 0,</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                        col_comm);</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    num_errors = get_comm().model_allreduce(num_errors);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    num_errors = <a class="code" href="classlbann_1_1metric.html#a464120720df6bfdf91bffe353e562964">get_comm</a>().<a class="code" href="classlbann_1_1lbann__comm.html#aebb6290d1b618eace302404291c598a5">model_allreduce</a>(num_errors);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> mini_batch_size = prediction.Width();</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> (mini_batch_size - num_errors) * 100;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}  <span class="comment">// namespace lbann</span></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_aa784298e6ed0f9f01a20b179d5110df9"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#aa784298e6ed0f9f01a20b179d5110df9">lbann::lbann_comm::gather</a></div><div class="ttdeci">void gather(T snd, int root, const El::mpi::Comm c)</div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00260">comm.hpp:260</a></div></div>
+<div class="ttc" id="base_8hpp_html_a3266f5ac18504bbadea983c109566867"><div class="ttname"><a href="base_8hpp.html#a3266f5ac18504bbadea983c109566867">EvalType</a></div><div class="ttdeci">double EvalType</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00059">base.hpp:59</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_aebb6290d1b618eace302404291c598a5"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#aebb6290d1b618eace302404291c598a5">lbann::lbann_comm::model_allreduce</a></div><div class="ttdeci">T model_allreduce(T snd, El::mpi::Op op=El::mpi::SUM)</div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00366">comm.hpp:366</a></div></div>
 <div class="ttc" id="top__k__categorical__accuracy_8hpp_html"><div class="ttname"><a href="top__k__categorical__accuracy_8hpp.html">top_k_categorical_accuracy.hpp</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html"><div class="ttname"><a href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a></div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00047">comm.hpp:47</a></div></div>
+<div class="ttc" id="file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00044">file_io.cpp:44</a></div></div>
+<div class="ttc" id="classlbann_1_1metric_html_a464120720df6bfdf91bffe353e562964"><div class="ttname"><a href="classlbann_1_1metric.html#a464120720df6bfdf91bffe353e562964">lbann::metric::get_comm</a></div><div class="ttdeci">lbann_comm &amp; get_comm()</div><div class="ttdef"><b>Definition:</b> <a href="metric_8hpp_source.html#l00158">metric.hpp:158</a></div></div>
+<div class="ttc" id="classlbann_1_1top__k__categorical__accuracy__metric_html_a3896f230e2972c01b746fc808c51462e"><div class="ttname"><a href="classlbann_1_1top__k__categorical__accuracy__metric.html#a3896f230e2972c01b746fc808c51462e">lbann::top_k_categorical_accuracy_metric::top_k_categorical_accuracy_metric</a></div><div class="ttdeci">top_k_categorical_accuracy_metric(int top_k, lbann_comm *comm)</div><div class="ttdef"><b>Definition:</b> <a href="top__k__categorical__accuracy_8cpp_source.html#l00031">top_k_categorical_accuracy.cpp:31</a></div></div>
+<div class="ttc" id="classlbann_1_1metric_html"><div class="ttname"><a href="classlbann_1_1metric.html">lbann::metric</a></div><div class="ttdef"><b>Definition:</b> <a href="metric_8hpp_source.html#l00090">metric.hpp:90</a></div></div>
+<div class="ttc" id="base_8hpp_html_a9a697a504ae84010e7439ffec862b470"><div class="ttname"><a href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a></div><div class="ttdeci">El::AbstractDistMatrix&lt; lbann::DataType &gt; AbsDistMat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00043">base.hpp:43</a></div></div>
+<div class="ttc" id="classlbann_1_1top__k__categorical__accuracy__metric_html_a6cc172f6799bffac44de06d0657efdeb"><div class="ttname"><a href="classlbann_1_1top__k__categorical__accuracy__metric.html#a6cc172f6799bffac44de06d0657efdeb">lbann::top_k_categorical_accuracy_metric::m_top_k</a></div><div class="ttdeci">int m_top_k</div><div class="ttdef"><b>Definition:</b> <a href="top__k__categorical__accuracy_8hpp_source.html#l00073">top_k_categorical_accuracy.hpp:73</a></div></div>
+<div class="ttc" id="classlbann_1_1top__k__categorical__accuracy__metric_html_a3449bdb835e7e5bd7d17cd001fb4ae38"><div class="ttname"><a href="classlbann_1_1top__k__categorical__accuracy__metric.html#a3449bdb835e7e5bd7d17cd001fb4ae38">lbann::top_k_categorical_accuracy_metric::evaluate_compute</a></div><div class="ttdeci">EvalType evaluate_compute(const AbsDistMat &amp;prediction, const AbsDistMat &amp;ground_truth) override</div><div class="ttdef"><b>Definition:</b> <a href="top__k__categorical__accuracy_8cpp_source.html#l00035">top_k_categorical_accuracy.cpp:35</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a23cee86a2a91e74a8d900eaa1800f8f.html">LBANN-MCK-DOX</a></li><li class="navelem"><a class="el" href="dir_f58f29776607091bcc1ea72124e029c4.html">src</a></li><li class="navelem"><a class="el" href="dir_734ac897f7399acace7bcdae5d8807b1.html">metrics</a></li><li class="navelem"><a class="el" href="top__k__categorical__accuracy_8cpp.html">top_k_categorical_accuracy.cpp</a></li>
-    <li class="footer">Generated on Fri Feb 2 2018 11:10:20 for LBANN by
+    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_208d7a2ea8c59265ec87bf2e980d9340.html">wsb</a></li><li class="navelem"><a class="el" href="dir_bbd6668b26f763289c3f291aff61b3bb.html">lbannusr</a></li><li class="navelem"><a class="el" href="dir_a8f312ba3f043bd02d049f4e47a85cb6.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_133a4a981f060b5c505349fbb77a59be.html">lbann-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_1cc6d50f976a8e37e2027ade18b1e2d7.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_294e3a20abe6977c38d914c01e9d6ab7.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a31f8fe46a4aa588b6383a428e6464df.html">LBANN-DG-DD</a></li><li class="navelem"><a class="el" href="dir_923d22ad389741cf75d7d5ed6c33331c.html">src</a></li><li class="navelem"><a class="el" href="dir_2d4180b76b488ae85db4347ed99c7555.html">metrics</a></li><li class="navelem"><a class="el" href="top__k__categorical__accuracy_8cpp.html">top_k_categorical_accuracy.cpp</a></li>
+    <li class="footer">Generated on Fri Feb 2 2018 11:16:38 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

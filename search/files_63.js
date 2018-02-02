@@ -52,6 +52,7 @@ var searchData=
   ['callback_5ftimer_2ehpp',['callback_timer.hpp',['../callback__timer_8hpp.html',1,'']]],
   ['callback_5fvariable_5fminibatch_2ecpp',['callback_variable_minibatch.cpp',['../callback__variable__minibatch_8cpp.html',1,'']]],
   ['callback_5fvariable_5fminibatch_2ehpp',['callback_variable_minibatch.hpp',['../callback__variable__minibatch_8hpp.html',1,'']]],
+  ['callbacks_2edox',['callbacks.dox',['../callbacks_8dox.html',1,'']]],
   ['categorical_5faccuracy_2ecpp',['categorical_accuracy.cpp',['../categorical__accuracy_8cpp.html',1,'']]],
   ['categorical_5faccuracy_2ehpp',['categorical_accuracy.hpp',['../categorical__accuracy_8hpp.html',1,'']]],
   ['comm_2ecpp',['comm.cpp',['../comm_8cpp.html',1,'']]],

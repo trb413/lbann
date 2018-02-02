@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/LBANN-MCK-DOX/src/io/file_io.cpp Source File</title>
+<title>LBANN: /usr/workspace/wsb/lbannusr/bamboo/lbann-catalyst159-1/xml-data/build-dir/LBANN-DG-DD/src/io/file_io.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">7a0ed70-ci45</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2179-g231ac24-ci142</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('file__io_8cpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -132,21 +132,21 @@ $(document).ready(function(){initNavTree('file__io_8cpp_source.html','');});
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &quot;mpi.h&quot;</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">static</span> mode_t mode_dir = S_IRWXU | S_IRWXG;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">static</span> MPI_Comm comm = MPI_COMM_WORLD;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="file__io_8cpp.html#a8a08135bfddb4c7375212d2ace2e24b7">   43</a></span>&#160;<span class="keyword">static</span> mode_t <a class="code" href="file__io_8cpp.html#a8a08135bfddb4c7375212d2ace2e24b7">mode_dir</a> = S_IRWXU | S_IRWXG;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">   44</a></span>&#160;<span class="keyword">static</span> MPI_Comm <a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a> = MPI_COMM_WORLD;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">/* creates directory given in dir (absolute path),</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> * rank 0 creates directory, all other procs get result via bcast,</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> * returns 1 if dir was created, 0 otherwise */</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">int</span> lbann::makedir(<span class="keyword">const</span> <span class="keywordtype">char</span> *dir) {</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="namespacelbann.html#a8830dea8eef0ab5b93d68e2358ceeb1a">   49</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespacelbann.html#a8830dea8eef0ab5b93d68e2358ceeb1a">lbann::makedir</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *dir) {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="comment">// get our rank</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">int</span> rank;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  MPI_Comm_rank(comm, &amp;rank);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  MPI_Comm_rank(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, &amp;rank);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="comment">// have rank 0 create directory</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">int</span> mkdir_rc;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">if</span> (rank == 0) {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    mkdir_rc = mkdir(dir, mode_dir);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    mkdir_rc = mkdir(dir, <a class="code" href="file__io_8cpp.html#a8a08135bfddb4c7375212d2ace2e24b7">mode_dir</a>);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (mkdir_rc != 0) {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <span class="keywordflow">if</span> (errno == EEXIST) {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">// not an error if the directory already exists</span></div>
@@ -161,21 +161,21 @@ $(document).ready(function(){initNavTree('file__io_8cpp_source.html','');});
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="comment">// bcast whether directory was created or not</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  MPI_Bcast(&amp;mkdir_rc, 1, MPI_INT, 0, comm);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  MPI_Bcast(&amp;mkdir_rc, 1, MPI_INT, 0, <a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="comment">// return 1 if dir was created successfully</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">int</span> ret = (mkdir_rc == 0);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">int</span> lbann::exists(<span class="keyword">const</span> <span class="keywordtype">char</span> *file) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="namespacelbann.html#aefae2a9fc9d742ece0fa8ca7ed9ee137">   79</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespacelbann.html#aefae2a9fc9d742ece0fa8ca7ed9ee137">lbann::exists</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file) {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="comment">// get our rank</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">int</span> rank;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  MPI_Comm_rank(comm, &amp;rank);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  MPI_Comm_rank(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, &amp;rank);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="comment">// check whether file exists</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keyword">struct </span>stat buffer;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">int</span> exists = 0;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="namespacelbann.html#aefae2a9fc9d742ece0fa8ca7ed9ee137">exists</a> = 0;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">if</span> (rank == 0) {</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">// TODO: would be nice to use something lighter weight than stat here</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">if</span> (stat(file, &amp;buffer) == 0) {</div>
@@ -184,10 +184,10 @@ $(document).ready(function(){initNavTree('file__io_8cpp_source.html','');});
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  MPI_Bcast(&amp;exists, 1, MPI_INT, 0, MPI_COMM_WORLD);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">return</span> exists;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespacelbann.html#aefae2a9fc9d742ece0fa8ca7ed9ee137">exists</a>;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">int</span> lbann::openread(<span class="keyword">const</span> <span class="keywordtype">char</span> *file) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="namespacelbann.html#a6084b9319eea1997f8446fa3e6879532">   98</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespacelbann.html#a6084b9319eea1997f8446fa3e6879532">lbann::openread</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file) {</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="comment">// open the file for writing</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">int</span> fd = open(file, O_RDONLY);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordflow">if</span> (fd == -1) {</div>
@@ -195,7 +195,7 @@ $(document).ready(function(){initNavTree('file__io_8cpp_source.html','');});
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">return</span> fd;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keywordtype">int</span> lbann::closeread(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keywordtype">char</span> *file) {</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="namespacelbann.html#a38dd30b2ae8214f6595708264369ddb8">  106</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespacelbann.html#a38dd30b2ae8214f6595708264369ddb8">lbann::closeread</a>(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keywordtype">char</span> *file) {</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="comment">// close file</span></div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">int</span> close_rc = close(fd);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordflow">if</span> (close_rc == -1) {</div>
@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('file__io_8cpp_source.html','');});
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="keywordflow">return</span> close_rc;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keywordtype">int</span> lbann::openwrite(<span class="keyword">const</span> <span class="keywordtype">char</span> *file) {</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="namespacelbann.html#af596e6d2be603e9cf808c98f5412490a">  119</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespacelbann.html#af596e6d2be603e9cf808c98f5412490a">lbann::openwrite</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file) {</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="comment">// define mode (permissions) for new file</span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  mode_t mode_file = S_IWUSR | S_IRUSR | S_IWGRP | S_IRGRP;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
@@ -223,7 +223,7 @@ $(document).ready(function(){initNavTree('file__io_8cpp_source.html','');});
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordflow">return</span> fd;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="keywordtype">int</span> lbann::closewrite(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keywordtype">char</span> *file) {</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="namespacelbann.html#aceeccedbbafccfa071b21ee99be794a5">  134</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="namespacelbann.html#aceeccedbbafccfa071b21ee99be794a5">lbann::closewrite</a>(<span class="keywordtype">int</span> fd, <span class="keyword">const</span> <span class="keywordtype">char</span> *file) {</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="comment">// fsync file</span></div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">int</span> fsync_rc = fsync(fd);</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordflow">if</span> (fsync_rc == -1) {</div>
@@ -244,14 +244,22 @@ $(document).ready(function(){initNavTree('file__io_8cpp_source.html','');});
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordflow">return</span> close_rc;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
+<div class="ttc" id="namespacelbann_html_aceeccedbbafccfa071b21ee99be794a5"><div class="ttname"><a href="namespacelbann.html#aceeccedbbafccfa071b21ee99be794a5">lbann::closewrite</a></div><div class="ttdeci">int closewrite(int fd, const char *filename)</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00134">file_io.cpp:134</a></div></div>
 <div class="ttc" id="file__io_8hpp_html"><div class="ttname"><a href="file__io_8hpp.html">file_io.hpp</a></div></div>
+<div class="ttc" id="namespacelbann_html_a6084b9319eea1997f8446fa3e6879532"><div class="ttname"><a href="namespacelbann.html#a6084b9319eea1997f8446fa3e6879532">lbann::openread</a></div><div class="ttdeci">int openread(const char *filename)</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00098">file_io.cpp:98</a></div></div>
+<div class="ttc" id="file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00044">file_io.cpp:44</a></div></div>
+<div class="ttc" id="namespacelbann_html_a8830dea8eef0ab5b93d68e2358ceeb1a"><div class="ttname"><a href="namespacelbann.html#a8830dea8eef0ab5b93d68e2358ceeb1a">lbann::makedir</a></div><div class="ttdeci">int makedir(const char *dirname)</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00049">file_io.cpp:49</a></div></div>
+<div class="ttc" id="namespacelbann_html_af596e6d2be603e9cf808c98f5412490a"><div class="ttname"><a href="namespacelbann.html#af596e6d2be603e9cf808c98f5412490a">lbann::openwrite</a></div><div class="ttdeci">int openwrite(const char *filename)</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00119">file_io.cpp:119</a></div></div>
+<div class="ttc" id="file__io_8cpp_html_a8a08135bfddb4c7375212d2ace2e24b7"><div class="ttname"><a href="file__io_8cpp.html#a8a08135bfddb4c7375212d2ace2e24b7">mode_dir</a></div><div class="ttdeci">static mode_t mode_dir</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00043">file_io.cpp:43</a></div></div>
+<div class="ttc" id="namespacelbann_html_aefae2a9fc9d742ece0fa8ca7ed9ee137"><div class="ttname"><a href="namespacelbann.html#aefae2a9fc9d742ece0fa8ca7ed9ee137">lbann::exists</a></div><div class="ttdeci">int exists(const char *filename)</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00079">file_io.cpp:79</a></div></div>
+<div class="ttc" id="namespacelbann_html_a38dd30b2ae8214f6595708264369ddb8"><div class="ttname"><a href="namespacelbann.html#a38dd30b2ae8214f6595708264369ddb8">lbann::closeread</a></div><div class="ttdeci">int closeread(int fd, const char *filename)</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00106">file_io.cpp:106</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a23cee86a2a91e74a8d900eaa1800f8f.html">LBANN-MCK-DOX</a></li><li class="navelem"><a class="el" href="dir_f58f29776607091bcc1ea72124e029c4.html">src</a></li><li class="navelem"><a class="el" href="dir_7e080d3497034b142ad0b3c1ee2568e6.html">io</a></li><li class="navelem"><a class="el" href="file__io_8cpp.html">file_io.cpp</a></li>
-    <li class="footer">Generated on Fri Feb 2 2018 11:10:20 for LBANN by
+    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_208d7a2ea8c59265ec87bf2e980d9340.html">wsb</a></li><li class="navelem"><a class="el" href="dir_bbd6668b26f763289c3f291aff61b3bb.html">lbannusr</a></li><li class="navelem"><a class="el" href="dir_a8f312ba3f043bd02d049f4e47a85cb6.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_133a4a981f060b5c505349fbb77a59be.html">lbann-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_1cc6d50f976a8e37e2027ade18b1e2d7.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_294e3a20abe6977c38d914c01e9d6ab7.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a31f8fe46a4aa588b6383a428e6464df.html">LBANN-DG-DD</a></li><li class="navelem"><a class="el" href="dir_923d22ad389741cf75d7d5ed6c33331c.html">src</a></li><li class="navelem"><a class="el" href="dir_850e046f7e42fb9780acbd4c71c23420.html">io</a></li><li class="navelem"><a class="el" href="file__io_8cpp.html">file_io.cpp</a></li>
+    <li class="footer">Generated on Fri Feb 2 2018 11:16:38 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

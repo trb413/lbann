@@ -1,8 +1,154 @@
 var NAVTREE =
 [
   [ "LBANN", "index.html", [
+    [ "Overview", "index.html", [
+      [ "LBANN Development Team", "index.html#team", null ],
+      [ "License", "index.html#license", null ]
+    ] ],
+    [ "Getting Started", "getting_started.html", [
+      [ "Download", "getting_started.html#getting_started_download", null ],
+      [ "Building LBANN", "getting_started.html#getting_started_building", [
+        [ "Livermore Computing Build", "getting_started.html#lc", null ],
+        [ "Spack Build", "getting_started.html#spack", null ],
+        [ "OSX Build", "getting_started.html#osx", null ],
+        [ "Dependency List", "getting_started.html#dependencies", null ]
+      ] ],
+      [ "Basic Usage", "getting_started.html#getting_started_basicusage", [
+        [ "Verification", "getting_started.html#verification", null ]
+      ] ]
+    ] ],
+    [ "Callbacks", "callbacks.html", [
+      [ "Check Dataset", "callbacks.html#checkdata", null ],
+      [ "Check Initialization", "callbacks.html#checkinit", null ],
+      [ "Check Reconstruction", "callbacks.html#checkreconstruction", null ],
+      [ "Check NAN", "callbacks.html#checknan", null ],
+      [ "Check Small", "callbacks.html#checksmall", null ],
+      [ "Dump Activations", "callbacks.html#dump_acts", null ],
+      [ "Dump Gradients", "callbacks.html#dump_grads", null ],
+      [ "Dump Minibatch Sample Indices", "callbacks.html#dump_mb_sample_indices", null ],
+      [ "Dump Weights", "callbacks.html#dump_wei", null ],
+      [ "Early Stopping", "callbacks.html#earlystop", null ],
+      [ "Gradient Check", "callbacks.html#gradientcheck", null ],
+      [ "Hang", "callbacks.html#hang", null ],
+      [ "Inter-model Communication", "callbacks.html#im_comm", null ],
+      [ "Print IO", "callbacks.html#io", null ],
+      [ "Learning Rate", "callbacks.html#learningrate", null ],
+      [ "Manage LTFB", "callbacks.html#LTFB", null ],
+      [ "Print Accuracy", "callbacks.html#print_acc", null ],
+      [ "Save Images", "callbacks.html#save_images", null ],
+      [ "Summary", "callbacks.html#summary", null ],
+      [ "Timer", "callbacks.html#timer", null ],
+      [ "Debug", "callbacks.html#dbg", null ],
+      [ "Variable Minibatch", "callbacks.html#variable_mb", null ]
+    ] ],
+    [ "Layers", "layers.html", [
+      [ "Learning", "layers.html#learning", [
+        [ "Convolution", "layers.html#conv", null ],
+        [ "Deconvolution", "layers.html#deconv", null ],
+        [ "Fully Connected", "layers.html#ip", null ]
+      ] ],
+      [ "Regularizer", "layers.html#regularizer", [
+        [ "Batch Normalization", "layers.html#batchNorm", null ],
+        [ "Dropout", "layers.html#dropout", null ],
+        [ "Selu Dropout", "layers.html#selu_dropout", null ],
+        [ "Local Response Norm Layer", "layers.html#local_response_norm_layer", null ]
+      ] ],
+      [ "Transform", "layers.html#transform", [
+        [ "Concatenation", "layers.html#concatenation", null ],
+        [ "Noise", "layers.html#noise", null ],
+        [ "Unpooling", "layers.html#unpooling", null ],
+        [ "Pooling", "layers.html#pooling", null ],
+        [ "Reshape", "layers.html#reshape", null ],
+        [ "Slice", "layers.html#slice", null ],
+        [ "Split", "layers.html#split", null ],
+        [ "Sum", "layers.html#sum", null ]
+      ] ],
+      [ "Activation", "layers.html#activation", [
+        [ "Identity", "layers.html#idlayer", null ],
+        [ "Rectified Linear Unit", "layers.html#reluLayer", null ],
+        [ "Leaky Relu", "layers.html#leakyrelu", null ],
+        [ "Smooth Relu", "layers.html#smoothrelu", null ],
+        [ "Exponential Linear Unit", "layers.html#expLinUn", null ],
+        [ "Scaled Elu", "layers.html#seluLayer", null ],
+        [ "Sigmoid", "layers.html#sigLayer", null ],
+        [ "Softplus", "layers.html#softplus", null ],
+        [ "Softmax", "layers.html#softmax", null ],
+        [ "Tanh", "layers.html#tanh", null ],
+        [ "Atan", "layers.html#atan", null ],
+        [ "Bent Identity", "layers.html#bent_identity", null ],
+        [ "Exponential", "layers.html#exponential", null ]
+      ] ],
+      [ "IO", "layers.html#i_o", [
+        [ "Input", "layers.html#input", null ],
+        [ "Target", "layers.html#target", null ]
+      ] ]
+    ] ],
+    [ "Metrics", "metrics.html", [
+      [ "Categorical Accuracy", "metrics.html#cataccuracy", null ],
+      [ "Mean Absolute Deviation", "metrics.html#mean_abs_dev", null ],
+      [ "Mean Squared Error", "metrics.html#mse", null ],
+      [ "Pearson Correlation", "metrics.html#pearson", null ],
+      [ "Top K Categorical Accuracy", "metrics.html#top_k", null ]
+    ] ],
+    [ "Objective Functions", "obj_fn.html", [
+      [ "Loss Functions", "obj_fn.html#loss_functions", [
+        [ "Binary Cross Entropy", "obj_fn.html#bin_cross_ent", null ],
+        [ "Cross Entropy", "obj_fn.html#cross_ent", null ],
+        [ "Cross Entropy with Uncertainty", "obj_fn.html#cross_ent_uncertain", null ],
+        [ "Geometric Negative Log Likelihood", "obj_fn.html#gemo_negloglike", null ],
+        [ "Mean Absolute Deviation", "obj_fn.html#mad", null ],
+        [ "Mean Squared Error", "obj_fn.html#m_s_e", null ],
+        [ "Poisson Negative Log Likelihood", "obj_fn.html#pos_negloglike", null ],
+        [ "Polya Negative Log Likelihood", "obj_fn.html#poly_negloglike", null ]
+      ] ],
+      [ "Weight Regularization", "obj_fn.html#weight_regularization", [
+        [ "L2 Weight Regularization", "obj_fn.html#l2_weight", null ]
+      ] ]
+    ] ],
+    [ "Optimizers", "optimizers.html", [
+      [ "Adagrad", "optimizers.html#Adagrad", null ],
+      [ "Adam", "optimizers.html#Adam", null ],
+      [ "Hypergradient Adam", "optimizers.html#hadam", null ],
+      [ "RMSprop", "optimizers.html#rmsp", null ],
+      [ "SGD", "optimizers.html#SGD", null ]
+    ] ],
+    [ "Todo List", "todo.html", null ],
+    [ "Namespaces", null, [
+      [ "Namespace List", "namespaces.html", "namespaces" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ],
+        [ "Variables", "namespacemembers_vars.html", null ],
+        [ "Typedefs", "namespacemembers_type.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ],
+        [ "Enumerator", "namespacemembers_eval.html", null ]
+      ] ]
+    ] ],
+    [ "Classes", null, [
+      [ "Class List", "annotated.html", "annotated" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", "functions_dup" ],
+        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Variables", "functions_vars.html", "functions_vars" ],
+        [ "Typedefs", "functions_type.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
+        [ "Enumerator", "functions_eval.html", null ],
+        [ "Related Functions", "functions_rela.html", null ]
+      ] ]
+    ] ],
     [ "Files", null, [
-      [ "File List", "files.html", "files" ]
+      [ "File List", "files.html", "files" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
+        [ "Enumerations", "globals_enum.html", null ],
+        [ "Enumerator", "globals_eval.html", null ],
+        [ "Macros", "globals_defs.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
@@ -10,8 +156,24 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "Elemental__extensions_8cpp.html",
-"data__reader__merge__features_8cpp.html",
-"model_8cpp_source.html"
+"classlbann_1_1DataGenerator.html#a9ba8ec1349a7a7f7248f56d3263ba62c",
+"classlbann_1_1base__convolution__layer.html#aa9da3e44499643a86bd611b5eb500dd4",
+"classlbann_1_1data__reader__merge__samples.html#ab39ad6b6e106eb30f58f9eabaf3352ad",
+"classlbann_1_1fetch__data__functor.html#a00bb78798e6795205e32ba25780ae7fb",
+"classlbann_1_1generic__input__layer.html#a6bc18860c02beed0252ea3cc87bc48d2",
+"classlbann_1_1imagenet__reader__org.html#acbe8ed442b64a7391ffa63b0658641c0",
+"classlbann_1_1lbann__callback__debug.html#a19a8ec63f55fc86024c9ab8fe0836500",
+"classlbann_1_1lbann__callback__save__model.html#a85b88992e7cd7073279b8a9b6d8b142f",
+"classlbann_1_1lbann__comm.html#ac6addefb7577f81fbc90da94d26991e4",
+"classlbann_1_1metric.html#a8eabf840fa0fbad6c985479e9d83cf63",
+"classlbann_1_1optimizer.html#a0db72c298a0bc3405fb0af97d104a036",
+"classlbann_1_1rmsprop.html#a6ea73caf5b2769451dfd798665877208",
+"classlbann_1_1target__layer.html#a6b5dad32cf3b771d6db1f99914ab63c4",
+"data__reader__ascii_8cpp_source.html",
+"functions_func_0x72.html",
+"metrics_2mean__squared__error_8cpp_source.html",
+"random_8cpp.html#a93fc1b42be6ab461e803cb48d58c4d81",
+"sum_8hpp_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

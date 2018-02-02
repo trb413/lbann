@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/LBANN-MCK-DOX/include/lbann/utils/cudnn_wrapper.hpp Source File</title>
+<title>LBANN: /usr/workspace/wsb/lbannusr/bamboo/lbann-catalyst159-1/xml-data/build-dir/LBANN-DG-DD/include/lbann/utils/cudnn_wrapper.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">7a0ed70-ci45</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2179-g231ac24-ci142</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('cudnn__wrapper_8hpp_source.html','');}
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -198,16 +198,16 @@ $(document).ready(function(){initNavTree('cudnn__wrapper_8hpp_source.html','');}
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">namespace </span>lbann</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">namespace </span>cudnn</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="namespacelbann_1_1cudnn.html">  109</a></span>&#160;<span class="keyword">namespace </span>cudnn</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">class </span>cudnn_manager {</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classlbann_1_1cudnn_1_1cudnn__manager.html">  113</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlbann_1_1cudnn_1_1cudnn__manager.html">cudnn_manager</a> {</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#ifdef LBANN_HAS_CUDNN</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  cudnn_manager(lbann::lbann_comm *_comm, <span class="keywordtype">int</span> max_num_gpus = -1, <span class="keywordtype">bool</span> nccl_used = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <a class="code" href="classlbann_1_1cudnn_1_1cudnn__manager.html">cudnn_manager</a>(<a class="code" href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a> *_comm, <span class="keywordtype">int</span> max_num_gpus = -1, <span class="keywordtype">bool</span> nccl_used = <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  ~cudnn_manager();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  ~<a class="code" href="classlbann_1_1cudnn_1_1cudnn__manager.html">cudnn_manager</a>();</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="keywordtype">int</span> get_num_gpus() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">int</span> get_num_visible_gpus() <span class="keyword">const</span>;</div>
@@ -246,10 +246,10 @@ $(document).ready(function(){initNavTree('cudnn__wrapper_8hpp_source.html','');}
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                    <span class="keywordtype">int</span> leading_dim = 0);</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordtype">void</span> copy_to_gpu(<span class="keywordtype">int</span> i,</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                   DataType* gpu_data,</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                   <span class="keyword">const</span> Mat&amp; cpu_data,</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                   <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a>&amp; cpu_data,</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                   <span class="keywordtype">int</span> gpu_data_leading_dim = 0);</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordtype">void</span> copy_from_gpu(<span class="keywordtype">int</span> i,</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                     Mat&amp; cpu_data,</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                     <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a>&amp; cpu_data,</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                     <span class="keyword">const</span> DataType* gpu_data,</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                     <span class="keywordtype">int</span> gpu_data_leading_dim = 0);</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
@@ -270,17 +270,17 @@ $(document).ready(function(){initNavTree('cudnn__wrapper_8hpp_source.html','');}
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                    <span class="keywordtype">int</span> src_leading_dim = 0,</div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                    <span class="keywordtype">int</span> dst_leading_dim = 0);</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  <span class="keywordtype">void</span> scatter_to_gpus(std::vector&lt;DataType*&gt;&amp; gpu_data,</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                       <span class="keyword">const</span> Mat&amp; cpu_data,</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                       <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a>&amp; cpu_data,</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                       <span class="keywordtype">int</span> width_per_gpu,</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                       <span class="keywordtype">int</span> gpu_data_leading_dim = 0);</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keywordtype">void</span> gather_from_gpus(Mat&amp; cpu_data,</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keywordtype">void</span> gather_from_gpus(<a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a>&amp; cpu_data,</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                        <span class="keyword">const</span> std::vector&lt;DataType*&gt;&amp; gpu_data,</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                        <span class="keywordtype">int</span> width_per_gpu,</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                        <span class="keywordtype">int</span> gpu_data_leading_dim = 0);</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="keywordtype">void</span> broadcast_to_gpus(std::vector&lt;DataType*&gt;&amp; gpu_data,</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                         <span class="keyword">const</span> Mat&amp; cpu_data,</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                         <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a>&amp; cpu_data,</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                         <span class="keywordtype">int</span> gpu_data_leading_dim = 0);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keywordtype">void</span> reduce_from_gpus(Mat&amp; cpu_data,</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keywordtype">void</span> reduce_from_gpus(<a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a>&amp; cpu_data,</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                        <span class="keyword">const</span> std::vector&lt;DataType*&gt;&amp; gpu_data,</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                        <span class="keywordtype">int</span> gpu_data_leading_dim = 0);</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="keywordtype">void</span> allreduce_on_gpus(std::vector&lt;DataType*&gt;&amp; gpu_data,</div>
@@ -290,7 +290,7 @@ $(document).ready(function(){initNavTree('cudnn__wrapper_8hpp_source.html','');}
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keywordtype">void</span> global_allreduce_on_gpus(std::vector&lt;DataType*&gt;&amp; gpu_data,</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                                El::Int height,</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                                El::Int width,</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                                El::mpi::Comm comm);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                                El::mpi::Comm <a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keywordtype">void</span> global_allreduce_on_gpus_nccl(std::vector&lt;DataType*&gt;&amp; gpu_data,</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                 El::Int height,</div>
@@ -306,9 +306,9 @@ $(document).ready(function(){initNavTree('cudnn__wrapper_8hpp_source.html','');}
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                              <span class="keywordtype">int</span> width_per_gpu,</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                              <span class="keywordtype">int</span> leading_dim = 0);</div>
 <div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <span class="keywordtype">void</span> pin_matrix(AbsDistMat&amp; mat);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <span class="keywordtype">void</span> pin_matrix(<a class="code" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a>&amp; mat);</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="keywordtype">void</span> unpin_matrix(AbsDistMat&amp; mat);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="keywordtype">void</span> unpin_matrix(<a class="code" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a>&amp; mat);</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  <span class="keywordtype">void</span> check_error();</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
@@ -316,7 +316,7 @@ $(document).ready(function(){initNavTree('cudnn__wrapper_8hpp_source.html','');}
 <div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  lbann::lbann_comm *comm;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  <a class="code" href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a> *<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>;</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  <span class="keywordtype">int</span> m_num_gpus;</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  <span class="keywordtype">int</span> m_num_visible_gpus;</div>
@@ -376,16 +376,21 @@ $(document).ready(function(){initNavTree('cudnn__wrapper_8hpp_source.html','');}
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;}<span class="comment">// namespace lbann</span></div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="preprocessor">#endif // CUDNN_WRAPPER_HPP_INCLUDED</span></div>
+<div class="ttc" id="base_8hpp_html_a68f11fdc31b62516cb310831bbe54d73"><div class="ttname"><a href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a></div><div class="ttdeci">El::Matrix&lt; lbann::DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00042">base.hpp:42</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html"><div class="ttname"><a href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a></div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00047">comm.hpp:47</a></div></div>
+<div class="ttc" id="file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00044">file_io.cpp:44</a></div></div>
 <div class="ttc" id="base_8hpp_html"><div class="ttname"><a href="base_8hpp.html">base.hpp</a></div></div>
 <div class="ttc" id="exception_8hpp_html"><div class="ttname"><a href="exception_8hpp.html">exception.hpp</a></div></div>
 <div class="ttc" id="comm_8hpp_html"><div class="ttname"><a href="comm_8hpp.html">comm.hpp</a></div></div>
+<div class="ttc" id="base_8hpp_html_a9a697a504ae84010e7439ffec862b470"><div class="ttname"><a href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a></div><div class="ttdeci">El::AbstractDistMatrix&lt; lbann::DataType &gt; AbsDistMat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00043">base.hpp:43</a></div></div>
+<div class="ttc" id="classlbann_1_1cudnn_1_1cudnn__manager_html"><div class="ttname"><a href="classlbann_1_1cudnn_1_1cudnn__manager.html">lbann::cudnn::cudnn_manager</a></div><div class="ttdef"><b>Definition:</b> <a href="cudnn__wrapper_8hpp_source.html#l00113">cudnn_wrapper.hpp:113</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a23cee86a2a91e74a8d900eaa1800f8f.html">LBANN-MCK-DOX</a></li><li class="navelem"><a class="el" href="dir_de30b333c751ee64c994135b5d233c33.html">include</a></li><li class="navelem"><a class="el" href="dir_cce5d40162b40db9850649eab9c230af.html">lbann</a></li><li class="navelem"><a class="el" href="dir_2100c04295ef8498712109e96577d953.html">utils</a></li><li class="navelem"><a class="el" href="cudnn__wrapper_8hpp.html">cudnn_wrapper.hpp</a></li>
-    <li class="footer">Generated on Fri Feb 2 2018 11:10:19 for LBANN by
+    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_208d7a2ea8c59265ec87bf2e980d9340.html">wsb</a></li><li class="navelem"><a class="el" href="dir_bbd6668b26f763289c3f291aff61b3bb.html">lbannusr</a></li><li class="navelem"><a class="el" href="dir_a8f312ba3f043bd02d049f4e47a85cb6.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_133a4a981f060b5c505349fbb77a59be.html">lbann-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_1cc6d50f976a8e37e2027ade18b1e2d7.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_294e3a20abe6977c38d914c01e9d6ab7.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a31f8fe46a4aa588b6383a428e6464df.html">LBANN-DG-DD</a></li><li class="navelem"><a class="el" href="dir_d166d048bb8382a532581a8bdef1f3cb.html">include</a></li><li class="navelem"><a class="el" href="dir_782d4f5c831b713e690bf8a67fa27f73.html">lbann</a></li><li class="navelem"><a class="el" href="dir_288651154ff4ea4d814cdc4cf97cc86d.html">utils</a></li><li class="navelem"><a class="el" href="cudnn__wrapper_8hpp.html">cudnn_wrapper.hpp</a></li>
+    <li class="footer">Generated on Fri Feb 2 2018 11:16:37 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/LBANN-MCK-DOX/include/lbann/layers/learning/fully_connected_cuda.hpp Source File</title>
+<title>LBANN: /usr/workspace/wsb/lbannusr/bamboo/lbann-catalyst159-1/xml-data/build-dir/LBANN-DG-DD/include/lbann/layers/learning/fully_connected_cuda.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">7a0ed70-ci45</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2179-g231ac24-ci142</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('fully__connected__cuda_8hpp_source.htm
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -123,23 +123,23 @@ $(document).ready(function(){initNavTree('fully__connected__cuda_8hpp_source.htm
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cudnn__wrapper_8hpp.html">lbann/utils/cudnn_wrapper.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>lbann {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span>fully_connected_cuda {</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="namespacelbann_1_1fully__connected__cuda.html">   34</a></span>&#160;<span class="keyword">namespace </span>fully_connected_cuda {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> row_sum(cudnn::cudnn_manager &amp;cudnn,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann_1_1fully__connected__cuda.html#a45c34e7de58545d7d2e382babba0489e">row_sum</a>(<a class="code" href="classlbann_1_1cudnn_1_1cudnn__manager.html">cudnn::cudnn_manager</a> &amp;cudnn,</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;             std::vector&lt;DataType*&gt; matrices,</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;             El::Int h, El::Int w,</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;             DataType factor,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;             Mat &amp;dest,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;             <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a> &amp;dest,</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;             <span class="keyword">const</span> std::vector&lt;DataType*&gt; &amp;work_column);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span> row_sum(cudnn::cudnn_manager &amp;cudnn,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann_1_1fully__connected__cuda.html#a45c34e7de58545d7d2e382babba0489e">row_sum</a>(<a class="code" href="classlbann_1_1cudnn_1_1cudnn__manager.html">cudnn::cudnn_manager</a> &amp;cudnn,</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;             std::vector&lt;DataType*&gt; matrices,</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;             El::Int h, El::Int w,</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;             DataType factor,</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;             std::vector&lt;DataType*&gt; &amp;dest);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> add_tensor(DataType factor,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann_1_1fully__connected__cuda.html#acaefd89a51a9fb7c0b2d6551241f9cd5">add_tensor</a>(DataType factor,</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                DataType *bias,</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                El::Int bias_h, El::Int bias_w,</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                DataType beta,                </div>
@@ -151,14 +151,18 @@ $(document).ready(function(){initNavTree('fully__connected__cuda_8hpp_source.htm
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// namespace lbann</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif  // LBANN_LAYER_FULLY_CONNECTED_CUDA_HPP_INCLUDED</span></div>
+<div class="ttc" id="namespacelbann_1_1fully__connected__cuda_html_a45c34e7de58545d7d2e382babba0489e"><div class="ttname"><a href="namespacelbann_1_1fully__connected__cuda.html#a45c34e7de58545d7d2e382babba0489e">lbann::fully_connected_cuda::row_sum</a></div><div class="ttdeci">void row_sum(cudnn::cudnn_manager &amp;cudnn, std::vector&lt; DataType * &gt; matrices, El::Int h, El::Int w, DataType factor, Mat &amp;dest, const std::vector&lt; DataType * &gt; &amp;work_column)</div><div class="ttdoc">reduction of rows with the result copied back to CPU </div></div>
 <div class="ttc" id="cudnn__wrapper_8hpp_html"><div class="ttname"><a href="cudnn__wrapper_8hpp.html">cudnn_wrapper.hpp</a></div></div>
+<div class="ttc" id="base_8hpp_html_a68f11fdc31b62516cb310831bbe54d73"><div class="ttname"><a href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a></div><div class="ttdeci">El::Matrix&lt; lbann::DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00042">base.hpp:42</a></div></div>
+<div class="ttc" id="namespacelbann_1_1fully__connected__cuda_html_acaefd89a51a9fb7c0b2d6551241f9cd5"><div class="ttname"><a href="namespacelbann_1_1fully__connected__cuda.html#acaefd89a51a9fb7c0b2d6551241f9cd5">lbann::fully_connected_cuda::add_tensor</a></div><div class="ttdeci">void add_tensor(DataType factor, DataType *bias, El::Int bias_h, El::Int bias_w, DataType beta, DataType *tensor, El::Int tensor_h, El::Int tensor_w)</div><div class="ttdoc">tensor &amp;lt;= tensor * beta + bias * factor </div></div>
+<div class="ttc" id="classlbann_1_1cudnn_1_1cudnn__manager_html"><div class="ttname"><a href="classlbann_1_1cudnn_1_1cudnn__manager.html">lbann::cudnn::cudnn_manager</a></div><div class="ttdef"><b>Definition:</b> <a href="cudnn__wrapper_8hpp_source.html#l00113">cudnn_wrapper.hpp:113</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a23cee86a2a91e74a8d900eaa1800f8f.html">LBANN-MCK-DOX</a></li><li class="navelem"><a class="el" href="dir_de30b333c751ee64c994135b5d233c33.html">include</a></li><li class="navelem"><a class="el" href="dir_cce5d40162b40db9850649eab9c230af.html">lbann</a></li><li class="navelem"><a class="el" href="dir_df1b85c0ab651df36bf504919a8dff4c.html">layers</a></li><li class="navelem"><a class="el" href="dir_381c01e8d8ac7762a7302626226dfd50.html">learning</a></li><li class="navelem"><a class="el" href="fully__connected__cuda_8hpp.html">fully_connected_cuda.hpp</a></li>
-    <li class="footer">Generated on Fri Feb 2 2018 11:10:18 for LBANN by
+    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_208d7a2ea8c59265ec87bf2e980d9340.html">wsb</a></li><li class="navelem"><a class="el" href="dir_bbd6668b26f763289c3f291aff61b3bb.html">lbannusr</a></li><li class="navelem"><a class="el" href="dir_a8f312ba3f043bd02d049f4e47a85cb6.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_133a4a981f060b5c505349fbb77a59be.html">lbann-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_1cc6d50f976a8e37e2027ade18b1e2d7.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_294e3a20abe6977c38d914c01e9d6ab7.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a31f8fe46a4aa588b6383a428e6464df.html">LBANN-DG-DD</a></li><li class="navelem"><a class="el" href="dir_d166d048bb8382a532581a8bdef1f3cb.html">include</a></li><li class="navelem"><a class="el" href="dir_782d4f5c831b713e690bf8a67fa27f73.html">lbann</a></li><li class="navelem"><a class="el" href="dir_6a8b2ecce51adcfaa5e42e6c61ed784e.html">layers</a></li><li class="navelem"><a class="el" href="dir_15a1045d707c7f4e89d27bbaa6039683.html">learning</a></li><li class="navelem"><a class="el" href="fully__connected__cuda_8hpp.html">fully_connected_cuda.hpp</a></li>
+    <li class="footer">Generated on Fri Feb 2 2018 11:16:37 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

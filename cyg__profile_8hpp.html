@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/LBANN-MCK-DOX/include/lbann/utils/cyg_profile.hpp File Reference</title>
+<title>LBANN: /usr/workspace/wsb/lbannusr/bamboo/lbann-catalyst159-1/xml-data/build-dir/LBANN-DG-DD/include/lbann/utils/cyg_profile.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">7a0ed70-ci45</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2179-g231ac24-ci142</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('cyg__profile_8hpp.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,19 +88,909 @@ $(document).ready(function(){initNavTree('cyg__profile_8hpp.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">cyg_profile.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;cstdlib&gt;</code><br/>
+<code>#include &lt;cstdio&gt;</code><br/>
+<code>#include &lt;dlfcn.h&gt;</code><br/>
+<code>#include &lt;cxxabi.h&gt;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for cyg_profile.hpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="cyg__profile_8hpp__incl.png" border="0" usemap="#_2usr_2workspace_2wsb_2lbannusr_2bamboo_2lbann-catalyst159-1_2xml-data_2build-dir_2LBANN-DG-DD_2include_2lbann_2utils_2cyg__profile_8hpp" alt=""/></div>
+<map name="_2usr_2workspace_2wsb_2lbannusr_2bamboo_2lbann-catalyst159-1_2xml-data_2build-dir_2LBANN-DG-DD_2include_2lbann_2utils_2cyg__profile_8hpp" id="_2usr_2workspace_2wsb_2lbannusr_2bamboo_2lbann-catalyst159-1_2xml-data_2build-dir_2LBANN-DG-DD_2include_2lbann_2utils_2cyg__profile_8hpp">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+This graph shows which files directly or indirectly include this file:</div>
+<div class="dyncontent">
+<div class="center"><img src="cyg__profile_8hpp__dep__incl.png" border="0" usemap="#_2usr_2workspace_2wsb_2lbannusr_2bamboo_2lbann-catalyst159-1_2xml-data_2build-dir_2LBANN-DG-DD_2include_2lbann_2utils_2cyg__profile_8hppdep" alt=""/></div>
+<map name="_2usr_2workspace_2wsb_2lbannusr_2bamboo_2lbann-catalyst159-1_2xml-data_2build-dir_2LBANN-DG-DD_2include_2lbann_2utils_2cyg__profile_8hppdep" id="_2usr_2workspace_2wsb_2lbannusr_2bamboo_2lbann-catalyst159-1_2xml-data_2build-dir_2LBANN-DG-DD_2include_2lbann_2utils_2cyg__profile_8hppdep">
+<area shape="rect" id="node2" href="stack__profiler_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/utils/stack_profiler.cpp" alt="" coords="9523,139,9713,224"/><area shape="rect" id="node3" href="base_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/base.hpp" alt="" coords="9739,139,9952,224"/><area shape="rect" id="node4" href="base_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/base.cpp" alt="" coords="6023,1261,6213,1347"/><area shape="rect" id="node5" href="proto__common_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/proto/proto_common.cpp" alt="" coords="10546,2744,10736,2829"/><area shape="rect" id="node6" href="callback_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback.hpp" alt="" coords="6467,2008,6680,2093"/><area shape="rect" id="node69" href="comm_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/comm.hpp" alt="" coords="7324,272,7537,357"/><area shape="rect" id="node71" href="data__reader_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/data_reader.hpp" alt="" coords="13750,1261,13983,1347"/><area shape="rect" id="node268" href="cv__normalizer_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/cv_normalizer.hpp" alt="" coords="16722,1112,16968,1197"/><area shape="rect" id="node274" href="cv__subtractor_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/cv_subtractor.hpp" alt="" coords="16461,405,16704,491"/><area shape="rect" id="node275" href="image__preprocessor_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/image_preprocessor.hpp" alt="" coords="15392,1112,15675,1197"/><area shape="rect" id="node276" href="image__utils_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/image_utils.hpp" alt="" coords="17946,1560,18176,1645"/><area shape="rect" id="node158" href="generic__data__store_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_store/generic_data\l_store.hpp" alt="" coords="14347,1403,14560,1503"/><area shape="rect" id="node115" href="generic__io__buffer_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/io/data_buffers/generic\l_io_buffer.hpp" alt="" coords="4948,1403,5161,1503"/><area shape="rect" id="node277" href="persist_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/io/persist.hpp" alt="" coords="6795,696,7008,781"/><area shape="rect" id="node161" href="layer_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/layer.hpp" alt="" coords="7856,1112,8069,1197"/><area shape="rect" id="node195" href="safe__inv_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/transform/safe_inv.hpp" alt="" coords="12699,1411,12932,1496"/><area shape="rect" id="node215" href="metric_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/metrics/metric.hpp" alt="" coords="5677,1261,5891,1347"/><area shape="rect" id="node203" href="model_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/models/model.hpp" alt="" coords="6707,1560,6920,1645"/><area shape="rect" id="node209" href="objective__function__term_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/objective_functions/objective\l_function_term.hpp" alt="" coords="7187,1254,7416,1354"/><area shape="rect" id="node224" href="optimizer_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/optimizers/optimizer.hpp" alt="" coords="9581,971,9795,1056"/><area shape="rect" id="node11" href="params_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/params.hpp" alt="" coords="10935,2461,11148,2547"/><area shape="rect" id="node278" href="cublas__wrapper_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/utils/cublas_wrapper.hpp" alt="" coords="12423,272,12636,357"/><area shape="rect" id="node237" href="cudnn__wrapper_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/utils/cudnn_wrapper.hpp" alt="" coords="9219,547,9432,632"/><area shape="rect" id="node246" href="exception_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/utils/exception.hpp" alt="" coords="11360,405,11573,491"/><area shape="rect" id="node279" href="im2col_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/utils/im2col.hpp" alt="" coords="11181,1261,11395,1347"/><area shape="rect" id="node261" href="quantizer_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/utils/quantizer.hpp" alt="" coords="15785,547,15999,632"/><area shape="rect" id="node263" href="random_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/utils/random.hpp" alt="" coords="12463,1112,12676,1197"/><area shape="rect" id="node280" href="statistics_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/utils/statistics.hpp" alt="" coords="3853,1560,4067,1645"/><area shape="rect" id="node266" href="summary_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/utils/summary.hpp" alt="" coords="6360,971,6573,1056"/><area shape="rect" id="node241" href="initializer_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/weights/initializer.hpp" alt="" coords="8445,696,8659,781"/><area shape="rect" id="node245" href="weights_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/weights/weights.hpp" alt="" coords="8157,837,8371,923"/><area shape="rect" id="node7" href="model_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/models/model.cpp" alt="" coords="821,2157,1011,2243"/><area shape="rect" id="node8" href="callback__check__dataset_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_check\l_dataset.hpp" alt="" coords="6120,2150,6333,2250"/><area shape="rect" id="node18" href="callback__check__init_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_check\l_init.hpp" alt="" coords="12065,2150,12279,2250"/><area shape="rect" id="node20" href="callback__check__reconstruction__error_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_check\l_reconstruction_error.hpp" alt="" coords="4589,2150,4803,2250"/><area shape="rect" id="node22" href="callback__checknan_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_checknan.hpp" alt="" coords="12644,2157,12900,2243"/><area shape="rect" id="node24" href="callback__checkpoint_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_checkpoint.hpp" alt="" coords="534,2157,796,2243"/><area shape="rect" id="node26" href="callback__checksmall_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_checksmall.hpp" alt="" coords="12303,2157,12569,2243"/><area shape="rect" id="node28" href="callback__debug_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_debug.hpp" alt="" coords="6357,2157,6592,2243"/><area shape="rect" id="node30" href="callback__debug__io_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_debug_io.hpp" alt="" coords="6617,2157,6868,2243"/><area shape="rect" id="node32" href="callback__dump__activations_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_dump\l_activations.hpp" alt="" coords="6893,2150,7107,2250"/><area shape="rect" id="node34" href="callback__dump__gradients_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_dump\l_gradients.hpp" alt="" coords="7131,2150,7344,2250"/><area shape="rect" id="node36" href="callback__dump__minibatch__sample__indices_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_dump\l_minibatch_sample_indices.hpp" alt="" coords="7368,2150,7581,2250"/><area shape="rect" id="node38" href="callback__dump__weights_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_dump\l_weights.hpp" alt="" coords="7605,2150,7819,2250"/><area shape="rect" id="node40" href="callback__early__stopping_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_early\l_stopping.hpp" alt="" coords="7843,2150,8056,2250"/><area shape="rect" id="node42" href="callback__gradient__check_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_gradient\l_check.hpp" alt="" coords="8080,2150,8301,2250"/><area shape="rect" id="node44" href="callback__hang_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_hang.hpp" alt="" coords="8570,2157,8797,2243"/><area shape="rect" id="node45" href="callback__imcomm_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_imcomm.hpp" alt="" coords="17541,2157,17792,2243"/><area shape="rect" id="node47" href="callback__io_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_io.hpp" alt="" coords="3859,2157,4072,2243"/><area shape="rect" id="node49" href="callback__learning__rate_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_learning\l_rate.hpp" alt="" coords="8326,2150,8545,2250"/><area shape="rect" id="node51" href="callback__ltfb_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_ltfb.hpp" alt="" coords="4096,2157,4315,2243"/><area shape="rect" id="node53" href="callback__print_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_print.hpp" alt="" coords="4339,2157,4564,2243"/><area shape="rect" id="node55" href="callback__save__images_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_save\l_images.hpp" alt="" coords="14709,2150,14923,2250"/><area shape="rect" id="node57" href="callback__save__model_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_save\l_model.hpp" alt="" coords="4827,2150,5040,2250"/><area shape="rect" id="node59" href="callback__summary_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_summary.hpp" alt="" coords="1035,2157,1289,2243"/><area shape="rect" id="node61" href="callback__timeline_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_timeline.hpp" alt="" coords="5115,2157,5360,2243"/><area shape="rect" id="node63" href="callback__timer_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_timer.hpp" alt="" coords="5384,2157,5613,2243"/><area shape="rect" id="node65" href="callback__variable__minibatch_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/callback_variable\l_minibatch.hpp" alt="" coords="5638,2150,5857,2250"/><area shape="rect" id="node67" href="profiler_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/callbacks/profiler.hpp" alt="" coords="5883,2157,6096,2243"/><area shape="rect" id="node9" href="callback__check__dataset_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_check\l_dataset.cpp" alt="" coords="6127,2306,6317,2406"/><area shape="rect" id="node10" href="lbann_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/lbann.hpp" alt="" coords="10373,2313,10587,2399"/><area shape="rect" id="node13" href="proto__common_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/proto/proto_common.hpp" alt="" coords="10683,2461,10896,2547"/><area shape="rect" id="node17" href="protobuf__utils_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/utils/protobuf_utils.hpp" alt="" coords="10445,2461,10659,2547"/><area shape="rect" id="node12" href="params_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/params.cpp" alt="" coords="10961,2603,11151,2688"/><area shape="rect" id="node14" href="protobuf__utils_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/utils/protobuf_utils.cpp" alt="" coords="10457,2603,10647,2688"/><area shape="rect" id="node15" href="init__image__data__readers_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/proto/init_image_data\l_readers.hpp" alt="" coords="10723,2595,10936,2695"/><area shape="rect" id="node16" href="init__image__data__readers_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/proto/init_image_data_readers.cpp" alt="" coords="10761,2744,10985,2829"/><area shape="rect" id="node19" href="callback__check__init_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_check\l_init.cpp" alt="" coords="12805,2306,12995,2406"/><area shape="rect" id="node21" href="callback__check__reconstruction__error_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_check\l_reconstruction_error.cpp" alt="" coords="4601,2306,4791,2406"/><area shape="rect" id="node23" href="callback__checknan_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_checknan.cpp" alt="" coords="16415,2313,16636,2399"/><area shape="rect" id="node25" href="callback__checkpoint_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_checkpoint.cpp" alt="" coords="551,2313,779,2399"/><area shape="rect" id="node27" href="callback__checksmall_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_checksmall.cpp" alt="" coords="13749,2313,13979,2399"/><area shape="rect" id="node29" href="callback__debug_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_debug.cpp" alt="" coords="6343,2313,6543,2399"/><area shape="rect" id="node31" href="callback__debug__io_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_debug_io.cpp" alt="" coords="6567,2313,6784,2399"/><area shape="rect" id="node33" href="callback__dump__activations_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_dump_activations.cpp" alt="" coords="6809,2313,7076,2399"/><area shape="rect" id="node35" href="callback__dump__gradients_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_dump_gradients.cpp" alt="" coords="7101,2313,7357,2399"/><area shape="rect" id="node37" href="callback__dump__minibatch__sample__indices_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_dump_minibatch\l_sample_indices.cpp" alt="" coords="7383,2306,7617,2406"/><area shape="rect" id="node39" href="callback__dump__weights_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_dump_weights.cpp" alt="" coords="7642,2313,7891,2399"/><area shape="rect" id="node41" href="callback__early__stopping_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_early\l_stopping.cpp" alt="" coords="7915,2306,8105,2406"/><area shape="rect" id="node43" href="callback__gradient__check_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_gradient\l_check.cpp" alt="" coords="8130,2306,8320,2406"/><area shape="rect" id="node46" href="callback__imcomm_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_imcomm.cpp" alt="" coords="17837,2313,18051,2399"/><area shape="rect" id="node48" href="callback__io_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_io.cpp" alt="" coords="314,2313,504,2399"/><area shape="rect" id="node50" href="callback__learning__rate_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_learning\l_rate.cpp" alt="" coords="8345,2306,8535,2406"/><area shape="rect" id="node52" href="callback__ltfb_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_ltfb.cpp" alt="" coords="821,2313,1011,2399"/><area shape="rect" id="node54" href="callback__print_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_print.cpp" alt="" coords="4357,2313,4547,2399"/><area shape="rect" id="node56" href="callback__save__images_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_save_images.cpp" alt="" coords="15421,2313,15664,2399"/><area shape="rect" id="node58" href="callback__save__model_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_save_model.cpp" alt="" coords="4816,2313,5051,2399"/><area shape="rect" id="node60" href="callback__summary_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_summary.cpp" alt="" coords="1053,2313,1272,2399"/><area shape="rect" id="node62" href="callback__timeline_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_timeline.cpp" alt="" coords="5132,2313,5343,2399"/><area shape="rect" id="node64" href="callback__timer_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_timer.cpp" alt="" coords="5401,2313,5596,2399"/><area shape="rect" id="node66" href="callback__variable__minibatch_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/callback_variable\l_minibatch.cpp" alt="" coords="5653,2306,5843,2406"/><area shape="rect" id="node68" href="profiler_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/callbacks/profiler.cpp" alt="" coords="5894,2313,6084,2399"/><area shape="rect" id="node70" href="comm_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/comm.cpp" alt="" coords="7335,547,7525,632"/><area shape="rect" id="node72" href="data__reader_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/data_reader.cpp" alt="" coords="14358,1709,14556,1795"/><area shape="rect" id="node73" href="generic__data__store_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_store/generic_data_store.cpp" alt="" coords="13204,1709,13431,1795"/><area shape="rect" id="node74" href="compound__data__reader_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/compound\l_data_reader.hpp" alt="" coords="14059,1403,14272,1503"/><area shape="rect" id="node80" href="data__reader__ascii_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/data_reader\l_ascii.hpp" alt="" coords="13245,1403,13459,1503"/><area shape="rect" id="node82" href="data__reader__image_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/data_reader\l_image.hpp" alt="" coords="15948,1403,16161,1503"/><area shape="rect" id="node103" href="data__reader__csv_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/data_reader_csv.hpp" alt="" coords="14635,1411,14896,1496"/><area shape="rect" id="node107" href="data__reader__numpy_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/data_reader\l_numpy.hpp" alt="" coords="13483,1403,13696,1503"/><area shape="rect" id="node109" href="data__reader__pilot2__molecular_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/data_reader\l_pilot2_molecular.hpp" alt="" coords="13720,1403,13933,1503"/><area shape="rect" id="node111" href="data__reader__synthetic_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/data_reader\l_synthetic.hpp" alt="" coords="13008,1403,13221,1503"/><area shape="rect" id="node113" href="lbann__data__generator_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/lbann_data\l_generator.hpp" alt="" coords="15072,1403,15285,1503"/><area shape="rect" id="node153" href="io__layer_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/io/io_layer.hpp" alt="" coords="5555,1560,5768,1645"/><area shape="rect" id="node154" href="sequential_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/models/sequential.hpp" alt="" coords="8797,1859,9011,1944"/><area shape="rect" id="node157" href="dataset_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/utils/dataset.hpp" alt="" coords="5728,1411,5941,1496"/><area shape="rect" id="node75" href="data__reader__merge__features_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/data_reader\l_merge_features.hpp" alt="" coords="13531,1553,13744,1653"/><area shape="rect" id="node77" href="data__reader__merge__samples_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/data_reader\l_merge_samples.hpp" alt="" coords="14107,1553,14320,1653"/><area shape="rect" id="node76" href="data__reader__merge__features_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/data_reader\l_merge_features.cpp" alt="" coords="13607,1702,13797,1802"/><area shape="rect" id="node78" href="data__reader__merge__samples_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/data_reader\l_merge_samples.cpp" alt="" coords="14143,1702,14333,1802"/><area shape="rect" id="node79" href="data__store__merge__samples_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_store/data_store_merge\l_samples.cpp" alt="" coords="13823,1702,14017,1802"/><area shape="rect" id="node81" href="data__reader__ascii_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/data_reader\l_ascii.cpp" alt="" coords="12579,1553,12769,1653"/><area shape="rect" id="node83" href="data__reader__image_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/data_reader\l_image.cpp" alt="" coords="16563,1553,16753,1653"/><area shape="rect" id="node84" href="data__reader__cifar10_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/data_reader\l_cifar10.hpp" alt="" coords="16088,1553,16301,1653"/><area shape="rect" id="node86" href="data__reader__imagenet_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/data_reader\l_imagenet.hpp" alt="" coords="15851,1553,16064,1653"/><area shape="rect" id="node97" href="data__reader__imagenet__org_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/data_reader\l_imagenet_org.hpp" alt="" coords="16779,1553,16992,1653"/><area shape="rect" id="node99" href="data__reader__imagenet__patches_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/data_reader\l_imagenet_patches.hpp" alt="" coords="17219,1553,17432,1653"/><area shape="rect" id="node101" href="data__reader__mnist_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/data_reader\l_mnist.hpp" alt="" coords="15461,1553,15675,1653"/><area shape="rect" id="node85" href="data__reader__cifar10_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/data_reader\l_cifar10.cpp" alt="" coords="16662,1702,16852,1802"/><area shape="rect" id="node87" href="data__reader__imagenet_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/data_reader\l_imagenet.cpp" alt="" coords="16877,1702,17067,1802"/><area shape="rect" id="node88" href="data__store__imagenet_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_store/data_store_imagenet.cpp" alt="" coords="15672,1709,15909,1795"/><area shape="rect" id="node89" href="data__reader__imagenet__single_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/data_reader\l_imagenet_single.hpp" alt="" coords="16424,1702,16637,1802"/><area shape="rect" id="node91" href="data__reader__multi__images_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/data_reader\l_multi_images.hpp" alt="" coords="16187,1702,16400,1802"/><area shape="rect" id="node90" href="data__reader__imagenet__single_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/data_reader\l_imagenet_single.cpp" alt="" coords="17111,1851,17301,1951"/><area shape="rect" id="node92" href="data__reader__multi__images_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/data_reader\l_multi_images.cpp" alt="" coords="16845,1851,17035,1951"/><area shape="rect" id="node93" href="data__reader__mnist__siamese_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/data_reader\l_mnist_siamese.hpp" alt="" coords="16464,1851,16677,1951"/><area shape="rect" id="node95" href="data__reader__triplet_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/data_reader\l_triplet.hpp" alt="" coords="15848,1851,16061,1951"/><area shape="rect" id="node94" href="data__reader__mnist__siamese_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/data_reader\l_mnist_siamese.cpp" alt="" coords="16978,2001,17168,2101"/><area shape="rect" id="node96" href="data__reader__triplet_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/data_reader\l_triplet.cpp" alt="" coords="15921,2001,16111,2101"/><area shape="rect" id="node98" href="data__reader__imagenet__org_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/data_reader\l_imagenet_org.cpp" alt="" coords="17295,1702,17485,1802"/><area shape="rect" id="node100" href="data__reader__imagenet__patches_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/data_reader\l_imagenet_patches.cpp" alt="" coords="17562,1702,17752,1802"/><area shape="rect" id="node102" href="data__reader__mnist_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/data_reader\l_mnist.cpp" alt="" coords="15305,1702,15495,1802"/><area shape="rect" id="node104" href="data__reader__csv_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/data_reader_csv.cpp" alt="" coords="14677,1560,14904,1645"/><area shape="rect" id="node105" href="data__reader__nci_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/data_reader_nci.hpp" alt="" coords="14395,1560,14652,1645"/><area shape="rect" id="node106" href="data__reader__nci_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/data_reader_nci.cpp" alt="" coords="14633,1709,14855,1795"/><area shape="rect" id="node108" href="data__reader__numpy_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/data_reader\l_numpy.cpp" alt="" coords="12846,1553,13036,1653"/><area shape="rect" id="node110" href="data__reader__pilot2__molecular_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/data_reader\l_pilot2_molecular.cpp" alt="" coords="13113,1553,13303,1653"/><area shape="rect" id="node112" href="data__reader__synthetic_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/data_reader\l_synthetic.cpp" alt="" coords="12313,1553,12503,1653"/><area shape="rect" id="node114" href="lbann__data__generator_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/lbann_data_generator.cpp" alt="" coords="15030,1560,15284,1645"/><area shape="rect" id="node116" href="generic__io__buffer_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/io/data_buffers/generic_io\l_buffer.cpp" alt="" coords="4971,1553,5161,1653"/><area shape="rect" id="node117" href="distributed__io__buffer_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/io/data_buffers/distributed\l_io_buffer.hpp" alt="" coords="4445,1553,4659,1653"/><area shape="rect" id="node151" href="partitioned__io__buffer_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/io/data_buffers/partitioned\l_io_buffer.hpp" alt="" coords="4683,1553,4896,1653"/><area shape="rect" id="node119" href="generic__input__layer_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/io/input/generic\l_input_layer.hpp" alt="" coords="4827,1702,5040,1802"/><area shape="rect" id="node118" href="distributed__io__buffer_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/io/data_buffers/distributed\l_io_buffer.cpp" alt="" coords="7715,1702,7905,1802"/><area shape="rect" id="node122" href="generic__target__layer_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/io/target/generic\l_target_layer.hpp" alt="" coords="4736,1851,4949,1951"/><area shape="rect" id="node120" href="recurrent_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/models/recurrent.cpp" alt="" coords="7973,2008,8163,2093"/><area shape="rect" id="node121" href="input__layer_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/io/input/input\l_layer.hpp" alt="" coords="8011,1851,8224,1951"/><area shape="rect" id="node123" href="categorical__accuracy_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/metrics/categorical_accuracy.cpp" alt="" coords="3333,2008,3555,2093"/><area shape="rect" id="node124" href="metric_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/metrics/metric.cpp" alt="" coords="4974,2008,5164,2093"/><area shape="rect" id="node125" href="pearson__correlation_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/metrics/pearson_correlation.cpp" alt="" coords="4501,2008,4712,2093"/><area shape="rect" id="node126" href="reconstruction_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/io/target/reconstruction.hpp" alt="" coords="7689,2008,7948,2093"/><area shape="rect" id="node128" href="target__layer_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/io/target/target\l_layer.hpp" alt="" coords="4736,2001,4949,2101"/><area shape="rect" id="node131" href="loss__function_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/objective_functions/loss\l_functions/loss_function.hpp" alt="" coords="3731,2001,3944,2101"/><area shape="rect" id="node127" href="greedy__layerwise__autoencoder_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/models/greedy_layerwise_autoencoder.cpp" alt="" coords="9229,2157,9504,2243"/><area shape="rect" id="node129" href="kl__divergence_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/objective_functions/kl\l_divergence.hpp" alt="" coords="245,2150,459,2250"/><area shape="rect" id="node130" href="kl__divergence_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/objective_functions/kl_divergence.cpp" alt="" coords="43,2313,289,2399"/><area shape="rect" id="node132" href="loss__function_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/objective_functions/loss\l_functions/loss_function.cpp" alt="" coords="3643,2150,3833,2250"/><area shape="rect" id="node133" href="binary__cross__entropy_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/objective_functions/loss\l_functions/binary_cross_entropy.hpp" alt="" coords="2864,2150,3099,2250"/><area shape="rect" id="node135" href="cross__entropy_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/objective_functions/loss\l_functions/cross_entropy.hpp" alt="" coords="3123,2150,3336,2250"/><area shape="rect" id="node137" href="cross__entropy__with__uncertainty_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/objective_functions/loss\l_functions/cross_entropy_with_uncertainty.hpp" alt="" coords="1571,2150,1865,2250"/><area shape="rect" id="node139" href="geom__negloglike_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/objective_functions/loss\l_functions/geom_negloglike.hpp" alt="" coords="2144,2150,2357,2250"/><area shape="rect" id="node141" href="objective__functions_2loss__functions_2mean__absolute__deviation_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/objective_functions/loss\l_functions/mean_absolute_deviation.hpp" alt="" coords="3360,2150,3619,2250"/><area shape="rect" id="node143" href="mean__absolute__error_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/objective_functions/loss\l_functions/mean_absolute_error.hpp" alt="" coords="1315,2150,1547,2250"/><area shape="rect" id="node145" href="objective__functions_2loss__functions_2mean__squared__error_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/objective_functions/loss\l_functions/mean_squared_error.hpp" alt="" coords="1891,2150,2120,2250"/><area shape="rect" id="node147" href="poisson__negloglike_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/objective_functions/loss\l_functions/poisson_negloglike.hpp" alt="" coords="2619,2150,2840,2250"/><area shape="rect" id="node149" href="polya__negloglike_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/objective_functions/loss\l_functions/polya_negloglike.hpp" alt="" coords="2381,2150,2595,2250"/><area shape="rect" id="node134" href="binary__cross__entropy_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/objective_functions/loss\l_functions/binary_cross_entropy.cpp" alt="" coords="2864,2306,3099,2406"/><area shape="rect" id="node136" href="cross__entropy_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/objective_functions/loss\l_functions/cross_entropy.cpp" alt="" coords="3133,2306,3325,2406"/><area shape="rect" id="node138" href="cross__entropy__with__uncertainty_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/objective_functions/loss\l_functions/cross_entropy_with\l_uncertainty.cpp" alt="" coords="1619,2299,1817,2413"/><area shape="rect" id="node140" href="geom__negloglike_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/objective_functions/loss\l_functions/geom_negloglike.cpp" alt="" coords="2147,2306,2355,2406"/><area shape="rect" id="node142" href="objective__functions_2loss__functions_2mean__absolute__deviation_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/objective_functions/loss\l_functions/mean_absolute_deviation.cpp" alt="" coords="3360,2306,3619,2406"/><area shape="rect" id="node144" href="mean__absolute__error_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/objective_functions/loss\l_functions/mean_absolute_error.cpp" alt="" coords="1315,2306,1547,2406"/><area shape="rect" id="node146" href="objective__functions_2loss__functions_2mean__squared__error_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/objective_functions/loss\l_functions/mean_squared_error.cpp" alt="" coords="1891,2306,2120,2406"/><area shape="rect" id="node148" href="poisson__negloglike_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/objective_functions/loss\l_functions/poisson_negloglike.cpp" alt="" coords="2619,2306,2840,2406"/><area shape="rect" id="node150" href="polya__negloglike_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/objective_functions/loss\l_functions/polya_negloglike.cpp" alt="" coords="2385,2306,2591,2406"/><area shape="rect" id="node152" href="partitioned__io__buffer_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/io/data_buffers/partitioned\l_io_buffer.cpp" alt="" coords="8422,1702,8612,1802"/><area shape="rect" id="node155" href="sequential_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/models/sequential.cpp" alt="" coords="8997,2008,9187,2093"/><area shape="rect" id="node156" href="greedy__layerwise__autoencoder_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/models/greedy_layerwise\l_autoencoder.hpp" alt="" coords="8759,2001,8972,2101"/><area shape="rect" id="node159" href="data__store__imagenet_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_store/data_store\l_imagenet.hpp" alt="" coords="16325,1553,16539,1653"/><area shape="rect" id="node160" href="data__store__merge__samples_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_store/data_store\l_merge_samples.hpp" alt="" coords="13768,1553,13981,1653"/><area shape="rect" id="node162" href="layer_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/layers/layer.cpp" alt="" coords="5962,1709,6152,1795"/><area shape="rect" id="node163" href="activation_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/activations/activation.hpp" alt="" coords="12080,1709,12328,1795"/><area shape="rect" id="node174" href="softmax_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/activations/softmax.hpp" alt="" coords="11143,1859,11381,1944"/><area shape="rect" id="node179" href="base__convolution_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/learning/base\l_convolution.hpp" alt="" coords="9139,1403,9352,1503"/><area shape="rect" id="node180" href="convolution_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/learning/convolution.hpp" alt="" coords="9387,1560,9627,1645"/><area shape="rect" id="node181" href="deconvolution_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/learning/deconvolution.hpp" alt="" coords="9107,1560,9361,1645"/><area shape="rect" id="node182" href="learning_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/learning/learning.hpp" alt="" coords="8051,1261,8269,1347"/><area shape="rect" id="node183" href="regularizer_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/regularizers/regularizer.hpp" alt="" coords="9344,1859,9600,1944"/><area shape="rect" id="node188" href="transform_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/transform/transform.hpp" alt="" coords="11673,1261,11911,1347"/><area shape="rect" id="node199" href="directed__acyclic__graph_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/models/directed_acyclic\l_graph.hpp" alt="" coords="8133,1702,8347,1802"/><area shape="rect" id="node164" href="atan_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/activations/atan.hpp" alt="" coords="11863,2008,12080,2093"/><area shape="rect" id="node165" href="bent__identity_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/activations/bent\l_identity.hpp" alt="" coords="12105,2001,12319,2101"/><area shape="rect" id="node166" href="elu_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/activations/elu.hpp" alt="" coords="12343,2008,12556,2093"/><area shape="rect" id="node167" href="exponential_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/activations/exponential.hpp" alt="" coords="12580,2008,12839,2093"/><area shape="rect" id="node168" href="id_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/activations/id.hpp" alt="" coords="11609,1859,11823,1944"/><area shape="rect" id="node169" href="leaky__relu_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/activations/leaky\l_relu.hpp" alt="" coords="12863,2001,13076,2101"/><area shape="rect" id="node170" href="relu_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/activations/relu.hpp" alt="" coords="10855,1859,11068,1944"/><area shape="rect" id="node171" href="selu_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/activations/selu.hpp" alt="" coords="13100,2008,13316,2093"/><area shape="rect" id="node172" href="sigmoid_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/activations/sigmoid.hpp" alt="" coords="13145,1859,13383,1944"/><area shape="rect" id="node173" href="smooth__relu_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/activations/smooth\l_relu.hpp" alt="" coords="11847,1851,12060,1951"/><area shape="rect" id="node175" href="softplus_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/activations/softplus.hpp" alt="" coords="12085,1859,12323,1944"/><area shape="rect" id="node176" href="swish_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/activations/swish.hpp" alt="" coords="12348,1859,12575,1944"/><area shape="rect" id="node177" href="tanh_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/activations/tanh.hpp" alt="" coords="12599,1859,12816,1944"/><area shape="rect" id="node178" href="fully__connected_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/learning/fully\l_connected.hpp" alt="" coords="9675,1851,9888,1951"/><area shape="rect" id="node184" href="batch__normalization_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/regularizers/batch\l_normalization.hpp" alt="" coords="9364,2001,9577,2101"/><area shape="rect" id="node185" href="dropout_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/regularizers/dropout.hpp" alt="" coords="9602,2008,9840,2093"/><area shape="rect" id="node186" href="local__response__normalization_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/regularizers/local\l_response_normalization.hpp" alt="" coords="10356,2001,10569,2101"/><area shape="rect" id="node187" href="selu__dropout_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/regularizers/selu\l_dropout.hpp" alt="" coords="9865,2001,10079,2101"/><area shape="rect" id="node189" href="concatenation_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/transform/concatenation.hpp" alt="" coords="11441,1411,11705,1496"/><area shape="rect" id="node190" href="constant_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/transform/constant.hpp" alt="" coords="9035,1859,9269,1944"/><area shape="rect" id="node191" href="noise_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/transform/noise.hpp" alt="" coords="11833,1411,12047,1496"/><area shape="rect" id="node192" href="pooling_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/transform/pooling.hpp" alt="" coords="10750,1411,10975,1496"/><area shape="rect" id="node194" href="reshape_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/transform/reshape.hpp" alt="" coords="10999,2008,11229,2093"/><area shape="rect" id="node196" href="slice_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/transform/slice.hpp" alt="" coords="12072,1411,12285,1496"/><area shape="rect" id="node197" href="split_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/transform/split.hpp" alt="" coords="12309,1411,12523,1496"/><area shape="rect" id="node198" href="sum_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/transform/sum.hpp" alt="" coords="11051,1411,11264,1496"/><area shape="rect" id="node193" href="unpooling_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/transform/unpooling.hpp" alt="" coords="10534,1560,10772,1645"/><area shape="rect" id="node200" href="directed__acyclic__graph_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/models/directed_acyclic_graph.cpp" alt="" coords="7366,1859,7596,1944"/><area shape="rect" id="node201" href="siamese_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/models/siamese.hpp" alt="" coords="8349,1859,8563,1944"/><area shape="rect" id="node202" href="siamese_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/models/siamese.cpp" alt="" coords="8290,2008,8480,2093"/><area shape="rect" id="node204" href="objective__function__term_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/objective_functions/objective\l_function_term.cpp" alt="" coords="6279,1702,6473,1802"/><area shape="rect" id="node205" href="group__lasso_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/objective_functions/weight\l_regularization/group_lasso.cpp" alt="" coords="7004,1702,7209,1802"/><area shape="rect" id="node206" href="l1_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/objective_functions/weight\l_regularization/l1.cpp" alt="" coords="7234,1702,7424,1802"/><area shape="rect" id="node207" href="l2_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/objective_functions/weight\l_regularization/l2.cpp" alt="" coords="7449,1702,7639,1802"/><area shape="rect" id="node208" href="recurrent_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/models/recurrent.hpp" alt="" coords="7672,1859,7885,1944"/><area shape="rect" id="node210" href="objective__function_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/objective_functions/objective\l_function.hpp" alt="" coords="7099,1403,7328,1503"/><area shape="rect" id="node212" href="group__lasso_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/objective_functions/weight\l_regularization/group_lasso.hpp" alt="" coords="7265,1553,7479,1653"/><area shape="rect" id="node213" href="l1_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/objective_functions/weight\l_regularization/l1.hpp" alt="" coords="7503,1553,7717,1653"/><area shape="rect" id="node214" href="l2_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/objective_functions/weight\l_regularization/l2.hpp" alt="" coords="7742,1553,7956,1653"/><area shape="rect" id="node211" href="objective__function_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/objective_functions/objective\l_function.cpp" alt="" coords="6944,1553,7139,1653"/><area shape="rect" id="node216" href="categorical__accuracy_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/metrics/categorical_accuracy.hpp" alt="" coords="3515,1859,3771,1944"/><area shape="rect" id="node217" href="metrics_2mean__absolute__deviation_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/metrics/mean_absolute\l_deviation.hpp" alt="" coords="6355,1403,6568,1503"/><area shape="rect" id="node219" href="metrics_2mean__squared__error_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/metrics/mean_squared\l_error.hpp" alt="" coords="6016,1403,6229,1503"/><area shape="rect" id="node221" href="pearson__correlation_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/metrics/pearson_correlation.hpp" alt="" coords="5238,1859,5484,1944"/><area shape="rect" id="node222" href="top__k__categorical__accuracy_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/metrics/top_k_categorical\l_accuracy.hpp" alt="" coords="5339,1403,5552,1503"/><area shape="rect" id="node218" href="metrics_2mean__absolute__deviation_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/metrics/mean_absolute_deviation.cpp" alt="" coords="6184,1560,6429,1645"/><area shape="rect" id="node220" href="metrics_2mean__squared__error_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/metrics/mean_squared_error.cpp" alt="" coords="5792,1560,6008,1645"/><area shape="rect" id="node223" href="top__k__categorical__accuracy_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/metrics/top_k_categorical\l_accuracy.cpp" alt="" coords="5289,1553,5479,1653"/><area shape="rect" id="node225" href="optimizer_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/optimizers/optimizer.cpp" alt="" coords="11137,1112,11327,1197"/><area shape="rect" id="node226" href="weights_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/weights/weights.cpp" alt="" coords="9025,1112,9215,1197"/><area shape="rect" id="node227" href="adagrad_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/optimizers/adagrad.hpp" alt="" coords="9883,1112,10096,1197"/><area shape="rect" id="node229" href="adam_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/optimizers/adam.hpp" alt="" coords="10459,1112,10672,1197"/><area shape="rect" id="node231" href="hypergradient__adam_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/optimizers/hypergradient\l_adam.hpp" alt="" coords="9544,1105,9757,1205"/><area shape="rect" id="node233" href="rmsprop_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/optimizers/rmsprop.hpp" alt="" coords="10171,1112,10384,1197"/><area shape="rect" id="node235" href="sgd_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/optimizers/sgd.hpp" alt="" coords="10747,1112,10960,1197"/><area shape="rect" id="node228" href="adagrad_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/optimizers/adagrad.cpp" alt="" coords="9862,1261,10052,1347"/><area shape="rect" id="node230" href="adam_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/optimizers/adam.cpp" alt="" coords="10395,1261,10585,1347"/><area shape="rect" id="node232" href="hypergradient__adam_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/optimizers/hypergradient\l_adam.cpp" alt="" coords="9545,1254,9735,1354"/><area shape="rect" id="node234" href="rmsprop_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/optimizers/rmsprop.cpp" alt="" coords="10129,1261,10319,1347"/><area shape="rect" id="node236" href="sgd_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/optimizers/sgd.cpp" alt="" coords="10662,1261,10852,1347"/><area shape="rect" id="node238" href="cudnn__wrapper_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/utils/cudnn_wrapper.cpp" alt="" coords="9667,696,9857,781"/><area shape="rect" id="node239" href="softmax__cuda_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/activations/softmax\l_cuda.hpp" alt="" coords="8971,689,9185,789"/><area shape="rect" id="node240" href="fully__connected__cuda_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/layers/learning/fully\l_connected_cuda.hpp" alt="" coords="8733,689,8947,789"/><area shape="rect" id="node242" href="initializer_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/weights/initializer.cpp" alt="" coords="12089,1261,12279,1347"/><area shape="rect" id="node243" href="fan__in__fan__out__initializers_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/weights/fan_in_fan_out\l_initializers.hpp" alt="" coords="8851,1254,9064,1354"/><area shape="rect" id="node244" href="fan__in__fan__out__initializers_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/weights/fan_in_fan_out_initializers.cpp" alt="" coords="9752,1411,10003,1496"/><area shape="rect" id="node247" href="cv__cropper_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/cv_cropper.cpp" alt="" coords="12857,1261,13052,1347"/><area shape="rect" id="node248" href="cv__mean__extractor_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/cv_mean_extractor.cpp" alt="" coords="13590,547,13831,632"/><area shape="rect" id="node249" href="cv__process_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/cv_process.cpp" alt="" coords="17668,1411,17865,1496"/><area shape="rect" id="node250" href="cv__subtractor_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/cv_subtractor.cpp" alt="" coords="16125,547,16333,632"/><area shape="rect" id="node251" href="cv__utils_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/cv_utils.cpp" alt="" coords="17731,1560,17921,1645"/><area shape="rect" id="node252" href="image__preprocessor_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/image_preprocessor.cpp" alt="" coords="14982,1709,15228,1795"/><area shape="rect" id="node253" href="image__utils_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/image_utils.cpp" alt="" coords="18031,1709,18227,1795"/><area shape="rect" id="node254" href="persist_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/io/persist.cpp" alt="" coords="6998,837,7188,923"/><area shape="rect" id="node255" href="graph_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/utils/graph.cpp" alt="" coords="13375,547,13565,632"/><area shape="rect" id="node256" href="im2col_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/utils/im2col.cpp" alt="" coords="10483,1411,10673,1496"/><area shape="rect" id="node257" href="statistics_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/utils/statistics.cpp" alt="" coords="3977,1709,4167,1795"/><area shape="rect" id="node258" href="offline__patches__npz_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/offline\l_patches_npz.hpp" alt="" coords="14661,539,14875,639"/><area shape="rect" id="node260" href="glob_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/utils/glob.hpp" alt="" coords="13308,837,13521,923"/><area shape="rect" id="node259" href="offline__patches__npz_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/offline_patches_npz.cpp" alt="" coords="14645,696,14891,781"/><area shape="rect" id="node262" href="quantizer_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/utils/quantizer.cpp" alt="" coords="13127,1261,13317,1347"/><area shape="rect" id="node264" href="cv__augmenter_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/cv_augmenter.cpp" alt="" coords="12570,1261,12781,1347"/><area shape="rect" id="node265" href="random_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/utils/random.cpp" alt="" coords="12355,1261,12545,1347"/><area shape="rect" id="node267" href="summary_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/utils/summary.cpp" alt="" coords="6157,1112,6347,1197"/><area shape="rect" id="node269" href="cv__normalizer_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/cv_normalizer.cpp" alt="" coords="17108,1261,17319,1347"/><area shape="rect" id="node270" href="cv__process_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/cv_process.hpp" alt="" coords="16599,1261,16831,1347"/><area shape="rect" id="node271" href="cv__process__patches_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/cv_process\l_patches.hpp" alt="" coords="17193,1403,17407,1503"/><area shape="rect" id="node273" href="cv__utils_8hpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/include\l/lbann/data_readers/cv_utils.hpp" alt="" coords="17431,1411,17644,1496"/><area shape="rect" id="node272" href="cv__process__patches_8cpp.html" title="/usr/workspace/wsb\l/lbannusr/bamboo/lbann\l&#45;catalyst159&#45;1/xml&#45;data\l/build&#45;dir/LBANN&#45;DG&#45;DD/src\l/data_readers/cv_process_patches.cpp" alt="" coords="17456,1560,17707,1645"/></map>
+</div>
+</div>
 <p><a href="cyg__profile_8hpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc__hash__node.html">c_hash_node</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">hash table slots  <a href="structc__hash__node.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structc__hash__table.html">c_hash_table</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">hash table structure  <a href="structc__hash__table.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a6e3af9336b908524f4e0ced4bc47482f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#a6e3af9336b908524f4e0ced4bc47482f">HASH_1</a>(k, size, idxOut)&#160;&#160;&#160;{  *idxOut = k % size;  }</td></tr>
+<tr class="separator:a6e3af9336b908524f4e0ced4bc47482f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a393d052ede2cce96794d660e3d4dfcce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#a393d052ede2cce96794d660e3d4dfcce">HASH_2</a>(k, size, idxOut)</td></tr>
+<tr class="separator:a393d052ede2cce96794d660e3d4dfcce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad1c2d92ab2c29021521d36cf4c97e488"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#ad1c2d92ab2c29021521d36cf4c97e488">c_hash_create</a> (long size)</td></tr>
+<tr class="separator:ad1c2d92ab2c29021521d36cf4c97e488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5ce10a091e20ffd33bfd0bc9982f6c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#ab5ce10a091e20ffd33bfd0bc9982f6c4">c_hash_set_thread_id</a> (int id)</td></tr>
+<tr class="separator:ab5ce10a091e20ffd33bfd0bc9982f6c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a92627690a70d1ac4cbe5f5fae5c196"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#a6a92627690a70d1ac4cbe5f5fae5c196">__cyg_profile_func_enter</a> (void *func, void *caller)</td></tr>
+<tr class="separator:a6a92627690a70d1ac4cbe5f5fae5c196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42601a54843c953a90ace14cd551cde8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#a42601a54843c953a90ace14cd551cde8">__cyg_profile_func_exit</a> (void *func, void *caller)</td></tr>
+<tr class="separator:a42601a54843c953a90ace14cd551cde8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab51b5864ac189a74ae78a87749f2d85b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#ab51b5864ac189a74ae78a87749f2d85b">c_hash_insert</a> (void *func)</td></tr>
+<tr class="separator:ab51b5864ac189a74ae78a87749f2d85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a180ca8d5835108eae791ba3ce34484f0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structc__hash__node.html">c_hash_node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#a180ca8d5835108eae791ba3ce34484f0">c_hash_lookup</a> (void *func)</td></tr>
+<tr class="separator:a180ca8d5835108eae791ba3ce34484f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0324b893ce3ef55f7b9ade478e27cdc2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#a0324b893ce3ef55f7b9ade478e27cdc2">c_hash_insert_or_update</a> (void *func)</td></tr>
+<tr class="separator:a0324b893ce3ef55f7b9ade478e27cdc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedbd6097fb83d8aeb4f59fa458297e55"><td class="memItemLeft" align="right" valign="top">static unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#aedbd6097fb83d8aeb4f59fa458297e55">djb2_hash</a> (void *, int table_size)</td></tr>
+<tr class="memdesc:aedbd6097fb83d8aeb4f59fa458297e55"><td class="mdescLeft">&#160;</td><td class="mdescRight">well known hash function (google it) Hashes a string to an integer  <a href="#aedbd6097fb83d8aeb4f59fa458297e55">More...</a><br/></td></tr>
+<tr class="separator:aedbd6097fb83d8aeb4f59fa458297e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a6cc00bff1b0fcee1e92c726aea92c818"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#a6cc00bff1b0fcee1e92c726aea92c818">c_hash_fp_full_stack_trace</a></td></tr>
+<tr class="separator:a6cc00bff1b0fcee1e92c726aea92c818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a434aed2bad9781985a12de882aa0ec84"><td class="memItemLeft" align="right" valign="top">FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#a434aed2bad9781985a12de882aa0ec84">c_hash_fp_full_stack_trace_metadata</a></td></tr>
+<tr class="separator:a434aed2bad9781985a12de882aa0ec84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d77137d4b87923f488746604d72f94"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#a92d77137d4b87923f488746604d72f94">c_hash_thread_id</a></td></tr>
+<tr class="separator:a92d77137d4b87923f488746604d72f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193e8df9f6b1bc5794e9aa25f82e6a5f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#a193e8df9f6b1bc5794e9aa25f82e6a5f">c_hash_profiling_is_turned_on</a></td></tr>
+<tr class="separator:a193e8df9f6b1bc5794e9aa25f82e6a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad244007073ad03909ae1fdffa2474e1d"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#ad244007073ad03909ae1fdffa2474e1d">c_hash_default_discard_strings</a></td></tr>
+<tr class="separator:ad244007073ad03909ae1fdffa2474e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5e2b6cc79b08484b326d41d43ac82a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#af5e2b6cc79b08484b326d41d43ac82a2">c_hash_num_default_discard_items</a></td></tr>
+<tr class="separator:af5e2b6cc79b08484b326d41d43ac82a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5255f380b4dacdd914710cbe8181ee2"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#ae5255f380b4dacdd914710cbe8181ee2">c_hash_func_id</a></td></tr>
+<tr class="separator:ae5255f380b4dacdd914710cbe8181ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e154cbf670e1744cf46337adddfb782"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#a6e154cbf670e1744cf46337adddfb782">c_hash_depth</a></td></tr>
+<tr class="separator:a6e154cbf670e1744cf46337adddfb782"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c0c7f1634059c3321a07d97508e59e3"><td class="memItemLeft" align="right" valign="top">Dl_info&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#a5c0c7f1634059c3321a07d97508e59e3">c_hash_info</a></td></tr>
+<tr class="separator:a5c0c7f1634059c3321a07d97508e59e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a923501532631477496972bce4582c48c"><td class="memItemLeft" align="right" valign="top">void **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#a923501532631477496972bce4582c48c">c_hash_discard_void_ptrs</a></td></tr>
+<tr class="separator:a923501532631477496972bce4582c48c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c37c1b2fce5e8732b8d7f4d69b1f549"><td class="memItemLeft" align="right" valign="top">char **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#a4c37c1b2fce5e8732b8d7f4d69b1f549">c_hash_discard_strings</a></td></tr>
+<tr class="separator:a4c37c1b2fce5e8732b8d7f4d69b1f549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1451493a08ea7dc074c7fa118d3e9ef8"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#a1451493a08ea7dc074c7fa118d3e9ef8">c_hash_discard_counts</a></td></tr>
+<tr class="separator:a1451493a08ea7dc074c7fa118d3e9ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed0204f8c741c6d9cbbf8e1c9e409d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#a5ed0204f8c741c6d9cbbf8e1c9e409d5">c_hash_discard_void_ptrs_num_active</a></td></tr>
+<tr class="separator:a5ed0204f8c741c6d9cbbf8e1c9e409d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ca1ac997785ebd8547c022d07fe4b5"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#a60ca1ac997785ebd8547c022d07fe4b5">c_hash_lookups</a></td></tr>
+<tr class="separator:a60ca1ac997785ebd8547c022d07fe4b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e4c390c04f233e99f7577a1c63be028"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#a9e4c390c04f233e99f7577a1c63be028">c_hash_collisions</a></td></tr>
+<tr class="separator:a9e4c390c04f233e99f7577a1c63be028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf4dd8f3a0755b44949a87760cd1102"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structc__hash__table.html">c_hash_table</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cyg__profile_8hpp.html#acaf4dd8f3a0755b44949a87760cd1102">c_hash_the_hash_table</a></td></tr>
+<tr class="separator:acaf4dd8f3a0755b44949a87760cd1102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a6e3af9336b908524f4e0ced4bc47482f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HASH_1</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">k, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">idxOut&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;{  *idxOut = k % size;  }</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cyg__profile_8hpp_source.html#l00098">98</a> of file <a class="el" href="cyg__profile_8hpp_source.html">cyg_profile.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a393d052ede2cce96794d660e3d4dfcce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define HASH_2</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">k, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">idxOut&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{                                           \</div>
+<div class="line">        long r = k % (size-13);                 \</div>
+<div class="line">        r = (r % 2) ? r : r+1;                  \</div>
+<div class="line">        *idxOut = r;                            \</div>
+<div class="line">    }</div>
+</div><!-- fragment -->
+<p>Definition at line <a class="el" href="cyg__profile_8hpp_source.html#l00101">101</a> of file <a class="el" href="cyg__profile_8hpp_source.html">cyg_profile.hpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a6a92627690a70d1ac4cbe5f5fae5c196"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __cyg_profile_func_enter </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>caller</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cyg__profile_8hpp_source.html#l00149">149</a> of file <a class="el" href="cyg__profile_8hpp_source.html">cyg_profile.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="stack__profiler_8cpp.html#a193e8df9f6b1bc5794e9aa25f82e6a5f">c_hash_profiling_is_turned_on</a> == 0) {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="stack__profiler_8cpp.html#a92d77137d4b87923f488746604d72f94">c_hash_thread_id</a> != 0) {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        ++<a class="code" href="stack__profiler_8cpp.html#a6e154cbf670e1744cf46337adddfb782">c_hash_depth</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <a class="code" href="cyg__profile_8hpp.html#a0324b893ce3ef55f7b9ade478e27cdc2">c_hash_insert_or_update</a>(func);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div>
+<div class="ttc" id="cyg__profile_8hpp_html_a0324b893ce3ef55f7b9ade478e27cdc2"><div class="ttname"><a href="cyg__profile_8hpp.html#a0324b893ce3ef55f7b9ade478e27cdc2">c_hash_insert_or_update</a></div><div class="ttdeci">static void c_hash_insert_or_update(void *func)</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00241">cyg_profile.hpp:241</a></div></div>
+<div class="ttc" id="stack__profiler_8cpp_html_a193e8df9f6b1bc5794e9aa25f82e6a5f"><div class="ttname"><a href="stack__profiler_8cpp.html#a193e8df9f6b1bc5794e9aa25f82e6a5f">c_hash_profiling_is_turned_on</a></div><div class="ttdeci">int c_hash_profiling_is_turned_on</div><div class="ttdef"><b>Definition:</b> <a href="stack__profiler_8cpp_source.html#l00023">stack_profiler.cpp:23</a></div></div>
+<div class="ttc" id="stack__profiler_8cpp_html_a92d77137d4b87923f488746604d72f94"><div class="ttname"><a href="stack__profiler_8cpp.html#a92d77137d4b87923f488746604d72f94">c_hash_thread_id</a></div><div class="ttdeci">int c_hash_thread_id</div><div class="ttdef"><b>Definition:</b> <a href="stack__profiler_8cpp_source.html#l00024">stack_profiler.cpp:24</a></div></div>
+<div class="ttc" id="stack__profiler_8cpp_html_a6e154cbf670e1744cf46337adddfb782"><div class="ttname"><a href="stack__profiler_8cpp.html#a6e154cbf670e1744cf46337adddfb782">c_hash_depth</a></div><div class="ttdeci">short c_hash_depth</div><div class="ttdef"><b>Definition:</b> <a href="stack__profiler_8cpp_source.html#l00028">stack_profiler.cpp:28</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="cyg__profile_8hpp_a6a92627690a70d1ac4cbe5f5fae5c196_cgraph.png" border="0" usemap="#cyg__profile_8hpp_a6a92627690a70d1ac4cbe5f5fae5c196_cgraph" alt=""/></div>
+<map name="cyg__profile_8hpp_a6a92627690a70d1ac4cbe5f5fae5c196_cgraph" id="cyg__profile_8hpp_a6a92627690a70d1ac4cbe5f5fae5c196_cgraph">
+<area shape="rect" id="node2" href="cyg__profile_8hpp.html#a0324b893ce3ef55f7b9ade478e27cdc2" title="c_hash_insert_or_update" alt="" coords="185,31,351,57"/><area shape="rect" id="node3" href="cyg__profile_8hpp.html#a180ca8d5835108eae791ba3ce34484f0" title="c_hash_lookup" alt="" coords="400,5,509,32"/><area shape="rect" id="node5" href="cyg__profile_8hpp.html#ab51b5864ac189a74ae78a87749f2d85b" title="c_hash_insert" alt="" coords="403,56,506,83"/><area shape="rect" id="node4" href="cyg__profile_8hpp.html#aedbd6097fb83d8aeb4f59fa458297e55" title="well known hash function (google it) Hashes a string to an integer " alt="" coords="558,31,639,57"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a42601a54843c953a90ace14cd551cde8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __cyg_profile_func_exit </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>caller</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="cyg__profile_8hpp_source.html#l00125">125</a> of file <a class="el" href="cyg__profile_8hpp_source.html">cyg_profile.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="stack__profiler_8cpp.html#a92d77137d4b87923f488746604d72f94">c_hash_thread_id</a> != 0) {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="stack__profiler_8cpp.html#a193e8df9f6b1bc5794e9aa25f82e6a5f">c_hash_profiling_is_turned_on</a> == 0) {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        --<a class="code" href="stack__profiler_8cpp.html#a6e154cbf670e1744cf46337adddfb782">c_hash_depth</a>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
+<div class="ttc" id="stack__profiler_8cpp_html_a193e8df9f6b1bc5794e9aa25f82e6a5f"><div class="ttname"><a href="stack__profiler_8cpp.html#a193e8df9f6b1bc5794e9aa25f82e6a5f">c_hash_profiling_is_turned_on</a></div><div class="ttdeci">int c_hash_profiling_is_turned_on</div><div class="ttdef"><b>Definition:</b> <a href="stack__profiler_8cpp_source.html#l00023">stack_profiler.cpp:23</a></div></div>
+<div class="ttc" id="stack__profiler_8cpp_html_a92d77137d4b87923f488746604d72f94"><div class="ttname"><a href="stack__profiler_8cpp.html#a92d77137d4b87923f488746604d72f94">c_hash_thread_id</a></div><div class="ttdeci">int c_hash_thread_id</div><div class="ttdef"><b>Definition:</b> <a href="stack__profiler_8cpp_source.html#l00024">stack_profiler.cpp:24</a></div></div>
+<div class="ttc" id="stack__profiler_8cpp_html_a6e154cbf670e1744cf46337adddfb782"><div class="ttname"><a href="stack__profiler_8cpp.html#a6e154cbf670e1744cf46337adddfb782">c_hash_depth</a></div><div class="ttdeci">short c_hash_depth</div><div class="ttdef"><b>Definition:</b> <a href="stack__profiler_8cpp_source.html#l00028">stack_profiler.cpp:28</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ad1c2d92ab2c29021521d36cf4c97e488"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void c_hash_create </td>
+          <td>(</td>
+          <td class="paramtype">long&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>the hash table! This is a singleton creates the singleton hash table; the table will contain at least "size" slots (FYI, the table size is a power of two) </p>
+
+<p>Definition at line <a class="el" href="stack__profiler_8cpp_source.html#l00037">37</a> of file <a class="el" href="stack__profiler_8cpp_source.html">stack_profiler.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                              {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="structc__hash__table.html">c_hash_table</a> *h = (<span class="keyword">struct </span><a class="code" href="structc__hash__table.html">c_hash_table</a>*) malloc(<span class="keyword">sizeof</span>(<span class="keyword">struct</span> <a class="code" href="structc__hash__table.html">c_hash_table</a>));</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  h-&gt;<a class="code" href="structc__hash__table.html#afd5bfd9640fc5b72f75457fb7dd89663">size</a> = 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  h-&gt;<a class="code" href="structc__hash__table.html#ae4c33f323d44301e5990ba3355a2d708">count</a> = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  h-&gt;<a class="code" href="structc__hash__table.html#a87debaad1679b5fd28537908174a7487">cur_mark</a> = 1;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  h-&gt;<a class="code" href="structc__hash__table.html#abfdd282e54441552086f78d30b959d60">data</a> = NULL;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="comment">//initial size for hash table; want this to be a power of 2</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">long</span> sz = 16;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">while</span> (sz &lt; <a class="code" href="structc__hash__table.html#afd5bfd9640fc5b72f75457fb7dd89663">size</a>) { sz *= 2; }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="comment">// rule-of-thumb: ensure there&#39;s some padding</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordflow">if</span> ( (sz-<a class="code" href="structc__hash__table.html#afd5bfd9640fc5b72f75457fb7dd89663">size</a>) &lt; (.1 * sz) ) { sz *= 2.0; }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  h-&gt;<a class="code" href="structc__hash__table.html#afd5bfd9640fc5b72f75457fb7dd89663">size</a> = sz;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="comment">//allocate and zero the hash table</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="structc__hash__node.html">c_hash_node</a> *d = h-&gt;<a class="code" href="structc__hash__table.html#abfdd282e54441552086f78d30b959d60">data</a> = (<a class="code" href="structc__hash__node.html">c_hash_node</a>*)malloc(sz*<span class="keyword">sizeof</span>(<a class="code" href="structc__hash__node.html">c_hash_node</a>));</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;sz; i++) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    d[i].<a class="code" href="structc__hash__node.html#a83dedd9d9f8b425832404116b456b46d">key</a> = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    d[i].<a class="code" href="structc__hash__node.html#af5199f281a298c18ee13e8fc8a86359e">mark</a> = 0;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    d[i].<a class="code" href="structc__hash__node.html#a3b00ec567a576f3677911f8b8e421de0">func</a> = 0;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="stack__profiler_8cpp.html#acaf4dd8f3a0755b44949a87760cd1102">c_hash_the_hash_table</a> = h;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="ttc" id="structc__hash__node_html_a83dedd9d9f8b425832404116b456b46d"><div class="ttname"><a href="structc__hash__node.html#a83dedd9d9f8b425832404116b456b46d">c_hash_node::key</a></div><div class="ttdeci">unsigned long key</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00067">cyg_profile.hpp:67</a></div></div>
+<div class="ttc" id="structc__hash__table_html_abfdd282e54441552086f78d30b959d60"><div class="ttname"><a href="structc__hash__table.html#abfdd282e54441552086f78d30b959d60">c_hash_table::data</a></div><div class="ttdeci">c_hash_node * data</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00082">cyg_profile.hpp:82</a></div></div>
+<div class="ttc" id="structc__hash__table_html_a87debaad1679b5fd28537908174a7487"><div class="ttname"><a href="structc__hash__table.html#a87debaad1679b5fd28537908174a7487">c_hash_table::cur_mark</a></div><div class="ttdeci">long cur_mark</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00081">cyg_profile.hpp:81</a></div></div>
+<div class="ttc" id="structc__hash__table_html_afd5bfd9640fc5b72f75457fb7dd89663"><div class="ttname"><a href="structc__hash__table.html#afd5bfd9640fc5b72f75457fb7dd89663">c_hash_table::size</a></div><div class="ttdeci">long size</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00079">cyg_profile.hpp:79</a></div></div>
+<div class="ttc" id="stack__profiler_8cpp_html_acaf4dd8f3a0755b44949a87760cd1102"><div class="ttname"><a href="stack__profiler_8cpp.html#acaf4dd8f3a0755b44949a87760cd1102">c_hash_the_hash_table</a></div><div class="ttdeci">c_hash_table * c_hash_the_hash_table</div><div class="ttdef"><b>Definition:</b> <a href="stack__profiler_8cpp_source.html#l00020">stack_profiler.cpp:20</a></div></div>
+<div class="ttc" id="structc__hash__table_html"><div class="ttname"><a href="structc__hash__table.html">c_hash_table</a></div><div class="ttdoc">hash table structure </div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00078">cyg_profile.hpp:78</a></div></div>
+<div class="ttc" id="structc__hash__node_html"><div class="ttname"><a href="structc__hash__node.html">c_hash_node</a></div><div class="ttdoc">hash table slots </div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00066">cyg_profile.hpp:66</a></div></div>
+<div class="ttc" id="structc__hash__table_html_ae4c33f323d44301e5990ba3355a2d708"><div class="ttname"><a href="structc__hash__table.html#ae4c33f323d44301e5990ba3355a2d708">c_hash_table::count</a></div><div class="ttdeci">long count</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00080">cyg_profile.hpp:80</a></div></div>
+<div class="ttc" id="structc__hash__node_html_a3b00ec567a576f3677911f8b8e421de0"><div class="ttname"><a href="structc__hash__node.html#a3b00ec567a576f3677911f8b8e421de0">c_hash_node::func</a></div><div class="ttdeci">void * func</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00073">cyg_profile.hpp:73</a></div></div>
+<div class="ttc" id="structc__hash__node_html_af5199f281a298c18ee13e8fc8a86359e"><div class="ttname"><a href="structc__hash__node.html#af5199f281a298c18ee13e8fc8a86359e">c_hash_node::mark</a></div><div class="ttdeci">long mark</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00068">cyg_profile.hpp:68</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="cyg__profile_8hpp_ad1c2d92ab2c29021521d36cf4c97e488_icgraph.png" border="0" usemap="#cyg__profile_8hpp_ad1c2d92ab2c29021521d36cf4c97e488_icgraph" alt=""/></div>
+<map name="cyg__profile_8hpp_ad1c2d92ab2c29021521d36cf4c97e488_icgraph" id="cyg__profile_8hpp_ad1c2d92ab2c29021521d36cf4c97e488_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1stack__profiler.html#a5c8e2ec1f36d36ff8211ec8910063777" title="lbann::stack_profiler\l::activate" alt="" coords="160,5,299,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab51b5864ac189a74ae78a87749f2d85b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void c_hash_insert </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>inserts "func" in a hash table slot. WARNING: this is for internal use; end users should instead call "c_hash_insert_or_update"</p>
+<p>insert "func" in a hash table slot. WARNING: this is for internal use; end users should instead call "c_hash_insert_or_update" </p>
+
+<p>Definition at line <a class="el" href="cyg__profile_8hpp_source.html#l00165">165</a> of file <a class="el" href="cyg__profile_8hpp_source.html">cyg_profile.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <a class="code" href="structc__hash__table.html">c_hash_table</a> *h = <a class="code" href="stack__profiler_8cpp.html#acaf4dd8f3a0755b44949a87760cd1102">c_hash_the_hash_table</a>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        h-&gt;<a class="code" href="structc__hash__table.html#ae4c33f323d44301e5990ba3355a2d708">count</a> += 1;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">if</span> (1000 + h-&gt;<a class="code" href="structc__hash__table.html#ae4c33f323d44301e5990ba3355a2d708">count</a> == h-&gt;<a class="code" href="structc__hash__table.html#afd5bfd9640fc5b72f75457fb7dd89663">size</a>) {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            printf(<span class="stringliteral">&quot;out of slots! Please reimplement rehash\n&quot;</span>);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            exit(9);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        dladdr(func, &amp;<a class="code" href="stack__profiler_8cpp.html#a5c0c7f1634059c3321a07d97508e59e3">c_hash_info</a>);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="stack__profiler_8cpp.html#a5c0c7f1634059c3321a07d97508e59e3">c_hash_info</a>.dli_sname != NULL) {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keywordtype">int</span> success = 0;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <span class="keywordtype">char</span> *demangled_name = abi::__cxa_demangle(<a class="code" href="stack__profiler_8cpp.html#a5c0c7f1634059c3321a07d97508e59e3">c_hash_info</a>.dli_sname, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="keywordflow">if</span> (demangled_name != NULL) {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> key = <a class="code" href="cyg__profile_8hpp.html#aedbd6097fb83d8aeb4f59fa458297e55">djb2_hash</a>(func, h-&gt;<a class="code" href="structc__hash__table.html#afd5bfd9640fc5b72f75457fb7dd89663">size</a>);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> start, tmp;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                <a class="code" href="cyg__profile_8hpp.html#a6e3af9336b908524f4e0ced4bc47482f">HASH_1</a>(key, h-&gt;<a class="code" href="structc__hash__table.html#afd5bfd9640fc5b72f75457fb7dd89663">size</a>, &amp;start);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">long</span> i=0; i&lt;h-&gt;<a class="code" href="structc__hash__table.html#afd5bfd9640fc5b72f75457fb7dd89663">size</a>; i++) {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                    <a class="code" href="cyg__profile_8hpp.html#a393d052ede2cce96794d660e3d4dfcce">HASH_2</a>(key, h-&gt;<a class="code" href="structc__hash__table.html#afd5bfd9640fc5b72f75457fb7dd89663">size</a>, &amp;tmp);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                    <span class="keywordtype">long</span> idx = (start + i*tmp) % h-&gt;<a class="code" href="structc__hash__table.html#afd5bfd9640fc5b72f75457fb7dd89663">size</a>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                    if (h-&gt;<a class="code" href="structc__hash__table.html#abfdd282e54441552086f78d30b959d60">data</a>[idx].<a class="code" href="structc__hash__node.html#af5199f281a298c18ee13e8fc8a86359e">mark</a> &lt; h-&gt;<a class="code" href="structc__hash__table.html#a87debaad1679b5fd28537908174a7487">cur_mark</a>) {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                        h-&gt;<a class="code" href="structc__hash__table.html#abfdd282e54441552086f78d30b959d60">data</a>[idx].<a class="code" href="structc__hash__node.html#a83dedd9d9f8b425832404116b456b46d">key</a> = key;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                        h-&gt;<a class="code" href="structc__hash__table.html#abfdd282e54441552086f78d30b959d60">data</a>[idx].<a class="code" href="structc__hash__node.html#af5199f281a298c18ee13e8fc8a86359e">mark</a> = h-&gt;<a class="code" href="structc__hash__table.html#a87debaad1679b5fd28537908174a7487">cur_mark</a>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                        h-&gt;<a class="code" href="structc__hash__table.html#abfdd282e54441552086f78d30b959d60">data</a>[idx].<a class="code" href="structc__hash__node.html#a560e0249668dacf880602ef181ad339c">count</a> = 1;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                        h-&gt;<a class="code" href="structc__hash__table.html#abfdd282e54441552086f78d30b959d60">data</a>[idx].<a class="code" href="structc__hash__node.html#adb4fc5dcf1d4a4e4b4b79db0bc40046f">name</a> = (<span class="keywordtype">char</span>*)malloc(strlen(demangled_name)+1);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                        strcpy(h-&gt;<a class="code" href="structc__hash__table.html#abfdd282e54441552086f78d30b959d60">data</a>[idx].<a class="code" href="structc__hash__node.html#adb4fc5dcf1d4a4e4b4b79db0bc40046f">name</a>, demangled_name);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                        h-&gt;<a class="code" href="structc__hash__table.html#abfdd282e54441552086f78d30b959d60">data</a>[idx].<a class="code" href="structc__hash__node.html#a3b00ec567a576f3677911f8b8e421de0">func</a> = func;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                        h-&gt;<a class="code" href="structc__hash__table.html#abfdd282e54441552086f78d30b959d60">data</a>[idx].<a class="code" href="structc__hash__node.html#a1ef613164cb42133cc969fa92732cf5f">id</a> = <a class="code" href="stack__profiler_8cpp.html#ae5255f380b4dacdd914710cbe8181ee2">c_hash_func_id</a>;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                        <span class="keywordflow">if</span> (<a class="code" href="stack__profiler_8cpp.html#a434aed2bad9781985a12de882aa0ec84">c_hash_fp_full_stack_trace_metadata</a> != NULL) {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                            fprintf(<a class="code" href="stack__profiler_8cpp.html#a434aed2bad9781985a12de882aa0ec84">c_hash_fp_full_stack_trace_metadata</a>, <span class="stringliteral">&quot;%hd %s\n&quot;</span>, <a class="code" href="stack__profiler_8cpp.html#ae5255f380b4dacdd914710cbe8181ee2">c_hash_func_id</a>, demangled_name);</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                            fwrite(&amp;<a class="code" href="stack__profiler_8cpp.html#ae5255f380b4dacdd914710cbe8181ee2">c_hash_func_id</a>, <span class="keyword">sizeof</span>(<span class="keywordtype">short</span>), 1, <a class="code" href="stack__profiler_8cpp.html#a6cc00bff1b0fcee1e92c726aea92c818">c_hash_fp_full_stack_trace</a>);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                            fwrite(&amp;<a class="code" href="stack__profiler_8cpp.html#a6e154cbf670e1744cf46337adddfb782">c_hash_depth</a>, <span class="keyword">sizeof</span>(<span class="keywordtype">short</span>), 1, <a class="code" href="stack__profiler_8cpp.html#a6cc00bff1b0fcee1e92c726aea92c818">c_hash_fp_full_stack_trace</a>);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                            ++<a class="code" href="stack__profiler_8cpp.html#ae5255f380b4dacdd914710cbe8181ee2">c_hash_func_id</a>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                        }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                        success = 1;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                    }</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                <span class="keywordflow">if</span> (success != 1) {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                    printf(<span class="stringliteral">&quot;\n\nERROR: success = %d\n\n&quot;</span>, success);</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                    exit(9);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                }</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            }</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            free(demangled_name);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    }</div>
+<div class="ttc" id="structc__hash__node_html_a83dedd9d9f8b425832404116b456b46d"><div class="ttname"><a href="structc__hash__node.html#a83dedd9d9f8b425832404116b456b46d">c_hash_node::key</a></div><div class="ttdeci">unsigned long key</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00067">cyg_profile.hpp:67</a></div></div>
+<div class="ttc" id="stack__profiler_8cpp_html_ae5255f380b4dacdd914710cbe8181ee2"><div class="ttname"><a href="stack__profiler_8cpp.html#ae5255f380b4dacdd914710cbe8181ee2">c_hash_func_id</a></div><div class="ttdeci">short c_hash_func_id</div><div class="ttdef"><b>Definition:</b> <a href="stack__profiler_8cpp_source.html#l00025">stack_profiler.cpp:25</a></div></div>
+<div class="ttc" id="structc__hash__node_html_a1ef613164cb42133cc969fa92732cf5f"><div class="ttname"><a href="structc__hash__node.html#a1ef613164cb42133cc969fa92732cf5f">c_hash_node::id</a></div><div class="ttdeci">short id</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00074">cyg_profile.hpp:74</a></div></div>
+<div class="ttc" id="structc__hash__table_html_abfdd282e54441552086f78d30b959d60"><div class="ttname"><a href="structc__hash__table.html#abfdd282e54441552086f78d30b959d60">c_hash_table::data</a></div><div class="ttdeci">c_hash_node * data</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00082">cyg_profile.hpp:82</a></div></div>
+<div class="ttc" id="structc__hash__table_html_a87debaad1679b5fd28537908174a7487"><div class="ttname"><a href="structc__hash__table.html#a87debaad1679b5fd28537908174a7487">c_hash_table::cur_mark</a></div><div class="ttdeci">long cur_mark</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00081">cyg_profile.hpp:81</a></div></div>
+<div class="ttc" id="structc__hash__node_html_a560e0249668dacf880602ef181ad339c"><div class="ttname"><a href="structc__hash__node.html#a560e0249668dacf880602ef181ad339c">c_hash_node::count</a></div><div class="ttdeci">long count</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00072">cyg_profile.hpp:72</a></div></div>
+<div class="ttc" id="structc__hash__table_html_afd5bfd9640fc5b72f75457fb7dd89663"><div class="ttname"><a href="structc__hash__table.html#afd5bfd9640fc5b72f75457fb7dd89663">c_hash_table::size</a></div><div class="ttdeci">long size</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00079">cyg_profile.hpp:79</a></div></div>
+<div class="ttc" id="stack__profiler_8cpp_html_acaf4dd8f3a0755b44949a87760cd1102"><div class="ttname"><a href="stack__profiler_8cpp.html#acaf4dd8f3a0755b44949a87760cd1102">c_hash_the_hash_table</a></div><div class="ttdeci">c_hash_table * c_hash_the_hash_table</div><div class="ttdef"><b>Definition:</b> <a href="stack__profiler_8cpp_source.html#l00020">stack_profiler.cpp:20</a></div></div>
+<div class="ttc" id="stack__profiler_8cpp_html_a6e154cbf670e1744cf46337adddfb782"><div class="ttname"><a href="stack__profiler_8cpp.html#a6e154cbf670e1744cf46337adddfb782">c_hash_depth</a></div><div class="ttdeci">short c_hash_depth</div><div class="ttdef"><b>Definition:</b> <a href="stack__profiler_8cpp_source.html#l00028">stack_profiler.cpp:28</a></div></div>
+<div class="ttc" id="cyg__profile_8hpp_html_a6e3af9336b908524f4e0ced4bc47482f"><div class="ttname"><a href="cyg__profile_8hpp.html#a6e3af9336b908524f4e0ced4bc47482f">HASH_1</a></div><div class="ttdeci">#define HASH_1(k, size, idxOut)</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00098">cyg_profile.hpp:98</a></div></div>
+<div class="ttc" id="cyg__profile_8hpp_html_a393d052ede2cce96794d660e3d4dfcce"><div class="ttname"><a href="cyg__profile_8hpp.html#a393d052ede2cce96794d660e3d4dfcce">HASH_2</a></div><div class="ttdeci">#define HASH_2(k, size, idxOut)</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00101">cyg_profile.hpp:101</a></div></div>
+<div class="ttc" id="structc__hash__table_html"><div class="ttname"><a href="structc__hash__table.html">c_hash_table</a></div><div class="ttdoc">hash table structure </div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00078">cyg_profile.hpp:78</a></div></div>
+<div class="ttc" id="stack__profiler_8cpp_html_a434aed2bad9781985a12de882aa0ec84"><div class="ttname"><a href="stack__profiler_8cpp.html#a434aed2bad9781985a12de882aa0ec84">c_hash_fp_full_stack_trace_metadata</a></div><div class="ttdeci">FILE * c_hash_fp_full_stack_trace_metadata</div><div class="ttdef"><b>Definition:</b> <a href="stack__profiler_8cpp_source.html#l00022">stack_profiler.cpp:22</a></div></div>
+<div class="ttc" id="stack__profiler_8cpp_html_a5c0c7f1634059c3321a07d97508e59e3"><div class="ttname"><a href="stack__profiler_8cpp.html#a5c0c7f1634059c3321a07d97508e59e3">c_hash_info</a></div><div class="ttdeci">Dl_info c_hash_info</div><div class="ttdef"><b>Definition:</b> <a href="stack__profiler_8cpp_source.html#l00027">stack_profiler.cpp:27</a></div></div>
+<div class="ttc" id="structc__hash__node_html_adb4fc5dcf1d4a4e4b4b79db0bc40046f"><div class="ttname"><a href="structc__hash__node.html#adb4fc5dcf1d4a4e4b4b79db0bc40046f">c_hash_node::name</a></div><div class="ttdeci">char * name</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00071">cyg_profile.hpp:71</a></div></div>
+<div class="ttc" id="structc__hash__table_html_ae4c33f323d44301e5990ba3355a2d708"><div class="ttname"><a href="structc__hash__table.html#ae4c33f323d44301e5990ba3355a2d708">c_hash_table::count</a></div><div class="ttdeci">long count</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00080">cyg_profile.hpp:80</a></div></div>
+<div class="ttc" id="cyg__profile_8hpp_html_aedbd6097fb83d8aeb4f59fa458297e55"><div class="ttname"><a href="cyg__profile_8hpp.html#aedbd6097fb83d8aeb4f59fa458297e55">djb2_hash</a></div><div class="ttdeci">static unsigned long long djb2_hash(void *, int table_size)</div><div class="ttdoc">well known hash function (google it) Hashes a string to an integer </div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00138">cyg_profile.hpp:138</a></div></div>
+<div class="ttc" id="structc__hash__node_html_a3b00ec567a576f3677911f8b8e421de0"><div class="ttname"><a href="structc__hash__node.html#a3b00ec567a576f3677911f8b8e421de0">c_hash_node::func</a></div><div class="ttdeci">void * func</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00073">cyg_profile.hpp:73</a></div></div>
+<div class="ttc" id="structc__hash__node_html_af5199f281a298c18ee13e8fc8a86359e"><div class="ttname"><a href="structc__hash__node.html#af5199f281a298c18ee13e8fc8a86359e">c_hash_node::mark</a></div><div class="ttdeci">long mark</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00068">cyg_profile.hpp:68</a></div></div>
+<div class="ttc" id="stack__profiler_8cpp_html_a6cc00bff1b0fcee1e92c726aea92c818"><div class="ttname"><a href="stack__profiler_8cpp.html#a6cc00bff1b0fcee1e92c726aea92c818">c_hash_fp_full_stack_trace</a></div><div class="ttdeci">FILE * c_hash_fp_full_stack_trace</div><div class="ttdef"><b>Definition:</b> <a href="stack__profiler_8cpp_source.html#l00021">stack_profiler.cpp:21</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="cyg__profile_8hpp_ab51b5864ac189a74ae78a87749f2d85b_cgraph.png" border="0" usemap="#cyg__profile_8hpp_ab51b5864ac189a74ae78a87749f2d85b_cgraph" alt=""/></div>
+<map name="cyg__profile_8hpp_ab51b5864ac189a74ae78a87749f2d85b_cgraph" id="cyg__profile_8hpp_ab51b5864ac189a74ae78a87749f2d85b_cgraph">
+<area shape="rect" id="node2" href="cyg__profile_8hpp.html#aedbd6097fb83d8aeb4f59fa458297e55" title="well known hash function (google it) Hashes a string to an integer " alt="" coords="158,5,239,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="cyg__profile_8hpp_ab51b5864ac189a74ae78a87749f2d85b_icgraph.png" border="0" usemap="#cyg__profile_8hpp_ab51b5864ac189a74ae78a87749f2d85b_icgraph" alt=""/></div>
+<map name="cyg__profile_8hpp_ab51b5864ac189a74ae78a87749f2d85b_icgraph" id="cyg__profile_8hpp_ab51b5864ac189a74ae78a87749f2d85b_icgraph">
+<area shape="rect" id="node2" href="cyg__profile_8hpp.html#a0324b893ce3ef55f7b9ade478e27cdc2" title="c_hash_insert_or_update" alt="" coords="158,12,325,39"/><area shape="rect" id="node3" href="cyg__profile_8hpp.html#a6a92627690a70d1ac4cbe5f5fae5c196" title="__cyg_profile_func\l_enter" alt="" coords="373,5,504,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0324b893ce3ef55f7b9ade478e27cdc2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void c_hash_insert_or_update </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>create a slot in the table with the data: func, count=1; if a slot with the name already exists, increment the count</p>
+<p>create a slot in the table with the data: name, count=1, time=0.0; if a slot with the name already exists, increment the count, and time += time </p>
+
+<p>Definition at line <a class="el" href="cyg__profile_8hpp_source.html#l00241">241</a> of file <a class="el" href="cyg__profile_8hpp_source.html">cyg_profile.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <a class="code" href="structc__hash__node.html">c_hash_node</a> *c;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordflow">if</span> ( (c = <a class="code" href="cyg__profile_8hpp.html#a180ca8d5835108eae791ba3ce34484f0">c_hash_lookup</a>(func)) != NULL) {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            c-&gt;<a class="code" href="structc__hash__node.html#a560e0249668dacf880602ef181ad339c">count</a> += 1;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="stack__profiler_8cpp.html#a434aed2bad9781985a12de882aa0ec84">c_hash_fp_full_stack_trace_metadata</a> != NULL) {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                fwrite(&amp;(c-&gt;<a class="code" href="structc__hash__node.html#a1ef613164cb42133cc969fa92732cf5f">id</a>), <span class="keyword">sizeof</span>(<span class="keywordtype">short</span>), 1, <a class="code" href="stack__profiler_8cpp.html#a6cc00bff1b0fcee1e92c726aea92c818">c_hash_fp_full_stack_trace</a>);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                fwrite(&amp;<a class="code" href="stack__profiler_8cpp.html#a6e154cbf670e1744cf46337adddfb782">c_hash_depth</a>, <span class="keyword">sizeof</span>(<span class="keywordtype">short</span>), 1, <a class="code" href="stack__profiler_8cpp.html#a6cc00bff1b0fcee1e92c726aea92c818">c_hash_fp_full_stack_trace</a>);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            <a class="code" href="cyg__profile_8hpp.html#ab51b5864ac189a74ae78a87749f2d85b">c_hash_insert</a>(func);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        }</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    }</div>
+<div class="ttc" id="structc__hash__node_html_a1ef613164cb42133cc969fa92732cf5f"><div class="ttname"><a href="structc__hash__node.html#a1ef613164cb42133cc969fa92732cf5f">c_hash_node::id</a></div><div class="ttdeci">short id</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00074">cyg_profile.hpp:74</a></div></div>
+<div class="ttc" id="structc__hash__node_html_a560e0249668dacf880602ef181ad339c"><div class="ttname"><a href="structc__hash__node.html#a560e0249668dacf880602ef181ad339c">c_hash_node::count</a></div><div class="ttdeci">long count</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00072">cyg_profile.hpp:72</a></div></div>
+<div class="ttc" id="cyg__profile_8hpp_html_ab51b5864ac189a74ae78a87749f2d85b"><div class="ttname"><a href="cyg__profile_8hpp.html#ab51b5864ac189a74ae78a87749f2d85b">c_hash_insert</a></div><div class="ttdeci">static void c_hash_insert(void *func)</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00165">cyg_profile.hpp:165</a></div></div>
+<div class="ttc" id="stack__profiler_8cpp_html_a6e154cbf670e1744cf46337adddfb782"><div class="ttname"><a href="stack__profiler_8cpp.html#a6e154cbf670e1744cf46337adddfb782">c_hash_depth</a></div><div class="ttdeci">short c_hash_depth</div><div class="ttdef"><b>Definition:</b> <a href="stack__profiler_8cpp_source.html#l00028">stack_profiler.cpp:28</a></div></div>
+<div class="ttc" id="stack__profiler_8cpp_html_a434aed2bad9781985a12de882aa0ec84"><div class="ttname"><a href="stack__profiler_8cpp.html#a434aed2bad9781985a12de882aa0ec84">c_hash_fp_full_stack_trace_metadata</a></div><div class="ttdeci">FILE * c_hash_fp_full_stack_trace_metadata</div><div class="ttdef"><b>Definition:</b> <a href="stack__profiler_8cpp_source.html#l00022">stack_profiler.cpp:22</a></div></div>
+<div class="ttc" id="cyg__profile_8hpp_html_a180ca8d5835108eae791ba3ce34484f0"><div class="ttname"><a href="cyg__profile_8hpp.html#a180ca8d5835108eae791ba3ce34484f0">c_hash_lookup</a></div><div class="ttdeci">static c_hash_node * c_hash_lookup(void *func)</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00214">cyg_profile.hpp:214</a></div></div>
+<div class="ttc" id="structc__hash__node_html"><div class="ttname"><a href="structc__hash__node.html">c_hash_node</a></div><div class="ttdoc">hash table slots </div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00066">cyg_profile.hpp:66</a></div></div>
+<div class="ttc" id="stack__profiler_8cpp_html_a6cc00bff1b0fcee1e92c726aea92c818"><div class="ttname"><a href="stack__profiler_8cpp.html#a6cc00bff1b0fcee1e92c726aea92c818">c_hash_fp_full_stack_trace</a></div><div class="ttdeci">FILE * c_hash_fp_full_stack_trace</div><div class="ttdef"><b>Definition:</b> <a href="stack__profiler_8cpp_source.html#l00021">stack_profiler.cpp:21</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="cyg__profile_8hpp_a0324b893ce3ef55f7b9ade478e27cdc2_cgraph.png" border="0" usemap="#cyg__profile_8hpp_a0324b893ce3ef55f7b9ade478e27cdc2_cgraph" alt=""/></div>
+<map name="cyg__profile_8hpp_a0324b893ce3ef55f7b9ade478e27cdc2_cgraph" id="cyg__profile_8hpp_a0324b893ce3ef55f7b9ade478e27cdc2_cgraph">
+<area shape="rect" id="node2" href="cyg__profile_8hpp.html#a180ca8d5835108eae791ba3ce34484f0" title="c_hash_lookup" alt="" coords="221,5,331,32"/><area shape="rect" id="node4" href="cyg__profile_8hpp.html#ab51b5864ac189a74ae78a87749f2d85b" title="c_hash_insert" alt="" coords="225,56,327,83"/><area shape="rect" id="node3" href="cyg__profile_8hpp.html#aedbd6097fb83d8aeb4f59fa458297e55" title="well known hash function (google it) Hashes a string to an integer " alt="" coords="379,31,461,57"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="cyg__profile_8hpp_a0324b893ce3ef55f7b9ade478e27cdc2_icgraph.png" border="0" usemap="#cyg__profile_8hpp_a0324b893ce3ef55f7b9ade478e27cdc2_icgraph" alt=""/></div>
+<map name="cyg__profile_8hpp_a0324b893ce3ef55f7b9ade478e27cdc2_icgraph" id="cyg__profile_8hpp_a0324b893ce3ef55f7b9ade478e27cdc2_icgraph">
+<area shape="rect" id="node2" href="cyg__profile_8hpp.html#a6a92627690a70d1ac4cbe5f5fae5c196" title="__cyg_profile_func\l_enter" alt="" coords="221,5,352,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a180ca8d5835108eae791ba3ce34484f0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc__hash__node.html">c_hash_node</a> * c_hash_lookup </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>returns a pointer to the slot that has the (hashed) key, "name," or NULL if it doesn't exist </p>
+
+<p>Definition at line <a class="el" href="cyg__profile_8hpp_source.html#l00214">214</a> of file <a class="el" href="cyg__profile_8hpp_source.html">cyg_profile.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        ++<a class="code" href="stack__profiler_8cpp.html#a60ca1ac997785ebd8547c022d07fe4b5">c_hash_lookups</a>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <a class="code" href="structc__hash__node.html">c_hash_node</a> * retval = NULL;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <a class="code" href="structc__hash__table.html">c_hash_table</a> *h = <a class="code" href="stack__profiler_8cpp.html#acaf4dd8f3a0755b44949a87760cd1102">c_hash_the_hash_table</a>;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> key = <a class="code" href="cyg__profile_8hpp.html#aedbd6097fb83d8aeb4f59fa458297e55">djb2_hash</a>(func, h-&gt;<a class="code" href="structc__hash__table.html#afd5bfd9640fc5b72f75457fb7dd89663">size</a>);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> start, tmp;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <a class="code" href="cyg__profile_8hpp.html#a6e3af9336b908524f4e0ced4bc47482f">HASH_1</a>(key, h-&gt;<a class="code" href="structc__hash__table.html#afd5bfd9640fc5b72f75457fb7dd89663">size</a>, &amp;start);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">long</span> i=0; i&lt;h-&gt;<a class="code" href="structc__hash__table.html#afd5bfd9640fc5b72f75457fb7dd89663">size</a>; i++) {</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            <span class="keywordflow">if</span> (i &gt; 0) ++<a class="code" href="stack__profiler_8cpp.html#a9e4c390c04f233e99f7577a1c63be028">c_hash_collisions</a>;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <a class="code" href="cyg__profile_8hpp.html#a393d052ede2cce96794d660e3d4dfcce">HASH_2</a>(key, h-&gt;<a class="code" href="structc__hash__table.html#afd5bfd9640fc5b72f75457fb7dd89663">size</a>, &amp;tmp);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <span class="keywordtype">long</span> idx = (start + i*tmp) % h-&gt;<a class="code" href="structc__hash__table.html#afd5bfd9640fc5b72f75457fb7dd89663">size</a>;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            if (h-&gt;<a class="code" href="structc__hash__table.html#abfdd282e54441552086f78d30b959d60">data</a>[idx].<a class="code" href="structc__hash__node.html#af5199f281a298c18ee13e8fc8a86359e">mark</a> != h-&gt;<a class="code" href="structc__hash__table.html#a87debaad1679b5fd28537908174a7487">cur_mark</a>) {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                <span class="keywordflow">if</span> (func == h-&gt;<a class="code" href="structc__hash__table.html#abfdd282e54441552086f78d30b959d60">data</a>[idx].<a class="code" href="structc__hash__node.html#a3b00ec567a576f3677911f8b8e421de0">func</a>) {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                    retval = &amp;h-&gt;<a class="code" href="structc__hash__table.html#abfdd282e54441552086f78d30b959d60">data</a>[idx];</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                }</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            }</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        }</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">return</span> retval;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    }</div>
+<div class="ttc" id="stack__profiler_8cpp_html_a9e4c390c04f233e99f7577a1c63be028"><div class="ttname"><a href="stack__profiler_8cpp.html#a9e4c390c04f233e99f7577a1c63be028">c_hash_collisions</a></div><div class="ttdeci">long c_hash_collisions</div><div class="ttdef"><b>Definition:</b> <a href="stack__profiler_8cpp_source.html#l00031">stack_profiler.cpp:31</a></div></div>
+<div class="ttc" id="structc__hash__table_html_abfdd282e54441552086f78d30b959d60"><div class="ttname"><a href="structc__hash__table.html#abfdd282e54441552086f78d30b959d60">c_hash_table::data</a></div><div class="ttdeci">c_hash_node * data</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00082">cyg_profile.hpp:82</a></div></div>
+<div class="ttc" id="structc__hash__table_html_a87debaad1679b5fd28537908174a7487"><div class="ttname"><a href="structc__hash__table.html#a87debaad1679b5fd28537908174a7487">c_hash_table::cur_mark</a></div><div class="ttdeci">long cur_mark</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00081">cyg_profile.hpp:81</a></div></div>
+<div class="ttc" id="structc__hash__table_html_afd5bfd9640fc5b72f75457fb7dd89663"><div class="ttname"><a href="structc__hash__table.html#afd5bfd9640fc5b72f75457fb7dd89663">c_hash_table::size</a></div><div class="ttdeci">long size</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00079">cyg_profile.hpp:79</a></div></div>
+<div class="ttc" id="stack__profiler_8cpp_html_acaf4dd8f3a0755b44949a87760cd1102"><div class="ttname"><a href="stack__profiler_8cpp.html#acaf4dd8f3a0755b44949a87760cd1102">c_hash_the_hash_table</a></div><div class="ttdeci">c_hash_table * c_hash_the_hash_table</div><div class="ttdef"><b>Definition:</b> <a href="stack__profiler_8cpp_source.html#l00020">stack_profiler.cpp:20</a></div></div>
+<div class="ttc" id="cyg__profile_8hpp_html_a6e3af9336b908524f4e0ced4bc47482f"><div class="ttname"><a href="cyg__profile_8hpp.html#a6e3af9336b908524f4e0ced4bc47482f">HASH_1</a></div><div class="ttdeci">#define HASH_1(k, size, idxOut)</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00098">cyg_profile.hpp:98</a></div></div>
+<div class="ttc" id="cyg__profile_8hpp_html_a393d052ede2cce96794d660e3d4dfcce"><div class="ttname"><a href="cyg__profile_8hpp.html#a393d052ede2cce96794d660e3d4dfcce">HASH_2</a></div><div class="ttdeci">#define HASH_2(k, size, idxOut)</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00101">cyg_profile.hpp:101</a></div></div>
+<div class="ttc" id="structc__hash__table_html"><div class="ttname"><a href="structc__hash__table.html">c_hash_table</a></div><div class="ttdoc">hash table structure </div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00078">cyg_profile.hpp:78</a></div></div>
+<div class="ttc" id="structc__hash__node_html"><div class="ttname"><a href="structc__hash__node.html">c_hash_node</a></div><div class="ttdoc">hash table slots </div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00066">cyg_profile.hpp:66</a></div></div>
+<div class="ttc" id="cyg__profile_8hpp_html_aedbd6097fb83d8aeb4f59fa458297e55"><div class="ttname"><a href="cyg__profile_8hpp.html#aedbd6097fb83d8aeb4f59fa458297e55">djb2_hash</a></div><div class="ttdeci">static unsigned long long djb2_hash(void *, int table_size)</div><div class="ttdoc">well known hash function (google it) Hashes a string to an integer </div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00138">cyg_profile.hpp:138</a></div></div>
+<div class="ttc" id="structc__hash__node_html_a3b00ec567a576f3677911f8b8e421de0"><div class="ttname"><a href="structc__hash__node.html#a3b00ec567a576f3677911f8b8e421de0">c_hash_node::func</a></div><div class="ttdeci">void * func</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00073">cyg_profile.hpp:73</a></div></div>
+<div class="ttc" id="stack__profiler_8cpp_html_a60ca1ac997785ebd8547c022d07fe4b5"><div class="ttname"><a href="stack__profiler_8cpp.html#a60ca1ac997785ebd8547c022d07fe4b5">c_hash_lookups</a></div><div class="ttdeci">long c_hash_lookups</div><div class="ttdef"><b>Definition:</b> <a href="stack__profiler_8cpp_source.html#l00030">stack_profiler.cpp:30</a></div></div>
+<div class="ttc" id="structc__hash__node_html_af5199f281a298c18ee13e8fc8a86359e"><div class="ttname"><a href="structc__hash__node.html#af5199f281a298c18ee13e8fc8a86359e">c_hash_node::mark</a></div><div class="ttdeci">long mark</div><div class="ttdef"><b>Definition:</b> <a href="cyg__profile_8hpp_source.html#l00068">cyg_profile.hpp:68</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="cyg__profile_8hpp_a180ca8d5835108eae791ba3ce34484f0_cgraph.png" border="0" usemap="#cyg__profile_8hpp_a180ca8d5835108eae791ba3ce34484f0_cgraph" alt=""/></div>
+<map name="cyg__profile_8hpp_a180ca8d5835108eae791ba3ce34484f0_cgraph" id="cyg__profile_8hpp_a180ca8d5835108eae791ba3ce34484f0_cgraph">
+<area shape="rect" id="node2" href="cyg__profile_8hpp.html#aedbd6097fb83d8aeb4f59fa458297e55" title="well known hash function (google it) Hashes a string to an integer " alt="" coords="163,5,245,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="cyg__profile_8hpp_a180ca8d5835108eae791ba3ce34484f0_icgraph.png" border="0" usemap="#cyg__profile_8hpp_a180ca8d5835108eae791ba3ce34484f0_icgraph" alt=""/></div>
+<map name="cyg__profile_8hpp_a180ca8d5835108eae791ba3ce34484f0_icgraph" id="cyg__profile_8hpp_a180ca8d5835108eae791ba3ce34484f0_icgraph">
+<area shape="rect" id="node2" href="cyg__profile_8hpp.html#a0324b893ce3ef55f7b9ade478e27cdc2" title="c_hash_insert_or_update" alt="" coords="163,12,330,39"/><area shape="rect" id="node3" href="cyg__profile_8hpp.html#a6a92627690a70d1ac4cbe5f5fae5c196" title="__cyg_profile_func\l_enter" alt="" coords="379,5,509,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5ce10a091e20ffd33bfd0bc9982f6c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void c_hash_set_thread_id </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stack__profiler_8cpp_source.html#l00033">33</a> of file <a class="el" href="stack__profiler_8cpp_source.html">stack_profiler.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                  {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="stack__profiler_8cpp.html#a92d77137d4b87923f488746604d72f94">c_hash_thread_id</a> = id;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="ttc" id="stack__profiler_8cpp_html_a92d77137d4b87923f488746604d72f94"><div class="ttname"><a href="stack__profiler_8cpp.html#a92d77137d4b87923f488746604d72f94">c_hash_thread_id</a></div><div class="ttdeci">int c_hash_thread_id</div><div class="ttdef"><b>Definition:</b> <a href="stack__profiler_8cpp_source.html#l00024">stack_profiler.cpp:24</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aedbd6097fb83d8aeb4f59fa458297e55"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static unsigned long long djb2_hash </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>table_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>well known hash function (google it) Hashes a string to an integer </p>
+
+<p>Definition at line <a class="el" href="cyg__profile_8hpp_source.html#l00138">138</a> of file <a class="el" href="cyg__profile_8hpp_source.html">cyg_profile.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordtype">char</span> *str = (<span class="keywordtype">char</span>*)&amp;func;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> hash = 5381;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordtype">int</span> d = <span class="keyword">sizeof</span>(func);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0; j&lt;d; j++) {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            hash = ((hash &lt;&lt; 5) + hash) + (int)str[j]; <span class="comment">/* hash * 33 + c */</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        }</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">return</span> hash;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="cyg__profile_8hpp_aedbd6097fb83d8aeb4f59fa458297e55_icgraph.png" border="0" usemap="#cyg__profile_8hpp_aedbd6097fb83d8aeb4f59fa458297e55_icgraph" alt=""/></div>
+<map name="cyg__profile_8hpp_aedbd6097fb83d8aeb4f59fa458297e55_icgraph" id="cyg__profile_8hpp_aedbd6097fb83d8aeb4f59fa458297e55_icgraph">
+<area shape="rect" id="node2" href="cyg__profile_8hpp.html#ab51b5864ac189a74ae78a87749f2d85b" title="c_hash_insert" alt="" coords="139,5,242,32"/><area shape="rect" id="node5" href="cyg__profile_8hpp.html#a180ca8d5835108eae791ba3ce34484f0" title="c_hash_lookup" alt="" coords="136,56,245,83"/><area shape="rect" id="node3" href="cyg__profile_8hpp.html#a0324b893ce3ef55f7b9ade478e27cdc2" title="c_hash_insert_or_update" alt="" coords="294,31,461,57"/><area shape="rect" id="node4" href="cyg__profile_8hpp.html#a6a92627690a70d1ac4cbe5f5fae5c196" title="__cyg_profile_func\l_enter" alt="" coords="509,23,640,65"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a9e4c390c04f233e99f7577a1c63be028"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long c_hash_collisions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stack__profiler_8cpp_source.html#l00031">31</a> of file <a class="el" href="stack__profiler_8cpp_source.html">stack_profiler.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad244007073ad03909ae1fdffa2474e1d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char** c_hash_default_discard_strings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6e154cbf670e1744cf46337adddfb782"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short c_hash_depth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stack__profiler_8cpp_source.html#l00028">28</a> of file <a class="el" href="stack__profiler_8cpp_source.html">stack_profiler.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1451493a08ea7dc074c7fa118d3e9ef8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int* c_hash_discard_counts</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4c37c1b2fce5e8732b8d7f4d69b1f549"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char** c_hash_discard_strings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a923501532631477496972bce4582c48c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void** c_hash_discard_void_ptrs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5ed0204f8c741c6d9cbbf8e1c9e409d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_hash_discard_void_ptrs_num_active</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6cc00bff1b0fcee1e92c726aea92c818"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FILE* c_hash_fp_full_stack_trace</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This module contains pure C variables and functions that are used in conjunction with <a class="el" href="cyg__profile_8hpp.html#a6a92627690a70d1ac4cbe5f5fae5c196">__cyg_profile_func_enter()</a> and <a class="el" href="cyg__profile_8hpp.html#a42601a54843c953a90ace14cd551cde8">__cyg_profile_func_exit()</a> to profile the stack at runtime. Some functions are inlined below; others are defined in <a class="el" href="stack__profiler_8cpp.html">src/utils/stack_profiler.cpp</a> </p>
+
+<p>Definition at line <a class="el" href="stack__profiler_8cpp_source.html#l00021">21</a> of file <a class="el" href="stack__profiler_8cpp_source.html">stack_profiler.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a434aed2bad9781985a12de882aa0ec84"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FILE* c_hash_fp_full_stack_trace_metadata</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stack__profiler_8cpp_source.html#l00022">22</a> of file <a class="el" href="stack__profiler_8cpp_source.html">stack_profiler.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae5255f380b4dacdd914710cbe8181ee2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">short c_hash_func_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stack__profiler_8cpp_source.html#l00025">25</a> of file <a class="el" href="stack__profiler_8cpp_source.html">stack_profiler.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c0c7f1634059c3321a07d97508e59e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Dl_info c_hash_info</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stack__profiler_8cpp_source.html#l00027">27</a> of file <a class="el" href="stack__profiler_8cpp_source.html">stack_profiler.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a60ca1ac997785ebd8547c022d07fe4b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">long c_hash_lookups</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stack__profiler_8cpp_source.html#l00030">30</a> of file <a class="el" href="stack__profiler_8cpp_source.html">stack_profiler.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af5e2b6cc79b08484b326d41d43ac82a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_hash_num_default_discard_items</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a193e8df9f6b1bc5794e9aa25f82e6a5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_hash_profiling_is_turned_on</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stack__profiler_8cpp_source.html#l00023">23</a> of file <a class="el" href="stack__profiler_8cpp_source.html">stack_profiler.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acaf4dd8f3a0755b44949a87760cd1102"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structc__hash__table.html">c_hash_table</a>* c_hash_the_hash_table</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>following are pure C functions for creating a hash table, and definitions for variables used in the 'extern "C"' inline functions in <a class="el" href="base_8hpp.html">lbann/base.hpp</a></p>
+<p>following that are the stack_profiler class definitions; the stack_profiler is a c++ class in the lbann namespace </p>
+
+<p>Definition at line <a class="el" href="stack__profiler_8cpp_source.html#l00020">20</a> of file <a class="el" href="stack__profiler_8cpp_source.html">stack_profiler.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a92d77137d4b87923f488746604d72f94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int c_hash_thread_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="stack__profiler_8cpp_source.html#l00024">24</a> of file <a class="el" href="stack__profiler_8cpp_source.html">stack_profiler.cpp</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a23cee86a2a91e74a8d900eaa1800f8f.html">LBANN-MCK-DOX</a></li><li class="navelem"><a class="el" href="dir_de30b333c751ee64c994135b5d233c33.html">include</a></li><li class="navelem"><a class="el" href="dir_cce5d40162b40db9850649eab9c230af.html">lbann</a></li><li class="navelem"><a class="el" href="dir_2100c04295ef8498712109e96577d953.html">utils</a></li><li class="navelem"><a class="el" href="cyg__profile_8hpp.html">cyg_profile.hpp</a></li>
-    <li class="footer">Generated on Fri Feb 2 2018 11:10:23 for LBANN by
+    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_208d7a2ea8c59265ec87bf2e980d9340.html">wsb</a></li><li class="navelem"><a class="el" href="dir_bbd6668b26f763289c3f291aff61b3bb.html">lbannusr</a></li><li class="navelem"><a class="el" href="dir_a8f312ba3f043bd02d049f4e47a85cb6.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_133a4a981f060b5c505349fbb77a59be.html">lbann-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_1cc6d50f976a8e37e2027ade18b1e2d7.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_294e3a20abe6977c38d914c01e9d6ab7.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a31f8fe46a4aa588b6383a428e6464df.html">LBANN-DG-DD</a></li><li class="navelem"><a class="el" href="dir_d166d048bb8382a532581a8bdef1f3cb.html">include</a></li><li class="navelem"><a class="el" href="dir_782d4f5c831b713e690bf8a67fa27f73.html">lbann</a></li><li class="navelem"><a class="el" href="dir_288651154ff4ea4d814cdc4cf97cc86d.html">utils</a></li><li class="navelem"><a class="el" href="cyg__profile_8hpp.html">cyg_profile.hpp</a></li>
+    <li class="footer">Generated on Fri Feb 2 2018 11:16:47 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/LBANN-MCK-DOX/include/lbann/data_readers/data_reader_nci.hpp Source File</title>
+<title>LBANN: /usr/workspace/wsb/lbannusr/bamboo/lbann-catalyst159-1/xml-data/build-dir/LBANN-DG-DD/include/lbann/data_readers/data_reader_nci.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">7a0ed70-ci45</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2179-g231ac24-ci142</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('data__reader__nci_8hpp_source.html',''
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -123,20 +123,20 @@ $(document).ready(function(){initNavTree('data__reader__nci_8hpp_source.html',''
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="data__reader__csv_8hpp.html">data_reader_csv.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define NCI_HAS_HEADER</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="data__reader__nci_8hpp.html#a6e0a77cadf8376ac5847d7a6631fd916">   34</a></span>&#160;<span class="preprocessor">#define NCI_HAS_HEADER</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>lbann {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">class </span>data_reader_nci : <span class="keyword">public</span> csv_reader {</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classlbann_1_1data__reader__nci.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="classlbann_1_1data__reader__nci.html">data_reader_nci</a> : <span class="keyword">public</span> <a class="code" href="classlbann_1_1csv__reader.html">csv_reader</a> {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  data_reader_nci(<span class="keywordtype">bool</span> shuffle = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  data_reader_nci();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  data_reader_nci(<span class="keyword">const</span> data_reader_nci&amp; source) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  data_reader_nci&amp; operator=(<span class="keyword">const</span> data_reader_nci&amp; source) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  ~data_reader_nci()<span class="keyword"> override </span>{}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  data_reader_nci* copy()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> data_reader_nci(*<span class="keyword">this</span>); }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="classlbann_1_1data__reader__nci.html#a42a40564a0110df69b99832e520111e6">data_reader_nci</a>(<span class="keywordtype">bool</span> shuffle = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="classlbann_1_1data__reader__nci.html#a42a40564a0110df69b99832e520111e6">data_reader_nci</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classlbann_1_1data__reader__nci.html#a42a40564a0110df69b99832e520111e6">data_reader_nci</a>(<span class="keyword">const</span> <a class="code" href="classlbann_1_1data__reader__nci.html">data_reader_nci</a>&amp; source) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="classlbann_1_1data__reader__nci.html">data_reader_nci</a>&amp; <a class="code" href="classlbann_1_1data__reader__nci.html#aad2847ee20ec7f8d7d25c2ebfff1361e">operator=</a>(<span class="keyword">const</span> <a class="code" href="classlbann_1_1data__reader__nci.html">data_reader_nci</a>&amp; source) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classlbann_1_1data__reader__nci.html#a5aa8e7f832ca763450027fe9886a267f">   44</a></span>&#160;  <a class="code" href="classlbann_1_1data__reader__nci.html#a5aa8e7f832ca763450027fe9886a267f">~data_reader_nci</a>()<span class="keyword"> override </span>{}</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classlbann_1_1data__reader__nci.html#a642f96edf3efae0d5d0aad70d8a17dbe">   45</a></span>&#160;  <a class="code" href="classlbann_1_1data__reader__nci.html">data_reader_nci</a>* <a class="code" href="classlbann_1_1data__reader__nci.html#a642f96edf3efae0d5d0aad70d8a17dbe">copy</a>()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1data__reader__nci.html#a42a40564a0110df69b99832e520111e6">data_reader_nci</a>(*<span class="keyword">this</span>); }</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  std::string get_type()<span class="keyword"> const override </span>{</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classlbann_1_1data__reader__nci.html#a6709a3d1df162335fa4a6955ea7dcaa2">   47</a></span>&#160;  std::string <a class="code" href="classlbann_1_1data__reader__nci.html#a6709a3d1df162335fa4a6955ea7dcaa2">get_type</a>()<span class="keyword"> const override </span>{</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;data_reader_nci&quot;</span>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
@@ -146,14 +146,21 @@ $(document).ready(function(){initNavTree('data__reader__nci_8hpp_source.html',''
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}  <span class="comment">// namespace lbann</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif  // LBANN_DATA_READER_NCI_HPP</span></div>
+<div class="ttc" id="classlbann_1_1data__reader__nci_html_a5aa8e7f832ca763450027fe9886a267f"><div class="ttname"><a href="classlbann_1_1data__reader__nci.html#a5aa8e7f832ca763450027fe9886a267f">lbann::data_reader_nci::~data_reader_nci</a></div><div class="ttdeci">~data_reader_nci() override</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__nci_8hpp_source.html#l00044">data_reader_nci.hpp:44</a></div></div>
+<div class="ttc" id="classlbann_1_1data__reader__nci_html"><div class="ttname"><a href="classlbann_1_1data__reader__nci.html">lbann::data_reader_nci</a></div><div class="ttdef"><b>Definition:</b> <a href="data__reader__nci_8hpp_source.html#l00038">data_reader_nci.hpp:38</a></div></div>
 <div class="ttc" id="data__reader__csv_8hpp_html"><div class="ttname"><a href="data__reader__csv_8hpp.html">data_reader_csv.hpp</a></div></div>
+<div class="ttc" id="classlbann_1_1data__reader__nci_html_a6709a3d1df162335fa4a6955ea7dcaa2"><div class="ttname"><a href="classlbann_1_1data__reader__nci.html#a6709a3d1df162335fa4a6955ea7dcaa2">lbann::data_reader_nci::get_type</a></div><div class="ttdeci">std::string get_type() const override</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__nci_8hpp_source.html#l00047">data_reader_nci.hpp:47</a></div></div>
+<div class="ttc" id="classlbann_1_1data__reader__nci_html_a42a40564a0110df69b99832e520111e6"><div class="ttname"><a href="classlbann_1_1data__reader__nci.html#a42a40564a0110df69b99832e520111e6">lbann::data_reader_nci::data_reader_nci</a></div><div class="ttdeci">data_reader_nci()</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__nci_8cpp_source.html#l00054">data_reader_nci.cpp:54</a></div></div>
+<div class="ttc" id="classlbann_1_1data__reader__nci_html_aad2847ee20ec7f8d7d25c2ebfff1361e"><div class="ttname"><a href="classlbann_1_1data__reader__nci.html#aad2847ee20ec7f8d7d25c2ebfff1361e">lbann::data_reader_nci::operator=</a></div><div class="ttdeci">data_reader_nci &amp; operator=(const data_reader_nci &amp;source)=default</div></div>
+<div class="ttc" id="classlbann_1_1csv__reader_html"><div class="ttname"><a href="classlbann_1_1csv__reader.html">lbann::csv_reader</a></div><div class="ttdef"><b>Definition:</b> <a href="data__reader__csv_8hpp_source.html#l00044">data_reader_csv.hpp:44</a></div></div>
+<div class="ttc" id="classlbann_1_1data__reader__nci_html_a642f96edf3efae0d5d0aad70d8a17dbe"><div class="ttname"><a href="classlbann_1_1data__reader__nci.html#a642f96edf3efae0d5d0aad70d8a17dbe">lbann::data_reader_nci::copy</a></div><div class="ttdeci">data_reader_nci * copy() const override</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__nci_8hpp_source.html#l00045">data_reader_nci.hpp:45</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a23cee86a2a91e74a8d900eaa1800f8f.html">LBANN-MCK-DOX</a></li><li class="navelem"><a class="el" href="dir_de30b333c751ee64c994135b5d233c33.html">include</a></li><li class="navelem"><a class="el" href="dir_cce5d40162b40db9850649eab9c230af.html">lbann</a></li><li class="navelem"><a class="el" href="dir_00ef70b6c1ade4fd1cb3fbde93ef3765.html">data_readers</a></li><li class="navelem"><a class="el" href="data__reader__nci_8hpp.html">data_reader_nci.hpp</a></li>
-    <li class="footer">Generated on Fri Feb 2 2018 11:10:18 for LBANN by
+    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_208d7a2ea8c59265ec87bf2e980d9340.html">wsb</a></li><li class="navelem"><a class="el" href="dir_bbd6668b26f763289c3f291aff61b3bb.html">lbannusr</a></li><li class="navelem"><a class="el" href="dir_a8f312ba3f043bd02d049f4e47a85cb6.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_133a4a981f060b5c505349fbb77a59be.html">lbann-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_1cc6d50f976a8e37e2027ade18b1e2d7.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_294e3a20abe6977c38d914c01e9d6ab7.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a31f8fe46a4aa588b6383a428e6464df.html">LBANN-DG-DD</a></li><li class="navelem"><a class="el" href="dir_d166d048bb8382a532581a8bdef1f3cb.html">include</a></li><li class="navelem"><a class="el" href="dir_782d4f5c831b713e690bf8a67fa27f73.html">lbann</a></li><li class="navelem"><a class="el" href="dir_fbd98ad6835c554c600d006efc9d422a.html">data_readers</a></li><li class="navelem"><a class="el" href="data__reader__nci_8hpp.html">data_reader_nci.hpp</a></li>
+    <li class="footer">Generated on Fri Feb 2 2018 11:16:36 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

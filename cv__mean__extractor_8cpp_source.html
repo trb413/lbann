@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/LBANN-MCK-DOX/src/data_readers/cv_mean_extractor.cpp Source File</title>
+<title>LBANN: /usr/workspace/wsb/lbannusr/bamboo/lbann-catalyst159-1/xml-data/build-dir/LBANN-DG-DD/src/data_readers/cv_mean_extractor.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">7a0ed70-ci45</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2179-g231ac24-ci142</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('cv__mean__extractor_8cpp_source.html',
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -178,16 +178,16 @@ $(document).ready(function(){initNavTree('cv__mean__extractor_8cpp_source.html',
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordtype">void</span> cv_mean_extractor::create_matrices(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> width, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> height, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n_ch) {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="comment">// OpenCV image type code</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  m_type_code = cv_image_type&lt;Float_T&gt;::T(n_ch);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  m_sum = cv::Mat(height, width, m_type_code);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  m_avg = cv::Mat(height, width, m_type_code);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  m_sum = <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a>(height, width, m_type_code);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  m_avg = <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a>(height, width, m_type_code);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keywordtype">void</span> cv_mean_extractor::reset() {</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="comment">// convert to a single change image before resetting the values as the </span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="comment">// dimension of Scalar is limited to 4 (4 channels)</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  cv::Mat m_sum_1ch = m_sum.reshape(1);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a> m_sum_1ch = m_sum.reshape(1);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  m_sum_1ch.setTo(static_cast&lt;Float_T&gt;(0));</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  cv::Mat m_avg_1ch = m_avg.reshape(1);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a> m_avg_1ch = m_avg.reshape(1);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  m_avg_1ch.setTo(static_cast&lt;Float_T&gt;(0));</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  m_batch_cnt = 0u;</div>
@@ -195,9 +195,9 @@ $(document).ready(function(){initNavTree('cv__mean__extractor_8cpp_source.html',
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  m_enabled = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keywordtype">bool</span> cv_mean_extractor::determine_transform(<span class="keyword">const</span> cv::Mat&amp; image) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keywordtype">bool</span> cv_mean_extractor::determine_transform(<span class="keyword">const</span> <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a>&amp; image) {</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  m_enabled = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  _LBANN_SILENT_EXCEPTION(image.empty(), <span class="stringliteral">&quot;&quot;</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <a class="code" href="mild__exception_8hpp.html#ac9ca456b1c43797e0bed8ccf7bda8482">_LBANN_SILENT_EXCEPTION</a>(image.empty(), <span class="stringliteral">&quot;&quot;</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="comment">// If it has not been configured (other than batch size), do it here</span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordflow">if</span> (m_sum.empty()) {</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    create_matrices(image.cols, image.rows, image.channels());</div>
@@ -215,7 +215,7 @@ $(document).ready(function(){initNavTree('cv__mean__extractor_8cpp_source.html',
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keywordflow">return</span> (m_enabled = <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keywordtype">bool</span> cv_mean_extractor::apply(cv::Mat&amp; image) {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keywordtype">bool</span> cv_mean_extractor::apply(<a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a>&amp; image) {</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  m_enabled = <span class="keyword">false</span>; <span class="comment">// turn off as the transform is applied once</span></div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">double</span> f = get_depth_normalizing_factor(image.depth());</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  cv::addWeighted(m_sum, 1.0, image, f, 0.0, m_sum, m_type_code);</div>
@@ -225,7 +225,7 @@ $(document).ready(function(){initNavTree('cv__mean__extractor_8cpp_source.html',
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    cv::addWeighted(m_avg, static_cast&lt;double&gt;(m_batch_cnt-1)/m_batch_cnt,</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                    m_sum, 1/static_cast&lt;double&gt;(m_batch_cnt*m_batch_size),</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                    0.0, m_avg, m_type_code);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    cv::Mat m_sum_1ch = m_sum.reshape(1);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a> m_sum_1ch = m_sum.reshape(1);</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    m_sum_1ch.setTo(static_cast&lt;Float_T&gt;(0));</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  }</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -238,7 +238,7 @@ $(document).ready(function(){initNavTree('cv__mean__extractor_8cpp_source.html',
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordflow">return</span> os.str();</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;std::ostream&amp; cv_mean_extractor::print(std::ostream&amp; os)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;std::ostream&amp; <a class="code" href="namespacelbann_1_1graph.html#a956e9f6f1b842a2ffe5bda9015bbb906">cv_mean_extractor::print</a>(std::ostream&amp; os)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  os &lt;&lt; get_description()</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;     &lt;&lt; <span class="stringliteral">&quot; - partial cnt &quot;</span> &lt;&lt; m_partial_cnt &lt;&lt; std::endl</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;     &lt;&lt; <span class="stringliteral">&quot; - batch cnt &quot;</span> &lt;&lt; m_batch_cnt &lt;&lt; std::endl;</div>
@@ -247,7 +247,10 @@ $(document).ready(function(){initNavTree('cv__mean__extractor_8cpp_source.html',
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;} <span class="comment">// end of namespace lbann</span></div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">#endif // LBANN_HAS_OPENCV</span></div>
+<div class="ttc" id="base_8hpp_html_a68f11fdc31b62516cb310831bbe54d73"><div class="ttname"><a href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a></div><div class="ttdeci">El::Matrix&lt; lbann::DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00042">base.hpp:42</a></div></div>
+<div class="ttc" id="mild__exception_8hpp_html_ac9ca456b1c43797e0bed8ccf7bda8482"><div class="ttname"><a href="mild__exception_8hpp.html#ac9ca456b1c43797e0bed8ccf7bda8482">_LBANN_SILENT_EXCEPTION</a></div><div class="ttdeci">#define _LBANN_SILENT_EXCEPTION(_COND_, _MSG_, _RETVAL_)</div><div class="ttdef"><b>Definition:</b> <a href="mild__exception_8hpp_source.html#l00090">mild_exception.hpp:90</a></div></div>
 <div class="ttc" id="mild__exception_8hpp_html"><div class="ttname"><a href="mild__exception_8hpp.html">mild_exception.hpp</a></div></div>
+<div class="ttc" id="namespacelbann_1_1graph_html_a956e9f6f1b842a2ffe5bda9015bbb906"><div class="ttname"><a href="namespacelbann_1_1graph.html#a956e9f6f1b842a2ffe5bda9015bbb906">lbann::graph::print</a></div><div class="ttdeci">void print(const std::set&lt; int &gt; &amp;nodes, const std::map&lt; int, std::set&lt; int &gt;&gt; &amp;edges, std::ostream &amp;os)</div><div class="ttdef"><b>Definition:</b> <a href="graph_8cpp_source.html#l00037">graph.cpp:37</a></div></div>
 <div class="ttc" id="exception_8hpp_html"><div class="ttname"><a href="exception_8hpp.html">exception.hpp</a></div></div>
 <div class="ttc" id="cv__mean__extractor_8hpp_html"><div class="ttname"><a href="cv__mean__extractor_8hpp.html">cv_mean_extractor.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -255,8 +258,8 @@ $(document).ready(function(){initNavTree('cv__mean__extractor_8cpp_source.html',
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a23cee86a2a91e74a8d900eaa1800f8f.html">LBANN-MCK-DOX</a></li><li class="navelem"><a class="el" href="dir_f58f29776607091bcc1ea72124e029c4.html">src</a></li><li class="navelem"><a class="el" href="dir_11bf7e59a4a20c08f6c91c6f3ebf4feb.html">data_readers</a></li><li class="navelem"><a class="el" href="cv__mean__extractor_8cpp.html">cv_mean_extractor.cpp</a></li>
-    <li class="footer">Generated on Fri Feb 2 2018 11:10:19 for LBANN by
+    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_208d7a2ea8c59265ec87bf2e980d9340.html">wsb</a></li><li class="navelem"><a class="el" href="dir_bbd6668b26f763289c3f291aff61b3bb.html">lbannusr</a></li><li class="navelem"><a class="el" href="dir_a8f312ba3f043bd02d049f4e47a85cb6.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_133a4a981f060b5c505349fbb77a59be.html">lbann-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_1cc6d50f976a8e37e2027ade18b1e2d7.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_294e3a20abe6977c38d914c01e9d6ab7.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a31f8fe46a4aa588b6383a428e6464df.html">LBANN-DG-DD</a></li><li class="navelem"><a class="el" href="dir_923d22ad389741cf75d7d5ed6c33331c.html">src</a></li><li class="navelem"><a class="el" href="dir_ef9b326ddabc1183ea63c83861219e30.html">data_readers</a></li><li class="navelem"><a class="el" href="cv__mean__extractor_8cpp.html">cv_mean_extractor.cpp</a></li>
+    <li class="footer">Generated on Fri Feb 2 2018 11:16:38 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

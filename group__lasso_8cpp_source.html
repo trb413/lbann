@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/LBANN-MCK-DOX/src/objective_functions/weight_regularization/group_lasso.cpp Source File</title>
+<title>LBANN: /usr/workspace/wsb/lbannusr/bamboo/lbann-catalyst159-1/xml-data/build-dir/LBANN-DG-DD/src/objective_functions/weight_regularization/group_lasso.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">7a0ed70-ci45</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2179-g231ac24-ci142</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('group__lasso_8cpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -121,37 +121,37 @@ $(document).ready(function(){initNavTree('group__lasso_8cpp_source.html','');});
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>lbann {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">void</span> group_lasso_weight_regularization::setup(model&amp; m) {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  objective_function_term::setup(m);</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classlbann_1_1group__lasso__weight__regularization.html#af413161b1feefa3bb472079635547c57">   32</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1group__lasso__weight__regularization.html#af413161b1feefa3bb472079635547c57">group_lasso_weight_regularization::setup</a>(<a class="code" href="classlbann_1_1model.html">model</a>&amp; m) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <a class="code" href="classlbann_1_1objective__function__term.html#a6c8dbdf18aac8676098189fb7b178e91">objective_function_term::setup</a>(m);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="comment">// Check that term has no layer pointers</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordflow">if</span> (!m_layers.empty()) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="classlbann_1_1objective__function__term.html#a9269cf0a237eacd1e220ba2739f44334">m_layers</a>.empty()) {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::stringstream err;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot; :: &quot;</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        &lt;&lt; <span class="stringliteral">&quot;attempted to setup group lasso weight regularization with layer pointers&quot;</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(err.str());</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">throw</span> <a class="code" href="classlbann_1_1lbann__exception.html">lbann_exception</a>(err.str());</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  }</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="comment">// Add all weights in model if no weights pointers are provided</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">if</span> (m_weights.empty()) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">for</span> (weights* w : m.get_weights()) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1objective__function__term.html#a1d601c29153ae9cb54c585887608f2bf">m_weights</a>.empty()) {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="classlbann_1_1weights.html">weights</a>* w : m.<a class="code" href="classlbann_1_1model.html#a91cd652cf6cad2830857a48a17742654">get_weights</a>()) {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keywordflow">if</span> (w-&gt;get_optimizer() != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        m_weights.push_back(w);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classlbann_1_1objective__function__term.html#a1d601c29153ae9cb54c585887608f2bf">m_weights</a>.push_back(w);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      }</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;EvalType group_lasso_weight_regularization::evaluate() {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">if</span> (m_scale_factor == EvalType(0)) { <span class="keywordflow">return</span> EvalType(0); }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  EvalType value = EvalType(0);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  Mat sqsums;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">for</span> (weights* w : m_weights) {</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classlbann_1_1group__lasso__weight__regularization.html#affee3a229d10dc7326200fb7a14d8067">   54</a></span>&#160;<a class="code" href="base_8hpp.html#a3266f5ac18504bbadea983c109566867">EvalType</a> <a class="code" href="classlbann_1_1group__lasso__weight__regularization.html#affee3a229d10dc7326200fb7a14d8067">group_lasso_weight_regularization::evaluate</a>() {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1objective__function__term.html#a59a544b8ff0455ed5091de3bf0d81c3c">m_scale_factor</a> == <a class="code" href="base_8hpp.html#a3266f5ac18504bbadea983c109566867">EvalType</a>(0)) { <span class="keywordflow">return</span> <a class="code" href="base_8hpp.html#a3266f5ac18504bbadea983c109566867">EvalType</a>(0); }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="base_8hpp.html#a3266f5ac18504bbadea983c109566867">EvalType</a> value = <a class="code" href="base_8hpp.html#a3266f5ac18504bbadea983c109566867">EvalType</a>(0);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a> sqsums;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="classlbann_1_1weights.html">weights</a>* w : <a class="code" href="classlbann_1_1objective__function__term.html#a1d601c29153ae9cb54c585887608f2bf">m_weights</a>) {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// Get matrices</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">const</span> AbsDistMat&amp; values = w-&gt;get_values();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">const</span> Mat&amp; values_local = values.LockedMatrix();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a>&amp; values = w-&gt;get_values();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a>&amp; values_local = values.LockedMatrix();</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> local_height = values_local.Height();</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> local_width = values_local.Width();</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
@@ -159,36 +159,36 @@ $(document).ready(function(){initNavTree('group__lasso_8cpp_source.html','');});
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    sqsums.Resize(1, local_width);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">    #pragma omp parallel for</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> col = 0; col &lt; local_width; ++col) {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      DataType sqsum = EvalType(0);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      DataType sqsum = <a class="code" href="base_8hpp.html#a3266f5ac18504bbadea983c109566867">EvalType</a>(0);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> row = 0; row &lt; local_height; ++row) {</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">const</span> DataType val = values_local(row, col);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        sqsum += val * val;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      }</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      sqsums(0, col) = sqsum;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    get_comm().allreduce(sqsums.Buffer(), local_width, sqsums.Buffer(),</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="classlbann_1_1objective__function__term.html#a5f89b676a26a6b76ddc26563ac87beb9">get_comm</a>().<a class="code" href="classlbann_1_1lbann__comm.html#af5631e5f0f54e4df4958eba9df2599ef">allreduce</a>(sqsums.Buffer(), local_width, sqsums.Buffer(),</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                          values.ColComm());</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// Compute group lasso term</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    EvalType w_sum = EvalType(0);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="base_8hpp.html#a3266f5ac18504bbadea983c109566867">EvalType</a> w_sum = <a class="code" href="base_8hpp.html#a3266f5ac18504bbadea983c109566867">EvalType</a>(0);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> col = 0; col &lt; local_width; ++col) {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      w_sum += std::sqrt(sqsums(0, col));</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    value += get_comm().allreduce(w_sum, values.RowComm());</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    value += <a class="code" href="classlbann_1_1objective__function__term.html#a5f89b676a26a6b76ddc26563ac87beb9">get_comm</a>().<a class="code" href="classlbann_1_1lbann__comm.html#af5631e5f0f54e4df4958eba9df2599ef">allreduce</a>(w_sum, values.RowComm());</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">return</span> m_scale_factor * value;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1objective__function__term.html#a59a544b8ff0455ed5091de3bf0d81c3c">m_scale_factor</a> * value;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">void</span> group_lasso_weight_regularization::compute_weight_regularization() {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">if</span> (m_scale_factor == EvalType(0)) { <span class="keywordflow">return</span>; }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  Mat sqsums;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  AbsDistMat* gradient;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">for</span> (weights* w : m_weights) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classlbann_1_1group__lasso__weight__regularization.html#a9d721928716349c8327ca67257fb827a">   91</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classlbann_1_1group__lasso__weight__regularization.html#a9d721928716349c8327ca67257fb827a">group_lasso_weight_regularization::compute_weight_regularization</a>() {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1objective__function__term.html#a59a544b8ff0455ed5091de3bf0d81c3c">m_scale_factor</a> == <a class="code" href="base_8hpp.html#a3266f5ac18504bbadea983c109566867">EvalType</a>(0)) { <span class="keywordflow">return</span>; }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a> sqsums;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <a class="code" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a>* gradient;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">for</span> (<a class="code" href="classlbann_1_1weights.html">weights</a>* w : <a class="code" href="classlbann_1_1objective__function__term.html#a1d601c29153ae9cb54c585887608f2bf">m_weights</a>) {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// Get matrices</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">const</span> AbsDistMat&amp; values = w-&gt;get_values();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">const</span> Mat&amp; values_local = values.LockedMatrix();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a>&amp; values = w-&gt;get_values();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a>&amp; values_local = values.LockedMatrix();</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> local_height = values_local.Height();</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> local_width = values_local.Width();</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
@@ -203,12 +203,12 @@ $(document).ready(function(){initNavTree('group__lasso_8cpp_source.html','');});
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      }</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      sqsums(0, col) = sqsum;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    get_comm().allreduce(sqsums.Buffer(), local_width, sqsums.Buffer(),</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="classlbann_1_1objective__function__term.html#a5f89b676a26a6b76ddc26563ac87beb9">get_comm</a>().<a class="code" href="classlbann_1_1lbann__comm.html#af5631e5f0f54e4df4958eba9df2599ef">allreduce</a>(sqsums.Buffer(), local_width, sqsums.Buffer(),</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                         values.ColComm());</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">// Compute gradient</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    gradient = values.Copy();</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    Mat&amp; gradient_local = gradient-&gt;Matrix();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a>&amp; gradient_local = gradient-&gt;Matrix();</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> col = 0; col &lt; local_width; ++col) {</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <span class="keywordflow">if</span> (sqsums(0, col) != DataType(0)) {</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        sqsums(0, col) = 1 / std::sqrt(sqsums(0, col));</div>
@@ -222,22 +222,38 @@ $(document).ready(function(){initNavTree('group__lasso_8cpp_source.html','');});
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        gradient_local(row, col) = values_local(row, col) * sqsums(0, col);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      }</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    w-&gt;get_optimizer()-&gt;add_to_gradient(*gradient, m_scale_factor);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    w-&gt;get_optimizer()-&gt;add_to_gradient(*gradient, <a class="code" href="classlbann_1_1objective__function__term.html#a59a544b8ff0455ed5091de3bf0d81c3c">m_scale_factor</a>);</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keyword">delete</span> gradient;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  }</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;}  <span class="comment">// namespace lbann</span></div>
+<div class="ttc" id="base_8hpp_html_a3266f5ac18504bbadea983c109566867"><div class="ttname"><a href="base_8hpp.html#a3266f5ac18504bbadea983c109566867">EvalType</a></div><div class="ttdeci">double EvalType</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00059">base.hpp:59</a></div></div>
+<div class="ttc" id="base_8hpp_html_a68f11fdc31b62516cb310831bbe54d73"><div class="ttname"><a href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a></div><div class="ttdeci">El::Matrix&lt; lbann::DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00042">base.hpp:42</a></div></div>
+<div class="ttc" id="classlbann_1_1objective__function__term_html_a9269cf0a237eacd1e220ba2739f44334"><div class="ttname"><a href="classlbann_1_1objective__function__term.html#a9269cf0a237eacd1e220ba2739f44334">lbann::objective_function_term::m_layers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; m_layers</div><div class="ttdef"><b>Definition:</b> <a href="objective__function__term_8hpp_source.html#l00093">objective_function_term.hpp:93</a></div></div>
+<div class="ttc" id="classlbann_1_1objective__function__term_html_a5f89b676a26a6b76ddc26563ac87beb9"><div class="ttname"><a href="classlbann_1_1objective__function__term.html#a5f89b676a26a6b76ddc26563ac87beb9">lbann::objective_function_term::get_comm</a></div><div class="ttdeci">lbann_comm &amp; get_comm()</div><div class="ttdef"><b>Definition:</b> <a href="objective__function__term_8hpp_source.html#l00098">objective_function_term.hpp:98</a></div></div>
+<div class="ttc" id="classlbann_1_1group__lasso__weight__regularization_html_a9d721928716349c8327ca67257fb827a"><div class="ttname"><a href="classlbann_1_1group__lasso__weight__regularization.html#a9d721928716349c8327ca67257fb827a">lbann::group_lasso_weight_regularization::compute_weight_regularization</a></div><div class="ttdeci">void compute_weight_regularization() override</div><div class="ttdef"><b>Definition:</b> <a href="group__lasso_8cpp_source.html#l00091">group_lasso.cpp:91</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_af5631e5f0f54e4df4958eba9df2599ef"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#af5631e5f0f54e4df4958eba9df2599ef">lbann::lbann_comm::allreduce</a></div><div class="ttdeci">T allreduce(T snd, const El::mpi::Comm c, El::mpi::Op op=El::mpi::SUM)</div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00376">comm.hpp:376</a></div></div>
+<div class="ttc" id="classlbann_1_1group__lasso__weight__regularization_html_af413161b1feefa3bb472079635547c57"><div class="ttname"><a href="classlbann_1_1group__lasso__weight__regularization.html#af413161b1feefa3bb472079635547c57">lbann::group_lasso_weight_regularization::setup</a></div><div class="ttdeci">void setup(model &amp;m) override</div><div class="ttdef"><b>Definition:</b> <a href="group__lasso_8cpp_source.html#l00032">group_lasso.cpp:32</a></div></div>
+<div class="ttc" id="classlbann_1_1weights_html"><div class="ttname"><a href="classlbann_1_1weights.html">lbann::weights</a></div><div class="ttdef"><b>Definition:</b> <a href="weights_8hpp_source.html#l00058">weights.hpp:58</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="exception_8hpp_source.html#l00040">exception.hpp:40</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html"><div class="ttname"><a href="classlbann_1_1model.html">lbann::model</a></div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00054">model.hpp:54</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_a91cd652cf6cad2830857a48a17742654"><div class="ttname"><a href="classlbann_1_1model.html#a91cd652cf6cad2830857a48a17742654">lbann::model::get_weights</a></div><div class="ttdeci">const std::vector&lt; weights * &gt; &amp; get_weights() const </div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00120">model.hpp:120</a></div></div>
+<div class="ttc" id="classlbann_1_1objective__function__term_html_a6c8dbdf18aac8676098189fb7b178e91"><div class="ttname"><a href="classlbann_1_1objective__function__term.html#a6c8dbdf18aac8676098189fb7b178e91">lbann::objective_function_term::setup</a></div><div class="ttdeci">virtual void setup(model &amp;m)</div><div class="ttdef"><b>Definition:</b> <a href="objective__function__term_8cpp_source.html#l00039">objective_function_term.cpp:39</a></div></div>
+<div class="ttc" id="classlbann_1_1objective__function__term_html_a59a544b8ff0455ed5091de3bf0d81c3c"><div class="ttname"><a href="classlbann_1_1objective__function__term.html#a59a544b8ff0455ed5091de3bf0d81c3c">lbann::objective_function_term::m_scale_factor</a></div><div class="ttdeci">EvalType m_scale_factor</div><div class="ttdef"><b>Definition:</b> <a href="objective__function__term_8hpp_source.html#l00090">objective_function_term.hpp:90</a></div></div>
 <div class="ttc" id="group__lasso_8hpp_html"><div class="ttname"><a href="group__lasso_8hpp.html">group_lasso.hpp</a></div></div>
+<div class="ttc" id="classlbann_1_1objective__function__term_html_a1d601c29153ae9cb54c585887608f2bf"><div class="ttname"><a href="classlbann_1_1objective__function__term.html#a1d601c29153ae9cb54c585887608f2bf">lbann::objective_function_term::m_weights</a></div><div class="ttdeci">std::vector&lt; weights * &gt; m_weights</div><div class="ttdef"><b>Definition:</b> <a href="objective__function__term_8hpp_source.html#l00095">objective_function_term.hpp:95</a></div></div>
+<div class="ttc" id="classlbann_1_1group__lasso__weight__regularization_html_affee3a229d10dc7326200fb7a14d8067"><div class="ttname"><a href="classlbann_1_1group__lasso__weight__regularization.html#affee3a229d10dc7326200fb7a14d8067">lbann::group_lasso_weight_regularization::evaluate</a></div><div class="ttdeci">EvalType evaluate() override</div><div class="ttdef"><b>Definition:</b> <a href="group__lasso_8cpp_source.html#l00054">group_lasso.cpp:54</a></div></div>
+<div class="ttc" id="base_8hpp_html_a9a697a504ae84010e7439ffec862b470"><div class="ttname"><a href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a></div><div class="ttdeci">El::AbstractDistMatrix&lt; lbann::DataType &gt; AbsDistMat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00043">base.hpp:43</a></div></div>
 <div class="ttc" id="model_8hpp_html"><div class="ttname"><a href="model_8hpp.html">model.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a23cee86a2a91e74a8d900eaa1800f8f.html">LBANN-MCK-DOX</a></li><li class="navelem"><a class="el" href="dir_f58f29776607091bcc1ea72124e029c4.html">src</a></li><li class="navelem"><a class="el" href="dir_e4d33583fda98884f187c23193f88ab9.html">objective_functions</a></li><li class="navelem"><a class="el" href="dir_53933208a0e8be4bcaca7190bbba5fe5.html">weight_regularization</a></li><li class="navelem"><a class="el" href="group__lasso_8cpp.html">group_lasso.cpp</a></li>
-    <li class="footer">Generated on Fri Feb 2 2018 11:10:20 for LBANN by
+    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_208d7a2ea8c59265ec87bf2e980d9340.html">wsb</a></li><li class="navelem"><a class="el" href="dir_bbd6668b26f763289c3f291aff61b3bb.html">lbannusr</a></li><li class="navelem"><a class="el" href="dir_a8f312ba3f043bd02d049f4e47a85cb6.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_133a4a981f060b5c505349fbb77a59be.html">lbann-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_1cc6d50f976a8e37e2027ade18b1e2d7.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_294e3a20abe6977c38d914c01e9d6ab7.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a31f8fe46a4aa588b6383a428e6464df.html">LBANN-DG-DD</a></li><li class="navelem"><a class="el" href="dir_923d22ad389741cf75d7d5ed6c33331c.html">src</a></li><li class="navelem"><a class="el" href="dir_486b38fddafb15fef223e64fe8a9f5e3.html">objective_functions</a></li><li class="navelem"><a class="el" href="dir_cd8a21e6579562697c735fdfb81600ac.html">weight_regularization</a></li><li class="navelem"><a class="el" href="group__lasso_8cpp.html">group_lasso.cpp</a></li>
+    <li class="footer">Generated on Fri Feb 2 2018 11:16:38 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

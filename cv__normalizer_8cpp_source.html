@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/LBANN-MCK-DOX/src/data_readers/cv_normalizer.cpp Source File</title>
+<title>LBANN: /usr/workspace/wsb/lbannusr/bamboo/lbann-catalyst159-1/xml-data/build-dir/LBANN-DG-DD/src/data_readers/cv_normalizer.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">7a0ed70-ci45</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2179-g231ac24-ci142</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('cv__normalizer_8cpp_source.html','');}
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -184,10 +184,10 @@ $(document).ready(function(){initNavTree('cv__normalizer_8cpp_source.html','');}
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">bool</span> cv_normalizer::determine_transform(<span class="keyword">const</span> cv::Mat&amp; image) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">bool</span> cv_normalizer::determine_transform(<span class="keyword">const</span> <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a>&amp; image) {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  reset();</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  _LBANN_SILENT_EXCEPTION(image.empty(), <span class="stringliteral">&quot;&quot;</span>, <span class="keyword">false</span>)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <a class="code" href="mild__exception_8hpp.html#ac9ca456b1c43797e0bed8ccf7bda8482">_LBANN_SILENT_EXCEPTION</a>(image.empty(), <span class="stringliteral">&quot;&quot;</span>, <span class="keyword">false</span>)</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordflow">if</span> (!check_to_enable()) {</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -296,7 +296,7 @@ $(document).ready(function(){initNavTree('cv__normalizer_8cpp_source.html','');}
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;}</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="keywordtype">bool</span> cv_normalizer::apply(cv::Mat&amp; image) {</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="keywordtype">bool</span> cv_normalizer::apply(<a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a>&amp; image) {</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  m_enabled = <span class="keyword">false</span>; <span class="comment">// turn off as it is applied</span></div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keywordflow">return</span> scale(image, m_trans);</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;}</div>
@@ -334,8 +334,8 @@ $(document).ready(function(){initNavTree('cv__normalizer_8cpp_source.html','');}
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keywordtype">bool</span> cv_normalizer::scale(cv::Mat&amp; image, <span class="keyword">const</span> std::vector&lt;channel_trans_t&gt;&amp; trans) {</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  _LBANN_SILENT_EXCEPTION(image.empty(), <span class="stringliteral">&quot;&quot;</span>, <span class="keyword">false</span>)</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keywordtype">bool</span> cv_normalizer::scale(<a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a>&amp; image, <span class="keyword">const</span> std::vector&lt;channel_trans_t&gt;&amp; trans) {</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <a class="code" href="mild__exception_8hpp.html#ac9ca456b1c43797e0bed8ccf7bda8482">_LBANN_SILENT_EXCEPTION</a>(image.empty(), <span class="stringliteral">&quot;&quot;</span>, <span class="keyword">false</span>)</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  <span class="keywordflow">switch</span>(image.depth()) {</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="keywordflow">case</span> CV_8U:</div>
@@ -357,7 +357,7 @@ $(document).ready(function(){initNavTree('cv__normalizer_8cpp_source.html','');}
 <div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;}</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
 <div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="keywordtype">bool</span> cv_normalizer::compute_mean_stddev(<span class="keyword">const</span> cv::Mat&amp; image,</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="keywordtype">bool</span> cv_normalizer::compute_mean_stddev(<span class="keyword">const</span> <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a>&amp; image,</div>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                                        std::vector&lt;ComputeType&gt;&amp; mean, std::vector&lt;ComputeType&gt;&amp; stddev,</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                                        cv::InputArray mask) {</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  <span class="keywordflow">if</span> (image.empty()) {</div>
@@ -371,8 +371,8 @@ $(document).ready(function(){initNavTree('cv__normalizer_8cpp_source.html','');}
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keyword">using</span> Ch_T = double;</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="comment">//using Ch_T = ComputeType;</span></div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keyword">using</span> Output_T = cv_image_type&lt;Ch_T&gt;;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    cv::Mat _mean(1, 4, Output_T::T());</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    cv::Mat _stddev(1, 4, Output_T::T());</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a> _mean(1, 4, Output_T::T());</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a> _stddev(1, 4, Output_T::T());</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    cv::meanStdDev(image, _mean, _stddev, mask);</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    mean.resize(image.channels());</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    stddev.resize(image.channels());</div>
@@ -395,7 +395,7 @@ $(document).ready(function(){initNavTree('cv__normalizer_8cpp_source.html','');}
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  <span class="keywordflow">return</span> os.str();</div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;}</div>
 <div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;std::ostream&amp; cv_normalizer::print(std::ostream&amp; os)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;std::ostream&amp; <a class="code" href="namespacelbann_1_1graph.html#a956e9f6f1b842a2ffe5bda9015bbb906">cv_normalizer::print</a>(std::ostream&amp; os)<span class="keyword"> const </span>{</div>
 <div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  os &lt;&lt; get_description()</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;     &lt;&lt; <span class="stringliteral">&quot; - transform:&quot;</span>;</div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> channel_trans_t&amp; tr: m_trans) {</div>
@@ -409,15 +409,18 @@ $(document).ready(function(){initNavTree('cv__normalizer_8cpp_source.html','');}
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;} <span class="comment">// end of namespace lbann</span></div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;<span class="preprocessor">#endif // LBANN_HAS_OPENCV</span></div>
+<div class="ttc" id="base_8hpp_html_a68f11fdc31b62516cb310831bbe54d73"><div class="ttname"><a href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a></div><div class="ttdeci">El::Matrix&lt; lbann::DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00042">base.hpp:42</a></div></div>
+<div class="ttc" id="mild__exception_8hpp_html_ac9ca456b1c43797e0bed8ccf7bda8482"><div class="ttname"><a href="mild__exception_8hpp.html#ac9ca456b1c43797e0bed8ccf7bda8482">_LBANN_SILENT_EXCEPTION</a></div><div class="ttdeci">#define _LBANN_SILENT_EXCEPTION(_COND_, _MSG_, _RETVAL_)</div><div class="ttdef"><b>Definition:</b> <a href="mild__exception_8hpp_source.html#l00090">mild_exception.hpp:90</a></div></div>
 <div class="ttc" id="mild__exception_8hpp_html"><div class="ttname"><a href="mild__exception_8hpp.html">mild_exception.hpp</a></div></div>
+<div class="ttc" id="namespacelbann_1_1graph_html_a956e9f6f1b842a2ffe5bda9015bbb906"><div class="ttname"><a href="namespacelbann_1_1graph.html#a956e9f6f1b842a2ffe5bda9015bbb906">lbann::graph::print</a></div><div class="ttdeci">void print(const std::set&lt; int &gt; &amp;nodes, const std::map&lt; int, std::set&lt; int &gt;&gt; &amp;edges, std::ostream &amp;os)</div><div class="ttdef"><b>Definition:</b> <a href="graph_8cpp_source.html#l00037">graph.cpp:37</a></div></div>
 <div class="ttc" id="cv__normalizer_8hpp_html"><div class="ttname"><a href="cv__normalizer_8hpp.html">cv_normalizer.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a23cee86a2a91e74a8d900eaa1800f8f.html">LBANN-MCK-DOX</a></li><li class="navelem"><a class="el" href="dir_f58f29776607091bcc1ea72124e029c4.html">src</a></li><li class="navelem"><a class="el" href="dir_11bf7e59a4a20c08f6c91c6f3ebf4feb.html">data_readers</a></li><li class="navelem"><a class="el" href="cv__normalizer_8cpp.html">cv_normalizer.cpp</a></li>
-    <li class="footer">Generated on Fri Feb 2 2018 11:10:19 for LBANN by
+    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_208d7a2ea8c59265ec87bf2e980d9340.html">wsb</a></li><li class="navelem"><a class="el" href="dir_bbd6668b26f763289c3f291aff61b3bb.html">lbannusr</a></li><li class="navelem"><a class="el" href="dir_a8f312ba3f043bd02d049f4e47a85cb6.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_133a4a981f060b5c505349fbb77a59be.html">lbann-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_1cc6d50f976a8e37e2027ade18b1e2d7.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_294e3a20abe6977c38d914c01e9d6ab7.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a31f8fe46a4aa588b6383a428e6464df.html">LBANN-DG-DD</a></li><li class="navelem"><a class="el" href="dir_923d22ad389741cf75d7d5ed6c33331c.html">src</a></li><li class="navelem"><a class="el" href="dir_ef9b326ddabc1183ea63c83861219e30.html">data_readers</a></li><li class="navelem"><a class="el" href="cv__normalizer_8cpp.html">cv_normalizer.cpp</a></li>
+    <li class="footer">Generated on Fri Feb 2 2018 11:16:38 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

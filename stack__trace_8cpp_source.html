@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/LBANN-MCK-DOX/src/utils/stack_trace.cpp Source File</title>
+<title>LBANN: /usr/workspace/wsb/lbannusr/bamboo/lbann-catalyst159-1/xml-data/build-dir/LBANN-DG-DD/src/utils/stack_trace.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">7a0ed70-ci45</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2179-g231ac24-ci142</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('stack__trace_8cpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -130,28 +130,28 @@ $(document).ready(function(){initNavTree('stack__trace_8cpp_source.html','');});
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">namespace </span>lbann {</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">namespace </span>stack_trace {</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="namespacelbann_1_1stack__trace.html">   41</a></span>&#160;<span class="keyword">namespace </span>stack_trace {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">static</span> std::ofstream to_file;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">   43</a></span>&#160;<span class="keyword">static</span> std::ofstream <a class="code" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">to_file</a>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> my_lbann_tracing_id = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="namespacelbann_1_1stack__trace.html#a78efe186260936105751e65f56c381d7">   45</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="namespacelbann_1_1stack__trace.html#a78efe186260936105751e65f56c381d7">my_lbann_tracing_id</a> = 0;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">struct </span>sigaction sa;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="namespacelbann_1_1stack__trace.html#a4a87ea956ec9344d4432f5e7d3dd445e">   47</a></span>&#160;<span class="keyword">struct </span>sigaction <a class="code" href="namespacelbann_1_1stack__trace.html#a4a87ea956ec9344d4432f5e7d3dd445e">sa</a>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">void</span> set_lbann_stack_trace_world_rank(<span class="keywordtype">int</span> rank) {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  my_lbann_tracing_id = rank;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="namespacelbann_1_1stack__trace.html#a1063a9a501d78a7525224461e155a483">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann_1_1stack__trace.html#a1063a9a501d78a7525224461e155a483">set_lbann_stack_trace_world_rank</a>(<span class="keywordtype">int</span> rank) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="namespacelbann_1_1stack__trace.html#a78efe186260936105751e65f56c381d7">my_lbann_tracing_id</a> = rank;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">// optionally opens &quot;to_file&quot; for writing; returns &#39;false&#39; if</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">// we tried to open the file, but failed</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> open_output_file() {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  options * opts = options::get();</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="namespacelbann_1_1stack__trace.html#aa071d75a81128e2a8100d66529482842">   55</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="namespacelbann_1_1stack__trace.html#aa071d75a81128e2a8100d66529482842">open_output_file</a>() {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="classoptions.html">options</a> * opts = <a class="code" href="classoptions.html#a9ecfe9c365269df68a41b961c31ae3f5">options::get</a>();</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">bool</span> success = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">if</span> (opts-&gt;has_bool(<span class="stringliteral">&quot;stack_trace_to_file&quot;</span>) &amp;&amp; opts-&gt;get_bool(<span class="stringliteral">&quot;stack_trace_to_file&quot;</span>)) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">if</span> (opts-&gt;<a class="code" href="classoptions.html#aafb1d2a7ccde0b1bf786230ba4080ecd">has_bool</a>(<span class="stringliteral">&quot;stack_trace_to_file&quot;</span>) &amp;&amp; opts-&gt;<a class="code" href="classoptions.html#a99aa190102de33e2aed39723929f9fad">get_bool</a>(<span class="stringliteral">&quot;stack_trace_to_file&quot;</span>)) {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    std::stringstream b;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    b &lt;&lt; <span class="stringliteral">&quot;stack_trace_&quot;</span> &lt;&lt; my_lbann_tracing_id &lt;&lt; <span class="stringliteral">&quot;.txt&quot;</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    to_file.open(b.str().c_str());</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span> (! to_file.is_open()) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    b &lt;&lt; <span class="stringliteral">&quot;stack_trace_&quot;</span> &lt;&lt; <a class="code" href="namespacelbann_1_1stack__trace.html#a78efe186260936105751e65f56c381d7">my_lbann_tracing_id</a> &lt;&lt; <span class="stringliteral">&quot;.txt&quot;</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">to_file</a>.open(b.str().c_str());</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span> (! <a class="code" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">to_file</a>.is_open()) {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      std::stringstream err;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot; :: &quot;</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;          &lt;&lt; <span class="stringliteral">&quot; failed to open file: &quot;</span> &lt;&lt; b.str() &lt;&lt; <span class="stringliteral">&quot; for writing&quot;</span>;</div>
@@ -165,55 +165,55 @@ $(document).ready(function(){initNavTree('stack__trace_8cpp_source.html','');});
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">return</span> success;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> close_output_file() {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordflow">if</span> (to_file.is_open()) {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    to_file.close();</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="namespacelbann_1_1stack__trace.html#a45e4398bd4d0a7b9956107192a342b89">   76</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="namespacelbann_1_1stack__trace.html#a45e4398bd4d0a7b9956107192a342b89">close_output_file</a>() {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">to_file</a>.is_open()) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">to_file</a>.close();</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">void</span> print_stack_trace() {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">if</span> (to_file.is_open()) {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    to_file &lt;&lt; <span class="stringliteral">&quot;\n**************************************************************************\n&quot;</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="namespacelbann_1_1stack__trace.html#a52adbb11fce7541e2bc34b712d09e868">   82</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann_1_1stack__trace.html#a52adbb11fce7541e2bc34b712d09e868">print_stack_trace</a>() {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">to_file</a>.is_open()) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">to_file</a> &lt;&lt; <span class="stringliteral">&quot;\n**************************************************************************\n&quot;</span>;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">  #define MAX_STACK_FRAMES 64</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor"></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> *stack_traces[MAX_STACK_FRAMES];</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">int</span> trace_size = backtrace(stack_traces, MAX_STACK_FRAMES);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor"></span>  <span class="keyword">static</span> <span class="keywordtype">void</span> *stack_traces[<a class="code" href="stack__trace_8cpp.html#a2ed127ee3fe422f95420f138273e6da7">MAX_STACK_FRAMES</a>];</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">int</span> trace_size = backtrace(stack_traces, <a class="code" href="stack__trace_8cpp.html#a2ed127ee3fe422f95420f138273e6da7">MAX_STACK_FRAMES</a>);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">char</span> **messages = backtrace_symbols(stack_traces, trace_size);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  Dl_info info;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;trace_size; i++) {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    std::cerr &lt;&lt; <span class="stringliteral">&quot;rank: &quot;</span> &lt;&lt; my_lbann_tracing_id &lt;&lt; <span class="stringliteral">&quot; :: &quot;</span>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span> (to_file.is_open()) {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      to_file &lt;&lt; <span class="stringliteral">&quot;  &gt;&gt;&gt;&gt; &quot;</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    std::cerr &lt;&lt; <span class="stringliteral">&quot;rank: &quot;</span> &lt;&lt; <a class="code" href="namespacelbann_1_1stack__trace.html#a78efe186260936105751e65f56c381d7">my_lbann_tracing_id</a> &lt;&lt; <span class="stringliteral">&quot; :: &quot;</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">to_file</a>.is_open()) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <a class="code" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">to_file</a> &lt;&lt; <span class="stringliteral">&quot;  &gt;&gt;&gt;&gt; &quot;</span>;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    dladdr(stack_traces[i], &amp;info);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">if</span> (info.dli_sname != NULL) {</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <span class="keywordtype">char</span> *demangled_name = abi::__cxa_demangle(info.dli_sname, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>, <span class="keyword">nullptr</span>);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <span class="keywordflow">if</span> (demangled_name != NULL) {</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        std::cerr &lt;&lt; demangled_name &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">if</span> (to_file.is_open()) {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;          to_file &lt;&lt; demangled_name &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">to_file</a>.is_open()) {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;          <a class="code" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">to_file</a> &lt;&lt; demangled_name &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        }</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        free(demangled_name);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        std::cerr &lt;&lt; <span class="stringliteral">&quot;demangling failed for: &quot;</span> &lt;&lt; info.dli_sname &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">if</span> (to_file.is_open()) {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;          to_file &lt;&lt; <span class="stringliteral">&quot;demangling failed for: &quot;</span> &lt;&lt; info.dli_sname &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">to_file</a>.is_open()) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;          <a class="code" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">to_file</a> &lt;&lt; <span class="stringliteral">&quot;demangling failed for: &quot;</span> &lt;&lt; info.dli_sname &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      }</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      std::cerr &lt;&lt; <span class="stringliteral">&quot;dli_sname == NULL for: &quot;</span> &lt;&lt; stack_traces[i] &lt;&lt; <span class="stringliteral">&quot; backtrace message was: &quot;</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;     &quot;</span> &lt;&lt; messages[i] &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="keywordflow">if</span> (to_file.is_open()) {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        to_file &lt;&lt; <span class="stringliteral">&quot;dli_sname == NULL for: &quot;</span> &lt;&lt; stack_traces[i] &lt;&lt; <span class="stringliteral">&quot; backtrace message was: &quot;</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">to_file</a>.is_open()) {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">to_file</a> &lt;&lt; <span class="stringliteral">&quot;dli_sname == NULL for: &quot;</span> &lt;&lt; stack_traces[i] &lt;&lt; <span class="stringliteral">&quot; backtrace message was: &quot;</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            &lt;&lt; <span class="stringliteral">&quot;     &quot;</span> &lt;&lt; messages[i] &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      }</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  }</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  std::cerr &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordflow">if</span> (to_file.is_open()) {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    to_file.close();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">to_file</a>.is_open()) {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">to_file</a>.close();</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  }</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  std::cerr &lt;&lt; <span class="stringliteral">&quot;sleeping for two seconds to give all procs a chance to write ...\n&quot;</span>;</div>
@@ -221,8 +221,8 @@ $(document).ready(function(){initNavTree('stack__trace_8cpp_source.html','');});
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keywordtype">void</span> print_lbann_exception_stack_trace(std::string m) {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordflow">if</span> (! open_output_file()) {</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="line" href="namespacelbann_1_1stack__trace.html#ae7396b3b0ee5d087a045f04ce690cae4">  132</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann_1_1stack__trace.html#ae7396b3b0ee5d087a045f04ce690cae4">print_lbann_exception_stack_trace</a>(std::string m) {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keywordflow">if</span> (! <a class="code" href="namespacelbann_1_1stack__trace.html#aa071d75a81128e2a8100d66529482842">open_output_file</a>()) {</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  }</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  </div>
@@ -231,16 +231,16 @@ $(document).ready(function(){initNavTree('stack__trace_8cpp_source.html','');});
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    &lt;&lt; <span class="stringliteral">&quot; This lbann_exception is about to be thrown:&quot;</span> &lt;&lt; m &lt;&lt; <span class="stringliteral">&quot;\n\n&quot;</span></div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    &lt;&lt; <span class="stringliteral">&quot; Am now attemptting to print the stack trace ...\n&quot;</span></div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    &lt;&lt; <span class="stringliteral">&quot;**************************************************************************\n&quot;</span>;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keywordflow">if</span> (to_file.is_open()) {</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    to_file &lt;&lt; s.str();</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">to_file</a>.is_open()) {</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <a class="code" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">to_file</a> &lt;&lt; s.str();</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  }</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  std::cerr &lt;&lt; s.str();</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  print_stack_trace();</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  close_output_file();</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <a class="code" href="namespacelbann_1_1stack__trace.html#a52adbb11fce7541e2bc34b712d09e868">print_stack_trace</a>();</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <a class="code" href="namespacelbann_1_1stack__trace.html#a45e4398bd4d0a7b9956107192a342b89">close_output_file</a>();</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;std::string sig_name(<span class="keywordtype">int</span> signal) {</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="namespacelbann_1_1stack__trace.html#a22d63f8c305ad282df5af296d61639e6">  151</a></span>&#160;std::string <a class="code" href="namespacelbann_1_1stack__trace.html#a22d63f8c305ad282df5af296d61639e6">sig_name</a>(<span class="keywordtype">int</span> signal) {</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  std::string r;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordflow">switch</span> (signal) {</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">case</span> 1 : </div>
@@ -313,51 +313,67 @@ $(document).ready(function(){initNavTree('stack__trace_8cpp_source.html','');});
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keywordflow">return</span> r;</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;}</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="keywordtype">void</span> register_handler() {</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  options *opts = options::get();</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordflow">if</span> (opts-&gt;has_bool(<span class="stringliteral">&quot;catch_signals&quot;</span>) and opts-&gt;get_bool(<span class="stringliteral">&quot;catch_signals&quot;</span>)) {</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    sa.sa_handler = &amp;lbann_signal_handler;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    sa.sa_flags = SA_RESTART;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    sigfillset(&amp;sa.sa_mask);</div>
+<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="namespacelbann_1_1stack__trace.html#a12c3aa60ec15015b925249fc61352f07">  224</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann_1_1stack__trace.html#a12c3aa60ec15015b925249fc61352f07">register_handler</a>() {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <a class="code" href="classoptions.html">options</a> *opts = <a class="code" href="classoptions.html#a9ecfe9c365269df68a41b961c31ae3f5">options::get</a>();</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordflow">if</span> (opts-&gt;<a class="code" href="classoptions.html#aafb1d2a7ccde0b1bf786230ba4080ecd">has_bool</a>(<span class="stringliteral">&quot;catch_signals&quot;</span>) and opts-&gt;<a class="code" href="classoptions.html#a99aa190102de33e2aed39723929f9fad">get_bool</a>(<span class="stringliteral">&quot;catch_signals&quot;</span>)) {</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <a class="code" href="namespacelbann_1_1stack__trace.html#a4a87ea956ec9344d4432f5e7d3dd445e">sa</a>.sa_handler = &amp;<a class="code" href="namespacelbann_1_1stack__trace.html#a4bf58556b9c42ac8930c273a921172de">lbann_signal_handler</a>;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="namespacelbann_1_1stack__trace.html#a4a87ea956ec9344d4432f5e7d3dd445e">sa</a>.sa_flags = SA_RESTART;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    sigfillset(&amp;<a class="code" href="namespacelbann_1_1stack__trace.html#a4a87ea956ec9344d4432f5e7d3dd445e">sa</a>.sa_mask);</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;40; i++) {</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      sigaction(i, &amp;sa, NULL);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      sigaction(i, &amp;<a class="code" href="namespacelbann_1_1stack__trace.html#a4a87ea956ec9344d4432f5e7d3dd445e">sa</a>, NULL);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    }</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  }</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;}</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="keywordtype">void</span> lbann_signal_handler(<span class="keywordtype">int</span> signal) {</div>
+<div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="namespacelbann_1_1stack__trace.html#a4bf58556b9c42ac8930c273a921172de">  238</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespacelbann_1_1stack__trace.html#a4bf58556b9c42ac8930c273a921172de">lbann_signal_handler</a>(<span class="keywordtype">int</span> signal) {</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;std::cerr &lt;&lt; <span class="stringliteral">&quot;starting lbann_signal_handler\n&quot;</span>;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keywordflow">if</span> (! open_output_file()) {</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keywordflow">if</span> (! <a class="code" href="namespacelbann_1_1stack__trace.html#aa071d75a81128e2a8100d66529482842">open_output_file</a>()) {</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  }</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  std::stringstream s;</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  s &lt;&lt;  </div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;         <span class="stringliteral">&quot;\n**************************************************************************\n&quot;</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;         <span class="stringliteral">&quot; Caught this signal: &quot;</span> &lt;&lt; sig_name(signal) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;         <span class="stringliteral">&quot; Caught this signal: &quot;</span> &lt;&lt; <a class="code" href="namespacelbann_1_1stack__trace.html#a22d63f8c305ad282df5af296d61639e6">sig_name</a>(signal) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span></div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;         <span class="stringliteral">&quot; Note: see /usr/include/bits/signum.h for signal explanations\n&quot;</span></div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;         <span class="stringliteral">&quot; Am now attemptting to print the stack trace ...\n&quot;</span></div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;         <span class="stringliteral">&quot;**************************************************************************\n&quot;</span>;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="keywordflow">if</span> (to_file.is_open()) {</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    to_file &lt;&lt; s.str();</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">to_file</a>.is_open()) {</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <a class="code" href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">to_file</a> &lt;&lt; s.str();</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  }</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  std::cerr &lt;&lt; s.str();</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  print_stack_trace();</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  close_output_file();</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  <a class="code" href="namespacelbann_1_1stack__trace.html#a52adbb11fce7541e2bc34b712d09e868">print_stack_trace</a>();</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <a class="code" href="namespacelbann_1_1stack__trace.html#a45e4398bd4d0a7b9956107192a342b89">close_output_file</a>();</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;}</div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;} <span class="comment">//namespace stack_trace </span></div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;} <span class="comment">//namespace lbann</span></div>
+<div class="ttc" id="namespacelbann_1_1stack__trace_html_ae7396b3b0ee5d087a045f04ce690cae4"><div class="ttname"><a href="namespacelbann_1_1stack__trace.html#ae7396b3b0ee5d087a045f04ce690cae4">lbann::stack_trace::print_lbann_exception_stack_trace</a></div><div class="ttdeci">void print_lbann_exception_stack_trace(std::string m)</div><div class="ttdef"><b>Definition:</b> <a href="stack__trace_8cpp_source.html#l00132">stack_trace.cpp:132</a></div></div>
+<div class="ttc" id="classoptions_html_a99aa190102de33e2aed39723929f9fad"><div class="ttname"><a href="classoptions.html#a99aa190102de33e2aed39723929f9fad">options::get_bool</a></div><div class="ttdeci">bool get_bool(std::string option)</div><div class="ttdef"><b>Definition:</b> <a href="options_8cpp_source.html#l00111">options.cpp:111</a></div></div>
+<div class="ttc" id="namespacelbann_1_1stack__trace_html_a52adbb11fce7541e2bc34b712d09e868"><div class="ttname"><a href="namespacelbann_1_1stack__trace.html#a52adbb11fce7541e2bc34b712d09e868">lbann::stack_trace::print_stack_trace</a></div><div class="ttdeci">void print_stack_trace()</div><div class="ttdef"><b>Definition:</b> <a href="stack__trace_8cpp_source.html#l00082">stack_trace.cpp:82</a></div></div>
+<div class="ttc" id="namespacelbann_1_1stack__trace_html_aa071d75a81128e2a8100d66529482842"><div class="ttname"><a href="namespacelbann_1_1stack__trace.html#aa071d75a81128e2a8100d66529482842">lbann::stack_trace::open_output_file</a></div><div class="ttdeci">static bool open_output_file()</div><div class="ttdef"><b>Definition:</b> <a href="stack__trace_8cpp_source.html#l00055">stack_trace.cpp:55</a></div></div>
+<div class="ttc" id="namespacelbann_1_1stack__trace_html_a78efe186260936105751e65f56c381d7"><div class="ttname"><a href="namespacelbann_1_1stack__trace.html#a78efe186260936105751e65f56c381d7">lbann::stack_trace::my_lbann_tracing_id</a></div><div class="ttdeci">static int my_lbann_tracing_id</div><div class="ttdef"><b>Definition:</b> <a href="stack__trace_8cpp_source.html#l00045">stack_trace.cpp:45</a></div></div>
+<div class="ttc" id="classoptions_html_aafb1d2a7ccde0b1bf786230ba4080ecd"><div class="ttname"><a href="classoptions.html#aafb1d2a7ccde0b1bf786230ba4080ecd">options::has_bool</a></div><div class="ttdeci">bool has_bool(std::string option)</div><div class="ttdef"><b>Definition:</b> <a href="options_8cpp_source.html#l00249">options.cpp:249</a></div></div>
+<div class="ttc" id="stack__trace_8cpp_html_a2ed127ee3fe422f95420f138273e6da7"><div class="ttname"><a href="stack__trace_8cpp.html#a2ed127ee3fe422f95420f138273e6da7">MAX_STACK_FRAMES</a></div><div class="ttdeci">#define MAX_STACK_FRAMES</div></div>
+<div class="ttc" id="namespacelbann_1_1stack__trace_html_a22d63f8c305ad282df5af296d61639e6"><div class="ttname"><a href="namespacelbann_1_1stack__trace.html#a22d63f8c305ad282df5af296d61639e6">lbann::stack_trace::sig_name</a></div><div class="ttdeci">std::string sig_name(int signal)</div><div class="ttdef"><b>Definition:</b> <a href="stack__trace_8cpp_source.html#l00151">stack_trace.cpp:151</a></div></div>
+<div class="ttc" id="namespacelbann_1_1stack__trace_html_a1063a9a501d78a7525224461e155a483"><div class="ttname"><a href="namespacelbann_1_1stack__trace.html#a1063a9a501d78a7525224461e155a483">lbann::stack_trace::set_lbann_stack_trace_world_rank</a></div><div class="ttdeci">void set_lbann_stack_trace_world_rank(int rank)</div><div class="ttdef"><b>Definition:</b> <a href="stack__trace_8cpp_source.html#l00049">stack_trace.cpp:49</a></div></div>
+<div class="ttc" id="namespacelbann_1_1stack__trace_html_a45e4398bd4d0a7b9956107192a342b89"><div class="ttname"><a href="namespacelbann_1_1stack__trace.html#a45e4398bd4d0a7b9956107192a342b89">lbann::stack_trace::close_output_file</a></div><div class="ttdeci">static void close_output_file()</div><div class="ttdef"><b>Definition:</b> <a href="stack__trace_8cpp_source.html#l00076">stack_trace.cpp:76</a></div></div>
 <div class="ttc" id="stack__trace_8hpp_html"><div class="ttname"><a href="stack__trace_8hpp.html">stack_trace.hpp</a></div></div>
+<div class="ttc" id="classoptions_html_a9ecfe9c365269df68a41b961c31ae3f5"><div class="ttname"><a href="classoptions.html#a9ecfe9c365269df68a41b961c31ae3f5">options::get</a></div><div class="ttdeci">static options * get()</div><div class="ttdoc">returns a pointer to the Options singleton </div><div class="ttdef"><b>Definition:</b> <a href="options_8hpp_source.html#l00020">options.hpp:20</a></div></div>
+<div class="ttc" id="namespacelbann_1_1stack__trace_html_a12c3aa60ec15015b925249fc61352f07"><div class="ttname"><a href="namespacelbann_1_1stack__trace.html#a12c3aa60ec15015b925249fc61352f07">lbann::stack_trace::register_handler</a></div><div class="ttdeci">void register_handler()</div><div class="ttdef"><b>Definition:</b> <a href="stack__trace_8cpp_source.html#l00224">stack_trace.cpp:224</a></div></div>
+<div class="ttc" id="classoptions_html"><div class="ttname"><a href="classoptions.html">options</a></div><div class="ttdef"><b>Definition:</b> <a href="options_8hpp_source.html#l00015">options.hpp:15</a></div></div>
+<div class="ttc" id="namespacelbann_1_1stack__trace_html_a4a87ea956ec9344d4432f5e7d3dd445e"><div class="ttname"><a href="namespacelbann_1_1stack__trace.html#a4a87ea956ec9344d4432f5e7d3dd445e">lbann::stack_trace::sa</a></div><div class="ttdeci">struct sigaction sa</div><div class="ttdef"><b>Definition:</b> <a href="stack__trace_8cpp_source.html#l00047">stack_trace.cpp:47</a></div></div>
+<div class="ttc" id="namespacelbann_1_1stack__trace_html_a4bf58556b9c42ac8930c273a921172de"><div class="ttname"><a href="namespacelbann_1_1stack__trace.html#a4bf58556b9c42ac8930c273a921172de">lbann::stack_trace::lbann_signal_handler</a></div><div class="ttdeci">void lbann_signal_handler(int signal)</div><div class="ttdef"><b>Definition:</b> <a href="stack__trace_8cpp_source.html#l00238">stack_trace.cpp:238</a></div></div>
 <div class="ttc" id="options_8hpp_html"><div class="ttname"><a href="options_8hpp.html">options.hpp</a></div></div>
+<div class="ttc" id="namespacelbann_1_1stack__trace_html_a6c838c74fec7cc57e5ccad283a8d282b"><div class="ttname"><a href="namespacelbann_1_1stack__trace.html#a6c838c74fec7cc57e5ccad283a8d282b">lbann::stack_trace::to_file</a></div><div class="ttdeci">static std::ofstream to_file</div><div class="ttdef"><b>Definition:</b> <a href="stack__trace_8cpp_source.html#l00043">stack_trace.cpp:43</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a23cee86a2a91e74a8d900eaa1800f8f.html">LBANN-MCK-DOX</a></li><li class="navelem"><a class="el" href="dir_f58f29776607091bcc1ea72124e029c4.html">src</a></li><li class="navelem"><a class="el" href="dir_99402af2c1c5380834105c499a2e1623.html">utils</a></li><li class="navelem"><a class="el" href="stack__trace_8cpp.html">stack_trace.cpp</a></li>
-    <li class="footer">Generated on Fri Feb 2 2018 11:10:21 for LBANN by
+    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_208d7a2ea8c59265ec87bf2e980d9340.html">wsb</a></li><li class="navelem"><a class="el" href="dir_bbd6668b26f763289c3f291aff61b3bb.html">lbannusr</a></li><li class="navelem"><a class="el" href="dir_a8f312ba3f043bd02d049f4e47a85cb6.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_133a4a981f060b5c505349fbb77a59be.html">lbann-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_1cc6d50f976a8e37e2027ade18b1e2d7.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_294e3a20abe6977c38d914c01e9d6ab7.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a31f8fe46a4aa588b6383a428e6464df.html">LBANN-DG-DD</a></li><li class="navelem"><a class="el" href="dir_923d22ad389741cf75d7d5ed6c33331c.html">src</a></li><li class="navelem"><a class="el" href="dir_a51bfbd72028c1af54cf6311bb8aa1b6.html">utils</a></li><li class="navelem"><a class="el" href="stack__trace_8cpp.html">stack_trace.cpp</a></li>
+    <li class="footer">Generated on Fri Feb 2 2018 11:16:39 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

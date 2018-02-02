@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.5"/>
-<title>LBANN: /usr/workspace/wsa/mckinney/bamboo/lbannci-catalyst159-1/xml-data/build-dir/LBANN-MCK-DOX/src/utils/file_utils.cpp Source File</title>
+<title>LBANN: /usr/workspace/wsb/lbannusr/bamboo/lbann-catalyst159-1/xml-data/build-dir/LBANN-DG-DD/src/utils/file_utils.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">7a0ed70-ci45</span>
+   &#160;<span id="projectnumber">v0.93-rc0-2179-g231ac24-ci142</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -78,7 +78,7 @@ $(document).ready(function(){initNavTree('file__utils_8cpp_source.html','');});
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Friends</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(10)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(11)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -124,10 +124,10 @@ $(document).ready(function(){initNavTree('file__utils_8cpp_source.html','');});
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>lbann {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">const</span> std::string path_delimiter::characters = <span class="stringliteral">&quot;/&quot;</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">const</span> std::string <a class="code" href="structlbann_1_1path__delimiter.html#ac64e71aff928b202c0c9e880ea641315">path_delimiter::characters</a> = <span class="stringliteral">&quot;/&quot;</span>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;std::vector&lt;int&gt; get_tokens(<span class="keyword">const</span> std::vector&lt;char&gt; delims, std::string str) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="namespacelbann.html#a856caa98b5a20ec6cee927240bdd3051">   38</a></span>&#160;std::vector&lt;int&gt; <a class="code" href="namespacelbann.html#a856caa98b5a20ec6cee927240bdd3051">get_tokens</a>(<span class="keyword">const</span> std::vector&lt;char&gt; delims, std::string str) {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  std::vector&lt;int&gt; tokens;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordtype">size_t</span> pos;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
@@ -144,9 +144,9 @@ $(document).ready(function(){initNavTree('file__utils_8cpp_source.html','');});
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">return</span> tokens;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">bool</span> parse_path(<span class="keyword">const</span> std::string&amp; path, std::string&amp; dir, std::string&amp; basename) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="namespacelbann.html#a1ce6832a54235a5fb333f50fffbe1b63">   56</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacelbann.html#a1ce6832a54235a5fb333f50fffbe1b63">parse_path</a>(<span class="keyword">const</span> std::string&amp; path, std::string&amp; dir, std::string&amp; basename) {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  std::string::const_iterator nb =</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::find_if(path.rbegin(), path.rend(), path_delimiter()).base();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::find_if(path.rbegin(), path.rend(), <a class="code" href="structlbann_1_1path__delimiter.html">path_delimiter</a>()).base();</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  dir =  std::string(path.begin(), nb);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  basename = std::string(nb, path.end());</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">if</span> (basename.empty()) {</div>
@@ -157,10 +157,10 @@ $(document).ready(function(){initNavTree('file__utils_8cpp_source.html','');});
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;std::string get_ext_name(<span class="keyword">const</span> std::string file_name) {</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="namespacelbann.html#ad9a28639b0953886bbcb7fc366783a17">   70</a></span>&#160;std::string <a class="code" href="namespacelbann.html#ad9a28639b0953886bbcb7fc366783a17">get_ext_name</a>(<span class="keyword">const</span> std::string file_name) {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  std::string dir;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  std::string basename;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  parse_path(file_name, dir, basename);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <a class="code" href="namespacelbann.html#a1ce6832a54235a5fb333f50fffbe1b63">parse_path</a>(file_name, dir, basename);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">size_t</span> pos = basename.find_last_of(<span class="charliteral">&#39;.&#39;</span>);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordflow">if</span> (pos == 0u) {</div>
@@ -170,10 +170,10 @@ $(document).ready(function(){initNavTree('file__utils_8cpp_source.html','');});
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;std::string get_basename_without_ext(<span class="keyword">const</span> std::string file_name) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="namespacelbann.html#aea9a4378326fd51236a8343c43cc4a7c">   84</a></span>&#160;std::string <a class="code" href="namespacelbann.html#aea9a4378326fd51236a8343c43cc4a7c">get_basename_without_ext</a>(<span class="keyword">const</span> std::string file_name) {</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  std::string dir;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  std::string basename;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  parse_path(file_name, dir, basename);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="namespacelbann.html#a1ce6832a54235a5fb333f50fffbe1b63">parse_path</a>(file_name, dir, basename);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">size_t</span> pos = basename.find_last_of(<span class="charliteral">&#39;.&#39;</span>);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordflow">if</span> (pos == 0u) {</div>
@@ -183,29 +183,29 @@ $(document).ready(function(){initNavTree('file__utils_8cpp_source.html','');});
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;std::string add_delimiter(<span class="keyword">const</span> std::string dir) {</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="namespacelbann.html#a1b8b05bbf2e59808a51ead80c47a9359">  102</a></span>&#160;std::string <a class="code" href="namespacelbann.html#a1b8b05bbf2e59808a51ead80c47a9359">add_delimiter</a>(<span class="keyword">const</span> std::string dir) {</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">if</span> (dir.empty()) {</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  }</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  std::string new_dir(dir);</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordflow">if</span> (!path_delimiter::check(new_dir.back())) {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    new_dir.append(path_delimiter::preferred());</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="structlbann_1_1path__delimiter.html#adb3d520b3e7b9f9aa8327245ea943bdf">path_delimiter::check</a>(new_dir.back())) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    new_dir.append(<a class="code" href="structlbann_1_1path__delimiter.html#a4f3bb346e47a66b16419125b1485e2ef">path_delimiter::preferred</a>());</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  }</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordflow">return</span> new_dir;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;std::string modify_file_name(<span class="keyword">const</span> std::string file_name, <span class="keyword">const</span> std::string tag, <span class="keyword">const</span> std::string new_ext) {</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="namespacelbann.html#a351610c8df00514e8942756c2099fedc">  122</a></span>&#160;std::string <a class="code" href="namespacelbann.html#a351610c8df00514e8942756c2099fedc">modify_file_name</a>(<span class="keyword">const</span> std::string file_name, <span class="keyword">const</span> std::string tag, <span class="keyword">const</span> std::string new_ext) {</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  std::string dir;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  std::string name;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">bool</span> ok = parse_path(file_name, dir, name);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keywordtype">bool</span> ok = <a class="code" href="namespacelbann.html#a1ce6832a54235a5fb333f50fffbe1b63">parse_path</a>(file_name, dir, name);</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <span class="keywordflow">if</span> (!ok) {</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">return</span> std::string();</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  }</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  std::string ext = (new_ext.empty() ? get_ext_name(name) : new_ext);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  name = get_basename_without_ext(name);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  std::string ext = (new_ext.empty() ? <a class="code" href="namespacelbann.html#ad9a28639b0953886bbcb7fc366783a17">get_ext_name</a>(name) : new_ext);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  name = <a class="code" href="namespacelbann.html#aea9a4378326fd51236a8343c43cc4a7c">get_basename_without_ext</a>(name);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordflow">if</span> (!tag.empty()) {</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    name = name + <span class="charliteral">&#39;.&#39;</span> + tag;</div>
@@ -214,7 +214,7 @@ $(document).ready(function(){initNavTree('file__utils_8cpp_source.html','');});
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="keywordtype">bool</span> check_if_file_exists(<span class="keyword">const</span> std::string&amp; filename) {</div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="line" href="namespacelbann.html#a4fac6c6483965395fa79d31061485f9f">  140</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacelbann.html#a4fac6c6483965395fa79d31061485f9f">check_if_file_exists</a>(<span class="keyword">const</span> std::string&amp; filename) {</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  std::ifstream ifile(filename);</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">bool</span><span class="keyword">&gt;</span>(ifile);</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;}</div>
@@ -223,22 +223,22 @@ $(document).ready(function(){initNavTree('file__utils_8cpp_source.html','');});
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#ifdef _POSIX_SOURCE</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;sys/stat.h&gt;</span></div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#include &lt;errno.h&gt;</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keywordtype">bool</span> check_if_dir_exists(<span class="keyword">const</span> std::string&amp; dirname) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacelbann.html#a3ee4a1fa7a82c30999de9eb626c68311">check_if_dir_exists</a>(<span class="keyword">const</span> std::string&amp; dirname) {</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keyword">struct </span>stat sb;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <span class="keywordflow">return</span> (stat(dirname.c_str(), &amp;sb) == 0 &amp;&amp; S_ISDIR(sb.st_mode));</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor"></span><span class="keywordtype">bool</span> check_if_dir_exists(<span class="keyword">const</span> std::string&amp; dirname) {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordflow">return</span> check_if_file_exists(dirname);</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="namespacelbann.html#a3ee4a1fa7a82c30999de9eb626c68311">  156</a></span>&#160;<span class="preprocessor"></span><span class="keywordtype">bool</span> <a class="code" href="namespacelbann.html#a3ee4a1fa7a82c30999de9eb626c68311">check_if_dir_exists</a>(<span class="keyword">const</span> std::string&amp; dirname) {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespacelbann.html#a4fac6c6483965395fa79d31061485f9f">check_if_file_exists</a>(dirname);</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keywordtype">bool</span> create_dir(<span class="keyword">const</span> std::string dirname) {</div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="namespacelbann.html#a1208673c880ccf0e1a9c5db6a8ed81f8">  167</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="namespacelbann.html#a1208673c880ccf0e1a9c5db6a8ed81f8">create_dir</a>(<span class="keyword">const</span> std::string dirname) {</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  std::string dir = dirname;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordflow">if</span> (!dir.empty() &amp;&amp; path_delimiter::check(dir.back())) {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keywordflow">if</span> (!dir.empty() &amp;&amp; <a class="code" href="structlbann_1_1path__delimiter.html#adb3d520b3e7b9f9aa8327245ea943bdf">path_delimiter::check</a>(dir.back())) {</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    dir.pop_back();</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  }</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
@@ -246,10 +246,10 @@ $(document).ready(function(){initNavTree('file__utils_8cpp_source.html','');});
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  }</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">bool</span> file_exists = check_if_file_exists(dir);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">bool</span> file_exists = <a class="code" href="namespacelbann.html#a4fac6c6483965395fa79d31061485f9f">check_if_file_exists</a>(dir);</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
 <div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;  <span class="keywordflow">if</span> (file_exists) {</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">if</span> (!check_if_dir_exists(dir)) {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="namespacelbann.html#a3ee4a1fa7a82c30999de9eb626c68311">check_if_dir_exists</a>(dir)) {</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -268,21 +268,34 @@ $(document).ready(function(){initNavTree('file__utils_8cpp_source.html','');});
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  <span class="keywordflow">if</span> (WEXITSTATUS(r) == 0x10) {</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!check_if_dir_exists(dir)) {</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!<a class="code" href="namespacelbann.html#a3ee4a1fa7a82c30999de9eb626c68311">check_if_dir_exists</a>(dir)) {</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  }</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;}</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;} <span class="comment">// end of namespace lbann</span></div>
+<div class="ttc" id="namespacelbann_html_a1208673c880ccf0e1a9c5db6a8ed81f8"><div class="ttname"><a href="namespacelbann.html#a1208673c880ccf0e1a9c5db6a8ed81f8">lbann::create_dir</a></div><div class="ttdeci">bool create_dir(const std::string dirname)</div><div class="ttdef"><b>Definition:</b> <a href="file__utils_8cpp_source.html#l00167">file_utils.cpp:167</a></div></div>
+<div class="ttc" id="namespacelbann_html_a4fac6c6483965395fa79d31061485f9f"><div class="ttname"><a href="namespacelbann.html#a4fac6c6483965395fa79d31061485f9f">lbann::check_if_file_exists</a></div><div class="ttdeci">bool check_if_file_exists(const std::string &amp;filename)</div><div class="ttdoc">Return true if a file with the given name exists. </div><div class="ttdef"><b>Definition:</b> <a href="file__utils_8cpp_source.html#l00140">file_utils.cpp:140</a></div></div>
+<div class="ttc" id="structlbann_1_1path__delimiter_html_a4f3bb346e47a66b16419125b1485e2ef"><div class="ttname"><a href="structlbann_1_1path__delimiter.html#a4f3bb346e47a66b16419125b1485e2ef">lbann::path_delimiter::preferred</a></div><div class="ttdeci">static std::string preferred()</div><div class="ttdef"><b>Definition:</b> <a href="file__utils_8hpp_source.html#l00040">file_utils.hpp:40</a></div></div>
+<div class="ttc" id="namespacelbann_html_a856caa98b5a20ec6cee927240bdd3051"><div class="ttname"><a href="namespacelbann.html#a856caa98b5a20ec6cee927240bdd3051">lbann::get_tokens</a></div><div class="ttdeci">std::vector&lt; int &gt; get_tokens(const std::vector&lt; char &gt; delims, std::string str)</div><div class="ttdoc">Tokenize a string by a sequence of delimiter characters. </div><div class="ttdef"><b>Definition:</b> <a href="file__utils_8cpp_source.html#l00038">file_utils.cpp:38</a></div></div>
+<div class="ttc" id="namespacelbann_html_a3ee4a1fa7a82c30999de9eb626c68311"><div class="ttname"><a href="namespacelbann.html#a3ee4a1fa7a82c30999de9eb626c68311">lbann::check_if_dir_exists</a></div><div class="ttdeci">bool check_if_dir_exists(const std::string &amp;dirname)</div><div class="ttdef"><b>Definition:</b> <a href="file__utils_8cpp_source.html#l00156">file_utils.cpp:156</a></div></div>
+<div class="ttc" id="namespacelbann_html_ad9a28639b0953886bbcb7fc366783a17"><div class="ttname"><a href="namespacelbann.html#ad9a28639b0953886bbcb7fc366783a17">lbann::get_ext_name</a></div><div class="ttdeci">std::string get_ext_name(const std::string file_name)</div><div class="ttdoc">Return file extention name. </div><div class="ttdef"><b>Definition:</b> <a href="file__utils_8cpp_source.html#l00070">file_utils.cpp:70</a></div></div>
+<div class="ttc" id="structlbann_1_1path__delimiter_html_ac64e71aff928b202c0c9e880ea641315"><div class="ttname"><a href="structlbann_1_1path__delimiter.html#ac64e71aff928b202c0c9e880ea641315">lbann::path_delimiter::characters</a></div><div class="ttdeci">static const std::string characters</div><div class="ttdef"><b>Definition:</b> <a href="file__utils_8hpp_source.html#l00039">file_utils.hpp:39</a></div></div>
 <div class="ttc" id="file__utils_8hpp_html"><div class="ttname"><a href="file__utils_8hpp.html">file_utils.hpp</a></div></div>
+<div class="ttc" id="namespacelbann_html_a1b8b05bbf2e59808a51ead80c47a9359"><div class="ttname"><a href="namespacelbann.html#a1b8b05bbf2e59808a51ead80c47a9359">lbann::add_delimiter</a></div><div class="ttdeci">std::string add_delimiter(const std::string dir)</div><div class="ttdef"><b>Definition:</b> <a href="file__utils_8cpp_source.html#l00102">file_utils.cpp:102</a></div></div>
+<div class="ttc" id="namespacelbann_html_a351610c8df00514e8942756c2099fedc"><div class="ttname"><a href="namespacelbann.html#a351610c8df00514e8942756c2099fedc">lbann::modify_file_name</a></div><div class="ttdeci">std::string modify_file_name(const std::string file_name, const std::string tag, const std::string new_ext)</div><div class="ttdef"><b>Definition:</b> <a href="file__utils_8cpp_source.html#l00122">file_utils.cpp:122</a></div></div>
+<div class="ttc" id="structlbann_1_1path__delimiter_html"><div class="ttname"><a href="structlbann_1_1path__delimiter.html">lbann::path_delimiter</a></div><div class="ttdef"><b>Definition:</b> <a href="file__utils_8hpp_source.html#l00038">file_utils.hpp:38</a></div></div>
+<div class="ttc" id="structlbann_1_1path__delimiter_html_adb3d520b3e7b9f9aa8327245ea943bdf"><div class="ttname"><a href="structlbann_1_1path__delimiter.html#adb3d520b3e7b9f9aa8327245ea943bdf">lbann::path_delimiter::check</a></div><div class="ttdeci">static bool check(const char ch)</div><div class="ttdef"><b>Definition:</b> <a href="file__utils_8hpp_source.html#l00043">file_utils.hpp:43</a></div></div>
+<div class="ttc" id="namespacelbann_html_aea9a4378326fd51236a8343c43cc4a7c"><div class="ttname"><a href="namespacelbann.html#aea9a4378326fd51236a8343c43cc4a7c">lbann::get_basename_without_ext</a></div><div class="ttdeci">std::string get_basename_without_ext(const std::string file_name)</div><div class="ttdoc">Return basename without extention. </div><div class="ttdef"><b>Definition:</b> <a href="file__utils_8cpp_source.html#l00084">file_utils.cpp:84</a></div></div>
+<div class="ttc" id="namespacelbann_html_a1ce6832a54235a5fb333f50fffbe1b63"><div class="ttname"><a href="namespacelbann.html#a1ce6832a54235a5fb333f50fffbe1b63">lbann::parse_path</a></div><div class="ttdeci">bool parse_path(const std::string &amp;path, std::string &amp;dir, std::string &amp;basename)</div><div class="ttdoc">Divide a given path into dir and basename. </div><div class="ttdef"><b>Definition:</b> <a href="file__utils_8cpp_source.html#l00056">file_utils.cpp:56</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_ae62fb4424bc0fa44bc260a0bba0aa56.html">wsa</a></li><li class="navelem"><a class="el" href="dir_1af3305ab4a924beb1531abcae87cd73.html">mckinney</a></li><li class="navelem"><a class="el" href="dir_c4b0532194f16124a98fda2c1ee3081b.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_9c0b216bf40cee22865ad73b64dab310.html">lbannci-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_bd53070289d219d3416de75ad14823a6.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_79b635172530688605bc12b8df845f04.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a23cee86a2a91e74a8d900eaa1800f8f.html">LBANN-MCK-DOX</a></li><li class="navelem"><a class="el" href="dir_f58f29776607091bcc1ea72124e029c4.html">src</a></li><li class="navelem"><a class="el" href="dir_99402af2c1c5380834105c499a2e1623.html">utils</a></li><li class="navelem"><a class="el" href="file__utils_8cpp.html">file_utils.cpp</a></li>
-    <li class="footer">Generated on Fri Feb 2 2018 11:10:20 for LBANN by
+    <li class="navelem"><a class="el" href="dir_1ec655711e29b55f31ff264c2bb65c33.html">usr</a></li><li class="navelem"><a class="el" href="dir_a0a24880a91b90933073f8d3aa89de73.html">workspace</a></li><li class="navelem"><a class="el" href="dir_208d7a2ea8c59265ec87bf2e980d9340.html">wsb</a></li><li class="navelem"><a class="el" href="dir_bbd6668b26f763289c3f291aff61b3bb.html">lbannusr</a></li><li class="navelem"><a class="el" href="dir_a8f312ba3f043bd02d049f4e47a85cb6.html">bamboo</a></li><li class="navelem"><a class="el" href="dir_133a4a981f060b5c505349fbb77a59be.html">lbann-catalyst159-1</a></li><li class="navelem"><a class="el" href="dir_1cc6d50f976a8e37e2027ade18b1e2d7.html">xml-data</a></li><li class="navelem"><a class="el" href="dir_294e3a20abe6977c38d914c01e9d6ab7.html">build-dir</a></li><li class="navelem"><a class="el" href="dir_a31f8fe46a4aa588b6383a428e6464df.html">LBANN-DG-DD</a></li><li class="navelem"><a class="el" href="dir_923d22ad389741cf75d7d5ed6c33331c.html">src</a></li><li class="navelem"><a class="el" href="dir_a51bfbd72028c1af54cf6311bb8aa1b6.html">utils</a></li><li class="navelem"><a class="el" href="file__utils_8cpp.html">file_utils.cpp</a></li>
+    <li class="footer">Generated on Fri Feb 2 2018 11:16:38 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
