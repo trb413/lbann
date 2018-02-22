@@ -5,7 +5,6 @@ var classlbann_1_1target__layer =
     [ "copy", "classlbann_1_1target__layer.html#a7cff9e162514ee6c8be9803ba3902fca", null ],
     [ "get_data_layout", "classlbann_1_1target__layer.html#a48a5f44e5f453ce31923333fd11849b1", null ],
     [ "get_type", "classlbann_1_1target__layer.html#a6b5dad32cf3b771d6db1f99914ab63c4", null ],
-    [ "initialize_distributed_matrices", "classlbann_1_1target__layer.html#a615ca6d80687b54da373d1375caaec98", null ],
     [ "initialize_io_buffer", "classlbann_1_1target__layer.html#acbcd75df0b4d7a46017d35577a719e67", null ],
     [ "operator=", "classlbann_1_1target__layer.html#a5ff0ef949286e2eb336c1baf10ed6df6", null ],
     [ "validate_data_layout", "classlbann_1_1target__layer.html#a34b7fe0522350d9fef731ae0642a8931", null ],

@@ -9,7 +9,7 @@ var classlbann_1_1sequential__model =
     [ "name", "classlbann_1_1sequential__model.html#abf2b69dacb5ee3165289377e1d961cd5", null ],
     [ "operator=", "classlbann_1_1sequential__model.html#a9714c99522b90488c486b390c5a7b6f3", null ],
     [ "save_to_checkpoint", "classlbann_1_1sequential__model.html#a51cd5ae859c66cfb36d25d968ef06203", null ],
-    [ "save_to_checkpoint_shared", "classlbann_1_1sequential__model.html#a21a24f654f52e45138b5c9996c3f67bb", null ],
+    [ "save_to_checkpoint_shared", "classlbann_1_1sequential__model.html#a226032d9890b8770c6fca54bf70d69eb", null ],
     [ "setup_layer_topology", "classlbann_1_1sequential__model.html#a3801a58530388fb6a8cb3e1c018e827d", null ],
     [ "write_proto", "classlbann_1_1sequential__model.html#a53a83327a1115a53affa78c93344e641", null ]
 ];

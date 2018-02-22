@@ -3,7 +3,8 @@ var persist_8hpp =
     [ "persist", "classlbann_1_1persist.html", "classlbann_1_1persist" ],
     [ "persist_type", "persist_8hpp.html#adee41f31f15f3906cbdcce4a1417eb56", [
       [ "train", "persist_8hpp.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64", null ],
-      [ "model", "persist_8hpp.html#adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c", null ]
+      [ "model", "persist_8hpp.html#adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c", null ],
+      [ "validate", "persist_8hpp.html#adee41f31f15f3906cbdcce4a1417eb56af9ab05454998236921a6b0e281fae632", null ]
     ] ],
     [ "read_bytes", "persist_8hpp.html#a85385e2a9e058b6720300b4cbdd2b1d0", null ],
     [ "read_distmat", "persist_8hpp.html#a0306ed35d6d90cf4fbdce7a72ad62ca7", null ],

@@ -1,11 +1,13 @@
 var classlbann_1_1sigmoid__layer =
 [
-    [ "sigmoid_layer", "classlbann_1_1sigmoid__layer.html#af908d7a83743a0c8fe67eca9f977e135", null ],
-    [ "activation_function", "classlbann_1_1sigmoid__layer.html#ac3cdf11cd2fba2aa554c3af91d588fd2", null ],
-    [ "activation_function_gradient", "classlbann_1_1sigmoid__layer.html#ab4a639f1001ab26c5dfd46039401f44d", null ],
+    [ "sigmoid_layer", "classlbann_1_1sigmoid__layer.html#a7e9b873bf8d5c89ad66b7500d3c3f05f", null ],
+    [ "activation", "classlbann_1_1sigmoid__layer.html#ab6a237e0a10be2599474dcd2cd73e767", null ],
+    [ "activation_derivative", "classlbann_1_1sigmoid__layer.html#a2736bf99e3304083cd964f6707c2f666", null ],
+    [ "bp_compute_gpu", "classlbann_1_1sigmoid__layer.html#a30a9ff1cd4ec6d4ef4e60859a10b5936", null ],
     [ "copy", "classlbann_1_1sigmoid__layer.html#a9ebc522a655f638eae27e51e759ad72f", null ],
+    [ "fp_compute_gpu", "classlbann_1_1sigmoid__layer.html#a1a2c1a56ca20677d4278a5787fa7fc86", null ],
     [ "get_data_layout", "classlbann_1_1sigmoid__layer.html#ab44f3cf5e4622578e40d5254ba73109a", null ],
     [ "get_description", "classlbann_1_1sigmoid__layer.html#aa921ef4370e6b4fae38536310d7a3a17", null ],
     [ "get_type", "classlbann_1_1sigmoid__layer.html#a5082da099cb5e56910da4373952b98dc", null ],
-    [ "initialize_distributed_matrices", "classlbann_1_1sigmoid__layer.html#ab340d209607ffd5472a869ca537db46d", null ]
+    [ "m_cutoff", "classlbann_1_1sigmoid__layer.html#ab4a50a9ae123aef61ff3f0c9c066bdff", null ]
 ];

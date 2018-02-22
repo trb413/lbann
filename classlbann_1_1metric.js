@@ -4,7 +4,7 @@ var classlbann_1_1metric =
     [ "metric", "classlbann_1_1metric.html#ac2fc993e31fed5298c4e321b315b77a0", null ],
     [ "~metric", "classlbann_1_1metric.html#ae173eae981ed474f125a5462e734802b", null ],
     [ "copy", "classlbann_1_1metric.html#a2a4498d41f77da8585552f485caab167", null ],
-    [ "evaluate", "classlbann_1_1metric.html#aa364928732498c5f92e8105b617e540d", null ],
+    [ "evaluate", "classlbann_1_1metric.html#ab4e14cb4296c7b47719071b210448dec", null ],
     [ "evaluate_compute", "classlbann_1_1metric.html#aab79147ff480675db2e01d7a889a4296", null ],
     [ "get_comm", "classlbann_1_1metric.html#a464120720df6bfdf91bffe353e562964", null ],
     [ "get_layer_pointers", "classlbann_1_1metric.html#a45cd279f993a79ff3df4964e40d904ed", null ],

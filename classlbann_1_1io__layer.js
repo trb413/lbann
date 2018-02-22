@@ -14,7 +14,6 @@ var classlbann_1_1io__layer =
     [ "get_topo_description", "classlbann_1_1io__layer.html#a955ab7100591d07d0758e8f95c6e50be", null ],
     [ "get_total_num_testing_samples", "classlbann_1_1io__layer.html#a8c1575ad108ffbdf2a553a44509211e6", null ],
     [ "get_total_num_training_samples", "classlbann_1_1io__layer.html#a744fe02208657194120714387b49cb28", null ],
-    [ "initialize_distributed_matrices", "classlbann_1_1io__layer.html#ac87ccd0a388a6152f2c73b82a3e2acdf", null ],
     [ "is_execution_mode_valid", "classlbann_1_1io__layer.html#a37e2f77a99ee44106ac7d9fd3a275dcc", null ],
     [ "is_for_regression", "classlbann_1_1io__layer.html#a8aa477e63440c75d19bf441b80ec4ae1", null ],
     [ "select_data_reader", "classlbann_1_1io__layer.html#aed46cd991ff11bad08933dc61492e26f", null ],

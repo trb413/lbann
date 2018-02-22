@@ -25,7 +25,6 @@ var classlbann_1_1weights =
     [ "set_initializer", "classlbann_1_1weights.html#a71e56d32d8e9c0e3ddf0ec2d0cd3924d", null ],
     [ "set_name", "classlbann_1_1weights.html#ab886e4d3ff62b62a7ac6c52e391666f2", null ],
     [ "set_optimizer", "classlbann_1_1weights.html#ab641f66c09c8b5d491c0f262e8cb55e6", null ],
-    [ "set_proto_dims", "classlbann_1_1weights.html#a6fdf1a9cf08f3c80cca7cedb27872c85", null ],
     [ "set_value", "classlbann_1_1weights.html#aaae37ad2df0808eb606609cd58cd223b", null ],
     [ "set_value", "classlbann_1_1weights.html#aca05fb7e298c8f9f1f30fa1a8eac9fbf", null ],
     [ "set_value", "classlbann_1_1weights.html#a7ac0a9e53b249f16d5e2978e47bd6b7f", null ],
@@ -44,6 +43,5 @@ var classlbann_1_1weights =
     [ "m_matrix_width_dims", "classlbann_1_1weights.html#a8317a198bc5b4cd6bee2c806eefd1f12", null ],
     [ "m_name", "classlbann_1_1weights.html#a08abf0bb29aa47be21bfc7473b4b9b99", null ],
     [ "m_optimizer", "classlbann_1_1weights.html#a5f3b4d4a3ad390c2a9bdbe6c4971de65", null ],
-    [ "m_proto_dims", "classlbann_1_1weights.html#a85d9ae2cdee24c1470b2a0632e128282", null ],
     [ "m_values", "classlbann_1_1weights.html#a6b2df671b6d4c4dd595477971eea0543", null ]
 ];

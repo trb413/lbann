@@ -7,7 +7,7 @@ var classlbann_1_1objective__function =
     [ "compute_weight_regularization", "classlbann_1_1objective__function.html#a7b7f8869bf110846e971fef995db51e1", null ],
     [ "copy", "classlbann_1_1objective__function.html#a29905391290f1c013b60d4f90dab2de0", null ],
     [ "differentiate", "classlbann_1_1objective__function.html#ae8b7314bdc12ba52d270b46a35acd138", null ],
-    [ "evaluate", "classlbann_1_1objective__function.html#aef15864fcee47f4e31e6030bd8f40968", null ],
+    [ "evaluate", "classlbann_1_1objective__function.html#aff9809ee6ad42225a36f2890084cd926", null ],
     [ "get_differentiation_time", "classlbann_1_1objective__function.html#adb074349034d4991801ac41e5f08eddc", null ],
     [ "get_evaluation_time", "classlbann_1_1objective__function.html#a11a78ee6e09b1866682faa67d5ef50a7", null ],
     [ "get_layer_pointers", "classlbann_1_1objective__function.html#aecd235681e35c8dc2dd8092328f7c65c", null ],

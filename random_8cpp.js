@@ -9,6 +9,8 @@ var random_8cpp =
     [ "get_generator", "random_8cpp.html#a4fea7ba21017b49d1e34394b4c20c764", null ],
     [ "init_data_seq_random", "random_8cpp.html#a8987701a637ff0e678114aa77e9c4d40", null ],
     [ "init_random", "random_8cpp.html#acef152f20e422b3aea1a3c1691a533ac", null ],
+    [ "load_rng_from_checkpoint_shared", "random_8cpp.html#ab76114a0e8cc90c28bcb9e7d01eec89a", null ],
+    [ "save_rng_to_checkpoint_shared", "random_8cpp.html#af68acf5b249e5360289d4c6a7bfa8985", null ],
     [ "uniform_fill", "random_8cpp.html#a7336c565aa23c1dab784530c581db3d1", null ],
     [ "uniform_fill_procdet", "random_8cpp.html#a93fc1b42be6ab461e803cb48d58c4d81", null ],
     [ "data_seq_generator", "random_8cpp.html#ac1d3d0259f3e9c9b75e9701ae727d16e", null ],

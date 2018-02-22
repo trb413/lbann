@@ -13,7 +13,6 @@ var classlbann_1_1local__response__normalization__layer =
     [ "get_data_layout", "classlbann_1_1local__response__normalization__layer.html#a7a161dde860f17264077a0cc4797fe36", null ],
     [ "get_description", "classlbann_1_1local__response__normalization__layer.html#a31f4ab1700e2e1c69a0ccb44c6f0fd69", null ],
     [ "get_type", "classlbann_1_1local__response__normalization__layer.html#ad566e7894d7eb1eb0fd1560686bf2388", null ],
-    [ "initialize_distributed_matrices", "classlbann_1_1local__response__normalization__layer.html#abe44181be22a8802494b3f27dddd8b54", null ],
     [ "operator=", "classlbann_1_1local__response__normalization__layer.html#a7a1e5eb532bbf72c6334ac865d0694a3", null ],
     [ "setup_gpu", "classlbann_1_1local__response__normalization__layer.html#aff5210d74db5f8302989cca12d04263d", null ],
     [ "m_lrn_alpha", "classlbann_1_1local__response__normalization__layer.html#a85c25a68888e2e9d163a820326fc09ff", null ],

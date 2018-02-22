@@ -4,7 +4,6 @@ var classlbann_1_1greedy__layerwise__autoencoder =
     [ "greedy_layerwise_autoencoder", "classlbann_1_1greedy__layerwise__autoencoder.html#adf8750be08e34891701a24678f703acd", null ],
     [ "~greedy_layerwise_autoencoder", "classlbann_1_1greedy__layerwise__autoencoder.html#a74aa0b263d78b6a7a8ac32cde6e05c4c", null ],
     [ "backward_prop", "classlbann_1_1greedy__layerwise__autoencoder.html#a6d39fda041fe570a668cb72594508062", null ],
-    [ "clear_error_signals", "classlbann_1_1greedy__layerwise__autoencoder.html#a649087e60f7d8d8c0ce09fa0300ce88e", null ],
     [ "copy", "classlbann_1_1greedy__layerwise__autoencoder.html#a435fa0830662ebde904b9e70902f7e16", null ],
     [ "forward_prop", "classlbann_1_1greedy__layerwise__autoencoder.html#af16aa7d2336a3f64e27970241cb2cd3e", null ],
     [ "name", "classlbann_1_1greedy__layerwise__autoencoder.html#a975ea739b9a97e76fac46ce8191dea84", null ],

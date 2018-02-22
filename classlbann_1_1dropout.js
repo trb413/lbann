@@ -9,10 +9,8 @@ var classlbann_1_1dropout =
     [ "get_data_layout", "classlbann_1_1dropout.html#aefeb16614f9bf4b9e643e1d5b48ec62d", null ],
     [ "get_description", "classlbann_1_1dropout.html#a7b53ee7d758337fe40788a567b5d092c", null ],
     [ "get_type", "classlbann_1_1dropout.html#a4d07cd79c7a4ab29db233a361aede358", null ],
-    [ "initialize_distributed_matrices", "classlbann_1_1dropout.html#af605d2ea7f99b3e6b655f71a0634d170", null ],
-    [ "initialize_distributed_matrices", "classlbann_1_1dropout.html#a59277f52c7522f46b043aeb4216c7b50", null ],
-    [ "initialize_distributed_matrices", "classlbann_1_1dropout.html#a37e65b35918040295038204ef1a7b600", null ],
     [ "operator=", "classlbann_1_1dropout.html#a0243b0bc3c2a4239a5ba6d64e6566a15", null ],
+    [ "setup_matrices", "classlbann_1_1dropout.html#abf399d8463721d322aedbb76d60534c6", null ],
     [ "m_keep_prob", "classlbann_1_1dropout.html#ac728849f72d7f433ced4448c96e018f7", null ],
     [ "m_mask", "classlbann_1_1dropout.html#ac4fbf18fa546eda43cce09653644b681", null ]
 ];

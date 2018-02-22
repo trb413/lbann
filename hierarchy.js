@@ -8,10 +8,12 @@ var hierarchy =
     [ "layer_header", "structlayer__header.html", null ],
     [ "lbann::adam::packing_header", "structlbann_1_1adam_1_1packing__header.html", null ],
     [ "lbann::cudnn::cudnn_manager", "classlbann_1_1cudnn_1_1cudnn__manager.html", null ],
+    [ "lbann::cudnn::matrix", "classlbann_1_1cudnn_1_1matrix.html", null ],
     [ "lbann::CUtility", "classlbann_1_1CUtility.html", null ],
     [ "lbann::data_buffer", "classlbann_1_1data__buffer.html", null ],
     [ "lbann::dataset", "classlbann_1_1dataset.html", null ],
     [ "lbann::fetch_data_functor", "classlbann_1_1fetch__data__functor.html", null ],
+    [ "lbann::generic_data_reader::packing_header", "structlbann_1_1generic__data__reader_1_1packing__header.html", null ],
     [ "lbann::generic_data_store", "classlbann_1_1generic__data__store.html", [
       [ "lbann::data_store_imagenet", "classlbann_1_1data__store__imagenet.html", null ],
       [ "lbann::data_store_merge_samples", "classlbann_1_1data__store__merge__samples.html", null ]
@@ -29,7 +31,6 @@ var hierarchy =
           [ "lbann::bent_identity_layer< T_layout >", "classlbann_1_1bent__identity__layer.html", null ],
           [ "lbann::elu_layer< T_layout >", "classlbann_1_1elu__layer.html", null ],
           [ "lbann::exponential_layer< T_layout >", "classlbann_1_1exponential__layer.html", null ],
-          [ "lbann::id_layer< T_layout >", "classlbann_1_1id__layer.html", null ],
           [ "lbann::leaky_relu_layer< T_layout >", "classlbann_1_1leaky__relu__layer.html", null ],
           [ "lbann::relu_layer< T_layout >", "classlbann_1_1relu__layer.html", null ],
           [ "lbann::selu_layer< T_layout >", "classlbann_1_1selu__layer.html", null ],
@@ -39,6 +40,7 @@ var hierarchy =
           [ "lbann::swish_layer< T_layout >", "classlbann_1_1swish__layer.html", null ],
           [ "lbann::tanh_layer< T_layout >", "classlbann_1_1tanh__layer.html", null ]
         ] ],
+        [ "lbann::identity_layer< T_layout >", "classlbann_1_1identity__layer.html", null ],
         [ "lbann::softmax_layer< T_layout >", "classlbann_1_1softmax__layer.html", null ]
       ] ],
       [ "lbann::io_layer", "classlbann_1_1io__layer.html", [
@@ -66,6 +68,8 @@ var hierarchy =
       [ "lbann::transform_layer", "classlbann_1_1transform__layer.html", [
         [ "lbann::concatenation_layer< T_layout >", "classlbann_1_1concatenation__layer.html", null ],
         [ "lbann::constant_layer< T_layout >", "classlbann_1_1constant__layer.html", null ],
+        [ "lbann::dummy_layer< T_layout >", "classlbann_1_1dummy__layer.html", null ],
+        [ "lbann::hadamard_layer< T_layout >", "classlbann_1_1hadamard__layer.html", null ],
         [ "lbann::noise_layer< T_layout >", "classlbann_1_1noise__layer.html", null ],
         [ "lbann::pooling_layer< T_layout >", "classlbann_1_1pooling__layer.html", null ],
         [ "lbann::reshape_layer< T_layout >", "classlbann_1_1reshape__layer.html", null ],
@@ -116,7 +120,6 @@ var hierarchy =
     ] ],
     [ "lbann::lbann_callback_imcomm::imcomm_params", "structlbann_1_1lbann__callback__imcomm_1_1imcomm__params.html", null ],
     [ "lbann::lbann_callback_minibatch_schedule::minibatch_step", "structlbann_1_1lbann__callback__minibatch__schedule_1_1minibatch__step.html", null ],
-    [ "lbann::lbann_checkpoint", "structlbann_1_1lbann__checkpoint.html", null ],
     [ "lbann::lbann_comm", "classlbann_1_1lbann__comm.html", null ],
     [ "lbann::lbann_comm::allreduce_options", "structlbann_1_1lbann__comm_1_1allreduce__options.html", null ],
     [ "lbann::lbann_image_preprocessor", "classlbann_1_1lbann__image__preprocessor.html", [
@@ -125,6 +128,7 @@ var hierarchy =
         [ "lbann::csv_reader", "classlbann_1_1csv__reader.html", [
           [ "lbann::data_reader_nci", "classlbann_1_1data__reader__nci.html", null ]
         ] ],
+        [ "lbann::data_reader_jag", "classlbann_1_1data__reader__jag.html", null ],
         [ "lbann::data_reader_synthetic", "classlbann_1_1data__reader__synthetic.html", null ],
         [ "lbann::generic_compound_data_reader", "classlbann_1_1generic__compound__data__reader.html", [
           [ "lbann::data_reader_merge_features", "classlbann_1_1data__reader__merge__features.html", null ],

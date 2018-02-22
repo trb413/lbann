@@ -1,7 +1,7 @@
 var classlbann_1_1pooling__layer =
 [
-    [ "pooling_layer", "classlbann_1_1pooling__layer.html#a741518e767a2343e16cf6320483be83f", null ],
-    [ "pooling_layer", "classlbann_1_1pooling__layer.html#aca6c27a7f4f875d735912192948c0518", null ],
+    [ "pooling_layer", "classlbann_1_1pooling__layer.html#a012223832bcd60644724425488059152", null ],
+    [ "pooling_layer", "classlbann_1_1pooling__layer.html#ad0694acb2188cb539a1ae616846600c3", null ],
     [ "pooling_layer", "classlbann_1_1pooling__layer.html#aab33e9b05ae9fffe36333feabbee9895", null ],
     [ "~pooling_layer", "classlbann_1_1pooling__layer.html#acdd563bbeab301496456dfb058fcb640", null ],
     [ "bp_compute", "classlbann_1_1pooling__layer.html#ab58fe97e976f60df37f958e79fd56ff9", null ],
@@ -14,17 +14,14 @@ var classlbann_1_1pooling__layer =
     [ "get_data_layout", "classlbann_1_1pooling__layer.html#ad6d7e7476521ed4a4c43db493807b2ca", null ],
     [ "get_description", "classlbann_1_1pooling__layer.html#a11f6d5c7ef16a62d081164f174825ab2", null ],
     [ "get_type", "classlbann_1_1pooling__layer.html#a2af67eebe2d051b141253bdba18f54ff", null ],
-    [ "initialize_distributed_matrices", "classlbann_1_1pooling__layer.html#a435f0885bdaba84b7ca3bca9f8ad4853", null ],
-    [ "initialize_distributed_matrices", "classlbann_1_1pooling__layer.html#aa3ac43f90f08adf24293252063e12838", null ],
-    [ "initialize_distributed_matrices", "classlbann_1_1pooling__layer.html#a6f82ad7cdcbcfe482f1fa0257ae23aa4", null ],
     [ "operator=", "classlbann_1_1pooling__layer.html#acd09fc03a5c22c4127222b722c4d6ce5", null ],
     [ "setup_dims", "classlbann_1_1pooling__layer.html#a5de83fe60224067c132b0f1d53024b57", null ],
     [ "setup_gpu", "classlbann_1_1pooling__layer.html#a603adc8abc7527f2fd12eb4264b0f3cc", null ],
     [ "unpooling_layer< T_layout >", "classlbann_1_1pooling__layer.html#ad56e2530ee19c632a3a06e6214a1889f", null ],
     [ "m_max_pool_indices", "classlbann_1_1pooling__layer.html#a58683798db4c48175cbad5ec32ff676c", null ],
+    [ "m_pads", "classlbann_1_1pooling__layer.html#a22fd39aa4358149110a369ddf0e5ffdb", null ],
     [ "m_pool_dims", "classlbann_1_1pooling__layer.html#abb52fe974f602921823a46320fd7d075", null ],
     [ "m_pool_mode", "classlbann_1_1pooling__layer.html#a7b19407c88f89757e64ed3d4afab8443", null ],
-    [ "m_pool_pads", "classlbann_1_1pooling__layer.html#a7d46ae62ebaca45d0b8bb7e0ce36210d", null ],
     [ "m_pool_size", "classlbann_1_1pooling__layer.html#a8b3a9020bb896a1132c9823bc2c73515", null ],
-    [ "m_pool_strides", "classlbann_1_1pooling__layer.html#aad90bfa772fdf283fee00d3ecd4bba12", null ]
+    [ "m_strides", "classlbann_1_1pooling__layer.html#a754bb6d49b39e915f315ca0049c953d9", null ]
 ];

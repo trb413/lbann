@@ -7,7 +7,7 @@ var classlbann_1_1persist =
     [ "get_bytes", "classlbann_1_1persist.html#a847ca86b458718f4f9fab9e64c5cad4a", null ],
     [ "get_fd", "classlbann_1_1persist.html#a87acde97f96cf2f98caf455c1b186059", null ],
     [ "get_rank", "classlbann_1_1persist.html#a90ae976e5566fae1b6debdf1b94fd9e0", null ],
-    [ "open_checkpoint", "classlbann_1_1persist.html#acf4e795ed71edb845443087e4059b54b", null ],
+    [ "open_checkpoint", "classlbann_1_1persist.html#a32a8f71995b674a62b21087ec4be9575", null ],
     [ "open_restart", "classlbann_1_1persist.html#a123cbc1d2b693640c784a45cbc6d2d97", null ],
     [ "read_bytes", "classlbann_1_1persist.html#af24f635f634c8cf30cf53a0e90ec641b", null ],
     [ "read_datatype", "classlbann_1_1persist.html#a1e84eff891affad6001f3c5fa803cae2", null ],
@@ -33,5 +33,7 @@ var classlbann_1_1persist =
     [ "m_model_filename", "classlbann_1_1persist.html#ac01cd3c8fe0f97c1312ca1a595f2f690", null ],
     [ "m_rank", "classlbann_1_1persist.html#aa99b1b0079bb10471472bf6f1d966deb", null ],
     [ "m_train_fd", "classlbann_1_1persist.html#a817671390811dde04670c47139402f51", null ],
-    [ "m_train_filename", "classlbann_1_1persist.html#a417a443c894fd07472504936f5b02b62", null ]
+    [ "m_train_filename", "classlbann_1_1persist.html#a417a443c894fd07472504936f5b02b62", null ],
+    [ "m_validate_fd", "classlbann_1_1persist.html#a87927d03b0cf684023178f997c038783", null ],
+    [ "m_validate_filename", "classlbann_1_1persist.html#a8ccf3728c62f825ec2f8cfe15929fc2a", null ]
 ];
