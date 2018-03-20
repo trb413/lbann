@@ -9,7 +9,7 @@ var searchData=
   ['has_5fstring',['has_string',['../classoptions.html#a5db5b27267c27ffe1b029948f64e54c1',1,'options']]],
   ['he_5fnormal_5finitializer',['he_normal_initializer',['../classlbann_1_1he__normal__initializer.html#a959fc0dcf16250291142a3fc308cfc03',1,'lbann::he_normal_initializer']]],
   ['he_5funiform_5finitializer',['he_uniform_initializer',['../classlbann_1_1he__uniform__initializer.html#a17bc65cd69fbce240c2050c228a2682c',1,'lbann::he_uniform_initializer']]],
-  ['horizontal_5fflip',['horizontal_flip',['../classlbann_1_1lbann__image__preprocessor.html#a4ba2de0a781dfa0a2652ad4d777a241f',1,'lbann::lbann_image_preprocessor']]],
+  ['horizontal_5fflip',['horizontal_flip',['../classlbann_1_1mesh__reader.html#a8cff71603c2d652f8b000a5dc4c75431',1,'lbann::mesh_reader::horizontal_flip()'],['../classlbann_1_1lbann__image__preprocessor.html#a4ba2de0a781dfa0a2652ad4d777a241f',1,'lbann::lbann_image_preprocessor::horizontal_flip()']]],
   ['horizontal_5fshift',['horizontal_shift',['../classlbann_1_1lbann__image__preprocessor.html#ae62596b4af5d1940aa0499cde2bdd005',1,'lbann::lbann_image_preprocessor']]],
   ['hypergradient_5fadam',['hypergradient_adam',['../classlbann_1_1hypergradient__adam.html#aefb4d2c307d8f7997624b2ebe977ca3b',1,'lbann::hypergradient_adam::hypergradient_adam(lbann_comm *comm, DataType init_learning_rate, DataType hyper_learning_rate=DataType(1e-7), DataType beta1=DataType(0.9), DataType beta2=DataType(0.99), DataType eps=DataType(1e-8))'],['../classlbann_1_1hypergradient__adam.html#aadb9841237fca01bbe2187a39e8f3cc5',1,'lbann::hypergradient_adam::hypergradient_adam(const hypergradient_adam &amp;other)']]]
 ];

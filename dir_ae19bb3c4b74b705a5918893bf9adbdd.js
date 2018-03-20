@@ -13,10 +13,7 @@ var dir_ae19bb3c4b74b705a5918893bf9adbdd =
     [ "utils", "dir_54599f7ab652be0f2f38b8574c3c4860.html", "dir_54599f7ab652be0f2f38b8574c3c4860" ],
     [ "weights", "dir_b7c167790353a8ff0eb01b166862c35c.html", "dir_b7c167790353a8ff0eb01b166862c35c" ],
     [ "base.hpp", "base_8hpp.html", "base_8hpp" ],
-    [ "comm.hpp", "comm_8hpp.html", [
-      [ "lbann_comm", "classlbann_1_1lbann__comm.html", "classlbann_1_1lbann__comm" ],
-      [ "allreduce_options", "structlbann_1_1lbann__comm_1_1allreduce__options.html", "structlbann_1_1lbann__comm_1_1allreduce__options" ]
-    ] ],
+    [ "comm.hpp", "comm_8hpp.html", "comm_8hpp" ],
     [ "Elemental_extensions.hpp", "Elemental__extensions_8hpp.html", "Elemental__extensions_8hpp" ],
     [ "lbann.hpp", "lbann_8hpp.html", null ],
     [ "params.hpp", "params_8hpp.html", [

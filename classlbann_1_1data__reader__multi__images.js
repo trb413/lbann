@@ -14,6 +14,7 @@ var classlbann_1_1data__reader__multi__images =
     [ "get_image_list", "classlbann_1_1data__reader__multi__images.html#ad8adb0ca6c78a12bfaa1c4d87acf3ba6", null ],
     [ "get_image_list_of_current_mb", "classlbann_1_1data__reader__multi__images.html#ae30764877c7bb0a7f8c7990b8aec6798", null ],
     [ "get_linearized_data_size", "classlbann_1_1data__reader__multi__images.html#a63d7c8f0b674f19840134ee99680f3fc", null ],
+    [ "get_num_img_srcs", "classlbann_1_1data__reader__multi__images.html#a81d3f9199160bc7b11e5b3601ad1a5b7", null ],
     [ "get_sample", "classlbann_1_1data__reader__multi__images.html#a07e09822dbaef2af36166c6f257b59a5", null ],
     [ "get_type", "classlbann_1_1data__reader__multi__images.html#a9939a88a40caf7b2a27de08deca54ac1", null ],
     [ "load", "classlbann_1_1data__reader__multi__images.html#afb8adef1f9ac6723d71ae5afc29b01ec", null ],

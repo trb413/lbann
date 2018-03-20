@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">19cb3a1-ci345008449</span>
+   &#160;<span id="projectnumber">v0.93-327-g29aac98-ci356095602</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -190,7 +190,7 @@ $(document).ready(function(){initNavTree('base_8hpp_source.html','');});
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  }</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39">  106</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39">pool_mode</a> {<a class="code" href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39a2ffe4e77325d9a7152f7086ea7aa5114">max</a>, <a class="code" href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39a6927a3a7218a3195858411433ec20a21">average</a>, <a class="code" href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39ad91c68878ae16f6dfcd4e1551c33cdd1">average_no_pad</a>};</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39">  106</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39">pool_mode</a> {<a class="code" href="base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dafedb2d84cafe20862cb4399751a8a7e3">invalid</a>, <a class="code" href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39a2ffe4e77325d9a7152f7086ea7aa5114">max</a>, <a class="code" href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39a6927a3a7218a3195858411433ec20a21">average</a>, <a class="code" href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39ad91c68878ae16f6dfcd4e1551c33cdd1">average_no_pad</a>};</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;std::string <a class="code" href="base_8hpp.html#af3cdcb8265717e1115135deb3618e5dd">get_pool_mode_name</a>(<a class="code" href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39">pool_mode</a> m);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
@@ -225,33 +225,44 @@ $(document).ready(function(){initNavTree('base_8hpp_source.html','');});
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;}  <span class="comment">// namespace lbann</span></div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="base_8hpp.html#aa5a078e4333b551f498feb743c5d3fc9">  154</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> __attribute__((used)) <a class="code" href="base_8hpp.html#aa5a078e4333b551f498feb743c5d3fc9">_display_matrix</a>(<a class="code" href="base_8hpp.html#ab0521857710cde712fba9cf015b61309">ElMat</a> *m, const <span class="keywordtype">char</span> *name) {</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;DISPLAY MATRIX: &quot;</span> &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot; = &quot;</span> &lt;&lt; m-&gt;Height() &lt;&lt; <span class="stringliteral">&quot; x &quot;</span> &lt;&lt; m-&gt;Width() &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;}</div>
-<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="base_8hpp.html#abdda65d57f990d20b0c11c6f64390c57">  157</a></span>&#160;<span class="preprocessor">#define DISPLAY_MATRIX(x) _display_matrix(x, #x);</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">// FIXME</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">#if 1</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor"></span><span class="comment">// __FILE__</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="base_8hpp.html#a156fd6dffd62306e07b5b77739680688">  162</a></span>&#160;<span class="preprocessor">#define log_msg(...) {\</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">  char str[256];\</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">  sprintf(str, __VA_ARGS__);\</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">  std::cout &lt;&lt; &quot;[&quot; &lt;&lt; m_comm-&gt;get_model_rank() &lt;&lt; &quot;.&quot; &lt;&lt; m_comm-&gt;get_rank_in_model() &lt;&lt; &quot;][&quot; &lt;&lt; __FUNCTION__ &lt;&lt; &quot;][Line &quot; &lt;&lt; __LINE__ &lt;&lt; &quot;]&quot; &lt;&lt; str &lt;&lt; std::endl; \</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">  }</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="base_8hpp.html#a1d689d1e903c28393b0c0d9bb1ad398a">  167</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define log_simple_msg(...) {\</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">  char str[256];\</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">  sprintf(str, __VA_ARGS__);\</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">  std::cout &lt;&lt; &quot;[&quot; &lt;&lt; __FUNCTION__ &lt;&lt; &quot;][Line &quot; &lt;&lt; __LINE__ &lt;&lt; &quot;]&quot; &lt;&lt; str &lt;&lt; std::endl; \</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">  }</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define log_msg(...)</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define log_simple_msg(...)</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="base_8hpp.html#a78b291de8c80b35c360c22d46d44498a">  177</a></span>&#160;<span class="preprocessor">#define LBANN_MAKE_STR(x) _LBANN_MAKE_STR(x)</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="base_8hpp.html#a6c9ce6017d9407fba55bd338e1412b39">  178</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _LBANN_MAKE_STR(x) #x</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">#endif // LBANN_BASE_HPP</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">// Macro to throw an LBANN exception</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="base_8hpp.html#a80b1d707117e968a6951b7222e4b2b87">  154</a></span>&#160;<span class="preprocessor">#define LBANN_ERROR(message)                                            \</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">  do {                                                                  \</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">    std::stringstream ss_LBANN_ERROR;                                   \</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">    ss_LBANN_ERROR &lt;&lt; &quot;LBANN error&quot;                                     \</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">                   &lt;&lt; &quot; (&quot; &lt;&lt; __FILE__ &lt;&lt; &quot;:&quot; &lt;&lt; __LINE__ &lt;&lt; &quot;)&quot;        \</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">                   &lt;&lt; &quot;: &quot; &lt;&lt; message;                                  \</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">    throw lbann::lbann_exception(ss_LBANN_ERROR.str());                 \</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">  } while(0)</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="base_8hpp.html#aa5a078e4333b551f498feb743c5d3fc9">  165</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> __attribute__((used)) <a class="code" href="base_8hpp.html#aa5a078e4333b551f498feb743c5d3fc9">_display_matrix</a>(<a class="code" href="base_8hpp.html#ab0521857710cde712fba9cf015b61309">ElMat</a> *m, const <span class="keywordtype">char</span> *name) {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  std::cout &lt;&lt; <span class="stringliteral">&quot;DISPLAY MATRIX: &quot;</span> &lt;&lt; name &lt;&lt; <span class="stringliteral">&quot; = &quot;</span> &lt;&lt; m-&gt;Height() &lt;&lt; <span class="stringliteral">&quot; x &quot;</span> &lt;&lt; m-&gt;Width() &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="base_8hpp.html#abdda65d57f990d20b0c11c6f64390c57">  168</a></span>&#160;<span class="preprocessor">#define DISPLAY_MATRIX(x) _display_matrix(x, #x);</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">// FIXME</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#if 1</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor"></span><span class="comment">// __FILE__</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno"><a class="line" href="base_8hpp.html#a156fd6dffd62306e07b5b77739680688">  173</a></span>&#160;<span class="preprocessor">#define log_msg(...) {\</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor">  char str[256];\</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="preprocessor">  sprintf(str, __VA_ARGS__);\</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">  std::cout &lt;&lt; &quot;[&quot; &lt;&lt; m_comm-&gt;get_model_rank() &lt;&lt; &quot;.&quot; &lt;&lt; m_comm-&gt;get_rank_in_model() &lt;&lt; &quot;][&quot; &lt;&lt; __FUNCTION__ &lt;&lt; &quot;][Line &quot; &lt;&lt; __LINE__ &lt;&lt; &quot;]&quot; &lt;&lt; str &lt;&lt; std::endl; \</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor">  }</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno"><a class="line" href="base_8hpp.html#a1d689d1e903c28393b0c0d9bb1ad398a">  178</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define log_simple_msg(...) {\</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="preprocessor">  char str[256];\</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">  sprintf(str, __VA_ARGS__);\</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">  std::cout &lt;&lt; &quot;[&quot; &lt;&lt; __FUNCTION__ &lt;&lt; &quot;][Line &quot; &lt;&lt; __LINE__ &lt;&lt; &quot;]&quot; &lt;&lt; str &lt;&lt; std::endl; \</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">  }</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define log_msg(...)</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define log_simple_msg(...)</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="base_8hpp.html#a78b291de8c80b35c360c22d46d44498a">  188</a></span>&#160;<span class="preprocessor">#define LBANN_MAKE_STR(x) _LBANN_MAKE_STR(x)</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="base_8hpp.html#a6c9ce6017d9407fba55bd338e1412b39">  189</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _LBANN_MAKE_STR(x) #x</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#endif // LBANN_BASE_HPP</span></div>
 <div class="ttc" id="base_8hpp_html_a6fe2af900f785594ffdbf1e90816a4d3"><div class="ttname"><a href="base_8hpp.html#a6fe2af900f785594ffdbf1e90816a4d3">RowSumMat</a></div><div class="ttdeci">MCStarMat RowSumMat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00057">base.hpp:57</a></div></div>
 <div class="ttc" id="base_8hpp_html_a4bb44b4dc43ffb6dc862bca1b4cef243"><div class="ttname"><a href="base_8hpp.html#a4bb44b4dc43ffb6dc862bca1b4cef243">BlockMat</a></div><div class="ttdeci">El::BlockMatrix&lt; lbann::DataType &gt; BlockMat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00045">base.hpp:45</a></div></div>
 <div class="ttc" id="base_8hpp_html_a3266f5ac18504bbadea983c109566867"><div class="ttname"><a href="base_8hpp.html#a3266f5ac18504bbadea983c109566867">EvalType</a></div><div class="ttdeci">double EvalType</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00063">base.hpp:63</a></div></div>
@@ -302,14 +313,14 @@ $(document).ready(function(){initNavTree('base_8hpp_source.html','');});
 <div class="ttc" id="base_8hpp_html_af76c86c7b2798091bc0864a0b81f1e0da41478dbc562bc2cdaa328e2fa04558b2"><div class="ttname"><a href="base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0da41478dbc562bc2cdaa328e2fa04558b2">matrix_format::STAR_STAR</a></div></div>
 <div class="ttc" id="base_8hpp_html_ad2de3ea470198626d8153a99bf4e6325"><div class="ttname"><a href="base_8hpp.html#ad2de3ea470198626d8153a99bf4e6325">VCStarMat</a></div><div class="ttdeci">El::DistMatrix&lt; lbann::DataType, El::VC, El::STAR &gt; VCStarMat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00050">base.hpp:50</a></div></div>
 <div class="ttc" id="namespacelbann_html_a02f197bc772ef04f1ac51eb191a02cab"><div class="ttname"><a href="namespacelbann.html#a02f197bc772ef04f1ac51eb191a02cab">lbann::endsWith</a></div><div class="ttdeci">static bool endsWith(const std::string mainStr, const std::string &amp;toMatch)</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00142">base.hpp:142</a></div></div>
-<div class="ttc" id="base_8hpp_html_aa5a078e4333b551f498feb743c5d3fc9"><div class="ttname"><a href="base_8hpp.html#aa5a078e4333b551f498feb743c5d3fc9">_display_matrix</a></div><div class="ttdeci">static void _display_matrix(ElMat *m, const char *name)</div><div class="ttdoc">Print the dimensions and name of a Elemental matrix. </div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00154">base.hpp:154</a></div></div>
+<div class="ttc" id="base_8hpp_html_aa5a078e4333b551f498feb743c5d3fc9"><div class="ttname"><a href="base_8hpp.html#aa5a078e4333b551f498feb743c5d3fc9">_display_matrix</a></div><div class="ttdeci">static void _display_matrix(ElMat *m, const char *name)</div><div class="ttdoc">Print the dimensions and name of a Elemental matrix. </div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00165">base.hpp:165</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_eb8329679e609af11719ceffa3ff5139.html">include</a></li><li class="navelem"><a class="el" href="dir_ae19bb3c4b74b705a5918893bf9adbdd.html">lbann</a></li><li class="navelem"><a class="el" href="base_8hpp.html">base.hpp</a></li>
-    <li class="footer">Generated on Thu Feb 22 2018 22:02:59 for LBANN by
+    <li class="footer">Generated on Tue Mar 20 2018 22:28:03 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

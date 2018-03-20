@@ -32,6 +32,7 @@ var classlbann_1_1optimizer =
     [ "m_gradient", "classlbann_1_1optimizer.html#a3df20cb0ae2b60430ad4fd235d66c12e", null ],
     [ "m_gradient_allreduce_finished", "classlbann_1_1optimizer.html#a4d332551d05e245ad3f862653b5af65a", null ],
     [ "m_gradient_allreduce_needed", "classlbann_1_1optimizer.html#a2dc18dcc3cf9510947304c3c5d059eb0", null ],
+    [ "m_gradient_allreduce_req", "classlbann_1_1optimizer.html#a851681b39c34a3439a9838c07e84b87c", null ],
     [ "m_gradient_allreduce_started", "classlbann_1_1optimizer.html#ac77740a916f397600efae0c03bc5a045", null ],
     [ "m_gradient_sources", "classlbann_1_1optimizer.html#aadfa322a683c2b826d0fae5f809298df", null ],
     [ "m_gradient_staging", "classlbann_1_1optimizer.html#a92cd058d4f9fc8162d36d52461a96df2", null ],

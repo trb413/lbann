@@ -34,7 +34,7 @@ var classlbann_1_1weights =
     [ "setup", "classlbann_1_1weights.html#aacf5c30b815e2f1c47a33043e440ed65", null ],
     [ "setup", "classlbann_1_1weights.html#a32a8395709a5238ca93d4b4f102cdc12", null ],
     [ "setup_gpu", "classlbann_1_1weights.html#a7137725a835a37ded1a5ad7f739224a7", null ],
-    [ "write_proto", "classlbann_1_1weights.html#a8da7d5c1229dd57722cb9327f6044d4e", null ],
+    [ "write_proto", "classlbann_1_1weights.html#aae00426e481379cea493017511287230", null ],
     [ "optimizer", "classlbann_1_1weights.html#afe38b5936c7fe885023474dd92c72c67", null ],
     [ "m_comm", "classlbann_1_1weights.html#a223e8907034888392548ae901222b39c", null ],
     [ "m_cudnn", "classlbann_1_1weights.html#a873e8c14998915e442d03b8dd7d2fdf7", null ],

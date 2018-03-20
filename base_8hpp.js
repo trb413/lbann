@@ -3,6 +3,7 @@ var base_8hpp =
     [ "CUtility", "classlbann_1_1CUtility.html", "classlbann_1_1CUtility" ],
     [ "_LBANN_MAKE_STR", "base_8hpp.html#a6c9ce6017d9407fba55bd338e1412b39", null ],
     [ "DISPLAY_MATRIX", "base_8hpp.html#abdda65d57f990d20b0c11c6f64390c57", null ],
+    [ "LBANN_ERROR", "base_8hpp.html#a80b1d707117e968a6951b7222e4b2b87", null ],
     [ "LBANN_MAKE_STR", "base_8hpp.html#a78b291de8c80b35c360c22d46d44498a", null ],
     [ "log_msg", "base_8hpp.html#a156fd6dffd62306e07b5b77739680688", null ],
     [ "log_simple_msg", "base_8hpp.html#a1d689d1e903c28393b0c0d9bb1ad398a", null ],
@@ -46,6 +47,7 @@ var base_8hpp =
       [ "invalid", "base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dafedb2d84cafe20862cb4399751a8a7e3", null ]
     ] ],
     [ "pool_mode", "base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39", [
+      [ "invalid", "base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39afedb2d84cafe20862cb4399751a8a7e3", null ],
       [ "max", "base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39a2ffe4e77325d9a7152f7086ea7aa5114", null ],
       [ "average", "base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39a6927a3a7218a3195858411433ec20a21", null ],
       [ "average_no_pad", "base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39ad91c68878ae16f6dfcd4e1551c33cdd1", null ]

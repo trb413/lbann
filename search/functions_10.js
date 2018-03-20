@@ -1,11 +1,12 @@
 var searchData=
 [
+  ['r2_5fmetric',['r2_metric',['../classlbann_1_1r2__metric.html#a9c6bffbb4724c77a8e6f8b1a2e7b27c7',1,'lbann::r2_metric::r2_metric(lbann_comm *comm)'],['../classlbann_1_1r2__metric.html#a42a125bad0a3ba5e6b229d89b893d3e6',1,'lbann::r2_metric::r2_metric(const r2_metric &amp;other)=default']]],
   ['rabenseifner_5fallreduce',['rabenseifner_allreduce',['../classlbann_1_1lbann__comm.html#a925fcf1c15cb8ff10daed1dc1faed9ac',1,'lbann::lbann_comm']]],
   ['read_5fbytes',['read_bytes',['../classlbann_1_1persist.html#af24f635f634c8cf30cf53a0e90ec641b',1,'lbann::persist::read_bytes()'],['../namespacelbann.html#a85385e2a9e058b6720300b4cbdd2b1d0',1,'lbann::read_bytes()']]],
   ['read_5fdatatype',['read_datatype',['../classlbann_1_1persist.html#a1e84eff891affad6001f3c5fa803cae2',1,'lbann::persist']]],
   ['read_5fdistmat',['read_distmat',['../classlbann_1_1persist.html#aa98be93f33b510e5b506b61de6bd79bd',1,'lbann::persist::read_distmat()'],['../namespacelbann.html#a0306ed35d6d90cf4fbdce7a72ad62ca7',1,'lbann::read_distmat()']]],
   ['read_5fdouble',['read_double',['../classlbann_1_1persist.html#ae3a0b96ece72901bb0a05d26a4eb4791',1,'lbann::persist::read_double()'],['../namespacelbann.html#a66f98f36cf54dca622f1186309961dd4',1,'lbann::read_double()']]],
-  ['read_5ffiles',['read_files',['../classlbann_1_1data__store__imagenet.html#a011a809215bdec47bdcd438c45115a34',1,'lbann::data_store_imagenet::read_files()'],['../classlbann_1_1data__store__merge__samples.html#ad15d27f9e02493f06542e8ef95c0d9e4',1,'lbann::data_store_merge_samples::read_files()']]],
+  ['read_5ffiles',['read_files',['../classlbann_1_1data__store__image.html#a146874a68c24213f5509efb9727cb6e5',1,'lbann::data_store_image::read_files()'],['../classlbann_1_1data__store__imagenet.html#a70cfd8f529aad8d66993000da7350ec5',1,'lbann::data_store_imagenet::read_files()'],['../classlbann_1_1data__store__multi__images.html#a8ce8ccf3c7b0d19adfb838108bec075b',1,'lbann::data_store_multi_images::read_files()']]],
   ['read_5ffloat',['read_float',['../classlbann_1_1persist.html#ac5e659a6612e5f2911e195fc1b6c045b',1,'lbann::persist::read_float()'],['../namespacelbann.html#acd0595f8c31773a3a46f477a83e4c0f3',1,'lbann::read_float()']]],
   ['read_5fin_5fprototext_5ffiles',['read_in_prototext_files',['../classlbann_1_1protobuf__utils.html#aea77d842556583ff26d6abf92cd66c05',1,'lbann::protobuf_utils']]],
   ['read_5fint32_5fcontig',['read_int32_contig',['../classlbann_1_1persist.html#a2944c32f6634223c0902b38a697a0957',1,'lbann::persist::read_int32_contig()'],['../namespacelbann.html#acb5b0f1b30c9ab2fba700bb953515810',1,'lbann::read_int32_contig()']]],

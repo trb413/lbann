@@ -58,6 +58,7 @@ var dir_86ea002d1bbf4ba4531b8a232bdd1c36 =
       [ "lbann_callback_adaptive_learning_rate", "classlbann_1_1lbann__callback__adaptive__learning__rate.html", "classlbann_1_1lbann__callback__adaptive__learning__rate" ],
       [ "lbann_callback_drop_fixed_learning_rate", "classlbann_1_1lbann__callback__drop__fixed__learning__rate.html", "classlbann_1_1lbann__callback__drop__fixed__learning__rate" ],
       [ "lbann_callback_linear_growth_learning_rate", "classlbann_1_1lbann__callback__linear__growth__learning__rate.html", "classlbann_1_1lbann__callback__linear__growth__learning__rate" ],
+      [ "lbann_callback_poly_learning_rate", "classlbann_1_1lbann__callback__poly__learning__rate.html", "classlbann_1_1lbann__callback__poly__learning__rate" ],
       [ "lbann_callback_optimizerwise_adaptive_learning_rate", "classlbann_1_1lbann__callback__optimizerwise__adaptive__learning__rate.html", "classlbann_1_1lbann__callback__optimizerwise__adaptive__learning__rate" ]
     ] ],
     [ "callback_ltfb.hpp", "callback__ltfb_8hpp.html", [

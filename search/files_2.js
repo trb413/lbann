@@ -27,6 +27,7 @@ var searchData=
   ['callback_5fdump_5fweights_2ehpp',['callback_dump_weights.hpp',['../callback__dump__weights_8hpp.html',1,'']]],
   ['callback_5fearly_5fstopping_2ecpp',['callback_early_stopping.cpp',['../callback__early__stopping_8cpp.html',1,'']]],
   ['callback_5fearly_5fstopping_2ehpp',['callback_early_stopping.hpp',['../callback__early__stopping_8hpp.html',1,'']]],
+  ['callback_5ffactory_2ecpp',['callback_factory.cpp',['../callback__factory_8cpp.html',1,'']]],
   ['callback_5fgradient_5fcheck_2ecpp',['callback_gradient_check.cpp',['../callback__gradient__check_8cpp.html',1,'']]],
   ['callback_5fgradient_5fcheck_2ehpp',['callback_gradient_check.hpp',['../callback__gradient__check_8hpp.html',1,'']]],
   ['callback_5fhang_2ehpp',['callback_hang.hpp',['../callback__hang_8hpp.html',1,'']]],

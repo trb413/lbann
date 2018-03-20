@@ -1,5 +1,14 @@
 var dir_523139c6bbc1b09c0efca9eafbd648aa =
 [
+    [ "boolean_accuracy.hpp", "boolean__accuracy_8hpp.html", [
+      [ "boolean_accuracy_metric", "classlbann_1_1boolean__accuracy__metric.html", "classlbann_1_1boolean__accuracy__metric" ]
+    ] ],
+    [ "boolean_false_negatives.hpp", "boolean__false__negatives_8hpp.html", [
+      [ "boolean_false_negatives_metric", "classlbann_1_1boolean__false__negatives__metric.html", "classlbann_1_1boolean__false__negatives__metric" ]
+    ] ],
+    [ "boolean_false_positives.hpp", "boolean__false__positives_8hpp.html", [
+      [ "boolean_false_positives_metric", "classlbann_1_1boolean__false__positives__metric.html", "classlbann_1_1boolean__false__positives__metric" ]
+    ] ],
     [ "categorical_accuracy.hpp", "categorical__accuracy_8hpp.html", [
       [ "categorical_accuracy_metric", "classlbann_1_1categorical__accuracy__metric.html", "classlbann_1_1categorical__accuracy__metric" ]
     ] ],
@@ -16,6 +25,9 @@ var dir_523139c6bbc1b09c0efca9eafbd648aa =
     ] ],
     [ "pearson_correlation.hpp", "pearson__correlation_8hpp.html", [
       [ "pearson_correlation_metric", "classlbann_1_1pearson__correlation__metric.html", "classlbann_1_1pearson__correlation__metric" ]
+    ] ],
+    [ "r2.hpp", "r2_8hpp.html", [
+      [ "r2_metric", "classlbann_1_1r2__metric.html", "classlbann_1_1r2__metric" ]
     ] ],
     [ "top_k_categorical_accuracy.hpp", "top__k__categorical__accuracy_8hpp.html", [
       [ "top_k_categorical_accuracy_metric", "classlbann_1_1top__k__categorical__accuracy__metric.html", "classlbann_1_1top__k__categorical__accuracy__metric" ]

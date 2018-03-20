@@ -25,6 +25,7 @@ var classlbann_1_1Layer =
     [ "get_child_layers", "classlbann_1_1Layer.html#aa0058c8ec4913efc3e4de5d6f61eb8db", null ],
     [ "get_child_layers", "classlbann_1_1Layer.html#aaebd8870a41b06f8f6f94c93dd0d80b6", null ],
     [ "get_child_names", "classlbann_1_1Layer.html#a34312a12162354a4acb1997f5e9f63d7", null ],
+    [ "get_cudnn_manager", "classlbann_1_1Layer.html#adea2db83fee14177f4f86d713d81c7db", null ],
     [ "get_data_layout", "classlbann_1_1Layer.html#a5dfb66e81fc085997402a5e2241316bd", null ],
     [ "get_data_layout_string", "classlbann_1_1Layer.html#a2f302cabbc39769b1a029dfe2af0825c", null ],
     [ "get_description", "classlbann_1_1Layer.html#a287d4179a1197f30e97c600af6fb0551", null ],

@@ -6,6 +6,8 @@ var searchData=
   ['l2_2ehpp',['l2.hpp',['../l2_8hpp.html',1,'']]],
   ['layer_2ecpp',['layer.cpp',['../layer_8cpp.html',1,'']]],
   ['layer_2ehpp',['layer.hpp',['../layer_8hpp.html',1,'']]],
+  ['layer_5ffactory_2ecpp',['layer_factory.cpp',['../layer__factory_8cpp.html',1,'']]],
+  ['layer_5fgraph_5ffactory_2ecpp',['layer_graph_factory.cpp',['../layer__graph__factory_8cpp.html',1,'']]],
   ['layers_2edox',['layers.dox',['../layers_8dox.html',1,'']]],
   ['lbann_2ehpp',['lbann.hpp',['../lbann_8hpp.html',1,'']]],
   ['lbann_5fdata_5fgenerator_2ecpp',['lbann_data_generator.cpp',['../lbann__data__generator_8cpp.html',1,'']]],

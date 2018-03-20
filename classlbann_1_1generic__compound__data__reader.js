@@ -9,6 +9,5 @@ var classlbann_1_1generic__compound__data__reader =
     [ "set_rank", "classlbann_1_1generic__compound__data__reader.html#a85860f9ae7e38ae98421219e41b5f829", null ],
     [ "set_role", "classlbann_1_1generic__compound__data__reader.html#a19302078a484337e86b1549b48ef13ad", null ],
     [ "set_validation_percent", "classlbann_1_1generic__compound__data__reader.html#a6b8288801972561d9758337c61eb39b8", null ],
-    [ "swap_role", "classlbann_1_1generic__compound__data__reader.html#ad5e610ad67d6aa23794606670ca53fc6", null ],
     [ "m_data_readers", "classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b", null ]
 ];

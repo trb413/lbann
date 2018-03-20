@@ -7,16 +7,24 @@ var hierarchy =
     ] ],
     [ "layer_header", "structlayer__header.html", null ],
     [ "lbann::adam::packing_header", "structlbann_1_1adam_1_1packing__header.html", null ],
+    [ "lbann::Al::dummy_backend", "classlbann_1_1Al_1_1dummy__backend.html", null ],
+    [ "lbann::Al::request", "structlbann_1_1Al_1_1request.html", null ],
     [ "lbann::cudnn::cudnn_manager", "classlbann_1_1cudnn_1_1cudnn__manager.html", null ],
     [ "lbann::cudnn::matrix", "classlbann_1_1cudnn_1_1matrix.html", null ],
     [ "lbann::CUtility", "classlbann_1_1CUtility.html", null ],
     [ "lbann::data_buffer", "classlbann_1_1data__buffer.html", null ],
+    [ "lbann::data_store_image::Triple", "structlbann_1_1data__store__image_1_1Triple.html", null ],
     [ "lbann::dataset", "classlbann_1_1dataset.html", null ],
     [ "lbann::fetch_data_functor", "classlbann_1_1fetch__data__functor.html", null ],
     [ "lbann::generic_data_reader::packing_header", "structlbann_1_1generic__data__reader_1_1packing__header.html", null ],
     [ "lbann::generic_data_store", "classlbann_1_1generic__data__store.html", [
-      [ "lbann::data_store_imagenet", "classlbann_1_1data__store__imagenet.html", null ],
-      [ "lbann::data_store_merge_samples", "classlbann_1_1data__store__merge__samples.html", null ]
+      [ "lbann::data_store_image", "classlbann_1_1data__store__image.html", [
+        [ "lbann::data_store_imagenet", "classlbann_1_1data__store__imagenet.html", [
+          [ "lbann::data_store_multi_images", "classlbann_1_1data__store__multi__images.html", null ]
+        ] ]
+      ] ],
+      [ "lbann::data_store_merge_samples", "classlbann_1_1data__store__merge__samples.html", null ],
+      [ "lbann::data_store_pilot2_molecular", "classlbann_1_1data__store__pilot2__molecular.html", null ]
     ] ],
     [ "lbann::generic_input_layer::dataset_header", "structlbann_1_1generic__input__layer_1_1dataset__header.html", null ],
     [ "lbann::generic_io_buffer", "classlbann_1_1generic__io__buffer.html", [
@@ -103,6 +111,7 @@ var hierarchy =
         [ "lbann::lbann_callback_drop_fixed_learning_rate", "classlbann_1_1lbann__callback__drop__fixed__learning__rate.html", null ],
         [ "lbann::lbann_callback_linear_growth_learning_rate", "classlbann_1_1lbann__callback__linear__growth__learning__rate.html", null ],
         [ "lbann::lbann_callback_optimizerwise_adaptive_learning_rate", "classlbann_1_1lbann__callback__optimizerwise__adaptive__learning__rate.html", null ],
+        [ "lbann::lbann_callback_poly_learning_rate", "classlbann_1_1lbann__callback__poly__learning__rate.html", null ],
         [ "lbann::lbann_callback_step_learning_rate", "classlbann_1_1lbann__callback__step__learning__rate.html", null ]
       ] ],
       [ "lbann::lbann_callback_ltfb", "classlbann_1_1lbann__callback__ltfb.html", null ],
@@ -147,6 +156,7 @@ var hierarchy =
           [ "lbann::imagenet_reader_patches", "classlbann_1_1imagenet__reader__patches.html", null ],
           [ "lbann::mnist_reader", "classlbann_1_1mnist__reader.html", null ]
         ] ],
+        [ "lbann::mesh_reader", "classlbann_1_1mesh__reader.html", null ],
         [ "lbann::numpy_reader", "classlbann_1_1numpy__reader.html", null ],
         [ "lbann::pilot2_molecular_reader", "classlbann_1_1pilot2__molecular__reader.html", null ]
       ] ]
@@ -158,10 +168,14 @@ var hierarchy =
     [ "lbann::lbann_quantizer::adaptive_thresholds", "structlbann_1_1lbann__quantizer_1_1adaptive__thresholds.html", null ],
     [ "lbann::lbann_summary", "classlbann_1_1lbann__summary.html", null ],
     [ "lbann::metric", "classlbann_1_1metric.html", [
+      [ "lbann::boolean_accuracy_metric", "classlbann_1_1boolean__accuracy__metric.html", null ],
+      [ "lbann::boolean_false_negatives_metric", "classlbann_1_1boolean__false__negatives__metric.html", null ],
+      [ "lbann::boolean_false_positives_metric", "classlbann_1_1boolean__false__positives__metric.html", null ],
       [ "lbann::categorical_accuracy_metric", "classlbann_1_1categorical__accuracy__metric.html", null ],
       [ "lbann::mean_absolute_deviation_metric", "classlbann_1_1mean__absolute__deviation__metric.html", null ],
       [ "lbann::mean_squared_error_metric", "classlbann_1_1mean__squared__error__metric.html", null ],
       [ "lbann::pearson_correlation_metric", "classlbann_1_1pearson__correlation__metric.html", null ],
+      [ "lbann::r2_metric", "classlbann_1_1r2__metric.html", null ],
       [ "lbann::top_k_categorical_accuracy_metric", "classlbann_1_1top__k__categorical__accuracy__metric.html", null ]
     ] ],
     [ "lbann::metric_statistics", "structlbann_1_1metric__statistics.html", null ],
@@ -213,7 +227,6 @@ var hierarchy =
     [ "lbann::stack_profiler", "classlbann_1_1stack__profiler.html", null ],
     [ "lbann::SystemParams", "classlbann_1_1SystemParams.html", null ],
     [ "lbann::TrainingParams", "classlbann_1_1TrainingParams.html", null ],
-    [ "lbann::Triple", "structlbann_1_1Triple.html", null ],
     [ "lbann::update_data_reader_functor", "classlbann_1_1update__data__reader__functor.html", null ],
     [ "lbann::weights", "classlbann_1_1weights.html", null ],
     [ "lbann::weights_initializer", "classlbann_1_1weights__initializer.html", [

@@ -2,6 +2,7 @@ var searchData=
 [
   ['lbann_5fenable_5fsigmoid_5fcutoff',['LBANN_ENABLE_SIGMOID_CUTOFF',['../sigmoid_8hpp.html#aa73ba5242e3ed7252918d32d93cea2aa',1,'sigmoid.hpp']]],
   ['lbann_5fenable_5fsoftmax_5fcutoff',['LBANN_ENABLE_SOFTMAX_CUTOFF',['../softmax_8hpp.html#ad7dcb8920b73ae479d1afc9de5154c37',1,'softmax.hpp']]],
+  ['lbann_5ferror',['LBANN_ERROR',['../base_8hpp.html#a80b1d707117e968a6951b7222e4b2b87',1,'base.hpp']]],
   ['lbann_5fmake_5fstr',['LBANN_MAKE_STR',['../base_8hpp.html#a78b291de8c80b35c360c22d46d44498a',1,'base.hpp']]],
   ['lbann_5fproto',['LBANN_PROTO',['../Elemental__extensions_8hpp.html#a8696328e0a726a0b8bc4e71c720ae87f',1,'Elemental_extensions.hpp']]],
   ['lbann_5fproto_5fdouble',['LBANN_PROTO_DOUBLE',['../Elemental__extensions_8hpp.html#a1c4169a84c56c6233350847efb61e539',1,'Elemental_extensions.hpp']]],

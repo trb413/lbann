@@ -1,13 +1,9 @@
 var proto__common_8hpp =
 [
-    [ "add_layers", "proto__common_8hpp.html#a9f2da463ff51f297e7e42d3562d24e6c", null ],
     [ "expand_motifs", "proto__common_8hpp.html#a9454e517d698ec0960588364b9b42d6a", null ],
     [ "get_cmdline_overrides", "proto__common_8hpp.html#a46fd41f635ff8f352065adc85eb3d1df", null ],
     [ "has_motifs", "proto__common_8hpp.html#a9a9d7504db9e1b819fcddac197da3252", null ],
-    [ "init_callbacks", "proto__common_8hpp.html#a939ef874f853a8c1f7190e0153f54918", null ],
-    [ "init_data_readers", "proto__common_8hpp.html#a74f60f765908334042f5b5ec5054646e", null ],
-    [ "init_default_optimizer", "proto__common_8hpp.html#a935e63118a4f9227faa0bb15f9265a32", null ],
-    [ "init_model", "proto__common_8hpp.html#aa96ac3f3cab59f29f0442a7981e11263", null ],
+    [ "init_data_readers", "proto__common_8hpp.html#ae026850ba6e5698a7a922c6340458027", null ],
     [ "print_help", "proto__common_8hpp.html#a403b98ced142a0afa3b939e7af1095b0", null ],
     [ "print_parameters", "proto__common_8hpp.html#adf83ffea572cec61b853b61aa68bea27", null ],
     [ "read_prototext_file", "proto__common_8hpp.html#addbf693bd6d4a399daa599ba03509569", null ],

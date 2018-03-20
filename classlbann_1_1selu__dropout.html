@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">19cb3a1-ci345008449</span>
+   &#160;<span id="projectnumber">v0.93-327-g29aac98-ci356095602</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -111,7 +111,7 @@ Collaboration diagram for lbann::selu_dropout&lt; T_layout &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1selu__dropout__coll__graph.png" border="0" usemap="#lbann_1_1selu__dropout_3_01T__layout_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="lbann_1_1selu__dropout_3_01T__layout_01_4_coll__map" id="lbann_1_1selu__dropout_3_01T__layout_01_4_coll__map">
-<area shape="rect" id="node2" href="classlbann_1_1regularizer__layer.html" title="lbann::regularizer\l_layer" alt="" coords="139,371,260,413"/><area shape="rect" id="node3" href="classlbann_1_1Layer.html" title="lbann::Layer" alt="" coords="153,293,247,320"/><area shape="rect" id="node4" href="classlbann_1_1lbann__comm.html" title="lbann::lbann_comm" alt="" coords="281,13,415,40"/><area shape="rect" id="node5" href="classlbann_1_1model.html" title="lbann::model" alt="" coords="152,203,248,229"/><area shape="rect" id="node6" href="classlbann_1_1optimizer.html" title="lbann::optimizer" alt="" coords="487,112,601,139"/><area shape="rect" id="node8" href="classlbann_1_1weights.html" title="lbann::weights" alt="" coords="589,203,696,229"/><area shape="rect" id="node9" href="classlbann_1_1weights__initializer.html" title="lbann::weights_initializer" alt="" coords="629,112,792,139"/><area shape="rect" id="node7" href="classlbann_1_1cudnn_1_1cudnn__manager.html" title="lbann::cudnn::cudnn\l_manager" alt="" coords="773,6,912,47"/><area shape="rect" id="node10" href="classlbann_1_1objective__function.html" title="lbann::objective_function" alt="" coords="133,112,299,139"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1regularizer__layer.html" title="lbann::regularizer\l_layer" alt="" coords="532,371,653,413"/><area shape="rect" id="node3" href="classlbann_1_1Layer.html" title="lbann::Layer" alt="" coords="546,293,640,320"/><area shape="rect" id="node4" href="classlbann_1_1lbann__comm.html" title="lbann::lbann_comm" alt="" coords="170,13,304,40"/><area shape="rect" id="node5" href="classlbann_1_1model.html" title="lbann::model" alt="" coords="545,203,641,229"/><area shape="rect" id="node6" href="classlbann_1_1optimizer.html" title="lbann::optimizer" alt="" coords="428,112,542,139"/><area shape="rect" id="node9" href="classlbann_1_1weights.html" title="lbann::weights" alt="" coords="334,203,441,229"/><area shape="rect" id="node10" href="classlbann_1_1weights__initializer.html" title="lbann::weights_initializer" alt="" coords="24,112,188,139"/><area shape="rect" id="node7" href="classlbann_1_1cudnn_1_1cudnn__manager.html" title="lbann::cudnn::cudnn\l_manager" alt="" coords="668,6,806,47"/><area shape="rect" id="node8" href="structlbann_1_1Al_1_1request.html" title="lbann::Al::request" alt="" coords="414,13,537,40"/><area shape="rect" id="node11" href="classlbann_1_1objective__function.html" title="lbann::objective_function" alt="" coords="818,112,984,139"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -286,6 +286,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad48ebb40ff4418494bf1c86d9e02b21d inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20c83ddb7dba985b6b849bd519c22a7a inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a20c83ddb7dba985b6b849bd519c22a7a">get_local_error_signals</a> (int parent_index=0) const </td></tr>
 <tr class="separator:a20c83ddb7dba985b6b849bd519c22a7a inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adea2db83fee14177f4f86d713d81c7db inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1cudnn_1_1cudnn__manager.html">cudnn::cudnn_manager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#adea2db83fee14177f4f86d713d81c7db">get_cudnn_manager</a> ()</td></tr>
+<tr class="separator:adea2db83fee14177f4f86d713d81c7db inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -601,7 +603,7 @@ template&lt;data_layout T_layout&gt; </div>
 <div class="ttc" id="classlbann_1_1Layer_html_a82827edc5e869960144f3ccb2172bfcd"><div class="ttname"><a href="classlbann_1_1Layer.html#a82827edc5e869960144f3ccb2172bfcd">lbann::Layer::get_local_prev_error_signals</a></div><div class="ttdeci">Mat &amp; get_local_prev_error_signals(int child_index=0)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8cpp_source.html#l00435">layer.cpp:435</a></div></div>
 <div class="ttc" id="classlbann_1_1selu__dropout_html_a52bd21583da68ba4e8a374fab259a3ef"><div class="ttname"><a href="classlbann_1_1selu__dropout.html#a52bd21583da68ba4e8a374fab259a3ef">lbann::selu_dropout::m_a</a></div><div class="ttdeci">DataType m_a</div><div class="ttdef"><b>Definition:</b> <a href="selu__dropout_8hpp_source.html#l00160">selu_dropout.hpp:160</a></div></div>
 <div class="ttc" id="classlbann_1_1selu__dropout_html_a31aaadbc51d78673a84390b48d4e5950"><div class="ttname"><a href="classlbann_1_1selu__dropout.html#a31aaadbc51d78673a84390b48d4e5950">lbann::selu_dropout::m_mask</a></div><div class="ttdeci">AbsDistMat * m_mask</div><div class="ttdef"><b>Definition:</b> <a href="selu__dropout_8hpp_source.html#l00166">selu_dropout.hpp:166</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_a3d9315e99574166f2f33e37b572021d2"><div class="ttname"><a href="classlbann_1_1Layer.html#a3d9315e99574166f2f33e37b572021d2">lbann::Layer::m_model</a></div><div class="ttdeci">model * m_model</div><div class="ttdef"><b>Definition:</b> <a href="layer_8hpp_source.html#l00416">layer.hpp:416</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a3d9315e99574166f2f33e37b572021d2"><div class="ttname"><a href="classlbann_1_1Layer.html#a3d9315e99574166f2f33e37b572021d2">lbann::Layer::m_model</a></div><div class="ttdeci">model * m_model</div><div class="ttdef"><b>Definition:</b> <a href="layer_8hpp_source.html#l00419">layer.hpp:419</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -724,7 +726,7 @@ template&lt;data_layout T_layout&gt; </div>
 <div class="ttc" id="classlbann_1_1selu__dropout_html_a31aaadbc51d78673a84390b48d4e5950"><div class="ttname"><a href="classlbann_1_1selu__dropout.html#a31aaadbc51d78673a84390b48d4e5950">lbann::selu_dropout::m_mask</a></div><div class="ttdeci">AbsDistMat * m_mask</div><div class="ttdef"><b>Definition:</b> <a href="selu__dropout_8hpp_source.html#l00166">selu_dropout.hpp:166</a></div></div>
 <div class="ttc" id="classlbann_1_1selu__dropout_html_a456fa501b7df6b52701c1aa3639ebc42"><div class="ttname"><a href="classlbann_1_1selu__dropout.html#a456fa501b7df6b52701c1aa3639ebc42">lbann::selu_dropout::m_b</a></div><div class="ttdeci">DataType m_b</div><div class="ttdef"><b>Definition:</b> <a href="selu__dropout_8hpp_source.html#l00162">selu_dropout.hpp:162</a></div></div>
 <div class="ttc" id="base_8hpp_html_a9a697a504ae84010e7439ffec862b470"><div class="ttname"><a href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a></div><div class="ttdeci">El::AbstractDistMatrix&lt; lbann::DataType &gt; AbsDistMat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00043">base.hpp:43</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_a3d9315e99574166f2f33e37b572021d2"><div class="ttname"><a href="classlbann_1_1Layer.html#a3d9315e99574166f2f33e37b572021d2">lbann::Layer::m_model</a></div><div class="ttdeci">model * m_model</div><div class="ttdef"><b>Definition:</b> <a href="layer_8hpp_source.html#l00416">layer.hpp:416</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a3d9315e99574166f2f33e37b572021d2"><div class="ttname"><a href="classlbann_1_1Layer.html#a3d9315e99574166f2f33e37b572021d2">lbann::Layer::m_model</a></div><div class="ttdeci">model * m_model</div><div class="ttdef"><b>Definition:</b> <a href="layer_8hpp_source.html#l00419">layer.hpp:419</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1036,7 +1038,7 @@ template&lt;data_layout T_layout&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1selu__dropout.html">selu_dropout</a></li>
-    <li class="footer">Generated on Thu Feb 22 2018 22:03:04 for LBANN by
+    <li class="footer">Generated on Tue Mar 20 2018 22:28:08 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>
