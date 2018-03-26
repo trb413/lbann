@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-327-g29aac98-ci356095602</span>
+   &#160;<span id="projectnumber">v0.93-258-gb605c24-ci358649499</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -558,8 +558,8 @@ $(document).ready(function(){initNavTree('comm_8hpp_source.html','');});
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#ad1f146ae7337ece6266fd307944928e0">bytes_sent</a> += <span class="keyword">sizeof</span>(T) * send_count;</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    <a class="code" href="classlbann_1_1lbann__comm.html#afb99f57f7eafc0695bf28e6c26a8120f">bytes_received</a> += <span class="keyword">sizeof</span>(T) * recv_count;</div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;    El::mpi::SendRecv(snd, send_count, <a class="code" href="classlbann_1_1lbann__comm.html#a676b64be1b9429b85e8dac09728ba490">get_world_rank</a>(send_model, send_rank),</div>
-<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;                  rcv, recv_count, <a class="code" href="classlbann_1_1lbann__comm.html#a676b64be1b9429b85e8dac09728ba490">get_world_rank</a>(recv_model, recv_rank),</div>
-<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;                  <a class="code" href="classlbann_1_1lbann__comm.html#a8431a8ec85cc2a146d4fd0f579f7b73f">get_world_comm</a>());</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;                      rcv, recv_count, <a class="code" href="classlbann_1_1lbann__comm.html#a676b64be1b9429b85e8dac09728ba490">get_world_rank</a>(recv_model, recv_rank),</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;                      <a class="code" href="classlbann_1_1lbann__comm.html#a8431a8ec85cc2a146d4fd0f579f7b73f">get_world_comm</a>());</div>
 <div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;  }</div>
 <div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00584"></a><span class="lineno"><a class="line" href="classlbann_1_1lbann__comm.html#a61e8479f25d209be238f1b61115f7a0d">  584</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classlbann_1_1lbann__comm.html#a61e8479f25d209be238f1b61115f7a0d">sendrecv</a>(<span class="keyword">const</span> T *snd, <span class="keywordtype">int</span> send_count, <span class="keywordtype">int</span> send_model,</div>
@@ -1039,7 +1039,7 @@ $(document).ready(function(){initNavTree('comm_8hpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_eb8329679e609af11719ceffa3ff5139.html">include</a></li><li class="navelem"><a class="el" href="dir_ae19bb3c4b74b705a5918893bf9adbdd.html">lbann</a></li><li class="navelem"><a class="el" href="comm_8hpp.html">comm.hpp</a></li>
-    <li class="footer">Generated on Tue Mar 20 2018 22:28:03 for LBANN by
+    <li class="footer">Generated on Mon Mar 26 2018 23:07:38 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

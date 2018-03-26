@@ -17,7 +17,7 @@ var dir_2cd67b1c9ead8c95a9b97b48b5142b81 =
     [ "callback_imcomm.cpp", "callback__imcomm_8cpp.html", "callback__imcomm_8cpp" ],
     [ "callback_io.cpp", "callback__io_8cpp.html", null ],
     [ "callback_learning_rate.cpp", "callback__learning__rate_8cpp.html", null ],
-    [ "callback_ltfb.cpp", "callback__ltfb_8cpp.html", null ],
+    [ "callback_ltfb.cpp", "callback__ltfb_8cpp.html", "callback__ltfb_8cpp" ],
     [ "callback_print.cpp", "callback__print_8cpp.html", null ],
     [ "callback_save_images.cpp", "callback__save__images_8cpp.html", null ],
     [ "callback_save_model.cpp", "callback__save__model_8cpp.html", null ],

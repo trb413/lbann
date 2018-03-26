@@ -12,5 +12,6 @@ var classlbann_1_1relu__layer =
     [ "get_description", "classlbann_1_1relu__layer.html#a57d00fb2f9c90f5132ddea44d3ccc099", null ],
     [ "get_type", "classlbann_1_1relu__layer.html#afcf519aa5e19169c2b7a71aa0ee16aae", null ],
     [ "operator=", "classlbann_1_1relu__layer.html#a455500a9ee8e9fbef2db3d8943e65d7d", null ],
-    [ "setup_gpu", "classlbann_1_1relu__layer.html#a9426317aa741ab8a202ee52cf5250b59", null ]
+    [ "setup_gpu", "classlbann_1_1relu__layer.html#a9426317aa741ab8a202ee52cf5250b59", null ],
+    [ "setup_tensors", "classlbann_1_1relu__layer.html#a72a32f54a595f7c05a78f74c9b4f50b8", null ]
 ];
