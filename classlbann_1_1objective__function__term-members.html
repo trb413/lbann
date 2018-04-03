@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-258-gb605c24-ci358649499</span>
+   &#160;<span id="projectnumber">v0.93-291-gde6b4e0-ci361881065</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('classlbann_1_1objective__function__ter
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html#a134cf89caed45527bbe9d811a0b93dfc">compute_weight_regularization</a>()=0</td><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html">lbann::objective_function_term</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html#ae98a4ec173a602ad55d1df20dadd4cb9">copy</a>() const =0</td><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html">lbann::objective_function_term</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html#ad009c3cfbe1cf2fbb6cce015b16fdac5">differentiate</a>()=0</td><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html">lbann::objective_function_term</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html#aa97b05ee7d84ca39b58db604ad1bccb5">evaluate</a>()=0</td><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html">lbann::objective_function_term</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html#a7a82f2cdbc954655ac860896306aed0c">finish_evaluation</a>()=0</td><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html">lbann::objective_function_term</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html#a5f89b676a26a6b76ddc26563ac87beb9">get_comm</a>()</td><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html">lbann::objective_function_term</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">protected</span></td></tr>
   <tr><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html#a5c2fb11711327a6d438ac1947e268874">get_layer_pointers</a>() const </td><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html">lbann::objective_function_term</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html#a4d94169a832eac0739f2665c5ebcede0">get_weights_pointers</a>() const </td><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html">lbann::objective_function_term</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -115,13 +115,14 @@ $(document).ready(function(){initNavTree('classlbann_1_1objective__function__ter
   <tr><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html#a95735a71732a723220c3e84029154137">set_layer_pointers</a>(std::vector&lt; Layer * &gt; layers)</td><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html">lbann::objective_function_term</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html#a944163c380fbdb395ad300d15c79b50d">set_weights_pointers</a>(std::vector&lt; weights * &gt; w)</td><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html">lbann::objective_function_term</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html#a6c8dbdf18aac8676098189fb7b178e91">setup</a>(model &amp;m)</td><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html">lbann::objective_function_term</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html#ad95920d424b3c248a2124827971451df">~objective_function_term</a>()=default</td><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html">lbann::objective_function_term</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html#a0af4dfd71fb30e43d1ae7611172ad9b0">start_evaluation</a>()=0</td><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html">lbann::objective_function_term</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html#ad95920d424b3c248a2124827971451df">~objective_function_term</a>()=default</td><td class="entry"><a class="el" href="classlbann_1_1objective__function__term.html">lbann::objective_function_term</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 26 2018 23:07:49 for LBANN by
+    <li class="footer">Generated on Tue Apr 3 2018 22:41:34 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

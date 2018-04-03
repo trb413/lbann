@@ -7,6 +7,7 @@ var searchData=
   ['networkstr',['NetworkStr',['../classlbann_1_1NetworkParams.html#a8b503690c7475582b5a843f0959c3f2a',1,'lbann::NetworkParams']]],
   ['no_5flocal_5ftrans',['no_local_trans',['../structlbann_1_1lbann__comm_1_1allreduce__options.html#ad9890ae127412ee65a98cbdb02a4b143',1,'lbann::lbann_comm::allreduce_options']]],
   ['node_5fcomm',['node_comm',['../classlbann_1_1lbann__comm.html#a8aeb530ae4cedfa4d1141bb9c4704e6c',1,'lbann::lbann_comm']]],
+  ['null_5freq',['null_req',['../classlbann_1_1Al_1_1dummy__backend.html#a458ac4eb9f62b06984b4ef1b1eeb5851',1,'lbann::Al::dummy_backend']]],
   ['num_5fbits',['NUM_BITS',['../classlbann_1_1lbann__quantizer.html#a33ea17392f53b90e91aea1ffb7e11d68',1,'lbann::lbann_quantizer']]],
   ['num_5fbytes',['num_bytes',['../structlbann_1_1data__store__image_1_1Triple.html#ac1433e36775425f7aad96c4679713a6a',1,'lbann::data_store_image::Triple']]],
   ['num_5fcolors',['num_colors',['../classlbann_1_1lbann__callback__profiler.html#a48e38406712543f839dd7e5e840694e2',1,'lbann::lbann_callback_profiler']]],

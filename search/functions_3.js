@@ -42,7 +42,6 @@ var searchData=
   ['columnwise_5fsums_5fand_5fsqsums',['columnwise_sums_and_sqsums',['../namespacelbann.html#ab043d2f2f9dea0ee861aff3a38216b24',1,'lbann']]],
   ['compute_5fcnpy_5farray_5foffset',['compute_cnpy_array_offset',['../namespacelbann_1_1cnpy__utils.html#a39fd207d94d1333e6379c53423b6f1a1',1,'lbann::cnpy_utils']]],
   ['compute_5fgradients_5fcudnn',['compute_gradients_cudnn',['../classlbann_1_1base__convolution__layer.html#ae46e6a975c443792c606817878dc4446',1,'lbann::base_convolution_layer']]],
-  ['compute_5fgradients_5fdistconv',['compute_gradients_distconv',['../classlbann_1_1convolution__layer.html#ac7a44b09c07c3beba76184fa0299ec63',1,'lbann::convolution_layer']]],
   ['compute_5fgradients_5fim2col',['compute_gradients_im2col',['../classlbann_1_1base__convolution__layer.html#a8cb0b4fb33f058ce6c211ebaf6a17f63',1,'lbann::base_convolution_layer']]],
   ['compute_5fmax_5fnum_5fparallel_5freaders',['compute_max_num_parallel_readers',['../classlbann_1_1distributed__io__buffer.html#af6653723714cf8cf51a928fc9f6e6728',1,'lbann::distributed_io_buffer::compute_max_num_parallel_readers()'],['../classlbann_1_1generic__io__buffer.html#affc26b29e3f9eaaae5c033648e1a0141',1,'lbann::generic_io_buffer::compute_max_num_parallel_readers()'],['../classlbann_1_1partitioned__io__buffer.html#a5048100fb7cdc13908ecba6b4415b977',1,'lbann::partitioned_io_buffer::compute_max_num_parallel_readers()']]],
   ['compute_5fnum_5fsamples',['compute_num_samples',['../classlbann_1_1data__store__image.html#ae64863fcdcf6280cacfabb41204d4791',1,'lbann::data_store_image']]],

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-258-gb605c24-ci358649499</span>
+   &#160;<span id="projectnumber">v0.93-291-gde6b4e0-ci361881065</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -459,7 +459,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 , <a class="el" href="classlbann_1_1generic__data__reader.html#a18b67bfa426eb4d2c8195d115c4df49f">lbann::generic_data_reader</a>
 </li>
 <li>set_value()
-: <a class="el" href="classlbann_1_1weights.html#aca05fb7e298c8f9f1f30fa1a8eac9fbf">lbann::weights</a>
+: <a class="el" href="classlbann_1_1weights.html#aaae37ad2df0808eb606609cd58cd223b">lbann::weights</a>
 </li>
 <li>set_values()
 : <a class="el" href="classlbann_1_1weights.html#ae10da5d92c9402ced7e55f04fbd05a2e">lbann::weights</a>
@@ -520,7 +520,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 , <a class="el" href="classlbann_1_1polya__negloglike.html#a4a7ae8eef1ef216f60b158acb1853355">lbann::polya_negloglike</a>
 , <a class="el" href="classlbann_1_1rmsprop.html#a8f6111a36f9ad592d14e13b64a0f228f">lbann::rmsprop</a>
 , <a class="el" href="classlbann_1_1sgd.html#a616c3cfd457ae1e771710b481b4c1bbb">lbann::sgd</a>
-, <a class="el" href="classlbann_1_1weights.html#a476989a30cbe62ab2f680235981c3ba5">lbann::weights</a>
+, <a class="el" href="classlbann_1_1weights.html#a64037919e22272a8931da328f0b2494a">lbann::weights</a>
 </li>
 <li>setup_data()
 : <a class="el" href="classlbann_1_1base__convolution__layer.html#a9f850c1bdf4ae3cd986411d3cb3a524c">lbann::base_convolution_layer</a>
@@ -567,7 +567,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="classlbann_1_1base__convolution__layer.html#a4fb0ec8793656a7c32ff37c266b29a68">lbann::base_convolution_layer</a>
 , <a class="el" href="classlbann_1_1batch__normalization.html#ab4737c3efcafa9bff1e68084b7f36283">lbann::batch_normalization&lt; T_layout &gt;</a>
 , <a class="el" href="classlbann_1_1constant__layer.html#aa3450d358b093a29067500acc0ac4dff">lbann::constant_layer&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1convolution__layer.html#a854d83ea60be13aa01d72d39ee709d2c">lbann::convolution_layer&lt; T_layout &gt;</a>
+, <a class="el" href="classlbann_1_1dropout.html#abaa3d0c6d99200b186d0a55201f77b6a">lbann::dropout&lt; T_layout &gt;</a>
 , <a class="el" href="classlbann_1_1fully__connected__layer.html#a95c96742a67f2e9398e608b244c2d121">lbann::fully_connected_layer&lt; T_layout &gt;</a>
 , <a class="el" href="classlbann_1_1Layer.html#a36aa22ef90ce4de65abe729d38490863">lbann::Layer</a>
 , <a class="el" href="classlbann_1_1local__response__normalization__layer.html#aff5210d74db5f8302989cca12d04263d">lbann::local_response_normalization_layer&lt; T_layout &gt;</a>
@@ -604,7 +604,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 , <a class="el" href="classlbann_1_1Layer.html#a57bbe21131dc00ab5cf9ea5e3656808e">lbann::Layer</a>
 , <a class="el" href="classlbann_1_1selu__dropout.html#a8b6469a14cf093d48e42384aa4ee404a">lbann::selu_dropout&lt; T_layout &gt;</a>
 , <a class="el" href="classlbann_1_1slice__layer.html#af3b6f79a53c9a80908b37c2587ff2cae">lbann::slice_layer&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1softmax__layer.html#ad011596d678ba62d3a92b0e9b2acae54">lbann::softmax_layer&lt; T_layout &gt;</a>
+, <a class="el" href="classlbann_1_1softmax__layer.html#ae9472c4f1d22ff51cb7508d17e37c61d">lbann::softmax_layer&lt; T_layout &gt;</a>
 </li>
 <li>setup_node_comm()
 : <a class="el" href="classlbann_1_1lbann__comm.html#a44bc6b8683f04c2a3fc2f01fc734a946">lbann::lbann_comm</a>
@@ -616,11 +616,6 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 , <a class="el" href="classlbann_1_1slice__layer.html#a701854f5906a25c58d4f9d851b20de29">lbann::slice_layer&lt; T_layout &gt;</a>
 , <a class="el" href="classlbann_1_1unpooling__layer.html#a32da9e26ce50aa3df3ecc52691bd5e4f">lbann::unpooling_layer&lt; T_layout &gt;</a>
 </li>
-<li>setup_tensors()
-: <a class="el" href="classlbann_1_1convolution__layer.html#a1201d4177c77f31332d9a1377e9234f9">lbann::convolution_layer&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1pooling__layer.html#aa85dbb4aedb8c548b9ec84eda77e3e27">lbann::pooling_layer&lt; T_layout &gt;</a>
-, <a class="el" href="classlbann_1_1relu__layer.html#a72a32f54a595f7c05a78f74c9b4f50b8">lbann::relu_layer&lt; T_layout &gt;</a>
-</li>
 <li>setup_threads()
 : <a class="el" href="classlbann_1_1lbann__comm.html#a597189b10f61947580f97fb8d1da7355">lbann::lbann_comm</a>
 </li>
@@ -628,7 +623,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="classlbann_1_1model.html#a582edc0f930e1594381ecc7922e91b08">lbann::model</a>
 </li>
 <li>sgd()
-: <a class="el" href="classlbann_1_1sgd.html#a73baa574a5129872fe25f2a419c86baa">lbann::sgd</a>
+: <a class="el" href="classlbann_1_1sgd.html#ac0a74200f44b45ced9b44e3b6349581a">lbann::sgd</a>
 </li>
 <li>shear_range()
 : <a class="el" href="classlbann_1_1lbann__image__preprocessor.html#aef1e2375fd518e69df800b0dcbcb37d0">lbann::lbann_image_preprocessor</a>
@@ -638,7 +633,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 , <a class="el" href="classlbann_1_1generic__data__reader.html#af1aaa4d1a693974c1b1f1318b6ed60b8">lbann::generic_data_reader</a>
 </li>
 <li>siamese_model()
-: <a class="el" href="classlbann_1_1siamese__model.html#af8ca6d6da679f39489f0c50b62ad0069">lbann::siamese_model</a>
+: <a class="el" href="classlbann_1_1siamese__model.html#a7222db907cdbb05a77f8af9cdf3fd2bc">lbann::siamese_model</a>
 </li>
 <li>sigmoid_layer()
 : <a class="el" href="classlbann_1_1sigmoid__layer.html#a7e9b873bf8d5c89ad66b7500d3c3f05f">lbann::sigmoid_layer&lt; T_layout &gt;</a>
@@ -647,7 +642,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 : <a class="el" href="classlbann_1_1csv__reader.html#ace1c71ad266e6bd85573051ff45277ab">lbann::csv_reader</a>
 </li>
 <li>slice_layer()
-: <a class="el" href="classlbann_1_1slice__layer.html#a650cf86c43a81a644bff4b8e9375f87f">lbann::slice_layer&lt; T_layout &gt;</a>
+: <a class="el" href="classlbann_1_1slice__layer.html#a248cf99da690964ac0209684f8c13c1d">lbann::slice_layer&lt; T_layout &gt;</a>
 </li>
 <li>smooth_relu_layer()
 : <a class="el" href="classlbann_1_1smooth__relu__layer.html#aa045764ef0113d8516ddf95a3b810ce0">lbann::smooth_relu_layer&lt; T_layout &gt;</a>
@@ -666,6 +661,27 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 </li>
 <li>stack_profiler()
 : <a class="el" href="classlbann_1_1stack__profiler.html#af52b4bc426a0728860b00a4fb7fd500f">lbann::stack_profiler</a>
+</li>
+<li>start_evaluate_compute()
+: <a class="el" href="classlbann_1_1binary__cross__entropy.html#a4acaf96a18b00b38adae375a69740071">lbann::binary_cross_entropy</a>
+, <a class="el" href="classlbann_1_1cross__entropy.html#a5167b7709499516c6a4dbebfc561f6a7">lbann::cross_entropy</a>
+, <a class="el" href="classlbann_1_1cross__entropy__with__uncertainty.html#abed10e5c6eb2fd72b3b72ad1042fe35c">lbann::cross_entropy_with_uncertainty</a>
+, <a class="el" href="classlbann_1_1geom__negloglike.html#ae17106630ad2f85df0dbd528bfbbea7d">lbann::geom_negloglike</a>
+, <a class="el" href="classlbann_1_1loss__function.html#a0bbe41060d788dc7a29f3737761a6f7d">lbann::loss_function</a>
+, <a class="el" href="classlbann_1_1mean__absolute__deviation__loss.html#a4e4340e4370b824c56b76ed59e2ba879">lbann::mean_absolute_deviation_loss</a>
+, <a class="el" href="classlbann_1_1mean__absolute__error__loss.html#a6c93ac9c9dbcdec66e2a63caf25bccf9">lbann::mean_absolute_error_loss</a>
+, <a class="el" href="classlbann_1_1mean__squared__error__loss.html#a5cfc9b54a4161015f63e5445e34f49f4">lbann::mean_squared_error_loss</a>
+, <a class="el" href="classlbann_1_1poisson__negloglike.html#ad69c0a20f5015ee02eb0c20e87129ffa">lbann::poisson_negloglike</a>
+, <a class="el" href="classlbann_1_1polya__negloglike.html#aea7e92b3d290f3d11b6f8c93f9f9d3e6">lbann::polya_negloglike</a>
+</li>
+<li>start_evaluation()
+: <a class="el" href="classlbann_1_1group__lasso__weight__regularization.html#a5cc5fd80eed7f2b9d881c48edc6d49d0">lbann::group_lasso_weight_regularization</a>
+, <a class="el" href="classlbann_1_1kl__divergence.html#a0a77c724ff9b918e2c2eaf3944f50ac5">lbann::kl_divergence</a>
+, <a class="el" href="classlbann_1_1l1__weight__regularization.html#ace2c0fe490dd1e630460063b6df23597">lbann::l1_weight_regularization</a>
+, <a class="el" href="classlbann_1_1l2__weight__regularization.html#ab3a47d8ef5b8c8e16f076659e864f683">lbann::l2_weight_regularization</a>
+, <a class="el" href="classlbann_1_1loss__function.html#a90f4126b0b4d47838ef3cc154c6d9705">lbann::loss_function</a>
+, <a class="el" href="classlbann_1_1objective__function.html#a3edb6708894d31ec2a014c6eb8a61df2">lbann::objective_function</a>
+, <a class="el" href="classlbann_1_1objective__function__term.html#a0af4dfd71fb30e43d1ae7611172ad9b0">lbann::objective_function_term</a>
 </li>
 <li>start_gradient_staging_allreduce()
 : <a class="el" href="classlbann_1_1optimizer.html#a1fe495ccbd62d50735615818abecf454">lbann::optimizer</a>
@@ -711,7 +727,7 @@ $(document).ready(function(){initNavTree('functions_func_s.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Mar 26 2018 23:07:57 for LBANN by
+    <li class="footer">Generated on Tue Apr 3 2018 22:41:43 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -56,7 +56,6 @@ var searchData=
   ['deconvolution_2ehpp',['deconvolution.hpp',['../deconvolution_8hpp.html',1,'']]],
   ['directed_5facyclic_5fgraph_2ecpp',['directed_acyclic_graph.cpp',['../directed__acyclic__graph_8cpp.html',1,'']]],
   ['directed_5facyclic_5fgraph_2ehpp',['directed_acyclic_graph.hpp',['../directed__acyclic__graph_8hpp.html',1,'']]],
-  ['distconv_2ehpp',['distconv.hpp',['../distconv_8hpp.html',1,'']]],
   ['distributed_5fio_5fbuffer_2ecpp',['distributed_io_buffer.cpp',['../distributed__io__buffer_8cpp.html',1,'']]],
   ['distributed_5fio_5fbuffer_2ehpp',['distributed_io_buffer.hpp',['../distributed__io__buffer_8hpp.html',1,'']]],
   ['dropout_2ehpp',['dropout.hpp',['../dropout_8hpp.html',1,'']]],

@@ -14,7 +14,6 @@ var dir_ae19bb3c4b74b705a5918893bf9adbdd =
     [ "weights", "dir_b7c167790353a8ff0eb01b166862c35c.html", "dir_b7c167790353a8ff0eb01b166862c35c" ],
     [ "base.hpp", "base_8hpp.html", "base_8hpp" ],
     [ "comm.hpp", "comm_8hpp.html", "comm_8hpp" ],
-    [ "distconv.hpp", "distconv_8hpp.html", null ],
     [ "Elemental_extensions.hpp", "Elemental__extensions_8hpp.html", "Elemental__extensions_8hpp" ],
     [ "lbann.hpp", "lbann_8hpp.html", null ],
     [ "params.hpp", "params_8hpp.html", [
