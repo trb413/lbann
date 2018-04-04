@@ -3,9 +3,7 @@ var dir_c5918d51ed4432669f320caec931e946 =
     [ "base_convolution.hpp", "base__convolution_8hpp.html", [
       [ "base_convolution_layer", "classlbann_1_1base__convolution__layer.html", "classlbann_1_1base__convolution__layer" ]
     ] ],
-    [ "convolution.hpp", "convolution_8hpp.html", [
-      [ "convolution_layer", "classlbann_1_1convolution__layer.html", "classlbann_1_1convolution__layer" ]
-    ] ],
+    [ "convolution.hpp", "convolution_8hpp.html", "convolution_8hpp" ],
     [ "deconvolution.hpp", "deconvolution_8hpp.html", [
       [ "deconvolution_layer", "classlbann_1_1deconvolution__layer.html", "classlbann_1_1deconvolution__layer" ]
     ] ],

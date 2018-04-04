@@ -85,7 +85,6 @@ var searchData=
   ['get_5feffective_5fmini_5fbatch_5fsize',['get_effective_mini_batch_size',['../classlbann_1_1model.html#adc2be91222e59b976a40f614dbcfb644',1,'lbann::model']]],
   ['get_5fenv_5fvar',['get_env_var',['../namespacelbann.html#aa4ee6571e54db5cee7f263029147e5f2',1,'lbann']]],
   ['get_5ferror_5fsignals',['get_error_signals',['../classlbann_1_1Layer.html#adb561e140e0bb601f3c5a8ee053a71d2',1,'lbann::Layer::get_error_signals(int parent_index=0)'],['../classlbann_1_1Layer.html#adefaa77d6d5ac1706cea83b817ba71f8',1,'lbann::Layer::get_error_signals(int parent_index=0) const ']]],
-  ['get_5fevaluate_5ftime',['get_evaluate_time',['../classlbann_1_1metric.html#ab696c34fcdd703f4c859ae48696f71dc',1,'lbann::metric']]],
   ['get_5fevaluation_5ftime',['get_evaluation_time',['../classlbann_1_1objective__function.html#a11a78ee6e09b1866682faa67d5ef50a7',1,'lbann::objective_function']]],
   ['get_5fexecution_5fmode',['get_execution_mode',['../classlbann_1_1model.html#a66c5ac5cb51cdc7dea79a475147bcd5b',1,'lbann::model']]],
   ['get_5fexpected_5fnum_5fchild_5flayers',['get_expected_num_child_layers',['../classlbann_1_1Layer.html#aae71a973199012d5396777cdceab411d',1,'lbann::Layer']]],

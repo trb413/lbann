@@ -105,7 +105,6 @@ var classlbann_1_1lbann__comm =
     [ "model_reduce", "classlbann_1_1lbann__comm.html#aa605a57eb9132fc575e90b1ac825cf0b", null ],
     [ "model_reduce", "classlbann_1_1lbann__comm.html#aba37a188f88277b23583aa8bea2e2f04", null ],
     [ "nb_allreduce", "classlbann_1_1lbann__comm.html#a2a7bb6cf3707366fc0671d8894ca30ea", null ],
-    [ "nb_allreduce", "classlbann_1_1lbann__comm.html#afb144a99e0cd2241f5fb05cad68b1f08", null ],
     [ "nb_recv", "classlbann_1_1lbann__comm.html#aac24e8802602c73efddb455274e158f4", null ],
     [ "nb_recv", "classlbann_1_1lbann__comm.html#ad75e65db156edd86efa26ef1986668d0", null ],
     [ "nb_recv", "classlbann_1_1lbann__comm.html#a8f850662e84e3efab19244d1ef6752d7", null ],

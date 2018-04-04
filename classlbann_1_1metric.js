@@ -7,7 +7,6 @@ var classlbann_1_1metric =
     [ "evaluate", "classlbann_1_1metric.html#ab4e14cb4296c7b47719071b210448dec", null ],
     [ "evaluate_compute", "classlbann_1_1metric.html#aab79147ff480675db2e01d7a889a4296", null ],
     [ "get_comm", "classlbann_1_1metric.html#a464120720df6bfdf91bffe353e562964", null ],
-    [ "get_evaluate_time", "classlbann_1_1metric.html#ab696c34fcdd703f4c859ae48696f71dc", null ],
     [ "get_layer_pointers", "classlbann_1_1metric.html#a45cd279f993a79ff3df4964e40d904ed", null ],
     [ "get_mean_value", "classlbann_1_1metric.html#af754510d3e50121b658bfe6c6502aab6", null ],
     [ "get_statistics_num_samples", "classlbann_1_1metric.html#a3281815ffbb4f3cd59acc3ef1d318cb3", null ],
@@ -16,7 +15,6 @@ var classlbann_1_1metric =
     [ "load_from_checkpoint_shared", "classlbann_1_1metric.html#ab3d1ec8247352467790be036a07cfc2b", null ],
     [ "name", "classlbann_1_1metric.html#af455d7b6874d3491bc04f0f2ebfcab51", null ],
     [ "operator=", "classlbann_1_1metric.html#a4324342dab4892199a47df1d78b2cef5", null ],
-    [ "reset_counters", "classlbann_1_1metric.html#ab93708cd870277eb7865655e075620c9", null ],
     [ "reset_statistics", "classlbann_1_1metric.html#af7747feb8bc7a5ee039876a70fae1b0c", null ],
     [ "reset_statistics", "classlbann_1_1metric.html#a27a3d8c073b85297b902ba35137926b4", null ],
     [ "save_to_checkpoint_shared", "classlbann_1_1metric.html#a9728b02a240dfd9faa61b7dfeb3feede", null ],
@@ -24,7 +22,6 @@ var classlbann_1_1metric =
     [ "set_target_layer", "classlbann_1_1metric.html#a8367719e2c7816a4c718c049ea97b709", null ],
     [ "setup", "classlbann_1_1metric.html#a898d23e410297378db2fe9f8d1754fe0", null ],
     [ "m_comm", "classlbann_1_1metric.html#a547077709911e30c7d070545936c9c85", null ],
-    [ "m_evaluate_time", "classlbann_1_1metric.html#a4c77a1bd1db77e9d837a72128e3d687f", null ],
     [ "m_statistics", "classlbann_1_1metric.html#a9949d8aceedbc113aa2c356046ed73fc", null ],
     [ "m_target_layer", "classlbann_1_1metric.html#a2bf6c53efb1b525bfa63a8c3167968d9", null ]
 ];

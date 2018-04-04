@@ -1,6 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"classlbann_1_1csv__reader.html#aa992b822439071b8c38115726680003b":[9,0,5,51,2],
 "classlbann_1_1csv__reader.html#aa9b671a172828980cb9c91180c3d0ad8":[9,0,5,51,37],
 "classlbann_1_1csv__reader.html#aad98a20225b1f2545de32b4c19c8285b":[9,0,5,51,30],
 "classlbann_1_1csv__reader.html#aaede525f7ac80484691822f27ef79cfc":[9,0,5,51,18],
@@ -249,5 +248,6 @@ var NAVTREEINDEX3 =
 "classlbann_1_1data__store__imagenet.html#a70cfd8f529aad8d66993000da7350ec5":[9,0,5,74,6],
 "classlbann_1_1data__store__imagenet.html#a71b04726b0e651bc9b73cd6f5ca3c12b":[9,0,5,74,5],
 "classlbann_1_1data__store__imagenet.html#a94ea4f0f9ee439a7f974d0d8308d8c81":[9,0,5,74,8],
-"classlbann_1_1data__store__imagenet.html#aa6f4479472b06cd7a8da399dd23b7487":[9,0,5,74,2]
+"classlbann_1_1data__store__imagenet.html#aa6f4479472b06cd7a8da399dd23b7487":[9,0,5,74,2],
+"classlbann_1_1data__store__imagenet.html#abca3c81df8f4cd1c53f9b5b474da0481":[9,0,5,74,1]
 };
