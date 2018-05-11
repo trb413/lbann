@@ -12,6 +12,9 @@ var dir_523139c6bbc1b09c0efca9eafbd648aa =
     [ "categorical_accuracy.hpp", "categorical__accuracy_8hpp.html", [
       [ "categorical_accuracy_metric", "classlbann_1_1categorical__accuracy__metric.html", "classlbann_1_1categorical__accuracy__metric" ]
     ] ],
+    [ "layer_metric.hpp", "layer__metric_8hpp.html", [
+      [ "layer_metric", "classlbann_1_1layer__metric.html", "classlbann_1_1layer__metric" ]
+    ] ],
     [ "mean_absolute_deviation.hpp", "metrics_2mean__absolute__deviation_8hpp.html", [
       [ "mean_absolute_deviation_metric", "classlbann_1_1mean__absolute__deviation__metric.html", "classlbann_1_1mean__absolute__deviation__metric" ]
     ] ],

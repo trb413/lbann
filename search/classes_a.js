@@ -4,6 +4,8 @@ var searchData=
   ['l2_5fweight_5fregularization',['l2_weight_regularization',['../classlbann_1_1l2__weight__regularization.html',1,'lbann']]],
   ['layer',['Layer',['../classlbann_1_1Layer.html',1,'lbann']]],
   ['layer_5fheader',['layer_header',['../structlayer__header.html',1,'']]],
+  ['layer_5fmetric',['layer_metric',['../classlbann_1_1layer__metric.html',1,'lbann']]],
+  ['layer_5fterm',['layer_term',['../classlbann_1_1layer__term.html',1,'lbann']]],
   ['lbann_5fcallback',['lbann_callback',['../classlbann_1_1lbann__callback.html',1,'lbann']]],
   ['lbann_5fcallback_5fadaptive_5flearning_5frate',['lbann_callback_adaptive_learning_rate',['../classlbann_1_1lbann__callback__adaptive__learning__rate.html',1,'lbann']]],
   ['lbann_5fcallback_5fcheck_5fdataset',['lbann_callback_check_dataset',['../classlbann_1_1lbann__callback__check__dataset.html',1,'lbann']]],
@@ -44,11 +46,12 @@ var searchData=
   ['lbann_5fexception',['lbann_exception',['../classlbann_1_1lbann__exception.html',1,'lbann']]],
   ['lbann_5fimage_5fpreprocessor',['lbann_image_preprocessor',['../classlbann_1_1lbann__image__preprocessor.html',1,'lbann']]],
   ['lbann_5fmodel_5fheader',['lbann_model_header',['../structlbann_1_1lbann__model__header.html',1,'lbann']]],
-  ['lbann_5fmodel_5fsequential_5fheader',['lbann_model_sequential_header',['../structlbann_1_1lbann__model__sequential__header.html',1,'lbann']]],
   ['lbann_5fquantizer',['lbann_quantizer',['../classlbann_1_1lbann__quantizer.html',1,'lbann']]],
   ['lbann_5fsummary',['lbann_summary',['../classlbann_1_1lbann__summary.html',1,'lbann']]],
   ['leaky_5frelu_5flayer',['leaky_relu_layer',['../classlbann_1_1leaky__relu__layer.html',1,'lbann']]],
   ['learning_5flayer',['learning_layer',['../classlbann_1_1learning__layer.html',1,'lbann']]],
+  ['lecun_5fnormal_5finitializer',['lecun_normal_initializer',['../classlbann_1_1lecun__normal__initializer.html',1,'lbann']]],
+  ['lecun_5funiform_5finitializer',['lecun_uniform_initializer',['../classlbann_1_1lecun__uniform__initializer.html',1,'lbann']]],
   ['local_5fresponse_5fnormalization_5flayer',['local_response_normalization_layer',['../classlbann_1_1local__response__normalization__layer.html',1,'lbann']]],
   ['loss_5ffunction',['loss_function',['../classlbann_1_1loss__function.html',1,'lbann']]]
 ];

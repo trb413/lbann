@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-244-g9bd4aac-ci362362741</span>
+   &#160;<span id="projectnumber">v0.93-606-gca499c9-ci377629231</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -180,6 +180,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a979bb6891e6bf5edba2184cd0b59cf54 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acee56be91337bbd78bc4371a8159b760 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#acee56be91337bbd78bc4371a8159b760">using_gpus</a> () const </td></tr>
 <tr class="separator:acee56be91337bbd78bc4371a8159b760 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb4462d0e948084c13b2a0862078a5a1 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#adb4462d0e948084c13b2a0862078a5a1">synchronize</a> () const </td></tr>
+<tr class="separator:adb4462d0e948084c13b2a0862078a5a1 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c8d2d7693bdebd70fcae9b85400dcbe inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a8c8d2d7693bdebd70fcae9b85400dcbe">get_expected_num_parent_layers</a> () const </td></tr>
 <tr class="separator:a8c8d2d7693bdebd70fcae9b85400dcbe inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae71a973199012d5396777cdceab411d inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#aae71a973199012d5396777cdceab411d">get_expected_num_child_layers</a> () const </td></tr>
@@ -190,18 +192,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8eed87b25ea902b223c6b7a23abf78b3 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ac13af6f5ee8316d64c550bef919ee0 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual El::Matrix&lt; El::Int &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a0ac13af6f5ee8316d64c550bef919ee0">get_sample_indices_per_mb</a> ()</td></tr>
 <tr class="separator:a0ac13af6f5ee8316d64c550bef919ee0 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0c778bee7a1397fd82d3bf1da050ad1 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#ad0c778bee7a1397fd82d3bf1da050ad1">saveToFile</a> (int fd, const char *filename) const </td></tr>
-<tr class="separator:ad0c778bee7a1397fd82d3bf1da050ad1 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ae0e6015dd427c63236a07f8cbd3878 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a1ae0e6015dd427c63236a07f8cbd3878">loadFromFile</a> (int fd, const char *filename)</td></tr>
-<tr class="separator:a1ae0e6015dd427c63236a07f8cbd3878 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa96a60eeb0b4bb4f8ca99fb27f1dc034 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#aa96a60eeb0b4bb4f8ca99fb27f1dc034">saveToCheckpoint</a> (int fd, const char *filename, size_t *bytes) const </td></tr>
-<tr class="separator:aa96a60eeb0b4bb4f8ca99fb27f1dc034 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ac9335d75d817fc2d5cf171da9b7e22 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a7ac9335d75d817fc2d5cf171da9b7e22">loadFromCheckpoint</a> (int fd, const char *filename, size_t *bytes)</td></tr>
-<tr class="separator:a7ac9335d75d817fc2d5cf171da9b7e22 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb305404ee0df209a91e656366706826 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#acb305404ee0df209a91e656366706826">save_to_checkpoint_shared</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p, bool val_end) const </td></tr>
-<tr class="separator:acb305404ee0df209a91e656366706826 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77808538b2e251d87a1093c253c0fb8b inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a77808538b2e251d87a1093c253c0fb8b">save_to_checkpoint_shared</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p) const </td></tr>
+<tr class="separator:a77808538b2e251d87a1093c253c0fb8b inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e262970ecc64166e8b6610e2502ad30 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a9e262970ecc64166e8b6610e2502ad30">load_from_checkpoint_shared</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p)</td></tr>
 <tr class="separator:a9e262970ecc64166e8b6610e2502ad30 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad945df2c21ba94a6df9098d18d69d005 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#ad945df2c21ba94a6df9098d18d69d005">save_to_checkpoint_distributed</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p) const </td></tr>
+<tr class="separator:ad945df2c21ba94a6df9098d18d69d005 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a0a7b95766fbb41fdda0e62ceff9aff inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a9a0a7b95766fbb41fdda0e62ceff9aff">load_from_checkpoint_distributed</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p)</td></tr>
+<tr class="separator:a9a0a7b95766fbb41fdda0e62ceff9aff inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5648cbc9897b894a86c2a6a5e53de4b5 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a5648cbc9897b894a86c2a6a5e53de4b5">write_proto</a> (lbann_data::Layer *proto) const </td></tr>
 <tr class="separator:a5648cbc9897b894a86c2a6a5e53de4b5 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a756687709b230e4dc8cc0e50312c27f2 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a756687709b230e4dc8cc0e50312c27f2">get_fp_output</a> (<a class="el" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a> &amp;fp_output, const <a class="el" href="classlbann_1_1Layer.html">Layer</a> *child) const </td></tr>
@@ -280,8 +278,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad48ebb40ff4418494bf1c86d9e02b21d inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20c83ddb7dba985b6b849bd519c22a7a inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a20c83ddb7dba985b6b849bd519c22a7a">get_local_error_signals</a> (int parent_index=0) const </td></tr>
 <tr class="separator:a20c83ddb7dba985b6b849bd519c22a7a inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adea2db83fee14177f4f86d713d81c7db inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1cudnn_1_1cudnn__manager.html">cudnn::cudnn_manager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#adea2db83fee14177f4f86d713d81c7db">get_cudnn_manager</a> ()</td></tr>
-<tr class="separator:adea2db83fee14177f4f86d713d81c7db inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e253bb1a40769da7136a49d08ef576 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a52e253bb1a40769da7136a49d08ef576">get_comm</a> () const </td></tr>
+<tr class="separator:a52e253bb1a40769da7136a49d08ef576 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29ae4368b0caeb6f151d2d37ea2f5c02 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1cudnn_1_1cudnn__manager.html">cudnn::cudnn_manager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a29ae4368b0caeb6f151d2d37ea2f5c02">get_cudnn_manager</a> () const </td></tr>
+<tr class="separator:a29ae4368b0caeb6f151d2d37ea2f5c02 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad55c455dbae0d082cedfa68511709aae inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#ad55c455dbae0d082cedfa68511709aae">freeze</a> ()</td></tr>
+<tr class="separator:ad55c455dbae0d082cedfa68511709aae inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa43ecf9fc67eb1d596c1a69cf35d1245 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#aa43ecf9fc67eb1d596c1a69cf35d1245">unfreeze</a> ()</td></tr>
+<tr class="separator:aa43ecf9fc67eb1d596c1a69cf35d1245 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90e85ee8ea87210613211b1d79f7d351 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a90e85ee8ea87210613211b1d79f7d351">is_frozen</a> () const </td></tr>
+<tr class="separator:a90e85ee8ea87210613211b1d79f7d351 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -364,6 +370,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:af7881cb5eff5207c15fa835d65462e8f inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08dbb94239e3b8c96329786c57c72e21 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1cudnn_1_1cudnn__manager.html">cudnn::cudnn_manager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a></td></tr>
 <tr class="separator:a08dbb94239e3b8c96329786c57c72e21 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdc60df9731a3ecdeeeb8175fa483676 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#afdc60df9731a3ecdeeeb8175fa483676">m_frozen</a></td></tr>
+<tr class="separator:afdc60df9731a3ecdeeeb8175fa483676 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1bd9ab0a6f9e554f4dc936d8316028e inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8hpp.html#a3266f5ac18504bbadea983c109566867">EvalType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#ab1bd9ab0a6f9e554f4dc936d8316028e">m_fp_time</a></td></tr>
 <tr class="separator:ab1bd9ab0a6f9e554f4dc936d8316028e inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4e439c1d6a656e709dc4736c9380476 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8hpp.html#a3266f5ac18504bbadea983c109566867">EvalType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#aa4e439c1d6a656e709dc4736c9380476">m_fp_compute_time</a></td></tr>
@@ -608,7 +616,7 @@ template&lt;data_layout T_layout&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1swish__layer.html">swish_layer</a></li>
-    <li class="footer">Generated on Wed Apr 4 2018 21:59:07 for LBANN by
+    <li class="footer">Generated on Fri May 11 2018 08:30:02 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

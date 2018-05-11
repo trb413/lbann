@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-244-g9bd4aac-ci362362741</span>
+   &#160;<span id="projectnumber">v0.93-606-gca499c9-ci377629231</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -93,80 +93,74 @@ $(document).ready(function(){initNavTree('todo.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_todo000016"></a>Member <a class="el" href="base_8hpp.html#adeeaddd10bd31df0cae7cb0fcae45d5c">_to_string</a>  (execution_mode m)</dt>
+<dt><a class="anchor" id="_todo000015"></a>Member <a class="el" href="base_8hpp.html#adeeaddd10bd31df0cae7cb0fcae45d5c">_to_string</a>  (execution_mode m)</dt>
 <dd>this should be an lbann_exception but then the class has to move to resolve dependencies  </dd>
-<dt><a class="anchor" id="_todo000017"></a>Member <a class="el" href="namespacelbann_1_1Al.html#acac3d42323b313e89a60a27f00554661">lbann::Al::nccl_backend</a>  </dt>
+<dt><a class="anchor" id="_todo000016"></a>Member <a class="el" href="namespacelbann_1_1Al.html#acac3d42323b313e89a60a27f00554661">lbann::Al::nccl_backend</a>  </dt>
 <dd>MPI-CUDA backend  </dd>
-<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="namespacelbann.html#a085b697db535c10a6fd6689cc4445bd4">lbann::columnwise_mean_and_stdev</a>  (const AbsDistMat &amp;data, AbsDistMat &amp;means, AbsDistMat &amp;stdevs)</dt>
+<dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="namespacelbann.html#a085b697db535c10a6fd6689cc4445bd4">lbann::columnwise_mean_and_stdev</a>  (const AbsDistMat &amp;data, AbsDistMat &amp;means, AbsDistMat &amp;stdevs)</dt>
 <dd>Numerically stable implementation  </dd>
-<dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="namespacelbann.html#ab043d2f2f9dea0ee861aff3a38216b24">lbann::columnwise_sums_and_sqsums</a>  (const AbsDistMat &amp;data, AbsDistMat &amp;sums, AbsDistMat &amp;sqsums)</dt>
+<dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="namespacelbann.html#ab043d2f2f9dea0ee861aff3a38216b24">lbann::columnwise_sums_and_sqsums</a>  (const AbsDistMat &amp;data, AbsDistMat &amp;sums, AbsDistMat &amp;sqsums)</dt>
 <dd>Numerically stable implementation  </dd>
-<dt><a class="anchor" id="_todo000022"></a>Member <a class="el" href="classlbann_1_1data__store__pilot2__molecular.html#a742e2b6fcfd597cb763ad743ebc8f652">lbann::data_store_pilot2_molecular::m_my_molecules</a>  </dt>
-<dd>: if num_nabors gets large enough this may need to be re-designed  </dd>
-<dt><a class="anchor" id="_todo000020"></a>Member <a class="el" href="classlbann_1_1generic__data__reader.html#a56e24bca78c64c7d33cf981c63157e1b">lbann::generic_data_reader::get_num_iterations_per_epoch</a>  () const </dt>
+<dt><a class="anchor" id="_todo000019"></a>Member <a class="el" href="classlbann_1_1generic__data__reader.html#a56e24bca78c64c7d33cf981c63157e1b">lbann::generic_data_reader::get_num_iterations_per_epoch</a>  () const </dt>
 <dd>BVE FIXME merge this with alternate approach  </dd>
-<dt><a class="anchor" id="_todo000019"></a>Member <a class="el" href="classlbann_1_1generic__data__reader.html#a91573d9599b503a6bdf2939e69659e8b">lbann::generic_data_reader::set_num_iterations_per_epoch</a>  (int num_iterations_per_epoch)</dt>
+<dt><a class="anchor" id="_todo000018"></a>Member <a class="el" href="classlbann_1_1generic__data__reader.html#a91573d9599b503a6bdf2939e69659e8b">lbann::generic_data_reader::set_num_iterations_per_epoch</a>  (int num_iterations_per_epoch)</dt>
 <dd>BVE FIXME merge this with alternate approach  </dd>
-<dt><a class="anchor" id="_todo000021"></a>Member <a class="el" href="classlbann_1_1generic__data__reader.html#afbed4ec767c2488357dba69c259b8c3c">lbann::generic_data_reader::setup_data_store</a>  (model *m, lbann_comm *comm)</dt>
-<dd>: must modify this method anytime you derive a class from generic_data_store  </dd>
-<dt><a class="anchor" id="_todo000023"></a>Member <a class="el" href="classlbann_1_1generic__input__layer.html#ad0b8ea79bc508bd227e08124359531c8">lbann::generic_input_layer::fp_setup_data</a>  (int mini_batch_size) override</dt>
+<dt><a class="anchor" id="_todo000020"></a>Member <a class="el" href="classlbann_1_1generic__data__store.html#a41f7fec1f1f3d6568a5765be7a6784eb">lbann::generic_data_store::m_my_minibatch_indices_v</a>  </dt>
+<dd>: for optimization, this should be a pointer &ndash; as it is now, in merge_features the vector must be copied to the subsidiary data_store_cvs  </dd>
+<dt><a class="anchor" id="_todo000021"></a>Member <a class="el" href="classlbann_1_1generic__input__layer.html#ad0b8ea79bc508bd227e08124359531c8">lbann::generic_input_layer::fp_setup_data</a>  (int mini_batch_size) override</dt>
 <dd>This functionality should probably be moved elsewhere  </dd>
-<dt><a class="anchor" id="_todo000026"></a>Member <a class="el" href="classlbann_1_1generic__target__layer.html#a57a60f5a28c9fb78d5151801123d4dba">lbann::generic_target_layer::fp_compute</a>  () override</dt>
+<dt><a class="anchor" id="_todo000024"></a>Member <a class="el" href="classlbann_1_1generic__target__layer.html#a57a60f5a28c9fb78d5151801123d4dba">lbann::generic_target_layer::fp_compute</a>  () override</dt>
 <dd>should this distribute the entire matrix even if there is only a partial mini-batch  </dd>
-<dt><a class="anchor" id="_todo000028"></a>Member <a class="el" href="classlbann_1_1generic__target__layer.html#a2d9f6ac689171acf0caceed3ed4f7ef9">lbann::generic_target_layer::loadFromCheckpoint</a>  (int fd, const char *filename, size_t *bytes) override</dt>
-<dd>should probably save m_shared_data_reader  </dd>
-<dt><a class="anchor" id="_todo000025"></a>Member <a class="el" href="classlbann_1_1generic__target__layer.html#a7c15e3fe4f1fd7f0ccdbc4c3ed8c793e">lbann::generic_target_layer::operator=</a>  (const generic_target_layer &amp;other)</dt>
+<dt><a class="anchor" id="_todo000023"></a>Member <a class="el" href="classlbann_1_1generic__target__layer.html#a7c15e3fe4f1fd7f0ccdbc4c3ed8c793e">lbann::generic_target_layer::operator=</a>  (const generic_target_layer &amp;other)</dt>
 <dd>Should this be a shallow copy?  </dd>
-<dt><a class="anchor" id="_todo000027"></a>Member <a class="el" href="classlbann_1_1generic__target__layer.html#aff8b79ff0392bd78c44a5a4f6b6ef549">lbann::generic_target_layer::saveToCheckpoint</a>  (int fd, const char *filename, size_t *bytes) const override</dt>
-<dd>should probably save m_shared_data_reader  </dd>
-<dt><a class="anchor" id="_todo000034"></a>Member <a class="el" href="namespacelbann.html#a8987701a637ff0e678114aa77e9c4d40">lbann::init_data_seq_random</a>  (int seed)</dt>
+<dt><a class="anchor" id="_todo000030"></a>Member <a class="el" href="namespacelbann.html#a43bd98542e2197a1f0ba571fe12fbadd">lbann::init_data_seq_random</a>  (int seed=-1)</dt>
 <dd>Support saving/restoring the generator's state. This is directly supported via the &gt;&gt; and &lt;&lt; operators on the generator (reading/writing from/to a stream).  </dd>
-<dt><a class="anchor" id="_todo000033"></a>Member <a class="el" href="namespacelbann.html#acef152f20e422b3aea1a3c1691a533ac">lbann::init_random</a>  (int seed, lbann_comm *comm)</dt>
+<dt><a class="anchor" id="_todo000030"></a>Member <a class="el" href="namespacelbann.html#a43bd98542e2197a1f0ba571fe12fbadd">lbann::init_data_seq_random</a>  (int seed=-1)</dt>
 <dd>Support saving/restoring the generator's state. This is directly supported via the &gt;&gt; and &lt;&lt; operators on the generator (reading/writing from/to a stream).  </dd>
-<dt><a class="anchor" id="_todo000024"></a>Member <a class="el" href="classlbann_1_1input__layer.html#ab3533611d83a1053e0daf28152f0d01e">lbann::input_layer&lt; T_io_buffer, T_layout &gt;::input_layer</a>  (lbann_comm *comm, int num_parallel_readers, std::map&lt; execution_mode, generic_data_reader * &gt; data_readers, bool data_set_spans_models=true, bool for_regression=false)</dt>
+<dt><a class="anchor" id="_todo000029"></a>Member <a class="el" href="namespacelbann.html#a901c74e6435d63072f2c380430b1bf0e">lbann::init_random</a>  (int seed=-1, lbann_comm *comm=nullptr)</dt>
+<dd>Support saving/restoring the generator's state. This is directly supported via the &gt;&gt; and &lt;&lt; operators on the generator (reading/writing from/to a stream).  </dd>
+<dt><a class="anchor" id="_todo000022"></a>Member <a class="el" href="classlbann_1_1input__layer.html#ab3533611d83a1053e0daf28152f0d01e">lbann::input_layer&lt; T_io_buffer, T_layout &gt;::input_layer</a>  (lbann_comm *comm, int num_parallel_readers, std::map&lt; execution_mode, generic_data_reader * &gt; data_readers, bool data_set_spans_models=true, bool for_regression=false)</dt>
 <dd>make the map and vector references  </dd>
 <dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="classlbann_1_1lbann__callback__debug__io.html#aa3d2a6fb4d7375c05ece0058224ea792">lbann::lbann_callback_debug_io::on_epoch_begin</a>  (model *m) override</dt>
 <dd>The use of execution_mode invalid needs to be reconsidered  </dd>
 <dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="classlbann_1_1lbann__callback__ltfb.html#a7548166d170eda00e4e0cba6626a1a78">lbann::lbann_callback_ltfb::setup</a>  (model *m) override</dt>
 <dd>Support LTFB with different models  </dd>
-<dt><a class="anchor" id="_todo000032"></a>Member <a class="el" href="classlbann_1_1lbann__quantizer.html#a22b898932caed41ccf24abcb67c00ba1">lbann::lbann_quantizer::get_adaptive_quantization_copy_threads</a>  (El::Int width)</dt>
+<dt><a class="anchor" id="_todo000028"></a>Member <a class="el" href="classlbann_1_1lbann__quantizer.html#a22b898932caed41ccf24abcb67c00ba1">lbann::lbann_quantizer::get_adaptive_quantization_copy_threads</a>  (El::Int width)</dt>
 <dd>Make this configurable at compile time. <dl class="section note"><dt>Note</dt><dd>If this and get_adaptive_quantization_threads return different values for the same width, OpenMP may reap its threads and add additional overhead when invoking a parallel region with more threads.  </dd></dl>
 </dd>
-<dt><a class="anchor" id="_todo000031"></a>Member <a class="el" href="classlbann_1_1lbann__quantizer.html#aaa0c20f755437130172c40ca8e95bc3f">lbann::lbann_quantizer::get_adaptive_quantization_threads</a>  (El::Int width)</dt>
+<dt><a class="anchor" id="_todo000027"></a>Member <a class="el" href="classlbann_1_1lbann__quantizer.html#aaa0c20f755437130172c40ca8e95bc3f">lbann::lbann_quantizer::get_adaptive_quantization_threads</a>  (El::Int width)</dt>
 <dd>Make this configurable at compile time.  </dd>
-<dt><a class="anchor" id="_todo000029"></a>Member <a class="el" href="classlbann_1_1model.html#a3753cfdb1b3dac2eec1db5b7b8f9c4d9">lbann::model::get_cur_step</a>  () const </dt>
+<dt><a class="anchor" id="_todo000026"></a>Member <a class="el" href="classlbann_1_1model.html#a3753cfdb1b3dac2eec1db5b7b8f9c4d9">lbann::model::get_cur_step</a>  () const </dt>
 <dd>This should be renamed to get_cur_training step and replaced with one that returns the current based on execution mode  </dd>
-<dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="namespacelbann_1_1proto.html#ab185ad555cff21a59a29fdfed430fdd1">lbann::proto::construct_callback</a>  (lbann_comm *comm, const lbann_data::Callback &amp;proto_cb, std::map&lt; execution_mode, generic_data_reader * &gt; &amp;data_readers, std::vector&lt; Layer * &gt; layer_list, std::vector&lt; weights * &gt; weights_list, lbann_summary *summarizer)</dt>
+<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="namespacelbann_1_1proto.html#ab185ad555cff21a59a29fdfed430fdd1">lbann::proto::construct_callback</a>  (lbann_comm *comm, const lbann_data::Callback &amp;proto_cb, std::map&lt; execution_mode, generic_data_reader * &gt; &amp;data_readers, std::vector&lt; Layer * &gt; layer_list, std::vector&lt; weights * &gt; weights_list, lbann_summary *summarizer)</dt>
 <dd><p class="startdd"></p>
 <p>Initialize weights </p>
 <p>Initialize weights </p>
 <p class="enddd">Initialize weights  </p>
 </dd>
-<dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="namespacelbann_1_1proto.html#a3195a6ac983e8d1aa683f2a5a3f669a4">lbann::proto::construct_layer</a>  (lbann_comm *comm, std::map&lt; execution_mode, generic_data_reader * &gt; &amp;data_readers, int num_parallel_readers, cudnn::cudnn_manager *cudnn, const lbann_data::Layer &amp;proto_layer)</dt>
+<dt><a class="anchor" id="_todo000006"></a>Member <a class="el" href="namespacelbann_1_1proto.html#a3195a6ac983e8d1aa683f2a5a3f669a4">lbann::proto::construct_layer</a>  (lbann_comm *comm, std::map&lt; execution_mode, generic_data_reader * &gt; &amp;data_readers, int num_parallel_readers, cudnn::cudnn_manager *cudnn, const lbann_data::Layer &amp;proto_layer)</dt>
 <dd>Support for GPU model-parallel layers  </dd>
-<dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="classlbann_1_1recurrent__model.html#ac89ddfa607e5cb6b940eb389ebbce6f6">lbann::recurrent_model::setup_layer_topology</a>  () override</dt>
-<dd>Design a more general interface  </dd>
-<dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="namespacelbann.html#a9b1fd2f864f421aa0bd9f8582ad87c14">lbann::rowwise_mean_and_stdev</a>  (const AbsDistMat &amp;data, AbsDistMat &amp;means, AbsDistMat &amp;stdevs)</dt>
+<dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="namespacelbann.html#a9b1fd2f864f421aa0bd9f8582ad87c14">lbann::rowwise_mean_and_stdev</a>  (const AbsDistMat &amp;data, AbsDistMat &amp;means, AbsDistMat &amp;stdevs)</dt>
 <dd>Numerically stable implementation  </dd>
-<dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="namespacelbann.html#a6b342b3e5b3fbb08b97b6d90aa68d121">lbann::rowwise_sums_and_sqsums</a>  (const AbsDistMat &amp;data, AbsDistMat &amp;sums, AbsDistMat &amp;sqsums)</dt>
+<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="namespacelbann.html#a6b342b3e5b3fbb08b97b6d90aa68d121">lbann::rowwise_sums_and_sqsums</a>  (const AbsDistMat &amp;data, AbsDistMat &amp;sums, AbsDistMat &amp;sqsums)</dt>
 <dd>Numerically stable implementation  </dd>
-<dt><a class="anchor" id="_todo000030"></a>Member <a class="el" href="classlbann_1_1sequential__model.html#aa405c653dae867e862475e13b9df1db0">lbann::sequential_model::load_from_checkpoint</a>  (int fd, const char *filename, size_t *bytes)</dt>
-<dd>This is old and likely broken  </dd>
-<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="classlbann_1_1siamese__model.html#a7ff41cffb060500605124959f1a2a6cf">lbann::siamese_model::setup_layer_topology</a>  () override</dt>
+<dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="classlbann_1_1siamese__model.html#a7ff41cffb060500605124959f1a2a6cf">lbann::siamese_model::setup_layer_topology</a>  () override</dt>
 <dd>Handle case where heads have already been initialized.  </dd>
-<dt><a class="anchor" id="_todo000012"></a>Member <a class="el" href="classlbann_1_1weights.html#aae00426e481379cea493017511287230">lbann::weights::write_proto</a>  (lbann_data::WeightsData *proto) const </dt>
+<dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="classlbann_1_1weights.html#aae00426e481379cea493017511287230">lbann::weights::write_proto</a>  (lbann_data::WeightsData *proto) const </dt>
 <dd><p class="startdd">What if weights are on GPU? </p>
 <p>What if world master is not process 0? </p>
 <p>OpenMP parallelization </p>
-<p class="enddd">Our matrices are column-major while Numpy expects row-major matrices. This row-wise iteration is fine for matrices and column vectors, but it can mess up the order of the weights if a high-dimensional tensor is represented as a matrix. This is what we need for quantization on convolution kernel weights. </p>
+<p class="enddd">Our matrices are column-major while Numpy expects row-major matrices. This row-wise iteration is fine for matrices and column vectors, but it can mess up the order of the weights if a high-dimensional tensor is represented as a matrix. This is what we need for quantization on convolution kernel weights.  </p>
 </dd>
+<dt><a class="anchor" id="_todo000025"></a>Class <a class="el" href="classlbann_1_1zero__layer.html">lbann::zero_layer&lt; T_layout &gt;</a>  </dt>
+<dd>generalzie if there are other use cases </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 4 2018 21:59:05 for LBANN by
+    <li class="footer">Generated on Fri May 11 2018 08:30:00 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

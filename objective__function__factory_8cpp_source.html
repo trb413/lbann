@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-244-g9bd4aac-ci362362741</span>
+   &#160;<span id="projectnumber">v0.93-606-gca499c9-ci377629231</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -184,13 +184,19 @@ $(document).ready(function(){initNavTree('objective__function__factory_8cpp_sour
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    obj-&gt;<a class="code" href="classlbann_1_1objective__function.html#a98ba95d702f542ed99ccbf9e5cdde21d">add_term</a>(<span class="keyword">new</span> <a class="code" href="classlbann_1_1kl__divergence.html">kl_divergence</a>(params.layer1(), params.layer2()));</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  }</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="comment">// Return objective function</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordflow">return</span> obj;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;} <span class="comment">// namespace proto</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;} <span class="comment">// namespace lbann</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="comment">// Layer terms</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;proto_obj.layer_term_size(); ++i) {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_obj.layer_term(i);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    obj-&gt;<a class="code" href="classlbann_1_1objective__function.html#a98ba95d702f542ed99ccbf9e5cdde21d">add_term</a>(<span class="keyword">new</span> <a class="code" href="classlbann_1_1layer__term.html">layer_term</a>(params.scale_factor()));</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="comment">// Return objective function</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordflow">return</span> obj;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;} <span class="comment">// namespace proto</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;} <span class="comment">// namespace lbann</span></div>
 <div class="ttc" id="classlbann_1_1objective__function_html_a98ba95d702f542ed99ccbf9e5cdde21d"><div class="ttname"><a href="classlbann_1_1objective__function.html#a98ba95d702f542ed99ccbf9e5cdde21d">lbann::objective_function::add_term</a></div><div class="ttdeci">void add_term(objective_function_term *term)</div><div class="ttdef"><b>Definition:</b> <a href="objective__function_8hpp_source.html#l00055">objective_function.hpp:55</a></div></div>
 <div class="ttc" id="classlbann_1_1binary__cross__entropy_html"><div class="ttname"><a href="classlbann_1_1binary__cross__entropy.html">lbann::binary_cross_entropy</a></div><div class="ttdef"><b>Definition:</b> <a href="binary__cross__entropy_8hpp_source.html#l00035">binary_cross_entropy.hpp:35</a></div></div>
 <div class="ttc" id="classlbann_1_1cross__entropy_html"><div class="ttname"><a href="classlbann_1_1cross__entropy.html">lbann::cross_entropy</a></div><div class="ttdef"><b>Definition:</b> <a href="cross__entropy_8hpp_source.html#l00035">cross_entropy.hpp:35</a></div></div>
@@ -201,6 +207,7 @@ $(document).ready(function(){initNavTree('objective__function__factory_8cpp_sour
 <div class="ttc" id="classlbann_1_1group__lasso__weight__regularization_html"><div class="ttname"><a href="classlbann_1_1group__lasso__weight__regularization.html">lbann::group_lasso_weight_regularization</a></div><div class="ttdef"><b>Definition:</b> <a href="group__lasso_8hpp_source.html#l00035">group_lasso.hpp:35</a></div></div>
 <div class="ttc" id="classlbann_1_1mean__squared__error__loss_html"><div class="ttname"><a href="classlbann_1_1mean__squared__error__loss.html">lbann::mean_squared_error_loss</a></div><div class="ttdef"><b>Definition:</b> <a href="objective__functions_2loss__functions_2mean__squared__error_8hpp_source.html#l00037">mean_squared_error.hpp:37</a></div></div>
 <div class="ttc" id="namespacelbann_1_1proto_html_a2b55ede441a057291e047cf4e7352481"><div class="ttname"><a href="namespacelbann_1_1proto.html#a2b55ede441a057291e047cf4e7352481">lbann::proto::construct_objective_function</a></div><div class="ttdeci">objective_function * construct_objective_function(const lbann_data::ObjectiveFunction &amp;proto_obj)</div><div class="ttdef"><b>Definition:</b> <a href="objective__function__factory_8cpp_source.html#l00032">objective_function_factory.cpp:32</a></div></div>
+<div class="ttc" id="classlbann_1_1layer__term_html"><div class="ttname"><a href="classlbann_1_1layer__term.html">lbann::layer_term</a></div><div class="ttdef"><b>Definition:</b> <a href="layer__term_8hpp_source.html#l00035">layer_term.hpp:35</a></div></div>
 <div class="ttc" id="classlbann_1_1geom__negloglike_html"><div class="ttname"><a href="classlbann_1_1geom__negloglike.html">lbann::geom_negloglike</a></div><div class="ttdef"><b>Definition:</b> <a href="geom__negloglike_8hpp_source.html#l00035">geom_negloglike.hpp:35</a></div></div>
 <div class="ttc" id="factories_8hpp_html"><div class="ttname"><a href="factories_8hpp.html">factories.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1cross__entropy__with__uncertainty_html"><div class="ttname"><a href="classlbann_1_1cross__entropy__with__uncertainty.html">lbann::cross_entropy_with_uncertainty</a></div><div class="ttdef"><b>Definition:</b> <a href="cross__entropy__with__uncertainty_8hpp_source.html#l00035">cross_entropy_with_uncertainty.hpp:35</a></div></div>
@@ -214,7 +221,7 @@ $(document).ready(function(){initNavTree('objective__function__factory_8cpp_sour
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_a6f8d8b19bd1411ec381c5cd89d82b32.html">proto</a></li><li class="navelem"><a class="el" href="dir_f6012299656ab49ffbe39b5d360263ca.html">factories</a></li><li class="navelem"><a class="el" href="objective__function__factory_8cpp.html">objective_function_factory.cpp</a></li>
-    <li class="footer">Generated on Wed Apr 4 2018 21:59:03 for LBANN by
+    <li class="footer">Generated on Fri May 11 2018 08:29:59 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

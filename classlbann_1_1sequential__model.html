@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-244-g9bd4aac-ci362362741</span>
+   &#160;<span id="projectnumber">v0.93-606-gca499c9-ci377629231</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -127,15 +127,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a548d44a9c4c6bec3680d60b20ac9bd73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf2b69dacb5ee3165289377e1d961cd5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1sequential__model.html#abf2b69dacb5ee3165289377e1d961cd5">name</a> () const override</td></tr>
 <tr class="separator:abf2b69dacb5ee3165289377e1d961cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51cd5ae859c66cfb36d25d968ef06203"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1sequential__model.html#a51cd5ae859c66cfb36d25d968ef06203">save_to_checkpoint</a> (int fd, const char *filename, size_t *bytes)</td></tr>
-<tr class="separator:a51cd5ae859c66cfb36d25d968ef06203"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa405c653dae867e862475e13b9df1db0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1sequential__model.html#aa405c653dae867e862475e13b9df1db0">load_from_checkpoint</a> (int fd, const char *filename, size_t *bytes)</td></tr>
-<tr class="memdesc:aa405c653dae867e862475e13b9df1db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load model from checkpoint.  <a href="#aa405c653dae867e862475e13b9df1db0">More...</a><br/></td></tr>
-<tr class="separator:aa405c653dae867e862475e13b9df1db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a226032d9890b8770c6fca54bf70d69eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1sequential__model.html#a226032d9890b8770c6fca54bf70d69eb">save_to_checkpoint_shared</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p, bool val_end) override</td></tr>
-<tr class="separator:a226032d9890b8770c6fca54bf70d69eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa52cca299012c67f88483206d50abb21"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1sequential__model.html#aa52cca299012c67f88483206d50abb21">load_from_checkpoint_shared</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p) override</td></tr>
-<tr class="separator:aa52cca299012c67f88483206d50abb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53a83327a1115a53affa78c93344e641"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1sequential__model.html#a53a83327a1115a53affa78c93344e641">write_proto</a> (lbann_data::Model *proto) override</td></tr>
 <tr class="separator:a53a83327a1115a53affa78c93344e641"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classlbann_1_1model"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classlbann_1_1model')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classlbann_1_1model.html">lbann::model</a></td></tr>
@@ -218,6 +209,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4191097fdbcd1686525e9cd150f958ef inherit pub_methods_classlbann_1_1model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa819e0d7c8bb178155e40e33037cf054 inherit pub_methods_classlbann_1_1model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1model.html#aa819e0d7c8bb178155e40e33037cf054">collect_indices</a> (<a class="el" href="base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8">execution_mode</a> mode)</td></tr>
 <tr class="separator:aa819e0d7c8bb178155e40e33037cf054 inherit pub_methods_classlbann_1_1model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41098c2b2b23e49cdbe8746ef7cac5c8 inherit pub_methods_classlbann_1_1model"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1model.html#a41098c2b2b23e49cdbe8746ef7cac5c8">save_to_checkpoint_shared</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p)</td></tr>
+<tr class="separator:a41098c2b2b23e49cdbe8746ef7cac5c8 inherit pub_methods_classlbann_1_1model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e02dda11636e015ea0c892ffa541881 inherit pub_methods_classlbann_1_1model"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1model.html#a2e02dda11636e015ea0c892ffa541881">load_from_checkpoint_shared</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p)</td></tr>
+<tr class="separator:a2e02dda11636e015ea0c892ffa541881 inherit pub_methods_classlbann_1_1model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f41ac60de4f768a588a8c419ebd11bb inherit pub_methods_classlbann_1_1model"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1model.html#a8f41ac60de4f768a588a8c419ebd11bb">save_to_checkpoint_distributed</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p)</td></tr>
+<tr class="separator:a8f41ac60de4f768a588a8c419ebd11bb inherit pub_methods_classlbann_1_1model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94cb3f78b4cc8e7e872dfc8990231c1b inherit pub_methods_classlbann_1_1model"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1model.html#a94cb3f78b4cc8e7e872dfc8990231c1b">load_from_checkpoint_distributed</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p)</td></tr>
+<tr class="separator:a94cb3f78b4cc8e7e872dfc8990231c1b inherit pub_methods_classlbann_1_1model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a893a8a7ca2f581b306b0e374a1e53 inherit pub_methods_classlbann_1_1model"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1model.html#ad8a893a8a7ca2f581b306b0e374a1e53">synchronize</a> () const </td></tr>
+<tr class="separator:ad8a893a8a7ca2f581b306b0e374a1e53 inherit pub_methods_classlbann_1_1model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -234,8 +235,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a31c281b63593a0ec7110664f7309b01a inherit pro_methods_classlbann_1_1model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68b8c340fdb91a8c113e5f0334958c9e inherit pro_methods_classlbann_1_1model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1model.html#a68b8c340fdb91a8c113e5f0334958c9e">remap_pointers</a> (const std::unordered_map&lt; <a class="el" href="classlbann_1_1Layer.html">Layer</a> *, <a class="el" href="classlbann_1_1Layer.html">Layer</a> * &gt; &amp;layer_map, const std::unordered_map&lt; <a class="el" href="classlbann_1_1weights.html">weights</a> *, <a class="el" href="classlbann_1_1weights.html">weights</a> * &gt; &amp;weights_map)</td></tr>
 <tr class="separator:a68b8c340fdb91a8c113e5f0334958c9e inherit pro_methods_classlbann_1_1model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f92ac6ff6939720197ece407e3aec6d inherit pro_methods_classlbann_1_1model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1model.html#a7f92ac6ff6939720197ece407e3aec6d">setup_layer_execution_order</a> ()</td></tr>
-<tr class="separator:a7f92ac6ff6939720197ece407e3aec6d inherit pro_methods_classlbann_1_1model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0131e36e763470a7bbf67e83b42cd14 inherit pro_methods_classlbann_1_1model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1model.html#ad0131e36e763470a7bbf67e83b42cd14">freeze_layers_under_frozen_surface</a> ()</td></tr>
+<tr class="separator:ad0131e36e763470a7bbf67e83b42cd14 inherit pro_methods_classlbann_1_1model"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0e8af146d4121c1b8b04b4a3c2a455c inherit pro_methods_classlbann_1_1model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1model.html#ab0e8af146d4121c1b8b04b4a3c2a455c">setup_layer_execution_order</a> ()</td></tr>
+<tr class="separator:ab0e8af146d4121c1b8b04b4a3c2a455c inherit pro_methods_classlbann_1_1model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a989ab581e359f65c9238d627cce5b589 inherit pro_methods_classlbann_1_1model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1model.html#a989ab581e359f65c9238d627cce5b589">setup_layers</a> ()</td></tr>
 <tr class="separator:a989ab581e359f65c9238d627cce5b589 inherit pro_methods_classlbann_1_1model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a582edc0f930e1594381ecc7922e91b08 inherit pro_methods_classlbann_1_1model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1model.html#a582edc0f930e1594381ecc7922e91b08">setup_weights</a> ()</td></tr>
@@ -383,7 +386,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Definition at line <a class="el" href="sequential_8cpp_source.html#l00034">34</a> of file <a class="el" href="sequential_8cpp_source.html">sequential.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  : <a class="code" href="classlbann_1_1model.html#a6feaee921c434bbfc32451ed874cc051">model</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, mini_batch_size, obj_fn, default_optimizer) {}</div>
 <div class="ttc" id="file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00044">file_io.cpp:44</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_a6feaee921c434bbfc32451ed874cc051"><div class="ttname"><a href="classlbann_1_1model.html#a6feaee921c434bbfc32451ed874cc051">lbann::model::model</a></div><div class="ttdeci">model(lbann_comm *comm, int mini_batch_size, objective_function *obj_fn, optimizer *default_optimizer=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="model_8cpp_source.html#l00054">model.cpp:54</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_a6feaee921c434bbfc32451ed874cc051"><div class="ttname"><a href="classlbann_1_1model.html#a6feaee921c434bbfc32451ed874cc051">lbann::model::model</a></div><div class="ttdeci">model(lbann_comm *comm, int mini_batch_size, objective_function *obj_fn, optimizer *default_optimizer=nullptr)</div><div class="ttdef"><b>Definition:</b> <a href="model_8cpp_source.html#l00051">model.cpp:51</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -485,149 +488,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="aa405c653dae867e862475e13b9df1db0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool lbann::sequential_model::load_from_checkpoint </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>fd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>bytes</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Load model from checkpoint. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000030">Todo:</a></b></dt><dd>This is old and likely broken </dd></dl>
-
-<p>Definition at line <a class="el" href="sequential_8cpp_source.html#l00087">87</a> of file <a class="el" href="sequential_8cpp_source.html">sequential.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                                                       {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="comment">// read number of layers</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> file_layers;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">int</span> read_rc = read(fd, &amp;file_layers, <span class="keyword">sizeof</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>));</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">if</span> (read_rc != <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>)) {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    fprintf(stderr, <span class="stringliteral">&quot;ERROR: Failed to read number of layers from file `%s&#39; (%d: %s) @ %s:%d\n&quot;</span>,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            filename, errno, strerror(errno), __FILE__, __LINE__</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;           );</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    fflush(stderr);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  *bytes += read_rc;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordflow">if</span> (file_layers != <a class="code" href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">m_layers</a>.size()) {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">// error!</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="comment">/*for (size_t l = 1; l &lt; m_layers.size(); l++) {</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">    if (! m_layers[l]-&gt;loadFromCheckpoint(fd, filename, bytes)) {</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">      return false;</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">    }</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">  }*/</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1model_html_a0229fc226ec163d1411548446104569d"><div class="ttname"><a href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">lbann::model::m_layers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; m_layers</div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00269">model.hpp:269</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="aa52cca299012c67f88483206d50abb21"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool lbann::sequential_model::load_from_checkpoint_shared </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classlbann_1_1persist.html">persist</a> &amp;&#160;</td>
-          <td class="paramname"><em>p</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Restore model by reading checkpoint from given file descriptor, return number of bytes read </p>
-
-<p>Reimplemented from <a class="el" href="classlbann_1_1model.html#a2e02dda11636e015ea0c892ffa541881">lbann::model</a>.</p>
-
-<p>Definition at line <a class="el" href="sequential_8cpp_source.html#l00164">164</a> of file <a class="el" href="sequential_8cpp_source.html">sequential.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                                                             {</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="comment">// read parameters from base class first</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <a class="code" href="classlbann_1_1model.html#a2e02dda11636e015ea0c892ffa541881">model::load_from_checkpoint_shared</a>(p);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  <span class="comment">// have rank 0 read the network file</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="keyword">struct </span>lbann_model_sequential_header header;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordflow">if</span> (p.get_rank() == 0) {</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    p.read_uint32(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c">persist_type::model</a>, <span class="stringliteral">&quot;layers&quot;</span>, &amp;header.layers);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="comment">// TODO: read back each layer type and size</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  }</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="comment">// TODO: this assumes homogeneous processors</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="comment">// broadcast state from rank 0</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  MPI_Bcast(&amp;header, <span class="keyword">sizeof</span>(header), MPI_BYTE, 0, MPI_COMM_WORLD);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;  <span class="keywordflow">if</span> (header.layers != <a class="code" href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">m_layers</a>.size()) {</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="comment">// error!</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;     std::stringstream err;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;     err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot; :: &quot;</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;         &lt;&lt; <span class="stringliteral">&quot;Error occured in model reload: model layers not equal&quot;</span>;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;     <span class="keywordflow">throw</span> lbann_exception(err.str());</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;     <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;  }</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="comment">// TODO: check that each layer type matches what we&#39;d expect</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordflow">for</span> (weights *w : <a class="code" href="classlbann_1_1model.html#aaf9adefe4497d90bf5bc2567e71bfb00">m_weights</a>) {</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    w-&gt;load_from_checkpoint_shared(p);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  }</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  <span class="comment">// read in each layer</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> l = 0; l &lt; <a class="code" href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">m_layers</a>.size(); l++) {</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">if</span> (! <a class="code" href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">m_layers</a>[l]-&gt;<a class="code" href="classlbann_1_1sequential__model.html#aa52cca299012c67f88483206d50abb21">load_from_checkpoint_shared</a>(p)) {</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    }</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  }</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <span class="comment">//m_objective_function-&gt;load_from_checkpoint_shared(p);</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1model_html_a0229fc226ec163d1411548446104569d"><div class="ttname"><a href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">lbann::model::m_layers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; m_layers</div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00269">model.hpp:269</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_a2e02dda11636e015ea0c892ffa541881"><div class="ttname"><a href="classlbann_1_1model.html#a2e02dda11636e015ea0c892ffa541881">lbann::model::load_from_checkpoint_shared</a></div><div class="ttdeci">virtual bool load_from_checkpoint_shared(persist &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="model_8cpp_source.html#l01164">model.cpp:1164</a></div></div>
-<div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c">lbann::persist_type::model</a></div></div>
-<div class="ttc" id="classlbann_1_1sequential__model_html_aa52cca299012c67f88483206d50abb21"><div class="ttname"><a href="classlbann_1_1sequential__model.html#aa52cca299012c67f88483206d50abb21">lbann::sequential_model::load_from_checkpoint_shared</a></div><div class="ttdeci">bool load_from_checkpoint_shared(persist &amp;p) override</div><div class="ttdef"><b>Definition:</b> <a href="sequential_8cpp_source.html#l00164">sequential.cpp:164</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_aaf9adefe4497d90bf5bc2567e71bfb00"><div class="ttname"><a href="classlbann_1_1model.html#aaf9adefe4497d90bf5bc2567e71bfb00">lbann::model::m_weights</a></div><div class="ttdeci">std::vector&lt; weights * &gt; m_weights</div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00271">model.hpp:271</a></div></div>
-</div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classlbann_1_1sequential__model_aa52cca299012c67f88483206d50abb21_cgraph.png" border="0" usemap="#classlbann_1_1sequential__model_aa52cca299012c67f88483206d50abb21_cgraph" alt=""/></div>
-<map name="classlbann_1_1sequential__model_aa52cca299012c67f88483206d50abb21_cgraph" id="classlbann_1_1sequential__model_aa52cca299012c67f88483206d50abb21_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1model.html#a2e02dda11636e015ea0c892ffa541881" title="lbann::model::load\l_from_checkpoint_shared" alt="" coords="216,106,387,147"/><area shape="rect" id="node3" href="classlbann_1_1persist.html#a90ae976e5566fae1b6debdf1b94fd9e0" title="lbann::persist::get_rank" alt="" coords="435,5,594,32"/><area shape="rect" id="node4" href="classlbann_1_1persist.html#ace1ebb58e2570693cdce0ebd2817113b" title="lbann::persist::read\l_uint32" alt="" coords="448,187,581,229"/><area shape="rect" id="node6" href="classlbann_1_1persist.html#aa6d996db3714a7ae055adac0d8e8ac63" title="lbann::persist::read\l_uint64" alt="" coords="448,57,581,98"/><area shape="rect" id="node7" href="namespacelbann.html#ab76114a0e8cc90c28bcb9e7d01eec89a" title="lbann::load_rng_from\l_checkpoint_shared" alt="" coords="443,122,586,163"/><area shape="rect" id="node5" href="namespacelbann.html#a85385e2a9e058b6720300b4cbdd2b1d0" title="lbann::read_bytes" alt="" coords="643,129,768,156"/></map>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="abf2b69dacb5ee3165289377e1d961cd5"></a>
 <div class="memitem">
 <div class="memproto">
@@ -700,148 +560,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a51cd5ae859c66cfb36d25d968ef06203"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool lbann::sequential_model::save_to_checkpoint </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>fd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>filename</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>bytes</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="sequential_8cpp_source.html#l00066">66</a> of file <a class="el" href="sequential_8cpp_source.html">sequential.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                                                                     {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="comment">// write number of layers (we&#39;ll check this on read)</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">int</span> layers = <a class="code" href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">m_layers</a>.size();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">int</span> write_rc = write(fd, &amp;layers, <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>));</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">if</span> (write_rc != <span class="keyword">sizeof</span>(<span class="keywordtype">int</span>)) {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    fprintf(stderr, <span class="stringliteral">&quot;ERROR: Failed to write number of layers to file `%s&#39; (%d: %s) @ %s:%d\n&quot;</span>,</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            filename, errno, strerror(errno), __FILE__, __LINE__</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;           );</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    fflush(stderr);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  *bytes += write_rc;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="comment">// write out details for each layer</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="comment">/*for (size_t l = 1; l &lt; m_layers.size(); l++)</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">    if (!m_layers[l]-&gt;saveToCheckpoint(fd, filename, bytes)) {</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">      return false;</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">    }*/</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1model_html_a0229fc226ec163d1411548446104569d"><div class="ttname"><a href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">lbann::model::m_layers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; m_layers</div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00269">model.hpp:269</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a226032d9890b8770c6fca54bf70d69eb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool lbann::sequential_model::save_to_checkpoint_shared </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classlbann_1_1persist.html">persist</a> &amp;&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>val_end</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Checkpoint model to given file descriptor, return number of bytes written </p>
-
-<p>Reimplemented from <a class="el" href="classlbann_1_1model.html#a3d589d2e46ad35d0a1221e25bef70fa4">lbann::model</a>.</p>
-
-<p>Definition at line <a class="el" href="sequential_8cpp_source.html#l00116">116</a> of file <a class="el" href="sequential_8cpp_source.html">sequential.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                                                                         {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="comment">// write parameters from base class first</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <a class="code" href="classlbann_1_1model.html#a3d589d2e46ad35d0a1221e25bef70fa4">model::save_to_checkpoint_shared</a>(p, val_end);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="comment">// write a single header describing layers and sizes?</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="comment">// have rank 0 write the network file</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordflow">if</span> (p.get_rank() == 0 &amp;&amp; !val_end) {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    uint32_t layers = <a class="code" href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">m_layers</a>.size();</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    p.write_uint32(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c">persist_type::model</a>, <span class="stringliteral">&quot;layers&quot;</span>, (uint32_t) layers);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">// TODO: record each layer type and size (to be checked when read back)</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  }</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="comment">// write out details for each layer</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordflow">if</span>(!val_end){</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">for</span> (weights *w : <a class="code" href="classlbann_1_1model.html#aaf9adefe4497d90bf5bc2567e71bfb00">m_weights</a>) {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      w-&gt;save_to_checkpoint_shared(p);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> l = 0; l &lt; <a class="code" href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">m_layers</a>.size(); l++) {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;      <span class="keywordflow">if</span> (! <a class="code" href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">m_layers</a>[l]-&gt;<a class="code" href="classlbann_1_1sequential__model.html#a226032d9890b8770c6fca54bf70d69eb">save_to_checkpoint_shared</a>(p,val_end)) {</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      }</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  }</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  }</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span>(val_end){</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> l = 0; l &lt; <a class="code" href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">m_layers</a>.size(); l++) {</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;      <span class="keywordflow">if</span> (! <a class="code" href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">m_layers</a>[l]-&gt;<a class="code" href="classlbann_1_1sequential__model.html#a226032d9890b8770c6fca54bf70d69eb">save_to_checkpoint_shared</a>(p,val_end)) {</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      }</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  }</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="comment">//m_objective_function-&gt;save_to_checkpoint_shared(p);</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1model_html_a0229fc226ec163d1411548446104569d"><div class="ttname"><a href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">lbann::model::m_layers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; m_layers</div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00269">model.hpp:269</a></div></div>
-<div class="ttc" id="classlbann_1_1sequential__model_html_a226032d9890b8770c6fca54bf70d69eb"><div class="ttname"><a href="classlbann_1_1sequential__model.html#a226032d9890b8770c6fca54bf70d69eb">lbann::sequential_model::save_to_checkpoint_shared</a></div><div class="ttdeci">bool save_to_checkpoint_shared(persist &amp;p, bool val_end) override</div><div class="ttdef"><b>Definition:</b> <a href="sequential_8cpp_source.html#l00116">sequential.cpp:116</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_a3d589d2e46ad35d0a1221e25bef70fa4"><div class="ttname"><a href="classlbann_1_1model.html#a3d589d2e46ad35d0a1221e25bef70fa4">lbann::model::save_to_checkpoint_shared</a></div><div class="ttdeci">virtual bool save_to_checkpoint_shared(persist &amp;p, bool val_end)</div><div class="ttdef"><b>Definition:</b> <a href="model_8cpp_source.html#l01142">model.cpp:1142</a></div></div>
-<div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c">lbann::persist_type::model</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_aaf9adefe4497d90bf5bc2567e71bfb00"><div class="ttname"><a href="classlbann_1_1model.html#aaf9adefe4497d90bf5bc2567e71bfb00">lbann::model::m_weights</a></div><div class="ttdeci">std::vector&lt; weights * &gt; m_weights</div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00271">model.hpp:271</a></div></div>
-</div><!-- fragment -->
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classlbann_1_1sequential__model_a226032d9890b8770c6fca54bf70d69eb_cgraph.png" border="0" usemap="#classlbann_1_1sequential__model_a226032d9890b8770c6fca54bf70d69eb_cgraph" alt=""/></div>
-<map name="classlbann_1_1sequential__model_a226032d9890b8770c6fca54bf70d69eb_cgraph" id="classlbann_1_1sequential__model_a226032d9890b8770c6fca54bf70d69eb_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1model.html#a3d589d2e46ad35d0a1221e25bef70fa4" title="lbann::model::save\l_to_checkpoint_shared" alt="" coords="246,106,402,147"/><area shape="rect" id="node3" href="classlbann_1_1persist.html#a90ae976e5566fae1b6debdf1b94fd9e0" title="lbann::persist::get_rank" alt="" coords="451,5,610,32"/><area shape="rect" id="node4" href="classlbann_1_1persist.html#a742334568de0aca958dbaf7bbabd3cba" title="lbann::persist::write\l_uint32" alt="" coords="463,187,599,229"/><area shape="rect" id="node6" href="classlbann_1_1persist.html#aced95e3bc711276b072af97b65ef9fc1" title="lbann::persist::write\l_uint64" alt="" coords="463,57,599,98"/><area shape="rect" id="node7" href="namespacelbann.html#af68acf5b249e5360289d4c6a7bfa8985" title="lbann::save_rng_to\l_checkpoint_shared" alt="" coords="461,122,600,163"/><area shape="rect" id="node5" href="namespacelbann.html#aed95061796f19fa1648dcc99dc335abd" title="lbann::write_bytes" alt="" coords="659,129,787,156"/></map>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="a3801a58530388fb6a8cb3e1c018e827d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -893,18 +611,20 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(err.str());</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1model_html_a0229fc226ec163d1411548446104569d"><div class="ttname"><a href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">lbann::model::m_layers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; m_layers</div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00269">model.hpp:269</a></div></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="classlbann_1_1model.html#ad0131e36e763470a7bbf67e83b42cd14">freeze_layers_under_frozen_surface</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1model_html_a0229fc226ec163d1411548446104569d"><div class="ttname"><a href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">lbann::model::m_layers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; m_layers</div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00274">model.hpp:274</a></div></div>
 <div class="ttc" id="namespacelbann_1_1graph_html_a0dd9dcef8bc13481677692347530e328"><div class="ttname"><a href="namespacelbann_1_1graph.html#a0dd9dcef8bc13481677692347530e328">lbann::graph::is_topologically_sorted</a></div><div class="ttdeci">bool is_topologically_sorted(const std::set&lt; int &gt; &amp;nodes, const std::map&lt; int, std::set&lt; int &gt;&gt; &amp;edges)</div><div class="ttdef"><b>Definition:</b> <a href="graph_8cpp_source.html#l00070">graph.cpp:70</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_a7b3e2a643c658dcaa7478d2568f29784"><div class="ttname"><a href="classlbann_1_1model.html#a7b3e2a643c658dcaa7478d2568f29784">lbann::model::setup_layer_topology</a></div><div class="ttdeci">virtual void setup_layer_topology()</div><div class="ttdef"><b>Definition:</b> <a href="model_8cpp_source.html#l00393">model.cpp:393</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_ad4a8c7d22dd8faa2753e7d0360501317"><div class="ttname"><a href="classlbann_1_1model.html#ad4a8c7d22dd8faa2753e7d0360501317">lbann::model::construct_layer_graph</a></div><div class="ttdeci">virtual void construct_layer_graph(std::set&lt; int &gt; &amp;nodes, std::map&lt; int, std::set&lt; int &gt;&gt; &amp;edges) const </div><div class="ttdef"><b>Definition:</b> <a href="model_8cpp_source.html#l00271">model.cpp:271</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_ad0131e36e763470a7bbf67e83b42cd14"><div class="ttname"><a href="classlbann_1_1model.html#ad0131e36e763470a7bbf67e83b42cd14">lbann::model::freeze_layers_under_frozen_surface</a></div><div class="ttdeci">virtual void freeze_layers_under_frozen_surface()</div><div class="ttdef"><b>Definition:</b> <a href="model_8cpp_source.html#l00364">model.cpp:364</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_a7b3e2a643c658dcaa7478d2568f29784"><div class="ttname"><a href="classlbann_1_1model.html#a7b3e2a643c658dcaa7478d2568f29784">lbann::model::setup_layer_topology</a></div><div class="ttdeci">virtual void setup_layer_topology()</div><div class="ttdef"><b>Definition:</b> <a href="model_8cpp_source.html#l00411">model.cpp:411</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_ad4a8c7d22dd8faa2753e7d0360501317"><div class="ttname"><a href="classlbann_1_1model.html#ad4a8c7d22dd8faa2753e7d0360501317">lbann::model::construct_layer_graph</a></div><div class="ttdeci">virtual void construct_layer_graph(std::set&lt; int &gt; &amp;nodes, std::map&lt; int, std::set&lt; int &gt;&gt; &amp;edges) const </div><div class="ttdef"><b>Definition:</b> <a href="model_8cpp_source.html#l00268">model.cpp:268</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1sequential__model_a3801a58530388fb6a8cb3e1c018e827d_cgraph.png" border="0" usemap="#classlbann_1_1sequential__model_a3801a58530388fb6a8cb3e1c018e827d_cgraph" alt=""/></div>
 <map name="classlbann_1_1sequential__model_a3801a58530388fb6a8cb3e1c018e827d_cgraph" id="classlbann_1_1sequential__model_a3801a58530388fb6a8cb3e1c018e827d_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1model.html#a7b3e2a643c658dcaa7478d2568f29784" title="lbann::model::setup\l_layer_topology" alt="" coords="244,201,380,242"/><area shape="rect" id="node12" href="classlbann_1_1model.html#ad4a8c7d22dd8faa2753e7d0360501317" title="lbann::model::construct\l_layer_graph" alt="" coords="233,266,391,307"/><area shape="rect" id="node13" href="namespacelbann_1_1graph.html#a0dd9dcef8bc13481677692347530e328" title="lbann::graph::is_topologically\l_sorted" alt="" coords="217,331,407,373"/><area shape="rect" id="node3" href="classlbann_1_1model.html#a3fb0304e6426dd28a436f50559ef2bef" title="lbann::model::add_connected\l_layers" alt="" coords="456,70,648,111"/><area shape="rect" id="node6" href="classlbann_1_1model.html#a6ba9a836e5ba52c999c5234cfa5e62c2" title="lbann::model::add_dummy\l_layers" alt="" coords="465,266,639,307"/><area shape="rect" id="node10" href="classlbann_1_1model.html#ac56d43e457cd4dfc3b88122bd10d286e" title="lbann::model::add_split\l_layers" alt="" coords="474,201,630,242"/><area shape="rect" id="node4" href="classlbann_1_1Layer.html#a898e72b93752abf52d35b06459cd360e" title="lbann::Layer::get_parent\l_layers" alt="" coords="707,70,869,111"/><area shape="rect" id="node5" href="classlbann_1_1Layer.html#aa0058c8ec4913efc3e4de5d6f61eb8db" title="lbann::Layer::get_child\l_layers" alt="" coords="711,5,865,46"/><area shape="rect" id="node7" href="classlbann_1_1Layer.html#adea2db83fee14177f4f86d713d81c7db" title="lbann::Layer::get_cudnn\l_manager" alt="" coords="707,266,869,307"/><area shape="rect" id="node8" href="classlbann_1_1Layer.html#a82d8a038861b0af0d54fbf44ce715839" title="lbann::Layer::set_name" alt="" coords="709,332,867,359"/><area shape="rect" id="node9" href="classlbann_1_1Layer.html#a326668ce624a9bcc719a463820b2e3a4" title="lbann::Layer::add_parent\l_layer" alt="" coords="705,201,871,242"/><area shape="rect" id="node11" href="classlbann_1_1Layer.html#ace0346ac56fd7ce7b6b44f27f224f35e" title="lbann::Layer::add_child\l_layer" alt="" coords="710,135,866,177"/><area shape="rect" id="node14" href="namespacelbann_1_1graph.html#ac9c1819b38f8bc514ab24ac8778f840b" title="lbann::graph::is_closure" alt="" coords="472,387,632,413"/><area shape="rect" id="node15" href="namespacelbann_1_1graph.html#ad305e0d104d25d9cb1e63a4b93c0847c" title="lbann::graph::get_neighbors" alt="" coords="697,385,879,412"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1model.html#a7b3e2a643c658dcaa7478d2568f29784" title="lbann::model::setup\l_layer_topology" alt="" coords="244,201,380,242"/><area shape="rect" id="node12" href="classlbann_1_1model.html#ad4a8c7d22dd8faa2753e7d0360501317" title="lbann::model::construct\l_layer_graph" alt="" coords="233,266,391,307"/><area shape="rect" id="node13" href="namespacelbann_1_1graph.html#a0dd9dcef8bc13481677692347530e328" title="lbann::graph::is_topologically\l_sorted" alt="" coords="217,331,407,373"/><area shape="rect" id="node16" href="classlbann_1_1model.html#ad0131e36e763470a7bbf67e83b42cd14" title="lbann::model::freeze\l_layers_under_frozen\l_surface" alt="" coords="239,396,385,452"/><area shape="rect" id="node3" href="classlbann_1_1model.html#a3fb0304e6426dd28a436f50559ef2bef" title="lbann::model::add_connected\l_layers" alt="" coords="456,70,648,111"/><area shape="rect" id="node6" href="classlbann_1_1model.html#a6ba9a836e5ba52c999c5234cfa5e62c2" title="lbann::model::add_dummy\l_layers" alt="" coords="465,266,639,307"/><area shape="rect" id="node10" href="classlbann_1_1model.html#ac56d43e457cd4dfc3b88122bd10d286e" title="lbann::model::add_split\l_layers" alt="" coords="474,201,630,242"/><area shape="rect" id="node4" href="classlbann_1_1Layer.html#a898e72b93752abf52d35b06459cd360e" title="lbann::Layer::get_parent\l_layers" alt="" coords="707,70,869,111"/><area shape="rect" id="node5" href="classlbann_1_1Layer.html#aa0058c8ec4913efc3e4de5d6f61eb8db" title="lbann::Layer::get_child\l_layers" alt="" coords="711,5,865,46"/><area shape="rect" id="node7" href="classlbann_1_1Layer.html#a29ae4368b0caeb6f151d2d37ea2f5c02" title="lbann::Layer::get_cudnn\l_manager" alt="" coords="707,266,869,307"/><area shape="rect" id="node8" href="classlbann_1_1Layer.html#a82d8a038861b0af0d54fbf44ce715839" title="lbann::Layer::set_name" alt="" coords="709,332,867,359"/><area shape="rect" id="node9" href="classlbann_1_1Layer.html#a326668ce624a9bcc719a463820b2e3a4" title="lbann::Layer::add_parent\l_layer" alt="" coords="705,201,871,242"/><area shape="rect" id="node11" href="classlbann_1_1Layer.html#ace0346ac56fd7ce7b6b44f27f224f35e" title="lbann::Layer::add_child\l_layer" alt="" coords="710,135,866,177"/><area shape="rect" id="node14" href="namespacelbann_1_1graph.html#ac9c1819b38f8bc514ab24ac8778f840b" title="lbann::graph::is_closure" alt="" coords="472,388,632,415"/><area shape="rect" id="node15" href="namespacelbann_1_1graph.html#ad305e0d104d25d9cb1e63a4b93c0847c" title="lbann::graph::get_neighbors" alt="" coords="697,385,879,412"/></map>
 </div>
 </p>
 
@@ -944,24 +664,24 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1model.html#a488da86420421a4890c8fd7a95849acc">lbann::model</a>.</p>
 
-<p>Definition at line <a class="el" href="sequential_8cpp_source.html#l00151">151</a> of file <a class="el" href="sequential_8cpp_source.html">sequential.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                                                         {</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  <a class="code" href="classlbann_1_1model.html#a488da86420421a4890c8fd7a95849acc">model::write_proto</a>(proto);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;  <span class="comment">//Add layers</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1model.html#a0eabaf2b2f829fd5db3dfd26df420df0">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5">am_world_master</a>()) {</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    proto-&gt;set_name(<a class="code" href="classlbann_1_1sequential__model.html#abf2b69dacb5ee3165289377e1d961cd5">name</a>());</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> l = 0; l &lt; <a class="code" href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">m_layers</a>.size(); l++) {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <span class="keyword">auto</span> layer_proto = proto-&gt;add_layer();</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <a class="code" href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">m_layers</a>[l]-&gt;write_proto(layer_proto);</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  }</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1model_html_a0229fc226ec163d1411548446104569d"><div class="ttname"><a href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">lbann::model::m_layers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; m_layers</div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00269">model.hpp:269</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_a0eabaf2b2f829fd5db3dfd26df420df0"><div class="ttname"><a href="classlbann_1_1model.html#a0eabaf2b2f829fd5db3dfd26df420df0">lbann::model::m_comm</a></div><div class="ttdeci">lbann_comm * m_comm</div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00250">model.hpp:250</a></div></div>
+<p>Definition at line <a class="el" href="sequential_8cpp_source.html#l00068">68</a> of file <a class="el" href="sequential_8cpp_source.html">sequential.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                                         {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="classlbann_1_1model.html#a488da86420421a4890c8fd7a95849acc">model::write_proto</a>(proto);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="comment">//Add layers</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1model.html#a0eabaf2b2f829fd5db3dfd26df420df0">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5">am_world_master</a>()) {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    proto-&gt;set_name(<a class="code" href="classlbann_1_1sequential__model.html#abf2b69dacb5ee3165289377e1d961cd5">name</a>());</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> l = 0; l &lt; <a class="code" href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">m_layers</a>.size(); l++) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keyword">auto</span> layer_proto = proto-&gt;add_layer();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <a class="code" href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">m_layers</a>[l]-&gt;write_proto(layer_proto);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1model_html_a0229fc226ec163d1411548446104569d"><div class="ttname"><a href="classlbann_1_1model.html#a0229fc226ec163d1411548446104569d">lbann::model::m_layers</a></div><div class="ttdeci">std::vector&lt; Layer * &gt; m_layers</div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00274">model.hpp:274</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_a0eabaf2b2f829fd5db3dfd26df420df0"><div class="ttname"><a href="classlbann_1_1model.html#a0eabaf2b2f829fd5db3dfd26df420df0">lbann::model::m_comm</a></div><div class="ttdeci">lbann_comm * m_comm</div><div class="ttdef"><b>Definition:</b> <a href="model_8hpp_source.html#l00255">model.hpp:255</a></div></div>
 <div class="ttc" id="classlbann_1_1sequential__model_html_abf2b69dacb5ee3165289377e1d961cd5"><div class="ttname"><a href="classlbann_1_1sequential__model.html#abf2b69dacb5ee3165289377e1d961cd5">lbann::sequential_model::name</a></div><div class="ttdeci">std::string name() const override</div><div class="ttdef"><b>Definition:</b> <a href="sequential_8hpp_source.html#l00060">sequential.hpp:60</a></div></div>
-<div class="ttc" id="classlbann_1_1model_html_a488da86420421a4890c8fd7a95849acc"><div class="ttname"><a href="classlbann_1_1model.html#a488da86420421a4890c8fd7a95849acc">lbann::model::write_proto</a></div><div class="ttdeci">virtual void write_proto(lbann_data::Model *proto)</div><div class="ttdef"><b>Definition:</b> <a href="model_8cpp_source.html#l01202">model.cpp:1202</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html_adb87fdc17095efd8e4dcb343357a6ba5"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5">lbann::lbann_comm::am_world_master</a></div><div class="ttdeci">bool am_world_master() const </div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00143">comm.hpp:143</a></div></div>
+<div class="ttc" id="classlbann_1_1model_html_a488da86420421a4890c8fd7a95849acc"><div class="ttname"><a href="classlbann_1_1model.html#a488da86420421a4890c8fd7a95849acc">lbann::model::write_proto</a></div><div class="ttdeci">virtual void write_proto(lbann_data::Model *proto)</div><div class="ttdef"><b>Definition:</b> <a href="model_8cpp_source.html#l01355">model.cpp:1355</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_adb87fdc17095efd8e4dcb343357a6ba5"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#adb87fdc17095efd8e4dcb343357a6ba5">lbann::lbann_comm::am_world_master</a></div><div class="ttdeci">bool am_world_master() const </div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00145">comm.hpp:145</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -984,7 +704,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1sequential__model.html">sequential_model</a></li>
-    <li class="footer">Generated on Wed Apr 4 2018 21:59:09 for LBANN by
+    <li class="footer">Generated on Fri May 11 2018 08:30:04 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

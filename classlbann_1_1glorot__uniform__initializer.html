@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-244-g9bd4aac-ci362362741</span>
+   &#160;<span id="projectnumber">v0.93-606-gca499c9-ci377629231</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -295,22 +295,22 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(err.str());</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">const</span> DataType variance = DataType(2) / (<a class="code" href="classlbann_1_1fan__in__fan__out__initializer.html#aea6639db271d9050f0a2e4f8c8dfa6cd">m_fan_in</a> + <a class="code" href="classlbann_1_1fan__in__fan__out__initializer.html#ac67d275ab8574780525d2af59b738338">m_fan_out</a>);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="namespacelbann.html#abd116f95f55d0e29d9a0cc386139c4b4">gaussian_fill</a>(weights_matrix,</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                weights_matrix.Height(),</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                weights_matrix.Width(),</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                DataType(0),</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                std::sqrt(3*variance));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="namespacelbann.html#ab9dfee44698c5a0ea70b38eced6977b7">uniform_fill</a>(weights_matrix,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;               weights_matrix.Height(),</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;               weights_matrix.Width(),</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;               DataType(0),</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;               std::sqrt(3*variance));</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1fan__in__fan__out__initializer_html_aea6639db271d9050f0a2e4f8c8dfa6cd"><div class="ttname"><a href="classlbann_1_1fan__in__fan__out__initializer.html#aea6639db271d9050f0a2e4f8c8dfa6cd">lbann::fan_in_fan_out_initializer::m_fan_in</a></div><div class="ttdeci">int m_fan_in</div><div class="ttdef"><b>Definition:</b> <a href="fan__in__fan__out__initializers_8hpp_source.html#l00057">fan_in_fan_out_initializers.hpp:57</a></div></div>
-<div class="ttc" id="namespacelbann_html_abd116f95f55d0e29d9a0cc386139c4b4"><div class="ttname"><a href="namespacelbann.html#abd116f95f55d0e29d9a0cc386139c4b4">lbann::gaussian_fill</a></div><div class="ttdeci">void gaussian_fill(AbsDistMat &amp;mat, El::Int m, El::Int n, DataType mean, DataType stddev)</div><div class="ttdef"><b>Definition:</b> <a href="random_8cpp_source.html#l00166">random.cpp:166</a></div></div>
 <div class="ttc" id="classlbann_1_1fan__in__fan__out__initializer_html_ac67d275ab8574780525d2af59b738338"><div class="ttname"><a href="classlbann_1_1fan__in__fan__out__initializer.html#ac67d275ab8574780525d2af59b738338">lbann::fan_in_fan_out_initializer::m_fan_out</a></div><div class="ttdeci">int m_fan_out</div><div class="ttdef"><b>Definition:</b> <a href="fan__in__fan__out__initializers_8hpp_source.html#l00059">fan_in_fan_out_initializers.hpp:59</a></div></div>
+<div class="ttc" id="namespacelbann_html_ab9dfee44698c5a0ea70b38eced6977b7"><div class="ttname"><a href="namespacelbann.html#ab9dfee44698c5a0ea70b38eced6977b7">lbann::uniform_fill</a></div><div class="ttdeci">void uniform_fill(AbsDistMat &amp;mat, El::Int m, El::Int n, DataType center=0.0f, DataType radius=1.0f)</div><div class="ttdef"><b>Definition:</b> <a href="random_8cpp_source.html#l00240">random.cpp:240</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1glorot__uniform__initializer_a3a44410934f791cee272183a6a36ae0c_cgraph.png" border="0" usemap="#classlbann_1_1glorot__uniform__initializer_a3a44410934f791cee272183a6a36ae0c_cgraph" alt=""/></div>
 <map name="classlbann_1_1glorot__uniform__initializer_a3a44410934f791cee272183a6a36ae0c_cgraph" id="classlbann_1_1glorot__uniform__initializer_a3a44410934f791cee272183a6a36ae0c_cgraph">
-<area shape="rect" id="node2" href="namespacelbann.html#abd116f95f55d0e29d9a0cc386139c4b4" title="lbann::gaussian_fill" alt="" coords="197,19,331,45"/><area shape="rect" id="node3" href="namespacelbann.html#a2f40602f0503f9737325bb267e5c4dcc" title="lbann::gaussian_fill\l_procdet" alt="" coords="379,11,512,53"/><area shape="rect" id="node4" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764" title="lbann::get_generator" alt="" coords="561,19,701,45"/></map>
+<area shape="rect" id="node2" href="namespacelbann.html#ab9dfee44698c5a0ea70b38eced6977b7" title="lbann::uniform_fill" alt="" coords="198,19,322,45"/><area shape="rect" id="node3" href="random_8cpp.html#a264ce2afa5f531507783c7d813ac6429" title="uniform_fill_procdet" alt="" coords="371,19,506,45"/><area shape="rect" id="node4" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764" title="lbann::get_generator" alt="" coords="555,19,695,45"/></map>
 </div>
 </p>
 
@@ -326,7 +326,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1glorot__uniform__initializer.html">glorot_uniform_initializer</a></li>
-    <li class="footer">Generated on Wed Apr 4 2018 21:59:09 for LBANN by
+    <li class="footer">Generated on Fri May 11 2018 08:30:04 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -99,6 +99,8 @@ var NAVTREEINDEX0 =
 "batch__normalization__cuda_8hpp_source.html":[10,0,0,0,0,0,0,0,0,4,3,1],
 "bent__identity_8hpp.html":[10,0,0,0,0,0,0,0,0,4,0,2],
 "bent__identity_8hpp_source.html":[10,0,0,0,0,0,0,0,0,4,0,2],
+"bernoulli_8hpp.html":[10,0,0,0,0,0,0,0,0,4,4,0],
+"bernoulli_8hpp_source.html":[10,0,0,0,0,0,0,0,0,4,4,0],
 "binary__cross__entropy_8cpp.html":[10,0,0,0,0,0,0,1,7,0,0],
 "binary__cross__entropy_8cpp_source.html":[10,0,0,0,0,0,0,1,7,0,0],
 "binary__cross__entropy_8hpp.html":[10,0,0,0,0,0,0,0,0,7,0,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "callbacks.html#earlystop":[2,9],
 "callbacks.html#gradientcheck":[2,10],
 "callbacks.html#hang":[2,11],
-"callbacks.html#im_comm":[2,12],
-"callbacks.html#io":[2,13],
-"callbacks.html#learningrate":[2,14]
+"callbacks.html#im_comm":[2,12]
 };

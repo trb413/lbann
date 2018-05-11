@@ -1,5 +1,6 @@
 var structlbann_1_1lbann__model__header =
 [
+    [ "callback_type", "structlbann_1_1lbann__model__header.html#ace248c0b160b844d90a416e0c6ffdfab", null ],
     [ "current_epoch", "structlbann_1_1lbann__model__header.html#a72aeacf8c97595c1dffa7a15ed0dd050", null ],
     [ "current_mini_batch_size", "structlbann_1_1lbann__model__header.html#abe843d9cecf1916028026cb1f0069245", null ],
     [ "current_phase", "structlbann_1_1lbann__model__header.html#adadd68a882ba782a3899fdd6c83e2a59", null ],

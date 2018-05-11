@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-244-g9bd4aac-ci362362741</span>
+   &#160;<span id="projectnumber">v0.93-606-gca499c9-ci377629231</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -282,10 +282,10 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="callback__variable__minibatch_8cpp_source.html#l00137">137</a> of file <a class="el" href="callback__variable__minibatch_8cpp_source.html">callback_variable_minibatch.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                                                :</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <a class="code" href="classlbann_1_1lbann__callback__variable__minibatch.html#a970a03f0d297f8447020e85d23f5ee73">lbann_callback_variable_minibatch</a>(starting_mbsize), <a class="code" href="classlbann_1_1lbann__callback__step__minibatch.html#a1d150c95b193f9a24c8d7d73506b034c">m_step</a>(step),</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <a class="code" href="classlbann_1_1lbann__callback__step__minibatch.html#ad367d8969b52755f768085d8db98449c">m_ramp_time</a>(ramp_time) {}</div>
+<p>Definition at line <a class="el" href="callback__variable__minibatch_8cpp_source.html#l00148">148</a> of file <a class="el" href="callback__variable__minibatch_8cpp_source.html">callback_variable_minibatch.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                                                :</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <a class="code" href="classlbann_1_1lbann__callback__variable__minibatch.html#a970a03f0d297f8447020e85d23f5ee73">lbann_callback_variable_minibatch</a>(starting_mbsize), <a class="code" href="classlbann_1_1lbann__callback__step__minibatch.html#a1d150c95b193f9a24c8d7d73506b034c">m_step</a>(step),</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <a class="code" href="classlbann_1_1lbann__callback__step__minibatch.html#ad367d8969b52755f768085d8db98449c">m_ramp_time</a>(ramp_time) {}</div>
 <div class="ttc" id="classlbann_1_1lbann__callback__step__minibatch_html_a1d150c95b193f9a24c8d7d73506b034c"><div class="ttname"><a href="classlbann_1_1lbann__callback__step__minibatch.html#a1d150c95b193f9a24c8d7d73506b034c">lbann::lbann_callback_step_minibatch::m_step</a></div><div class="ttdeci">int m_step</div><div class="ttdoc">Number of epochs between mini-batch size increases. </div><div class="ttdef"><b>Definition:</b> <a href="callback__variable__minibatch_8hpp_source.html#l00105">callback_variable_minibatch.hpp:105</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__variable__minibatch_html_a970a03f0d297f8447020e85d23f5ee73"><div class="ttname"><a href="classlbann_1_1lbann__callback__variable__minibatch.html#a970a03f0d297f8447020e85d23f5ee73">lbann::lbann_callback_variable_minibatch::lbann_callback_variable_minibatch</a></div><div class="ttdeci">lbann_callback_variable_minibatch(int starting_mbsize)</div><div class="ttdef"><b>Definition:</b> <a href="callback__variable__minibatch_8cpp_source.html#l00036">callback_variable_minibatch.cpp:36</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__step__minibatch_html_ad367d8969b52755f768085d8db98449c"><div class="ttname"><a href="classlbann_1_1lbann__callback__step__minibatch.html#ad367d8969b52755f768085d8db98449c">lbann::lbann_callback_step_minibatch::m_ramp_time</a></div><div class="ttdeci">int m_ramp_time</div><div class="ttdoc">Number of steps to ramp the learning rate over. </div><div class="ttdef"><b>Definition:</b> <a href="callback__variable__minibatch_8hpp_source.html#l00107">callback_variable_minibatch.hpp:107</a></div></div>
@@ -353,7 +353,7 @@ Here is the caller graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                                       {</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1lbann__callback__step__minibatch.html#a2ce11bed6c3a4d526c2fdd885970f49d">lbann_callback_step_minibatch</a>(*<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
-<div class="ttc" id="classlbann_1_1lbann__callback__step__minibatch_html_a2ce11bed6c3a4d526c2fdd885970f49d"><div class="ttname"><a href="classlbann_1_1lbann__callback__step__minibatch.html#a2ce11bed6c3a4d526c2fdd885970f49d">lbann::lbann_callback_step_minibatch::lbann_callback_step_minibatch</a></div><div class="ttdeci">lbann_callback_step_minibatch(int starting_mbsize, int step, int ramp_time=0)</div><div class="ttdef"><b>Definition:</b> <a href="callback__variable__minibatch_8cpp_source.html#l00137">callback_variable_minibatch.cpp:137</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__callback__step__minibatch_html_a2ce11bed6c3a4d526c2fdd885970f49d"><div class="ttname"><a href="classlbann_1_1lbann__callback__step__minibatch.html#a2ce11bed6c3a4d526c2fdd885970f49d">lbann::lbann_callback_step_minibatch::lbann_callback_step_minibatch</a></div><div class="ttdeci">lbann_callback_step_minibatch(int starting_mbsize, int step, int ramp_time=0)</div><div class="ttdef"><b>Definition:</b> <a href="callback__variable__minibatch_8cpp_source.html#l00148">callback_variable_minibatch.cpp:148</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -466,19 +466,19 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classlbann_1_1lbann__callback__variable__minibatch.html#ace13e8941491ddd28ef35c277cecb1ad">lbann::lbann_callback_variable_minibatch</a>.</p>
 
-<p>Definition at line <a class="el" href="callback__variable__minibatch_8cpp_source.html#l00142">142</a> of file <a class="el" href="callback__variable__minibatch_8cpp_source.html">callback_variable_minibatch.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                                                            {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordflow">if</span> (m-&gt;get_cur_epoch() % <a class="code" href="classlbann_1_1lbann__callback__step__minibatch.html#a1d150c95b193f9a24c8d7d73506b034c">m_step</a> == 0) {</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    new_mbsize = <a class="code" href="classlbann_1_1lbann__callback__variable__minibatch.html#a6488bd1f45110a1cb22553e5035003de">m_current_mini_batch_size</a> * 2;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    new_lr = <a class="code" href="classlbann_1_1lbann__callback__variable__minibatch.html#a51aae8871667fdff3e54f13488809382">get_current_learning_rate</a>(m) * 2;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    ramp_time = <a class="code" href="classlbann_1_1lbann__callback__step__minibatch.html#ad367d8969b52755f768085d8db98449c">m_ramp_time</a>;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  }</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;}</div>
+<p>Definition at line <a class="el" href="callback__variable__minibatch_8cpp_source.html#l00153">153</a> of file <a class="el" href="callback__variable__minibatch_8cpp_source.html">callback_variable_minibatch.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                                                            {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordflow">if</span> (m-&gt;get_cur_epoch() % <a class="code" href="classlbann_1_1lbann__callback__step__minibatch.html#a1d150c95b193f9a24c8d7d73506b034c">m_step</a> == 0) {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    new_mbsize = <a class="code" href="classlbann_1_1lbann__callback__variable__minibatch.html#a6488bd1f45110a1cb22553e5035003de">m_current_mini_batch_size</a> * 2;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    new_lr = <a class="code" href="classlbann_1_1lbann__callback__variable__minibatch.html#a51aae8871667fdff3e54f13488809382">get_current_learning_rate</a>(m) * 2;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    ramp_time = <a class="code" href="classlbann_1_1lbann__callback__step__minibatch.html#ad367d8969b52755f768085d8db98449c">m_ramp_time</a>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1lbann__callback__step__minibatch_html_a1d150c95b193f9a24c8d7d73506b034c"><div class="ttname"><a href="classlbann_1_1lbann__callback__step__minibatch.html#a1d150c95b193f9a24c8d7d73506b034c">lbann::lbann_callback_step_minibatch::m_step</a></div><div class="ttdeci">int m_step</div><div class="ttdoc">Number of epochs between mini-batch size increases. </div><div class="ttdef"><b>Definition:</b> <a href="callback__variable__minibatch_8hpp_source.html#l00105">callback_variable_minibatch.hpp:105</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__callback__variable__minibatch_html_a51aae8871667fdff3e54f13488809382"><div class="ttname"><a href="classlbann_1_1lbann__callback__variable__minibatch.html#a51aae8871667fdff3e54f13488809382">lbann::lbann_callback_variable_minibatch::get_current_learning_rate</a></div><div class="ttdeci">float get_current_learning_rate(model *m) const </div><div class="ttdoc">Get the current learning rate (assumes every layer has the same one). </div><div class="ttdef"><b>Definition:</b> <a href="callback__variable__minibatch_8cpp_source.html#l00126">callback_variable_minibatch.cpp:126</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__callback__variable__minibatch_html_a51aae8871667fdff3e54f13488809382"><div class="ttname"><a href="classlbann_1_1lbann__callback__variable__minibatch.html#a51aae8871667fdff3e54f13488809382">lbann::lbann_callback_variable_minibatch::get_current_learning_rate</a></div><div class="ttdeci">float get_current_learning_rate(model *m) const </div><div class="ttdoc">Get the current learning rate (assumes every layer has the same one). </div><div class="ttdef"><b>Definition:</b> <a href="callback__variable__minibatch_8cpp_source.html#l00137">callback_variable_minibatch.cpp:137</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__variable__minibatch_html_a6488bd1f45110a1cb22553e5035003de"><div class="ttname"><a href="classlbann_1_1lbann__callback__variable__minibatch.html#a6488bd1f45110a1cb22553e5035003de">lbann::lbann_callback_variable_minibatch::m_current_mini_batch_size</a></div><div class="ttdeci">int m_current_mini_batch_size</div><div class="ttdef"><b>Definition:</b> <a href="callback__variable__minibatch_8hpp_source.html#l00080">callback_variable_minibatch.hpp:80</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__callback__step__minibatch_html_ad367d8969b52755f768085d8db98449c"><div class="ttname"><a href="classlbann_1_1lbann__callback__step__minibatch.html#ad367d8969b52755f768085d8db98449c">lbann::lbann_callback_step_minibatch::m_ramp_time</a></div><div class="ttdeci">int m_ramp_time</div><div class="ttdoc">Number of steps to ramp the learning rate over. </div><div class="ttdef"><b>Definition:</b> <a href="callback__variable__minibatch_8hpp_source.html#l00107">callback_variable_minibatch.hpp:107</a></div></div>
 </div><!-- fragment -->
@@ -552,7 +552,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__callback__step__minibatch.html">lbann_callback_step_minibatch</a></li>
-    <li class="footer">Generated on Wed Apr 4 2018 21:59:06 for LBANN by
+    <li class="footer">Generated on Fri May 11 2018 08:30:00 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -8,7 +8,8 @@ var dir_60ff17fb255bbd939ae2c9b44bd446a2 =
       [ "packing_header", "structlbann_1_1adam_1_1packing__header.html", "structlbann_1_1adam_1_1packing__header" ]
     ] ],
     [ "hypergradient_adam.hpp", "hypergradient__adam_8hpp.html", [
-      [ "hypergradient_adam", "classlbann_1_1hypergradient__adam.html", "classlbann_1_1hypergradient__adam" ]
+      [ "hypergradient_adam", "classlbann_1_1hypergradient__adam.html", "classlbann_1_1hypergradient__adam" ],
+      [ "packing_header", "structlbann_1_1hypergradient__adam_1_1packing__header.html", "structlbann_1_1hypergradient__adam_1_1packing__header" ]
     ] ],
     [ "optimizer.hpp", "optimizer_8hpp.html", [
       [ "optimizer", "classlbann_1_1optimizer.html", "classlbann_1_1optimizer" ]

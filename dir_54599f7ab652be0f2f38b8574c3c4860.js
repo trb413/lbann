@@ -3,10 +3,7 @@ var dir_54599f7ab652be0f2f38b8574c3c4860 =
     [ "cnpy_utils.hpp", "cnpy__utils_8hpp.html", "cnpy__utils_8hpp" ],
     [ "compiler_control.hpp", "compiler__control_8hpp.html", null ],
     [ "cublas_wrapper.hpp", "cublas__wrapper_8hpp.html", null ],
-    [ "cudnn_wrapper.hpp", "cudnn__wrapper_8hpp.html", [
-      [ "matrix", "classlbann_1_1cudnn_1_1matrix.html", null ],
-      [ "cudnn_manager", "classlbann_1_1cudnn_1_1cudnn__manager.html", null ]
-    ] ],
+    [ "cudnn_wrapper.hpp", "cudnn__wrapper_8hpp.html", "cudnn__wrapper_8hpp" ],
     [ "cyg_profile.hpp", "cyg__profile_8hpp.html", "cyg__profile_8hpp" ],
     [ "dataset.hpp", "dataset_8hpp.html", [
       [ "dataset", "classlbann_1_1dataset.html", "classlbann_1_1dataset" ]

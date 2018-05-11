@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['make_5fvoid',['make_void',['../structlbann_1_1make__void.html',1,'lbann']]],
   ['matrix',['matrix',['../classlbann_1_1cudnn_1_1matrix.html',1,'lbann::cudnn']]],
   ['mean_5fabsolute_5fdeviation_5floss',['mean_absolute_deviation_loss',['../classlbann_1_1mean__absolute__deviation__loss.html',1,'lbann']]],
   ['mean_5fabsolute_5fdeviation_5fmetric',['mean_absolute_deviation_metric',['../classlbann_1_1mean__absolute__deviation__metric.html',1,'lbann']]],

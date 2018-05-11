@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['none',['NONE',['../classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aafa59156bc4d5bcbf6bd80918d062da03',1,'lbann::lbann_callback_imcomm']]],
-  ['normal',['NORMAL',['../classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aa5f19efb5bef79cea24be992a2137962e',1,'lbann::lbann_callback_imcomm']]]
+  ['invalid',['INVALID',['../classlbann_1_1lbann__comm.html#a02a03227cc27e3516f0d9f9812f32019accc0377a8afbf50e7094f5c23a8af223',1,'lbann::lbann_comm::INVALID()'],['../base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dafedb2d84cafe20862cb4399751a8a7e3',1,'invalid():&#160;base.hpp'],['../base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dbafedb2d84cafe20862cb4399751a8a7e3',1,'invalid():&#160;base.hpp'],['../base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8afedb2d84cafe20862cb4399751a8a7e3',1,'invalid():&#160;base.hpp'],['../base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39afedb2d84cafe20862cb4399751a8a7e3',1,'invalid():&#160;base.hpp'],['../namespacelbann.html#afb40728fd81916c37e28ea57176ef688afedb2d84cafe20862cb4399751a8a7e3',1,'lbann::invalid()'],['../namespacelbann.html#a5975e1fb530a267728bfb01dc5c1be9baccc0377a8afbf50e7094f5c23a8af223',1,'lbann::INVALID()']]]
 ];

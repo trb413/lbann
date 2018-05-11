@@ -15,6 +15,8 @@ var classlbann_1_1slice__layer =
     [ "get_description", "classlbann_1_1slice__layer.html#aa61c1f449a9f741f523921129dfb88e5", null ],
     [ "get_neuron_dims", "classlbann_1_1slice__layer.html#a824178abe2450bd331304ab0d50214ce", null ],
     [ "get_num_neurons", "classlbann_1_1slice__layer.html#ab36016849a59dfa23d37fd0cd2ec943c", null ],
+    [ "get_slice_points", "classlbann_1_1slice__layer.html#a5c02b2a15355be051f93e72f3b2803ce", null ],
+    [ "get_slice_points", "classlbann_1_1slice__layer.html#ae1ea8940153856e11447411377ce9933", null ],
     [ "get_type", "classlbann_1_1slice__layer.html#aa7c27032d75d8e0d36a76b0763c4f215", null ],
     [ "operator=", "classlbann_1_1slice__layer.html#a24fb9ce808d587210faa4e3b34dc1aff", null ],
     [ "setup_dims", "classlbann_1_1slice__layer.html#ac43785fc01d6cf6e49d3677adfaac297", null ],

@@ -28,6 +28,7 @@ var classlbann_1_1csv__reader =
     [ "set_separator", "classlbann_1_1csv__reader.html#a58c71a6b3a82c064b349ae9d995bcffc", null ],
     [ "set_skip_cols", "classlbann_1_1csv__reader.html#a1ab853e9c9a37a1e6c51811bf5be421b", null ],
     [ "set_skip_rows", "classlbann_1_1csv__reader.html#a7ec75f9bbf61073dd205871916578125", null ],
+    [ "setup_data_store", "classlbann_1_1csv__reader.html#a19175c31963be64ea602d49cfb37bc68", null ],
     [ "setup_ifstreams", "classlbann_1_1csv__reader.html#afc689f206192339770ee9fbd132492bb", null ],
     [ "skip_rows", "classlbann_1_1csv__reader.html#ace1c71ad266e6bd85573051ff45277ab", null ],
     [ "m_col_transforms", "classlbann_1_1csv__reader.html#aad98a20225b1f2545de32b4c19c8285b", null ],

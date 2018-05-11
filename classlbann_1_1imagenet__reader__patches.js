@@ -13,6 +13,7 @@ var classlbann_1_1imagenet__reader__patches =
     [ "operator=", "classlbann_1_1imagenet__reader__patches.html#a02e20aa26fb3b024486b8d5c71d37aa7", null ],
     [ "replicate_processor", "classlbann_1_1imagenet__reader__patches.html#a714247cc547161688a66a64737527de0", null ],
     [ "set_defaults", "classlbann_1_1imagenet__reader__patches.html#a3458e4274b9ed894973a069cf884f04a", null ],
+    [ "setup_data_store", "classlbann_1_1imagenet__reader__patches.html#afad50e94c5d6bde9dff2abe5bad50e11", null ],
     [ "m_num_patches", "classlbann_1_1imagenet__reader__patches.html#a3380936d3d01d5efc77f0f129891fc65", null ],
     [ "m_pps", "classlbann_1_1imagenet__reader__patches.html#a76a4c760b0430ce6df990b9e3bd33fef", null ]
 ];

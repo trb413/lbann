@@ -22,6 +22,7 @@ var dir_4fd9b0f9a8d3454cc4920413ede2913f =
     [ "data_reader_imagenet_patches.cpp", "data__reader__imagenet__patches_8cpp.html", null ],
     [ "data_reader_imagenet_single.cpp", "data__reader__imagenet__single_8cpp.html", null ],
     [ "data_reader_jag.cpp", "data__reader__jag_8cpp.html", null ],
+    [ "data_reader_jag_conduit.cpp", "data__reader__jag__conduit_8cpp.html", null ],
     [ "data_reader_merge_features.cpp", "data__reader__merge__features_8cpp.html", null ],
     [ "data_reader_merge_samples.cpp", "data__reader__merge__samples_8cpp.html", null ],
     [ "data_reader_mesh.cpp", "data__reader__mesh_8cpp.html", null ],

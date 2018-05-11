@@ -14,6 +14,7 @@ var classlbann_1_1data__reader__merge__features =
     [ "get_type", "classlbann_1_1data__reader__merge__features.html#affcf91a640f964ba18de9cb650fb07ad", null ],
     [ "load", "classlbann_1_1data__reader__merge__features.html#a8a618de9a92cb148746a83b0381ba781", null ],
     [ "operator=", "classlbann_1_1data__reader__merge__features.html#a2df9360e463c2ceaf4ba42e287f673b9", null ],
+    [ "setup_data_store", "classlbann_1_1data__reader__merge__features.html#a0ac1ade1b2abddfebe263b6f70a839cc", null ],
     [ "m_data_size", "classlbann_1_1data__reader__merge__features.html#ac9c56e08a45a5beac97e41e403fbaa12", null ],
     [ "m_label_reader", "classlbann_1_1data__reader__merge__features.html#a1e54a136c63b934f44ff91dc68ea3b27", null ]
 ];

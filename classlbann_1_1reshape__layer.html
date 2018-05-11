@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-244-g9bd4aac-ci362362741</span>
+   &#160;<span id="projectnumber">v0.93-606-gca499c9-ci377629231</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -182,6 +182,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a979bb6891e6bf5edba2184cd0b59cf54 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acee56be91337bbd78bc4371a8159b760 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#acee56be91337bbd78bc4371a8159b760">using_gpus</a> () const </td></tr>
 <tr class="separator:acee56be91337bbd78bc4371a8159b760 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb4462d0e948084c13b2a0862078a5a1 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#adb4462d0e948084c13b2a0862078a5a1">synchronize</a> () const </td></tr>
+<tr class="separator:adb4462d0e948084c13b2a0862078a5a1 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c8d2d7693bdebd70fcae9b85400dcbe inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a8c8d2d7693bdebd70fcae9b85400dcbe">get_expected_num_parent_layers</a> () const </td></tr>
 <tr class="separator:a8c8d2d7693bdebd70fcae9b85400dcbe inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae71a973199012d5396777cdceab411d inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#aae71a973199012d5396777cdceab411d">get_expected_num_child_layers</a> () const </td></tr>
@@ -192,18 +194,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8eed87b25ea902b223c6b7a23abf78b3 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ac13af6f5ee8316d64c550bef919ee0 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual El::Matrix&lt; El::Int &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a0ac13af6f5ee8316d64c550bef919ee0">get_sample_indices_per_mb</a> ()</td></tr>
 <tr class="separator:a0ac13af6f5ee8316d64c550bef919ee0 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0c778bee7a1397fd82d3bf1da050ad1 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#ad0c778bee7a1397fd82d3bf1da050ad1">saveToFile</a> (int fd, const char *filename) const </td></tr>
-<tr class="separator:ad0c778bee7a1397fd82d3bf1da050ad1 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ae0e6015dd427c63236a07f8cbd3878 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a1ae0e6015dd427c63236a07f8cbd3878">loadFromFile</a> (int fd, const char *filename)</td></tr>
-<tr class="separator:a1ae0e6015dd427c63236a07f8cbd3878 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa96a60eeb0b4bb4f8ca99fb27f1dc034 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#aa96a60eeb0b4bb4f8ca99fb27f1dc034">saveToCheckpoint</a> (int fd, const char *filename, size_t *bytes) const </td></tr>
-<tr class="separator:aa96a60eeb0b4bb4f8ca99fb27f1dc034 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ac9335d75d817fc2d5cf171da9b7e22 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a7ac9335d75d817fc2d5cf171da9b7e22">loadFromCheckpoint</a> (int fd, const char *filename, size_t *bytes)</td></tr>
-<tr class="separator:a7ac9335d75d817fc2d5cf171da9b7e22 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb305404ee0df209a91e656366706826 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#acb305404ee0df209a91e656366706826">save_to_checkpoint_shared</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p, bool val_end) const </td></tr>
-<tr class="separator:acb305404ee0df209a91e656366706826 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77808538b2e251d87a1093c253c0fb8b inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a77808538b2e251d87a1093c253c0fb8b">save_to_checkpoint_shared</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p) const </td></tr>
+<tr class="separator:a77808538b2e251d87a1093c253c0fb8b inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e262970ecc64166e8b6610e2502ad30 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a9e262970ecc64166e8b6610e2502ad30">load_from_checkpoint_shared</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p)</td></tr>
 <tr class="separator:a9e262970ecc64166e8b6610e2502ad30 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad945df2c21ba94a6df9098d18d69d005 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#ad945df2c21ba94a6df9098d18d69d005">save_to_checkpoint_distributed</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p) const </td></tr>
+<tr class="separator:ad945df2c21ba94a6df9098d18d69d005 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a0a7b95766fbb41fdda0e62ceff9aff inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a9a0a7b95766fbb41fdda0e62ceff9aff">load_from_checkpoint_distributed</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p)</td></tr>
+<tr class="separator:a9a0a7b95766fbb41fdda0e62ceff9aff inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5648cbc9897b894a86c2a6a5e53de4b5 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a5648cbc9897b894a86c2a6a5e53de4b5">write_proto</a> (lbann_data::Layer *proto) const </td></tr>
 <tr class="separator:a5648cbc9897b894a86c2a6a5e53de4b5 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a756687709b230e4dc8cc0e50312c27f2 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a756687709b230e4dc8cc0e50312c27f2">get_fp_output</a> (<a class="el" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a> &amp;fp_output, const <a class="el" href="classlbann_1_1Layer.html">Layer</a> *child) const </td></tr>
@@ -282,8 +280,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad48ebb40ff4418494bf1c86d9e02b21d inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20c83ddb7dba985b6b849bd519c22a7a inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a20c83ddb7dba985b6b849bd519c22a7a">get_local_error_signals</a> (int parent_index=0) const </td></tr>
 <tr class="separator:a20c83ddb7dba985b6b849bd519c22a7a inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adea2db83fee14177f4f86d713d81c7db inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1cudnn_1_1cudnn__manager.html">cudnn::cudnn_manager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#adea2db83fee14177f4f86d713d81c7db">get_cudnn_manager</a> ()</td></tr>
-<tr class="separator:adea2db83fee14177f4f86d713d81c7db inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e253bb1a40769da7136a49d08ef576 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a52e253bb1a40769da7136a49d08ef576">get_comm</a> () const </td></tr>
+<tr class="separator:a52e253bb1a40769da7136a49d08ef576 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29ae4368b0caeb6f151d2d37ea2f5c02 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1cudnn_1_1cudnn__manager.html">cudnn::cudnn_manager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a29ae4368b0caeb6f151d2d37ea2f5c02">get_cudnn_manager</a> () const </td></tr>
+<tr class="separator:a29ae4368b0caeb6f151d2d37ea2f5c02 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad55c455dbae0d082cedfa68511709aae inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#ad55c455dbae0d082cedfa68511709aae">freeze</a> ()</td></tr>
+<tr class="separator:ad55c455dbae0d082cedfa68511709aae inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa43ecf9fc67eb1d596c1a69cf35d1245 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#aa43ecf9fc67eb1d596c1a69cf35d1245">unfreeze</a> ()</td></tr>
+<tr class="separator:aa43ecf9fc67eb1d596c1a69cf35d1245 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90e85ee8ea87210613211b1d79f7d351 inherit pub_methods_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a90e85ee8ea87210613211b1d79f7d351">is_frozen</a> () const </td></tr>
+<tr class="separator:a90e85ee8ea87210613211b1d79f7d351 inherit pub_methods_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -344,6 +350,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:af7881cb5eff5207c15fa835d65462e8f inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08dbb94239e3b8c96329786c57c72e21 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1cudnn_1_1cudnn__manager.html">cudnn::cudnn_manager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#a08dbb94239e3b8c96329786c57c72e21">m_cudnn</a></td></tr>
 <tr class="separator:a08dbb94239e3b8c96329786c57c72e21 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdc60df9731a3ecdeeeb8175fa483676 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#afdc60df9731a3ecdeeeb8175fa483676">m_frozen</a></td></tr>
+<tr class="separator:afdc60df9731a3ecdeeeb8175fa483676 inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1bd9ab0a6f9e554f4dc936d8316028e inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8hpp.html#a3266f5ac18504bbadea983c109566867">EvalType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#ab1bd9ab0a6f9e554f4dc936d8316028e">m_fp_time</a></td></tr>
 <tr class="separator:ab1bd9ab0a6f9e554f4dc936d8316028e inherit pro_attribs_classlbann_1_1Layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4e439c1d6a656e709dc4736c9380476 inherit pro_attribs_classlbann_1_1Layer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="base_8hpp.html#a3266f5ac18504bbadea983c109566867">EvalType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1Layer.html#aa4e439c1d6a656e709dc4736c9380476">m_fp_compute_time</a></td></tr>
@@ -410,10 +418,13 @@ template&lt;data_layout T_layout&gt; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="classlbann_1_1transform__layer.html#a4b72501e0f4d0745c8b13c5331055e65">transform_layer</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>) {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    this-&gt;<a class="code" href="classlbann_1_1Layer.html#adfd6178d21498c9095cd947ae1eb2d6a">m_num_neuron_dims</a> = num_dims;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    this-&gt;<a class="code" href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">m_neuron_dims</a>.assign(dims, dims+num_dims);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    this-&gt;<a class="code" href="classlbann_1_1Layer.html#a6b5ebc8a7d9329d8a773ed787e7b41d8">m_num_neurons</a> = std::accumulate(dims, dims+num_dims, 1,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                          std::multiplies&lt;int&gt;());</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1Layer_html_a6b5ebc8a7d9329d8a773ed787e7b41d8"><div class="ttname"><a href="classlbann_1_1Layer.html#a6b5ebc8a7d9329d8a773ed787e7b41d8">lbann::Layer::m_num_neurons</a></div><div class="ttdeci">int m_num_neurons</div><div class="ttdef"><b>Definition:</b> <a href="layer_8hpp_source.html#l00365">layer.hpp:365</a></div></div>
 <div class="ttc" id="file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00044">file_io.cpp:44</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_adfd6178d21498c9095cd947ae1eb2d6a"><div class="ttname"><a href="classlbann_1_1Layer.html#adfd6178d21498c9095cd947ae1eb2d6a">lbann::Layer::m_num_neuron_dims</a></div><div class="ttdeci">int m_num_neuron_dims</div><div class="ttdef"><b>Definition:</b> <a href="layer_8hpp_source.html#l00366">layer.hpp:366</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_abb34bb8031f57a483e2e327a5f229f48"><div class="ttname"><a href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">lbann::Layer::m_neuron_dims</a></div><div class="ttdeci">std::vector&lt; int &gt; m_neuron_dims</div><div class="ttdef"><b>Definition:</b> <a href="layer_8hpp_source.html#l00362">layer.hpp:362</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_adfd6178d21498c9095cd947ae1eb2d6a"><div class="ttname"><a href="classlbann_1_1Layer.html#adfd6178d21498c9095cd947ae1eb2d6a">lbann::Layer::m_num_neuron_dims</a></div><div class="ttdeci">int m_num_neuron_dims</div><div class="ttdef"><b>Definition:</b> <a href="layer_8hpp_source.html#l00367">layer.hpp:367</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_abb34bb8031f57a483e2e327a5f229f48"><div class="ttname"><a href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">lbann::Layer::m_neuron_dims</a></div><div class="ttdeci">std::vector&lt; int &gt; m_neuron_dims</div><div class="ttdef"><b>Definition:</b> <a href="layer_8hpp_source.html#l00363">layer.hpp:363</a></div></div>
 <div class="ttc" id="classlbann_1_1transform__layer_html_a4b72501e0f4d0745c8b13c5331055e65"><div class="ttname"><a href="classlbann_1_1transform__layer.html#a4b72501e0f4d0745c8b13c5331055e65">lbann::transform_layer::transform_layer</a></div><div class="ttdeci">transform_layer(lbann_comm *comm)</div><div class="ttdef"><b>Definition:</b> <a href="transform_8hpp_source.html#l00039">transform.hpp:39</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -454,12 +465,12 @@ template&lt;data_layout T_layout&gt; </div>
 
 <p>Implements <a class="el" href="classlbann_1_1Layer.html#a7442e01f9ee1294df2de811efcf5171e">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="reshape_8hpp_source.html#l00095">95</a> of file <a class="el" href="reshape_8hpp_source.html">reshape.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                             {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    El::Axpy(DataType(1), <a class="code" href="classlbann_1_1Layer.html#a7ac4579d3c1671dfaf86e3b618d6938a">get_prev_error_signals</a>(), <a class="code" href="classlbann_1_1Layer.html#adb561e140e0bb601f3c5a8ee053a71d2">get_error_signals</a>());</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  }</div>
-<div class="ttc" id="classlbann_1_1Layer_html_a7ac4579d3c1671dfaf86e3b618d6938a"><div class="ttname"><a href="classlbann_1_1Layer.html#a7ac4579d3c1671dfaf86e3b618d6938a">lbann::Layer::get_prev_error_signals</a></div><div class="ttdeci">AbsDistMat &amp; get_prev_error_signals(int child_index=0)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8cpp_source.html#l00375">layer.cpp:375</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_adb561e140e0bb601f3c5a8ee053a71d2"><div class="ttname"><a href="classlbann_1_1Layer.html#adb561e140e0bb601f3c5a8ee053a71d2">lbann::Layer::get_error_signals</a></div><div class="ttdeci">AbsDistMat &amp; get_error_signals(int parent_index=0)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8cpp_source.html#l00378">layer.cpp:378</a></div></div>
+<p>Definition at line <a class="el" href="reshape_8hpp_source.html#l00097">97</a> of file <a class="el" href="reshape_8hpp_source.html">reshape.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                             {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    El::Axpy(DataType(1), <a class="code" href="classlbann_1_1Layer.html#a7ac4579d3c1671dfaf86e3b618d6938a">get_prev_error_signals</a>(), <a class="code" href="classlbann_1_1Layer.html#adb561e140e0bb601f3c5a8ee053a71d2">get_error_signals</a>());</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1Layer_html_a7ac4579d3c1671dfaf86e3b618d6938a"><div class="ttname"><a href="classlbann_1_1Layer.html#a7ac4579d3c1671dfaf86e3b618d6938a">lbann::Layer::get_prev_error_signals</a></div><div class="ttdeci">AbsDistMat &amp; get_prev_error_signals(int child_index=0)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8cpp_source.html#l00387">layer.cpp:387</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_adb561e140e0bb601f3c5a8ee053a71d2"><div class="ttname"><a href="classlbann_1_1Layer.html#adb561e140e0bb601f3c5a8ee053a71d2">lbann::Layer::get_error_signals</a></div><div class="ttdeci">AbsDistMat &amp; get_error_signals(int parent_index=0)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8cpp_source.html#l00390">layer.cpp:390</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -498,8 +509,8 @@ template&lt;data_layout T_layout&gt; </div>
 
 <p>Implements <a class="el" href="classlbann_1_1Layer.html#af420f22bbac801c85483ade84588a23f">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="reshape_8hpp_source.html#l00045">45</a> of file <a class="el" href="reshape_8hpp_source.html">reshape.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1reshape__layer.html#a6161e3231e7a120bdfc0739eac08d196">reshape_layer</a>(*<span class="keyword">this</span>); }</div>
+<p>Definition at line <a class="el" href="reshape_8hpp_source.html#l00047">47</a> of file <a class="el" href="reshape_8hpp_source.html">reshape.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{ <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1reshape__layer.html#a6161e3231e7a120bdfc0739eac08d196">reshape_layer</a>(*<span class="keyword">this</span>); }</div>
 <div class="ttc" id="classlbann_1_1reshape__layer_html_a6161e3231e7a120bdfc0739eac08d196"><div class="ttname"><a href="classlbann_1_1reshape__layer.html#a6161e3231e7a120bdfc0739eac08d196">lbann::reshape_layer::reshape_layer</a></div><div class="ttdeci">reshape_layer(lbann_comm *comm, int num_dims, const int *dims)</div><div class="ttdef"><b>Definition:</b> <a href="reshape_8hpp_source.html#l00038">reshape.hpp:38</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -539,12 +550,12 @@ template&lt;data_layout T_layout&gt; </div>
 
 <p>Implements <a class="el" href="classlbann_1_1Layer.html#a523319dd1bd87a0612afa1912bb5aad7">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="reshape_8hpp_source.html#l00091">91</a> of file <a class="el" href="reshape_8hpp_source.html">reshape.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                             {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    El::LockedView(<a class="code" href="classlbann_1_1Layer.html#a1134b1a4385af199d7272c5aa827fa99">get_activations</a>(), <a class="code" href="classlbann_1_1Layer.html#a45853df73a2e72bfaa774665a0f37ed7">get_prev_activations</a>());</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  }</div>
-<div class="ttc" id="classlbann_1_1Layer_html_a45853df73a2e72bfaa774665a0f37ed7"><div class="ttname"><a href="classlbann_1_1Layer.html#a45853df73a2e72bfaa774665a0f37ed7">lbann::Layer::get_prev_activations</a></div><div class="ttdeci">AbsDistMat &amp; get_prev_activations(int parent_index=0)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8cpp_source.html#l00369">layer.cpp:369</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_a1134b1a4385af199d7272c5aa827fa99"><div class="ttname"><a href="classlbann_1_1Layer.html#a1134b1a4385af199d7272c5aa827fa99">lbann::Layer::get_activations</a></div><div class="ttdeci">AbsDistMat &amp; get_activations(int child_index=0)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8cpp_source.html#l00372">layer.cpp:372</a></div></div>
+<p>Definition at line <a class="el" href="reshape_8hpp_source.html#l00093">93</a> of file <a class="el" href="reshape_8hpp_source.html">reshape.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                             {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    El::LockedView(<a class="code" href="classlbann_1_1Layer.html#a1134b1a4385af199d7272c5aa827fa99">get_activations</a>(), <a class="code" href="classlbann_1_1Layer.html#a45853df73a2e72bfaa774665a0f37ed7">get_prev_activations</a>());</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1Layer_html_a45853df73a2e72bfaa774665a0f37ed7"><div class="ttname"><a href="classlbann_1_1Layer.html#a45853df73a2e72bfaa774665a0f37ed7">lbann::Layer::get_prev_activations</a></div><div class="ttdeci">AbsDistMat &amp; get_prev_activations(int parent_index=0)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8cpp_source.html#l00381">layer.cpp:381</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a1134b1a4385af199d7272c5aa827fa99"><div class="ttname"><a href="classlbann_1_1Layer.html#a1134b1a4385af199d7272c5aa827fa99">lbann::Layer::get_activations</a></div><div class="ttdeci">AbsDistMat &amp; get_activations(int child_index=0)</div><div class="ttdef"><b>Definition:</b> <a href="layer_8cpp_source.html#l00384">layer.cpp:384</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -583,8 +594,8 @@ template&lt;data_layout T_layout&gt; </div>
 
 <p>Implements <a class="el" href="classlbann_1_1Layer.html#a5dfb66e81fc085997402a5e2241316bd">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="reshape_8hpp_source.html#l00047">47</a> of file <a class="el" href="reshape_8hpp_source.html">reshape.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{ <span class="keywordflow">return</span> T_layout; }</div>
+<p>Definition at line <a class="el" href="reshape_8hpp_source.html#l00049">49</a> of file <a class="el" href="reshape_8hpp_source.html">reshape.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{ <span class="keywordflow">return</span> T_layout; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -614,8 +625,8 @@ template&lt;data_layout T_layout&gt; </div>
 
 <p>Implements <a class="el" href="classlbann_1_1Layer.html#a0fa0ea9160b490c151c0a17fde4f7239">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="reshape_8hpp_source.html#l00046">46</a> of file <a class="el" href="reshape_8hpp_source.html">reshape.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;reshape&quot;</span>; }</div>
+<p>Definition at line <a class="el" href="reshape_8hpp_source.html#l00048">48</a> of file <a class="el" href="reshape_8hpp_source.html">reshape.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{ <span class="keywordflow">return</span> <span class="stringliteral">&quot;reshape&quot;</span>; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -645,52 +656,52 @@ template&lt;data_layout T_layout&gt; </div>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1Layer.html#a90fce1b06c1f2abb480e18cfe08a9746">lbann::Layer</a>.</p>
 
-<p>Definition at line <a class="el" href="reshape_8hpp_source.html#l00049">49</a> of file <a class="el" href="reshape_8hpp_source.html">reshape.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                             {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// Store neuron tensor dimensions</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> num_neuron_dims = this-&gt;<a class="code" href="classlbann_1_1Layer.html#adfd6178d21498c9095cd947ae1eb2d6a">m_num_neuron_dims</a>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">const</span> std::vector&lt;int&gt; neuron_dims = this-&gt;<a class="code" href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">m_neuron_dims</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// Initialize previous neuron tensor dimensions</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a90fce1b06c1f2abb480e18cfe08a9746">transform_layer::setup_dims</a>();</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// Initialize neuron tensor dimensions</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    this-&gt;<a class="code" href="classlbann_1_1Layer.html#adfd6178d21498c9095cd947ae1eb2d6a">m_num_neuron_dims</a> = num_neuron_dims;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    this-&gt;<a class="code" href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">m_neuron_dims</a> = neuron_dims;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// Determine any unspecified dimensions</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> unspecified_dim = -1;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> dim = 0; dim &lt; this-&gt;<a class="code" href="classlbann_1_1Layer.html#adfd6178d21498c9095cd947ae1eb2d6a">m_num_neuron_dims</a>; ++dim) {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keywordflow">if</span>(this-&gt;<a class="code" href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">m_neuron_dims</a>[dim] &lt;= 0) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        unspecified_dim = dim;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        this-&gt;<a class="code" href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">m_neuron_dims</a>[dim] = 1;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">if</span>(unspecified_dim &gt;= 0) {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">int</span> specified_size = std::accumulate(this-&gt;<a class="code" href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">m_neuron_dims</a>.begin(),</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                 this-&gt;<a class="code" href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">m_neuron_dims</a>.end(),</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                 1,</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                 std::multiplies&lt;int&gt;());</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      this-&gt;<a class="code" href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">m_neuron_dims</a>[unspecified_dim] = this-&gt;<a class="code" href="classlbann_1_1Layer.html#a6b5ebc8a7d9329d8a773ed787e7b41d8">m_num_neurons</a> / specified_size;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// Check that reshape is valid</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span>(this-&gt;<a class="code" href="classlbann_1_1Layer.html#a6b5ebc8a7d9329d8a773ed787e7b41d8">m_num_neurons</a> != std::accumulate(this-&gt;<a class="code" href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">m_neuron_dims</a>.begin(),</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                              this-&gt;<a class="code" href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">m_neuron_dims</a>.end(),</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                              1,</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                              std::multiplies&lt;int&gt;())) {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      std::string num_neurons = <span class="stringliteral">&quot; {&quot;</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <span class="keywordflow">for</span>(<span class="keywordtype">int</span> n: <a class="code" href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">m_neuron_dims</a>) num_neurons += <span class="stringliteral">&quot; &quot;</span> + std::to_string(n);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      num_neurons += <span class="stringliteral">&quot; }&quot;</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keywordflow">throw</span> lbann_exception(<span class="stringliteral">&quot;reshape_layer: invalid neuron dimensions, &quot;</span> +</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                             std::to_string(<a class="code" href="classlbann_1_1Layer.html#a6b5ebc8a7d9329d8a773ed787e7b41d8">m_num_neurons</a>) + <span class="stringliteral">&quot; != &quot;</span> + num_neurons);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
-<div class="ttc" id="classlbann_1_1Layer_html_a6b5ebc8a7d9329d8a773ed787e7b41d8"><div class="ttname"><a href="classlbann_1_1Layer.html#a6b5ebc8a7d9329d8a773ed787e7b41d8">lbann::Layer::m_num_neurons</a></div><div class="ttdeci">int m_num_neurons</div><div class="ttdef"><b>Definition:</b> <a href="layer_8hpp_source.html#l00364">layer.hpp:364</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_adfd6178d21498c9095cd947ae1eb2d6a"><div class="ttname"><a href="classlbann_1_1Layer.html#adfd6178d21498c9095cd947ae1eb2d6a">lbann::Layer::m_num_neuron_dims</a></div><div class="ttdeci">int m_num_neuron_dims</div><div class="ttdef"><b>Definition:</b> <a href="layer_8hpp_source.html#l00366">layer.hpp:366</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_abb34bb8031f57a483e2e327a5f229f48"><div class="ttname"><a href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">lbann::Layer::m_neuron_dims</a></div><div class="ttdeci">std::vector&lt; int &gt; m_neuron_dims</div><div class="ttdef"><b>Definition:</b> <a href="layer_8hpp_source.html#l00362">layer.hpp:362</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html_a90fce1b06c1f2abb480e18cfe08a9746"><div class="ttname"><a href="classlbann_1_1Layer.html#a90fce1b06c1f2abb480e18cfe08a9746">lbann::Layer::setup_dims</a></div><div class="ttdeci">virtual void setup_dims()</div><div class="ttdef"><b>Definition:</b> <a href="layer_8cpp_source.html#l00508">layer.cpp:508</a></div></div>
+<p>Definition at line <a class="el" href="reshape_8hpp_source.html#l00051">51</a> of file <a class="el" href="reshape_8hpp_source.html">reshape.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                             {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// Store neuron tensor dimensions</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> num_neuron_dims = this-&gt;<a class="code" href="classlbann_1_1Layer.html#adfd6178d21498c9095cd947ae1eb2d6a">m_num_neuron_dims</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">const</span> std::vector&lt;int&gt; neuron_dims = this-&gt;<a class="code" href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">m_neuron_dims</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// Initialize previous neuron tensor dimensions</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classlbann_1_1Layer.html#a90fce1b06c1f2abb480e18cfe08a9746">transform_layer::setup_dims</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// Initialize neuron tensor dimensions</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    this-&gt;<a class="code" href="classlbann_1_1Layer.html#adfd6178d21498c9095cd947ae1eb2d6a">m_num_neuron_dims</a> = num_neuron_dims;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    this-&gt;<a class="code" href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">m_neuron_dims</a> = neuron_dims;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// Determine any unspecified dimensions</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">int</span> unspecified_dim = -1;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> dim = 0; dim &lt; this-&gt;<a class="code" href="classlbann_1_1Layer.html#adfd6178d21498c9095cd947ae1eb2d6a">m_num_neuron_dims</a>; ++dim) {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      <span class="keywordflow">if</span>(this-&gt;<a class="code" href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">m_neuron_dims</a>[dim] &lt;= 0) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        unspecified_dim = dim;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        this-&gt;<a class="code" href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">m_neuron_dims</a>[dim] = 1;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">if</span>(unspecified_dim &gt;= 0) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keyword">const</span> <span class="keywordtype">int</span> specified_size = std::accumulate(this-&gt;<a class="code" href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">m_neuron_dims</a>.begin(),</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                 this-&gt;<a class="code" href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">m_neuron_dims</a>.end(),</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                 1,</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                 std::multiplies&lt;int&gt;());</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      this-&gt;<a class="code" href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">m_neuron_dims</a>[unspecified_dim] = this-&gt;<a class="code" href="classlbann_1_1Layer.html#a6b5ebc8a7d9329d8a773ed787e7b41d8">m_num_neurons</a> / specified_size;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">// Check that reshape is valid</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">if</span>(this-&gt;<a class="code" href="classlbann_1_1Layer.html#a6b5ebc8a7d9329d8a773ed787e7b41d8">m_num_neurons</a> != std::accumulate(this-&gt;<a class="code" href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">m_neuron_dims</a>.begin(),</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                              this-&gt;<a class="code" href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">m_neuron_dims</a>.end(),</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                              1,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                              std::multiplies&lt;int&gt;())) {</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      std::string num_neurons = <span class="stringliteral">&quot; {&quot;</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keywordflow">for</span>(<span class="keywordtype">int</span> n: <a class="code" href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">m_neuron_dims</a>) num_neurons += <span class="stringliteral">&quot; &quot;</span> + std::to_string(n);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      num_neurons += <span class="stringliteral">&quot; }&quot;</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="keywordflow">throw</span> lbann_exception(<span class="stringliteral">&quot;reshape_layer: invalid neuron dimensions, &quot;</span> +</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                             std::to_string(<a class="code" href="classlbann_1_1Layer.html#a6b5ebc8a7d9329d8a773ed787e7b41d8">m_num_neurons</a>) + <span class="stringliteral">&quot; != &quot;</span> + num_neurons);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1Layer_html_a6b5ebc8a7d9329d8a773ed787e7b41d8"><div class="ttname"><a href="classlbann_1_1Layer.html#a6b5ebc8a7d9329d8a773ed787e7b41d8">lbann::Layer::m_num_neurons</a></div><div class="ttdeci">int m_num_neurons</div><div class="ttdef"><b>Definition:</b> <a href="layer_8hpp_source.html#l00365">layer.hpp:365</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_adfd6178d21498c9095cd947ae1eb2d6a"><div class="ttname"><a href="classlbann_1_1Layer.html#adfd6178d21498c9095cd947ae1eb2d6a">lbann::Layer::m_num_neuron_dims</a></div><div class="ttdeci">int m_num_neuron_dims</div><div class="ttdef"><b>Definition:</b> <a href="layer_8hpp_source.html#l00367">layer.hpp:367</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_abb34bb8031f57a483e2e327a5f229f48"><div class="ttname"><a href="classlbann_1_1Layer.html#abb34bb8031f57a483e2e327a5f229f48">lbann::Layer::m_neuron_dims</a></div><div class="ttdeci">std::vector&lt; int &gt; m_neuron_dims</div><div class="ttdef"><b>Definition:</b> <a href="layer_8hpp_source.html#l00363">layer.hpp:363</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html_a90fce1b06c1f2abb480e18cfe08a9746"><div class="ttname"><a href="classlbann_1_1Layer.html#a90fce1b06c1f2abb480e18cfe08a9746">lbann::Layer::setup_dims</a></div><div class="ttdeci">virtual void setup_dims()</div><div class="ttdef"><b>Definition:</b> <a href="layer_8cpp_source.html#l00543">layer.cpp:543</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -712,7 +723,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1reshape__layer.html">reshape_layer</a></li>
-    <li class="footer">Generated on Wed Apr 4 2018 21:59:08 for LBANN by
+    <li class="footer">Generated on Fri May 11 2018 08:30:03 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

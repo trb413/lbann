@@ -22,6 +22,9 @@ var dir_61cbfb8ae8686438cc792fc79dfea6c2 =
     [ "leaky_relu.hpp", "leaky__relu_8hpp.html", [
       [ "leaky_relu_layer", "classlbann_1_1leaky__relu__layer.html", "classlbann_1_1leaky__relu__layer" ]
     ] ],
+    [ "power.hpp", "power_8hpp.html", [
+      [ "power_layer", "classlbann_1_1power__layer.html", "classlbann_1_1power__layer" ]
+    ] ],
     [ "relu.hpp", "relu_8hpp.html", [
       [ "relu_layer", "classlbann_1_1relu__layer.html", "classlbann_1_1relu__layer" ]
     ] ],

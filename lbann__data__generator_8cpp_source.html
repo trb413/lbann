@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-244-g9bd4aac-ci362362741</span>
+   &#160;<span id="projectnumber">v0.93-606-gca499c9-ci377629231</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('lbann__data__generator_8cpp_source.htm
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
 <div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classlbann_1_1DataGenerator.html#a66297bbed5baea4bba641e257166370c">   33</a></span>&#160;<a class="code" href="classlbann_1_1DataGenerator.html#a66297bbed5baea4bba641e257166370c">lbann::DataGenerator::DataGenerator</a>(Int num_samples, Int width, Int height, Int batchSize)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  : DataReader(batchSize, true)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  : DataReader(batchSize, <a class="code" href="namespacelbann.html#aa1002432debb16a265bccfa035b0c582">true</a>)</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="classlbann_1_1DataGenerator.html#a679fdbd459ecefa053b64f78a166c020">m_num_samples</a> = num_samples;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="classlbann_1_1DataGenerator.html#a054cb6ab0d93ec57419a81734ddf04aa">m_data_width</a> = width;</div>
@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('lbann__data__generator_8cpp_source.htm
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> n = 0; n &lt; ShuffledIndices.size(); n++) {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    ShuffledIndices[n] = n;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="namespacelbann.html#a93fc1b42be6ab461e803cb48d58c4d81">uniform_fill_procdet</a>(m_data, get_linearized_data_size(), m_num_samples, 128, 128);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="namespacelbann.html#a8002cfc36b6b6169a166e2155181538c">uniform_fill_procdet</a>(m_data, get_linearized_data_size(), m_num_samples, 128, 128);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
 <div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classlbann_1_1DataGenerator.html#a1465406c3e9766021dbd48b6b8c48590">   64</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="classlbann_1_1DataGenerator.html#a1465406c3e9766021dbd48b6b8c48590">lbann::DataGenerator::fetch_data</a>(<a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a>&amp; X)</div>
@@ -201,20 +201,21 @@ $(document).ready(function(){initNavTree('lbann__data__generator_8cpp_source.htm
 <div class="ttc" id="classlbann_1_1DataGenerator_html_a66297bbed5baea4bba641e257166370c"><div class="ttname"><a href="classlbann_1_1DataGenerator.html#a66297bbed5baea4bba641e257166370c">lbann::DataGenerator::DataGenerator</a></div><div class="ttdeci">DataGenerator(Int num_samples, Int width, Int height, Int batchSize)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__generator_8cpp_source.html#l00033">lbann_data_generator.cpp:33</a></div></div>
 <div class="ttc" id="classlbann_1_1DataGenerator_html"><div class="ttname"><a href="classlbann_1_1DataGenerator.html">lbann::DataGenerator</a></div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__generator_8hpp_source.html#l00037">lbann_data_generator.hpp:37</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="exception_8hpp_source.html#l00040">exception.hpp:40</a></div></div>
+<div class="ttc" id="namespacelbann_html_aa1002432debb16a265bccfa035b0c582"><div class="ttname"><a href="namespacelbann.html#aa1002432debb16a265bccfa035b0c582">lbann::true</a></div><div class="ttdeci">return true</div><div class="ttdef"><b>Definition:</b> <a href="random_8cpp_source.html#l00160">random.cpp:160</a></div></div>
 <div class="ttc" id="lbann__data__generator_8hpp_html"><div class="ttname"><a href="lbann__data__generator_8hpp.html">lbann_data_generator.hpp</a></div></div>
+<div class="ttc" id="namespacelbann_html_a8002cfc36b6b6169a166e2155181538c"><div class="ttname"><a href="namespacelbann.html#a8002cfc36b6b6169a166e2155181538c">lbann::uniform_fill_procdet</a></div><div class="ttdeci">void uniform_fill_procdet(AbsDistMat &amp;mat, El::Int m, El::Int n, DataType center=0.0f, DataType radius=1.0f)</div><div class="ttdef"><b>Definition:</b> <a href="random_8cpp_source.html#l00280">random.cpp:280</a></div></div>
 <div class="ttc" id="random_8hpp_html"><div class="ttname"><a href="random_8hpp.html">random.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1DataGenerator_html_a1465406c3e9766021dbd48b6b8c48590"><div class="ttname"><a href="classlbann_1_1DataGenerator.html#a1465406c3e9766021dbd48b6b8c48590">lbann::DataGenerator::fetch_data</a></div><div class="ttdeci">int fetch_data(Mat &amp;X)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__generator_8cpp_source.html#l00064">lbann_data_generator.cpp:64</a></div></div>
 <div class="ttc" id="classlbann_1_1DataGenerator_html_a8248cc6ea186c23147887ca83b1c4bd7"><div class="ttname"><a href="classlbann_1_1DataGenerator.html#a8248cc6ea186c23147887ca83b1c4bd7">lbann::DataGenerator::load</a></div><div class="ttdeci">void load()</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__generator_8cpp_source.html#l00055">lbann_data_generator.cpp:55</a></div></div>
 <div class="ttc" id="classlbann_1_1DataGenerator_html_a0feafc772df2e0923bea06d4d6065bc3"><div class="ttname"><a href="classlbann_1_1DataGenerator.html#a0feafc772df2e0923bea06d4d6065bc3">lbann::DataGenerator::operator=</a></div><div class="ttdeci">DataGenerator &amp; operator=(const DataGenerator &amp;source)</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__generator_8cpp_source.html#l00091">lbann_data_generator.cpp:91</a></div></div>
 <div class="ttc" id="classlbann_1_1DataGenerator_html_a676e679d18eb0523be714345205c662d"><div class="ttname"><a href="classlbann_1_1DataGenerator.html#a676e679d18eb0523be714345205c662d">lbann::DataGenerator::m_data_height</a></div><div class="ttdeci">Int m_data_height</div><div class="ttdef"><b>Definition:</b> <a href="lbann__data__generator_8hpp_source.html#l00060">lbann_data_generator.hpp:60</a></div></div>
-<div class="ttc" id="namespacelbann_html_a93fc1b42be6ab461e803cb48d58c4d81"><div class="ttname"><a href="namespacelbann.html#a93fc1b42be6ab461e803cb48d58c4d81">lbann::uniform_fill_procdet</a></div><div class="ttdeci">void uniform_fill_procdet(AbsDistMat &amp;mat, El::Int m, El::Int n, DataType center, DataType radius)</div><div class="ttdef"><b>Definition:</b> <a href="random_8cpp_source.html#l00223">random.cpp:223</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_4fd9b0f9a8d3454cc4920413ede2913f.html">data_readers</a></li><li class="navelem"><a class="el" href="lbann__data__generator_8cpp.html">lbann_data_generator.cpp</a></li>
-    <li class="footer">Generated on Wed Apr 4 2018 21:59:03 for LBANN by
+    <li class="footer">Generated on Fri May 11 2018 08:29:58 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

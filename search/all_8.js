@@ -20,6 +20,7 @@ var searchData=
   ['horizontal_5fflip',['horizontal_flip',['../classlbann_1_1mesh__reader.html#a8cff71603c2d652f8b000a5dc4c75431',1,'lbann::mesh_reader::horizontal_flip()'],['../classlbann_1_1lbann__image__preprocessor.html#a4ba2de0a781dfa0a2652ad4d777a241f',1,'lbann::lbann_image_preprocessor::horizontal_flip()']]],
   ['horizontal_5fshift',['horizontal_shift',['../classlbann_1_1lbann__image__preprocessor.html#ae62596b4af5d1940aa0499cde2bdd005',1,'lbann::lbann_image_preprocessor']]],
   ['hostname',['HostName',['../classlbann_1_1SystemParams.html#a4aa517715ee0a454ee7ca2cc23fe30ee',1,'lbann::SystemParams']]],
+  ['hyper_5flearning_5frate',['hyper_learning_rate',['../structlbann_1_1hypergradient__adam_1_1packing__header.html#ab18bcf5b12d7670c77e943ea099cc134',1,'lbann::hypergradient_adam::packing_header']]],
   ['hypergradient_5fadam',['hypergradient_adam',['../classlbann_1_1hypergradient__adam.html',1,'lbann']]],
   ['hypergradient_5fadam',['hypergradient_adam',['../classlbann_1_1hypergradient__adam.html#aefb4d2c307d8f7997624b2ebe977ca3b',1,'lbann::hypergradient_adam::hypergradient_adam(lbann_comm *comm, DataType init_learning_rate, DataType hyper_learning_rate=DataType(1e-7), DataType beta1=DataType(0.9), DataType beta2=DataType(0.99), DataType eps=DataType(1e-8))'],['../classlbann_1_1hypergradient__adam.html#aadb9841237fca01bbe2187a39e8f3cc5',1,'lbann::hypergradient_adam::hypergradient_adam(const hypergradient_adam &amp;other)']]],
   ['hypergradient_5fadam_2ecpp',['hypergradient_adam.cpp',['../hypergradient__adam_8cpp.html',1,'']]],

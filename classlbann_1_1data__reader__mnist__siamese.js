@@ -17,6 +17,7 @@ var classlbann_1_1data__reader__mnist__siamese =
     [ "operator=", "classlbann_1_1data__reader__mnist__siamese.html#ad41517c9c789bbf8d7e0696832e52d98", null ],
     [ "set_defaults", "classlbann_1_1data__reader__mnist__siamese.html#a7e1c9530b5d56a0835db8a30af980164", null ],
     [ "set_input_params", "classlbann_1_1data__reader__mnist__siamese.html#abe572754f0b1415407c1b698b0f83656", null ],
+    [ "setup_data_store", "classlbann_1_1data__reader__mnist__siamese.html#a410d8aa510fb2f3f4d1a257d5b308819", null ],
     [ "shuffle_indices", "classlbann_1_1data__reader__mnist__siamese.html#ad1949fc1a71af86d792e927c0181f87d", null ],
     [ "m_image_data", "classlbann_1_1data__reader__mnist__siamese.html#a5b664a53047546c1be6d19ecabbd30dc", null ],
     [ "m_shuffled_indices2", "classlbann_1_1data__reader__mnist__siamese.html#a42a4b1513a7305cc62d219ac0d9473c3", null ]

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-244-g9bd4aac-ci362362741</span>
+   &#160;<span id="projectnumber">v0.93-606-gca499c9-ci377629231</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -114,6 +114,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a203c94bf2f0d1180af1be27da33a0ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae69656b0b8864d4784458a0a2bcc72ef"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1image__utils.html#ae69656b0b8864d4784458a0a2bcc72ef">load_image</a> (std::vector&lt; unsigned char &gt; &amp;image_buf, int &amp;Width, int &amp;Height, int &amp;Type, cv_process &amp;pp,::<a class="el" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a> &amp;data)</td></tr>
 <tr class="separator:ae69656b0b8864d4784458a0a2bcc72ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75895e02feffc8b32c6c7d168f856778"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1image__utils.html#a75895e02feffc8b32c6c7d168f856778">load_image</a> (std::vector&lt; unsigned char &gt; &amp;image_buf, int &amp;Width, int &amp;Height, int &amp;Type, cv_process_patches &amp;pp, std::vector&lt;::<a class="el" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a> &gt; &amp;data)</td></tr>
+<tr class="separator:a75895e02feffc8b32c6c7d168f856778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae26f1ab054267e66d23f34c2f3bb170"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1image__utils.html#aae26f1ab054267e66d23f34c2f3bb170">load_image</a> (const std::string &amp;filename, int &amp;Width, int &amp;Height, int &amp;Type, cv_process &amp;pp,::<a class="el" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a> &amp;data)</td></tr>
 <tr class="memdesc:aae26f1ab054267e66d23f34c2f3bb170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an image from a file and put it into an LBANN Mat data block.  <a href="#aae26f1ab054267e66d23f34c2f3bb170">More...</a><br/></td></tr>
 <tr class="separator:aae26f1ab054267e66d23f34c2f3bb170"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,31 +215,31 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="image__utils_8cpp_source.html#l00310">310</a> of file <a class="el" href="image__utils_8cpp_source.html">image_utils.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                                                                                                                          {</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="preprocessor">#ifdef LBANN_HAS_OPENCV</span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor"></span>  pp.determine_inverse_lazy_normalization();</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;  <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a> image = cv_utils::copy_buf_to_cvMat(<a class="code" href="namespacelbann_1_1cnpy__utils.html#a9ac86d96ccb1f8b4b2ea16441738781f">data</a>, Width, Height, Type, pp);</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  <span class="keywordtype">bool</span> ok = !image.empty() &amp;&amp; pp.postprocess(image);</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  <a class="code" href="mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a>(!ok, <span class="stringliteral">&quot;Either the image is empty or postprocessing has failed.&quot;</span>, <span class="keyword">false</span>)</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  <a class="code" href="mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a>(fileExt.empty(), &quot;Empty file format extension!&quot;, false)</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  const std::<span class="keywordtype">string</span> ext = ((fileExt[0] != &#39;.&#39;)? (&quot;.&quot; + fileExt) : fileExt);</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  static const <span class="keywordtype">size_t</span> max_img_header_size = 1024;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  const <span class="keywordtype">size_t</span> capacity = image_data_amount(image) + max_img_header_size;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;  if (outbuf.size() &lt; capacity) {</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="comment">//std::cout &lt;&lt; &quot;bytes reserved for the image: &quot; &lt;&lt; image_data_amount(image) &lt;&lt; std::endl;</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    outbuf.resize(capacity);</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  }</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keywordflow">return</span> (ok &amp;&amp; cv::imencode(ext, image, outbuf));</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor">#endif // LBANN_HAS_OPENCV</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="preprocessor"></span>}</div>
+<p>Definition at line <a class="el" href="image__utils_8cpp_source.html#l00350">350</a> of file <a class="el" href="image__utils_8cpp_source.html">image_utils.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;                                                                                                                          {</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;<span class="preprocessor">#ifdef LBANN_HAS_OPENCV</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;<span class="preprocessor"></span>  pp.determine_inverse_lazy_normalization();</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a> image = cv_utils::copy_buf_to_cvMat(<a class="code" href="namespacelbann_1_1cnpy__utils.html#a9ac86d96ccb1f8b4b2ea16441738781f">data</a>, Width, Height, Type, pp);</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;  <span class="keywordtype">bool</span> ok = !image.empty() &amp;&amp; pp.postprocess(image);</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  <a class="code" href="mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a>(!ok, <span class="stringliteral">&quot;Either the image is empty or postprocessing has failed.&quot;</span>, <span class="keyword">false</span>)</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  <a class="code" href="mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a>(fileExt.empty(), &quot;Empty file format extension!&quot;, false)</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  const std::<span class="keywordtype">string</span> ext = ((fileExt[0] != &#39;.&#39;)? (&quot;.&quot; + fileExt) : fileExt);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  static const <span class="keywordtype">size_t</span> max_img_header_size = 1024;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  const <span class="keywordtype">size_t</span> capacity = image_data_amount(image) + max_img_header_size;</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  if (outbuf.size() &lt; capacity) {</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="comment">//std::cout &lt;&lt; &quot;bytes reserved for the image: &quot; &lt;&lt; image_data_amount(image) &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    outbuf.resize(capacity);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  }</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;  <span class="keywordflow">return</span> (ok &amp;&amp; cv::imencode(ext, image, outbuf));</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;<span class="preprocessor">#endif // LBANN_HAS_OPENCV</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="ttc" id="base_8hpp_html_a68f11fdc31b62516cb310831bbe54d73"><div class="ttname"><a href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a></div><div class="ttdeci">El::Matrix&lt; lbann::DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00042">base.hpp:42</a></div></div>
 <div class="ttc" id="namespacelbann_1_1cnpy__utils_html_a9ac86d96ccb1f8b4b2ea16441738781f"><div class="ttname"><a href="namespacelbann_1_1cnpy__utils.html#a9ac86d96ccb1f8b4b2ea16441738781f">lbann::cnpy_utils::data</a></div><div class="ttdeci">T &amp; data(const cnpy::NpyArray &amp;na, const std::vector&lt; size_t &gt; indices)</div><div class="ttdef"><b>Definition:</b> <a href="cnpy__utils_8hpp_source.html#l00052">cnpy_utils.hpp:52</a></div></div>
 <div class="ttc" id="mild__exception_8hpp_html_a7b8339c566152ab29ce66b63e90c67f9"><div class="ttname"><a href="mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a></div><div class="ttdeci">#define _LBANN_MILD_EXCEPTION(_COND_, _MSG_, _RETVAL_)</div><div class="ttdef"><b>Definition:</b> <a href="mild__exception_8hpp_source.html#l00083">mild_exception.hpp:83</a></div></div>
@@ -313,24 +315,24 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="image__utils_8cpp_source.html#l00244">244</a> of file <a class="el" href="image__utils_8cpp_source.html">image_utils.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                                                                                                     {</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">#ifdef LBANN_HAS_OPENCV</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor"></span>  <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a> image = cv::imdecode(inbuf, cv::IMREAD_ANYCOLOR | cv::IMREAD_ANYDEPTH);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  <span class="keywordtype">bool</span> ok = !image.empty() &amp;&amp; pp.preprocess(image);</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  ok = ok &amp;&amp; cv_utils::copy_cvMat_to_buf(image, <a class="code" href="namespacelbann_1_1cnpy__utils.html#a9ac86d96ccb1f8b4b2ea16441738781f">data</a>, pp);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  pp.disable_lazy_normalizer();</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <a class="code" href="mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a>(!ok, <span class="stringliteral">&quot;Image preprocessing or copying failed.&quot;</span>, <span class="keyword">false</span>)</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  Width  = image.cols;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  Height = image.rows;</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  Type   = image.type();</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  return ok;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor">#endif // LBANN_HAS_OPENCV</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor"></span>}</div>
+<p>Definition at line <a class="el" href="image__utils_8cpp_source.html#l00284">284</a> of file <a class="el" href="image__utils_8cpp_source.html">image_utils.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                                                                                                     {</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="preprocessor">#ifdef LBANN_HAS_OPENCV</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="preprocessor"></span>  <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a> image = cv::imdecode(inbuf, cv::IMREAD_ANYCOLOR | cv::IMREAD_ANYDEPTH);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  <span class="keywordtype">bool</span> ok = !image.empty() &amp;&amp; pp.preprocess(image);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  ok = ok &amp;&amp; cv_utils::copy_cvMat_to_buf(image, <a class="code" href="namespacelbann_1_1cnpy__utils.html#a9ac86d96ccb1f8b4b2ea16441738781f">data</a>, pp);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  pp.disable_lazy_normalizer();</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <a class="code" href="mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a>(!ok, <span class="stringliteral">&quot;Image preprocessing or copying failed.&quot;</span>, <span class="keyword">false</span>)</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  Width  = image.cols;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  Height = image.rows;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  Type   = image.type();</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  return ok;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="preprocessor">#endif // LBANN_HAS_OPENCV</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="ttc" id="base_8hpp_html_a68f11fdc31b62516cb310831bbe54d73"><div class="ttname"><a href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a></div><div class="ttdeci">El::Matrix&lt; lbann::DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00042">base.hpp:42</a></div></div>
 <div class="ttc" id="namespacelbann_1_1cnpy__utils_html_a9ac86d96ccb1f8b4b2ea16441738781f"><div class="ttname"><a href="namespacelbann_1_1cnpy__utils.html#a9ac86d96ccb1f8b4b2ea16441738781f">lbann::cnpy_utils::data</a></div><div class="ttdeci">T &amp; data(const cnpy::NpyArray &amp;na, const std::vector&lt; size_t &gt; indices)</div><div class="ttdef"><b>Definition:</b> <a href="cnpy__utils_8hpp_source.html#l00052">cnpy_utils.hpp:52</a></div></div>
 <div class="ttc" id="mild__exception_8hpp_html_a7b8339c566152ab29ce66b63e90c67f9"><div class="ttname"><a href="mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a></div><div class="ttdeci">#define _LBANN_MILD_EXCEPTION(_COND_, _MSG_, _RETVAL_)</div><div class="ttdef"><b>Definition:</b> <a href="mild__exception_8hpp_source.html#l00083">mild_exception.hpp:83</a></div></div>
@@ -415,33 +417,33 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="image__utils_8cpp_source.html#l00273">273</a> of file <a class="el" href="image__utils_8cpp_source.html">image_utils.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                                                                                                                        {</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="preprocessor">#ifdef LBANN_HAS_OPENCV</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor"></span>  <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a> image = cv::imdecode(inbuf, cv::IMREAD_ANYCOLOR | cv::IMREAD_ANYDEPTH);</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  std::vector&lt;cv::Mat&gt; patches;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <span class="keywordtype">bool</span> ok = !image.empty() &amp;&amp; pp.preprocess(image, patches);</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <span class="keywordflow">if</span> ((patches.size() == 0u) || (patches.size() != <a class="code" href="namespacelbann_1_1cnpy__utils.html#a9ac86d96ccb1f8b4b2ea16441738781f">data</a>.size())) {</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  }</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0u; ok &amp;&amp; (i &lt; patches.size()); ++i) {</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    ok = cv_utils::copy_cvMat_to_buf(patches[i], <a class="code" href="namespacelbann_1_1cnpy__utils.html#a9ac86d96ccb1f8b4b2ea16441738781f">data</a>[i], pp);</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  }</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  pp.disable_lazy_normalizer();</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <a class="code" href="mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a>(!ok, <span class="stringliteral">&quot;Image preprocessing or copying failed.&quot;</span>, <span class="keyword">false</span>)</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  Width  = patches[0].cols;</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  Height = patches[0].rows;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  Type   = patches[0].type();</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  return ok;</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor">#endif // LBANN_HAS_OPENCV</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="preprocessor"></span>}</div>
+<p>Definition at line <a class="el" href="image__utils_8cpp_source.html#l00313">313</a> of file <a class="el" href="image__utils_8cpp_source.html">image_utils.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                                                                                                                        {</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="preprocessor">#ifdef LBANN_HAS_OPENCV</span></div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor"></span>  <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a> image = cv::imdecode(inbuf, cv::IMREAD_ANYCOLOR | cv::IMREAD_ANYDEPTH);</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  std::vector&lt;cv::Mat&gt; patches;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  <span class="keywordtype">bool</span> ok = !image.empty() &amp;&amp; pp.preprocess(image, patches);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  <span class="keywordflow">if</span> ((patches.size() == 0u) || (patches.size() != <a class="code" href="namespacelbann_1_1cnpy__utils.html#a9ac86d96ccb1f8b4b2ea16441738781f">data</a>.size())) {</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  }</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0u; ok &amp;&amp; (i &lt; patches.size()); ++i) {</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    ok = cv_utils::copy_cvMat_to_buf(patches[i], <a class="code" href="namespacelbann_1_1cnpy__utils.html#a9ac86d96ccb1f8b4b2ea16441738781f">data</a>[i], pp);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  }</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  pp.disable_lazy_normalizer();</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <a class="code" href="mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a>(!ok, <span class="stringliteral">&quot;Image preprocessing or copying failed.&quot;</span>, <span class="keyword">false</span>)</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  Width  = patches[0].cols;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  Height = patches[0].rows;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;  Type   = patches[0].type();</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  return ok;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="preprocessor">#endif // LBANN_HAS_OPENCV</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="ttc" id="base_8hpp_html_a68f11fdc31b62516cb310831bbe54d73"><div class="ttname"><a href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a></div><div class="ttdeci">El::Matrix&lt; lbann::DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00042">base.hpp:42</a></div></div>
 <div class="ttc" id="namespacelbann_1_1cnpy__utils_html_a9ac86d96ccb1f8b4b2ea16441738781f"><div class="ttname"><a href="namespacelbann_1_1cnpy__utils.html#a9ac86d96ccb1f8b4b2ea16441738781f">lbann::cnpy_utils::data</a></div><div class="ttdeci">T &amp; data(const cnpy::NpyArray &amp;na, const std::vector&lt; size_t &gt; indices)</div><div class="ttdef"><b>Definition:</b> <a href="cnpy__utils_8hpp_source.html#l00052">cnpy_utils.hpp:52</a></div></div>
 <div class="ttc" id="mild__exception_8hpp_html_a7b8339c566152ab29ce66b63e90c67f9"><div class="ttname"><a href="mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a></div><div class="ttdeci">#define _LBANN_MILD_EXCEPTION(_COND_, _MSG_, _RETVAL_)</div><div class="ttdef"><b>Definition:</b> <a href="mild__exception_8hpp_source.html#l00083">mild_exception.hpp:83</a></div></div>
@@ -594,47 +596,150 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="image__utils_8cpp_source.html#l00336">336</a> of file <a class="el" href="image__utils_8cpp_source.html">image_utils.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                                                                                                   {</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="preprocessor">#ifdef LBANN_HAS_OPENCV</span></div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="preprocessor"></span>  <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a> image = cv::imdecode(image_buf, cv::IMREAD_ANYCOLOR | cv::IMREAD_ANYDEPTH);</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  <span class="keywordflow">if</span> (image.empty()) {</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    std::stringstream err;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot; :: image is empty&quot;</span>;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(err.str());</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  }</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  <span class="keywordtype">bool</span> pp_test = pp.preprocess(image);</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;  <span class="keywordflow">if</span> (! pp_test) {</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    std::stringstream err;</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot; :: pp.preprocess(image) failed&quot;</span>;</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(err.str());</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  }</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  <span class="comment">//bool ok = !image.empty() &amp;&amp; pp.preprocess(image);</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;  <span class="keywordtype">bool</span> ok = cv_utils::copy_cvMat_to_buf(image, <a class="code" href="namespacelbann_1_1cnpy__utils.html#a9ac86d96ccb1f8b4b2ea16441738781f">data</a>, pp);</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;  <span class="keywordflow">if</span> (! ok) {</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    std::stringstream err;</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot; :: cv_utils::copy_cvMat_to_buf() failed&quot;</span>;</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(err.str());</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  }</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  <span class="comment">// Disabling normalizer is needed because normalizer is not necessarily</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;  <span class="comment">// called during preprocessing but implicitly applied during data copying to</span></div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;  <span class="comment">// reduce overhead.</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;  pp.disable_lazy_normalizer();</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  <a class="code" href="mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a>(!ok, <span class="stringliteral">&quot;Image preprocessing or copying failed.&quot;</span>, <span class="keyword">false</span>)</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;  Width  = image.cols;</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;  Height = image.rows;</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  Type   = image.type();</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  return ok;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="preprocessor"></span>  std::stringstream err;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; :: not compiled with LBANN_ENABLE_OPENCV!&quot;</span>;</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  <span class="keywordflow">throw</span> lbann_exception(err.str());</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;<span class="preprocessor">#endif // LBANN_HAS_OPENCV</span></div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;<span class="preprocessor"></span>}</div>
+<p>Definition at line <a class="el" href="image__utils_8cpp_source.html#l00379">379</a> of file <a class="el" href="image__utils_8cpp_source.html">image_utils.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                                                                                                   {</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="preprocessor">#ifdef LBANN_HAS_OPENCV</span></div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;<span class="preprocessor"></span>  <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a> image = cv::imdecode(image_buf, cv::IMREAD_ANYCOLOR | cv::IMREAD_ANYDEPTH);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  <span class="keywordflow">if</span> (image.empty()) {</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    std::stringstream err;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot; :: image is empty&quot;</span>;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(err.str());</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;  }</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;  <span class="keywordtype">bool</span> pp_test = pp.preprocess(image);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  <span class="keywordflow">if</span> (! pp_test) {</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    std::stringstream err;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot; :: pp.preprocess(image) failed&quot;</span>;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(err.str());</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  }</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;  <span class="comment">//bool ok = !image.empty() &amp;&amp; pp.preprocess(image);</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;  <span class="keywordtype">bool</span> ok = cv_utils::copy_cvMat_to_buf(image, <a class="code" href="namespacelbann_1_1cnpy__utils.html#a9ac86d96ccb1f8b4b2ea16441738781f">data</a>, pp);</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;  <span class="keywordflow">if</span> (! ok) {</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    std::stringstream err;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__ &lt;&lt; <span class="stringliteral">&quot; :: cv_utils::copy_cvMat_to_buf() failed&quot;</span>;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keywordflow">throw</span> lbann_exception(err.str());</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;  }</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;  <span class="comment">// Disabling normalizer is needed because normalizer is not necessarily</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;  <span class="comment">// called during preprocessing but implicitly applied during data copying to</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;  <span class="comment">// reduce overhead.</span></div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  pp.disable_lazy_normalizer();</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;  <a class="code" href="mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a>(!ok, <span class="stringliteral">&quot;Image preprocessing or copying failed.&quot;</span>, <span class="keyword">false</span>)</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;  Width  = image.cols;</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;  Height = image.rows;</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;  Type   = image.type();</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  return ok;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="preprocessor"></span>  std::stringstream err;</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;  err &lt;&lt; __FILE__ &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; __LINE__</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;      &lt;&lt; <span class="stringliteral">&quot; :: not compiled with LBANN_ENABLE_OPENCV!&quot;</span>;</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;  <span class="keywordflow">throw</span> lbann_exception(err.str());</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;<span class="preprocessor">#endif // LBANN_HAS_OPENCV</span></div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="ttc" id="base_8hpp_html_a68f11fdc31b62516cb310831bbe54d73"><div class="ttname"><a href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a></div><div class="ttdeci">El::Matrix&lt; lbann::DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00042">base.hpp:42</a></div></div>
+<div class="ttc" id="namespacelbann_1_1cnpy__utils_html_a9ac86d96ccb1f8b4b2ea16441738781f"><div class="ttname"><a href="namespacelbann_1_1cnpy__utils.html#a9ac86d96ccb1f8b4b2ea16441738781f">lbann::cnpy_utils::data</a></div><div class="ttdeci">T &amp; data(const cnpy::NpyArray &amp;na, const std::vector&lt; size_t &gt; indices)</div><div class="ttdef"><b>Definition:</b> <a href="cnpy__utils_8hpp_source.html#l00052">cnpy_utils.hpp:52</a></div></div>
+<div class="ttc" id="mild__exception_8hpp_html_a7b8339c566152ab29ce66b63e90c67f9"><div class="ttname"><a href="mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a></div><div class="ttdeci">#define _LBANN_MILD_EXCEPTION(_COND_, _MSG_, _RETVAL_)</div><div class="ttdef"><b>Definition:</b> <a href="mild__exception_8hpp_source.html#l00083">mild_exception.hpp:83</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a75895e02feffc8b32c6c7d168f856778"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lbann::image_utils::load_image </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; unsigned char &gt; &amp;&#160;</td>
+          <td class="paramname"><em>image_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>Width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>Height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>Type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">cv_process_patches &amp;&#160;</td>
+          <td class="paramname"><em>pp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt;::<a class="el" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>The name of the image file to read in </td></tr>
+    <tr><td class="paramname">Width</td><td>The width of a patch from the image read </td></tr>
+    <tr><td class="paramname">Height</td><td>The height of a patch from the image read </td></tr>
+    <tr><td class="paramname">Type</td><td>The type of the image patches (OpenCV code used for cv::Mat) </td></tr>
+    <tr><td class="paramname">pp</td><td>The pre-processing parameters </td></tr>
+    <tr><td class="paramname">data</td><td>The pre-processed image data to be stored in El::Matrix&lt;DataType&gt; format </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="image__utils_8cpp_source.html#l00220">220</a> of file <a class="el" href="image__utils_8cpp_source.html">image_utils.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                                                                                                                      {</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor">#ifdef LBANN_HAS_OPENCV</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="preprocessor"></span>  <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a> image = cv::imdecode(image_buf, cv::IMREAD_ANYCOLOR | cv::IMREAD_ANYDEPTH);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  std::vector&lt;cv::Mat&gt; patches;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordtype">bool</span> ok = !image.empty() &amp;&amp; pp.preprocess(image, patches);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keywordflow">if</span> ((patches.size() == 0u) || (patches.size() != <a class="code" href="namespacelbann_1_1cnpy__utils.html#a9ac86d96ccb1f8b4b2ea16441738781f">data</a>.size())) {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0u; ok &amp;&amp; (i &lt; patches.size()); ++i) {</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    ok = cv_utils::copy_cvMat_to_buf(patches[i], <a class="code" href="namespacelbann_1_1cnpy__utils.html#a9ac86d96ccb1f8b4b2ea16441738781f">data</a>[i], pp);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  }</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="comment">// Disabling normalizer is needed because normalizer is not necessarily</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="comment">// called during preprocessing but implicitly applied during data copying to</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="comment">// reduce overhead.</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  pp.disable_lazy_normalizer();</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <a class="code" href="mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a>(!ok, <span class="stringliteral">&quot;Image preprocessing or copying failed.&quot;</span>, <span class="keyword">false</span>)</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  Width  = patches[0].cols;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  Height = patches[0].rows;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  Type   = patches[0].type();</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  return ok;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="preprocessor">#endif // LBANN_HAS_OPENCV</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="ttc" id="base_8hpp_html_a68f11fdc31b62516cb310831bbe54d73"><div class="ttname"><a href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a></div><div class="ttdeci">El::Matrix&lt; lbann::DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00042">base.hpp:42</a></div></div>
 <div class="ttc" id="namespacelbann_1_1cnpy__utils_html_a9ac86d96ccb1f8b4b2ea16441738781f"><div class="ttname"><a href="namespacelbann_1_1cnpy__utils.html#a9ac86d96ccb1f8b4b2ea16441738781f">lbann::cnpy_utils::data</a></div><div class="ttdeci">T &amp; data(const cnpy::NpyArray &amp;na, const std::vector&lt; size_t &gt; indices)</div><div class="ttdef"><b>Definition:</b> <a href="cnpy__utils_8hpp_source.html#l00052">cnpy_utils.hpp:52</a></div></div>
 <div class="ttc" id="mild__exception_8hpp_html_a7b8339c566152ab29ce66b63e90c67f9"><div class="ttname"><a href="mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a></div><div class="ttdeci">#define _LBANN_MILD_EXCEPTION(_COND_, _MSG_, _RETVAL_)</div><div class="ttdef"><b>Definition:</b> <a href="mild__exception_8hpp_source.html#l00083">mild_exception.hpp:83</a></div></div>
@@ -1158,20 +1263,20 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="image__utils_8cpp_source.html#l00219">219</a> of file <a class="el" href="image__utils_8cpp_source.html">image_utils.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                                                                                                                        {</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor">#ifdef LBANN_HAS_OPENCV</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor"></span>  pp.determine_inverse_lazy_normalization();</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a> image = cv_utils::copy_buf_to_cvMat(<a class="code" href="namespacelbann_1_1cnpy__utils.html#a9ac86d96ccb1f8b4b2ea16441738781f">data</a>, Width, Height, Type, pp);</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordtype">bool</span> ok = !image.empty() &amp;&amp; pp.postprocess(image);</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <a class="code" href="mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a>(!ok, <span class="stringliteral">&quot;Image postprocessing has failed.&quot;</span>, <span class="keyword">false</span>)</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  return (ok &amp;&amp; cv::imwrite(filename, image));</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<span class="preprocessor">#endif // LBANN_HAS_OPENCV</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor"></span>}</div>
+<p>Definition at line <a class="el" href="image__utils_8cpp_source.html#l00259">259</a> of file <a class="el" href="image__utils_8cpp_source.html">image_utils.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                                                                                                                        {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">#ifdef LBANN_HAS_OPENCV</span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor"></span>  pp.determine_inverse_lazy_normalization();</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">cv::Mat</a> image = cv_utils::copy_buf_to_cvMat(<a class="code" href="namespacelbann_1_1cnpy__utils.html#a9ac86d96ccb1f8b4b2ea16441738781f">data</a>, Width, Height, Type, pp);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="keywordtype">bool</span> ok = !image.empty() &amp;&amp; pp.postprocess(image);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <a class="code" href="mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a>(!ok, <span class="stringliteral">&quot;Image postprocessing has failed.&quot;</span>, <span class="keyword">false</span>)</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  return (ok &amp;&amp; cv::imwrite(filename, image));</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="preprocessor">#endif // LBANN_HAS_OPENCV</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="ttc" id="base_8hpp_html_a68f11fdc31b62516cb310831bbe54d73"><div class="ttname"><a href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a></div><div class="ttdeci">El::Matrix&lt; lbann::DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00042">base.hpp:42</a></div></div>
 <div class="ttc" id="namespacelbann_1_1cnpy__utils_html_a9ac86d96ccb1f8b4b2ea16441738781f"><div class="ttname"><a href="namespacelbann_1_1cnpy__utils.html#a9ac86d96ccb1f8b4b2ea16441738781f">lbann::cnpy_utils::data</a></div><div class="ttdeci">T &amp; data(const cnpy::NpyArray &amp;na, const std::vector&lt; size_t &gt; indices)</div><div class="ttdef"><b>Definition:</b> <a href="cnpy__utils_8hpp_source.html#l00052">cnpy_utils.hpp:52</a></div></div>
 <div class="ttc" id="mild__exception_8hpp_html_a7b8339c566152ab29ce66b63e90c67f9"><div class="ttname"><a href="mild__exception_8hpp.html#a7b8339c566152ab29ce66b63e90c67f9">_LBANN_MILD_EXCEPTION</a></div><div class="ttdeci">#define _LBANN_MILD_EXCEPTION(_COND_, _MSG_, _RETVAL_)</div><div class="ttdef"><b>Definition:</b> <a href="mild__exception_8hpp_source.html#l00083">mild_exception.hpp:83</a></div></div>
@@ -1264,7 +1369,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1image__utils.html">image_utils</a></li>
-    <li class="footer">Generated on Wed Apr 4 2018 21:59:07 for LBANN by
+    <li class="footer">Generated on Fri May 11 2018 08:30:02 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

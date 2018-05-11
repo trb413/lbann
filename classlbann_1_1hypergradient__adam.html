@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-244-g9bd4aac-ci362362741</span>
+   &#160;<span id="projectnumber">v0.93-606-gca499c9-ci377629231</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -89,7 +89,9 @@ $(document).ready(function(){initNavTree('classlbann_1_1hypergradient__adam.html
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classlbann_1_1hypergradient__adam-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -113,6 +115,11 @@ Collaboration diagram for lbann::hypergradient_adam:</div>
 <area shape="rect" id="node2" href="classlbann_1_1optimizer.html" title="lbann::optimizer" alt="" coords="171,112,285,139"/><area shape="rect" id="node6" href="classlbann_1_1weights.html" title="lbann::weights" alt="" coords="285,203,392,229"/><area shape="rect" id="node3" href="classlbann_1_1lbann__comm.html" title="lbann::lbann_comm" alt="" coords="433,13,567,40"/><area shape="rect" id="node7" href="classlbann_1_1weights__initializer.html" title="lbann::weights_initializer" alt="" coords="358,112,521,139"/><area shape="rect" id="node4" href="classlbann_1_1cudnn_1_1cudnn__manager.html" title="lbann::cudnn::cudnn\l_manager" alt="" coords="5,6,144,47"/><area shape="rect" id="node5" href="structlbann_1_1Al_1_1request.html" title="lbann::Al::request" alt="" coords="169,13,292,40"/></map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlbann_1_1hypergradient__adam_1_1packing__header.html">packing_header</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aefb4d2c307d8f7997624b2ebe977ca3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1hypergradient__adam.html#aefb4d2c307d8f7997624b2ebe977ca3b">hypergradient_adam</a> (<a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, DataType init_learning_rate, DataType hyper_learning_rate=DataType(1e-7), DataType beta1=DataType(0.9), DataType beta2=DataType(0.99), DataType eps=DataType(1e-8))</td></tr>
@@ -174,10 +181,27 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a193fcd4b1a959263e308a1ba56ab789f inherit pub_methods_classlbann_1_1optimizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a067709debd4d2e7bfe1a35b5f6ced668 inherit pub_methods_classlbann_1_1optimizer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1optimizer.html#a067709debd4d2e7bfe1a35b5f6ced668">reset_counters</a> ()</td></tr>
 <tr class="separator:a067709debd4d2e7bfe1a35b5f6ced668 inherit pub_methods_classlbann_1_1optimizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afed10c6d8c5bd922f95075abeff711ce inherit pub_methods_classlbann_1_1optimizer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1optimizer.html#afed10c6d8c5bd922f95075abeff711ce">save_to_checkpoint_shared</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p, std::string m_name)</td></tr>
-<tr class="separator:afed10c6d8c5bd922f95075abeff711ce inherit pub_methods_classlbann_1_1optimizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42a52aab9a682fda57c1e639968a44b9 inherit pub_methods_classlbann_1_1optimizer"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1optimizer.html#a42a52aab9a682fda57c1e639968a44b9">load_from_checkpoint_shared</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p, std::string m_name)</td></tr>
-<tr class="separator:a42a52aab9a682fda57c1e639968a44b9 inherit pub_methods_classlbann_1_1optimizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41c046f4d30e4689114d5e36aafcfef1 inherit pub_methods_classlbann_1_1optimizer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1optimizer.html#a41c046f4d30e4689114d5e36aafcfef1">set_states_on_host</a> ()</td></tr>
+<tr class="separator:a41c046f4d30e4689114d5e36aafcfef1 inherit pub_methods_classlbann_1_1optimizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5f637c66578f71064821bde37f76449 inherit pub_methods_classlbann_1_1optimizer"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1optimizer.html#af5f637c66578f71064821bde37f76449">set_states_on_device</a> ()</td></tr>
+<tr class="separator:af5f637c66578f71064821bde37f76449 inherit pub_methods_classlbann_1_1optimizer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a17178d1926e4f4a2da888b9d9623a45f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1hypergradient__adam.html#a17178d1926e4f4a2da888b9d9623a45f">pack_scalars</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p)</td></tr>
+<tr class="separator:a17178d1926e4f4a2da888b9d9623a45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a6fbb3e43b65c81d1234e9de26e7594"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1hypergradient__adam.html#a3a6fbb3e43b65c81d1234e9de26e7594">unpack_scalars</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p, struct <a class="el" href="structlbann_1_1hypergradient__adam_1_1packing__header.html">packing_header</a> *header)</td></tr>
+<tr class="separator:a3a6fbb3e43b65c81d1234e9de26e7594"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b164783f7daca3e3381a0ec8233ad08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1hypergradient__adam.html#a6b164783f7daca3e3381a0ec8233ad08">unpack_header</a> (struct <a class="el" href="structlbann_1_1hypergradient__adam_1_1packing__header.html">packing_header</a> &amp;header)</td></tr>
+<tr class="separator:a6b164783f7daca3e3381a0ec8233ad08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f4be2ddf1667646a63bc23126e627b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1hypergradient__adam.html#a30f4be2ddf1667646a63bc23126e627b">save_to_checkpoint_shared</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p, std::string m_name) override</td></tr>
+<tr class="separator:a30f4be2ddf1667646a63bc23126e627b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71660482f9046439db97ff64d410b375"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1hypergradient__adam.html#a71660482f9046439db97ff64d410b375">load_from_checkpoint_shared</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p, std::string m_name) override</td></tr>
+<tr class="separator:a71660482f9046439db97ff64d410b375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdda227a97fed48c255f4ec918bef0ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1hypergradient__adam.html#abdda227a97fed48c255f4ec918bef0ac">save_to_checkpoint_distributed</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p, std::string m_name) override</td></tr>
+<tr class="separator:abdda227a97fed48c255f4ec918bef0ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa91cff4e1e620f17df17ece8e2e35a13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1hypergradient__adam.html#aa91cff4e1e620f17df17ece8e2e35a13">load_from_checkpoint_distributed</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p, std::string m_name) override</td></tr>
+<tr class="separator:aa91cff4e1e620f17df17ece8e2e35a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -509,6 +533,158 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 </div>
 </div>
+<a class="anchor" id="aa91cff4e1e620f17df17ece8e2e35a13"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lbann::hypergradient_adam::load_from_checkpoint_distributed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlbann_1_1persist.html">persist</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>m_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classlbann_1_1optimizer.html#a94af5ef76bb708e117d3f54ea971c1d0">lbann::optimizer</a>.</p>
+
+<p>Definition at line <a class="el" href="hypergradient__adam_8cpp_source.html#l00266">266</a> of file <a class="el" href="hypergradient__adam_8cpp_source.html">hypergradient_adam.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;                                                                                           {</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="keywordflow">if</span>(p.get_cb_type() == <a class="code" href="namespacelbann.html#afb40728fd81916c37e28ea57176ef688ad265aed699f7409ac0ec6fe07ee9cb11">callback_type::batch</a>)</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <a class="code" href="classlbann_1_1optimizer.html#a94af5ef76bb708e117d3f54ea971c1d0">optimizer::load_from_checkpoint_distributed</a>(p,name_prefix);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;  <span class="keyword">struct </span>packing_header header;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  <a class="code" href="classlbann_1_1hypergradient__adam.html#a3a6fbb3e43b65c81d1234e9de26e7594">unpack_scalars</a>(p, &amp;header);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;  <span class="keywordtype">char</span> l_name[512];</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_moment1_%lldx%lld&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a529f3b53732247ebfb649f55f1fae4d6">m_moment1</a>-&gt;Height(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">m_moment2</a>-&gt;Width());</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  p.read_rank_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, *<a class="code" href="classlbann_1_1hypergradient__adam.html#a529f3b53732247ebfb649f55f1fae4d6">m_moment1</a>);</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  </div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_moment2_%lldx%lld&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">m_moment2</a>-&gt;Height(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">m_moment2</a>-&gt;Width());</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  p.read_rank_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, *<a class="code" href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">m_moment2</a>);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_old_gradient_%lldx%lld&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a2e52355f77edf55bdac8a3eed79f44c4">m_old_gradient</a>-&gt;Height(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a2e52355f77edf55bdac8a3eed79f44c4">m_old_gradient</a>-&gt;Width());</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  p.read_rank_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, *<a class="code" href="classlbann_1_1hypergradient__adam.html#a2e52355f77edf55bdac8a3eed79f44c4">m_old_gradient</a>);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a94af5ef76bb708e117d3f54ea971c1d0"><div class="ttname"><a href="classlbann_1_1optimizer.html#a94af5ef76bb708e117d3f54ea971c1d0">lbann::optimizer::load_from_checkpoint_distributed</a></div><div class="ttdeci">virtual bool load_from_checkpoint_distributed(persist &amp;p, std::string m_name)</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8cpp_source.html#l00504">optimizer.cpp:504</a></div></div>
+<div class="ttc" id="namespacelbann_html_afb40728fd81916c37e28ea57176ef688ad265aed699f7409ac0ec6fe07ee9cb11"><div class="ttname"><a href="namespacelbann.html#afb40728fd81916c37e28ea57176ef688ad265aed699f7409ac0ec6fe07ee9cb11">lbann::callback_type::batch</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a2e52355f77edf55bdac8a3eed79f44c4"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a2e52355f77edf55bdac8a3eed79f44c4">lbann::hypergradient_adam::m_old_gradient</a></div><div class="ttdeci">AbsDistMat * m_old_gradient</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00094">hypergradient_adam.hpp:94</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a3a6fbb3e43b65c81d1234e9de26e7594"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a3a6fbb3e43b65c81d1234e9de26e7594">lbann::hypergradient_adam::unpack_scalars</a></div><div class="ttdeci">bool unpack_scalars(persist &amp;p, struct packing_header *header)</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00119">hypergradient_adam.hpp:119</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a73b77fb79bd8e9bbfc8f360197899d18"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">lbann::hypergradient_adam::m_moment2</a></div><div class="ttdeci">AbsDistMat * m_moment2</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00092">hypergradient_adam.hpp:92</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a529f3b53732247ebfb649f55f1fae4d6"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a529f3b53732247ebfb649f55f1fae4d6">lbann::hypergradient_adam::m_moment1</a></div><div class="ttdeci">AbsDistMat * m_moment1</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00090">hypergradient_adam.hpp:90</a></div></div>
+<div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">lbann::persist_type::train</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1hypergradient__adam_aa91cff4e1e620f17df17ece8e2e35a13_cgraph.png" border="0" usemap="#classlbann_1_1hypergradient__adam_aa91cff4e1e620f17df17ece8e2e35a13_cgraph" alt=""/></div>
+<map name="classlbann_1_1hypergradient__adam_aa91cff4e1e620f17df17ece8e2e35a13_cgraph" id="classlbann_1_1hypergradient__adam_aa91cff4e1e620f17df17ece8e2e35a13_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1persist.html#a451db5a73e832a803fcabb85b741b201" title="lbann::persist::get\l_cb_type" alt="" coords="283,5,410,46"/><area shape="rect" id="node3" href="classlbann_1_1optimizer.html#a94af5ef76bb708e117d3f54ea971c1d0" title="lbann::optimizer::load\l_from_checkpoint_distributed" alt="" coords="251,70,443,111"/><area shape="rect" id="node6" href="classlbann_1_1hypergradient__adam.html#a3a6fbb3e43b65c81d1234e9de26e7594" title="lbann::hypergradient\l_adam::unpack_scalars" alt="" coords="267,135,427,177"/><area shape="rect" id="node7" href="classlbann_1_1persist.html#a9ee0a9989685999d08d2be2a5da3db23" title="Given an open file descriptor, file name, and a matrix, read the matrix from the file descriptor..." alt="" coords="280,201,413,242"/><area shape="rect" id="node4" href="classlbann_1_1persist.html#a1e84eff891affad6001f3c5fa803cae2" title="lbann::persist::read\l_datatype" alt="" coords="491,103,624,145"/><area shape="rect" id="node5" href="namespacelbann.html#a85385e2a9e058b6720300b4cbdd2b1d0" title="lbann::read_bytes" alt="" coords="672,111,797,137"/><area shape="rect" id="node8" href="namespacelbann.html#a6084b9319eea1997f8446fa3e6879532" title="lbann::openread" alt="" coords="500,208,615,235"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a71660482f9046439db97ff64d410b375"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lbann::hypergradient_adam::load_from_checkpoint_shared </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlbann_1_1persist.html">persist</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>m_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classlbann_1_1optimizer.html#a42a52aab9a682fda57c1e639968a44b9">lbann::optimizer</a>.</p>
+
+<p>Definition at line <a class="el" href="hypergradient__adam_8cpp_source.html#l00224">224</a> of file <a class="el" href="hypergradient__adam_8cpp_source.html">hypergradient_adam.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                                                                                      {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keywordflow">if</span>(p.get_cb_type() == <a class="code" href="namespacelbann.html#afb40728fd81916c37e28ea57176ef688ad265aed699f7409ac0ec6fe07ee9cb11">callback_type::batch</a>)</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <a class="code" href="classlbann_1_1optimizer.html#a42a52aab9a682fda57c1e639968a44b9">optimizer::load_from_checkpoint_shared</a>(p,name_prefix);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  <span class="keyword">struct </span>packing_header header;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1optimizer.html#a8c2569a8fcf0ee969517067b81896c44">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac">am_model_master</a>()) {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <a class="code" href="classlbann_1_1hypergradient__adam.html#a3a6fbb3e43b65c81d1234e9de26e7594">unpack_scalars</a>(p, &amp;header);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  }</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <a class="code" href="classlbann_1_1optimizer.html#a8c2569a8fcf0ee969517067b81896c44">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a28fa7b33d4a288c47d06b6bf8d99e3af">model_broadcast</a>(0, header);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <a class="code" href="classlbann_1_1hypergradient__adam.html#a6b164783f7daca3e3381a0ec8233ad08">unpack_header</a>(header);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="keywordtype">char</span> l_name[512];</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_moment1_%lldx%lld.bin&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a529f3b53732247ebfb649f55f1fae4d6">m_moment1</a>-&gt;Height(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">m_moment2</a>-&gt;Width());</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  p.read_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, <a class="code" href="classlbann_1_1hypergradient__adam.html#a529f3b53732247ebfb649f55f1fae4d6">m_moment1</a>);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_moment2_%lldx%lld.bin&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">m_moment2</a>-&gt;Height(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">m_moment2</a>-&gt;Width());</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  p.read_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, <a class="code" href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">m_moment2</a>);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_old_gradient_%lldx%lld.bin&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a2e52355f77edf55bdac8a3eed79f44c4">m_old_gradient</a>-&gt;Height(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a2e52355f77edf55bdac8a3eed79f44c4">m_old_gradient</a>-&gt;Width());</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  p.read_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, <a class="code" href="classlbann_1_1hypergradient__adam.html#a2e52355f77edf55bdac8a3eed79f44c4">m_old_gradient</a>);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a8c2569a8fcf0ee969517067b81896c44"><div class="ttname"><a href="classlbann_1_1optimizer.html#a8c2569a8fcf0ee969517067b81896c44">lbann::optimizer::m_comm</a></div><div class="ttdeci">lbann_comm * m_comm</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00167">optimizer.hpp:167</a></div></div>
+<div class="ttc" id="namespacelbann_html_afb40728fd81916c37e28ea57176ef688ad265aed699f7409ac0ec6fe07ee9cb11"><div class="ttname"><a href="namespacelbann.html#afb40728fd81916c37e28ea57176ef688ad265aed699f7409ac0ec6fe07ee9cb11">lbann::callback_type::batch</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a2e52355f77edf55bdac8a3eed79f44c4"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a2e52355f77edf55bdac8a3eed79f44c4">lbann::hypergradient_adam::m_old_gradient</a></div><div class="ttdeci">AbsDistMat * m_old_gradient</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00094">hypergradient_adam.hpp:94</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_a28fa7b33d4a288c47d06b6bf8d99e3af"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a28fa7b33d4a288c47d06b6bf8d99e3af">lbann::lbann_comm::model_broadcast</a></div><div class="ttdeci">void model_broadcast(int root, T &amp;val)</div><div class="ttdoc">Within-model broadcast of a scalar. </div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00219">comm.hpp:219</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a3a6fbb3e43b65c81d1234e9de26e7594"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a3a6fbb3e43b65c81d1234e9de26e7594">lbann::hypergradient_adam::unpack_scalars</a></div><div class="ttdeci">bool unpack_scalars(persist &amp;p, struct packing_header *header)</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00119">hypergradient_adam.hpp:119</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a73b77fb79bd8e9bbfc8f360197899d18"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">lbann::hypergradient_adam::m_moment2</a></div><div class="ttdeci">AbsDistMat * m_moment2</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00092">hypergradient_adam.hpp:92</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_a06a31f9df1860358ef0ef68d9e165cac"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac">lbann::lbann_comm::am_model_master</a></div><div class="ttdeci">bool am_model_master() const </div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00141">comm.hpp:141</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a42a52aab9a682fda57c1e639968a44b9"><div class="ttname"><a href="classlbann_1_1optimizer.html#a42a52aab9a682fda57c1e639968a44b9">lbann::optimizer::load_from_checkpoint_shared</a></div><div class="ttdeci">virtual bool load_from_checkpoint_shared(persist &amp;p, std::string m_name)</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8cpp_source.html#l00493">optimizer.cpp:493</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a529f3b53732247ebfb649f55f1fae4d6"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a529f3b53732247ebfb649f55f1fae4d6">lbann::hypergradient_adam::m_moment1</a></div><div class="ttdeci">AbsDistMat * m_moment1</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00090">hypergradient_adam.hpp:90</a></div></div>
+<div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">lbann::persist_type::train</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a6b164783f7daca3e3381a0ec8233ad08"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a6b164783f7daca3e3381a0ec8233ad08">lbann::hypergradient_adam::unpack_header</a></div><div class="ttdeci">void unpack_header(struct packing_header &amp;header)</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00139">hypergradient_adam.hpp:139</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1hypergradient__adam_a71660482f9046439db97ff64d410b375_cgraph.png" border="0" usemap="#classlbann_1_1hypergradient__adam_a71660482f9046439db97ff64d410b375_cgraph" alt=""/></div>
+<map name="classlbann_1_1hypergradient__adam_a71660482f9046439db97ff64d410b375_cgraph" id="classlbann_1_1hypergradient__adam_a71660482f9046439db97ff64d410b375_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1persist.html#a451db5a73e832a803fcabb85b741b201" title="lbann::persist::get\l_cb_type" alt="" coords="273,5,399,46"/><area shape="rect" id="node3" href="classlbann_1_1optimizer.html#a42a52aab9a682fda57c1e639968a44b9" title="lbann::optimizer::load\l_from_checkpoint_shared" alt="" coords="251,135,421,177"/><area shape="rect" id="node6" href="classlbann_1_1lbann__comm.html#a28fa7b33d4a288c47d06b6bf8d99e3af" title="Within&#45;model broadcast of a scalar. " alt="" coords="470,167,613,209"/><area shape="rect" id="node11" href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac" title="lbann::lbann_comm::\lam_model_master" alt="" coords="265,253,407,294"/><area shape="rect" id="node14" href="classlbann_1_1hypergradient__adam.html#a3a6fbb3e43b65c81d1234e9de26e7594" title="lbann::hypergradient\l_adam::unpack_scalars" alt="" coords="256,70,416,111"/><area shape="rect" id="node15" href="classlbann_1_1hypergradient__adam.html#a6b164783f7daca3e3381a0ec8233ad08" title="lbann::hypergradient\l_adam::unpack_header" alt="" coords="257,318,415,359"/><area shape="rect" id="node16" href="classlbann_1_1persist.html#abb69f3b2c855618e0152cec1de2eea7d" title="lbann::persist::read\l_distmat" alt="" coords="269,383,403,425"/><area shape="rect" id="node4" href="classlbann_1_1persist.html#a1e84eff891affad6001f3c5fa803cae2" title="lbann::persist::read\l_datatype" alt="" coords="475,95,608,137"/><area shape="rect" id="node5" href="namespacelbann.html#a85385e2a9e058b6720300b4cbdd2b1d0" title="lbann::read_bytes" alt="" coords="671,103,796,129"/><area shape="rect" id="node7" href="classlbann_1_1lbann__comm.html#a08708022c215c01bbaa77974bfae3288" title="Broadcast a scalar value over an arbitrary communicator. " alt="" coords="662,161,805,202"/><area shape="rect" id="node10" href="classlbann_1_1lbann__comm.html#a135065d26bb1b838f711987ce22e7008" title="lbann::lbann_comm::\lget_model_comm" alt="" coords="662,226,805,267"/><area shape="rect" id="node8" href="classlbann_1_1lbann__comm.html#acf786984b0965b9057bf080302499497" title="lbann::lbann_comm::\lbroadcast_custom" alt="" coords="861,127,1003,169"/><area shape="rect" id="node9" href="classlbann_1_1lbann__comm.html#a408863c9ac5bc223e54ab0ae6ce7e986" title="lbann::lbann_comm::\lcount_bytes_broadcast" alt="" coords="853,193,1011,234"/><area shape="rect" id="node12" href="classlbann_1_1lbann__comm.html#a206bafe522a0962c450f4fc69d030656" title="lbann::lbann_comm::\lget_rank_in_model" alt="" coords="470,246,613,287"/><area shape="rect" id="node13" href="classlbann_1_1lbann__comm.html#ad61b35af881db9671f3d71ddbf1ced3f" title="lbann::lbann_comm::\lget_model_master" alt="" coords="470,311,613,353"/><area shape="rect" id="node17" href="namespacelbann.html#aefae2a9fc9d742ece0fa8ca7ed9ee137" title="lbann::exists" alt="" coords="493,391,589,417"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="aab8df6bbd256c9731dc1e5b8eac286ec"></a>
 <div class="memitem">
 <div class="memproto">
@@ -587,6 +763,212 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a17178d1926e4f4a2da888b9d9623a45f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lbann::hypergradient_adam::pack_scalars </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlbann_1_1persist.html">persist</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="hypergradient__adam_8hpp_source.html#l00109">109</a> of file <a class="el" href="hypergradient__adam_8hpp_source.html">hypergradient_adam.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                                {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    p.write_datatype(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;hyper_learning_rate&quot;</span>, <a class="code" href="classlbann_1_1hypergradient__adam.html#a1066721ebaadb4eed2554b159510ae44">m_hyper_learning_rate</a>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    p.write_datatype(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;beta1&quot;</span>, <a class="code" href="classlbann_1_1hypergradient__adam.html#a876a8bc1ee9a47479008d204048724e7">m_beta1</a>);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    p.write_datatype(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;beta2&quot;</span>, <a class="code" href="classlbann_1_1hypergradient__adam.html#a0effe7359fa37f02a40f059281580760">m_beta2</a>);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    p.write_datatype(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;eps&quot;</span>,   <a class="code" href="classlbann_1_1hypergradient__adam.html#a5bae9101fcc235d961ae7713706f4ff7">m_eps</a>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    p.write_datatype(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;current_beta1&quot;</span>, <a class="code" href="classlbann_1_1hypergradient__adam.html#a671c622860c712ef9716c2c8c6714780">m_current_beta1</a>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    p.write_datatype(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;current_beta2&quot;</span>, <a class="code" href="classlbann_1_1hypergradient__adam.html#a2d8b00faecbf4ce3996f879566ca4064">m_current_beta2</a>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a1066721ebaadb4eed2554b159510ae44"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a1066721ebaadb4eed2554b159510ae44">lbann::hypergradient_adam::m_hyper_learning_rate</a></div><div class="ttdeci">DataType m_hyper_learning_rate</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00078">hypergradient_adam.hpp:78</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a5bae9101fcc235d961ae7713706f4ff7"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a5bae9101fcc235d961ae7713706f4ff7">lbann::hypergradient_adam::m_eps</a></div><div class="ttdeci">DataType m_eps</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00084">hypergradient_adam.hpp:84</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a876a8bc1ee9a47479008d204048724e7"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a876a8bc1ee9a47479008d204048724e7">lbann::hypergradient_adam::m_beta1</a></div><div class="ttdeci">DataType m_beta1</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00080">hypergradient_adam.hpp:80</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a0effe7359fa37f02a40f059281580760"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a0effe7359fa37f02a40f059281580760">lbann::hypergradient_adam::m_beta2</a></div><div class="ttdeci">DataType m_beta2</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00082">hypergradient_adam.hpp:82</a></div></div>
+<div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">lbann::persist_type::train</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a671c622860c712ef9716c2c8c6714780"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a671c622860c712ef9716c2c8c6714780">lbann::hypergradient_adam::m_current_beta1</a></div><div class="ttdeci">DataType m_current_beta1</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00086">hypergradient_adam.hpp:86</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a2d8b00faecbf4ce3996f879566ca4064"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a2d8b00faecbf4ce3996f879566ca4064">lbann::hypergradient_adam::m_current_beta2</a></div><div class="ttdeci">DataType m_current_beta2</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00088">hypergradient_adam.hpp:88</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1hypergradient__adam_a17178d1926e4f4a2da888b9d9623a45f_cgraph.png" border="0" usemap="#classlbann_1_1hypergradient__adam_a17178d1926e4f4a2da888b9d9623a45f_cgraph" alt=""/></div>
+<map name="classlbann_1_1hypergradient__adam_a17178d1926e4f4a2da888b9d9623a45f_cgraph" id="classlbann_1_1hypergradient__adam_a17178d1926e4f4a2da888b9d9623a45f_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1persist.html#a5edc3f9cc3540b50d417993da2a6b5ce" title="lbann::persist::write\l_datatype" alt="" coords="200,5,336,46"/><area shape="rect" id="node3" href="namespacelbann.html#aed95061796f19fa1648dcc99dc335abd" title="lbann::write_bytes" alt="" coords="384,12,512,39"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1hypergradient__adam_a17178d1926e4f4a2da888b9d9623a45f_icgraph.png" border="0" usemap="#classlbann_1_1hypergradient__adam_a17178d1926e4f4a2da888b9d9623a45f_icgraph" alt=""/></div>
+<map name="classlbann_1_1hypergradient__adam_a17178d1926e4f4a2da888b9d9623a45f_icgraph" id="classlbann_1_1hypergradient__adam_a17178d1926e4f4a2da888b9d9623a45f_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1hypergradient__adam.html#a30f4be2ddf1667646a63bc23126e627b" title="lbann::hypergradient\l_adam::save_to_checkpoint\l_shared" alt="" coords="201,5,386,61"/><area shape="rect" id="node3" href="classlbann_1_1hypergradient__adam.html#abdda227a97fed48c255f4ec918bef0ac" title="lbann::hypergradient\l_adam::save_to_checkpoint\l_distributed" alt="" coords="201,85,386,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abdda227a97fed48c255f4ec918bef0ac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lbann::hypergradient_adam::save_to_checkpoint_distributed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlbann_1_1persist.html">persist</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>m_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classlbann_1_1optimizer.html#a650d47700300b76789a3b7cf27c83eb6">lbann::optimizer</a>.</p>
+
+<p>Definition at line <a class="el" href="hypergradient__adam_8cpp_source.html#l00248">248</a> of file <a class="el" href="hypergradient__adam_8cpp_source.html">hypergradient_adam.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                                                                                         {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keywordflow">if</span>(p.get_cb_type() == <a class="code" href="namespacelbann.html#afb40728fd81916c37e28ea57176ef688ad265aed699f7409ac0ec6fe07ee9cb11">callback_type::batch</a>)</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <a class="code" href="classlbann_1_1optimizer.html#a650d47700300b76789a3b7cf27c83eb6">optimizer::save_to_checkpoint_distributed</a>(p,name_prefix);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  <a class="code" href="classlbann_1_1hypergradient__adam.html#a17178d1926e4f4a2da888b9d9623a45f">pack_scalars</a>(p);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;   </div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  <span class="keywordtype">char</span> l_name[512];</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_moment1_%lldx%lld&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a529f3b53732247ebfb649f55f1fae4d6">m_moment1</a>-&gt;Height(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">m_moment2</a>-&gt;Width());</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  p.write_rank_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, *<a class="code" href="classlbann_1_1hypergradient__adam.html#a529f3b53732247ebfb649f55f1fae4d6">m_moment1</a>);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_moment2_%lldx%lld&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">m_moment2</a>-&gt;Height(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">m_moment2</a>-&gt;Width());</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  p.write_rank_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, *<a class="code" href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">m_moment2</a>);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_old_gradient_%lldx%lld&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a2e52355f77edf55bdac8a3eed79f44c4">m_old_gradient</a>-&gt;Height(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a2e52355f77edf55bdac8a3eed79f44c4">m_old_gradient</a>-&gt;Width());</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  p.write_rank_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, *<a class="code" href="classlbann_1_1hypergradient__adam.html#a2e52355f77edf55bdac8a3eed79f44c4">m_old_gradient</a>);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;} </div>
+<div class="ttc" id="namespacelbann_html_afb40728fd81916c37e28ea57176ef688ad265aed699f7409ac0ec6fe07ee9cb11"><div class="ttname"><a href="namespacelbann.html#afb40728fd81916c37e28ea57176ef688ad265aed699f7409ac0ec6fe07ee9cb11">lbann::callback_type::batch</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a2e52355f77edf55bdac8a3eed79f44c4"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a2e52355f77edf55bdac8a3eed79f44c4">lbann::hypergradient_adam::m_old_gradient</a></div><div class="ttdeci">AbsDistMat * m_old_gradient</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00094">hypergradient_adam.hpp:94</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a73b77fb79bd8e9bbfc8f360197899d18"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">lbann::hypergradient_adam::m_moment2</a></div><div class="ttdeci">AbsDistMat * m_moment2</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00092">hypergradient_adam.hpp:92</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a650d47700300b76789a3b7cf27c83eb6"><div class="ttname"><a href="classlbann_1_1optimizer.html#a650d47700300b76789a3b7cf27c83eb6">lbann::optimizer::save_to_checkpoint_distributed</a></div><div class="ttdeci">virtual bool save_to_checkpoint_distributed(persist &amp;p, std::string m_name)</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8cpp_source.html#l00499">optimizer.cpp:499</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a529f3b53732247ebfb649f55f1fae4d6"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a529f3b53732247ebfb649f55f1fae4d6">lbann::hypergradient_adam::m_moment1</a></div><div class="ttdeci">AbsDistMat * m_moment1</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00090">hypergradient_adam.hpp:90</a></div></div>
+<div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">lbann::persist_type::train</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a17178d1926e4f4a2da888b9d9623a45f"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a17178d1926e4f4a2da888b9d9623a45f">lbann::hypergradient_adam::pack_scalars</a></div><div class="ttdeci">bool pack_scalars(persist &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00109">hypergradient_adam.hpp:109</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1hypergradient__adam_abdda227a97fed48c255f4ec918bef0ac_cgraph.png" border="0" usemap="#classlbann_1_1hypergradient__adam_abdda227a97fed48c255f4ec918bef0ac_cgraph" alt=""/></div>
+<map name="classlbann_1_1hypergradient__adam_abdda227a97fed48c255f4ec918bef0ac_cgraph" id="classlbann_1_1hypergradient__adam_abdda227a97fed48c255f4ec918bef0ac_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1persist.html#a451db5a73e832a803fcabb85b741b201" title="lbann::persist::get\l_cb_type" alt="" coords="266,5,393,46"/><area shape="rect" id="node3" href="classlbann_1_1optimizer.html#a650d47700300b76789a3b7cf27c83eb6" title="lbann::optimizer::save\l_to_checkpoint_distributed" alt="" coords="241,70,418,111"/><area shape="rect" id="node6" href="classlbann_1_1hypergradient__adam.html#a17178d1926e4f4a2da888b9d9623a45f" title="lbann::hypergradient\l_adam::pack_scalars" alt="" coords="256,135,403,177"/><area shape="rect" id="node7" href="classlbann_1_1persist.html#a7ce35c4518e81a42bb4a0082e1720ea0" title="Given an open file descriptor, file name, and a matrix, write the matrix to the file descriptor..." alt="" coords="261,201,397,242"/><area shape="rect" id="node4" href="classlbann_1_1persist.html#a5edc3f9cc3540b50d417993da2a6b5ce" title="lbann::persist::write\l_datatype" alt="" coords="467,103,603,145"/><area shape="rect" id="node5" href="namespacelbann.html#aed95061796f19fa1648dcc99dc335abd" title="lbann::write_bytes" alt="" coords="651,111,779,137"/><area shape="rect" id="node8" href="namespacelbann.html#af596e6d2be603e9cf808c98f5412490a" title="lbann::openwrite" alt="" coords="476,208,593,235"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a30f4be2ddf1667646a63bc23126e627b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lbann::hypergradient_adam::save_to_checkpoint_shared </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlbann_1_1persist.html">persist</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>m_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classlbann_1_1optimizer.html#afed10c6d8c5bd922f95075abeff711ce">lbann::optimizer</a>.</p>
+
+<p>Definition at line <a class="el" href="hypergradient__adam_8cpp_source.html#l00204">204</a> of file <a class="el" href="hypergradient__adam_8cpp_source.html">hypergradient_adam.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                                                                                    {</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keywordflow">if</span>(p.get_cb_type() == <a class="code" href="namespacelbann.html#afb40728fd81916c37e28ea57176ef688ad265aed699f7409ac0ec6fe07ee9cb11">callback_type::batch</a>)</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <a class="code" href="classlbann_1_1optimizer.html#afed10c6d8c5bd922f95075abeff711ce">optimizer::save_to_checkpoint_shared</a>(p,name_prefix);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1optimizer.html#a8c2569a8fcf0ee969517067b81896c44">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac">am_model_master</a>()) {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="classlbann_1_1hypergradient__adam.html#a17178d1926e4f4a2da888b9d9623a45f">pack_scalars</a>(p);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="keywordtype">char</span> l_name[512];</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_moment1_%lldx%lld&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a529f3b53732247ebfb649f55f1fae4d6">m_moment1</a>-&gt;Height(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">m_moment2</a>-&gt;Width());</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  p.write_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, <a class="code" href="classlbann_1_1hypergradient__adam.html#a529f3b53732247ebfb649f55f1fae4d6">m_moment1</a>);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_moment2_%lldx%lld&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">m_moment2</a>-&gt;Height(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">m_moment2</a>-&gt;Width());</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  p.write_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, <a class="code" href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">m_moment2</a>);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_old_gradient_%lldx%lld&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a2e52355f77edf55bdac8a3eed79f44c4">m_old_gradient</a>-&gt;Height(), <a class="code" href="classlbann_1_1hypergradient__adam.html#a2e52355f77edf55bdac8a3eed79f44c4">m_old_gradient</a>-&gt;Width());</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  p.write_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, <a class="code" href="classlbann_1_1hypergradient__adam.html#a2e52355f77edf55bdac8a3eed79f44c4">m_old_gradient</a>);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a8c2569a8fcf0ee969517067b81896c44"><div class="ttname"><a href="classlbann_1_1optimizer.html#a8c2569a8fcf0ee969517067b81896c44">lbann::optimizer::m_comm</a></div><div class="ttdeci">lbann_comm * m_comm</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00167">optimizer.hpp:167</a></div></div>
+<div class="ttc" id="namespacelbann_html_afb40728fd81916c37e28ea57176ef688ad265aed699f7409ac0ec6fe07ee9cb11"><div class="ttname"><a href="namespacelbann.html#afb40728fd81916c37e28ea57176ef688ad265aed699f7409ac0ec6fe07ee9cb11">lbann::callback_type::batch</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a2e52355f77edf55bdac8a3eed79f44c4"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a2e52355f77edf55bdac8a3eed79f44c4">lbann::hypergradient_adam::m_old_gradient</a></div><div class="ttdeci">AbsDistMat * m_old_gradient</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00094">hypergradient_adam.hpp:94</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a73b77fb79bd8e9bbfc8f360197899d18"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">lbann::hypergradient_adam::m_moment2</a></div><div class="ttdeci">AbsDistMat * m_moment2</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00092">hypergradient_adam.hpp:92</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_afed10c6d8c5bd922f95075abeff711ce"><div class="ttname"><a href="classlbann_1_1optimizer.html#afed10c6d8c5bd922f95075abeff711ce">lbann::optimizer::save_to_checkpoint_shared</a></div><div class="ttdeci">virtual bool save_to_checkpoint_shared(persist &amp;p, std::string m_name)</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8cpp_source.html#l00487">optimizer.cpp:487</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_a06a31f9df1860358ef0ef68d9e165cac"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac">lbann::lbann_comm::am_model_master</a></div><div class="ttdeci">bool am_model_master() const </div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00141">comm.hpp:141</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a529f3b53732247ebfb649f55f1fae4d6"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a529f3b53732247ebfb649f55f1fae4d6">lbann::hypergradient_adam::m_moment1</a></div><div class="ttdeci">AbsDistMat * m_moment1</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00090">hypergradient_adam.hpp:90</a></div></div>
+<div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">lbann::persist_type::train</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a17178d1926e4f4a2da888b9d9623a45f"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a17178d1926e4f4a2da888b9d9623a45f">lbann::hypergradient_adam::pack_scalars</a></div><div class="ttdeci">bool pack_scalars(persist &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00109">hypergradient_adam.hpp:109</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1hypergradient__adam_a30f4be2ddf1667646a63bc23126e627b_cgraph.png" border="0" usemap="#classlbann_1_1hypergradient__adam_a30f4be2ddf1667646a63bc23126e627b_cgraph" alt=""/></div>
+<map name="classlbann_1_1hypergradient__adam_a30f4be2ddf1667646a63bc23126e627b_cgraph" id="classlbann_1_1hypergradient__adam_a30f4be2ddf1667646a63bc23126e627b_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1persist.html#a451db5a73e832a803fcabb85b741b201" title="lbann::persist::get\l_cb_type" alt="" coords="255,5,382,46"/><area shape="rect" id="node3" href="classlbann_1_1optimizer.html#afed10c6d8c5bd922f95075abeff711ce" title="lbann::optimizer::save\l_to_checkpoint_shared" alt="" coords="241,70,397,111"/><area shape="rect" id="node6" href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac" title="lbann::lbann_comm::\lam_model_master" alt="" coords="247,201,390,242"/><area shape="rect" id="node9" href="classlbann_1_1hypergradient__adam.html#a17178d1926e4f4a2da888b9d9623a45f" title="lbann::hypergradient\l_adam::pack_scalars" alt="" coords="245,135,392,177"/><area shape="rect" id="node10" href="classlbann_1_1persist.html#a4595fc57e506220d766e5531ef1cd999" title="lbann::persist::write\l_distmat" alt="" coords="251,266,387,307"/><area shape="rect" id="node4" href="classlbann_1_1persist.html#a5edc3f9cc3540b50d417993da2a6b5ce" title="lbann::persist::write\l_datatype" alt="" coords="449,103,585,145"/><area shape="rect" id="node5" href="namespacelbann.html#aed95061796f19fa1648dcc99dc335abd" title="lbann::write_bytes" alt="" coords="637,111,765,137"/><area shape="rect" id="node7" href="classlbann_1_1lbann__comm.html#a206bafe522a0962c450f4fc69d030656" title="lbann::lbann_comm::\lget_rank_in_model" alt="" coords="446,169,589,210"/><area shape="rect" id="node8" href="classlbann_1_1lbann__comm.html#ad61b35af881db9671f3d71ddbf1ced3f" title="lbann::lbann_comm::\lget_model_master" alt="" coords="446,234,589,275"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="acbc4aa4410eb2e7cb2fd9f423c4909dc"></a>
 <div class="memitem">
 <div class="memproto">
@@ -626,8 +1008,8 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  El::Zeros(*<a class="code" href="classlbann_1_1hypergradient__adam.html#a2e52355f77edf55bdac8a3eed79f44c4">m_old_gradient</a>, <a class="code" href="classlbann_1_1optimizer.html#a3df20cb0ae2b60430ad4fd235d66c12e">m_gradient</a>-&gt;Height(), <a class="code" href="classlbann_1_1optimizer.html#a3df20cb0ae2b60430ad4fd235d66c12e">m_gradient</a>-&gt;Width());</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1hypergradient__adam_html_a2e52355f77edf55bdac8a3eed79f44c4"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a2e52355f77edf55bdac8a3eed79f44c4">lbann::hypergradient_adam::m_old_gradient</a></div><div class="ttdeci">AbsDistMat * m_old_gradient</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00094">hypergradient_adam.hpp:94</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer_html_a3df20cb0ae2b60430ad4fd235d66c12e"><div class="ttname"><a href="classlbann_1_1optimizer.html#a3df20cb0ae2b60430ad4fd235d66c12e">lbann::optimizer::m_gradient</a></div><div class="ttdeci">AbsDistMat * m_gradient</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00175">optimizer.hpp:175</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer_html_a7641a88b3c166df2d974a298622b992b"><div class="ttname"><a href="classlbann_1_1optimizer.html#a7641a88b3c166df2d974a298622b992b">lbann::optimizer::setup</a></div><div class="ttdeci">virtual void setup(weights &amp;w)</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8cpp_source.html#l00454">optimizer.cpp:454</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a3df20cb0ae2b60430ad4fd235d66c12e"><div class="ttname"><a href="classlbann_1_1optimizer.html#a3df20cb0ae2b60430ad4fd235d66c12e">lbann::optimizer::m_gradient</a></div><div class="ttdeci">AbsDistMat * m_gradient</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00179">optimizer.hpp:179</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a7641a88b3c166df2d974a298622b992b"><div class="ttname"><a href="classlbann_1_1optimizer.html#a7641a88b3c166df2d974a298622b992b">lbann::optimizer::setup</a></div><div class="ttdeci">virtual void setup(weights &amp;w)</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8cpp_source.html#l00414">optimizer.cpp:414</a></div></div>
 <div class="ttc" id="classlbann_1_1hypergradient__adam_html_a73b77fb79bd8e9bbfc8f360197899d18"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">lbann::hypergradient_adam::m_moment2</a></div><div class="ttdeci">AbsDistMat * m_moment2</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00092">hypergradient_adam.hpp:92</a></div></div>
 <div class="ttc" id="classlbann_1_1hypergradient__adam_html_a529f3b53732247ebfb649f55f1fae4d6"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a529f3b53732247ebfb649f55f1fae4d6">lbann::hypergradient_adam::m_moment1</a></div><div class="ttdeci">AbsDistMat * m_moment1</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00090">hypergradient_adam.hpp:90</a></div></div>
 </div><!-- fragment -->
@@ -751,11 +1133,140 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="classlbann_1_1hypergradient__adam_html_a73b77fb79bd8e9bbfc8f360197899d18"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a73b77fb79bd8e9bbfc8f360197899d18">lbann::hypergradient_adam::m_moment2</a></div><div class="ttdeci">AbsDistMat * m_moment2</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00092">hypergradient_adam.hpp:92</a></div></div>
 <div class="ttc" id="classlbann_1_1hypergradient__adam_html_a876a8bc1ee9a47479008d204048724e7"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a876a8bc1ee9a47479008d204048724e7">lbann::hypergradient_adam::m_beta1</a></div><div class="ttdeci">DataType m_beta1</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00080">hypergradient_adam.hpp:80</a></div></div>
 <div class="ttc" id="classlbann_1_1hypergradient__adam_html_a0effe7359fa37f02a40f059281580760"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a0effe7359fa37f02a40f059281580760">lbann::hypergradient_adam::m_beta2</a></div><div class="ttdeci">DataType m_beta2</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00082">hypergradient_adam.hpp:82</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer_html_ad393dcdcb82b44510c586ed5ec46d4dd"><div class="ttname"><a href="classlbann_1_1optimizer.html#ad393dcdcb82b44510c586ed5ec46d4dd">lbann::optimizer::m_learning_rate</a></div><div class="ttdeci">DataType m_learning_rate</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00172">optimizer.hpp:172</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_ad393dcdcb82b44510c586ed5ec46d4dd"><div class="ttname"><a href="classlbann_1_1optimizer.html#ad393dcdcb82b44510c586ed5ec46d4dd">lbann::optimizer::m_learning_rate</a></div><div class="ttdeci">DataType m_learning_rate</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00176">optimizer.hpp:176</a></div></div>
 <div class="ttc" id="classlbann_1_1hypergradient__adam_html_a529f3b53732247ebfb649f55f1fae4d6"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a529f3b53732247ebfb649f55f1fae4d6">lbann::hypergradient_adam::m_moment1</a></div><div class="ttdeci">AbsDistMat * m_moment1</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00090">hypergradient_adam.hpp:90</a></div></div>
 <div class="ttc" id="classlbann_1_1hypergradient__adam_html_a671c622860c712ef9716c2c8c6714780"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a671c622860c712ef9716c2c8c6714780">lbann::hypergradient_adam::m_current_beta1</a></div><div class="ttdeci">DataType m_current_beta1</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00086">hypergradient_adam.hpp:86</a></div></div>
 <div class="ttc" id="classlbann_1_1hypergradient__adam_html_a2d8b00faecbf4ce3996f879566ca4064"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a2d8b00faecbf4ce3996f879566ca4064">lbann::hypergradient_adam::m_current_beta2</a></div><div class="ttdeci">DataType m_current_beta2</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00088">hypergradient_adam.hpp:88</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a6b164783f7daca3e3381a0ec8233ad08"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lbann::hypergradient_adam::unpack_header </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structlbann_1_1hypergradient__adam_1_1packing__header.html">packing_header</a> &amp;&#160;</td>
+          <td class="paramname"><em>header</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="hypergradient__adam_8hpp_source.html#l00139">139</a> of file <a class="el" href="hypergradient__adam_8hpp_source.html">hypergradient_adam.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                                                    {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <a class="code" href="classlbann_1_1hypergradient__adam.html#a1066721ebaadb4eed2554b159510ae44">m_hyper_learning_rate</a> = header.hyper_learning_rate;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <a class="code" href="classlbann_1_1hypergradient__adam.html#a876a8bc1ee9a47479008d204048724e7">m_beta1</a> = header.beta1;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <a class="code" href="classlbann_1_1hypergradient__adam.html#a0effe7359fa37f02a40f059281580760">m_beta2</a> = header.beta2;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <a class="code" href="classlbann_1_1hypergradient__adam.html#a5bae9101fcc235d961ae7713706f4ff7">m_eps</a> = header.eps;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <a class="code" href="classlbann_1_1hypergradient__adam.html#a671c622860c712ef9716c2c8c6714780">m_current_beta1</a> = header.current_beta1;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <a class="code" href="classlbann_1_1hypergradient__adam.html#a2d8b00faecbf4ce3996f879566ca4064">m_current_beta2</a> = header.current_beta2;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  }      </div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a1066721ebaadb4eed2554b159510ae44"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a1066721ebaadb4eed2554b159510ae44">lbann::hypergradient_adam::m_hyper_learning_rate</a></div><div class="ttdeci">DataType m_hyper_learning_rate</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00078">hypergradient_adam.hpp:78</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a5bae9101fcc235d961ae7713706f4ff7"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a5bae9101fcc235d961ae7713706f4ff7">lbann::hypergradient_adam::m_eps</a></div><div class="ttdeci">DataType m_eps</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00084">hypergradient_adam.hpp:84</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a876a8bc1ee9a47479008d204048724e7"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a876a8bc1ee9a47479008d204048724e7">lbann::hypergradient_adam::m_beta1</a></div><div class="ttdeci">DataType m_beta1</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00080">hypergradient_adam.hpp:80</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a0effe7359fa37f02a40f059281580760"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a0effe7359fa37f02a40f059281580760">lbann::hypergradient_adam::m_beta2</a></div><div class="ttdeci">DataType m_beta2</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00082">hypergradient_adam.hpp:82</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a671c622860c712ef9716c2c8c6714780"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a671c622860c712ef9716c2c8c6714780">lbann::hypergradient_adam::m_current_beta1</a></div><div class="ttdeci">DataType m_current_beta1</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00086">hypergradient_adam.hpp:86</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a2d8b00faecbf4ce3996f879566ca4064"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a2d8b00faecbf4ce3996f879566ca4064">lbann::hypergradient_adam::m_current_beta2</a></div><div class="ttdeci">DataType m_current_beta2</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00088">hypergradient_adam.hpp:88</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1hypergradient__adam_a6b164783f7daca3e3381a0ec8233ad08_icgraph.png" border="0" usemap="#classlbann_1_1hypergradient__adam_a6b164783f7daca3e3381a0ec8233ad08_icgraph" alt=""/></div>
+<map name="classlbann_1_1hypergradient__adam_a6b164783f7daca3e3381a0ec8233ad08_icgraph" id="classlbann_1_1hypergradient__adam_a6b164783f7daca3e3381a0ec8233ad08_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1hypergradient__adam.html#a71660482f9046439db97ff64d410b375" title="lbann::hypergradient\l_adam::load_from_checkpoint\l_shared" alt="" coords="211,4,407,60"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3a6fbb3e43b65c81d1234e9de26e7594"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lbann::hypergradient_adam::unpack_scalars </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlbann_1_1persist.html">persist</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structlbann_1_1hypergradient__adam_1_1packing__header.html">packing_header</a> *&#160;</td>
+          <td class="paramname"><em>header</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="hypergradient__adam_8hpp_source.html#l00119">119</a> of file <a class="el" href="hypergradient__adam_8hpp_source.html">hypergradient_adam.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                                                 {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    p.read_datatype(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;hyper_learning_rate&quot;</span>, &amp;<a class="code" href="classlbann_1_1hypergradient__adam.html#a1066721ebaadb4eed2554b159510ae44">m_hyper_learning_rate</a>);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    p.read_datatype(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;beta1&quot;</span>, &amp;<a class="code" href="classlbann_1_1hypergradient__adam.html#a876a8bc1ee9a47479008d204048724e7">m_beta1</a>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    p.read_datatype(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;beta2&quot;</span>, &amp;<a class="code" href="classlbann_1_1hypergradient__adam.html#a0effe7359fa37f02a40f059281580760">m_beta2</a>);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    p.read_datatype(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;eps&quot;</span>,   &amp;<a class="code" href="classlbann_1_1hypergradient__adam.html#a5bae9101fcc235d961ae7713706f4ff7">m_eps</a>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    p.read_datatype(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;current_beta1&quot;</span>, &amp;<a class="code" href="classlbann_1_1hypergradient__adam.html#a671c622860c712ef9716c2c8c6714780">m_current_beta1</a>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    p.read_datatype(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, <span class="stringliteral">&quot;current_beta2&quot;</span>, &amp;<a class="code" href="classlbann_1_1hypergradient__adam.html#a2d8b00faecbf4ce3996f879566ca4064">m_current_beta2</a>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">if</span>(header != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      header-&gt;hyper_learning_rate = <a class="code" href="classlbann_1_1hypergradient__adam.html#a1066721ebaadb4eed2554b159510ae44">m_hyper_learning_rate</a>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      header-&gt;beta1 = <a class="code" href="classlbann_1_1hypergradient__adam.html#a876a8bc1ee9a47479008d204048724e7">m_beta1</a>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      header-&gt;beta2 = <a class="code" href="classlbann_1_1hypergradient__adam.html#a0effe7359fa37f02a40f059281580760">m_beta2</a>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      header-&gt;eps = <a class="code" href="classlbann_1_1hypergradient__adam.html#a5bae9101fcc235d961ae7713706f4ff7">m_eps</a>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      header-&gt;current_beta1 = <a class="code" href="classlbann_1_1hypergradient__adam.html#a671c622860c712ef9716c2c8c6714780">m_current_beta1</a>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      header-&gt;current_beta2 = <a class="code" href="classlbann_1_1hypergradient__adam.html#a2d8b00faecbf4ce3996f879566ca4064">m_current_beta2</a>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  } </div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a1066721ebaadb4eed2554b159510ae44"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a1066721ebaadb4eed2554b159510ae44">lbann::hypergradient_adam::m_hyper_learning_rate</a></div><div class="ttdeci">DataType m_hyper_learning_rate</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00078">hypergradient_adam.hpp:78</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a5bae9101fcc235d961ae7713706f4ff7"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a5bae9101fcc235d961ae7713706f4ff7">lbann::hypergradient_adam::m_eps</a></div><div class="ttdeci">DataType m_eps</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00084">hypergradient_adam.hpp:84</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a876a8bc1ee9a47479008d204048724e7"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a876a8bc1ee9a47479008d204048724e7">lbann::hypergradient_adam::m_beta1</a></div><div class="ttdeci">DataType m_beta1</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00080">hypergradient_adam.hpp:80</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a0effe7359fa37f02a40f059281580760"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a0effe7359fa37f02a40f059281580760">lbann::hypergradient_adam::m_beta2</a></div><div class="ttdeci">DataType m_beta2</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00082">hypergradient_adam.hpp:82</a></div></div>
+<div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">lbann::persist_type::train</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a671c622860c712ef9716c2c8c6714780"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a671c622860c712ef9716c2c8c6714780">lbann::hypergradient_adam::m_current_beta1</a></div><div class="ttdeci">DataType m_current_beta1</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00086">hypergradient_adam.hpp:86</a></div></div>
+<div class="ttc" id="classlbann_1_1hypergradient__adam_html_a2d8b00faecbf4ce3996f879566ca4064"><div class="ttname"><a href="classlbann_1_1hypergradient__adam.html#a2d8b00faecbf4ce3996f879566ca4064">lbann::hypergradient_adam::m_current_beta2</a></div><div class="ttdeci">DataType m_current_beta2</div><div class="ttdef"><b>Definition:</b> <a href="hypergradient__adam_8hpp_source.html#l00088">hypergradient_adam.hpp:88</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1hypergradient__adam_a3a6fbb3e43b65c81d1234e9de26e7594_cgraph.png" border="0" usemap="#classlbann_1_1hypergradient__adam_a3a6fbb3e43b65c81d1234e9de26e7594_cgraph" alt=""/></div>
+<map name="classlbann_1_1hypergradient__adam_a3a6fbb3e43b65c81d1234e9de26e7594_cgraph" id="classlbann_1_1hypergradient__adam_a3a6fbb3e43b65c81d1234e9de26e7594_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1persist.html#a1e84eff891affad6001f3c5fa803cae2" title="lbann::persist::read\l_datatype" alt="" coords="213,5,347,46"/><area shape="rect" id="node3" href="namespacelbann.html#a85385e2a9e058b6720300b4cbdd2b1d0" title="lbann::read_bytes" alt="" coords="395,12,520,39"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1hypergradient__adam_a3a6fbb3e43b65c81d1234e9de26e7594_icgraph.png" border="0" usemap="#classlbann_1_1hypergradient__adam_a3a6fbb3e43b65c81d1234e9de26e7594_icgraph" alt=""/></div>
+<map name="classlbann_1_1hypergradient__adam_a3a6fbb3e43b65c81d1234e9de26e7594_icgraph" id="classlbann_1_1hypergradient__adam_a3a6fbb3e43b65c81d1234e9de26e7594_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1hypergradient__adam.html#a71660482f9046439db97ff64d410b375" title="lbann::hypergradient\l_adam::load_from_checkpoint\l_shared" alt="" coords="214,5,410,61"/><area shape="rect" id="node3" href="classlbann_1_1hypergradient__adam.html#aa91cff4e1e620f17df17ece8e2e35a13" title="lbann::hypergradient\l_adam::load_from_checkpoint\l_distributed" alt="" coords="214,85,410,141"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -976,7 +1487,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1hypergradient__adam.html">hypergradient_adam</a></li>
-    <li class="footer">Generated on Wed Apr 4 2018 21:59:09 for LBANN by
+    <li class="footer">Generated on Fri May 11 2018 08:30:04 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -5,7 +5,9 @@ var dir_b7c167790353a8ff0eb01b166862c35c =
       [ "glorot_normal_initializer", "classlbann_1_1glorot__normal__initializer.html", "classlbann_1_1glorot__normal__initializer" ],
       [ "glorot_uniform_initializer", "classlbann_1_1glorot__uniform__initializer.html", "classlbann_1_1glorot__uniform__initializer" ],
       [ "he_normal_initializer", "classlbann_1_1he__normal__initializer.html", "classlbann_1_1he__normal__initializer" ],
-      [ "he_uniform_initializer", "classlbann_1_1he__uniform__initializer.html", "classlbann_1_1he__uniform__initializer" ]
+      [ "he_uniform_initializer", "classlbann_1_1he__uniform__initializer.html", "classlbann_1_1he__uniform__initializer" ],
+      [ "lecun_normal_initializer", "classlbann_1_1lecun__normal__initializer.html", "classlbann_1_1lecun__normal__initializer" ],
+      [ "lecun_uniform_initializer", "classlbann_1_1lecun__uniform__initializer.html", "classlbann_1_1lecun__uniform__initializer" ]
     ] ],
     [ "initializer.hpp", "initializer_8hpp.html", [
       [ "weights_initializer", "classlbann_1_1weights__initializer.html", "classlbann_1_1weights__initializer" ],

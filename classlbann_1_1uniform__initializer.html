@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-244-g9bd4aac-ci362362741</span>
+   &#160;<span id="projectnumber">v0.93-606-gca499c9-ci377629231</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -305,18 +305,18 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">const</span> El::Int width = weights_matrix.Width();</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">const</span> DataType center = (<a class="code" href="classlbann_1_1uniform__initializer.html#a208a9e447137f182b5c2141a54c6e6cd">m_max_value</a> + <a class="code" href="classlbann_1_1uniform__initializer.html#aa8c380143e8804319b0ee2e277a4969c">m_min_value</a>) / 2;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">const</span> DataType radius = (<a class="code" href="classlbann_1_1uniform__initializer.html#a208a9e447137f182b5c2141a54c6e6cd">m_max_value</a> - <a class="code" href="classlbann_1_1uniform__initializer.html#aa8c380143e8804319b0ee2e277a4969c">m_min_value</a>) / 2;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="namespacelbann.html#a7336c565aa23c1dab784530c581db3d1">uniform_fill</a>(weights_matrix, height, width, center, radius);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="namespacelbann.html#ab9dfee44698c5a0ea70b38eced6977b7">uniform_fill</a>(weights_matrix, height, width, center, radius);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1uniform__initializer_html_aa8c380143e8804319b0ee2e277a4969c"><div class="ttname"><a href="classlbann_1_1uniform__initializer.html#aa8c380143e8804319b0ee2e277a4969c">lbann::uniform_initializer::m_min_value</a></div><div class="ttdeci">DataType m_min_value</div><div class="ttdef"><b>Definition:</b> <a href="initializer_8hpp_source.html#l00120">initializer.hpp:120</a></div></div>
-<div class="ttc" id="namespacelbann_html_a7336c565aa23c1dab784530c581db3d1"><div class="ttname"><a href="namespacelbann.html#a7336c565aa23c1dab784530c581db3d1">lbann::uniform_fill</a></div><div class="ttdeci">void uniform_fill(AbsDistMat &amp;mat, El::Int m, El::Int n, DataType center, DataType radius)</div><div class="ttdef"><b>Definition:</b> <a href="random_8cpp_source.html#l00183">random.cpp:183</a></div></div>
 <div class="ttc" id="classlbann_1_1uniform__initializer_html_a208a9e447137f182b5c2141a54c6e6cd"><div class="ttname"><a href="classlbann_1_1uniform__initializer.html#a208a9e447137f182b5c2141a54c6e6cd">lbann::uniform_initializer::m_max_value</a></div><div class="ttdeci">DataType m_max_value</div><div class="ttdef"><b>Definition:</b> <a href="initializer_8hpp_source.html#l00122">initializer.hpp:122</a></div></div>
+<div class="ttc" id="namespacelbann_html_ab9dfee44698c5a0ea70b38eced6977b7"><div class="ttname"><a href="namespacelbann.html#ab9dfee44698c5a0ea70b38eced6977b7">lbann::uniform_fill</a></div><div class="ttdeci">void uniform_fill(AbsDistMat &amp;mat, El::Int m, El::Int n, DataType center=0.0f, DataType radius=1.0f)</div><div class="ttdef"><b>Definition:</b> <a href="random_8cpp_source.html#l00240">random.cpp:240</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1uniform__initializer_a23461a8ab897f0aeafc524a61cb0f4eb_cgraph.png" border="0" usemap="#classlbann_1_1uniform__initializer_a23461a8ab897f0aeafc524a61cb0f4eb_cgraph" alt=""/></div>
 <map name="classlbann_1_1uniform__initializer_a23461a8ab897f0aeafc524a61cb0f4eb_cgraph" id="classlbann_1_1uniform__initializer_a23461a8ab897f0aeafc524a61cb0f4eb_cgraph">
-<area shape="rect" id="node2" href="namespacelbann.html#a7336c565aa23c1dab784530c581db3d1" title="lbann::uniform_fill" alt="" coords="217,12,341,39"/><area shape="rect" id="node3" href="namespacelbann.html#a93fc1b42be6ab461e803cb48d58c4d81" title="lbann::uniform_fill\l_procdet" alt="" coords="390,5,514,46"/><area shape="rect" id="node4" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764" title="lbann::get_generator" alt="" coords="563,12,703,39"/></map>
+<area shape="rect" id="node2" href="namespacelbann.html#ab9dfee44698c5a0ea70b38eced6977b7" title="lbann::uniform_fill" alt="" coords="217,12,341,39"/><area shape="rect" id="node3" href="random_8cpp.html#a264ce2afa5f531507783c7d813ac6429" title="uniform_fill_procdet" alt="" coords="390,12,525,39"/><area shape="rect" id="node4" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764" title="lbann::get_generator" alt="" coords="574,12,714,39"/></map>
 </div>
 </p>
 
@@ -379,7 +379,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1uniform__initializer.html">uniform_initializer</a></li>
-    <li class="footer">Generated on Wed Apr 4 2018 21:59:09 for LBANN by
+    <li class="footer">Generated on Fri May 11 2018 08:30:04 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

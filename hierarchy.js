@@ -13,16 +13,20 @@ var hierarchy =
     [ "lbann::cudnn::matrix", "classlbann_1_1cudnn_1_1matrix.html", null ],
     [ "lbann::CUtility", "classlbann_1_1CUtility.html", null ],
     [ "lbann::data_buffer", "classlbann_1_1data__buffer.html", null ],
-    [ "lbann::data_store_image::Triple", "structlbann_1_1data__store__image_1_1Triple.html", null ],
     [ "lbann::dataset", "classlbann_1_1dataset.html", null ],
     [ "lbann::fetch_data_functor", "classlbann_1_1fetch__data__functor.html", null ],
     [ "lbann::generic_data_reader::packing_header", "structlbann_1_1generic__data__reader_1_1packing__header.html", null ],
     [ "lbann::generic_data_store", "classlbann_1_1generic__data__store.html", [
+      [ "lbann::data_store_csv", "classlbann_1_1data__store__csv.html", null ],
       [ "lbann::data_store_image", "classlbann_1_1data__store__image.html", [
         [ "lbann::data_store_imagenet", "classlbann_1_1data__store__imagenet.html", [
-          [ "lbann::data_store_multi_images", "classlbann_1_1data__store__multi__images.html", null ]
+          [ "lbann::data_store_imagenet_patches", "classlbann_1_1data__store__imagenet__patches.html", null ],
+          [ "lbann::data_store_multi_images", "classlbann_1_1data__store__multi__images.html", [
+            [ "lbann::data_store_triplet", "classlbann_1_1data__store__triplet.html", null ]
+          ] ]
         ] ]
       ] ],
+      [ "lbann::data_store_merge_features", "classlbann_1_1data__store__merge__features.html", null ],
       [ "lbann::data_store_merge_samples", "classlbann_1_1data__store__merge__samples.html", null ],
       [ "lbann::data_store_pilot2_molecular", "classlbann_1_1data__store__pilot2__molecular.html", null ]
     ] ],
@@ -31,7 +35,11 @@ var hierarchy =
       [ "lbann::distributed_io_buffer", "classlbann_1_1distributed__io__buffer.html", null ],
       [ "lbann::partitioned_io_buffer", "classlbann_1_1partitioned__io__buffer.html", null ]
     ] ],
+    [ "lbann::hypergradient_adam::packing_header", "structlbann_1_1hypergradient__adam_1_1packing__header.html", null ],
     [ "lbann::image_utils", "classlbann_1_1image__utils.html", null ],
+    [ "lbann::interpret_as_byte_if_needed< B, T >", "structlbann_1_1interpret__as__byte__if__needed.html", null ],
+    [ "lbann::interpret_as_byte_if_needed< true, T >", "structlbann_1_1interpret__as__byte__if__needed_3_01true_00_01T_01_4.html", null ],
+    [ "lbann::interpret_as_byte_if_needed< true, void >", "structlbann_1_1interpret__as__byte__if__needed_3_01true_00_01void_01_4.html", null ],
     [ "lbann::Layer", "classlbann_1_1Layer.html", [
       [ "lbann::activation_layer", "classlbann_1_1activation__layer.html", [
         [ "lbann::entrywise_activation_layer", "classlbann_1_1entrywise__activation__layer.html", [
@@ -40,6 +48,7 @@ var hierarchy =
           [ "lbann::elu_layer< T_layout >", "classlbann_1_1elu__layer.html", null ],
           [ "lbann::exponential_layer< T_layout >", "classlbann_1_1exponential__layer.html", null ],
           [ "lbann::leaky_relu_layer< T_layout >", "classlbann_1_1leaky__relu__layer.html", null ],
+          [ "lbann::power_layer< T_layout >", "classlbann_1_1power__layer.html", null ],
           [ "lbann::relu_layer< T_layout >", "classlbann_1_1relu__layer.html", null ],
           [ "lbann::selu_layer< T_layout >", "classlbann_1_1selu__layer.html", null ],
           [ "lbann::sigmoid_layer< T_layout >", "classlbann_1_1sigmoid__layer.html", null ],
@@ -74,18 +83,23 @@ var hierarchy =
         [ "lbann::selu_dropout< T_layout >", "classlbann_1_1selu__dropout.html", null ]
       ] ],
       [ "lbann::transform_layer", "classlbann_1_1transform__layer.html", [
+        [ "lbann::bernoulli_layer< T_layout >", "classlbann_1_1bernoulli__layer.html", null ],
         [ "lbann::concatenation_layer< T_layout >", "classlbann_1_1concatenation__layer.html", null ],
         [ "lbann::constant_layer< T_layout >", "classlbann_1_1constant__layer.html", null ],
         [ "lbann::dummy_layer< T_layout >", "classlbann_1_1dummy__layer.html", null ],
+        [ "lbann::evaluation_layer< T_layout >", "classlbann_1_1evaluation__layer.html", null ],
+        [ "lbann::gaussian_layer< T_layout >", "classlbann_1_1gaussian__layer.html", null ],
         [ "lbann::hadamard_layer< T_layout >", "classlbann_1_1hadamard__layer.html", null ],
-        [ "lbann::noise_layer< T_layout >", "classlbann_1_1noise__layer.html", null ],
         [ "lbann::pooling_layer< T_layout >", "classlbann_1_1pooling__layer.html", null ],
+        [ "lbann::reduction_layer< T_layout >", "classlbann_1_1reduction__layer.html", null ],
         [ "lbann::reshape_layer< T_layout >", "classlbann_1_1reshape__layer.html", null ],
         [ "lbann::safe_inv_layer< T_layout >", "classlbann_1_1safe__inv__layer.html", null ],
         [ "lbann::slice_layer< T_layout >", "classlbann_1_1slice__layer.html", null ],
         [ "lbann::split_layer< T_layout >", "classlbann_1_1split__layer.html", null ],
         [ "lbann::sum_layer< T_layout >", "classlbann_1_1sum__layer.html", null ],
-        [ "lbann::unpooling_layer< T_layout >", "classlbann_1_1unpooling__layer.html", null ]
+        [ "lbann::uniform_layer< T_layout >", "classlbann_1_1uniform__layer.html", null ],
+        [ "lbann::unpooling_layer< T_layout >", "classlbann_1_1unpooling__layer.html", null ],
+        [ "lbann::zero_layer< T_layout >", "classlbann_1_1zero__layer.html", null ]
       ] ]
     ] ],
     [ "lbann::lbann_callback", "classlbann_1_1lbann__callback.html", [
@@ -162,16 +176,17 @@ var hierarchy =
       ] ]
     ] ],
     [ "lbann::lbann_model_header", "structlbann_1_1lbann__model__header.html", null ],
-    [ "lbann::lbann_model_sequential_header", "structlbann_1_1lbann__model__sequential__header.html", null ],
     [ "lbann::lbann_quantizer", "classlbann_1_1lbann__quantizer.html", null ],
     [ "lbann::lbann_quantizer::adaptive_reconstructions", "structlbann_1_1lbann__quantizer_1_1adaptive__reconstructions.html", null ],
     [ "lbann::lbann_quantizer::adaptive_thresholds", "structlbann_1_1lbann__quantizer_1_1adaptive__thresholds.html", null ],
     [ "lbann::lbann_summary", "classlbann_1_1lbann__summary.html", null ],
+    [ "lbann::make_void< Ts >", "structlbann_1_1make__void.html", null ],
     [ "lbann::metric", "classlbann_1_1metric.html", [
       [ "lbann::boolean_accuracy_metric", "classlbann_1_1boolean__accuracy__metric.html", null ],
       [ "lbann::boolean_false_negatives_metric", "classlbann_1_1boolean__false__negatives__metric.html", null ],
       [ "lbann::boolean_false_positives_metric", "classlbann_1_1boolean__false__positives__metric.html", null ],
       [ "lbann::categorical_accuracy_metric", "classlbann_1_1categorical__accuracy__metric.html", null ],
+      [ "lbann::layer_metric", "classlbann_1_1layer__metric.html", null ],
       [ "lbann::mean_absolute_deviation_metric", "classlbann_1_1mean__absolute__deviation__metric.html", null ],
       [ "lbann::mean_squared_error_metric", "classlbann_1_1mean__squared__error__metric.html", null ],
       [ "lbann::pearson_correlation_metric", "classlbann_1_1pearson__correlation__metric.html", null ],
@@ -182,9 +197,9 @@ var hierarchy =
     [ "lbann::metric_statistics::packing_header", "structlbann_1_1metric__statistics_1_1packing__header.html", null ],
     [ "lbann::model", "classlbann_1_1model.html", [
       [ "lbann::directed_acyclic_graph_model", "classlbann_1_1directed__acyclic__graph__model.html", [
+        [ "lbann::recurrent_model", "classlbann_1_1recurrent__model.html", null ],
         [ "lbann::siamese_model", "classlbann_1_1siamese__model.html", null ]
       ] ],
-      [ "lbann::recurrent_model", "classlbann_1_1recurrent__model.html", null ],
       [ "lbann::sequential_model", "classlbann_1_1sequential__model.html", [
         [ "lbann::greedy_layerwise_autoencoder", "classlbann_1_1greedy__layerwise__autoencoder.html", null ]
       ] ]
@@ -196,6 +211,7 @@ var hierarchy =
       [ "lbann::kl_divergence", "classlbann_1_1kl__divergence.html", null ],
       [ "lbann::l1_weight_regularization", "classlbann_1_1l1__weight__regularization.html", null ],
       [ "lbann::l2_weight_regularization", "classlbann_1_1l2__weight__regularization.html", null ],
+      [ "lbann::layer_term", "classlbann_1_1layer__term.html", null ],
       [ "lbann::loss_function", "classlbann_1_1loss__function.html", [
         [ "lbann::binary_cross_entropy", "classlbann_1_1binary__cross__entropy.html", null ],
         [ "lbann::cross_entropy", "classlbann_1_1cross__entropy.html", null ],
@@ -235,7 +251,9 @@ var hierarchy =
         [ "lbann::glorot_normal_initializer", "classlbann_1_1glorot__normal__initializer.html", null ],
         [ "lbann::glorot_uniform_initializer", "classlbann_1_1glorot__uniform__initializer.html", null ],
         [ "lbann::he_normal_initializer", "classlbann_1_1he__normal__initializer.html", null ],
-        [ "lbann::he_uniform_initializer", "classlbann_1_1he__uniform__initializer.html", null ]
+        [ "lbann::he_uniform_initializer", "classlbann_1_1he__uniform__initializer.html", null ],
+        [ "lbann::lecun_normal_initializer", "classlbann_1_1lecun__normal__initializer.html", null ],
+        [ "lbann::lecun_uniform_initializer", "classlbann_1_1lecun__uniform__initializer.html", null ]
       ] ],
       [ "lbann::normal_initializer", "classlbann_1_1normal__initializer.html", null ],
       [ "lbann::uniform_initializer", "classlbann_1_1uniform__initializer.html", null ]
@@ -243,5 +261,11 @@ var hierarchy =
     [ "options", "classoptions.html", null ],
     [ "exception", null, [
       [ "lbann::lbann_exception", "classlbann_1_1lbann__exception.html", null ]
+    ] ],
+    [ "false_type", null, [
+      [ "lbann::is_instantiated_El_mpi_type< T, typename >", "structlbann_1_1is__instantiated__El__mpi__type.html", null ]
+    ] ],
+    [ "true_type", null, [
+      [ "lbann::is_instantiated_El_mpi_type< T, void_t< typename std::enable_if< std::is_same< T, El::byte >::value||std::is_same< T, short >::value||std::is_same< T, int >::value||std::is_same< T, unsigned >::value||std::is_same< T, long int >::value||std::is_same< T, unsigned long >::value||std::is_same< T, float >::value||std::is_same< T, double >::value||std::is_same< T, El::Complex< float > >::value||std::is_same< T, El::Complex< double > >::value >::type > >", "structlbann_1_1is__instantiated__El__mpi__type_3_01T_00_01void__t_3_01typename_01std_1_1enable__288828543053710e85aa4e31168c6552.html", null ]
     ] ]
 ];

@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-244-g9bd4aac-ci362362741</span>
+   &#160;<span id="projectnumber">v0.93-606-gca499c9-ci377629231</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -98,12 +98,13 @@ $(document).ready(function(){initNavTree('random_8cpp.html','');});
 <div class="contents">
 <div class="textblock"><code>#include &lt;omp.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="random_8hpp_source.html">lbann/utils/random.hpp</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="file__io_8hpp_source.html">lbann/io/file_io.hpp</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for random.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="random_8cpp__incl.png" border="0" usemap="#_2home_2travis_2build_2LLNL_2lbann_2src_2utils_2random_8cpp" alt=""/></div>
 <map name="_2home_2travis_2build_2LLNL_2lbann_2src_2utils_2random_8cpp" id="_2home_2travis_2build_2LLNL_2lbann_2src_2utils_2random_8cpp">
-<area shape="rect" id="node3" href="random_8hpp.html" title="lbann/utils/random.hpp" alt="" coords="530,109,683,136"/><area shape="rect" id="node4" href="base_8hpp.html" title="lbann/base.hpp" alt="" coords="509,259,619,285"/><area shape="rect" id="node13" href="comm_8hpp.html" title="lbann/comm.hpp" alt="" coords="386,184,504,211"/><area shape="rect" id="node17" href="persist_8hpp.html" title="lbann/io/persist.hpp" alt="" coords="591,184,725,211"/><area shape="rect" id="node6" href="Elemental__extensions_8hpp.html" title="lbann/Elemental_extensions.hpp" alt="" coords="269,333,479,360"/><area shape="rect" id="node7" href="cyg__profile_8hpp.html" title="lbann/utils/cyg_profile.hpp" alt="" coords="72,333,245,360"/></map>
+<area shape="rect" id="node3" href="random_8hpp.html" title="lbann/utils/random.hpp" alt="" coords="530,109,683,136"/><area shape="rect" id="node21" href="file__io_8hpp.html" title="lbann/io/file_io.hpp" alt="" coords="740,109,869,136"/><area shape="rect" id="node4" href="base_8hpp.html" title="lbann/base.hpp" alt="" coords="441,333,551,360"/><area shape="rect" id="node13" href="comm_8hpp.html" title="lbann/comm.hpp" alt="" coords="414,184,532,211"/><area shape="rect" id="node19" href="persist_8hpp.html" title="lbann/io/persist.hpp" alt="" coords="645,259,779,285"/><area shape="rect" id="node6" href="Elemental__extensions_8hpp.html" title="lbann/Elemental_extensions.hpp" alt="" coords="413,408,623,435"/><area shape="rect" id="node7" href="cyg__profile_8hpp.html" title="lbann/utils/cyg_profile.hpp" alt="" coords="72,408,245,435"/><area shape="rect" id="node17" href="detect__El__mpi_8hpp.html" title="detect_El_mpi.hpp" alt="" coords="131,259,260,285"/></map>
 </div>
 </div>
 <p><a href="random_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -124,26 +125,26 @@ Functions</h2></td></tr>
 <tr class="separator:ae6ce9c2fdec6f81803f6b1a6555c31c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba9d11cb3a739cd84e7234ceeb32d098"><td class="memItemLeft" align="right" valign="top">rng_gen &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#aba9d11cb3a739cd84e7234ceeb32d098">lbann::get_data_seq_generator</a> ()</td></tr>
 <tr class="separator:aba9d11cb3a739cd84e7234ceeb32d098"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af68acf5b249e5360289d4c6a7bfa8985"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#af68acf5b249e5360289d4c6a7bfa8985">lbann::save_rng_to_checkpoint_shared</a> (persist &amp;p)</td></tr>
-<tr class="separator:af68acf5b249e5360289d4c6a7bfa8985"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab76114a0e8cc90c28bcb9e7d01eec89a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#ab76114a0e8cc90c28bcb9e7d01eec89a">lbann::load_rng_from_checkpoint_shared</a> (persist &amp;p)</td></tr>
-<tr class="separator:ab76114a0e8cc90c28bcb9e7d01eec89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acef152f20e422b3aea1a3c1691a533ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#acef152f20e422b3aea1a3c1691a533ac">lbann::init_random</a> (int seed, lbann_comm *<a class="el" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>)</td></tr>
-<tr class="separator:acef152f20e422b3aea1a3c1691a533ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8987701a637ff0e678114aa77e9c4d40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#a8987701a637ff0e678114aa77e9c4d40">lbann::init_data_seq_random</a> (int seed)</td></tr>
-<tr class="separator:a8987701a637ff0e678114aa77e9c4d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd116f95f55d0e29d9a0cc386139c4b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#abd116f95f55d0e29d9a0cc386139c4b4">lbann::gaussian_fill</a> (<a class="el" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a> &amp;mat, El::Int m, El::Int n, DataType mean, DataType stddev)</td></tr>
-<tr class="separator:abd116f95f55d0e29d9a0cc386139c4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8bc674a3d676391666524b44cbc4068"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#ae8bc674a3d676391666524b44cbc4068">lbann::bernoulli_fill</a> (<a class="el" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a> &amp;mat, El::Int m, El::Int n, double p)</td></tr>
-<tr class="separator:ae8bc674a3d676391666524b44cbc4068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7336c565aa23c1dab784530c581db3d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#a7336c565aa23c1dab784530c581db3d1">lbann::uniform_fill</a> (<a class="el" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a> &amp;mat, El::Int m, El::Int n, DataType center, DataType radius)</td></tr>
-<tr class="separator:a7336c565aa23c1dab784530c581db3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f40602f0503f9737325bb267e5c4dcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#a2f40602f0503f9737325bb267e5c4dcc">lbann::gaussian_fill_procdet</a> (<a class="el" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a> &amp;mat, El::Int m, El::Int n, DataType mean, DataType stddev)</td></tr>
-<tr class="separator:a2f40602f0503f9737325bb267e5c4dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1e3fe84cfa5257be476de3be805064d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#ad1e3fe84cfa5257be476de3be805064d">lbann::bernoulli_fill_procdet</a> (<a class="el" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a> &amp;mat, El::Int m, El::Int n, double p)</td></tr>
-<tr class="separator:ad1e3fe84cfa5257be476de3be805064d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93fc1b42be6ab461e803cb48d58c4d81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#a93fc1b42be6ab461e803cb48d58c4d81">lbann::uniform_fill_procdet</a> (<a class="el" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a> &amp;mat, El::Int m, El::Int n, DataType center, DataType radius)</td></tr>
-<tr class="separator:a93fc1b42be6ab461e803cb48d58c4d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0baddf643df06940d47edf2bae7c550e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#a0baddf643df06940d47edf2bae7c550e">lbann::save_rng_to_checkpoint_shared</a> (persist &amp;p, const lbann_comm *<a class="el" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>)</td></tr>
+<tr class="separator:a0baddf643df06940d47edf2bae7c550e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5717dd23d8a1244e9116ccc9aa88b6c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#ad5717dd23d8a1244e9116ccc9aa88b6c">lbann::load_rng_from_checkpoint_shared</a> (persist &amp;p, const lbann_comm *<a class="el" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>)</td></tr>
+<tr class="separator:ad5717dd23d8a1244e9116ccc9aa88b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17cf3b889f0aafc6d174133df76d3198"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#a17cf3b889f0aafc6d174133df76d3198">init_random</a> (int seed, lbann_comm *<a class="el" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>)</td></tr>
+<tr class="separator:a17cf3b889f0aafc6d174133df76d3198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac12ee1406da65d9c792b677ae1bfcb5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#ac12ee1406da65d9c792b677ae1bfcb5b">init_data_seq_random</a> (int seed)</td></tr>
+<tr class="separator:ac12ee1406da65d9c792b677ae1bfcb5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15e0ca35bca89a87c123c8bc5fd3a393"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#a15e0ca35bca89a87c123c8bc5fd3a393">gaussian_fill</a> (<a class="el" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a> &amp;mat, El::Int m, El::Int n, DataType mean, DataType stddev)</td></tr>
+<tr class="separator:a15e0ca35bca89a87c123c8bc5fd3a393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fcff10d095a4964bfdab5f0f0647b74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#a7fcff10d095a4964bfdab5f0f0647b74">bernoulli_fill</a> (<a class="el" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a> &amp;mat, El::Int m, El::Int n, double p)</td></tr>
+<tr class="separator:a7fcff10d095a4964bfdab5f0f0647b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bbe05ee87b4dd83aec7b88e252728f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#a6bbe05ee87b4dd83aec7b88e252728f7">uniform_fill</a> (<a class="el" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a> &amp;mat, El::Int m, El::Int n, DataType center, DataType radius)</td></tr>
+<tr class="separator:a6bbe05ee87b4dd83aec7b88e252728f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2af45a916a88866bfec4186715873d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#ab2af45a916a88866bfec4186715873d4">gaussian_fill_procdet</a> (<a class="el" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a> &amp;mat, El::Int m, El::Int n, DataType mean, DataType stddev)</td></tr>
+<tr class="separator:ab2af45a916a88866bfec4186715873d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a499267646dcb57135f712a8ade9a3008"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#a499267646dcb57135f712a8ade9a3008">bernoulli_fill_procdet</a> (<a class="el" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a> &amp;mat, El::Int m, El::Int n, double p)</td></tr>
+<tr class="separator:a499267646dcb57135f712a8ade9a3008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a264ce2afa5f531507783c7d813ac6429"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="random_8cpp.html#a264ce2afa5f531507783c7d813ac6429">uniform_fill_procdet</a> (<a class="el" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a> &amp;mat, El::Int m, El::Int n, DataType center, DataType radius)</td></tr>
+<tr class="separator:a264ce2afa5f531507783c7d813ac6429"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -153,14 +154,602 @@ Variables</h2></td></tr>
 <tr class="separator:a349f572cec05cd0e2469b799774a8602"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1d3d0259f3e9c9b75e9701ae727d16e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacelbann.html#aab7fa584bac85b9085aa8b8c5a888356">lbann::rng_gen</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceanonymous__namespace_02random_8cpp_03.html#ac1d3d0259f3e9c9b75e9701ae727d16e">anonymous_namespace{random.cpp}::data_seq_generator</a></td></tr>
 <tr class="separator:ac1d3d0259f3e9c9b75e9701ae727d16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1002432debb16a265bccfa035b0c582"><td class="memItemLeft" align="right" valign="top">return&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacelbann.html#aa1002432debb16a265bccfa035b0c582">lbann::true</a></td></tr>
+<tr class="separator:aa1002432debb16a265bccfa035b0c582"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a7fcff10d095a4964bfdab5f0f0647b74"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bernoulli_fill </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">El::Int&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">El::Int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>p</em> = <code>0.5</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Make mat into an m x n matrix where each entry is an indepenent Bernoulli random variable with parameter p. This makes the same guarantees as gaussian_fill. </p>
+
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00232">232</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                                                                 {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="preprocessor">#ifdef LBANN_PARALLEL_RANDOM_MATRICES</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="preprocessor"></span>  El::Bernoulli(mat, m, n, p);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor"></span>  <a class="code" href="random_8cpp.html#a499267646dcb57135f712a8ade9a3008">bernoulli_fill_procdet</a>(mat, m, n, p);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="preprocessor">#endif  // LBANN_PARALLEL_RANDOM_MATRICES  </span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="ttc" id="random_8cpp_html_a499267646dcb57135f712a8ade9a3008"><div class="ttname"><a href="random_8cpp.html#a499267646dcb57135f712a8ade9a3008">bernoulli_fill_procdet</a></div><div class="ttdeci">void bernoulli_fill_procdet(AbsDistMat &amp;mat, El::Int m, El::Int n, double p)</div><div class="ttdef"><b>Definition:</b> <a href="random_8cpp_source.html#l00265">random.cpp:265</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="random_8cpp_a7fcff10d095a4964bfdab5f0f0647b74_cgraph.png" border="0" usemap="#random_8cpp_a7fcff10d095a4964bfdab5f0f0647b74_cgraph" alt=""/></div>
+<map name="random_8cpp_a7fcff10d095a4964bfdab5f0f0647b74_cgraph" id="random_8cpp_a7fcff10d095a4964bfdab5f0f0647b74_cgraph">
+<area shape="rect" id="node2" href="random_8cpp.html#a499267646dcb57135f712a8ade9a3008" title="bernoulli_fill_procdet" alt="" coords="145,5,285,32"/><area shape="rect" id="node3" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764" title="lbann::get_generator" alt="" coords="334,5,474,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="random_8cpp_a7fcff10d095a4964bfdab5f0f0647b74_icgraph.png" border="0" usemap="#random_8cpp_a7fcff10d095a4964bfdab5f0f0647b74_icgraph" alt=""/></div>
+<map name="random_8cpp_a7fcff10d095a4964bfdab5f0f0647b74_icgraph" id="random_8cpp_a7fcff10d095a4964bfdab5f0f0647b74_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1bernoulli__layer.html#ad3b8939b6df375880247ef54f370ceb1" title="lbann::bernoulli_layer\l::fp_compute" alt="" coords="144,5,288,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a499267646dcb57135f712a8ade9a3008"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bernoulli_fill_procdet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">El::Int&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">El::Int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>p</em> = <code>0.5</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Make mat into an m x n matrix where each entry is an independent Bernoulli random variable with parameter p. This makes the same guarantees as gaussian_fill_procdet. </p>
+
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00265">265</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                                                                         {</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  El::Zeros(mat, m, n);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="keywordflow">if</span> (mat.Grid().Rank() == 0) {</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    mat.Reserve(m * n);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keyword">auto</span>&amp; gen = <a class="code" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764">get_generator</a>();</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    std::bernoulli_distribution dist(p);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordflow">for</span> (El::Int col = 0; col &lt; n; ++col) {</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      <span class="keywordflow">for</span> (El::Int row = 0; row &lt; m; ++row) {</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        mat.QueueUpdate(row, col, dist(gen) ? 1.0f : 0.0f);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      }</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    }</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;  }</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  mat.ProcessQueues();</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;}</div>
+<div class="ttc" id="namespacelbann_html_a4fea7ba21017b49d1e34394b4c20c764"><div class="ttname"><a href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764">lbann::get_generator</a></div><div class="ttdeci">rng_gen &amp; get_generator()</div><div class="ttdef"><b>Definition:</b> <a href="random_8cpp_source.html#l00061">random.cpp:61</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="random_8cpp_a499267646dcb57135f712a8ade9a3008_cgraph.png" border="0" usemap="#random_8cpp_a499267646dcb57135f712a8ade9a3008_cgraph" alt=""/></div>
+<map name="random_8cpp_a499267646dcb57135f712a8ade9a3008_cgraph" id="random_8cpp_a499267646dcb57135f712a8ade9a3008_cgraph">
+<area shape="rect" id="node2" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764" title="lbann::get_generator" alt="" coords="195,5,335,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="random_8cpp_a499267646dcb57135f712a8ade9a3008_icgraph.png" border="0" usemap="#random_8cpp_a499267646dcb57135f712a8ade9a3008_icgraph" alt=""/></div>
+<map name="random_8cpp_a499267646dcb57135f712a8ade9a3008_icgraph" id="random_8cpp_a499267646dcb57135f712a8ade9a3008_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1dropout.html#a358c502d8e7eeb1fed8b5df468793b09" title="lbann::dropout::fp\l_compute_cpu" alt="" coords="199,7,321,49"/><area shape="rect" id="node4" href="namespacelbann.html#a98ff4af8d3f149fe6fe9f42d664ba03c" title="lbann::bernoulli_fill" alt="" coords="195,75,325,101"/><area shape="rect" id="node3" href="classlbann_1_1dropout.html#a9ed94f278835b6c9e8185de01705e53a" title="lbann::dropout::fp\l_compute" alt="" coords="384,5,507,46"/><area shape="rect" id="node5" href="classlbann_1_1bernoulli__layer.html#ad3b8939b6df375880247ef54f370ceb1" title="lbann::bernoulli_layer\l::fp_compute" alt="" coords="373,70,517,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a15e0ca35bca89a87c123c8bc5fd3a393"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gaussian_fill </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">El::Int&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">El::Int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataType&#160;</td>
+          <td class="paramname"><em>mean</em> = <code>0.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataType&#160;</td>
+          <td class="paramname"><em>stddev</em> = <code>1.0f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Make mat into an m x n matrix where each entry is independently drawn from a Gaussian distribution with given mean and standard deviation. Unless selected so at compile-time, this ensures the entries of the matrix do not change as the grid it is distributed over changes; that is, it will have the same entries when mat spans any number of processes. </p>
+
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00223">223</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                                    {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">#ifdef LBANN_PARALLEL_RANDOM_MATRICES</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor"></span>  El::Gaussian(mat, m, n, mean, stddev);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="preprocessor"></span>  <a class="code" href="random_8cpp.html#ab2af45a916a88866bfec4186715873d4">gaussian_fill_procdet</a>(mat, m, n, mean, stddev);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;<span class="preprocessor">#endif  // LBANN_PARALLEL_RANDOM_MATRICES</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="ttc" id="random_8cpp_html_ab2af45a916a88866bfec4186715873d4"><div class="ttname"><a href="random_8cpp.html#ab2af45a916a88866bfec4186715873d4">gaussian_fill_procdet</a></div><div class="ttdeci">void gaussian_fill_procdet(AbsDistMat &amp;mat, El::Int m, El::Int n, DataType mean, DataType stddev)</div><div class="ttdef"><b>Definition:</b> <a href="random_8cpp_source.html#l00249">random.cpp:249</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="random_8cpp_a15e0ca35bca89a87c123c8bc5fd3a393_cgraph.png" border="0" usemap="#random_8cpp_a15e0ca35bca89a87c123c8bc5fd3a393_cgraph" alt=""/></div>
+<map name="random_8cpp_a15e0ca35bca89a87c123c8bc5fd3a393_cgraph" id="random_8cpp_a15e0ca35bca89a87c123c8bc5fd3a393_cgraph">
+<area shape="rect" id="node2" href="random_8cpp.html#ab2af45a916a88866bfec4186715873d4" title="gaussian_fill_procdet" alt="" coords="149,5,293,32"/><area shape="rect" id="node3" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764" title="lbann::get_generator" alt="" coords="342,5,482,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="random_8cpp_a15e0ca35bca89a87c123c8bc5fd3a393_icgraph.png" border="0" usemap="#random_8cpp_a15e0ca35bca89a87c123c8bc5fd3a393_icgraph" alt=""/></div>
+<map name="random_8cpp_a15e0ca35bca89a87c123c8bc5fd3a393_icgraph" id="random_8cpp_a15e0ca35bca89a87c123c8bc5fd3a393_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1gaussian__layer.html#a8a0f52d4f365180dbf11e9a09b359c5e" title="lbann::gaussian_layer\l::fp_compute" alt="" coords="165,5,313,46"/><area shape="rect" id="node3" href="classlbann_1_1glorot__normal__initializer.html#a0bd7253159fe5ca9039af44b7fca1709" title="lbann::glorot_normal\l_initializer::initialize\l_entries" alt="" coords="169,69,308,125"/><area shape="rect" id="node4" href="classlbann_1_1he__normal__initializer.html#a01d283880fc0c1b743bcc89e732f4e15" title="lbann::he_normal_initializer\l::initialize_entries" alt="" coords="149,149,328,190"/><area shape="rect" id="node5" href="classlbann_1_1lecun__normal__initializer.html#a7ba7be6128bf28894cfd21fb8ab58d17" title="lbann::lecun_normal\l_initializer::initialize\l_entries" alt="" coords="169,213,308,269"/><area shape="rect" id="node6" href="classlbann_1_1normal__initializer.html#a3958aa3e88af76077cc7559eba0a5a17" title="lbann::normal_initializer\l::initialize_entries" alt="" coords="159,293,318,334"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab2af45a916a88866bfec4186715873d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gaussian_fill_procdet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">El::Int&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">El::Int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataType&#160;</td>
+          <td class="paramname"><em>mean</em> = <code>0.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataType&#160;</td>
+          <td class="paramname"><em>stddev</em> = <code>1.0f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Make mat into an m x n matrix where each entry is independently drawn from a Gaussian distribution with given mean and standard deviation. This always ensures that the entries of the matrix do not change as the grid it is distributed over changes. </p>
+
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00249">249</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                                            {</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  El::Zeros(mat, m, n);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="keywordflow">if</span> (mat.Grid().Rank() == 0) {</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    mat.Reserve(n * m);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keyword">auto</span>&amp; gen = <a class="code" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764">get_generator</a>();</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    std::normal_distribution&lt;DataType&gt; dist(mean, stddev);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">for</span> (El::Int col = 0; col &lt; n; ++col) {</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      <span class="keywordflow">for</span> (El::Int row = 0; row &lt; m; ++row) {</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        mat.QueueUpdate(row, col, dist(gen));</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      }</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  mat.ProcessQueues();</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;}</div>
+<div class="ttc" id="namespacelbann_html_a4fea7ba21017b49d1e34394b4c20c764"><div class="ttname"><a href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764">lbann::get_generator</a></div><div class="ttdeci">rng_gen &amp; get_generator()</div><div class="ttdef"><b>Definition:</b> <a href="random_8cpp_source.html#l00061">random.cpp:61</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="random_8cpp_ab2af45a916a88866bfec4186715873d4_cgraph.png" border="0" usemap="#random_8cpp_ab2af45a916a88866bfec4186715873d4_cgraph" alt=""/></div>
+<map name="random_8cpp_ab2af45a916a88866bfec4186715873d4_cgraph" id="random_8cpp_ab2af45a916a88866bfec4186715873d4_cgraph">
+<area shape="rect" id="node2" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764" title="lbann::get_generator" alt="" coords="198,5,338,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="random_8cpp_ab2af45a916a88866bfec4186715873d4_icgraph.png" border="0" usemap="#random_8cpp_ab2af45a916a88866bfec4186715873d4_icgraph" alt=""/></div>
+<map name="random_8cpp_ab2af45a916a88866bfec4186715873d4_icgraph" id="random_8cpp_ab2af45a916a88866bfec4186715873d4_icgraph">
+<area shape="rect" id="node2" href="namespacelbann.html#ae3f75ab608785395590a3a89d614c869" title="lbann::gaussian_fill" alt="" coords="197,156,331,183"/><area shape="rect" id="node3" href="classlbann_1_1gaussian__layer.html#a8a0f52d4f365180dbf11e9a09b359c5e" title="lbann::gaussian_layer\l::fp_compute" alt="" coords="394,5,542,46"/><area shape="rect" id="node4" href="classlbann_1_1glorot__normal__initializer.html#a0bd7253159fe5ca9039af44b7fca1709" title="lbann::glorot_normal\l_initializer::initialize\l_entries" alt="" coords="399,69,537,125"/><area shape="rect" id="node5" href="classlbann_1_1he__normal__initializer.html#a01d283880fc0c1b743bcc89e732f4e15" title="lbann::he_normal_initializer\l::initialize_entries" alt="" coords="379,149,557,190"/><area shape="rect" id="node6" href="classlbann_1_1lecun__normal__initializer.html#a7ba7be6128bf28894cfd21fb8ab58d17" title="lbann::lecun_normal\l_initializer::initialize\l_entries" alt="" coords="399,213,537,269"/><area shape="rect" id="node7" href="classlbann_1_1normal__initializer.html#a3958aa3e88af76077cc7559eba0a5a17" title="lbann::normal_initializer\l::initialize_entries" alt="" coords="389,293,547,334"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac12ee1406da65d9c792b677ae1bfcb5b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_data_seq_random </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>seed</em> = <code>-1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialize a random number generator (with optional seed) that is specifically used for sequencing the training / testing data samples. Using a separate RNG for the data sequences helps provide a stable training result that does not vary with how much I/O parallelism is applied. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000030">Todo:</a></b></dt><dd>Support saving/restoring the generator's state. This is directly supported via the &gt;&gt; and &lt;&lt; operators on the generator (reading/writing from/to a stream). </dd></dl>
+
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00204">204</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                                    {</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  <span class="keywordflow">if</span> (seed == -1) {</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="comment">// Seed with a random value.</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    std::random_device rd;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    seed = rd();</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="comment">// Seed every OpenMP thread, if present.</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  <span class="comment">// Note: Threadprivate OMP variables don&#39;t work with dynamic threads.</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="preprocessor"></span><span class="preprocessor">  #pragma omp parallel</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="preprocessor"></span>  {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <a class="code" href="namespacelbann.html#aba9d11cb3a739cd84e7234ceeb32d098">get_data_seq_generator</a>().seed(seed);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="preprocessor"></span>  <a class="code" href="namespacelbann.html#aba9d11cb3a739cd84e7234ceeb32d098">get_data_seq_generator</a>().seed(seed);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="ttc" id="namespacelbann_html_aba9d11cb3a739cd84e7234ceeb32d098"><div class="ttname"><a href="namespacelbann.html#aba9d11cb3a739cd84e7234ceeb32d098">lbann::get_data_seq_generator</a></div><div class="ttdeci">rng_gen &amp; get_data_seq_generator()</div><div class="ttdef"><b>Definition:</b> <a href="random_8cpp_source.html#l00069">random.cpp:69</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="random_8cpp_ac12ee1406da65d9c792b677ae1bfcb5b_cgraph.png" border="0" usemap="#random_8cpp_ac12ee1406da65d9c792b677ae1bfcb5b_cgraph" alt=""/></div>
+<map name="random_8cpp_ac12ee1406da65d9c792b677ae1bfcb5b_cgraph" id="random_8cpp_ac12ee1406da65d9c792b677ae1bfcb5b_cgraph">
+<area shape="rect" id="node2" href="namespacelbann.html#aba9d11cb3a739cd84e7234ceeb32d098" title="lbann::get_data_seq\l_generator" alt="" coords="203,5,341,46"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="random_8cpp_ac12ee1406da65d9c792b677ae1bfcb5b_icgraph.png" border="0" usemap="#random_8cpp_ac12ee1406da65d9c792b677ae1bfcb5b_icgraph" alt=""/></div>
+<map name="random_8cpp_ac12ee1406da65d9c792b677ae1bfcb5b_icgraph" id="random_8cpp_ac12ee1406da65d9c792b677ae1bfcb5b_icgraph">
+<area shape="rect" id="node2" href="namespacelbann.html#a3d91b615e42bf5744deeed770879bc8c" title="lbann::initialize" alt="" coords="203,5,311,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a17cf3b889f0aafc6d174133df76d3198"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_random </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>seed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">lbann_comm *&#160;</td>
+          <td class="paramname"><em>comm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00163">163</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                                             {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="keywordflow">if</span> (seed != -1) {</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="comment">// Seed every OpenMP thread, if present.</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="comment">// Note: Threadprivate OMP variables don&#39;t work with dynamic threads.</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    #pragma omp parallel</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor"></span>    {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      <a class="code" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764">get_generator</a>().seed((seed &lt;&lt; 8) | omp_get_thread_num());</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      <a class="code" href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5">get_fast_generator</a>().seed((seed &lt;&lt; 8) | omp_get_thread_num());</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="preprocessor"></span>    <a class="code" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764">get_generator</a>().seed(seed);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <a class="code" href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5">get_fast_generator</a>().seed(seed);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifdef LBANN_SET_EL_RNG</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="preprocessor"></span>    <span class="keywordflow">if</span> (<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a> != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      El::Generator().seed(seed ^ <a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>-&gt;get_rank_in_model());</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      El::Generator().seed(seed ^ El::mpi::Rank(El::mpi::COMM_WORLD));</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor"></span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="comment">// Seed with a random value.</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    std::random_device rd;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordtype">unsigned</span> rand_val = rd();</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="preprocessor">#ifdef _OPENMP</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="preprocessor"></span><span class="preprocessor">    #pragma omp parallel</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor"></span>    {</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      <a class="code" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764">get_generator</a>().seed((rand_val &lt;&lt; 8) | omp_get_thread_num());</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      <a class="code" href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5">get_fast_generator</a>().seed((rand_val &lt;&lt; 8) | omp_get_thread_num());</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor"></span>    <a class="code" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764">get_generator</a>().seed(rand_val);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <a class="code" href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5">get_fast_generator</a>().seed(rand_val);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#ifdef LBANN_SET_EL_RNG</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor"></span>    El::Generator().seed(rand_val);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor"></span>  }</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}</div>
+<div class="ttc" id="namespacelbann_html_ae6ce9c2fdec6f81803f6b1a6555c31c5"><div class="ttname"><a href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5">lbann::get_fast_generator</a></div><div class="ttdeci">fast_rng_gen &amp; get_fast_generator()</div><div class="ttdef"><b>Definition:</b> <a href="random_8cpp_source.html#l00065">random.cpp:65</a></div></div>
+<div class="ttc" id="file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00044">file_io.cpp:44</a></div></div>
+<div class="ttc" id="namespacelbann_html_a4fea7ba21017b49d1e34394b4c20c764"><div class="ttname"><a href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764">lbann::get_generator</a></div><div class="ttdeci">rng_gen &amp; get_generator()</div><div class="ttdef"><b>Definition:</b> <a href="random_8cpp_source.html#l00061">random.cpp:61</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="random_8cpp_a17cf3b889f0aafc6d174133df76d3198_cgraph.png" border="0" usemap="#random_8cpp_a17cf3b889f0aafc6d174133df76d3198_cgraph" alt=""/></div>
+<map name="random_8cpp_a17cf3b889f0aafc6d174133df76d3198_cgraph" id="random_8cpp_a17cf3b889f0aafc6d174133df76d3198_cgraph">
+<area shape="rect" id="node2" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764" title="lbann::get_generator" alt="" coords="159,5,299,32"/><area shape="rect" id="node3" href="namespacelbann.html#ae6ce9c2fdec6f81803f6b1a6555c31c5" title="lbann::get_fast_generator" alt="" coords="145,56,314,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6bbe05ee87b4dd83aec7b88e252728f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void uniform_fill </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">El::Int&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">El::Int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataType&#160;</td>
+          <td class="paramname"><em>center</em> = <code>0.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataType&#160;</td>
+          <td class="paramname"><em>radius</em> = <code>1.0f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Make mat into an m x n matrix where each entry is independently uniformly sampled from a ball with the given center and radius. This makes the same guarantees as gaussian_fill. </p>
+
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00240">240</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                                   {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="preprocessor">#ifdef LBANN_PARALLEL_RANDOM_MATRICES</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="preprocessor"></span>  El::Uniform(mat, m, n, center, radius);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<span class="preprocessor"></span>  <a class="code" href="random_8cpp.html#a264ce2afa5f531507783c7d813ac6429">uniform_fill_procdet</a>(mat, m, n, center, radius);</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;<span class="preprocessor">#endif  // LBANN_PARALLEL_RANDOM_MATRICES</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="ttc" id="random_8cpp_html_a264ce2afa5f531507783c7d813ac6429"><div class="ttname"><a href="random_8cpp.html#a264ce2afa5f531507783c7d813ac6429">uniform_fill_procdet</a></div><div class="ttdeci">void uniform_fill_procdet(AbsDistMat &amp;mat, El::Int m, El::Int n, DataType center, DataType radius)</div><div class="ttdef"><b>Definition:</b> <a href="random_8cpp_source.html#l00280">random.cpp:280</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="random_8cpp_a6bbe05ee87b4dd83aec7b88e252728f7_cgraph.png" border="0" usemap="#random_8cpp_a6bbe05ee87b4dd83aec7b88e252728f7_cgraph" alt=""/></div>
+<map name="random_8cpp_a6bbe05ee87b4dd83aec7b88e252728f7_cgraph" id="random_8cpp_a6bbe05ee87b4dd83aec7b88e252728f7_cgraph">
+<area shape="rect" id="node2" href="random_8cpp.html#a264ce2afa5f531507783c7d813ac6429" title="uniform_fill_procdet" alt="" coords="139,5,274,32"/><area shape="rect" id="node3" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764" title="lbann::get_generator" alt="" coords="323,5,463,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="random_8cpp_a6bbe05ee87b4dd83aec7b88e252728f7_icgraph.png" border="0" usemap="#random_8cpp_a6bbe05ee87b4dd83aec7b88e252728f7_icgraph" alt=""/></div>
+<map name="random_8cpp_a6bbe05ee87b4dd83aec7b88e252728f7_icgraph" id="random_8cpp_a6bbe05ee87b4dd83aec7b88e252728f7_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1uniform__layer.html#a975ba9cfcd974fe348ee9681d1feb879" title="lbann::uniform_layer\l::fp_compute" alt="" coords="161,5,300,46"/><area shape="rect" id="node3" href="classlbann_1_1glorot__uniform__initializer.html#a3a44410934f791cee272183a6a36ae0c" title="lbann::glorot_uniform\l_initializer::initialize\l_entries" alt="" coords="159,69,302,125"/><area shape="rect" id="node4" href="classlbann_1_1he__uniform__initializer.html#a8f86401b0b216ba159f57d3475769a24" title="lbann::he_uniform_initializer\l::initialize_entries" alt="" coords="139,149,322,190"/><area shape="rect" id="node5" href="classlbann_1_1lecun__uniform__initializer.html#a3087487f6001ff2a35892e1d84eda19c" title="lbann::lecun_uniform\l_initializer::initialize\l_entries" alt="" coords="159,213,302,269"/><area shape="rect" id="node6" href="classlbann_1_1uniform__initializer.html#a23461a8ab897f0aeafc524a61cb0f4eb" title="lbann::uniform_initializer\l::initialize_entries" alt="" coords="149,293,312,334"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a264ce2afa5f531507783c7d813ac6429"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void uniform_fill_procdet </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="base_8hpp.html#a9a697a504ae84010e7439ffec862b470">AbsDistMat</a> &amp;&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">El::Int&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">El::Int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataType&#160;</td>
+          <td class="paramname"><em>center</em> = <code>0.0f</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DataType&#160;</td>
+          <td class="paramname"><em>radius</em> = <code>1.0f</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Make mat into an m x n matrix where each entry is independently uniformly sampled from a ball with the given center and radius. This makes the same guarantees as gaussian_fill_procdet. </p>
+
+<p>Definition at line <a class="el" href="random_8cpp_source.html#l00280">280</a> of file <a class="el" href="random_8cpp_source.html">random.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                                           {</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  El::Zeros(mat, m, n);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <span class="keywordflow">if</span> (mat.Grid().Rank() == 0) {</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    mat.Reserve(n * m);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keyword">auto</span>&amp; gen = <a class="code" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764">get_generator</a>();</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    std::uniform_real_distribution&lt;DataType&gt; dist(center - radius,</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        center + radius);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordflow">for</span> (El::Int col = 0; col &lt; n; ++col) {</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      <span class="keywordflow">for</span> (El::Int row = 0; row &lt; m; ++row) {</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        mat.QueueUpdate(row, col, dist(gen));</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;      }</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    }</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  }</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  mat.ProcessQueues();</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;}</div>
+<div class="ttc" id="namespacelbann_html_a4fea7ba21017b49d1e34394b4c20c764"><div class="ttname"><a href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764">lbann::get_generator</a></div><div class="ttdeci">rng_gen &amp; get_generator()</div><div class="ttdef"><b>Definition:</b> <a href="random_8cpp_source.html#l00061">random.cpp:61</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="random_8cpp_a264ce2afa5f531507783c7d813ac6429_cgraph.png" border="0" usemap="#random_8cpp_a264ce2afa5f531507783c7d813ac6429_cgraph" alt=""/></div>
+<map name="random_8cpp_a264ce2afa5f531507783c7d813ac6429_cgraph" id="random_8cpp_a264ce2afa5f531507783c7d813ac6429_cgraph">
+<area shape="rect" id="node2" href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764" title="lbann::get_generator" alt="" coords="190,5,330,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="random_8cpp_a264ce2afa5f531507783c7d813ac6429_icgraph.png" border="0" usemap="#random_8cpp_a264ce2afa5f531507783c7d813ac6429_icgraph" alt=""/></div>
+<map name="random_8cpp_a264ce2afa5f531507783c7d813ac6429_icgraph" id="random_8cpp_a264ce2afa5f531507783c7d813ac6429_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1DataGenerator.html#a8248cc6ea186c23147887ca83b1c4bd7" title="lbann::DataGenerator\l::load" alt="" coords="189,90,336,131"/><area shape="rect" id="node3" href="namespacelbann.html#ab9dfee44698c5a0ea70b38eced6977b7" title="lbann::uniform_fill" alt="" coords="201,156,325,183"/><area shape="rect" id="node4" href="classlbann_1_1uniform__layer.html#a975ba9cfcd974fe348ee9681d1feb879" title="lbann::uniform_layer\l::fp_compute" alt="" coords="407,5,545,46"/><area shape="rect" id="node5" href="classlbann_1_1glorot__uniform__initializer.html#a3a44410934f791cee272183a6a36ae0c" title="lbann::glorot_uniform\l_initializer::initialize\l_entries" alt="" coords="405,69,547,125"/><area shape="rect" id="node6" href="classlbann_1_1he__uniform__initializer.html#a8f86401b0b216ba159f57d3475769a24" title="lbann::he_uniform_initializer\l::initialize_entries" alt="" coords="385,149,567,190"/><area shape="rect" id="node7" href="classlbann_1_1lecun__uniform__initializer.html#a3087487f6001ff2a35892e1d84eda19c" title="lbann::lecun_uniform\l_initializer::initialize\l_entries" alt="" coords="405,213,547,269"/><area shape="rect" id="node8" href="classlbann_1_1uniform__initializer.html#a23461a8ab897f0aeafc524a61cb0f4eb" title="lbann::uniform_initializer\l::initialize_entries" alt="" coords="395,293,557,334"/></map>
+</div>
+</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_e3a975d7a6e3e1ec3d3053fd7df1ad72.html">utils</a></li><li class="navelem"><a class="el" href="random_8cpp.html">random.cpp</a></li>
-    <li class="footer">Generated on Wed Apr 4 2018 21:59:05 for LBANN by
+    <li class="footer">Generated on Fri May 11 2018 08:30:00 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

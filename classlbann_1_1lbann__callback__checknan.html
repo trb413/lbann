@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-244-g9bd4aac-ci362362741</span>
+   &#160;<span id="projectnumber">v0.93-606-gca499c9-ci377629231</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -425,10 +425,10 @@ Here is the caller graph for this function:</div>
 <p>Definition at line <a class="el" href="callback__checknan_8cpp_source.html#l00080">80</a> of file <a class="el" href="callback__checknan_8cpp_source.html">callback_checknan.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                                         {</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">const</span> <a class="code" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a>&amp; lm = m.LockedMatrix();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">const</span> El::Int <a class="code" href="structlayer__header.html#ad986e4b92e5b455e066fd349725c6bd9">height</a> = lm.Height();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">const</span> El::Int <a class="code" href="structlayer__header.html#af1f45c9c74db048ea424114418f22d50">width</a> = lm.Width();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">for</span> (El::Int col = 0; col &lt; <a class="code" href="structlayer__header.html#af1f45c9c74db048ea424114418f22d50">width</a>; ++col) {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">for</span> (El::Int row = 0; row &lt; <a class="code" href="structlayer__header.html#ad986e4b92e5b455e066fd349725c6bd9">height</a>; ++row) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">const</span> El::Int height = lm.Height();</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">const</span> El::Int width = lm.Width();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">for</span> (El::Int col = 0; col &lt; width; ++col) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">for</span> (El::Int row = 0; row &lt; height; ++row) {</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <span class="keyword">const</span> DataType val = lm(row, col);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="keywordflow">if</span> (std::isnan(val)) {</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Found NaN at (&quot;</span> &lt;&lt; row &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt; col &lt;&lt; <span class="stringliteral">&quot;)!&quot;</span> &lt;&lt; std::endl;</div>
@@ -442,8 +442,6 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
 <div class="ttc" id="base_8hpp_html_a68f11fdc31b62516cb310831bbe54d73"><div class="ttname"><a href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a></div><div class="ttdeci">El::Matrix&lt; lbann::DataType &gt; Mat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00042">base.hpp:42</a></div></div>
-<div class="ttc" id="structlayer__header_html_ad986e4b92e5b455e066fd349725c6bd9"><div class="ttname"><a href="structlayer__header.html#ad986e4b92e5b455e066fd349725c6bd9">layer_header::height</a></div><div class="ttdeci">uint64_t height</div><div class="ttdef"><b>Definition:</b> <a href="persist_8cpp_source.html#l00058">persist.cpp:58</a></div></div>
-<div class="ttc" id="structlayer__header_html_af1f45c9c74db048ea424114418f22d50"><div class="ttname"><a href="structlayer__header.html#af1f45c9c74db048ea424114418f22d50">layer_header::width</a></div><div class="ttdeci">uint64_t width</div><div class="ttdef"><b>Definition:</b> <a href="persist_8cpp_source.html#l00057">persist.cpp:57</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -704,7 +702,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__callback__checknan.html">lbann_callback_checknan</a></li>
-    <li class="footer">Generated on Wed Apr 4 2018 21:59:05 for LBANN by
+    <li class="footer">Generated on Fri May 11 2018 08:30:00 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

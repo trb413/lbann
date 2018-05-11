@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-244-g9bd4aac-ci362362741</span>
+   &#160;<span id="projectnumber">v0.93-606-gca499c9-ci377629231</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -313,22 +313,20 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="callback__check__init_8cpp_source.html#l00074">74</a> of file <a class="el" href="callback__check__init_8cpp_source.html">callback_check_init.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                                            {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">const</span> El::Int <a class="code" href="structlayer__header.html#ad986e4b92e5b455e066fd349725c6bd9">height</a> = x.Height();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">const</span> El::Int <a class="code" href="structlayer__header.html#af1f45c9c74db048ea424114418f22d50">width</a> = x.Width();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keyword">const</span> El::Int height = x.Height();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">const</span> El::Int width = x.Width();</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordflow">if</span> (height != y.Height() || width != y.Width() || x.LDim() != y.LDim()) {</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">const</span> DataType *x_buf = x.LockedBuffer();</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">const</span> DataType *y_buf = y.LockedBuffer();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordflow">for</span> (El::Int i = 0; i &lt; height * <a class="code" href="structlayer__header.html#af1f45c9c74db048ea424114418f22d50">width</a>; ++i) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordflow">for</span> (El::Int i = 0; i &lt; height * width; ++i) {</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span> (x_buf[i] != y_buf[i]) {</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
-<div class="ttc" id="structlayer__header_html_ad986e4b92e5b455e066fd349725c6bd9"><div class="ttname"><a href="structlayer__header.html#ad986e4b92e5b455e066fd349725c6bd9">layer_header::height</a></div><div class="ttdeci">uint64_t height</div><div class="ttdef"><b>Definition:</b> <a href="persist_8cpp_source.html#l00058">persist.cpp:58</a></div></div>
-<div class="ttc" id="structlayer__header_html_af1f45c9c74db048ea424114418f22d50"><div class="ttname"><a href="structlayer__header.html#af1f45c9c74db048ea424114418f22d50">layer_header::width</a></div><div class="ttdeci">uint64_t width</div><div class="ttdef"><b>Definition:</b> <a href="persist_8cpp_source.html#l00057">persist.cpp:57</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -525,7 +523,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1lbann__callback__check__init.html">lbann_callback_check_init</a></li>
-    <li class="footer">Generated on Wed Apr 4 2018 21:59:05 for LBANN by
+    <li class="footer">Generated on Fri May 11 2018 08:30:00 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,5 +1,8 @@
 var dir_2a07eb309d0d4c1db480e24ee00a1de6 =
 [
+    [ "bernoulli.hpp", "bernoulli_8hpp.html", [
+      [ "bernoulli_layer", "classlbann_1_1bernoulli__layer.html", "classlbann_1_1bernoulli__layer" ]
+    ] ],
     [ "concatenation.hpp", "concatenation_8hpp.html", [
       [ "concatenation_layer", "classlbann_1_1concatenation__layer.html", "classlbann_1_1concatenation__layer" ]
     ] ],
@@ -9,16 +12,20 @@ var dir_2a07eb309d0d4c1db480e24ee00a1de6 =
     [ "dummy.hpp", "dummy_8hpp.html", [
       [ "dummy_layer", "classlbann_1_1dummy__layer.html", "classlbann_1_1dummy__layer" ]
     ] ],
+    [ "evaluation.hpp", "evaluation_8hpp.html", [
+      [ "evaluation_layer", "classlbann_1_1evaluation__layer.html", "classlbann_1_1evaluation__layer" ]
+    ] ],
+    [ "gaussian.hpp", "gaussian_8hpp.html", [
+      [ "gaussian_layer", "classlbann_1_1gaussian__layer.html", "classlbann_1_1gaussian__layer" ]
+    ] ],
     [ "hadamard.hpp", "hadamard_8hpp.html", [
       [ "hadamard_layer", "classlbann_1_1hadamard__layer.html", "classlbann_1_1hadamard__layer" ]
-    ] ],
-    [ "noise.hpp", "noise_8hpp.html", [
-      [ "noise_layer", "classlbann_1_1noise__layer.html", "classlbann_1_1noise__layer" ]
     ] ],
     [ "pooling.hpp", "pooling_8hpp.html", [
       [ "unpooling_layer", "classlbann_1_1unpooling__layer.html", "classlbann_1_1unpooling__layer" ],
       [ "pooling_layer", "classlbann_1_1pooling__layer.html", "classlbann_1_1pooling__layer" ]
     ] ],
+    [ "reduction.hpp", "reduction_8hpp.html", "reduction_8hpp" ],
     [ "reshape.hpp", "reshape_8hpp.html", [
       [ "reshape_layer", "classlbann_1_1reshape__layer.html", "classlbann_1_1reshape__layer" ]
     ] ],
@@ -37,7 +44,13 @@ var dir_2a07eb309d0d4c1db480e24ee00a1de6 =
     [ "transform.hpp", "transform_8hpp.html", [
       [ "transform_layer", "classlbann_1_1transform__layer.html", "classlbann_1_1transform__layer" ]
     ] ],
+    [ "uniform.hpp", "uniform_8hpp.html", [
+      [ "uniform_layer", "classlbann_1_1uniform__layer.html", "classlbann_1_1uniform__layer" ]
+    ] ],
     [ "unpooling.hpp", "unpooling_8hpp.html", [
       [ "unpooling_layer", "classlbann_1_1unpooling__layer.html", "classlbann_1_1unpooling__layer" ]
+    ] ],
+    [ "zero.hpp", "zero_8hpp.html", [
+      [ "zero_layer", "classlbann_1_1zero__layer.html", "classlbann_1_1zero__layer" ]
     ] ]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['data_5fparallel',['DATA_PARALLEL',['../base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638',1,'base.hpp']]],
-  ['default',['DEFAULT',['../classlbann_1_1lbann__comm.html#a02a03227cc27e3516f0d9f9812f32019a5b39c8b553c821e7cddc6da64b5bd2ee',1,'lbann::lbann_comm']]],
-  ['dynamic',['DYNAMIC',['../classlbann_1_1lbann__comm.html#a02a03227cc27e3516f0d9f9812f32019a0fcc90da4811c877ba9f9c12f7d60bc9',1,'lbann::lbann_comm']]]
+  ['circ_5fcirc',['CIRC_CIRC',['../base_8hpp.html#af76c86c7b2798091bc0864a0b81f1e0dad9fe2079b84227e0894774795402ec69',1,'base.hpp']]],
+  ['cpu',['CPU',['../namespacelbann.html#a3ce21fcce81d74fe54c2f4b5b5b48d9aa2b55387dd066c5bac646ac61543d152d',1,'lbann']]],
+  ['cuda',['CUDA',['../namespacelbann.html#a3ce21fcce81d74fe54c2f4b5b5b48d9aaa33b7755e5f9b504d2d038eaca4ff28d',1,'lbann']]]
 ];

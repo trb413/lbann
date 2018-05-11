@@ -5,9 +5,7 @@ var dir_e8e3d10a664feac46c9de523d11ac34a =
     [ "model.cpp", "model_8cpp.html", [
       [ "lbann_model_header", "structlbann_1_1lbann__model__header.html", "structlbann_1_1lbann__model__header" ]
     ] ],
-    [ "recurrent.cpp", "recurrent_8cpp.html", null ],
-    [ "sequential.cpp", "sequential_8cpp.html", [
-      [ "lbann_model_sequential_header", "structlbann_1_1lbann__model__sequential__header.html", "structlbann_1_1lbann__model__sequential__header" ]
-    ] ],
+    [ "recurrent.cpp", "recurrent_8cpp.html", "recurrent_8cpp" ],
+    [ "sequential.cpp", "sequential_8cpp.html", null ],
     [ "siamese.cpp", "siamese_8cpp.html", null ]
 ];

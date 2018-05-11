@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-244-g9bd4aac-ci362362741</span>
+   &#160;<span id="projectnumber">v0.93-606-gca499c9-ci377629231</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -108,6 +108,8 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 , <a class="el" href="classlbann_1_1kl__divergence.html#a42f016a75f640cb4ec9ceb9320da4a47">lbann::kl_divergence</a>
 , <a class="el" href="classlbann_1_1l1__weight__regularization.html#a4a41b6a07c36fc4f82364295a404ba1b">lbann::l1_weight_regularization</a>
 , <a class="el" href="classlbann_1_1l2__weight__regularization.html#acf602d51617f6730343948b72ace8dfe">lbann::l2_weight_regularization</a>
+, <a class="el" href="classlbann_1_1layer__metric.html#a5241c82c9531e28f644af7ac614ec68e">lbann::layer_metric</a>
+, <a class="el" href="classlbann_1_1layer__term.html#a4942422215408e724e68b5df8b20b715">lbann::layer_term</a>
 , <a class="el" href="classlbann_1_1lbann__callback.html#a7522c7a14f1d6a1ea762cc2d7248eb3a">lbann::lbann_callback</a>
 , <a class="el" href="classlbann_1_1lbann__callback__adaptive__learning__rate.html#ab7292639822b95f3907d1aaf88410b1c">lbann::lbann_callback_adaptive_learning_rate</a>
 , <a class="el" href="classlbann_1_1lbann__callback__check__dataset.html#a150273f878be4d4bf0cdcaf0ba52aef2">lbann::lbann_callback_check_dataset</a>
@@ -163,10 +165,16 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 : <a class="el" href="classlbann_1_1lbann__comm.html#a2a7bb6cf3707366fc0671d8894ca30ea">lbann::lbann_comm</a>
 </li>
 <li>nb_recv()
-: <a class="el" href="classlbann_1_1lbann__comm.html#abec714b3f80361f104eaa004d906798b">lbann::lbann_comm</a>
+: <a class="el" href="classlbann_1_1lbann__comm.html#aac24e8802602c73efddb455274e158f4">lbann::lbann_comm</a>
 </li>
 <li>nb_send()
-: <a class="el" href="classlbann_1_1lbann__comm.html#a70679ca6477c56972f9bc53d52e5ce21">lbann::lbann_comm</a>
+: <a class="el" href="classlbann_1_1lbann__comm.html#ad77344b63311b7ec57c63af67120c3e6">lbann::lbann_comm</a>
+</li>
+<li>nb_tagged_recv()
+: <a class="el" href="classlbann_1_1lbann__comm.html#aecf32b7d01a97eaa9fdce81f62a8059d">lbann::lbann_comm</a>
+</li>
+<li>nb_tagged_send()
+: <a class="el" href="classlbann_1_1lbann__comm.html#adcc93e244f76616a256db61b396df229">lbann::lbann_comm</a>
 </li>
 <li>need_checkpoint()
 : <a class="el" href="classlbann_1_1lbann__callback__checkpoint.html#a2e5f396667ccc45f7203263b06c5e216">lbann::lbann_callback_checkpoint</a>
@@ -193,9 +201,6 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 <li>node_comm
 : <a class="el" href="classlbann_1_1lbann__comm.html#a8aeb530ae4cedfa4d1141bb9c4704e6c">lbann::lbann_comm</a>
 </li>
-<li>noise_layer()
-: <a class="el" href="classlbann_1_1noise__layer.html#a9cdf2e2ecf5b52af7227635ab808871e">lbann::noise_layer&lt; T_layout &gt;</a>
-</li>
 <li>NONE
 : <a class="el" href="classlbann_1_1lbann__callback__imcomm.html#acf7e894b3381e7f9b71020dc73594d6aafa59156bc4d5bcbf6bd80918d062da03">lbann::lbann_callback_imcomm</a>
 </li>
@@ -211,11 +216,11 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 <li>normalize_image()
 : <a class="el" href="classlbann_1_1data__reader__jag.html#ad145def7b548ca2d0d3f207f6376b114">lbann::data_reader_jag</a>
 </li>
+<li>null_req
+: <a class="el" href="classlbann_1_1Al_1_1dummy__backend.html#a458ac4eb9f62b06984b4ef1b1eeb5851">lbann::Al::dummy_backend</a>
+</li>
 <li>NUM_BITS
 : <a class="el" href="classlbann_1_1lbann__quantizer.html#a33ea17392f53b90e91aea1ffb7e11d68">lbann::lbann_quantizer</a>
-</li>
-<li>num_bytes
-: <a class="el" href="structlbann_1_1data__store__image_1_1Triple.html#ac1433e36775425f7aad96c4679713a6a">lbann::data_store_image::Triple</a>
 </li>
 <li>num_colors
 : <a class="el" href="classlbann_1_1lbann__callback__profiler.html#a48e38406712543f839dd7e5e840694e2">lbann::lbann_callback_profiler</a>
@@ -226,9 +231,6 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 <li>num_intermodel_barriers
 : <a class="el" href="classlbann_1_1lbann__comm.html#a03d946ef5ea5d3b15351e78a2eed10fe">lbann::lbann_comm</a>
 </li>
-<li>num_iterations_per_epoch
-: <a class="el" href="structlbann_1_1generic__data__reader_1_1packing__header.html#a8c55e3df9e613f62d85d8970c545254e">lbann::generic_data_reader::packing_header</a>
-</li>
 <li>num_model_barriers
 : <a class="el" href="classlbann_1_1lbann__comm.html#aa4f15459eca2a06174a877ba0c23feb7">lbann::lbann_comm</a>
 </li>
@@ -237,9 +239,6 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 </li>
 <li>NUM_ONEBIT_SAMPLES
 : <a class="el" href="classlbann_1_1lbann__quantizer.html#a8e25785452736c54861a69207a48252d">lbann::lbann_quantizer</a>
-</li>
-<li>num_parallel_readers
-: <a class="el" href="structlbann_1_1generic__data__reader_1_1packing__header.html#a8fcecefba35fc2a1e37089334416724d">lbann::generic_data_reader::packing_header</a>
 </li>
 <li>NUM_RECON_SAMPLES
 : <a class="el" href="classlbann_1_1lbann__quantizer.html#a10667e56db4218aac3912c6bae28fc41">lbann::lbann_quantizer</a>
@@ -268,7 +267,7 @@ $(document).ready(function(){initNavTree('functions_n.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Wed Apr 4 2018 21:59:18 for LBANN by
+    <li class="footer">Generated on Fri May 11 2018 08:30:09 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

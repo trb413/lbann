@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-244-g9bd4aac-ci362362741</span>
+   &#160;<span id="projectnumber">v0.93-606-gca499c9-ci377629231</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -116,7 +116,7 @@ Collaboration diagram for lbann::data_reader_merge_samples:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afe95b82a6a5115ed58cbeb84e159cb94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1data__reader__merge__samples.html#afe95b82a6a5115ed58cbeb84e159cb94">data_reader_merge_samples</a> (std::vector&lt; <a class="el" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a> * &gt; data_readers, bool shuffle=true)</td></tr>
+<tr class="memitem:afe95b82a6a5115ed58cbeb84e159cb94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1data__reader__merge__samples.html#afe95b82a6a5115ed58cbeb84e159cb94">data_reader_merge_samples</a> (std::vector&lt; <a class="el" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a> * &gt; data_readers, bool shuffle=<a class="el" href="namespacelbann.html#aa1002432debb16a265bccfa035b0c582">true</a>)</td></tr>
 <tr class="separator:afe95b82a6a5115ed58cbeb84e159cb94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf15afcafbcd02c21763ae6cfc6ffe01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1data__reader__merge__samples.html#aaf15afcafbcd02c21763ae6cfc6ffe01">data_reader_merge_samples</a> (const <a class="el" href="classlbann_1_1data__reader__merge__samples.html">data_reader_merge_samples</a> &amp;)</td></tr>
 <tr class="separator:aaf15afcafbcd02c21763ae6cfc6ffe01"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,8 +143,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a09103cb5c42e03819fa44bf4e6d71752"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1data__reader__merge__samples.html#a09103cb5c42e03819fa44bf4e6d71752">get_data_dims</a> () const override</td></tr>
 <tr class="memdesc:a09103cb5c42e03819fa44bf4e6d71752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the dimensions of the data.  <a href="#a09103cb5c42e03819fa44bf4e6d71752">More...</a><br/></td></tr>
 <tr class="separator:a09103cb5c42e03819fa44bf4e6d71752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43dc3d7861f0231d96a9baa77916dff5"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1data__reader__merge__samples.html#a43dc3d7861f0231d96a9baa77916dff5">get_num_samples_psum</a> ()</td></tr>
+<tr class="memdesc:a43dc3d7861f0231d96a9baa77916dff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">support for data store functionality  <a href="#a43dc3d7861f0231d96a9baa77916dff5">More...</a><br/></td></tr>
+<tr class="separator:a43dc3d7861f0231d96a9baa77916dff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a589d6997ad093721e8c2c2cb3197c9e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1data__reader__merge__samples.html#a589d6997ad093721e8c2c2cb3197c9e2">setup_data_store</a> (<a class="el" href="classlbann_1_1model.html">model</a> *m) override</td></tr>
+<tr class="memdesc:a589d6997ad093721e8c2c2cb3197c9e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets up a data_store.  <a href="#a589d6997ad093721e8c2c2cb3197c9e2">More...</a><br/></td></tr>
+<tr class="separator:a589d6997ad093721e8c2c2cb3197c9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classlbann_1_1generic__compound__data__reader"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classlbann_1_1generic__compound__data__reader')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classlbann_1_1generic__compound__data__reader.html">lbann::generic_compound_data_reader</a></td></tr>
-<tr class="memitem:a04486965ddea17b89dd0e0b262ae4f00 inherit pub_methods_classlbann_1_1generic__compound__data__reader"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__compound__data__reader.html#a04486965ddea17b89dd0e0b262ae4f00">generic_compound_data_reader</a> (std::vector&lt; <a class="el" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a> * &gt; data_readers, bool shuffle=true)</td></tr>
+<tr class="memitem:a04486965ddea17b89dd0e0b262ae4f00 inherit pub_methods_classlbann_1_1generic__compound__data__reader"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__compound__data__reader.html#a04486965ddea17b89dd0e0b262ae4f00">generic_compound_data_reader</a> (std::vector&lt; <a class="el" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a> * &gt; data_readers, bool shuffle=<a class="el" href="namespacelbann.html#aa1002432debb16a265bccfa035b0c582">true</a>)</td></tr>
 <tr class="separator:a04486965ddea17b89dd0e0b262ae4f00 inherit pub_methods_classlbann_1_1generic__compound__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae047b146f674bc806418f8db64c47bee inherit pub_methods_classlbann_1_1generic__compound__data__reader"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__compound__data__reader.html#ae047b146f674bc806418f8db64c47bee">generic_compound_data_reader</a> (const <a class="el" href="classlbann_1_1generic__compound__data__reader.html">generic_compound_data_reader</a> &amp;other)</td></tr>
 <tr class="separator:ae047b146f674bc806418f8db64c47bee inherit pub_methods_classlbann_1_1generic__compound__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,8 +169,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a85860f9ae7e38ae98421219e41b5f829 inherit pub_methods_classlbann_1_1generic__compound__data__reader"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__compound__data__reader.html#a85860f9ae7e38ae98421219e41b5f829">set_rank</a> (int rank) override</td></tr>
 <tr class="memdesc:a85860f9ae7e38ae98421219e41b5f829 inherit pub_methods_classlbann_1_1generic__compound__data__reader"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow the reader to know where it is in the model hierarchy.  <a href="#a85860f9ae7e38ae98421219e41b5f829">More...</a><br/></td></tr>
 <tr class="separator:a85860f9ae7e38ae98421219e41b5f829 inherit pub_methods_classlbann_1_1generic__compound__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ba33e29527963baf182b2c034b8ba2d inherit pub_methods_classlbann_1_1generic__compound__data__reader"><td class="memItemLeft" align="right" valign="top">std::vector<br class="typebreak"/>
+&lt; <a class="el" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__compound__data__reader.html#a3ba33e29527963baf182b2c034b8ba2d">get_data_readers</a> ()</td></tr>
+<tr class="memdesc:a3ba33e29527963baf182b2c034b8ba2d inherit pub_methods_classlbann_1_1generic__compound__data__reader"><td class="mdescLeft">&#160;</td><td class="mdescRight">needed to support <a class="el" href="classlbann_1_1data__store__merge__samples.html">data_store_merge_samples</a>  <a href="#a3ba33e29527963baf182b2c034b8ba2d">More...</a><br/></td></tr>
+<tr class="separator:a3ba33e29527963baf182b2c034b8ba2d inherit pub_methods_classlbann_1_1generic__compound__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classlbann_1_1generic__data__reader"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classlbann_1_1generic__data__reader')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classlbann_1_1generic__data__reader.html">lbann::generic_data_reader</a></td></tr>
-<tr class="memitem:aaba933b8f7c1227801f6e80d39986af4 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#aaba933b8f7c1227801f6e80d39986af4">generic_data_reader</a> (bool shuffle=true)</td></tr>
+<tr class="memitem:aaba933b8f7c1227801f6e80d39986af4 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#aaba933b8f7c1227801f6e80d39986af4">generic_data_reader</a> (bool shuffle=<a class="el" href="namespacelbann.html#aa1002432debb16a265bccfa035b0c582">true</a>)</td></tr>
 <tr class="separator:aaba933b8f7c1227801f6e80d39986af4 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95d0ca539a613182898ff7693206fb40 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a95d0ca539a613182898ff7693206fb40">generic_data_reader</a> (const <a class="el" href="classlbann_1_1generic__data__reader.html">generic_data_reader</a> &amp;)=default</td></tr>
 <tr class="separator:a95d0ca539a613182898ff7693206fb40 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,8 +190,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8d22fceb08465adfa900ce580f874bd7 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94a6db0b62d4c98202ef309eb76b220c inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a94a6db0b62d4c98202ef309eb76b220c">set_file_dir</a> (std::string s)</td></tr>
 <tr class="separator:a94a6db0b62d4c98202ef309eb76b220c inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acffe25be96592052b653570b3e149d6c inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#acffe25be96592052b653570b3e149d6c">set_local_file_dir</a> (std::string s)</td></tr>
+<tr class="separator:acffe25be96592052b653570b3e149d6c inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92fc5dc9b5d4c10bbbf7546353403445 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a92fc5dc9b5d4c10bbbf7546353403445">get_file_dir</a> () const </td></tr>
 <tr class="separator:a92fc5dc9b5d4c10bbbf7546353403445 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a117227ee43f2bb5d47a4ce65e7386aaf inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a117227ee43f2bb5d47a4ce65e7386aaf">get_local_file_dir</a> () const </td></tr>
+<tr class="separator:a117227ee43f2bb5d47a4ce65e7386aaf inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74b7ef4fe0dc7d3a96868ca3b5fbf897 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a74b7ef4fe0dc7d3a96868ca3b5fbf897">set_data_filename</a> (std::string s)</td></tr>
 <tr class="separator:a74b7ef4fe0dc7d3a96868ca3b5fbf897 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e216aa3f8c40e44c5fb14a587fa49d4 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a0e216aa3f8c40e44c5fb14a587fa49d4">get_data_filename</a> () const </td></tr>
@@ -217,7 +231,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeaa97d3683add33d1c6d69a769dd6a20 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#aeaa97d3683add33d1c6d69a769dd6a20">fetch_responses</a> (<a class="el" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a> &amp;Y)</td></tr>
 <tr class="memdesc:aeaa97d3683add33d1c6d69a769dd6a20 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch this mini-batch's responses into Y.  <a href="#aeaa97d3683add33d1c6d69a769dd6a20">More...</a><br/></td></tr>
 <tr class="separator:aeaa97d3683add33d1c6d69a769dd6a20 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cf298061c73f55e2fe717acd2a9f178 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a8cf298061c73f55e2fe717acd2a9f178">save_image</a> (<a class="el" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a> &amp;pixels, const std::string filename, bool do_scale=true) override</td></tr>
+<tr class="memitem:a8cf298061c73f55e2fe717acd2a9f178 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a8cf298061c73f55e2fe717acd2a9f178">save_image</a> (<a class="el" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a> &amp;pixels, const std::string filename, bool do_scale=<a class="el" href="namespacelbann.html#aa1002432debb16a265bccfa035b0c582">true</a>) override</td></tr>
 <tr class="separator:a8cf298061c73f55e2fe717acd2a9f178 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8640edf9c71e3b7bee8a8e947c4690fa inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a8640edf9c71e3b7bee8a8e947c4690fa">is_data_reader_done</a> (bool is_active_reader)</td></tr>
 <tr class="separator:a8640edf9c71e3b7bee8a8e947c4690fa inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -383,19 +397,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a85119fae17feb8fda32f8a2f40869436 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a85119fae17feb8fda32f8a2f40869436">load_from_checkpoint_shared</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p, const char *name)</td></tr>
 <tr class="memdesc:a85119fae17feb8fda32f8a2f40869436 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given directory to store checkpoint files, read state from file and add to number of bytes read.  <a href="#a85119fae17feb8fda32f8a2f40869436">More...</a><br/></td></tr>
 <tr class="separator:a85119fae17feb8fda32f8a2f40869436 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a777d68fcc3bafd9b490de8c42cf381c3 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a777d68fcc3bafd9b490de8c42cf381c3">save_to_checkpoint_distributed</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p, const char *name)</td></tr>
+<tr class="separator:a777d68fcc3bafd9b490de8c42cf381c3 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d55d0838b3dfa256a7add83308aaf64 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a8d55d0838b3dfa256a7add83308aaf64">load_from_checkpoint_distributed</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p, const char *name)</td></tr>
+<tr class="memdesc:a8d55d0838b3dfa256a7add83308aaf64 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given directory to store checkpoint files, read state from file and add to number of bytes read.  <a href="#a8d55d0838b3dfa256a7add83308aaf64">More...</a><br/></td></tr>
+<tr class="separator:a8d55d0838b3dfa256a7add83308aaf64 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93dddd2276ddc34cc97922ee27c44582 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a93dddd2276ddc34cc97922ee27c44582">pack_scalars</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p, const char *name)</td></tr>
 <tr class="separator:a93dddd2276ddc34cc97922ee27c44582 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8de5c2e24d4cc2211145ed5dc37cf228 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a8de5c2e24d4cc2211145ed5dc37cf228">unpack_scalars</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p, struct <a class="el" href="structlbann_1_1generic__data__reader_1_1packing__header.html">packing_header</a> *header, const char *name)</td></tr>
 <tr class="separator:a8de5c2e24d4cc2211145ed5dc37cf228 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e1c13778c04ca9fa5136ee7ee3893fb inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a3e1c13778c04ca9fa5136ee7ee3893fb">unpack_header</a> (struct <a class="el" href="structlbann_1_1generic__data__reader_1_1packing__header.html">packing_header</a> &amp;header)</td></tr>
 <tr class="separator:a3e1c13778c04ca9fa5136ee7ee3893fb inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83de40b54dc79a70edc8f33f662b8d21 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1generic__data__store.html">generic_data_store</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a83de40b54dc79a70edc8f33f662b8d21">get_data_store</a> ()</td></tr>
-<tr class="memdesc:a83de40b54dc79a70edc8f33f662b8d21 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the data store, which may be a nullptr  <a href="#a83de40b54dc79a70edc8f33f662b8d21">More...</a><br/></td></tr>
-<tr class="separator:a83de40b54dc79a70edc8f33f662b8d21 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbed4ec767c2488357dba69c259b8c3c inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#afbed4ec767c2488357dba69c259b8c3c">setup_data_store</a> (<a class="el" href="classlbann_1_1model.html">model</a> *m, <a class="el" href="classlbann_1_1lbann__comm.html">lbann_comm</a> *<a class="el" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>)</td></tr>
-<tr class="separator:afbed4ec767c2488357dba69c259b8c3c inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986ed5419fc74557b151258e5cb0488e inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classlbann_1_1generic__data__store.html">generic_data_store</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a986ed5419fc74557b151258e5cb0488e">get_data_store</a> () const </td></tr>
+<tr class="memdesc:a986ed5419fc74557b151258e5cb0488e inherit pub_methods_classlbann_1_1generic__data__reader"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the data store  <a href="#a986ed5419fc74557b151258e5cb0488e">More...</a><br/></td></tr>
+<tr class="separator:a986ed5419fc74557b151258e5cb0488e inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19fd7c4dc234fa09ac7619e47fe18454 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a19fd7c4dc234fa09ac7619e47fe18454">set_save_minibatch_entries</a> (bool b)</td></tr>
 <tr class="separator:a19fd7c4dc234fa09ac7619e47fe18454 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a198f1f4260d3087874b66f15274129e6 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a198f1f4260d3087874b66f15274129e6">init_minibatch</a> ()</td></tr>
+<tr class="memdesc:a198f1f4260d3087874b66f15274129e6 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="mdescLeft">&#160;</td><td class="mdescRight">support of data store functionality  <a href="#a198f1f4260d3087874b66f15274129e6">More...</a><br/></td></tr>
+<tr class="separator:a198f1f4260d3087874b66f15274129e6 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab25cb7a969e50ed4813d8606b2282462 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::vector<br class="typebreak"/>
 &lt; int &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#ab25cb7a969e50ed4813d8606b2282462">get_minibatch_indices</a> () const </td></tr>
 <tr class="memdesc:ab25cb7a969e50ed4813d8606b2282462 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="mdescLeft">&#160;</td><td class="mdescRight">support of data store functionality  <a href="#ab25cb7a969e50ed4813d8606b2282462">More...</a><br/></td></tr>
@@ -406,6 +426,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a960362f819312d39dfcba5eeecf76257 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a960362f819312d39dfcba5eeecf76257">set_compound_rank</a> (int r)</td></tr>
 <tr class="memdesc:a960362f819312d39dfcba5eeecf76257 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="mdescLeft">&#160;</td><td class="mdescRight">support of data store functionality  <a href="#a960362f819312d39dfcba5eeecf76257">More...</a><br/></td></tr>
 <tr class="separator:a960362f819312d39dfcba5eeecf76257 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e190850232e503c77452dc0ca091d8 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a66e190850232e503c77452dc0ca091d8">set_gan_labelling</a> (bool has_gan_labelling)</td></tr>
+<tr class="separator:a66e190850232e503c77452dc0ca091d8 inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73614c50d138c5a7596f3a55fb7ad0af inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a73614c50d138c5a7596f3a55fb7ad0af">set_gan_label_value</a> (int gan_label_value)</td></tr>
+<tr class="separator:a73614c50d138c5a7596f3a55fb7ad0af inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4439cdfb52d16e6fa52bf7f8cdd1f5ee inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a4439cdfb52d16e6fa52bf7f8cdd1f5ee">set_data_store</a> (<a class="el" href="classlbann_1_1generic__data__store.html">generic_data_store</a> *g)</td></tr>
+<tr class="memdesc:a4439cdfb52d16e6fa52bf7f8cdd1f5ee inherit pub_methods_classlbann_1_1generic__data__reader"><td class="mdescLeft">&#160;</td><td class="mdescRight">support of data store functionality  <a href="#a4439cdfb52d16e6fa52bf7f8cdd1f5ee">More...</a><br/></td></tr>
+<tr class="separator:a4439cdfb52d16e6fa52bf7f8cdd1f5ee inherit pub_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classlbann_1_1lbann__image__preprocessor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classlbann_1_1lbann__image__preprocessor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classlbann_1_1lbann__image__preprocessor.html">lbann::lbann_image_preprocessor</a></td></tr>
 <tr class="memitem:a6a0f92194d42e87d73b57ba0929e2b2d inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a6a0f92194d42e87d73b57ba0929e2b2d">lbann_image_preprocessor</a> ()</td></tr>
 <tr class="separator:a6a0f92194d42e87d73b57ba0929e2b2d inherit pub_methods_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -452,6 +479,17 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a93ce622e95e7ea0438bc78bdda8df44f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab39ad6b6e106eb30f58f9eabaf3352ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1data__reader__merge__samples.html#ab39ad6b6e106eb30f58f9eabaf3352ad">fetch_response</a> (<a class="el" href="base_8hpp.html#a68f11fdc31b62516cb310831bbe54d73">Mat</a> &amp;Y, int data_id, int mb_idx, int tid) override</td></tr>
 <tr class="separator:ab39ad6b6e106eb30f58f9eabaf3352ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad45275b73fcbca47b74a9c9767f69bc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1data__reader__merge__samples.html#ad45275b73fcbca47b74a9c9767f69bc9">load_using_data_store</a> ()</td></tr>
+<tr class="separator:ad45275b73fcbca47b74a9c9767f69bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5fe8d5cf8eb1a6aa715579d329a620e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1data__reader__merge__samples.html#ae5fe8d5cf8eb1a6aa715579d329a620e">setup_indices</a> (int num_samples)</td></tr>
+<tr class="memdesc:ae5fe8d5cf8eb1a6aa715579d329a620e"><td class="mdescLeft">&#160;</td><td class="mdescRight">code common to both <a class="el" href="classlbann_1_1data__reader__merge__samples.html#ab3554341417f5eba95b9c1098af40410" title="Load subsidiary data readers. ">load()</a> and <a class="el" href="classlbann_1_1data__reader__merge__samples.html#ad45275b73fcbca47b74a9c9767f69bc9">load_using_data_store()</a>  <a href="#ae5fe8d5cf8eb1a6aa715579d329a620e">More...</a><br/></td></tr>
+<tr class="separator:ae5fe8d5cf8eb1a6aa715579d329a620e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafa54258bdc9d888da61c817462cdf65"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1data__reader__merge__samples.html#aafa54258bdc9d888da61c817462cdf65">compute_num_samples_psum</a> ()</td></tr>
+<tr class="memdesc:aafa54258bdc9d888da61c817462cdf65"><td class="mdescLeft">&#160;</td><td class="mdescRight">code common to both <a class="el" href="classlbann_1_1data__reader__merge__samples.html#ab3554341417f5eba95b9c1098af40410" title="Load subsidiary data readers. ">load()</a> and <a class="el" href="classlbann_1_1data__reader__merge__samples.html#ad45275b73fcbca47b74a9c9767f69bc9">load_using_data_store()</a>  <a href="#aafa54258bdc9d888da61c817462cdf65">More...</a><br/></td></tr>
+<tr class="separator:aafa54258bdc9d888da61c817462cdf65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a240368aa9f7f2ab1fa7c8d534b7f54ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1data__reader__merge__samples.html#a240368aa9f7f2ab1fa7c8d534b7f54ed">sanity_check_for_consistency</a> (int num_labels, int data_size, int label_size, const std::vector&lt; int &gt; &amp;data_dims)</td></tr>
+<tr class="memdesc:a240368aa9f7f2ab1fa7c8d534b7f54ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">code common to both <a class="el" href="classlbann_1_1data__reader__merge__samples.html#ab3554341417f5eba95b9c1098af40410" title="Load subsidiary data readers. ">load()</a> and <a class="el" href="classlbann_1_1data__reader__merge__samples.html#ad45275b73fcbca47b74a9c9767f69bc9">load_using_data_store()</a>  <a href="#a240368aa9f7f2ab1fa7c8d534b7f54ed">More...</a><br/></td></tr>
+<tr class="separator:a240368aa9f7f2ab1fa7c8d534b7f54ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classlbann_1_1generic__data__reader"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classlbann_1_1generic__data__reader')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classlbann_1_1generic__data__reader.html">lbann::generic_data_reader</a></td></tr>
 <tr class="memitem:a063afdcd1e4c06fa3295e78cb10609c3 inherit pro_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a063afdcd1e4c06fa3295e78cb10609c3">get_absolute_sample_count</a> () const </td></tr>
 <tr class="separator:a063afdcd1e4c06fa3295e78cb10609c3 inherit pro_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -459,6 +497,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:ac9cc7be0cea189043aaf243e2b2df8aa inherit pro_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fc1d7315f6044d4896c303f10c2c2e4 inherit pro_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a5fc1d7315f6044d4896c303f10c2c2e4">get_validation_percent</a> () const </td></tr>
 <tr class="separator:a5fc1d7315f6044d4896c303f10c2c2e4 inherit pro_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35b0f96c84c20b9bab5dda1aa852953 inherit pro_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#ab35b0f96c84c20b9bab5dda1aa852953">get_num_global_indices</a> ()</td></tr>
+<tr class="separator:ab35b0f96c84c20b9bab5dda1aa852953 inherit pro_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad613f95666b973d8da77773fb34c9b66 inherit pro_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#ad613f95666b973d8da77773fb34c9b66">preprocess_data_source</a> (int tid)</td></tr>
 <tr class="separator:ad613f95666b973d8da77773fb34c9b66 inherit pro_methods_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bbf74725a96235dc1cd20ff440a69bd inherit pro_methods_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a7bbf74725a96235dc1cd20ff440a69bd">postprocess_data_source</a> (int tid)</td></tr>
@@ -556,6 +596,8 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a252002ec211d67606b80bc481a27e820 inherit pro_attribs_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a252002ec211d67606b80bc481a27e820">m_file_dir</a></td></tr>
 <tr class="memdesc:a252002ec211d67606b80bc481a27e820 inherit pro_attribs_classlbann_1_1generic__data__reader"><td class="mdescLeft">&#160;</td><td class="mdescRight">What is the rank of the data reader within a given model.  <a href="#a252002ec211d67606b80bc481a27e820">More...</a><br/></td></tr>
 <tr class="separator:a252002ec211d67606b80bc481a27e820 inherit pro_attribs_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad887ebd07a649e7cd72e59772930cb00 inherit pro_attribs_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#ad887ebd07a649e7cd72e59772930cb00">m_local_file_dir</a></td></tr>
+<tr class="separator:ad887ebd07a649e7cd72e59772930cb00 inherit pro_attribs_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2595e254ab2442e8cfc80aa6bdac0c0f inherit pro_attribs_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a2595e254ab2442e8cfc80aa6bdac0c0f">m_data_fn</a></td></tr>
 <tr class="separator:a2595e254ab2442e8cfc80aa6bdac0c0f inherit pro_attribs_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a492d45c107df31b3e241e54d51950746 inherit pro_attribs_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a492d45c107df31b3e241e54d51950746">m_label_fn</a></td></tr>
@@ -586,6 +628,13 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a7df02a1534b100df6f718dc7a7b32b25 inherit pro_attribs_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a7df02a1534b100df6f718dc7a7b32b25">m_compound_rank</a></td></tr>
 <tr class="memdesc:a7df02a1534b100df6f718dc7a7b32b25 inherit pro_attribs_classlbann_1_1generic__data__reader"><td class="mdescLeft">&#160;</td><td class="mdescRight">added to support data store functionality  <a href="#a7df02a1534b100df6f718dc7a7b32b25">More...</a><br/></td></tr>
 <tr class="separator:a7df02a1534b100df6f718dc7a7b32b25 inherit pro_attribs_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c7fedc25b21127fef7defd20731d517 inherit pro_attribs_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a0c7fedc25b21127fef7defd20731d517">m_gan_labelling</a></td></tr>
+<tr class="separator:a0c7fedc25b21127fef7defd20731d517 inherit pro_attribs_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64005ed35224607d2ea57de6117dd906 inherit pro_attribs_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#a64005ed35224607d2ea57de6117dd906">m_gan_label_value</a></td></tr>
+<tr class="separator:a64005ed35224607d2ea57de6117dd906 inherit pro_attribs_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6ea8dad1e9f0a8c939fd27d2de37e1b inherit pro_attribs_classlbann_1_1generic__data__reader"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1generic__data__reader.html#ac6ea8dad1e9f0a8c939fd27d2de37e1b">m_num_global_indices</a></td></tr>
+<tr class="memdesc:ac6ea8dad1e9f0a8c939fd27d2de37e1b inherit pro_attribs_classlbann_1_1generic__data__reader"><td class="mdescLeft">&#160;</td><td class="mdescRight">added to support data store functionality  <a href="#ac6ea8dad1e9f0a8c939fd27d2de37e1b">More...</a><br/></td></tr>
+<tr class="separator:ac6ea8dad1e9f0a8c939fd27d2de37e1b inherit pro_attribs_classlbann_1_1generic__data__reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classlbann_1_1lbann__image__preprocessor"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classlbann_1_1lbann__image__preprocessor')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classlbann_1_1lbann__image__preprocessor.html">lbann::lbann_image_preprocessor</a></td></tr>
 <tr class="memitem:a032397d6c642dccd43f4c38393f5d2c1 inherit pro_attribs_classlbann_1_1lbann__image__preprocessor"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1lbann__image__preprocessor.html#a032397d6c642dccd43f4c38393f5d2c1">m_horizontal_flip</a></td></tr>
 <tr class="separator:a032397d6c642dccd43f4c38393f5d2c1 inherit pro_attribs_classlbann_1_1lbann__image__preprocessor"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -629,7 +678,7 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>shuffle</em> = <code>true</code>&#160;</td>
+          <td class="paramname"><em>shuffle</em> = <code><a class="el" href="namespacelbann.html#aa1002432debb16a265bccfa035b0c582">true</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -639,9 +688,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="data__reader__merge__samples_8cpp_source.html#l00033">33</a> of file <a class="el" href="data__reader__merge__samples_8cpp_source.html">data_reader_merge_samples.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                :</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a04486965ddea17b89dd0e0b262ae4f00">generic_compound_data_reader</a>(data_readers, shuffle) {}</div>
+<p>Definition at line <a class="el" href="data__reader__merge__samples_8cpp_source.html#l00035">35</a> of file <a class="el" href="data__reader__merge__samples_8cpp_source.html">data_reader_merge_samples.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                :</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a04486965ddea17b89dd0e0b262ae4f00">generic_compound_data_reader</a>(data_readers, shuffle) {}</div>
 <div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a04486965ddea17b89dd0e0b262ae4f00"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a04486965ddea17b89dd0e0b262ae4f00">lbann::generic_compound_data_reader::generic_compound_data_reader</a></div><div class="ttdeci">generic_compound_data_reader(std::vector&lt; generic_data_reader * &gt; data_readers, bool shuffle=true)</div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00042">compound_data_reader.hpp:42</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -669,12 +718,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="data__reader__merge__samples_8cpp_source.html#l00038">38</a> of file <a class="el" href="data__reader__merge__samples_8cpp_source.html">data_reader_merge_samples.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                          :</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a04486965ddea17b89dd0e0b262ae4f00">generic_compound_data_reader</a>(other),</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>(other.m_num_samples_psum) {}</div>
+<p>Definition at line <a class="el" href="data__reader__merge__samples_8cpp_source.html#l00040">40</a> of file <a class="el" href="data__reader__merge__samples_8cpp_source.html">data_reader_merge_samples.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                          :</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a04486965ddea17b89dd0e0b262ae4f00">generic_compound_data_reader</a>(other),</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>(other.m_num_samples_psum) {}</div>
 <div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a04486965ddea17b89dd0e0b262ae4f00"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a04486965ddea17b89dd0e0b262ae4f00">lbann::generic_compound_data_reader::generic_compound_data_reader</a></div><div class="ttdeci">generic_compound_data_reader(std::vector&lt; generic_data_reader * &gt; data_readers, bool shuffle=true)</div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00042">compound_data_reader.hpp:42</a></div></div>
-<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_afd297d61c11bb6b0d03ce64836bd1300"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">lbann::data_reader_merge_samples::m_num_samples_psum</a></div><div class="ttdeci">std::vector&lt; int &gt; m_num_samples_psum</div><div class="ttdoc">Partial sums of the number of samples in each reader. </div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8hpp_source.html#l00075">data_reader_merge_samples.hpp:75</a></div></div>
+<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_afd297d61c11bb6b0d03ce64836bd1300"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">lbann::data_reader_merge_samples::m_num_samples_psum</a></div><div class="ttdeci">std::vector&lt; int &gt; m_num_samples_psum</div><div class="ttdoc">Partial sums of the number of samples in each reader. </div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8hpp_source.html#l00083">data_reader_merge_samples.hpp:83</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -699,12 +748,62 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="data__reader__merge__samples_8cpp_source.html#l00050">50</a> of file <a class="el" href="data__reader__merge__samples_8cpp_source.html">data_reader_merge_samples.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{}</div>
+<p>Definition at line <a class="el" href="data__reader__merge__samples_8cpp_source.html#l00052">52</a> of file <a class="el" href="data__reader__merge__samples_8cpp_source.html">data_reader_merge_samples.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aafa54258bdc9d888da61c817462cdf65"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t lbann::data_reader_merge_samples::compute_num_samples_psum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>code common to both <a class="el" href="classlbann_1_1data__reader__merge__samples.html#ab3554341417f5eba95b9c1098af40410" title="Load subsidiary data readers. ">load()</a> and <a class="el" href="classlbann_1_1data__reader__merge__samples.html#ad45275b73fcbca47b74a9c9767f69bc9">load_using_data_store()</a> </p>
+
+<p>Definition at line <a class="el" href="data__reader__merge__samples_8cpp_source.html#l00087">87</a> of file <a class="el" href="data__reader__merge__samples_8cpp_source.html">data_reader_merge_samples.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                                           {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">size_t</span> global_num_samples = 0;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="comment">// Prepend a 0 to make things easier.</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>.push_back(0);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; reader : <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>.push_back(reader-&gt;get_num_data());</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    global_num_samples += reader-&gt;get_num_data();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  std::partial_sum(<a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>.begin(), <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>.end(),</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                   <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>.begin());</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">return</span> global_num_samples;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_afd297d61c11bb6b0d03ce64836bd1300"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">lbann::data_reader_merge_samples::m_num_samples_psum</a></div><div class="ttdeci">std::vector&lt; int &gt; m_num_samples_psum</div><div class="ttdoc">Partial sums of the number of samples in each reader. </div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8hpp_source.html#l00083">data_reader_merge_samples.hpp:83</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a9815e94ade5873415fd766e09d956d5b"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">lbann::generic_compound_data_reader::m_data_readers</a></div><div class="ttdeci">std::vector&lt; generic_data_reader * &gt; m_data_readers</div><div class="ttdoc">List of readers providing data. </div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00118">compound_data_reader.hpp:118</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1data__reader__merge__samples_aafa54258bdc9d888da61c817462cdf65_icgraph.png" border="0" usemap="#classlbann_1_1data__reader__merge__samples_aafa54258bdc9d888da61c817462cdf65_icgraph" alt=""/></div>
+<map name="classlbann_1_1data__reader__merge__samples_aafa54258bdc9d888da61c817462cdf65_icgraph" id="classlbann_1_1data__reader__merge__samples_aafa54258bdc9d888da61c817462cdf65_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1data__reader__merge__samples.html#ad45275b73fcbca47b74a9c9767f69bc9" title="lbann::data_reader\l_merge_samples::load\l_using_data_store" alt="" coords="233,5,386,61"/><area shape="rect" id="node3" href="classlbann_1_1data__reader__merge__samples.html#ab3554341417f5eba95b9c1098af40410" title="Load subsidiary data readers. " alt="" coords="435,46,589,87"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="ae22e720cfc9c6a196a04b7b65472618e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -732,7 +831,7 @@ Here is the caller graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                                   {</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afe95b82a6a5115ed58cbeb84e159cb94">data_reader_merge_samples</a>(*<span class="keyword">this</span>);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div>
-<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_afe95b82a6a5115ed58cbeb84e159cb94"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#afe95b82a6a5115ed58cbeb84e159cb94">lbann::data_reader_merge_samples::data_reader_merge_samples</a></div><div class="ttdeci">data_reader_merge_samples(std::vector&lt; generic_data_reader * &gt; data_readers, bool shuffle=true)</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8cpp_source.html#l00033">data_reader_merge_samples.cpp:33</a></div></div>
+<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_afe95b82a6a5115ed58cbeb84e159cb94"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#afe95b82a6a5115ed58cbeb84e159cb94">lbann::data_reader_merge_samples::data_reader_merge_samples</a></div><div class="ttdeci">data_reader_merge_samples(std::vector&lt; generic_data_reader * &gt; data_readers, bool shuffle=true)</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8cpp_source.html#l00035">data_reader_merge_samples.cpp:35</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -800,21 +899,21 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1generic__data__reader.html#a0a3cd87ed4a7057df185e0087f2d21c1">lbann::generic_data_reader</a>.</p>
 
-<p>Definition at line <a class="el" href="data__reader__merge__samples_8cpp_source.html#l00098">98</a> of file <a class="el" href="data__reader__merge__samples_8cpp_source.html">data_reader_merge_samples.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                                     {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="comment">// Find the right data reader to delegate to.</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>.size(); ++i) {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">if</span> (data_id &lt; <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>[i + 1]) {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      data_id -= <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>[i];</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>[i]-&gt;fetch_datum(X, data_id, mb_idx, tid);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordflow">throw</span> lbann_exception(</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="stringliteral">&quot;data_reader_merge_samples: do not have data ID &quot;</span> +</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    std::to_string(data_id));</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_afd297d61c11bb6b0d03ce64836bd1300"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">lbann::data_reader_merge_samples::m_num_samples_psum</a></div><div class="ttdeci">std::vector&lt; int &gt; m_num_samples_psum</div><div class="ttdoc">Partial sums of the number of samples in each reader. </div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8hpp_source.html#l00075">data_reader_merge_samples.hpp:75</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a9815e94ade5873415fd766e09d956d5b"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">lbann::generic_compound_data_reader::m_data_readers</a></div><div class="ttdeci">std::vector&lt; generic_data_reader * &gt; m_data_readers</div><div class="ttdoc">List of readers providing data. </div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00112">compound_data_reader.hpp:112</a></div></div>
+<p>Definition at line <a class="el" href="data__reader__merge__samples_8cpp_source.html#l00153">153</a> of file <a class="el" href="data__reader__merge__samples_8cpp_source.html">data_reader_merge_samples.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                                                     {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="comment">// Find the right data reader to delegate to.</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>.size(); ++i) {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">if</span> (data_id &lt; <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>[i + 1]) {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      data_id -= <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>[i];</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>[i]-&gt;fetch_datum(X, data_id, mb_idx, tid);</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  }</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="keywordflow">throw</span> lbann_exception(</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="stringliteral">&quot;data_reader_merge_samples: do not have data ID &quot;</span> +</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    std::to_string(data_id));</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_afd297d61c11bb6b0d03ce64836bd1300"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">lbann::data_reader_merge_samples::m_num_samples_psum</a></div><div class="ttdeci">std::vector&lt; int &gt; m_num_samples_psum</div><div class="ttdoc">Partial sums of the number of samples in each reader. </div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8hpp_source.html#l00083">data_reader_merge_samples.hpp:83</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a9815e94ade5873415fd766e09d956d5b"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">lbann::generic_compound_data_reader::m_data_readers</a></div><div class="ttdeci">std::vector&lt; generic_data_reader * &gt; m_data_readers</div><div class="ttdoc">List of readers providing data. </div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00118">compound_data_reader.hpp:118</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -873,21 +972,21 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1generic__data__reader.html#a03627408c1d1aa28691d31232fe1dce5">lbann::generic_data_reader</a>.</p>
 
-<p>Definition at line <a class="el" href="data__reader__merge__samples_8cpp_source.html#l00112">112</a> of file <a class="el" href="data__reader__merge__samples_8cpp_source.html">data_reader_merge_samples.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                                                     {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="comment">// Find the right data reader to delegate to.</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>.size(); ++i) {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">if</span> (data_id &lt; <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>[i + 1]) {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      data_id -= <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>[i];</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>[i]-&gt;fetch_label(Y, data_id, mb_idx, tid);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keywordflow">throw</span> lbann_exception(</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="stringliteral">&quot;data_reader_merge_samples: do not have data ID &quot;</span> +</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    std::to_string(data_id));</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_afd297d61c11bb6b0d03ce64836bd1300"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">lbann::data_reader_merge_samples::m_num_samples_psum</a></div><div class="ttdeci">std::vector&lt; int &gt; m_num_samples_psum</div><div class="ttdoc">Partial sums of the number of samples in each reader. </div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8hpp_source.html#l00075">data_reader_merge_samples.hpp:75</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a9815e94ade5873415fd766e09d956d5b"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">lbann::generic_compound_data_reader::m_data_readers</a></div><div class="ttdeci">std::vector&lt; generic_data_reader * &gt; m_data_readers</div><div class="ttdoc">List of readers providing data. </div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00112">compound_data_reader.hpp:112</a></div></div>
+<p>Definition at line <a class="el" href="data__reader__merge__samples_8cpp_source.html#l00167">167</a> of file <a class="el" href="data__reader__merge__samples_8cpp_source.html">data_reader_merge_samples.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                                                     {</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;  <span class="comment">// Find the right data reader to delegate to.</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>.size(); ++i) {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">if</span> (data_id &lt; <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>[i + 1]) {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      data_id -= <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>[i];</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>[i]-&gt;fetch_label(Y, data_id, mb_idx, tid);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;  }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <span class="keywordflow">throw</span> lbann_exception(</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="stringliteral">&quot;data_reader_merge_samples: do not have data ID &quot;</span> +</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    std::to_string(data_id));</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_afd297d61c11bb6b0d03ce64836bd1300"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">lbann::data_reader_merge_samples::m_num_samples_psum</a></div><div class="ttdeci">std::vector&lt; int &gt; m_num_samples_psum</div><div class="ttdoc">Partial sums of the number of samples in each reader. </div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8hpp_source.html#l00083">data_reader_merge_samples.hpp:83</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a9815e94ade5873415fd766e09d956d5b"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">lbann::generic_compound_data_reader::m_data_readers</a></div><div class="ttdeci">std::vector&lt; generic_data_reader * &gt; m_data_readers</div><div class="ttdoc">List of readers providing data. </div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00118">compound_data_reader.hpp:118</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -946,21 +1045,21 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1generic__data__reader.html#abe544ea807eed477f3636010d199b574">lbann::generic_data_reader</a>.</p>
 
-<p>Definition at line <a class="el" href="data__reader__merge__samples_8cpp_source.html#l00126">126</a> of file <a class="el" href="data__reader__merge__samples_8cpp_source.html">data_reader_merge_samples.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                                        {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <span class="comment">// Find the right data reader to delegate to.</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>.size(); ++i) {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">if</span> (data_id &lt; <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>[i + 1]) {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      data_id -= <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>[i];</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>[i]-&gt;fetch_response(Y, data_id, mb_idx, tid);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  }</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordflow">throw</span> lbann_exception(</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="stringliteral">&quot;data_reader_merge_samples: do not have data ID &quot;</span> +</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    std::to_string(data_id));</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_afd297d61c11bb6b0d03ce64836bd1300"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">lbann::data_reader_merge_samples::m_num_samples_psum</a></div><div class="ttdeci">std::vector&lt; int &gt; m_num_samples_psum</div><div class="ttdoc">Partial sums of the number of samples in each reader. </div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8hpp_source.html#l00075">data_reader_merge_samples.hpp:75</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a9815e94ade5873415fd766e09d956d5b"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">lbann::generic_compound_data_reader::m_data_readers</a></div><div class="ttdeci">std::vector&lt; generic_data_reader * &gt; m_data_readers</div><div class="ttdoc">List of readers providing data. </div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00112">compound_data_reader.hpp:112</a></div></div>
+<p>Definition at line <a class="el" href="data__reader__merge__samples_8cpp_source.html#l00181">181</a> of file <a class="el" href="data__reader__merge__samples_8cpp_source.html">data_reader_merge_samples.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                                                        {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="comment">// Find the right data reader to delegate to.</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>.size(); ++i) {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">if</span> (data_id &lt; <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>[i + 1]) {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      data_id -= <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>[i];</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>[i]-&gt;fetch_response(Y, data_id, mb_idx, tid);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    }</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordflow">throw</span> lbann_exception(</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="stringliteral">&quot;data_reader_merge_samples: do not have data ID &quot;</span> +</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    std::to_string(data_id));</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_afd297d61c11bb6b0d03ce64836bd1300"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">lbann::data_reader_merge_samples::m_num_samples_psum</a></div><div class="ttdeci">std::vector&lt; int &gt; m_num_samples_psum</div><div class="ttdoc">Partial sums of the number of samples in each reader. </div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8hpp_source.html#l00083">data_reader_merge_samples.hpp:83</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a9815e94ade5873415fd766e09d956d5b"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">lbann::generic_compound_data_reader::m_data_readers</a></div><div class="ttdeci">std::vector&lt; generic_data_reader * &gt; m_data_readers</div><div class="ttdoc">List of readers providing data. </div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00118">compound_data_reader.hpp:118</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -993,7 +1092,7 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                      {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>[0]-&gt;get_data_dims();</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
-<div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a9815e94ade5873415fd766e09d956d5b"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">lbann::generic_compound_data_reader::m_data_readers</a></div><div class="ttdeci">std::vector&lt; generic_data_reader * &gt; m_data_readers</div><div class="ttdoc">List of readers providing data. </div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00112">compound_data_reader.hpp:112</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a9815e94ade5873415fd766e09d956d5b"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">lbann::generic_compound_data_reader::m_data_readers</a></div><div class="ttdeci">std::vector&lt; generic_data_reader * &gt; m_data_readers</div><div class="ttdoc">List of readers providing data. </div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00118">compound_data_reader.hpp:118</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1026,7 +1125,7 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                                {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>[0]-&gt;get_linearized_data_size();</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div>
-<div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a9815e94ade5873415fd766e09d956d5b"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">lbann::generic_compound_data_reader::m_data_readers</a></div><div class="ttdeci">std::vector&lt; generic_data_reader * &gt; m_data_readers</div><div class="ttdoc">List of readers providing data. </div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00112">compound_data_reader.hpp:112</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a9815e94ade5873415fd766e09d956d5b"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">lbann::generic_compound_data_reader::m_data_readers</a></div><div class="ttdeci">std::vector&lt; generic_data_reader * &gt; m_data_readers</div><div class="ttdoc">List of readers providing data. </div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00118">compound_data_reader.hpp:118</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1059,7 +1158,7 @@ Here is the call graph for this function:</div>
 <div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                                 {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>[0]-&gt;get_linearized_label_size();</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
-<div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a9815e94ade5873415fd766e09d956d5b"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">lbann::generic_compound_data_reader::m_data_readers</a></div><div class="ttdeci">std::vector&lt; generic_data_reader * &gt; m_data_readers</div><div class="ttdoc">List of readers providing data. </div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00112">compound_data_reader.hpp:112</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a9815e94ade5873415fd766e09d956d5b"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">lbann::generic_compound_data_reader::m_data_readers</a></div><div class="ttdeci">std::vector&lt; generic_data_reader * &gt; m_data_readers</div><div class="ttdoc">List of readers providing data. </div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00118">compound_data_reader.hpp:118</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1090,8 +1189,48 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="data__reader__merge__samples_8hpp_source.html#l00058">58</a> of file <a class="el" href="data__reader__merge__samples_8hpp_source.html">data_reader_merge_samples.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>[0]-&gt;get_num_labels(); }</div>
-<div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a9815e94ade5873415fd766e09d956d5b"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">lbann::generic_compound_data_reader::m_data_readers</a></div><div class="ttdeci">std::vector&lt; generic_data_reader * &gt; m_data_readers</div><div class="ttdoc">List of readers providing data. </div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00112">compound_data_reader.hpp:112</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a9815e94ade5873415fd766e09d956d5b"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">lbann::generic_compound_data_reader::m_data_readers</a></div><div class="ttdeci">std::vector&lt; generic_data_reader * &gt; m_data_readers</div><div class="ttdoc">List of readers providing data. </div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00118">compound_data_reader.hpp:118</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a43dc3d7861f0231d96a9baa77916dff5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;int&gt;&amp; lbann::data_reader_merge_samples::get_num_samples_psum </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>support for data store functionality </p>
+
+<p>Definition at line <a class="el" href="data__reader__merge__samples_8hpp_source.html#l00070">70</a> of file <a class="el" href="data__reader__merge__samples_8hpp_source.html">data_reader_merge_samples.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
+<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_afd297d61c11bb6b0d03ce64836bd1300"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">lbann::data_reader_merge_samples::m_num_samples_psum</a></div><div class="ttdeci">std::vector&lt; int &gt; m_num_samples_psum</div><div class="ttdoc">Partial sums of the number of samples in each reader. </div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8hpp_source.html#l00083">data_reader_merge_samples.hpp:83</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1data__reader__merge__samples_a43dc3d7861f0231d96a9baa77916dff5_icgraph.png" border="0" usemap="#classlbann_1_1data__reader__merge__samples_a43dc3d7861f0231d96a9baa77916dff5_icgraph" alt=""/></div>
+<map name="classlbann_1_1data__reader__merge__samples_a43dc3d7861f0231d96a9baa77916dff5_icgraph" id="classlbann_1_1data__reader__merge__samples_a43dc3d7861f0231d96a9baa77916dff5_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1data__store__merge__samples.html#a9f7f027eab6bfb65dd8001939769f476" title="called by generic_data_reader::setup_data_store " alt="" coords="203,11,368,53"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a5d24385daebfd31343e6afc11b0439d1"></a>
@@ -1150,64 +1289,123 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classlbann_1_1generic__data__reader.html#afeb47703d988a230a59859cbfc178215">lbann::generic_data_reader</a>.</p>
 
-<p>Definition at line <a class="el" href="data__reader__merge__samples_8cpp_source.html#l00052">52</a> of file <a class="el" href="data__reader__merge__samples_8cpp_source.html">data_reader_merge_samples.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                     {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="comment">// Load each subsidiary data reader.</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; reader : <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>) {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    reader-&gt;set_comm(<a class="code" href="classlbann_1_1generic__data__reader.html#ad3976d4b7db2d404dbb87a56c33fd456">m_comm</a>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    reader-&gt;load();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="comment">// Compute the total number of samples and do some sanity checks.</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">int</span> num_samples = 0;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">int</span> num_labels = m_data_readers[0]-&gt;get_num_labels();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">int</span> data_size = m_data_readers[0]-&gt;get_linearized_data_size();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordtype">int</span> label_size = m_data_readers[0]-&gt;get_linearized_label_size();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">const</span> std::vector&lt;int&gt; data_dims = m_data_readers[0]-&gt;get_data_dims();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="comment">// Prepend a 0 to make things easier.</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>.push_back(0);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; reader : m_data_readers) {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>.push_back(reader-&gt;get_num_data());</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    num_samples += reader-&gt;get_num_data();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// TODO: It would be good to relax this.</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// Large data sets may not have every label in every file.</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">if</span> (num_labels != reader-&gt;get_num_labels()) {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">throw</span> lbann_exception(</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="stringliteral">&quot;data_reader_merge_samples: data readers do not have the same number of labels&quot;</span>);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">if</span> (data_size != reader-&gt;get_linearized_data_size()) {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keywordflow">throw</span> lbann_exception(</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="stringliteral">&quot;data_reader_merge_samples: data readers do not have the same data size&quot;</span>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span> (label_size != reader-&gt;get_linearized_label_size()) {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordflow">throw</span> lbann_exception(</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="stringliteral">&quot;data_reader_merge_samples: data readers do not have the same label size&quot;</span>);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span> (data_dims != reader-&gt;get_data_dims()) {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="keywordflow">throw</span> lbann_exception(</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="stringliteral">&quot;data_reader_merge_samples: data readers do not have the same data dims&quot;</span>);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  std::partial_sum(<a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>.begin(), <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>.end(),</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                   <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a>.begin());</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="comment">// Set up our indices.</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="comment">// Note each subsidiary data reader presumably shuffled its indices as well.</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="comment">// That&#39;s not strictly necessary, but does not impact anything.</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <a class="code" href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">m_shuffled_indices</a>.resize(num_samples);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  std::iota(<a class="code" href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">m_shuffled_indices</a>.begin(), <a class="code" href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">m_shuffled_indices</a>.end(), 0);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <a class="code" href="classlbann_1_1generic__data__reader.html#aa28fdeeb6af492540f507e49adff5d6c">select_subset_of_data</a>();</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_afd297d61c11bb6b0d03ce64836bd1300"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">lbann::data_reader_merge_samples::m_num_samples_psum</a></div><div class="ttdeci">std::vector&lt; int &gt; m_num_samples_psum</div><div class="ttdoc">Partial sums of the number of samples in each reader. </div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8hpp_source.html#l00075">data_reader_merge_samples.hpp:75</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_aaab6aeff67ffff1c689336851fec2c57"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">lbann::generic_data_reader::m_shuffled_indices</a></div><div class="ttdeci">std::vector&lt; int &gt; m_shuffled_indices</div><div class="ttdef"><b>Definition:</b> <a href="data__reader_8hpp_source.html#l00885">data_reader.hpp:885</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_aa28fdeeb6af492540f507e49adff5d6c"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#aa28fdeeb6af492540f507e49adff5d6c">lbann::generic_data_reader::select_subset_of_data</a></div><div class="ttdeci">void select_subset_of_data()</div><div class="ttdef"><b>Definition:</b> <a href="data__reader_8cpp_source.html#l00334">data_reader.cpp:334</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a9815e94ade5873415fd766e09d956d5b"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">lbann::generic_compound_data_reader::m_data_readers</a></div><div class="ttdeci">std::vector&lt; generic_data_reader * &gt; m_data_readers</div><div class="ttdoc">List of readers providing data. </div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00112">compound_data_reader.hpp:112</a></div></div>
-<div class="ttc" id="classlbann_1_1generic__data__reader_html_ad3976d4b7db2d404dbb87a56c33fd456"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#ad3976d4b7db2d404dbb87a56c33fd456">lbann::generic_data_reader::m_comm</a></div><div class="ttdeci">lbann_comm * m_comm</div><div class="ttdef"><b>Definition:</b> <a href="data__reader_8hpp_source.html#l00821">data_reader.hpp:821</a></div></div>
+<p>Definition at line <a class="el" href="data__reader__merge__samples_8cpp_source.html#l00131">131</a> of file <a class="el" href="data__reader__merge__samples_8cpp_source.html">data_reader_merge_samples.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                                     {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classoptions.html#a9ecfe9c365269df68a41b961c31ae3f5">options::get</a>()-&gt;has_bool(<span class="stringliteral">&quot;use_data_store&quot;</span>) &amp;&amp; <a class="code" href="classoptions.html#a9ecfe9c365269df68a41b961c31ae3f5">options::get</a>()-&gt;get_bool(<span class="stringliteral">&quot;use_data_store&quot;</span>)) {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="classlbann_1_1data__reader__merge__samples.html#ad45275b73fcbca47b74a9c9767f69bc9">data_reader_merge_samples::load_using_data_store</a>();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="comment">// Load each subsidiary data reader.</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; reader : <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>) {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    reader-&gt;set_comm(<a class="code" href="classlbann_1_1generic__data__reader.html#ad3976d4b7db2d404dbb87a56c33fd456">m_comm</a>);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    reader-&gt;load();</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;  <span class="comment">// Compute the total number of samples and do some sanity checks.</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">int</span> num_labels = m_data_readers[0]-&gt;get_num_labels();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">int</span> data_size = m_data_readers[0]-&gt;get_linearized_data_size();</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  <span class="keywordtype">int</span> label_size = m_data_readers[0]-&gt;get_linearized_label_size();</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  <span class="keyword">const</span> std::vector&lt;int&gt; data_dims = m_data_readers[0]-&gt;get_data_dims();</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <a class="code" href="classlbann_1_1data__reader__merge__samples.html#a240368aa9f7f2ab1fa7c8d534b7f54ed">sanity_check_for_consistency</a>(num_labels, data_size, label_size, data_dims);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordtype">size_t</span> global_num_samples = <a class="code" href="classlbann_1_1data__reader__merge__samples.html#aafa54258bdc9d888da61c817462cdf65">compute_num_samples_psum</a>();</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  <a class="code" href="classlbann_1_1data__reader__merge__samples.html#ae5fe8d5cf8eb1a6aa715579d329a620e">setup_indices</a>(global_num_samples);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_a240368aa9f7f2ab1fa7c8d534b7f54ed"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#a240368aa9f7f2ab1fa7c8d534b7f54ed">lbann::data_reader_merge_samples::sanity_check_for_consistency</a></div><div class="ttdeci">void sanity_check_for_consistency(int num_labels, int data_size, int label_size, const std::vector&lt; int &gt; &amp;data_dims)</div><div class="ttdoc">code common to both load() and load_using_data_store() </div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8cpp_source.html#l00100">data_reader_merge_samples.cpp:100</a></div></div>
+<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_ad45275b73fcbca47b74a9c9767f69bc9"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#ad45275b73fcbca47b74a9c9767f69bc9">lbann::data_reader_merge_samples::load_using_data_store</a></div><div class="ttdeci">void load_using_data_store()</div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8cpp_source.html#l00055">data_reader_merge_samples.cpp:55</a></div></div>
+<div class="ttc" id="classoptions_html_a9ecfe9c365269df68a41b961c31ae3f5"><div class="ttname"><a href="classoptions.html#a9ecfe9c365269df68a41b961c31ae3f5">options::get</a></div><div class="ttdeci">static options * get()</div><div class="ttdoc">returns a pointer to the Options singleton </div><div class="ttdef"><b>Definition:</b> <a href="options_8hpp_source.html#l00020">options.hpp:20</a></div></div>
+<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_ae5fe8d5cf8eb1a6aa715579d329a620e"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#ae5fe8d5cf8eb1a6aa715579d329a620e">lbann::data_reader_merge_samples::setup_indices</a></div><div class="ttdeci">void setup_indices(int num_samples)</div><div class="ttdoc">code common to both load() and load_using_data_store() </div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8cpp_source.html#l00122">data_reader_merge_samples.cpp:122</a></div></div>
+<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_aafa54258bdc9d888da61c817462cdf65"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#aafa54258bdc9d888da61c817462cdf65">lbann::data_reader_merge_samples::compute_num_samples_psum</a></div><div class="ttdeci">size_t compute_num_samples_psum()</div><div class="ttdoc">code common to both load() and load_using_data_store() </div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8cpp_source.html#l00087">data_reader_merge_samples.cpp:87</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a9815e94ade5873415fd766e09d956d5b"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">lbann::generic_compound_data_reader::m_data_readers</a></div><div class="ttdeci">std::vector&lt; generic_data_reader * &gt; m_data_readers</div><div class="ttdoc">List of readers providing data. </div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00118">compound_data_reader.hpp:118</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_ad3976d4b7db2d404dbb87a56c33fd456"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#ad3976d4b7db2d404dbb87a56c33fd456">lbann::generic_data_reader::m_comm</a></div><div class="ttdeci">lbann_comm * m_comm</div><div class="ttdef"><b>Definition:</b> <a href="data__reader_8hpp_source.html#l00681">data_reader.hpp:681</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1data__reader__merge__samples_ab3554341417f5eba95b9c1098af40410_cgraph.png" border="0" usemap="#classlbann_1_1data__reader__merge__samples_ab3554341417f5eba95b9c1098af40410_cgraph" alt=""/></div>
 <map name="classlbann_1_1data__reader__merge__samples_ab3554341417f5eba95b9c1098af40410_cgraph" id="classlbann_1_1data__reader__merge__samples_ab3554341417f5eba95b9c1098af40410_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1generic__data__reader.html#aa28fdeeb6af492540f507e49adff5d6c" title="lbann::generic_data\l_reader::select_subset\l_of_data" alt="" coords="208,141,363,197"/><area shape="rect" id="node3" href="classlbann_1_1generic__data__reader.html#af1aaa4d1a693974c1b1f1318b6ed60b8" title="Shuffle indices. " alt="" coords="416,5,576,46"/><area shape="rect" id="node5" href="classlbann_1_1generic__data__reader.html#a063afdcd1e4c06fa3295e78cb10609c3" title="lbann::generic_data\l_reader::get_absolute\l_sample_count" alt="" coords="423,69,569,125"/><area shape="rect" id="node6" href="classlbann_1_1generic__data__reader.html#ac9cc7be0cea189043aaf243e2b2df8aa" title="lbann::generic_data\l_reader::get_use_percent" alt="" coords="411,149,581,190"/><area shape="rect" id="node7" href="classlbann_1_1generic__data__reader.html#a053e509faf9b6fac7543d0c447fa7366" title="Get the number of samples in this dataset. " alt="" coords="419,214,573,255"/><area shape="rect" id="node8" href="classlbann_1_1generic__data__reader.html#a5fc1d7315f6044d4896c303f10c2c2e4" title="lbann::generic_data\l_reader::get_validation\l_percent" alt="" coords="419,279,573,335"/><area shape="rect" id="node4" href="namespacelbann.html#aba9d11cb3a739cd84e7234ceeb32d098" title="lbann::get_data_seq\l_generator" alt="" coords="629,5,768,46"/></map>
+<area shape="rect" id="node2" href="classoptions.html#a9ecfe9c365269df68a41b961c31ae3f5" title="returns a pointer to the Options singleton " alt="" coords="240,5,331,32"/><area shape="rect" id="node3" href="classlbann_1_1data__reader__merge__samples.html#ad45275b73fcbca47b74a9c9767f69bc9" title="lbann::data_reader\l_merge_samples::load\l_using_data_store" alt="" coords="209,107,362,163"/><area shape="rect" id="node5" href="classlbann_1_1data__reader__merge__samples.html#a240368aa9f7f2ab1fa7c8d534b7f54ed" title="code common to both load() and load_using_data_store() " alt="" coords="418,28,582,84"/><area shape="rect" id="node6" href="classlbann_1_1data__reader__merge__samples.html#aafa54258bdc9d888da61c817462cdf65" title="code common to both load() and load_using_data_store() " alt="" coords="411,172,589,228"/><area shape="rect" id="node7" href="classlbann_1_1data__reader__merge__samples.html#ae5fe8d5cf8eb1a6aa715579d329a620e" title="code common to both load() and load_using_data_store() " alt="" coords="419,252,581,308"/><area shape="rect" id="node4" href="classlbann_1_1lbann__comm.html#ad67668baa49b8713f3c74816d1aeb175" title="lbann::lbann_comm::\lget_procs_per_model" alt="" coords="427,107,573,149"/><area shape="rect" id="node8" href="classlbann_1_1generic__data__reader.html#aa28fdeeb6af492540f507e49adff5d6c" title="lbann::generic_data\l_reader::select_subset\l_of_data" alt="" coords="637,252,792,308"/><area shape="rect" id="node9" href="classlbann_1_1generic__data__reader.html#af1aaa4d1a693974c1b1f1318b6ed60b8" title="Shuffle indices. " alt="" coords="845,115,1005,157"/><area shape="rect" id="node11" href="classlbann_1_1generic__data__reader.html#a063afdcd1e4c06fa3295e78cb10609c3" title="lbann::generic_data\l_reader::get_absolute\l_sample_count" alt="" coords="852,180,999,236"/><area shape="rect" id="node12" href="classlbann_1_1generic__data__reader.html#ac9cc7be0cea189043aaf243e2b2df8aa" title="lbann::generic_data\l_reader::get_use_percent" alt="" coords="841,259,1010,301"/><area shape="rect" id="node13" href="classlbann_1_1generic__data__reader.html#a053e509faf9b6fac7543d0c447fa7366" title="Get the number of samples in this dataset. " alt="" coords="848,325,1003,366"/><area shape="rect" id="node14" href="classlbann_1_1generic__data__reader.html#a5fc1d7315f6044d4896c303f10c2c2e4" title="lbann::generic_data\l_reader::get_validation\l_percent" alt="" coords="849,389,1002,445"/><area shape="rect" id="node10" href="namespacelbann.html#aba9d11cb3a739cd84e7234ceeb32d098" title="lbann::get_data_seq\l_generator" alt="" coords="1059,115,1197,157"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad45275b73fcbca47b74a9c9767f69bc9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lbann::data_reader_merge_samples::load_using_data_store </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>support for data store functionality; <a class="el" href="classlbann_1_1data__reader__merge__samples.html#ab3554341417f5eba95b9c1098af40410" title="Load subsidiary data readers. ">load()</a> will call this method when using data store </p>
+
+<p>Definition at line <a class="el" href="data__reader__merge__samples_8cpp_source.html#l00055">55</a> of file <a class="el" href="data__reader__merge__samples_8cpp_source.html">data_reader_merge_samples.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                                      {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="comment">// load the subsidiary data readers</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">int</span> global_num_readers = <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>.size();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">int</span> np = <a class="code" href="classlbann_1_1generic__data__reader.html#ad3976d4b7db2d404dbb87a56c33fd456">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#ad67668baa49b8713f3c74816d1aeb175">get_procs_per_model</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j=0; j&lt;global_num_readers; j++) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> owner = j % np;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>[j]-&gt;set_compound_rank(owner);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>[j]-&gt;set_comm(<a class="code" href="classlbann_1_1generic__data__reader.html#ad3976d4b7db2d404dbb87a56c33fd456">m_comm</a>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//only the processor whose rank == owner loads the NpyArray</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>[j]-&gt;load(); </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="comment">// do some sanity checks.</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">int</span> num_labels, data_size, label_size;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  num_labels = <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>[0]-&gt;get_num_labels();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  data_size = <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>[0]-&gt;get_linearized_data_size();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  label_size = <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>[0]-&gt;get_linearized_label_size();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">const</span> std::vector&lt;int&gt; data_dims = <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>[0]-&gt;get_data_dims();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="comment">/*</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">  MPI_Comm comm = m_comm-&gt;get_model_comm().comm;</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">  std::vector&lt;int&gt; data_dims_2 = data_dims;</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">  MPI_Bcast(&amp;num_labels, 1, MPI_INT, 0, comm);</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">  MPI_Bcast(&amp;data_size, 1, MPI_INT, 0, comm);</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">  MPI_Bcast(&amp;label_size, 1, MPI_INT, 0, comm);</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">  MPI_Bcast(&amp;data_dims_2[0], data_dims_2.size(), MPI_INT, 0, comm);</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">  */</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="classlbann_1_1data__reader__merge__samples.html#a240368aa9f7f2ab1fa7c8d534b7f54ed">sanity_check_for_consistency</a>(num_labels, data_size, label_size, data_dims);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">size_t</span> global_num_samples = <a class="code" href="classlbann_1_1data__reader__merge__samples.html#aafa54258bdc9d888da61c817462cdf65">compute_num_samples_psum</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="classlbann_1_1data__reader__merge__samples.html#ae5fe8d5cf8eb1a6aa715579d329a620e">setup_indices</a>(global_num_samples);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_a240368aa9f7f2ab1fa7c8d534b7f54ed"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#a240368aa9f7f2ab1fa7c8d534b7f54ed">lbann::data_reader_merge_samples::sanity_check_for_consistency</a></div><div class="ttdeci">void sanity_check_for_consistency(int num_labels, int data_size, int label_size, const std::vector&lt; int &gt; &amp;data_dims)</div><div class="ttdoc">code common to both load() and load_using_data_store() </div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8cpp_source.html#l00100">data_reader_merge_samples.cpp:100</a></div></div>
+<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_ae5fe8d5cf8eb1a6aa715579d329a620e"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#ae5fe8d5cf8eb1a6aa715579d329a620e">lbann::data_reader_merge_samples::setup_indices</a></div><div class="ttdeci">void setup_indices(int num_samples)</div><div class="ttdoc">code common to both load() and load_using_data_store() </div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8cpp_source.html#l00122">data_reader_merge_samples.cpp:122</a></div></div>
+<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_aafa54258bdc9d888da61c817462cdf65"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#aafa54258bdc9d888da61c817462cdf65">lbann::data_reader_merge_samples::compute_num_samples_psum</a></div><div class="ttdeci">size_t compute_num_samples_psum()</div><div class="ttdoc">code common to both load() and load_using_data_store() </div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8cpp_source.html#l00087">data_reader_merge_samples.cpp:87</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_ad67668baa49b8713f3c74816d1aeb175"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#ad67668baa49b8713f3c74816d1aeb175">lbann::lbann_comm::get_procs_per_model</a></div><div class="ttdeci">int get_procs_per_model() const </div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00157">comm.hpp:157</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a9815e94ade5873415fd766e09d956d5b"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">lbann::generic_compound_data_reader::m_data_readers</a></div><div class="ttdeci">std::vector&lt; generic_data_reader * &gt; m_data_readers</div><div class="ttdoc">List of readers providing data. </div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00118">compound_data_reader.hpp:118</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_ad3976d4b7db2d404dbb87a56c33fd456"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#ad3976d4b7db2d404dbb87a56c33fd456">lbann::generic_data_reader::m_comm</a></div><div class="ttdeci">lbann_comm * m_comm</div><div class="ttdef"><b>Definition:</b> <a href="data__reader_8hpp_source.html#l00681">data_reader.hpp:681</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1data__reader__merge__samples_ad45275b73fcbca47b74a9c9767f69bc9_cgraph.png" border="0" usemap="#classlbann_1_1data__reader__merge__samples_ad45275b73fcbca47b74a9c9767f69bc9_cgraph" alt=""/></div>
+<map name="classlbann_1_1data__reader__merge__samples_ad45275b73fcbca47b74a9c9767f69bc9_cgraph" id="classlbann_1_1data__reader__merge__samples_ad45275b73fcbca47b74a9c9767f69bc9_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1lbann__comm.html#ad67668baa49b8713f3c74816d1aeb175" title="lbann::lbann_comm::\lget_procs_per_model" alt="" coords="224,5,371,46"/><area shape="rect" id="node3" href="classlbann_1_1data__reader__merge__samples.html#a240368aa9f7f2ab1fa7c8d534b7f54ed" title="code common to both load() and load_using_data_store() " alt="" coords="215,69,379,125"/><area shape="rect" id="node4" href="classlbann_1_1data__reader__merge__samples.html#aafa54258bdc9d888da61c817462cdf65" title="code common to both load() and load_using_data_store() " alt="" coords="208,149,387,205"/><area shape="rect" id="node5" href="classlbann_1_1data__reader__merge__samples.html#ae5fe8d5cf8eb1a6aa715579d329a620e" title="code common to both load() and load_using_data_store() " alt="" coords="217,229,378,285"/><area shape="rect" id="node6" href="classlbann_1_1generic__data__reader.html#aa28fdeeb6af492540f507e49adff5d6c" title="lbann::generic_data\l_reader::select_subset\l_of_data" alt="" coords="435,229,589,285"/><area shape="rect" id="node7" href="classlbann_1_1generic__data__reader.html#af1aaa4d1a693974c1b1f1318b6ed60b8" title="Shuffle indices. " alt="" coords="643,93,803,134"/><area shape="rect" id="node9" href="classlbann_1_1generic__data__reader.html#a063afdcd1e4c06fa3295e78cb10609c3" title="lbann::generic_data\l_reader::get_absolute\l_sample_count" alt="" coords="649,157,796,213"/><area shape="rect" id="node10" href="classlbann_1_1generic__data__reader.html#ac9cc7be0cea189043aaf243e2b2df8aa" title="lbann::generic_data\l_reader::get_use_percent" alt="" coords="638,237,807,278"/><area shape="rect" id="node11" href="classlbann_1_1generic__data__reader.html#a053e509faf9b6fac7543d0c447fa7366" title="Get the number of samples in this dataset. " alt="" coords="645,302,800,343"/><area shape="rect" id="node12" href="classlbann_1_1generic__data__reader.html#a5fc1d7315f6044d4896c303f10c2c2e4" title="lbann::generic_data\l_reader::get_validation\l_percent" alt="" coords="646,367,799,423"/><area shape="rect" id="node8" href="namespacelbann.html#aba9d11cb3a739cd84e7234ceeb32d098" title="lbann::get_data_seq\l_generator" alt="" coords="856,93,995,134"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1data__reader__merge__samples_ad45275b73fcbca47b74a9c9767f69bc9_icgraph.png" border="0" usemap="#classlbann_1_1data__reader__merge__samples_ad45275b73fcbca47b74a9c9767f69bc9_icgraph" alt=""/></div>
+<map name="classlbann_1_1data__reader__merge__samples_ad45275b73fcbca47b74a9c9767f69bc9_icgraph" id="classlbann_1_1data__reader__merge__samples_ad45275b73fcbca47b74a9c9767f69bc9_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1data__reader__merge__samples.html#ab3554341417f5eba95b9c1098af40410" title="Load subsidiary data readers. " alt="" coords="209,11,362,53"/></map>
 </div>
 </p>
 
@@ -1227,13 +1425,13 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="data__reader__merge__samples_8cpp_source.html#l00043">43</a> of file <a class="el" href="data__reader__merge__samples_8cpp_source.html">data_reader_merge_samples.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                          {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a7ece97b6fd2bc62da4d98f29cfb50155">generic_compound_data_reader::operator=</a>(other);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a> = other.m_num_samples_psum;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_afd297d61c11bb6b0d03ce64836bd1300"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">lbann::data_reader_merge_samples::m_num_samples_psum</a></div><div class="ttdeci">std::vector&lt; int &gt; m_num_samples_psum</div><div class="ttdoc">Partial sums of the number of samples in each reader. </div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8hpp_source.html#l00075">data_reader_merge_samples.hpp:75</a></div></div>
+<p>Definition at line <a class="el" href="data__reader__merge__samples_8cpp_source.html#l00045">45</a> of file <a class="el" href="data__reader__merge__samples_8cpp_source.html">data_reader_merge_samples.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                          {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a7ece97b6fd2bc62da4d98f29cfb50155">generic_compound_data_reader::operator=</a>(other);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">m_num_samples_psum</a> = other.m_num_samples_psum;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1data__reader__merge__samples_html_afd297d61c11bb6b0d03ce64836bd1300"><div class="ttname"><a href="classlbann_1_1data__reader__merge__samples.html#afd297d61c11bb6b0d03ce64836bd1300">lbann::data_reader_merge_samples::m_num_samples_psum</a></div><div class="ttdeci">std::vector&lt; int &gt; m_num_samples_psum</div><div class="ttdoc">Partial sums of the number of samples in each reader. </div><div class="ttdef"><b>Definition:</b> <a href="data__reader__merge__samples_8hpp_source.html#l00083">data_reader_merge_samples.hpp:83</a></div></div>
 <div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a7ece97b6fd2bc62da4d98f29cfb50155"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a7ece97b6fd2bc62da4d98f29cfb50155">lbann::generic_compound_data_reader::operator=</a></div><div class="ttdeci">generic_compound_data_reader &amp; operator=(const generic_compound_data_reader &amp;other)</div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00058">compound_data_reader.hpp:58</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -1242,6 +1440,185 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classlbann_1_1data__reader__merge__samples_a781fcc341e120886a3359e8ab41121d7_cgraph.png" border="0" usemap="#classlbann_1_1data__reader__merge__samples_a781fcc341e120886a3359e8ab41121d7_cgraph" alt=""/></div>
 <map name="classlbann_1_1data__reader__merge__samples_a781fcc341e120886a3359e8ab41121d7_cgraph" id="classlbann_1_1data__reader__merge__samples_a781fcc341e120886a3359e8ab41121d7_cgraph">
 <area shape="rect" id="node2" href="classlbann_1_1generic__compound__data__reader.html#a7ece97b6fd2bc62da4d98f29cfb50155" title="lbann::generic_compound\l_data_reader::operator=" alt="" coords="237,5,408,46"/><area shape="rect" id="node3" href="classlbann_1_1generic__data__reader.html#aec7e626e6efa2a4bf23f931e2ef8f607" title="lbann::generic_data\l_reader::operator=" alt="" coords="457,5,591,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a240368aa9f7f2ab1fa7c8d534b7f54ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lbann::data_reader_merge_samples::sanity_check_for_consistency </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_labels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>data_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>label_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>data_dims</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>code common to both <a class="el" href="classlbann_1_1data__reader__merge__samples.html#ab3554341417f5eba95b9c1098af40410" title="Load subsidiary data readers. ">load()</a> and <a class="el" href="classlbann_1_1data__reader__merge__samples.html#ad45275b73fcbca47b74a9c9767f69bc9">load_using_data_store()</a> </p>
+
+<p>Definition at line <a class="el" href="data__reader__merge__samples_8cpp_source.html#l00100">100</a> of file <a class="el" href="data__reader__merge__samples_8cpp_source.html">data_reader_merge_samples.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                                                                  {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; reader : <a class="code" href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">m_data_readers</a>) {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">if</span> (num_labels != reader-&gt;get_num_labels()) {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      <span class="keywordflow">throw</span> lbann_exception(</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="stringliteral">&quot;data_reader_merge_samples: data readers do not have the same number of labels&quot;</span>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">if</span> (data_size != reader-&gt;get_linearized_data_size()) {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <span class="keywordflow">throw</span> lbann_exception(</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="stringliteral">&quot;data_reader_merge_samples: data readers do not have the same data size&quot;</span>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">if</span> (label_size != reader-&gt;get_linearized_label_size()) {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <span class="keywordflow">throw</span> lbann_exception(</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="stringliteral">&quot;data_reader_merge_samples: data readers do not have the same label size&quot;</span>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">if</span> (data_dims != reader-&gt;get_data_dims()) {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <span class="keywordflow">throw</span> lbann_exception(</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="stringliteral">&quot;data_reader_merge_samples: data readers do not have the same data dims&quot;</span>);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1generic__compound__data__reader_html_a9815e94ade5873415fd766e09d956d5b"><div class="ttname"><a href="classlbann_1_1generic__compound__data__reader.html#a9815e94ade5873415fd766e09d956d5b">lbann::generic_compound_data_reader::m_data_readers</a></div><div class="ttdeci">std::vector&lt; generic_data_reader * &gt; m_data_readers</div><div class="ttdoc">List of readers providing data. </div><div class="ttdef"><b>Definition:</b> <a href="compound__data__reader_8hpp_source.html#l00118">compound_data_reader.hpp:118</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1data__reader__merge__samples_a240368aa9f7f2ab1fa7c8d534b7f54ed_icgraph.png" border="0" usemap="#classlbann_1_1data__reader__merge__samples_a240368aa9f7f2ab1fa7c8d534b7f54ed_icgraph" alt=""/></div>
+<map name="classlbann_1_1data__reader__merge__samples_a240368aa9f7f2ab1fa7c8d534b7f54ed_icgraph" id="classlbann_1_1data__reader__merge__samples_a240368aa9f7f2ab1fa7c8d534b7f54ed_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1data__reader__merge__samples.html#ad45275b73fcbca47b74a9c9767f69bc9" title="lbann::data_reader\l_merge_samples::load\l_using_data_store" alt="" coords="219,5,373,61"/><area shape="rect" id="node3" href="classlbann_1_1data__reader__merge__samples.html#ab3554341417f5eba95b9c1098af40410" title="Load subsidiary data readers. " alt="" coords="422,46,575,87"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a589d6997ad093721e8c2c2cb3197c9e2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lbann::data_reader_merge_samples::setup_data_store </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlbann_1_1model.html">model</a> *&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sets up a data_store. </p>
+
+<p>Reimplemented from <a class="el" href="classlbann_1_1generic__data__reader.html#a8b2a09d38512fc11f1b9d572c89100a7">lbann::generic_data_reader</a>.</p>
+
+<p>Definition at line <a class="el" href="data__reader__merge__samples_8cpp_source.html#l00195">195</a> of file <a class="el" href="data__reader__merge__samples_8cpp_source.html">data_reader_merge_samples.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                                                         {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1generic__data__reader.html#aefc076b842933a882214f4f709ca49c9">m_data_store</a> != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keyword">delete</span> <a class="code" href="classlbann_1_1generic__data__reader.html#aefc076b842933a882214f4f709ca49c9">m_data_store</a>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;  }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;  <a class="code" href="classlbann_1_1generic__data__reader.html#aefc076b842933a882214f4f709ca49c9">m_data_store</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment">  m_data_store = new data_store_merge_samples(this, m);</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment">  if (m_data_store != nullptr) {</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment">    m_data_store-&gt;setup();</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment">  }</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_aefc076b842933a882214f4f709ca49c9"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#aefc076b842933a882214f4f709ca49c9">lbann::generic_data_reader::m_data_store</a></div><div class="ttdeci">generic_data_store * m_data_store</div><div class="ttdef"><b>Definition:</b> <a href="data__reader_8hpp_source.html#l00679">data_reader.hpp:679</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ae5fe8d5cf8eb1a6aa715579d329a620e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lbann::data_reader_merge_samples::setup_indices </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_samples</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>code common to both <a class="el" href="classlbann_1_1data__reader__merge__samples.html#ab3554341417f5eba95b9c1098af40410" title="Load subsidiary data readers. ">load()</a> and <a class="el" href="classlbann_1_1data__reader__merge__samples.html#ad45275b73fcbca47b74a9c9767f69bc9">load_using_data_store()</a> </p>
+
+<p>Definition at line <a class="el" href="data__reader__merge__samples_8cpp_source.html#l00122">122</a> of file <a class="el" href="data__reader__merge__samples_8cpp_source.html">data_reader_merge_samples.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                                                             {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="comment">// Set up our indices.</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="comment">// Note each subsidiary data reader presumably shuffled its indices as well.</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="comment">// That&#39;s not strictly necessary, but does not impact anything.</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  <a class="code" href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">m_shuffled_indices</a>.resize(num_samples);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  std::iota(<a class="code" href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">m_shuffled_indices</a>.begin(), <a class="code" href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">m_shuffled_indices</a>.end(), 0);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  <a class="code" href="classlbann_1_1generic__data__reader.html#aa28fdeeb6af492540f507e49adff5d6c">select_subset_of_data</a>();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_aaab6aeff67ffff1c689336851fec2c57"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#aaab6aeff67ffff1c689336851fec2c57">lbann::generic_data_reader::m_shuffled_indices</a></div><div class="ttdeci">std::vector&lt; int &gt; m_shuffled_indices</div><div class="ttdef"><b>Definition:</b> <a href="data__reader_8hpp_source.html#l00745">data_reader.hpp:745</a></div></div>
+<div class="ttc" id="classlbann_1_1generic__data__reader_html_aa28fdeeb6af492540f507e49adff5d6c"><div class="ttname"><a href="classlbann_1_1generic__data__reader.html#aa28fdeeb6af492540f507e49adff5d6c">lbann::generic_data_reader::select_subset_of_data</a></div><div class="ttdeci">void select_subset_of_data()</div><div class="ttdef"><b>Definition:</b> <a href="data__reader_8cpp_source.html#l00325">data_reader.cpp:325</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1data__reader__merge__samples_ae5fe8d5cf8eb1a6aa715579d329a620e_cgraph.png" border="0" usemap="#classlbann_1_1data__reader__merge__samples_ae5fe8d5cf8eb1a6aa715579d329a620e_cgraph" alt=""/></div>
+<map name="classlbann_1_1data__reader__merge__samples_ae5fe8d5cf8eb1a6aa715579d329a620e_cgraph" id="classlbann_1_1data__reader__merge__samples_ae5fe8d5cf8eb1a6aa715579d329a620e_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1generic__data__reader.html#aa28fdeeb6af492540f507e49adff5d6c" title="lbann::generic_data\l_reader::select_subset\l_of_data" alt="" coords="216,141,371,197"/><area shape="rect" id="node3" href="classlbann_1_1generic__data__reader.html#af1aaa4d1a693974c1b1f1318b6ed60b8" title="Shuffle indices. " alt="" coords="424,5,584,46"/><area shape="rect" id="node5" href="classlbann_1_1generic__data__reader.html#a063afdcd1e4c06fa3295e78cb10609c3" title="lbann::generic_data\l_reader::get_absolute\l_sample_count" alt="" coords="431,69,577,125"/><area shape="rect" id="node6" href="classlbann_1_1generic__data__reader.html#ac9cc7be0cea189043aaf243e2b2df8aa" title="lbann::generic_data\l_reader::get_use_percent" alt="" coords="419,149,589,190"/><area shape="rect" id="node7" href="classlbann_1_1generic__data__reader.html#a053e509faf9b6fac7543d0c447fa7366" title="Get the number of samples in this dataset. " alt="" coords="427,214,581,255"/><area shape="rect" id="node8" href="classlbann_1_1generic__data__reader.html#a5fc1d7315f6044d4896c303f10c2c2e4" title="lbann::generic_data\l_reader::get_validation\l_percent" alt="" coords="427,279,581,335"/><area shape="rect" id="node4" href="namespacelbann.html#aba9d11cb3a739cd84e7234ceeb32d098" title="lbann::get_data_seq\l_generator" alt="" coords="637,5,776,46"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1data__reader__merge__samples_ae5fe8d5cf8eb1a6aa715579d329a620e_icgraph.png" border="0" usemap="#classlbann_1_1data__reader__merge__samples_ae5fe8d5cf8eb1a6aa715579d329a620e_icgraph" alt=""/></div>
+<map name="classlbann_1_1data__reader__merge__samples_ae5fe8d5cf8eb1a6aa715579d329a620e_icgraph" id="classlbann_1_1data__reader__merge__samples_ae5fe8d5cf8eb1a6aa715579d329a620e_icgraph">
+<area shape="rect" id="node2" href="classlbann_1_1data__reader__merge__samples.html#ad45275b73fcbca47b74a9c9767f69bc9" title="lbann::data_reader\l_merge_samples::load\l_using_data_store" alt="" coords="217,5,370,61"/><area shape="rect" id="node3" href="classlbann_1_1data__reader__merge__samples.html#ab3554341417f5eba95b9c1098af40410" title="Load subsidiary data readers. " alt="" coords="419,46,573,87"/></map>
 </div>
 </p>
 
@@ -1268,7 +1645,7 @@ Here is the call graph for this function:</div>
 
 <p>Partial sums of the number of samples in each reader. </p>
 
-<p>Definition at line <a class="el" href="data__reader__merge__samples_8hpp_source.html#l00075">75</a> of file <a class="el" href="data__reader__merge__samples_8hpp_source.html">data_reader_merge_samples.hpp</a>.</p>
+<p>Definition at line <a class="el" href="data__reader__merge__samples_8hpp_source.html#l00083">83</a> of file <a class="el" href="data__reader__merge__samples_8hpp_source.html">data_reader_merge_samples.hpp</a>.</p>
 
 </div>
 </div>
@@ -1282,7 +1659,7 @@ Here is the call graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1data__reader__merge__samples.html">data_reader_merge_samples</a></li>
-    <li class="footer">Generated on Wed Apr 4 2018 21:59:06 for LBANN by
+    <li class="footer">Generated on Fri May 11 2018 08:30:01 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

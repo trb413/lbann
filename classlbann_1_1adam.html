@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-244-g9bd4aac-ci362362741</span>
+   &#160;<span id="projectnumber">v0.93-606-gca499c9-ci377629231</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -190,10 +190,18 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a21a3d2bce0bac5e6c022c5d95ec6348b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5b6108946e6a09b4e13e4285350aa05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1adam.html#ae5b6108946e6a09b4e13e4285350aa05">unpack_header</a> (struct <a class="el" href="structlbann_1_1adam_1_1packing__header.html">packing_header</a> &amp;header)</td></tr>
 <tr class="separator:ae5b6108946e6a09b4e13e4285350aa05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a054bccc1808c7e0fd6df46e2690815f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1adam.html#a054bccc1808c7e0fd6df46e2690815f4">set_states_on_host</a> () override</td></tr>
+<tr class="separator:a054bccc1808c7e0fd6df46e2690815f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a2d059d4a3aa907ec35e3d54992a55a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1adam.html#a9a2d059d4a3aa907ec35e3d54992a55a">set_states_on_device</a> () override</td></tr>
+<tr class="separator:a9a2d059d4a3aa907ec35e3d54992a55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8070db0a451bdbc6e86200eaa14f6ac7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1adam.html#a8070db0a451bdbc6e86200eaa14f6ac7">save_to_checkpoint_shared</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p, std::string m_name) override</td></tr>
 <tr class="separator:a8070db0a451bdbc6e86200eaa14f6ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca07e925a4751fc5c10a62fb9c72c896"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1adam.html#aca07e925a4751fc5c10a62fb9c72c896">load_from_checkpoint_shared</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p, std::string m_name) override</td></tr>
 <tr class="separator:aca07e925a4751fc5c10a62fb9c72c896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a90fd404141396a41def7f058a82de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1adam.html#a94a90fd404141396a41def7f058a82de">save_to_checkpoint_distributed</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p, std::string m_name) override</td></tr>
+<tr class="separator:a94a90fd404141396a41def7f058a82de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc8802b24db268644ec216b541ff0e14"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classlbann_1_1adam.html#acc8802b24db268644ec216b541ff0e14">load_from_checkpoint_distributed</a> (<a class="el" href="classlbann_1_1persist.html">persist</a> &amp;p, std::string m_name) override</td></tr>
+<tr class="separator:acc8802b24db268644ec216b541ff0e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -347,7 +355,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span>}</div>
 <div class="ttc" id="classlbann_1_1adam_html_a73af15a28066edbfad9ba6a900746a19"><div class="ttname"><a href="classlbann_1_1adam.html#a73af15a28066edbfad9ba6a900746a19">lbann::adam::m_beta1</a></div><div class="ttdeci">DataType m_beta1</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00078">adam.hpp:78</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_ab1f2a16b8eb7e265895ea9eef3fe87b2"><div class="ttname"><a href="classlbann_1_1adam.html#ab1f2a16b8eb7e265895ea9eef3fe87b2">lbann::adam::m_beta2</a></div><div class="ttdeci">DataType m_beta2</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00080">adam.hpp:80</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer_html_a2f24dbeaca18b06f4aa7d179bbf96680"><div class="ttname"><a href="classlbann_1_1optimizer.html#a2f24dbeaca18b06f4aa7d179bbf96680">lbann::optimizer::m_cudnn</a></div><div class="ttdeci">cudnn::cudnn_manager * m_cudnn</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00166">optimizer.hpp:166</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a2f24dbeaca18b06f4aa7d179bbf96680"><div class="ttname"><a href="classlbann_1_1optimizer.html#a2f24dbeaca18b06f4aa7d179bbf96680">lbann::optimizer::m_cudnn</a></div><div class="ttdeci">cudnn::cudnn_manager * m_cudnn</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00170">optimizer.hpp:170</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_a53c3034e187da2720447bbb4f2b59a5d"><div class="ttname"><a href="classlbann_1_1adam.html#a53c3034e187da2720447bbb4f2b59a5d">lbann::adam::m_current_beta1</a></div><div class="ttdeci">DataType m_current_beta1</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00084">adam.hpp:84</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_aa10a518a5356257bc69e655b88b0ed67"><div class="ttname"><a href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">lbann::adam::m_moment1</a></div><div class="ttdeci">AbsDistMat * m_moment1</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00088">adam.hpp:88</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_ad38376b684d69d4a15da1d11f8808ca7"><div class="ttname"><a href="classlbann_1_1adam.html#ad38376b684d69d4a15da1d11f8808ca7">lbann::adam::m_current_beta2</a></div><div class="ttdeci">DataType m_current_beta2</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00086">adam.hpp:86</a></div></div>
@@ -399,7 +407,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  }</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">  #endif // LBANN_HAS_CUDNN</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="ttc" id="classlbann_1_1optimizer_html_a2f24dbeaca18b06f4aa7d179bbf96680"><div class="ttname"><a href="classlbann_1_1optimizer.html#a2f24dbeaca18b06f4aa7d179bbf96680">lbann::optimizer::m_cudnn</a></div><div class="ttdeci">cudnn::cudnn_manager * m_cudnn</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00166">optimizer.hpp:166</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a2f24dbeaca18b06f4aa7d179bbf96680"><div class="ttname"><a href="classlbann_1_1optimizer.html#a2f24dbeaca18b06f4aa7d179bbf96680">lbann::optimizer::m_cudnn</a></div><div class="ttdeci">cudnn::cudnn_manager * m_cudnn</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00170">optimizer.hpp:170</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_aa10a518a5356257bc69e655b88b0ed67"><div class="ttname"><a href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">lbann::adam::m_moment1</a></div><div class="ttdeci">AbsDistMat * m_moment1</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00088">adam.hpp:88</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_aea3295a0ee7da5e9c56fd6ff2f05c63f"><div class="ttname"><a href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">lbann::adam::m_moment2</a></div><div class="ttdeci">AbsDistMat * m_moment2</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00090">adam.hpp:90</a></div></div>
 </div><!-- fragment -->
@@ -523,6 +531,72 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 </div>
 </div>
+<a class="anchor" id="acc8802b24db268644ec216b541ff0e14"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lbann::adam::load_from_checkpoint_distributed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlbann_1_1persist.html">persist</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>m_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classlbann_1_1optimizer.html#a94af5ef76bb708e117d3f54ea971c1d0">lbann::optimizer</a>.</p>
+
+<p>Definition at line <a class="el" href="adam_8cpp_source.html#l00291">291</a> of file <a class="el" href="adam_8cpp_source.html">adam.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                                                                             {</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <a class="code" href="classlbann_1_1optimizer.html#a94af5ef76bb708e117d3f54ea971c1d0">optimizer::load_from_checkpoint_distributed</a>(p, name_prefix);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  <span class="keyword">struct </span>packing_header header;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  <a class="code" href="classlbann_1_1adam.html#a21a3d2bce0bac5e6c022c5d95ec6348b">unpack_scalars</a>(p, &amp;header);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  <span class="keywordtype">char</span> l_name[512];</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_moment1_%lldx%lld&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">m_moment1</a>-&gt;Height(), <a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>-&gt;Width());</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  p.read_rank_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, *<a class="code" href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">m_moment1</a>);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_moment2_%lldx%lld&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>-&gt;Height(), <a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>-&gt;Width());</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  p.read_rank_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, *<a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>);</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a94af5ef76bb708e117d3f54ea971c1d0"><div class="ttname"><a href="classlbann_1_1optimizer.html#a94af5ef76bb708e117d3f54ea971c1d0">lbann::optimizer::load_from_checkpoint_distributed</a></div><div class="ttdeci">virtual bool load_from_checkpoint_distributed(persist &amp;p, std::string m_name)</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8cpp_source.html#l00504">optimizer.cpp:504</a></div></div>
+<div class="ttc" id="classlbann_1_1adam_html_a21a3d2bce0bac5e6c022c5d95ec6348b"><div class="ttname"><a href="classlbann_1_1adam.html#a21a3d2bce0bac5e6c022c5d95ec6348b">lbann::adam::unpack_scalars</a></div><div class="ttdeci">bool unpack_scalars(persist &amp;p, struct packing_header *header)</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00121">adam.hpp:121</a></div></div>
+<div class="ttc" id="classlbann_1_1adam_html_aa10a518a5356257bc69e655b88b0ed67"><div class="ttname"><a href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">lbann::adam::m_moment1</a></div><div class="ttdeci">AbsDistMat * m_moment1</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00088">adam.hpp:88</a></div></div>
+<div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">lbann::persist_type::train</a></div></div>
+<div class="ttc" id="classlbann_1_1adam_html_aea3295a0ee7da5e9c56fd6ff2f05c63f"><div class="ttname"><a href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">lbann::adam::m_moment2</a></div><div class="ttdeci">AbsDistMat * m_moment2</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00090">adam.hpp:90</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1adam_acc8802b24db268644ec216b541ff0e14_cgraph.png" border="0" usemap="#classlbann_1_1adam_acc8802b24db268644ec216b541ff0e14_cgraph" alt=""/></div>
+<map name="classlbann_1_1adam_acc8802b24db268644ec216b541ff0e14_cgraph" id="classlbann_1_1adam_acc8802b24db268644ec216b541ff0e14_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1optimizer.html#a94af5ef76bb708e117d3f54ea971c1d0" title="lbann::optimizer::load\l_from_checkpoint_distributed" alt="" coords="213,5,405,46"/><area shape="rect" id="node5" href="classlbann_1_1adam.html#a21a3d2bce0bac5e6c022c5d95ec6348b" title="lbann::adam::unpack\l_scalars" alt="" coords="238,70,381,111"/><area shape="rect" id="node6" href="classlbann_1_1persist.html#a9ee0a9989685999d08d2be2a5da3db23" title="Given an open file descriptor, file name, and a matrix, read the matrix from the file descriptor..." alt="" coords="243,135,376,177"/><area shape="rect" id="node3" href="classlbann_1_1persist.html#a1e84eff891affad6001f3c5fa803cae2" title="lbann::persist::read\l_datatype" alt="" coords="453,38,587,79"/><area shape="rect" id="node4" href="namespacelbann.html#a85385e2a9e058b6720300b4cbdd2b1d0" title="lbann::read_bytes" alt="" coords="635,45,760,72"/><area shape="rect" id="node7" href="namespacelbann.html#a6084b9319eea1997f8446fa3e6879532" title="lbann::openread" alt="" coords="463,143,577,169"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="aca07e925a4751fc5c10a62fb9c72c896"></a>
 <div class="memitem">
 <div class="memproto">
@@ -557,32 +631,34 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1optimizer.html#a42a52aab9a682fda57c1e639968a44b9">lbann::optimizer</a>.</p>
 
-<p>Definition at line <a class="el" href="adam_8cpp_source.html#l00234">234</a> of file <a class="el" href="adam_8cpp_source.html">adam.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                                                                        {</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <a class="code" href="classlbann_1_1optimizer.html#a42a52aab9a682fda57c1e639968a44b9">optimizer::load_from_checkpoint_shared</a>(p, name_prefix);</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="keyword">struct </span>packing_header header;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keywordflow">if</span> (p.get_rank() == 0) {</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <a class="code" href="classlbann_1_1adam.html#a21a3d2bce0bac5e6c022c5d95ec6348b">unpack_scalars</a>(p, &amp;header);</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  }</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  MPI_Bcast(&amp;header, <span class="keyword">sizeof</span>(header), MPI_BYTE, 0, MPI_COMM_WORLD);</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <a class="code" href="classlbann_1_1adam.html#ae5b6108946e6a09b4e13e4285350aa05">unpack_header</a>(header);</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="keywordtype">char</span> l_name[512];</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_moment1_%lldx%lld.bin&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">m_moment1</a>-&gt;Height(), <a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>-&gt;Width());</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  p.read_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, (<a class="code" href="base_8hpp.html#a0fab5387556805cfeac3e7e567bf66c5">DistMat</a>*)<a class="code" href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">m_moment1</a>);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_moment2_%lldx%lld.bin&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>-&gt;Height(), <a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>-&gt;Width());</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  p.read_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, (<a class="code" href="base_8hpp.html#a0fab5387556805cfeac3e7e567bf66c5">DistMat</a>*)<a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>);</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;}</div>
+<p>Definition at line <a class="el" href="adam_8cpp_source.html#l00255">255</a> of file <a class="el" href="adam_8cpp_source.html">adam.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                                                                        {</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <a class="code" href="classlbann_1_1optimizer.html#a42a52aab9a682fda57c1e639968a44b9">optimizer::load_from_checkpoint_shared</a>(p, name_prefix);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;  <span class="keyword">struct </span>packing_header header;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1optimizer.html#a8c2569a8fcf0ee969517067b81896c44">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac">am_model_master</a>()) {</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <a class="code" href="classlbann_1_1adam.html#a21a3d2bce0bac5e6c022c5d95ec6348b">unpack_scalars</a>(p, &amp;header);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <a class="code" href="classlbann_1_1optimizer.html#a8c2569a8fcf0ee969517067b81896c44">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a28fa7b33d4a288c47d06b6bf8d99e3af">model_broadcast</a>(0, header);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <a class="code" href="classlbann_1_1adam.html#ae5b6108946e6a09b4e13e4285350aa05">unpack_header</a>(header);</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="keywordtype">char</span> l_name[512];</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_moment1_%lldx%lld.bin&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">m_moment1</a>-&gt;Height(), <a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>-&gt;Width());</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  p.read_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, <a class="code" href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">m_moment1</a>);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_moment2_%lldx%lld.bin&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>-&gt;Height(), <a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>-&gt;Width());</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  p.read_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, <a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a8c2569a8fcf0ee969517067b81896c44"><div class="ttname"><a href="classlbann_1_1optimizer.html#a8c2569a8fcf0ee969517067b81896c44">lbann::optimizer::m_comm</a></div><div class="ttdeci">lbann_comm * m_comm</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00167">optimizer.hpp:167</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_a28fa7b33d4a288c47d06b6bf8d99e3af"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a28fa7b33d4a288c47d06b6bf8d99e3af">lbann::lbann_comm::model_broadcast</a></div><div class="ttdeci">void model_broadcast(int root, T &amp;val)</div><div class="ttdoc">Within-model broadcast of a scalar. </div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00219">comm.hpp:219</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_a21a3d2bce0bac5e6c022c5d95ec6348b"><div class="ttname"><a href="classlbann_1_1adam.html#a21a3d2bce0bac5e6c022c5d95ec6348b">lbann::adam::unpack_scalars</a></div><div class="ttdeci">bool unpack_scalars(persist &amp;p, struct packing_header *header)</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00121">adam.hpp:121</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_aa10a518a5356257bc69e655b88b0ed67"><div class="ttname"><a href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">lbann::adam::m_moment1</a></div><div class="ttdeci">AbsDistMat * m_moment1</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00088">adam.hpp:88</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_ae5b6108946e6a09b4e13e4285350aa05"><div class="ttname"><a href="classlbann_1_1adam.html#ae5b6108946e6a09b4e13e4285350aa05">lbann::adam::unpack_header</a></div><div class="ttdeci">void unpack_header(struct packing_header &amp;header)</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00138">adam.hpp:138</a></div></div>
-<div class="ttc" id="base_8hpp_html_a0fab5387556805cfeac3e7e567bf66c5"><div class="ttname"><a href="base_8hpp.html#a0fab5387556805cfeac3e7e567bf66c5">DistMat</a></div><div class="ttdeci">MCMRMat DistMat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00056">base.hpp:56</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer_html_a42a52aab9a682fda57c1e639968a44b9"><div class="ttname"><a href="classlbann_1_1optimizer.html#a42a52aab9a682fda57c1e639968a44b9">lbann::optimizer::load_from_checkpoint_shared</a></div><div class="ttdeci">virtual bool load_from_checkpoint_shared(persist &amp;p, std::string m_name)</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8cpp_source.html#l00541">optimizer.cpp:541</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_a06a31f9df1860358ef0ef68d9e165cac"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac">lbann::lbann_comm::am_model_master</a></div><div class="ttdeci">bool am_model_master() const </div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00141">comm.hpp:141</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a42a52aab9a682fda57c1e639968a44b9"><div class="ttname"><a href="classlbann_1_1optimizer.html#a42a52aab9a682fda57c1e639968a44b9">lbann::optimizer::load_from_checkpoint_shared</a></div><div class="ttdeci">virtual bool load_from_checkpoint_shared(persist &amp;p, std::string m_name)</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8cpp_source.html#l00493">optimizer.cpp:493</a></div></div>
 <div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">lbann::persist_type::train</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_aea3295a0ee7da5e9c56fd6ff2f05c63f"><div class="ttname"><a href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">lbann::adam::m_moment2</a></div><div class="ttdeci">AbsDistMat * m_moment2</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00090">adam.hpp:90</a></div></div>
 </div><!-- fragment -->
@@ -591,7 +667,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1adam_aca07e925a4751fc5c10a62fb9c72c896_cgraph.png" border="0" usemap="#classlbann_1_1adam_aca07e925a4751fc5c10a62fb9c72c896_cgraph" alt=""/></div>
 <map name="classlbann_1_1adam_aca07e925a4751fc5c10a62fb9c72c896_cgraph" id="classlbann_1_1adam_aca07e925a4751fc5c10a62fb9c72c896_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1optimizer.html#a42a52aab9a682fda57c1e639968a44b9" title="lbann::optimizer::load\l_from_checkpoint_shared" alt="" coords="213,5,384,46"/><area shape="rect" id="node5" href="classlbann_1_1persist.html#a90ae976e5566fae1b6debdf1b94fd9e0" title="lbann::persist::get_rank" alt="" coords="219,71,378,97"/><area shape="rect" id="node6" href="classlbann_1_1adam.html#a21a3d2bce0bac5e6c022c5d95ec6348b" title="lbann::adam::unpack\l_scalars" alt="" coords="227,122,370,163"/><area shape="rect" id="node7" href="classlbann_1_1adam.html#ae5b6108946e6a09b4e13e4285350aa05" title="lbann::adam::unpack\l_header" alt="" coords="227,187,370,229"/><area shape="rect" id="node8" href="classlbann_1_1persist.html#aa98be93f33b510e5b506b61de6bd79bd" title="lbann::persist::read\l_distmat" alt="" coords="232,253,365,294"/><area shape="rect" id="node3" href="classlbann_1_1persist.html#a1e84eff891affad6001f3c5fa803cae2" title="lbann::persist::read\l_datatype" alt="" coords="432,63,565,105"/><area shape="rect" id="node4" href="namespacelbann.html#a85385e2a9e058b6720300b4cbdd2b1d0" title="lbann::read_bytes" alt="" coords="613,71,739,97"/><area shape="rect" id="node9" href="namespacelbann.html#aefae2a9fc9d742ece0fa8ca7ed9ee137" title="lbann::exists" alt="" coords="451,260,547,287"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1optimizer.html#a42a52aab9a682fda57c1e639968a44b9" title="lbann::optimizer::load\l_from_checkpoint_shared" alt="" coords="213,70,384,111"/><area shape="rect" id="node5" href="classlbann_1_1lbann__comm.html#a28fa7b33d4a288c47d06b6bf8d99e3af" title="Within&#45;model broadcast of a scalar. " alt="" coords="433,102,575,143"/><area shape="rect" id="node10" href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac" title="lbann::lbann_comm::\lam_model_master" alt="" coords="227,187,370,229"/><area shape="rect" id="node13" href="classlbann_1_1adam.html#a21a3d2bce0bac5e6c022c5d95ec6348b" title="lbann::adam::unpack\l_scalars" alt="" coords="227,5,370,46"/><area shape="rect" id="node14" href="classlbann_1_1adam.html#ae5b6108946e6a09b4e13e4285350aa05" title="lbann::adam::unpack\l_header" alt="" coords="227,253,370,294"/><area shape="rect" id="node15" href="classlbann_1_1persist.html#abb69f3b2c855618e0152cec1de2eea7d" title="lbann::persist::read\l_distmat" alt="" coords="232,318,365,359"/><area shape="rect" id="node3" href="classlbann_1_1persist.html#a1e84eff891affad6001f3c5fa803cae2" title="lbann::persist::read\l_datatype" alt="" coords="437,30,571,71"/><area shape="rect" id="node4" href="namespacelbann.html#a85385e2a9e058b6720300b4cbdd2b1d0" title="lbann::read_bytes" alt="" coords="633,37,759,64"/><area shape="rect" id="node6" href="classlbann_1_1lbann__comm.html#a08708022c215c01bbaa77974bfae3288" title="Broadcast a scalar value over an arbitrary communicator. " alt="" coords="625,95,767,137"/><area shape="rect" id="node9" href="classlbann_1_1lbann__comm.html#a135065d26bb1b838f711987ce22e7008" title="lbann::lbann_comm::\lget_model_comm" alt="" coords="625,161,767,202"/><area shape="rect" id="node7" href="classlbann_1_1lbann__comm.html#acf786984b0965b9057bf080302499497" title="lbann::lbann_comm::\lbroadcast_custom" alt="" coords="823,62,966,103"/><area shape="rect" id="node8" href="classlbann_1_1lbann__comm.html#a408863c9ac5bc223e54ab0ae6ce7e986" title="lbann::lbann_comm::\lcount_bytes_broadcast" alt="" coords="816,127,973,169"/><area shape="rect" id="node11" href="classlbann_1_1lbann__comm.html#a206bafe522a0962c450f4fc69d030656" title="lbann::lbann_comm::\lget_rank_in_model" alt="" coords="433,181,575,222"/><area shape="rect" id="node12" href="classlbann_1_1lbann__comm.html#ad61b35af881db9671f3d71ddbf1ced3f" title="lbann::lbann_comm::\lget_model_master" alt="" coords="433,246,575,287"/><area shape="rect" id="node16" href="namespacelbann.html#aefae2a9fc9d742ece0fa8ca7ed9ee137" title="lbann::exists" alt="" coords="456,325,552,352"/></map>
 </div>
 </p>
 
@@ -657,7 +733,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
 <div class="ttc" id="classlbann_1_1adam_html_a73af15a28066edbfad9ba6a900746a19"><div class="ttname"><a href="classlbann_1_1adam.html#a73af15a28066edbfad9ba6a900746a19">lbann::adam::m_beta1</a></div><div class="ttdeci">DataType m_beta1</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00078">adam.hpp:78</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_ab1f2a16b8eb7e265895ea9eef3fe87b2"><div class="ttname"><a href="classlbann_1_1adam.html#ab1f2a16b8eb7e265895ea9eef3fe87b2">lbann::adam::m_beta2</a></div><div class="ttdeci">DataType m_beta2</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00080">adam.hpp:80</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer_html_a2f24dbeaca18b06f4aa7d179bbf96680"><div class="ttname"><a href="classlbann_1_1optimizer.html#a2f24dbeaca18b06f4aa7d179bbf96680">lbann::optimizer::m_cudnn</a></div><div class="ttdeci">cudnn::cudnn_manager * m_cudnn</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00166">optimizer.hpp:166</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a2f24dbeaca18b06f4aa7d179bbf96680"><div class="ttname"><a href="classlbann_1_1optimizer.html#a2f24dbeaca18b06f4aa7d179bbf96680">lbann::optimizer::m_cudnn</a></div><div class="ttdeci">cudnn::cudnn_manager * m_cudnn</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00170">optimizer.hpp:170</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_a53c3034e187da2720447bbb4f2b59a5d"><div class="ttname"><a href="classlbann_1_1adam.html#a53c3034e187da2720447bbb4f2b59a5d">lbann::adam::m_current_beta1</a></div><div class="ttdeci">DataType m_current_beta1</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00084">adam.hpp:84</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_aa10a518a5356257bc69e655b88b0ed67"><div class="ttname"><a href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">lbann::adam::m_moment1</a></div><div class="ttdeci">AbsDistMat * m_moment1</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00088">adam.hpp:88</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_ad38376b684d69d4a15da1d11f8808ca7"><div class="ttname"><a href="classlbann_1_1adam.html#ad38376b684d69d4a15da1d11f8808ca7">lbann::adam::m_current_beta2</a></div><div class="ttdeci">DataType m_current_beta2</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00086">adam.hpp:86</a></div></div>
@@ -728,7 +804,73 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1adam_a43e941b596c5d1cc68b795b0399398c4_icgraph.png" border="0" usemap="#classlbann_1_1adam_a43e941b596c5d1cc68b795b0399398c4_icgraph" alt=""/></div>
 <map name="classlbann_1_1adam_a43e941b596c5d1cc68b795b0399398c4_icgraph" id="classlbann_1_1adam_a43e941b596c5d1cc68b795b0399398c4_icgraph">
-<area shape="rect" id="node2" href="classlbann_1_1adam.html#a8070db0a451bdbc6e86200eaa14f6ac7" title="lbann::adam::save_to\l_checkpoint_shared" alt="" coords="232,5,379,46"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1adam.html#a8070db0a451bdbc6e86200eaa14f6ac7" title="lbann::adam::save_to\l_checkpoint_shared" alt="" coords="239,5,385,46"/><area shape="rect" id="node3" href="classlbann_1_1adam.html#a94a90fd404141396a41def7f058a82de" title="lbann::adam::save_to\l_checkpoint_distributed" alt="" coords="233,70,391,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a94a90fd404141396a41def7f058a82de"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool lbann::adam::save_to_checkpoint_distributed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classlbann_1_1persist.html">persist</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>m_name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="classlbann_1_1optimizer.html#a650d47700300b76789a3b7cf27c83eb6">lbann::optimizer</a>.</p>
+
+<p>Definition at line <a class="el" href="adam_8cpp_source.html#l00276">276</a> of file <a class="el" href="adam_8cpp_source.html">adam.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                                                                           {</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  <a class="code" href="classlbann_1_1optimizer.html#a650d47700300b76789a3b7cf27c83eb6">optimizer::save_to_checkpoint_distributed</a>(p, name_prefix);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <a class="code" href="classlbann_1_1adam.html#a43e941b596c5d1cc68b795b0399398c4">pack_scalars</a>(p);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  <span class="keywordtype">char</span> l_name[512];</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_moment1_%lldx%lld&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">m_moment1</a>-&gt;Height(), <a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>-&gt;Width());</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  p.write_rank_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, *<a class="code" href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">m_moment1</a>);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_moment2_%lldx%lld&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>-&gt;Height(), <a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>-&gt;Width());</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  p.write_rank_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, *<a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1adam_html_a43e941b596c5d1cc68b795b0399398c4"><div class="ttname"><a href="classlbann_1_1adam.html#a43e941b596c5d1cc68b795b0399398c4">lbann::adam::pack_scalars</a></div><div class="ttdeci">bool pack_scalars(persist &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00112">adam.hpp:112</a></div></div>
+<div class="ttc" id="classlbann_1_1adam_html_aa10a518a5356257bc69e655b88b0ed67"><div class="ttname"><a href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">lbann::adam::m_moment1</a></div><div class="ttdeci">AbsDistMat * m_moment1</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00088">adam.hpp:88</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a650d47700300b76789a3b7cf27c83eb6"><div class="ttname"><a href="classlbann_1_1optimizer.html#a650d47700300b76789a3b7cf27c83eb6">lbann::optimizer::save_to_checkpoint_distributed</a></div><div class="ttdeci">virtual bool save_to_checkpoint_distributed(persist &amp;p, std::string m_name)</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8cpp_source.html#l00499">optimizer.cpp:499</a></div></div>
+<div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">lbann::persist_type::train</a></div></div>
+<div class="ttc" id="classlbann_1_1adam_html_aea3295a0ee7da5e9c56fd6ff2f05c63f"><div class="ttname"><a href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">lbann::adam::m_moment2</a></div><div class="ttdeci">AbsDistMat * m_moment2</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00090">adam.hpp:90</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1adam_a94a90fd404141396a41def7f058a82de_cgraph.png" border="0" usemap="#classlbann_1_1adam_a94a90fd404141396a41def7f058a82de_cgraph" alt=""/></div>
+<map name="classlbann_1_1adam_a94a90fd404141396a41def7f058a82de_cgraph" id="classlbann_1_1adam_a94a90fd404141396a41def7f058a82de_cgraph">
+<area shape="rect" id="node2" href="classlbann_1_1optimizer.html#a650d47700300b76789a3b7cf27c83eb6" title="lbann::optimizer::save\l_to_checkpoint_distributed" alt="" coords="214,5,391,46"/><area shape="rect" id="node5" href="classlbann_1_1adam.html#a43e941b596c5d1cc68b795b0399398c4" title="lbann::adam::pack_scalars" alt="" coords="213,71,392,97"/><area shape="rect" id="node6" href="classlbann_1_1persist.html#a7ce35c4518e81a42bb4a0082e1720ea0" title="Given an open file descriptor, file name, and a matrix, write the matrix to the file descriptor..." alt="" coords="235,122,371,163"/><area shape="rect" id="node3" href="classlbann_1_1persist.html#a5edc3f9cc3540b50d417993da2a6b5ce" title="lbann::persist::write\l_datatype" alt="" coords="440,34,576,75"/><area shape="rect" id="node4" href="namespacelbann.html#aed95061796f19fa1648dcc99dc335abd" title="lbann::write_bytes" alt="" coords="624,41,752,68"/><area shape="rect" id="node7" href="namespacelbann.html#af596e6d2be603e9cf808c98f5412490a" title="lbann::openwrite" alt="" coords="449,129,567,156"/></map>
 </div>
 </p>
 
@@ -768,28 +910,28 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="classlbann_1_1optimizer.html#afed10c6d8c5bd922f95075abeff711ce">lbann::optimizer</a>.</p>
 
-<p>Definition at line <a class="el" href="adam_8cpp_source.html#l00216">216</a> of file <a class="el" href="adam_8cpp_source.html">adam.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                                                                      {</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <a class="code" href="classlbann_1_1optimizer.html#afed10c6d8c5bd922f95075abeff711ce">optimizer::save_to_checkpoint_shared</a>(p, name_prefix);</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="comment">// m_learning_rate;</span></div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keywordflow">if</span> (p.get_rank() == 0) {</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <a class="code" href="classlbann_1_1adam.html#a43e941b596c5d1cc68b795b0399398c4">pack_scalars</a>(p);</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;  }</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;  <span class="keywordtype">char</span> l_name[512];</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_moment1_%lldx%lld&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">m_moment1</a>-&gt;Height(), <a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>-&gt;Width());</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  p.write_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, (<a class="code" href="base_8hpp.html#a0fab5387556805cfeac3e7e567bf66c5">DistMat</a>*)<a class="code" href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">m_moment1</a>);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_moment2_%lldx%lld&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>-&gt;Height(), <a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>-&gt;Width());</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  p.write_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, (<a class="code" href="base_8hpp.html#a0fab5387556805cfeac3e7e567bf66c5">DistMat</a>*)<a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>);</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;}</div>
+<p>Definition at line <a class="el" href="adam_8cpp_source.html#l00238">238</a> of file <a class="el" href="adam_8cpp_source.html">adam.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                                                                      {</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  <a class="code" href="classlbann_1_1optimizer.html#afed10c6d8c5bd922f95075abeff711ce">optimizer::save_to_checkpoint_shared</a>(p, name_prefix);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="classlbann_1_1optimizer.html#a8c2569a8fcf0ee969517067b81896c44">m_comm</a>-&gt;<a class="code" href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac">am_model_master</a>()) {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <a class="code" href="classlbann_1_1adam.html#a43e941b596c5d1cc68b795b0399398c4">pack_scalars</a>(p);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;  <span class="keywordtype">char</span> l_name[512];</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_moment1_%lldx%lld&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">m_moment1</a>-&gt;Height(), <a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>-&gt;Width());</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;  p.write_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, <a class="code" href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">m_moment1</a>);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  sprintf(l_name, <span class="stringliteral">&quot;%s_optimizer_adam_moment2_%lldx%lld&quot;</span>, name_prefix.c_str(), <a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>-&gt;Height(), <a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>-&gt;Width());</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  p.write_distmat(<a class="code" href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">persist_type::train</a>, l_name, <a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;}</div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a8c2569a8fcf0ee969517067b81896c44"><div class="ttname"><a href="classlbann_1_1optimizer.html#a8c2569a8fcf0ee969517067b81896c44">lbann::optimizer::m_comm</a></div><div class="ttdeci">lbann_comm * m_comm</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00167">optimizer.hpp:167</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_a43e941b596c5d1cc68b795b0399398c4"><div class="ttname"><a href="classlbann_1_1adam.html#a43e941b596c5d1cc68b795b0399398c4">lbann::adam::pack_scalars</a></div><div class="ttdeci">bool pack_scalars(persist &amp;p)</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00112">adam.hpp:112</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_aa10a518a5356257bc69e655b88b0ed67"><div class="ttname"><a href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">lbann::adam::m_moment1</a></div><div class="ttdeci">AbsDistMat * m_moment1</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00088">adam.hpp:88</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer_html_afed10c6d8c5bd922f95075abeff711ce"><div class="ttname"><a href="classlbann_1_1optimizer.html#afed10c6d8c5bd922f95075abeff711ce">lbann::optimizer::save_to_checkpoint_shared</a></div><div class="ttdeci">virtual bool save_to_checkpoint_shared(persist &amp;p, std::string m_name)</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8cpp_source.html#l00533">optimizer.cpp:533</a></div></div>
-<div class="ttc" id="base_8hpp_html_a0fab5387556805cfeac3e7e567bf66c5"><div class="ttname"><a href="base_8hpp.html#a0fab5387556805cfeac3e7e567bf66c5">DistMat</a></div><div class="ttdeci">MCMRMat DistMat</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00056">base.hpp:56</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_afed10c6d8c5bd922f95075abeff711ce"><div class="ttname"><a href="classlbann_1_1optimizer.html#afed10c6d8c5bd922f95075abeff711ce">lbann::optimizer::save_to_checkpoint_shared</a></div><div class="ttdeci">virtual bool save_to_checkpoint_shared(persist &amp;p, std::string m_name)</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8cpp_source.html#l00487">optimizer.cpp:487</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html_a06a31f9df1860358ef0ef68d9e165cac"><div class="ttname"><a href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac">lbann::lbann_comm::am_model_master</a></div><div class="ttdeci">bool am_model_master() const </div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00141">comm.hpp:141</a></div></div>
 <div class="ttc" id="namespacelbann_html_adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64"><div class="ttname"><a href="namespacelbann.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64">lbann::persist_type::train</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_aea3295a0ee7da5e9c56fd6ff2f05c63f"><div class="ttname"><a href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">lbann::adam::m_moment2</a></div><div class="ttdeci">AbsDistMat * m_moment2</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00090">adam.hpp:90</a></div></div>
 </div><!-- fragment -->
@@ -798,7 +940,101 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1adam_a8070db0a451bdbc6e86200eaa14f6ac7_cgraph.png" border="0" usemap="#classlbann_1_1adam_a8070db0a451bdbc6e86200eaa14f6ac7_cgraph" alt=""/></div>
 <map name="classlbann_1_1adam_a8070db0a451bdbc6e86200eaa14f6ac7_cgraph" id="classlbann_1_1adam_a8070db0a451bdbc6e86200eaa14f6ac7_cgraph">
-<area shape="rect" id="node2" href="classlbann_1_1optimizer.html#afed10c6d8c5bd922f95075abeff711ce" title="lbann::optimizer::save\l_to_checkpoint_shared" alt="" coords="211,5,367,46"/><area shape="rect" id="node5" href="classlbann_1_1persist.html#a90ae976e5566fae1b6debdf1b94fd9e0" title="lbann::persist::get_rank" alt="" coords="210,71,369,97"/><area shape="rect" id="node6" href="classlbann_1_1adam.html#a43e941b596c5d1cc68b795b0399398c4" title="lbann::adam::pack_scalars" alt="" coords="200,121,379,148"/><area shape="rect" id="node7" href="classlbann_1_1persist.html#a9170de652405d86d9ba9b3793f8781c6" title="lbann::persist::write\l_distmat" alt="" coords="221,173,357,214"/><area shape="rect" id="node3" href="classlbann_1_1persist.html#a5edc3f9cc3540b50d417993da2a6b5ce" title="lbann::persist::write\l_datatype" alt="" coords="427,59,563,101"/><area shape="rect" id="node4" href="namespacelbann.html#aed95061796f19fa1648dcc99dc335abd" title="lbann::write_bytes" alt="" coords="611,67,739,93"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1optimizer.html#afed10c6d8c5bd922f95075abeff711ce" title="lbann::optimizer::save\l_to_checkpoint_shared" alt="" coords="211,5,367,46"/><area shape="rect" id="node5" href="classlbann_1_1lbann__comm.html#a06a31f9df1860358ef0ef68d9e165cac" title="lbann::lbann_comm::\lam_model_master" alt="" coords="218,122,361,163"/><area shape="rect" id="node8" href="classlbann_1_1adam.html#a43e941b596c5d1cc68b795b0399398c4" title="lbann::adam::pack_scalars" alt="" coords="200,71,379,97"/><area shape="rect" id="node9" href="classlbann_1_1persist.html#a4595fc57e506220d766e5531ef1cd999" title="lbann::persist::write\l_distmat" alt="" coords="221,187,357,229"/><area shape="rect" id="node3" href="classlbann_1_1persist.html#a5edc3f9cc3540b50d417993da2a6b5ce" title="lbann::persist::write\l_datatype" alt="" coords="431,30,567,71"/><area shape="rect" id="node4" href="namespacelbann.html#aed95061796f19fa1648dcc99dc335abd" title="lbann::write_bytes" alt="" coords="619,37,747,64"/><area shape="rect" id="node6" href="classlbann_1_1lbann__comm.html#a206bafe522a0962c450f4fc69d030656" title="lbann::lbann_comm::\lget_rank_in_model" alt="" coords="427,109,570,150"/><area shape="rect" id="node7" href="classlbann_1_1lbann__comm.html#ad61b35af881db9671f3d71ddbf1ced3f" title="lbann::lbann_comm::\lget_model_master" alt="" coords="427,174,570,215"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9a2d059d4a3aa907ec35e3d54992a55a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lbann::adam::set_states_on_device </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Copies states from host to GPU if the data has to be on GPU. This is done asynchronously. Thus, needs synchronization before accessing the states. </p>
+
+<p>Reimplemented from <a class="el" href="classlbann_1_1optimizer.html#af5f637c66578f71064821bde37f76449">lbann::optimizer</a>.</p>
+
+<p>Definition at line <a class="el" href="adam_8cpp_source.html#l00231">231</a> of file <a class="el" href="adam_8cpp_source.html">adam.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                                {</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="preprocessor">  #ifdef LBANN_HAS_CUDNN</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="preprocessor"></span>  <a class="code" href="namespacelbann.html#a1be38f948f0f2bc8320a3c35534a6848">set_mat_state_on_device</a>(<a class="code" href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">m_moment1</a>, m_moment1_d, <a class="code" href="classlbann_1_1optimizer.html#a2f24dbeaca18b06f4aa7d179bbf96680">m_cudnn</a>);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <a class="code" href="namespacelbann.html#a1be38f948f0f2bc8320a3c35534a6848">set_mat_state_on_device</a>(<a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>, m_moment2_d, <a class="code" href="classlbann_1_1optimizer.html#a2f24dbeaca18b06f4aa7d179bbf96680">m_cudnn</a>);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="preprocessor">  #endif // LBANN_HAS_CUDNN</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="ttc" id="namespacelbann_html_a1be38f948f0f2bc8320a3c35534a6848"><div class="ttname"><a href="namespacelbann.html#a1be38f948f0f2bc8320a3c35534a6848">lbann::set_mat_state_on_device</a></div><div class="ttdeci">void set_mat_state_on_device(AbsDistMat *state, std::vector&lt; DataType * &gt; &amp;state_d, cudnn::cudnn_manager *m_cudnn)</div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a2f24dbeaca18b06f4aa7d179bbf96680"><div class="ttname"><a href="classlbann_1_1optimizer.html#a2f24dbeaca18b06f4aa7d179bbf96680">lbann::optimizer::m_cudnn</a></div><div class="ttdeci">cudnn::cudnn_manager * m_cudnn</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00170">optimizer.hpp:170</a></div></div>
+<div class="ttc" id="classlbann_1_1adam_html_aa10a518a5356257bc69e655b88b0ed67"><div class="ttname"><a href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">lbann::adam::m_moment1</a></div><div class="ttdeci">AbsDistMat * m_moment1</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00088">adam.hpp:88</a></div></div>
+<div class="ttc" id="classlbann_1_1adam_html_aea3295a0ee7da5e9c56fd6ff2f05c63f"><div class="ttname"><a href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">lbann::adam::m_moment2</a></div><div class="ttdeci">AbsDistMat * m_moment2</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00090">adam.hpp:90</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1adam_a9a2d059d4a3aa907ec35e3d54992a55a_cgraph.png" border="0" usemap="#classlbann_1_1adam_a9a2d059d4a3aa907ec35e3d54992a55a_cgraph" alt=""/></div>
+<map name="classlbann_1_1adam_a9a2d059d4a3aa907ec35e3d54992a55a_cgraph" id="classlbann_1_1adam_a9a2d059d4a3aa907ec35e3d54992a55a_cgraph">
+<area shape="rect" id="node2" href="namespacelbann.html#a1be38f948f0f2bc8320a3c35534a6848" title="lbann::set_mat_state\l_on_device" alt="" coords="216,5,360,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a054bccc1808c7e0fd6df46e2690815f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lbann::adam::set_states_on_host </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Copies states from GPU to host only if the data is on GPU, which is done asynchronously. Thus, needs synchronization before accessing the states. </p>
+
+<p>Reimplemented from <a class="el" href="classlbann_1_1optimizer.html#a41c046f4d30e4689114d5e36aafcfef1">lbann::optimizer</a>.</p>
+
+<p>Definition at line <a class="el" href="adam_8cpp_source.html#l00220">220</a> of file <a class="el" href="adam_8cpp_source.html">adam.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                              {</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="preprocessor">  #ifdef LBANN_HAS_CUDNN</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="preprocessor"></span>  <a class="code" href="namespacelbann.html#aa9e38f8fd32d09fb448fcdd352a769c6">set_mat_state_on_host</a>(<a class="code" href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">m_moment1</a>, m_moment1_d, <a class="code" href="classlbann_1_1optimizer.html#a2f24dbeaca18b06f4aa7d179bbf96680">m_cudnn</a>);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;  <a class="code" href="namespacelbann.html#aa9e38f8fd32d09fb448fcdd352a769c6">set_mat_state_on_host</a>(<a class="code" href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">m_moment2</a>, m_moment2_d, <a class="code" href="classlbann_1_1optimizer.html#a2f24dbeaca18b06f4aa7d179bbf96680">m_cudnn</a>);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor">  #endif // LBANN_HAS_CUDNN</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a2f24dbeaca18b06f4aa7d179bbf96680"><div class="ttname"><a href="classlbann_1_1optimizer.html#a2f24dbeaca18b06f4aa7d179bbf96680">lbann::optimizer::m_cudnn</a></div><div class="ttdeci">cudnn::cudnn_manager * m_cudnn</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00170">optimizer.hpp:170</a></div></div>
+<div class="ttc" id="namespacelbann_html_aa9e38f8fd32d09fb448fcdd352a769c6"><div class="ttname"><a href="namespacelbann.html#aa9e38f8fd32d09fb448fcdd352a769c6">lbann::set_mat_state_on_host</a></div><div class="ttdeci">void set_mat_state_on_host(AbsDistMat *state, const std::vector&lt; DataType * &gt; &amp;state_d, cudnn::cudnn_manager *m_cudnn)</div></div>
+<div class="ttc" id="classlbann_1_1adam_html_aa10a518a5356257bc69e655b88b0ed67"><div class="ttname"><a href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">lbann::adam::m_moment1</a></div><div class="ttdeci">AbsDistMat * m_moment1</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00088">adam.hpp:88</a></div></div>
+<div class="ttc" id="classlbann_1_1adam_html_aea3295a0ee7da5e9c56fd6ff2f05c63f"><div class="ttname"><a href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">lbann::adam::m_moment2</a></div><div class="ttdeci">AbsDistMat * m_moment2</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00090">adam.hpp:90</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classlbann_1_1adam_a054bccc1808c7e0fd6df46e2690815f4_cgraph.png" border="0" usemap="#classlbann_1_1adam_a054bccc1808c7e0fd6df46e2690815f4_cgraph" alt=""/></div>
+<map name="classlbann_1_1adam_a054bccc1808c7e0fd6df46e2690815f4_cgraph" id="classlbann_1_1adam_a054bccc1808c7e0fd6df46e2690815f4_cgraph">
+<area shape="rect" id="node2" href="namespacelbann.html#aa9e38f8fd32d09fb448fcdd352a769c6" title="lbann::set_mat_state\l_on_host" alt="" coords="216,5,360,46"/></map>
 </div>
 </p>
 
@@ -852,9 +1088,9 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor"></span>  }</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;}</div>
-<div class="ttc" id="classlbann_1_1optimizer_html_a2f24dbeaca18b06f4aa7d179bbf96680"><div class="ttname"><a href="classlbann_1_1optimizer.html#a2f24dbeaca18b06f4aa7d179bbf96680">lbann::optimizer::m_cudnn</a></div><div class="ttdeci">cudnn::cudnn_manager * m_cudnn</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00166">optimizer.hpp:166</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer_html_a3df20cb0ae2b60430ad4fd235d66c12e"><div class="ttname"><a href="classlbann_1_1optimizer.html#a3df20cb0ae2b60430ad4fd235d66c12e">lbann::optimizer::m_gradient</a></div><div class="ttdeci">AbsDistMat * m_gradient</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00175">optimizer.hpp:175</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer_html_a7641a88b3c166df2d974a298622b992b"><div class="ttname"><a href="classlbann_1_1optimizer.html#a7641a88b3c166df2d974a298622b992b">lbann::optimizer::setup</a></div><div class="ttdeci">virtual void setup(weights &amp;w)</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8cpp_source.html#l00454">optimizer.cpp:454</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a2f24dbeaca18b06f4aa7d179bbf96680"><div class="ttname"><a href="classlbann_1_1optimizer.html#a2f24dbeaca18b06f4aa7d179bbf96680">lbann::optimizer::m_cudnn</a></div><div class="ttdeci">cudnn::cudnn_manager * m_cudnn</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00170">optimizer.hpp:170</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a3df20cb0ae2b60430ad4fd235d66c12e"><div class="ttname"><a href="classlbann_1_1optimizer.html#a3df20cb0ae2b60430ad4fd235d66c12e">lbann::optimizer::m_gradient</a></div><div class="ttdeci">AbsDistMat * m_gradient</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00179">optimizer.hpp:179</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_a7641a88b3c166df2d974a298622b992b"><div class="ttname"><a href="classlbann_1_1optimizer.html#a7641a88b3c166df2d974a298622b992b">lbann::optimizer::setup</a></div><div class="ttdeci">virtual void setup(weights &amp;w)</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8cpp_source.html#l00414">optimizer.cpp:414</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_aa10a518a5356257bc69e655b88b0ed67"><div class="ttname"><a href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">lbann::adam::m_moment1</a></div><div class="ttdeci">AbsDistMat * m_moment1</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00088">adam.hpp:88</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_aea3295a0ee7da5e9c56fd6ff2f05c63f"><div class="ttname"><a href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">lbann::adam::m_moment2</a></div><div class="ttdeci">AbsDistMat * m_moment2</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00090">adam.hpp:90</a></div></div>
 </div><!-- fragment -->
@@ -966,7 +1202,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="classlbann_1_1adam_html_ab1f2a16b8eb7e265895ea9eef3fe87b2"><div class="ttname"><a href="classlbann_1_1adam.html#ab1f2a16b8eb7e265895ea9eef3fe87b2">lbann::adam::m_beta2</a></div><div class="ttdeci">DataType m_beta2</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00080">adam.hpp:80</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_a53c3034e187da2720447bbb4f2b59a5d"><div class="ttname"><a href="classlbann_1_1adam.html#a53c3034e187da2720447bbb4f2b59a5d">lbann::adam::m_current_beta1</a></div><div class="ttdeci">DataType m_current_beta1</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00084">adam.hpp:84</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_aa10a518a5356257bc69e655b88b0ed67"><div class="ttname"><a href="classlbann_1_1adam.html#aa10a518a5356257bc69e655b88b0ed67">lbann::adam::m_moment1</a></div><div class="ttdeci">AbsDistMat * m_moment1</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00088">adam.hpp:88</a></div></div>
-<div class="ttc" id="classlbann_1_1optimizer_html_ad393dcdcb82b44510c586ed5ec46d4dd"><div class="ttname"><a href="classlbann_1_1optimizer.html#ad393dcdcb82b44510c586ed5ec46d4dd">lbann::optimizer::m_learning_rate</a></div><div class="ttdeci">DataType m_learning_rate</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00172">optimizer.hpp:172</a></div></div>
+<div class="ttc" id="classlbann_1_1optimizer_html_ad393dcdcb82b44510c586ed5ec46d4dd"><div class="ttname"><a href="classlbann_1_1optimizer.html#ad393dcdcb82b44510c586ed5ec46d4dd">lbann::optimizer::m_learning_rate</a></div><div class="ttdeci">DataType m_learning_rate</div><div class="ttdef"><b>Definition:</b> <a href="optimizer_8hpp_source.html#l00176">optimizer.hpp:176</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_ad38376b684d69d4a15da1d11f8808ca7"><div class="ttname"><a href="classlbann_1_1adam.html#ad38376b684d69d4a15da1d11f8808ca7">lbann::adam::m_current_beta2</a></div><div class="ttdeci">DataType m_current_beta2</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00086">adam.hpp:86</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_a751102f0fd866612f5685050a08020a9"><div class="ttname"><a href="classlbann_1_1adam.html#a751102f0fd866612f5685050a08020a9">lbann::adam::m_eps</a></div><div class="ttdeci">DataType m_eps</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00082">adam.hpp:82</a></div></div>
 <div class="ttc" id="classlbann_1_1adam_html_aea3295a0ee7da5e9c56fd6ff2f05c63f"><div class="ttname"><a href="classlbann_1_1adam.html#aea3295a0ee7da5e9c56fd6ff2f05c63f">lbann::adam::m_moment2</a></div><div class="ttdeci">AbsDistMat * m_moment2</div><div class="ttdef"><b>Definition:</b> <a href="adam_8hpp_source.html#l00090">adam.hpp:90</a></div></div>
@@ -1090,7 +1326,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classlbann_1_1adam_a21a3d2bce0bac5e6c022c5d95ec6348b_icgraph.png" border="0" usemap="#classlbann_1_1adam_a21a3d2bce0bac5e6c022c5d95ec6348b_icgraph" alt=""/></div>
 <map name="classlbann_1_1adam_a21a3d2bce0bac5e6c022c5d95ec6348b_icgraph" id="classlbann_1_1adam_a21a3d2bce0bac5e6c022c5d95ec6348b_icgraph">
-<area shape="rect" id="node2" href="classlbann_1_1adam.html#aca07e925a4751fc5c10a62fb9c72c896" title="lbann::adam::load_from\l_checkpoint_shared" alt="" coords="198,5,357,46"/></map>
+<area shape="rect" id="node2" href="classlbann_1_1adam.html#aca07e925a4751fc5c10a62fb9c72c896" title="lbann::adam::load_from\l_checkpoint_shared" alt="" coords="198,5,357,46"/><area shape="rect" id="node3" href="classlbann_1_1adam.html#acc8802b24db268644ec216b541ff0e14" title="lbann::adam::load_from\l_checkpoint_distributed" alt="" coords="198,70,357,111"/></map>
 </div>
 </p>
 
@@ -1268,7 +1504,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespacelbann.html">lbann</a></li><li class="navelem"><a class="el" href="classlbann_1_1adam.html">adam</a></li>
-    <li class="footer">Generated on Wed Apr 4 2018 21:59:09 for LBANN by
+    <li class="footer">Generated on Fri May 11 2018 08:30:04 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

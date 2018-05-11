@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['gaussian_5flayer',['gaussian_layer',['../classlbann_1_1gaussian__layer.html',1,'lbann']]],
   ['generic_5fcompound_5fdata_5freader',['generic_compound_data_reader',['../classlbann_1_1generic__compound__data__reader.html',1,'lbann']]],
   ['generic_5fdata_5freader',['generic_data_reader',['../classlbann_1_1generic__data__reader.html',1,'lbann']]],
   ['generic_5fdata_5fstore',['generic_data_store',['../classlbann_1_1generic__data__store.html',1,'lbann']]],

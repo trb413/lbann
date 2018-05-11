@@ -5,6 +5,9 @@ var dir_a21641b66a36c02418a5501ab2e6062e =
     [ "kl_divergence.hpp", "kl__divergence_8hpp.html", [
       [ "kl_divergence", "classlbann_1_1kl__divergence.html", "classlbann_1_1kl__divergence" ]
     ] ],
+    [ "layer_term.hpp", "layer__term_8hpp.html", [
+      [ "layer_term", "classlbann_1_1layer__term.html", "classlbann_1_1layer__term" ]
+    ] ],
     [ "objective_function.hpp", "objective__function_8hpp.html", [
       [ "objective_function", "classlbann_1_1objective__function.html", "classlbann_1_1objective__function" ]
     ] ],

@@ -11,5 +11,6 @@ var classlbann_1_1imagenet__reader =
     [ "operator=", "classlbann_1_1imagenet__reader.html#a5ea15cc16aa679a2cb549b44eb77f323", null ],
     [ "replicate_processor", "classlbann_1_1imagenet__reader.html#a1b642b5eb01b209e72bdd8dfa139cafd", null ],
     [ "set_defaults", "classlbann_1_1imagenet__reader.html#ad1e108315d659509a3e166c2f8a4941f", null ],
+    [ "setup_data_store", "classlbann_1_1imagenet__reader.html#a17af38eff1c3aee001d263248b8406a1", null ],
     [ "m_pps", "classlbann_1_1imagenet__reader.html#a1e0d0ed4ac529de3e9f735512f5e3dd8", null ]
 ];

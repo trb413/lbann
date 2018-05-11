@@ -3,6 +3,8 @@ var searchData=
   ['data',['data',['../structc__hash__table.html#abfdd282e54441552086f78d30b959d60',1,'c_hash_table']]],
   ['data_5fseq_5fgenerator',['data_seq_generator',['../namespaceanonymous__namespace_02random_8cpp_03.html#ac1d3d0259f3e9c9b75e9701ae727d16e',1,'anonymous_namespace{random.cpp}']]],
   ['data_5fsize',['data_size',['../structlbann_1_1generic__data__reader_1_1packing__header.html#af894940b23cb11fac4f15faf5b1711f7',1,'lbann::generic_data_reader::packing_header']]],
+  ['data_5fstore_5fmerge_5ffeatures',['data_store_merge_features',['../classlbann_1_1data__store__csv.html#aa0d559b36d565dc679952ab68191b68d',1,'lbann::data_store_csv']]],
+  ['data_5fstore_5fmerge_5fsamples',['data_store_merge_samples',['../classlbann_1_1data__store__pilot2__molecular.html#a36aa0ef7fa75daf309b4350ebfdb94be',1,'lbann::data_store_pilot2_molecular']]],
   ['datasetrootdir',['DatasetRootDir',['../classlbann_1_1TrainingParams.html#a14bda5205da357abe30d7685735932dd',1,'lbann::TrainingParams']]],
   ['decay_5frate',['decay_rate',['../structlbann_1_1rmsprop_1_1packing__header.html#afcc77a62f3887d880c35d2481031df44',1,'lbann::rmsprop::packing_header']]],
   ['default_5fallreduce_5falgo',['default_allreduce_algo',['../classlbann_1_1lbann__comm.html#ac7731d6bcdb6775009467cf4138d4bab',1,'lbann::lbann_comm']]],

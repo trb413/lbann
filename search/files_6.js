@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['gaussian_2ehpp',['gaussian.hpp',['../gaussian_8hpp.html',1,'']]],
   ['generic_5fdata_5fstore_2ecpp',['generic_data_store.cpp',['../generic__data__store_8cpp.html',1,'']]],
   ['generic_5fdata_5fstore_2ehpp',['generic_data_store.hpp',['../generic__data__store_8hpp.html',1,'']]],
   ['generic_5finput_5flayer_2ehpp',['generic_input_layer.hpp',['../generic__input__layer_8hpp.html',1,'']]],

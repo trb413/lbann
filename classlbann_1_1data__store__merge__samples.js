@@ -8,5 +8,7 @@ var classlbann_1_1data__store__merge__samples =
     [ "get_data_buf", "classlbann_1_1data__store__merge__samples.html#a8b81d947c1f05c38b7f979ce7e3cef97", null ],
     [ "operator=", "classlbann_1_1data__store__merge__samples.html#a8723206ebe4ed829fbf968340ef71d8f", null ],
     [ "setup", "classlbann_1_1data__store__merge__samples.html#a9f7f027eab6bfb65dd8001939769f476", null ],
+    [ "m_my_minibatch_indices", "classlbann_1_1data__store__merge__samples.html#acd867c01d5139d47285f73ed80f3b0f4", null ],
+    [ "m_subsidiary_stores", "classlbann_1_1data__store__merge__samples.html#a8aa1a9abc41edf0cb1a9efeac5e366aa", null ],
     [ "m_win", "classlbann_1_1data__store__merge__samples.html#a8dafb907c605bb38e89ed3d91823f6f3", null ]
 ];

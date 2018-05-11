@@ -16,5 +16,6 @@ var classlbann_1_1data__reader__triplet =
     [ "operator=", "classlbann_1_1data__reader__triplet.html#a096c73a8b3d163faadfee3b9d14fc842", null ],
     [ "set_defaults", "classlbann_1_1data__reader__triplet.html#a88bc385a2d42e9f78a768ff496036843", null ],
     [ "set_input_params", "classlbann_1_1data__reader__triplet.html#a8172b4ac97d18b51814578a19a7f75c7", null ],
+    [ "setup_data_store", "classlbann_1_1data__reader__triplet.html#a2cd6fd46a7d2d90ccd754404683834c6", null ],
     [ "m_samples", "classlbann_1_1data__reader__triplet.html#a1f414c6d80f6e48fc91f98db0531f1f8", null ]
 ];

@@ -40,7 +40,10 @@ var dir_0b16036c62e9063447de1e5debde0af9 =
     [ "data_reader_imagenet_single.hpp", "data__reader__imagenet__single_8hpp.html", [
       [ "imagenet_reader_single", "classlbann_1_1imagenet__reader__single.html", "classlbann_1_1imagenet__reader__single" ]
     ] ],
-    [ "data_reader_jag.hpp", "data__reader__jag_8hpp.html", "data__reader__jag_8hpp" ],
+    [ "data_reader_jag.hpp", "data__reader__jag_8hpp.html", [
+      [ "data_reader_jag", "classlbann_1_1data__reader__jag.html", "classlbann_1_1data__reader__jag" ]
+    ] ],
+    [ "data_reader_jag_conduit.hpp", "data__reader__jag__conduit_8hpp.html", null ],
     [ "data_reader_merge_features.hpp", "data__reader__merge__features_8hpp.html", [
       [ "data_reader_merge_features", "classlbann_1_1data__reader__merge__features.html", "classlbann_1_1data__reader__merge__features" ]
     ] ],

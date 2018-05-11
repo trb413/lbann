@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-244-g9bd4aac-ci362362741</span>
+   &#160;<span id="projectnumber">v0.93-606-gca499c9-ci377629231</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -139,7 +139,7 @@ $(document).ready(function(){initNavTree('image__preprocessor_8cpp_source.html',
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  m_shear_range(0.0f),</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  m_mean_subtraction(false),</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  m_unit_variance(false),</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  m_scale(true),  <span class="comment">// We always did scaling by default.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  m_scale(<a class="code" href="namespacelbann.html#aa1002432debb16a265bccfa035b0c582">true</a>),  <span class="comment">// We always did scaling by default.</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  m_z_score(false),</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  m_noise_factor(0.0f) {</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
@@ -446,6 +446,7 @@ $(document).ready(function(){initNavTree('image__preprocessor_8cpp_source.html',
 <div class="ttc" id="classlbann_1_1lbann__exception_html"><div class="ttname"><a href="classlbann_1_1lbann__exception.html">lbann::lbann_exception</a></div><div class="ttdef"><b>Definition:</b> <a href="exception_8hpp_source.html#l00040">exception.hpp:40</a></div></div>
 <div class="ttc" id="statistics_8hpp_html"><div class="ttname"><a href="statistics_8hpp.html">statistics.hpp</a></div></div>
 <div class="ttc" id="image__preprocessor_8hpp_html"><div class="ttname"><a href="image__preprocessor_8hpp.html">image_preprocessor.hpp</a></div></div>
+<div class="ttc" id="namespacelbann_html_aa1002432debb16a265bccfa035b0c582"><div class="ttname"><a href="namespacelbann.html#aa1002432debb16a265bccfa035b0c582">lbann::true</a></div><div class="ttdeci">return true</div><div class="ttdef"><b>Definition:</b> <a href="random_8cpp_source.html#l00160">random.cpp:160</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__image__preprocessor_html_a7dc609e33febdc7fc29bdc9270594bea"><div class="ttname"><a href="classlbann_1_1lbann__image__preprocessor.html#a7dc609e33febdc7fc29bdc9270594bea">lbann::lbann_image_preprocessor::cv_pixels</a></div><div class="ttdeci">cv::Mat cv_pixels(const Mat &amp;pixels, unsigned imheight, unsigned imwidth, unsigned num_channels)</div><div class="ttdef"><b>Definition:</b> <a href="image__preprocessor_8cpp_source.html#l00240">image_preprocessor.cpp:240</a></div></div>
 <div class="ttc" id="exception_8hpp_html"><div class="ttname"><a href="exception_8hpp.html">exception.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__image__preprocessor_html_a7cfc687cce450403c7b46460f4d08d69"><div class="ttname"><a href="classlbann_1_1lbann__image__preprocessor.html#a7cfc687cce450403c7b46460f4d08d69">lbann::lbann_image_preprocessor::m_vertical_flip</a></div><div class="ttdeci">bool m_vertical_flip</div><div class="ttdef"><b>Definition:</b> <a href="image__preprocessor_8hpp_source.html#l00156">image_preprocessor.hpp:156</a></div></div>
@@ -456,7 +457,7 @@ $(document).ready(function(){initNavTree('image__preprocessor_8cpp_source.html',
 <div class="ttc" id="classlbann_1_1lbann__image__preprocessor_html_a12d9f7056a5e68185ea0e85e14c17bcf"><div class="ttname"><a href="classlbann_1_1lbann__image__preprocessor.html#a12d9f7056a5e68185ea0e85e14c17bcf">lbann::lbann_image_preprocessor::flip</a></div><div class="ttdeci">void flip(cv::Mat &amp;sqpixels, int flip_flag)</div><div class="ttdef"><b>Definition:</b> <a href="image__preprocessor_8cpp_source.html#l00299">image_preprocessor.cpp:299</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__image__preprocessor_html_a3c4f4cc5c90233696566a35a62a1708c"><div class="ttname"><a href="classlbann_1_1lbann__image__preprocessor.html#a3c4f4cc5c90233696566a35a62a1708c">lbann::lbann_image_preprocessor::internal_save_image</a></div><div class="ttdeci">void internal_save_image(Mat &amp;pixels, const std::string filename, unsigned imheight, unsigned imwidth, unsigned num_channels, bool do_scale)</div><div class="ttdef"><b>Definition:</b> <a href="image__preprocessor_8cpp_source.html#l00320">image_preprocessor.cpp:320</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__image__preprocessor_html_aa7a8926d0544100f7d3caa9289d94826"><div class="ttname"><a href="classlbann_1_1lbann__image__preprocessor.html#aa7a8926d0544100f7d3caa9289d94826">lbann::lbann_image_preprocessor::unit_scale</a></div><div class="ttdeci">void unit_scale(Mat &amp;pixels, unsigned num_channels)</div><div class="ttdef"><b>Definition:</b> <a href="image__preprocessor_8cpp_source.html#l00191">image_preprocessor.cpp:191</a></div></div>
-<div class="ttc" id="namespacelbann_html_a4fea7ba21017b49d1e34394b4c20c764"><div class="ttname"><a href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764">lbann::get_generator</a></div><div class="ttdeci">rng_gen &amp; get_generator()</div><div class="ttdef"><b>Definition:</b> <a href="random_8cpp_source.html#l00060">random.cpp:60</a></div></div>
+<div class="ttc" id="namespacelbann_html_a4fea7ba21017b49d1e34394b4c20c764"><div class="ttname"><a href="namespacelbann.html#a4fea7ba21017b49d1e34394b4c20c764">lbann::get_generator</a></div><div class="ttdeci">rng_gen &amp; get_generator()</div><div class="ttdef"><b>Definition:</b> <a href="random_8cpp_source.html#l00061">random.cpp:61</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__image__preprocessor_html_aece5b572d0a2fe123cc66412d7a5c91e"><div class="ttname"><a href="classlbann_1_1lbann__image__preprocessor.html#aece5b572d0a2fe123cc66412d7a5c91e">lbann::lbann_image_preprocessor::pixel_noise</a></div><div class="ttdeci">void pixel_noise(Mat &amp;pixels)</div><div class="ttdef"><b>Definition:</b> <a href="image__preprocessor_8cpp_source.html#l00199">image_preprocessor.cpp:199</a></div></div>
 <div class="ttc" id="namespaceanonymous__namespace_02image__preprocessor_8cpp_03_html_a9624405339d16214b745f28f39979c6d"><div class="ttname"><a href="namespaceanonymous__namespace_02image__preprocessor_8cpp_03.html#a9624405339d16214b745f28f39979c6d">anonymous_namespace{image_preprocessor.cpp}::pi</a></div><div class="ttdeci">const float pi</div><div class="ttdef"><b>Definition:</b> <a href="image__preprocessor_8cpp_source.html#l00036">image_preprocessor.cpp:36</a></div></div>
 <div class="ttc" id="classlbann_1_1lbann__image__preprocessor_html_a02cfd4d8c26a317540b587eb52cef0d5"><div class="ttname"><a href="classlbann_1_1lbann__image__preprocessor.html#a02cfd4d8c26a317540b587eb52cef0d5">lbann::lbann_image_preprocessor::z_score</a></div><div class="ttdeci">void z_score(bool b)</div><div class="ttdef"><b>Definition:</b> <a href="image__preprocessor_8hpp_source.html#l00103">image_preprocessor.hpp:103</a></div></div>
@@ -466,7 +467,7 @@ $(document).ready(function(){initNavTree('image__preprocessor_8cpp_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_4fd9b0f9a8d3454cc4920413ede2913f.html">data_readers</a></li><li class="navelem"><a class="el" href="image__preprocessor_8cpp.html">image_preprocessor.cpp</a></li>
-    <li class="footer">Generated on Wed Apr 4 2018 21:59:03 for LBANN by
+    <li class="footer">Generated on Fri May 11 2018 08:29:58 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

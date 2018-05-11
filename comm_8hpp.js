@@ -5,5 +5,6 @@ var comm_8hpp =
     [ "lbann_comm", "classlbann_1_1lbann__comm.html", "classlbann_1_1lbann__comm" ],
     [ "allreduce_options", "structlbann_1_1lbann__comm_1_1allreduce__options.html", "structlbann_1_1lbann__comm_1_1allreduce__options" ],
     [ "mpi_backend", "comm_8hpp.html#a8a69c2fac7e1117883fff1903c2232ce", null ],
-    [ "nccl_backend", "comm_8hpp.html#acac3d42323b313e89a60a27f00554661", null ]
+    [ "nccl_backend", "comm_8hpp.html#acac3d42323b313e89a60a27f00554661", null ],
+    [ "lbann_comm::broadcast< std::string >", "comm_8hpp.html#a3b310c3adc7727795a0a583b08ea9a75", null ]
 ];

@@ -23,6 +23,7 @@ var classlbann_1_1pilot2__molecular__reader =
     [ "load", "classlbann_1_1pilot2__molecular__reader.html#a1b5160021a532f5f19897bd2250e3a46", null ],
     [ "operator=", "classlbann_1_1pilot2__molecular__reader.html#a12df3df74aa901cb7304903ad99f5df6", null ],
     [ "scale_data", "classlbann_1_1pilot2__molecular__reader.html#add998998fa16444e4509b08f79b291da", null ],
+    [ "setup_data_store", "classlbann_1_1pilot2__molecular__reader.html#a0c18335afe5625a7aa8b8275392c0317", null ],
     [ "bond_len_scale_factor", "classlbann_1_1pilot2__molecular__reader.html#aa300abb1c1b72776c129487e57a7b70f", null ],
     [ "m_features", "classlbann_1_1pilot2__molecular__reader.html#a6b273890ecd01754e21be87da68b57bc", null ],
     [ "m_max_neighborhood", "classlbann_1_1pilot2__molecular__reader.html#a0c9e71035cf47191002d1b164d056f50", null ],

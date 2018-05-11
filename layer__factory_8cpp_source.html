@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">LBANN
-   &#160;<span id="projectnumber">v0.93-244-g9bd4aac-ci362362741</span>
+   &#160;<span id="projectnumber">v0.93-606-gca499c9-ci377629231</span>
    </div>
    <div id="projectbrief">LivermoreBigArtificialNeuralNetworkToolkit</div>
   </td>
@@ -290,162 +290,204 @@ $(document).ready(function(){initNavTree('layer__factory_8cpp_source.html','');}
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; dims = parse_list&lt;int&gt;(params.num_neurons());</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1constant__layer.html">constant_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, params.value(), dims, cudnn);</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  }</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_noise()) {</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_layer.noise();</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; dims = parse_list&lt;int&gt;(params.num_neurons());</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1noise__layer.html">noise_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, dims, params.noise_factor(), cudnn);</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  }</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_pooling()) {</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_layer.pooling();</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; mode_str = params.pool_mode();</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <a class="code" href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39">pool_mode</a> mode = <a class="code" href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39afedb2d84cafe20862cb4399751a8a7e3">pool_mode::invalid</a>;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">if</span> (mode_str == <span class="stringliteral">&quot;max&quot;</span> )            { mode = <a class="code" href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39a2ffe4e77325d9a7152f7086ea7aa5114">pool_mode::max</a>; }</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordflow">if</span> (mode_str == <span class="stringliteral">&quot;average&quot;</span> )        { mode = <a class="code" href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39a6927a3a7218a3195858411433ec20a21">pool_mode::average</a>; }</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keywordflow">if</span> (mode_str == <span class="stringliteral">&quot;average_no_pad&quot;</span> ) { mode = <a class="code" href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39ad91c68878ae16f6dfcd4e1551c33cdd1">pool_mode::average_no_pad</a>; }</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">if</span> (params.has_vectors()) {</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; dims = parse_list&lt;int&gt;(params.pool_dims());</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; pads = parse_list&lt;int&gt;(params.pool_pads());</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; strides = parse_list&lt;int&gt;(params.pool_strides());</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;      <span class="keywordflow">if</span> (layout == <a class="code" href="base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>) {</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1pooling__layer.html">pooling_layer&lt;data_layout::DATA_PARALLEL&gt;</a>(</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                     <a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, dims.size(), dims, pads, strides, mode, cudnn</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                   );</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;      }</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; num_dims = params.num_dims();</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; dim = params.pool_dims_i();</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; pad = params.pool_pads_i();</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; stride = params.pool_strides_i();</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;      <span class="keywordflow">if</span> (layout == <a class="code" href="base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>) {</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1pooling__layer.html">pooling_layer&lt;data_layout::DATA_PARALLEL&gt;</a>(</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                     <a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, num_dims, dim, pad, stride, mode, cudnn</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                   );</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      }</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    }</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  }</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_unpooling()) {</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">if</span> (layout == <a class="code" href="base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>) {</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1unpooling__layer.html">unpooling_layer&lt;data_layout::DATA_PARALLEL&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  }</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="comment">// Regularizer layers</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_batch_normalization()) {</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_layer.batch_normalization();</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordflow">if</span> (layout == <a class="code" href="base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>) {</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1batch__normalization.html">batch_normalization&lt;data_layout::DATA_PARALLEL&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>,</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                                                                 params.decay(),</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                                                                 params.epsilon(),</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                                                                 params.global_stats(),</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                                                                 cudnn);</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    }</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;  }</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_dropout()) {</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_layer.dropout();</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1dropout.html">dropout&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, params.keep_prob());</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  }</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_local_response_normalization()) {</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_layer.local_response_normalization();</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordflow">if</span> (layout == <a class="code" href="base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>) {</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1local__response__normalization__layer.html">local_response_normalization_layer&lt;data_layout::DATA_PARALLEL&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>,</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                                                                                params.window_width(),</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                                                                                params.lrn_alpha(),</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                                                                                params.lrn_beta(),</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                                                                                params.lrn_k(),</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                                                                                cudnn);</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    }</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  }</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_selu_dropout()) {</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_layer.selu_dropout();</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; keep_prob = params.keep_prob();</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; alpha = params.alpha();</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; scale = params.scale();</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">if</span> (alpha != 0.0 &amp;&amp; scale != 0.0) {</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1selu__dropout.html">selu_dropout&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, keep_prob, alpha, scale);</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1selu__dropout.html">selu_dropout&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, keep_prob);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    }</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_gaussian()) {</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_layer.gaussian();</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; dims = parse_list&lt;int&gt;(params.neuron_dims());</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1gaussian__layer.html">gaussian_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>,</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                                      dims,</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                                      params.mean(),</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                                      params.stdev(),</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                                      cudnn);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  }</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_bernoulli()) {</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_layer.bernoulli();</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; dims = parse_list&lt;int&gt;(params.neuron_dims());</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1bernoulli__layer.html">bernoulli_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>,</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                                       dims,</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                                       params.prob(),</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                                       cudnn);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  }</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_uniform()) {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_layer.uniform();</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; dims = parse_list&lt;int&gt;(params.neuron_dims());</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1uniform__layer.html">uniform_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>,</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                                     dims,</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                                     params.min(),</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                                     params.max(),</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                                     cudnn);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_zero()) {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_layer.zero();</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1zero__layer.html">zero_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, params.first_half(), params.second_half(), cudnn);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_pooling()) {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_layer.pooling();</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; mode_str = params.pool_mode();</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <a class="code" href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39">pool_mode</a> mode = <a class="code" href="namespacelbann.html#afb40728fd81916c37e28ea57176ef688afedb2d84cafe20862cb4399751a8a7e3">pool_mode::invalid</a>;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">if</span> (mode_str == <span class="stringliteral">&quot;max&quot;</span> )            { mode = <a class="code" href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39a2ffe4e77325d9a7152f7086ea7aa5114">pool_mode::max</a>; }</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordflow">if</span> (mode_str == <span class="stringliteral">&quot;average&quot;</span> )        { mode = <a class="code" href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39a6927a3a7218a3195858411433ec20a21">pool_mode::average</a>; }</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">if</span> (mode_str == <span class="stringliteral">&quot;average_no_pad&quot;</span> ) { mode = <a class="code" href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39ad91c68878ae16f6dfcd4e1551c33cdd1">pool_mode::average_no_pad</a>; }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">if</span> (params.has_vectors()) {</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; dims = parse_list&lt;int&gt;(params.pool_dims());</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; pads = parse_list&lt;int&gt;(params.pool_pads());</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; strides = parse_list&lt;int&gt;(params.pool_strides());</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      <span class="keywordflow">if</span> (layout == <a class="code" href="base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>) {</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1pooling__layer.html">pooling_layer&lt;data_layout::DATA_PARALLEL&gt;</a>(</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                     <a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, dims.size(), dims, pads, strides, mode, cudnn</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                   );</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      }</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; num_dims = params.num_dims();</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; dim = params.pool_dims_i();</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; pad = params.pool_pads_i();</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; stride = params.pool_strides_i();</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      <span class="keywordflow">if</span> (layout == <a class="code" href="base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>) {</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1pooling__layer.html">pooling_layer&lt;data_layout::DATA_PARALLEL&gt;</a>(</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                     <a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, num_dims, dim, pad, stride, mode, cudnn</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                   );</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      }</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    }</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  }</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_unpooling()) {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordflow">if</span> (layout == <a class="code" href="base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>) {</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1unpooling__layer.html">unpooling_layer&lt;data_layout::DATA_PARALLEL&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    }</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_reduction()) {</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_layer.reduction();</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; mode_str = params.mode();</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <a class="code" href="namespacelbann.html#a5975e1fb530a267728bfb01dc5c1be9b">reduction_mode</a> mode = <a class="code" href="namespacelbann.html#a5975e1fb530a267728bfb01dc5c1be9baccc0377a8afbf50e7094f5c23a8af223">reduction_mode::INVALID</a>;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">if</span> (mode_str == <span class="stringliteral">&quot;sum&quot;</span> || mode_str.empty()) { mode = <a class="code" href="namespacelbann.html#a5975e1fb530a267728bfb01dc5c1be9ba6970bdc2201030b9c03fbdcf3973858a">reduction_mode::SUM</a>; }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordflow">if</span> (mode_str == <span class="stringliteral">&quot;average&quot;</span>) { mode = <a class="code" href="namespacelbann.html#a5975e1fb530a267728bfb01dc5c1be9ba16de38737a9f8366e9b2042b4e9b6290">reduction_mode::AVERAGE</a>; }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordflow">if</span> (layout == <a class="code" href="base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>) {</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1reduction__layer.html">reduction_layer&lt;data_layout::DATA_PARALLEL&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, mode, cudnn);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    }</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  }</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_evaluation()) {</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1evaluation__layer.html">evaluation_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, cudnn);</div>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;  }</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <span class="comment">// Activation layers</span></div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_softmax()) {</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1softmax__layer.html">softmax_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, cudnn);</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;  }</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_relu()) {</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1relu__layer.html">relu_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, cudnn);</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  }</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_sigmoid()) {</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1sigmoid__layer.html">sigmoid_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, cudnn);</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  }</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_tanh()) {</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1tanh__layer.html">tanh_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  }</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_atan()) {</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1atan__layer.html">atan_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  }</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_exponential()) {</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1exponential__layer.html">exponential_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  }</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_identity()) {</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1identity__layer.html">identity_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  }</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_bent_identity()) {</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1bent__identity__layer.html">bent_identity_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  }</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_softplus()) {</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1softplus__layer.html">softplus_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  }</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_smooth_relu()) {</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1smooth__relu__layer.html">smooth_relu_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  }</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_leaky_relu()) {</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1leaky__relu__layer.html">leaky_relu_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;  }</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_swish()) {</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1swish__layer.html">swish_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <span class="comment">// Regularizer layers</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_batch_normalization()) {</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_layer.batch_normalization();</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordflow">if</span> (layout == <a class="code" href="base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>) {</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1batch__normalization.html">batch_normalization&lt;data_layout::DATA_PARALLEL&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>,</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                                                                 params.decay(),</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                                                                 params.epsilon(),</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                                                                 params.global_stats(),</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                                                                 cudnn);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    }</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  }</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_dropout()) {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_layer.dropout();</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1dropout.html">dropout&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, params.keep_prob(), cudnn);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;  }</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_local_response_normalization()) {</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_layer.local_response_normalization();</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordflow">if</span> (layout == <a class="code" href="base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a>) {</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1local__response__normalization__layer.html">local_response_normalization_layer&lt;data_layout::DATA_PARALLEL&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>,</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                                                                                params.window_width(),</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                                                                                params.lrn_alpha(),</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                                                                                params.lrn_beta(),</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                                                                                params.lrn_k(),</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                                                                                cudnn);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    }</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  }</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_selu_dropout()) {</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_layer.selu_dropout();</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; keep_prob = params.keep_prob();</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; alpha = params.alpha();</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; scale = params.scale();</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordflow">if</span> (alpha != 0.0 &amp;&amp; scale != 0.0) {</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1selu__dropout.html">selu_dropout&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, keep_prob, alpha, scale);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1selu__dropout.html">selu_dropout&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, keep_prob);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    }</div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  }</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_elu()) {</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_layer.elu();</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1elu__layer.html">elu_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, params.alpha());</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;  }</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_selu()) {</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_layer.selu();</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; alpha = params.alpha();</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; scale = params.scale();</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    <span class="keywordflow">if</span> (alpha != 0.0 &amp;&amp; scale != 0.0) {</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1selu__layer.html">selu_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, alpha, scale);</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1selu__layer.html">selu_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    }</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;  <span class="comment">// Activation layers</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_softmax()) {</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1softmax__layer.html">softmax_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, cudnn);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;  }</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_relu()) {</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1relu__layer.html">relu_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, cudnn);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;  }</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_sigmoid()) {</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1sigmoid__layer.html">sigmoid_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, cudnn);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;  }</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_tanh()) {</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1tanh__layer.html">tanh_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
 <div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;  }</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;  <span class="comment">// Throw exception if layer has not been constructed</span></div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  err &lt;&lt; <span class="stringliteral">&quot;could not construct layer &quot;</span> &lt;&lt; proto_layer.name();</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  <a class="code" href="base_8hpp.html#a80b1d707117e968a6951b7222e4b2b87">LBANN_ERROR</a>(err.str());</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;}</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="comment">// Template instantiation</span></div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="keyword">template</span> <a class="code" href="classlbann_1_1Layer.html">Layer</a>* construct_layer&lt;data_layout::DATA_PARALLEL&gt;(</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  <a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* <a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>,</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  std::map&lt;execution_mode, generic_data_reader*&gt;&amp; data_readers,</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  <span class="keywordtype">int</span> num_parallel_readers,</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;  <a class="code" href="classlbann_1_1cudnn_1_1cudnn__manager.html">cudnn::cudnn_manager</a>* cudnn,</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  <span class="keyword">const</span> lbann_data::Layer&amp; proto_layer</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;);</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;<span class="keyword">template</span> <a class="code" href="classlbann_1_1Layer.html">Layer</a>* construct_layer&lt;data_layout::MODEL_PARALLEL&gt;(</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  <a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* <a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>,</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  std::map&lt;execution_mode, generic_data_reader*&gt;&amp; data_readers,</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;  <span class="keywordtype">int</span> num_parallel_readers,</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  <a class="code" href="classlbann_1_1cudnn_1_1cudnn__manager.html">cudnn::cudnn_manager</a>* cudnn,</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  <span class="keyword">const</span> lbann_data::Layer&amp; proto_layer</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;);</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;} <span class="comment">// namespace proto</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;} <span class="comment">// namespace lbann</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_atan()) {</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1atan__layer.html">atan_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;  }</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_exponential()) {</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1exponential__layer.html">exponential_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;  }</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_identity()) {</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1identity__layer.html">identity_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;  }</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_bent_identity()) {</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1bent__identity__layer.html">bent_identity_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;  }</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_softplus()) {</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1softplus__layer.html">softplus_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;  }</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_smooth_relu()) {</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1smooth__relu__layer.html">smooth_relu_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  }</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_leaky_relu()) {</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1leaky__relu__layer.html">leaky_relu_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;  }</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_swish()) {</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1swish__layer.html">swish_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;  }</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_elu()) {</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_layer.elu();</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1elu__layer.html">elu_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, params.alpha());</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  }</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_selu()) {</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_layer.selu();</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; alpha = params.alpha();</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; scale = params.scale();</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordflow">if</span> (alpha != 0.0 &amp;&amp; scale != 0.0) {</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1selu__layer.html">selu_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, alpha, scale);</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1selu__layer.html">selu_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>);</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    }</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;  }</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  <span class="keywordflow">if</span> (proto_layer.has_power()) {</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; params = proto_layer.power();</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classlbann_1_1power__layer.html">power_layer&lt;layout&gt;</a>(<a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>, params.exponent());</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;  }</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;  <span class="comment">// Throw exception if layer has not been constructed</span></div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;  err &lt;&lt; <span class="stringliteral">&quot;could not construct layer &quot;</span> &lt;&lt; proto_layer.name();</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  <a class="code" href="base_8hpp.html#a80b1d707117e968a6951b7222e4b2b87">LBANN_ERROR</a>(err.str());</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;}</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;<span class="comment">// Template instantiation</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;<span class="keyword">template</span> <a class="code" href="classlbann_1_1Layer.html">Layer</a>* construct_layer&lt;data_layout::DATA_PARALLEL&gt;(</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  <a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* <a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>,</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  std::map&lt;execution_mode, generic_data_reader*&gt;&amp; data_readers,</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;  <span class="keywordtype">int</span> num_parallel_readers,</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;  <a class="code" href="classlbann_1_1cudnn_1_1cudnn__manager.html">cudnn::cudnn_manager</a>* cudnn,</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;  <span class="keyword">const</span> lbann_data::Layer&amp; proto_layer</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;<span class="keyword">template</span> <a class="code" href="classlbann_1_1Layer.html">Layer</a>* construct_layer&lt;data_layout::MODEL_PARALLEL&gt;(</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  <a class="code" href="classlbann_1_1lbann__comm.html">lbann_comm</a>* <a class="code" href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a>,</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  std::map&lt;execution_mode, generic_data_reader*&gt;&amp; data_readers,</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;  <span class="keywordtype">int</span> num_parallel_readers,</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;  <a class="code" href="classlbann_1_1cudnn_1_1cudnn__manager.html">cudnn::cudnn_manager</a>* cudnn,</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;  <span class="keyword">const</span> lbann_data::Layer&amp; proto_layer</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;);</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;} <span class="comment">// namespace proto</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;} <span class="comment">// namespace lbann</span></div>
 <div class="ttc" id="classlbann_1_1selu__dropout_html"><div class="ttname"><a href="classlbann_1_1selu__dropout.html">lbann::selu_dropout</a></div><div class="ttdef"><b>Definition:</b> <a href="selu__dropout_8hpp_source.html#l00041">selu_dropout.hpp:41</a></div></div>
-<div class="ttc" id="classlbann_1_1concatenation__layer_html"><div class="ttname"><a href="classlbann_1_1concatenation__layer.html">lbann::concatenation_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="concatenation_8hpp_source.html#l00039">concatenation.hpp:39</a></div></div>
+<div class="ttc" id="classlbann_1_1concatenation__layer_html"><div class="ttname"><a href="classlbann_1_1concatenation__layer.html">lbann::concatenation_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="concatenation_8hpp_source.html#l00040">concatenation.hpp:40</a></div></div>
 <div class="ttc" id="classlbann_1_1split__layer_html"><div class="ttname"><a href="classlbann_1_1split__layer.html">lbann::split_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="split_8hpp_source.html#l00041">split.hpp:41</a></div></div>
 <div class="ttc" id="classlbann_1_1exponential__layer_html"><div class="ttname"><a href="classlbann_1_1exponential__layer.html">lbann::exponential_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="exponential_8hpp_source.html#l00036">exponential.hpp:36</a></div></div>
 <div class="ttc" id="classlbann_1_1generic__input__layer_html_a9dfe8b9afaebc7a5bcb0177ee2ab428f"><div class="ttname"><a href="classlbann_1_1generic__input__layer.html#a9dfe8b9afaebc7a5bcb0177ee2ab428f">lbann::generic_input_layer::io_buffer</a></div><div class="ttdeci">generic_io_buffer * io_buffer</div><div class="ttdef"><b>Definition:</b> <a href="generic__input__layer_8hpp_source.html#l00042">generic_input_layer.hpp:42</a></div></div>
@@ -457,41 +499,51 @@ $(document).ready(function(){initNavTree('layer__factory_8cpp_source.html','');}
 <div class="ttc" id="base_8hpp_html_ac47a6ee5278a53898222a48639a2bf39a2ffe4e77325d9a7152f7086ea7aa5114"><div class="ttname"><a href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39a2ffe4e77325d9a7152f7086ea7aa5114">pool_mode::max</a></div></div>
 <div class="ttc" id="base_8hpp_html_a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0"><div class="ttname"><a href="base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dbac94d7b0e44ab8bdcdad694a673cdeae0">data_layout::MODEL_PARALLEL</a></div></div>
 <div class="ttc" id="classlbann_1_1input__layer_html"><div class="ttname"><a href="classlbann_1_1input__layer.html">lbann::input_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="input__layer_8hpp_source.html#l00041">input_layer.hpp:41</a></div></div>
+<div class="ttc" id="classlbann_1_1uniform__layer_html"><div class="ttname"><a href="classlbann_1_1uniform__layer.html">lbann::uniform_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="uniform_8hpp_source.html#l00040">uniform.hpp:40</a></div></div>
 <div class="ttc" id="base_8hpp_html_a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638"><div class="ttname"><a href="base_8hpp.html#a786677cbfb3f5677b4d84f3056eb08dba37d2a3465f7cbf4ab60f4e79944d0638">data_layout::DATA_PARALLEL</a></div></div>
 <div class="ttc" id="namespacelbann_1_1proto_html_a3195a6ac983e8d1aa683f2a5a3f669a4"><div class="ttname"><a href="namespacelbann_1_1proto.html#a3195a6ac983e8d1aa683f2a5a3f669a4">lbann::proto::construct_layer</a></div><div class="ttdeci">Layer * construct_layer(lbann_comm *comm, std::map&lt; execution_mode, generic_data_reader * &gt; &amp;data_readers, int num_parallel_readers, cudnn::cudnn_manager *cudnn, const lbann_data::Layer &amp;proto_layer)</div><div class="ttdef"><b>Definition:</b> <a href="layer__factory_8cpp_source.html#l00033">layer_factory.cpp:33</a></div></div>
-<div class="ttc" id="classlbann_1_1pooling__layer_html"><div class="ttname"><a href="classlbann_1_1pooling__layer.html">lbann::pooling_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="pooling_8hpp_source.html#l00047">pooling.hpp:47</a></div></div>
+<div class="ttc" id="classlbann_1_1pooling__layer_html"><div class="ttname"><a href="classlbann_1_1pooling__layer.html">lbann::pooling_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="pooling_8hpp_source.html#l00045">pooling.hpp:45</a></div></div>
+<div class="ttc" id="classlbann_1_1power__layer_html"><div class="ttname"><a href="classlbann_1_1power__layer.html">lbann::power_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="power_8hpp_source.html#l00036">power.hpp:36</a></div></div>
 <div class="ttc" id="classlbann_1_1identity__layer_html"><div class="ttname"><a href="classlbann_1_1identity__layer.html">lbann::identity_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="identity_8hpp_source.html#l00036">identity.hpp:36</a></div></div>
 <div class="ttc" id="base_8hpp_html_a80b1d707117e968a6951b7222e4b2b87"><div class="ttname"><a href="base_8hpp.html#a80b1d707117e968a6951b7222e4b2b87">LBANN_ERROR</a></div><div class="ttdeci">#define LBANN_ERROR(message)</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00154">base.hpp:154</a></div></div>
-<div class="ttc" id="classlbann_1_1lbann__comm_html"><div class="ttname"><a href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a></div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00089">comm.hpp:89</a></div></div>
+<div class="ttc" id="classlbann_1_1lbann__comm_html"><div class="ttname"><a href="classlbann_1_1lbann__comm.html">lbann::lbann_comm</a></div><div class="ttdef"><b>Definition:</b> <a href="comm_8hpp_source.html#l00091">comm.hpp:91</a></div></div>
 <div class="ttc" id="classlbann_1_1softmax__layer_html"><div class="ttname"><a href="classlbann_1_1softmax__layer.html">lbann::softmax_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="softmax_8hpp_source.html#l00065">softmax.hpp:65</a></div></div>
-<div class="ttc" id="classlbann_1_1Layer_html"><div class="ttname"><a href="classlbann_1_1Layer.html">lbann::Layer</a></div><div class="ttdef"><b>Definition:</b> <a href="layer_8hpp_source.html#l00067">layer.hpp:67</a></div></div>
+<div class="ttc" id="classlbann_1_1Layer_html"><div class="ttname"><a href="classlbann_1_1Layer.html">lbann::Layer</a></div><div class="ttdef"><b>Definition:</b> <a href="layer_8hpp_source.html#l00062">layer.hpp:62</a></div></div>
 <div class="ttc" id="classlbann_1_1leaky__relu__layer_html"><div class="ttname"><a href="classlbann_1_1leaky__relu__layer.html">lbann::leaky_relu_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="leaky__relu_8hpp_source.html#l00042">leaky_relu.hpp:42</a></div></div>
 <div class="ttc" id="classlbann_1_1selu__layer_html"><div class="ttname"><a href="classlbann_1_1selu__layer.html">lbann::selu_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="selu_8hpp_source.html#l00043">selu.hpp:43</a></div></div>
+<div class="ttc" id="namespacelbann_html_a5975e1fb530a267728bfb01dc5c1be9baccc0377a8afbf50e7094f5c23a8af223"><div class="ttname"><a href="namespacelbann.html#a5975e1fb530a267728bfb01dc5c1be9baccc0377a8afbf50e7094f5c23a8af223">lbann::reduction_mode::INVALID</a></div></div>
 <div class="ttc" id="classlbann_1_1tanh__layer_html"><div class="ttname"><a href="classlbann_1_1tanh__layer.html">lbann::tanh_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="tanh_8hpp_source.html#l00036">tanh.hpp:36</a></div></div>
-<div class="ttc" id="base_8hpp_html_ac47a6ee5278a53898222a48639a2bf39afedb2d84cafe20862cb4399751a8a7e3"><div class="ttname"><a href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39afedb2d84cafe20862cb4399751a8a7e3">pool_mode::invalid</a></div></div>
 <div class="ttc" id="classlbann_1_1bent__identity__layer_html"><div class="ttname"><a href="classlbann_1_1bent__identity__layer.html">lbann::bent_identity_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="bent__identity_8hpp_source.html#l00038">bent_identity.hpp:38</a></div></div>
+<div class="ttc" id="classlbann_1_1evaluation__layer_html"><div class="ttname"><a href="classlbann_1_1evaluation__layer.html">lbann::evaluation_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="evaluation_8hpp_source.html#l00039">evaluation.hpp:39</a></div></div>
+<div class="ttc" id="classlbann_1_1zero__layer_html"><div class="ttname"><a href="classlbann_1_1zero__layer.html">lbann::zero_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="zero_8hpp_source.html#l00041">zero.hpp:41</a></div></div>
 <div class="ttc" id="file__io_8cpp_html_ab048c6f9fcbcfaa57ce68b00263dbebe"><div class="ttname"><a href="file__io_8cpp.html#ab048c6f9fcbcfaa57ce68b00263dbebe">comm</a></div><div class="ttdeci">static MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> <a href="file__io_8cpp_source.html#l00044">file_io.cpp:44</a></div></div>
 <div class="ttc" id="base_8hpp_html_ac47a6ee5278a53898222a48639a2bf39a6927a3a7218a3195858411433ec20a21"><div class="ttname"><a href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39a6927a3a7218a3195858411433ec20a21">pool_mode::average</a></div></div>
 <div class="ttc" id="classlbann_1_1sum__layer_html"><div class="ttname"><a href="classlbann_1_1sum__layer.html">lbann::sum_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="sum_8hpp_source.html#l00043">sum.hpp:43</a></div></div>
-<div class="ttc" id="classlbann_1_1slice__layer_html"><div class="ttname"><a href="classlbann_1_1slice__layer.html">lbann::slice_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="slice_8hpp_source.html#l00039">slice.hpp:39</a></div></div>
+<div class="ttc" id="classlbann_1_1slice__layer_html"><div class="ttname"><a href="classlbann_1_1slice__layer.html">lbann::slice_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="slice_8hpp_source.html#l00040">slice.hpp:40</a></div></div>
 <div class="ttc" id="classlbann_1_1softplus__layer_html"><div class="ttname"><a href="classlbann_1_1softplus__layer.html">lbann::softplus_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="softplus_8hpp_source.html#l00039">softplus.hpp:39</a></div></div>
+<div class="ttc" id="namespacelbann_html_a5975e1fb530a267728bfb01dc5c1be9ba6970bdc2201030b9c03fbdcf3973858a"><div class="ttname"><a href="namespacelbann.html#a5975e1fb530a267728bfb01dc5c1be9ba6970bdc2201030b9c03fbdcf3973858a">lbann::reduction_mode::SUM</a></div></div>
 <div class="ttc" id="classlbann_1_1sigmoid__layer_html"><div class="ttname"><a href="classlbann_1_1sigmoid__layer.html">lbann::sigmoid_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="sigmoid_8hpp_source.html#l00064">sigmoid.hpp:64</a></div></div>
+<div class="ttc" id="classlbann_1_1bernoulli__layer_html"><div class="ttname"><a href="classlbann_1_1bernoulli__layer.html">lbann::bernoulli_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="bernoulli_8hpp_source.html#l00039">bernoulli.hpp:39</a></div></div>
+<div class="ttc" id="classlbann_1_1gaussian__layer_html"><div class="ttname"><a href="classlbann_1_1gaussian__layer.html">lbann::gaussian_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="gaussian_8hpp_source.html#l00040">gaussian.hpp:40</a></div></div>
 <div class="ttc" id="classlbann_1_1smooth__relu__layer_html"><div class="ttname"><a href="classlbann_1_1smooth__relu__layer.html">lbann::smooth_relu_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="smooth__relu_8hpp_source.html#l00039">smooth_relu.hpp:39</a></div></div>
+<div class="ttc" id="namespacelbann_html_a5975e1fb530a267728bfb01dc5c1be9b"><div class="ttname"><a href="namespacelbann.html#a5975e1fb530a267728bfb01dc5c1be9b">lbann::reduction_mode</a></div><div class="ttdeci">reduction_mode</div><div class="ttdef"><b>Definition:</b> <a href="reduction_8hpp_source.html#l00035">reduction.hpp:35</a></div></div>
 <div class="ttc" id="classlbann_1_1reconstruction__layer_html"><div class="ttname"><a href="classlbann_1_1reconstruction__layer.html">lbann::reconstruction_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="reconstruction_8hpp_source.html#l00038">reconstruction.hpp:38</a></div></div>
 <div class="ttc" id="base_8hpp_html_a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214"><div class="ttname"><a href="base_8hpp.html#a2781a159088df64ed7d47cc91c4dc0a8ac185ddac8b5a8f5aa23c5b80bc12d214">execution_mode::training</a></div></div>
-<div class="ttc" id="classlbann_1_1convolution__layer_html"><div class="ttname"><a href="classlbann_1_1convolution__layer.html">lbann::convolution_layer</a></div><div class="ttdoc">Convolution layer. </div><div class="ttdef"><b>Definition:</b> <a href="convolution_8hpp_source.html#l00046">convolution.hpp:46</a></div></div>
+<div class="ttc" id="classlbann_1_1reduction__layer_html"><div class="ttname"><a href="classlbann_1_1reduction__layer.html">lbann::reduction_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="reduction_8hpp_source.html#l00039">reduction.hpp:39</a></div></div>
+<div class="ttc" id="classlbann_1_1convolution__layer_html"><div class="ttname"><a href="classlbann_1_1convolution__layer.html">lbann::convolution_layer</a></div><div class="ttdoc">Convolution layer. </div><div class="ttdef"><b>Definition:</b> <a href="convolution_8hpp_source.html#l00042">convolution.hpp:42</a></div></div>
 <div class="ttc" id="classlbann_1_1generic__target__layer_html_a26376bcc04f9c8ec35ff99bd71de43d9"><div class="ttname"><a href="classlbann_1_1generic__target__layer.html#a26376bcc04f9c8ec35ff99bd71de43d9">lbann::generic_target_layer::get_linearized_data_size</a></div><div class="ttdeci">long get_linearized_data_size() const override</div><div class="ttdef"><b>Definition:</b> <a href="generic__target__layer_8hpp_source.html#l00262">generic_target_layer.hpp:262</a></div></div>
 <div class="ttc" id="classlbann_1_1constant__layer_html"><div class="ttname"><a href="classlbann_1_1constant__layer.html">lbann::constant_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="constant_8hpp_source.html#l00036">constant.hpp:36</a></div></div>
 <div class="ttc" id="classlbann_1_1dropout_html"><div class="ttname"><a href="classlbann_1_1dropout.html">lbann::dropout</a></div><div class="ttdef"><b>Definition:</b> <a href="dropout_8hpp_source.html#l00045">dropout.hpp:45</a></div></div>
 <div class="ttc" id="classlbann_1_1elu__layer_html"><div class="ttname"><a href="classlbann_1_1elu__layer.html">lbann::elu_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="elu_8hpp_source.html#l00044">elu.hpp:44</a></div></div>
-<div class="ttc" id="classlbann_1_1noise__layer_html"><div class="ttname"><a href="classlbann_1_1noise__layer.html">lbann::noise_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="noise_8hpp_source.html#l00039">noise.hpp:39</a></div></div>
+<div class="ttc" id="namespacelbann_html_afb40728fd81916c37e28ea57176ef688afedb2d84cafe20862cb4399751a8a7e3"><div class="ttname"><a href="namespacelbann.html#afb40728fd81916c37e28ea57176ef688afedb2d84cafe20862cb4399751a8a7e3">lbann::callback_type::invalid</a></div></div>
 <div class="ttc" id="factories_8hpp_html"><div class="ttname"><a href="factories_8hpp.html">factories.hpp</a></div></div>
 <div class="ttc" id="classlbann_1_1reshape__layer_html"><div class="ttname"><a href="classlbann_1_1reshape__layer.html">lbann::reshape_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="reshape_8hpp_source.html#l00036">reshape.hpp:36</a></div></div>
-<div class="ttc" id="classlbann_1_1unpooling__layer_html"><div class="ttname"><a href="classlbann_1_1unpooling__layer.html">lbann::unpooling_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="pooling_8hpp_source.html#l00043">pooling.hpp:43</a></div></div>
+<div class="ttc" id="classlbann_1_1unpooling__layer_html"><div class="ttname"><a href="classlbann_1_1unpooling__layer.html">lbann::unpooling_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="pooling_8hpp_source.html#l00041">pooling.hpp:41</a></div></div>
 <div class="ttc" id="base_8hpp_html_ac47a6ee5278a53898222a48639a2bf39"><div class="ttname"><a href="base_8hpp.html#ac47a6ee5278a53898222a48639a2bf39">pool_mode</a></div><div class="ttdeci">pool_mode</div><div class="ttdef"><b>Definition:</b> <a href="base_8hpp_source.html#l00106">base.hpp:106</a></div></div>
+<div class="ttc" id="namespacelbann_html_a5975e1fb530a267728bfb01dc5c1be9ba16de38737a9f8366e9b2042b4e9b6290"><div class="ttname"><a href="namespacelbann.html#a5975e1fb530a267728bfb01dc5c1be9ba16de38737a9f8366e9b2042b4e9b6290">lbann::reduction_mode::AVERAGE</a></div></div>
 <div class="ttc" id="classlbann_1_1atan__layer_html"><div class="ttname"><a href="classlbann_1_1atan__layer.html">lbann::atan_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="atan_8hpp_source.html#l00036">atan.hpp:36</a></div></div>
-<div class="ttc" id="classlbann_1_1relu__layer_html"><div class="ttname"><a href="classlbann_1_1relu__layer.html">lbann::relu_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="relu_8hpp_source.html#l00041">relu.hpp:41</a></div></div>
-<div class="ttc" id="classlbann_1_1cudnn_1_1cudnn__manager_html"><div class="ttname"><a href="classlbann_1_1cudnn_1_1cudnn__manager.html">lbann::cudnn::cudnn_manager</a></div><div class="ttdef"><b>Definition:</b> <a href="cudnn__wrapper_8hpp_source.html#l00209">cudnn_wrapper.hpp:209</a></div></div>
+<div class="ttc" id="classlbann_1_1relu__layer_html"><div class="ttname"><a href="classlbann_1_1relu__layer.html">lbann::relu_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="relu_8hpp_source.html#l00039">relu.hpp:39</a></div></div>
+<div class="ttc" id="classlbann_1_1cudnn_1_1cudnn__manager_html"><div class="ttname"><a href="classlbann_1_1cudnn_1_1cudnn__manager.html">lbann::cudnn::cudnn_manager</a></div><div class="ttdef"><b>Definition:</b> <a href="cudnn__wrapper_8hpp_source.html#l00207">cudnn_wrapper.hpp:207</a></div></div>
 <div class="ttc" id="classlbann_1_1fully__connected__layer_html"><div class="ttname"><a href="classlbann_1_1fully__connected__layer.html">lbann::fully_connected_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="fully__connected_8hpp_source.html#l00049">fully_connected.hpp:49</a></div></div>
 <div class="ttc" id="classlbann_1_1swish__layer_html"><div class="ttname"><a href="classlbann_1_1swish__layer.html">lbann::swish_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="swish_8hpp_source.html#l00039">swish.hpp:39</a></div></div>
 <div class="ttc" id="classlbann_1_1hadamard__layer_html"><div class="ttname"><a href="classlbann_1_1hadamard__layer.html">lbann::hadamard_layer</a></div><div class="ttdef"><b>Definition:</b> <a href="hadamard_8hpp_source.html#l00040">hadamard.hpp:40</a></div></div>
@@ -501,7 +553,7 @@ $(document).ready(function(){initNavTree('layer__factory_8cpp_source.html','');}
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_75b82e7e4a5feb05200b9ad7adf06257.html">home</a></li><li class="navelem"><a class="el" href="dir_bacb04149764cbf6394e26ac332ca39a.html">travis</a></li><li class="navelem"><a class="el" href="dir_658dffd2684749c363737148727fc8b1.html">build</a></li><li class="navelem"><a class="el" href="dir_b8f5376c58aa36de7d2328111a389ee6.html">LLNL</a></li><li class="navelem"><a class="el" href="dir_e82981b6f02f904952cd97ec7dcb450c.html">lbann</a></li><li class="navelem"><a class="el" href="dir_9561a91540bbe4ce4cf9b16e06a2cfa4.html">src</a></li><li class="navelem"><a class="el" href="dir_a6f8d8b19bd1411ec381c5cd89d82b32.html">proto</a></li><li class="navelem"><a class="el" href="dir_f6012299656ab49ffbe39b5d360263ca.html">factories</a></li><li class="navelem"><a class="el" href="layer__factory_8cpp.html">layer_factory.cpp</a></li>
-    <li class="footer">Generated on Wed Apr 4 2018 21:59:03 for LBANN by
+    <li class="footer">Generated on Fri May 11 2018 08:29:59 for LBANN by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

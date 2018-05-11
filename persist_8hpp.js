@@ -1,6 +1,12 @@
 var persist_8hpp =
 [
     [ "persist", "classlbann_1_1persist.html", "classlbann_1_1persist" ],
+    [ "callback_type", "persist_8hpp.html#afb40728fd81916c37e28ea57176ef688", [
+      [ "batch", "persist_8hpp.html#afb40728fd81916c37e28ea57176ef688ad265aed699f7409ac0ec6fe07ee9cb11", null ],
+      [ "epoch", "persist_8hpp.html#afb40728fd81916c37e28ea57176ef688a3388c74e6308ba994ce6b75fd4710251", null ],
+      [ "validation", "persist_8hpp.html#afb40728fd81916c37e28ea57176ef688aa617908b172c473cb8e8cda059e55bf0", null ],
+      [ "invalid", "persist_8hpp.html#afb40728fd81916c37e28ea57176ef688afedb2d84cafe20862cb4399751a8a7e3", null ]
+    ] ],
     [ "persist_type", "persist_8hpp.html#adee41f31f15f3906cbdcce4a1417eb56", [
       [ "train", "persist_8hpp.html#adee41f31f15f3906cbdcce4a1417eb56a61b3a8faa9c1091806675c230a9abe64", null ],
       [ "model", "persist_8hpp.html#adee41f31f15f3906cbdcce4a1417eb56a20f35e630daf44dbfa4c3f68f5399d8c", null ],
@@ -14,7 +20,6 @@ var persist_8hpp =
     [ "read_string", "persist_8hpp.html#a784843ebce0e596dba31c1d981a7f087", null ],
     [ "read_uint32", "persist_8hpp.html#aedcde4d93c4feb5090c927de1c45b90d", null ],
     [ "read_uint64", "persist_8hpp.html#a7ca20ac4f0ec9feaa2f6d5b6ef3c8865", null ],
-    [ "readDist", "persist_8hpp.html#ab2c2ad3c98b9991a6307b123617dbfb2", null ],
     [ "write_bytes", "persist_8hpp.html#aed95061796f19fa1648dcc99dc335abd", null ],
     [ "write_distmat", "persist_8hpp.html#aa7b4e710f444588dfcf4188b84b33420", null ],
     [ "write_double", "persist_8hpp.html#a827b050911630a21f248b128e3859044", null ],
@@ -22,6 +27,5 @@ var persist_8hpp =
     [ "write_int32_contig", "persist_8hpp.html#a917727ad7e4f0dfd6d5a609cdc6dd9e2", null ],
     [ "write_string", "persist_8hpp.html#add2807d7303bd96d2804f0b14e894c68", null ],
     [ "write_uint32", "persist_8hpp.html#a3a801c9f48655f81b886af4bff083f27", null ],
-    [ "write_uint64", "persist_8hpp.html#a234f8c7b9bbc2d9310d3e40314eb497c", null ],
-    [ "writeDist", "persist_8hpp.html#af640a9302803636e0b5deb110c1aee57", null ]
+    [ "write_uint64", "persist_8hpp.html#a234f8c7b9bbc2d9310d3e40314eb497c", null ]
 ];
